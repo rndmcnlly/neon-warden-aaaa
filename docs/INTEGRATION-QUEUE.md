@@ -247,19 +247,19 @@ and so never charges (offer "pulse" as the assisted variant).
 
 New events (all carry `tick`):
 
-| Event | Fields | For |
-| --- | --- | --- |
-| `playerFired` | `shots, shot: "aimed"\|"stream"\|"writ", level 0–3, pos` | A: tap crack, stream loop, three Writ release tiers |
-| `chargeLevel` | `level 0–3` (0 when spent) | A: pip ticks, full-charge hum; V/U: pip ring |
-| `enemyFired` | `id, weapon: EnemyWeaponKind, pos, bullets` | A: positional enemy weapons (off-key) |
-| `nearMiss` | `bulletId, pos, relVel, distance, heavy` (closest approach within `NEAR_MISS_RADIUS` 48) | A: whoosh, doppler from `relVel` |
-| `graze` | `bulletId, pos, count (1, heavy 2), meter 0–1` | A: crackle; V: ring sparks; musical layer on pacifist runs |
-| `partBreak` | `id, target "enemy"\|"boss", part, partKind, pos, by: ShotKind` | A/V: crack, debris |
-| `disarm` | `id, kind, pos, cancelled` (bullets cancelled) | A: power-down sigh; V: cancel shimmer; U: SCOUTS SPARED |
-| `coreExposed` | `id` | A/V/N: the Warden's core opens |
-| `scanLock` | `id, target, kind, pos` | A: lock chirp; V: reticle |
-| `intel` | `id, codexId, ai, first` | U: codex unlock toast when `first` |
-| `payChanged` | `credits, rate, delta, reason: PayReason` | U: PAY and rate; A: beat-quantized rate tick, rate-break chord on `rateBreak` |
+| Event         | Fields                                                                                   | For                                                                           |
+| ------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `playerFired` | `shots, shot: "aimed"\|"stream"\|"writ", level 0–3, pos`                                 | A: tap crack, stream loop, three Writ release tiers                           |
+| `chargeLevel` | `level 0–3` (0 when spent)                                                               | A: pip ticks, full-charge hum; V/U: pip ring                                  |
+| `enemyFired`  | `id, weapon: EnemyWeaponKind, pos, bullets`                                              | A: positional enemy weapons (off-key)                                         |
+| `nearMiss`    | `bulletId, pos, relVel, distance, heavy` (closest approach within `NEAR_MISS_RADIUS` 48) | A: whoosh, doppler from `relVel`                                              |
+| `graze`       | `bulletId, pos, count (1, heavy 2), meter 0–1`                                           | A: crackle; V: ring sparks; musical layer on pacifist runs                    |
+| `partBreak`   | `id, target "enemy"\|"boss", part, partKind, pos, by: ShotKind`                          | A/V: crack, debris                                                            |
+| `disarm`      | `id, kind, pos, cancelled` (bullets cancelled)                                           | A: power-down sigh; V: cancel shimmer; U: SCOUTS SPARED                       |
+| `coreExposed` | `id`                                                                                     | A/V/N: the Warden's core opens                                                |
+| `scanLock`    | `id, target, kind, pos`                                                                  | A: lock chirp; V: reticle                                                     |
+| `intel`       | `id, codexId, ai, first`                                                                 | U: codex unlock toast when `first`                                            |
+| `payChanged`  | `credits, rate, delta, reason: PayReason`                                                | U: PAY and rate; A: beat-quantized rate tick, rate-break chord on `rateBreak` |
 
 Codex ids emitted by `intel`: `codex.enemy.drone|dart|turret|lancer`,
 `codex.warden`, `codex.warden.core` (on `coreExposed` lock),
