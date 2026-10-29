@@ -9,24 +9,41 @@
  *
  * The game loop asks `isSimRunning()` each frame; while any screen is open
  * (title, settings, pause) the sim should not step.
+ *
+ * Run-time API for main.ts (all read-only toward the sim):
+ *   hud.update(state), hud.event(e), hud.flag(name, value), hud.reset()
+ *   showContinue({ continuesLeft, score }) -> "continue" | "quit"
+ *   credits.roll() and credits.onDone(cb)   (set credits.rollDone in cb)
+ *   tutorial.onSkip(cb)                     (play the tutorial-skip scene)
  */
 
 import type {
   Lang,
   SettingsStore,
+  SimEvent,
+  SimState,
   UiEntry,
   UrlFlags,
 } from "../contracts/index.ts";
 import { createInputLayer, type InputLayer } from "../input/inputLayer.ts";
 import { createSaveStore, type SaveStore } from "../settings/saveGame.ts";
 import type { FrontEndHooks, UiContext } from "./context.ts";
-import { type Direction, focusInitial, moveFocus } from "./focus.ts";
+import { decideMenuIntent } from "./dispatch.ts";
+import { focusInitial, moveFocus } from "./focus.ts";
+import { createHud } from "./hud.ts";
 import { refreshPrompts } from "./prompts.ts";
 import { Router, type ScreenFactory } from "./router.ts";
 import { gateScreen, titleScreen } from "./screens/boot.ts";
 import { creditsScreen, mainMenuScreen } from "./screens/menus.ts";
 import { type PauseReason, pauseScreen } from "./screens/pause.ts";
 import { settingsScreen } from "./screens/settings.ts";
+import {
+  type ContinueChoice,
+  type ContinueInfo,
+  continueScreen,
+  creditsCrawlScreen,
+  tutorialSkipDialog,
+} from "./screens/run.ts";
 import { uiSound } from "./sound.ts";
 import { id, t } from "../i18n/index.ts";
 import { h, widgetIntent } from "./widgets.ts";
@@ -54,10 +71,47 @@ export interface FrontEnd {
   pause(reason?: PauseReason): void;
   /** Flashes the "Checkpoint saved" chip (also fires on every save). */
   showSaveIndicator(): void;
+  /** The in-game HUD and banners. Feed it; it never writes back. */
+  readonly hud: {
+    /** After each sim step (cheap: it redraws only what changed). */
+    update(state: SimState): void;
+    /** Every SimEvent: sector and Warden banners, spared tally. */
+    event(event: SimEvent): void;
+    /** Every story flag change: serial reveal, ending banners. */
+    flag(name: string, value: boolean): void;
+    /** Start of each run. */
+    reset(): void;
+  };
+  /**
+   * After `gameOver` (human play): shows the continue screen and resolves
+   * with the choice. On "continue" play resumes (call `sim.continueRun()`);
+   * on "quit" the front end has already gone to the title.
+   */
+  showContinue(info: ContinueInfo): Promise<ContinueChoice>;
+  readonly credits: {
+    /** Plays the end credits crawl; resolves when it ends or is skipped. */
+    roll(): Promise<void>;
+    /** Called each time a roll finishes: set `credits.rollDone` here. */
+    onDone(listener: () => void): () => void;
+  };
+  readonly tutorial: {
+    /** The player confirmed "Skip onboarding": play `tutorial-skip`. */
+    onSkip(listener: () => void): () => void;
+  };
   dispose(): void;
 }
 
-const DIRECTIONS: readonly Direction[] = ["up", "down", "left", "right"];
+/** Tiny listener set, returning an unsubscribe function. */
+function listeners() {
+  const set = new Set<() => void>();
+  return {
+    on(listener: () => void) {
+      set.add(listener);
+      return () => void set.delete(listener);
+    },
+    emit: () => set.forEach((listener) => listener()),
+  };
+}
 const TOAST_MS = 3200;
 const SAVE_CHIP_MS = 2400;
 
@@ -89,6 +143,8 @@ export function createFrontEnd(
 
   let playing = false;
   let audioUnlocked = false;
+  const skipListeners = listeners();
+  const creditsListeners = listeners();
 
   const lang = (): Lang => settings.get().textLang;
 
@@ -96,6 +152,13 @@ export function createFrontEnd(
     layer.classList.toggle("is-playing", router.depth === 0);
     updatePrompts();
   });
+
+  const hud = createHud({
+    t: (key, vars) => t(id(key), lang(), vars),
+    lang,
+    onSkipClick: () => requestTutorialSkip(),
+  });
+  screens.before(hud.el);
 
   const ctx: UiContext = {
     settings,
@@ -105,26 +168,29 @@ export function createFrontEnd(
     hooks,
     lang,
     t: (key, vars) => t(id(key), lang(), vars),
+    inTutorial: () => playing && hud.inTutorial(),
+    requestTutorialSkip: () => requestTutorialSkip(),
     startGame(request) {
       uiSound("confirm");
-      router.reset();
       playing = true;
+      router.reset();
       hooks.onStartGame?.(request);
     },
     resume() {
       uiSound("pause_out");
-      router.reset();
       playing = true;
+      router.reset();
       hooks.onResume?.();
     },
     quitToTitle() {
       playing = false;
+      hud.reset();
       hooks.onQuitToTitle?.();
       router.reset(titleScreen(ctx));
     },
     restartCheckpoint() {
-      router.reset();
       playing = true;
+      router.reset();
       hooks.onRestartCheckpoint?.();
     },
     toast(message) {
@@ -141,49 +207,79 @@ export function createFrontEnd(
     router.push(pauseScreen(ctx, reason));
   }
 
+  /** Opens "Skip onboarding?" over the frozen tutorial (pause menu or HUD). */
+  function requestTutorialSkip(): void {
+    if (!playing || !hud.inTutorial()) return;
+    if (router.depth === 0) hooks.onPause?.();
+    router.push(tutorialSkipDialog(ctx, () => {
+      playing = true;
+      router.reset();
+      hooks.onResume?.();
+      skipListeners.emit();
+    }, () => {
+      // Back to wherever the skip was asked from (pause menu or play).
+      if (router.depth === 0) hooks.onResume?.();
+    }));
+  }
+
   function updatePrompts(): void {
+    layer.classList.toggle("is-in-run", playing);
     refreshPrompts(layer, settings.get(), input.device(), input.padFamily());
   }
 
   function applyDocumentState(): void {
     document.documentElement.lang = lang() === "zh" ? "zh-Hans" : lang();
     layer.dataset.device = input.device();
+    const s = settings.get();
+    layer.classList.toggle("is-calm", calm());
+    // HUD text grows with the subtitle size preference, at half the rate.
+    layer.style.setProperty(
+      "--nw-hud-scale",
+      String(1 + (s.subtitles.scale - 1) * 0.5),
+    );
+    hud.relabel();
     buildLabel.replaceChildren(
       h("strong", {}, ctx.t("ui.build.label")),
       h("span", {}, ctx.t("ui.build.detail")),
     );
   }
 
-  // Menu input dispatch (see the header comment for the rule).
+  // Menu input dispatch (see the header comment and dispatch.ts).
   const offIntent = input.onIntent((event) => {
-    if (router.depth === 0) {
-      if (playing && event.intents.has("pause")) pause("player");
-      return;
-    }
-    const top = router.top()!;
-    if (top.onIntent?.(event)) return;
+    const top = router.top();
+    if (top?.onIntent?.(event)) return;
     const focused = document.activeElement;
-    const inTop = focused instanceof HTMLElement && top.el.contains(focused);
+    const inTop = top !== null && focused instanceof HTMLElement &&
+      top.el.contains(focused);
     if (inTop && widgetIntent(focused, event)) {
       updatePrompts();
       return;
     }
-    for (const direction of DIRECTIONS) {
-      if (event.intents.has(direction)) {
-        if (!inTop) focusInitial(top.el);
-        else moveFocus(top.el, direction);
+    const decision = decideMenuIntent(event.intents, {
+      inMenu: top !== null,
+      playing,
+      inTutorial: hud.inTutorial(),
+      focusInTop: inTop,
+    });
+    switch (decision.kind) {
+      case "ignore":
         return;
-      }
-    }
-    if (event.intents.has("confirm")) {
-      if (inTop) (focused as HTMLElement).click();
-      else focusInitial(top.el);
-      return;
-    }
-    if (event.intents.has("back")) {
-      uiSound("back");
-      if (top.onBack) top.onBack();
-      else router.pop();
+      case "pause":
+        return pause("player");
+      case "skipTutorial":
+        return requestTutorialSkip();
+      case "move":
+        // An edge press (Left on a dialog's Cancel) bumps instead of silence.
+        if (!moveFocus(top!.el, decision.direction)) uiSound("slider_end");
+        return;
+      case "focusDefault":
+        return focusInitial(top!.el);
+      case "activateFocused":
+        return (focused as HTMLElement).click();
+      case "back":
+        uiSound("back");
+        if (top!.onBack) top!.onBack();
+        else router.pop();
     }
   });
 
@@ -220,9 +316,17 @@ export function createFrontEnd(
   document.addEventListener("visibilitychange", onVisibility);
   document.addEventListener("fullscreenchange", onFullscreen);
 
+  // Reduced motion: the setting, or the OS preference, either one is enough.
+  const motionQuery = matchMedia("(prefers-reduced-motion: reduce)");
+  const calm = () =>
+    settings.get().accessibility.reduceMotion || motionQuery.matches;
+  const onMotionQuery = () => layer.classList.toggle("is-calm", calm());
+  motionQuery.addEventListener("change", onMotionQuery);
+
   // Settings changes: re-sync widgets; a text language change rebuilds.
   let lastLang = lang();
   const offSettings = settings.subscribe(() => {
+    applyDocumentState();
     if (lang() !== lastLang) {
       lastLang = lang();
       applyDocumentState();
@@ -285,13 +389,47 @@ export function createFrontEnd(
   }
   updatePrompts();
 
+  function showContinue(info: ContinueInfo): Promise<ContinueChoice> {
+    return new Promise((resolve) => {
+      router.push(continueScreen(ctx, info, (choice) => {
+        if (choice === "continue") {
+          playing = true;
+          router.reset();
+        } else {
+          ctx.quitToTitle();
+        }
+        resolve(choice);
+      }));
+    });
+  }
+
+  function rollCredits(): Promise<void> {
+    return new Promise((resolve) => {
+      router.push(creditsCrawlScreen(ctx, calm, () => {
+        router.reset();
+        creditsListeners.emit();
+        resolve();
+      }));
+    });
+  }
+
   return {
     input,
     isSimRunning: () => playing && router.depth === 0,
     quitToTitle: () => ctx.quitToTitle(),
     pause,
     showSaveIndicator,
+    hud: {
+      update: (state) => hud.update(state),
+      event: (event) => hud.event(event),
+      flag: (name, value) => hud.flag(name, value),
+      reset: () => hud.reset(),
+    },
+    showContinue,
+    credits: { roll: rollCredits, onDone: creditsListeners.on },
+    tutorial: { onSkip: skipListeners.on },
     dispose() {
+      motionQuery.removeEventListener("change", onMotionQuery);
       offIntent();
       offDevice();
       offAnyPress();

@@ -47,6 +47,14 @@ export function pauseScreen(
             sound: "pause_out",
             onActivate: () => ctx.resume(),
           }),
+          ctx.inTutorial()
+            ? button({
+              key: "skipTutorial",
+              label: ctx.t("ui.tut.skipPrompt"),
+              hint: ctx.t("ui.tut.skipNote"),
+              onActivate: () => ctx.requestTutorialSkip(),
+            })
+            : null,
           button({
             key: "restart",
             label: ctx.t("ui.pause.restart"),

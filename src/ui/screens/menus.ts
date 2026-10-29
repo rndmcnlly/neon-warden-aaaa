@@ -10,6 +10,7 @@ import type { UiKey } from "../../i18n/index.ts";
 import { button, h, panel } from "../widgets.ts";
 import { messageDialog, stubDialog } from "./dialogs.ts";
 import { settingsScreen } from "./settings.ts";
+import { THIRD_PARTY } from "../../data/thirdParty.ts";
 import { titleScreen } from "./boot.ts";
 
 const SELECT_BACK = (ctx: UiContext): [string, string][] => [
@@ -279,6 +280,7 @@ export function extrasScreen(ctx: UiContext): ScreenFactory {
       ],
       prompts: SELECT_BACK(ctx),
     });
+    el.dataset.wrap = "grid";
     return { el };
   };
 }
@@ -360,17 +362,42 @@ export function creditsScreen(ctx: UiContext): ScreenFactory {
 
 export function licensesScreen(ctx: UiContext): ScreenFactory {
   return () => {
-    const entries: UiKey[] = [
+    // Names, versions and license ids are proper nouns: shown as data.
+    const entries = THIRD_PARTY.map((entry) =>
+      h(
+        "li",
+        { class: "nw-license-entry" },
+        h(
+          "span",
+          { class: "nw-license-name" },
+          entry.version ? `${entry.name} ${entry.version}` : entry.name,
+        ),
+        h(
+          "span",
+          { class: "nw-badge" },
+          ctx.t(`ui.licenses.role.${entry.role}`),
+        ),
+        h(
+          "span",
+          { class: "nw-license-meta" },
+          ctx.t("ui.licenses.license", { license: entry.license }),
+        ),
+        h("span", { class: "nw-license-note" }, ctx.t(entry.note)),
+        h("span", { class: "nw-license-url" }, entry.url),
+      )
+    );
+    const notices: UiKey[] = [
       "ui.licenses.three",
       "ui.licenses.vite",
       "ui.licenses.deno",
     ];
     const area = scrollArea(
       h("p", { class: "nw-body" }, ctx.t("ui.licenses.intro")),
+      h("ul", { class: "nw-license-list" }, ...entries),
       h(
         "ul",
-        { class: "nw-license-list" },
-        ...entries.map((key) => h("li", {}, ctx.t(key))),
+        { class: "nw-license-notices" },
+        ...notices.map((key) => h("li", {}, ctx.t(key))),
       ),
       h("pre", { class: "nw-license-text" }, ctx.t("ui.licenses.mitText")),
     );

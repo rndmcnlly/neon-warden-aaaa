@@ -342,6 +342,14 @@ function accessibilityTab(ctx: UiContext): Widget[] {
       get: () => s.get().accessibility.reducedFlashing,
       set: (reducedFlashing) => a11y({ reducedFlashing }),
     }),
+    toggleRow({
+      key: "reduceMotion",
+      label: ctx.t("ui.settings.reduceMotion"),
+      hint: ctx.t("ui.settings.reduceMotionHint"),
+      ...onOff,
+      get: () => s.get().accessibility.reduceMotion,
+      set: (reduceMotion) => a11y({ reduceMotion }),
+    }),
     sliderRow({
       key: "gameSpeed",
       label: ctx.t("ui.settings.gameSpeed"),

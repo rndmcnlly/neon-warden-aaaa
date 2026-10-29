@@ -467,9 +467,12 @@ export const UI_STRINGS = {
   },
   "ui.credits.tools": { en: "Tools", es: "Herramientas", zh: "工具" },
   "ui.credits.toolsBody": {
-    en: "three.js, Vite, Deno, Blender, local text-to-speech",
-    es: "three.js, Vite, Deno, Blender, texto a voz local",
-    zh: "three.js、Vite、Deno、Blender、本地语音合成",
+    en:
+      "three.js, Vite, Deno, Blender, the Orbitron font (OFL), Stable Audio 3 for music and sound, Qwen3-TTS and Qwen3-ASR for voices",
+    es:
+      "three.js, Vite, Deno, Blender, la tipografía Orbitron (OFL), Stable Audio 3 para música y sonido, Qwen3-TTS y Qwen3-ASR para las voces",
+    zh:
+      "three.js、Vite、Deno、Blender、Orbitron 字体（OFL）、用于音乐和音效的 Stable Audio 3、用于配音的 Qwen3-TTS 与 Qwen3-ASR",
   },
   "ui.credits.studio": {
     en: "adamsmith.systems, for CM121 cohort f26",
@@ -1136,6 +1139,423 @@ export const UI_STRINGS = {
     es:
       "Consejo: Los exploradores del Guardián no disparan a naves que no han disparado. Esto no es un consejo.",
     zh: "提示：守望者的侦察机不会攻击没有开过火的船。这不是提示。",
+  },
+
+  // -- settings: reduce motion (contract key accessibility.reduceMotion)
+  "ui.settings.reduceMotion": {
+    en: "Reduce motion",
+    es: "Reducir movimiento",
+    zh: "减少动态效果",
+  },
+  "ui.settings.reduceMotionHint": {
+    en: "Calmer camera and menus. Your system setting also counts.",
+    es:
+      "Cámara y menús más tranquilos. También cuenta el ajuste de tu sistema.",
+    zh: "镜头和菜单更平稳。系统的减少动态效果设置同样生效。",
+  },
+
+  // -- third-party licenses, one note per src/data/thirdParty.ts entry
+  "ui.licenses.note.three": {
+    en: "3D rendering.",
+    es: "Renderizado 3D.",
+    zh: "3D 渲染。",
+  },
+  "ui.licenses.note.orbitron": {
+    en: "Logo lettering, baked into the 3D logos.",
+    es: "Tipografía de los logotipos, integrada en los logotipos 3D.",
+    zh: "标志字体，已烘焙进 3D 标志。",
+  },
+  "ui.licenses.note.vite": {
+    en: "Build tool; not shipped.",
+    es: "Herramienta de compilación; no se incluye en el juego.",
+    zh: "构建工具；不随游戏发布。",
+  },
+  "ui.licenses.note.deno": {
+    en: "Runtime for tasks and tests; not shipped.",
+    es: "Entorno para tareas y pruebas; no se incluye en el juego.",
+    zh: "用于任务与测试的运行时；不随游戏发布。",
+  },
+  "ui.licenses.note.stableAudio": {
+    en:
+      "Generated the music and sound effects. Outputs are used under the model license.",
+    es:
+      "Generó la música y los efectos de sonido. Los resultados se usan conforme a la licencia del modelo.",
+    zh: "生成了音乐与音效。生成结果依照该模型的许可证使用。",
+  },
+  "ui.licenses.note.qwenTts": {
+    en: "Rendered every voice line locally.",
+    es: "Generó localmente cada línea de voz.",
+    zh: "在本地合成了每一句配音。",
+  },
+  "ui.licenses.note.qwenAsr": {
+    en: "Checked rendered voice lines against the script; not shipped.",
+    es: "Comparó las voces generadas con el guion; no se incluye en el juego.",
+    zh: "将合成的配音与剧本逐句核对；不随游戏发布。",
+  },
+  "ui.licenses.role.runtime": {
+    en: "Runtime",
+    es: "Tiempo de ejecución",
+    zh: "运行时",
+  },
+  "ui.licenses.role.toolchain": {
+    en: "Toolchain",
+    es: "Herramientas",
+    zh: "工具链",
+  },
+  "ui.licenses.role.font": { en: "Font", es: "Tipografía", zh: "字体" },
+  "ui.licenses.role.model": {
+    en: "Generative model",
+    es: "Modelo generativo",
+    zh: "生成模型",
+  },
+  "ui.licenses.license": {
+    en: "License: {license}",
+    es: "Licencia: {license}",
+    zh: "许可证：{license}",
+  },
+
+  // -- in-game HUD
+  "ui.hud.shield": { en: "Shield", es: "Escudo", zh: "护盾" },
+  "ui.hud.sector": { en: "Sector {n}", es: "Sector {n}", zh: "第 {n} 区" },
+  "ui.hud.pacifist": {
+    en: "Hands clean",
+    es: "Manos limpias",
+    zh: "未开杀戒",
+  },
+  "ui.hud.spared": {
+    en: "Spared {count}",
+    es: "Perdonados: {count}",
+    zh: "放过 {count}",
+  },
+  "ui.hud.wardenShielded": {
+    en: "Untouchable",
+    es: "Intocable",
+    zh: "无法伤害",
+  },
+  "ui.hud.phase": {
+    en: "Phase {n} of 3",
+    es: "Fase {n} de 3",
+    zh: "第 {n}/3 阶段",
+  },
+  "ui.hud.livesLeft": {
+    en: "{count} left",
+    es: "Quedan {count}",
+    zh: "剩余 {count}",
+  },
+  "ui.hud.powerLevel": {
+    en: "Level {n} of 3",
+    es: "Nivel {n} de 3",
+    zh: "{n}/3 级",
+  },
+
+  // -- banners
+  "ui.banner.sector": {
+    en: "SECTOR {n}",
+    es: "SECTOR {n}",
+    zh: "第 {n} 区",
+  },
+  "ui.banner.lanesKeptSub": {
+    en: "The Warden stands down",
+    es: "El Guardián se retira",
+    zh: "守望者收起了武器",
+  },
+
+  // -- continue screen (after gameOver)
+  "ui.continue.prompt": {
+    en: "Continue?",
+    es: "¿Continuar?",
+    zh: "继续吗？",
+  },
+  "ui.continue.left": {
+    en: "Continues left: {count}",
+    es: "Continuaciones restantes: {count}",
+    zh: "剩余续关次数：{count}",
+  },
+  "ui.continue.yes": { en: "Continue", es: "Continuar", zh: "继续" },
+  "ui.continue.no": {
+    en: "Return to title",
+    es: "Volver al título",
+    zh: "返回标题画面",
+  },
+  "ui.continue.none": {
+    en: "No continues left. The Lane Authority thanks you for your service.",
+    es: "No quedan continuaciones. La Autoridad de Rutas agradece tu servicio.",
+    zh: "已没有续关次数。航道管理局感谢你的服务。",
+  },
+  "ui.continue.score": {
+    en: "Score {score}",
+    es: "Puntos: {score}",
+    zh: "得分 {score}",
+  },
+
+  // -- tutorial skip (at most three inputs from anywhere in the tutorial)
+  "ui.tut.skipPrompt": {
+    en: "Skip onboarding",
+    es: "Saltar la inducción",
+    zh: "跳过入职培训",
+  },
+  "ui.tut.skipNote": {
+    en: "The Lane Authority will note this.",
+    es: "La Autoridad de Rutas tomará nota.",
+    zh: "航道管理局会记录此事。",
+  },
+  "ui.tut.skipNo": {
+    en: "Keep training",
+    es: "Seguir entrenando",
+    zh: "继续培训",
+  },
+
+  // -- end credits crawl: departments
+  "ui.crawl.skip": {
+    en: "Skip credits",
+    es: "Saltar créditos",
+    zh: "跳过制作人员名单",
+  },
+  "ui.crawl.presents": {
+    en: "{studio} presents",
+    es: "{studio} presenta",
+    zh: "{studio} 出品",
+  },
+  "ui.crawl.incubated": {
+    en: "Incubated by CM121, cohort f26",
+    es: "Incubado por CM121, generación f26",
+    zh: "由 CM121 孵化，f26 届",
+  },
+  "ui.crawl.agent": {
+    en: "{model}, agent",
+    es: "{model}, agente",
+    zh: "{model}（智能体）",
+  },
+  "ui.crawl.agentNote": {
+    en:
+      "Agent credits name a role, not a person. Agents drafted the work; a human directed it, reviewed it and chose what shipped.",
+    es:
+      "Los créditos de agentes nombran un rol, no una persona. Los agentes redactaron el trabajo; una persona lo dirigió, lo revisó y eligió qué se publicaba.",
+    zh:
+      "智能体署名代表的是职能，而不是某个人。智能体负责起草，由一位人类进行指导、审阅，并决定最终发布的内容。",
+  },
+  "ui.crawl.dept.leadership": {
+    en: "Studio Leadership",
+    es: "Dirección del estudio",
+    zh: "工作室管理层",
+  },
+  "ui.crawl.dept.design": {
+    en: "Game Design",
+    es: "Diseño de juego",
+    zh: "游戏设计",
+  },
+  "ui.crawl.dept.narrative": {
+    en: "Narrative",
+    es: "Narrativa",
+    zh: "叙事",
+  },
+  "ui.crawl.dept.engineering": {
+    en: "Engineering",
+    es: "Ingeniería",
+    zh: "工程",
+  },
+  "ui.crawl.dept.art": { en: "Art", es: "Arte", zh: "美术" },
+  "ui.crawl.dept.audio": { en: "Audio", es: "Audio", zh: "音频" },
+  "ui.crawl.dept.voice": {
+    en: "Voice Cast",
+    es: "Reparto de voces",
+    zh: "配音演员",
+  },
+  "ui.crawl.dept.localization": {
+    en: "Localization",
+    es: "Localización",
+    zh: "本地化",
+  },
+  "ui.crawl.dept.qa": {
+    en: "Quality Assurance",
+    es: "Control de calidad",
+    zh: "质量保证",
+  },
+  "ui.crawl.dept.accessibility": {
+    en: "Accessibility",
+    es: "Accesibilidad",
+    zh: "无障碍",
+  },
+  "ui.crawl.dept.production": {
+    en: "Production",
+    es: "Producción",
+    zh: "制作管理",
+  },
+  "ui.crawl.dept.publishing": {
+    en: "Publishing",
+    es: "Publicación",
+    zh: "发行",
+  },
+  "ui.crawl.dept.tools": {
+    en: "Tools and Models",
+    es: "Herramientas y modelos",
+    zh: "工具与模型",
+  },
+  "ui.crawl.dept.licenses": {
+    en: "Third-Party Licenses",
+    es: "Licencias de terceros",
+    zh: "第三方许可证",
+  },
+  "ui.crawl.dept.thanks": {
+    en: "Special Thanks",
+    es: "Agradecimientos especiales",
+    zh: "特别鸣谢",
+  },
+  "ui.crawl.dept.memoriam": {
+    en: "In Memoriam",
+    es: "In memoriam",
+    zh: "谨此纪念",
+  },
+
+  // -- end credits crawl: roles
+  "ui.crawl.role.execProducer": {
+    en: "Executive Producer",
+    es: "Productor ejecutivo",
+    zh: "执行制作人",
+  },
+  "ui.crawl.role.creativeDirector": {
+    en: "Creative Director",
+    es: "Director creativo",
+    zh: "创意总监",
+  },
+  "ui.crawl.role.gameDirector": {
+    en: "Game Director",
+    es: "Director del juego",
+    zh: "游戏总监",
+  },
+  "ui.crawl.role.systemsDesign": {
+    en: "Systems Design (simulation port)",
+    es: "Diseño de sistemas (adaptación de la simulación)",
+    zh: "系统设计（模拟移植）",
+  },
+  "ui.crawl.role.originalDesign": {
+    en: "Original Game Design (Neon Warden, CMPM 121 E4 starter)",
+    es:
+      "Diseño del juego original (Neon Warden, proyecto inicial E4 de CMPM 121)",
+    zh: "原版游戏设计（《霓虹守望者》，CMPM 121 E4 入门项目）",
+  },
+  "ui.crawl.role.narrativeDesign": {
+    en: "Narrative Design and Script",
+    es: "Diseño narrativo y guion",
+    zh: "叙事设计与剧本",
+  },
+  "ui.crawl.role.storyDirection": {
+    en: "Story Direction",
+    es: "Dirección de la historia",
+    zh: "剧情指导",
+  },
+  "ui.crawl.role.simEngineering": {
+    en: "Simulation Engineering",
+    es: "Ingeniería de simulación",
+    zh: "模拟工程",
+  },
+  "ui.crawl.role.renderEngineering": {
+    en: "Rendering Engineering",
+    es: "Ingeniería de renderizado",
+    zh: "渲染工程",
+  },
+  "ui.crawl.role.uiEngineering": {
+    en: "Front End and UI Engineering",
+    es: "Ingeniería de interfaz",
+    zh: "前端与界面工程",
+  },
+  "ui.crawl.role.audioEngineering": {
+    en: "Audio Engine and Scene Director",
+    es: "Motor de audio y director de escenas",
+    zh: "音频引擎与场景调度",
+  },
+  "ui.crawl.role.integration": {
+    en: "Integration and Build",
+    es: "Integración y compilación",
+    zh: "集成与构建",
+  },
+  "ui.crawl.role.modeling": {
+    en: "3D Modeling (scripted Blender)",
+    es: "Modelado 3D (Blender por script)",
+    zh: "3D 建模（脚本驱动 Blender）",
+  },
+  "ui.crawl.role.artDirection": {
+    en: "Art Direction and Review",
+    es: "Dirección y revisión de arte",
+    zh: "美术指导与审阅",
+  },
+  "ui.crawl.role.music": { en: "Music", es: "Música", zh: "音乐" },
+  "ui.crawl.role.sfx": {
+    en: "UI Sound Design",
+    es: "Diseño de sonido de interfaz",
+    zh: "界面音效设计",
+  },
+  "ui.crawl.role.curation": {
+    en: "Auditions and Picks",
+    es: "Audiciones y selección",
+    zh: "试听与选定",
+  },
+  "ui.crawl.role.voiceRendering": {
+    en: "Voices, designed and rendered locally",
+    es: "Voces, diseñadas y generadas localmente",
+    zh: "配音，本地设计与合成",
+  },
+  "ui.crawl.role.languages": {
+    en:
+      "Spanish (Latin America) and Simplified Chinese, agent drafts; native review pending",
+    es:
+      "Español (Latinoamérica) y chino simplificado, borradores de agentes; revisión nativa pendiente",
+    zh: "拉美西班牙语与简体中文，由智能体起草；母语审校待进行",
+  },
+  "ui.crawl.role.qaTooling": {
+    en: "QA Tooling and Reels",
+    es: "Herramientas de control de calidad y videos",
+    zh: "质量保证工具与录像",
+  },
+  "ui.crawl.role.playtest": {
+    en: "Integration Playtest",
+    es: "Prueba de juego de integración",
+    zh: "集成试玩",
+  },
+  "ui.crawl.role.accessibility": {
+    en: "Accessibility Options and Review",
+    es: "Opciones y revisión de accesibilidad",
+    zh: "无障碍选项与审阅",
+  },
+  "ui.crawl.role.orchestration": {
+    en: "Orchestration of Workstreams",
+    es: "Coordinación de líneas de trabajo",
+    zh: "工作流统筹",
+  },
+  "ui.crawl.role.research": {
+    en: "Research (tropes, teardowns, checklists)",
+    es: "Investigación (tropos, análisis, listas de control)",
+    zh: "调研（叙事套路、拆解分析、检查清单）",
+  },
+  "ui.crawl.role.incubator": {
+    en: "Incubator",
+    es: "Incubadora",
+    zh: "孵化器",
+  },
+  "ui.crawl.role.catering": {
+    en: "Catering",
+    es: "Catering",
+    zh: "餐饮",
+  },
+  "ui.crawl.role.software": {
+    en: "Software",
+    es: "Software",
+    zh: "软件",
+  },
+  "ui.crawl.role.models": {
+    en: "Models",
+    es: "Modelos",
+    zh: "模型",
+  },
+  "ui.crawl.role.students": {
+    en: "Every CMPM 121 student who will read this source",
+    es: "Cada estudiante de CMPM 121 que leerá este código",
+    zh: "每一位将阅读这份源码的 CMPM 121 学生",
+  },
+  "ui.crawl.role.lastLine": {
+    en: "No Warden was harmed in a pacifist run.",
+    es: "Ningún Guardián sufrió daños en una partida pacifista.",
+    zh: "在和平通关中，没有任何守望者受到伤害。",
   },
 } as const satisfies Record<string, LocalizedText>;
 

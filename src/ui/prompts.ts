@@ -60,9 +60,32 @@ export function refreshPrompts(
     const el of root.querySelectorAll<HTMLElement>(".nw-glyph[data-action]")
   ) {
     const action = el.dataset.action!;
+    if (action === "backOnly") {
+      el.textContent = backOnlyGlyph(settings, device, family);
+      continue;
+    }
     const special = SPECIAL_GLYPHS[action];
     el.textContent = special
       ? (device === "gamepad" ? special.pad(family) : special.key)
       : glyphFor(action as Action, settings, device, family);
   }
+}
+
+/**
+ * A Back input that does not also mean Pause (Esc does both, so during
+ * play it pauses). The tutorial's skip chip names this one.
+ */
+export function backOnlyGlyph(
+  settings: Settings,
+  device: Device,
+  family: PadFamily,
+): string {
+  const { back, pause } = settings.controls.bindings;
+  if (device === "gamepad") {
+    const button = back.buttons.find((b) => !pause.buttons.includes(b)) ??
+      MENU_FALLBACK_BUTTON.back!;
+    return buttonLabel(button, family);
+  }
+  const key = back.keys.find((k) => !pause.keys.includes(k)) ?? "Backspace";
+  return keyLabel(key);
 }

@@ -49,6 +49,10 @@ export interface UiContext {
   readonly hooks: FrontEndHooks;
   lang(): Lang;
   t(key: UiKey, vars?: TextParams): string;
+  /** A run is in the Lane Authority tutorial (the skip is offered). */
+  inTutorial(): boolean;
+  /** Opens the "Skip onboarding?" confirmation. */
+  requestTutorialSkip(): void;
   /** Leaves the menus and hands control to gameplay. */
   startGame(request: StartRequest): void;
   resume(): void;

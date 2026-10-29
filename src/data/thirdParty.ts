@@ -4,13 +4,15 @@
  * to make what we ship, so the screen (and any audit) reads from one list.
  *
  * Names, versions and license names are proper nouns and stay untranslated;
- * the explanatory `note` is a UI string id resolved through `src/i18n/`
- * (the strings pass adds the ids and the screen iterates this list).
+ * the explanatory `note` is a UI string id resolved through `src/i18n/`.
+ * Extras > Third-Party Licenses and the end credits both iterate this list.
  *
  * Phaser is deliberately absent: the original E4 starter used it, but this
  * rewrite does not ship or import it (`reference/` is read-only design
  * reference, not part of the build).
  */
+
+import type { UiKey } from "../i18n/index.ts";
 
 export type ThirdPartyRole = "runtime" | "toolchain" | "font" | "model";
 
@@ -22,7 +24,7 @@ export interface ThirdPartyEntry {
   readonly license: string;
   readonly url: string;
   /** UI string id explaining how it is used (or what its outputs are). */
-  readonly note: string;
+  readonly note: UiKey;
 }
 
 export const THIRD_PARTY: readonly ThirdPartyEntry[] = [
@@ -81,19 +83,3 @@ export const THIRD_PARTY: readonly ThirdPartyEntry[] = [
     note: "ui.licenses.note.qwenAsr",
   },
 ];
-
-/**
- * English fallbacks for the note ids, for the strings pass to absorb into
- * `src/i18n/` (with ES and ZH) and then delete from here.
- */
-export const THIRD_PARTY_NOTES_EN: Readonly<Record<string, string>> = {
-  "ui.licenses.note.three": "3D rendering.",
-  "ui.licenses.note.orbitron": "Logo lettering, baked into the 3D logos.",
-  "ui.licenses.note.vite": "Build tool; not shipped.",
-  "ui.licenses.note.deno": "Runtime for tasks and tests; not shipped.",
-  "ui.licenses.note.stableAudio":
-    "Generated the music and sound effects. Outputs are used under the model license.",
-  "ui.licenses.note.qwenTts": "Rendered every voice line locally.",
-  "ui.licenses.note.qwenAsr":
-    "Checked rendered voice lines against the script; not shipped.",
-};
