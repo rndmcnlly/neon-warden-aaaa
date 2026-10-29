@@ -4,9 +4,9 @@
  *
  * - `public/vo/<lang>/<id>.ogg`: Ogg Opus, mono, 48 kHz, loudness-normalized
  *   per line to -18 LUFS integrated with a -1 dBTP ceiling (barks and
- *   chatter sit 2 LU lower, under story lines). Two-pass `loudnorm`: pass one
- *   measures, pass two applies one linear gain, so a line's own dynamics
- *   (a shout inside a whisper) survive.
+ *   chatter sit 2 LU lower, under story lines). Already normalized WAVs use
+ *   their render-time loudness metadata and plain linear gain, avoiding a
+ *   second loudnorm pass. Legacy WAVs are measured with two-pass loudnorm.
  * - `public/vo/cues.json`: `vo/out/cues.json` with each take's `file`
  *   pointing at its `.ogg`, plus the measured input loudness.
  * - `public/vo/stamps.json`: which render (the take's `hash` in cues.json)
@@ -22,7 +22,7 @@
 const SOURCE = "vo/out";
 const TARGET = "public/vo";
 /** Bump to re-encode everything after changing the recipe below. */
-const RECIPE = "opus48k-v1";
+const RECIPE = "opus48k-v2-linear-normalized";
 const TARGET_LUFS = -18;
 /** Reactive lines (barks, chatter) sit under story lines. */
 const AMBIENT_OFFSET_LU = -2;
@@ -33,6 +33,7 @@ const WORKERS = 8;
 interface Take {
   file: string;
   hash?: string;
+  loudness?: { lufs: number; true_peak_dbtp: number; limited_db?: number };
   [key: string]: unknown;
 }
 interface Line {
@@ -74,9 +75,14 @@ async function encode(
   wav: string,
   ogg: string,
   lufs: number,
+  normalized?: Take["loudness"],
 ): Promise<{ inputLufs: number; inputTruePeak: number }> {
   const spec = `I=${lufs}:TP=${CEILING_DBTP}:LRA=20`;
-  const log = await ffmpeg([
+  const known = normalized && Number.isFinite(normalized.lufs) &&
+      Number.isFinite(normalized.true_peak_dbtp)
+    ? normalized
+    : undefined;
+  const log = known ? "" : await ffmpeg([
     "-i",
     wav,
     "-af",
@@ -85,15 +91,28 @@ async function encode(
     "null",
     "-",
   ]);
-  const m = JSON.parse(log.slice(log.lastIndexOf("{"), log.lastIndexOf("}") + 1));
+  const m = known
+    ? { input_i: known.lufs, input_tp: known.true_peak_dbtp }
+    : JSON.parse(
+      log.slice(log.lastIndexOf("{"), log.lastIndexOf("}") + 1),
+    );
+  const gainDb = known ? lufs - known.lufs : 0;
+  // Render-time normalization already limited true peaks. Only protect a
+  // genuinely over-ceiling input; never turn the limiter's auto-level on.
+  const filter = known
+    ? `volume=${gainDb}dB` +
+      (known.true_peak_dbtp + gainDb > CEILING_DBTP
+        ? `,alimiter=limit=${10 ** (-1.5 / 20)}:level=false`
+        : "")
+    : `loudnorm=${spec}:measured_I=${m.input_i}:measured_TP=${m.input_tp}` +
+      `:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}` +
+      `:offset=${m.target_offset}:linear=true`;
   await ffmpeg([
     "-y",
     "-i",
     wav,
     "-af",
-    `loudnorm=${spec}:measured_I=${m.input_i}:measured_TP=${m.input_tp}` +
-    `:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}` +
-    `:offset=${m.target_offset}:linear=true`,
+    filter,
     "-ac",
     "1",
     "-ar",
@@ -126,7 +145,9 @@ for (const [id, line] of Object.entries(cues.lines)) {
     const rel = take.file.replace(/\.wav$/, ".ogg");
     const ogg = `${TARGET}/${rel}`;
     const lufs = targetFor(id);
-    const key = `${RECIPE}:${lufs}:${take.hash ?? "nohash"}`;
+    const key = `${RECIPE}:${lufs}:${take.hash ?? "nohash"}:${
+      JSON.stringify(take.loudness ?? null)
+    }`;
     const old = stamps[rel];
     const haveOgg = await exists(ogg);
     take.file = rel;
@@ -143,7 +164,7 @@ for (const [id, line] of Object.entries(cues.lines)) {
     }
     jobs.push(async () => {
       await Deno.mkdir(ogg.slice(0, ogg.lastIndexOf("/")), { recursive: true });
-      const measured = await encode(wav, ogg, lufs);
+      const measured = await encode(wav, ogg, lufs, take.loudness);
       nextStamps[rel] = { key, ...measured };
       take.inputLufs = measured.inputLufs;
       encoded++;

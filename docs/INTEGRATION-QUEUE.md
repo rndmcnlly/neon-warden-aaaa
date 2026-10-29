@@ -494,7 +494,7 @@ Requests:
 
 ## Wave 4
 
-### B: music, variants and mix (in progress)
+### B: music, variants and mix (complete, October 28, 22:49)
 
 - Original tutorial AI frozen from d62dd09: 243 Opus takes under
   `public/vo/variants/tutorial_ai/original/`; default is ORIGINAL. Base
@@ -507,9 +507,35 @@ Requests:
   could delete the variant index. T: preserve this guard.
 - CI currently blocked by formatting in `docs/WAVE3.md`, `docs/WAVE4.md`,
   `public/sfx/manifest.json`. No unrelated formatting changes made by B.
-- Blind Argon initial voice comparison prefers captain for calmer delivery;
-  original stays default per Adam. Initial music comparison prefers cand2,
-  agreeing with the provisional objective pick. Final reels pending.
+- Final full QA: `qa/reports/20261028-224118/index.html` (318 pass, 6 warn,
+  8 fail, 1 pending). Loudness/peak and VO-presence checks pass; full suite is not
+  green: tutorial wink, pacifist outcome, scan/graze selectors and word-pulse
+  alignment fail; spatial correlation awaits `p.enemies()`; T owes one ASR
+  reseed and 65 new script-line renders. No unrelated gameplay/UI changes
+  made by B.
+- Final mix, integrated LUFS / true peak: tutorial -17.1/-4.9; fight
+  -17.2/-4.3; boss -17.8/-4.9; flashback -18.1/-4.8; Warden descent
+  -18.1/-5.0; menu -16.2/-4.3. Old fight reports were about -8/-0.4.
+  Causes: unretired voice layers at fast scene-clock speed; Warden PA's
+  endpoint-normalized tanh curve secretly amplifying quiet speech by
+  11.6 dB; compressor automatic makeup. All three are now compensated.
+  WAVs were already correct. Normalized WAVs now bypass repeat loudnorm
+  using render-time metadata; stamps include that metadata.
+- Blind Argon verdicts (ZDR, both hearing canaries pass): captain for calmer
+  delivery; gameplay cand2 for less masking, agreeing with the objective
+  pick. Original voice REMAINS DEFAULT. Budget spent $0.065286 of $3,
+  including initial comparisons and final seeded reruns, all in SPEND.md.
+  Paired pages:
+  `qa/reports/ab-20261028-222521-tutorial/index.html` and
+  `qa/reports/ab-20261028-222642-gameplay-fight/index.html`.
+  These dated A/B artifacts precede the final Warden PA calibration; the
+  final full-suite report above is authoritative for current mix loudness.
+- Lint, strict checks, production build and 189 tests passed separately.
+  `deno task ci` was run, but stopped at unrelated formatting failures;
+  detailed logs: `qa/ci-wave4-b.log`, `qa/full-wave4-b-final.log` (local).
+  Later 22:50 rerun: lint still passes; global checks/tests now stop on
+  concurrent Pilot scope-cut references (`pilot_figure` in main and
+  `helmetFor` in render tests). This is newer than the full QA snapshot.
 
 ### W Writing: variant and commentary banks (October 28, 2026)
 

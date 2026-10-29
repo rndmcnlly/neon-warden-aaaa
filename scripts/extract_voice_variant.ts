@@ -2,7 +2,7 @@
  * Freezes one speaker's takes from a past commit as a runtime voice variant,
  * so a recast never destroys the voice it replaces:
  *
- *   deno run --allow-run=git --allow-write=public/vo/variants \
+ *   deno run --allow-run=git --allow-write=public/vo/variants --allow-read=public/vo/variants \
  *     scripts/extract_voice_variant.ts tutorial_ai original d62dd09
  *
  * Writes `public/vo/variants/<speaker>/<variant>/<lang>/<id>.ogg` for every

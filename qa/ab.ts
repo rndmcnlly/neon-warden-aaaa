@@ -155,8 +155,8 @@ async function judge(
     await Deno.writeTextFile(
       ledger,
       `| 2026-10-28 | B wave 4 A/B ${axis} | OpenRouter | ${MODEL} (ZDR) | 1 | ${
-        cost.toFixed(4)
-      } | ${total.toFixed(4)} |\n`,
+        cost.toFixed(6)
+      } | ${total.toFixed(6)} |\n`,
       { append: true },
     );
   }

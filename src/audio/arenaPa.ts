@@ -20,7 +20,8 @@ export const ARENA_PA = {
   highCutHz: 4200,
   /** 0 is clean; 1 is a blown cone. Kept mild so words stay legible. */
   drive: 0.35,
-  makeupGain: 0.9,
+  /** Clean-signal projection after drive compensation, calibrated in reels. */
+  makeupGain: 1.07,
   /** First reflection off the far wall. */
   slapMs: 85,
   slapGain: 0.28,
@@ -40,6 +41,12 @@ export function driveCurve(drive: number, n = 1024): Float32Array<ArrayBuffer> {
     curve[i] = Math.tanh(k * x) / norm;
   }
   return curve;
+}
+
+/** Cancels driveCurve's quiet-signal amplification, without undoing its tone. */
+export function driveCompensation(drive: number): number {
+  const k = 1 + drive * 8;
+  return Math.tanh(k) / k;
 }
 
 /** Decaying stereo noise: an impulse response for a small, hard room. */
@@ -74,7 +81,11 @@ export function createArenaPa(
   shaper.curve = driveCurve(p.drive);
   shaper.oversample = "2x";
   const makeup = ctx.createGain();
-  makeup.gain.value = p.makeupGain;
+  // driveCurve normalizes its endpoints, not its quiet-signal gain. Its
+  // derivative at zero is k/tanh(k), about 3.8 (+11.6 dB) at this drive:
+  // without compensation, an -18 LUFS take dominates Warden-heavy reels.
+  // Cancel that hidden boost while keeping the horn's saturation and room.
+  makeup.gain.value = p.makeupGain * driveCompensation(p.drive);
   input.connect(low).connect(shaper).connect(makeup).connect(out);
 
   const slap = ctx.createDelay(1);

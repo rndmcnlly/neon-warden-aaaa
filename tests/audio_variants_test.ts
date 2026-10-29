@@ -1,6 +1,7 @@
 import { assert, assertEquals } from "@std/assert";
 import { parseUrlFlags } from "../src/contracts/flags.ts";
 import { VariantRegistry } from "../src/audio/variants.ts";
+import { driveCompensation, driveCurve } from "../src/audio/arenaPa.ts";
 import { ceilingCurve, compressorMakeupDb } from "../src/audio/engine.ts";
 
 Deno.test("variant URL parsing and registry reject unknown choices", () => {
@@ -41,4 +42,11 @@ Deno.test("master ceiling is monotonic, symmetric and bounded", () => {
     if (i) assert(curve[i] >= curve[i - 1]);
   }
   assertEquals(compressorMakeupDb(-6, 20), 3.42);
+});
+
+Deno.test("Warden PA distortion cannot secretly amplify quiet speech", () => {
+  const curve = driveCurve(0.35, 2049);
+  const step = 2 / (curve.length - 1);
+  const slope = (curve[1025] - curve[1023]) / (2 * step);
+  assert(Math.abs(slope * driveCompensation(0.35) - 1) < 0.001);
 });

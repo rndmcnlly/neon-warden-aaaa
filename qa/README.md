@@ -78,6 +78,37 @@ pending (crashes still fail).
 
 ## Audio in reels (qa/av.ts)
 
+Wave 4 adds post-fader, post-trim bus taps: `voice`, `music`, `sfx`, `ui`.
+Every `av.json` includes their integrated LUFS and true peaks under `buses`,
+measured before the master fader/limiter. `QA_KEEP_AV=1 deno task qa:reel boss`
+retains all stems in `reels/boss/av/`; otherwise intermediate WAVs are removed.
+The original `vo` stem remains pre-fader for subtitle-presence checks: do not
+use it to infer the loudness of audible fades. Bus stems are authoritative.
+
+### Paired A/B reels
+
+```
+deno task qa:ab tutorial voice.tutorial_ai
+deno task qa:ab gameplay-fight music.gameplay
+```
+
+Each command captures 24 seconds of the named scene twice with seed 121,
+the same real-time fight autopilot and seeded cosmetic randomness. Browser
+rendering/audio scheduling is not lockstep, so event timestamps may drift
+slightly. Both arms retain music and effects. The paired report lives in
+`qa/reports/ab-<timestamp>-<reel>/index.html`, with blind A/B video labels and
+identities revealed only in a disclosure. The judge receives A/B, not voice
+names or Adam's preference. Its transcript canary is checked against the
+script and captured VO spans, and failures are explicitly untrusted.
+
+The Gemini Argon call enforces OpenRouter ZDR, caches by both recordings'
+content plus prompt/model, and logs spend to `research/SPEND.md`. This B
+wave's calls have their own $3 ceiling. Reusing identical captures costs
+nothing; recapturing changes the hash. Original tutorial AI stays the game
+default regardless of the judge's creative preference. `?dev=1` enables the
+runtime selector; URL examples: `?v.voice.tutorial_ai=a_captain` and
+`?v.music.gameplay=cand1`.
+
 An init script patches `AudioNode.prototype.connect`: whatever reaches the
 speakers is also recorded (the mix); buffers fetched from `vo/` also feed a
 pre-fader VO stem; every panner's output feeds a spatial stem. Chunks
