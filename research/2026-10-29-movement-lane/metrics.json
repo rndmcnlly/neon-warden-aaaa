@@ -1,0 +1,138 @@
+{
+ "before": {
+  "move": {
+   "cruise_db": -40.4,
+   "focus_cruise_db": -51.8,
+   "rest_db": -48.4,
+   "change_peak_db": -47.3,
+   "clip_median_db": -51.8
+  },
+  "lane-s1": {
+   "floor_v_median": 0.494,
+   "floor_v_p95": 0.543,
+   "floor_s_median": 0.772,
+   "floor_s_p95": 0.841,
+   "floor_c_median": 0.376,
+   "floor_c_p95": 0.396,
+   "combat_v_median": 0.647,
+   "combat_s_median": 0.564,
+   "combat_c_median": 0.373,
+   "frames": 12
+  },
+  "lane-s3": {
+   "floor_v_median": 0.494,
+   "floor_v_p95": 0.524,
+   "floor_s_median": 0.774,
+   "floor_s_p95": 0.859,
+   "floor_c_median": 0.378,
+   "floor_c_p95": 0.394,
+   "combat_v_median": 0.667,
+   "combat_s_median": 0.608,
+   "combat_c_median": 0.404,
+   "frames": 12
+  },
+  "vo": {
+   "lines": [
+    {
+     "line": "tut_hello_001.ogg",
+     "subtitle_s": 0.26,
+     "voice_audible_s": 1.0,
+     "lead_s": 0.75
+    },
+    {
+     "line": "tut_contract_001.ogg",
+     "subtitle_s": 9.54,
+     "voice_audible_s": 10.39,
+     "lead_s": 0.85
+    },
+    {
+     "line": "tut_move_000.ogg",
+     "subtitle_s": 19.3,
+     "voice_audible_s": 20.08,
+     "lead_s": 0.78
+    },
+    {
+     "line": "stat_writ_001.ogg",
+     "subtitle_s": 26.2,
+     "voice_audible_s": 26.91,
+     "lead_s": 0.71
+    },
+    {
+     "line": "tut_move_001.ogg",
+     "subtitle_s": 31.41,
+     "voice_audible_s": 32.14,
+     "lead_s": 0.73
+    }
+   ],
+   "median_lead_s": 0.75
+  }
+ },
+ "after": {
+  "move": {
+   "cruise_db": -41.4,
+   "focus_cruise_db": -48.4,
+   "rest_db": -47.2,
+   "change_peak_db": -37.9,
+   "clip_median_db": -43.9
+  },
+  "lane-s1": {
+   "floor_v_median": 0.278,
+   "floor_v_p95": 0.384,
+   "floor_s_median": 0.419,
+   "floor_s_p95": 0.575,
+   "floor_c_median": 0.114,
+   "floor_c_p95": 0.178,
+   "combat_v_median": 0.643,
+   "combat_s_median": 0.39,
+   "combat_c_median": 0.255,
+   "frames": 12
+  },
+  "lane-s3": {
+   "floor_v_median": 0.275,
+   "floor_v_p95": 0.357,
+   "floor_s_median": 0.423,
+   "floor_s_p95": 0.633,
+   "floor_c_median": 0.114,
+   "floor_c_p95": 0.174,
+   "combat_v_median": 0.647,
+   "combat_s_median": 0.431,
+   "combat_c_median": 0.282,
+   "frames": 12
+  },
+  "vo": {
+   "lines": [
+    {
+     "line": "tut_hello_001.ogg",
+     "subtitle_s": 0.28,
+     "voice_audible_s": 0.39,
+     "lead_s": 0.12
+    },
+    {
+     "line": "tut_contract_001.ogg",
+     "subtitle_s": 8.93,
+     "voice_audible_s": 9.05,
+     "lead_s": 0.12
+    },
+    {
+     "line": "tut_move_000.ogg",
+     "subtitle_s": 17.96,
+     "voice_audible_s": 18.08,
+     "lead_s": 0.12
+    },
+    {
+     "line": "tut_move_001.ogg",
+     "subtitle_s": 25.09,
+     "voice_audible_s": 25.21,
+     "lead_s": 0.12
+    },
+    {
+     "line": "tut_move_002.ogg",
+     "subtitle_s": 34.84,
+     "voice_audible_s": 34.96,
+     "lead_s": 0.12
+    }
+   ],
+   "median_lead_s": 0.12
+  }
+ }
+}
