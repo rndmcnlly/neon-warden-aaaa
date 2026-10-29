@@ -61,6 +61,16 @@ structure and the production checklist should be legible and teachable.
 - Pacifist run: built for real, not stubbed, and supported by a high-speed
   no-fire autopilot.
 - Tutorial: properly built, knowingly overlong, one small wink.
+- Wave 3 decisions (October 28, evening): disarming counts as pacifist, plus a
+  `neverFired` flag the Warden can react to; the sector-3 salvage cache is
+  #0121's derelict flight recorder; the helmet is corporate-issue early and
+  worn by the end (two variants); the original game is credited "Adam Smith,
+  and his coupled agents"; the full wave-3 brief (scan beam, hangar, spatial
+  audio, word-pulse subtitles, ownership) is `docs/WAVE3.md`; raw VO WAVs stay out of git (Opus copies built into
+  `public/vo/`, metadata committed). Core loop: tap, hold, rest-to-charge
+  "Writ" shot; grazing; part damage and disarming; a pay multiplier
+  (research/2026-10-28-gameplay-microsystems/). Audio: two layers, feel and
+  beat-quantized musical (research/2026-10-28-critique-audio/).
 - Students will read the source: TypeScript for everything except custom
   shaders. No Rust/Bevy swerve.
 - The Warden in three moves: (1) another character builds up its terror in
@@ -88,6 +98,8 @@ structure and the production checklist should be legible and teachable.
   traversal videos) and cites the report path. Reviewable videos are short
   and single-topic (menus, gameplay, cinematics, endings, accessibility),
   never one long capture.
+- Paid APIs: budgets and the spend ledger live in `research/SPEND.md` (US $20
+  fal, US $20 OpenRouter as of October 28, 2026). Log every paid call there.
 - Research notes go in `research/YYYY-MM-DD-topic/README.md` (framing question,
   findings as options with tradeoffs, status of what was tried, next step).
 - House style: no emdashes, no emoji; en dashes for ranges.
