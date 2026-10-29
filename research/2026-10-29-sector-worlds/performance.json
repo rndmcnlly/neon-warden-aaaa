@@ -1,0 +1,218 @@
+{
+  "hardware": "Development MacBook Pro M3 Max, headless Chromium with recording; not Chromebook measurements",
+  "budget": {
+    "blocks": 230,
+    "drawCalls": 7,
+    "movingPropsLow": 1,
+    "movingPropsHigh": 3
+  },
+  "blocks": [
+    {
+      "sector": 1,
+      "blocks": 97
+    },
+    {
+      "sector": 2,
+      "blocks": 130
+    },
+    {
+      "sector": 3,
+      "blocks": 140
+    },
+    {
+      "sector": 4,
+      "blocks": 108
+    },
+    {
+      "sector": 5,
+      "blocks": 132
+    }
+  ],
+  "clips": [
+    {
+      "arm": "baseline",
+      "sector": 1,
+      "errors": [],
+      "simTicksPerSecond": 51.59470710933877,
+      "worldUpdateMs": null,
+      "renderCpuMs": null,
+      "drawCalls": null,
+      "av": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "17.34 s audible of 17.63 s, 112 sounds started, 5 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-4.9 dBTP, -18.2 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -20.8 LUFS / -4.4 dBTP, sfx -34.6 LUFS / -17.2 dBTP, voice -16.5 LUFS / -2.4 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.2 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "fail",
+          "detail": "4 of 5 subtitle windows have audible VO stem",
+          "items": [
+            "15.12–17.63 s ?Another Writ into empty space. (0 s audible)"
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "baseline",
+      "sector": 4,
+      "errors": [],
+      "simTicksPerSecond": 52.0159346374853,
+      "worldUpdateMs": null,
+      "renderCpuMs": null,
+      "drawCalls": null,
+      "av": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "19.39 s audible of 19.39 s, 131 sounds started, 5 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.1 dBTP, -18.6 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -70 LUFS / NaN dBTP, sfx -33.3 LUFS / -15.9 dBTP, voice -16.4 LUFS / -1.1 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.6 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "5 of 5 subtitle windows have audible VO stem",
+          "items": []
+        }
+      ]
+    },
+    {
+      "arm": "current",
+      "sector": 1,
+      "errors": [],
+      "simTicksPerSecond": 51.668678818296456,
+      "worldUpdateMs": {
+        "mean": 0.007500000298023224,
+        "min": 0,
+        "max": 0.10000002384185791
+      },
+      "renderCpuMs": {
+        "mean": 0.7919783701323071,
+        "min": 0.6273368922877163,
+        "max": 0.972408011982873
+      },
+      "drawCalls": {
+        "mean": 174.05,
+        "min": 133,
+        "max": 251
+      },
+      "av": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "17.91 s audible of 17.91 s, 116 sounds started, 6 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.2 dBTP, -17.8 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -20.3 LUFS / -4.4 dBTP, sfx -34.4 LUFS / -16.7 dBTP, voice -16.2 LUFS / -2.4 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-17.8 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "fail",
+          "detail": "4 of 5 subtitle windows have audible VO stem",
+          "items": [
+            "14.91–17.91 s ?Another Writ into empty space. (0 s audible)"
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "current",
+      "sector": 4,
+      "errors": [],
+      "simTicksPerSecond": 51.88352402351424,
+      "worldUpdateMs": {
+        "mean": 0.010000000149011612,
+        "min": 0,
+        "max": 0.10000002384185791
+      },
+      "renderCpuMs": {
+        "mean": 0.7041222084911952,
+        "min": 0.5827855774433282,
+        "max": 0.9561674560944496
+      },
+      "drawCalls": {
+        "mean": 131.3,
+        "min": 80,
+        "max": 166
+      },
+      "av": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "19.4 s audible of 19.4 s, 129 sounds started, 4 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.2 dBTP, -18.7 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -70 LUFS / NaN dBTP, sfx -33.4 LUFS / -15 dBTP, voice -16.5 LUFS / -2.1 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.7 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "fail",
+          "detail": "4 of 5 subtitle windows have audible VO stem",
+          "items": [
+            "17.83–19.4 s ?Close is good. Closer is a cla (0 s audible)"
+          ]
+        }
+      ]
+    }
+  ],
+  "stillsVerified": true,
+  "stillsCount": 20,
+  "lowPortraitCpuMs": {
+    "mean": 0.7119207588117803,
+    "min": 0.5145672933580245,
+    "max": 0.9871611182612764
+  }
+}

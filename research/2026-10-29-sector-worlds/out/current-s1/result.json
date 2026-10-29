@@ -1,0 +1,2559 @@
+{
+  "arm": "current",
+  "sector": 1,
+  "viewport": [
+    1366,
+    768
+  ],
+  "samples": [
+    {
+      "t": 1687.199999988079,
+      "sim": {
+        "tick": 77,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 76,
+        "render": {
+          "renderMs": 0.972408011982873,
+          "frameMs": 19.253748789006465,
+          "drawCalls": 133,
+          "triangles": 21119,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 1990.9000000059605,
+      "sim": {
+        "tick": 93,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 92,
+        "render": {
+          "renderMs": 0.9052796458315711,
+          "frameMs": 19.256242570226263,
+          "drawCalls": 135,
+          "triangles": 21279,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 2293.699999988079,
+      "sim": {
+        "tick": 109,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 108,
+        "render": {
+          "renderMs": 0.8308075043000318,
+          "frameMs": 19.306203548939823,
+          "drawCalls": 135,
+          "triangles": 21279,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 2596.5999999940395,
+      "sim": {
+        "tick": 124,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 123,
+        "render": {
+          "renderMs": 0.8111407785962594,
+          "frameMs": 19.40607923398808,
+          "drawCalls": 140,
+          "triangles": 21699,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 2899.199999988079,
+      "sim": {
+        "tick": 140,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 139,
+        "render": {
+          "renderMs": 0.7332255679976675,
+          "frameMs": 19.234858515791128,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 3223.5,
+      "sim": {
+        "tick": 158,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 157,
+        "render": {
+          "renderMs": 0.6627557327495105,
+          "frameMs": 19.021346155228475,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 3526.0999999940395,
+      "sim": {
+        "tick": 173,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 172,
+        "render": {
+          "renderMs": 0.6342178733475115,
+          "frameMs": 18.998827667034796,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 3829,
+      "sim": {
+        "tick": 189,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 188,
+        "render": {
+          "renderMs": 0.6349698490692774,
+          "frameMs": 18.998062474839273,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 4131.299999982119,
+      "sim": {
+        "tick": 205,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 204,
+        "render": {
+          "renderMs": 0.6273368922877163,
+          "frameMs": 19.160717030054634,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 4433.799999982119,
+      "sim": {
+        "tick": 221,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 220,
+        "render": {
+          "renderMs": 0.7595934422870575,
+          "frameMs": 19.303884864344383,
+          "drawCalls": 139,
+          "triangles": 21451,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 4735.5999999940395,
+      "sim": {
+        "tick": 236,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 235,
+        "render": {
+          "renderMs": 0.7518041543534122,
+          "frameMs": 19.26190154882492,
+          "drawCalls": 139,
+          "triangles": 21451,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 5037.799999982119,
+      "sim": {
+        "tick": 252,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 251,
+        "render": {
+          "renderMs": 0.7625652214144074,
+          "frameMs": 19.228259419188117,
+          "drawCalls": 140,
+          "triangles": 21453,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 5340.5999999940395,
+      "sim": {
+        "tick": 268,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 267,
+        "render": {
+          "renderMs": 0.7824816876291856,
+          "frameMs": 19.334440867798406,
+          "drawCalls": 140,
+          "triangles": 21453,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 5642.4000000059605,
+      "sim": {
+        "tick": 283,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 282,
+        "render": {
+          "renderMs": 0.7898760471706567,
+          "frameMs": 19.363058764863762,
+          "drawCalls": 140,
+          "triangles": 21453,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 5945,
+      "sim": {
+        "tick": 299,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 298,
+        "render": {
+          "renderMs": 0.7946085337635915,
+          "frameMs": 19.34547605661224,
+          "drawCalls": 162,
+          "triangles": 22317,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector1"
+    },
+    {
+      "t": 6247.699999988079,
+      "sim": {
+        "tick": 315,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 314,
+        "render": {
+          "renderMs": 0.8133823684062107,
+          "frameMs": 19.44052225487133,
+          "drawCalls": 162,
+          "triangles": 22317,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-lock"
+    },
+    {
+      "t": 6549.299999982119,
+      "sim": {
+        "tick": 330,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 329,
+        "render": {
+          "renderMs": 0.8002916691108609,
+          "frameMs": 19.517958758791174,
+          "drawCalls": 162,
+          "triangles": 22323,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 6850.799999982119,
+      "sim": {
+        "tick": 345,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 344,
+        "render": {
+          "renderMs": 0.7344790717679334,
+          "frameMs": 19.51128023132346,
+          "drawCalls": 162,
+          "triangles": 22323,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7153.799999982119,
+      "sim": {
+        "tick": 361,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 360,
+        "render": {
+          "renderMs": 0.7947459348132384,
+          "frameMs": 19.444659236194504,
+          "drawCalls": 179,
+          "triangles": 26341,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7457.799999982119,
+      "sim": {
+        "tick": 377,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 376,
+        "render": {
+          "renderMs": 0.7664041741767367,
+          "frameMs": 19.486966337395312,
+          "drawCalls": 187,
+          "triangles": 33253,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7761,
+      "sim": {
+        "tick": 392,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 391,
+        "render": {
+          "renderMs": 0.8343815714092115,
+          "frameMs": 19.579860995004577,
+          "drawCalls": 237,
+          "triangles": 41633,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8064.4000000059605,
+      "sim": {
+        "tick": 408,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 407,
+        "render": {
+          "renderMs": 0.841881356389962,
+          "frameMs": 19.562905531841363,
+          "drawCalls": 211,
+          "triangles": 40257,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8366.40000000596,
+      "sim": {
+        "tick": 423,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 422,
+        "render": {
+          "renderMs": 0.7731318298544481,
+          "frameMs": 19.44772235417217,
+          "drawCalls": 232,
+          "triangles": 41121,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8667.40000000596,
+      "sim": {
+        "tick": 439,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 438,
+        "render": {
+          "renderMs": 0.8258762826159404,
+          "frameMs": 19.350052163135,
+          "drawCalls": 232,
+          "triangles": 41119,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8970,
+      "sim": {
+        "tick": 454,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 453,
+        "render": {
+          "renderMs": 0.833812528662426,
+          "frameMs": 19.452872119045207,
+          "drawCalls": 232,
+          "triangles": 41119,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9297.09999999404,
+      "sim": {
+        "tick": 471,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 470,
+        "render": {
+          "renderMs": 0.7488319921175426,
+          "frameMs": 19.393535177198093,
+          "drawCalls": 210,
+          "triangles": 40251,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9599.40000000596,
+      "sim": {
+        "tick": 487,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 486,
+        "render": {
+          "renderMs": 0.7882833523568729,
+          "frameMs": 19.430925167437916,
+          "drawCalls": 232,
+          "triangles": 41113,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9900.5,
+      "sim": {
+        "tick": 502,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 501,
+        "render": {
+          "renderMs": 0.7804907583565871,
+          "frameMs": 19.403609462947298,
+          "drawCalls": 210,
+          "triangles": 40249,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10204.299999982119,
+      "sim": {
+        "tick": 518,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 517,
+        "render": {
+          "renderMs": 0.7575455040411398,
+          "frameMs": 19.203157634978986,
+          "drawCalls": 211,
+          "triangles": 40251,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10507,
+      "sim": {
+        "tick": 534,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 533,
+        "render": {
+          "renderMs": 0.8319239583399138,
+          "frameMs": 19.343446204501063,
+          "drawCalls": 233,
+          "triangles": 41119,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10808.5,
+      "sim": {
+        "tick": 549,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 548,
+        "render": {
+          "renderMs": 0.8925927863998797,
+          "frameMs": 19.547295849007128,
+          "drawCalls": 176,
+          "triangles": 26077,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 11111.199999988079,
+      "sim": {
+        "tick": 565,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 564,
+        "render": {
+          "renderMs": 0.8991956552250226,
+          "frameMs": 19.5185725310073,
+          "drawCalls": 154,
+          "triangles": 25213,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 11413,
+      "sim": {
+        "tick": 580,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 579,
+        "render": {
+          "renderMs": 0.9215142845694638,
+          "frameMs": 19.495218324449993,
+          "drawCalls": 175,
+          "triangles": 26075,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11715.59999999404,
+      "sim": {
+        "tick": 595,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 594,
+        "render": {
+          "renderMs": 0.8568257068397012,
+          "frameMs": 19.765141115111337,
+          "drawCalls": 156,
+          "triangles": 25469,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12018.09999999404,
+      "sim": {
+        "tick": 611,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 610,
+        "render": {
+          "renderMs": 0.784759840205669,
+          "frameMs": 19.626712833860935,
+          "drawCalls": 154,
+          "triangles": 25213,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12321.299999982119,
+      "sim": {
+        "tick": 626,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 625,
+        "render": {
+          "renderMs": 0.8011468669098444,
+          "frameMs": 19.529992144404446,
+          "drawCalls": 176,
+          "triangles": 26077,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12622.799999982119,
+      "sim": {
+        "tick": 642,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 641,
+        "render": {
+          "renderMs": 0.7682514074841229,
+          "frameMs": 19.56804044652657,
+          "drawCalls": 156,
+          "triangles": 25473,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12925.799999982119,
+      "sim": {
+        "tick": 658,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 657,
+        "render": {
+          "renderMs": 0.7187457211654138,
+          "frameMs": 19.195460617283434,
+          "drawCalls": 154,
+          "triangles": 25217,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 13229.699999988079,
+      "sim": {
+        "tick": 674,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 673,
+        "render": {
+          "renderMs": 0.8023878309892789,
+          "frameMs": 19.2327875732595,
+          "drawCalls": 225,
+          "triangles": 38131,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 13531.90000000596,
+      "sim": {
+        "tick": 689,
+        "sector": 1,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 688,
+        "render": {
+          "renderMs": 0.855181410304126,
+          "frameMs": 19.50961854249276,
+          "drawCalls": 251,
+          "triangles": 45395,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 116,
+      "voStarted": [
+        "0.24s en/var_secstart_002.ogg",
+        "1.54s en/sec1_intro_001.ogg",
+        "5.99s en/lock_ai_001.ogg",
+        "6.48s en/graze_ai_001.ogg",
+        "11.62s en/rad_drone_locked_001.ogg",
+        "12.71s en/amb_nofire_003.ogg"
+      ],
+      "lufs": -17.8,
+      "truePeak": -5.2,
+      "buses": {
+        "music": {
+          "lufs": -20.3,
+          "truePeak": -4.4
+        },
+        "sfx": {
+          "lufs": -34.4,
+          "truePeak": -16.7
+        },
+        "voice": {
+          "lufs": -16.2,
+          "truePeak": -2.4
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 17.91,
+      "voAudible": [
+        {
+          "start": 0.85,
+          "end": 6.48
+        },
+        {
+          "start": 7.03,
+          "end": 7.77
+        },
+        {
+          "start": 8.19,
+          "end": 9.26
+        },
+        {
+          "start": 9.85,
+          "end": 11.02
+        },
+        {
+          "start": 11.43,
+          "end": 14.85
+        }
+      ],
+      "subtitles": [
+        {
+          "start": 0.242,
+          "line": "var_secstart_002",
+          "layer": "ambient",
+          "end": 1.5375,
+          "audibleS": 0.84
+        },
+        {
+          "start": 1.5375,
+          "line": "sec1_intro_001",
+          "layer": "scripted",
+          "end": 5.996400146484375,
+          "audibleS": 4.61
+        },
+        {
+          "start": 5.996400146484375,
+          "line": "lock_ai_001",
+          "layer": "scripted",
+          "end": 6.486400146484375
+        },
+        {
+          "start": 6.486400146484375,
+          "line": "graze_ai_001",
+          "layer": "scripted",
+          "end": 11.2115,
+          "audibleS": 2.98
+        },
+        {
+          "start": 12.71410009765625,
+          "line": "amb_nofire_003",
+          "layer": "ambient",
+          "end": 14.912900146484375,
+          "audibleS": 2.13
+        },
+        {
+          "start": 14.912900146484375,
+          "line": "?Another Writ into empty space.",
+          "layer": "ambient",
+          "end": 17.907,
+          "audibleS": 0
+        }
+      ]
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "17.91 s audible of 17.91 s, 116 sounds started, 6 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.2 dBTP, -17.8 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -20.3 LUFS / -4.4 dBTP, sfx -34.4 LUFS / -16.7 dBTP, voice -16.2 LUFS / -2.4 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-17.8 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "fail",
+        "detail": "4 of 5 subtitle windows have audible VO stem",
+        "items": [
+          "14.91–17.91 s ?Another Writ into empty space. (0 s audible)"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793259559436.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259559544.2,
+      "dur": 4.559977324263039,
+      "loop": false,
+      "url": "/vo/en/var_secstart_002.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259559725.8,
+      "dur": 59.999977324263035,
+      "loop": true,
+      "url": "/music/gameplay/cand1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259560265.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259560648.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259560648.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259560648.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259560648.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259560842.1,
+      "dur": 4.799977324263039,
+      "loop": false,
+      "url": "/vo/en/sec1_intro_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259561032.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259561790.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259561810.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259563698.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259563852.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259564065.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259564275.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259564541.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259564760.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259564971.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565299.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565299.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565299.7,
+      "dur": 6.32,
+      "loop": false,
+      "url": "/vo/en/lock_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565300.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565300.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565533.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565631.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565751.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565790.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565790.7,
+      "dur": 4.719977324263039,
+      "loop": false,
+      "url": "/vo/en/graze_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565848.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565867.6,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565945.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259565964,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566178.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566178.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566178.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566430.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566548.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566567.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566567.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566568,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566628.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566628.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566686.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566783.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566822.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259566822.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567233.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567272.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567273.1,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567523.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567580.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567580.8,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567776.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259567968.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259568631.2,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259568631.3,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259568650.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259568765.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259569518.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259569712.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259569907.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259569926.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570124.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570164.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570203.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570280.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570397.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570496.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570710.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570922.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570922.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570923,
+      "dur": 2.7199773242630387,
+      "loop": false,
+      "url": "/vo/en/rad_drone_locked_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259570931.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571164,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571379.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571593.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571805.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571805.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571806.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571865.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259571865.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572019,
+      "dur": 4.3999773242630384,
+      "loop": false,
+      "url": "/vo/en/amb_nofire_003.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572055.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572151,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572265.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572457.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572458,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572458.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572654.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572654.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572673.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259572929.1,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259573413.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259573509.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259573566.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259573604.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259573797.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259573969.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259574410.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259574506.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259574641.9001,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259574891.2,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259575340.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259575620.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259575739.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259575856.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259575936.6,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259576074.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259576293.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259576333.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259576395.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259576630.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259576979.1,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259577056.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259577076.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    }
+  ]
+}

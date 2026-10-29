@@ -1,0 +1,602 @@
+[
+  {
+    "lang": "en",
+    "narrow": false,
+    "sector": 1,
+    "name": "Outer Drift",
+    "blocks": 97,
+    "maxDrawCalls": 7,
+    "updateMs": 3.7000000178813934,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "public-beacon",
+        "sector": 1,
+        "text": "PUBLIC BEACON\nPassage is not a purchase."
+      },
+      {
+        "id": "saltline-manifest",
+        "sector": 1,
+        "text": "SALTLINE HAULERS\nCargo: water. Fare: none."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": false,
+    "sector": 2,
+    "name": "Shatter Belt",
+    "blocks": 130,
+    "maxDrawCalls": 7,
+    "updateMs": 3.9000000059604645,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "commons-splice",
+        "sector": 2,
+        "text": "COMMONS REPAIR 08\nDifferent bolts. Same bridge."
+      },
+      {
+        "id": "erased-number",
+        "sector": 2,
+        "text": "ASSET NUMBER REMOVED\nThe welds still hold."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": false,
+    "sector": 3,
+    "name": "Gun Lanes",
+    "blocks": 140,
+    "maxDrawCalls": 7,
+    "updateMs": 4.300000011920929,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "customs-survey",
+        "sector": 3,
+        "text": "CUSTOMS SURVEY\nInspection capacity: 0. Billing: ready."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": false,
+    "sector": 4,
+    "name": "Lancer Gate",
+    "blocks": 108,
+    "maxDrawCalls": 7,
+    "updateMs": 3.9000000059604645,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "switchyard",
+        "sector": 4,
+        "text": "COMMONS SWITCHYARD\nLeave room for the next convoy."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": false,
+    "sector": 5,
+    "name": "Last Approach",
+    "blocks": 132,
+    "maxDrawCalls": 7,
+    "updateMs": 3.699999988079071,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "guardian-heart",
+        "sector": 5,
+        "text": "THE INNER GARDEN\nA place to grow scouts. A way home."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": true,
+    "sector": 1,
+    "name": "Outer Drift",
+    "blocks": 97,
+    "maxDrawCalls": 7,
+    "updateMs": 4.300000011920929,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "public-beacon",
+        "sector": 1,
+        "text": "PUBLIC BEACON\nPassage is not a purchase."
+      },
+      {
+        "id": "saltline-manifest",
+        "sector": 1,
+        "text": "SALTLINE HAULERS\nCargo: water. Fare: none."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": true,
+    "sector": 2,
+    "name": "Shatter Belt",
+    "blocks": 130,
+    "maxDrawCalls": 7,
+    "updateMs": 4,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "commons-splice",
+        "sector": 2,
+        "text": "COMMONS REPAIR 08\nDifferent bolts. Same bridge."
+      },
+      {
+        "id": "erased-number",
+        "sector": 2,
+        "text": "ASSET NUMBER REMOVED\nThe welds still hold."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": true,
+    "sector": 3,
+    "name": "Gun Lanes",
+    "blocks": 140,
+    "maxDrawCalls": 7,
+    "updateMs": 3.5999999940395355,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "customs-survey",
+        "sector": 3,
+        "text": "CUSTOMS SURVEY\nInspection capacity: 0. Billing: ready."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": true,
+    "sector": 4,
+    "name": "Lancer Gate",
+    "blocks": 108,
+    "maxDrawCalls": 7,
+    "updateMs": 3.699999988079071,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "switchyard",
+        "sector": 4,
+        "text": "COMMONS SWITCHYARD\nLeave room for the next convoy."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "narrow": true,
+    "sector": 5,
+    "name": "Last Approach",
+    "blocks": 132,
+    "maxDrawCalls": 7,
+    "updateMs": 3.699999988079071,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "guardian-heart",
+        "sector": 5,
+        "text": "THE INNER GARDEN\nA place to grow scouts. A way home."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 1,
+    "name": "Outer Drift",
+    "blocks": 97,
+    "maxDrawCalls": 7,
+    "updateMs": 3.5999999940395355,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "public-beacon",
+        "sector": 1,
+        "text": "BALIZA PÚBLICA\nPasar no es comprar."
+      },
+      {
+        "id": "saltline-manifest",
+        "sector": 1,
+        "text": "TRANSPORTISTAS DE LA LÍNEA DE SAL\nCarga: agua. Pasaje: gratis."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 2,
+    "name": "Shatter Belt",
+    "blocks": 130,
+    "maxDrawCalls": 7,
+    "updateMs": 4,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "commons-splice",
+        "sector": 2,
+        "text": "REPARACIÓN COMUNAL 08\nDistintos pernos. El mismo puente."
+      },
+      {
+        "id": "erased-number",
+        "sector": 2,
+        "text": "NÚMERO DE ACTIVO BORRADO\nLas soldaduras siguen firmes."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 3,
+    "name": "Gun Lanes",
+    "blocks": 140,
+    "maxDrawCalls": 7,
+    "updateMs": 3.9000000059604645,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "customs-survey",
+        "sector": 3,
+        "text": "ESTUDIO ADUANERO\nInspecciones: 0. Cobro: listo."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 4,
+    "name": "Lancer Gate",
+    "blocks": 108,
+    "maxDrawCalls": 7,
+    "updateMs": 4,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "switchyard",
+        "sector": 4,
+        "text": "PATIO COMUNAL\nDeja espacio para el próximo convoy."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 5,
+    "name": "Last Approach",
+    "blocks": 132,
+    "maxDrawCalls": 7,
+    "updateMs": 4.100000023841858,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "guardian-heart",
+        "sector": 5,
+        "text": "EL JARDÍN INTERIOR\nDonde crecen exploradores. Un camino a casa."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 1,
+    "name": "Outer Drift",
+    "blocks": 97,
+    "maxDrawCalls": 7,
+    "updateMs": 3.5999999940395355,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "public-beacon",
+        "sector": 1,
+        "text": "BALIZA PÚBLICA\nPasar no es comprar."
+      },
+      {
+        "id": "saltline-manifest",
+        "sector": 1,
+        "text": "TRANSPORTISTAS DE LA LÍNEA DE SAL\nCarga: agua. Pasaje: gratis."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 2,
+    "name": "Shatter Belt",
+    "blocks": 130,
+    "maxDrawCalls": 7,
+    "updateMs": 4,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "commons-splice",
+        "sector": 2,
+        "text": "REPARACIÓN COMUNAL 08\nDistintos pernos. El mismo puente."
+      },
+      {
+        "id": "erased-number",
+        "sector": 2,
+        "text": "NÚMERO DE ACTIVO BORRADO\nLas soldaduras siguen firmes."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 3,
+    "name": "Gun Lanes",
+    "blocks": 140,
+    "maxDrawCalls": 7,
+    "updateMs": 4.200000017881393,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "customs-survey",
+        "sector": 3,
+        "text": "ESTUDIO ADUANERO\nInspecciones: 0. Cobro: listo."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 4,
+    "name": "Lancer Gate",
+    "blocks": 108,
+    "maxDrawCalls": 7,
+    "updateMs": 3.7999999821186066,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "switchyard",
+        "sector": 4,
+        "text": "PATIO COMUNAL\nDeja espacio para el próximo convoy."
+      }
+    ]
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 5,
+    "name": "Last Approach",
+    "blocks": 132,
+    "maxDrawCalls": 7,
+    "updateMs": 3.5999999940395355,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "guardian-heart",
+        "sector": 5,
+        "text": "EL JARDÍN INTERIOR\nDonde crecen exploradores. Un camino a casa."
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 1,
+    "name": "Outer Drift",
+    "blocks": 97,
+    "maxDrawCalls": 7,
+    "updateMs": 11.900000005960464,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "public-beacon",
+        "sector": 1,
+        "text": "公共航标\n通行不是交易。"
+      },
+      {
+        "id": "saltline-manifest",
+        "sector": 1,
+        "text": "盐线货运行会\n货物：水。通行费：无。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 2,
+    "name": "Shatter Belt",
+    "blocks": 130,
+    "maxDrawCalls": 7,
+    "updateMs": 11.300000011920929,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "commons-splice",
+        "sector": 2,
+        "text": "公地维修08\n螺栓不同，桥还是那座桥。"
+      },
+      {
+        "id": "erased-number",
+        "sector": 2,
+        "text": "资产编号已划去\n焊缝依然牢固。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 3,
+    "name": "Gun Lanes",
+    "blocks": 140,
+    "maxDrawCalls": 7,
+    "updateMs": 12.400000005960464,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "customs-survey",
+        "sector": 3,
+        "text": "海关勘测\n检验能力：0。计费：就绪。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 4,
+    "name": "Lancer Gate",
+    "blocks": 108,
+    "maxDrawCalls": 7,
+    "updateMs": 11.099999994039536,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "switchyard",
+        "sector": 4,
+        "text": "公地编组场\n给下一支船队留出位置。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 5,
+    "name": "Last Approach",
+    "blocks": 132,
+    "maxDrawCalls": 7,
+    "updateMs": 11.400000005960464,
+    "signVisible": true,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "guardian-heart",
+        "sector": 5,
+        "text": "内环苗圃\n侦察机在此生长。归途由此延续。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 1,
+    "name": "Outer Drift",
+    "blocks": 97,
+    "maxDrawCalls": 7,
+    "updateMs": 10.599999994039536,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "public-beacon",
+        "sector": 1,
+        "text": "公共航标\n通行不是交易。"
+      },
+      {
+        "id": "saltline-manifest",
+        "sector": 1,
+        "text": "盐线货运行会\n货物：水。通行费：无。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 2,
+    "name": "Shatter Belt",
+    "blocks": 130,
+    "maxDrawCalls": 7,
+    "updateMs": 11.199999988079071,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "commons-splice",
+        "sector": 2,
+        "text": "公地维修08\n螺栓不同，桥还是那座桥。"
+      },
+      {
+        "id": "erased-number",
+        "sector": 2,
+        "text": "资产编号已划去\n焊缝依然牢固。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 3,
+    "name": "Gun Lanes",
+    "blocks": 140,
+    "maxDrawCalls": 7,
+    "updateMs": 11.900000005960464,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "customs-survey",
+        "sector": 3,
+        "text": "海关勘测\n检验能力：0。计费：就绪。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 4,
+    "name": "Lancer Gate",
+    "blocks": 108,
+    "maxDrawCalls": 7,
+    "updateMs": 10.599999994039536,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "switchyard",
+        "sector": 4,
+        "text": "公地编组场\n给下一支船队留出位置。"
+      }
+    ]
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 5,
+    "name": "Last Approach",
+    "blocks": 132,
+    "maxDrawCalls": 7,
+    "updateMs": 10.5,
+    "signVisible": false,
+    "elapsedTicks": 600,
+    "archive": [
+      {
+        "id": "guardian-heart",
+        "sector": 5,
+        "text": "内环苗圃\n侦察机在此生长。归途由此延续。"
+      }
+    ]
+  }
+]

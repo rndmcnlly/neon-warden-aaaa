@@ -1,0 +1,2650 @@
+{
+  "arm": "current",
+  "sector": 4,
+  "viewport": [
+    1366,
+    768
+  ],
+  "samples": [
+    {
+      "t": 1694.2999999821186,
+      "sim": {
+        "tick": 77,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 76,
+        "render": {
+          "renderMs": 0.9561674560944496,
+          "frameMs": 19.49735763778752,
+          "drawCalls": 103,
+          "triangles": 7767,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 1997.699999988079,
+      "sim": {
+        "tick": 93,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 92,
+        "render": {
+          "renderMs": 0.9033075266019874,
+          "frameMs": 19.3707548488846,
+          "drawCalls": 137,
+          "triangles": 9887,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 2300.399999976158,
+      "sim": {
+        "tick": 108,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 107,
+        "render": {
+          "renderMs": 0.8426521085307572,
+          "frameMs": 19.4599455628013,
+          "drawCalls": 133,
+          "triangles": 9375,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 2602.699999988079,
+      "sim": {
+        "tick": 124,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 123,
+        "render": {
+          "renderMs": 0.8046617381615635,
+          "frameMs": 19.563581764446734,
+          "drawCalls": 140,
+          "triangles": 9827,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 2904.7999999821186,
+      "sim": {
+        "tick": 139,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 138,
+        "render": {
+          "renderMs": 0.7366730814712332,
+          "frameMs": 19.460341357952792,
+          "drawCalls": 138,
+          "triangles": 9571,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 3235.899999976158,
+      "sim": {
+        "tick": 157,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 156,
+        "render": {
+          "renderMs": 0.6818830956619646,
+          "frameMs": 19.22709200080548,
+          "drawCalls": 138,
+          "triangles": 9583,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 3538.899999976158,
+      "sim": {
+        "tick": 173,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 172,
+        "render": {
+          "renderMs": 0.6592543303052164,
+          "frameMs": 19.17898126816114,
+          "drawCalls": 138,
+          "triangles": 9595,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 3841.2999999821186,
+      "sim": {
+        "tick": 188,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 187,
+        "render": {
+          "renderMs": 0.6408392006804725,
+          "frameMs": 19.304714989930805,
+          "drawCalls": 138,
+          "triangles": 9595,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 4144.0999999940395,
+      "sim": {
+        "tick": 204,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 203,
+        "render": {
+          "renderMs": 0.6341676780552684,
+          "frameMs": 19.24778629406959,
+          "drawCalls": 138,
+          "triangles": 9619,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 4447,
+      "sim": {
+        "tick": 220,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 219,
+        "render": {
+          "renderMs": 0.6368177703535431,
+          "frameMs": 19.37595650744711,
+          "drawCalls": 138,
+          "triangles": 9619,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 4749.299999982119,
+      "sim": {
+        "tick": 235,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 234,
+        "render": {
+          "renderMs": 0.6629430787870227,
+          "frameMs": 19.280456340665186,
+          "drawCalls": 138,
+          "triangles": 9631,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5052.199999988079,
+      "sim": {
+        "tick": 251,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 250,
+        "render": {
+          "renderMs": 0.666247755421979,
+          "frameMs": 19.345932873132515,
+          "drawCalls": 138,
+          "triangles": 9643,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5353.399999976158,
+      "sim": {
+        "tick": 266,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 265,
+        "render": {
+          "renderMs": 0.6419220559594976,
+          "frameMs": 19.335541906752297,
+          "drawCalls": 138,
+          "triangles": 9643,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5655.899999976158,
+      "sim": {
+        "tick": 282,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 281,
+        "render": {
+          "renderMs": 0.7065957655169619,
+          "frameMs": 19.379626485575187,
+          "drawCalls": 160,
+          "triangles": 10519,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5957.5999999940395,
+      "sim": {
+        "tick": 298,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 297,
+        "render": {
+          "renderMs": 0.7379866455740447,
+          "frameMs": 19.186244870174043,
+          "drawCalls": 132,
+          "triangles": 9071,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 6259.699999988079,
+      "sim": {
+        "tick": 314,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 313,
+        "render": {
+          "renderMs": 0.776053436271381,
+          "frameMs": 19.21130527074418,
+          "drawCalls": 132,
+          "triangles": 9071,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 6561.299999982119,
+      "sim": {
+        "tick": 329,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 328,
+        "render": {
+          "renderMs": 0.7255233568068967,
+          "frameMs": 19.20153759089467,
+          "drawCalls": 82,
+          "triangles": 6759,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 6863.5,
+      "sim": {
+        "tick": 345,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 344,
+        "render": {
+          "renderMs": 0.6924319749400434,
+          "frameMs": 19.08180779694641,
+          "drawCalls": 104,
+          "triangles": 7623,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7165.5999999940395,
+      "sim": {
+        "tick": 362,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 361,
+        "render": {
+          "renderMs": 0.5827855774433282,
+          "frameMs": 18.759385925132413,
+          "drawCalls": 82,
+          "triangles": 6743,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7467.0999999940395,
+      "sim": {
+        "tick": 377,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 376,
+        "render": {
+          "renderMs": 0.587941770659446,
+          "frameMs": 19.26293877140385,
+          "drawCalls": 130,
+          "triangles": 10319,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7768.0999999940395,
+      "sim": {
+        "tick": 393,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 392,
+        "render": {
+          "renderMs": 0.6105824012488347,
+          "frameMs": 19.25538669582709,
+          "drawCalls": 146,
+          "triangles": 11075,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8071.0999999940395,
+      "sim": {
+        "tick": 409,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 408,
+        "render": {
+          "renderMs": 0.5987412423450987,
+          "frameMs": 19.120845460688066,
+          "drawCalls": 142,
+          "triangles": 10551,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8374.09999999404,
+      "sim": {
+        "tick": 424,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 423,
+        "render": {
+          "renderMs": 0.5901749937523889,
+          "frameMs": 19.379498911555594,
+          "drawCalls": 142,
+          "triangles": 10555,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8675.59999999404,
+      "sim": {
+        "tick": 440,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 439,
+        "render": {
+          "renderMs": 0.6819348997475577,
+          "frameMs": 19.302450073833853,
+          "drawCalls": 142,
+          "triangles": 10539,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8978,
+      "sim": {
+        "tick": 455,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 454,
+        "render": {
+          "renderMs": 0.7826665080635612,
+          "frameMs": 19.55465729656043,
+          "drawCalls": 141,
+          "triangles": 10509,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9300.699999988079,
+      "sim": {
+        "tick": 471,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 470,
+        "render": {
+          "renderMs": 0.771701087599197,
+          "frameMs": 19.665789052282005,
+          "drawCalls": 142,
+          "triangles": 10495,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9602.799999982119,
+      "sim": {
+        "tick": 487,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 486,
+        "render": {
+          "renderMs": 0.7741156478059094,
+          "frameMs": 19.567565236248026,
+          "drawCalls": 141,
+          "triangles": 10493,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9903.899999976158,
+      "sim": {
+        "tick": 503,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 502,
+        "render": {
+          "renderMs": 0.7556551569807682,
+          "frameMs": 19.32089983897049,
+          "drawCalls": 142,
+          "triangles": 10495,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10206,
+      "sim": {
+        "tick": 518,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 517,
+        "render": {
+          "renderMs": 0.7754251232298577,
+          "frameMs": 19.277160986104683,
+          "drawCalls": 142,
+          "triangles": 10495,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10507.59999999404,
+      "sim": {
+        "tick": 534,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 533,
+        "render": {
+          "renderMs": 0.757911332078367,
+          "frameMs": 19.446934243688347,
+          "drawCalls": 141,
+          "triangles": 10493,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10809,
+      "sim": {
+        "tick": 549,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 548,
+        "render": {
+          "renderMs": 0.6708973088972825,
+          "frameMs": 19.345868336311472,
+          "drawCalls": 120,
+          "triangles": 9211,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11110.699999988079,
+      "sim": {
+        "tick": 565,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 564,
+        "render": {
+          "renderMs": 0.6628989796731266,
+          "frameMs": 19.606774852184707,
+          "drawCalls": 102,
+          "triangles": 7515,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11412.699999988079,
+      "sim": {
+        "tick": 580,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 579,
+        "render": {
+          "renderMs": 0.6641180655492949,
+          "frameMs": 19.404041603451784,
+          "drawCalls": 102,
+          "triangles": 7515,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11715.899999976158,
+      "sim": {
+        "tick": 596,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 595,
+        "render": {
+          "renderMs": 0.6697933704654534,
+          "frameMs": 19.47712547787942,
+          "drawCalls": 80,
+          "triangles": 6651,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12017.699999988079,
+      "sim": {
+        "tick": 612,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 611,
+        "render": {
+          "renderMs": 0.6701725178936329,
+          "frameMs": 19.35096864315737,
+          "drawCalls": 112,
+          "triangles": 8611,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12320.699999988079,
+      "sim": {
+        "tick": 628,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 627,
+        "render": {
+          "renderMs": 0.6936534664522027,
+          "frameMs": 19.080494627130857,
+          "drawCalls": 130,
+          "triangles": 8963,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12622.5,
+      "sim": {
+        "tick": 643,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 642,
+        "render": {
+          "renderMs": 0.7040504545559277,
+          "frameMs": 19.140764684371153,
+          "drawCalls": 140,
+          "triangles": 10055,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12924.899999976158,
+      "sim": {
+        "tick": 659,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 658,
+        "render": {
+          "renderMs": 0.6645715767352058,
+          "frameMs": 19.14636323636499,
+          "drawCalls": 136,
+          "triangles": 9551,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 13226.59999999404,
+      "sim": {
+        "tick": 675,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 674,
+        "render": {
+          "renderMs": 0.7101766202203279,
+          "frameMs": 19.036203867158743,
+          "drawCalls": 166,
+          "triangles": 11019,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    },
+    {
+      "t": 13528.5,
+      "sim": {
+        "tick": 691,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "blocks": 108,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 690,
+        "render": {
+          "renderMs": 0.6787921830567537,
+          "frameMs": 18.998872389185166,
+          "drawCalls": 166,
+          "triangles": 11031,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      },
+      "scene": "play"
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 129,
+      "voStarted": [
+        "1.53s en/sec4_intro_001.ogg",
+        "6.01s en/graze_ai_001.ogg",
+        "12.24s en/amb_nofire_002.ogg",
+        "14.14s en/rad_lancer_patrol_001.ogg"
+      ],
+      "lufs": -18.7,
+      "truePeak": -5.2,
+      "buses": {
+        "music": {
+          "lufs": -70,
+          "truePeak": null
+        },
+        "sfx": {
+          "lufs": -33.4,
+          "truePeak": -15
+        },
+        "voice": {
+          "lufs": -16.5,
+          "truePeak": -2.1
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 19.4,
+      "voAudible": [
+        {
+          "start": 0.8,
+          "end": 1.4
+        },
+        {
+          "start": 1.92,
+          "end": 2.6
+        },
+        {
+          "start": 2.89,
+          "end": 4.72
+        },
+        {
+          "start": 5.26,
+          "end": 6.01
+        },
+        {
+          "start": 6.43,
+          "end": 7.49
+        },
+        {
+          "start": 8.09,
+          "end": 9.28
+        },
+        {
+          "start": 11.51,
+          "end": 17.13
+        }
+      ],
+      "subtitles": [
+        {
+          "start": 0.2175,
+          "line": "?Sector loaded. Same rules: fly",
+          "layer": "ambient",
+          "end": 1.530900146484375,
+          "audibleS": 0.6
+        },
+        {
+          "start": 1.530900146484375,
+          "line": "sec4_intro_001",
+          "layer": "scripted",
+          "end": 6.010699951171875,
+          "audibleS": 3.25
+        },
+        {
+          "start": 6.010699951171875,
+          "line": "graze_ai_001",
+          "layer": "scripted",
+          "end": 10.734199951171876,
+          "audibleS": 2.26
+        },
+        {
+          "start": 12.243199951171874,
+          "line": "amb_nofire_002",
+          "layer": "ambient",
+          "end": 16.81110009765625,
+          "audibleS": 4.72
+        },
+        {
+          "start": 17.82610009765625,
+          "line": "?Close is good. Closer is a cla",
+          "layer": "ambient",
+          "end": 19.4,
+          "audibleS": 0
+        }
+      ]
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "19.4 s audible of 19.4 s, 129 sounds started, 4 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.2 dBTP, -18.7 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -70 LUFS / NaN dBTP, sfx -33.4 LUFS / -15 dBTP, voice -16.5 LUFS / -2.1 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.7 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "fail",
+        "detail": "4 of 5 subtitle windows have audible VO stem",
+        "items": [
+          "17.83–19.4 s ?Close is good. Closer is a cla (0 s audible)"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793259578983.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259579815,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259580203.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259580203.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259580383.2,
+      "dur": 9.999977324263039,
+      "loop": false,
+      "url": "/vo/en/sec4_intro_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259580594.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259580787,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259580787,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259581358.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259581359,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259581379.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259581933.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259581933.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259582127.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259582128,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259582702.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259582702.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259582896.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259582896.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259583475.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259583475.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259583666.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259583666.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259584246.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259584246.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259584862.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259584862.7,
+      "dur": 4.719977324263039,
+      "loop": false,
+      "url": "/vo/en/graze_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259584902.6,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259584902.8,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585053.8,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585475,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585571.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585590.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585684.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585759.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259585833.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586075.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586075.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586273.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586273.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586464.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586464.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586522.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259586522.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259587021.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259587140.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259587140.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259587219.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259587410.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259588098.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259588354.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259588697.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259588907.4001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259589142.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259589260.1,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259589260.2,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590483.1,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590483.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590542.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590639.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590639.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590736,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590794.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590832.6,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259590945.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591002.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591077.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591096,
+      "dur": 4.559977324263039,
+      "loop": false,
+      "url": "/vo/en/amb_nofire_002.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591208.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591208.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591765.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591765.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591785.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259591785.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592333.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592333.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592525.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592525.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592911.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592911.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259592989.3,
+      "dur": 4.4799773242630385,
+      "loop": false,
+      "url": "/vo/en/rad_lancer_patrol_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593115.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593115.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593310.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593310.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593700.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593700.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593876.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593897.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259593897.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594088.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594088.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594110.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594110.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594168.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594383.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594486.9001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594487,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594603.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594681,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259594681.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595283,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595283,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595366.6,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595366.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595526.4001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595684.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259595723.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596004,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596044,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596267,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596327.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596346.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596385.8,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596501.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596540.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596579.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596678.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596738.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596852.8,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259596871.4001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597064.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597144,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597280.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597301.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597340.4001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597665.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259597723.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259598038.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+[
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 1,
+    "world": {
+      "sector": 1,
+      "name": "Outer Drift",
+      "blocks": 97,
+      "maxDrawCalls": 7,
+      "updateMs": 0.09999999403953552,
+      "signVisible": false,
+      "elapsedTicks": 383,
+      "render": {
+        "renderMs": 0.8767326732820975,
+        "frameMs": 8.345395793787423,
+        "drawCalls": 243,
+        "triangles": 42405,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 2,
+    "world": {
+      "sector": 2,
+      "name": "Shatter Belt",
+      "blocks": 130,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 385,
+      "render": {
+        "renderMs": 0.753232340482086,
+        "frameMs": 8.338272878133708,
+        "drawCalls": 231,
+        "triangles": 33207,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 3,
+    "world": {
+      "sector": 3,
+      "name": "Gun Lanes",
+      "blocks": 140,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 255,
+      "render": {
+        "renderMs": 0.9152267932077924,
+        "frameMs": 8.402518133834755,
+        "drawCalls": 143,
+        "triangles": 23239,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 4,
+    "world": {
+      "sector": 4,
+      "name": "Lancer Gate",
+      "blocks": 108,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 379,
+      "render": {
+        "renderMs": 0.6602666110896541,
+        "frameMs": 8.341205428923677,
+        "drawCalls": 130,
+        "triangles": 10319,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": false,
+    "sector": 5,
+    "world": {
+      "sector": 5,
+      "name": "Last Approach",
+      "blocks": 132,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 379,
+      "render": {
+        "renderMs": 1.0240494635854147,
+        "frameMs": 8.34393005042778,
+        "drawCalls": 238,
+        "triangles": 19741,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 1,
+    "world": {
+      "sector": 1,
+      "name": "Outer Drift",
+      "blocks": 97,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 372,
+      "render": {
+        "renderMs": 0.7562099416362079,
+        "frameMs": 8.338544490577119,
+        "drawCalls": 172,
+        "triangles": 33448,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 2,
+    "world": {
+      "sector": 2,
+      "name": "Shatter Belt",
+      "blocks": 130,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 377,
+      "render": {
+        "renderMs": 0.6732988745921284,
+        "frameMs": 8.345516970631644,
+        "drawCalls": 190,
+        "triangles": 32258,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 3,
+    "world": {
+      "sector": 3,
+      "name": "Gun Lanes",
+      "blocks": 140,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 255,
+      "render": {
+        "renderMs": 0.5493528390089576,
+        "frameMs": 8.297086330018473,
+        "drawCalls": 118,
+        "triangles": 22386,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 4,
+    "world": {
+      "sector": 4,
+      "name": "Lancer Gate",
+      "blocks": 108,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 376,
+      "render": {
+        "renderMs": 0.5785359286367076,
+        "frameMs": 8.336899256120233,
+        "drawCalls": 111,
+        "triangles": 10234,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "es",
+    "narrow": true,
+    "sector": 5,
+    "world": {
+      "sector": 5,
+      "name": "Last Approach",
+      "blocks": 132,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 375,
+      "render": {
+        "renderMs": 0.9871611182612764,
+        "frameMs": 8.336170023867746,
+        "drawCalls": 219,
+        "triangles": 19638,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 1,
+    "world": {
+      "sector": 1,
+      "name": "Outer Drift",
+      "blocks": 97,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 381,
+      "render": {
+        "renderMs": 0.9121274614529071,
+        "frameMs": 8.342510122858108,
+        "drawCalls": 243,
+        "triangles": 42405,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 2,
+    "world": {
+      "sector": 2,
+      "name": "Shatter Belt",
+      "blocks": 130,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 388,
+      "render": {
+        "renderMs": 0.8637192797471274,
+        "frameMs": 8.336626650797989,
+        "drawCalls": 209,
+        "triangles": 32343,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 3,
+    "world": {
+      "sector": 3,
+      "name": "Gun Lanes",
+      "blocks": 140,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 255,
+      "render": {
+        "renderMs": 0.7146385183739312,
+        "frameMs": 8.48631331510326,
+        "drawCalls": 137,
+        "triangles": 22471,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 4,
+    "world": {
+      "sector": 4,
+      "name": "Lancer Gate",
+      "blocks": 108,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 388,
+      "render": {
+        "renderMs": 0.7715517488712338,
+        "frameMs": 8.31079569082793,
+        "drawCalls": 154,
+        "triangles": 12107,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": false,
+    "sector": 5,
+    "world": {
+      "sector": 5,
+      "name": "Last Approach",
+      "blocks": 132,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 388,
+      "render": {
+        "renderMs": 1.129309426671993,
+        "frameMs": 8.29402304592667,
+        "drawCalls": 238,
+        "triangles": 19753,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 1,
+    "world": {
+      "sector": 1,
+      "name": "Outer Drift",
+      "blocks": 97,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 397,
+      "render": {
+        "renderMs": 0.9008759638679728,
+        "frameMs": 8.260145590676098,
+        "drawCalls": 224,
+        "triangles": 42084,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 2,
+    "world": {
+      "sector": 2,
+      "name": "Shatter Belt",
+      "blocks": 130,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 389,
+      "render": {
+        "renderMs": 0.7021268436429315,
+        "frameMs": 8.341326883942136,
+        "drawCalls": 190,
+        "triangles": 32256,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 3,
+    "world": {
+      "sector": 3,
+      "name": "Gun Lanes",
+      "blocks": 140,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 255,
+      "render": {
+        "renderMs": 0.5145672933580245,
+        "frameMs": 8.334285695483013,
+        "drawCalls": 118,
+        "triangles": 22386,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 4,
+    "world": {
+      "sector": 4,
+      "name": "Lancer Gate",
+      "blocks": 108,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 375,
+      "render": {
+        "renderMs": 0.561909818111664,
+        "frameMs": 8.33579114623657,
+        "drawCalls": 111,
+        "triangles": 10234,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  },
+  {
+    "lang": "zh",
+    "narrow": true,
+    "sector": 5,
+    "world": {
+      "sector": 5,
+      "name": "Last Approach",
+      "blocks": 132,
+      "maxDrawCalls": 7,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 379,
+      "render": {
+        "renderMs": 0.8951689670019327,
+        "frameMs": 8.345345899901625,
+        "drawCalls": 219,
+        "triangles": 19656,
+        "models": {
+          "pilot_ship": "gltf",
+          "drone": "gltf",
+          "dart": "gltf",
+          "turret": "gltf",
+          "lancer": "gltf",
+          "warden": "gltf",
+          "pickup_spread": "gltf",
+          "pickup_shield": "gltf",
+          "logo_adamsmith_systems": "gltf",
+          "logo_cm121": "gltf"
+        }
+      }
+    },
+    "errors": []
+  }
+]

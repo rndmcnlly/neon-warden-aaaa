@@ -1,0 +1,1575 @@
+{
+  "arm": "baseline",
+  "sector": 4,
+  "viewport": [
+    1366,
+    768
+  ],
+  "samples": [
+    {
+      "t": 1687.5999999940395,
+      "sim": {
+        "tick": 77,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 1989.4000000059605,
+      "sim": {
+        "tick": 93,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 2292.9000000059605,
+      "sim": {
+        "tick": 109,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 2595.4000000059605,
+      "sim": {
+        "tick": 124,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 2896.800000011921,
+      "sim": {
+        "tick": 140,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 3215,
+      "sim": {
+        "tick": 156,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 3519.0999999940395,
+      "sim": {
+        "tick": 172,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 3821.4000000059605,
+      "sim": {
+        "tick": 188,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 4123.9000000059605,
+      "sim": {
+        "tick": 204,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 4426.200000017881,
+      "sim": {
+        "tick": 220,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 4729.0999999940395,
+      "sim": {
+        "tick": 236,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5030.5999999940395,
+      "sim": {
+        "tick": 252,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5334.0999999940395,
+      "sim": {
+        "tick": 267,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5636.5,
+      "sim": {
+        "tick": 283,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 5938,
+      "sim": {
+        "tick": 299,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "sector4"
+    },
+    {
+      "t": 6241.200000017881,
+      "sim": {
+        "tick": 314,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 6543.700000017881,
+      "sim": {
+        "tick": 330,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 6846.0999999940395,
+      "sim": {
+        "tick": 346,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7148.5999999940395,
+      "sim": {
+        "tick": 362,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7451,
+      "sim": {
+        "tick": 377,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 7752.0999999940395,
+      "sim": {
+        "tick": 393,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8056.5999999940395,
+      "sim": {
+        "tick": 409,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8359.09999999404,
+      "sim": {
+        "tick": 424,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8660.800000011921,
+      "sim": {
+        "tick": 440,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 8963.90000000596,
+      "sim": {
+        "tick": 456,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9282.200000017881,
+      "sim": {
+        "tick": 472,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9585.200000017881,
+      "sim": {
+        "tick": 488,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 9886.700000017881,
+      "sim": {
+        "tick": 504,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10189.300000011921,
+      "sim": {
+        "tick": 519,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10490.90000000596,
+      "sim": {
+        "tick": 535,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "beat-first-graze"
+    },
+    {
+      "t": 10793.40000000596,
+      "sim": {
+        "tick": 550,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11096.800000011921,
+      "sim": {
+        "tick": 566,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11400.09999999404,
+      "sim": {
+        "tick": 581,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 11701.09999999404,
+      "sim": {
+        "tick": 597,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12003.200000017881,
+      "sim": {
+        "tick": 612,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12304.5,
+      "sim": {
+        "tick": 628,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12606.59999999404,
+      "sim": {
+        "tick": 644,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 12907.800000011921,
+      "sim": {
+        "tick": 660,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 13209.200000017881,
+      "sim": {
+        "tick": 676,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    },
+    {
+      "t": 13510.90000000596,
+      "sim": {
+        "tick": 692,
+        "sector": 4,
+        "phase": "sector",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "scene": "play"
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 131,
+      "voStarted": [
+        "0.26s en/var_secstart_001.ogg",
+        "1.54s en/sec4_intro_001.ogg",
+        "5.98s en/graze_ai_001.ogg",
+        "12.22s en/amb_nofire_003.ogg",
+        "14.15s en/rad_lancer_patrol_001.ogg"
+      ],
+      "lufs": -18.6,
+      "truePeak": -5.1,
+      "buses": {
+        "music": {
+          "lufs": -70,
+          "truePeak": null
+        },
+        "sfx": {
+          "lufs": -33.3,
+          "truePeak": -15.9
+        },
+        "voice": {
+          "lufs": -16.4,
+          "truePeak": -1.1
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 19.39,
+      "voAudible": [
+        {
+          "start": 0.87,
+          "end": 6.04
+        },
+        {
+          "start": 6.51,
+          "end": 7.25
+        },
+        {
+          "start": 7.67,
+          "end": 8.73
+        },
+        {
+          "start": 9.33,
+          "end": 10.52
+        },
+        {
+          "start": 12.74,
+          "end": 18.42
+        }
+      ],
+      "subtitles": [
+        {
+          "start": 0.2607998046875,
+          "line": "var_secstart_001",
+          "layer": "ambient",
+          "end": 1.541199951171875,
+          "audibleS": 0.82
+        },
+        {
+          "start": 1.541199951171875,
+          "line": "sec4_intro_001",
+          "layer": "scripted",
+          "end": 5.977599853515625,
+          "audibleS": 4.5
+        },
+        {
+          "start": 5.977599853515625,
+          "line": "graze_ai_001",
+          "layer": "scripted",
+          "end": 10.7075,
+          "audibleS": 3.07
+        },
+        {
+          "start": 12.219599853515625,
+          "line": "amb_nofire_003",
+          "layer": "ambient",
+          "end": 16.628,
+          "audibleS": 4.04
+        },
+        {
+          "start": 17.7295,
+          "line": "?Graze, graze, graze. You make ",
+          "layer": "ambient",
+          "end": 19.387,
+          "audibleS": 0.69
+        }
+      ]
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "19.39 s audible of 19.39 s, 131 sounds started, 5 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.1 dBTP, -18.6 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -70 LUFS / NaN dBTP, sfx -33.3 LUFS / -15.9 dBTP, voice -16.4 LUFS / -1.1 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.6 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "5 of 5 subtitle windows have audible VO stem",
+        "items": []
+      }
+    ]
+  },
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793259538352,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259538475,
+      "dur": 6,
+      "loop": false,
+      "url": "/vo/en/var_secstart_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259539177.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259539558.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259539558.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259539757.7998,
+      "dur": 9.999977324263039,
+      "loop": false,
+      "url": "/vo/en/sec4_intro_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259539949.9,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259540145.0999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259540145.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259540706.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259540706.5999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259540725,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259541283.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259541284,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259541475,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259541475,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542045.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542045.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542232.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542232.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542807.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542807.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542996.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259542996.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259543581.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259543581.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544193.0999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544193.4,
+      "dur": 4.719977324263039,
+      "loop": false,
+      "url": "/vo/en/graze_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544233.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544233.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544387.9,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544811.0999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544908.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259544928.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545025.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545102.7998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545180.0999,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545425.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545425.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545618.7998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545619,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545815.0999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545815.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545872.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259545872.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259546374.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259546488.5,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259546488.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259546563.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259546752.7998,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259547426.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259547683.2998,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259548027.9,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259548237.5999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259548470.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259548587.7998,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259548588,
+      "dur": 0.49997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/flyby_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259549820.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259549820.9,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259549876,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259549972.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259549972.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550071.0999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550130.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550168.0999,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550281.7998,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550339.7998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550415.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550436.2998,
+      "dur": 4.3999773242630384,
+      "loop": false,
+      "url": "/vo/en/amb_nofire_003.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550549.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259550549.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551103.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551104,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551122.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551122.5999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551672.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551672.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551862.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259551862.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552245.7998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552245.7998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552363.7998,
+      "dur": 4.4799773242630385,
+      "loop": false,
+      "url": "/vo/en/rad_lancer_patrol_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552438.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552439,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552626.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259552627,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553015.7998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553016,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553186.5999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553207.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553207.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553400.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553400.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553421.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553421.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553479.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553691.0999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553787.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553787.5999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553903.7998,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553981.0999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259553981.2998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259554567.5999,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259554567.7998,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259554645.2998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259554645.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259554803.7998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259554962.5999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555271,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555311.7998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555527.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555584.2998,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555603.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555641.0999,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555753.5999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555791.0999,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555829.2998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555926.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259555983.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556102.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556121,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556313.0999,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556388.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556524.7998,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556545.2998,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556582.9,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556907.7,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793259556965.0999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259557277.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793259557584.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    }
+  ]
+}
