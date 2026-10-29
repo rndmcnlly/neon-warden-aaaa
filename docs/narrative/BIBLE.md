@@ -262,6 +262,24 @@ Crawl is UI (stunt pilots `#0001 – #0121`; on the pacifist route
 the welcome line again for **Pilot zero one two three**; P `credits_pac_001`,
 "And if anyone with a gun asks, I am EXTREMELY scary!"
 
+## Variant banks and stats commentary (wave 4)
+
+Lines that fire many times a run live as pools in `src/scenes/banks/`
+(format in `types.ts`), dealt by shuffle bag so a beloved line like
+`bark_lifelost_001` ("You're fine. The ship isn't, but you're fine.")
+almost never repeats. The assistant's rhythm is three beats: warmth for the
+Pilot, the rule, the money, with the money arriving a little too fast. Stats
+commentary (accuracy, shots "into the mist", streaks, perfect sectors, graze
+streaks, disarm ratio, repeated deaths, long rests, Writ hoarding) is
+sincere institutional warmth that turns faintly passive-aggressive about
+efficiency and pay; the joke is always on the paperwork, never on the
+player, because young players will hear it. The Warden and the scouts
+chime in rarely; the scouts report, they do not judge. Disarms puzzle the
+assistant ("there isn't a column for it"): that confusion, never a scolding,
+is the pacifist hint. Voiced variants are mirrored into `vo/script.yaml`
+(`var_*`, `stat_*`, scene `banks`) by `src/scenes/banks/emit_yaml.ts`; edit
+the bank, not the YAML.
+
 ## Tone rules
 
 1. **Authentic, not parody.** Comedy comes from character (the assistant's

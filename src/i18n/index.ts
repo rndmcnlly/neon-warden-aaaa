@@ -17,6 +17,7 @@ import { SCRIPT_LINES } from "./script.gen.ts";
 import { UI_STRINGS } from "./ui.ts";
 import { RADIO_TEXT } from "./radio.ts";
 import { CODEX_TEXT } from "./codex.ts";
+import { BANK_TEXT } from "./banks.ts";
 import type { LocalizedText, ScriptLineData } from "./types.ts";
 
 export type { LocalizedText, Route, ScriptLineData } from "./types.ts";
@@ -37,10 +38,14 @@ export type TextParams = Readonly<Record<string, string | number>>;
 
 const script: Readonly<Record<string, ScriptLineData>> = SCRIPT_LINES;
 const ui: Readonly<Record<string, LocalizedText>> = UI_STRINGS;
-/** Narrative's unspoken tables: radio text and the codex. */
+/**
+ * Narrative's unspoken tables: radio text, the codex and text-only bank
+ * variants (`bank.*`, keyed by plain strings, so they are not `TextKey`s).
+ */
 const narrative: Readonly<Record<string, LocalizedText>> = {
   ...RADIO_TEXT,
   ...CODEX_TEXT,
+  ...BANK_TEXT,
 };
 
 /**

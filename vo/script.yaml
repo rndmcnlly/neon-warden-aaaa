@@ -33,16 +33,21 @@ speakers:
   tutorial_ai:
     seed: 11
     description: >-
-      The Lane Authority onboarding assistant. Perky, bright, fast, theme-park
-      polish; helpful and banal, never sinister. Also voices her own older
-      recordings in the flashback.
+      The Lane Authority onboarding assistant. An adult woman in her
+      forties, airline-captain calm: corporate, helpful, banal, never
+      sinister, with sincere institutional warmth rather than cuteness.
+      Also voices her own older recordings in the flashback. Recast
+      October 28, 2026 from the 'a_captain' audition
+      (vo/casting/tutorial_ai/PICK).
     design: >-
-      A relentlessly perky young female AI assistant voice, bright, high pitch,
-      fast and bubbly, customer-service smile in every word, slightly synthetic
-      polish, over-enunciated like a theme park announcer.
+      A warm adult female alto voice in her forties, calm and unhurried
+      like an airline captain on the cabin intercom, low-medium pitch,
+      reassuring and sincere, gentle institutional warmth, clear
+      professional diction.
     anchor: >-
-      Hi there, Warden-slayer! I am so, so excited to help you today!
-      Let's learn how to move. Isn't moving fun? I think moving is fun!
+      Welcome to the Lane Authority onboarding program. I will be with you
+      every step of the way. Let's begin with something simple: moving
+      your ship.
   narrator:
     seed: 22
     description: >-
@@ -135,7 +140,6 @@ lines:
 
   - id: tut_contract_001
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: tutorial
     route: any
     direction: >-
@@ -195,7 +199,6 @@ lines:
 
   - id: tut_hitbox_001
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: tutorial
     route: any
     direction: >-
@@ -210,7 +213,6 @@ lines:
 
   - id: tut_focus_001
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: tutorial
     route: any
     direction: >-
@@ -517,7 +519,6 @@ lines:
 
   - id: tut_lives_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: tutorial
     route: any
     direction: >-
@@ -532,7 +533,6 @@ lines:
 
   - id: tut_continue_001
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: tutorial
     route: any
     direction: >-
@@ -548,7 +548,6 @@ lines:
 
   - id: tut_pickup_001
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: tutorial
     route: any
     direction: >-
@@ -631,7 +630,6 @@ lines:
 
   - id: tut_route_001
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: tutorial
     route: any
     direction: >-
@@ -646,7 +644,6 @@ lines:
 
   - id: tut_warden_001
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: tutorial
     route: any
     direction: >-
@@ -743,7 +740,6 @@ lines:
 
   - id: tut_warden_002
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: tutorial
     route: any
     direction: >-
@@ -772,7 +768,6 @@ lines:
 
   - id: tut_idle_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: tutorial
     route: any
     direction: >-
@@ -817,7 +812,6 @@ lines:
 
   - id: sec1_intro_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: sector1
     route: any
     direction: >-
@@ -832,7 +826,6 @@ lines:
 
   - id: sec2_intro_001
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: sector2
     route: any
     direction: >-
@@ -848,7 +841,6 @@ lines:
 
   - id: sec3_intro_001
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: sector3
     route: any
     direction: >-
@@ -863,7 +855,6 @@ lines:
 
   - id: sec4_intro_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: sector4
     route: any
     direction: >-
@@ -879,7 +870,6 @@ lines:
 
   - id: sec5_intro_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: sector5
     route: any
     direction: >-
@@ -896,7 +886,6 @@ lines:
 
   - id: amb_fight_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: chatter
     route: kill
     direction: >-
@@ -911,7 +900,6 @@ lines:
 
   - id: amb_fight_003
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: chatter
     route: kill
     direction: >-
@@ -925,7 +913,6 @@ lines:
 
   - id: amb_fight_004
     speaker: tutorial_ai
-    seed: {en: 111, es: 111}
     scene: chatter
     route: any
     direction: >-
@@ -954,7 +941,6 @@ lines:
 
   - id: amb_nofire_001
     speaker: tutorial_ai
-    seed: {en: 211}
     scene: chatter
     route: pacifist
     direction: >-
@@ -969,7 +955,6 @@ lines:
 
   - id: amb_nofire_002
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: chatter
     route: pacifist
     direction: >-
@@ -995,7 +980,6 @@ lines:
 
   - id: amb_nofire_004
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: chatter
     route: pacifist
     direction: >-
@@ -1012,7 +996,6 @@ lines:
 
   - id: bark_lifelost_001
     speaker: tutorial_ai
-    seed: {en: 111, es: 211}
     scene: barks
     route: any
     direction: >-
@@ -1025,7 +1008,6 @@ lines:
 
   - id: bark_shield_001
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: barks
     route: any
     direction: >-
@@ -1082,7 +1064,6 @@ lines:
 
   - id: flash_rec_002
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: flashback
     route: any
     direction: >-
@@ -1124,7 +1105,6 @@ lines:
 
   - id: flash_rec_005
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: flashback
     route: any
     direction: >-
@@ -1166,7 +1146,6 @@ lines:
 
   - id: flash_ai_003
     speaker: tutorial_ai
-    seed: {en: 211, es: 111}
     scene: flashback
     route: any
     direction: >-
@@ -1181,7 +1160,6 @@ lines:
 
   - id: warn_ai_001
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: warden_descent
     route: any
     direction: >-
@@ -1628,7 +1606,6 @@ lines:
 
   - id: kill_ai_002
     speaker: tutorial_ai
-    seed: {es: 311}
     scene: ending_kill
     route: kill
     direction: >-
@@ -1656,7 +1633,6 @@ lines:
 
   - id: kill_ai_003
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: ending_kill
     route: kill
     direction: >-
@@ -1697,7 +1673,6 @@ lines:
 
   - id: pac_end_002
     speaker: tutorial_ai
-    seed: {es: 111}
     scene: ending_pacifist
     route: pacifist
     direction: >-
@@ -1725,7 +1700,6 @@ lines:
 
   - id: pac_end_004
     speaker: tutorial_ai
-    seed: {es: 211}
     scene: ending_pacifist
     route: pacifist
     direction: >-
@@ -2272,3 +2246,657 @@ lines:
     es: >-
       Despeje confirmado. Segmento de ruta apto para suscripción.
     zh: 清场确认。该航段已符合订阅条件。
+
+  # -- banks: voiced variants, GENERATED by src/scenes/banks/emit_yaml.ts
+
+  - id: var_shipfine_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Quick, relieved, then a small professional wince."
+    en: "Hull integrity is down. Your integrity is intact. That's the one I care about."
+    es: "La integridad del casco bajó. Tu integridad sigue intacta. Esa es la que me importa."
+    zh: "船体完整度下降了。你的完整度还在。我在乎的是这个。"
+
+  - id: var_shipfine_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Cheerful incident report, slightly too brisk."
+    en: "Minor structural event! You are uninjured. The ship has filed a complaint."
+    es: "¡Incidente estructural menor! No tienes ni un rasguño. La nave ya presentó una queja."
+    zh: "轻微结构事件！你毫发无伤。飞船已经提交了投诉。"
+
+  - id: var_shipfine_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Calm, almost tender, keeping score."
+    en: "The ship is not okay. You are okay. Let's keep that ratio."
+    es: "La nave no está bien. Tú sí. Mantengamos esa proporción."
+    zh: "飞船不太好。你很好。我们保持这个比例吧。"
+
+  - id: var_shipfine_004
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Gently consoling, as if about a houseplant."
+    en: "That was the shield. It's okay to be sad about the shield. You're fine, though."
+    es: "Ese era el escudo. Está bien sentirse triste por el escudo. Pero tú estás bien."
+    zh: "那是护盾。为护盾难过是可以的。不过你没事。"
+
+  - id: var_shipfine_005
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Proud of the shield, then the fine print at speed."
+    en: "Shield's gone. It did its job, and you're fine. The rental agreement is less fine."
+    es: "Se acabó el escudo. Cumplió su trabajo y tú estás bien. El contrato de renta, no tanto."
+    zh: "护盾没了。它尽职了，你也没事。租赁协议就没那么没事了。"
+
+  - id: var_shipfine_006
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Bright, then a careful, steady warning."
+    en: "One hull left. You're fine! Statistically, you're about to be less fine, so please dodge."
+    es: "Te queda un casco. ¡Estás bien! Estadísticamente, estás por estar menos bien, así que esquiva, por favor."
+    zh: "只剩一艘飞船了。你没事！不过从统计上看，你马上就要有事了，所以请躲开。"
+
+  - id: var_shipfine_007
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Deliberately soothing, slightly too slow."
+    en: "Last ship in reserve. I'm not worried. I'm using my calm voice on purpose."
+    es: "Última nave de reserva. No estoy preocupada. Estoy usando mi voz tranquila a propósito."
+    zh: "最后一艘备用飞船。我不担心。我是故意用这么平静的语气的。"
+
+  - id: var_shipfine_008
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Upbeat welcome back, like a new semester."
+    en: "New hull, same you! The old hull is now a learning opportunity."
+    es: "¡Casco nuevo, el mismo tú! El casco viejo ahora es una oportunidad de aprendizaje."
+    zh: "新船体，还是你！旧船体现在是一次学习机会。"
+
+  - id: var_shipfine_009
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Warm, then the deduction slipped in, then warm again."
+    en: "Hull replaced. Cost deducted. You are, and I mean this, priceless. Within reason."
+    es: "Casco reemplazado. Costo descontado. Tú no tienes precio, lo digo en serio. Dentro de lo razonable."
+    zh: "船体已更换。费用已扣除。你是无价的，我是认真的。在合理范围内。"
+
+  - id: var_kill_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Proud, then a small aside about accounting."
+    en: "Target removed. Pay adjusted upward. I'm proud of you, and so is accounting."
+    es: "Objetivo eliminado. Pago ajustado hacia arriba. Estoy orgullosa de ti, y contabilidad también."
+    zh: "目标已清除。薪酬已上调。我为你骄傲，财务部也是。"
+
+  - id: var_kill_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Bright compliment, filing it twice."
+    en: "Lovely shot. That one goes on your record and on your invoice."
+    es: "Qué buen tiro. Ese va a tu expediente y a tu factura."
+    zh: "漂亮的一枪。这一下会记进你的档案，也会记进你的账单。"
+
+  - id: var_kill_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Startled, then admiring, then the policy at speed."
+    en: "Ooh, a ram! Very decisive. The bumper is not covered, but very decisive."
+    es: "¡Uy, una embestida! Muy decidido. La defensa no está cubierta, pero muy decidido."
+    zh: "哇，撞击！非常果断。保险杠不在保修范围内，但非常果断。"
+
+  - id: var_kill_004
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Sincere efficiency gospel, a chain of logic she loves."
+    en: "That was clean. Clean work is fast work, and fast work is affordable work. Thank you."
+    es: "Eso fue limpio. El trabajo limpio es rápido, y el trabajo rápido sale barato. Gracias."
+    zh: "干净利落。干净就是快，快就是省钱。谢谢你。"
+
+  - id: var_disarm_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Hesitant, reaching for supportive language."
+    en: "Weapons removed, ship intact. That's, um, a choice. A valid one! Probably."
+    es: "Armas retiradas, nave intacta. Eso es, este, una decisión. ¡Una válida! Probablemente."
+    zh: "武器已拆除，飞船完好。这算是，呃，一种选择。一种合理的选择！大概吧。"
+
+  - id: var_disarm_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Puzzled, flipping through a binder."
+    en: "You disarmed it. It's still flying. I'll need a form for that."
+    es: "Lo desarmaste. Sigue volando. Voy a necesitar un formulario para eso."
+    zh: "你解除了它的武装。它还在飞。这个我得找张表格来填。"
+
+  - id: var_disarm_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Genuinely impressed, not sure why."
+    en: "No guns, no damage, no fuss. I'm not sure how to bill it, but it was very neat."
+    es: "Sin armas, sin daños, sin alboroto. No sé cómo cobrarlo, pero quedó muy limpio."
+    zh: "没有枪，没有损伤，没有麻烦。我不知道该怎么计费，但真的很利落。"
+
+  - id: var_disarm_004
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Kind, with the lower rate tucked in."
+    en: "Disarmed! The rate for that is lower, but your manners are excellent."
+    es: "¡Desarmado! La tarifa es más baja, pero tus modales son excelentes."
+    zh: "已解除武装！这个费率低一些，但你的礼貌无可挑剔。"
+
+  - id: var_graze_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Sharp intake of breath, then delighted."
+    en: "Close! Billable proximity, again. You really commit."
+    es: "¡Cerca! Cercanía facturable, otra vez. Tú sí que te comprometes."
+    zh: "好险！又是可计费的近距离。你是真投入啊。"
+
+  - id: var_graze_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Hand on heart, a little breathless."
+    en: "Graze logged. My heart rate is not billable, but it did go up."
+    es: "Roce registrado. Mi ritmo cardiaco no es facturable, pero sí subió."
+    zh: "擦弹已记录。我的心率不能计费，但它确实上去了。"
+
+  - id: var_graze_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Office humor, pleased with herself."
+    en: "Another graze. You and danger are on a first-name basis, and I'm copied on every message."
+    es: "Otro roce. Tú y el peligro ya se tutean, y a mí me ponen en copia de todo."
+    zh: "又一次擦弹。你和危险已经很熟了，而且每封邮件都抄送给了我。"
+
+  - id: var_pickup_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Excited product demo, then a request."
+    en: "Spread shot! More bullets, same budget. Please aim them all at something."
+    es: "¡Disparo abierto! Más balas, el mismo presupuesto. Por favor, apúntalas todas a algo."
+    zh: "散射！子弹更多，预算不变。请让每一颗都朝着目标打。"
+
+  - id: var_pickup_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Affectionate, then the deductible at speed."
+    en: "Shield up! It's like a hug, if a hug had a deductible."
+    es: "¡Escudo arriba! Es como un abrazo, si los abrazos tuvieran deducible."
+    zh: "护盾升起！就像一个拥抱，只不过这个拥抱有免赔额。"
+
+  - id: var_secstart_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Encouraging, a coach before a match, then honest."
+    en: "New sector, fresh start. Your accuracy resets in my heart, not in the ledger."
+    es: "Sector nuevo, borrón y cuenta nueva. Tu puntería se reinicia en mi corazón, no en el libro de cuentas."
+    zh: "新扇区，新开始。你的命中率在我心里清零了，在账本上没有。"
+
+  - id: var_secstart_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Cheerful, already holding a clipboard."
+    en: "Here we go again! I've pre-filled your forms. Optimistically."
+    es: "¡Aquí vamos otra vez! Ya llené tus formularios. Con optimismo."
+    zh: "又出发了！我已经帮你预填好了表格。很乐观地填的。"
+
+  - id: var_secstart_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Wellness-seminar calm, a made-up statistic delivered sincerely."
+    en: "Deep breath. Pilots who breathe have a fourteen percent better pay rate."
+    es: "Respira hondo. Los pilotos que respiran tienen una tarifa catorce por ciento mejor."
+    zh: "深呼吸。会呼吸的飞行员，薪酬率高出百分之十四。"
+
+  - id: var_secclear_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Delighted, reporting upward."
+    en: "Sector clear! Lovely work. Payroll has been notified and is cautiously excited."
+    es: "¡Sector despejado! Qué buen trabajo. Ya avisé a nómina y está emocionada, con cautela."
+    zh: "扇区已肃清！干得漂亮。薪资部已收到通知，正在谨慎地兴奋着。"
+
+  - id: var_secclear_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Warm, then reading the statement."
+    en: "Sector cleared. One more lane open, and one more line on your statement."
+    es: "Sector despejado. Una ruta más abierta, y un renglón más en tu estado de cuenta."
+    zh: "扇区已肃清。又多一条航道畅通，你的账单上也多了一行。"
+
+  - id: var_pause_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Gentle, then the qualifier."
+    en: "Paused. Take your time. The contract clock respects your break. Mostly."
+    es: "En pausa. Tómate tu tiempo. El reloj del contrato respeta tu descanso. Casi siempre."
+    zh: "已暂停。慢慢来。合同时钟会尊重你的休息。大多数时候。"
+
+  - id: var_pause_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Sweet, and just slightly too literal."
+    en: "I'll wait right here. I'm always right here."
+    es: "Aquí te espero. Siempre estoy aquí."
+    zh: "我就在这儿等你。我一直都在这儿。"
+
+  - id: var_resume_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Happy, then a tiny matter-of-fact admission."
+    en: "Welcome back! I didn't go anywhere. I can't, actually."
+    es: "¡Bienvenido de vuelta! Yo no me fui a ningún lado. De hecho, no puedo."
+    zh: "欢迎回来！我哪儿也没去。其实我也去不了。"
+
+  - id: var_resume_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Checklist voice, answering for him."
+    en: "Resuming. Did you hydrate? I'm logging that you hydrated."
+    es: "Reanudando. ¿Te hidrataste? Voy a registrar que te hidrataste."
+    zh: "继续。你喝水了吗？我就记你喝过了。"
+
+  - id: var_warden1_001
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Shrill, outraged, then cracking on the last word."
+    en: "Do you know what a scout costs?! Nothing! I GROW them! That makes it WORSE!"
+    es: "¿¡Sabes cuánto cuesta un explorador!? ¡Nada! ¡Yo los CULTIVO! ¡Eso lo hace PEOR!"
+    zh: "你知道一架侦察机值多少钱吗？！一分不值！是我亲手养大的！这才更糟！"
+
+  - id: var_warden1_002
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Furious roll call, running out of breath."
+    en: "Zero one two two! I learn every pilot's number! I have learned one hundred twenty-two! STOP ADDING TO THE LIST!"
+    es: "¡Cero uno dos dos! ¡Me aprendo el número de cada piloto! ¡Ya van ciento veintidós! ¡DEJA DE ALARGAR LA LISTA!"
+    zh: "零一二二号！每个飞行员的编号我都记得！我已经记了一百二十二个了！别再往名单上加了！"
+
+  - id: var_warden1_003
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Sarcastic, then sincerely wounded."
+    en: "Hit me again! Go on! It's not like I have FEELINGS! I have SEVERAL!"
+    es: "¡Pégame otra vez! ¡Ándale! ¡Como si yo tuviera SENTIMIENTOS! ¡Tengo VARIOS!"
+    zh: "再打我啊！来啊！反正我又没有感情！我有好几种！"
+
+  - id: var_warden1_004
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Indignant, protective of the rings."
+    en: "Stop shooting my RINGS! They are load-bearing! Emotionally!"
+    es: "¡Deja de dispararle a mis ANILLOS! ¡Sostienen todo! ¡Emocionalmente!"
+    zh: "别打我的光环！它们是承重的！情感上承重的！"
+
+  - id: var_warden2_001
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Shouting orders, more worried than angry."
+    en: "Scouts, wide! WIDER! Keep the convoys clear, not in front of it!"
+    es: "¡Exploradores, abiertos! ¡MÁS ABIERTOS! ¡Cuiden a los convoyes, no se le pongan enfrente!"
+    zh: "侦察机，散开！再散开！护住车队，别挡在它前面！"
+
+  - id: var_warden2_002
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Out of breath, insisting."
+    en: "I am NOT tired! I am pacing myself for the next three hundred years!"
+    es: "¡NO estoy cansado! ¡Me estoy dosificando para los próximos trescientos años!"
+    zh: "我才不累！我是在为接下来的三百年保存体力！"
+
+  - id: var_warden2_003
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Furious, the facts landing harder than the volume."
+    en: "Every ring you break, a hauler flies dark tonight! Did they mention THAT in onboarding?!"
+    es: "¡Por cada anillo que rompes, un transportista vuela a oscuras esta noche! ¿¡Eso te lo dijeron en la inducción!?"
+    zh: "你每打碎一个光环，今晚就有一艘货船要摸黑飞！入职培训里讲过这个吗？！"
+
+  - id: var_warden3_001
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Shouting, grief under it."
+    en: "Take it, then! Take the last ring! And when they put a tollgate on it, think of ME!"
+    es: "¡Pues llévatelo! ¡Llévate el último anillo! ¡Y cuando le pongan una caseta de peaje, acuérdate de MÍ!"
+    zh: "那就拿去！把最后一个光环也拿去！等他们在上面建起收费站的时候，想想我！"
+
+  - id: var_warden3_002
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Defensive, voice cracking."
+    en: "I'm not losing! I'm running OUT! There is a DIFFERENCE!"
+    es: "¡No estoy perdiendo! ¡Me estoy QUEDANDO SIN NADA! ¡Hay una DIFERENCIA!"
+    zh: "我不是在输！我是快用完了！这是有区别的！"
+
+  - id: var_warden3_003
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Almost pleading, still loud."
+    en: "Free sky! FREE! You might be the last pilot who ever flies it without a toll!"
+    es: "¡Cielo libre! ¡LIBRE! ¡Puede que seas el último piloto que lo vuele sin pagar peaje!"
+    zh: "自由的天空！自由！你可能是最后一个不用交过路费就能飞的飞行员了！"
+
+  - id: var_wardenpac_001
+    speaker: warden
+    scene: banks
+    route: pacifist
+    optional: true
+    direction: "Indignant confusion, a performer robbed of a cue."
+    en: "Why aren't you shooting?! Everyone shoots! I had a whole SPEECH!"
+    es: "¿¡Por qué no disparas!? ¡Todos disparan! ¡Yo tenía todo un DISCURSO!"
+    zh: "你怎么不开枪？！人人都开枪！我准备了一整篇演讲！"
+
+  - id: var_wardenpac_002
+    speaker: warden
+    scene: banks
+    route: pacifist
+    optional: true
+    direction: "Flustered, almost embarrassed."
+    en: "Stop being polite at me! It's very confusing!"
+    es: "¡Deja de ser tan amable conmigo! ¡Me confunde mucho!"
+    zh: "别对我这么客气！我很困惑！"
+
+  - id: var_wardenpac_003
+    speaker: warden
+    scene: banks
+    route: pacifist
+    optional: true
+    direction: "Shouted, then the second half almost tender."
+    en: "If this is a trick, it is a very RUDE trick! If it isn't, it's the nicest thing in a hundred years!"
+    es: "¡Si esto es un truco, es un truco muy GROSERO! ¡Y si no, es lo más bonito en cien años!"
+    zh: "如果这是个把戏，那可是个非常没礼貌的把戏！如果不是，这就是一百年来最好的事！"
+
+  - id: stat_accuracy_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Kind, measured, a teacher's aside."
+    en: "Quick note on accuracy: it's dropping. I'm not upset. The spreadsheet is a little upset."
+    es: "Una nota rápida sobre la puntería: está bajando. Yo no estoy molesta. La hoja de cálculo, un poquito."
+    zh: "简单提一下命中率：在下降。我没生气。表格有点生气。"
+
+  - id: stat_accuracy_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Upbeat reframe, believing every word."
+    en: "Your hit rate is trending down. That's okay! Trends are just feelings with graphs."
+    es: "Tu tasa de aciertos va a la baja. ¡No pasa nada! Las tendencias son solo sentimientos con gráficas."
+    zh: "你的命中率在走低。没关系！趋势不过是带图表的情绪而已。"
+
+  - id: stat_mist_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Polite, as if pointing out a typo."
+    en: "Those shots are going into the mist. The mist has not hired us."
+    es: "Esos tiros se están yendo a la neblina. La neblina no nos contrató."
+    zh: "那些子弹都打进雾里了。雾可没有雇我们。"
+
+  - id: stat_mist_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Encouraging, then gently factual."
+    en: "Lovely enthusiasm! There's nothing up there, though. Just the mist, and it's very far away."
+    es: "¡Qué entusiasmo tan bonito! Pero allá arriba no hay nada. Solo la neblina, y está muy lejos."
+    zh: "热情可嘉！不过上面什么都没有。只有雾，而且很远很远。"
+
+  - id: stat_mist_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "HR-soft, the care sincere, the rounds also sincere."
+    en: "Every round into the mist is a round we can't bill. I only mention it because I care. About you. And about rounds."
+    es: "Cada bala que va a la neblina es una bala que no podemos cobrar. Solo lo menciono porque me importa. Tú. Y las balas."
+    zh: "每一发打进雾里的子弹，都是没法计费的子弹。我提这个只是因为我在乎。在乎你。也在乎子弹。"
+
+  - id: stat_streak_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Whispered excitement, like not wanting to jinx it."
+    en: "Oh, you're on a streak! Don't think about it. I'll think about it. I'm thinking about your bonus."
+    es: "¡Ay, vas en racha! No lo pienses. Yo lo pienso por ti. Estoy pensando en tu bono."
+    zh: "哦，你手感正热！别多想。我替你想。我在想你的奖金。"
+
+  - id: stat_streak_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Proud manager, reaching for the reply-all button."
+    en: "That is excellent work. I'd like to forward it to someone. Everyone, ideally."
+    es: "Qué trabajo tan excelente. Quisiera reenviárselo a alguien. A todos, de preferencia."
+    zh: "干得太棒了。我想把这个转发给别人。最好是转发给所有人。"
+
+  - id: stat_perfect_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Delighted, a little misty."
+    en: "A whole sector without a scratch! The hull says thank you. The hull rarely says anything."
+    es: "¡Un sector entero sin un rasguño! El casco te da las gracias. El casco casi nunca dice nada."
+    zh: "整整一个扇区毫发无伤！船体向你道谢。船体平时很少说话的。"
+
+  - id: stat_perfect_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Giddy, planning a bulletin board."
+    en: "Perfect sector. I'm going to put that on the wall. We don't have a wall. I'm requesting a wall."
+    es: "Sector perfecto. Lo voy a poner en la pared. No tenemos pared. Voy a solicitar una pared."
+    zh: "完美扇区。我要把它贴到墙上。我们没有墙。我去申请一面墙。"
+
+  - id: stat_grazes_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Suspicious, then certain, then resigned."
+    en: "That's a lot of grazing. Are you doing that on purpose? You're doing that on purpose."
+    es: "Eso es mucho roce. ¿Lo estás haciendo a propósito? Lo estás haciendo a propósito."
+    zh: "擦弹也太多了吧。你是故意的吗？你就是故意的。"
+
+  - id: stat_grazes_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Reading an invoice in mild disbelief."
+    en: "Graze streak! The proximity line on your invoice is now longer than the rest of it."
+    es: "¡Racha de roces! El renglón de cercanía en tu factura ya es más largo que todo lo demás."
+    zh: "连续擦弹！你账单上的近距离那一行，现在比其他所有项加起来还长。"
+
+  - id: stat_disarmhi_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Careful, curious, then the pay note very quickly."
+    en: "Quick observation: most of your targets are leaving with their ships. Is that a strategy? It's a lower-paying strategy."
+    es: "Una observación rápida: la mayoría de tus objetivos se van con su nave. ¿Es una estrategia? Es una estrategia que paga menos."
+    zh: "简单观察一下：你的大多数目标都开着自己的飞船走了。这是一种策略吗？这是一种收入更低的策略。"
+
+  - id: stat_disarmhi_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Reassuring, a bit lost in a form."
+    en: "Your disarm ratio is very high. That's not a criticism. There just isn't a column for it."
+    es: "Tu proporción de desarmes es muy alta. No es una crítica. Es que no hay una columna para eso."
+    zh: "你的解除武装比例非常高。这不是批评。只是表格里没有这一栏。"
+
+  - id: stat_disarmlo_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Compliance notice, read a bit too fast, then sincere."
+    en: "Tip: shooting the weapon parts makes a ship harmless. It pays less. I'm required to mention it."
+    es: "Consejo: si le disparas a las piezas de armamento, la nave queda inofensiva. Paga menos. Estoy obligada a mencionarlo."
+    zh: "小提示：打掉武器部件，飞船就无害了。报酬会少一些。按规定我必须提一下。"
+
+  - id: stat_deaths_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Reassuring on reflex, then noticing herself."
+    en: "Two hulls in a minute. You're fine! I'm starting to notice I say that a lot."
+    es: "Dos cascos en un minuto. ¡Estás bien! Empiezo a notar que lo digo mucho."
+    zh: "一分钟两艘船体。你没事！我开始发现这句话我说得有点多了。"
+
+  - id: stat_deaths_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Brisk admin, a hint of fatigue, still fond."
+    en: "Another replacement ship. I've stopped filling out the form and started photocopying it."
+    es: "Otra nave de reemplazo. Ya dejé de llenar el formulario y empecé a sacarle copias."
+    zh: "又一艘替换飞船。我已经不填表了，直接开始复印。"
+
+  - id: stat_idle_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Approving, then fair, then the footnote."
+    en: "Resting to charge? Smart. Resting just to rest? Also fine. Unpaid, but fine."
+    es: "¿Descansando para cargar? Muy listo. ¿Descansando nada más por descansar? También está bien. Sin paga, pero bien."
+    zh: "在休息蓄力吗？聪明。只是为了休息而休息？也行。不计薪，但也行。"
+
+  - id: stat_idle_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Soft, checking in, with one practical clause."
+    en: "It's very quiet. Are you charging, thinking, or having a moment? All three are valid. One is billable."
+    es: "Está muy tranquilo. ¿Estás cargando, pensando o tomándote un momento? Las tres opciones son válidas. Una es facturable."
+    zh: "好安静啊。你是在蓄力、在思考，还是在发呆？三种都可以。其中一种可以计费。"
+
+  - id: stat_writ_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Patient technical support."
+    en: "That Writ is fully charged. Holding it longer won't make it more charged. I've checked."
+    es: "Ese Mandato ya está cargado al máximo. Sostenerlo más no lo va a cargar más. Ya lo revisé."
+    zh: "那道令状已经充满了。再攥着也不会更满。我查过了。"
+
+  - id: stat_warden_001
+    speaker: warden
+    scene: banks
+    route: any
+    optional: true
+    direction: "Shrieking, genuinely unable to tell."
+    en: "You're missing me! On PURPOSE?! Or by ACCIDENT?! I can't tell and it's driving me UP THE WALL!"
+    es: "¡Me estás fallando! ¿¡A PROPÓSITO!? ¿¡O SIN QUERER!? ¡No lo sé y me está VOLVIENDO LOCO!"
+    zh: "你老打不中我！是故意的？！还是不小心？！我分不清，快把我逼疯了！"
+
+  - id: stat_scout_001
+    speaker: scout
+    scene: banks
+    route: any
+    optional: true
+    direction: "Low, quick, passing it along."
+    en: "Drift Six, the new one is disarming, not breaking. Pass it along. Keep the lanes wide."
+    es: "Deriva Seis, el nuevo está desarmando, no rompiendo. Pásalo. Mantengan las rutas amplias."
+    zh: "漂流六号，新来的只拆武器，不打碎飞船。传下去。保持航道宽敞。"
+
+  # -- banks: end of generated variants

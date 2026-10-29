@@ -19,6 +19,7 @@ import {
   timelineForEvent,
   TIMELINES,
 } from "../src/scenes/index.ts";
+import { allVariants } from "../src/scenes/banks/index.ts";
 
 const timelineLines = TIMELINES.flatMap((timeline) =>
   spokenLines(timeline.cues)
@@ -29,6 +30,7 @@ const allReferenced: LineId[] = [
   ...noFireChatter.lines,
   ...BARK_LINES,
   ...RADIO_LINES,
+  ...allVariants().filter((v) => v.vo).map((v) => v.id as LineId),
 ];
 
 Deno.test("every line a scene can speak exists in all three languages", () => {
