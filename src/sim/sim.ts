@@ -261,6 +261,10 @@ export class NeonWardenSim implements Sim {
   private grazeDrillWanted = false;
   private readonly statsTracker = new PlayerStats();
   private practiceTurret: EntityId | null = null;
+  /** `tut.spawnTurret` is on: a turret destroyed before it was disarmed
+   * comes back, or the parts drill (break the barrel) could never pass. */
+  private practiceTurretWanted = false;
+  private practiceTurretRespawnAt: Tick | null = null;
   private events: SimEvent[] = [];
   /** Enemy bullets fired this tick, grouped into `enemyFired` volleys. */
   private volleys = new Map<
@@ -348,11 +352,26 @@ export class NeonWardenSim implements Sim {
       if (value) this.grazeDrill();
       return;
     }
-    if (!value) return;
-    if (name === "tut.spawnTurret" && !this.isAlive(this.practiceTurret)) {
-      this.practiceTurret = this.spawnEnemy("turret", PRACTICE_TARGET.x, -30, {
-        passive: true,
-      });
+    if (name === "tut.spawnTurret") {
+      this.practiceTurretWanted = value;
+      this.practiceTurretRespawnAt = null;
+      if (value) this.issuePracticeTurret();
+    }
+  }
+
+  private issuePracticeTurret(): void {
+    if (this.isAlive(this.practiceTurret)) return;
+    this.practiceTurret = this.spawnEnemy("turret", PRACTICE_TARGET.x, -30, {
+      passive: true,
+    });
+  }
+
+  /** The practice turret left play with its barrel whole: issue another. */
+  private practiceTurretLost(enemy: Enemy): void {
+    if (enemy.id !== this.practiceTurret || enemy.disarmed) return;
+    this.practiceTurret = null;
+    if (this.practiceTurretWanted) {
+      this.practiceTurretRespawnAt = this.tick + PRACTICE_RESPAWN_TICKS;
     }
   }
 
@@ -433,6 +452,8 @@ export class NeonWardenSim implements Sim {
       this.statsTracker.reset();
       this.practiceWanted = false;
       this.practiceRespawnAt = null;
+      this.practiceTurretWanted = false;
+      this.practiceTurretRespawnAt = null;
       this.grazeDrillWanted = false;
       this.player.power = 1;
       this.player.shielded = false;
@@ -529,6 +550,13 @@ export class NeonWardenSim implements Sim {
     ) {
       this.practiceRespawnAt = null;
       if (this.practiceWanted) this.issuePracticeTarget();
+    }
+    if (
+      this.practiceTurretRespawnAt !== null &&
+      this.tick >= this.practiceTurretRespawnAt
+    ) {
+      this.practiceTurretRespawnAt = null;
+      if (this.practiceTurretWanted) this.issuePracticeTurret();
     }
     this.flyPlayer(input);
 
@@ -1168,6 +1196,7 @@ export class NeonWardenSim implements Sim {
     this.score += enemy.score;
     this.kills++;
     if (this.phase !== "tutorial") this.pacifistIntact = false;
+    this.practiceTurretLost(enemy);
     const practice = enemy.id === this.practiceTarget;
     this.events.push({
       type: "kill",
@@ -1558,6 +1587,7 @@ export class NeonWardenSim implements Sim {
       if (!e.alive) return false;
       if (!(e.age > 30 && offscreen(e.x, e.y))) return true;
       if (e.id === this.practiceTarget) practiceEscaped = true;
+      this.practiceTurretLost(e);
       if (e.disarmed) {
         this.events.push({
           type: "despawn",

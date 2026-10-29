@@ -8,6 +8,12 @@
  * - press: when aligned (or tired of waiting), spend the Writ;
  * - stream: keep holding to hose hulls, then rest again.
  *
+ * It also listens, as a patient player would: it holds fire while the
+ * Warden parleys (`boss.parley`, the descent and the phase 3 turn), and in
+ * phase 3 it will not take the Warden below `HEAR_OUT_FLOOR` until it has
+ * heard the turn (a phase 3 parley has come and gone), or `HEAR_OUT_TICKS`
+ * have passed (headless runs have no Director, so no parley ever comes).
+ *
  * Movement is the shared lookahead planner, which vetoes any maneuver that
  * flies into a bullet. Deterministic: same state history, same input.
  */
@@ -33,6 +39,10 @@ const REST_PATIENCE = 150;
 const ALIGN = 3;
 /** The Warden's lower pods: break these first to open the core. */
 const CORE_GUARDS = ["cannonPod", "spiralPod"];
+/** In phase 3, rest at this fraction of the Warden's HP until the turn. */
+const HEAR_OUT_FLOOR = 0.2;
+/** Stop waiting for the turn this long into phase 3 (45 s). */
+const HEAR_OUT_TICKS = 45 * 60;
 
 type Mode = "rest" | "stream";
 
@@ -42,6 +52,10 @@ export class FightingAutopilot implements Pilot {
   private readonly tracker = new Tracker();
   private mode: Mode = "rest";
   private modeTicks = 0;
+  /** Tick phase 3 began, once it has. */
+  private phase3At: number | null = null;
+  private turnStarted = false;
+  private turnHeard = false;
 
   next(state: SimState): InputFrame {
     if (state.phase === "tutorial" && state.enemies.length === 0) {
@@ -67,10 +81,32 @@ export class FightingAutopilot implements Pilot {
     const aim = this.chooseAim(state);
     const fire = state.phase === "tutorial" && state.enemies.length === 0
       ? tutorialTrigger(state.tick)
-      : this.decideFire(state, aim);
+      : !this.listening(state) && this.decideFire(state, aim);
     const goal = this.chooseGoal(state, aim);
     const plan = this.planner.plan(state, goal);
     return { ...IDLE_INPUT, move: plan.move, focus: plan.focus, fire };
+  }
+
+  /**
+   * Whether to hold fire and let the Warden talk: during any parley, and in
+   * phase 3 near the floor until the turn has been heard.
+   */
+  private listening(state: SimState): boolean {
+    const boss = state.boss;
+    if (!boss) return false;
+    const parley = boss.ai === "parley";
+    if (boss.phase === 3) {
+      this.phase3At ??= state.tick;
+      if (parley) this.turnStarted = true;
+      else if (this.turnStarted) this.turnHeard = true;
+    }
+    if (parley) {
+      this.setMode("rest");
+      return true;
+    }
+    if (this.phase3At === null || this.turnHeard) return false;
+    if (state.tick - this.phase3At >= HEAR_OUT_TICKS) return false;
+    return boss.hp <= boss.maxHp * HEAR_OUT_FLOOR;
   }
 
   private setMode(mode: Mode): void {
@@ -155,13 +191,20 @@ export class FightingAutopilot implements Pilot {
 /**
  * With no hologram to aim at, demonstrate all three trigger verbs. The
  * fighting routine otherwise rests straight into Writs forever and never
- * passes the tutorial's uncharged-tap drill. Each four-second lap rests,
- * taps briefly (below the charge threshold), then holds the stream.
+ * passes the tutorial's uncharged-tap drill. Each lap rests, taps briefly
+ * (below the charge threshold), then holds the stream.
+ *
+ * The rest must outlast the slowest weapon's full charge (150 ticks) plus
+ * the rest drill's dwell at full charge (30 ticks, `tutorialGates.ts`). A
+ * 120-tick rest reached full charge on its last tick and never passed it.
  */
+export const TUTORIAL_REST_TICKS = 210;
+const TUTORIAL_LAP = TUTORIAL_REST_TICKS + 120;
+
 export function tutorialTrigger(tick: number): boolean {
-  const lap = tick % 240;
-  if (lap < 120) return false;
-  if (lap < 180) return lap % 12 < 2;
+  const lap = tick % TUTORIAL_LAP;
+  if (lap < TUTORIAL_REST_TICKS) return false;
+  if (lap < TUTORIAL_REST_TICKS + 60) return lap % 12 < 2;
   return true;
 }
 
