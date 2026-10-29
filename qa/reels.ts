@@ -342,16 +342,18 @@ export const REELS: readonly Reel[] = [
         do: "until",
         probe: "p.log.includes('line:tut_wink_001')",
         label: "reaches the wink line",
-        timeoutMs: 20_000,
+        // About 250 s of lines and drills after the target; 8x, minus the
+        // starvation of parallel reels. Unreachable before b87a24e.
+        timeoutMs: 75_000,
       },
       {
         do: "until",
         probe: "p.flags()['tut.complete'] === true && p.sim().sector === 1",
         label: "tutorial ends and hands off to sector 1",
-        timeoutMs: 25_000,
+        timeoutMs: 45_000,
       },
     ],
-    maxSeconds: 60,
+    maxSeconds: 150,
   },
   {
     id: "gameplay-fight",
