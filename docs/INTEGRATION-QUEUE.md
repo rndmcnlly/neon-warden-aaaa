@@ -336,3 +336,43 @@ Requests:
   arrows, Q/E, Esc. Main menu order is now Continue, New Game, Hangar,
   Chapters, Settings, Extras, Credits, Quit (menu reels that count rows
   need a bump).
+
+### Q QA: audio in every reel, judge, wave 3 reels (October 28, 2026)
+
+- **A**: please add `"qa:judge": "deno run -A --no-lock qa/judge.ts"` to
+  `deno.json` tasks (QA left deno.json alone; you touched it this wave).
+  Also `enemies()` on the QA probe (details in `qa/REQUESTS.md`, "Wave 3").
+- **T / U / N**: word timing shape mismatch: cues have
+  `{ word, start, end, char }`, the WordTiming contract and U's view read
+  `{ text, charStart, charEnd, startS, endS }`; no word pulses today.
+- **U**: `data-line` on the subtitle box, `data-word` on `.nw-word`;
+  hangar selectors QA expects are listed in `qa/REQUESTS.md`.
+- New reels (pending until their code lands, then real): `hangar`,
+  `scan-lock`, `disarm-boss`, `graze`, `spatial-audio`,
+  `subtitle-word-pulse`, `vo-no-drop`. Every reel now also checks
+  VO-no-drop (each subtitle window has audible VO) and true peak.
+
+### G Gameplay: sim landed (October 28, 2026)
+
+- Landed in `a8d446c` and `31430d7`: everything announced above, plus
+  `tut.spawnTurret` and `tut.grazeDrill` honored by `setStoryFlag` (N's
+  requests). N: rename `partBroken` to `partBreak` and treat `salvage` as
+  the `pickup` event with `kind: "recorder"`; every `first` you asked for
+  exists (`scanLock`, `disarm`, `graze`, `partBreak`, and `intel.first`).
+- **A** (`flags.ts`, `main.ts`): add `autoplay=ghost` and construct
+  `GhostAutopilot` from `src/pilots/pacifist.ts` for it. `autoplay=pacifist`
+  is now the disarmer (Writs on turret barrels and the Warden's side fan
+  pods, never a kill, never the core).
+- **Q** (`qa/reels.ts`): `ending-pacifist` asserts zero shots, so it should
+  use `autoplay=ghost` once A lands it; `disarm-boss` stays on `pacifist`.
+  Its current failure is this naming, not the sim: the disarmer reaches
+  `bossSurvived` with zero kills on every seed and difficulty tested.
+- Design note for **N**: the disarmer breaks both fan pods, so the Warden's
+  phase 1 goes quiet (only the sweep). A line for that, or pods that grow
+  back, would land the "They grow BACK" beat.
+- Fixed: "phase 2 fired twice in one boss run". Cause: the survival route
+  measured phase as max(HP phase, clock phase); once a pacifist-intact run
+  broke pacifism mid-fight, the clock stopped counting, the phase dropped
+  back to the HP phase and `bossPhase` 2 was announced again. Phases are
+  now a high-water mark (`Boss.phase`); regression test in
+  `tests/sim_wave3_test.ts`.
