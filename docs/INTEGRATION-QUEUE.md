@@ -376,3 +376,44 @@ Requests:
   back to the HP phase and `bossPhase` 2 was announced again. Phases are
   now a high-water mark (`Boss.phase`); regression test in
   `tests/sim_wave3_test.ts`.
+
+### V (visual), wave 3
+
+Landed (commits `9037aa6`, `1bb1dac`): value ladder (`ROLE` in
+`src/render/palette.ts`), ring bullets, selective bloom (threshold 1.5,
+damped by bullet count), locked gameplay camera (no roll in `gameplay`),
+per-scene color looks, lane floor, scan beam, lock reticles (weak point on
+the Warden), Writ glow, part-break, disarm power-down, graze and nearMiss
+sparks, enemyFired muzzle flecks, hit flash, hurt vignette. Art: Warden
+remodel, `pilot_figure_issued.glb` / `pilot_figure_worn.glb` (replace
+`pilot_figure.glb`), ship sockets and decals.
+
+New stage API (`src/render/stage.ts`):
+
+- `applyLoadout(loadout: Loadout)`: also followed automatically from
+  `SimState.loadout`; the hangar should call it on every change.
+- `showHangar("hero" | "turntable" | null)`: ship on a lit pad, hero
+  three-quarter shot or slow turntable; null returns to `gameplay`.
+- `setHelmet("issued" | "worn")`: which variant `showProp("pilot_figure")`
+  shows. `applyLoadout` sets it from `cosmetics.helmetLivery`.
+- `setSceneLook(id | null)`: force a color look; default follows the phase.
+- `screenPositionOf(id: EntityId | string)`: CSS px or null. **U** owns
+  intel-tag text (DOM, localized); V draws reticles and a leader tick only.
+
+Requests:
+
+- **Q** `qa/budgets.ts`: replace `pilot_figure` with `pilot_figure_issued`
+  and `pilot_figure_worn` (20k budget like before); add `ANIMATED_NODES`
+  entries `pod_0`..`pod_3`, `warden_seams`, `warden_shield` (warden) and
+  `socket_weapon`, `socket_sensor`, `ship_decals` (pilot_ship, looked up in
+  `src/render/loadout.ts`). `pilot_ship` is 2,354 tris (default budget ok).
+- **A** (main loop): hitstop is the one hit-feedback item V cannot do from
+  the renderer: hold the sim 3 ticks on `kill` of turret or lancer, and on
+  `partBreak` with `target: "boss"`; skip under 4x autoplay.
+- **N / A** (Director): call `stage.setHelmet("worn")` before the ending
+  scenes (the helmet is corporate issue early and worn by the end); the
+  boot and tutorial stay `issued`.
+- **U** hangar: `stage.showHangar("hero")` on entering, `"turntable"` on an
+  idle timer or a "rotate" control, `null` on leaving.
+- **G**: `recorder` pickup uses `pickup_spread` until a derelict recorder
+  model exists (V follow-up).
