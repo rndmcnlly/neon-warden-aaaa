@@ -2052,3 +2052,81 @@
 :lang(zh) .nw-logotype.is-small {
   padding-inline-end: 0.3em;
 }
+
+/* ---------- Back chip and pause chip (src/ui/frontEnd.ts) ---------- */
+
+/* One Back, same spot on every screen: bottom-left, inside the safe area,
+   at least 48 px tall (WCAG 2.5.8 asks 24; children point less precisely). */
+.nw-back-chip {
+  position: absolute;
+  left: calc(1rem + env(safe-area-inset-left, 0px));
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0 1.1em 0 0.8em;
+  border: 1px solid rgba(94, 242, 255, 0.45);
+  border-radius: 999px;
+  background: var(--nw-glass-strong);
+  color: var(--nw-cyan);
+  font: inherit;
+  font-size: 0.95em;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+.nw-back-chip[hidden] {
+  display: none;
+}
+.nw-back-chip:hover,
+.nw-back-chip:focus-visible {
+  border-color: var(--nw-cyan);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(94, 242, 255, 0.35);
+}
+.nw-back-arrow {
+  font-size: 1.5em;
+  line-height: 1;
+}
+/* The key glyph helps keyboard and pad players; touch and mouse need none. */
+.nw-frontend[data-device="touch"] .nw-back-chip .nw-glyph,
+.nw-frontend[data-device="mouse"] .nw-back-chip .nw-glyph {
+  display: none;
+}
+/* During play the chip belongs to the pause menu only. */
+.nw-frontend.is-playing .nw-back-chip {
+  display: none;
+}
+
+.nw-pause-chip {
+  display: none;
+  position: absolute;
+  right: calc(1rem + env(safe-area-inset-right, 0px));
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(94, 242, 255, 0.45);
+  border-radius: 50%;
+  background: var(--nw-glass-strong);
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+.nw-pause-glyph {
+  display: block;
+  width: 14px;
+  height: 16px;
+  margin: auto;
+  border-left: 4px solid var(--nw-cyan);
+  border-right: 4px solid var(--nw-cyan);
+  box-sizing: border-box;
+}
+/* Mouse players get it in play; touch players have one in the deck. */
+.nw-frontend.is-playing.is-in-run[data-device="mouse"] .nw-pause-chip {
+  display: block;
+}

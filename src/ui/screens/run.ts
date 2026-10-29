@@ -84,7 +84,7 @@ export function continueScreen(
     });
     el.setAttribute("role", "alertdialog");
     // Back does nothing here: leaving is an explicit choice, not a reflex.
-    return { el, modal: true, onBack: () => {} };
+    return { el, modal: true, onBack: () => {}, noBack: true };
   };
 }
 
@@ -212,6 +212,8 @@ export function creditsCrawlScreen(
     return {
       el,
       onBack: finish,
+      // The crawl has its own visible Skip button.
+      noBack: true,
       dispose: () => {
         cancelAnimationFrame(frame);
         clearTimeout(timer);

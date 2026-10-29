@@ -2,10 +2,26 @@ html,
 body {
   margin: 0;
   height: 100%;
+  /* dvh follows mobile browser chrome as it shows and hides; 100vh does not. */
+  height: 100dvh;
   overflow: hidden;
   background: #04020c;
   color: #c8fbff;
   font-family: system-ui, sans-serif;
+  /* No pull-to-refresh, no trackpad history swipe (it pauses instead, see
+     src/input/trackpadSwipe.ts), no rubber-band scrolling. */
+  overscroll-behavior: none;
+  /* A game, not a document: no text selection, iOS callouts or tap flash. */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  /* Double-tap zoom off everywhere; the stage refuses panning entirely. */
+  touch-action: manipulation;
+}
+
+#stage {
+  touch-action: none;
 }
 
 #stage,

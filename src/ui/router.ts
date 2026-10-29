@@ -17,6 +17,13 @@ export interface Screen {
   onIntent?(event: IntentEvent): boolean;
   /** Back or cancel. Defaults to popping this screen. */
   onBack?(): void;
+  /**
+   * Back means nothing here (the press-start gate, the title, a choice
+   * that must be made), so the visible Back chip hides and system Back is
+   * left to the browser. Screens with their own visible Skip set it too,
+   * so one screen never shows two buttons that do the same thing.
+   */
+  readonly noBack?: boolean;
   /** Re-read settings into widgets after any settings change. */
   sync?(): void;
   dispose?(): void;

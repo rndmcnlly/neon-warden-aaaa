@@ -54,7 +54,9 @@ import {
 } from "./screens/run.ts";
 import { uiSound } from "./sound.ts";
 import { hasText, id, t } from "../i18n/index.ts";
-import { h, widgetIntent } from "./widgets.ts";
+import { glyph, h, widgetIntent } from "./widgets.ts";
+import { createHistoryBridge, type HistoryBridge } from "./historyBack.ts";
+import { createSwipeDetector } from "../input/trackpadSwipe.ts";
 import "./frontend.css";
 
 export interface FrontEndOptions {
@@ -165,7 +167,42 @@ export function createFrontEnd(
     "aria-live": "polite",
     hidden: true,
   });
-  layer.append(backdrop, screens, toasts, saveChip, langBadge, buildLabel);
+  /**
+   * The one visible Back for mouse and touch, same spot on every screen
+   * (poka-yoke for kids and agents alike). It shows the device's Back glyph
+   * for keyboard and pad players, and it is the same command as Esc, pad B,
+   * right-click and system Back (see `goBack`).
+   */
+  const backChip = h(
+    "button",
+    {
+      type: "button",
+      class: "nw-back-chip",
+      "data-qa": "back-chip",
+      hidden: true,
+    },
+    h("span", { class: "nw-back-arrow", "aria-hidden": "true" }, "‹"),
+    h("span", { class: "nw-back-label" }),
+    glyph("back"),
+  );
+  backChip.addEventListener("click", () => goBack("pointer"));
+  /** Pause during a run for mouse players (touch has one in its deck). */
+  const pauseChip = h("button", {
+    type: "button",
+    class: "nw-pause-chip",
+    "data-qa": "pause-chip",
+  }, h("span", { class: "nw-pause-glyph", "aria-hidden": "true" }));
+  pauseChip.addEventListener("click", () => pause("player"));
+  layer.append(
+    backdrop,
+    screens,
+    toasts,
+    saveChip,
+    langBadge,
+    buildLabel,
+    pauseChip,
+    backChip,
+  );
   root.appendChild(layer);
 
   let playing = false;
@@ -178,7 +215,43 @@ export function createFrontEnd(
   const router = new Router(screens, () => {
     layer.classList.toggle("is-playing", router.depth === 0);
     updatePrompts();
+    syncBack();
   });
+
+  /** Back means something on the top screen (or Pause, during play). */
+  function backMeansSomething(): boolean {
+    const top = router.top();
+    return top ? !top.noBack : playing;
+  }
+
+  function syncBack(): void {
+    const top = router.top();
+    backChip.hidden = !top || !!top.noBack;
+    // Re-arm or unwind the guard entry; `bridge` exists once boot finished.
+    bridge?.sync();
+  }
+
+  /**
+   * The single Back command behind every door: the chip, Esc and pad B
+   * (via `decideMenuIntent`), right-click, and the history bridge. During
+   * play with no menu open it pauses instead, so no Back ever drops a run.
+   */
+  function goBack(source: "keys" | "pointer" | "system"): void {
+    const top = router.top();
+    if (!top) {
+      pause("player");
+      return;
+    }
+    // `noBack` hides the visible doors only: Esc still skips the credits
+    // crawl through its `onBack`, exactly as before the chip existed.
+    if (top.noBack && source !== "keys") return;
+    uiSound("back");
+    if (top.onBack) top.onBack();
+    else router.pop();
+  }
+
+  // Declared before any screen is pushed; `syncBack` tolerates its absence.
+  let bridge: HistoryBridge | null = null;
 
   const hud = createHud({
     t: (key, vars) => t(id(key), lang(), vars),
@@ -271,6 +344,10 @@ export function createFrontEnd(
       String(1 + (s.subtitles.scale - 1) * 0.5),
     );
     hud.relabel();
+    backChip.querySelector(".nw-back-label")!.textContent = ctx.t(
+      "ui.common.back",
+    );
+    pauseChip.setAttribute("aria-label", ctx.t("ui.touch.pause"));
     buildLabel.replaceChildren(
       h("strong", {}, ctx.t("ui.build.label")),
       h("span", {}, ctx.t("ui.build.detail")),
@@ -312,9 +389,7 @@ export function createFrontEnd(
       case "activateFocused":
         return (focused as HTMLElement).click();
       case "back":
-        uiSound("back");
-        if (top!.onBack) top!.onBack();
-        else router.pop();
+        return goBack("keys");
     }
   });
 
@@ -350,6 +425,50 @@ export function createFrontEnd(
   addEventListener("blur", onBlur);
   document.addEventListener("visibilitychange", onVisibility);
   document.addEventListener("fullscreenchange", onFullscreen);
+
+  // System Back (Android, browser button, mouse button 4, iOS swipe-back).
+  bridge = createHistoryBridge({
+    wanted: backMeansSomething,
+    onBack: () => goBack("system"),
+  });
+
+  /**
+   * Right-click is Back in menus (a PC front-end convention) and does
+   * nothing in play. Only a real mouse right button counts: Android fires
+   * `contextmenu` on a touch long-press, which must not navigate. `?dev`
+   * keeps the browser menu for inspecting elements.
+   */
+  let lastPress = { type: "", button: -1 };
+  const onPressForMenu = (event: PointerEvent) => {
+    lastPress = { type: event.pointerType, button: event.button };
+  };
+  const onContextMenu = (event: MouseEvent) => {
+    if (flags.dev) return;
+    event.preventDefault();
+    const isRightClick = lastPress.type === "mouse" && lastPress.button === 2;
+    if (isRightClick && router.depth > 0) goBack("pointer");
+  };
+  addEventListener("pointerdown", onPressForMenu, true);
+  addEventListener("contextmenu", onContextMenu);
+
+  /**
+   * Trackpad gestures in play: a two-finger history swipe pauses (CSS
+   * `overscroll-behavior` already stops it navigating), and pinch-zoom
+   * (`ctrlKey` wheel) is refused so the playfield never zooms mid-run.
+   */
+  const swipe = createSwipeDetector();
+  const onWheel = (event: WheelEvent) => {
+    const inPlay = playing && router.depth === 0;
+    if (event.ctrlKey && playing) event.preventDefault();
+    const swiped = swipe.feed({
+      deltaX: event.deltaX,
+      deltaY: event.deltaY,
+      ctrlKey: event.ctrlKey,
+      time: event.timeStamp,
+    });
+    if (swiped && inPlay) pause("player");
+  };
+  addEventListener("wheel", onWheel, { passive: false });
 
   // Reduced motion: the setting, or the OS preference, either one is enough.
   const motionQuery = matchMedia("(prefers-reduced-motion: reduce)");
@@ -456,6 +575,7 @@ export function createFrontEnd(
   // The router only reports changes; a skip-to run never pushes a screen.
   layer.classList.toggle("is-playing", router.depth === 0);
   updatePrompts();
+  syncBack();
 
   /**
    * Meta progress from run events: a first `intel` unlocks its codex entry
@@ -536,6 +656,10 @@ export function createFrontEnd(
       offSettings();
       offSaves();
       removeEventListener("blur", onBlur);
+      removeEventListener("pointerdown", onPressForMenu, true);
+      removeEventListener("contextmenu", onContextMenu);
+      removeEventListener("wheel", onWheel);
+      bridge?.dispose();
       document.removeEventListener("visibilitychange", onVisibility);
       document.removeEventListener("fullscreenchange", onFullscreen);
       input.dispose();

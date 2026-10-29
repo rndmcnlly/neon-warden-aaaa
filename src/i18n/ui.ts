@@ -28,6 +28,17 @@ export const UI_STRINGS = {
   },
   // -- common controls
   "ui.common.back": { en: "Back", es: "Volver", zh: "返回" },
+  // -- touch and mobile (src/ui/touchDeck.ts, research/2026-10-28-mobile-touch)
+  "ui.touch.pause": { en: "Pause", es: "Pausa", zh: "暂停" },
+  "ui.touch.fire": { en: "FIRE", es: "DISPARAR", zh: "开火" },
+  "ui.touch.focus": { en: "FOCUS", es: "PRECISIÓN", zh: "精准" },
+  "ui.touch.drag": {
+    en: "Drag anywhere to fly",
+    es: "Arrastra en cualquier parte para volar",
+    zh: "在任意位置拖动即可飞行",
+  },
+  "ui.touch.latched": { en: "STREAM ON", es: "RÁFAGA ACTIVA", zh: "连射中" },
+
   "ui.common.select": { en: "Select", es: "Seleccionar", zh: "选择" },
   "ui.common.adjust": { en: "Adjust", es: "Ajustar", zh: "调整" },
   "ui.common.tab": { en: "Tab", es: "Pestaña", zh: "标签页" },

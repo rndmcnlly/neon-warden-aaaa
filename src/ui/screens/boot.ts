@@ -46,6 +46,7 @@ export function gateScreen(ctx: UiContext): ScreenFactory {
       el,
       onIntent: () => true,
       onBack: () => {},
+      noBack: true,
       dispose: stop,
     };
   };
@@ -119,6 +120,7 @@ export function noticeScreen(ctx: UiContext): ScreenFactory {
     return {
       el,
       onBack: () => {},
+      noBack: true,
       sync: () => widgets.forEach((w) => w.sync()),
     };
   };
@@ -198,6 +200,8 @@ export function logoScreen(ctx: UiContext): ScreenFactory {
         return true;
       },
       onBack: finish,
+      // The logos show their own touch-safe Skip.
+      noBack: true,
       dispose: () => abort.abort(),
     };
   };
@@ -230,6 +234,7 @@ export function titleScreen(ctx: UiContext): ScreenFactory {
         return true;
       },
       onBack: () => {},
+      noBack: true,
     };
   };
 }

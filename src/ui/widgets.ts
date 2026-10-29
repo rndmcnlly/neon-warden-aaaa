@@ -52,12 +52,17 @@ export function glyph(action: string): HTMLElement {
   return h("kbd", { class: "nw-glyph", "data-action": action });
 }
 
-/** Bottom bar of prompts, e.g. [[confirm, "Select"], [back, "Back"]]. */
+/**
+ * Bottom bar of prompts, e.g. [[confirm, "Select"], [back, "Back"]]. A
+ * "back" entry is dropped: the front end's one Back chip (a real button,
+ * glyph included) stands in for it on every screen, so Back never appears
+ * twice or as an unclickable label.
+ */
 export function promptBar(entries: readonly [string, string][]): HTMLElement {
   return h(
     "div",
     { class: "nw-prompts", "aria-hidden": "true" },
-    ...entries.map(([action, label]) =>
+    ...entries.filter(([action]) => action !== "back").map(([action, label]) =>
       h("span", { class: "nw-prompt" }, glyph(action), label)
     ),
   );
