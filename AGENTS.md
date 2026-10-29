@@ -119,6 +119,15 @@ structure and the production checklist should be legible and teachable.
   be rewritten to match the anchor rather than recast. The scary register
   belongs to whoever hypes the Warden up.
 
+## Lifecycle (Adam, October 29, 2026)
+
+A few more days of improvement, then parked with no active development: a
+pedagogical artifact to share with students. Favor choices that keep it
+understandable and runnable for years with no maintainer: a static GitHub
+Pages build, pinned dependencies, committed generated assets where small
+(rather than CI regeneration that needs local models or paid APIs), honest
+docs on what can and cannot be regenerated, and no services to keep alive.
+
 ## Working style
 
 ### Repo-local skill routing
