@@ -217,9 +217,13 @@ function pageAv(wordSelector: string): void {
       connect.call(this, tapsFor(this.context).mix);
     }
     // Post-pan stem: every panner's output, so centred music and voice do
-    // not mask what the spatial check measures.
+    // not mask what the spatial check measures. The ship's own engine bed
+    // (src/audio/engineBed.ts) is a continuous self-cue panned by screen
+    // position, not a world sound; it marks its panner `nwSelf` and stays
+    // out, or it would drown the enemies this stem is about.
     if (
       (this instanceof StereoPannerNode || this instanceof PannerNode) &&
+      !(this as AudioNode & { nwSelf?: boolean }).nwSelf &&
       this.context instanceof AudioContext &&
       !(args[0] instanceof MediaStreamAudioDestinationNode)
     ) {

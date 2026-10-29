@@ -214,6 +214,9 @@ export class EngineBed {
     const bed = ctx.createGain();
     bed.gain.value = 0;
     const pan = ctx.createStereoPanner();
+    // QA's spatial stem measures world sounds moving around the ship; the
+    // ship's own bed is marked so it is left out (qa/av.ts).
+    (pan as StereoPannerNode & { nwSelf?: boolean }).nwSelf = true;
     bed.connect(pan).connect(this.out);
 
     const humGain = ctx.createGain();
