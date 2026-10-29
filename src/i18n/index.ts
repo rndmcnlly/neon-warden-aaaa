@@ -15,6 +15,8 @@ import type { Lang, LineId, ScriptLine } from "../contracts/index.ts";
 import { lineId } from "../contracts/index.ts";
 import { SCRIPT_LINES } from "./script.gen.ts";
 import { UI_STRINGS } from "./ui.ts";
+import { RADIO_TEXT } from "./radio.ts";
+import { CODEX_TEXT } from "./codex.ts";
 import type { LocalizedText, ScriptLineData } from "./types.ts";
 
 export type { LocalizedText, Route, ScriptLineData } from "./types.ts";
@@ -23,14 +25,23 @@ export type { LocalizedText, Route, ScriptLineData } from "./types.ts";
 export type ScriptKey = keyof typeof SCRIPT_LINES;
 /** Every UI string id, as a literal type. */
 export type UiKey = keyof typeof UI_STRINGS;
-/** Any id that exists in either table. */
-export type TextKey = ScriptKey | UiKey;
+/** Text-only radio lines and callsigns (`radio.*`). */
+export type RadioKey = keyof typeof RADIO_TEXT;
+/** Codex entries (`codex.*`). */
+export type CodexKey = keyof typeof CODEX_TEXT;
+/** Any id that exists in any table. */
+export type TextKey = ScriptKey | UiKey | RadioKey | CodexKey;
 
 /** Values substituted into `{name}` placeholders. */
 export type TextParams = Readonly<Record<string, string | number>>;
 
 const script: Readonly<Record<string, ScriptLineData>> = SCRIPT_LINES;
 const ui: Readonly<Record<string, LocalizedText>> = UI_STRINGS;
+/** Narrative's unspoken tables: radio text and the codex. */
+const narrative: Readonly<Record<string, LocalizedText>> = {
+  ...RADIO_TEXT,
+  ...CODEX_TEXT,
+};
 
 /**
  * Turns a known id into a `LineId`. Prefer this over the contract's
@@ -41,7 +52,7 @@ export function id(key: TextKey): LineId {
 }
 
 function entry(line: string): LocalizedText | undefined {
-  return script[line]?.text ?? ui[line];
+  return script[line]?.text ?? ui[line] ?? narrative[line];
 }
 
 /** True if the id exists in either table. */
@@ -51,7 +62,11 @@ export function hasText(line: string): boolean {
 
 /** All known ids, for tests and tooling. */
 export function allTextIds(): readonly string[] {
-  return [...Object.keys(script), ...Object.keys(ui)];
+  return [
+    ...Object.keys(script),
+    ...Object.keys(ui),
+    ...Object.keys(narrative),
+  ];
 }
 
 // -- missing-text warnings (each problem reported once)
@@ -121,8 +136,13 @@ export function scriptLine(line: LineId): ScriptLine | undefined {
   };
 }
 
-/** The subtitle name for a line's speaker, in `lang`. */
+/**
+ * The subtitle name for a line's speaker, in `lang`. Radio speakers (scouts,
+ * Lane Control) have no `ui.speaker.*` entry; their channel callsign stands in.
+ */
 export function speakerName(line: LineId, lang: Lang): string | undefined {
   const data = script[line];
-  return data && t(lineId(`ui.speaker.${data.speaker}`), lang);
+  if (!data) return undefined;
+  const name = `ui.speaker.${data.speaker}`;
+  return t(lineId(name in ui ? name : `radio.callsign.${data.speaker}`), lang);
 }

@@ -5,7 +5,8 @@
  *
  * The descent is the Warden's invulnerable window, played as a parley: it
  * will not be harmed, and will not fire, while it talks (`boss.parley`).
- * Phase 1 barks follow once the fight starts.
+ * Phase 1 barks follow once the fight starts. On the pacifist route the
+ * Warden tells a disarmer from a Pilot who never fired (`run.hasFired`).
  */
 
 import type { Timeline } from "../contracts/index.ts";
@@ -29,7 +30,17 @@ export const wardenDescent: Timeline = {
     branch(
       FLAGS.runPacifist,
       [
-        ...sayAll("desc_pac_001", "desc_pac_002"),
+        // Pacifist: did the Pilot disarm scouts (fired, never killed) or,
+        // like #0121, never fire at all? The ghost run hears the full Writ.
+        branch(
+          FLAGS.runHasFired,
+          sayAll("desc_disarm_001", "desc_disarm_002"),
+          [
+            ...sayAll("desc_pac_001", "desc_pac_002"),
+            pause(400),
+            ...say("desc_ghost_001"),
+          ],
+        ),
         pause(600),
         ...say("desc_003"),
       ],

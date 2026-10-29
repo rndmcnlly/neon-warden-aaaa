@@ -1,7 +1,10 @@
 /**
  * Tutorial: Lane Authority onboarding. Properly built (every step waits for
  * the player to actually do the thing), knowingly overlong (it explains
- * everything, then reviews it), with exactly one wink (`tut_wink_001`). It
+ * everything, then reviews it), with exactly one wink (`tut_wink_001`).
+ * Wave 3 adds the core loop (tap, hold, rest-to-charge Writ, scanning and
+ * locks, parts and disarming, graze, Contract Rate, the hangar), each step
+ * gated on the player doing it, in dependency order. It
  * ends with the threat briefing reel, where the narrator builds up the
  * Warden's terror so the Warden can deflate it later.
  *
@@ -53,14 +56,54 @@ export const tutorial: Timeline = {
     setFlag(FLAGS.tutSpawnTarget, false),
     ...say("tut_target_002"),
 
-    // Module 4: survival, salvage, and the review nobody asked for.
+    // Module 4: trigger discipline. Tap, hold, and the rule that ties them.
+    ...say("tut_tap_001"),
+    waitFlag(FLAGS.tutTapped, nudge),
+    ...say("tut_stream_001"),
+    waitFlag(FLAGS.tutStreamed, nudge),
+    ...say("tut_rule_001"),
+
+    // Module 5: rest, scan, lock, Writ. Resting charges the gun and sweeps
+    // the beam, so the lock and the Writ are taught on one hologram.
+    ...say("tut_rest_001"),
+    waitFlag(FLAGS.tutCharged, nudge),
+    setFlag(FLAGS.tutSpawnTarget),
+    ...say("tut_scan_001"),
+    waitFlag(FLAGS.tutLocked, nudge),
+    ...say("tut_intel_001"),
+    ...say("tut_writ_001"),
+    waitFlag(FLAGS.tutWritFired, nudge),
+    setFlag(FLAGS.tutSpawnTarget, false),
+
+    // Module 6: parts and disarming.
+    setFlag(FLAGS.tutSpawnTurret),
+    ...say("tut_parts_001"),
+    waitFlag(FLAGS.tutPartBroken, nudge),
+    ...say("tut_disarm_001"),
+    setFlag(FLAGS.tutSpawnTurret, false),
+
+    // Module 7: clearance (graze).
+    setFlag(FLAGS.tutGrazeDrill),
+    ...say("tut_graze_001"),
+    waitFlag(FLAGS.tutGrazed, nudge),
+    setFlag(FLAGS.tutGrazeDrill, false),
+    ...say("tut_graze_002"),
+
+    // Module 8: the Contract Rate, which everything above feeds.
+    ...say("tut_rate_001"),
+    waitFlag(FLAGS.tutRateDoubled, nudge),
+    ...say("tut_ratebreak_001"),
+
+    // Module 9: survival, salvage, the hangar, and the review nobody asked for.
     ...sayAll("tut_lives_001", "tut_continue_001", "tut_pickup_001"),
+    ...say("tut_hangar_001"),
     pause(700),
     ...say("tut_wink_001"),
     pause(500),
     ...say("tut_review_001"),
+    ...say("tut_review_002"),
 
-    // Module 5: the route, and the Warden build-up.
+    // Module 10: the route, and the Warden build-up.
     ...say("tut_route_001"),
     pause(900),
     ...say("tut_warden_001"),

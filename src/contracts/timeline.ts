@@ -44,6 +44,12 @@ export type CameraShotId =
   /** Boot: the studio and incubator logos turn on a plinth. */
   | "logoTurntable";
 
+/**
+ * Who is on the radio: the Warden's scouts talking among themselves, Lane
+ * Control (Authority traffic), or #0121's derelict flight recorder.
+ */
+export type RadioChannel = "scout" | "authority" | "recorder";
+
 /** Story flags the Director reads and writes, plus mirrored sim flags. */
 export type FlagName = string;
 
@@ -88,6 +94,16 @@ export type Cue =
     readonly flag: FlagName;
     readonly value: boolean;
     readonly nudge?: { readonly line: LineId; readonly afterMs: number };
+  }
+  /**
+   * Shows a line as on-screen radio text, apart from the main subtitles,
+   * and plays it if it is a VO line (spatially, when the Director knows
+   * where the speaker is). Does not block. Text-only radio ids are `radio.*`.
+   */
+  | {
+    readonly type: "radio";
+    readonly line: LineId;
+    readonly channel: RadioChannel;
   }
   /** Stops stepping the sim (the flashback freezes the world). */
   | { readonly type: "freezeSim" }

@@ -19,9 +19,10 @@ import type {
   FlagName,
   LineId,
   MusicCueId,
+  RadioChannel,
 } from "../contracts/index.ts";
 import { sfxRole } from "../contracts/index.ts";
-import { id, type ScriptKey } from "../i18n/index.ts";
+import { id, type RadioKey, type ScriptKey } from "../i18n/index.ts";
 
 /** Speak a line and wait for it to finish. Spread it: `...say("id")`. */
 export function say(key: ScriptKey): readonly Cue[] {
@@ -69,6 +70,14 @@ export function branch(
   return { type: "branch", flag, then, else: otherwise };
 }
 
+/**
+ * A line on the radio box, apart from subtitles: a voiced `rad_*` line or a
+ * text-only `radio.*` line. Does not block; radio is ambience, not a beat.
+ */
+export function radio(key: ScriptKey | RadioKey, channel: RadioChannel): Cue {
+  return { type: "radio", line: id(key), channel };
+}
+
 export function freezeSim(): Cue {
   return { type: "freezeSim" };
 }
@@ -91,11 +100,14 @@ export function waitFlag(
   };
 }
 
-/** Every line id a list of cues can speak, including inside branches. */
+/**
+ * Every line id a list of cues can speak or show (says, nudges and radio),
+ * including inside branches.
+ */
 export function spokenLines(cues: readonly Cue[]): LineId[] {
   const found: LineId[] = [];
   for (const cue of cues) {
-    if (cue.type === "say") found.push(cue.line);
+    if (cue.type === "say" || cue.type === "radio") found.push(cue.line);
     if (cue.type === "waitFlag" && cue.nudge) found.push(cue.nudge.line);
     if (cue.type === "branch") {
       found.push(...spokenLines(cue.then), ...spokenLines(cue.else ?? []));

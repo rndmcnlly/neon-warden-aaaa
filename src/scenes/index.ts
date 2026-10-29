@@ -4,6 +4,8 @@
  */
 
 import type { SimEvent, Timeline } from "../contracts/index.ts";
+import { firstDisarm, firstGraze, firstLock, wardenPod } from "./beats.ts";
+import { recorder } from "./recorder.timeline.ts";
 import { boot } from "./boot.timeline.ts";
 import { tutorial } from "./tutorial.timeline.ts";
 import { tutorialSkip } from "./tutorialSkip.timeline.ts";
@@ -24,6 +26,21 @@ export { BARK_LINES, barkFor } from "./barks.ts";
 export { chatterFor, fightChatter, noFireChatter } from "./chatter.ts";
 export { FLAGS, INITIAL_FLAGS, runFlagsAfter } from "./flags.ts";
 export { spokenLines } from "./cues.ts";
+export {
+  RADIO_BANK,
+  RADIO_LINES,
+  radioFor,
+  type RadioLine,
+  radioLines,
+  type RadioSituation,
+  type RadioSource,
+} from "./radio.ts";
+export {
+  CODEX_ENTRIES,
+  type CodexEntry,
+  codexUnlockedBy,
+  codexUnlockedByFlag,
+} from "./codex.ts";
 
 /** In play order. Ids match `?skipto=` targets where one exists. */
 export const TIMELINES: readonly Timeline[] = [
@@ -36,6 +53,11 @@ export const TIMELINES: readonly Timeline[] = [
   sector4,
   sector5,
   flashback,
+  recorder,
+  firstLock,
+  firstDisarm,
+  firstGraze,
+  wardenPod,
   wardenDescent,
   bossPhase2,
   bossPhase3,
@@ -59,7 +81,13 @@ export function timelineForEvent(event: SimEvent): Timeline | null {
         ? timelineById(`sector${event.sector}`) ?? null
         : null;
     case "pickup":
-      return event.firstPowerup ? flashback : null;
+      // The sector 3 recorder plays its coda (and the flashback, if no
+      // powerup came first); any other first powerup plays the flashback.
+      return event.kind === "recorder"
+        ? recorder
+        : event.firstPowerup
+        ? flashback
+        : null;
     case "bossWarning":
       return wardenDescent;
     case "bossPhase":
@@ -72,6 +100,14 @@ export function timelineForEvent(event: SimEvent): Timeline | null {
       return endingKill;
     case "bossSurvived":
       return endingPacifist;
+    case "scanLock":
+      return event.first ? firstLock : null;
+    case "disarm":
+      return event.first ? firstDisarm : null;
+    case "graze":
+      return event.first ? firstGraze : null;
+    case "partBreak":
+      return event.first && event.target === "boss" ? wardenPod : null;
     default:
       return null;
   }

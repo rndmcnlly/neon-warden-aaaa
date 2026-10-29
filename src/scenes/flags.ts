@@ -17,8 +17,11 @@ export const FLAGS = {
   // Run state, maintained by the Director.
   /** True until the player destroys anything (shots or ramming). */
   runPacifist: "run.pacifist",
-  /** True once the player has fired at least one shot. */
+  /** True once the player has fired at least one shot. Its negation is the
+   * sim's `neverFired`: the ghost run the Warden reacts to. */
   runHasFired: "run.hasFired",
+  /** True once any scout has been disarmed (still pacifist). */
+  runDisarmed: "run.disarmed",
 
   // Tutorial progress, set by the Director while the tutorial runs.
   tutMovedLeft: "tut.movedLeft",
@@ -29,6 +32,27 @@ export const FLAGS = {
   /** Timeline asks for the practice hologram; the sim or renderer spawns it. */
   tutSpawnTarget: "tut.spawnTarget",
   tutTargetDestroyed: "tut.targetDestroyed",
+  // Wave 3 tutorial modules: trigger discipline, scanning, parts, graze, rate.
+  /** Three aimed rounds tapped. */
+  tutTapped: "tut.tapped",
+  /** The trigger held into a stream. */
+  tutStreamed: "tut.streamed",
+  /** Capacitor at charge level 3. */
+  tutCharged: "tut.charged",
+  /** The scanning beam locked the practice hologram. */
+  tutLocked: "tut.locked",
+  /** A Writ released. */
+  tutWritFired: "tut.writFired",
+  /** Timeline asks for a passive practice turret with one barrel part. */
+  tutSpawnTurret: "tut.spawnTurret",
+  /** The practice turret's barrel broke (it then leaves, disarmed). */
+  tutPartBroken: "tut.partBroken",
+  /** Timeline asks for slow practice rounds that pass near the ship. */
+  tutGrazeDrill: "tut.grazeDrill",
+  /** Five grazes during the drill. */
+  tutGrazed: "tut.grazed",
+  /** Contract Rate reached x2. */
+  tutRateDoubled: "tut.rateDoubled",
   /** The threat briefing reel is on screen (renderer and UI letterbox it). */
   tutBriefingReel: "tut.briefingReel",
   tutSkipped: "tut.skipped",
@@ -39,6 +63,10 @@ export const FLAGS = {
   flashbackRecording: "flashback.recording",
   /** HUD now shows "Pilot #0122". Hidden until the flashback reveals it. */
   hudSerialRevealed: "hud.serialRevealed",
+  /** The flashback has played (by first powerup or by the recorder). */
+  storyFlashbackSeen: "story.flashbackSeen",
+  /** The derelict recorder is talking: UI shows its lines in the radio box. */
+  recorderPlaying: "recorder.playing",
 
   // Boss.
   /** The Warden is talking: invulnerable and holding fire (needs sim support). */
@@ -67,6 +95,7 @@ export const FLAGS = {
 export const INITIAL_FLAGS: Readonly<Record<FlagName, boolean>> = {
   [FLAGS.runPacifist]: true,
   [FLAGS.runHasFired]: false,
+  [FLAGS.runDisarmed]: false,
   [FLAGS.storyPilotSpeaks]: true,
 };
 
@@ -82,6 +111,8 @@ export function runFlagsAfter(
       return { [FLAGS.runPacifist]: false };
     case "playerFired":
       return { [FLAGS.runHasFired]: true };
+    case "disarm":
+      return { [FLAGS.runDisarmed]: true };
     default:
       return {};
   }

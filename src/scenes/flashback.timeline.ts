@@ -3,12 +3,14 @@
  * The spread crystal is Pilot #0121's flight recorder. The world freezes, so
  * the scene costs the player nothing; we hear #0121's last approach, the
  * Warden begging him to stay, and the recall. The cut back reveals the HUD
- * serial: you are Pilot #0122.
+ * serial: you are Pilot #0122. The sector 3 recorder plays this same scene
+ * if it is reached first, so it guards itself with `story.flashbackSeen`.
  */
 
-import type { Timeline } from "../contracts/index.ts";
+import type { Cue, Timeline } from "../contracts/index.ts";
 import { FLAGS } from "./flags.ts";
 import {
+  branch,
   camera,
   freezeSim,
   music,
@@ -20,9 +22,21 @@ import {
   sfx,
 } from "./cues.ts";
 
+const scene: readonly Cue[] = sceneCues();
+
 export const flashback: Timeline = {
   id: "flashback",
   cues: [
+    // Plays once a run: the sector 3 recorder may have played it already.
+    branch(FLAGS.storyFlashbackSeen, [], [
+      setFlag(FLAGS.storyFlashbackSeen),
+      ...scene,
+    ]),
+  ],
+};
+
+function sceneCues(): readonly Cue[] {
+  return [
     freezeSim(),
     sfx("notify"),
     ...say("flash_ai_001"),
@@ -48,5 +62,5 @@ export const flashback: Timeline = {
     music("gameplay", 1500),
     resumeSim(),
     ...say("flash_ai_003"),
-  ],
-};
+  ];
+}

@@ -26,13 +26,15 @@ You are Pilot #0122. You think you are here to get paid.
 
 ## Cast
 
-| Character                              | Voice (`speakers:` key)      | Function                                                                                                                                                                                | Never                                                            |
-| -------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Pilot #0122**                        | `pilot` (one line, optional) | Silent contractor, helmet never off. Din Djarin bearing, Material Defender motive: just trying to get paid. Male (el piloto, 他). The player's choice to fire or not is his only voice. | Explain himself. Emote. Speak more than once.                    |
-| **Onboarding Assistant** (tutorial AI) | `tutorial_ai`                | Lane Authority onboarding, then comms for the whole run. Helpful, perky, banal. Builds up the Warden. Reacts to everything the player does, never to what the Warden says.              | Sound sinister. She believes every word.                         |
-| **Lane Authority Briefing** (narrator) | `narrator`                   | The threat-briefing reel in the tutorial (the scary register lives here) and the epilogue lines.                                                                                        | Appear outside the reel, the Warden's arrival and the epilogues. |
-| **The Warden**                         | `warden`                     | Hero antagonist and guardian of a commons. High, furious, over-acted, a little funny. Says serial numbers like names.                                                                   | Be scary. Be deep-voiced. Be wrong about the Authority.          |
-| **Pilot #0121**                        | none (silent)                | Your predecessor. Stopped firing at the Warden and was recalled. Heard only through his flight recorder.                                                                                | Speak.                                                           |
+| Character                              | Voice (`speakers:` key)      | Function                                                                                                                                                                                | Never                                                                |
+| -------------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Pilot #0122**                        | `pilot` (one line, optional) | Silent contractor, helmet never off. Din Djarin bearing, Material Defender motive: just trying to get paid. Male (el piloto, 他). The player's choice to fire or not is his only voice. | Explain himself. Emote. Speak more than once.                        |
+| **Onboarding Assistant** (tutorial AI) | `tutorial_ai`                | Lane Authority onboarding, then comms for the whole run. Helpful, perky, banal. Builds up the Warden. Reacts to everything the player does, never to what the Warden says.              | Sound sinister. She believes every word.                             |
+| **Lane Authority Briefing** (narrator) | `narrator`                   | The threat-briefing reel in the tutorial (the scary register lives here) and the epilogue lines.                                                                                        | Appear outside the reel, the Warden's arrival and the epilogues.     |
+| **The Warden**                         | `warden`                     | Hero antagonist and guardian of a commons. High, furious, over-acted, a little funny. Says serial numbers like names.                                                                   | Be scary. Be deep-voiced. Be wrong about the Authority.              |
+| **Pilot #0121**                        | none (silent)                | Your predecessor. Stopped firing at the Warden and was recalled. Heard only through his flight recorder.                                                                                | Speak.                                                               |
+| **The scouts**                         | `scout` (radio)              | The Warden's scouts on their own channel: grown, not built; escort unarmed convoys; fire only on ships that fire first. Lore leaks through their shop talk.                             | Plead, or name the player a villain. They report, they do not judge. |
+| **Lane Control**                       | `authority` (radio)          | Authority traffic: tollgate surveys, Pilot stock, petitions filed unanswered. Every death a line item.                                                                                  | Sound sinister. It is bored.                                         |
 
 ## The Warden in three moves
 
@@ -90,6 +92,80 @@ rated it long."). Everything else in the tutorial is sincere.
 Skip (`tutorialSkip.timeline.ts`): skip button, two UI confirms
 (`ui.tut.skipConfirm1`, `ui.tut.skipConfirm2`), then `tut_skip_001`,
 `tut_skip_002` ("Logged as: declined onboarding."). Three clicks, no penalty.
+
+### Tutorial, wave 3 modules (October 28, 2026)
+
+The tutorial AI is being recast to a more adult voice; the new lines are
+written for sincere institutional warmth (a good trainer who means every
+word), not cuteness. Each module waits on the player (`waitFlag`, nudged by
+`tut_idle_001`), inserted after the practice target, in dependency order:
+
+4. Trigger discipline: `tut_tap_001` (tap x3), `tut_stream_001` (hold),
+   `tut_rule_001` "Stream for hulls, tap for parts."
+5. Rest, scan, Writ, on one hologram: `tut_rest_001` (charge to three),
+   `tut_scan_001` (beam lock), `tut_intel_001` (the FSM states as intel;
+   the codex), `tut_writ_001` (the **Writ of Enclosure**, named "after the
+   instrument that founded the Authority", said with pride).
+6. Parts: `tut_parts_001` (practice turret barrel), `tut_disarm_001`
+   ("forty percent of a kill. A partial deliverable is still a
+   deliverable.").
+7. Graze: `tut_graze_001`, `tut_graze_002` ("Near misses are billable.").
+8. Rate: `tut_rate_001` (to x2), `tut_ratebreak_001` ("It simply pays for
+   results.").
+9. After pickups: `tut_hangar_001` ("Self expression is a benefit of
+   employment."); after `tut_review_001`, `tut_review_002` reviews the
+   trigger. Still exactly one wink: none of these lines comments on the
+   tutorial's length.
+
+### First-time beats (`beats.ts`, on the event's `first`)
+
+`beat-first-lock` `lock_ai_001` + Lane Control radio; `beat-first-disarm`
+`disarm_ai_001` (kindness that is a little too careful) + radio;
+`beat-first-graze` `graze_ai_001`; `beat-warden-pod` `boss_pod_001` ("Do you
+have ANY idea how long it takes to grow a pod?!", the descent's first line
+again, smaller).
+
+### Sector 3 recorder (`recorder.timeline.ts`, on `pickup` kind `recorder`)
+
+The derelict is #0121's ship; the flashback was its last approach (played
+here first if no powerup came before). The coda is what it recorded after:
+`rec_ai_001` ("It is marked closed. It is still transmitting."), log header
+`rec_log_001` (day 312), then the Warden talking to the empty cockpit:
+towing it out of the crossfire, yelling at the next Pilot, and `rec_log_004`
+"he stopped. Write that down somewhere they can't bill for." `rec_ai_002`
+files it as not relevant. No freeze: the player flies through it.
+
+### Radio (`radio.ts`, text in `src/i18n/radio.ts`)
+
+A bank keyed by source (`drone`, `dart`, `turret`, `lancer`, `authority`)
+and situation (`patrol`, `locked`, `disarmed`, `retreat`, `lost`): 22 voiced
+`rad_*` lines and 33 text-only `radio.*` lines. What leaks: the scouts are
+grown in the rings, escort the Saltline Haulers and the Commons Assembly,
+and keep a no-first-fire rule (`rad_drone_patrol_002` plays only while the
+Pilot has not fired); darts are unarmed by a treaty the Authority never
+signed; turrets were planted where tollgates were later surveyed; Lane
+Control keeps Pilot stock ("Pilot zero one two three is ready in
+onboarding") and files petitions unanswered. `lost` lines are kill-route
+only by construction.
+
+### Codex (`codex.ts`, text in `src/i18n/codex.ts`)
+
+Unlocked by the sim's `intel.codexId` (scan locks, the recorder) or from
+the start (contract paperwork). Two voices: Authority filing language for
+what is issued, scan intel for what the files leave out. It is the window
+onto the 80-hour game: Tollmouth Station, the Lantern Reach and the
+Ninefold Shoals, forty charted sectors, the Saltline Haulers (209
+petitions, none answered), the Commons Assembly, and walled packages
+(Injunction, Archivist, Witness) marked "not included in this vertical
+slice". The Warden's core is "the heart" (the crest reads as one).
+
+### Warden on the pacifist route, disarm vs ghost run
+
+The descent's pacifist branch splits on `run.hasFired`: a disarmer gets
+`desc_disarm_001`–`002` ("You took their GUNS? ... They grow back. That is
+not the point. Thank you."); a Pilot who never fired keeps `desc_pac_001`–
+`002` and adds `desc_ghost_001` ("You carried a Writ the whole way and you
+never spent it.").
 
 ### Sectors 1–5 (`sector1`–`sector5.timeline.ts`, on `sectorStarted`)
 
@@ -232,6 +308,14 @@ the welcome line again for **Pilot zero one two three**; P `credits_pac_001`,
 | turrets                                                          | torretas                                                                                            | 炮塔                                             |
 | lancers                                                          | lanceros                                                                                            | 枪骑机                                           |
 | recall                                                           | retiro                                                                                              | 召回                                             |
+| the Writ (of Enclosure)                                          | el Mandato (de Cercamiento)                                                                         | 令状（圈地令状）                                 |
+| scan, lock                                                       | escaneo, fijar / fijado                                                                             | 扫描、锁定                                       |
+| graze                                                            | roce                                                                                                | 擦弹                                             |
+| weapon part, disarm                                              | pieza de armamento, desarmar                                                                        | 武器部件、解除武装                               |
+| Contract Rate                                                    | Tarifa de Contrato                                                                                  | 合同费率                                         |
+| codex, hangar                                                    | códice, hangar                                                                                      | 资料库、机库                                     |
+| Lane Control                                                     | Control de Rutas                                                                                    | 航道控制                                         |
+| Commons Assembly, Saltline Haulers, Tollmouth                    | Asamblea de los Comunes, Transportistas de la Línea de Sal, Bocapeaje                               | 公地议会、盐线货运行会、收费口站                 |
 | non-performance                                                  | no desempeño                                                                                        | 未履约                                           |
 | Outer Drift, Shatter Belt, Gun Lanes, Lancer Gate, Last Approach | Deriva Exterior, Cinturón Quebrado, Rutas de Artillería, Puerta de los Lanceros, Aproximación Final | 外缘漂流带、碎裂带、炮火航道、枪骑之门、最终进近 |
 

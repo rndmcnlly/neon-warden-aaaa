@@ -27,7 +27,36 @@ export function lineId(id: string): LineId {
  * Speaking characters, matching `speakers:` keys in `vo/script.yaml`. Narrative
  * adds new speakers here and in the script together.
  */
-export type Speaker = "tutorial_ai" | "narrator" | "warden" | "pilot";
+export type Speaker =
+  | "tutorial_ai"
+  | "narrator"
+  | "warden"
+  | "pilot"
+  /** The Warden's scouts on their own channel (radio, played spatially). */
+  | "scout"
+  /** Lane Control: Authority traffic heard over the radio. */
+  | "authority";
+
+/**
+ * One spoken word of a rendered take, timed against its audio, so the
+ * subtitle view can pulse the word being spoken. VO tech writes these into
+ * `vo/out/cues.json` at `lines[id].langs[lang].words`; the UI reads them.
+ * A take without `words` (an older render) shows a plain subtitle.
+ */
+export interface WordTiming {
+  /** The word as heard (ASR or alignment token, punctuation trimmed). */
+  readonly text: string;
+  /**
+   * UTF-16 offsets into the subtitle text for that language, `[start, end)`:
+   * the UI pulses `text.slice(charStart, charEnd)`. In Chinese a "word" is
+   * an ASR token, often one or two characters.
+   */
+  readonly charStart: number;
+  readonly charEnd: number;
+  /** Seconds from the start of the take (the same unit as `duration`). */
+  readonly startS: number;
+  readonly endS: number;
+}
 
 /** One entry of `vo/script.yaml` `lines:` as loaded at runtime. */
 export interface ScriptLine {

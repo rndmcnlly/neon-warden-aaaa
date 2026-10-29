@@ -21,6 +21,8 @@ const SPEAKERS: readonly Speaker[] = [
   "narrator",
   "warden",
   "pilot",
+  "scout",
+  "authority",
 ];
 const ROUTES: readonly Route[] = ["any", "kill", "pacifist"];
 

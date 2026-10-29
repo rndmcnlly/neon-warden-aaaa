@@ -13,6 +13,7 @@ import {
   fightChatter,
   FLAGS,
   noFireChatter,
+  RADIO_LINES,
   runFlagsAfter,
   spokenLines,
   timelineForEvent,
@@ -27,6 +28,7 @@ const allReferenced: LineId[] = [
   ...fightChatter.lines,
   ...noFireChatter.lines,
   ...BARK_LINES,
+  ...RADIO_LINES,
 ];
 
 Deno.test("every line a scene can speak exists in all three languages", () => {
@@ -137,6 +139,7 @@ Deno.test("a ram kill still ends the pacifist run", () => {
     kind: "drone",
     score: 100,
     byRam: true,
+    clean: false,
   };
   assertEquals(runFlagsAfter(kill), { [FLAGS.runPacifist]: false });
 });
