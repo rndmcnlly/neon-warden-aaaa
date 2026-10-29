@@ -25,3 +25,8 @@ qa/reports/
 qa/.build/
 __pycache__/
 .openchamber/
+
+# Model weights for the generators (named by env var; never committed).
+vo/models/
+music/sa3/
+sfx/sa3/
