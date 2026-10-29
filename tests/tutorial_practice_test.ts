@@ -21,6 +21,7 @@ import {
   TutorialProgress,
 } from "../src/director/tutorialProgress.ts";
 import { FLAGS } from "../src/scenes/flags.ts";
+import { FightingAutopilot } from "../src/pilots/fighting.ts";
 
 function tutorialRig() {
   const sim = createSim({
@@ -122,4 +123,33 @@ Deno.test("tutorial: drill stats never leak into the run", () => {
   assert(rig.sim.playerStats().roundsFired > 0);
   rig.sim.beginSector(1);
   assertEquals(rig.sim.playerStats().roundsFired, 0);
+});
+
+Deno.test("tutorial: idle fighting autopilot demonstrates the complete trigger verb", () => {
+  const rig = tutorialRig();
+  const pilot = new FightingAutopilot();
+  rig.run(720, () => pilot.next(rig.sim.snapshot()));
+  for (
+    const flag of [
+      FLAGS.tutTapped,
+      FLAGS.tutStreamed,
+      FLAGS.tutCharged,
+      FLAGS.tutWritFired,
+    ]
+  ) assert(rig.flags.has(flag), `autopilot demonstrates ${flag}`);
+});
+
+Deno.test("tutorial: a missed graze volley is retryable and the demo can complete it", () => {
+  const rig = tutorialRig();
+  rig.flags.add(FLAGS.tutGrazeDrill);
+  rig.sim.setStoryFlag(FLAGS.tutGrazeDrill, true);
+  // Miss an entire volley. The lesson must still offer fresh bullets.
+  rig.run(600, () => ({ ...IDLE_INPUT, move: { x: -1, y: 0 } }));
+  assert(rig.sim.snapshot().bullets.some((b) => b.kind !== "shot"));
+  const pilot = new FightingAutopilot();
+  rig.run(900, () => pilot.next(rig.sim.snapshot()));
+  assert(rig.flags.has(FLAGS.tutGrazed));
+  rig.sim.setStoryFlag(FLAGS.tutGrazeDrill, false);
+  rig.run(900, () => IDLE_INPUT);
+  assertEquals(rig.sim.snapshot().bullets.length, 0);
 });

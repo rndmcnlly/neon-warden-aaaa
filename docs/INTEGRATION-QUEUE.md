@@ -582,3 +582,50 @@ Requests:
   `scripts/sync_vo.ts` removing `public/vo/variants/tutorial_ai`
   (directory not empty); `deno fmt --check` fails on 10 in-flight files
   owned by P, B and the wave 4 docs. Lint, check and all 155 tests pass.
+
+### P Gameplay: tutorial fix, stats and commentary shipped (wave 4)
+
+- Root cause reproduced: upward taps break the practice drone's gun, so it
+  retreats as `despawn: spared`, not `kill`. The tutorial waited only for
+  `kill`. `practiceTarget` now explicitly reports destroyed/disarmed/escaped
+  with target identity. Player removals count immediately; an escaped
+  hologram respawns and `TutorialProgress` offers an interjection line.
+  A still-active lock lesson also gets a replacement after a player removal.
+- **Contract additions:** `Sim.playerStats(): PlayerStatsView`,
+  `StatsMomentKind`, and `practiceTarget`/`statsMoment` events in
+  `src/contracts/sim.ts`. Existing `NeonWardenSim.stats()` remains unchanged.
+  `src/sim/stats.ts` tracks rounds, resolved-round accuracy, mist volleys,
+  wasted Writ charge, streaks, grazes, disarms, deaths and time since contact.
+  Tick-based latches, recovery thresholds and global/self gaps rate-limit
+  moments. Tutorial statistics reset on entering sector 1.
+- `src/director/commentary.ts` consumes W's typed `Bank` registry: trigger
+  filters, conditions, priorities, cooldowns, per-run caps, subtype pools,
+  persisted bags and text-only fallback. Bags persist across runs; malformed
+  storage is ignored. `Director.interject()` permits the tutorial AI to speak
+  only during an idle `waitFlag`; the scene waits for it to finish. Other
+  timelines retain the floor. `main.ts` routes events through the scheduler
+  and retires duplicate legacy `barkFor` calls. Its A/B edits were excluded
+  from P's commit.
+- Live QA exposed two older autopilot deadlocks too: it never demonstrated
+  uncharged taps, and its figure-eight evaded the one-shot graze drill.
+  Tutorial-only pilot behavior now demonstrates the complete trigger and
+  holds the practice-volley center. The graze drill retries if missed.
+  Small integration edit: `src/app/tutorialDemo.ts` yields to the pilot while
+  hostile practice bullets exist (rather than forcing the figure-eight).
+- **Integration requests:** W may supply a `tutTargetEscaped` bank for the
+  re-issued-target line; until then it uses localized `tut_target_001`.
+  App pause/resume banks are supported by `commentary.onApp()` but not yet
+  wired to pause transitions. B owns the tutorial reel deadline: its wink
+  check still allows only 20 s after the target, while the now-complete
+  tutorial reaches that beat later. Do not speed up or skip actual lessons
+  simply to satisfy this deadline.
+- **QA:** `deno task ci` ran, blocked only by formatting in existing
+  `docs/WAVE3.md`, `docs/WAVE4.md`, `public/sfx/manifest.json`. Separately,
+  lint, typecheck, all **180 tests**, and production build pass. The earlier
+  VO sync directory-removal failure has cleared.
+- Foreground reels: `qa/reports/20261028-221817/index.html` has
+  **gameplay-fight PASS (15 assertions)**.
+  `qa/reports/20261028-222315/index.html` has tutorial target PASS and
+  **complete handoff to sector 1 PASS at 45.0 s**; its sole traversal failure
+  is the wink deadline described above. Static QA also reports W's 65 new
+  unrendered voiced variants and existing VO ASR issues.

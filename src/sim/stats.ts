@@ -185,12 +185,17 @@ export class PlayerStats {
     if (this.recent.length > STATS.rollingRounds) this.recent.shift();
     if (!connected) return;
     this.roundsHit++;
-    this.lastConnectTick = this.now;
     this.mistRun = 0;
+  }
+
+  /** A round just connected, even if a piercing Writ stays in flight. */
+  roundConnected(tick: Tick): void {
+    this.lastConnectTick = tick;
   }
 
   /** Every event of the tick, in order. */
   note(event: SimEvent): void {
+    this.now = event.tick;
     switch (event.type) {
       case "kill":
       case "disarm":
@@ -304,7 +309,9 @@ export class PlayerStats {
     ) {
       const value = Math.max(this.fullChargeTicks, this.wastedFullWrits);
       fire("writHoarding", value);
-      if (out.length > 0) this.wastedFullWrits = 0;
+      if (out.some((event) => event.moment === "writHoarding")) {
+        this.wastedFullWrits = 0;
+      }
     }
 
     // The Warden fight going quiet.

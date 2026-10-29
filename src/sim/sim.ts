@@ -255,6 +255,7 @@ export class NeonWardenSim implements Sim {
   /** `tut.spawnTarget` is on: keep a practice target in play. */
   private practiceWanted = false;
   private practiceRespawnAt: Tick | null = null;
+  private grazeDrillWanted = false;
   private readonly statsTracker = new PlayerStats();
   private practiceTurret: EntityId | null = null;
   private events: SimEvent[] = [];
@@ -328,13 +329,16 @@ export class NeonWardenSim implements Sim {
       if (value) this.issuePracticeTarget();
       return;
     }
+    if (name === "tut.grazeDrill") {
+      this.grazeDrillWanted = value;
+      if (value) this.grazeDrill();
+      return;
+    }
     if (!value) return;
     if (name === "tut.spawnTurret" && !this.isAlive(this.practiceTurret)) {
       this.practiceTurret = this.spawnEnemy("turret", PRACTICE_TARGET.x, -30, {
         passive: true,
       });
-    } else if (name === "tut.grazeDrill") {
-      this.grazeDrill();
     }
   }
 
@@ -414,6 +418,7 @@ export class NeonWardenSim implements Sim {
       this.statsTracker.reset();
       this.practiceWanted = false;
       this.practiceRespawnAt = null;
+      this.grazeDrillWanted = false;
       this.player.power = 1;
       this.player.shielded = false;
     }
@@ -540,6 +545,11 @@ export class NeonWardenSim implements Sim {
     if (decay) this.events.push(decay);
     this.checkSurvival(survivalOpen);
     this.cull();
+    // A missed practice volley must not permanently stall the lesson.
+    if (
+      this.grazeDrillWanted &&
+      !this.bullets.some((bullet) => bullet.owner === 0)
+    ) this.grazeDrill();
     this.updateStats(input);
     return this.flushEvents();
   }
@@ -965,6 +975,7 @@ export class NeonWardenSim implements Sim {
       for (const enemy of this.enemies) {
         if (!enemy.alive || shot.struck.includes(enemy.id)) continue;
         if (this.strikeEnemy(enemy, shot)) {
+          this.statsTracker.roundConnected(this.tick);
           shot.connected = true;
           struck = true;
           break;
@@ -1205,6 +1216,7 @@ export class NeonWardenSim implements Sim {
     );
     const hull = touches({ x: boss.x, y: boss.y, radius: BOSS.radius }, shot);
     if (!pod && !hull) return;
+    this.statsTracker.roundConnected(this.tick);
     shot.alive = false;
     shot.connected = true;
     const open = bossArrived(boss) && !this.parley;

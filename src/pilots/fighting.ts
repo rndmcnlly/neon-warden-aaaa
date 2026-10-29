@@ -44,10 +44,30 @@ export class FightingAutopilot implements Pilot {
   private modeTicks = 0;
 
   next(state: SimState): InputFrame {
+    if (state.phase === "tutorial" && state.enemies.length === 0) {
+      const practice = state.bullets.filter((bullet) => bullet.kind !== "shot");
+      if (practice.length > 0) {
+        // The practice volley alternates 17 px either side of its center.
+        // Hold that center, rather than dodging away from every graze.
+        const xs = practice.map((bullet) => bullet.pos.x);
+        const center = (Math.min(...xs) + Math.max(...xs)) / 2;
+        return {
+          ...IDLE_INPUT,
+          move: {
+            x: Math.max(-1, Math.min(1, (center - state.player.pos.x) / 2)),
+            y: 0,
+          },
+          focus: true,
+          fire: tutorialTrigger(state.tick),
+        };
+      }
+    }
     this.tracker.observe(state);
     this.modeTicks++;
     const aim = this.chooseAim(state);
-    const fire = this.decideFire(state, aim);
+    const fire = state.phase === "tutorial" && state.enemies.length === 0
+      ? tutorialTrigger(state.tick)
+      : this.decideFire(state, aim);
     const goal = this.chooseGoal(state, aim);
     const plan = this.planner.plan(state, goal);
     return { ...IDLE_INPUT, move: plan.move, focus: plan.focus, fire };
@@ -130,6 +150,19 @@ export class FightingAutopilot implements Pilot {
     }
     return { x: HOME.x, y: HOME.y, weightX: 0.01, weightY: 0.02 };
   }
+}
+
+/**
+ * With no hologram to aim at, demonstrate all three trigger verbs. The
+ * fighting routine otherwise rests straight into Writs forever and never
+ * passes the tutorial's uncharged-tap drill. Each four-second lap rests,
+ * taps briefly (below the charge threshold), then holds the stream.
+ */
+export function tutorialTrigger(tick: number): boolean {
+  const lap = tick % 240;
+  if (lap < 120) return false;
+  if (lap < 180) return lap % 12 < 2;
+  return true;
 }
 
 interface Aim {

@@ -348,10 +348,29 @@ export function keyValueBagStore(
     load() {
       try {
         const raw = JSON.parse(storage.getItem(BAGS_KEY) ?? "null");
-        if (raw?.version !== BAGS_VERSION || typeof raw.bags !== "object") {
+        if (
+          raw?.version !== BAGS_VERSION || raw.bags === null ||
+          typeof raw.bags !== "object" || Array.isArray(raw.bags)
+        ) {
           return {};
         }
-        return raw.bags as Record<string, BagState>;
+        const valid: Record<string, BagState> = {};
+        for (const [key, value] of Object.entries(raw.bags)) {
+          if (!value || typeof value !== "object") continue;
+          const bag = value as Record<string, unknown>;
+          if (
+            !Array.isArray(bag.dealt) ||
+            !bag.dealt.every((id) => typeof id === "string") ||
+            !(bag.last === null || typeof bag.last === "string")
+          ) continue;
+          Object.defineProperty(valid, key, {
+            value: { dealt: bag.dealt, last: bag.last },
+            enumerable: true,
+            configurable: true,
+            writable: true,
+          });
+        }
+        return valid;
       } catch {
         return {};
       }

@@ -14,6 +14,7 @@ import {
   type CommentaryContext,
   type CommentaryPorts,
   CommentaryScheduler,
+  keyValueBagStore,
   memoryBagStore,
 } from "../src/director/commentary.ts";
 import type { Bank, StatsMoment } from "../src/scenes/banks/types.ts";
@@ -123,6 +124,17 @@ Deno.test("commentary: bags persist across runs and sessions", () => {
   b.later(10_000);
   b.s.onEvent(graze, CTX);
   assertEquals(new Set([...a.spoken, ...b.spoken]).size, 4);
+});
+
+Deno.test("commentary: malformed persisted bags are ignored", () => {
+  for (const bags of [null, [], { b: { dealt: 3, last: null } }]) {
+    const store = keyValueBagStore({
+      getItem: () => JSON.stringify({ version: 1, bags }),
+      setItem: () => {},
+    });
+    assertEquals(store.load(), {});
+    assert(scheduler([bank("b", 3)], { store }).s.onEvent(graze, CTX));
+  }
 });
 
 Deno.test("commentary: cooldowns, the global gap, and urgent lines", () => {

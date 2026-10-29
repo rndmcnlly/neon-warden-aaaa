@@ -20,7 +20,10 @@ export function withTutorialDemo(pilot: Pilot): Pilot {
     kind: pilot.kind,
     next(state) {
       const frame = pilot.next(state);
-      if (state.phase !== "tutorial" || state.enemies.length > 0) return frame;
+      if (
+        state.phase !== "tutorial" || state.enemies.length > 0 ||
+        state.bullets.some((bullet) => bullet.kind !== "shot")
+      ) return frame;
       const t = state.tick / 60;
       const angle = (2 * Math.PI * t) / LAP_S;
       return {
