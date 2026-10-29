@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-29",
+  "scope": "skills/docs only, no game checks claimed",
+  "frontmatterAndRouting": "PASS",
+  "evidenceCommitRefs": "PASS",
+  "skills": [
+    {
+      "id": "neon-av-review-technique",
+      "lines": 77,
+      "hidden": true,
+      "explicitSkillLoad": "passed, current session"
+    },
+    {
+      "id": "neon-asset-audition-technique",
+      "lines": 78,
+      "hidden": true,
+      "explicitSkillLoad": "passed, current session"
+    },
+    {
+      "id": "neon-warden-index",
+      "lines": 19,
+      "hidden": false,
+      "explicitSkillLoad": "passed, current session"
+    },
+    {
+      "id": "neon-parallel-integration-technique",
+      "lines": 75,
+      "hidden": true,
+      "explicitSkillLoad": "passed, current session"
+    }
+  ],
+  "probeAttempts": [
+    {
+      "case": "silent QA",
+      "status": "BLOCKED",
+      "reason": "inference.generate denied read permission to .opencode/skills/neon-warden-index/SKILL.md; no model response"
+    },
+    {
+      "case": "seed-only SFX plus shared commit hazard",
+      "status": "BLOCKED",
+      "reason": "same inference.generate read permission denial; no model response"
+    }
+  ]
+}

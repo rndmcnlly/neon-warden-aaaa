@@ -93,6 +93,14 @@ structure and the production checklist should be legible and teachable.
 
 ## Working style
 
+### Repo-local skill routing
+
+Load `neon-warden-index` for project workflow selection. Direct routes:
+parallel dispatch/contracts/shared commits → `neon-parallel-integration-technique`;
+silent QA/intelligibility/creative review → `neon-av-review-technique`;
+asset candidates/contextual A/B/promotion → `neon-asset-audition-technique`.
+These are repo-owned, not global installs; evidence and promotion gate: `docs/SKILLS.md`.
+
 - Organize work mostly through subagents with clear, file-scoped tasks.
 - Subagent token hygiene: three of four research subagents spent about 1M
   tokens each, mostly re-reading large pages or sources held in context. Trim
