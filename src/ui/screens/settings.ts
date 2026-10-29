@@ -523,6 +523,17 @@ function controlsTab(ctx: UiContext): Widget[] {
       ctx.t("ui.controls.captureNote"),
       ctx.t("ui.controls.fallbackNote"),
     ),
+    // Fixed, not remappable: listed so the shortcut is discoverable. Pad
+    // labels follow the connected family (LB on Xbox, L1 on PlayStation).
+    staticRow(
+      ctx.t("ui.controls.langCycle", {
+        prevKey: inputLabel(ctx, "BracketLeft"),
+        nextKey: inputLabel(ctx, "BracketRight"),
+        prevPad: inputLabel(ctx, 4),
+        nextPad: inputLabel(ctx, 5),
+      }),
+      ctx.t("ui.controls.langCycleNote"),
+    ),
     { el: reset, sync: () => {} },
   ];
 }

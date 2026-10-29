@@ -881,6 +881,26 @@ export const UI_STRINGS = {
     es: "Cualquier tecla sirve, incluida Esc. Espera 6 segundos para cancelar.",
     zh: "任何按键都可绑定，包括 Esc。等待 6 秒即可取消。",
   },
+  "ui.controls.langCycle": {
+    en:
+      "Cycle language (in play): {prevKey} and {nextKey}, or {prevPad} and {nextPad}",
+    es:
+      "Cambiar idioma (en juego): {prevKey} y {nextKey}, o {prevPad} y {nextPad}",
+    zh: "切换语言（游戏中）：{prevKey} 和 {nextKey}，或 {prevPad} 和 {nextPad}",
+  },
+  "ui.controls.langCycleNote": {
+    en:
+      "Steps English, Español, 中文 for voice and text together. The line playing finishes first; menus keep the shoulders for tabs.",
+    es:
+      "Recorre English, Español, 中文 para voz y texto a la vez. La frase en curso termina primero; en los menús los gatillos superiores cambian de pestaña.",
+    zh:
+      "依次切换 English、Español、中文，语音和文字同时改变。正在播放的台词会先说完；菜单中肩键仍用于切换标签。",
+  },
+  "ui.langCycle.nextLine": {
+    en: "Voice and text, from the next line",
+    es: "Voz y texto, desde la próxima frase",
+    zh: "语音和文字，从下一句开始",
+  },
 
   "ui.save.saved": {
     en: "Checkpoint saved",
@@ -1647,17 +1667,19 @@ export const UI_STRINGS = {
   },
   "ui.settings.desc.textLang": {
     en:
-      "Menus, subtitles, radio text and the HUD. Changes take effect immediately, including in the middle of a line.",
+      "Menus, subtitles, radio text and the HUD. Menus and HUD change at once; a subtitle already showing finishes in its language. In play, [ and ] (or LB and RB) cycle voice and text together.",
     es:
-      "Menús, subtítulos, texto de radio y HUD. El cambio es inmediato, incluso a mitad de una frase.",
-    zh: "菜单、字幕、无线电文字和 HUD。更改立即生效，即使正在播放台词。",
+      "Menús, subtítulos, texto de radio y HUD. Menús y HUD cambian al instante; un subtítulo en pantalla termina en su idioma. En juego, [ y ] (o LB y RB) cambian voz y texto a la vez.",
+    zh:
+      "菜单、字幕、无线电文字和 HUD。菜单和 HUD 立即切换；正在显示的字幕以原语言显示完。游戏中按 [ 和 ]（或 LB 和 RB）可同时切换语音和文字。",
   },
   "ui.settings.desc.voiceLang": {
     en:
-      "The spoken language. It can differ from the text language: watch in one, read in another.",
+      "The spoken language. It can differ from the text language: watch in one, read in another. In play, [ and ] (or LB and RB) set both to the next language, from the next line.",
     es:
-      "El idioma hablado. Puede ser distinto del idioma del texto: escucha en uno y lee en otro.",
-    zh: "语音所用的语言。可以与文字语言不同：听一种，读另一种。",
+      "El idioma hablado. Puede ser distinto del idioma del texto: escucha en uno y lee en otro. En juego, [ y ] (o LB y RB) ponen ambos en el siguiente idioma, desde la próxima frase.",
+    zh:
+      "语音所用的语言。可以与文字语言不同：听一种，读另一种。游戏中按 [ 和 ]（或 LB 和 RB）会把两者都切换到下一种语言，从下一句开始。",
   },
   "ui.settings.desc.subtitles": {
     en:

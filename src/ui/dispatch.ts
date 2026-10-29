@@ -10,12 +10,15 @@
  */
 
 import type { MenuIntent } from "../input/inputLayer.ts";
+import type { CycleStep } from "../input/langCycle.ts";
 import type { Direction } from "./focus.ts";
 
 export type MenuDecision =
   | { readonly kind: "ignore" }
   | { readonly kind: "pause" }
   | { readonly kind: "skipTutorial" }
+  /** `[` `]` or a shoulder in play: step voice and text language together. */
+  | { readonly kind: "cycleLang"; readonly step: CycleStep }
   | { readonly kind: "move"; readonly direction: Direction }
   /** Nothing in the top screen has focus yet: focus its default first. */
   | { readonly kind: "focusDefault" }
@@ -45,6 +48,10 @@ export function decideMenuIntent(
     if (state.inTutorial && intents.has("back")) {
       return { kind: "skipTutorial" };
     }
+    // Only in play: in menus the same shoulders switch Settings tabs, and a
+    // language picked under the pause menu belongs to the Settings screen.
+    if (intents.has("langPrev")) return { kind: "cycleLang", step: -1 };
+    if (intents.has("langNext")) return { kind: "cycleLang", step: 1 };
     return { kind: "ignore" };
   }
   for (const direction of DIRECTIONS) {

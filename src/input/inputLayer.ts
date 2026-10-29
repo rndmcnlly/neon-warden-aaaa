@@ -25,6 +25,11 @@ import {
   resolveHeld,
 } from "./heldActions.ts";
 import { type PadFamily, padFamilyFromId } from "./labels.ts";
+import {
+  type CycleStep,
+  langCycleButtonStep,
+  langCycleKeyStep,
+} from "./langCycle.ts";
 
 export type Device = "keyboard" | "mouse" | "gamepad";
 
@@ -37,7 +42,13 @@ export type MenuIntent =
   | "back"
   | "pause"
   | "tabPrev"
-  | "tabNext";
+  | "tabNext"
+  /**
+   * Live language cycling (`langCycle.ts`): `[` `]` and the shoulder
+   * buttons. Only the front end's in-play dispatch acts on these.
+   */
+  | "langPrev"
+  | "langNext";
 
 export interface IntentEvent {
   /** Everything this press could mean; the front end picks by context. */
@@ -123,6 +134,20 @@ const REPEATABLE: ReadonlySet<MenuIntent> = new Set([
 ]);
 
 type Listener<T> = (value: T) => void;
+
+const LANG_INTENT: Readonly<Record<CycleStep, MenuIntent>> = {
+  [-1]: "langPrev",
+  [1]: "langNext",
+};
+
+/** A focused text field gets its keys; shortcuts stand aside. */
+function isTyping(target: EventTarget | null): boolean {
+  // `Element` is absent under `deno test`, where events come from fakes.
+  return typeof Element !== "undefined" && target instanceof Element &&
+    !!target.closest(
+      "input,textarea,select,[contenteditable]:not([contenteditable=false])",
+    );
+}
 
 function emitter<T>() {
   const listeners = new Set<Listener<T>>();
@@ -211,6 +236,14 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
     if (!event.repeat) anyPress.emit("keyboard");
     const actions = actionsForKey(bindings(), event.code);
     const intents = intentsFrom(actions, FALLBACK_KEYS[event.code]);
+    // Capture returned above, so `capturing` is false here by construction.
+    const step = langCycleKeyStep(
+      event,
+      isTyping(event.target),
+      false,
+      actions.length > 0,
+    );
+    if (step !== null) intents.add(LANG_INTENT[step]);
     if (actions.length > 0 || intents.size > 0) event.preventDefault();
     if (!event.repeat) {
       heldKeys.add(event.code);
@@ -318,6 +351,9 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
       const actions = actionsForButton(map, index);
       countEdges(actions);
       const intents = intentsFrom(actions, FALLBACK_BUTTONS[index]);
+      // Shoulders stay tabPrev/tabNext too: menus switch tabs, play cycles.
+      const step = langCycleButtonStep(index, actions.length > 0);
+      if (step !== null) intents.add(LANG_INTENT[step]);
       if (intents.size > 0) {
         intentEvents.emit({ intents, device: "gamepad", repeat: false });
         for (const intent of intents) {

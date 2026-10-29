@@ -26,6 +26,7 @@ import type {
   UrlFlags,
 } from "../contracts/index.ts";
 import { createInputLayer, type InputLayer } from "../input/inputLayer.ts";
+import { type CycleStep, withCycledLang } from "../input/langCycle.ts";
 import { createSaveStore, type SaveStore } from "../settings/saveGame.ts";
 import {
   codexLines,
@@ -131,6 +132,8 @@ function listeners() {
 }
 const TOAST_MS = 3200;
 const SAVE_CHIP_MS = 2400;
+/** Long enough to read "ES Español" twice, short enough to stay out of play. */
+const LANG_BADGE_MS = 1800;
 
 export function createFrontEnd(
   root: HTMLElement,
@@ -156,7 +159,13 @@ export function createFrontEnd(
     hidden: true,
   });
   const buildLabel = h("div", { class: "nw-build-label" });
-  layer.append(backdrop, screens, toasts, saveChip, buildLabel);
+  const langBadge = h("div", {
+    class: "nw-lang-badge",
+    role: "status",
+    "aria-live": "polite",
+    hidden: true,
+  });
+  layer.append(backdrop, screens, toasts, saveChip, langBadge, buildLabel);
   root.appendChild(layer);
 
   let playing = false;
@@ -292,6 +301,8 @@ export function createFrontEnd(
         return pause("player");
       case "skipTutorial":
         return requestTutorialSkip();
+      case "cycleLang":
+        return cycleLanguage(decision.step);
       case "move":
         // An edge press (Left on a dialog's Cancel) bumps instead of silence.
         if (!moveFocus(top!.el, decision.direction)) uiSound("slider_end");
@@ -360,6 +371,32 @@ export function createFrontEnd(
     }
     updatePrompts();
   });
+
+  /**
+   * `[` `]` or a shoulder during play. The settings write goes through the
+   * store like any menu change (persisted, every listener notified), so the
+   * HUD relabels at once via `offSettings` above, while the Director picks
+   * the new language up at the next line it starts.
+   */
+  let langBadgeTimer: ReturnType<typeof setTimeout> | undefined;
+  function cycleLanguage(step: CycleStep): void {
+    settings.update((c) => withCycledLang(c, step));
+    uiSound("tab_switch");
+    const now = lang();
+    langBadge.lang = now === "zh" ? "zh-Hans" : now;
+    langBadge.replaceChildren(
+      h("strong", {}, now.toUpperCase()),
+      h("span", {}, ctx.t(`ui.lang.${now}`)),
+      h("small", {}, ctx.t("ui.langCycle.nextLine")),
+    );
+    langBadge.hidden = false;
+    // Restart the fade-in: calm mode has no animation, so this is a no-op.
+    langBadge.classList.remove("is-fresh");
+    void langBadge.offsetWidth;
+    langBadge.classList.add("is-fresh");
+    clearTimeout(langBadgeTimer);
+    langBadgeTimer = setTimeout(() => (langBadge.hidden = true), LANG_BADGE_MS);
+  }
 
   let saveTimer: ReturnType<typeof setTimeout> | undefined;
   function showSaveIndicator(): void {
@@ -491,6 +528,7 @@ export function createFrontEnd(
     tutorial: { onSkip: skipListeners.on },
     dispose() {
       motionQuery.removeEventListener("change", onMotionQuery);
+      clearTimeout(langBadgeTimer);
       offIntent();
       offDevice();
       offAnyPress();

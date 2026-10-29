@@ -835,6 +835,31 @@
   border: 2px solid var(--nw-cyan);
   border-right-color: transparent;
 }
+/* Live language cycling confirmation: small, under the save chip, never
+   over the lane center where bullets are read. */
+.nw-lang-badge {
+  position: absolute;
+  top: calc(3.6em + env(safe-area-inset-top, 0px));
+  right: calc(1.4em + env(safe-area-inset-right, 0px));
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+  padding: 0.4em 0.9em;
+  border-radius: 999px;
+  background: var(--nw-glass-strong);
+  font-size: 0.75em;
+  pointer-events: none;
+}
+.nw-lang-badge[hidden] {
+  display: none;
+}
+.nw-lang-badge strong {
+  color: var(--nw-cyan);
+  letter-spacing: 0.12em;
+}
+.nw-lang-badge small {
+  opacity: 0.7;
+}
 
 /* ---------- Motion, only when the player has not asked for less ---------- */
 
@@ -878,6 +903,9 @@
     animation: nw-spin 0.9s linear infinite;
   }
   .nw-frontend:not(.is-calm) .nw-toast {
+    animation: nw-rise 200ms ease;
+  }
+  .nw-frontend:not(.is-calm) .nw-lang-badge.is-fresh {
     animation: nw-rise 200ms ease;
   }
 }
