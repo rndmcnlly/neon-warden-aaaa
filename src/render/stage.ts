@@ -182,6 +182,8 @@ const PART_NODES: Readonly<Record<string, string>> = {
 
 /** A target flashes at most this often (stream fire must not strobe). */
 const FLASH_INTERVAL_S = 0.1;
+/** When a disarmed hull's slate power-down pulses fire, seconds after. */
+const DISARM_PULSE_S = [0.45, 0.95, 1.55] as const;
 /** Matte smoke for a disarmed hull's sputter: dark, never a bullet color. */
 const SMOKE = 0x3d424b;
 /** The deflect spark: muted slate white, neither player cyan nor enemy pink. */
@@ -522,6 +524,9 @@ export function createStage(
       live.delete(id);
       restoreMaterials(slot);
       unbreak(slot);
+      delete slot.userData.stub;
+      delete slot.userData.disarmedAt;
+      delete slot.userData.disarmPulses;
       const list = free.get(slot.userData.modelId) ?? [];
       list.push(slot);
       free.set(slot.userData.modelId, list);
@@ -763,6 +768,8 @@ export function createStage(
     const dir = worldDir(e.shotVel);
     const hitOffset = simPoint(e.hitPos, new THREE.Vector3()).sub(at).setY(0);
     debris.spawn({ node, at, shotDir: dir, hitOffset, size: 0.3, heavy: pod });
+    // Where the part was: a disarmed hull sparks from this stub.
+    if (slot && !pod) slot.userData.stub = at.clone().sub(slot.position);
     if (pod) {
       // Torn plating either side of the line of fire.
       for (const turn of [-0.7, 0.7]) {
@@ -811,6 +818,7 @@ export function createStage(
           ownMaterials(slot);
           slot.userData.powerTarget = 0;
           slot.userData.disarmedAt = timeSec;
+          slot.userData.disarmPulses = 0;
         }
         // Spared, not destroyed: no blast and no shake. A cool power-down
         // ring (sized by the bullets it cancelled) and a puff of dark smoke;
@@ -1201,6 +1209,30 @@ export function createStage(
     const wobble = quiet ? 0 : Math.sin(timeSec * 7 + id) * 0.08;
     slot.rotation.x = baseX + 0.3 * sag;
     slot.rotation.z = baseZ + wobble * sag;
+    // A persistent, readable "spared" state for about 1.8 s (a glancing
+    // player, or a 1 fps observer, must not take it for a kill or for
+    // nothing): slate power-down pulses that slow and shrink, and the stub
+    // where the part tore off spitting short cream sparks.
+    const pulses = (slot.userData.disarmPulses as number | undefined) ?? 3;
+    if (pulses < 3 && since >= DISARM_PULSE_S[pulses]) {
+      slot.userData.disarmPulses = pulses + 1;
+      rings.spawn(slot.position, PALETTE.slate, 1.1 - 0.2 * pulses, 0.5);
+    }
+    const stub = slot.userData.stub as THREE.Vector3 | undefined;
+    if (
+      stub && since < 1.8 && burstsThisFrame < MAX_BURSTS_PER_FRAME &&
+      Math.sin(timeSec * (quiet ? 9 : 31) + id * 2.3) > 0.8
+    ) {
+      burstsThisFrame++;
+      particles.burst({
+        at: tmpV.copy(slot.position).add(stub),
+        color: PALETTE.sparkCream,
+        count: quiet ? 1 : 3,
+        speed: 1.6,
+        life: 0.18,
+        size: 0.06,
+      });
+    }
     // Engine sputter: an irregular cough, about three a second.
     if (
       !quiet && burstsThisFrame < MAX_BURSTS_PER_FRAME &&

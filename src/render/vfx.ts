@@ -34,8 +34,10 @@ void main() {
 // Faint and saturated by design: the cone is a cue, not a light source. The
 // wave-3 version summed a 10% fill, 50% sides and a 60% band of pale scan
 // cyan additively, which read as a near-white wedge over the playfield. Now
-// the body is a low-opacity deep cyan and only the sweep's leading edge is
-// bright (HDR, so it alone blooms), with a short faint tail behind it.
+// the body is a low-opacity deep cyan with a short faint tail behind the
+// sweep. Morning fix (October 29, 2026): a blind observer read the sharp,
+// blooming leading arc as a charged shot, so the lead is now broad, dim and
+// below bloom, and the edges are fainter: nothing in the cone is a line.
 const beamFragment = /* glsl */ `
 uniform vec3 uColor;
 uniform vec3 uBody;
@@ -50,10 +52,10 @@ void main() {
   float sides = smoothstep(0.9, 0.99, a) * (1.0 - smoothstep(0.99, 1.0, a));
   float fill = 0.035 * (1.0 - r);
   float d = r - uSweep;
-  float lead = exp(-pow(d * 45.0, 2.0));
+  float lead = exp(-pow(d * 12.0, 2.0)) * 0.12;
   float tail = d < 0.0 ? exp(d * 9.0) * 0.12 : 0.0;
   float fadeOut = 1.0 - smoothstep(0.85, 1.0, r);
-  vec3 body = uBody * (fill + sides * 0.12 + tail);
+  vec3 body = uBody * (fill + sides * 0.06 + tail);
   vec3 c = (body + uColor * lead * (1.0 - r * 0.5)) * fadeOut;
   gl_FragColor = vec4(c * uOpacity, 1.0);
 }
@@ -71,7 +73,7 @@ export class ScanBeam {
       vertexShader: beamVertex,
       fragmentShader: beamFragment,
       uniforms: {
-        uColor: { value: hdr(ROLE.scan, 1.4) },
+        uColor: { value: hdr(ROLE.scan, 0.8) },
         uBody: { value: new THREE.Color(0x1aa6c8) },
         uRange: { value: 1 },
         uHalf: { value: 0.3 },
@@ -547,7 +549,7 @@ export function applyInstanceLook(
       o.intensity * (0.08 + 0.92 * power) * flicker,
       f * 2,
     );
-    o.mat.color.copy(o.color).multiplyScalar(0.55 + 0.45 * power);
+    o.mat.color.copy(o.color).multiplyScalar(0.4 + 0.6 * power);
     const d = o.part ? partDamage?.[o.part] ?? damage : damage;
     o.seams.uScorch.value = Math.min(1, d * 1.2);
     o.seams.uSeam.value = d < 0.25 ? 0 : Math.min(1, (d - 0.25) * 1.6);

@@ -38,6 +38,10 @@ export class BulletRenderer {
   private readonly lanceCores: THREE.InstancedMesh;
   private readonly lanceSheaths: THREE.InstancedMesh;
   private readonly writRings: THREE.InstancedMesh;
+  /** Writ 2 and up: flat swept fins either side of the lance. */
+  private readonly writFins: THREE.InstancedMesh;
+  /** Writ 3 only: a wide flat wedge under the lance. */
+  private readonly writWedges: THREE.InstancedMesh;
   private readonly orbs: THREE.InstancedMesh;
   private readonly orbRim: THREE.InstancedBufferAttribute;
   private readonly orbCore: THREE.InstancedBufferAttribute;
@@ -105,7 +109,10 @@ export class BulletRenderer {
       MAX_SHOTS,
     );
     // Writ: a heavy lance. A pale core under the threshold inside a wider
-    // cyan sheath; scaled per instance by charge level.
+    // cyan sheath; scaled per instance by charge level. Tiers differ in
+    // silhouette, not only size (morning fix, October 29, 2026): 1 a narrow
+    // lance, 2 the lance with swept side fins, 3 a wide wedge that sheds
+    // rings. A blind observer could not tell tiers apart by size alone.
     this.lanceCores = instanced(
       lanceGeometry(0.07, 1.0),
       shotMat(1.25, 0.95, 0xe0fdff),
@@ -114,6 +121,17 @@ export class BulletRenderer {
     this.lanceSheaths = instanced(
       lanceGeometry(0.16, 1.3),
       shotMat(1.1, 0.4),
+      MAX_WRITS,
+    );
+    const flatMat = (gain: number, opacity: number) => {
+      const mat = shotMat(gain, opacity);
+      mat.side = THREE.DoubleSide;
+      return mat;
+    };
+    this.writFins = instanced(finGeometry(), flatMat(1.0, 0.55), MAX_WRITS);
+    this.writWedges = instanced(
+      wedgeGeometry(),
+      flatMat(0.9, 0.3),
       MAX_WRITS,
     );
     const ringGeo = new THREE.RingGeometry(0.82, 1, 32);
@@ -163,6 +181,8 @@ export class BulletRenderer {
     this.group.add(
       this.needles,
       this.slugs,
+      this.writWedges,
+      this.writFins,
       this.lanceSheaths,
       this.lanceCores,
       this.writRings,
@@ -193,6 +213,8 @@ export class BulletRenderer {
     let slugCount = 0;
     let needleCount = 0;
     let writCount = 0;
+    let finCount = 0;
+    let wedgeCount = 0;
     let orbCount = 0;
     const dt = this.lastTime < 0
       ? 0
@@ -223,15 +245,26 @@ export class BulletRenderer {
         } else {
           if (writCount >= MAX_WRITS) continue;
           const k = writScale(tag.level);
-          this.s.set(k, k, k);
+          // Tier 1 is a narrow lance; higher tiers keep the full width.
+          this.s.set(tag.level === 1 ? k * 0.7 : k, k, k);
           this.m.compose(this.p, this.q, this.s);
           this.lanceCores.setMatrixAt(writCount, this.m);
           this.lanceSheaths.setMatrixAt(writCount, this.m);
           writCount++;
+          this.s.set(k, k, k);
+          this.m.compose(this.p, this.q, this.s);
+          if (tag.level >= 2) this.writFins.setMatrixAt(finCount++, this.m);
+          if (tag.level >= 3) {
+            this.writWedges.setMatrixAt(wedgeCount++, this.m);
+          }
           this.writsNow.push({ x: this.p.x, z: this.p.z, level: tag.level });
           clocks.add(b.id);
           const clock = (this.ringClock.get(b.id) ?? WRIT_RING_PERIOD) + dt;
-          if (clock >= WRIT_RING_PERIOD && this.rings.length < MAX_WRITS * 4) {
+          // Only the top tier sheds rings: the ring is part of its shape.
+          if (
+            tag.level >= 3 && clock >= WRIT_RING_PERIOD &&
+            this.rings.length < MAX_WRITS * 4
+          ) {
             this.rings.push({ x: this.p.x, z: this.p.z, s: k, age: 0 });
             this.ringClock.set(b.id, 0);
           } else this.ringClock.set(b.id, clock);
@@ -260,8 +293,18 @@ export class BulletRenderer {
     this.needles.count = needleCount;
     this.lanceCores.count = writCount;
     this.lanceSheaths.count = writCount;
+    this.writFins.count = finCount;
+    this.writWedges.count = wedgeCount;
     this.orbs.count = orbCount;
-    for (const mesh of [this.slugs, this.needles, this.lanceCores]) {
+    for (
+      const mesh of [
+        this.slugs,
+        this.needles,
+        this.lanceCores,
+        this.writFins,
+        this.writWedges,
+      ]
+    ) {
       mesh.instanceMatrix.needsUpdate = true;
     }
     this.lanceSheaths.instanceMatrix.needsUpdate = true;
@@ -309,12 +352,73 @@ function slugGeometry(): THREE.BufferGeometry {
     const y = pos.getY(i);
     pos.setXYZ(
       i,
-      pos.getX(i) * 0.1,
-      y > 0 ? y * 0.36 : y * 0.14,
-      pos.getZ(i) * 0.06,
+      pos.getX(i) * 0.08,
+      y > 0 ? y * 0.28 : y * 0.11,
+      pos.getZ(i) * 0.05,
     );
   }
   geo.computeVertexNormals();
+  return geo;
+}
+
+/**
+ * Writ 2+ fins: two flat swept triangles either side of the lance's rear
+ * half, in the lance's own XY plane (the ground plane once oriented).
+ */
+function finGeometry(): THREE.BufferGeometry {
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute(
+    "position",
+    new THREE.Float32BufferAttribute([
+      -0.06,
+      0.05,
+      0,
+      -0.34,
+      -0.42,
+      0,
+      -0.06,
+      -0.38,
+      0,
+      0.06,
+      0.05,
+      0,
+      0.06,
+      -0.38,
+      0,
+      0.34,
+      -0.42,
+      0,
+    ], 3),
+  );
+  return geo;
+}
+
+/** Writ 3 wedge: a wide flat arrowhead, tip forward, notched at the back. */
+function wedgeGeometry(): THREE.BufferGeometry {
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute(
+    "position",
+    new THREE.Float32BufferAttribute([
+      0,
+      0.6,
+      0,
+      -0.62,
+      -0.5,
+      0,
+      0,
+      -0.22,
+      0,
+      0,
+      0.6,
+      0,
+      0,
+      -0.22,
+      0,
+      0.62,
+      -0.5,
+      0,
+    ], 3),
+  );
   return geo;
 }
 
