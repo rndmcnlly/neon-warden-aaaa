@@ -1,0 +1,190 @@
+{
+  "created": "2026-10-29T05:55:20.678Z",
+  "scope": "Viewer-only QA; original capture evidence unchanged",
+  "url": "http://127.0.0.1:8123/artifacts/research/2026-10-28-moments/index.html",
+  "checks": [
+    {
+      "name": "390×844: one player, no autoplay, no overflow",
+      "pass": true,
+      "detail": {
+        "players": 1,
+        "paused": true,
+        "overflow": false,
+        "chapters": 6,
+        "archive": 30,
+        "minButton": 48
+      }
+    },
+    {
+      "name": "390×844: six chapters, full archive, 48px controls",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard next",
+      "pass": true
+    },
+    {
+      "name": "390: keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "390: changing clip stops audio and does not autoplay",
+      "pass": true,
+      "detail": {
+        "paused": true,
+        "time": 0,
+        "players": 1,
+        "pauses": 1
+      }
+    },
+    {
+      "name": "390: endings gated and player source removed",
+      "pass": true
+    },
+    {
+      "name": "390: ordinary archive clip exits spoiler gate",
+      "pass": true
+    },
+    {
+      "name": "390: archive ending also requires explicit reveal",
+      "pass": true
+    },
+    {
+      "name": "390: explicit reveal remains paused",
+      "pass": true
+    },
+    {
+      "name": "390: expanded archive has no overflow",
+      "pass": true
+    },
+    {
+      "name": "390: archive uses same player with its own guidance",
+      "pass": true
+    },
+    {
+      "name": "390: touch next",
+      "pass": true
+    },
+    {
+      "name": "800×600: one player, no autoplay, no overflow",
+      "pass": true,
+      "detail": {
+        "players": 1,
+        "paused": true,
+        "overflow": false,
+        "chapters": 6,
+        "archive": 30,
+        "minButton": 48
+      }
+    },
+    {
+      "name": "800×600: six chapters, full archive, 48px controls",
+      "pass": true
+    },
+    {
+      "name": "800: keyboard next",
+      "pass": true
+    },
+    {
+      "name": "800: keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "800: changing clip stops audio and does not autoplay",
+      "pass": true,
+      "detail": {
+        "paused": true,
+        "time": 0,
+        "players": 1,
+        "pauses": 1
+      }
+    },
+    {
+      "name": "800: endings gated and player source removed",
+      "pass": true
+    },
+    {
+      "name": "800: ordinary archive clip exits spoiler gate",
+      "pass": true
+    },
+    {
+      "name": "800: archive ending also requires explicit reveal",
+      "pass": true
+    },
+    {
+      "name": "800: explicit reveal remains paused",
+      "pass": true
+    },
+    {
+      "name": "800: expanded archive has no overflow",
+      "pass": true
+    },
+    {
+      "name": "800: archive uses same player with its own guidance",
+      "pass": true
+    },
+    {
+      "name": "1366×768: one player, no autoplay, no overflow",
+      "pass": true,
+      "detail": {
+        "players": 1,
+        "paused": true,
+        "overflow": false,
+        "chapters": 6,
+        "archive": 30,
+        "minButton": 48
+      }
+    },
+    {
+      "name": "1366×768: six chapters, full archive, 48px controls",
+      "pass": true
+    },
+    {
+      "name": "1366: keyboard next",
+      "pass": true
+    },
+    {
+      "name": "1366: keyboard previous",
+      "pass": true
+    },
+    {
+      "name": "1366: changing clip stops audio and does not autoplay",
+      "pass": true,
+      "detail": {
+        "paused": true,
+        "time": 0,
+        "players": 1,
+        "pauses": 1
+      }
+    },
+    {
+      "name": "1366: endings gated and player source removed",
+      "pass": true
+    },
+    {
+      "name": "1366: ordinary archive clip exits spoiler gate",
+      "pass": true
+    },
+    {
+      "name": "1366: archive ending also requires explicit reveal",
+      "pass": true
+    },
+    {
+      "name": "1366: explicit reveal remains paused",
+      "pass": true
+    },
+    {
+      "name": "1366: expanded archive has no overflow",
+      "pass": true
+    },
+    {
+      "name": "1366: archive uses same player with its own guidance",
+      "pass": true
+    },
+    {
+      "name": "No browser page errors",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

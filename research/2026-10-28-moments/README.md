@@ -6,8 +6,38 @@ What does every cool thing that can happen in the slice actually look and
 sound like in the shipped bundle, as short A/V references a human can audit
 by ear and eye, and which moments cannot yet be reached by URL flags?
 
-Open `index.html` (works from disk; clips never autoplay; filter by
-combat, nonviolence, narrative, audio, UI).
+Open `index.html` (works from disk; clips never autoplay). The redesigned
+viewer is a guided route, not thirty competing players:
+
+- Six chapters, with 3–4 recommended clips each (19 recommendations total).
+- One persistent video, manual Play, Previous/Next within each chapter,
+  explicit ending-spoiler reveal, and a collapsed complete archive.
+- Short names, durations, purpose, Watch for / Listen for, and evidence limits
+  for every clip. Diagnostic metrics are collapsed, not viewing instructions.
+- Narrow layouts use native chapter/clip selects; visible controls are at
+  least 48 px. Keyboard arrows on Previous/Next navigate without stealing
+  the video player's seeking keys.
+
+Local production-desk URL:
+<http://127.0.0.1:8123/artifacts/research/2026-10-28-moments/index.html>.
+The page links the latest local game separately: captured evidence is not
+current-build verification. No new videos, auditory evaluation, paid APIs,
+or game changes were made for this redesign.
+
+### Viewer-only validation (October 29, 2026 UTC)
+
+`gallery-check.ts` runs foreground Playwright checks through the existing
+production artifact server: one player, no autoplay, keyboard Previous/Next,
+actual playback followed by a paused source switch, touch selection,
+spoiler gating, and no horizontal overflow at 390×844, 800×600, 1366×768,
+including the expanded archive. Results: `gallery-qa.json`; compact visual
+references: `gallery-desktop.jpg`, `gallery-mobile.jpg`. These checks describe
+the viewer only, not the captured game's features or intelligibility.
+
+Rebuild viewer: `deno run -A --no-lock research/2026-10-28-moments/gallery.ts`.
+Run focused tests: `deno run -A --no-lock research/2026-10-28-moments/gallery-check.ts`.
+Edit `guide.ts` for editorial guidance and `gallery.template.html` for layout;
+`gallery.ts` inlines both guide and capture data into the disk-openable page.
 
 ## Pipeline (three scripts, reusing qa/ as a library)
 
@@ -27,7 +57,8 @@ combat, nonviolence, narrative, audio, UI).
    with about 2 s pre-roll, H.264 + AAC, poster at the anchor, ebur128
    integrated LUFS, LRA, true peak, and L/R RMS balance. Writes
    `clips/` and `moments.json`.
-3. `gallery.ts`: `index.html` with the data inlined.
+3. `gallery.ts`: guided `index.html` with the data inlined; it does not modify
+   `moments.json`, `clips/`, capture reports, or the original measurements.
 
 Re-run: `deno run -A --no-lock research/2026-10-28-moments/capture.ts [id]`,
 then `cut.ts`, then `gallery.ts`.

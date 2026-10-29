@@ -6,6 +6,7 @@
   "nodeModulesDir": "manual",
   "exclude": [".build", "captures", "clips"],
   "tasks": {
-    "check": "deno check capture.ts cut.ts gallery.ts"
+    "check": "deno check capture.ts cut.ts gallery.ts gallery-check.ts",
+    "gallery:check": "deno run -A --no-lock gallery-check.ts"
   }
 }

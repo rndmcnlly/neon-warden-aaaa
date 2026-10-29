@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Warden: a guided viewing</title>
+<style>
+:root { color-scheme:dark; --bg:#10151b; --panel:#19222b; --ink:#edf1f4; --dim:#b0bec8; --line:#40515e; --accent:#b5e6da; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 system-ui,sans-serif; }
+main { max-width:1200px; margin:auto; padding:28px 24px 48px; }
+h1 { font-size:clamp(1.6rem,4vw,2.2rem); line-height:1.2; margin:4px 0 12px; font-weight:600; }
+h2 { font-size:1.25rem; line-height:1.3; margin:0 0 10px; }
+h3 { font-size:1rem; margin:20px 0 6px; }
+p { margin:8px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+button,summary,select { font:inherit; }
+select { display:block; width:100%; min-height:48px; padding:8px; color:var(--ink); background:var(--panel); border:1px solid var(--line); border-radius:6px; }
+.mobile-nav,.mobile-clips { display:none; }
+button { min-height:48px; color:var(--ink); background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:9px 14px; cursor:pointer; text-align:left; }
+button:hover { border-color:var(--accent); }
+button:disabled { opacity:.45; cursor:default; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.muted,.eyebrow { color:var(--dim); }
+.eyebrow { font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; }
+.intro { max-width:800px; }
+.snapshot { font-size:.9rem; color:var(--dim); margin:18px 0 26px; border-left:2px solid var(--line); padding-left:14px; }
+.layout { display:grid; grid-template-columns:264px minmax(0,1fr); gap:28px; align-items:start; }
+nav { display:grid; gap:6px; }
+nav button { background:transparent; border-color:transparent; }
+nav button[aria-pressed=true] { background:var(--panel); border-color:var(--accent); }
+nav small { display:block; color:var(--dim); font-size:.85rem; }
+.view { min-width:0; }
+.chapter-purpose { color:var(--dim); margin-bottom:14px; }
+.choices { display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 16px; }
+.choices button { flex:1 1 180px; }
+.choices button[aria-pressed=true] { color:var(--accent); border-color:var(--accent); }
+.choices small { display:block; color:var(--dim); }
+video { display:block; width:100%; aspect-ratio:16/9; max-height:480px; background:#000; border-radius:6px; }
+.transport { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:12px 0; }
+.transport button { text-align:center; }
+#position { margin-left:auto; color:var(--dim); font-size:.9rem; }
+.clip-title { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px; }
+#duration { color:var(--dim); white-space:nowrap; }
+.prompts { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:16px 0; }
+.prompts p { margin:0; }
+.prompts strong { display:block; color:var(--accent); font-weight:600; margin-bottom:4px; }
+#caveat { padding:12px 14px; background:var(--panel); border-radius:6px; }
+details { margin:18px 0; }
+summary { cursor:pointer; min-height:48px; padding:12px 0; color:var(--dim); }
+.diagnostic { font-size:.9rem; color:var(--dim); overflow-wrap:anywhere; }
+.archive-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.archive-list button { display:flex; justify-content:space-between; gap:12px; }
+.archive-list small { color:var(--dim); white-space:nowrap; }
+footer { border-top:1px solid var(--line); margin-top:32px; padding-top:24px; }
+footer li { margin:12px 0; }
+.spoiler { padding:20px; background:var(--panel); border-radius:6px; }
+[hidden] { display:none!important; }
+@media(max-width:850px) { .layout { grid-template-columns:1fr; gap:18px; } nav,.choices { display:none; } .mobile-nav,.mobile-clips { display:block; } .mobile-clips { margin-bottom:12px; } main { padding:20px 18px 36px; } }
+@media(max-width:480px) { .prompts { grid-template-columns:1fr; gap:12px; } .archive-list { grid-template-columns:1fr; } nav button { padding:9px; } .choices button { flex-basis:100%; } #position { width:100%; margin:0; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">Neon Warden / viewing room</div>
+<h1>One moment at a time.</h1>
+<p class="intro">A short guided route through an older capture of the slice. Pick a chapter, then press Play. Nothing plays automatically, including the next clip.</p>
+<p class="snapshot"><strong>Historical snapshot: Oct 28, 21:08 local.</strong> Not current-build verification.<br><a href="http://127.0.0.1:4321/">Test the latest local production build</a> (requires its server).</p>
+</header>
+<div class="layout">
+<nav aria-label="Viewing chapters" id="chapters"></nav>
+<label class="mobile-nav">Choose a chapter<select id="chapter-select"></select></label>
+<section class="view" aria-label="Selected chapter">
+<div class="eyebrow" id="chapter-number"></div>
+<h2 id="chapter-title"></h2>
+<p class="chapter-purpose" id="chapter-purpose"></p>
+<div class="spoiler" id="spoiler" hidden><h3>Optional: ending spoilers</h3><p>These clips reveal both outcomes. Reveal them only if you want to compare the endings.</p><button id="reveal">Reveal ending clips</button></div>
+<div id="viewing">
+<div class="choices" id="choices" role="group" aria-label="Recommended clips"></div>
+<label class="mobile-clips">Recommended clip<select id="clip-select"></select></label>
+<video id="player" controls preload="none" playsinline aria-label="Selected moment video"></video>
+<div class="transport" role="group" aria-label="Clip navigation"><button id="previous">Previous</button><button id="toggle">Play</button><button id="next">Next</button><span id="position"></span></div>
+<div aria-live="polite" aria-atomic="true"><div class="clip-title"><h2 id="clip-title"></h2><span id="duration"></span></div><p id="purpose"></p></div>
+<div class="prompts"><p><strong>Watch for</strong><span id="watch"></span></p><p><strong>Listen for</strong><span id="listen"></span></p></div>
+<p id="caveat"></p>
+<p class="muted">Keyboard: Tab to any control, then Enter or Space. With focus on Previous or Next, ← / → moves between clips. Native video controls retain their seek shortcuts.</p>
+<details id="diagnostics"><summary>Clip diagnostics and source evidence</summary><div class="diagnostic" id="diagnostic-body"></div></details>
+</div>
+</section>
+</div>
+<details id="archive"><summary>Complete archive: all 30 existing clips</summary><p class="muted">An index, not another wall of players. Selecting an item uses the same player above. Ending footage remains spoiler-gated.</p><div class="archive-list" id="archive-list"></div></details>
+<footer>
+<h2>Not captured in this snapshot</h2>
+<p class="muted">These are evidence gaps, not new videos or claims about the latest game.</p>
+<ul id="missing"></ul>
+<p class="muted">Menus beyond the hangar are not covered here. Full no-fire traversal is also absent: the “never fired” line was reached by skipping to the boss, not by completing a ghost run.</p>
+<details><summary>Capture provenance and original reports</summary><p>Source bundle: October 28, 2026, 21:08 local. Exact source revision was not recorded. Evidence committed as <code>81c684f</code> (not a capture revision). Cuts generated <span id="generated"></span>. No new footage was made for this redesign.</p><p>1280 × 720 footage with the game’s stereo mix, cut around probe events. Event tags locate a moment; they do not prove that its feedback is perceptible. Autopilot and debug overlays are visible. Hangar is real-time; tutorial is 2×; sector 1 is 1×; other gameplay is 2×. Hot, uneven mix levels were reported: start with a comfortable volume.</p><p><a href="README.md">Original findings</a> · <a href="cut-report.txt">Cut report</a> · <a href="moments.json">Raw clip data</a> · <a href="validation.json">Original media validation</a></p></details>
+</footer>
+</main>
+<script>
+const DATA = /* GALLERY_DATA */ null;
+const CHAPTERS = DATA.chapters, NOTES = DATA.notes;
+const $ = id => document.getElementById(id);
+const player = $('player');
+let chapter = 0, selected = '', revealed = false, pendingEnding = '';
+const seconds = n => `${Number(n.toFixed(1))} s`;
+const clipById = id => DATA.clips.find(c => c.id === id);
+const endingIds = new Set(['kill-ending','pacifist-ending','lanes-kept','warden-falls']);
+function makeButton(text, action) { const b = document.createElement('button'); b.textContent = text; b.onclick = action; return b; }
+function pause() { player.pause(); $('toggle').textContent='Play'; }
+function setChapter(index, id) {
+  pause(); chapter = index;
+  const c = CHAPTERS[index];
+  $('chapter-number').textContent = `Chapter ${index + 1} of 6`;
+  $('chapter-title').textContent = c[0]; $('chapter-purpose').textContent = c[1];
+  $('chapter-select').value=String(index);
+  [...$('chapters').children].forEach((b,i) => b.setAttribute('aria-pressed',String(i===index)));
+  const gated = index===5 && !revealed;
+  $('spoiler').hidden = !gated; $('viewing').hidden = gated;
+  $('choices').replaceChildren();
+  $('clip-select').replaceChildren();
+  for (const key of c[2]) {
+    const b = makeButton(NOTES[key][0], () => select(key));
+    const s = document.createElement('small'); s.textContent = seconds(clipById(key).seconds); b.append(s); b.dataset.id=key; $('choices').append(b);
+    const option=document.createElement('option'); option.value=key; option.textContent=`${NOTES[key][0]} · ${seconds(clipById(key).seconds)}`; $('clip-select').append(option);
+  }
+  if (gated) { pendingEnding=id || ''; player.removeAttribute('src'); player.removeAttribute('poster'); player.load(); selected=''; return; }
+  select(id || c[2][0]);
+}
+function select(id) {
+  pause();
+  const c = clipById(id), n = NOTES[id]; selected=id;
+  player.src = `clips/${id}.mp4`; player.poster = `clips/${id}.jpg`; player.load();
+  $('clip-title').textContent=n[0]; $('duration').textContent=seconds(c.seconds);
+  $('purpose').textContent=n[1]; $('watch').textContent=n[2]; $('listen').textContent=n[3]; $('caveat').textContent=`Evidence limit: ${n[4]}`;
+  for (const b of $('choices').children) b.setAttribute('aria-pressed',String(b.dataset.id===id));
+  if (![...$('clip-select').options].some(o=>o.value===id)) { const option=document.createElement('option'); option.value=id; option.textContent=`Archive: ${n[0]} · ${seconds(c.seconds)}`; $('clip-select').append(option); }
+  $('clip-select').value=id;
+  const list=CHAPTERS[chapter][2], i=list.indexOf(id);
+  $('position').textContent=i<0?'Archive selection':`Clip ${i+1} of ${list.length}`;
+  $('previous').disabled=i<=0; $('next').disabled=i<0 || i===list.length-1;
+  const diagnostic = $('diagnostic-body'); diagnostic.replaceChildren();
+  for (const text of [`Source: ${c.capture}, ${c.start}–${(c.start+c.seconds).toFixed(1)} s; anchor ${c.anchor} s.`, `Cut rule: ${c.why}`, `Integrated ${c.lufs} LUFS; range ${c.lra} LU; true peak ${c.truePeak} dBTP; R/(L+R) RMS ${c.balance}. Not normalized.`, `Probe lines: ${c.lines.join(', ') || 'none'}.`]) { const p=document.createElement('p'); p.textContent=text; diagnostic.append(p); }
+  $('diagnostics').open=false;
+}
+function step(delta) { const list=CHAPTERS[chapter][2], i=list.indexOf(selected); if(i>=0 && list[i+delta]) select(list[i+delta]); }
+CHAPTERS.forEach((c,i) => { const b=makeButton(`${i+1}. ${c[0]}`,()=>setChapter(i)); const s=document.createElement('small'); s.textContent=`${c[2].length} recommended clips`; b.append(s); $('chapters').append(b); const o=document.createElement('option'); o.value=String(i); o.textContent=`${i+1}. ${c[0]}`; $('chapter-select').append(o); });
+$('chapter-select').onchange=e=>setChapter(Number(e.target.value));
+$('clip-select').onchange=e=>select(e.target.value);
+$('previous').onclick=()=>step(-1); $('next').onclick=()=>step(1);
+for (const id of ['previous','next']) $(id).addEventListener('keydown', e => { if(e.key==='ArrowLeft'||e.key==='ArrowRight') { e.preventDefault(); step(e.key==='ArrowLeft'?-1:1); } });
+$('toggle').onclick=()=>{ if(player.paused) player.play().catch(()=>{}); else pause(); };
+player.addEventListener('play',()=>{$('toggle').textContent='Pause';});
+player.addEventListener('pause',()=>{$('toggle').textContent='Play';});
+$('reveal').onclick=()=>{revealed=true; setChapter(5,pendingEnding || undefined);};
+for (const c of DATA.clips) {
+  const b=makeButton(`${NOTES[c.id][0]}${endingIds.has(c.id)?' · spoiler':''}`,()=>{
+    const index=CHAPTERS.findIndex(ch=>ch[2].includes(c.id));
+    if (endingIds.has(c.id) && !revealed) setChapter(5,c.id);
+    else setChapter(index<0?(endingIds.has(c.id)?5:(chapter===5?0:chapter)):index,c.id);
+    $('chapter-title').scrollIntoView({block:'start'});
+  });
+  const s=document.createElement('small'); s.textContent=seconds(c.seconds); b.append(s); $('archive-list').append(b);
+}
+for (const m of DATA.missing) { const li=document.createElement('li'); const b=document.createElement('strong'); b.textContent=m.title+': '; li.append(b,document.createTextNode(m.reason)); $('missing').append(li); }
+$('generated').textContent=DATA.generated.slice(0,16).replace('T',' ')+' UTC';
+setChapter(0);
+</script>
+</body>
+</html>
