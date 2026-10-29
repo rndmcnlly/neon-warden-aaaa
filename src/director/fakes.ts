@@ -62,11 +62,7 @@ export function makeRig(
         return line in durations ? handle(line, layer) : null;
       },
       status: (line) =>
-        loading.has(line)
-          ? "loading"
-          : line in durations
-          ? "ready"
-          : "missing",
+        loading.has(line) ? "loading" : line in durations ? "ready" : "missing",
       durationMs: (line) => durations[line],
       speaker: (): Speaker => "tutorial_ai",
     },

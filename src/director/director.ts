@@ -274,8 +274,11 @@ export class Director {
    */
   private say(line: LineId, layer: VoiceLayer, now: number): void {
     this.stopLine(layer);
-    const status = this.ports.voice.status?.(line, this.ports.settings()
-      .voiceLang) ?? "ready";
+    const status = this.ports.voice.status?.(
+      line,
+      this.ports.settings()
+        .voiceLang,
+    ) ?? "ready";
     if (status === "loading") {
       this.pending[layer] = { line, since: now };
       return;

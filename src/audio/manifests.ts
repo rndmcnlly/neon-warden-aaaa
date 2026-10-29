@@ -100,6 +100,17 @@ export interface MusicTrack {
   /** Loop region in seconds; defaults to the whole file. */
   readonly loopStart?: number;
   readonly loopEnd?: number;
+  /**
+   * The beat grid, measured at promote time (`music/promote.py`): tempo,
+   * seconds to the first downbeat, and key. Absent until measured.
+   */
+  readonly bpm?: number;
+  readonly beatOffset?: number;
+  readonly beatsPerBar?: number;
+  readonly key?: {
+    readonly root: number;
+    readonly mode: "major" | "minor" | "dorian" | "phrygian";
+  };
 }
 
 export interface MusicManifestFile {

@@ -19,6 +19,7 @@ import {
   type Sim,
   type SimEvent,
   type SimStart,
+  type SimState,
   type SkipTo,
   TICK_MS,
   type Timeline,
@@ -81,6 +82,14 @@ const engine = await AudioEngine.create({ store: settings }).catch(
   },
 );
 if (engine) {
+  // The ears ride the player's ship (see src/audio/spatial.ts).
+  engine.setEar(() => {
+    const p = sim?.snapshot().player;
+    return p ? { pos: p.pos, vel: p.vel } : {
+      pos: { x: 240, y: 560 },
+      vel: { x: 0, y: 0 },
+    };
+  });
   // Boot sounds first, then the rest in the background while menus show.
   void engine.loadStage("boot").then(async () => {
     for (const stageName of ["menu", "gameplay", "ending"] as const) {
@@ -160,7 +169,10 @@ function makeDirector(): Director {
       if (name === FLAGS.runHasFired && chatterOn) {
         director.startChatter([chatterFor(value)]);
       }
-      if (name === FLAGS.flashbackRecording) stage.setFlashback(value);
+      if (name === FLAGS.flashbackRecording) {
+        stage.setFlashback(value);
+        engine?.setMuffled(value);
+      }
       if (name === FLAGS.tutComplete || name === FLAGS.tutSkipped) {
         if (value && sim?.snapshot().phase === "tutorial") sim.beginSector(1);
       }
@@ -306,6 +318,8 @@ function startRun(request: StartRequest): void {
   // A skip-to run cannot wait for the background queue to reach its stage;
   // the Director also holds any line whose audio is still on its way.
   void engine?.loadStage(stageFor(request.at));
+  engine?.sfxPlayer.stopAll();
+  engine?.gameplay.reset();
   director.skipScene();
   director.stopChatter();
   qa?.runStarted();
@@ -322,9 +336,9 @@ function startRun(request: StartRequest): void {
     seed: flags.seed ?? DEFAULT_SEED,
     start: startFor(request.at),
     difficulty: request.difficulty,
-    // No continue screen exists yet, so every run spends continues silently
-    // (see the integration playtest notes).
-    autoContinue: true,
+    // Attract and QA runs spend continues silently; a human gets the
+    // continue screen after `gameOver` (see `offerContinue`).
+    autoContinue: flags.autoPlay !== null,
   });
   pilot = flags.autoPlay?.mode === "fight"
     ? withTutorialDemo(new FightingAutopilot())
@@ -383,6 +397,9 @@ function endRun(): void {
   sim = null;
   pilot = null;
   openingScene = null;
+  engine?.sfxPlayer.stopAll();
+  engine?.gameplay.reset();
+  engine?.setMuffled(false);
   stage.setFlashback(false);
   stage.showProp(null);
   engine?.playMusic("menu", 1500);
@@ -402,9 +419,27 @@ function noteTutorialInput(input: InputFrame): void {
   if (input.focus) director.setFlag(FLAGS.tutFocused, true);
 }
 
-function onSimEvent(event: SimEvent, phase: string): void {
+/**
+ * Human game over: the continue screen. A continue revives the run where it
+ * fell; quitting has already sent the front end to the title.
+ */
+function offerContinue(): void {
+  const run = sim;
+  if (!run || flags.autoPlay) return;
+  const stats = (run as { stats?: () => { continuesLeft: number } }).stats;
+  void frontEnd.showContinue({
+    continuesLeft: stats?.call(run).continuesLeft ?? 0,
+    score: run.snapshot().score,
+  }).then((choice) => {
+    if (choice === "continue" && sim === run) run.continueRun();
+  });
+}
+
+function onSimEvent(event: SimEvent, phase: string, state: SimState): void {
   qa?.simEvent(event);
   ui?.hud.event(event);
+  engine?.gameplay.onEvent(event, state);
+  if (event.type === "gameOver") offerContinue();
   for (const [name, value] of Object.entries(runFlagsAfter(event))) {
     director.setFlag(name, value);
   }
@@ -500,7 +535,8 @@ function frame(now: number): void {
       const events = sim.step(input);
       const after = sim.snapshot();
       stage.observe(after, events);
-      for (const event of events) onSimEvent(event, before.phase);
+      for (const event of events) onSimEvent(event, before.phase, after);
+      engine?.gameplay.frame(after);
       if (openingScene) {
         openingScene();
         openingScene = null;

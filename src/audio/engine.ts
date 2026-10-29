@@ -4,13 +4,19 @@
  * ports: hand `engine` (voice), `engine.musicPort` and `engine.sfxPort` to
  * the Director.
  *
- *   music -> musicDuck --\
- *   sfx -----------------+--> master -> speakers
- *   voice ---------------|
- *   ui ------------------/
+ *   music -> musicDuck -> eventDuck -> musicFilter --\
+ *   sfx -> sfxDuck -> sfxFilter ----------------------+--> master -> limiter
+ *   voice (Warden lines via the arena PA) ------------|     -> speakers
+ *   ui -----------------------------------------------/
  *
- * Bus gains follow the settings store live. `musicDuck` is a separate node
- * so ducking never fights the player's music volume slider.
+ * Bus gains follow the settings store live. The duck and filter nodes are
+ * separate so ducking never fights the player's volume sliders: story VO
+ * ducks music and gameplay sfx (`Ducker`), big gameplay moments dip the
+ * music (`GAMEPLAY_SOUNDS[role].duck`), and the flashback muffles sfx (the
+ * past is muffled). The limiter is a safety net, not a mastering tool.
+ *
+ * Gameplay sound lives in `gameplay` (what plays, from sim events) and
+ * `sfxPlayer` (how: two layers, grid, key, space, voice caps).
  *
  * The engine's clock is the audio clock (`AudioContext.currentTime`): give
  * it to the Director and subtitles stay in sync with speech, even when the
@@ -47,6 +53,11 @@ import {
   type VoCuesFile,
 } from "./manifests.ts";
 import { MusicPlayer } from "./music.ts";
+import { type BeatGrid, DEFAULT_GRIDS, FALLBACK_GRID } from "./beatGrid.ts";
+import { GameplayAudio } from "./gameplayAudio.ts";
+import type { GameplaySoundId, SoundRole } from "./gameplaySounds.ts";
+import { SfxPlayer } from "./sfxPlayer.ts";
+import type { Vec2 } from "../contracts/index.ts";
 
 export type Bus = "master" | "music" | "sfx" | "voice" | "ui";
 
@@ -58,6 +69,7 @@ export const STAGE_CONTENTS: Readonly<
   menu: { music: ["menu", "tutorial"], scene: (s) => s === "tutorial" },
   gameplay: {
     music: ["gameplay", "flashback", "boss"],
+    // (gameplay sfx variants are added to this stage too; see the constructor)
     scene: (s) => s !== "tutorial" && !s.startsWith("ending"),
   },
   ending: {
@@ -83,6 +95,17 @@ export class AudioEngine implements VoicePort {
   private readonly ducker: Ducker;
   private readonly loader: StagedLoader<AudioBuffer>;
   private readonly music: MusicPlayer;
+  private readonly sfxDucker: Ducker;
+  private readonly eventDuck: GainNode;
+  private readonly musicFilter: BiquadFilterNode;
+  private readonly sfxFilter: BiquadFilterNode;
+  /** Gameplay sound: sim events in, cues out (see `gameplayAudio.ts`). */
+  readonly gameplay: GameplayAudio;
+  readonly sfxPlayer: SfxPlayer;
+  private ear: () => { pos: Vec2; vel: Vec2 } = () => ({
+    pos: { x: 240, y: 560 },
+    vel: { x: 0, y: 0 },
+  });
   /** Built on the Warden's first line (see `arenaPa.ts`). */
   private arenaPa: AudioNode | null = null;
   /** Stages asked for so far, so a voice-language change can refetch VO. */
@@ -96,6 +119,7 @@ export class AudioEngine implements VoicePort {
     private readonly vo: VoCatalog,
     private readonly sfx: ReadonlyMap<string, string>,
     musicFile: MusicManifestFile | null,
+    gameplaySfx: ReadonlyMap<string, readonly string[]>,
   ) {
     this.clock = { now: () => ctx.currentTime * 1000 };
     const bus = () => ctx.createGain();
@@ -107,12 +131,33 @@ export class AudioEngine implements VoicePort {
       ui: bus(),
     };
     const musicDuck = bus();
-    this.buses.master.connect(ctx.destination);
-    this.buses.music.connect(musicDuck).connect(this.buses.master);
-    for (const b of ["sfx", "voice", "ui"] as const) {
+    const sfxDuck = bus();
+    this.eventDuck = bus();
+    const lowpass = () => {
+      const f = ctx.createBiquadFilter();
+      f.type = "lowpass";
+      f.frequency.value = OPEN_HZ;
+      return f;
+    };
+    this.musicFilter = lowpass();
+    this.sfxFilter = lowpass();
+    const limiter = ctx.createDynamicsCompressor();
+    limiter.threshold.value = -3;
+    limiter.knee.value = 0;
+    limiter.ratio.value = 20;
+    limiter.attack.value = 0.002;
+    limiter.release.value = 0.1;
+    this.buses.master.connect(limiter).connect(ctx.destination);
+    this.buses.music.connect(musicDuck).connect(this.eventDuck)
+      .connect(this.musicFilter).connect(this.buses.master);
+    this.buses.sfx.connect(sfxDuck).connect(this.sfxFilter)
+      .connect(this.buses.master);
+    for (const b of ["voice", "ui"] as const) {
       this.buses[b].connect(this.buses.master);
     }
-    this.ducker = new Ducker(musicDuck.gain, () => ctx.currentTime);
+    const now = () => ctx.currentTime;
+    this.ducker = new Ducker(musicDuck.gain, now);
+    this.sfxDucker = new Ducker(sfxDuck.gain, now, SFX_UNDER_VOICE);
 
     this.loader = new StagedLoader((url) => this.decode(url));
     const tracks = musicTracks(musicFile);
@@ -124,6 +169,22 @@ export class AudioEngine implements VoicePort {
       (url) => this.loader.get(this.url(url)),
     );
     for (const src of sfx.values()) this.loader.add("boot", this.url(src));
+    for (const variants of gameplaySfx.values()) {
+      for (const src of variants) this.loader.add("gameplay", this.url(src));
+    }
+    this.sfxPlayer = new SfxPlayer({
+      ctx,
+      buses: this.buses,
+      samples: (role) =>
+        (gameplaySfx.get(role) ?? [])
+          .map((src) => this.loader.get(this.url(src)))
+          .filter((b): b is AudioBuffer => b !== undefined),
+      grid: () => this.grid(),
+      ear: () => this.ear(),
+      mono: () => this.store.get().audio.mono,
+      duck: (role) => this.duckMusic(role),
+    });
+    this.gameplay = new GameplayAudio(this.sfxPlayer);
     for (const [stage, contents] of Object.entries(STAGE_CONTENTS)) {
       for (const cue of contents.music) {
         const track = tracks.get(cue);
@@ -148,10 +209,11 @@ export class AudioEngine implements VoicePort {
    */
   static async create(options: AudioEngineOptions): Promise<AudioEngine> {
     const base = options.base ?? "./";
-    const [vo, sfx, music] = await Promise.all([
+    const [vo, sfx, music, gameplay] = await Promise.all([
       fetchJson<VoCuesFile>(base + "vo/cues.json"),
       fetchJson<SfxManifestFile>(base + "sfx/manifest.json"),
       fetchJson<MusicManifestFile>(base + "music/manifest.json"),
+      fetchJson<GameplaySfxFile>(base + "sfx/gameplay.json"),
     ]);
     return new AudioEngine(
       options.ctx ?? new AudioContext(),
@@ -160,6 +222,7 @@ export class AudioEngine implements VoicePort {
       new VoCatalog(vo ?? { lines: {} }),
       sfxUrls(sfx),
       music,
+      gameplayVariants(gameplay),
     );
   }
 
@@ -222,9 +285,13 @@ export class AudioEngine implements VoicePort {
     const gain = ctx.createGain();
     source.connect(gain).connect(this.voiceInput(line, layer));
     this.ducker.voiceStarted();
+    this.sfxDucker.voiceStarted();
     let ended = false;
     source.onended = () => {
-      if (!ended) this.ducker.voiceEnded();
+      if (!ended) {
+        this.ducker.voiceEnded();
+        this.sfxDucker.voiceEnded();
+      }
       ended = true;
     };
     source.start();
@@ -276,10 +343,69 @@ export class AudioEngine implements VoicePort {
     source.start();
   }
 
+  // ------------------------------------------------------ gameplay mix
+
+  /** Where the ears are: the player's ship. Set by the game loop. */
+  setEar(ear: () => { pos: Vec2; vel: Vec2 }): void {
+    this.ear = ear;
+  }
+
+  /** The grid of the cue now playing (or its briefed grid, or a default). */
+  grid(): { grid: BeatGrid; cueStart: number } {
+    const playing = this.music.playing;
+    const cue = playing?.cue ?? this.music.cue;
+    const t = playing?.track;
+    const grid: BeatGrid = t?.bpm
+      ? {
+        bpm: t.bpm,
+        beatOffset: t.beatOffset ?? 0,
+        beatsPerBar: t.beatsPerBar ?? 4,
+        key: t.key ?? (DEFAULT_GRIDS[cue] ?? FALLBACK_GRID).key,
+      }
+      : DEFAULT_GRIDS[cue] ?? FALLBACK_GRID;
+    return { grid, cueStart: playing?.startedAt ?? 0 };
+  }
+
+  /** A gameplay moment dips (and maybe dulls) the music, then lets go. */
+  private duckMusic(role: SoundRole): void {
+    const d = role.duck;
+    if (!d) return;
+    const t = this.ctx.currentTime;
+    const g = this.eventDuck.gain;
+    g.cancelScheduledValues(t);
+    g.setTargetAtTime(Math.pow(10, d.db / 20), t, d.attackS / 3);
+    g.setTargetAtTime(1, t + d.attackS * 2, d.releaseS / 3);
+    if (d.lowpassHz) {
+      const f = this.musicFilter.frequency;
+      f.cancelScheduledValues(t);
+      f.setTargetAtTime(d.lowpassHz, t, d.attackS / 3);
+      f.setTargetAtTime(OPEN_HZ, t + d.attackS * 2, d.releaseS / 3);
+    }
+  }
+
+  /** The flashback: gameplay sfx drop 12 dB behind a low-pass. */
+  setMuffled(on: boolean): void {
+    const t = this.ctx.currentTime;
+    this.sfxFilter.frequency.setTargetAtTime(on ? 900 : OPEN_HZ, t, 0.3);
+  }
+
+  /** Plays a gameplay role by id (hangar UI, tests). */
+  playGameplay(role: GameplaySoundId): void {
+    this.sfxPlayer.play({ role });
+  }
+
   // -------------------------------------------------------------- helpers
 
   private applyVolumes(s: Settings, timeConstant: number): void {
     const t = this.ctx.currentTime;
+    // Mono folds the mix to one channel at the master, after all panning.
+    const master = this.buses.master;
+    const channels = s.audio.mono ? 1 : 2;
+    if (master.channelCount !== channels) {
+      master.channelCount = channels;
+      master.channelCountMode = "explicit";
+      master.channelInterpretation = "speakers";
+    }
     for (const bus of Object.keys(this.buses) as Bus[]) {
       const gain = this.buses[bus].gain;
       if (timeConstant === 0) gain.value = s.audio[bus];
@@ -296,6 +422,29 @@ export class AudioEngine implements VoicePort {
     if (!res.ok) throw new Error(`${res.status} ${url}`);
     return await this.ctx.decodeAudioData(await res.arrayBuffer());
   }
+}
+
+/** A low-pass "open" enough to be inaudible. */
+const OPEN_HZ = 20000;
+
+/** Gameplay sfx under story VO: about -4 dB. */
+const SFX_UNDER_VOICE = 0.63;
+
+/** `sfx/gameplay.json`, written by `sfx/promote.py`. */
+interface GameplaySfxFile {
+  readonly sounds: Readonly<
+    Record<string, { readonly variants: readonly string[] } | null>
+  >;
+}
+
+function gameplayVariants(
+  file: GameplaySfxFile | null,
+): Map<string, readonly string[]> {
+  const out = new Map<string, readonly string[]>();
+  for (const [role, entry] of Object.entries(file?.sounds ?? {})) {
+    if (entry?.variants.length) out.set(role, entry.variants);
+  }
+  return out;
 }
 
 async function fetchJson<T>(url: string): Promise<T | null> {

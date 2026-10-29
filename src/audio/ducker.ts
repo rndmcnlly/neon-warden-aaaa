@@ -31,6 +31,8 @@ export class Ducker {
     private readonly param: RampTarget,
     /** Audio-clock seconds (`AudioContext.currentTime`). */
     private readonly now: () => number,
+    /** Gain while ducked; music's is `DUCK_TUNING.duckedGain`. */
+    private readonly duckedGain = DUCK_TUNING.duckedGain,
   ) {}
 
   get active(): boolean {
@@ -38,7 +40,7 @@ export class Ducker {
   }
 
   voiceStarted(): void {
-    if (this.voices++ === 0) this.ramp(DUCK_TUNING.duckedGain, "attack");
+    if (this.voices++ === 0) this.ramp(this.duckedGain, "attack");
   }
 
   voiceEnded(): void {
