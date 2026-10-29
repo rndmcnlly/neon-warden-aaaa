@@ -483,8 +483,7 @@ export async function captureTake(
     await Deno.remove(`${dir}/reel.mp4`);
     seconds -= rollT;
   } else await Deno.rename(`${dir}/reel.mp4`, `${dir}/take.mp4`);
-  const tt = (epoch: number) =>
-    Math.round((av.t(epoch) - rollT) * 1000) / 1000;
+  const tt = (epoch: number) => Math.round((av.t(epoch) - rollT) * 1000) / 1000;
   const timeline = {
     key,
     recipe: t,
