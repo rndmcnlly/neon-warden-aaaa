@@ -385,6 +385,26 @@ export class Director {
     this.subtitles.clear("ambient", this.ports.clock.now());
   }
 
+  /**
+   * Plays a one-off bark (a reaction to a sim event) on the ambient layer.
+   * Scripted moments win: while a timeline or scripted line holds the floor,
+   * the bark is dropped and this returns false. A bark outranks chatter, so
+   * it cuts a chatter line, and chatter then waits until it has finished.
+   */
+  bark(line: LineId): boolean {
+    const now = this.ports.clock.now();
+    if (
+      this.current !== null || this.lines.scripted !== null || this.chatterHeld
+    ) return false;
+    this.say(line, "ambient", now);
+    const endsAt = this.lines.ambient?.endsAt ?? now;
+    this.ambient.postpone(
+      now,
+      endsAt - now + DIRECTOR_TUNING.quietAfterScriptMs,
+    );
+    return true;
+  }
+
   /** Holds chatter without a timeline (for example, while paused). */
   holdChatter(held: boolean): void {
     this.chatterHeld = held;

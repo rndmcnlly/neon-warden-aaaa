@@ -28,7 +28,7 @@ import { FightingAutopilot } from "./pilots/fighting.ts";
 import { PacifistAutopilot } from "./pilots/pacifist.ts";
 import { createSettingsStore } from "./settings/store.ts";
 import { createStage, type PropId } from "./render/stage.ts";
-import { createFrontEnd } from "./ui/frontEnd.ts";
+import { createFrontEnd, type FrontEnd } from "./ui/frontEnd.ts";
 import type { StartRequest } from "./ui/context.ts";
 import { createDevOverlay } from "./ui/devOverlay.ts";
 import { AudioEngine } from "./audio/engine.ts";
@@ -36,6 +36,8 @@ import { Director } from "./director/director.ts";
 import type { MusicPort, SfxPort, VoicePort } from "./director/ports.ts";
 import { lookup } from "./i18n/index.ts";
 import {
+  barkFor,
+  chatterFor,
   FLAGS,
   INITIAL_FLAGS,
   runFlagsAfter,
@@ -45,6 +47,7 @@ import {
 import { PausableClock } from "./app/clock.ts";
 import { createSubtitleLayer } from "./app/subtitleView.ts";
 import { installQaProbe, type QaRecorder } from "./app/qaProbe.ts";
+import { withTutorialDemo } from "./app/tutorialDemo.ts";
 import "./style.css";
 
 const DEFAULT_SEED = 121;
@@ -89,11 +92,30 @@ if (engine) {
 // --------------------------------------------------------------- director
 
 const clock = new PausableClock();
+/**
+ * Auto-play fast-forwards scenes too, so a QA reel reaches its beat in under
+ * a minute; capped, so voice lines stay recognizable as they cut each other.
+ */
+const SCENE_RATE_CAP = 8;
+if (flags.autoPlay) {
+  clock.setRate(Math.min(SCENE_RATE_CAP, flags.autoPlay.speed));
+}
 const subtitles = createSubtitleLayer(overlayRoot, settings);
 
 /** Gameplay-side state the Director's ports reach into. */
 let sim: Sim | null = null;
 let warpUntil = 0;
+/** True while a `freezeSim` cue holds the world (the probe reports it). */
+let simFrozen = false;
+/** Ambient chatter runs in sectors 1–5 only, never in the tutorial or arena. */
+let chatterOn = false;
+/** The descent scene has let the Warden fight; never hold it again this run. */
+let parleyReleased = false;
+/**
+ * The front end's in-game pieces (HUD, credits crawl, tutorial skip). Null
+ * until the front end mounts, which is after the first Director exists.
+ */
+let ui: Pick<FrontEnd, "hud" | "credits" | "tutorial"> | null = null;
 /** Set with `?qa=1`: records scenes, lines and sim events for `qa/`. */
 let qa: QaRecorder | null = null;
 
@@ -120,20 +142,31 @@ function makeDirector(): Director {
       },
     },
     sim: {
-      freeze: () => sim?.freeze(),
-      resume: () => sim?.resume(),
+      freeze() {
+        simFrozen = true;
+        sim?.freeze();
+      },
+      resume() {
+        simFrozen = false;
+        sim?.resume();
+      },
     },
     onFlag(name, value) {
+      qa?.flag(name, value);
+      ui?.hud.flag(name, value);
+      if (name === FLAGS.bossParley && !value) parleyReleased = true;
       sim?.setStoryFlag(name, value);
+      // The first shot swaps the uneasy no-fire bank for the default one.
+      if (name === FLAGS.runHasFired && chatterOn) {
+        director.startChatter([chatterFor(value)]);
+      }
       if (name === FLAGS.flashbackRecording) stage.setFlashback(value);
       if (name === FLAGS.tutComplete || name === FLAGS.tutSkipped) {
         if (value && sim?.snapshot().phase === "tutorial") sim.beginSector(1);
       }
-      // No in-game credits crawl exists yet, so the roll is "done" at once;
-      // otherwise the credits timeline would wait on it forever.
-      if (name === FLAGS.creditsRoll && value) {
-        queueMicrotask(() => director.setFlag(FLAGS.creditsRollDone, true));
-      }
+      // The crawl reports back through `credits.onDone` (set below), which
+      // releases the credits timeline's wait on `credits.rollDone`.
+      if (name === FLAGS.creditsRoll && value) void ui?.credits.roll();
     },
     text: lookup,
     settings: () => settings.get(),
@@ -185,8 +218,21 @@ if (flags.qa) {
     scene: () =>
       director.timeline?.id ??
         (sim && frontEnd.isSimRunning() ? "play" : "menu"),
+    timeline: () => director.timeline?.id ?? null,
     state: () => sim?.snapshot() ?? null,
+    frozen: () => simFrozen,
   });
+}
+
+ui = frontEnd;
+frontEnd.credits.onDone(() => director.setFlag(FLAGS.creditsRollDone, true));
+frontEnd.tutorial.onSkip(skipTutorial);
+
+/** The player declined onboarding: the skip scene replaces the tutorial. */
+function skipTutorial(): void {
+  if (sim?.snapshot().phase !== "tutorial") return;
+  director.skipScene();
+  void playScene("tutorialSkip");
 }
 
 /**
@@ -252,10 +298,17 @@ function keyboardPilot(): Pilot {
 function startRun(request: StartRequest): void {
   lastRequest = request;
   director.skipScene();
-  director = makeDirector();
-  flashbackPlayed = false;
-  accumulator = 0;
+  director.stopChatter();
   qa?.runStarted();
+  ui?.hud.reset();
+  director = makeDirector();
+  // The salvage cache sits in sector 3: a run that starts past it has
+  // already seen the flashback, narratively.
+  flashbackPlayed = /^(boss|ending-)/.test(request.at);
+  parleyReleased = false;
+  chatterOn = false;
+  simFrozen = false;
+  accumulator = 0;
   sim = createSim({
     seed: flags.seed ?? DEFAULT_SEED,
     start: startFor(request.at),
@@ -265,9 +318,9 @@ function startRun(request: StartRequest): void {
     autoContinue: true,
   });
   pilot = flags.autoPlay?.mode === "fight"
-    ? new FightingAutopilot()
+    ? withTutorialDemo(new FightingAutopilot())
     : flags.autoPlay?.mode === "pacifist"
-    ? new PacifistAutopilot()
+    ? withTutorialDemo(new PacifistAutopilot())
     : keyboardPilot();
 
   stage.playShot("gameplay", 0);
@@ -275,6 +328,13 @@ function startRun(request: StartRequest): void {
   switch (request.at) {
     case "tutorial":
       openingScene = () => void playScene("tutorial");
+      break;
+    case "boss":
+      // Under the fight autopilot, a skip to the arena stands in for a run
+      // that fought its way there; otherwise the Warden meets a pacifist.
+      if (flags.autoPlay?.mode === "fight") {
+        director.setFlag(FLAGS.runPacifist, false);
+      }
       break;
     case "flashback":
       flashbackPlayed = true;
@@ -306,7 +366,11 @@ async function playEnding(timelineId: string): Promise<void> {
 function endRun(): void {
   director.skipScene();
   director.stopChatter();
+  qa?.runStarted();
+  ui?.hud.reset();
   director = makeDirector();
+  chatterOn = false;
+  simFrozen = false;
   sim = null;
   pilot = null;
   openingScene = null;
@@ -331,6 +395,7 @@ function noteTutorialInput(input: InputFrame): void {
 
 function onSimEvent(event: SimEvent, phase: string): void {
   qa?.simEvent(event);
+  ui?.hud.event(event);
   for (const [name, value] of Object.entries(runFlagsAfter(event))) {
     director.setFlag(name, value);
   }
@@ -340,6 +405,19 @@ function onSimEvent(event: SimEvent, phase: string): void {
     return;
   }
   if (event.type === "sectorCleared") warpUntil = performance.now() + WARP_MS;
+  updateChatter(event);
+  const bark = barkFor(event);
+  if (bark && director.bark(bark)) qa?.bark(bark);
+  // The Warden arrives on the sim's schedule, which can beat the descent
+  // scene to its parley cue (the warnings run long, more so in other
+  // languages). Hold the Warden from the moment it arrives; the scene's own
+  // `boss.parley` release still ends the speech, and only once.
+  if (
+    event.type === "bossPhase" && event.phase === 1 &&
+    director.timeline?.id === "boss" && !parleyReleased
+  ) {
+    director.setFlag(FLAGS.bossParley, true);
+  }
   if (event.type === "pickup" && event.firstPowerup) {
     if (flashbackPlayed) return;
     flashbackPlayed = true;
@@ -350,6 +428,21 @@ function onSimEvent(event: SimEvent, phase: string): void {
     void playEnding(scene.id);
   } else {
     void playScene(scene);
+  }
+}
+
+/** Chatter during sectors 1–5; the Warden's arrival ends it for the run. */
+function updateChatter(event: SimEvent): void {
+  if (event.type === "sectorStarted" && event.sector <= 5 && !chatterOn) {
+    chatterOn = true;
+    director.startChatter([chatterFor(director.getFlag(FLAGS.runHasFired))]);
+  } else if (
+    chatterOn &&
+    (event.type === "bossWarning" ||
+      (event.type === "sectorStarted" && event.sector > 5))
+  ) {
+    chatterOn = false;
+    director.stopChatter();
   }
 }
 
@@ -405,6 +498,7 @@ function frame(now: number): void {
       }
     }
     devOverlay.update(sim.snapshot());
+    ui?.hud.update(sim.snapshot());
   }
 
   director.update();

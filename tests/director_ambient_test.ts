@@ -55,3 +55,25 @@ Deno.test("deck never repeats a card within a round or across the seam", () => {
   }
   for (let i = 1; i < 30; i++) assert(dealt[i] !== dealt[i - 1]);
 });
+
+Deno.test("an event bark yields to scenes, cuts chatter, then holds it", () => {
+  const rig = makeRig({ bark_1: 500, bark_ev: 2000, line_a: 1000 });
+  rig.director.play({
+    id: "s",
+    cues: [{ type: "say", line: lineId("line_a") }],
+  });
+  assertEquals(rig.director.bark(lineId("bark_ev")), false, "scene wins");
+  rig.advance(1000);
+
+  rig.director.startChatter(banks);
+  rig.advance(1000);
+  assertEquals(rig.log.at(-1), "say ambient bark_1 en @2000");
+  assertEquals(rig.director.bark(lineId("bark_ev")), true);
+  assertEquals(rig.log.slice(-2), [
+    "stop ambient bark_1",
+    "say ambient bark_ev en @2000",
+  ]);
+  // Chatter would be due again at 7000; it waits out the bark plus a beat.
+  rig.advance(2000 + DIRECTOR_TUNING.quietAfterScriptMs - 100);
+  assertEquals(rig.log.at(-1), "say ambient bark_ev en @2000");
+});
