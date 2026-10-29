@@ -13,7 +13,8 @@ import { id, t } from "../src/i18n/index.ts";
 import { UI_STRINGS } from "../src/i18n/ui.ts";
 import { LANGS } from "../src/contracts/index.ts";
 
-function state(over: Partial<SimState> = {}): SimState {
+/** Loose on purpose: the fixture survives the sim contract growing. */
+function state(over: Record<string, unknown> = {}): SimState {
   return {
     tick: 100,
     seed: 121,
@@ -37,7 +38,7 @@ function state(over: Partial<SimState> = {}): SimState {
     kills: 0,
     flags: { pacifistIntact: true, firstPowerupTaken: false },
     ...over,
-  };
+  } as unknown as SimState;
 }
 
 const spawn = (id: number): SimEvent => ({

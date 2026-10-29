@@ -1462,3 +1462,232 @@
     opacity: 0.2;
   }
 }
+
+/* ---------- HUD instruments (wave 3) ---------- */
+
+/* The tutorial teaches one verb at a time; instruments arrive after it. */
+.nw-hud.is-tutorial .nw-gauges,
+.nw-hud.is-tutorial .nw-pay {
+  visibility: hidden;
+}
+.nw-gauges {
+  display: grid;
+  gap: 0.35em;
+}
+.nw-writ-cells {
+  display: inline-flex;
+  gap: 0.25em;
+}
+/* Three cells that fill left to right; a full Writ glows gold. */
+.nw-writ-cells > i {
+  --fill: 0;
+  position: relative;
+  width: 1.6em;
+  height: 0.5em;
+  border: 1px solid rgba(94, 242, 255, 0.45);
+  border-radius: 2px;
+  background:
+    linear-gradient(90deg, var(--nw-cyan) calc(var(--fill) * 100%),
+    transparent 0);
+}
+.nw-writ-cells > i.is-full {
+  background: var(--nw-cyan);
+}
+.nw-writ.is-max .nw-writ-cells > i {
+  border-color: var(--nw-gold);
+  background: var(--nw-gold);
+  box-shadow: 0 0 10px rgba(255, 224, 102, 0.6);
+}
+.nw-graze-track {
+  display: inline-block;
+  width: 5em;
+  height: 0.32em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  vertical-align: middle;
+}
+.nw-graze-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--nw-violet), var(--nw-pink));
+}
+.nw-graze-count {
+  margin-inline-start: 0.5em;
+  font-family: var(--nw-mono);
+  font-size: 0.75em;
+  color: var(--nw-muted);
+}
+/* PAY sits beside SCOUTS SPARED: what you earn next to what it cost. */
+.nw-hud-ledger {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.2em;
+}
+.nw-pay .nw-hud-value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4em;
+}
+.nw-pay-value {
+  font-family: var(--nw-mono);
+  font-size: 1.15em;
+  color: var(--nw-gold);
+}
+.nw-pay-mult {
+  padding: 0 0.35em;
+  border-radius: 3px;
+  font-family: var(--nw-mono);
+  font-size: 0.78em;
+  color: var(--nw-ink);
+  background: var(--nw-muted);
+}
+.nw-pay-mult.is-hot {
+  background: var(--nw-gold);
+}
+.nw-scan {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.2em 0.7em;
+  border-radius: 4px;
+  background: rgba(4, 2, 12, 0.6);
+  font-family: var(--nw-mono);
+  font-size: 0.75em;
+  color: var(--nw-muted);
+}
+.nw-scan[hidden] {
+  display: none;
+}
+.nw-scan-reticle {
+  width: 0.8em;
+  height: 0.8em;
+  border: 1px dashed currentColor;
+}
+.nw-scan.is-dwell {
+  color: var(--nw-cyan);
+}
+.nw-scan.is-locked {
+  color: var(--nw-gold);
+}
+.nw-scan.is-locked .nw-scan-reticle {
+  border-style: solid;
+}
+.nw-scan-track {
+  width: 4em;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.12);
+}
+.nw-scan-bar {
+  display: block;
+  height: 100%;
+  background: currentColor;
+}
+
+/* Intel tags ride beside their enemy; position comes from the stage. */
+.nw-instruments,
+.nw-intel-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.nw-intel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -2.6em 0 0 1.2em;
+  padding: 0.1em 0.45em;
+  border-inline-start: 2px solid var(--nw-gold);
+  background: rgba(4, 2, 12, 0.7);
+  font-family: var(--nw-mono);
+  font-size: 0.68em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--nw-gold);
+}
+.nw-intel[hidden] {
+  display: none;
+}
+.nw-intel[data-state="fire"],
+.nw-intel[data-state="aim"] {
+  border-color: var(--nw-red);
+  color: #ffd0d8;
+}
+.nw-intel[data-state="disarmed"] {
+  border-color: var(--nw-cyan);
+  color: var(--nw-cyan);
+}
+:lang(zh) .nw-intel {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Radio: its own channel, top left, with a source tag and stereo side, so
+   it never competes with the main subtitles at the bottom. */
+.nw-radio {
+  position: absolute;
+  left: 2.5vw;
+  top: 26vh;
+  display: grid;
+  gap: 0.35em;
+  width: min(24em, 40vw);
+  font-size: calc(0.8em * var(--nw-hud-scale, 1));
+}
+.nw-radio-line {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.5em;
+  padding: 0.35em 0.6em;
+  border-radius: 4px;
+  background: rgba(4, 2, 12, 0.66);
+  border-inline-start: 2px solid var(--nw-violet);
+}
+.nw-radio-side {
+  grid-row: span 2;
+  align-self: center;
+  color: var(--nw-violet);
+}
+.nw-radio-line[data-side="right"] .nw-radio-side {
+  order: 3;
+}
+.nw-radio-source {
+  font-family: var(--nw-mono);
+  font-size: 0.78em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nw-violet);
+}
+.nw-radio-text {
+  color: #d9d2ff;
+  line-height: 1.35;
+}
+:lang(zh) .nw-radio-source {
+  text-transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .nw-frontend:not(.is-calm) .is-pulse {
+    animation: nw-pulse-once 260ms ease-out;
+  }
+  .nw-frontend:not(.is-calm) .nw-radio-line {
+    animation: nw-row-in 200ms var(--nw-ease-out);
+  }
+}
+/* Reduced motion still gets the signal: a color flash, no movement. */
+.nw-frontend.is-calm .is-pulse {
+  animation: nw-flash-once 260ms ease-out;
+}
+@keyframes nw-pulse-once {
+  40% {
+    transform: scale(1.08);
+    filter: brightness(1.4);
+  }
+}
+@keyframes nw-flash-once {
+  40% {
+    filter: brightness(1.5);
+  }
+}

@@ -22,6 +22,12 @@ import type {
 } from "../contracts/index.ts";
 import type { TextParams, UiKey } from "../i18n/index.ts";
 import { glyph, h } from "./widgets.ts";
+import {
+  createInstruments,
+  type LooseEvent,
+  type RadioLine,
+  type ScreenPoint,
+} from "./instruments.ts";
 
 /** Pilot #0122: the serial the flashback reveals (see BIBLE.md). */
 export const PLAYER_SERIAL = "0122";
@@ -68,8 +74,10 @@ export interface HudModel {
 export function hudModel(state: SimState, tally: HudTally): HudModel {
   const tutorial = state.phase === "tutorial";
   const boss = state.boss;
-  const spared = tally.spawned - tally.wiped - state.kills -
-    state.enemies.length;
+  // Prefer the sim's own count (wave 3); derive it from the tally before.
+  const fromSim = (state as { readonly scoutsSpared?: number }).scoutsSpared;
+  const spared = fromSim ?? tally.spawned - tally.wiped - state.kills -
+      state.enemies.length;
   return {
     tutorial,
     score: state.score,
@@ -94,6 +102,28 @@ export function hudModel(state: SimState, tally: HudTally): HudModel {
 export function tallyEvent(tally: HudTally, event: SimEvent): void {
   if (event.type === "spawn" && event.kind !== "warden") tally.spawned++;
   if (event.type === "despawn" && event.reason === "wiped") tally.wiped++;
+}
+
+/** The event types this file's own tally and banners understand. */
+const SIM_EVENT_TYPES: ReadonlySet<string> = new Set<SimEvent["type"]>([
+  "sectorStarted",
+  "sectorCleared",
+  "spawn",
+  "despawn",
+  "playerFired",
+  "hit",
+  "kill",
+  "lifeLost",
+  "pickup",
+  "bossWarning",
+  "bossPhase",
+  "bossDefeated",
+  "bossSurvived",
+  "gameOver",
+]);
+
+function isSimEvent(e: SimEvent | LooseEvent): e is SimEvent {
+  return SIM_EVENT_TYPES.has(e.type);
 }
 
 // ------------------------------------------------------------- banners
@@ -165,12 +195,19 @@ export interface HudOptions {
   readonly lang: () => Lang;
   /** Pressing the tutorial's skip chip with a pointer. */
   readonly onSkipClick: () => void;
+  /** True if a text id exists (intel state names fall back to raw ids). */
+  readonly hasText?: (key: string) => boolean;
+  /** From the stage: an entity's screen position, for intel tags. */
+  readonly screenPositionOf?: (entityId: string) => ScreenPoint;
 }
 
 export interface Hud {
   readonly el: HTMLElement;
   update(state: SimState): void;
-  event(event: SimEvent): void;
+  /** Every SimEvent, plus wave 3 events the sim may add (read loosely). */
+  event(event: SimEvent | LooseEvent): void;
+  /** Radio chatter text, separate from main-dialogue subtitles. */
+  radio(line: RadioLine): void;
   flag(name: string, value: boolean): void;
   /** Clears tallies and banners: call at the start of each run. */
   reset(): void;
@@ -214,8 +251,20 @@ export function createHud(options: HudOptions): Hud {
   const pacifist = h("span", { class: "nw-hud-pacifist", hidden: true });
   const spared = h("span", { class: "nw-hud-spared", hidden: true });
   conscience.append(pacifist, spared);
-  left.append(score.box, sector.box, serial);
-  right.append(hull.box, cannon.box, shield, conscience);
+  const instruments = createInstruments({
+    t,
+    hasText: options.hasText ?? (() => false),
+    locale: () => options.lang() === "zh" ? "zh-CN" : options.lang(),
+    screenPositionOf: options.screenPositionOf,
+  });
+  const ledger = h(
+    "div",
+    { class: "nw-hud-ledger" },
+    instruments.pay,
+    conscience,
+  );
+  left.append(score.box, sector.box, instruments.gauges, serial);
+  right.append(hull.box, cannon.box, shield, ledger);
 
   const skip = h(
     "button",
@@ -238,7 +287,8 @@ export function createHud(options: HudOptions): Hud {
     h("span", { class: "nw-warden-head" }, wardenLabel, pips, wardenState),
     wardenTrack,
   );
-  top.append(warden);
+  top.append(warden, instruments.scan);
+  el.append(instruments.overlay);
 
   const pipRow = (count: number, max: number, cls: string) =>
     h(
@@ -258,6 +308,7 @@ export function createHud(options: HudOptions): Hud {
     wardenLabel.textContent = t("ui.hud.wardenMeter");
     pacifist.textContent = t("ui.hud.pacifist");
     skip.replaceChildren(glyph("backOnly"), t("ui.tut.skipPrompt"));
+    instruments.relabel();
     drawn = {};
     if (lastState) update(lastState);
   }
@@ -326,6 +377,9 @@ export function createHud(options: HudOptions): Hud {
     }
     if (changed("tutorial", m.tutorial)) skip.hidden = !m.tutorial;
     if (changed("warden", m.warden)) drawWarden(m.warden);
+    // The tutorial teaches one verb at a time: instruments appear after it.
+    el.classList.toggle("is-tutorial", m.tutorial);
+    instruments.update(state);
   }
 
   function drawWarden(w: WardenModel | null): void {
@@ -376,7 +430,10 @@ export function createHud(options: HudOptions): Hud {
   }
   const resolve = (bit?: UiBit) => bit && t(bit[0], bit[1]);
 
-  function event(e: SimEvent): void {
+  function event(loose: SimEvent | LooseEvent): void {
+    instruments.event(loose);
+    if (!isSimEvent(loose)) return;
+    const e = loose;
     tallyEvent(tally, e);
     const banner = bannerForEvent(e);
     if (banner) {
@@ -414,6 +471,7 @@ export function createHud(options: HudOptions): Hud {
     banners.replaceChildren();
     drawn = {};
     warden.hidden = true;
+    instruments.reset();
   }
 
   relabel();
@@ -421,6 +479,7 @@ export function createHud(options: HudOptions): Hud {
     el,
     update,
     event,
+    radio: (line) => instruments.radio(line),
     flag,
     reset,
     inTutorial: () => lastState?.phase === "tutorial",

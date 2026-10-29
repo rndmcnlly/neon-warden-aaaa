@@ -39,6 +39,15 @@ export interface FrontEndHooks {
   onResume?(): void;
   onRestartCheckpoint?(): void;
   onQuitToTitle?(): void;
+  /**
+   * From the stage (V): an entity's position on screen in CSS pixels, or
+   * null when off screen. Pins intel tags to enemies.
+   */
+  screenPositionOf?(entityId: string): { x: number; y: number } | null;
+  /** Hangar preview (V): show the ship with this loadout. */
+  applyLoadout?(loadout: unknown): void;
+  /** Hangar camera (V): frame the ship for the hangar, or release it. */
+  hangarShot?(active: boolean): void;
 }
 
 export interface UiContext {

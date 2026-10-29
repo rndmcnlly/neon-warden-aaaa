@@ -31,6 +31,7 @@ import type { FrontEndHooks, UiContext } from "./context.ts";
 import { decideMenuIntent } from "./dispatch.ts";
 import { focusInitial, moveFocus } from "./focus.ts";
 import { createHud } from "./hud.ts";
+import type { LooseEvent, RadioLine } from "./instruments.ts";
 import { refreshPrompts } from "./prompts.ts";
 import { Router, type ScreenFactory } from "./router.ts";
 import { gateScreen, titleScreen } from "./screens/boot.ts";
@@ -45,7 +46,7 @@ import {
   tutorialSkipDialog,
 } from "./screens/run.ts";
 import { uiSound } from "./sound.ts";
-import { id, t } from "../i18n/index.ts";
+import { hasText, id, t } from "../i18n/index.ts";
 import { h, widgetIntent } from "./widgets.ts";
 import "./frontend.css";
 
@@ -75,8 +76,14 @@ export interface FrontEnd {
   readonly hud: {
     /** After each sim step (cheap: it redraws only what changed). */
     update(state: SimState): void;
-    /** Every SimEvent: sector and Warden banners, spared tally. */
-    event(event: SimEvent): void;
+    /**
+     * Every SimEvent: sector and Warden banners, spared tally, and the wave 3
+     * instruments (payChanged, writCharge, graze, scanLock, intel, disarm),
+     * read by `type` so new sim events need no change here.
+     */
+    event(event: SimEvent | LooseEvent): void;
+    /** Radio chatter text with its source and stereo side (from A). */
+    radio(line: RadioLine): void;
     /** Every story flag change: serial reveal, ending banners. */
     flag(name: string, value: boolean): void;
     /** Start of each run. */
@@ -157,6 +164,8 @@ export function createFrontEnd(
     t: (key, vars) => t(id(key), lang(), vars),
     lang,
     onSkipClick: () => requestTutorialSkip(),
+    hasText,
+    screenPositionOf: (entityId) => hooks.screenPositionOf?.(entityId) ?? null,
   });
   screens.before(hud.el);
 
@@ -422,6 +431,7 @@ export function createFrontEnd(
     hud: {
       update: (state) => hud.update(state),
       event: (event) => hud.event(event),
+      radio: (line) => hud.radio(line),
       flag: (name, value) => hud.flag(name, value),
       reset: () => hud.reset(),
     },

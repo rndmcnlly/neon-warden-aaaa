@@ -1859,6 +1859,47 @@ export const UI_STRINGS = {
       "Vuelve a la pantalla anterior. Mantenido durante el tutorial, ofrece saltarlo.",
     zh: "返回上一界面。在教程中按住可选择跳过教程。",
   },
+
+  // -- wave 3: HUD instruments, intel and radio
+  "ui.hud.pay": { en: "Pay", es: "Paga", zh: "报酬" },
+  "ui.hud.payMult": { en: "×{mult}", es: "×{mult}", zh: "×{mult}" },
+  "ui.hud.writ": { en: "Writ", es: "Writ", zh: "令状" },
+  "ui.hud.writLevel": {
+    en: "Writ charge level {n} of 3",
+    es: "Carga del Writ: nivel {n} de 3",
+    zh: "令状充能：第 {n} 级（共 3 级）",
+  },
+  "ui.hud.graze": { en: "Graze", es: "Roce", zh: "擦弹" },
+  "ui.hud.scanning": { en: "Scanning", es: "Escaneando", zh: "扫描中" },
+  "ui.hud.scanLocked": { en: "Lock", es: "Fijado", zh: "已锁定" },
+  "ui.hud.scanLockedState": {
+    en: "Lock: {state}",
+    es: "Fijado: {state}",
+    zh: "已锁定：{state}",
+  },
+  "ui.intel.weakPoint": { en: "Weak point", es: "Punto débil", zh: "弱点" },
+  "ui.intel.disarmed": { en: "Disarmed", es: "Desarmado", zh: "已缴械" },
+  "ui.intel.state.patrol": { en: "Patrol", es: "Patrulla", zh: "巡逻" },
+  "ui.intel.state.aim": { en: "Aiming", es: "Apuntando", zh: "瞄准" },
+  "ui.intel.state.fire": { en: "Firing", es: "Disparando", zh: "开火" },
+  "ui.intel.state.evade": { en: "Evading", es: "Evadiendo", zh: "闪避" },
+  "ui.intel.state.retreat": { en: "Retreating", es: "Retirada", zh: "撤退" },
+  "ui.intel.state.enter": { en: "Arriving", es: "Llegando", zh: "进场" },
+  "ui.intel.state.dive": { en: "Diving", es: "En picada", zh: "俯冲" },
+  "ui.intel.state.strafe": { en: "Strafing", es: "Ametrallando", zh: "扫射" },
+  "ui.intel.state.idle": { en: "Holding", es: "En espera", zh: "待命" },
+  "ui.intel.state.charge": { en: "Charging", es: "Cargando", zh: "蓄力" },
+  "ui.intel.state.descend": {
+    en: "Descending",
+    es: "Descendiendo",
+    zh: "降临",
+  },
+  "ui.intel.state.monologue": {
+    en: "Monologuing",
+    es: "Monologando",
+    zh: "独白中",
+  },
+  "ui.radio.channel": { en: "Radio", es: "Radio", zh: "无线电" },
 } as const satisfies Record<string, LocalizedText>;
 
 /** The MIT license text, verbatim; hoisted so the table stays readable. */
