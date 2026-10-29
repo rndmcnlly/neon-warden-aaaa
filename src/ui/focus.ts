@@ -96,11 +96,51 @@ export function moveFocus(root: HTMLElement, direction: Direction): boolean {
     return true;
   }
   // Wrap only along a list's axis, so a grid edge stops instead of jumping.
+  // A "grid" wraps in reading order: off a column's bottom to the top of
+  // the next column, so Down alone visits every tile.
+  if (
+    root.dataset.wrap === "grid" && (direction === "down" || direction === "up")
+  ) {
+    const index = nextColumn(
+      active.getBoundingClientRect(),
+      others.map((el) => el.getBoundingClientRect()),
+      direction === "down",
+    );
+    if (index >= 0) return focusElement(others[index]);
+  }
   if (root.dataset.wrap === "vertical") {
     if (direction === "down") return focusElement(items[0]);
     if (direction === "up") return focusElement(items[items.length - 1]);
   }
   return false;
+}
+
+/**
+ * Index of the top tile of the next column to the right (`forward`), or the
+ * bottom tile of the previous column to the left; -1 at the grid's end.
+ */
+export function nextColumn(
+  from: Rect,
+  candidates: readonly Rect[],
+  forward: boolean,
+): number {
+  let best = -1;
+  candidates.forEach((rect, index) => {
+    const beyond = forward
+      ? rect.left >= from.left + from.width - 1
+      : rect.left + rect.width <= from.left + 1;
+    if (!beyond) return;
+    if (best < 0) {
+      best = index;
+      return;
+    }
+    const b = candidates[best];
+    // Nearest column first, then its top (forward) or bottom (backward) tile.
+    const dx = Math.abs(rect.left - from.left) - Math.abs(b.left - from.left);
+    const dy = forward ? rect.top - b.top : b.top - rect.top;
+    if (dx < -1 || (Math.abs(dx) <= 1 && dy < 0)) best = index;
+  });
+  return best;
 }
 
 export function focusElement(el: HTMLElement): boolean {

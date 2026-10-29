@@ -219,7 +219,11 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--nw-pink);
-  white-space: nowrap;
+  /* Long ES labels wrap inside the badge instead of pushing the row wide. */
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 .nw-button.is-primary {
   justify-content: center;
@@ -812,41 +816,57 @@
 
 /* ---------- Motion, only when the player has not asked for less ---------- */
 
+/* Motion runs unless the OS asks for less or the player turns on Reduce
+   motion (the front end adds .is-calm for either). */
 @media (prefers-reduced-motion: no-preference) {
-  .nw-screen:not(.is-under-modal) > .nw-panel {
+  .nw-frontend:not(.is-calm) .nw-screen:not(.is-under-modal) > .nw-panel {
     animation: nw-rise 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  .nw-button,
-  .nw-row {
-    transition: background 140ms ease, box-shadow 140ms ease, transform 140ms
-      ease;
+  .nw-frontend:not(.is-calm) .nw-button,
+  .nw-frontend:not(.is-calm) .nw-row {
+    transition: background 140ms ease, box-shadow 140ms ease;
   }
-  .nw-button:focus,
-  .nw-row:focus {
+  /* Nudge the content, not the box: moving the box overflowed its panel. */
+  .nw-frontend:not(.is-calm) .nw-button-label,
+  .nw-frontend:not(.is-calm) .nw-row-text {
+    transition: transform 140ms ease;
+  }
+  .nw-frontend:not(.is-calm) .nw-button:focus > .nw-button-label,
+  .nw-frontend:not(.is-calm) .nw-row:focus > .nw-row-text {
     transform: translateX(3px);
   }
-  .nw-tile:focus,
-  .nw-bind-cell:focus,
-  .nw-tab:focus {
+  .nw-frontend:not(.is-calm) .nw-tile:focus > .nw-button-label,
+  .nw-frontend:not(.is-calm) .nw-bind-cell:focus > .nw-button-label,
+  .nw-frontend:not(.is-calm) .nw-tab:focus > .nw-button-label {
     transform: none;
   }
-  .nw-switch-knob {
+  .nw-frontend:not(.is-calm) .nw-banner {
+    animation: nw-banner-in 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .nw-frontend:not(.is-calm) .nw-switch-knob {
     transition: left 160ms ease, background 160ms ease;
   }
-  .nw-pulse {
+  .nw-frontend:not(.is-calm) .nw-pulse {
     animation: nw-pulse 2.4s ease-in-out infinite;
   }
-  .nw-logo {
+  .nw-frontend:not(.is-calm) .nw-logo {
     animation: nw-logo 2.4s ease both;
   }
-  .nw-save-icon {
+  .nw-frontend:not(.is-calm) .nw-save-icon {
     animation: nw-spin 0.9s linear infinite;
   }
-  .nw-toast {
+  .nw-frontend:not(.is-calm) .nw-toast {
     animation: nw-rise 200ms ease;
   }
 }
 
+@keyframes nw-banner-in {
+  from {
+    opacity: 0;
+    transform: translateY(-14px) scaleX(1.04);
+    letter-spacing: 0.3em;
+  }
+}
 @keyframes nw-rise {
   from {
     opacity: 0;
@@ -892,4 +912,364 @@
 /* Only the top screen's prompts apply; hide those of pages under a modal. */
 .is-under-modal > .nw-prompts {
   display: none;
+}
+
+/* ---------- In-game HUD ---------- */
+
+.nw-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.nw-hud {
+  --nw-hud-size: calc(var(--nw-unit) * 0.86 * var(--nw-hud-scale, 1));
+  position: absolute;
+  inset: 0;
+  display: none;
+  pointer-events: none;
+  font-size: var(--nw-hud-size);
+  text-shadow: 0 1px 3px rgba(4, 2, 12, 0.9);
+}
+.nw-frontend.is-in-run .nw-hud {
+  display: block;
+}
+.nw-hud-corner {
+  position: absolute;
+  top: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  max-width: min(32vw, 22em);
+}
+.nw-hud-corner.is-left {
+  left: 1.4em;
+}
+.nw-hud-corner.is-right {
+  right: 1.4em;
+  align-items: flex-end;
+  text-align: right;
+}
+.nw-hud-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+}
+.nw-hud-label {
+  font-size: 0.68em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--nw-muted);
+}
+.nw-hud-value {
+  font-family: var(--nw-mono);
+  font-size: 1.15em;
+  color: var(--nw-text);
+  overflow-wrap: anywhere;
+}
+.nw-hud-stat.is-score .nw-hud-value {
+  font-size: 1.6em;
+  color: var(--nw-cyan);
+}
+.nw-hud-stat.is-sector .nw-hud-value {
+  font-family: var(--nw-font);
+  font-size: 0.95em;
+}
+.nw-pips {
+  display: inline-flex;
+  gap: 0.3em;
+}
+.nw-pips > i {
+  width: 0.8em;
+  height: 0.8em;
+  border: 1px solid var(--nw-line);
+  border-radius: 2px;
+  transform: skewX(-12deg);
+}
+.nw-pips.is-hull > i.is-on {
+  background: var(--nw-pink);
+  border-color: var(--nw-pink);
+}
+.nw-pips.is-cannon > i.is-on {
+  background: var(--nw-cyan);
+  border-color: var(--nw-cyan);
+}
+.nw-hud-shield {
+  padding: 0.15em 0.6em;
+  border: 1px solid var(--nw-cyan);
+  border-radius: 999px;
+  font-size: 0.72em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nw-cyan);
+}
+.nw-hud-serial {
+  font-family: var(--nw-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  color: var(--nw-gold);
+}
+/* Subtle on purpose: a quiet note, never a score to chase or a scold. */
+.nw-hud-conscience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  font-size: 0.7em;
+  color: var(--nw-muted);
+  opacity: 0.7;
+}
+.nw-hud-pacifist::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-inline-end: 0.4em;
+  border: 1px solid var(--nw-muted);
+  border-radius: 50%;
+}
+.nw-hud-skip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  align-self: flex-start;
+  padding: 0.3em 0.8em;
+  border: 1px solid var(--nw-line);
+  border-radius: 999px;
+  background: var(--nw-glass);
+  color: var(--nw-muted);
+  font: inherit;
+  font-size: 0.75em;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.nw-hud-skip[hidden],
+.nw-hud [hidden] {
+  display: none;
+}
+
+.nw-hud-top {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  width: min(46vw, 34em);
+  transform: translateX(-50%);
+}
+.nw-warden-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3em 0.8em;
+  margin-bottom: 0.35em;
+}
+.nw-warden-label {
+  font-size: 0.8em;
+  letter-spacing: 0.3em;
+  color: var(--nw-red);
+}
+.nw-warden-state {
+  margin-inline-start: auto;
+  font-size: 0.7em;
+  color: var(--nw-muted);
+}
+.nw-warden-pips {
+  display: inline-flex;
+  gap: 0.25em;
+}
+.nw-warden-pips > i {
+  width: 0.55em;
+  height: 0.55em;
+  border: 1px solid var(--nw-red);
+  transform: rotate(45deg);
+}
+.nw-warden-pips > i.is-on {
+  background: var(--nw-red);
+}
+.nw-warden-track {
+  display: block;
+  height: 0.6em;
+  border: 1px solid rgba(255, 77, 109, 0.5);
+  border-radius: 2px;
+  background: rgba(4, 2, 12, 0.6);
+  overflow: hidden;
+}
+.nw-warden-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--nw-red), var(--nw-pink));
+  transition: width 200ms ease;
+}
+.nw-warden.is-shielded .nw-warden-fill {
+  background: repeating-linear-gradient(-45deg, var(--nw-muted) 0 6px,
+    transparent 6px 10px);
+}
+
+/* ---------- Banners: wrap-safe, sized from text length in hud.ts ---------- */
+
+.nw-banners {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 92vw;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.nw-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+}
+.nw-banner-kicker {
+  margin: 0;
+  font-size: 0.9em;
+  letter-spacing: 0.4em;
+  color: var(--nw-muted);
+}
+.nw-banner-title {
+  margin: 0;
+  max-width: 100%;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  color: var(--nw-text);
+  text-shadow: 0 0 24px rgba(94, 242, 255, 0.45);
+}
+.nw-banner.is-warning .nw-banner-title,
+.nw-banner-title.is-gameover {
+  color: var(--nw-red);
+  text-shadow: 0 0 24px rgba(255, 77, 109, 0.5);
+}
+.nw-banner.is-ending .nw-banner-title {
+  color: var(--nw-gold);
+}
+.nw-banner-sub {
+  margin: 0;
+  max-width: 40em;
+  font-size: 1.1em;
+  color: var(--nw-muted);
+  text-wrap: balance;
+}
+
+/* ---------- Continue screen ---------- */
+
+.nw-screen-continue .nw-panel {
+  text-align: center;
+}
+.nw-screen-continue .nw-banner-title {
+  font-size: clamp(1.8em, 5vw, 3.2em);
+}
+.nw-continue-score {
+  font-family: var(--nw-mono);
+  color: var(--nw-cyan);
+}
+
+/* ---------- Credits crawl ---------- */
+
+.nw-screen-crawl {
+  display: flex;
+  flex-direction: column;
+  place-items: normal;
+  padding: 0;
+  background: rgba(4, 2, 12, 0.94);
+}
+.nw-crawl-viewport {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
+}
+.nw-crawl-reel {
+  position: absolute;
+  left: 50%;
+  width: min(42em, 90vw);
+  margin-left: calc(min(42em, 90vw) / -2);
+  text-align: center;
+  will-change: transform;
+}
+.nw-screen-crawl.is-paged .nw-crawl-reel {
+  position: static;
+  margin: 18vh auto 0;
+}
+.nw-crawl-section {
+  margin-bottom: 4.5em;
+}
+.nw-crawl-section.is-opening,
+.nw-crawl-section.is-closing {
+  margin-top: 2em;
+}
+.nw-crawl-studio {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--nw-cyan);
+}
+.nw-crawl-heading {
+  margin: 0 0 1.2em;
+  font-size: 1.2em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--nw-gold);
+}
+.nw-crawl-role {
+  margin-bottom: 1.3em;
+}
+.nw-crawl-title {
+  margin: 0 0 0.2em;
+  font-size: 0.78em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--nw-muted);
+}
+.nw-crawl-name {
+  margin: 0;
+  font-size: 1.05em;
+  overflow-wrap: anywhere;
+}
+.nw-crawl-note {
+  max-width: 34em;
+  margin: 1.2em auto 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+  color: var(--nw-muted);
+}
+.nw-crawl-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 2em;
+}
+.nw-crawl-actions > .nw-button {
+  width: auto;
+}
+
+/* ---------- Licenses ---------- */
+
+.nw-license-entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 0.8em;
+  margin-bottom: 0.9em;
+}
+.nw-license-name {
+  font-weight: 700;
+}
+.nw-license-meta,
+.nw-license-note,
+.nw-license-url {
+  flex-basis: 100%;
+  font-size: 0.85em;
+}
+.nw-license-meta,
+.nw-license-url {
+  font-family: var(--nw-mono);
+  color: var(--nw-muted);
+  overflow-wrap: anywhere;
+}
+.nw-license-entry .nw-badge {
+  margin-left: 0;
 }

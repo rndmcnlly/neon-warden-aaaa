@@ -70,6 +70,13 @@ export interface ConfirmOptions {
   readonly confirmLabel: UiKey;
   readonly cancelLabel?: UiKey;
   readonly onConfirm: () => void;
+  /** Runs after Cancel or Back closes the dialog. */
+  readonly onCancel?: () => void;
+  /**
+   * Open with focus on the confirm button. Only for choices that lose
+   * nothing (skipping onboarding); destructive ones keep the safe default.
+   */
+  readonly focusConfirm?: boolean;
 }
 
 export function confirmDialog(
@@ -78,6 +85,10 @@ export function confirmDialog(
 ): ScreenFactory {
   return () => {
     uiSound("notify");
+    const cancel = () => {
+      ctx.router.pop();
+      options.onCancel?.();
+    };
     const el = panel({
       id: "dialog",
       className: "is-modal is-confirm",
@@ -90,14 +101,15 @@ export function confirmDialog(
           button({
             key: "cancel",
             label: ctx.t(options.cancelLabel ?? "ui.common.cancel"),
-            autofocus: true,
+            autofocus: !options.focusConfirm,
             sound: "back",
-            onActivate: () => ctx.router.pop(),
+            onActivate: cancel,
           }),
           button({
             key: "confirm",
-            className: "is-destructive",
+            className: options.focusConfirm ? undefined : "is-destructive",
             label: ctx.t(options.confirmLabel),
+            autofocus: options.focusConfirm,
             onActivate: () => {
               ctx.router.pop();
               options.onConfirm();
@@ -112,6 +124,6 @@ export function confirmDialog(
     });
     el.setAttribute("role", "alertdialog");
     el.setAttribute("aria-modal", "true");
-    return { el, modal: true };
+    return { el, modal: true, onBack: cancel };
   };
 }
