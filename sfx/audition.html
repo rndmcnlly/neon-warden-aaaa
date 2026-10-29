@@ -34,9 +34,12 @@
 </head>
 <body>
 <header>
-  <h1>UI sound audition</h1>
+  <h1 id="title">UI sound audition</h1>
   <div class="help">Up/Down: role. Left/Right: candidate. Space: play. Enter: pick (again to unpick).
-    1–9: play candidate n. A: autoplay on move. Picks persist in this browser until you export.</div>
+    1–9: play candidate n. A: autoplay on move. Picks persist in this browser until you export.
+    <a id="other" href="?set=gameplay">Gameplay sounds</a>: there, Enter toggles a take, and every
+    picked take becomes a round-robin variant (export picks-gameplay.json, then
+    <code>uv run sfx/promote.py --gameplay</code>).</div>
   <div class="bar">
     <button id="export">Export picks.json</button>
     <button id="copy">Copy JSON</button>
@@ -47,12 +50,27 @@
 </header>
 <main id="roles"></main>
 <script src="candidates/index.js"></script>
+<script src="candidates/gameplay/index.js"></script>
 <script>
-const KEY = "neon-warden-sfx-picks";
-const ix = window.SFX_INDEX;
+// Two sets: UI roles (one pick each) and gameplay roles (several picks each,
+// played round robin by the game). `?set=gameplay` switches.
+const GAMEPLAY = new URLSearchParams(location.search).get("set") === "gameplay";
+const KEY = GAMEPLAY ? "neon-warden-sfx-picks-gameplay" : "neon-warden-sfx-picks";
+const PICKS_FILE = GAMEPLAY ? "picks-gameplay.json" : "picks.json";
+const DIR = GAMEPLAY ? "candidates/gameplay/" : "candidates/";
+const ix = GAMEPLAY ? window.SFX_GAMEPLAY_INDEX : window.SFX_INDEX;
+document.getElementById("title").textContent = GAMEPLAY ? "Gameplay sound audition" : "UI sound audition";
+const other = document.getElementById("other");
+if (GAMEPLAY) { other.href = "?"; other.textContent = "UI sounds"; }
+document.getElementById("export").textContent = `Export ${PICKS_FILE}`;
+/** Gameplay picks are lists of takes; UI picks are one take or null. */
+const takes = (p) => (Array.isArray(p) ? p : p ? [p] : []);
+const isPicked = (name, cand) => takes(picks[name]).some((t) => t.hash === cand.hash);
 const main = document.getElementById("roles");
 if (!ix) {
-  main.innerHTML = '<p class="empty">No candidates/index.js found. Run <code>uv run sfx/render.py</code> first.</p>';
+  main.innerHTML = GAMEPLAY
+    ? '<p class="empty">No candidates/gameplay/index.js found. Run <code>uv run sfx/render.py --manifest sfx/gameplay.yaml</code> first.</p>'
+    : '<p class="empty">No candidates/index.js found. Run <code>uv run sfx/render.py</code> first.</p>';
   throw new Error("no index");
 }
 const roles = ix.order;
@@ -98,12 +116,15 @@ function refresh() {
   document.querySelectorAll("section").forEach((s, ri) => {
     s.classList.toggle("current", ri === r);
     const p = picks[roles[ri]];
-    s.querySelector(".picked").textContent = p ? `picked ${p.file.split("/")[1]}` : "";
+    const t = takes(p);
+    s.querySelector(".picked").textContent = t.length
+      ? `picked ${t.map((x) => x.file.split("/")[1] + (x.provisional ? " (provisional)" : "")).join(", ")}`
+      : "";
   });
   btns.forEach((row, ri) => row.forEach((b, ci) => {
     const cand = ix.roles[roles[ri]].candidates[ci];
     b.classList.toggle("focus", ri === r && ci === c);
-    b.classList.toggle("chosen", picks[roles[ri]]?.hash === cand.hash);
+    b.classList.toggle("chosen", isPicked(roles[ri], cand));
   }));
   btns[r]?.[c]?.scrollIntoView({ block: "nearest" });
 }
@@ -114,7 +135,7 @@ function play() {
   btns.flat().forEach(b => b.classList.remove("playing"));
   const b = btns[r][c];
   b.classList.add("playing");
-  audio.src = "candidates/" + cand.file;
+  audio.src = DIR + cand.file;
   audio.currentTime = 0;
   audio.play();
   audio.onended = () => b.classList.remove("playing");
@@ -122,7 +143,18 @@ function play() {
 
 function pick() {
   const cand = current(), name = roles[r];
-  picks[name] = picks[name]?.hash === cand.hash ? null : { file: cand.file, hash: cand.hash, seed: cand.seed };
+  const take = { file: cand.file, hash: cand.hash, seed: cand.seed };
+  if (GAMEPLAY) {
+    // Toggle this take; confirming a provisional pick makes it yours.
+    const list = takes(picks[name]).filter((t) => !t.provisional || t.hash === cand.hash);
+    const had = list.find((t) => t.hash === cand.hash);
+    picks[name] = had && !had.provisional
+      ? list.filter((t) => t !== had)
+      : [...list.filter((t) => t !== had), take];
+    if (!picks[name].length) picks[name] = null;
+  } else {
+    picks[name] = picks[name]?.hash === cand.hash ? null : take;
+  }
   save(); refresh();
 }
 
@@ -163,7 +195,7 @@ document.getElementById("auto").onclick = toggleAuto;
 document.getElementById("export").onclick = () => {
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([exportJson()], { type: "application/json" }));
-  a.download = "picks.json";
+  a.download = PICKS_FILE;
   a.click();
 };
 document.getElementById("copy").onclick = () => navigator.clipboard.writeText(exportJson());
@@ -176,7 +208,7 @@ document.getElementById("import").onchange = async e => {
 };
 // When served over http, seed from the committed picks.json if this browser has none yet.
 if (!localStorage.getItem(KEY) && location.protocol.startsWith("http")) {
-  fetch("picks.json").then(res => res.ok ? res.json() : {}).then(p => {
+  fetch(PICKS_FILE).then(res => res.ok ? res.json() : {}).then(p => {
     picks = Object.fromEntries(Object.entries(p).filter(([, v]) => v));
     save(); refresh();
   }).catch(() => {});

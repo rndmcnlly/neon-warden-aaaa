@@ -1,0 +1,141 @@
+# Gameplay sound manifest for Neon Warden AAAA (wave 3, agent A).
+#
+# The *feel* and *texture* layer of gameplay sound: impacts, weapons,
+# whooshes, debris. Rendered with ElevenLabs SFX v2 on fal (sharp attacks,
+# honors duration, stops when the sound ends; see
+# research/2026-10-28-critique-audio/, section 3). The *musical* layer and
+# the tiny ticks (stream shot, enemy fire, graze, lock ticks, pay, Writ
+# chords) are synthesized at runtime in src/audio/synth.ts instead, so they
+# can sit in the music's key and on its grid.
+#
+#   uv run sfx/render.py --manifest sfx/gameplay.yaml            # all roles
+#   uv run sfx/render.py --manifest sfx/gameplay.yaml --role kill_small
+#
+# ElevenLabs has no seed, so each raw response is cached by its spec hash
+# (brief, family, seconds, influence, take number): a rerun costs nothing
+# unless a brief changes. Every paid call is appended to
+# sfx/candidates/gameplay/.cache/fal_calls.jsonl; copy the totals into
+# research/SPEND.md. Cost: $0.002 per billed second (0.5 s minimum).
+#
+# Role ids match GAMEPLAY_SOUNDS in src/audio/gameplaySounds.ts, which owns
+# each role's runtime gain, voice cap and priority. So every role here is
+# normalized to the same level (gain_db 0): mix in one place, not two.
+
+engine: elevenlabs
+out: candidates/gameplay
+index_var: SFX_GAMEPLAY_INDEX
+defaults:
+  model: fal-ai/elevenlabs/sound-effects/v2
+  prompt_influence: 0.6
+  render_seconds: 0.6
+  count: 3
+  # unused by ElevenLabs, kept so render_spec's shape is shared with SA3
+  steps: 0
+  cfg: 0
+  negative: ""
+
+family: >-
+  Clean, glassy, synthetic sci-fi sound design for a premium top-down space
+  shooter. Tight transient, sub weight, crisp high end. Isolated one-shot,
+  dry, no music, no melody, no voice, no retro or chiptune.
+
+loudness:
+  target_rms_dbfs: -20.0
+  ceiling_dbtp: -1.0
+  sample_rate: 48000
+  fade_ms: 15
+
+roles:
+  shot_aimed:
+    brief: A single precise energy rifle shot, bright crack with a short zap tail
+    target_ms: 180
+  writ_release_1:
+    brief: A charged plasma bolt released, punchy thump with a rising electric snap
+    target_ms: 450
+  writ_release_2:
+    brief: A heavier charged plasma blast, deep thump, electric crackle, short boom tail
+    target_ms: 650
+    render_seconds: 0.9
+  writ_release_3:
+    brief: A massive fully charged railgun discharge, sub boom, metallic ring, electric tear
+    target_ms: 1000
+    render_seconds: 1.3
+  enemy_fire_heavy:
+    brief: Heavy alien cannon firing, low sub thump with a whining energy rise
+    target_ms: 420
+  near_miss:
+    brief: A small fast energy projectile whizzing past very close, short airy whoosh
+    target_ms: 320
+  flyby:
+    brief: A small fast spacecraft flying past, quick engine whoosh
+    target_ms: 500
+    render_seconds: 0.8
+  spawn:
+    brief: A small drone warping in, short shimmering arrival swoosh
+    target_ms: 420
+  retreat:
+    brief: A small drone powering its thrusters and leaving, receding whoosh
+    target_ms: 550
+    render_seconds: 0.8
+  hit_enemy:
+    brief: An energy bullet hitting a light metal drone hull, small spark tick
+    target_ms: 120
+  hit_boss:
+    brief: An energy bullet striking thick armor plating, metallic ping with spark
+    target_ms: 200
+  hit_deflect:
+    brief: A bullet deflecting off an energy shield, glassy ricochet ping
+    target_ms: 220
+  hit_player:
+    brief: The player ship's hull taking a heavy hit, crunchy impact with alarm-like zap
+    target_ms: 450
+  shield_bloom:
+    brief: An energy shield absorbing a hit, bright bloom shimmer with soft thud
+    target_ms: 500
+  life_lost:
+    brief: A small spaceship exploding, heavy crunch, glass shatter, debris tail
+    target_ms: 1300
+    render_seconds: 1.6
+  kill_small:
+    brief: A small drone exploding, tight pop with sparks and tiny debris
+    target_ms: 380
+  kill_large:
+    brief: A heavy armored turret exploding, deep boom with metal debris
+    target_ms: 750
+    render_seconds: 1.0
+  kill_ram:
+    brief: Two metal spacecraft colliding, hard metal crunch and scrape
+    target_ms: 420
+  part_break:
+    brief: A weapon pod snapping off an armored machine, metal crack and sparking break
+    target_ms: 600
+    render_seconds: 0.8
+  disarm:
+    brief: An alien weapon powering down, descending electric whine into silence
+    target_ms: 750
+    render_seconds: 1.0
+  core_exposed:
+    brief: Armor plates unlatching to expose a glowing reactor core, hydraulic hiss and hum
+    target_ms: 1100
+    render_seconds: 1.4
+  boss_roar:
+    brief: A giant machine shrieking in fury through distorted speakers, high pitched, angry, not deep
+    target_ms: 1800
+    render_seconds: 2.2
+  boss_collapse:
+    brief: A huge mechanical guardian collapsing, groaning metal, explosions, long debris fall
+    target_ms: 2500
+    render_seconds: 3.0
+  game_over:
+    brief: A spaceship powering down completely, electric whine falling into a dead hum
+    target_ms: 1800
+    render_seconds: 2.2
+  hangar_equip:
+    brief: A weapon module locking into a ship hardpoint, solid mechanical clunk and click
+    target_ms: 350
+  hangar_cosmetic:
+    brief: A soft holographic paint swatch applied, light airy shimmer tick
+    target_ms: 220
+  hangar_locked:
+    brief: A locked holographic panel refusing access, short muted buzz
+    target_ms: 250

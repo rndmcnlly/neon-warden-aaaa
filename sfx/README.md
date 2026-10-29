@@ -149,3 +149,30 @@ Hugging Face; the code is MIT). Plainly:
 
 Checked October 28, 2026 against the `stable-audio-3-small-sfx` model card
 and `LICENSE.md` on Hugging Face.
+
+## Gameplay sounds (wave 3)
+
+Gameplay sound has two layers (see `src/audio/gameplaySounds.ts`, the tuning
+table, and `research/2026-10-28-critique-audio/`):
+
+- **Feel and texture** (impacts, weapons, whooshes, debris): rendered with
+  ElevenLabs SFX v2 on fal from `sfx/gameplay.yaml`:
+  `set -a; source ~/.tokens/fal-ai; set +a; uv run sfx/render.py --manifest sfx/gameplay.yaml`.
+  The script estimates the cost of uncached renders and refuses past
+  `--max-usd` (default 3); raw responses are cached by spec hash (no seed
+  exists), and each paid call is logged to
+  `sfx/candidates/gameplay/.cache/fal_calls.jsonl`. Log totals in
+  `research/SPEND.md`.
+- **Musical layer and tiny ticks** (stream shot, enemy fire, graze, lock
+  ticks, pay, Writ chords, scan beam): synthesized in `src/audio/synth.ts`,
+  pitched to the playing cue's key and snapped to its grid. No files.
+
+Audition with `audition.html?set=gameplay`. There, a role can keep several
+takes: each becomes a round-robin variant. Promote with
+`uv run sfx/promote.py --gameplay` (`--provisional` first picks the cleanest
+take for every unpicked role, marked provisional in `picks-gameplay.json`
+and in the audition page). Output: `public/sfx/gameplay/*.ogg` and
+`public/sfx/gameplay.json`. Until a role has a sample, the game plays its
+synth stand-in, so nothing is ever silent. Note that the quality flags were
+tuned for UI clicks: `noisy` is normal for an explosion, and `truncated`
+means the render ran past `target_ms` and was faded.
