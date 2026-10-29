@@ -24,7 +24,8 @@ gh repo create rndmcnlly/neon-warden-aaaa --public \
 gh api -X POST repos/rndmcnlly/neon-warden-aaaa/pages -f build_type=workflow
 # Custom domain, set on the Pages site itself:
 gh api -X PUT repos/rndmcnlly/neon-warden-aaaa/pages -f cname=neon-warden-aaaa.adamsmith.systems
-# After the certificate was issued:
+# After the certificate was issued (about 15 minutes after the DNS record;
+# the edge servers took a few more minutes to all serve it):
 gh api -X PUT repos/rndmcnlly/neon-warden-aaaa/pages -F https_enforced=true
 ```
 
