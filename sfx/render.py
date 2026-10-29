@@ -15,7 +15,7 @@ Engines (the manifest's `engine:`):
 - `sa3`: local Stable Audio 3 (MLX), free, seeded.
 - `elevenlabs`: ElevenLabs SFX v2 on fal (`fal-ai/elevenlabs/sound-effects/v2`),
   US $0.002 per billed second, no seed. Needs FAL_KEY (for example
-  `source ~/.tokens/fal-ai`). Before any paid call the script prints the
+  an env file you `source`). Before any paid call the script prints the
   estimated cost of the uncached renders and refuses past `--max-usd`
   (default 3). Each call is logged to <out>/.cache/fal_calls.jsonl; copy the
   totals into research/SPEND.md.
@@ -51,7 +51,8 @@ from scipy.signal import resample_poly
 SFX = Path(__file__).resolve().parent
 OUT = SFX / "candidates"
 CACHE = OUT / ".cache"
-SA3_DIR = Path(os.environ.get("SA3_DIR", "~/Code/sa3/stable-audio-3/optimized/mlx")).expanduser()
+# Stable Audio 3 MLX weights are not in the repo: point SA3_DIR at your checkout.
+SA3_DIR = Path(os.environ.get("SA3_DIR", SFX / "sa3")).expanduser()
 DECODER = {"sm-sfx": "same-s", "sm-music": "same-s", "medium": "same-l"}
 EL_USD_PER_S = 0.002
 EL_MIN_S = 0.5

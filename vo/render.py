@@ -83,7 +83,8 @@ import soundfile as sf
 import yaml
 
 VO = Path(__file__).resolve().parent
-MODELS = Path(os.environ.get("VO_MODELS_DIR", Path.home() / "Code/bbb-artifact-tour/audio.cpp/models"))
+# Qwen3 GGUF weights are not in the repo: point VO_MODELS_DIR at your audio.cpp models folder.
+MODELS = Path(os.environ.get("VO_MODELS_DIR", VO / "models")).expanduser()
 BASE_MODEL = MODELS / "Qwen3-TTS-12Hz-1.7B-Base-GGUF/qwen3-tts-12hz-1.7b-base-q8_0_v2.gguf"
 DESIGN_MODEL = MODELS / "Qwen3-TTS-12Hz-1.7B-VoiceDesign-GGUF/qwen3-tts-12hz-1.7b-voicedesign-q8_0.gguf"
 ASR_MODEL = MODELS / "Qwen3-ASR-0.6B-GGUF/qwen3-asr-0.6b-q8_0.gguf"
@@ -112,6 +113,10 @@ def read_sidecar(wav: Path) -> dict | None:
 
 
 def write_sidecar(wav: Path, meta: dict) -> None:
+    # audiocpp needs an absolute voice_ref; the committed sidecar keeps it repo-relative.
+    ref = meta.get("request", {}).get("voice_ref")
+    if ref and Path(ref).is_relative_to(VO.parent):
+        meta = {**meta, "request": {**meta["request"], "voice_ref": str(Path(ref).relative_to(VO.parent))}}
     wav.with_suffix(".json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
 

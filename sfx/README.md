@@ -109,8 +109,8 @@ Flags are hints, not vetoes. A flagged candidate can still be the best one.
 ## Model
 
 **Stable Audio 3, small SFX variant** (`sm-sfx`, 433M parameters, MLX on
-Apple Silicon), local at `~/Code/sa3/stable-audio-3/optimized/mlx` (override
-with `SA3_DIR`). Weights in `models/mlx/` there. `render.py` calls
+Apple Silicon), from a local Stable Audio 3 checkout named by `SA3_DIR`
+(default `sfx/sa3`, not in the repo). Weights in `models/mlx/` there. `render.py` calls
 `.venv/bin/python scripts/sa3_mlx.py` in that directory once per candidate.
 Settings: 8 steps, cfg 3.0 with the negative prompt, 1.0 s raw renders (2.0 s for the notification). Tested: 1.0 s renders produce
 naturally short sounds (~200 ms) with clean tails; 1.5 and 2.0 s renders tend
@@ -157,7 +157,7 @@ table, and `research/2026-10-28-critique-audio/`):
 
 - **Feel and texture** (impacts, weapons, whooshes, debris): rendered with
   ElevenLabs SFX v2 on fal from `sfx/gameplay.yaml`:
-  `set -a; source ~/.tokens/fal-ai; set +a; uv run sfx/render.py --manifest sfx/gameplay.yaml`.
+  `FAL_KEY=... uv run sfx/render.py --manifest sfx/gameplay.yaml`.
   The script estimates the cost of uncached renders and refuses past
   `--max-usd` (default 3); raw responses are cached by spec hash (no seed
   exists), and each paid call is logged to

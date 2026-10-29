@@ -32,7 +32,8 @@ import yaml
 
 MUSIC = Path(__file__).resolve().parent
 OUT = MUSIC / "candidates"
-SA3_DIR = Path(os.environ.get("SA3_DIR", "~/Code/sa3/stable-audio-3/optimized/mlx")).expanduser()
+# Stable Audio 3 MLX weights are not in the repo: point SA3_DIR at your checkout.
+SA3_DIR = Path(os.environ.get("SA3_DIR", MUSIC / "sa3")).expanduser()
 DECODER = {"medium": "same-l", "sm-music": "same-s"}
 BASE_SEED = 121
 

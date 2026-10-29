@@ -14,7 +14,7 @@
 #   seed            base seed; candidate nn uses seed + nn
 #   count           candidates to render (default from `defaults`)
 
-engine: sa3            # Stable Audio 3 MLX, ~/Code/sa3/stable-audio-3/optimized/mlx
+engine: sa3            # Stable Audio 3 MLX, local checkout at $SA3_DIR
 defaults:
   model: sm-sfx        # sm-sfx (433M, SFX-tuned) or medium (1.4B)
   steps: 8
