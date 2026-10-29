@@ -81,3 +81,10 @@ Cross-agent needs go in `docs/INTEGRATION-QUEUE.md` under a "Wave 3" heading
 checks, then finish hookup when its commit lands (check `git log`, do not
 sleep-poll). Before reporting done: `deno task ci` green for your paths, the
 relevant `deno task qa` reels run in the foreground, report path cited.
+
+## Superseded requirement: off-screen Pilot
+
+October 28 scope cut, confirmed by Adam: helmet livery, helmet unlocks,
+issued/worn variants and 3D Pilot shots in this brief are historical, not required.
+Ship customization remains. Character cutaways now frame the ship or the
+environment; Pilot's identity, serial, voice and story are unchanged.

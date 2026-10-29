@@ -23,6 +23,8 @@ export function offlinePlugin(): Plugin {
           if (entry.isDirectory) await walk(`${dir}/${entry.name}`, `${name}/`);
           else if (
             !name.endsWith(".map") &&
+            // Retain historical art on disk, never in a playable offline pack.
+            !/^models\/pilot_figure(?:_[^/]+)?\.glb$/.test(name) &&
             !["sw.js", "offline-manifest.json"].includes(name)
           ) {
             const data = await Deno.readFile(`${dir}/${entry.name}`);

@@ -40,8 +40,6 @@ const FOOTPRINT_PX: Record<ModelId, number | null> = {
   warden: 192,
   pickup_spread: 28,
   pickup_shield: 28,
-  pilot_figure_issued: null,
-  pilot_figure_worn: null,
   logo_adamsmith_systems: null,
   logo_cm121: null,
 };

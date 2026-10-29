@@ -8,7 +8,7 @@ import { assertAlmostEquals, assertEquals } from "@std/assert";
 import type { SimState } from "../src/contracts/index.ts";
 import { DEFAULT_LOADOUT, PAINT_IDS_FOR_TEST } from "./render_fixtures.ts";
 import { bloomDamping } from "../src/render/post.ts";
-import { helmetFor, PAINT, TRAIL } from "../src/render/loadout.ts";
+import { PAINT, TRAIL } from "../src/render/loadout.ts";
 import { BLOOM_THRESHOLD, ROLE, SCENE_LOOKS } from "../src/render/palette.ts";
 import {
   FIELD_D,
@@ -181,7 +181,4 @@ Deno.test("loadout tables cover every cosmetic id", () => {
     assertEquals(typeof PAINT[id], "number");
   }
   assertEquals(Object.keys(TRAIL).length, 4);
-  assertEquals(helmetFor("corporateIssue"), "issued");
-  assertEquals(helmetFor("worn"), "worn");
-  assertEquals(helmetFor("repainted"), "worn");
 });

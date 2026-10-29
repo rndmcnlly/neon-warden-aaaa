@@ -1985,11 +1985,6 @@ export const UI_STRINGS = {
     es: "Estela del motor",
     zh: "引擎尾迹",
   },
-  "ui.hangar.slot.helmet": {
-    en: "Helmet livery",
-    es: "Librea del casco",
-    zh: "头盔涂装",
-  },
   "ui.hangar.desc.paint": {
     en:
       "Hull color. The Authority issues white; everything else is a statement.",
@@ -2015,13 +2010,6 @@ export const UI_STRINGS = {
     es:
       "Estilo de escape. Fantasma es casi invisible, ideal para un pacifista.",
     zh: "尾焰样式。“幽灵”几乎看不见，很适合和平主义者。",
-  },
-  "ui.hangar.desc.helmet": {
-    en:
-      "Shown in cutscenes. The helmet never comes off; only its paint tells the story.",
-    es:
-      "Se ve en las escenas. El casco nunca se quita; solo su pintura cuenta la historia.",
-    zh: "在过场动画中显示。头盔从不摘下，只有涂装在讲述故事。",
   },
   "ui.hangar.weapon.standard.name": {
     en: "Lane Authority Standard",
@@ -2244,17 +2232,6 @@ export const UI_STRINGS = {
   "ui.hangar.trail.ion": { en: "Ion", es: "Iónica", zh: "离子" },
   "ui.hangar.trail.ember": { en: "Ember", es: "Brasa", zh: "余烬" },
   "ui.hangar.trail.ghost": { en: "Ghost", es: "Fantasma", zh: "幽灵" },
-  "ui.hangar.helmet.corporateIssue": {
-    en: "Corporate issue",
-    es: "De la empresa",
-    zh: "公司配发",
-  },
-  "ui.hangar.helmet.worn": { en: "Worn", es: "Gastado", zh: "磨损" },
-  "ui.hangar.helmet.repainted": {
-    en: "Repainted",
-    es: "Repintado",
-    zh: "重新涂装",
-  },
   "ui.hangar.wall.utility": {
     en: "Utility slot",
     es: "Ranura de utilidad",

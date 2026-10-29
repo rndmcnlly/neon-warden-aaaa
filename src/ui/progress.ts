@@ -80,7 +80,6 @@ export function sanitizeProgress(raw: unknown): Progress {
       ),
       decal: str(c.decal, () => true, d.cosmetics.decal),
       trail: str(c.trail, () => true, d.cosmetics.trail),
-      helmetLivery: str(c.helmetLivery, () => true, d.cosmetics.helmetLivery),
     },
   };
   return {

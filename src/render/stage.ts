@@ -12,7 +12,7 @@
  * draws through the post chain.
  *
  * The Director drives cutscene framing with `playShot`, and props such as
- * the helmeted pilot or the boot logos with `showProp`.
+ * the boot logos with `showProp`; Pilot remains off-screen.
  */
 
 import * as THREE from "three";
@@ -41,7 +41,7 @@ import {
   ModelRegistry,
   type ModelSlot,
 } from "./models.ts";
-import { applyShipLoadout, helmetFor, type HelmetVariant } from "./loadout.ts";
+import { applyShipLoadout } from "./loadout.ts";
 import { PALETTE, ROLE, SCENE_LOOKS, type SceneLookId } from "./palette.ts";
 import { ParticleSystem, ShockwavePool } from "./particles.ts";
 import { PostChain } from "./post.ts";
@@ -57,12 +57,8 @@ import {
 import { type QualityTier, tierFor } from "./quality.ts";
 import { shieldFragment, shieldVertex } from "./shaders/shield.glsl.ts";
 
-/**
- * `pilot_figure` shows the helmet variant chosen by `setHelmet` (or the
- * loadout's `helmet`): corporate-issue early, worn by the end.
- */
-export type PropId = "pilot_figure" | "logo_adamsmith_systems" | "logo_cm121";
-export type { HelmetVariant } from "./loadout.ts";
+/** Character cutaways use the ship, never a figure prop. */
+export type PropId = "logo_adamsmith_systems" | "logo_cm121";
 
 export interface StageOptions {
   /** When given, the stage follows display and accessibility settings live. */
@@ -106,8 +102,6 @@ export interface Stage {
    * Applies to the gameplay ship and the hangar display ship alike.
    */
   applyLoadout(loadout: Loadout): void;
-  /** Which helmet the pilot figure wears in cutscenes. */
-  setHelmet(variant: HelmetVariant): void;
   /**
    * The hangar: the ship on a lit pad, framed by a hero shot ("hero") or a
    * slow turntable ("turntable"); null returns to the game camera.
@@ -273,7 +267,6 @@ export function createStage(
   const trailColor = new THREE.Color(PALETTE.cyan);
   let loadout: Loadout = DEFAULT_LOADOUT;
   let loadoutKeyNow = loadoutKey(DEFAULT_LOADOUT);
-  let helmet: HelmetVariant = "issued";
   const shieldMat = new THREE.ShaderMaterial({
     vertexShader: shieldVertex,
     fragmentShader: shieldFragment,
@@ -954,10 +947,6 @@ export function createStage(
     }
   }
 
-  function helmetModel(): ModelId {
-    return helmet === "worn" ? "pilot_figure_worn" : "pilot_figure_issued";
-  }
-
   function buildHangar(): void {
     hangarShip = models.create("pilot_ship");
     hangarShip.position.copy(HANGAR_POINT).setY(0.35);
@@ -1051,9 +1040,9 @@ export function createStage(
         }
       }
 
-      // Logo turntable; the pilot stands still. Logos sway rather than
+      // Logo turntable. Logos sway rather than
       // spin: a full turn would show their lettering mirrored.
-      if (activeProp && activeProp !== "pilot_figure") {
+      if (activeProp) {
         const prop = props.get(activeProp);
         if (prop) prop.rotation.y = Math.sin(timeSec * 0.6) * 0.45;
       }
@@ -1085,10 +1074,10 @@ export function createStage(
       if (!id) return;
       let prop = props.get(id);
       if (!prop) {
-        prop = models.create(id === "pilot_figure" ? helmetModel() : id);
+        prop = models.create(id);
         prop.position.copy(STAGE_POINT);
-        // Logos face the camera upright; the pilot stands on the deck.
-        if (id !== "pilot_figure") prop.position.y += 0.2;
+        // Logos face the camera upright.
+        prop.position.y += 0.2;
         scene.add(prop);
         props.set(id, prop);
       }
@@ -1106,22 +1095,9 @@ export function createStage(
     applyLoadout(next) {
       loadout = next;
       loadoutKeyNow = loadoutKey(next);
-      this.setHelmet(helmetFor(next.cosmetics.helmetLivery));
       // glTF content may swap in late; re-apply on the next frames too.
       applyLook(ship);
       if (hangarShip) applyLook(hangarShip);
-    },
-
-    setHelmet(variant) {
-      if (variant === helmet) return;
-      helmet = variant;
-      if (activeProp === "pilot_figure") {
-        const old = props.get("pilot_figure");
-        if (old) scene.remove(old);
-        props.delete("pilot_figure");
-        activeProp = null;
-        this.showProp("pilot_figure");
-      }
     },
 
     showHangar(shot) {

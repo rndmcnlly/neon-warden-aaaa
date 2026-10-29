@@ -33,7 +33,6 @@ export interface ShipLookLike {
   readonly trim: string;
   readonly decal: string;
   readonly trail: string;
-  readonly helmet: string;
 }
 
 /**

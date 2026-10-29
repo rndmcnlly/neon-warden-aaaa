@@ -6,9 +6,8 @@
  * every tick, `render(dt, alpha)` once per frame.
  *
  * URL flags:
- *   ?scene=sector|boss|pilot|logo|hangar   what to show (default sector)
+ *   ?scene=sector|boss|logo|hangar     what to show (default sector)
  *   &turntable=1                    hangar: turntable instead of hero shot
- *   &helmet=worn                    pilot: the worn helmet variant
  *   &speed=N                        ticks per frame, like auto-play
  *   &preset=low|medium|high|ultra   display preset
  *   &shot=<CameraShotId>            camera shot to blend to after 1 s
@@ -351,11 +350,7 @@ function snapshot(): SimState {
 
 // ---- cutscene scenes ---------------------------------------------------------
 
-if (scene === "pilot") {
-  if (params.get("helmet") === "worn") stage.setHelmet("worn");
-  stage.showProp("pilot_figure");
-  stage.playShot("pilotCloseup", 0);
-} else if (scene === "hangar") {
+if (scene === "hangar") {
   stage.showHangar(params.get("turntable") ? "turntable" : "hero");
 } else if (scene === "logo") {
   stage.showProp("logo_adamsmith_systems");

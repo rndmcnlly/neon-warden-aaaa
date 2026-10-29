@@ -28,7 +28,6 @@ import {
   CHAPTERS,
   CODEX_INDEX,
   DECALS,
-  HELMETS,
   MASTERY_IN_SLICE,
   MASTERY_RANKS,
   PAINTS,
@@ -75,7 +74,6 @@ export function shipLook(loadout: Loadout) {
     trim: c.trimColor,
     decal: c.decal,
     trail: c.trail,
-    helmet: c.helmetLivery,
   };
 }
 
@@ -402,19 +400,6 @@ function loadoutTab(
         set: (trail) => setCosmetic({ trail }),
       }),
       describe: describeCosmetic("trail"),
-    },
-    {
-      widget: choiceRow({
-        key: "hangar-helmet",
-        label: ctx.t("ui.hangar.slot.helmet"),
-        options: HELMETS.map((value) => ({
-          value,
-          label: ctx.t(`ui.hangar.helmet.${value}` as UiKey),
-        })),
-        get: () => get().cosmetics.helmetLivery,
-        set: (helmetLivery) => setCosmetic({ helmetLivery }),
-      }),
-      describe: describeCosmetic("helmet"),
     },
   ];
   for (const { widget, describe } of rows) {

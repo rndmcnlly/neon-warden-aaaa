@@ -297,37 +297,6 @@ function makePickup(color: number, inner: "dots" | "ring"): THREE.Object3D {
   return g;
 }
 
-export function makePilotFigure(): THREE.Object3D {
-  // Our own helmet silhouette: a rounded dome with a swept crest fin and a
-  // horizontal visor slit, faceless. Deliberately not a T-visor.
-  const g = new THREE.Group();
-  const armor = new THREE.MeshStandardMaterial({
-    color: 0x3a4052,
-    metalness: 0.9,
-    roughness: 0.28,
-  });
-  const body = new THREE.Mesh(
-    new THREE.CapsuleGeometry(0.32, 0.7, 6, 16),
-    armor,
-  );
-  body.position.y = 0.7;
-  g.add(body);
-  const helmet = new THREE.Mesh(new THREE.SphereGeometry(0.27, 32, 20), armor);
-  helmet.scale.set(1, 1.1, 1.08);
-  helmet.position.y = 1.42;
-  g.add(helmet);
-  const fin = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.12, 0.42), armor);
-  fin.position.set(0, 1.7, 0.02);
-  g.add(fin);
-  const visor = new THREE.Mesh(
-    new THREE.BoxGeometry(0.42, 0.05, 0.1),
-    neonMaterial(PALETTE.cyan, 1.8),
-  );
-  visor.position.set(0, 1.44, 0.25);
-  g.add(visor);
-  return g;
-}
-
 function makeLogo(color: number, accent: number): THREE.Object3D {
   const g = new THREE.Group();
   const ring = new THREE.Mesh(
@@ -358,8 +327,6 @@ export const PLACEHOLDERS = {
   warden: makeWarden,
   pickup_spread: () => makePickup(PALETTE.mint, "dots"),
   pickup_shield: () => makePickup(PALETTE.cyan, "ring"),
-  pilot_figure_issued: makePilotFigure,
-  pilot_figure_worn: makePilotFigure,
   logo_adamsmith_systems: () => makeLogo(PALETTE.cyan, PALETTE.pink),
   logo_cm121: () => makeLogo(PALETTE.gold, PALETTE.violet),
 } as const satisfies Record<string, () => THREE.Object3D>;

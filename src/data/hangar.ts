@@ -9,12 +9,7 @@
  * slice") rather than hidden, so the slice shows its intended scope.
  */
 
-import type {
-  DecalId,
-  HelmetLiveryId,
-  PaintId,
-  TrailId,
-} from "../contracts/index.ts";
+import type { DecalId, PaintId, TrailId } from "../contracts/index.ts";
 
 /** Paint ids to display swatches (and the color the renderer receives). */
 export const PAINTS: Readonly<Record<PaintId, string>> = {
@@ -44,11 +39,6 @@ export const DECALS: readonly DecalId[] = [
   "payGrade",
 ];
 export const TRAILS: readonly TrailId[] = ["standard", "ion", "ember", "ghost"];
-export const HELMETS: readonly HelmetLiveryId[] = [
-  "corporateIssue",
-  "worn",
-  "repainted",
-];
 
 /** Slots and options that exist in the full game, walled in this slice. */
 export const WALLED_SLOTS = [

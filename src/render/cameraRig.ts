@@ -105,9 +105,10 @@ export class CameraRig {
         out.position.set(ctx.boss.x + orbit, 3.2, ctx.boss.z + 7);
         out.fov = 30;
       },
-      pilotCloseup: (ctx, out) => {
-        out.target.copy(ctx.stagePoint).add(new THREE.Vector3(0, 1.45, 0));
-        out.position.copy(ctx.stagePoint).add(new THREE.Vector3(0.6, 1.6, 2.2));
+      shipCloseup: (ctx, out) => {
+        // Pilot remains off-screen: his ship carries the silent reply.
+        out.target.copy(ctx.player);
+        out.position.copy(ctx.player).add(new THREE.Vector3(1.2, 1.4, 2.2));
         out.fov = 28;
       },
       flashback: (ctx, out) => {

@@ -756,3 +756,27 @@ QA: two timing tests, six grouped isolated browser checks, lint and strict check
 pass. Review: `qa/reports/20261028-flat-logos/result.json`, phone/desktop PNGs
 and 10-second `.mp4` clips in the same directory. Static asset/translation QA:
 `qa/reports/20261028-225320/index.html` (32 pass, six existing warnings, zero fail).
+
+## Scope cut: off-screen Pilot (October 28, confirmed)
+
+Helmet customization, unlocks, issued/worn switching and all 3D Pilot shots
+are withdrawn. Earlier requirements remain as production history,
+not active acceptance criteria. Ship customization and Pilot's narrative
+identity, serial and voice remain.
+
+**Shared-file handoff for main/audio owner:** remove `pilotCloseup:
+"pilot_figure"` from `CLOSEUP_PROPS` in `src/main.ts` (an empty map is fine).
+The scope-cut agent owns the new ship closeup, contracts, renderer and hangar,
+but deliberately does not edit `main.ts` or audio/VO. The existing tutorial
+line `tut_hangar_001` still mentions helmet livery: flag for coordinated
+script/VO regeneration, do not silently rewrite just its subtitles.
+
+Scope-cut QA: 15 production browser checks pass, including old-save retention,
+ship controls, no figure requests through Pilot's pacifist reply, and offline
+inventory exclusion: `qa/reports/scope-cut-2026-10-29T05-55-42.304Z/result.json`.
+Hangar reel passes 23 assertions in `qa/reports/20261028-225200/index.html`.
+The accompanying pacifist reel reaches Lanes Kept with no browser/request
+errors, but fails its zero-kills/zero-shots/outcome predicate. Full suite:
+196 pass, 1 unrelated VO seed-mirror failure in `tests/banks_test.ts`.
+Full typecheck awaits the shared-file mapping removal above. Historical
+figure assets remain on disk and produce two expected unused-model warnings.

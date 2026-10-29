@@ -38,7 +38,7 @@ export type CameraShotId =
   | "gameplay"
   | "bossIntro"
   | "bossCloseup"
-  | "pilotCloseup"
+  | "shipCloseup"
   | "flashback"
   | "endingWide"
   /** Boot: the studio and incubator logos turn on a plinth. */

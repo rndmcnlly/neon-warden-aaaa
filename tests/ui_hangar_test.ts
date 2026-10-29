@@ -5,6 +5,7 @@ import { hasText } from "../src/i18n/index.ts";
 import {
   codexLines,
   createProgressStore,
+  PROGRESS_KEY,
   sanitizeProgress,
 } from "../src/ui/progress.ts";
 import { statDelta } from "../src/ui/screens/hangar.ts";
@@ -63,6 +64,46 @@ Deno.test("mastery ranks rise with career pay", () => {
   assertEquals(rankForPay(payForRank(2)), 2);
   assertEquals(rankForPay(payForRank(3) - 1), 2);
   assertEquals(rankForPay(1e12), 50);
+});
+
+Deno.test("legacy helmet saves retain ship choices, pay, codex and settings", () => {
+  for (const helmetLivery of ["corporateIssue", "worn", "repainted"]) {
+    const cosmetics = {
+      paint: "rustRed",
+      trimColor: "#ff4d6d",
+      decal: "tallyMarks",
+      trail: "ember",
+    } as const;
+    const loadout = { weapon: "notary", sensor: "auditor", cosmetics } as const;
+    const mem = new Map([
+      [
+        PROGRESS_KEY,
+        JSON.stringify({
+          loadout: { ...loadout, cosmetics: { ...cosmetics, helmetLivery } },
+          codex: ["codex.warden"],
+          careerPay: 5000,
+        }),
+      ],
+      ["neon-warden.settings", "untouched settings sentinel"],
+    ]);
+    const storage = {
+      getItem: (k: string) => mem.get(k) ?? null,
+      setItem: (k: string, v: string) => void mem.set(k, v),
+    };
+    const store = createProgressStore(storage);
+    assertEquals(store.get(), {
+      loadout,
+      codex: ["codex.warden"],
+      careerPay: 5000,
+    });
+    store.setLoadout(store.get().loadout);
+    assertEquals(mem.get(PROGRESS_KEY)?.includes("helmet"), false);
+    assertEquals(
+      mem.get("neon-warden.settings"),
+      "untouched settings sentinel",
+    );
+    assertEquals(createProgressStore(storage).get(), store.get());
+  }
 });
 
 Deno.test("every hangar codex id resolves to codex text, not a raw id", () => {

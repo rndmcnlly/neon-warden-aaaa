@@ -14,7 +14,6 @@
 import * as THREE from "three";
 import type {
   Cosmetics,
-  HelmetLiveryId,
   Loadout,
   PaintId,
   TrailId,
@@ -41,13 +40,6 @@ export const TRAIL: Readonly<Record<TrailId, number>> = {
 
 /** Emissive share of the paint color on the player ship. */
 const HERO_GLOW = 0.45;
-
-export type HelmetVariant = "issued" | "worn";
-
-/** Corporate issue early, worn (or repainted over the wear) by the end. */
-export function helmetFor(livery: HelmetLiveryId): HelmetVariant {
-  return livery === "corporateIssue" ? "issued" : "worn";
-}
 
 /** Shows exactly one `<prefix>_<id>` child under `socket` (others hidden). */
 function mount(

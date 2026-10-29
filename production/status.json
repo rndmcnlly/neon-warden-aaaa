@@ -1,6 +1,7 @@
 {
   "updated": "2026-10-28",
   "tasks": [
+    {"title": "Off-screen Pilot scope cut", "owner": "Scope cut", "status": "done", "detail": "Removed helmet UI/contracts/serialization, figure registry/preload/placeholder and issued/worn switching. Pacifist reply now frames the ship. Historical GLBs retained but excluded from offline inventory. Legacy saves and ship controls verified by 15 production browser checks: qa/reports/scope-cut-2026-10-29T05-55-42.304Z/result.json. Hangar reel passes 23 assertions: qa/reports/20261028-225200/index.html. Integration follow-up: main.ts still maps the retired figure and blocks full typecheck; tutorial hangar VO still advertises helmet livery. Full suite 196 pass/1 unrelated VO seed-mirror failure; pacifist reel reaches Lanes Kept but fails its outcome assertion.", "updated": "2026-10-28"},
     {"title": "Onboarding focus gate and wrong-input barks", "owner": "Background onboarding agent", "status": "active", "detail": "Assigned by main session. Completion and QA not yet reported.", "updated": "2026-10-28"},
     {"title": "Tutorial, trick shot and player statistics", "owner": "P", "status": "done", "revision": "da1e1f0 / fde1b85", "detail": "Shipped. Historical gameplay reel passes; tutorial wink deadline and VO issues remain in recorded QA.", "updated": "2026-10-28"},
     {"title": "PWA and fullscreen", "owner": "Platform", "status": "done", "revision": "e995599", "detail": "Reported 180 tests; English offline pack verified with 320 resources. ES/ZH offline untested. Does not imply mobile/touch or school-tier completion.", "updated": "2026-10-28"},
@@ -18,7 +19,7 @@
   "decisions": [
     {"title": "Tutorial voice", "status": "note", "detail": "a_captain pick was supplied earlier; Adam later preferred original in context and requests A/B with music. Keep original as default.", "updated": "2026-10-28"},
     {"title": "Generated palettes versus fixed palettes", "status": "pending", "detail": "User decision pending.", "updated": "2026-10-28"},
-    {"title": "Repaint helmet unlock", "status": "pending", "detail": "User decision pending.", "updated": "2026-10-28"},
+    {"title": "Repaint helmet unlock", "status": "withdrawn", "detail": "Adam confirmed dropping both helmet customization/unlocks and all 3D Pilot depiction. Pilot stays off-screen; ship customization and narrative identity/serial/voice remain.", "updated": "2026-10-28"},
     {"title": "Classroom mode", "status": "pending", "detail": "User decision pending. School-tier support itself is a requirement, not an optional decision.", "updated": "2026-10-28"},
     {"title": "Credits", "status": "note", "detail": "Exact wording: Adam Smith, and his coupled agents", "updated": "2026-10-28"}
   ]

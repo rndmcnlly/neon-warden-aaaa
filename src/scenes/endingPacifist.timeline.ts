@@ -23,13 +23,13 @@ export const endingPacifist: Timeline = {
       FLAGS.storyPilotSpeaks,
       [
         pause(1200),
-        camera("pilotCloseup", 800),
+        camera("shipCloseup", 800),
         ...say("pilot_keep_001"),
         pause(900),
         ...sayAll("pac_end_005", "pac_end_006"),
       ],
       [
-        camera("pilotCloseup", 800),
+        camera("shipCloseup", 800),
         pause(2800),
         ...sayAll("pac_end_005", "pac_end_007"),
       ],

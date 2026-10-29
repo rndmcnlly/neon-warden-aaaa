@@ -172,8 +172,6 @@ export type DecalId =
   | "wardenCrest"
   | "payGrade";
 export type TrailId = "standard" | "ion" | "ember" | "ghost";
-/** The helmet is corporate issue early and worn by the end (AGENTS.md). */
-export type HelmetLiveryId = "corporateIssue" | "worn" | "repainted";
 
 /** Ignored by the sim; read by the renderer and the hangar. */
 export interface Cosmetics {
@@ -182,7 +180,6 @@ export interface Cosmetics {
   readonly trimColor: string;
   readonly decal: DecalId;
   readonly trail: TrailId;
-  readonly helmetLivery: HelmetLiveryId;
 }
 
 export interface Loadout {
@@ -199,7 +196,6 @@ export const DEFAULT_LOADOUT: Loadout = Object.freeze({
     trimColor: "#35e0ff",
     decal: "authorityNumber",
     trail: "standard",
-    helmetLivery: "corporateIssue",
   }),
 });
 
