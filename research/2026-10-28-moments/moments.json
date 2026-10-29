@@ -1,0 +1,910 @@
+{
+ "generated": "2026-10-29T05:19:45.496Z",
+ "captures": [
+  {
+   "id": "tutorial",
+   "title": "Tutorial, fight autopilot at 8x (2x stalls at the tap module), through the wink to sector 1",
+   "query": "?skipto=tutorial&autoplay=fight&speed=8&seed=121&qa=1",
+   "seconds": 201.1,
+   "lufs": -18.2,
+   "truePeak": -0.2,
+   "notes": [
+    "MISSING wink line",
+    "MISSING tutorial complete",
+    "time cap before wait"
+   ],
+   "checks": [
+    "pass: audio: captured: 199.64 s audible of 201.12 s, 9653 sounds started, 14 VO",
+    "warn: audio: true peak at or under -1 dBTP: -0.2 dBTP, -18.2 LUFS integrated",
+    "pass: VO not dropped: 12 of 12 subtitle windows have audible VO stem",
+    "fail: spatial: stereo image moves with the action: only 5 audible windows",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "boss-pacifist",
+   "title": "Warden, disarmer autopilot at 2x: pods, core, survived, Lanes Kept",
+   "query": "?skipto=boss&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "seconds": 62.2,
+   "lufs": -7.7,
+   "truePeak": 0.1,
+   "notes": [
+    "pacifist ending at 35.7 s",
+    "Lanes Kept at 53.4 s"
+   ],
+   "checks": [
+    "pass: audio: captured: 60.86 s audible of 62.24 s, 182 sounds started, 23 VO",
+    "warn: audio: true peak at or under -1 dBTP: 0.1 dBTP, -7.7 LUFS integrated",
+    "pass: VO not dropped: 23 of 23 subtitle windows have audible VO stem",
+    "pass: spatial: stereo image moves with the action: balance p5 -0.36, p95 0.62 over 107 windows of the post-panner stem (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "fight-s3",
+   "title": "Sector 3, fight autopilot at 2x: the recorder and the flashback",
+   "query": "?skipto=sector3&autoplay=fight&speed=2&seed=121&qa=1",
+   "seconds": 219.4,
+   "lufs": -9.2,
+   "truePeak": -0.4,
+   "notes": [
+    "MISSING flashback starts",
+    "MISSING flashback returns to play"
+   ],
+   "checks": [
+    "pass: audio: captured: 149.12 s audible of 219.36 s, 2510 sounds started, 44 VO",
+    "warn: audio: true peak at or under -1 dBTP: -0.4 dBTP, -9.2 LUFS integrated",
+    "pass: VO not dropped: 40 of 40 subtitle windows have audible VO stem",
+    "pass: spatial: stereo image moves with the action: balance p5 -0.14, p95 0.19 over 645 windows of the post-panner stem (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "disarm-s2",
+   "title": "Sector 2, disarmer autopilot at 2x: disarms, grazes, near misses",
+   "query": "?skipto=sector2&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "seconds": 81,
+   "lufs": -9.1,
+   "truePeak": -0.2,
+   "notes": [],
+   "checks": [
+    "pass: audio: captured: 79.64 s audible of 81.04 s, 1120 sounds started, 29 VO",
+    "warn: audio: true peak at or under -1 dBTP: -0.2 dBTP, -9.1 LUFS integrated",
+    "fail: VO not dropped: 27 of 28 subtitle windows have audible VO stem",
+    "pass: spatial: stereo image moves with the action: balance p5 -0.17, p95 0.16 over 328 windows of the post-panner stem (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "hangar",
+   "title": "Cold boot to main menu, hangar, cycle packages and cosmetics",
+   "query": "?qa=1",
+   "seconds": 38.4,
+   "lufs": -28,
+   "truePeak": -3.9,
+   "notes": [
+    ".nw-screen-gate at 0.5 s",
+    ".nw-screen-hangar at 3.8 s"
+   ],
+   "checks": [
+    "pass: audio: captured: 3.03 s audible of 38.36 s, 31 sounds started, 0 VO",
+    "pass: audio: true peak at or under -1 dBTP: -3.9 dBTP, -28 LUFS integrated",
+    "pass: VO not dropped: no subtitles shown in this reel",
+    "fail: spatial: stereo image moves with the action: balance p5 0, p95 0 over 41 windows of the full mix (no panner nodes seen) (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "fight-s1",
+   "title": "Sector 1, fight autopilot at 1x: scans, Writs, kills, chatter",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "seconds": 81,
+   "lufs": -11,
+   "truePeak": -0.5,
+   "notes": [],
+   "checks": [
+    "pass: audio: captured: 73.2 s audible of 80.96 s, 378 sounds started, 16 VO",
+    "warn: audio: true peak at or under -1 dBTP: -0.5 dBTP, -11 LUFS integrated",
+    "pass: VO not dropped: 14 of 14 subtitle windows have audible VO stem",
+    "pass: spatial: stereo image moves with the action: balance p5 -0.2, p95 0.29 over 165 windows of the post-panner stem (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "boss-fight",
+   "title": "Warden, fight autopilot at 2x: descent, pods, core, phases, kill",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "seconds": 69.3,
+   "lufs": -7.9,
+   "truePeak": -0.1,
+   "notes": [
+    "Warden defeated at 41.6 s",
+    "kill ending replacement line at 63.4 s"
+   ],
+   "checks": [
+    "pass: audio: captured: 67.87 s audible of 69.28 s, 1053 sounds started, 25 VO",
+    "warn: audio: true peak at or under -1 dBTP: -0.1 dBTP, -7.9 LUFS integrated",
+    "pass: VO not dropped: 24 of 24 subtitle windows have audible VO stem",
+    "pass: spatial: stereo image moves with the action: balance p5 -0.15, p95 0.17 over 244 windows of the post-panner stem (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "tutorial-2x-stall",
+   "title": "Tutorial, fight autopilot at 2x, through the wink to sector 1",
+   "query": "?skipto=tutorial&autoplay=fight&speed=2&seed=121&qa=1",
+   "seconds": 200.9,
+   "lufs": -13.7,
+   "truePeak": -1,
+   "notes": [
+    "MISSING wink line",
+    "MISSING tutorial complete",
+    "time cap before wait"
+   ],
+   "checks": [
+    "pass: audio: captured: 199.46 s audible of 200.92 s, 2168 sounds started, 14 VO",
+    "pass: audio: true peak at or under -1 dBTP: -1 dBTP, -13.7 LUFS integrated",
+    "pass: VO not dropped: 14 of 14 subtitle windows have audible VO stem",
+    "fail: spatial: stereo image moves with the action: only 6 audible windows",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  },
+  {
+   "id": "continue",
+   "title": "Sector 5 with no pilot input: lives lost, game over, continue screen",
+   "query": "?skipto=sector5&seed=121&qa=1",
+   "seconds": 17,
+   "lufs": -13.5,
+   "truePeak": -1.4,
+   "notes": [
+    ".nw-screen-continue at 9.3 s"
+   ],
+   "checks": [
+    "pass: audio: captured: 10.96 s audible of 17 s, 93 sounds started, 3 VO",
+    "pass: audio: true peak at or under -1 dBTP: -1.4 dBTP, -13.5 LUFS integrated",
+    "pass: VO not dropped: 3 of 3 subtitle windows have audible VO stem",
+    "fail: spatial: stereo image moves with the action: balance p5 -0.25, p95 0.09 over 57 windows of the post-panner stem (need a spread of 0.3 crossing centre)",
+    "pending: spatial: balance follows enemy x: probe p.enemies() absent (qa/REQUESTS.md)"
+   ]
+  }
+ ],
+ "clips": [
+  {
+   "id": "scan-lock",
+   "title": "Scan lock and intel tag",
+   "categories": [
+    "combat",
+    "ui",
+    "audio"
+   ],
+   "caption": "Rest, the beam sweeps and dwells, locks: look for the intel tag with the AI state; listen for the dwell tick and lock tone.",
+   "capture": "fight-s1",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "start": 73.71,
+   "anchor": 76.21,
+   "seconds": 7,
+   "why": "lock on drone, ai patrol",
+   "lines": [
+    "sec2_intro_001"
+   ],
+   "lufs": -14.7,
+   "lra": 1.7,
+   "truePeak": -1.9,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "writ-charge",
+   "title": "Writ charge and release",
+   "categories": [
+    "combat",
+    "audio"
+   ],
+   "caption": "Charge cells fill 1, 2, 3 while resting, then the Writ goes: listen for the rising charge steps landing on the beat and the release.",
+   "capture": "fight-s1",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "start": 0,
+   "anchor": 2.31,
+   "seconds": 4.822,
+   "why": "level 1 at 1.0 s, level 3 at 2.0 s, spent at 2.3 s",
+   "lines": [
+    "sec1_intro_001",
+    "disarm_ai_001",
+    "lock_ai_001"
+   ],
+   "lufs": -12.3,
+   "lra": 17.7,
+   "truePeak": -1.9,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "writ-kill-shot",
+   "title": "Writ kill shot on the weak point",
+   "categories": [
+    "combat"
+   ],
+   "caption": "A locked Writ on the weak point: the clean kill. Look for the weak-point flash and the bigger payout; listen for the heavier kill sound.",
+   "capture": "fight-s1",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "start": 2.45,
+   "anchor": 5.45,
+   "seconds": 6,
+   "why": "clean kill of drone",
+   "lines": [
+    "disarm_ai_001",
+    "lock_ai_001",
+    "graze_ai_001"
+   ],
+   "lufs": -12.5,
+   "lra": 1.1,
+   "truePeak": -1.7,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "clean-disarm",
+   "title": "Clean disarm: scout powers down",
+   "categories": [
+    "nonviolence",
+    "combat"
+   ],
+   "caption": "Last weapon part breaks and the scout stops firing: look for the power-down and SCOUTS SPARED; listen for the disarm cue, not an explosion. Its later departure has a separate clip.",
+   "capture": "disarm-s2",
+   "query": "?skipto=sector2&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 6.94,
+   "anchor": 8.94,
+   "seconds": 10,
+   "why": "disarm at 8.9 s, leaves (spared) at 35.6 s",
+   "lines": [
+    "sec3_intro_001",
+    "flash_ai_001",
+    "flash_rec_001",
+    "flash_rec_002"
+   ],
+   "lufs": -12.5,
+   "lra": 1.4,
+   "truePeak": -1,
+   "balance": 0.504,
+   "lrDb": 0.1
+  },
+  {
+   "id": "spared-departure",
+   "title": "Spared scout leaves the lane",
+   "categories": [
+    "nonviolence"
+   ],
+   "caption": "The scout disarmed earlier leaves alive. The probe records a spared despawn, not a kill; check whether its departure is visually legible.",
+   "capture": "disarm-s2",
+   "query": "?skipto=sector2&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 32.63,
+   "anchor": 35.63,
+   "seconds": 6,
+   "why": "spared despawn of scout 90",
+   "lines": [
+    "flash_ai_003",
+    "rec_ai_001"
+   ],
+   "lufs": -11.8,
+   "lra": 4.1,
+   "truePeak": -0.5,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "disarm-then-kill",
+   "title": "Disarmed scout shot down anyway (fight autopilot)",
+   "categories": [
+    "nonviolence",
+    "combat"
+   ],
+   "caption": "The fight autopilot disarms a scout and kills it about half a second later: does the game make that read as a choice, or is it noise?",
+   "capture": "fight-s1",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "start": 0.72,
+   "anchor": 2.72,
+   "seconds": 5,
+   "why": "disarm at 2.7 s, killed at 3.2 s",
+   "lines": [
+    "sec1_intro_001",
+    "disarm_ai_001",
+    "lock_ai_001"
+   ],
+   "lufs": -11.4,
+   "lra": 12.8,
+   "truePeak": -1.7,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "part-break",
+   "title": "Weapon part break",
+   "categories": [
+    "combat",
+    "audio"
+   ],
+   "caption": "One weapon part snaps off a scout that keeps flying: look for the debris and the part going dark; listen for the break crack.",
+   "capture": "fight-s3",
+   "query": "?skipto=sector3&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 44.74,
+   "anchor": 46.74,
+   "seconds": 6,
+   "why": "emitter by writ",
+   "lines": [],
+   "lufs": -12.8,
+   "lra": 0.9,
+   "truePeak": -0.9,
+   "balance": 0.521,
+   "lrDb": 0.7
+  },
+  {
+   "id": "warden-pods-core",
+   "title": "Warden pod breaks and the core opens",
+   "categories": [
+    "combat",
+    "narrative"
+   ],
+   "caption": "Two of the Warden's four pods break and the core opens: look for the core reveal; listen for the pod line and the Warden's reaction.",
+   "capture": "boss-fight",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 20.67,
+   "anchor": 25.81,
+   "seconds": 8.642,
+   "why": "pods at 22.2, 25.8 s, core at 25.8 s",
+   "lines": [
+    "boss_p2_001",
+    "boss_pod_001",
+    "lock_ai_001",
+    "boss_p3_001"
+   ],
+   "lufs": -7.5,
+   "lra": 2.3,
+   "truePeak": -0.5,
+   "balance": 0.501,
+   "lrDb": 0
+  },
+  {
+   "id": "graze-chain",
+   "title": "Graze chain",
+   "categories": [
+    "nonviolence",
+    "audio",
+    "ui"
+   ],
+   "caption": "A run of near-touches fills the graze meter and the count climbs: listen for the graze ticks carrying the musical layer on the beat.",
+   "capture": "disarm-s2",
+   "query": "?skipto=sector2&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 50.33,
+   "anchor": 51.83,
+   "seconds": 7,
+   "why": "39 grazes in 4 s",
+   "lines": [
+    "amb_fight_004"
+   ],
+   "lufs": -12.9,
+   "lra": 0.9,
+   "truePeak": -1.7,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "near-miss-doppler",
+   "title": "Near-miss whoosh with doppler",
+   "categories": [
+    "audio"
+   ],
+   "caption": "A fast enemy round passes close with little else going on: listen for the whoosh bending in pitch and moving across the stereo field.",
+   "capture": "disarm-s2",
+   "query": "?skipto=sector2&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 6.93,
+   "anchor": 8.93,
+   "seconds": 5,
+   "why": "rel speed 7.6/tick at 23.5 units, light",
+   "lines": [
+    "sec3_intro_001",
+    "flash_ai_001"
+   ],
+   "lufs": -12.4,
+   "lra": 0.6,
+   "truePeak": -1.1,
+   "balance": 0.507,
+   "lrDb": 0.2
+  },
+  {
+   "id": "enemy-volley",
+   "title": "Enemy fire volley",
+   "categories": [
+    "combat",
+    "audio"
+   ],
+   "caption": "The biggest single enemy volley: listen for enemy weapons placed off-key and panned to the shooter, distinct from the player's on-beat fire.",
+   "capture": "fight-s3",
+   "query": "?skipto=sector3&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 87.26,
+   "anchor": 89.26,
+   "seconds": 6,
+   "why": "9 bullets, wardenFan",
+   "lines": [
+    "boss_taunt_001",
+    "boss_pod_001"
+   ],
+   "lufs": -10,
+   "lra": 3.8,
+   "truePeak": -1,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "pay-climb",
+   "title": "Pay multiplier climbing",
+   "categories": [
+    "ui",
+    "combat"
+   ],
+   "caption": "PAY and the multiplier climb with kills, breaks and scans: watch the multiplier tick up and turn hot at 2.0.",
+   "capture": "fight-s3",
+   "query": "?skipto=sector3&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 32.24,
+   "anchor": 35.74,
+   "seconds": 8,
+   "why": "rate +3.61 in 7 s",
+   "lines": [
+    "amb_fight_004"
+   ],
+   "lufs": -13.4,
+   "lra": 6.6,
+   "truePeak": -1.7,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "pay-halved-hit",
+   "title": "Player hit: life lost and pay halved",
+   "categories": [
+    "ui",
+    "combat",
+    "audio"
+   ],
+   "caption": "An idle ship takes hits: look for the multiplier halving (rate break) and the life pip going; listen for the hit sting and any bark.",
+   "capture": "continue",
+   "query": "?skipto=sector5&seed=121&qa=1",
+   "start": 2.45,
+   "anchor": 4.95,
+   "seconds": 6,
+   "why": "rate to 1 at life lost",
+   "lines": [
+    "graze_ai_001",
+    "lock_ai_001"
+   ],
+   "lufs": -13.3,
+   "lra": 1.2,
+   "truePeak": -1.3,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "radio-lore",
+   "title": "Radio lore line with on-screen radio text",
+   "categories": [
+    "narrative",
+    "audio",
+    "ui"
+   ],
+   "caption": "Scout channel chatter leaks lore: look for the radio text with its side marker; listen for the voice panned to the speaker's side, under the mix.",
+   "capture": "fight-s1",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "start": 8.83,
+   "anchor": 10.33,
+   "seconds": 8,
+   "why": "◆Scout channelI'm painted. Contract sensor, full lock.",
+   "lines": [
+    "flash_ai_001"
+   ],
+   "lufs": -14.8,
+   "lra": 9.3,
+   "truePeak": -2,
+   "balance": 0.507,
+   "lrDb": 0.2
+  },
+  {
+   "id": "word-pulse-warden",
+   "title": "Word-pulse subtitle on a Warden line",
+   "categories": [
+    "ui",
+    "narrative"
+   ],
+   "caption": "The Warden's descent line with the spoken word pulsing in the subtitle: check the pulse leads or lags the voice by eye and ear.",
+   "capture": "boss-fight",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 3.94,
+   "anchor": 4.94,
+   "seconds": 6,
+   "why": "17 word pulses during desc_001 (word events have an empty line id)",
+   "lines": [
+    "warn_narr_001",
+    "desc_001",
+    "desc_ai_001",
+    "desc_002"
+   ],
+   "lufs": -6.8,
+   "lra": 2.6,
+   "truePeak": -0.6,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "flashback-powerup",
+   "title": "Flashback trigger: first powerup",
+   "categories": [
+    "narrative"
+   ],
+   "caption": "The first powerup freezes the run and cuts to the flashback: look for the transition; listen for the music handoff to the flashback cue.",
+   "capture": "fight-s1",
+   "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+   "start": 14,
+   "anchor": 16,
+   "seconds": 10,
+   "why": "spread pickup, scene:flashback at 16.0 s",
+   "lines": [
+    "flash_ai_001",
+    "flash_rec_001"
+   ],
+   "lufs": -14,
+   "lra": 7.7,
+   "truePeak": -1.8,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "flashback-recorder",
+   "title": "Flashback trigger: #0121's flight recorder",
+   "categories": [
+    "narrative"
+   ],
+   "caption": "The sector-3 salvage cache is #0121's derelict recorder: look for the recorder scene; listen for the recorder voice treatment versus the live AI.",
+   "capture": "fight-s3",
+   "query": "?skipto=sector3&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 0.25,
+   "anchor": 2.25,
+   "seconds": 10,
+   "why": "recorder pickup, first line flash_rec_001 at 6.0 s",
+   "lines": [
+    "sec3_intro_001",
+    "disarm_ai_001",
+    "flash_ai_001",
+    "flash_rec_001",
+    "flash_rec_002"
+   ],
+   "lufs": -12.3,
+   "lra": 1.6,
+   "truePeak": -1.7,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "warden-descent",
+   "title": "Warden descent speech",
+   "categories": [
+    "narrative",
+    "audio"
+   ],
+   "caption": "WARNING, then the Warden arrives furious and high, not booming: listen for the arena-PA treatment and whether the deflation lands.",
+   "capture": "boss-fight",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 3.03,
+   "anchor": 4.03,
+   "seconds": 10,
+   "why": "warn_narr_001 into desc_001, desc_ai_001, desc_002",
+   "lines": [
+    "warn_narr_001",
+    "desc_001",
+    "desc_ai_001",
+    "desc_002",
+    "desc_003"
+   ],
+   "lufs": -6.8,
+   "lra": 3.4,
+   "truePeak": -0.6,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "boss-phase",
+   "title": "Warden phase change",
+   "categories": [
+    "combat",
+    "narrative",
+    "audio"
+   ],
+   "caption": "The Warden shifts phase: look for the pattern change; listen for the phase line and any music step-up.",
+   "capture": "boss-fight",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 22.74,
+   "anchor": 24.74,
+   "seconds": 7,
+   "why": "phase 3",
+   "lines": [
+    "lock_ai_001",
+    "boss_p3_001",
+    "boss_p3_002"
+   ],
+   "lufs": -7.1,
+   "lra": 1.5,
+   "truePeak": -0.6,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "kill-ending",
+   "title": "Kill ending: the Warden falls, the replacement",
+   "categories": [
+    "narrative"
+   ],
+   "caption": "The Warden's last line, WARDEN DOWN, then the epilogue: listen for kill_ai_004, the replacement already in onboarding.",
+   "capture": "boss-fight",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 61.15,
+   "anchor": 63.15,
+   "seconds": 6,
+   "why": "kill_ai_004",
+   "lines": [
+    "kill_ai_004"
+   ],
+   "lufs": -13.3,
+   "lra": 2.6,
+   "truePeak": -1.6,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "warden-falls",
+   "title": "The Warden falls",
+   "categories": [
+    "combat",
+    "narrative"
+   ],
+   "caption": "The killing blow and the Warden's last words over the WARDEN DOWN banner: is it a triumph, or does it already feel wrong?",
+   "capture": "boss-fight",
+   "query": "?skipto=boss&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 39.59,
+   "anchor": 41.59,
+   "seconds": 8,
+   "why": "bossDefeated, kill_warden_001",
+   "lines": [
+    "kill_warden_001",
+    "kill_ai_001",
+    "end_epi_001"
+   ],
+   "lufs": -6.7,
+   "lra": 1.6,
+   "truePeak": -0.5,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "ghost-line",
+   "title": "Warden reacts to the never-fired run",
+   "categories": [
+    "nonviolence",
+    "narrative"
+   ],
+   "caption": "desc_pac_002 into desc_ghost_001, the Warden noticing a pilot who never fired (reached via skipto=boss before the disarmer's first shot; a full disarmer run hears desc_disarm_001 instead).",
+   "capture": "boss-pacifist",
+   "query": "?skipto=boss&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 13.87,
+   "anchor": 14.87,
+   "seconds": 6,
+   "why": "desc_ghost_001",
+   "lines": [
+    "desc_ghost_001",
+    "desc_003"
+   ],
+   "lufs": -5.5,
+   "lra": 0.8,
+   "truePeak": -0.8,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "pacifist-ending",
+   "title": "Pacifist ending: the Pilot's one line and Lanes Kept",
+   "categories": [
+    "nonviolence",
+    "narrative"
+   ],
+   "caption": "The Pilot's single spoken line (pilot_keep_001), then LANES KEPT: listen for whether the one line is earned and audible.",
+   "capture": "boss-pacifist",
+   "query": "?skipto=boss&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 47.1,
+   "anchor": 49.1,
+   "seconds": 8,
+   "why": "pilot_keep_001 into pac_end_005",
+   "lines": [
+    "pilot_keep_001",
+    "pac_end_005",
+    "pac_end_006",
+    "pac_epi_001"
+   ],
+   "lufs": -9.2,
+   "lra": 6.1,
+   "truePeak": -0.6,
+   "balance": 0.499,
+   "lrDb": 0
+  },
+  {
+   "id": "lanes-kept",
+   "title": "Lanes Kept banner",
+   "categories": [
+    "nonviolence",
+    "ui"
+   ],
+   "caption": "The pacifist outcome banner and epilogue start: compare its weight with WARDEN DOWN.",
+   "capture": "boss-pacifist",
+   "query": "?skipto=boss&autoplay=pacifist&speed=2&seed=121&qa=1",
+   "start": 51.33,
+   "anchor": 53.33,
+   "seconds": 7,
+   "why": "LANES KEPTThe Warden stands down",
+   "lines": [
+    "pac_end_006",
+    "pac_epi_001",
+    "pac_epi_002",
+    "end_epi_003"
+   ],
+   "lufs": -9.3,
+   "lra": 7.2,
+   "truePeak": 0.9,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "hangar-swap",
+   "title": "Hangar loadout swap with live preview",
+   "categories": [
+    "ui"
+   ],
+   "caption": "Weapon package swaps with stat deltas, then sensors: watch the preview and the delta colors; listen for the UI ticks.",
+   "capture": "hangar",
+   "query": "?qa=1",
+   "start": 4.33,
+   "anchor": 6.33,
+   "seconds": 9,
+   "why": "7 stat panel changes",
+   "lines": [],
+   "lufs": -32.3,
+   "lra": 5.7,
+   "truePeak": -9.1,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "hangar-cosmetics",
+   "title": "Hangar cosmetics: paint, trim, trail",
+   "categories": [
+    "ui"
+   ],
+   "caption": "Paint, trim and engine trail changes on the live ship preview: is each change visible at a glance?",
+   "capture": "hangar",
+   "query": "?qa=1",
+   "start": 17.33,
+   "anchor": 18.33,
+   "seconds": 10,
+   "why": "after the sensor swaps",
+   "lines": [],
+   "lufs": -30.8,
+   "lra": 6.7,
+   "truePeak": -9.1,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "tutorial-stall",
+   "title": "Tutorial stall at the tap module (bug evidence)",
+   "categories": [
+    "narrative",
+    "ui"
+   ],
+   "caption": "tut_tap_001 asks for a tap, the autopilot never fires with no target up, tut_idle_001 nudges: the reason the wink is missing.",
+   "capture": "tutorial-2x-stall",
+   "query": "?skipto=tutorial&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 54.83,
+   "anchor": 61.83,
+   "seconds": 10,
+   "why": "tut_tap_001 then tut_idle_001",
+   "lines": [
+    "tut_idle_001"
+   ],
+   "lufs": -14.4,
+   "lra": 9.4,
+   "truePeak": -1.6,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "tutorial-lock",
+   "title": "Tutorial: first lock and clean kill on the hologram",
+   "categories": [
+    "combat",
+    "ui"
+   ],
+   "caption": "The practice target, the first lock and a clean kill, at 2x: the onboarding voice over the first real verb.",
+   "capture": "tutorial-2x-stall",
+   "query": "?skipto=tutorial&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 41.04,
+   "anchor": 45.04,
+   "seconds": 8,
+   "why": "clean true",
+   "lines": [
+    "tut_target_001",
+    "tut_target_002"
+   ],
+   "lufs": -11.8,
+   "lra": 0.7,
+   "truePeak": -1.5,
+   "balance": 0.5,
+   "lrDb": 0
+  },
+  {
+   "id": "sector-banner",
+   "title": "Sector banner",
+   "categories": [
+    "ui",
+    "narrative"
+   ],
+   "caption": "SECTOR 4, Lancer Gate: look at the banner type and timing; listen for the sector sting and intro line.",
+   "capture": "fight-s3",
+   "query": "?skipto=sector3&autoplay=fight&speed=2&seed=121&qa=1",
+   "start": 40.54,
+   "anchor": 42.04,
+   "seconds": 6,
+   "why": "SECTOR 4Lancer GateCrossfire",
+   "lines": [
+    "sec4_intro_001"
+   ],
+   "lufs": -13.2,
+   "lra": 1.7,
+   "truePeak": -1.9,
+   "balance": 0.514,
+   "lrDb": 0.5
+  },
+  {
+   "id": "continue-screen",
+   "title": "Game over and the continue screen",
+   "categories": [
+    "ui"
+   ],
+   "caption": "Third life lost, GAME OVER, Continue? with continues left: check focus moves and the screen's sound.",
+   "capture": "continue",
+   "query": "?skipto=sector5&seed=121&qa=1",
+   "start": 6.45,
+   "anchor": 8.95,
+   "seconds": 8,
+   "why": "nw-screen-continue",
+   "lines": [],
+   "lufs": -13.1,
+   "lra": 10.5,
+   "truePeak": -1.1,
+   "balance": 0.5,
+   "lrDb": 0
+  }
+ ],
+ "missing": [
+  {
+   "id": "shield-absorb",
+   "title": "Shield absorbs a hit",
+   "categories": [
+    "combat",
+    "audio"
+   ],
+   "reason": "no shield bark or shield pickup in any capture; shield hits are per-shot `hit` events the probe omits, and the autopilots were never hit while shielded"
+  },
+  {
+   "id": "tutorial-wink",
+   "title": "Tutorial wink line",
+   "categories": [
+    "narrative"
+   ],
+   "reason": "the tutorial stalls at module 4 (tut_tap_001, then tut_idle_001 nudges forever) at 2x and 8x: src/app/tutorialDemo.ts scripts only move and focus with no enemy up, so the tap and stream prompts never get a fire press"
+  }
+ ]
+}

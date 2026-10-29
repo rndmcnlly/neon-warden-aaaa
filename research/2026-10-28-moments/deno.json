@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window", "dom", "dom.iterable"],
+    "strict": true
+  },
+  "nodeModulesDir": "manual",
+  "exclude": [".build", "captures", "clips"],
+  "tasks": {
+    "check": "deno check capture.ts cut.ts gallery.ts"
+  }
+}
