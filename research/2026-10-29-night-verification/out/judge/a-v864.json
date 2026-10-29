@@ -1,0 +1,135 @@
+{
+ "summary": "The boss, The Warden, enters from the top of the screen while the player ship repeatedly releases level-1 charged shots that deflect off the boss's invulnerable shield during its intro sequence.",
+ "events": [
+  {
+   "t": 0.1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes with a bright circular pulse and fires a wide arc projectile upward; Cannon HUD shows 1/3 pip used.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes and releases a wide arc projectile upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.4,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Wide arc projectile hits the boss's front shield while the boss health bar is striped/invulnerable; no damage is dealt.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 1.8,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes and releases a wide arc projectile upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.3,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Arc projectile reaches the boss's shield and dissipates without dealing damage; loud metallic boss screech plays around this moment.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 2.7,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes and fires a wide arc projectile upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.2,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Arc projectile hits the boss's front shield and does no damage while the health bar remains striped.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 3.7,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes and fires a wide arc projectile upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.2,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Arc projectile hits the boss's front shield with no health reduction.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 4.6,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes and fires a wide arc projectile upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.1,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Arc projectile hits the boss's front shield with no health reduction.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.6,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Player ship flashes and fires a wide arc projectile upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 6.1,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "The Warden",
+   "evidence": "Arc projectile hits the boss's front shield with no health reduction.",
+   "channel": "seen",
+   "confidence": 0.85
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 0.1,
+   "issue": "The bright white circular flash on the player ship when charging/releasing completely obscures the player ship model.",
+   "confidence": 0.8
+  },
+  {
+   "t": 2.4,
+   "issue": "Loud boss intro screech/roar masks any subtle shot impact or deflection audio cues.",
+   "confidence": 0.9
+  }
+ ],
+ "speech": []
+}

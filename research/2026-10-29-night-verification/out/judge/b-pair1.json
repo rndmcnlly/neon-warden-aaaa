@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "same",
+   "why": "Both clips show the ship moving horizontally across the lane, changing directions, and entering focus mode (indicated by the circular ring around a black core dot, e.g., X at 06.6-08.8s and Y at 05.8-08.8s) with identical visual clarity.",
+   "confidence": 0.9
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Neither clip shows single tap shots; both clips only show charged arc shots being released after resting.",
+   "confidence": 0.9
+  },
+  {
+   "item": 3,
+   "better": "Y",
+   "why": "When enemies are hit by the charged arc (X at 08.0s, Y at 06.8-08.5s), Y adds clear floating 'PETAL' labels next to the disarmed enemies and a 'Codex: Scout' popup, making the disarm state much clearer than in X.",
+   "confidence": 0.85
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "In both clips, resting charges the weapon up to level 3, shown identically by the cyan arc indicator in front of the ship and the CANNON meter at the top right.",
+   "confidence": 0.9
+  },
+  {
+   "item": 5,
+   "better": "same",
+   "why": "Both clips show wide cyan arc shots missing (X at 01.0s, 02.0s; Y at 00.2s, 01.0s, 02.0s) and hitting (X at 08.0s; Y at 06.8s) with the same visual and audio feedback.",
+   "confidence": 0.85
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "No shots bouncing off armor are present in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 8,
+   "better": "X",
+   "why": "When the player loses a life (X at 05.4s, Y at 04.6s and 09.8s), both play a loud crash sound and expand a ring from the ship, but X also flashes a red vignette around the screen border (05.5-06.5s), making the damage event much more unmistakable.",
+   "confidence": 0.95
+  },
+  {
+   "item": 9,
+   "better": "not_present",
+   "why": "Neither clip shows a complex multi-hit situation where distinguishing simultaneous hit outcomes is tested.",
+   "confidence": 0.85
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 0,
+   "issue": "Large 'SECTOR 1 Outer Drift' title text overlays the upper-middle combat lane right where the first wave of enemies and bullets appear (00.0-01.0s).",
+   "severity": "medium"
+  },
+  {
+   "clip": "X",
+   "t": 0,
+   "issue": "Scrolling vertical dashed lane lines and orange dots on the floor add visual noise behind small pink bullets throughout the clip.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 6,
+   "issue": "The 'Codex: Scout' banner (06.0-09.5s) and floating 'PETAL' tags on enemies (06.5-10.5s) sit directly in the combat lane alongside enemy ships and bullets.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "Y",
+  "why": "Clip Y has a clean, solid dark blue playfield without the scrolling dashed lines and orange floor dots seen in X, and it avoids blocking the initial enemy wave with large sector title text. Although X has a better red screen-border flash when losing a life, Y's cleaner background makes enemy bullets and ships easier to track overall."
+ }
+}

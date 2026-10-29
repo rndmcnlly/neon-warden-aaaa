@@ -1,0 +1,135 @@
+{
+ "summary": "The player charges and fires several shots at waves of small enemies, disarming at least three of them (indicated by the 'RETIRED' popup and breaking parts) while maneuvering left and right.",
+ "events": [
+  {
+   "t": 0.4,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Player ship glows and releases a bright white projectile upward with a laser sound",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.5,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Projectile hits the enemy in the center, producing a flash and hit sound",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.5,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Text 'RETIRED' and '+100' appears next to the enemy as a small part breaks off and the main body drifts away",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 0.6,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves from right to left across the bottom of the playfield",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.3,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "Two charge pips on the left UI are consumed as a bright shot is fired upward",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.4,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "Bright flash on the lower-left enemy with an impact sound",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.4,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Popup 'RETIRED' and '+100' appears, enemy stops firing and drifts downward/away",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.1,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves from the left side toward the right side",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 3.5,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves from the right back toward the center",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.4,
+   "type": "charged_release",
+   "strength": 3,
+   "target": "small enemy",
+   "evidence": "Three yellow charge bars are full and then consumed as a large projectile is fired",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.5,
+   "type": "charged_hit",
+   "strength": 3,
+   "target": "small enemy",
+   "evidence": "Projectile strikes the center enemy with a flash and metallic hit sound",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.5,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "A piece breaks off the hit enemy and the shot continues upward; score increases",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.6,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves left, then reverses to move right across the bottom",
+   "channel": "seen",
+   "confidence": 0.95
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1.4,
+   "issue": "The bright white flash from the charged shot and hit effect momentarily obscures the nearby pink enemy bullets.",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.5,
+   "issue": "When the enemy is disarmed, the dark grey broken part and drifting hull blend slightly into the dark blue background, though they remain distinct from bright pink bullets.",
+   "confidence": 0.6
+  }
+ ],
+ "speech": []
+}

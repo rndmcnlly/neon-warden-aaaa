@@ -1,0 +1,62 @@
+{
+ "boss Writ 3 hit": {
+  "before": {
+   "n": 9,
+   "medianDb": 3.3
+  },
+  "after": {
+   "n": 9,
+   "medianDb": 2.6
+  }
+ },
+ "boss Writ 3 miss": {
+  "before": {
+   "n": 29,
+   "medianDb": 3.2
+  },
+  "after": {
+   "n": 27,
+   "medianDb": 2.5
+  }
+ },
+ "sector Writ 1 hit": {
+  "before": {
+   "n": 4,
+   "medianDb": 4.5
+  },
+  "after": {
+   "n": 5,
+   "medianDb": 5.3
+  }
+ },
+ "sector Writ 1 miss": {
+  "before": {
+   "n": 4,
+   "medianDb": 4.1
+  },
+  "after": {
+   "n": 3,
+   "medianDb": 7.6
+  }
+ },
+ "sector Writ 3 hit": {
+  "before": {
+   "n": 3,
+   "medianDb": 6.2
+  },
+  "after": {
+   "n": 2,
+   "medianDb": 14.6
+  }
+ },
+ "sector Writ 3 miss": {
+  "before": {
+   "n": 4,
+   "medianDb": 4.9
+  },
+  "after": {
+   "n": 5,
+   "medianDb": 10.4
+  }
+ }
+}

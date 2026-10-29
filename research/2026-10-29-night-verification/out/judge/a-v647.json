@@ -1,0 +1,72 @@
+{
+ "summary": "The player fights the boss (The Warden), dodging sweeping arcs of pink bullets while scanning it with a wide white cone. The player releases a charged shot that hits the boss, then moves right and left while continuing to scan and dodge.",
+ "events": [
+  {
+   "t": 0,
+   "type": "other",
+   "strength": 0,
+   "target": "boss",
+   "evidence": "Wide white scanning arc projects from player ship onto boss; 'Scanning' bar fills at top.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.1,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship stops moving left and moves right.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.5,
+   "type": "charged_release",
+   "strength": 3,
+   "target": "boss",
+   "evidence": "Three yellow charge bars empty as a wide glowing arc is fired upward with a whoosh/zap sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2,
+   "type": "charged_hit",
+   "strength": 3,
+   "target": "boss",
+   "evidence": "Expanding yellow rings on the boss and a heavy impact sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 3.5,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves further to the right side of the lane.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.2,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship reverses from right to left to dodge incoming bullet arc.",
+   "channel": "seen",
+   "confidence": 0.9
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 0.3,
+   "issue": "The bright white leading edge of the scanning cone overlaps with the pink enemy bullets, briefly reducing their contrast.",
+   "confidence": 0.7
+  },
+  {
+   "t": 2,
+   "issue": "The bright glow around the player ship when charging/firing makes it slightly harder to judge the exact hitbox against nearby pink bullets.",
+   "confidence": 0.6
+  }
+ ],
+ "speech": []
+}

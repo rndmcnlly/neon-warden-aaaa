@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "same",
+   "why": "Both clips show the ship moving laterally with slight tilt and exhaust flare, plus a forward cone/arc, with no noticeable difference in movement or focus cues across X (0.0-6.5s) and Y (0.0-6.5s).",
+   "confidence": 0.7
+  },
+  {
+   "item": 2,
+   "better": "same",
+   "why": "Single small shots are fired alongside or after charged waves (e.g. X around 1.0s, 3.0s; Y around 1.0s, 3.0s, 4.0s), producing small white ring impacts when hitting enemies at Y 2.0s and 4.0s.",
+   "confidence": 0.65
+  },
+  {
+   "item": 3,
+   "better": "same",
+   "why": "In both clips, hitting small enemies with the arc wave knocks off a piece and triggers the 'disarmed, not dead' radio callout (X at 1.5-2.0s, Y at 0.0-0.5s and 4.0-5.0s), with white ring indicators.",
+   "confidence": 0.75
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "The ship charges with a bright cyan glow on the ship and a filling Cannon bar in the top-right HUD before releasing the wide cyan arc wave in both X (1.0s, 2.5s, 4.5s) and Y (0.5s, 2.5s, 3.5s, 5.0s).",
+   "confidence": 0.7
+  },
+  {
+   "item": 5,
+   "better": "same",
+   "why": "In both clips, when the cyan arc hits an enemy it produces expanding white concentric rings and a distinct metallic/impact chime (X at 1.8s; Y at 0.3s, 2.0s, 3.2s, 4.0s), whereas missing waves just sweep off the top of the lane (X at 3.5s, 5.5s; Y at 1.5s).",
+   "confidence": 0.8
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "Neither clip clearly shows shots bouncing off armor.",
+   "confidence": 0.8
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 8,
+   "better": "same",
+   "why": "Both clips show the player getting hit by a pink enemy bullet/enemy with a loud crunch/explosion sound, full-screen red vignette flash, expanding pink shockwave ring on the ship, and a Hull pip lost in the top right (X at 0.0-0.4s; Y at 5.6-6.2s).",
+   "confidence": 0.9
+  },
+  {
+   "item": 9,
+   "better": "not_present",
+   "why": "Hits occur mostly one or two at a time in sparse formations; there is no dense multi-hit cluster in either clip.",
+   "confidence": 0.8
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 1.2,
+   "issue": "The charging glow on the player ship is very bright and large, partially obscuring the ship's exact hitbox center.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 2,
+   "issue": "The darker grey floor with scrolling dashed road-like markings adds slight visual texture under the small enemies and bullets compared to X's cleaner blue floor, though enemy pink outlines remain readable.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 5.2,
+   "issue": "When the enemy fires a glowing pink bullet close to the charging player ship, the bright cyan charge flare overlaps the incoming pink projectile just before impact at 5.6s.",
+   "severity": "medium"
+  }
+ ],
+ "overall": {
+  "better": "X",
+  "why": "Both clips use identical combat VFX, UI, and audio cues for charging, disarming, and taking hull damage, but Clip X's smoother, brighter blue track surface offers slightly cleaner contrast against the pink-outlined enemies and dark disarmed hulls than Clip Y's darker grey road-marked surface."
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "spent": 0.153184,
+ "calls": [
+  {
+   "name": "b-pair1",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.017524,
+   "tokens": [
+    3342,
+    1084
+   ],
+   "wallS": 18.162,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair2",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.01643,
+   "tokens": [
+    2460,
+    1151
+   ],
+   "wallS": 20.902,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair3",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.013508,
+   "tokens": [
+    2464,
+    858
+   ],
+   "wallS": 22.643,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair4",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.015814,
+   "tokens": [
+    2462,
+    1089
+   ],
+   "wallS": 19.055,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair5",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.016488,
+   "tokens": [
+    2464,
+    1156
+   ],
+   "wallS": 21.218,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair6",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.014564,
+   "tokens": [
+    2462,
+    964
+   ],
+   "wallS": 18.58,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair7",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.015364,
+   "tokens": [
+    2462,
+    1044
+   ],
+   "wallS": 16.461,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair8",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.012808,
+   "tokens": [
+    2464,
+    788
+   ],
+   "wallS": 17.88,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair9",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.015314,
+   "tokens": [
+    2462,
+    1039
+   ],
+   "wallS": 119.336,
+   "finish": "stop"
+  },
+  {
+   "name": "b-pair10",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.01537,
+   "tokens": [
+    2460,
+    1045
+   ],
+   "wallS": 16.796,
+   "finish": "stop"
+  }
+ ]
+}

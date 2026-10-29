@@ -1,0 +1,6184 @@
+{
+ "clips": [
+  {
+   "topic": "move",
+   "arm": "before",
+   "src": "move",
+   "anchor": {
+    "t": 5.627,
+    "type": "move"
+   },
+   "start": 3.127,
+   "end": 14.126999999999999,
+   "id": "v718",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -20.7,
+    "medianDb": -24.0,
+    "overMedianDb": 3.3,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 3.14,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.29,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.29,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.47,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.47,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.69,
+     "type": "lifeLost"
+    },
+    {
+     "t": 4.69,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 6.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.59,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 6.59,
+     "type": "intel"
+    },
+    {
+     "t": 7.58,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 7.58,
+     "type": "intel"
+    },
+    {
+     "t": 8.12,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 8.3,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 8.3,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 8.48,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 8.48,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 8.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 9.86,
+     "type": "lifeLost"
+    },
+    {
+     "t": 9.86,
+     "type": "kill",
+     "kind": "drone"
+    }
+   ],
+   "writs": []
+  },
+  {
+   "topic": "disarm",
+   "arm": "before",
+   "src": "tap",
+   "anchor": {
+    "t": 18.955,
+    "type": "disarm",
+    "tick": 1129,
+    "id": 58,
+    "kind": "drone",
+    "pos": {
+     "x": 98.95368199643481,
+     "y": 225
+    },
+    "cancelled": 0,
+    "first": false
+   },
+   "start": 16.455,
+   "end": 22.955,
+   "id": "v415",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -12.7,
+    "medianDb": -17.2,
+    "overMedianDb": 4.5,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.34,
+     "type": "lifeLost"
+    },
+    {
+     "t": 0.4,
+     "type": "despawn"
+    },
+    {
+     "t": 0.61,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 1.01,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 1.06,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 1.06,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 2
+    },
+    {
+     "t": 1.75,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 1.75,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 2.5,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 2.5,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 2.86,
+     "type": "despawn"
+    },
+    {
+     "t": 3.43,
+     "type": "despawn"
+    },
+    {
+     "t": 3.7,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.88,
+     "type": "despawn"
+    },
+    {
+     "t": 4.09,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.21,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 4.48,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.69,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.87,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.9,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.08,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.47,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.53,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    }
+   ],
+   "writs": []
+  },
+  {
+   "topic": "writ1-hit",
+   "arm": "before",
+   "src": "writ",
+   "anchor": {
+    "t": 8.441,
+    "tier": 1,
+    "hit": true,
+    "result": "kill",
+    "type": "writ1"
+   },
+   "start": 5.941000000000001,
+   "end": 12.441,
+   "id": "v819",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -21.1,
+    "medianDb": -23.7,
+    "overMedianDb": 2.6,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.2,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.35,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.35,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.47,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 0.53,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.53,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.13,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 1.55,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 1.91,
+     "type": "lifeLost"
+    },
+    {
+     "t": 1.91,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 2.3,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 2.51,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.81,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 3.26,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.92,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.58,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 5.0,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.18,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.36,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.36,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.54,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.54,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.69,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.96,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.96,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 5.96,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    }
+   ],
+   "writs": [
+    {
+     "t": 1.55,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 2.5,
+     "tier": 1,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 4.98,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 5.95,
+     "tier": 1,
+     "hit": true,
+     "result": "partBreak"
+    }
+   ]
+  },
+  {
+   "topic": "writ1-miss",
+   "arm": "before",
+   "src": "writ",
+   "anchor": {
+    "t": 15.303,
+    "tier": 1,
+    "hit": false,
+    "result": null,
+    "type": "writ1"
+   },
+   "start": 12.803,
+   "end": 19.303,
+   "id": "v731",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.7,
+    "medianDb": -23.5,
+    "overMedianDb": 3.8,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.45,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 1.14,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 1.38,
+     "type": "despawn"
+    },
+    {
+     "t": 1.56,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.28,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 2.52,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 3.24,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.33,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.33,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.33,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.33,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.33,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.33,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.9,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.56,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.98,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.31,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 5.31,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 5.7,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 6.36,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 6.42,
+     "type": "despawn"
+    }
+   ],
+   "writs": [
+    {
+     "t": 1.55,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 2.5,
+     "tier": 1,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 4.97,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    }
+   ]
+  },
+  {
+   "topic": "writ3-hit",
+   "arm": "before",
+   "src": "writ",
+   "anchor": {
+    "t": 17.773,
+    "tier": 3,
+    "hit": true,
+    "result": "partBreak",
+    "type": "writ3"
+   },
+   "start": 15.273,
+   "end": 21.773,
+   "id": "v637",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.3,
+    "medianDb": -22.9,
+    "overMedianDb": 3.6,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.05,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 0.77,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 0.86,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.86,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.86,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.86,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.86,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.86,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.43,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 2.09,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 2.51,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.84,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 2.84,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 3.23,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.89,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 3.95,
+     "type": "despawn"
+    },
+    {
+     "t": 4.58,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.79,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 4.79,
+     "type": "intel"
+    },
+    {
+     "t": 4.85,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.27,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.66,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.87,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 6.08,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 6.26,
+     "type": "spawn",
+     "kind": "drone"
+    }
+   ],
+   "writs": [
+    {
+     "t": 0.03,
+     "tier": 1,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 2.5,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    }
+   ]
+  },
+  {
+   "topic": "writ3-miss",
+   "arm": "before",
+   "src": "writ",
+   "anchor": {
+    "t": 5.016,
+    "tier": 3,
+    "hit": false,
+    "result": null,
+    "type": "writ3"
+   },
+   "start": 2.516,
+   "end": 9.016,
+   "id": "v266",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.9,
+    "medianDb": -24.2,
+    "overMedianDb": 4.2,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 2.07,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 2.07,
+     "type": "intel"
+    },
+    {
+     "t": 2.52,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 3.24,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.63,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.78,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.78,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.9,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 3.96,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.96,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.56,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.98,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.33,
+     "type": "lifeLost"
+    },
+    {
+     "t": 5.33,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 5.72,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.94,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 6.24,
+     "type": "kill",
+     "kind": "drone"
+    }
+   ],
+   "writs": [
+    {
+     "t": 2.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 4.97,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 5.93,
+     "tier": 1,
+     "hit": true,
+     "result": "kill"
+    }
+   ]
+  },
+  {
+   "topic": "writ-deflect",
+   "arm": "before",
+   "src": "boss-fight",
+   "anchor": {
+    "t": 3.529,
+    "type": "writ-deflect"
+   },
+   "start": 1.029,
+   "end": 7.529,
+   "id": "v864",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -20.8,
+    "medianDb": -32.5,
+    "overMedianDb": 11.7,
+    "silentFrac": 0.292
+   },
+   "events": [
+    {
+     "t": 0.26,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 0.53,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 0.92,
+     "type": "spawn",
+     "kind": "warden"
+    },
+    {
+     "t": 0.92,
+     "type": "bossPhase"
+    },
+    {
+     "t": 1.58,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 1.94,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 2.18,
+     "type": "bossPhase"
+    },
+    {
+     "t": 2.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.21,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.27,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 2.51,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 3.59,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.92,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.25,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.52,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.6,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.93,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 6.26,
+     "type": "chargeLevel",
+     "level": 3
+    }
+   ],
+   "writs": [
+    {
+     "t": 0.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 2.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 4.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    }
+   ]
+  },
+  {
+   "topic": "pod-break",
+   "arm": "before",
+   "src": "boss-fight",
+   "anchor": {
+    "t": 42.735,
+    "type": "partBreak",
+    "tick": 5088,
+    "id": 8,
+    "target": "boss",
+    "part": "cannonPod",
+    "partKind": "cannonPod",
+    "pos": {
+     "x": 74.35881629150691,
+     "y": 164.00000000000023
+    },
+    "by": "writ",
+    "first": true
+   },
+   "start": 40.235,
+   "end": 46.735,
+   "id": "v647",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -18.4,
+    "medianDb": -22.4,
+    "overMedianDb": 4.0,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.08,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.43,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.43,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.58,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.61,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.61,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.64,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.64,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.64,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.67,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.67,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.7,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.7,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.73,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.73,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.76,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.94,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.27,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.42,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.42,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.5,
+     "type": "partBreak",
+     "target": "boss",
+     "part": "cannonPod",
+     "by": "writ"
+    },
+    {
+     "t": 2.51,
+     "type": "bossPhase"
+    },
+    {
+     "t": 2.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.66,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 2.84,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.87,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.87,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.93,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.99,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 3.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.17,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.17,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.32,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.32,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.32,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 3.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.68,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.71,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.8,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.83,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.22,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.43,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.76,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.0,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.0,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.24,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.39,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 5.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.6,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.93,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 5.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.96,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 5.96,
+     "type": "intel"
+    },
+    {
+     "t": 5.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.02,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.02,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.05,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.05,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.26,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 6.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.32,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.47,
+     "type": "focusChanged"
+    }
+   ],
+   "writs": [
+    {
+     "t": 2.26,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 5.24,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    }
+   ]
+  },
+  {
+   "topic": "dense",
+   "arm": "before",
+   "src": "boss-fight",
+   "anchor": {
+    "t": 48.7388,
+    "type": "dense",
+    "tick": 5807
+   },
+   "start": 46.2388,
+   "end": 52.7388,
+   "id": "v673",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -20.7,
+    "medianDb": -22.4,
+    "overMedianDb": 1.7,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.02,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.02,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.05,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.05,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.26,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 0.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.32,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.86,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.86,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.58,
+     "type": "partBreak",
+     "target": "boss",
+     "part": "spiralPod",
+     "by": "writ"
+    },
+    {
+     "t": 1.58,
+     "type": "coreExposed"
+    },
+    {
+     "t": 1.58,
+     "type": "intel"
+    },
+    {
+     "t": 1.58,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.64,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.73,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 1.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.0,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 2.0,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 2.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.06,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 2.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.21,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.21,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.21,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.24,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.24,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.3,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.3,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.33,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.33,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.36,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.36,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.39,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.39,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.39,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 2.42,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.57,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.57,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.66,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.72,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.87,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.26,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.29,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 3.29,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.68,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.74,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.07,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.37,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.37,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.37,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.4,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.49,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 4.49,
+     "type": "intel"
+    },
+    {
+     "t": 4.52,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 4.52,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 4.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.58,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.94,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.0,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.0,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.21,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.21,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.24,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.33,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.33,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.36,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.36,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.39,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.39,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.42,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.54,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.54,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.57,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.57,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.6,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.72,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.72,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.78,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 5.78,
+     "type": "intel"
+    },
+    {
+     "t": 5.78,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.78,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.93,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 5.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.02,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.02,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.26,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 6.26,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    }
+   ],
+   "writs": [
+    {
+     "t": 1.38,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 2.64,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 4.5,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 6.25,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    }
+   ]
+  },
+  {
+   "topic": "life-kill",
+   "arm": "before",
+   "src": "tap",
+   "anchor": {
+    "t": 12.744,
+    "type": "lifeLost",
+    "tick": 756,
+    "livesLeft": 3
+   },
+   "start": 10.244,
+   "end": 16.744,
+   "id": "v978",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -14.1,
+    "medianDb": -23.4,
+    "overMedianDb": 9.3,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.91,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.06,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.06,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.24,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.24,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.27,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 2.5,
+     "type": "lifeLost"
+    },
+    {
+     "t": 2.5,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 3.85,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 3.85,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 1
+    },
+    {
+     "t": 4.21,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 4.63,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 4.63,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 5.2,
+     "type": "despawn"
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.89,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 6.04,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 6.04,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 6.16,
+     "type": "despawn"
+    }
+   ],
+   "writs": []
+  },
+  {
+   "topic": "move",
+   "arm": "after",
+   "src": "move",
+   "anchor": {
+    "t": 5.6370000000000005,
+    "type": "move"
+   },
+   "start": 3.137,
+   "end": 14.137,
+   "id": "v618",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.8,
+    "medianDb": -28.5,
+    "overMedianDb": 8.7,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 3.94,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.12,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.12,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.27,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.27,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.87,
+     "type": "lifeLost"
+    },
+    {
+     "t": 5.87,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 7.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 9.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 9.97,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 10.15,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 10.15,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 10.3,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 10.3,
+     "type": "spawn",
+     "kind": "drone"
+    }
+   ],
+   "writs": []
+  },
+  {
+   "topic": "disarm",
+   "arm": "after",
+   "src": "tap",
+   "anchor": {
+    "t": 10.507,
+    "type": "disarm",
+    "tick": 563,
+    "id": 20,
+    "kind": "drone",
+    "pos": {
+     "x": 297.8884448887036,
+     "y": 246
+    },
+    "cancelled": 1,
+    "first": false
+   },
+   "start": 8.007,
+   "end": 14.507,
+   "id": "v915",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.7,
+    "medianDb": -24.6,
+    "overMedianDb": 4.9,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.39,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 0.39,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 0.51,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 0.99,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 1.26,
+     "type": "despawn"
+    },
+    {
+     "t": 2.5,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 2.5,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 1
+    },
+    {
+     "t": 3.24,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 3.24,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 3.99,
+     "type": "despawn"
+    },
+    {
+     "t": 4.17,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.32,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 4.32,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 4.38,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.38,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.56,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.56,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.77,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 4.77,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 4.95,
+     "type": "despawn"
+    },
+    {
+     "t": 5.07,
+     "type": "despawn"
+    },
+    {
+     "t": 5.37,
+     "type": "despawn"
+    },
+    {
+     "t": 5.88,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 6.03,
+     "type": "lifeLost"
+    },
+    {
+     "t": 6.03,
+     "type": "kill",
+     "kind": "drone"
+    }
+   ],
+   "writs": []
+  },
+  {
+   "topic": "writ1-hit",
+   "arm": "after",
+   "src": "writ",
+   "anchor": {
+    "t": 8.454,
+    "tier": 1,
+    "hit": true,
+    "result": "partBreak",
+    "type": "writ1"
+   },
+   "start": 5.954000000000001,
+   "end": 12.454,
+   "id": "v547",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -20.3,
+    "medianDb": -25.2,
+    "overMedianDb": 4.9,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.19,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.34,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.34,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.46,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 0.52,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.52,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.12,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 1.54,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 1.84,
+     "type": "lifeLost"
+    },
+    {
+     "t": 1.84,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 2.32,
+     "type": "writMissed",
+     "level": 3
+    },
+    {
+     "t": 2.38,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 2.5,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.83,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 2.83,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 3.25,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.94,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.06,
+     "type": "despawn"
+    },
+    {
+     "t": 4.6,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.97,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.08,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 5.08,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 5.35,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.53,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.53,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.71,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.71,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.74,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.95,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 6.01,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 6.01,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 1
+    },
+    {
+     "t": 6.01,
+     "type": "lifeLost"
+    }
+   ],
+   "writs": [
+    {
+     "t": 1.54,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 2.5,
+     "tier": 1,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 4.97,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 5.93,
+     "tier": 1,
+     "hit": true,
+     "result": "partBreak"
+    }
+   ]
+  },
+  {
+   "topic": "writ1-miss",
+   "arm": "after",
+   "src": "ram",
+   "anchor": {
+    "t": 10.649,
+    "tier": 1,
+    "hit": false,
+    "result": null,
+    "type": "writ1"
+   },
+   "start": 8.149,
+   "end": 14.649,
+   "id": "v363",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.4,
+    "medianDb": -28.4,
+    "overMedianDb": 9.0,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.01,
+     "type": "despawn"
+    },
+    {
+     "t": 2.26,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 2.53,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.86,
+     "type": "writMissed",
+     "level": 1
+    },
+    {
+     "t": 3.04,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.19,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.19,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.37,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.37,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.94,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 4.18,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 4.33,
+     "type": "lifeLost"
+    },
+    {
+     "t": 5.77,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 6.04,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 6.37,
+     "type": "writMissed",
+     "level": 1
+    }
+   ],
+   "writs": [
+    {
+     "t": 2.5,
+     "tier": 1,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 6.01,
+     "tier": 1,
+     "hit": false,
+     "result": null
+    }
+   ]
+  },
+  {
+   "topic": "writ3-hit",
+   "arm": "after",
+   "src": "writ",
+   "anchor": {
+    "t": 10.921,
+    "tier": 3,
+    "hit": true,
+    "result": "partBreak",
+    "type": "writ3"
+   },
+   "start": 8.421,
+   "end": 14.921,
+   "id": "v881",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -18.7,
+    "medianDb": -25.6,
+    "overMedianDb": 6.9,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.03,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 0.36,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 0.36,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 0.78,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 1.47,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 1.59,
+     "type": "despawn"
+    },
+    {
+     "t": 2.13,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 2.5,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.62,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 2.62,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 2.88,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.06,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.06,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.24,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.24,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.27,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.48,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 3.54,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 3.54,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 1
+    },
+    {
+     "t": 3.54,
+     "type": "lifeLost"
+    },
+    {
+     "t": 4.32,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 4.68,
+     "type": "despawn"
+    },
+    {
+     "t": 4.98,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 5.64,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 5.79,
+     "type": "despawn"
+    },
+    {
+     "t": 5.94,
+     "type": "chargeLevel",
+     "level": 0
+    }
+   ],
+   "writs": [
+    {
+     "t": 0.03,
+     "tier": 1,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 2.5,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 3.47,
+     "tier": 1,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 5.94,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    }
+   ]
+  },
+  {
+   "topic": "writ3-miss",
+   "arm": "after",
+   "src": "writ",
+   "anchor": {
+    "t": 5.021,
+    "tier": 3,
+    "hit": false,
+    "result": null,
+    "type": "writ3"
+   },
+   "start": 2.521,
+   "end": 9.021,
+   "id": "v486",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -19.2,
+    "medianDb": -26.9,
+    "overMedianDb": 7.7,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 2.06,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 2.06,
+     "type": "intel"
+    },
+    {
+     "t": 2.51,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 3.17,
+     "type": "writMissed",
+     "level": 3
+    },
+    {
+     "t": 3.23,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.62,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.77,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.77,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.89,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 3.96,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 3.96,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 4.55,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.97,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.27,
+     "type": "lifeLost"
+    },
+    {
+     "t": 5.27,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 5.75,
+     "type": "writMissed",
+     "level": 3
+    },
+    {
+     "t": 5.81,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.93,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 6.26,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "writ"
+    },
+    {
+     "t": 6.26,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    }
+   ],
+   "writs": [
+    {
+     "t": 2.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 4.97,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 5.93,
+     "tier": 1,
+     "hit": true,
+     "result": "partBreak"
+    }
+   ]
+  },
+  {
+   "topic": "writ-deflect",
+   "arm": "after",
+   "src": "boss-fight",
+   "anchor": {
+    "t": 3.507,
+    "type": "writ-deflect"
+   },
+   "start": 1.0070000000000001,
+   "end": 7.507,
+   "id": "v454",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -20.4,
+    "medianDb": -30.5,
+    "overMedianDb": 10.1,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.25,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 0.49,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 0.82,
+     "type": "writMissed",
+     "level": 3
+    },
+    {
+     "t": 0.93,
+     "type": "spawn",
+     "kind": "warden"
+    },
+    {
+     "t": 0.93,
+     "type": "bossPhase"
+    },
+    {
+     "t": 1.6,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 1.93,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 2.17,
+     "type": "bossPhase"
+    },
+    {
+     "t": 2.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.26,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 2.53,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 3.58,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.91,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 4.27,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 4.51,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.59,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.92,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 6.25,
+     "type": "chargeLevel",
+     "level": 3
+    }
+   ],
+   "writs": [
+    {
+     "t": 0.48,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 2.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 4.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    },
+    {
+     "t": 6.5,
+     "tier": 3,
+     "hit": false,
+     "result": null
+    }
+   ]
+  },
+  {
+   "topic": "pod-break",
+   "arm": "after",
+   "src": "boss-fight",
+   "anchor": {
+    "t": 40.25,
+    "type": "partBreak",
+    "tick": 4791,
+    "id": 8,
+    "target": "boss",
+    "part": "cannonPod",
+    "partKind": "cannonPod",
+    "pos": {
+     "x": 74.35881629150691,
+     "y": 164.00000000000023
+    },
+    "by": "writ",
+    "hitPos": {
+     "x": 78.94189052587517,
+     "y": 186.02212126623067
+    },
+    "shotVel": {
+     "x": 0,
+     "y": -18
+    },
+    "first": true
+   },
+   "start": 37.75,
+   "end": 44.25,
+   "id": "v960",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -14.2,
+    "medianDb": -22.4,
+    "overMedianDb": 8.2,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.43,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.61,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.76,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.42,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.42,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.54,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.54,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.57,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.73,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.73,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.81,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.84,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.87,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.94,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.08,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.24,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.26,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.5,
+     "type": "partBreak",
+     "target": "boss",
+     "part": "cannonPod",
+     "by": "writ"
+    },
+    {
+     "t": 2.56,
+     "type": "bossPhase"
+    },
+    {
+     "t": 2.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.71,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 2.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.04,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 3.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.22,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.37,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.37,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 3.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.58,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.61,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.61,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.7,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.7,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.73,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.73,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.76,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.8,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.19,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.19,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.55,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.81,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.84,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.96,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.05,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.05,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.17,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.17,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.23,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.29,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.33,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.45,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 5.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.65,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.68,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.99,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 5.99,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.01,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 6.01,
+     "type": "intel"
+    },
+    {
+     "t": 6.05,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.05,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.08,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.08,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.2,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.31,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 6.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.49,
+     "type": "focusChanged"
+    }
+   ],
+   "writs": [
+    {
+     "t": 2.24,
+     "tier": 3,
+     "hit": true,
+     "result": "partBreak"
+    },
+    {
+     "t": 5.29,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    }
+   ]
+  },
+  {
+   "topic": "dense",
+   "arm": "after",
+   "src": "boss-fight",
+   "anchor": {
+    "t": 48.835,
+    "type": "dense",
+    "tick": 5807
+   },
+   "start": 46.335,
+   "end": 52.835,
+   "id": "v202",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -20.3,
+    "medianDb": -20.7,
+    "overMedianDb": 0.4,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.19,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 0.19,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.22,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.76,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.76,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.79,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.79,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 0.82,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.85,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.88,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.91,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.94,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.94,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 0.97,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.03,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.06,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.09,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.12,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.15,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.18,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.24,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 1.39,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.39,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.54,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.6,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 1.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.6,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.63,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.9,
+     "type": "focusChanged"
+    },
+    {
+     "t": 1.93,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 1.99,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 1.99,
+     "type": "intel"
+    },
+    {
+     "t": 2.02,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 2.02,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 2.08,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.14,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.32,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.47,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.5,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.53,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.56,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 2.56,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 2.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.65,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.68,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.71,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.71,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.8,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.8,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.86,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 2.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.13,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 3.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.19,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.22,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.22,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.31,
+     "type": "scanLock",
+     "target": "enemy",
+     "kind": "drone"
+    },
+    {
+     "t": 3.31,
+     "type": "intel"
+    },
+    {
+     "t": 3.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.46,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 3.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.52,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.58,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.58,
+     "type": "focusChanged"
+    },
+    {
+     "t": 3.79,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 3.82,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 4.0,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.27,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.3,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.39,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 4.45,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.48,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.51,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.66,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.69,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.72,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.72,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.75,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.78,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.78,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.78,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.81,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.81,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.81,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.84,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.84,
+     "type": "focusChanged"
+    },
+    {
+     "t": 4.9,
+     "type": "chargeLevel",
+     "level": 1
+    },
+    {
+     "t": 5.23,
+     "type": "chargeLevel",
+     "level": 2
+    },
+    {
+     "t": 5.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.35,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.38,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.41,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.44,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.56,
+     "type": "chargeLevel",
+     "level": 3
+    },
+    {
+     "t": 5.56,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.56,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.56,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.59,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.62,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.71,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.74,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.77,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.8,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.8,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.8,
+     "type": "chargeLevel",
+     "level": 0
+    },
+    {
+     "t": 5.83,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.83,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.86,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.89,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.92,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.95,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 5.98,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.01,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.04,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.07,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.1,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.13,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.16,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 6.16,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.19,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.25,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.28,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.31,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.34,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.37,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.4,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.43,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.46,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.49,
+     "type": "focusChanged"
+    },
+    {
+     "t": 6.49,
+     "type": "focusChanged"
+    }
+   ],
+   "writs": [
+    {
+     "t": 0.16,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 2.02,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 3.79,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    },
+    {
+     "t": 5.8,
+     "tier": 3,
+     "hit": true,
+     "result": "kill"
+    }
+   ]
+  },
+  {
+   "topic": "life-kill",
+   "arm": "after",
+   "src": "tap",
+   "anchor": {
+    "t": 14.034,
+    "type": "lifeLost",
+    "tick": 767,
+    "livesLeft": 3
+   },
+   "start": 11.534,
+   "end": 18.034,
+   "id": "v380",
+   "anchorAt": 2.5,
+   "audio": {
+    "peakDb": -11.4,
+    "medianDb": -17.0,
+    "overMedianDb": 5.6,
+    "silentFrac": 0.0
+   },
+   "events": [
+    {
+     "t": 0.46,
+     "type": "despawn"
+    },
+    {
+     "t": 0.64,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.79,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 0.79,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 0.85,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 0.85,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.03,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.03,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 1.24,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 1.24,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 0
+    },
+    {
+     "t": 1.42,
+     "type": "despawn"
+    },
+    {
+     "t": 1.54,
+     "type": "despawn"
+    },
+    {
+     "t": 1.84,
+     "type": "despawn"
+    },
+    {
+     "t": 2.35,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 2.5,
+     "type": "lifeLost"
+    },
+    {
+     "t": 2.5,
+     "type": "kill",
+     "kind": "drone"
+    },
+    {
+     "t": 5.83,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.83,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.83,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.83,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.83,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 5.83,
+     "type": "spawn",
+     "kind": "drone"
+    },
+    {
+     "t": 6.13,
+     "type": "partBreak",
+     "target": "enemy",
+     "part": "gun",
+     "by": "aimed"
+    },
+    {
+     "t": 6.13,
+     "type": "disarm",
+     "kind": "drone",
+     "cancelled": 1
+    }
+   ],
+   "writs": []
+  }
+ ],
+ "pairs": [
+  {
+   "topic": "move",
+   "X": "v618",
+   "Y": "v718",
+   "X_arm": "after",
+   "Y_arm": "before"
+  },
+  {
+   "topic": "disarm",
+   "X": "v415",
+   "Y": "v915",
+   "X_arm": "before",
+   "Y_arm": "after"
+  },
+  {
+   "topic": "writ1-hit",
+   "X": "v819",
+   "Y": "v547",
+   "X_arm": "before",
+   "Y_arm": "after"
+  },
+  {
+   "topic": "writ1-miss",
+   "X": "v363",
+   "Y": "v731",
+   "X_arm": "after",
+   "Y_arm": "before"
+  },
+  {
+   "topic": "writ3-hit",
+   "X": "v637",
+   "Y": "v881",
+   "X_arm": "before",
+   "Y_arm": "after"
+  },
+  {
+   "topic": "writ3-miss",
+   "X": "v486",
+   "Y": "v266",
+   "X_arm": "after",
+   "Y_arm": "before"
+  },
+  {
+   "topic": "writ-deflect",
+   "X": "v864",
+   "Y": "v454",
+   "X_arm": "before",
+   "Y_arm": "after"
+  },
+  {
+   "topic": "pod-break",
+   "X": "v960",
+   "Y": "v647",
+   "X_arm": "after",
+   "Y_arm": "before"
+  },
+  {
+   "topic": "dense",
+   "X": "v202",
+   "Y": "v673",
+   "X_arm": "after",
+   "Y_arm": "before"
+  },
+  {
+   "topic": "life-kill",
+   "X": "v978",
+   "Y": "v380",
+   "X_arm": "before",
+   "Y_arm": "after"
+  }
+ ]
+}

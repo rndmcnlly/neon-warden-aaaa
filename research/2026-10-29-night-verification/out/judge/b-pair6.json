@@ -1,0 +1,76 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "Y",
+   "why": "Both clips show the same ship movement, including dashes at t=1.8s and t=2.8s, and slow movement around t=3-4s. However, Y removes the scrolling vertical lane lines on the floor, making the ship's position and velocity much easier to track against a clean dark-blue background.",
+   "confidence": 0.9
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Neither clip shows single tap shots; the player only fires charged shots.",
+   "confidence": 0.95
+  },
+  {
+   "item": 3,
+   "better": "Y",
+   "why": "Enemies are destroyed by charged shots at t=1.8s and t=4.8s in both clips. In Y, the absence of floor grid lines makes the enemy silhouettes, lock-on rings, and explosion effects stand out more clearly.",
+   "confidence": 0.75
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "Both clips identically display the cannon charge meter in the top right and the white arc indicator in front of the ship before firing at t=1.8s and t=4.6s.",
+   "confidence": 0.9
+  },
+  {
+   "item": 5,
+   "better": "Y",
+   "why": "Charged shots are fired and hit scouts at t=1.8s and t=4.7s. The projectile trail and impact ring are slightly easier to read against the solid floor in Y than over the scrolling dashes in X.",
+   "confidence": 0.75
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "No shots bounce off armor in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 8,
+   "better": "Y",
+   "why": "At t=4.5s in both clips, the player is hit by pink enemy bullets and loses a life (hull drops from 4 to 3). In X, a heavy, sharp-edged red border flashes around the screen (t=4.5-5.0s) which is visually jarring and obscures the edges, whereas Y uses a cleaner, softer red vignette along with the expanding pink ring and explosion SFX.",
+   "confidence": 0.85
+  },
+  {
+   "item": 9,
+   "better": "not_present",
+   "why": "There are no moments with many simultaneous hits to disambiguate in either clip.",
+   "confidence": 0.9
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 0,
+   "issue": "Scrolling vertical dashed lane markings and faint circles on the track floor add visual noise that competes with small enemy bullets and target indicators throughout the clip.",
+   "severity": "medium"
+  },
+  {
+   "clip": "X",
+   "t": 4.5,
+   "issue": "When losing a life, a harsh, opaque-looking red rectangular border flashes around the entire screen, briefly distracting from the active bullets and enemies inside the lane.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "Y",
+  "why": "Clip Y removes the scrolling dashed lane lines and floor patterns present in Clip X, leaving a clean, solid dark surface inside the playfield. This significantly improves contrast for small pink enemy bullets, enemy ships, and targeting HUD elements. Additionally, the screen-edge damage indicator at t=4.5s in Y is a smoother vignette rather than X's harsh red border."
+ }
+}

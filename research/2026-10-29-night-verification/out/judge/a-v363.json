@@ -1,0 +1,67 @@
+{
+ "summary": "The player weaves through pink bullets in the upper playfield while charging up a shot, releases a level 2 charged shot into empty space at the top edge, and shortly after collides with a pink bullet and loses a life.",
+ "events": [
+  {
+   "t": 0.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship shifts right and slightly up to dodge incoming pink bullets.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.2,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves slightly left and down as the charge meter fills to 2 bars.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 1.7,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "none",
+   "evidence": "WAIT meter had 2 filled bars and resets to 0; a wide cyan crescent projectile fires upward with a whoosh/discharge sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2,
+   "type": "charged_miss",
+   "strength": 2,
+   "target": "none",
+   "evidence": "The cyan crescent shot travels off the top edge of the screen without hitting any enemy.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.5,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves left and then right while navigating pink bullets.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 3.8,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Player ship contacts a pink bullet near the top; screen border flashes red, an explosion ring expands from the ship, lives drop from 5 to 4, and a heavy hit/explosion sound plays.",
+   "channel": "both",
+   "confidence": 1
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 2,
+   "issue": "Circular pink ripple/spawn indicators on the lane floor look very similar in color and shape to the active pink bullets, making it slightly harder to distinguish active hazards from floor telegraph rings.",
+   "confidence": 0.75
+  }
+ ],
+ "speech": []
+}

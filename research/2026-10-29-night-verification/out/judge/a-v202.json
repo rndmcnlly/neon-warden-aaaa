@@ -1,0 +1,112 @@
+{
+ "summary": "The player fights the boss (The Warden's core, shaped like a heart), dodging arcs of pink bullets while alternating between scanning/focusing and firing charged shots and short streams at it.",
+ "events": [
+  {
+   "t": 0,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Large cyan projectile travels up toward the heart-shaped boss at the start of the clip.",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 0.2,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "The boss flashes white and a hit sound plays as the cyan projectile impacts.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.6,
+   "type": "focus_or_slow_mode",
+   "strength": 0,
+   "target": "boss",
+   "evidence": "A wide cyan scanning cone projects from the player ship toward the boss; 'Scanning' bar fills at top left.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.6,
+   "type": "stream_fire",
+   "strength": 0,
+   "target": "boss",
+   "evidence": "Player fires a brief stream of small cyan shots upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.8,
+   "type": "hull_hit",
+   "strength": 0,
+   "target": "boss",
+   "evidence": "Stream shots hit the boss, causing rapid white flashes and impact sounds.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.9,
+   "type": "focus_or_slow_mode",
+   "strength": 0,
+   "target": "boss",
+   "evidence": "Wide cyan scanning cone activates again as player moves left.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 3.5,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Player releases a charged cyan projectile while cannon meter resets.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.7,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Charged projectile hits the boss, which flashes bright white with a heavy impact sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.8,
+   "type": "focus_or_slow_mode",
+   "strength": 0,
+   "target": "boss",
+   "evidence": "Cyan scanning cone appears again, sweeping toward the boss.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.8,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Player fires a charged shot upward from the bottom left.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 6.1,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Shot impacts the left side of the heart boss with a flash.",
+   "channel": "both",
+   "confidence": 0.9
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 3.3,
+   "issue": "Pink oval debris/pickups floating down look very similar in color and shape to the pink enemy bullets.",
+   "confidence": 0.85
+  }
+ ],
+ "speech": []
+}

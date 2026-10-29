@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "Y",
+   "why": "In Y, scrolling vertical dashes and orange/blue floor markers on the lane give a strong sense of forward speed and lateral ship movement throughout (0.0-6.5s). In X, the lane floor is a flat, featureless blue, making ship movement feel ungrounded. Both clips show the white ring around the ship at 1.9-2.2s.",
+   "confidence": 0.9
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Only charged arc shots are fired in both clips; no single tap shots occur.",
+   "confidence": 0.95
+  },
+  {
+   "item": 3,
+   "better": "same",
+   "why": "In both clips, charged arc shots disarm scouts at ~0.5s, 1.3s, 2.3s, 4.1s, and 5.6s (the pink ring disappears, the dark hull remains and drifts off, and the 'Disarmed!' HUD counter on the right increments). Neither clip makes the broken weapon part vs surviving hull noticeably clearer than the other.",
+   "confidence": 0.75
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "Both clips show the same cyan charge bar under CANNON on the top right and fire similar cyan crescent wave shots at 0.0s, 1.1s, 1.8s, 3.8s, and 5.2s with identical audio cues.",
+   "confidence": 0.8
+  },
+  {
+   "item": 5,
+   "better": "same",
+   "why": "Charged crescent shots hit scouts at ~0.5s, 1.3s, 2.3s, 4.1s, and 5.6s in both clips with the same hit sound and target-ring removal.",
+   "confidence": 0.8
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "No shots bouncing off armor are shown in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 8,
+   "better": "Y",
+   "why": "When the player is hit by a pink bullet at 1.0s (and again at 6.0s in Y), both clips show a bright blinding flash on the ship and decrement the top-right pink hull pips. However, Y adds a distinct red vignette/border flash around the screen edges (1.0-1.3s and 6.0-6.5s), making it much clearer that the player took damage rather than just triggering a weapon effect.",
+   "confidence": 0.95
+  },
+  {
+   "item": 9,
+   "better": "same",
+   "why": "When the wide arc shots sweep through multiple scouts (e.g., 1.2-1.5s and 2.1-2.5s), both clips use the same rapid overlapping hit ticks and visual ring removals.",
+   "confidence": 0.75
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 1,
+   "issue": "The player taking damage creates a huge bright white flash over the ship and nearby enemies/bullets without a screen-edge damage indicator, obscuring nearby pink bullets and looking like an attack explosion.",
+   "severity": "high"
+  },
+  {
+   "clip": "Y",
+   "t": 1,
+   "issue": "The large white flash when the player is hit still obscures the ship and nearby pink bullets around 1.0-1.2s, though the red screen border helps clarify what happened.",
+   "severity": "medium"
+  },
+  {
+   "clip": "Y",
+   "t": 0.5,
+   "issue": "Scrolling orange and blue dots on the lane floor add minor visual noise underneath the pink enemies and bullets, though they remain dimmer than threats.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "Y",
+  "why": "Clip Y is easier to read mainly because it adds a clear red screen-border flash when the player takes damage (at 1.0s and 6.0s), disambiguating player damage from the bright white explosion flash, and its scrolling floor markings provide much better spatial reference for ship movement than X's blank blue lane."
+ }
+}

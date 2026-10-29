@@ -1,0 +1,108 @@
+{
+ "summary": "The player weaves right and left across the lane, firing three level-3 charged arcs: the first disarms a small ship near the top-left, the second misses a cluster of ships on the left, and the third hits a ship near the player just as the player takes a bullet hit and loses a life.",
+ "events": [
+  {
+   "t": 0.1,
+   "type": "enemy_disarmed",
+   "strength": 3,
+   "target": "small enemy top-left",
+   "evidence": "A wide cyan arc (charged shot) sweeps up and hits a pink-outlined ship at top-left; white ring expands, score jumps from 200 to 300, a metallic clatter sound plays, and the ship remains intact without its pink outline.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.5,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves sharply from center-bottom to the far right edge.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player reverses from the right edge back toward the center.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.4,
+   "type": "charged_release",
+   "strength": 3,
+   "target": "none",
+   "evidence": "The 3-bar cyan CANNON gauge empties, a wide cyan arc launches from the player ship, and a whoosh-pop release sound plays.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.9,
+   "type": "charged_miss",
+   "strength": 3,
+   "target": "small enemies on the left",
+   "evidence": "The cyan arc travels up the center-right of the lane while the three pink-outlined ships drift on the left; the arc passes without hitting anything.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.5,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player drifts right toward the lower-right side of the lane.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves back left toward the bottom-center.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.9,
+   "type": "charged_release",
+   "strength": 3,
+   "target": "small enemy near bottom-center",
+   "evidence": "The 3-bar cyan CANNON gauge empties and a wide cyan arc launches directly into an approaching pink-outlined ship.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 5,
+   "type": "enemy_disarmed",
+   "strength": 3,
+   "target": "small enemy near bottom-center",
+   "evidence": "The arc strikes the ship right in front of the player; score jumps from 300 to 500, a metallic breakup sound plays, and the ship's hull continues upward without its pink outline.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.5,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player ship",
+   "evidence": "A pink enemy bullet reaches the player at bottom-center; the screen edges flash red, a heavy low crunch/thud plays, and the top-right pink pips drop from 3 to 2.",
+   "channel": "both",
+   "confidence": 0.95
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1.5,
+   "issue": "Disarmed enemy hulls turn dark grey and blend heavily into the dark grey lane floor, making it hard to see where the surviving hulls are drifting.",
+   "confidence": 0.85
+  },
+  {
+   "t": 5,
+   "issue": "The bright white glow of the fully charged player ship overlaps the incoming pink enemy bullet at point-blank range, making the bullet that causes the life loss at 5.5s hard to track right before impact.",
+   "confidence": 0.8
+  }
+ ],
+ "speech": []
+}

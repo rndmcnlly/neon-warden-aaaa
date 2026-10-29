@@ -1,0 +1,90 @@
+{
+ "summary": "The player fights the heart-shaped boss 'The Warden', firing two charged shots that break off two pods from the boss while dodging waves of pink bullets.",
+ "events": [
+  {
+   "t": 0.4,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "A cyan crescent wave is released from the player ship after the cannon bar fills to 1 pip, accompanied by a swoosh sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.6,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "boss left pod",
+   "evidence": "The cyan crescent hits the left side of the heart boss with a bright yellow ring impact and a metallic crunch sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.8,
+   "type": "boss_part_broken_off",
+   "strength": 0,
+   "target": "boss left pod",
+   "evidence": "A small piece detaches from the left side of the boss and tumbles away to the top-left.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "The player ship moves from the left side toward the center-right to thread between pink bullet waves.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "A second cyan crescent wave is fired upward from the player ship after charging 1 pip.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.9,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "boss right pod",
+   "evidence": "A cyan crescent hits the right side of the boss, producing a circular shockwave and impact sound.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.1,
+   "type": "boss_part_broken_off",
+   "strength": 0,
+   "target": "boss right pod",
+   "evidence": "A pod labeled 'RELIC' detaches from the boss and floats downward with a circular reticle around it.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.3,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "The player releases another cyan crescent wave upward toward the boss.",
+   "channel": "both",
+   "confidence": 0.95
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 2.8,
+   "issue": "The bright cyan muzzle flash and charging aura around the player ship partially obscure nearby pink enemy bullets right next to the ship hitbox.",
+   "confidence": 0.8
+  },
+  {
+   "t": 5.2,
+   "issue": "The detached relic part floating down has a bright circular indicator that looks very similar in size and color to the incoming pink/purple enemy bullets.",
+   "confidence": 0.85
+  }
+ ],
+ "speech": []
+}

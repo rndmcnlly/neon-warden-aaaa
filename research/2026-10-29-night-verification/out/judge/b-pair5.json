@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "same",
+   "why": "Both clips show the ship moving horizontally and vertically with identical thruster glow, scanning cone, and charge arc behavior (X 0:00-0:06, Y 0:00-0:06). Neither shows a distinct slow/focus mode toggle difference.",
+   "confidence": 0.85
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Neither clip shows single tap shots; both clips only show charged shots being released (X at 0:02, Y at 0:02).",
+   "confidence": 0.9
+  },
+  {
+   "item": 3,
+   "better": "X",
+   "why": "In Clip X, at 0:03-0:06, after the charged shot hits at 0:02, one enemy is disarmed: a floating 'NEUTRAL' label appears over it, a left-hand HUD message logs 'Lane Control logs a disarm', and a distinct chime plays. In Clip Y, at 0:02-0:03, the charged shot destroys the enemies outright with white shockwave rings and no disarm event occurs.",
+   "confidence": 0.95
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "Both clips show a full charge arc ahead of the ship and release a large charged shot with a bright white ring around the ship (X at 0:02, Y at 0:02) with very similar audio-visual presentation.",
+   "confidence": 0.85
+  },
+  {
+   "item": 5,
+   "better": "same",
+   "why": "Both clips show a charged shot released at 0:02 that hits enemies directly ahead with bright white expanding rings and clear impact audio (X at 0:02-0:03, Y at 0:02-0:03); neither shows a missed charged shot for comparison.",
+   "confidence": 0.85
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "Neither clip shows shots bouncing off armor.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 8,
+   "better": "Y",
+   "why": "Clip Y shows the player getting hit by an enemy bullet at 0:03, losing one hull pip (top right goes from 4 to 3) with a prominent red screen-edge vignette flash, white concentric rings around the ship, and a heavy hit sound. Clip X does not contain a player hit.",
+   "confidence": 0.95
+  },
+  {
+   "item": 9,
+   "better": "X",
+   "why": "In Clip X at 0:02-0:03, when the charged shot hits two enemies, the resulting states are clearly separated: one is destroyed and the other is marked 'NEUTRAL' with a distinct bracket and text callout. In Clip Y at 0:02-0:03, the charged shot hit overlaps with the player taking damage at 0:03, creating overlapping white rings that make individual hit outcomes harder to parse.",
+   "confidence": 0.8
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "Y",
+   "t": 1,
+   "issue": "The grey lane surface has dashed road-like markings and small dark/orange scrolling specks that add visual noise behind pink enemy bullets and enemies, compared to the cleaner blue lane in Clip X.",
+   "severity": "medium"
+  },
+  {
+   "clip": "Y",
+   "t": 2.3,
+   "issue": "The massive bright white flash and expanding ring from firing the charged shot right in front of approaching enemies and bullets momentarily obscures an incoming pink enemy bullet, leading to the player getting hit at 0:03.",
+   "severity": "high"
+  },
+  {
+   "clip": "X",
+   "t": 2.1,
+   "issue": "The bright white flash around the player ship when releasing the charged shot briefly obscures the ship's exact hitbox.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "X",
+  "why": "Clip X has a cleaner, deeper blue lane background without the scrolling specks and dashed road lines seen in Clip Y, providing better contrast for pink enemy bullets and enemies. Clip X also clearly communicates enemy disarm states with on-screen 'NEUTRAL' labels and HUD notifications."
+ }
+}

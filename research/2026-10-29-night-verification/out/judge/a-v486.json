@@ -1,0 +1,95 @@
+{
+ "summary": "In Sector 1 (Outer Drift), the player engages two incoming waves of small Scout enemies. The player releases a maximum-strength charged shot on the left side that misses, then maneuvers right and takes damage (losing one shield/life pip) while releasing another charged shot that hits and disarms or destroys one of the scouts.",
+ "events": [
+  {
+   "t": 1.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves horizontally to the left side of the lane.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.9,
+   "type": "charged_release",
+   "strength": 3,
+   "target": "none",
+   "evidence": "All three yellow WRIST charge bars empty as a large glowing white projectile is fired upward with a firing sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.3,
+   "type": "charged_miss",
+   "strength": 3,
+   "target": "Scout",
+   "evidence": "The charged projectile passes just to the left of the targeted Scout and goes off the top of the screen.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves from the far left toward the center-right of the lane.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.9,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "Scout",
+   "evidence": "After two yellow WRIST bars fill, the player fires a charged shot upward just as the screen flashes red.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 4.9,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Screen border flashes bright red, a heavy impact/explosion sound plays, and the top-right pink health/shield pips drop from 5 to 4.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.1,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "Scout",
+   "evidence": "The released projectile strikes a Scout in the upper-middle of the lane; score increases from 0 to 100.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.2,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "Scout",
+   "evidence": "A green circular indicator appears around the hit Scout as it drifts upward and the score combo/points tick up again (to 200+).",
+   "channel": "seen",
+   "confidence": 0.65
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1.5,
+   "issue": "First-wave Scouts and the circular pink bullets they fire use identical pink/magenta outlines, making it hard to distinguish enemy hulls from incoming projectiles at a glance.",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.9,
+   "issue": "The full-screen red damage flash and player hit effect happen simultaneously with the player's charged shot release and impact, making it difficult to visually separate the player getting hit from the enemy getting hit.",
+   "confidence": 0.85
+  },
+  {
+   "t": 5,
+   "issue": "Loud upbeat background music masks the subtle audio cues of charging and enemy hit/disarm sound effects.",
+   "confidence": 0.8
+  }
+ ],
+ "speech": []
+}

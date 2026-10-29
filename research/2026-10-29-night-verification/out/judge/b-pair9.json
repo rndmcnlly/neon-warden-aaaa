@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "same",
+   "why": "Both clips clearly show the ship moving, banking, and using the cyan scan/focus cone (e.g. X at 0:01, 0:03, 0:05; Y at 0:00, 0:01, 0:04). The visual and audio cues for movement and scanning are identical.",
+   "confidence": 0.9
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Neither clip shows single tap shots; the player only uses charged shots after resting or scanning.",
+   "confidence": 0.9
+  },
+  {
+   "item": 3,
+   "better": "not_present",
+   "why": "Small scout enemies appear briefly and are scanned (e.g., X at 0:03, Y at 0:01 and 0:06), but none are shot, disarmed, or destroyed in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "Both clips show the cannon charge meter in the top right filling up to 3 bars with identical rising audio cues and bright ship glow upon release (X at 0:00, 0:02, 0:04, 0:06; Y at 0:02, 0:04, 0:06).",
+   "confidence": 0.9
+  },
+  {
+   "item": 5,
+   "better": "same",
+   "why": "Every charged shot in both clips hits the boss (X at 0:00, 0:02, 0:04, 0:06; Y at 0:03, 0:04, 0:06), producing a clear white flash on the heart boss and a distinct impact sound. Neither clip shows a miss for comparison.",
+   "confidence": 0.9
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "No shots bounce off armor in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "The boss takes damage to its health bar, but no parts or pods break off during either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 8,
+   "better": "not_present",
+   "why": "The player does not get hit or lose a life in either clip (hull stays at 3 bars).",
+   "confidence": 1
+  },
+  {
+   "item": 9,
+   "better": "not_present",
+   "why": "Only single charged shots hit the boss one at a time in both clips; there are no moments with many simultaneous hits.",
+   "confidence": 0.95
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 2,
+   "issue": "Faint vertical dashed lines scrolling down the floor add minor visual noise compared to Y's clean floor, though bullets remain easy to see.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 4,
+   "issue": "The warm reddish-orange floor color reduces contrast slightly with the pink/magenta enemy bullets and pink grazing rings compared to the darker grey floor in X.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 4.2,
+   "issue": "When the ship charges and fires, the bright white/yellow bloom around the player ship is much larger than in X, momentarily obscuring nearby pink bullets right in front of the ship.",
+   "severity": "medium"
+  }
+ ],
+ "overall": {
+  "better": "X",
+  "why": "Clip X has better contrast between the dark grey track floor and the pink enemy bullets, and the player ship's charge/fire glow is more contained than in Y (where the bright flash at 0:04 briefly obscures nearby bullets)."
+ }
+}

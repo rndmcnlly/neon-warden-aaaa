@@ -1,0 +1,180 @@
+{
+ "summary": "The player weaves between incoming pink bullets, fires several shots and charged blasts, and loses two hull points when colliding with enemies or bullets.",
+ "events": [
+  {
+   "t": 0,
+   "type": "tap_shot",
+   "strength": 0,
+   "target": "none",
+   "evidence": "A white projectile travels upward from the player ship.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "The player ship moves sharply to the right.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "none",
+   "evidence": "A wide white arc projectile is fired upward accompanied by a whooshing sound.",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 1.1,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "The player ship reverses direction and moves to the left.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.2,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "none",
+   "evidence": "The wide white arc travels off the top of the playfield without hitting any enemies.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 2,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "A wide white arc and a small shot are fired upward.",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 2.2,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "The screen flashes red, a heavy impact sound plays, and the top-right HULL indicator drops from 4 to 3 bars.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.3,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "The wide arc hits an enemy near the top center.",
+   "channel": "seen",
+   "confidence": 0.7
+  },
+  {
+   "t": 3.4,
+   "type": "tap_shot",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "A small white projectile is fired upward as the ship moves right.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.6,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "The tap shot hits the targeted enemy at the top center, which vanishes with a small flash and sound.",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.2,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "A wide white arc is released from the right side of the screen.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 4.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "The player ship moves from the right side back toward the left.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.4,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "The wide arc sweeps through the cluster of three enemies on the right.",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.4,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Following the arc hit, one or more enemies in the right group lose their red glow/parts and drift away.",
+   "channel": "both",
+   "confidence": 0.6
+  },
+  {
+   "t": 4.9,
+   "type": "tap_shot",
+   "strength": 0,
+   "target": "none",
+   "evidence": "A single white projectile is fired upward.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "The player ship changes direction from left to right.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "A wide white arc and a small shot are fired at close range toward incoming enemies.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 6,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "The screen flashes bright red, an impact sound plays, and the HULL indicator drops from 3 to 2 bars as an enemy/bullet hits the ship.",
+   "channel": "both",
+   "confidence": 0.95
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 0.5,
+   "issue": "Enemy ships and enemy bullets are both small, round, and outlined in pink/magenta, making it very difficult to distinguish enemies from projectiles at a glance.",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.2,
+   "issue": "The bright white glow of the player ship and its firing effect obscures the pink bullet/enemy colliding with the player.",
+   "confidence": 0.8
+  }
+ ],
+ "speech": []
+}

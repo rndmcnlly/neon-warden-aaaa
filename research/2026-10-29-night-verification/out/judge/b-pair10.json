@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "same",
+   "why": "Both X and Y show identical ship movement, banking, and the white targeting cone ahead of the ship.",
+   "confidence": 0.9
+  },
+  {
+   "item": 2,
+   "better": "same",
+   "why": "Single tap shots are fired in X (0.0s, 4.9s) and Y (0.6s, 2.5s), but they appear to miss or only charge shots hit.",
+   "confidence": 0.7
+  },
+  {
+   "item": 3,
+   "better": "same",
+   "why": "In X (0.8s, 3.7s, 5.9s) enemies are destroyed with an explosion. In Y (0.0s, 0.9s, 3.1s, 5.5s) enemies are disarmed (red rings disappear, grey hulls float away, HUD text at 1.0s says 'disarmed, not dead'). Both states are communicated clearly in their respective clips.",
+   "confidence": 0.85
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "Wait gauge fills and releases charge shots with a white arc in both X (0.6s, 1.4s, 2.3s, 3.5s, 5.7s) and Y (0.9s, 1.5s, 3.0s, 5.3s, 6.0s).",
+   "confidence": 0.85
+  },
+  {
+   "item": 5,
+   "better": "same",
+   "why": "Charge shots hitting vs missing (e.g. X at 1.4s misses, 0.8s hits; Y at 1.5s misses, 0.9s hits) are equally clear in both.",
+   "confidence": 0.85
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "Neither clip shows shots bouncing off armor.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 8,
+   "better": "same",
+   "why": "The player loses a hull point in X at 1.8s and 5.9s, and in Y at 2.1s. Both feature a bright red screen border flash, expanding ring on the ship, and a loud impact sound.",
+   "confidence": 0.95
+  },
+  {
+   "item": 9,
+   "better": "same",
+   "why": "Multi-hits from the wide arc shot occur in X (0.8s) and Y (0.9s, 5.5s) and are similarly readable.",
+   "confidence": 0.8
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "Y",
+   "t": 1,
+   "issue": "Scrolling vertical white dashes and yellow/green dots on the floor track add visual noise behind combat compared to the clean blue floor in X.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 3.5,
+   "issue": "Disarmed grey enemy hulls stay on the playfield drifting downward, which can momentarily compete with active targets against the busier floor.",
+   "severity": "low"
+  },
+  {
+   "clip": "X",
+   "t": 1.8,
+   "issue": "Full-screen red damage vignette is very intense and briefly obscures peripheral vision (also happens at 5.9s in X and 2.1s in Y).",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "X",
+  "why": "Clip X has a clean, solid blue floor surface that gives maximum contrast to enemy bullets, red target rings, and the player's white aiming arc. Clip Y adds scrolling lane dashes and colored dots on the floor which slightly reduces contrast and adds background motion noise."
+ }
+}

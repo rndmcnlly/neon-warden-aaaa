@@ -1,0 +1,76 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "X",
+   "why": "In X, the scrolling vertical white dashes on the floor give a clear sense of forward speed and ship movement relative to the track (0.0-6.5s). Y lacks these floor lines, making the ship feel like it is hovering in a static box.",
+   "confidence": 0.7
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "No shots are fired in either clip; the player is using a scanning cone.",
+   "confidence": 1
+  },
+  {
+   "item": 3,
+   "better": "not_present",
+   "why": "No small enemies are disarmed or destroyed in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 4,
+   "better": "not_present",
+   "why": "No charged shots are fired in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 5,
+   "better": "not_present",
+   "why": "No charged shots are fired in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "No shots bounce off armor in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 7,
+   "better": "same",
+   "why": "In both X and Y, a boss part breaks off on the left at 2.1s with a loud screech and grey smoke, and another part breaks off at the bottom at 5.0s, drifting down with a reticle.",
+   "confidence": 0.9
+  },
+  {
+   "item": 8,
+   "better": "not_present",
+   "why": "The player does not lose a life in either clip (hull stays at 3).",
+   "confidence": 1
+  },
+  {
+   "item": 9,
+   "better": "not_present",
+   "why": "There are no multi-hit weapon volleys in either clip.",
+   "confidence": 1
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 2,
+   "issue": "Bright scrolling vertical white dashes on the floor and heavier bloom on the ship and scan cone compete visually with the small green projectiles.",
+   "severity": "medium"
+  },
+  {
+   "clip": "Y",
+   "t": 1.5,
+   "issue": "The warm orange-brown floor reduces contrast with the pink enemy bullets slightly compared to X's darker floor, though small green projectiles are easier to spot without the white floor dashes.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "Y",
+  "why": "Y removes the distracting scrolling white floor dashes and tones down the excessive bloom on the player ship and scanning cone (especially around 2.0s and 5.0s), making the small green projectiles and pink bullet patterns much cleaner and easier to read."
+ }
+}

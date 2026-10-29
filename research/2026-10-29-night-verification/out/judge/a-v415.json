@@ -1,0 +1,126 @@
+{
+ "summary": "The player fires several wide charged arc shots while moving laterally across the lane. At 0.3s an enemy in the middle is destroyed, and at 1.9s an enemy on the upper left is disarmed with a bright ring flash, accompanied by an on-screen Fleet Channel message ('Drift Six, disarmed, not dead'). Subsequent charged releases miss or pass through empty space.",
+ "events": [
+  {
+   "t": 0.1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Wide cyan arc travels up the center lane with a laser sweep sound",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 0.3,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Small enemy near top-center bursts with a flash and score increases from 600 to 800",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 0.7,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves left then right near bottom center",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.3,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "Player releases a bright flash and cyan arc moving up-left",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.9,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "Arc strikes the upper-left enemy producing a distinct metallic/ringing hit sound and white ring flash",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.9,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "White ring expands around upper-left enemy, its red outline disappears, and on-screen text reads 'Drift Six, disarmed, not dead'",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player slides right across the bottom of the playfield",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.7,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Cyan arc fired upward on the right side with a sweep sound",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.2,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Arc passes just left of the targeted enemy on the right without hitting it",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 3.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves back toward the center-left",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.2,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Short cyan arc released upward from center-left",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.2,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Arc dissipates on the left side before reaching the top cluster of enemies",
+   "channel": "seen",
+   "confidence": 0.85
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1.2,
+   "issue": "Bright white bloom around the charging player ship obscures the ship silhouette and nearby area",
+   "confidence": 0.8
+  },
+  {
+   "t": 5.5,
+   "issue": "Sustained bright white glow on the player ship makes it hard to see exact hitbox position",
+   "confidence": 0.8
+  }
+ ],
+ "speech": []
+}

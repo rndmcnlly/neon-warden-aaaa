@@ -1,0 +1,285 @@
+{
+ "spent": 0.302704,
+ "calls": [
+  {
+   "name": "a-v718",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.021044,
+   "tokens": [
+    2242,
+    1656
+   ],
+   "wallS": 27.26,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v415",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.015712,
+   "tokens": [
+    1801,
+    1211
+   ],
+   "wallS": 19.175,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v819",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.016386,
+   "tokens": [
+    1803,
+    1278
+   ],
+   "wallS": 19.37,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v731",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.017712,
+   "tokens": [
+    1801,
+    1411
+   ],
+   "wallS": 20.829,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v637",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.016126,
+   "tokens": [
+    1803,
+    1252
+   ],
+   "wallS": 19.053,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v266",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.014136,
+   "tokens": [
+    1803,
+    1053
+   ],
+   "wallS": 16.95,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v864",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.016406,
+   "tokens": [
+    1803,
+    1280
+   ],
+   "wallS": 18.947,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v647",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.010436,
+   "tokens": [
+    1803,
+    683
+   ],
+   "wallS": 13,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v673",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.014556,
+   "tokens": [
+    1803,
+    1095
+   ],
+   "wallS": 17.37,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v978",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.016352,
+   "tokens": [
+    1801,
+    1275
+   ],
+   "wallS": 42.232,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v618",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.023324,
+   "tokens": [
+    2242,
+    1884
+   ],
+   "wallS": 29.423,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v915",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.015652,
+   "tokens": [
+    1801,
+    1205
+   ],
+   "wallS": 18.709,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v547",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.014936,
+   "tokens": [
+    1803,
+    1133
+   ],
+   "wallS": 17.744,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v363",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.010466,
+   "tokens": [
+    1803,
+    686
+   ],
+   "wallS": 18.348,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v881",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.010816,
+   "tokens": [
+    1803,
+    721
+   ],
+   "wallS": 13.484,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v486",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.013732,
+   "tokens": [
+    1801,
+    1013
+   ],
+   "wallS": 18.013,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v454",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.011822,
+   "tokens": [
+    1801,
+    822
+   ],
+   "wallS": 14.821,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v960",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.012636,
+   "tokens": [
+    1803,
+    903
+   ],
+   "wallS": 15.563,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v202",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.011532,
+   "tokens": [
+    1801,
+    793
+   ],
+   "wallS": 13.408,
+   "finish": "stop"
+  },
+  {
+   "name": "a-v380",
+   "ok": true,
+   "status": 200,
+   "provider": "Google",
+   "model": "google/gemini-4-argon",
+   "cost": 0.018922,
+   "tokens": [
+    1801,
+    1532
+   ],
+   "wallS": 21.317,
+   "finish": "stop"
+  }
+ ]
+}

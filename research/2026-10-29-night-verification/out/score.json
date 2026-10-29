@@ -1,0 +1,2025 @@
+{
+ "tally": {
+  "after|Writ 1 tier correct": [
+   2,
+   7
+  ],
+  "after|Writ 3 tier correct": [
+   2,
+   16
+  ],
+  "after|Writ heard": [
+   19,
+   23
+  ],
+  "after|Writ noticed": [
+   19,
+   23
+  ],
+  "after|Writ outcome correct (hit/miss)": [
+   13,
+   23
+  ],
+  "after|disarm misread as kill": [
+   1,
+   15
+  ],
+  "after|disarm read as disarm": [
+   6,
+   15
+  ],
+  "after|kill": [
+   2,
+   16
+  ],
+  "after|life lost (other)": [
+   3,
+   3
+  ],
+  "after|life lost on kill tick": [
+   4,
+   5
+  ],
+  "after|pod break": [
+   1,
+   1
+  ],
+  "before|Writ 1 tier correct": [
+   2,
+   5
+  ],
+  "before|Writ 3 tier correct": [
+   2,
+   16
+  ],
+  "before|Writ heard": [
+   16,
+   21
+  ],
+  "before|Writ noticed": [
+   16,
+   21
+  ],
+  "before|Writ outcome correct (hit/miss)": [
+   11,
+   21
+  ],
+  "before|disarm misread as kill": [
+   1,
+   9
+  ],
+  "before|disarm read as disarm": [
+   6,
+   9
+  ],
+  "before|kill": [
+   4,
+   14
+  ],
+  "before|life lost (other)": [
+   0,
+   1
+  ],
+  "before|life lost on kill tick": [
+   4,
+   5
+  ],
+  "before|pod break": [
+   0,
+   2
+  ]
+ },
+ "rejected": [
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 0.1,
+   "evidence": "Wide blue-white arc sweeps upward from the player ship with a soft whoosh; Cannon pip at top right empties.",
+   "confidence": 0.7
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 1,
+   "evidence": "Narrow arc pulse emitted upward from the left side.",
+   "confidence": 0.7
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 1.9,
+   "evidence": "Wider arc sweeps across the central formation of small enemies.",
+   "confidence": 0.75
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 2.9,
+   "evidence": "Small arc pulse released on the right side.",
+   "confidence": 0.7
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 3.9,
+   "evidence": "Arc pulse released upward from lower right.",
+   "confidence": 0.75
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 4.9,
+   "evidence": "Wide arc sweeps over the upper group of enemies.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 6,
+   "evidence": "Small arc hits the rightmost enemy; '53%' and then '100%' scan/progress label appears and 'Codex: Scout' banner pops up.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 6.9,
+   "evidence": "Arc sweeps across the cluster of enemies in the middle; percentage labels ('31%', '53%') appear on them.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 8,
+   "evidence": "Small arc released on the right side.",
+   "confidence": 0.75
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 9,
+   "evidence": "Wide arc fired upward at point-blank range.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v718",
+   "arm": "before",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 10,
+   "evidence": "Wide arc sweeps upward right after the hit.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_release",
+   "t": 0.1,
+   "evidence": "Wide cyan arc travels up the center lane with a laser sweep sound",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_release",
+   "t": 1.3,
+   "evidence": "Player releases a bright flash and cyan arc moving up-left",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_hit",
+   "t": 1.9,
+   "evidence": "Arc strikes the upper-left enemy producing a distinct metallic/ringing hit sound and white ring flash",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_release",
+   "t": 2.7,
+   "evidence": "Cyan arc fired upward on the right side with a sweep sound",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_miss",
+   "t": 3.2,
+   "evidence": "Arc passes just left of the targeted enemy on the right without hitting it",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_release",
+   "t": 4.2,
+   "evidence": "Short cyan arc released upward from center-left",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v415",
+   "arm": "before",
+   "topic": "disarm",
+   "claim": "charged_miss",
+   "t": 5.2,
+   "evidence": "Arc dissipates on the left side before reaching the top cluster of enemies",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v819",
+   "arm": "before",
+   "topic": "writ1-hit",
+   "claim": "charged_release",
+   "t": 0.4,
+   "evidence": "Player ship glows and releases a bright white projectile upward with a laser sound",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v819",
+   "arm": "before",
+   "topic": "writ1-hit",
+   "claim": "charged_hit",
+   "t": 0.5,
+   "evidence": "Projectile hits the enemy in the center, producing a flash and hit sound",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v819",
+   "arm": "before",
+   "topic": "writ1-hit",
+   "claim": "enemy_disarmed",
+   "t": 0.5,
+   "evidence": "Text 'RETIRED' and '+100' appears next to the enemy as a small part breaks off and the main body drifts away",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v819",
+   "arm": "before",
+   "topic": "writ1-hit",
+   "claim": "enemy_disarmed",
+   "t": 1.4,
+   "evidence": "Popup 'RETIRED' and '+100' appears, enemy stops firing and drifts downward/away",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v819",
+   "arm": "before",
+   "topic": "writ1-hit",
+   "claim": "enemy_disarmed",
+   "t": 4.5,
+   "evidence": "A piece breaks off the hit enemy and the shot continues upward; score increases",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v731",
+   "arm": "before",
+   "topic": "writ1-miss",
+   "claim": "charged_release",
+   "t": 0.4,
+   "evidence": "HUD cannon meter drops from 1 bar to 0; white cone-shaped wave fires upward.",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v731",
+   "arm": "before",
+   "topic": "writ1-miss",
+   "claim": "enemy_disarmed",
+   "t": 0.6,
+   "evidence": "Score increases from 345 to 353 and multiplier rises; enemy loses its glow and drifts away.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v731",
+   "arm": "before",
+   "topic": "writ1-miss",
+   "claim": "enemy_disarmed",
+   "t": 3.5,
+   "evidence": "Multiplier increases from x1.2 to x1.3 and score increases by a small amount.",
+   "confidence": 0.75
+  },
+  {
+   "clip": "v637",
+   "arm": "before",
+   "topic": "writ3-hit",
+   "claim": "enemy_destroyed",
+   "t": 2.1,
+   "evidence": "Enemy hit by the charged shot bursts into an expanding white ring and disappears; score increases from 369 to 513.",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v637",
+   "arm": "before",
+   "topic": "writ3-hit",
+   "claim": "charged_release",
+   "t": 4.2,
+   "evidence": "Cannon HUD has 1 cyan bar and releases a white bolt upward; firing sound heard.",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v637",
+   "arm": "before",
+   "topic": "writ3-hit",
+   "claim": "charged_hit",
+   "t": 4.3,
+   "evidence": "Bolt strikes the rightmost enemy in the middle group; crisp metallic hit sound.",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v637",
+   "arm": "before",
+   "topic": "writ3-hit",
+   "claim": "enemy_disarmed",
+   "t": 4.4,
+   "evidence": "Target reticle shows 'DISARM', a small part flies off, and the left-side log states 'Lane Control logs a disarm'; enemy ship remains intact and drifts downward.",
+   "confidence": 0.98
+  },
+  {
+   "clip": "v637",
+   "arm": "before",
+   "topic": "writ3-hit",
+   "claim": "charged_release",
+   "t": 6,
+   "evidence": "Player releases another 1-bar charged shot at the end of the clip.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v864",
+   "arm": "before",
+   "topic": "writ-deflect",
+   "claim": "charged_release",
+   "t": 5.6,
+   "evidence": "Player ship flashes and fires a wide arc projectile upward.",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 1,
+   "evidence": "A wide white arc projectile is fired upward accompanied by a whooshing sound.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_miss",
+   "t": 1.2,
+   "evidence": "The wide white arc travels off the top of the playfield without hitting any enemies.",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 2,
+   "evidence": "A wide white arc and a small shot are fired upward.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_hit",
+   "t": 2.3,
+   "evidence": "The wide arc hits an enemy near the top center.",
+   "confidence": 0.7
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 4.2,
+   "evidence": "A wide white arc is released from the right side of the screen.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_hit",
+   "t": 4.4,
+   "evidence": "The wide arc sweeps through the cluster of three enemies on the right.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 5.9,
+   "evidence": "A wide white arc and a small shot are fired at close range toward incoming enemies.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v978",
+   "arm": "before",
+   "topic": "life-kill",
+   "claim": "life_lost",
+   "t": 6,
+   "evidence": "The screen flashes bright red, an impact sound plays, and the HULL indicator drops from 3 to 2 bars as an enemy/bullet hits the ship.",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 0.4,
+   "evidence": "white arc projectile launched upward with a whoosh/zap sound",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_miss",
+   "t": 0.8,
+   "evidence": "arc passes between the two enemy groups without hitting",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 1.6,
+   "evidence": "white arc fired upward from left side",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_miss",
+   "t": 2,
+   "evidence": "arc travels up the left side missing the enemies",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 2.1,
+   "evidence": "wider white arc released from center with charged shot audio",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_miss",
+   "t": 2.4,
+   "evidence": "arc passes over the pink enemies with target reticles on them, but no hit or destruction occurs",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 3.8,
+   "evidence": "white arc released from bottom right",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_miss",
+   "t": 4.2,
+   "evidence": "arc goes up the right lane where there are no enemies",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 5,
+   "evidence": "white arc released just before collision",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 7.6,
+   "evidence": "respawning player releases a wide white arc upward",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_miss",
+   "t": 8,
+   "evidence": "arc passes directly over the cluster of pink enemies with reticles, but none are hit or destroyed",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_release",
+   "t": 9.9,
+   "evidence": "white arc fired on the left side",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v618",
+   "arm": "after",
+   "topic": "move",
+   "claim": "charged_miss",
+   "t": 10.1,
+   "evidence": "arc passes through the left enemy with a reticle without hitting it",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v915",
+   "arm": "after",
+   "topic": "disarm",
+   "claim": "charged_release",
+   "t": 2.4,
+   "evidence": "The 3-bar cyan CANNON gauge empties, a wide cyan arc launches from the player ship, and a whoosh-pop release sound plays.",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v915",
+   "arm": "after",
+   "topic": "disarm",
+   "claim": "charged_miss",
+   "t": 2.9,
+   "evidence": "The cyan arc travels up the center-right of the lane while the three pink-outlined ships drift on the left; the arc passes without hitting anything.",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v915",
+   "arm": "after",
+   "topic": "disarm",
+   "claim": "charged_release",
+   "t": 4.9,
+   "evidence": "The 3-bar cyan CANNON gauge empties and a wide cyan arc launches directly into an approaching pink-outlined ship.",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v547",
+   "arm": "after",
+   "topic": "writ1-hit",
+   "claim": "charged_hit",
+   "t": 3.7,
+   "evidence": "The cyan arc strikes the targeted enemy in the middle, with a small flash and hit sound.",
+   "confidence": 0.8
+  },
+  {
+   "clip": "v881",
+   "arm": "after",
+   "topic": "writ3-hit",
+   "claim": "enemy_destroyed",
+   "t": 2.5,
+   "evidence": "One of the small enemies in the cluster vanishes with an explosion sound, and the score jumps from 211 to 511.",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v486",
+   "arm": "after",
+   "topic": "writ3-miss",
+   "claim": "enemy_disarmed",
+   "t": 5.2,
+   "evidence": "A green circular indicator appears around the hit Scout as it drifts upward and the score combo/points tick up again (to 200+).",
+   "confidence": 0.65
+  },
+  {
+   "clip": "v960",
+   "arm": "after",
+   "topic": "pod-break",
+   "claim": "charged_release",
+   "t": 0.4,
+   "evidence": "A cyan crescent wave is released from the player ship after the cannon bar fills to 1 pip, accompanied by a swoosh sound.",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v960",
+   "arm": "after",
+   "topic": "pod-break",
+   "claim": "boss_part_broken_off",
+   "t": 5.1,
+   "evidence": "A pod labeled 'RELIC' detaches from the boss and floats downward with a circular reticle around it.",
+   "confidence": 0.95
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 0.1,
+   "evidence": "Cyan projectile launched upward from the player ship with a whoosh/zap sound",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_hit",
+   "t": 0.4,
+   "evidence": "Projectile hits a small enemy near the top right of the lane, flashing white",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 1.6,
+   "evidence": "Bright cyan charged shot fired upward from the left side",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_hit",
+   "t": 1.7,
+   "evidence": "Charged shot impacts the small enemy just ahead on the left",
+   "confidence": 0.9
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 3.4,
+   "evidence": "Player fires a charged shot upward while moving left",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_miss",
+   "t": 3.8,
+   "evidence": "The shot travels up the center-left of the lane without hitting the enemies on the right",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_release",
+   "t": 5.6,
+   "evidence": "Charged shot fired upward on the right side",
+   "confidence": 0.85
+  },
+  {
+   "clip": "v380",
+   "arm": "after",
+   "topic": "life-kill",
+   "claim": "charged_hit",
+   "t": 5.8,
+   "evidence": "Shot hits an enemy on the right side; score increases from 1,803 to 1,951",
+   "confidence": 0.85
+  }
+ ],
+ "passB": {
+  "preferences": {
+   "movement and focus": {
+    "same": 5,
+    "after": 2,
+    "before": 2,
+    "not_present": 1
+   },
+   "tap hit": {
+    "not_present": 8,
+    "same": 2
+   },
+   "disarm vs destroy": {
+    "before": 4,
+    "same": 3,
+    "not_present": 3
+   },
+   "Writ strength": {
+    "same": 8,
+    "before": 1,
+    "not_present": 1
+   },
+   "Writ hit vs miss": {
+    "same": 6,
+    "before": 2,
+    "after": 1,
+    "not_present": 1
+   },
+   "deflect off armor": {
+    "not_present": 10
+   },
+   "boss part break": {
+    "not_present": 9,
+    "same": 1
+   },
+   "life lost": {
+    "after": 4,
+    "same": 2,
+    "before": 1,
+    "not_present": 3
+   },
+   "many hits at once": {
+    "not_present": 6,
+    "same": 2,
+    "before": 2
+   }
+  },
+  "clutter": [
+   {
+    "topic": "move",
+    "arm": "after",
+    "clip": "X",
+    "t": 0,
+    "issue": "Large 'SECTOR 1 Outer Drift' title text overlays the upper-middle combat lane right where the first wave of enemies and bullets appear (00.0-01.0s).",
+    "severity": "medium"
+   },
+   {
+    "topic": "move",
+    "arm": "after",
+    "clip": "X",
+    "t": 0,
+    "issue": "Scrolling vertical dashed lane lines and orange dots on the floor add visual noise behind small pink bullets throughout the clip.",
+    "severity": "low"
+   },
+   {
+    "topic": "move",
+    "arm": "before",
+    "clip": "Y",
+    "t": 6,
+    "issue": "The 'Codex: Scout' banner (06.0-09.5s) and floating 'PETAL' tags on enemies (06.5-10.5s) sit directly in the combat lane alongside enemy ships and bullets.",
+    "severity": "low"
+   },
+   {
+    "topic": "disarm",
+    "arm": "before",
+    "clip": "X",
+    "t": 1.2,
+    "issue": "The charging glow on the player ship is very bright and large, partially obscuring the ship's exact hitbox center.",
+    "severity": "low"
+   },
+   {
+    "topic": "disarm",
+    "arm": "after",
+    "clip": "Y",
+    "t": 2,
+    "issue": "The darker grey floor with scrolling dashed road-like markings adds slight visual texture under the small enemies and bullets compared to X's cleaner blue floor, though enemy pink outlines remain readable.",
+    "severity": "low"
+   },
+   {
+    "topic": "disarm",
+    "arm": "after",
+    "clip": "Y",
+    "t": 5.2,
+    "issue": "When the enemy fires a glowing pink bullet close to the charging player ship, the bright cyan charge flare overlaps the incoming pink projectile just before impact at 5.6s.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ1-hit",
+    "arm": "before",
+    "clip": "X",
+    "t": 1,
+    "issue": "The player taking damage creates a huge bright white flash over the ship and nearby enemies/bullets without a screen-edge damage indicator, obscuring nearby pink bullets and looking like an attack explosion.",
+    "severity": "high"
+   },
+   {
+    "topic": "writ1-hit",
+    "arm": "after",
+    "clip": "Y",
+    "t": 1,
+    "issue": "The large white flash when the player is hit still obscures the ship and nearby pink bullets around 1.0-1.2s, though the red screen border helps clarify what happened.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ1-hit",
+    "arm": "after",
+    "clip": "Y",
+    "t": 0.5,
+    "issue": "Scrolling orange and blue dots on the lane floor add minor visual noise underneath the pink enemies and bullets, though they remain dimmer than threats.",
+    "severity": "low"
+   },
+   {
+    "topic": "writ1-miss",
+    "arm": "after",
+    "clip": "X",
+    "t": 1.9,
+    "issue": "Bright white flash around the player ship when releasing a charged shot briefly obscures nearby pink enemy bullets.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ1-miss",
+    "arm": "before",
+    "clip": "Y",
+    "t": 1.2,
+    "issue": "The bright white charge-ready burst around the player ship is very large and momentarily obscures nearby enemy bullets.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ1-miss",
+    "arm": "after",
+    "clip": "X",
+    "t": 3,
+    "issue": "Scrolling vertical road-like lane lines and yellow dots on the floor add visual noise behind small pink bullets, whereas Y has a cleaner, darker floor.",
+    "severity": "low"
+   },
+   {
+    "topic": "writ3-hit",
+    "arm": "after",
+    "clip": "Y",
+    "t": 1,
+    "issue": "The grey lane surface has dashed road-like markings and small dark/orange scrolling specks that add visual noise behind pink enemy bullets and enemies, compared to the cleaner blue lane in Clip X.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ3-hit",
+    "arm": "after",
+    "clip": "Y",
+    "t": 2.3,
+    "issue": "The massive bright white flash and expanding ring from firing the charged shot right in front of approaching enemies and bullets momentarily obscures an incoming pink enemy bullet, leading to the player getting hit at 0:03.",
+    "severity": "high"
+   },
+   {
+    "topic": "writ3-hit",
+    "arm": "before",
+    "clip": "X",
+    "t": 2.1,
+    "issue": "The bright white flash around the player ship when releasing the charged shot briefly obscures the ship's exact hitbox.",
+    "severity": "low"
+   },
+   {
+    "topic": "writ3-miss",
+    "arm": "after",
+    "clip": "X",
+    "t": 0,
+    "issue": "Scrolling vertical dashed lane markings and faint circles on the track floor add visual noise that competes with small enemy bullets and target indicators throughout the clip.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ3-miss",
+    "arm": "after",
+    "clip": "X",
+    "t": 4.5,
+    "issue": "When losing a life, a harsh, opaque-looking red rectangular border flashes around the entire screen, briefly distracting from the active bullets and enemies inside the lane.",
+    "severity": "low"
+   },
+   {
+    "topic": "writ-deflect",
+    "arm": "before",
+    "clip": "X",
+    "t": 0,
+    "issue": "The bright, saturated orange-brown floor fill across the entire play lane competes visually with the bright ship glow, white/cyan charge rings, and red warning text from 0:00 to 0:06.",
+    "severity": "medium"
+   },
+   {
+    "topic": "writ-deflect",
+    "arm": "before",
+    "clip": "X",
+    "t": 2.5,
+    "issue": "The loud, harsh metallic screech/roar during the boss arrival (0:02 to 0:03) completely masks the shot impact sound.",
+    "severity": "low"
+   },
+   {
+    "topic": "writ-deflect",
+    "arm": "after",
+    "clip": "Y",
+    "t": 2.5,
+    "issue": "Same loud metallic boss arrival screech at 0:02 to 0:03 overpowering combat audio cues.",
+    "severity": "low"
+   },
+   {
+    "topic": "pod-break",
+    "arm": "after",
+    "clip": "X",
+    "t": 2,
+    "issue": "Bright scrolling vertical white dashes on the floor and heavier bloom on the ship and scan cone compete visually with the small green projectiles.",
+    "severity": "medium"
+   },
+   {
+    "topic": "pod-break",
+    "arm": "before",
+    "clip": "Y",
+    "t": 1.5,
+    "issue": "The warm orange-brown floor reduces contrast with the pink enemy bullets slightly compared to X's darker floor, though small green projectiles are easier to spot without the white floor dashes.",
+    "severity": "low"
+   },
+   {
+    "topic": "dense",
+    "arm": "after",
+    "clip": "X",
+    "t": 2,
+    "issue": "Faint vertical dashed lines scrolling down the floor add minor visual noise compared to Y's clean floor, though bullets remain easy to see.",
+    "severity": "low"
+   },
+   {
+    "topic": "dense",
+    "arm": "before",
+    "clip": "Y",
+    "t": 4,
+    "issue": "The warm reddish-orange floor color reduces contrast slightly with the pink/magenta enemy bullets and pink grazing rings compared to the darker grey floor in X.",
+    "severity": "low"
+   },
+   {
+    "topic": "dense",
+    "arm": "before",
+    "clip": "Y",
+    "t": 4.2,
+    "issue": "When the ship charges and fires, the bright white/yellow bloom around the player ship is much larger than in X, momentarily obscuring nearby pink bullets right in front of the ship.",
+    "severity": "medium"
+   },
+   {
+    "topic": "life-kill",
+    "arm": "after",
+    "clip": "Y",
+    "t": 1,
+    "issue": "Scrolling vertical white dashes and yellow/green dots on the floor track add visual noise behind combat compared to the clean blue floor in X.",
+    "severity": "low"
+   },
+   {
+    "topic": "life-kill",
+    "arm": "after",
+    "clip": "Y",
+    "t": 3.5,
+    "issue": "Disarmed grey enemy hulls stay on the playfield drifting downward, which can momentarily compete with active targets against the busier floor.",
+    "severity": "low"
+   },
+   {
+    "topic": "life-kill",
+    "arm": "before",
+    "clip": "X",
+    "t": 1.8,
+    "issue": "Full-screen red damage vignette is very intense and briefly obscures peripheral vision (also happens at 5.9s in X and 2.1s in Y).",
+    "severity": "low"
+   }
+  ],
+  "overall": [
+   {
+    "topic": "move",
+    "better": "before",
+    "why": "Clip Y has a clean, solid dark blue playfield without the scrolling dashed lines and orange floor dots seen in X, and it avoids blocking the initial enemy wave with large sector title text. Although X has a better red screen-border flash when losing a life, Y's cleaner background makes enemy bullets and ships easier to track overall."
+   },
+   {
+    "topic": "disarm",
+    "better": "before",
+    "why": "Both clips use identical combat VFX, UI, and audio cues for charging, disarming, and taking hull damage, but Clip X's smoother, brighter blue track surface offers slightly cleaner contrast against the pink-outlined enemies and dark disarmed hulls than Clip Y's darker grey road-marked surface."
+   },
+   {
+    "topic": "writ1-hit",
+    "better": "after",
+    "why": "Clip Y is easier to read mainly because it adds a clear red screen-border flash when the player takes damage (at 1.0s and 6.0s), disambiguating player damage from the bright white explosion flash, and its scrolling floor markings provide much better spatial reference for ship movement than X's blank blue lane."
+   },
+   {
+    "topic": "writ1-miss",
+    "better": "before",
+    "why": "Clip Y is much easier to read as combat because it provides a clear on-ship aiming cone and audio buildup for charged shots, distinct visual rings and sound effects when enemies are hit or disarmed, and a cleaner playfield floor with less background texture noise."
+   },
+   {
+    "topic": "writ3-hit",
+    "better": "before",
+    "why": "Clip X has a cleaner, deeper blue lane background without the scrolling specks and dashed road lines seen in Clip Y, providing better contrast for pink enemy bullets and enemies. Clip X also clearly communicates enemy disarm states with on-screen 'NEUTRAL' labels and HUD notifications."
+   },
+   {
+    "topic": "writ3-miss",
+    "better": "before",
+    "why": "Clip Y removes the scrolling dashed lane lines and floor patterns present in Clip X, leaving a clean, solid dark surface inside the playfield. This significantly improves contrast for small pink enemy bullets, enemy ships, and targeting HUD elements. Additionally, the screen-edge damage indicator at t=4.5s in Y is a smoother vignette rather than X's harsh red border."
+   },
+   {
+    "topic": "writ-deflect",
+    "better": "after",
+    "why": "Clip Y features a much darker, desaturated track surface that gives significantly better contrast and visual separation for the player ship, charge rings, projectiles, and hit waves compared to the bright orange floor in Clip X."
+   },
+   {
+    "topic": "pod-break",
+    "better": "before",
+    "why": "Y removes the distracting scrolling white floor dashes and tones down the excessive bloom on the player ship and scanning cone (especially around 2.0s and 5.0s), making the small green projectiles and pink bullet patterns much cleaner and easier to read."
+   },
+   {
+    "topic": "dense",
+    "better": "after",
+    "why": "Clip X has better contrast between the dark grey track floor and the pink enemy bullets, and the player ship's charge/fire glow is more contained than in Y (where the bright flash at 0:04 briefly obscures nearby bullets)."
+   },
+   {
+    "topic": "life-kill",
+    "better": "before",
+    "why": "Clip X has a clean, solid blue floor surface that gives maximum contrast to enemy bullets, red target rings, and the player's white aiming arc. Clip Y adds scrolling lane dashes and colored dots on the floor which slightly reduces contrast and adds background motion noise."
+   }
+  ]
+ },
+ "audioOverMedianDb": {
+  "move": {
+   "before": 3.3,
+   "after": 8.7
+  },
+  "disarm": {
+   "before": 4.5,
+   "after": 4.9
+  },
+  "writ1-hit": {
+   "before": 2.6,
+   "after": 4.9
+  },
+  "writ1-miss": {
+   "before": 3.8,
+   "after": 9.0
+  },
+  "writ3-hit": {
+   "before": 3.6,
+   "after": 6.9
+  },
+  "writ3-miss": {
+   "before": 4.2,
+   "after": 7.7
+  },
+  "writ-deflect": {
+   "before": 11.7,
+   "after": 10.1
+  },
+  "pod-break": {
+   "before": 4.0,
+   "after": 8.2
+  },
+  "dense": {
+   "before": 1.7,
+   "after": 0.4
+  },
+  "life-kill": {
+   "before": 9.3,
+   "after": 5.6
+  }
+ },
+ "perClip": [
+  {
+   "id": "v718",
+   "topic": "move",
+   "arm": "before",
+   "rows": [
+    [
+     4.69,
+     "life lost on kill tick",
+     "seen"
+    ],
+    [
+     9.86,
+     "life lost on kill tick",
+     "seen"
+    ]
+   ],
+   "audio": {
+    "peakDb": -20.7,
+    "medianDb": -24.0,
+    "overMedianDb": 3.3,
+    "silentFrac": 0.0
+   },
+   "summary": "The player avoids firing primary weapons and instead uses a wide arc scan or pulse, weaving through formations of small pink enemies and their bullets while taking several hull hits that deplete two life bars.",
+   "issues": [
+    {
+     "t": 4.2,
+     "issue": "Small pink circular bullets and small pink oval enemies share nearly identical magenta/pink glowing palettes, making it hard to tell whether the player was hit by a bullet or collided with an enemy hull.",
+     "confidence": 0.85
+    },
+    {
+     "t": 9,
+     "issue": "The bright white player glow, scan arc, and floating percentage labels ('23%', '47%') overlap directly with enemies and bullets at close range, obscuring hazards right before the player takes a hit at 9.8s.",
+     "confidence": 0.9
+    }
+   ]
+  },
+  {
+   "id": "v415",
+   "topic": "disarm",
+   "arm": "before",
+   "rows": [
+    [
+     0.34,
+     "life lost",
+     "missed"
+    ],
+    [
+     1.06,
+     "disarm",
+     "disarm"
+    ],
+    [
+     1.75,
+     "disarm",
+     "disarm"
+    ],
+    [
+     2.5,
+     "disarm",
+     "disarm"
+    ]
+   ],
+   "audio": {
+    "peakDb": -12.7,
+    "medianDb": -17.2,
+    "overMedianDb": 4.5,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fires several wide charged arc shots while moving laterally across the lane. At 0.3s an enemy in the middle is destroyed, and at 1.9s an enemy on the upper left is disarmed with a bright ring flash, accompanied by an on-screen Fleet Channel message ('Drift Six, disarmed, not dead'). Subsequent charged releases miss or pass through empty space.",
+   "issues": [
+    {
+     "t": 1.2,
+     "issue": "Bright white bloom around the charging player ship obscures the ship silhouette and nearby area",
+     "confidence": 0.8
+    },
+    {
+     "t": 5.5,
+     "issue": "Sustained bright white glow on the player ship makes it hard to see exact hitbox position",
+     "confidence": 0.8
+    }
+   ]
+  },
+  {
+   "id": "v819",
+   "topic": "writ1-hit",
+   "arm": "before",
+   "rows": [
+    [
+     1.91,
+     "life lost on kill tick",
+     "missed"
+    ],
+    [
+     5.96,
+     "disarm",
+     "missed"
+    ],
+    [
+     1.55,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     2.5,
+     "Writ 1 hit",
+     "noticed=False tier=wrong outcome=ok heard=False"
+    ],
+    [
+     4.98,
+     "Writ 3 miss",
+     "noticed=True tier=ok outcome=wrong heard=True"
+    ],
+    [
+     5.95,
+     "Writ 1 hit",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ]
+   ],
+   "audio": {
+    "peakDb": -21.1,
+    "medianDb": -23.7,
+    "overMedianDb": 2.6,
+    "silentFrac": 0.0
+   },
+   "summary": "The player charges and fires several shots at waves of small enemies, disarming at least three of them (indicated by the 'RETIRED' popup and breaking parts) while maneuvering left and right.",
+   "issues": [
+    {
+     "t": 1.4,
+     "issue": "The bright white flash from the charged shot and hit effect momentarily obscures the nearby pink enemy bullets.",
+     "confidence": 0.8
+    },
+    {
+     "t": 4.5,
+     "issue": "When the enemy is disarmed, the dark grey broken part and drifting hull blend slightly into the dark blue background, though they remain distinct from bright pink bullets.",
+     "confidence": 0.6
+    }
+   ]
+  },
+  {
+   "id": "v731",
+   "topic": "writ1-miss",
+   "arm": "before",
+   "rows": [
+    [
+     5.31,
+     "disarm",
+     "disarm"
+    ],
+    [
+     1.55,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ],
+    [
+     2.5,
+     "Writ 1 miss",
+     "noticed=True tier=ok outcome=wrong heard=True"
+    ],
+    [
+     4.97,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.7,
+    "medianDb": -23.5,
+    "overMedianDb": 3.8,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves through groups of small enemies, using charged shots to disarm several of them while dodging their pink bullets.",
+   "issues": [
+    {
+     "t": 1.3,
+     "issue": "The bright white flash on the player ship when charging or grazing is very large and temporarily obscures the ship's exact hitbox.",
+     "confidence": 0.85
+    },
+    {
+     "t": 2.3,
+     "issue": "Enemy bullets and small enemies share a very similar pink/magenta color palette, making them blend together when clustered.",
+     "confidence": 0.8
+    },
+    {
+     "t": 4.8,
+     "issue": "Disarmed enemy hulls turn very dark and are difficult to see against the dark blue playfield.",
+     "confidence": 0.75
+    }
+   ]
+  },
+  {
+   "id": "v637",
+   "topic": "writ3-hit",
+   "arm": "before",
+   "rows": [
+    [
+     2.84,
+     "disarm",
+     "kill"
+    ],
+    [
+     0.03,
+     "Writ 1 miss",
+     "noticed=True tier=ok outcome=ok heard=True"
+    ],
+    [
+     2.5,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.3,
+    "medianDb": -22.9,
+    "overMedianDb": 3.6,
+    "silentFrac": 0.0
+   },
+   "summary": "The player charges and fires several shots, missing two at first before landing a level-2 charged shot that destroys an enemy, and then another level-1 charged shot that disarms a small enemy.",
+   "issues": [
+    {
+     "t": 1.1,
+     "issue": "Enemy pink bullets pass directly over pink-outlined enemy ships, making the bullets blend in with the enemy outlines.",
+     "confidence": 0.85
+    },
+    {
+     "t": 1.9,
+     "issue": "Bright bloom from the player's ship and level-2 charged shot release temporarily obscures nearby enemy ships.",
+     "confidence": 0.8
+    },
+    {
+     "t": 5.8,
+     "issue": "The disarmed enemy ship retains a glowing pink ring similar to active enemies and bullets, floating close to the player and creating visual clutter.",
+     "confidence": 0.85
+    }
+   ]
+  },
+  {
+   "id": "v266",
+   "topic": "writ3-miss",
+   "arm": "before",
+   "rows": [
+    [
+     5.33,
+     "life lost on kill tick",
+     "seen"
+    ],
+    [
+     2.5,
+     "Writ 3 miss",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ],
+    [
+     4.97,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     5.93,
+     "Writ 1 hit",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.9,
+    "medianDb": -24.2,
+    "overMedianDb": 4.2,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves between incoming pink bullets from small scout ships while scanning them, fires a charged shot to destroy one scout, and then gets hit by a bullet and loses a life.",
+   "issues": [
+    {
+     "t": 4.4,
+     "issue": "The bright white glow of the player ship and scanning cone overlaps with nearby enemy ships and bullets at the bottom of the screen, making it hard to see the exact collision that costs a life.",
+     "confidence": 0.85
+    }
+   ]
+  },
+  {
+   "id": "v864",
+   "topic": "writ-deflect",
+   "arm": "before",
+   "rows": [
+    [
+     0.5,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ],
+    [
+     2.5,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ],
+    [
+     4.5,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -20.8,
+    "medianDb": -32.5,
+    "overMedianDb": 11.7,
+    "silentFrac": 0.292
+   },
+   "summary": "The boss, The Warden, enters from the top of the screen while the player ship repeatedly releases level-1 charged shots that deflect off the boss's invulnerable shield during its intro sequence.",
+   "issues": [
+    {
+     "t": 0.1,
+     "issue": "The bright white circular flash on the player ship when charging/releasing completely obscures the player ship model.",
+     "confidence": 0.8
+    },
+    {
+     "t": 2.4,
+     "issue": "Loud boss intro screech/roar masks any subtle shot impact or deflection audio cues.",
+     "confidence": 0.9
+    }
+   ]
+  },
+  {
+   "id": "v647",
+   "topic": "pod-break",
+   "arm": "before",
+   "rows": [
+    [
+     2.5,
+     "pod break (cannonPod)",
+     "missed"
+    ],
+    [
+     2.26,
+     "Writ 3 hit",
+     "noticed=True tier=ok outcome=ok heard=True"
+    ],
+    [
+     5.24,
+     "Writ 3 hit",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ]
+   ],
+   "audio": {
+    "peakDb": -18.4,
+    "medianDb": -22.4,
+    "overMedianDb": 4.0,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fights the boss (The Warden), dodging sweeping arcs of pink bullets while scanning it with a wide white cone. The player releases a charged shot that hits the boss, then moves right and left while continuing to scan and dodge.",
+   "issues": [
+    {
+     "t": 0.3,
+     "issue": "The bright white leading edge of the scanning cone overlaps with the pink enemy bullets, briefly reducing their contrast.",
+     "confidence": 0.7
+    },
+    {
+     "t": 2,
+     "issue": "The bright glow around the player ship when charging/firing makes it slightly harder to judge the exact hitbox against nearby pink bullets.",
+     "confidence": 0.6
+    }
+   ]
+  },
+  {
+   "id": "v673",
+   "topic": "dense",
+   "arm": "before",
+   "rows": [
+    [
+     1.58,
+     "pod break (spiralPod)",
+     "missed"
+    ],
+    [
+     1.38,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     2.64,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     4.5,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     6.25,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -20.7,
+    "medianDb": -22.4,
+    "overMedianDb": 1.7,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fights the boss (The Warden) in Phase 3, using focus mode to weave through curved waves of pink bullets while releasing charged wave shots against the boss.",
+   "issues": [
+    {
+     "t": 1,
+     "issue": "When the focus ring activates around the player ship, its bright white/cyan fill partially obscures nearby pink enemy bullets entering the ring.",
+     "confidence": 0.8
+    },
+    {
+     "t": 4.1,
+     "issue": "The bright white flash on the player ship when charging/releasing a shot momentarily obscures the ship's exact hitbox against nearby pink bullets.",
+     "confidence": 0.85
+    }
+   ]
+  },
+  {
+   "id": "v978",
+   "topic": "life-kill",
+   "arm": "before",
+   "rows": [
+    [
+     2.5,
+     "life lost on kill tick",
+     "seen"
+    ],
+    [
+     3.85,
+     "disarm",
+     "disarm"
+    ],
+    [
+     4.63,
+     "disarm",
+     "disarm"
+    ],
+    [
+     6.04,
+     "disarm",
+     "missed"
+    ]
+   ],
+   "audio": {
+    "peakDb": -14.1,
+    "medianDb": -23.4,
+    "overMedianDb": 9.3,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves between incoming pink bullets, fires several shots and charged blasts, and loses two hull points when colliding with enemies or bullets.",
+   "issues": [
+    {
+     "t": 0.5,
+     "issue": "Enemy ships and enemy bullets are both small, round, and outlined in pink/magenta, making it very difficult to distinguish enemies from projectiles at a glance.",
+     "confidence": 0.9
+    },
+    {
+     "t": 2.2,
+     "issue": "The bright white glow of the player ship and its firing effect obscures the pink bullet/enemy colliding with the player.",
+     "confidence": 0.8
+    }
+   ]
+  },
+  {
+   "id": "v618",
+   "topic": "move",
+   "arm": "after",
+   "rows": [
+    [
+     5.87,
+     "life lost on kill tick",
+     "seen"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.8,
+    "medianDb": -28.5,
+    "overMedianDb": 8.7,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fires several charged shots at small pink enemies, mostly missing as the arc passes through or near them without registering hits, until the player ship collides with an enemy or bullet and loses a life at 5.2s, respawning and firing one more charged shot that misses.",
+   "issues": [
+    {
+     "t": 0.5,
+     "issue": "Large 'SECTOR 1 Outer Drift' title text overlays the center of the playfield right over oncoming enemies and bullets.",
+     "confidence": 0.9
+    },
+    {
+     "t": 2.3,
+     "issue": "Enemy pink bullets and pink wireframe enemy ships are the exact same color and similar size, making it difficult to distinguish ships from projectiles at a glance.",
+     "confidence": 0.85
+    },
+    {
+     "t": 2.4,
+     "issue": "The charged shot white arc visually passes directly through enemies that have lock-on reticles (also at 8.0s and 10.1s) with no impact, making hit detection and elevation/depth hard to read.",
+     "confidence": 0.9
+    }
+   ]
+  },
+  {
+   "id": "v915",
+   "topic": "disarm",
+   "arm": "after",
+   "rows": [
+    [
+     0.39,
+     "disarm",
+     "disarm"
+    ],
+    [
+     2.5,
+     "disarm",
+     "missed"
+    ],
+    [
+     3.24,
+     "disarm",
+     "missed"
+    ],
+    [
+     4.32,
+     "disarm",
+     "disarm"
+    ],
+    [
+     4.77,
+     "disarm",
+     "disarm"
+    ],
+    [
+     6.03,
+     "life lost on kill tick",
+     "seen"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.7,
+    "medianDb": -24.6,
+    "overMedianDb": 4.9,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves right and left across the lane, firing three level-3 charged arcs: the first disarms a small ship near the top-left, the second misses a cluster of ships on the left, and the third hits a ship near the player just as the player takes a bullet hit and loses a life.",
+   "issues": [
+    {
+     "t": 1.5,
+     "issue": "Disarmed enemy hulls turn dark grey and blend heavily into the dark grey lane floor, making it hard to see where the surviving hulls are drifting.",
+     "confidence": 0.85
+    },
+    {
+     "t": 5,
+     "issue": "The bright white glow of the fully charged player ship overlaps the incoming pink enemy bullet at point-blank range, making the bullet that causes the life loss at 5.5s hard to track right before impact.",
+     "confidence": 0.8
+    }
+   ]
+  },
+  {
+   "id": "v547",
+   "topic": "writ1-hit",
+   "arm": "after",
+   "rows": [
+    [
+     1.84,
+     "life lost on kill tick",
+     "missed"
+    ],
+    [
+     2.83,
+     "disarm",
+     "missed"
+    ],
+    [
+     5.08,
+     "disarm",
+     "missed"
+    ],
+    [
+     6.01,
+     "disarm",
+     "missed"
+    ],
+    [
+     6.01,
+     "life lost",
+     "seen"
+    ],
+    [
+     1.54,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     2.5,
+     "Writ 1 hit",
+     "noticed=True tier=ok outcome=wrong heard=True"
+    ],
+    [
+     4.97,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ],
+    [
+     5.93,
+     "Writ 1 hit",
+     "noticed=True tier=ok outcome=wrong heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -20.3,
+    "medianDb": -25.2,
+    "overMedianDb": 4.9,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fires several charged shots at waves of small enemies, destroying one in a large explosion, missing a couple of shots, and taking a hit near the end of the clip.",
+   "issues": [
+    {
+     "t": 1,
+     "issue": "The large bright white explosion completely obscures the center of the playfield and nearby pink bullets for about half a second.",
+     "confidence": 0.9
+    },
+    {
+     "t": 2,
+     "issue": "Small pink enemy ships and pink enemy bullets have very similar colors and glow, making it difficult to distinguish ships from projectiles at a glance.",
+     "confidence": 0.85
+    }
+   ]
+  },
+  {
+   "id": "v363",
+   "topic": "writ1-miss",
+   "arm": "after",
+   "rows": [
+    [
+     4.33,
+     "life lost",
+     "seen"
+    ],
+    [
+     2.5,
+     "Writ 1 miss",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     6.01,
+     "Writ 1 miss",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.4,
+    "medianDb": -28.4,
+    "overMedianDb": 9.0,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves through pink bullets in the upper playfield while charging up a shot, releases a level 2 charged shot into empty space at the top edge, and shortly after collides with a pink bullet and loses a life.",
+   "issues": [
+    {
+     "t": 2,
+     "issue": "Circular pink ripple/spawn indicators on the lane floor look very similar in color and shape to the active pink bullets, making it slightly harder to distinguish active hazards from floor telegraph rings.",
+     "confidence": 0.75
+    }
+   ]
+  },
+  {
+   "id": "v881",
+   "topic": "writ3-hit",
+   "arm": "after",
+   "rows": [
+    [
+     0.36,
+     "disarm",
+     "missed"
+    ],
+    [
+     2.62,
+     "disarm",
+     "kill"
+    ],
+    [
+     3.54,
+     "disarm",
+     "missed"
+    ],
+    [
+     3.54,
+     "life lost",
+     "seen"
+    ],
+    [
+     0.03,
+     "Writ 1 hit",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ],
+    [
+     2.5,
+     "Writ 3 hit",
+     "noticed=True tier=ok outcome=ok heard=True"
+    ],
+    [
+     3.47,
+     "Writ 1 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     5.94,
+     "Writ 3 miss",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ]
+   ],
+   "audio": {
+    "peakDb": -18.7,
+    "medianDb": -25.6,
+    "overMedianDb": 6.9,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves right and back left while charging, releases a full-strength charged shot into a descending group of small enemies, destroying one, and immediately collides with another enemy or bullet, losing a life and respawning at the bottom left.",
+   "issues": [
+    {
+     "t": 2.5,
+     "issue": "The large bright white shockwave ring from the level 3 charged shot completely obscures the enemy cluster and incoming pink bullets right in front of the player, making it very hard to see the hazard that causes the player to lose a life half a second later.",
+     "confidence": 0.9
+    }
+   ]
+  },
+  {
+   "id": "v486",
+   "topic": "writ3-miss",
+   "arm": "after",
+   "rows": [
+    [
+     5.27,
+     "life lost on kill tick",
+     "seen"
+    ],
+    [
+     6.26,
+     "disarm",
+     "missed"
+    ],
+    [
+     2.5,
+     "Writ 3 miss",
+     "noticed=True tier=ok outcome=ok heard=True"
+    ],
+    [
+     4.97,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     5.93,
+     "Writ 1 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -19.2,
+    "medianDb": -26.9,
+    "overMedianDb": 7.7,
+    "silentFrac": 0.0
+   },
+   "summary": "In Sector 1 (Outer Drift), the player engages two incoming waves of small Scout enemies. The player releases a maximum-strength charged shot on the left side that misses, then maneuvers right and takes damage (losing one shield/life pip) while releasing another charged shot that hits and disarms or destroys one of the scouts.",
+   "issues": [
+    {
+     "t": 1.5,
+     "issue": "First-wave Scouts and the circular pink bullets they fire use identical pink/magenta outlines, making it hard to distinguish enemy hulls from incoming projectiles at a glance.",
+     "confidence": 0.9
+    },
+    {
+     "t": 4.9,
+     "issue": "The full-screen red damage flash and player hit effect happen simultaneously with the player's charged shot release and impact, making it difficult to visually separate the player getting hit from the enemy getting hit.",
+     "confidence": 0.85
+    },
+    {
+     "t": 5,
+     "issue": "Loud upbeat background music masks the subtle audio cues of charging and enemy hit/disarm sound effects.",
+     "confidence": 0.8
+    }
+   ]
+  },
+  {
+   "id": "v454",
+   "topic": "writ-deflect",
+   "arm": "after",
+   "rows": [
+    [
+     0.48,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     2.5,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ],
+    [
+     4.5,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ],
+    [
+     6.5,
+     "Writ 3 miss",
+     "noticed=True tier=wrong outcome=wrong heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -20.4,
+    "medianDb": -30.5,
+    "overMedianDb": 10.1,
+    "silentFrac": 0.0
+   },
+   "summary": "The boss, The Warden, arrives while the player fires three level 1 charged shots that deflect off its armor.",
+   "issues": [
+    {
+     "t": 2.1,
+     "issue": "Loud boss roar sound effect partially masks the sound of the shot deflecting off the boss.",
+     "confidence": 0.8
+    }
+   ]
+  },
+  {
+   "id": "v960",
+   "topic": "pod-break",
+   "arm": "after",
+   "rows": [
+    [
+     2.5,
+     "pod break (cannonPod)",
+     "seen"
+    ],
+    [
+     2.24,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     5.29,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -14.2,
+    "medianDb": -22.4,
+    "overMedianDb": 8.2,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fights the heart-shaped boss 'The Warden', firing two charged shots that break off two pods from the boss while dodging waves of pink bullets.",
+   "issues": [
+    {
+     "t": 2.8,
+     "issue": "The bright cyan muzzle flash and charging aura around the player ship partially obscure nearby pink enemy bullets right next to the ship hitbox.",
+     "confidence": 0.8
+    },
+    {
+     "t": 5.2,
+     "issue": "The detached relic part floating down has a bright circular indicator that looks very similar in size and color to the incoming pink/purple enemy bullets.",
+     "confidence": 0.85
+    }
+   ]
+  },
+  {
+   "id": "v202",
+   "topic": "dense",
+   "arm": "after",
+   "rows": [
+    [
+     0.16,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     2.02,
+     "Writ 3 hit",
+     "noticed=False tier=wrong outcome=wrong heard=False"
+    ],
+    [
+     3.79,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ],
+    [
+     5.8,
+     "Writ 3 hit",
+     "noticed=True tier=wrong outcome=ok heard=True"
+    ]
+   ],
+   "audio": {
+    "peakDb": -20.3,
+    "medianDb": -20.7,
+    "overMedianDb": 0.4,
+    "silentFrac": 0.0
+   },
+   "summary": "The player fights the boss (The Warden's core, shaped like a heart), dodging arcs of pink bullets while alternating between scanning/focusing and firing charged shots and short streams at it.",
+   "issues": [
+    {
+     "t": 3.3,
+     "issue": "Pink oval debris/pickups floating down look very similar in color and shape to the pink enemy bullets.",
+     "confidence": 0.85
+    }
+   ]
+  },
+  {
+   "id": "v380",
+   "topic": "life-kill",
+   "arm": "after",
+   "rows": [
+    [
+     0.79,
+     "disarm",
+     "disarm"
+    ],
+    [
+     1.24,
+     "disarm",
+     "disarm"
+    ],
+    [
+     2.5,
+     "life lost on kill tick",
+     "seen"
+    ],
+    [
+     6.13,
+     "disarm",
+     "disarm"
+    ]
+   ],
+   "audio": {
+    "peakDb": -11.4,
+    "medianDb": -17.0,
+    "overMedianDb": 5.6,
+    "silentFrac": 0.0
+   },
+   "summary": "The player weaves across the lane, releasing several charged shots at small pink enemies, disarming at least two of them while taking one hit that costs a hull point.",
+   "issues": [
+    {
+     "t": 1.8,
+     "issue": "Dark grey disarmed enemy hulls and broken parts blend into the dark lane floor and are briefly hard to distinguish from active threats right before the player takes damage.",
+     "confidence": 0.75
+    },
+    {
+     "t": 2,
+     "issue": "Full-screen red damage flash and chromatic aberration momentarily obscure enemy positions and projectiles on the playfield.",
+     "confidence": 0.85
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "summary": "The player weaves through groups of small enemies, using charged shots to disarm several of them while dodging their pink bullets.",
+ "events": [
+  {
+   "t": 0.4,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "HUD cannon meter drops from 1 bar to 0; white cone-shaped wave fires upward.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.6,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Charged wave strikes a small enemy on the left; impact flash and hit sound.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 0.6,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Score increases from 345 to 353 and multiplier rises; enemy loses its glow and drifts away.",
+   "channel": "seen",
+   "confidence": 0.8
+  },
+  {
+   "t": 1.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "player ship",
+   "evidence": "Player ship moves sharply from the left side toward the center.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "HUD cannon meter empties; white arc wave fires toward the center cluster of enemies.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.3,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Wave hits the cluster in the middle; targeting reticles flash.",
+   "channel": "both",
+   "confidence": 0.75
+  },
+  {
+   "t": 3.2,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "HUD cannon meter drops to 0; white wave fires upward from the right side.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.5,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Wave strikes an enemy; score increases from 353 to 369.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 3.5,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Multiplier increases from x1.2 to x1.3 and score increases by a small amount.",
+   "channel": "seen",
+   "confidence": 0.75
+  },
+  {
+   "t": 4.5,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "HUD cannon meter shows 2 bars before emptying; larger white wave fires up the left side.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.7,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "Wave hits top-left enemies; circular shockwave ring expands.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.7,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Score jumps from 369 to 513 and multiplier rises to x1.5; dark disarmed enemy hulls drift upward.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.5,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "White arc wave fires upward from bottom center.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.8,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "none",
+   "evidence": "Wave passes through the middle without hitting remaining enemies; score remains 513.",
+   "channel": "seen",
+   "confidence": 0.8
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1.3,
+   "issue": "The bright white flash on the player ship when charging or grazing is very large and temporarily obscures the ship's exact hitbox.",
+   "confidence": 0.85
+  },
+  {
+   "t": 2.3,
+   "issue": "Enemy bullets and small enemies share a very similar pink/magenta color palette, making them blend together when clustered.",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.8,
+   "issue": "Disarmed enemy hulls turn very dark and are difficult to see against the dark blue playfield.",
+   "confidence": 0.75
+  }
+ ],
+ "speech": []
+}

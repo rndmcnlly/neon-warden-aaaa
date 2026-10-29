@@ -1,0 +1,162 @@
+{
+ "summary": "The player weaves across the lane, releasing several charged shots at small pink enemies, disarming at least two of them while taking one hit that costs a hull point.",
+ "events": [
+  {
+   "t": 0.1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "none",
+   "evidence": "Cyan projectile launched upward from the player ship with a whoosh/zap sound",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 0.4,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Projectile hits a small enemy near the top right of the lane, flashing white",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 0.4,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "After the hit, a small piece detaches, score increases to 1,318, and the greyed hull drifts away",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 0.8,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves left across the lane",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.6,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "none",
+   "evidence": "Bright cyan charged shot fired upward from the left side",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.7,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "small enemy",
+   "evidence": "Charged shot impacts the small enemy just ahead on the left",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.7,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Enemy loses its pink glow, score jumps to 1,803, and the harmless hull drifts downward",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 2,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Player collides with enemy/bullet on the left; screen flashes red, heavy impact sound plays, and HULL indicator drops from 4 to 3",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves from the left side across to the right side of the lane",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 3.4,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "none",
+   "evidence": "Player fires a charged shot upward while moving left",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 3.5,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player shifts leftward toward the center-left of the lane",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.8,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "none",
+   "evidence": "The shot travels up the center-left of the lane without hitting the enemies on the right",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves from the left back to the right side of the lane",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.6,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "none",
+   "evidence": "Charged shot fired upward on the right side",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.8,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Shot hits an enemy on the right side; score increases from 1,803 to 1,951",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.8,
+   "type": "enemy_disarmed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "Dark grey disarmed hull is visible drifting down after the hit and +148 score gain",
+   "channel": "seen",
+   "confidence": 0.7
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1.8,
+   "issue": "Dark grey disarmed enemy hulls and broken parts blend into the dark lane floor and are briefly hard to distinguish from active threats right before the player takes damage.",
+   "confidence": 0.75
+  },
+  {
+   "t": 2,
+   "issue": "Full-screen red damage flash and chromatic aberration momentarily obscure enemy positions and projectiles on the playfield.",
+   "confidence": 0.85
+  }
+ ],
+ "speech": []
+}

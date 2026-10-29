@@ -1,0 +1,203 @@
+{
+ "summary": "The player fires several charged shots at small pink enemies, mostly missing as the arc passes through or near them without registering hits, until the player ship collides with an enemy or bullet and loses a life at 5.2s, respawning and firing one more charged shot that misses.",
+ "events": [
+  {
+   "t": 0.4,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small pink enemies",
+   "evidence": "white arc projectile launched upward with a whoosh/zap sound",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.8,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "small pink enemies",
+   "evidence": "arc passes between the two enemy groups without hitting",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.9,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "player ship moves left",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.6,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small pink enemies",
+   "evidence": "white arc fired upward from left side",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.7,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "player ship moves right toward center",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "small pink enemies",
+   "evidence": "arc travels up the left side missing the enemies",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.1,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "wider white arc released from center with charged shot audio",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 2.4,
+   "type": "charged_miss",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "arc passes over the pink enemies with target reticles on them, but no hit or destruction occurs",
+   "channel": "seen",
+   "confidence": 0.8
+  },
+  {
+   "t": 2.6,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "player moves right",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 3.8,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "white arc released from bottom right",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 4.2,
+   "type": "charged_miss",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "arc goes up the right lane where there are no enemies",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.7,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "player moves left into oncoming enemies and bullets",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 5,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "white arc released just before collision",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.2,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "screen flashes red, explosion sound, player ship disappears, shield/life pips top right drop from 5 to 4, score increases by 100 from collision",
+   "channel": "both",
+   "confidence": 0.98
+  },
+  {
+   "t": 5.2,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small pink enemy",
+   "evidence": "one pink enemy disappears in the collision with the player and score goes from 10 to 110",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 7.6,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "respawning player releases a wide white arc upward",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 8,
+   "type": "charged_miss",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "arc passes directly over the cluster of pink enemies with reticles, but none are hit or destroyed",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 9.8,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "player moves left",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 9.9,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "white arc fired on the left side",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 10.1,
+   "type": "charged_miss",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "arc passes through the left enemy with a reticle without hitting it",
+   "channel": "seen",
+   "confidence": 0.85
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 0.5,
+   "issue": "Large 'SECTOR 1 Outer Drift' title text overlays the center of the playfield right over oncoming enemies and bullets.",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.3,
+   "issue": "Enemy pink bullets and pink wireframe enemy ships are the exact same color and similar size, making it difficult to distinguish ships from projectiles at a glance.",
+   "confidence": 0.85
+  },
+  {
+   "t": 2.4,
+   "issue": "The charged shot white arc visually passes directly through enemies that have lock-on reticles (also at 8.0s and 10.1s) with no impact, making hit detection and elevation/depth hard to read.",
+   "confidence": 0.9
+  }
+ ],
+ "speech": []
+}

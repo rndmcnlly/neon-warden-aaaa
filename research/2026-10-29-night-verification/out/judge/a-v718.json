@@ -1,0 +1,171 @@
+{
+ "summary": "The player avoids firing primary weapons and instead uses a wide arc scan or pulse, weaving through formations of small pink enemies and their bullets while taking several hull hits that deplete two life bars.",
+ "events": [
+  {
+   "t": 0.1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small pink enemies",
+   "evidence": "Wide blue-white arc sweeps upward from the player ship with a soft whoosh; Cannon pip at top right empties.",
+   "channel": "both",
+   "confidence": 0.7
+  },
+  {
+   "t": 0.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship banks sharply left toward the left edge of the lane.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "empty space",
+   "evidence": "Narrow arc pulse emitted upward from the left side.",
+   "channel": "seen",
+   "confidence": 0.7
+  },
+  {
+   "t": 1.2,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves back toward the center.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.9,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "Wider arc sweeps across the central formation of small enemies.",
+   "channel": "seen",
+   "confidence": 0.75
+  },
+  {
+   "t": 2.4,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves right and upward.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "empty space",
+   "evidence": "Small arc pulse released on the right side.",
+   "channel": "seen",
+   "confidence": 0.7
+  },
+  {
+   "t": 3.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "empty space",
+   "evidence": "Arc pulse released upward from lower right.",
+   "channel": "seen",
+   "confidence": 0.75
+  },
+  {
+   "t": 4.2,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Crunch/hit sound, screen flash, top-right pink life pips drop from 4 to 3, score jumps to 100, and player ship turns into a dark ring with a black core (invulnerability/hit state).",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.9,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "Wide arc sweeps over the upper group of enemies.",
+   "channel": "seen",
+   "confidence": 0.8
+  },
+  {
+   "t": 6,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small pink enemy",
+   "evidence": "Small arc hits the rightmost enemy; '53%' and then '100%' scan/progress label appears and 'Codex: Scout' banner pops up.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 6.9,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "Arc sweeps across the cluster of enemies in the middle; percentage labels ('31%', '53%') appear on them.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 8,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small pink enemy",
+   "evidence": "Small arc released on the right side.",
+   "channel": "seen",
+   "confidence": 0.75
+  },
+  {
+   "t": 8.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player moves left into the middle of the enemy cluster.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 9,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "Wide arc fired upward at point-blank range.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 9.8,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Player collides with enemy/bullets at bottom center; crunch sound, pink life pips drop from 3 to 2, score increases by 100 to 229.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 10,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small pink enemies",
+   "evidence": "Wide arc sweeps upward right after the hit.",
+   "channel": "seen",
+   "confidence": 0.8
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 4.2,
+   "issue": "Small pink circular bullets and small pink oval enemies share nearly identical magenta/pink glowing palettes, making it hard to tell whether the player was hit by a bullet or collided with an enemy hull.",
+   "confidence": 0.85
+  },
+  {
+   "t": 9,
+   "issue": "The bright white player glow, scan arc, and floating percentage labels ('23%', '47%') overlap directly with enemies and bullets at close range, obscuring hazards right before the player takes a hit at 9.8s.",
+   "confidence": 0.9
+  }
+ ],
+ "speech": []
+}

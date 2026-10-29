@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "Y",
+   "why": "In Y, the ship has a subtle thruster trail and banking tilt cues that follow direction changes smoothly (0.0-6.0s), whereas X only shows the static ship model.",
+   "confidence": 0.75
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Neither clip shows single tap shots; both clips only show charged arc shots after resting.",
+   "confidence": 0.9
+  },
+  {
+   "item": 3,
+   "better": "Y",
+   "why": "In Y, disarmed enemies get a distinct white ring/crosshair indicator around them and a clear metallic 'clink' sound when their weapon breaks off (e.g., Y at 0.3s, 2.0s, 5.2s), whereas in X they simply change color slightly with no clear disarm feedback (X at 2.3s, 4.1s).",
+   "confidence": 0.9
+  },
+  {
+   "item": 4,
+   "better": "Y",
+   "why": "In Y, charging shows a rising pitch audio cue, a pulsing ring around the ship, and a visible forward firing-arc cone showing the width/range of the charge (Y at 0.0-0.2s, 1.0-1.9s, 4.2-5.0s). X only shows the tiny 'WAIT' meter in the top-left UI and a flash on release (X at 1.9s, 3.8s).",
+   "confidence": 0.95
+  },
+  {
+   "item": 5,
+   "better": "Y",
+   "why": "In Y, when the charged arc hits enemies (0.2s, 1.9s, 5.1s), each hit produces a crisp impact sound, hit-sparks, and target lock rings on affected enemies. In X (2.1s, 4.0s), the arc passes through enemies with very muted visual/audio impact feedback.",
+   "confidence": 0.9
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "Neither clip shows shots bouncing off armor.",
+   "confidence": 0.95
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss is present in either clip.",
+   "confidence": 1
+  },
+  {
+   "item": 8,
+   "better": "X",
+   "why": "Only Clip X shows the player losing a life (at 4.1s, with a red screen border flash, explosion sound, and life pip lost in the top right). Clip Y does not show a player death.",
+   "confidence": 0.85
+  },
+  {
+   "item": 9,
+   "better": "Y",
+   "why": "When the wide charged shot hits multiple enemies at once in Y (e.g., 1.9s and 5.1s), individual hit markers/rings appear on each hit enemy and distinct layered impact sounds play, making it clear which enemies were affected compared to X at 2.1s and 4.0s.",
+   "confidence": 0.9
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 1.9,
+   "issue": "Bright white flash around the player ship when releasing a charged shot briefly obscures nearby pink enemy bullets.",
+   "severity": "medium"
+  },
+  {
+   "clip": "Y",
+   "t": 1.2,
+   "issue": "The bright white charge-ready burst around the player ship is very large and momentarily obscures nearby enemy bullets.",
+   "severity": "medium"
+  },
+  {
+   "clip": "X",
+   "t": 3,
+   "issue": "Scrolling vertical road-like lane lines and yellow dots on the floor add visual noise behind small pink bullets, whereas Y has a cleaner, darker floor.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "Y",
+  "why": "Clip Y is much easier to read as combat because it provides a clear on-ship aiming cone and audio buildup for charged shots, distinct visual rings and sound effects when enemies are hit or disarmed, and a cleaner playfield floor with less background texture noise."
+ }
+}

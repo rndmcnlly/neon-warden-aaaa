@@ -1,0 +1,85 @@
+{
+ "summary": "The boss, The Warden, arrives while the player fires three level 1 charged shots that deflect off its armor.",
+ "events": [
+  {
+   "t": 0.1,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "none",
+   "evidence": "Large white circular flash around the player ship, one cyan bar in the cannon UI consumed, and a sharp firing sound.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.5,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "none",
+   "evidence": "The first charged projectile travels up the empty lane before the boss arrives.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 1.8,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Large white circular flash around player ship, one cyan cannon bar consumed, and charged shot firing sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.1,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Charged projectile hits the shielded boss with a yellow spark and a metallic ricochet sound; boss health bar does not decrease.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.8,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Large white circular flash around player ship, one cyan cannon bar consumed, and charged shot firing sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.2,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Charged projectile hits the shielded boss with a yellow spark and a metallic ricochet sound; boss health bar does not decrease.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.8,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Large white circular flash around player ship, one cyan cannon bar consumed, and charged shot firing sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 6.1,
+   "type": "deflect_off_armor",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Charged projectile hits the shielded boss with a yellow spark and a metallic ricochet sound.",
+   "channel": "both",
+   "confidence": 0.9
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 2.1,
+   "issue": "Loud boss roar sound effect partially masks the sound of the shot deflecting off the boss.",
+   "confidence": 0.8
+  }
+ ],
+ "speech": []
+}

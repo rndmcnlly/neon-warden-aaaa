@@ -1,0 +1,67 @@
+{
+ "summary": "The player weaves right and back left while charging, releases a full-strength charged shot into a descending group of small enemies, destroying one, and immediately collides with another enemy or bullet, losing a life and respawning at the bottom left.",
+ "events": [
+  {
+   "t": 0.6,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Player ship moves from center-left across to the bottom-right corner.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 1.6,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Player ship reverses direction, moving left toward the center below a cluster of descending enemies.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.4,
+   "type": "charged_release",
+   "strength": 3,
+   "target": "small enemy",
+   "evidence": "Three cyan cannon pips empty on the HUD, bright white flash and expanding shockwave ring around player ship, accompanied by a heavy laser/blast sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.5,
+   "type": "charged_hit",
+   "strength": 3,
+   "target": "small enemy",
+   "evidence": "Charged shot impacts the small enemy directly above the player; impact sound and flash.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.5,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "One of the small enemies in the cluster vanishes with an explosion sound, and the score jumps from 211 to 511.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 3,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Screen borders flash bright red, a loud crunch/explosion sound plays, hull pips drop from 4 to 3, and the player ship disappears and respawns.",
+   "channel": "both",
+   "confidence": 0.98
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 2.5,
+   "issue": "The large bright white shockwave ring from the level 3 charged shot completely obscures the enemy cluster and incoming pink bullets right in front of the player, making it very hard to see the hazard that causes the player to lose a life half a second later.",
+   "confidence": 0.9
+  }
+ ],
+ "speech": []
+}

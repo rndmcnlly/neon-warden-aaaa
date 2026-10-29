@@ -1,0 +1,117 @@
+{
+ "summary": "The player fights the boss (The Warden) in Phase 3, using focus mode to weave through curved waves of pink bullets while releasing charged wave shots against the boss.",
+ "events": [
+  {
+   "t": 0.4,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Small white arc projectile fired from player ship after cannon bar reaches 1 pip, accompanied by a firing sound.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 0.6,
+   "type": "focus_or_slow_mode",
+   "strength": 0,
+   "target": "self",
+   "evidence": "Circular focus ring with 'PISTOL' label appears around the player ship as it slows down.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 0.8,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Arc projectile impacts the bottom of the heart-shaped boss; boss flashes briefly.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.4,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Wider white arc projectile released from player ship after cannon meter fills to 2 pips.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.5,
+   "type": "focus_or_slow_mode",
+   "strength": 0,
+   "target": "self",
+   "evidence": "Circular ring appears around the player ship while weaving between bullets.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 2.8,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Charged arc hits the boss, which flashes bright white, and the boss health bar decreases slightly.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.2,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Wide white arc shot fired upward from player ship.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.7,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "boss",
+   "evidence": "Arc impacts the boss, causing a bright white flash on the heart core.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.3,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Smaller white arc fired upward from player ship.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.7,
+   "type": "focus_or_slow_mode",
+   "strength": 0,
+   "target": "self",
+   "evidence": "Focus ring appears around player ship.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.8,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "boss",
+   "evidence": "Arc hits the boss, making it flash pure white.",
+   "channel": "both",
+   "confidence": 0.95
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1,
+   "issue": "When the focus ring activates around the player ship, its bright white/cyan fill partially obscures nearby pink enemy bullets entering the ring.",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.1,
+   "issue": "The bright white flash on the player ship when charging/releasing a shot momentarily obscures the ship's exact hitbox against nearby pink bullets.",
+   "confidence": 0.85
+  }
+ ],
+ "speech": []
+}

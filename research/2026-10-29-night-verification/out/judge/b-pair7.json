@@ -1,0 +1,82 @@
+{
+ "per_event": [
+  {
+   "item": 1,
+   "better": "not_present",
+   "why": "The player ship remains completely stationary in the bottom-center of the lane throughout both 6-second clips, with no movement, direction changes, or focus mode activation.",
+   "confidence": 0.95
+  },
+  {
+   "item": 2,
+   "better": "not_present",
+   "why": "Neither clip shows single tap shots; the player only fires charged shots released after resting.",
+   "confidence": 0.95
+  },
+  {
+   "item": 3,
+   "better": "not_present",
+   "why": "Only the large boss (The Warden) is present in both clips; no small enemies appear to be disarmed or destroyed.",
+   "confidence": 0.95
+  },
+  {
+   "item": 4,
+   "better": "same",
+   "why": "Both clips show the same cannon HUD indicator (top right, 2 of 3 cyanpip blocks filled) and the same visual/audio cues for charging and releasing shots at 0:00, 0:02, 0:04, and 0:06. Since only one strength level is fired in both clips, neither demonstrates the differentiation across strengths 1 to 3 better.",
+   "confidence": 0.8
+  },
+  {
+   "item": 5,
+   "better": "Y",
+   "why": "In both clips, the shot at 0:00 misses (fired before the boss enters) and the shots at 0:02, 0:04, and 0:06 hit the boss. In Y, the darker, neutral-toned floor provides much better contrast for the bright cyan/white projectile and the wide horizontal impact wave when it hits the boss at 0:02, 0:04, and 0:06, whereas X's bright orange floor washes out the projectile trail and hit effect.",
+   "confidence": 0.75
+  },
+  {
+   "item": 6,
+   "better": "not_present",
+   "why": "The boss is in its arrival/invulnerable state (health bar striped/locked) and shots produce wide shield/scan waves rather than armor deflection/bounce behavior.",
+   "confidence": 0.85
+  },
+  {
+   "item": 7,
+   "better": "not_present",
+   "why": "No boss parts or pods break off during this brief intro sequence in either clip.",
+   "confidence": 0.95
+  },
+  {
+   "item": 8,
+   "better": "not_present",
+   "why": "The player takes no damage and loses no lives in either clip (Hull remains at 3 pink pips).",
+   "confidence": 0.95
+  },
+  {
+   "item": 9,
+   "better": "not_present",
+   "why": "Only single isolated charged shots hit the boss at 2-second intervals; there are no moments with many simultaneous hits.",
+   "confidence": 0.95
+  }
+ ],
+ "clutter": [
+  {
+   "clip": "X",
+   "t": 0,
+   "issue": "The bright, saturated orange-brown floor fill across the entire play lane competes visually with the bright ship glow, white/cyan charge rings, and red warning text from 0:00 to 0:06.",
+   "severity": "medium"
+  },
+  {
+   "clip": "X",
+   "t": 2.5,
+   "issue": "The loud, harsh metallic screech/roar during the boss arrival (0:02 to 0:03) completely masks the shot impact sound.",
+   "severity": "low"
+  },
+  {
+   "clip": "Y",
+   "t": 2.5,
+   "issue": "Same loud metallic boss arrival screech at 0:02 to 0:03 overpowering combat audio cues.",
+   "severity": "low"
+  }
+ ],
+ "overall": {
+  "better": "Y",
+  "why": "Clip Y features a much darker, desaturated track surface that gives significantly better contrast and visual separation for the player ship, charge rings, projectiles, and hit waves compared to the bright orange floor in Clip X."
+ }
+}

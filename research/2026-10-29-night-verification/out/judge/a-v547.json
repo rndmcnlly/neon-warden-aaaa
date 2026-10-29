@@ -1,0 +1,117 @@
+{
+ "summary": "The player fires several charged shots at waves of small enemies, destroying one in a large explosion, missing a couple of shots, and taking a hit near the end of the clip.",
+ "events": [
+  {
+   "t": 0.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Player releases a wide cyan arc shot toward the center enemy, accompanied by a sharp laser sound.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 1,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "The cyan arc hits the small enemy in the center, producing a bright flash and impact sound.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 1,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small enemy",
+   "evidence": "The hit enemy explodes into a large bright fireball with a heavy explosion sound and score increases from 0 to 100.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 2,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemies",
+   "evidence": "Player fires another wide cyan arc upward from the left side.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.3,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "small enemies",
+   "evidence": "The cyan arc travels up the left side past the formation without hitting any targets.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 3.5,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "Player fires a narrower cyan arc from the lower right.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 3.7,
+   "type": "charged_hit",
+   "strength": 1,
+   "target": "small enemy",
+   "evidence": "The cyan arc strikes the targeted enemy in the middle, with a small flash and hit sound.",
+   "channel": "both",
+   "confidence": 0.8
+  },
+  {
+   "t": 4.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemies",
+   "evidence": "Player fires a wide cyan arc from the bottom left.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.3,
+   "type": "charged_miss",
+   "strength": 1,
+   "target": "small enemies",
+   "evidence": "The wide cyan arc passes to the left of the enemy group without connecting.",
+   "channel": "seen",
+   "confidence": 0.85
+  },
+  {
+   "t": 5.9,
+   "type": "charged_release",
+   "strength": 1,
+   "target": "small enemies",
+   "evidence": "Player releases a small cyan arc from the bottom center.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 6,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "An enemy or bullet collides with the player ship at the bottom, triggering a red screen border flash, a heavy explosion sound, and the top-right pink health/life pips dropping from 4 to 2.",
+   "channel": "both",
+   "confidence": 0.9
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 1,
+   "issue": "The large bright white explosion completely obscures the center of the playfield and nearby pink bullets for about half a second.",
+   "confidence": 0.9
+  },
+  {
+   "t": 2,
+   "issue": "Small pink enemy ships and pink enemy bullets have very similar colors and glow, making it difficult to distinguish ships from projectiles at a glance.",
+   "confidence": 0.85
+  }
+ ],
+ "speech": []
+}

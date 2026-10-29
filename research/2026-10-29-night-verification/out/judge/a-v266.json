@@ -1,0 +1,76 @@
+{
+ "summary": "The player weaves between incoming pink bullets from small scout ships while scanning them, fires a charged shot to destroy one scout, and then gets hit by a bullet and loses a life.",
+ "events": [
+  {
+   "t": 1.6,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship shifts left toward the left side of the playfield.",
+   "channel": "seen",
+   "confidence": 0.9
+  },
+  {
+   "t": 2.3,
+   "type": "direction_change",
+   "strength": 0,
+   "target": "none",
+   "evidence": "Player ship moves quickly from the left side toward the right-center.",
+   "channel": "seen",
+   "confidence": 0.95
+  },
+  {
+   "t": 4.3,
+   "type": "charged_release",
+   "strength": 2,
+   "target": "small scout enemy",
+   "evidence": "Bright white-cyan projectile fires upward after cannon charge bar filled two segments, accompanied by a sharp laser sound.",
+   "channel": "both",
+   "confidence": 0.85
+  },
+  {
+   "t": 4.4,
+   "type": "charged_hit",
+   "strength": 2,
+   "target": "small scout enemy",
+   "evidence": "Projectile impacts the right-side scout ship with a bright flash and impact sound.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 4.5,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small scout enemy",
+   "evidence": "The scout ship bursts and disappears, and the score increases from 0 to 100.",
+   "channel": "both",
+   "confidence": 0.9
+  },
+  {
+   "t": 5.1,
+   "type": "life_lost",
+   "strength": 0,
+   "target": "player",
+   "evidence": "Player ship collides with an enemy bullet or ship on the lower right; screen edges flash red, a heavy explosion/hit sound plays, and the top-right health bar drops from five pink segments to four.",
+   "channel": "both",
+   "confidence": 0.95
+  },
+  {
+   "t": 5.2,
+   "type": "enemy_destroyed",
+   "strength": 0,
+   "target": "small scout enemy",
+   "evidence": "A scout ship at the bottom left is destroyed during the player hit blast, increasing the score from 100 to 200.",
+   "channel": "seen",
+   "confidence": 0.8
+  }
+ ],
+ "readability_issues": [
+  {
+   "t": 4.4,
+   "issue": "The bright white glow of the player ship and scanning cone overlaps with nearby enemy ships and bullets at the bottom of the screen, making it hard to see the exact collision that costs a life.",
+   "confidence": 0.85
+  }
+ ],
+ "speech": []
+}
