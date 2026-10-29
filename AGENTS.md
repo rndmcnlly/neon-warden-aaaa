@@ -136,6 +136,12 @@ These are repo-owned, not global installs; evidence and promotion gate: `docs/SK
   switched to `openai/gpt-6.1-sol`. Preserve historical model attribution;
   credits must not claim all agent work came from one model.
 - Organize work mostly through subagents with clear, file-scoped tasks.
+- Standing practice (Adam): improve ideas with a panel of isolated judges
+  primed with concerns anchored in web-sourced material (cite it). Sequence:
+  research the craft on the web, derive explicit concerns and anti-patterns,
+  have judges critique our plan or footage against them blind where
+  possible, then adopt selectively to raise quality while controlling scope
+  (record what was declined and why).
 - All subagents launched by the main session must use background mode so
   the main session remains responsive (Adam's explicit requirement).
 - Keep the production dashboard current: report active tasks, blockers,
