@@ -12,6 +12,7 @@ import { messageDialog, stubDialog } from "./dialogs.ts";
 import { settingsScreen } from "./settings.ts";
 import { THIRD_PARTY } from "../../data/thirdParty.ts";
 import { titleScreen } from "./boot.ts";
+import { hangarScreen } from "./hangar.ts";
 
 const SELECT_BACK = (ctx: UiContext): [string, string][] => [
   ["confirm", ctx.t("ui.common.select")],
@@ -55,6 +56,13 @@ export function mainMenuScreen(ctx: UiContext): ScreenFactory {
         autofocus: !checkpoint,
         sound: "menu_open",
         onActivate: () => ctx.router.push(newGameScreen(ctx)),
+      }),
+      button({
+        key: "hangar",
+        label: ctx.t("ui.menu.hangar"),
+        sound: "menu_open",
+        onActivate: () =>
+          ctx.router.push(hangarScreen(ctx, ctx.progress, "browse")),
       }),
       button({
         key: "chapters",
@@ -157,13 +165,12 @@ export function newGameScreen(ctx: UiContext): ScreenFactory {
           { class: "nw-actions" },
           button({
             key: "start",
-            label: ctx.t("ui.newGame.start"),
+            label: ctx.t("ui.newGame.toHangar"),
             className: "is-primary",
+            sound: "menu_open",
+            // The hangar sits between New Game and the first contract.
             onActivate: () =>
-              ctx.startGame({
-                at: "tutorial",
-                difficulty: ctx.settings.get().accessibility.difficulty,
-              }),
+              ctx.router.push(hangarScreen(ctx, ctx.progress, "launch")),
           }),
         ),
       ],
@@ -317,6 +324,7 @@ export function creditsScreen(ctx: UiContext): ScreenFactory {
       );
     const area = scrollArea(
       h("p", { class: "nw-credits-studio" }, ctx.t("ui.credits.studio")),
+      section("ui.credits.originalGame", "ui.credits.originalGameBody"),
       section("ui.credits.direction", "ui.credits.directionBody"),
       section("ui.credits.agents", "ui.credits.agentsBody"),
       section("ui.credits.tools", "ui.credits.toolsBody"),

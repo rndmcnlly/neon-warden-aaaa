@@ -57,7 +57,8 @@ export const CREDITS: readonly CreditSection[] = [
   {
     heading: "ui.crawl.dept.design",
     roles: [
-      one("ui.crawl.role.originalDesign", ADAM),
+      // Credited exactly as AGENTS.md asks.
+      one("ui.credits.originalGame", { text: "ui.credits.originalGameBody" }),
       one("ui.crawl.role.systemsDesign", AGENT),
     ],
   },

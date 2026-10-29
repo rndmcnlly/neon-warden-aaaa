@@ -1900,6 +1900,714 @@ export const UI_STRINGS = {
     zh: "独白中",
   },
   "ui.radio.channel": { en: "Radio", es: "Radio", zh: "无线电" },
+
+  // -- wave 3: hangar, mastery, codex, campaign
+  "ui.menu.hangar": { en: "Hangar", es: "Hangar", zh: "机库" },
+  "ui.newGame.toHangar": {
+    en: "To the hangar",
+    es: "Ir al hangar",
+    zh: "前往机库",
+  },
+  "ui.hangar.title": { en: "Hangar", es: "Hangar", zh: "机库" },
+  "ui.hangar.launch": {
+    en: "Launch contract",
+    es: "Iniciar contrato",
+    zh: "开始执行合同",
+  },
+  "ui.hangar.tab.loadout": { en: "Loadout", es: "Equipamiento", zh: "配装" },
+  "ui.hangar.tab.mastery": { en: "Mastery", es: "Maestría", zh: "精通" },
+  "ui.hangar.tab.codex": { en: "Codex", es: "Códice", zh: "资料库" },
+  "ui.hangar.tab.campaign": { en: "Campaign", es: "Campaña", zh: "战役" },
+  "ui.hangar.tabDesc.loadout": {
+    en:
+      "Packages change how the one fire verb plays. Cosmetics change nothing but how you are seen, which is not nothing.",
+    es:
+      "Los paquetes cambian cómo se juega el único verbo de disparo. Los cosméticos no cambian nada salvo cómo te ven, que no es poco.",
+    zh:
+      "武器包会改变唯一射击动作的手感。外观什么也不改变，只改变别人如何看你，而这并非无关紧要。",
+  },
+  "ui.hangar.tabDesc.mastery": {
+    en:
+      "Career pay earns ranks. Each rank would issue something new; this slice reaches rank 3.",
+    es:
+      "La paga acumulada otorga rangos. Cada rango entregaría algo nuevo; este corte llega al rango 3.",
+    zh: "累计报酬可提升等级。每一级都会发放新东西；本切片最高可达 3 级。",
+  },
+  "ui.hangar.tabDesc.codex": {
+    en:
+      "What your scanner has learned. Lock onto something new and the entry writes itself.",
+    es:
+      "Lo que tu escáner ha aprendido. Fija algo nuevo y la entrada se escribe sola.",
+    zh: "扫描仪所了解到的一切。锁定新的目标，条目就会自动写入。",
+  },
+  "ui.hangar.tabDesc.campaign": {
+    en:
+      "Eight chapters across the Lane. This slice is chapter one, start to finish.",
+    es:
+      "Ocho capítulos a lo largo del Carril. Este corte es el capítulo uno, de principio a fin.",
+    zh: "横跨航道的八个章节。本切片是完整的第一章。",
+  },
+  "ui.hangar.equipped": { en: "Equipped", es: "Equipado", zh: "已装备" },
+  "ui.hangar.beyond": {
+    en: "Beyond this slice",
+    es: "Más allá de este corte",
+    zh: "本切片之外",
+  },
+  "ui.hangar.slotBeyond": {
+    en: "Slot beyond this slice",
+    es: "Ranura fuera de este corte",
+    zh: "本切片之外的槽位",
+  },
+  "ui.hangar.cosmetic": {
+    en: "Cosmetic: no effect on play",
+    es: "Cosmético: no afecta el juego",
+    zh: "外观：不影响玩法",
+  },
+  "ui.hangar.slot.weapon": {
+    en: "Weapon package",
+    es: "Paquete de arma",
+    zh: "武器包",
+  },
+  "ui.hangar.slot.sensor": {
+    en: "Sensor package",
+    es: "Paquete de sensor",
+    zh: "传感器包",
+  },
+  "ui.hangar.slot.paint": { en: "Paint", es: "Pintura", zh: "涂装" },
+  "ui.hangar.slot.trim": {
+    en: "Trim light",
+    es: "Luz de borde",
+    zh: "饰边灯光",
+  },
+  "ui.hangar.slot.decal": { en: "Decal", es: "Calcomanía", zh: "贴花" },
+  "ui.hangar.slot.trail": {
+    en: "Engine trail",
+    es: "Estela del motor",
+    zh: "引擎尾迹",
+  },
+  "ui.hangar.slot.helmet": {
+    en: "Helmet livery",
+    es: "Librea del casco",
+    zh: "头盔涂装",
+  },
+  "ui.hangar.desc.paint": {
+    en:
+      "Hull color. The Authority issues white; everything else is a statement.",
+    es:
+      "Color del casco. La Autoridad entrega blanco; todo lo demás es una declaración.",
+    zh: "船体颜色。管理局只发白色；其他颜色都是一种表态。",
+  },
+  "ui.hangar.desc.trim": {
+    en:
+      "The emissive line along the hull. It also tints your shots, so pick something you can see.",
+    es:
+      "La línea luminosa del casco. También tiñe tus disparos, así que elige algo que puedas ver.",
+    zh: "沿船体的发光线条。它也会给你的子弹染色，所以请选一个你看得清的颜色。",
+  },
+  "ui.hangar.desc.decal": {
+    en:
+      "Marking on the wings. Tally marks count something; nobody agrees on what.",
+    es: "Marca en las alas. Las rayas de conteo cuentan algo; nadie sabe qué.",
+    zh: "机翼上的标记。计数划痕记录着什么，但没人说得清。",
+  },
+  "ui.hangar.desc.trail": {
+    en: "Exhaust style. Ghost is nearly invisible, which suits a pacifist.",
+    es:
+      "Estilo de escape. Fantasma es casi invisible, ideal para un pacifista.",
+    zh: "尾焰样式。“幽灵”几乎看不见，很适合和平主义者。",
+  },
+  "ui.hangar.desc.helmet": {
+    en:
+      "Shown in cutscenes. The helmet never comes off; only its paint tells the story.",
+    es:
+      "Se ve en las escenas. El casco nunca se quita; solo su pintura cuenta la historia.",
+    zh: "在过场动画中显示。头盔从不摘下，只有涂装在讲述故事。",
+  },
+  "ui.hangar.weapon.standard.name": {
+    en: "Lane Authority Standard",
+    es: "Estándar de la Autoridad",
+    zh: "航道管理局标准型",
+  },
+  "ui.hangar.weapon.standard.blurb": {
+    en:
+      "Balanced issue: a steady stream, honest taps, a Writ that charges in two seconds. Every other package is measured against this one.",
+    es:
+      "Equipo equilibrado: ráfaga constante, toques honestos, un Writ que carga en dos segundos. Todos los demás paquetes se miden contra este.",
+    zh:
+      "均衡的标准配发：稳定的连射、可靠的点射，令状两秒充满。其他武器包都以它为基准。",
+  },
+  "ui.hangar.weapon.magistrate.name": {
+    en: "Magistrate",
+    es: "Magistrado",
+    zh: "法官型",
+  },
+  "ui.hangar.weapon.magistrate.blurb": {
+    en:
+      "Heavy Writ. Charges slower and streams slower, but a full Writ hits for 40 and clears a wide radius. Built for players who rest more than they shoot.",
+    es:
+      "Writ pesado. Carga y dispara más lento, pero un Writ completo hace 40 de daño en un radio amplio. Para quien descansa más de lo que dispara.",
+    zh:
+      "重型令状。充能和连射都更慢，但满级令状造成 40 点伤害并覆盖大范围。适合休息多于射击的玩家。",
+  },
+  "ui.hangar.weapon.courier.name": {
+    en: "Courier",
+    es: "Mensajero",
+    zh: "信使型",
+  },
+  "ui.hangar.weapon.courier.blurb": {
+    en:
+      "Rapid stream: 40% more rounds per second, with a thin Writ. Good for clearing drones, poor at breaking Warden pods.",
+    es:
+      "Ráfaga rápida: 40% más disparos por segundo, con un Writ delgado. Bueno contra drones, flojo contra las cápsulas del Guardián.",
+    zh:
+      "快速连射：每秒射速提高 40%，令状较弱。适合清理无人机，不擅长击破守望者的武器舱。",
+  },
+  "ui.hangar.weapon.notary.name": { en: "Notary", es: "Notario", zh: "公证型" },
+  "ui.hangar.weapon.notary.blurb": {
+    en:
+      "Precision taps: aimed rounds hit harder and recover faster. The disarmer's package; parts break before hulls do.",
+    es:
+      "Toques de precisión: los disparos apuntados pegan más y se recuperan antes. El paquete de quien desarma; las piezas caen antes que los cascos.",
+    zh:
+      "精准点射：瞄准射击伤害更高、冷却更短。缴械者的武器包，先打坏部件，再考虑船体。",
+  },
+  "ui.hangar.weapon.injunction.name": {
+    en: "Injunction",
+    es: "Interdicto",
+    zh: "禁令型",
+  },
+  "ui.hangar.weapon.injunction.blurb": {
+    en:
+      "A Writ that holds a target in place instead of harming it. Designed for chapter three's escort contracts, which are not included in this vertical slice.",
+    es:
+      "Un Writ que inmoviliza al objetivo en lugar de dañarlo. Diseñado para los contratos de escolta del capítulo tres, que no están incluidos en este corte vertical.",
+    zh:
+      "一种将目标定住而不伤害它的令状。为第三章的护送合同设计，这些内容不包含在本垂直切片中。",
+  },
+  "ui.hangar.sensor.standard.name": {
+    en: "Lane Authority Standard",
+    es: "Estándar de la Autoridad",
+    zh: "航道管理局标准型",
+  },
+  "ui.hangar.sensor.standard.blurb": {
+    en:
+      "A 40° cone that locks in under a second. Sees what is in front of you, which is usually enough.",
+    es:
+      "Un cono de 40° que fija en menos de un segundo. Ve lo que tienes delante, que suele bastar.",
+    zh: "40° 扫描锥，一秒内完成锁定。能看到你面前的东西，通常这就够了。",
+  },
+  "ui.hangar.sensor.surveyor.name": {
+    en: "Surveyor",
+    es: "Agrimensor",
+    zh: "测绘型",
+  },
+  "ui.hangar.sensor.surveyor.blurb": {
+    en:
+      "Wide cone, patient lock: sees nearly everything on screen and commits slowly. Best for learning enemy behavior and filling the codex.",
+    es:
+      "Cono amplio, fijado paciente: ve casi todo en pantalla y se compromete despacio. Ideal para aprender conductas enemigas y llenar el códice.",
+    zh:
+      "宽锥、慢锁定：几乎能看到全屏，但锁定较慢。最适合研究敌人行为、填充资料库。",
+  },
+  "ui.hangar.sensor.auditor.name": {
+    en: "Auditor",
+    es: "Auditor",
+    zh: "审计型",
+  },
+  "ui.hangar.sensor.auditor.blurb": {
+    en:
+      "Narrow cone, fast lock: a third of a second on target and you know its state. A sniper's sensor; pairs with Magistrate.",
+    es:
+      "Cono estrecho, fijado rápido: un tercio de segundo y conoces su estado. Un sensor de francotirador; combina con Magistrado.",
+    zh:
+      "窄锥、快锁定：对准三分之一秒即可读出状态。狙击手的传感器，与法官型搭配最佳。",
+  },
+  "ui.hangar.sensor.archivist.name": {
+    en: "Archivist",
+    es: "Archivista",
+    zh: "档案型",
+  },
+  "ui.hangar.sensor.archivist.blurb": {
+    en:
+      "Long reach: locks the Warden from the bottom of the lane. Slower than standard, but nothing is out of range.",
+    es:
+      "Largo alcance: fija al Guardián desde el fondo del carril. Más lento que el estándar, pero nada queda fuera de alcance.",
+    zh: "远距离：从航道底部就能锁定守望者。比标准型慢，但没有什么超出范围。",
+  },
+  "ui.hangar.sensor.witness.name": {
+    en: "Witness",
+    es: "Testigo",
+    zh: "见证型",
+  },
+  "ui.hangar.sensor.witness.blurb": {
+    en:
+      "Records what it scans for later testimony. Built for the tribunal chapters, which are not included in this vertical slice.",
+    es:
+      "Graba lo que escanea para testimonios futuros. Hecho para los capítulos del tribunal, que no están incluidos en este corte vertical.",
+    zh:
+      "记录扫描到的一切，留作日后证词。为法庭章节而设计，这些内容不包含在本垂直切片中。",
+  },
+  "ui.hangar.stat.streamRate": {
+    en: "Stream rate",
+    es: "Cadencia de ráfaga",
+    zh: "连射速率",
+  },
+  "ui.hangar.stat.aimedDamage": {
+    en: "Aimed damage",
+    es: "Daño apuntado",
+    zh: "瞄准伤害",
+  },
+  "ui.hangar.stat.aimedCooldown": {
+    en: "Aimed cooldown",
+    es: "Recarga apuntada",
+    zh: "瞄准冷却",
+  },
+  "ui.hangar.stat.writCharge": {
+    en: "Writ full charge",
+    es: "Carga completa del Writ",
+    zh: "令状满充能",
+  },
+  "ui.hangar.stat.writDamage": {
+    en: "Writ damage (level 3)",
+    es: "Daño del Writ (nivel 3)",
+    zh: "令状伤害（3 级）",
+  },
+  "ui.hangar.stat.writRadius": {
+    en: "Writ radius (level 3)",
+    es: "Radio del Writ (nivel 3)",
+    zh: "令状半径（3 级）",
+  },
+  "ui.hangar.stat.cone": {
+    en: "Scan cone",
+    es: "Cono de escaneo",
+    zh: "扫描锥",
+  },
+  "ui.hangar.stat.range": {
+    en: "Scan range",
+    es: "Alcance de escaneo",
+    zh: "扫描距离",
+  },
+  "ui.hangar.stat.lockTime": {
+    en: "Lock time",
+    es: "Tiempo de fijado",
+    zh: "锁定时间",
+  },
+  "ui.hangar.paint.authorityWhite": {
+    en: "Authority white",
+    es: "Blanco Autoridad",
+    zh: "管理局白",
+  },
+  "ui.hangar.paint.contractorGrey": {
+    en: "Contractor grey",
+    es: "Gris contratista",
+    zh: "承包商灰",
+  },
+  "ui.hangar.paint.matteBlack": {
+    en: "Matte black",
+    es: "Negro mate",
+    zh: "哑光黑",
+  },
+  "ui.hangar.paint.rustRed": { en: "Rust red", es: "Rojo óxido", zh: "锈红" },
+  "ui.hangar.paint.laneBlue": {
+    en: "Lane blue",
+    es: "Azul carril",
+    zh: "航道蓝",
+  },
+  "ui.hangar.trim.cyan": { en: "Cyan", es: "Cian", zh: "青色" },
+  "ui.hangar.trim.pink": { en: "Pink", es: "Rosa", zh: "粉色" },
+  "ui.hangar.trim.violet": { en: "Violet", es: "Violeta", zh: "紫色" },
+  "ui.hangar.trim.gold": { en: "Gold", es: "Dorado", zh: "金色" },
+  "ui.hangar.trim.red": { en: "Red", es: "Rojo", zh: "红色" },
+  "ui.hangar.trim.white": { en: "White", es: "Blanco", zh: "白色" },
+  "ui.hangar.decal.none": { en: "None", es: "Ninguna", zh: "无" },
+  "ui.hangar.decal.authorityNumber": {
+    en: "Authority number",
+    es: "Número de la Autoridad",
+    zh: "管理局编号",
+  },
+  "ui.hangar.decal.tallyMarks": {
+    en: "Tally marks",
+    es: "Rayas de conteo",
+    zh: "计数划痕",
+  },
+  "ui.hangar.decal.wardenCrest": {
+    en: "Warden crest",
+    es: "Emblema del Guardián",
+    zh: "守望者徽记",
+  },
+  "ui.hangar.decal.payGrade": {
+    en: "Pay grade",
+    es: "Grado salarial",
+    zh: "薪资等级",
+  },
+  "ui.hangar.trail.standard": { en: "Standard", es: "Estándar", zh: "标准" },
+  "ui.hangar.trail.ion": { en: "Ion", es: "Iónica", zh: "离子" },
+  "ui.hangar.trail.ember": { en: "Ember", es: "Brasa", zh: "余烬" },
+  "ui.hangar.trail.ghost": { en: "Ghost", es: "Fantasma", zh: "幽灵" },
+  "ui.hangar.helmet.corporateIssue": {
+    en: "Corporate issue",
+    es: "De la empresa",
+    zh: "公司配发",
+  },
+  "ui.hangar.helmet.worn": { en: "Worn", es: "Gastado", zh: "磨损" },
+  "ui.hangar.helmet.repainted": {
+    en: "Repainted",
+    es: "Repintado",
+    zh: "重新涂装",
+  },
+  "ui.hangar.wall.utility": {
+    en: "Utility slot",
+    es: "Ranura de utilidad",
+    zh: "辅助槽",
+  },
+  "ui.hangar.wall.utilityBody": {
+    en:
+      "Countermeasures, tethers and the salvage claw. The full game opens this slot in chapter two; it is not included in this vertical slice.",
+    es:
+      "Contramedidas, amarres y la garra de rescate. El juego completo abre esta ranura en el capítulo dos; no está incluida en este corte vertical.",
+    zh: "干扰装置、系缆和打捞爪。完整版在第二章开放此槽位；本垂直切片未包含。",
+  },
+  "ui.hangar.wall.reactor": {
+    en: "Reactor mod",
+    es: "Mod de reactor",
+    zh: "反应堆模组",
+  },
+  "ui.hangar.wall.reactorBody": {
+    en:
+      "Trades hull for Writ charge speed, or the reverse. Tuned for the late chapters and not included in this vertical slice.",
+    es:
+      "Cambia casco por velocidad de carga del Writ, o al revés. Ajustado para los capítulos finales y no incluido en este corte vertical.",
+    zh:
+      "用船体耐久换取令状充能速度，反之亦然。为后期章节调校，本垂直切片未包含。",
+  },
+  "ui.hangar.wall.droneBay": {
+    en: "Drone bay",
+    es: "Bahía de drones",
+    zh: "无人机舱",
+  },
+  "ui.hangar.wall.droneBayBody": {
+    en:
+      "A wingman drone that mirrors your fire verb. Its AI, its voice and its contract are not included in this vertical slice.",
+    es:
+      "Un dron escolta que imita tu disparo. Su IA, su voz y su contrato no están incluidos en este corte vertical.",
+    zh:
+      "一架模仿你射击动作的僚机无人机。它的 AI、语音和合同都不包含在本垂直切片中。",
+  },
+  "ui.hangar.wall.hullPlating": {
+    en: "Hull plating",
+    es: "Blindaje del casco",
+    zh: "船体装甲",
+  },
+  "ui.hangar.wall.hullPlatingBody": {
+    en:
+      "Ablative, reflective or salvaged plates, each with its own weight. Not included in this vertical slice.",
+    es:
+      "Placas ablativas, reflectantes o rescatadas, cada una con su peso. No incluido en este corte vertical.",
+    zh: "烧蚀、反射或打捞来的装甲板，各有其重量。本垂直切片未包含。",
+  },
+  "ui.hangar.wall.secondSensor": {
+    en: "Second sensor mount",
+    es: "Segundo soporte de sensor",
+    zh: "第二传感器挂点",
+  },
+  "ui.hangar.wall.secondSensorBody": {
+    en:
+      "Two scan beams, two locks, one very busy pilot. Not included in this vertical slice.",
+    es:
+      "Dos haces de escaneo, dos fijados, un piloto muy ocupado. No incluido en este corte vertical.",
+    zh: "两道扫描光束、两个锁定，一名非常忙碌的飞行员。本垂直切片未包含。",
+  },
+  "ui.hangar.mastery.rank": {
+    en: "Mastery rank {n}",
+    es: "Rango de maestría {n}",
+    zh: "精通等级 {n}",
+  },
+  "ui.hangar.mastery.rankShort": {
+    en: "Rank {n}",
+    es: "Rango {n}",
+    zh: "{n} 级",
+  },
+  "ui.hangar.mastery.career": {
+    en: "Career pay: {pay}",
+    es: "Paga acumulada: {pay}",
+    zh: "累计报酬：{pay}",
+  },
+  "ui.hangar.mastery.earned": {
+    en: "Earned. The Authority has noted it in your file.",
+    es: "Obtenido. La Autoridad lo anotó en tu expediente.",
+    zh: "已获得。管理局已记入你的档案。",
+  },
+  "ui.hangar.mastery.toEarn": {
+    en: "Reach {pay} career pay to earn this rank.",
+    es: "Alcanza {pay} de paga acumulada para obtener este rango.",
+    zh: "累计报酬达到 {pay} 即可获得此等级。",
+  },
+  "ui.hangar.mastery.walledBody": {
+    en:
+      "Needs {pay} career pay, and contracts that are not included in this vertical slice.",
+    es:
+      "Requiere {pay} de paga acumulada y contratos que no están incluidos en este corte vertical.",
+    zh: "需要累计报酬 {pay}，以及本垂直切片未包含的合同。",
+  },
+  "ui.hangar.reward.paint": {
+    en: "Reward: a paint",
+    es: "Recompensa: una pintura",
+    zh: "奖励：一种涂装",
+  },
+  "ui.hangar.reward.decal": {
+    en: "Reward: a decal",
+    es: "Recompensa: una calcomanía",
+    zh: "奖励：一种贴花",
+  },
+  "ui.hangar.reward.trail": {
+    en: "Reward: an engine trail",
+    es: "Recompensa: una estela",
+    zh: "奖励：一种引擎尾迹",
+  },
+  "ui.hangar.reward.package": {
+    en: "Reward: a package",
+    es: "Recompensa: un paquete",
+    zh: "奖励：一个武器或传感器包",
+  },
+  "ui.hangar.reward.slot": {
+    en: "Reward: a slot",
+    es: "Recompensa: una ranura",
+    zh: "奖励：一个槽位",
+  },
+  "ui.hangar.reward.codex": {
+    en: "Reward: a codex shelf",
+    es: "Recompensa: un estante del códice",
+    zh: "奖励：一个资料库分类",
+  },
+  "ui.codex.unknown": { en: "Unscanned", es: "Sin escanear", zh: "未扫描" },
+  "ui.codex.entry": {
+    en: "Codex entry",
+    es: "Entrada del códice",
+    zh: "资料库条目",
+  },
+  "ui.codex.sealed": {
+    en: "Sealed entry",
+    es: "Entrada sellada",
+    zh: "封存条目",
+  },
+  "ui.codex.bodyPending": {
+    en: "The entry text arrives with the narrative build.",
+    es: "El texto de la entrada llega con la versión narrativa.",
+    zh: "条目正文将随剧情版本一同加入。",
+  },
+  "ui.codex.count": {
+    en: "{n} of {total} entries recovered",
+    es: "{n} de {total} entradas recuperadas",
+    zh: "已获得 {n}/{total} 个条目",
+  },
+  "ui.codex.unlocked": {
+    en: "Codex: {title}",
+    es: "Códice: {title}",
+    zh: "资料库：{title}",
+  },
+  "ui.codex.shelf": {
+    en: "Codex shelf",
+    es: "Estante del códice",
+    zh: "资料库分类",
+  },
+  "ui.codex.hint.drone": {
+    en: "Lock onto a drone with the scan beam (rest, do not fire).",
+    es: "Fija un dron con el haz de escaneo (reposa, no dispares).",
+    zh: "用扫描光束锁定一架无人机（静止，不要射击）。",
+  },
+  "ui.codex.hint.dart": {
+    en: "Lock onto a dart.",
+    es: "Fija un dardo.",
+    zh: "锁定一架飞镖机。",
+  },
+  "ui.codex.hint.turret": {
+    en: "Lock onto a turret.",
+    es: "Fija una torreta.",
+    zh: "锁定一座炮塔。",
+  },
+  "ui.codex.hint.lancer": {
+    en: "Lock onto a lancer.",
+    es: "Fija un lancero.",
+    zh: "锁定一架长枪机。",
+  },
+  "ui.codex.hint.warden": {
+    en: "Lock onto the Warden.",
+    es: "Fija al Guardián.",
+    zh: "锁定守望者。",
+  },
+  "ui.codex.hint.wardenCore": {
+    en: "Break two of the Warden's pods, then lock onto its core.",
+    es: "Rompe dos cápsulas del Guardián y luego fija su núcleo.",
+    zh: "击破守望者的两个武器舱，然后锁定其核心。",
+  },
+  "ui.codex.hint.recorder": {
+    en: "Recover what drifts through sector 3.",
+    es: "Recupera lo que flota en el sector 3.",
+    zh: "回收在第 3 区漂流的东西。",
+  },
+  "ui.codex.shelf.factions": { en: "Factions", es: "Facciones", zh: "势力" },
+  "ui.codex.shelf.factionsBody": {
+    en:
+      "The Authority, the contractors' guild, the people who live along the Lane. Not included in this vertical slice.",
+    es:
+      "La Autoridad, el gremio de contratistas, la gente que vive junto al Carril. No incluido en este corte vertical.",
+    zh: "管理局、承包商公会，以及住在航道沿线的人们。本垂直切片未包含。",
+  },
+  "ui.codex.shelf.pilots": {
+    en: "Pilot records",
+    es: "Registros de pilotos",
+    zh: "飞行员档案",
+  },
+  "ui.codex.shelf.pilotsBody": {
+    en:
+      "One hundred and twenty-one files, most of them closed. Not included in this vertical slice.",
+    es:
+      "Ciento veintiún expedientes, casi todos cerrados. No incluido en este corte vertical.",
+    zh: "一百二十一份档案，大多已经结案。本垂直切片未包含。",
+  },
+  "ui.codex.shelf.lanes": {
+    en: "Lanes and sectors",
+    es: "Carriles y sectores",
+    zh: "航道与星区",
+  },
+  "ui.codex.shelf.lanesBody": {
+    en:
+      "Forty sectors of history, weather and old wreckage. Not included in this vertical slice.",
+    es:
+      "Cuarenta sectores de historia, clima y restos antiguos. No incluido en este corte vertical.",
+    zh: "四十个星区的历史、气候和旧残骸。本垂直切片未包含。",
+  },
+  "ui.codex.shelf.authority": {
+    en: "Authority memos",
+    es: "Memorandos de la Autoridad",
+    zh: "管理局备忘录",
+  },
+  "ui.codex.shelf.authorityBody": {
+    en:
+      "Internal memos, some of them about you. Not included in this vertical slice.",
+    es:
+      "Memorandos internos, algunos sobre ti. No incluido en este corte vertical.",
+    zh: "内部备忘录，其中一些与你有关。本垂直切片未包含。",
+  },
+  "ui.campaign.intro": {
+    en:
+      "Eight chapters, forty sectors. This vertical slice is chapter one, complete.",
+    es:
+      "Ocho capítulos, cuarenta sectores. Este corte vertical es el capítulo uno, completo.",
+    zh: "八个章节，四十个星区。本垂直切片为完整的第一章。",
+  },
+  "ui.campaign.chapter": {
+    en: "Chapter {n}",
+    es: "Capítulo {n}",
+    zh: "第 {n} 章",
+  },
+  "ui.campaign.thisSlice": {
+    en: "This vertical slice",
+    es: "Este corte vertical",
+    zh: "本垂直切片",
+  },
+  "ui.campaign.ch1": { en: "The Lane", es: "El Carril", zh: "航道" },
+  "ui.campaign.ch1Body": {
+    en:
+      "Onboarding, five sectors and the Warden. Open: choose a beat from Chapter Select.",
+    es:
+      "Inducción, cinco sectores y el Guardián. Abierto: elige un momento en Selección de capítulo.",
+    zh: "入职培训、五个星区和守望者。已开放：可在章节选择中挑选段落。",
+  },
+  "ui.campaign.ch2": {
+    en: "Salvage Rights",
+    es: "Derechos de rescate",
+    zh: "打捞权",
+  },
+  "ui.campaign.ch2Body": {
+    en:
+      "Who owns a wreck, and who owns its pilot. Not included in this vertical slice.",
+    es:
+      "De quién es un naufragio, y de quién es su piloto. No incluido en este corte vertical.",
+    zh: "残骸归谁所有，它的飞行员又归谁所有。本垂直切片未包含。",
+  },
+  "ui.campaign.ch3": {
+    en: "Escort Clause",
+    es: "Cláusula de escolta",
+    zh: "护送条款",
+  },
+  "ui.campaign.ch3Body": {
+    en:
+      "Keep a freighter alive through lanes that want it dead. Not included in this vertical slice.",
+    es:
+      "Mantén vivo un carguero en carriles que lo quieren muerto. No incluido en este corte vertical.",
+    zh: "护送一艘货船穿过想要毁掉它的航道。本垂直切片未包含。",
+  },
+  "ui.campaign.ch4": { en: "The Tribunal", es: "El tribunal", zh: "法庭" },
+  "ui.campaign.ch4Body": {
+    en:
+      "The Authority puts a Warden on trial, and asks you to testify. Not included in this vertical slice.",
+    es:
+      "La Autoridad juzga a un Guardián y te pide testificar. No incluido en este corte vertical.",
+    zh: "管理局审判一名守望者，并要求你出庭作证。本垂直切片未包含。",
+  },
+  "ui.campaign.ch5": {
+    en: "Quiet Lanes",
+    es: "Carriles en silencio",
+    zh: "寂静航道",
+  },
+  "ui.campaign.ch5Body": {
+    en:
+      "Sectors where no one fires first. Not included in this vertical slice.",
+    es:
+      "Sectores donde nadie dispara primero. No incluido en este corte vertical.",
+    zh: "没有人先开火的星区。本垂直切片未包含。",
+  },
+  "ui.campaign.ch6": { en: "Severance", es: "Indemnización", zh: "遣散" },
+  "ui.campaign.ch6Body": {
+    en:
+      "Your contract ends; the Authority's interest in you does not. Not included in this vertical slice.",
+    es:
+      "Tu contrato termina; el interés de la Autoridad en ti, no. No incluido en este corte vertical.",
+    zh: "你的合同到期了，但管理局对你的兴趣没有。本垂直切片未包含。",
+  },
+  "ui.campaign.ch7": {
+    en: "The Other Wardens",
+    es: "Los otros Guardianes",
+    zh: "其他守望者",
+  },
+  "ui.campaign.ch7Body": {
+    en: "There was never only one. Not included in this vertical slice.",
+    es: "Nunca hubo uno solo. No incluido en este corte vertical.",
+    zh: "从来都不只有一个。本垂直切片未包含。",
+  },
+  "ui.campaign.ch8": { en: "Open Lane", es: "Carril abierto", zh: "开放航道" },
+  "ui.campaign.ch8Body": {
+    en:
+      "How it ends depends on what you did in chapter one. Not included in this vertical slice.",
+    es:
+      "Cómo termina depende de lo que hiciste en el capítulo uno. No incluido en este corte vertical.",
+    zh: "结局取决于你在第一章做了什么。本垂直切片未包含。",
+  },
+  "ui.intel.state.drift": { en: "Drifting", es: "A la deriva", zh: "漂移" },
+  "ui.intel.state.reload": { en: "Reloading", es: "Recargando", zh: "装填" },
+  "ui.intel.state.withdraw": {
+    en: "Withdrawing",
+    es: "Retirándose",
+    zh: "撤离",
+  },
+  "ui.intel.state.parley": { en: "Parley", es: "Parlamento", zh: "交涉" },
+  "ui.intel.state.sweep": { en: "Sweeping", es: "Barrido", zh: "横扫" },
+  "ui.intel.state.fan": { en: "Fan fire", es: "Abanico", zh: "扇形射击" },
+  "ui.intel.state.cannon": { en: "Cannon", es: "Cañón", zh: "主炮" },
+  "ui.intel.state.summon": { en: "Summoning", es: "Convocando", zh: "召唤" },
+  "ui.intel.state.spiral": { en: "Spiral", es: "Espiral", zh: "螺旋" },
+  "ui.intel.state.fallen": { en: "Fallen", es: "Caído", zh: "坠落" },
+  "ui.credits.originalGame": {
+    en: "Original game",
+    es: "Juego original",
+    zh: "原版游戏",
+  },
+  "ui.credits.originalGameBody": {
+    en: "Adam Smith, and his coupled agents",
+    es: "Adam Smith, y sus agentes acoplados",
+    zh: "Adam Smith 及其协作智能体",
+  },
 } as const satisfies Record<string, LocalizedText>;
 
 /** The MIT license text, verbatim; hoisted so the table stays readable. */

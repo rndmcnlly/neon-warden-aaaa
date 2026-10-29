@@ -27,6 +27,7 @@ import type {
 } from "../contracts/index.ts";
 import { createInputLayer, type InputLayer } from "../input/inputLayer.ts";
 import { createSaveStore, type SaveStore } from "../settings/saveGame.ts";
+import { createProgressStore, type ProgressStore } from "./progress.ts";
 import type { FrontEndHooks, UiContext } from "./context.ts";
 import { decideMenuIntent } from "./dispatch.ts";
 import { focusInitial, moveFocus } from "./focus.ts";
@@ -47,6 +48,7 @@ import {
 } from "./screens/run.ts";
 import { uiSound } from "./sound.ts";
 import { hasText, id, t } from "../i18n/index.ts";
+import { lineId } from "../contracts/index.ts";
 import { h, widgetIntent } from "./widgets.ts";
 import "./frontend.css";
 
@@ -55,6 +57,8 @@ export interface FrontEndOptions {
   readonly flags: UrlFlags;
   readonly hooks?: FrontEndHooks;
   readonly saves?: SaveStore;
+  /** Loadout, codex and career pay (defaults to localStorage). */
+  readonly progress?: ProgressStore;
   /**
    * Front-end entry point for development and screenshots (`flags.ui`,
    * from `?ui=`): `menu`, `title`, `settings`,
@@ -72,6 +76,8 @@ export interface FrontEnd {
   pause(reason?: PauseReason): void;
   /** Flashes the "Checkpoint saved" chip (also fires on every save). */
   showSaveIndicator(): void;
+  /** Loadout, codex unlocks, career pay (the hangar's store). */
+  readonly progress: ProgressStore;
   /** The in-game HUD and banners. Feed it; it never writes back. */
   readonly hud: {
     /** After each sim step (cheap: it redraws only what changed). */
@@ -129,6 +135,7 @@ export function createFrontEnd(
   const { settings, flags } = options;
   const hooks = options.hooks ?? {};
   const saves = options.saves ?? createSaveStore();
+  const progress = options.progress ?? createProgressStore();
   const input = createInputLayer(settings);
 
   const layer = h("div", { class: "nw-frontend" });
@@ -172,6 +179,7 @@ export function createFrontEnd(
   const ctx: UiContext = {
     settings,
     saves,
+    progress,
     input,
     router,
     hooks,
@@ -183,7 +191,7 @@ export function createFrontEnd(
       uiSound("confirm");
       playing = true;
       router.reset();
-      hooks.onStartGame?.(request);
+      hooks.onStartGame?.({ ...request, loadout: progress.get().loadout });
     },
     resume() {
       uiSound("pause_out");
@@ -400,6 +408,31 @@ export function createFrontEnd(
   }
   updatePrompts();
 
+  /**
+   * Meta progress from run events: a first `intel` unlocks its codex entry
+   * (with a toast), and a run's pay is banked toward mastery when it ends.
+   */
+  let runCredits = 0;
+  function metaEvent(event: { readonly type: string }): void {
+    const e = event as { type: string; codexId?: unknown; credits?: unknown };
+    if (e.type === "payChanged" && typeof e.credits === "number") {
+      runCredits = e.credits;
+    }
+    if (e.type === "intel" && typeof e.codexId === "string") {
+      if (progress.unlockCodex(e.codexId)) {
+        const titleId = `${e.codexId}.title`;
+        ctx.toast(t(id("ui.codex.unlocked"), lang(), {
+          title: hasText(titleId) ? t(lineId(titleId), lang()) : e.codexId,
+        }));
+        hooks.onCodexUnlocked?.(e.codexId);
+      }
+    }
+    if (["gameOver", "bossDefeated", "bossSurvived"].includes(e.type)) {
+      progress.bankPay(runCredits);
+      runCredits = 0;
+    }
+  }
+
   function showContinue(info: ContinueInfo): Promise<ContinueChoice> {
     return new Promise((resolve) => {
       router.push(continueScreen(ctx, info, (choice) => {
@@ -430,9 +463,13 @@ export function createFrontEnd(
     quitToTitle: () => ctx.quitToTitle(),
     pause,
     showSaveIndicator,
+    progress,
     hud: {
       update: (state) => hud.update(state),
-      event: (event) => hud.event(event),
+      event: (event) => {
+        hud.event(event);
+        metaEvent(event);
+      },
       radio: (line) => hud.radio(line),
       flag: (name, value) => hud.flag(name, value),
       reset: () => hud.reset(),

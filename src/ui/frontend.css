@@ -1712,3 +1712,268 @@
     transform: scale(1.09) translateY(-0.04em);
   }
 }
+
+/* ---------- Hangar ---------- */
+
+/* The panel keeps to the left so the ship on its pad (V's hangar shot)
+   stays in view on the right. */
+.nw-screen-hangar {
+  justify-items: start;
+}
+.nw-screen-hangar.is-wide .nw-panel {
+  width: min(60em, 66vw);
+}
+.nw-hangar-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20em;
+  gap: 1.4em;
+  min-height: 26em;
+}
+.nw-hangar-list {
+  display: grid;
+  gap: 0.15em;
+}
+.nw-hangar-aside {
+  align-self: start;
+  padding: 1em 1.1em;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.34);
+  border-inline-start: 2px solid var(--nw-cyan);
+}
+.nw-hangar-aside.is-walled {
+  border-inline-start-color: var(--nw-pink);
+}
+.nw-hd-kicker {
+  margin: 0 0 0.3em;
+  font-size: var(--nw-fs-label);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--nw-cyan);
+}
+.nw-swatch {
+  width: 0.9em;
+  height: 0.9em;
+  margin-inline-end: 0.4em;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Stat bars: the ghost tick marks Standard, the bar is the selection. */
+.nw-stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4em 0.8em;
+  margin: 0.9em 0 0;
+  font-size: var(--nw-fs-desc);
+}
+.nw-stats dt {
+  color: var(--nw-muted);
+}
+.nw-stats dd {
+  display: grid;
+  grid-template-columns: 1fr auto 3.4em;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0;
+}
+.nw-stat-bar {
+  --v: 0;
+  --b: 0;
+  position: relative;
+  height: 0.35em;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, var(--nw-cyan) calc(var(--v) * 100%),
+    rgba(255, 255, 255, 0.1) 0);
+}
+.nw-stat-bar::after {
+  content: "";
+  position: absolute;
+  top: -0.2em;
+  bottom: -0.2em;
+  left: calc(var(--b) * 100%);
+  width: 2px;
+  background: var(--nw-text);
+  opacity: 0.6;
+}
+.nw-stat-value {
+  font-family: var(--nw-mono);
+}
+.nw-stat-delta {
+  font-family: var(--nw-mono);
+  text-align: end;
+}
+.nw-stat-delta.is-better {
+  color: #7dffb0;
+}
+.nw-stat-delta.is-worse {
+  color: var(--nw-red);
+}
+/* Delta is never color alone: better gets an up mark, worse a down mark. */
+.nw-stat-delta.is-better::before {
+  content: "▲ ";
+  font-size: 0.7em;
+}
+.nw-stat-delta.is-worse::before {
+  content: "▼ ";
+  font-size: 0.7em;
+}
+
+/* Walls: premium, not apologetic. Full-strength label, a hatched edge,
+   a lock, and the explanation in the side panel. */
+.nw-subhead.is-walled {
+  color: var(--nw-pink);
+}
+.is-walled-list {
+  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+}
+.nw-button.is-walled {
+  position: relative;
+  justify-content: flex-start;
+  gap: 0.6em;
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 94, 168, 0.08) 0 6px,
+    transparent 6px 12px),
+    rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 94, 168, 0.22);
+}
+.nw-lock {
+  flex: none;
+  width: 0.7em;
+  height: 0.55em;
+  margin-top: 0.3em;
+  border: 1.5px solid var(--nw-pink);
+  border-radius: 2px;
+  position: relative;
+}
+.nw-lock::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 0.4em;
+  height: 0.35em;
+  translate: -50% 0;
+  border: 1.5px solid var(--nw-pink);
+  border-bottom: 0;
+  border-radius: 0.3em 0.3em 0 0;
+}
+.nw-wall-badge {
+  display: inline-block;
+  margin: 0 0 0.6em;
+  padding: 0.2em 0.6em;
+  border: 1px solid rgba(255, 94, 168, 0.55);
+  border-radius: 4px;
+  font-size: var(--nw-fs-label);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nw-pink);
+}
+
+/* Mastery */
+.nw-mastery-head {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.nw-mastery-rank {
+  display: grid;
+  place-items: center;
+  width: 2.4em;
+  height: 2.4em;
+  border: 2px solid var(--nw-gold);
+  transform: rotate(45deg);
+  font-family: var(--nw-mono);
+  font-size: 1.3em;
+  color: var(--nw-gold);
+}
+.nw-mastery-text {
+  display: grid;
+  gap: 0.25em;
+  flex: 1;
+}
+.nw-mastery-track {
+  height: 0.35em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.nw-mastery-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--nw-gold), var(--nw-pink));
+}
+.nw-rank-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.5em, 1fr));
+  gap: 0.3em;
+  max-height: 16em;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.nw-rank.is-earned {
+  border: 1px solid var(--nw-gold);
+}
+.nw-rank > .nw-button-label {
+  font-size: var(--nw-fs-desc);
+}
+
+/* Codex */
+.nw-codex-entry.is-sealed > .nw-button-label {
+  font-family: var(--nw-mono);
+  letter-spacing: 0.1em;
+  color: var(--nw-muted);
+}
+
+/* Campaign map: chapters as a route, sectors as nodes. */
+.nw-campaign-map {
+  display: grid;
+  gap: 0.35em;
+  counter-reset: chapter;
+}
+.nw-chapter-node {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.3em 0.8em;
+}
+.nw-chapter-node.is-current {
+  border: 1px solid var(--nw-cyan);
+  background: rgba(94, 242, 255, 0.08);
+}
+.nw-sector-nodes {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.35em;
+}
+.nw-sector-nodes > i {
+  padding: 0.05em 0.4em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 3px;
+  font-family: var(--nw-mono);
+  font-size: 0.68em;
+  font-style: normal;
+  color: var(--nw-muted);
+}
+.nw-sector-nodes > i.is-open {
+  border-color: var(--nw-cyan);
+  color: var(--nw-cyan);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .nw-frontend:not(.is-calm) .nw-hangar-body.is-sliding[data-slide="forward"] {
+    animation: nw-in-right 220ms var(--nw-ease-out);
+  }
+  .nw-frontend:not(.is-calm) .nw-hangar-body.is-sliding[data-slide="back"] {
+    animation: nw-in-left 220ms var(--nw-ease-out);
+  }
+}
+@media (max-width: 900px) {
+  .nw-screen-hangar.is-wide .nw-panel {
+    width: 94vw;
+  }
+  .nw-hangar-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -11,6 +11,8 @@ import type {
   SettingsStore,
   SkipTo,
 } from "../contracts/index.ts";
+import type { Loadout } from "../contracts/index.ts";
+import type { ProgressStore } from "./progress.ts";
 import type { InputLayer } from "../input/inputLayer.ts";
 import type { SaveStore } from "../settings/saveGame.ts";
 import type { Router } from "./router.ts";
@@ -19,6 +21,19 @@ import type { TextParams, UiKey } from "../i18n/index.ts";
 export interface StartRequest {
   readonly at: SkipTo;
   readonly difficulty: Difficulty;
+  /** The hangar loadout (filled in by the front end on every start). */
+  readonly loadout?: Loadout;
+}
+
+/** Structural twin of V's `ShipLook`, so UI does not import the renderer. */
+export interface ShipLookLike {
+  readonly weapon: string;
+  readonly sensor: string;
+  readonly paint: string;
+  readonly trim: string;
+  readonly decal: string;
+  readonly trail: string;
+  readonly helmet: string;
 }
 
 /**
@@ -44,15 +59,22 @@ export interface FrontEndHooks {
    * null when off screen. Pins intel tags to enemies.
    */
   screenPositionOf?(entityId: string): { x: number; y: number } | null;
-  /** Hangar preview (V): show the ship with this loadout. */
-  applyLoadout?(loadout: unknown): void;
-  /** Hangar camera (V): frame the ship for the hangar, or release it. */
-  hangarShot?(active: boolean): void;
+  /**
+   * Hangar preview (V's `stage.applyLoadout`): the loadout, and the same
+   * thing as a `ShipLook` (ids plus display colors) ready for the stage.
+   */
+  applyLoadout?(loadout: Loadout, look: ShipLookLike): void;
+  /** Hangar camera (V's `stage.showHangar`); null returns to the game. */
+  showHangar?(shot: "hero" | "turntable" | null): void;
+  /** A codex entry was unlocked for the first time (A may play a sting). */
+  onCodexUnlocked?(id: string): void;
 }
 
 export interface UiContext {
   readonly settings: SettingsStore;
   readonly saves: SaveStore;
+  /** Loadout, codex unlocks, career pay: outlives runs and settings resets. */
+  readonly progress: ProgressStore;
   readonly input: InputLayer;
   readonly router: Router;
   readonly hooks: FrontEndHooks;
