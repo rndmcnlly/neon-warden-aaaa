@@ -272,6 +272,7 @@ const frontEnd = createFrontEnd(overlayRoot, {
   hooks: {
     onAudioUnlock: () => void engine?.resume(),
     screenPositionOf: (id) => stage.screenPositionOf(Number(id)),
+    playfieldScale: () => stage.playfieldPxPerUnit(),
     applyLoadout: (loadout) => stage.applyLoadout(loadout),
     showHangar: (shot) => stage.showHangar(shot),
     onCodexUnlocked: () => engine?.playGameplay("intel_ping"),
@@ -439,8 +440,13 @@ function startRun(request: StartRequest): void {
   simFrozen = false;
   accumulator = 0;
   hitstop.reset();
+  const assist = settings.get().accessibility.aimAssist;
   sim = createSim({
     movement: flags.movement,
+    // Fixed for the run (a sim option, so replays stay deterministic):
+    // "touch" means the run was started from a touchscreen.
+    aimAssist: assist === "on" ||
+      (assist === "touch" && frontEnd.input.device() === "touch"),
     seed: flags.seed ?? DEFAULT_SEED,
     start: startFor(request.at),
     difficulty: request.difficulty,
@@ -763,7 +769,16 @@ function frame(now: number): void {
   if (running && sim && pilot) {
     let ticks: number;
     if (flags.autoPlay) {
-      ticks = autoSpeed;
+      // Time-based, like human play: `speed` is a multiple of real time, not
+      // ticks per refresh. Per-refresh stepping ran 2x on 120 Hz displays
+      // (and in headless Chromium), so "speed 1" QA reels played fast.
+      accumulator += dt * autoSpeed;
+      ticks = Math.min(
+        Math.max(MAX_TICKS_PER_FRAME, autoSpeed * 2),
+        Math.floor(accumulator / TICK_MS),
+      );
+      accumulator = Math.min(accumulator - ticks * TICK_MS, TICK_MS);
+      alpha = autoSpeed > 1 ? 1 : accumulator / TICK_MS;
     } else {
       accumulator += dt * settings.get().accessibility.gameSpeed;
       ticks = Math.min(MAX_TICKS_PER_FRAME, Math.floor(accumulator / TICK_MS));
