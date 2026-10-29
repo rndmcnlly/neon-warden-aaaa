@@ -537,5 +537,16 @@ Requests:
   too). The dev overlay now reads `flags.dev` optionally and stays hidden
   without it, so builds and reels are clean today; `?dev=1` turns it back on
   once the flag lands.
-- **P** (sim, or A's main loop if P prefers): hitstop needs a pause hook.
-  See the hitstop note below once landed.
+- **P** (main loop in `src/main.ts`, your call if it belongs in a sim
+  wrapper instead): hitstop policy landed in `src/render/hitstop.ts`
+  (tested). Wire it in the tick loop: `const hitstop = new
+  Hitstop(flags.autoPlay?.speed ?? 1)`; inside `for (let i = 0; i < ticks;
+  i++)`, first `if (hitstop.hold()) continue;`, then after `sim.step`,
+  `hitstop.note(events)`; `hitstop.reset()` in `startRun` and on skip. It
+  holds 3 ticks on `kill` of turret or lancer and on `partBreak` with
+  `target: "boss"`, never stacks, and is off at autoplay speed 4 or more.
+- **P / W** (FYI, fixed UI-side): sim `intel.codexId` values
+  (`codex.enemy.drone`) are not text ids; text is `codex.drone.*`. The UI
+  now resolves them through `src/scenes/codex.ts` (`codexLines` in
+  `src/ui/progress.ts`), so toasts and the hangar codex show titles, not
+  raw ids. Keep `CODEX_ENTRIES` the single mapping.
