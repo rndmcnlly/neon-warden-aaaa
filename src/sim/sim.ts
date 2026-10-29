@@ -46,6 +46,7 @@ import {
   weaponStats,
 } from "../contracts/index.ts";
 import { Rng } from "./rng.ts";
+import { sweptCircle } from "./sweep.ts";
 import {
   type Arena,
   type Enemy,
@@ -971,17 +972,17 @@ export class NeonWardenSim implements Sim {
   private resolveHits(): void {
     for (const shot of this.shots) {
       if (!shot.alive) continue;
-      let struck = false;
       for (const enemy of this.enemies) {
         if (!enemy.alive || shot.struck.includes(enemy.id)) continue;
         if (this.strikeEnemy(enemy, shot)) {
           this.statsTracker.roundConnected(this.tick);
           shot.connected = true;
-          struck = true;
-          break;
+          // Piercing Writs may cross more than one hull in a fast tick.
+          // Their struck ids prevent repeat damage on subsequent ticks.
+          if (!shot.alive) break;
         }
       }
-      if (!struck && shot.alive) this.strikeBoss(shot);
+      if (shot.alive) this.strikeBoss(shot);
     }
     const playerBody = {
       x: this.player.x,
@@ -1027,11 +1028,11 @@ export class NeonWardenSim implements Sim {
    * 3. Anything else that touches the hull damages it; a Writ pierces on.
    */
   private strikeEnemy(enemy: Enemy, shot: Projectile): boolean {
-    const hull = touches(enemy, shot);
+    const hull = sweptCircle(shot, enemy);
     const precise = shot.shot === "aimed" || shot.shot === "writ";
     const part = precise
       ? enemy.parts.find((p) =>
-        !p.broken && touches(partCircle(enemy, p), shot)
+        !p.broken && sweptCircle(shot, partCircle(enemy, p))
       )
       : undefined;
     if (!hull && !part) return false;
@@ -1212,9 +1213,13 @@ export class NeonWardenSim implements Sim {
     const boss = this.boss;
     if (!boss || boss.state !== "fighting") return;
     const pod = boss.pods.find((p) =>
-      !p.broken && touches(partCircle(boss, p), shot)
+      !p.broken && sweptCircle(shot, partCircle(boss, p))
     );
-    const hull = touches({ x: boss.x, y: boss.y, radius: BOSS.radius }, shot);
+    const hull = sweptCircle(shot, {
+      x: boss.x,
+      y: boss.y,
+      radius: BOSS.radius,
+    });
     if (!pod && !hull) return;
     this.statsTracker.roundConnected(this.tick);
     shot.alive = false;

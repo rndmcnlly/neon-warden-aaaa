@@ -1,0 +1,112 @@
+{
+  "errors": [],
+  "av": {
+    "hasAudio": true,
+    "voStem": true,
+    "contextStates": [
+      "running"
+    ],
+    "sourcesStarted": 69,
+    "voStarted": [
+      "1.67s en/sec1_intro_001.ogg",
+      "5.41s en/graze_ai_001.ogg",
+      "9.19s en/flash_ai_001.ogg"
+    ],
+    "lufs": -18.5,
+    "truePeak": -5.2,
+    "buses": {
+      "music": {
+        "lufs": -26,
+        "truePeak": -11.2
+      },
+      "sfx": {
+        "lufs": -22.1,
+        "truePeak": -5.4
+      },
+      "voice": {
+        "lufs": -16.2,
+        "truePeak": -2.5
+      },
+      "ui": {
+        "lufs": -70,
+        "truePeak": null
+      }
+    },
+    "audibleS": 9.06,
+    "voAudible": [
+      {
+        "start": 0.33,
+        "end": 4
+      },
+      {
+        "start": 4.54,
+        "end": 5.29
+      },
+      {
+        "start": 5.71,
+        "end": 6.77
+      },
+      {
+        "start": 7.37,
+        "end": 7.78
+      }
+    ],
+    "subtitles": [
+      {
+        "start": 0.3,
+        "line": "?Fresh sector! Fresh you! Same ",
+        "layer": "ambient",
+        "end": 1.667,
+        "audibleS": 1.48
+      },
+      {
+        "start": 1.667,
+        "line": "sec1_intro_001",
+        "layer": "scripted",
+        "end": 5.4125,
+        "audibleS": 3.08
+      },
+      {
+        "start": 5.4125,
+        "line": "graze_ai_001",
+        "layer": "scripted",
+        "end": 9.195699951171875,
+        "audibleS": 1.48
+      },
+      {
+        "start": 9.195699951171875,
+        "line": "flash_ai_001",
+        "layer": "scripted",
+        "end": 10.56
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "audio: captured",
+      "status": "pass",
+      "detail": "9.06 s audible of 10.56 s, 69 sounds started, 3 VO"
+    },
+    {
+      "id": "audio: true peak at or under -1 dBTP",
+      "status": "pass",
+      "detail": "-5.2 dBTP, -18.5 LUFS integrated"
+    },
+    {
+      "id": "audio: bus loudness (pre-master)",
+      "status": "pass",
+      "detail": "music -26 LUFS / -11.2 dBTP, sfx -22.1 LUFS / -5.4 dBTP, voice -16.2 LUFS / -2.5 dBTP, ui -70 LUFS / NaN dBTP"
+    },
+    {
+      "id": "audio: integrated loudness -20 to -14 LUFS",
+      "status": "pass",
+      "detail": "-18.5 LUFS integrated (target about -17)"
+    },
+    {
+      "id": "VO not dropped",
+      "status": "pass",
+      "detail": "3 of 3 subtitle windows have audible VO stem",
+      "items": []
+    }
+  ]
+}

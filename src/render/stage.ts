@@ -31,6 +31,7 @@ import type {
 } from "../contracts/index.ts";
 import { Backdrop } from "./backdrop.ts";
 import { BulletRenderer } from "./bullets.ts";
+import { ShotTrails } from "./shotTrails.ts";
 import { CameraRig, type RigShotId } from "./cameraRig.ts";
 import { simToWorldLength, simToWorldX, simToWorldZ } from "./coords.ts";
 import { FlashGuard, REDUCED_LIMITS, STANDARD_LIMITS } from "./flashGuard.ts";
@@ -237,6 +238,10 @@ export function createStage(
   scene.add(rings.group);
   const bullets = new BulletRenderer();
   scene.add(bullets.group);
+  const shotTrails = new ShotTrails();
+  scene.add(shotTrails.mesh);
+  const motionQuery = globalThis.matchMedia("(prefers-reduced-motion: reduce)");
+  let reduceMotion = settingsNow?.accessibility.reduceMotion ?? false;
 
   // Wave-3 scan language and charge.
   const beam = new ScanBeam();
@@ -368,6 +373,7 @@ export function createStage(
     }
     renderScale = s.display.renderScale;
     rig.shakeScale = s.accessibility.shake;
+    reduceMotion = s.accessibility.reduceMotion;
     reducedFlashing = s.accessibility.reducedFlashing;
     flashes.limits = reducedFlashing ? REDUCED_LIMITS : STANDARD_LIMITS;
     resize();
@@ -589,9 +595,9 @@ export function createStage(
         });
         break;
       case "playerFired":
+        rig.kickShot(e.shot, e.level);
         if (e.shot === "writ") {
           rings.spawn(ctx.player, ROLE.writ.hex, 0.8 + e.level * 0.5, 0.25);
-          rig.addTrauma(0.08 * e.level);
         }
         if (burstsThisFrame < MAX_BURSTS_PER_FRAME) {
           tmpV.copy(ctx.player).add(new THREE.Vector3(0, 0.2, -0.55));
@@ -834,6 +840,17 @@ export function createStage(
     reticles.end();
     releaseUnseen();
     bullets.update(state.bullets, interp, alpha, timeSec);
+    shotTrails.update(
+      state.bullets,
+      interp,
+      alpha,
+      dt,
+      flashback || tier.maxParticles <= 512
+        ? 0
+        : tier.maxParticles <= 1024
+        ? 20
+        : 48,
+    );
   }
 
   function animateEnemy(slot: ModelSlot, kind: EnemyKind, age: number): void {
@@ -1006,6 +1023,7 @@ export function createStage(
       const t0 = performance.now();
       renderer.info.reset();
       const dt = Math.min(dtMs, 100) / 1000;
+      rig.reduceMotion = reduceMotion || motionQuery.matches;
       timeSec += dt;
       ctx.timeSec = timeSec;
       burstsThisFrame = 0;
@@ -1139,6 +1157,7 @@ export function createStage(
       unsubscribe?.();
       globalThis.removeEventListener("resize", resize);
       post.dispose();
+      shotTrails.dispose();
       renderer.dispose();
       renderer.domElement.remove();
     },

@@ -66,11 +66,23 @@ export class CameraRig {
   private blendTotal = 0;
   private ease: "linear" | "inOut" = "inOut";
   private trauma = 0;
+  private recoil = 0;
+  reduceMotion = false;
+
+  /** One directional kick, never additive oscillation from held stream fire. */
+  kickShot(kind: "aimed" | "stream" | "writ", level = 0): void {
+    if (kind === "stream" || this.reduceMotion || this.shakeScale === 0) return;
+    this.recoil = Math.max(
+      this.recoil,
+      kind === "writ" ? 0.045 + level * 0.018 : 0.035,
+    );
+  }
   /** Settings shake slider, 0–1. */
   shakeScale = 1;
   private gameplayDistance = 20;
   private readonly a: Pose = newPose();
   private readonly b: Pose = newPose();
+  private readonly recoilTarget = new THREE.Vector3();
   /** The pose shown last frame, and a frozen copy when a blend is interrupted. */
   private readonly last: Pose = newPose();
   private frozenFrom: Pose | null = null;
@@ -237,16 +249,25 @@ export class CameraRig {
 
     // Shake: smooth pseudo-noise from summed sines, scaled by trauma squared.
     this.trauma = Math.max(0, this.trauma - dtMs / 900);
-    const amount = this.trauma * this.trauma * this.shakeScale;
+    const scale = this.reduceMotion ? 0 : this.shakeScale;
+    const amount = this.trauma * this.trauma * scale;
     const t = ctx.timeSec * 34;
     const sx = (Math.sin(t * 1.1) + Math.sin(t * 2.3 + 1.7)) * 0.5;
     const sy = (Math.sin(t * 1.7 + 0.4) + Math.sin(t * 2.9 + 2.1)) * 0.5;
     const roll = (Math.sin(t * 1.3 + 3.1) + Math.sin(t * 3.1)) * 0.5;
 
     this.camera.position.copy(pose.position);
+    // Camera trucks up-lane, so the image recoils down-lane. Target trucks
+    // with it: no zoom, roll, or change to the player's collision position.
+    const kick = this.recoil * scale;
+    this.camera.position.z -= kick;
     this.camera.position.x += sx * amount * 0.6;
     this.camera.position.y += sy * amount * 0.4;
-    this.camera.lookAt(pose.target);
+    this.recoilTarget.copy(pose.target);
+    this.recoilTarget.z -= kick;
+    this.camera.lookAt(this.recoilTarget);
+    this.recoil *= Math.exp(-Math.max(0, dtMs) / 38);
+    if (this.recoil < 0.00001 || scale === 0) this.recoil = 0;
     // Roll only outside live play: in gameplay, shake is translation only,
     // so the playfield never tilts under the player's hands.
     const cinematic = !INTERACTIVE_SHOTS.has(this.to) || this.blendMs > 0;

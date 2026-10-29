@@ -26,7 +26,7 @@ export const PLAYER = Object.freeze({
   minY: 60,
   maxY: 640 - 24,
   fireInterval: 7,
-  shotSpeed: 11,
+  shotSpeed: 16.5,
   shotRadius: 6,
   /** Horizontal shot speeds per cannon level 1–3. */
   spreads: [[0], [-0.8, 0.8], [-1.6, 0, 1.6]] as const,
@@ -170,9 +170,9 @@ export const RESTORED_CUT_CONTENT = Object.freeze([
 export const TRIGGER = Object.freeze({
   /** Held longer than this many ticks, a press becomes the stream. */
   tapThreshold: 8,
-  aimedSpeed: 14,
+  aimedSpeed: 21,
   aimedRadius: 5,
-  writSpeed: 12,
+  writSpeed: 18,
   /** Writ rounds multiply their damage on Warden pods (2) and more if locked. */
   writPodMultiplier: 2,
   lockedWritPodMultiplier: 3,
