@@ -21,6 +21,8 @@ export type MusicCueId =
   | "ending"
   | "endingKill"
   | "endingPacifist"
+  /** Under the end credits crawl: it must loop, since the crawl is long. */
+  | "credits"
   | "silence";
 
 /**

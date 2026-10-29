@@ -233,6 +233,11 @@ export const MUSIC_FALLBACK: Readonly<Partial<Record<MusicCueId, MusicCueId>>> =
     menu: "tutorial",
     // The generic ending cue, once the two endings have their own picks.
     ending: "endingKill",
+    // The crawl runs minutes and both ending takes are 45 s one-shots, so
+    // the credits borrow the menu's looping theme (the crawl hands back to
+    // the title). A `credits` entry in the manifest would win; until then
+    // audition it through the `music.menu` axis.
+    credits: "menu",
   };
 
 /**

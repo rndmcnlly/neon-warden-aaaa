@@ -573,7 +573,10 @@ export async function captureReel(
     }, { key, value: JSON.stringify({ version, settings: reel.settings }) });
   }
   const unmet = await unmetRequirements(reel.requires ?? []);
-  const av = await installAv(context);
+  const av = await installAv(
+    context,
+    (reel.av?.musicDuring ?? []).map((m) => m.selector),
+  );
   const before = Date.now();
   const page = await context.newPage();
   // Playwright's video starts with the page; take the middle of the call.

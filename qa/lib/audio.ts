@@ -47,6 +47,29 @@ export function audibleSpans(
   return out;
 }
 
+/**
+ * Windows where a marked element was visible, from its on/off samples in
+ * time order; one still visible at the end runs to `duration`.
+ */
+export function visibleWindows(
+  samples: readonly { readonly t: number; readonly visible: boolean }[],
+  duration: number,
+): Span[] {
+  const out: Span[] = [];
+  let open: number | null = null;
+  for (const s of samples) {
+    if (s.visible && open === null) open = Math.max(0, s.t);
+    if (!s.visible && open !== null) {
+      out.push({ start: open, end: s.t });
+      open = null;
+    }
+  }
+  if (open !== null && open < duration) {
+    out.push({ start: open, end: duration });
+  }
+  return out;
+}
+
 /** Seconds of `spans` that fall inside `window`. */
 export function overlap(spans: readonly Span[], window: Span): number {
   let sum = 0;

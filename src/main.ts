@@ -50,7 +50,7 @@ import {
   timelineById,
   timelineForEvent,
 } from "./scenes/index.ts";
-import { PausableClock } from "./app/clock.ts";
+import { PausableClock, pauseScope } from "./app/clock.ts";
 import { runTicks } from "./app/tickLoop.ts";
 import { Hitstop } from "./render/hitstop.ts";
 import {
@@ -759,22 +759,32 @@ if (flags.skipTo || flags.autoPlay) {
 
 let last = performance.now();
 let wasPaused = false;
+let audioHeld = false;
 
 function frame(now: number): void {
   const dt = now - last;
   last = now;
 
   // Gameplay runs only while the front end says so; pausing also stops the
-  // Director's clock and the audio, so scenes wait for the player.
+  // Director's clock and the audio, so scenes wait for the player. The end
+  // credits crawl keeps the audio running (`pauseScope`).
   const running = sim !== null && frontEnd.isSimRunning();
-  const paused = sim !== null && !running;
+  const scope = pauseScope({
+    inRun: sim !== null,
+    simRunning: running,
+    creditsRolling: frontEnd.credits.rolling(),
+  });
+  const paused = scope.clock;
   if (paused !== wasPaused) {
     frontEnd.input.reset();
     sim?.resetMovement();
     hitstop.reset();
     wasPaused = paused;
     clock.setPaused(paused);
-    if (engine) void (paused ? engine.ctx.suspend() : engine.ctx.resume());
+  }
+  if (scope.audio !== audioHeld) {
+    audioHeld = scope.audio;
+    if (engine) void (audioHeld ? engine.ctx.suspend() : engine.ctx.resume());
   }
 
   let alpha = 1;

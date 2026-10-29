@@ -33,6 +33,7 @@ import {
   quantile,
   type Span,
   stereoBalance,
+  visibleWindows,
   wordAlignment,
 } from "./lib/audio.ts";
 
@@ -44,6 +45,18 @@ export interface AvOptions {
   readonly wordPulse?: boolean;
   /** Each scripted line's voice take and subtitle share a language. */
   readonly langMatch?: boolean;
+  /**
+   * The music stem must be audible while `selector` is visible (the end
+   * credits crawl, the menu credits), after `fadeS` (default 3) of each
+   * window for the fade-in or crossfade.
+   */
+  readonly musicDuring?: readonly MusicDuring[];
+}
+
+export interface MusicDuring {
+  readonly selector: string;
+  readonly label: string;
+  readonly fadeS?: number;
 }
 
 // -- page side
@@ -82,7 +95,8 @@ type Msg =
     exact: boolean;
   }
   | { k: "enemies"; epoch: number; xs: number[] }
-  | { k: "ctx"; epoch: number; state: string };
+  | { k: "ctx"; epoch: number; state: string }
+  | { k: "mark"; epoch: number; selector: string; visible: boolean };
 
 /**
  * Where QA looks for the highlighted word: U's `.nw-word.is-spoken`
@@ -94,7 +108,9 @@ const WORD_SELECTOR =
   ".nw-subtitle-live .nw-word.is-spoken, .nw-subtitle-live [aria-current='true']";
 
 /** Serialized into the page: keep it self-contained. */
-function pageAv(wordSelector: string): void {
+function pageAv(
+  { wordSelector, marks }: { wordSelector: string; marks: string[] },
+): void {
   const w = globalThis as unknown as Record<string, unknown>;
   const send = w.__nwqaAv as (m: unknown) => Promise<void>;
   if (typeof send !== "function") return;
@@ -258,7 +274,16 @@ function pageAv(wordSelector: string): void {
   // Subtitles and the highlighted word, sampled on every DOM change.
   let lastSub = "";
   let lastWord = "";
+  const markShown = new Map<string, boolean>();
   const scan = () => {
+    for (const selector of marks) {
+      const el = document.querySelector<HTMLElement>(selector);
+      const visible = !!el && !el.hidden && el.offsetParent !== null;
+      if (markShown.get(selector) !== visible) {
+        markShown.set(selector, visible);
+        post({ k: "mark", epoch: now(), selector, visible });
+      }
+    }
     const box = document.querySelector<HTMLElement>(".nw-subtitle-live");
     if (!box) return;
     const text = box.querySelector(".nw-subtitle-text")?.textContent?.trim() ??
@@ -363,6 +388,7 @@ export class AvLog {
   }[] = [];
   readonly enemies: { epoch: number; xs: number[] }[] = [];
   readonly ctx: { epoch: number; state: string }[] = [];
+  readonly marks: { epoch: number; selector: string; visible: boolean }[] = [];
   /** Epoch ms of the first video frame (set when the page is created). */
   videoEpoch = 0;
 
@@ -389,6 +415,9 @@ export class AvLog {
       case "ctx":
         this.ctx.push(m);
         return;
+      case "mark":
+        this.marks.push(m);
+        return;
     }
   }
 
@@ -399,10 +428,17 @@ export class AvLog {
 }
 
 /** Call before the first page: exposes the sink and installs the page script. */
-export async function installAv(context: BrowserContext): Promise<AvLog> {
+export async function installAv(
+  context: BrowserContext,
+  /** Selectors whose visibility to log (`AvOptions.musicDuring`). */
+  marks: readonly string[] = [],
+): Promise<AvLog> {
   const log = new AvLog();
   await context.exposeFunction("__nwqaAv", (m: Msg) => log.take(m));
-  await context.addInitScript(pageAv, WORD_SELECTOR);
+  await context.addInitScript(pageAv, {
+    wordSelector: WORD_SELECTOR,
+    marks: [...marks],
+  });
   return log;
 }
 
@@ -934,6 +970,48 @@ export async function finishAv(
           langs.join(", ")
         }`,
         [...mismatched, ...sequence].slice(0, 16),
+      );
+    }
+
+    // Music under the credits: the bus stem, not the mix, so a voice line
+    // or a UI click cannot pass for the score.
+    for (const m of opts.musicDuring ?? []) {
+      const id = `music audible: ${m.label}`;
+      const windows = visibleWindows(
+        log.marks.filter((x) => x.selector === m.selector).map((x) => ({
+          t: log.t(x.epoch),
+          visible: x.visible,
+        })),
+        seconds,
+      );
+      const fade = m.fadeS ?? 3;
+      // Every stem, the mix included, ends in about 1 s of silence as the
+      // recorders stop: a window open at the reel's end stops short of it.
+      const last = seconds - 1.5;
+      const judged = windows
+        .map((w) => ({ start: w.start + fade, end: Math.min(w.end, last) }))
+        .filter((w) => w.end - w.start >= 1);
+      const span = judged.reduce((n, w) => n + w.end - w.start, 0);
+      if (!judged.length) {
+        check(id, "fail", `${m.selector} never visible for ${fade + 1} s`);
+        continue;
+      }
+      if (!buses.music) {
+        check(id, "fail", "no music bus stem was recorded");
+        continue;
+      }
+      const heard = audibleSpans(
+        await silence(`${tmp}/music.wav`, seconds),
+        seconds,
+      );
+      const audibleS = judged.reduce((n, w) => n + overlap(heard, w), 0);
+      check(
+        id,
+        audibleS >= 0.9 * span ? "pass" : "fail",
+        `${r2(audibleS)} of ${
+          r2(span)
+        } s audible on the music stem while ${m.selector} shows (after a ${fade} s fade-in; need 90%)`,
+        judged.map((w) => `${r2(w.start - fade)}–${r2(w.end)} s`),
       );
     }
 

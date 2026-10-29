@@ -116,6 +116,8 @@ export interface FrontEnd {
     roll(): Promise<void>;
     /** Called each time a roll finishes: set `credits.rollDone` here. */
     onDone(listener: () => void): () => void;
+    /** True while the crawl is up (it pauses the sim, not the music). */
+    rolling(): boolean;
   };
   readonly tutorial: {
     /** The player confirmed "Skip onboarding": play `tutorial-skip`. */
@@ -688,13 +690,27 @@ export function createFrontEnd(
     });
   }
 
+  // True while the crawl screen exists (any way it goes: done, skipped, or
+  // torn down by a quit), so a later pause menu still silences the sound.
+  let crawlUp = false;
   function rollCredits(): Promise<void> {
     return new Promise((resolve) => {
-      router.push(creditsCrawlScreen(ctx, calm, () => {
+      const crawl = creditsCrawlScreen(ctx, calm, () => {
         router.reset();
         creditsListeners.emit();
         resolve();
-      }));
+      });
+      router.push(() => {
+        const screen = crawl();
+        crawlUp = true;
+        return {
+          ...screen,
+          dispose: () => {
+            crawlUp = false;
+            screen.dispose?.();
+          },
+        };
+      });
     });
   }
 
@@ -716,7 +732,11 @@ export function createFrontEnd(
       reset: () => hud.reset(),
     },
     showContinue,
-    credits: { roll: rollCredits, onDone: creditsListeners.on },
+    credits: {
+      roll: rollCredits,
+      onDone: creditsListeners.on,
+      rolling: () => crawlUp,
+    },
     tutorial: { onSkip: skipListeners.on },
     dispose() {
       motionQuery.removeEventListener("change", onMotionQuery);

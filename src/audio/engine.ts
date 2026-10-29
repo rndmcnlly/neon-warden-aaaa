@@ -90,7 +90,7 @@ export const STAGE_CONTENTS: Readonly<
     scene: (s) => s !== "tutorial" && !s.startsWith("ending"),
   },
   ending: {
-    music: ["ending", "endingKill", "endingPacifist"],
+    music: ["ending", "endingKill", "endingPacifist", "credits"],
     scene: (s) => s.startsWith("ending") || s === "credits",
   },
 };

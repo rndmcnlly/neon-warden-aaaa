@@ -43,3 +43,20 @@ export class PausableClock implements Clock {
     this.rate = rate;
   }
 }
+
+/**
+ * What a front-end pause stops during a run. A menu over play (pause,
+ * continue, settings) stops the sim, this clock and the sound together. The
+ * end credits crawl is also a screen over play, so it stops the sim and the
+ * clock (the credits timeline waits on a flag, not on time), but not the
+ * sound: the crawl has a score. Suspending the AudioContext there silenced
+ * the credits music on every route until the crawl ended.
+ */
+export function pauseScope(o: {
+  readonly inRun: boolean;
+  readonly simRunning: boolean;
+  readonly creditsRolling: boolean;
+}): { readonly clock: boolean; readonly audio: boolean } {
+  const paused = o.inRun && !o.simRunning;
+  return { clock: paused, audio: paused && !o.creditsRolling };
+}

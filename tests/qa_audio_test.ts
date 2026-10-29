@@ -7,6 +7,7 @@ import {
   pearson,
   similarity,
   stereoBalance,
+  visibleWindows,
   wordAlignment,
 } from "../qa/lib/audio.ts";
 import { canary } from "../qa/lib/canary.ts";
@@ -93,4 +94,17 @@ Deno.test("canary trusts heard lines only when scripted and actually audible", (
   assert(!canary(heard, script, [{ start: 30, end: 31 }]).trusted);
   assert(canary([], script, []).trusted);
   assert(!canary([], script, [{ start: 0, end: 5 }]).trusted);
+});
+
+Deno.test("marked windows open on show, close on hide, run to the end", () => {
+  assertEquals(
+    visibleWindows([
+      { t: 0, visible: false },
+      { t: 2, visible: true },
+      { t: 5, visible: false },
+      { t: 8, visible: true },
+    ], 10),
+    [{ start: 2, end: 5 }, { start: 8, end: 10 }],
+  );
+  assertEquals(visibleWindows([], 10), []);
 });

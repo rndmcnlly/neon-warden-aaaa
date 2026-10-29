@@ -11,7 +11,9 @@ import { branch, music, pause, say, setFlag, waitFlag } from "./cues.ts";
 export const credits: Timeline = {
   id: "credits",
   cues: [
-    music("ending", 1500),
+    // A looping cue (`MUSIC_FALLBACK.credits`): the ending takes are 45 s
+    // one-shots and would run out under the crawl.
+    music("credits", 2500),
     setFlag(FLAGS.creditsRoll),
     waitFlag(FLAGS.creditsRollDone),
     music("silence", 2000),

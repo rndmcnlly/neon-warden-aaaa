@@ -14,7 +14,7 @@
  * `pendingIfMissing` or `needs`; it reports `pending`, not `fail`.
  */
 
-import type { AvOptions } from "./av.ts";
+import type { AvOptions, MusicDuring } from "./av.ts";
 
 export type Topic =
   | "menus"
@@ -164,8 +164,38 @@ function menuTour(lang: string): readonly Step[] {
     { do: "press", key: "Enter" },
     { do: "wait", ms: 2500 },
     { do: "assertNoOverflow", label: "credits fits" },
+    // Held so the music check has a window (MENU_CREDITS_MUSIC).
+    { do: "wait", ms: 3000 },
   ];
 }
+
+/** The menu theme keeps playing under the main menu's credits. */
+const MENU_CREDITS_MUSIC: AvOptions = {
+  musicDuring: [{
+    selector: ".nw-screen-credits",
+    label: "main menu credits",
+    fadeS: 0.5,
+  }],
+};
+
+/**
+ * The end credits crawl has a score (it used to suspend all audio as a
+ * pause: research/2026-10-29-credits-music/). The crawl runs minutes, so the
+ * ending reels record its first stretch.
+ */
+const CRAWL_MUSIC: MusicDuring = {
+  selector: ".nw-screen-crawl",
+  label: "end credits crawl",
+};
+const CRAWL_STEPS: readonly Step[] = [
+  {
+    do: "until",
+    probe: "p.flags()['credits.roll'] === true",
+    label: "the end credits roll",
+    timeoutMs: 45_000,
+  },
+  { do: "wait", ms: 12_000 },
+];
 
 const GAME = "&seed=121&qa=1";
 
@@ -178,6 +208,7 @@ export const REELS: readonly Reel[] = [
     query: "?qa=1",
     steps: menuTour("en"),
     maxSeconds: 60,
+    av: MENU_CREDITS_MUSIC,
   },
   {
     id: "menus-es",
@@ -187,6 +218,7 @@ export const REELS: readonly Reel[] = [
     settings: { textLang: "es", voiceLang: "es" },
     steps: menuTour("es"),
     maxSeconds: 60,
+    av: MENU_CREDITS_MUSIC,
   },
   {
     id: "menus-zh",
@@ -196,6 +228,7 @@ export const REELS: readonly Reel[] = [
     settings: { textLang: "zh", voiceLang: "zh" },
     steps: menuTour("zh"),
     maxSeconds: 60,
+    av: MENU_CREDITS_MUSIC,
   },
   {
     id: "accessibility",
@@ -467,9 +500,10 @@ export const REELS: readonly Reel[] = [
         label: "the replacement line plays",
         timeoutMs: 30_000,
       },
-      { do: "wait", ms: 3000 },
+      ...CRAWL_STEPS,
     ],
-    maxSeconds: 60,
+    maxSeconds: 95,
+    av: { musicDuring: [CRAWL_MUSIC] },
   },
   // The two defeat reels record the moment the fight ends at real time: a
   // fast-forwarded fight, then `setSpeed(1)` just before the decisive tick,
@@ -605,9 +639,10 @@ export const REELS: readonly Reel[] = [
         label: "zero kills, zero shots, pacifist outcome",
         timeoutMs: 2_000,
       },
-      { do: "wait", ms: 4000 },
+      ...CRAWL_STEPS,
     ],
-    maxSeconds: 60,
+    maxSeconds: 130,
+    av: { musicDuring: [CRAWL_MUSIC] },
   },
 
   // -- wave 3: each starts pending and turns real when its code lands.
