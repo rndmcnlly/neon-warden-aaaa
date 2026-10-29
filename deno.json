@@ -38,6 +38,7 @@
     "qa:reel": "deno run -A --no-lock qa/qa.ts reel",
     "qa:topic": "deno run -A --no-lock qa/qa.ts topic",
     "qa:list": "deno run -A --no-lock qa/qa.ts list",
+    "qa:probe": "deno run -A --no-lock qa/probe.ts",
     "ci": "deno fmt --check && deno lint && deno task check && deno task test && deno task build"
   },
   "exclude": [

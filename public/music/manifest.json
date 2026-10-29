@@ -1,5 +1,14 @@
 {
   "version": 1,
-  "note": "Stopgap until music/promote.py writes this file: no cues promoted yet, so every cue is silent.",
-  "cues": {}
+  "cues": {
+    "logos": null,
+    "tutorial": null,
+    "gameplay": null,
+    "flashback": null,
+    "boss": null,
+    "menu": null,
+    "ending": null,
+    "endingKill": null,
+    "endingPacifist": null
+  }
 }

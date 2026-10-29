@@ -11,6 +11,7 @@ qa/
   assets.ts      asset pipeline (models, budgets, glTF, sfx, music, VO, licenses)
   capture.ts     build, static server, Playwright reel runner, contact sheets
   reels.ts       the reel list: data, one entry per video
+  probe.ts       watch window.__nwqa live for a query (writing `until` steps)
   budgets.ts     triangle and byte budgets, animated nodes, third-party list
   report.ts      dashboard HTML, summary.json, summary.txt
   lib/           pure helpers (text widths, id scan, GLB reader) with tests
@@ -23,15 +24,14 @@ browsers are Playwright 1.58.2's Chromium (already cached on this machine).
 
 ## Run
 
-Until the tasks in `REQUESTS.md` land in `deno.json`, use the long form:
-
-| Want                         | Task (proposed)            | Long form                                           |
-| ---------------------------- | -------------------------- | --------------------------------------------------- |
-| coverage and assets, seconds | `deno task qa:static`      | `deno run -A --no-lock qa/qa.ts static`             |
-| one or more reels            | `deno task qa:reel boss`   | `deno run -A --no-lock qa/qa.ts reel boss menus-es` |
-| a topic                      | `deno task qa:topic menus` | `deno run -A --no-lock qa/qa.ts topic menus`        |
-| everything (8–10 min)        | `deno task qa`             | `deno run -A --no-lock qa/qa.ts`                    |
-| list reels                   | `deno task qa:list`        | `deno run -A --no-lock qa/qa.ts list`               |
+| Want                         | Task                                        | Long form                                           |
+| ---------------------------- | ------------------------------------------- | --------------------------------------------------- |
+| coverage and assets, seconds | `deno task qa:static`                       | `deno run -A --no-lock qa/qa.ts static`             |
+| one or more reels            | `deno task qa:reel boss`                    | `deno run -A --no-lock qa/qa.ts reel boss menus-es` |
+| a topic                      | `deno task qa:topic menus`                  | `deno run -A --no-lock qa/qa.ts topic menus`        |
+| everything (8–10 min)        | `deno task qa`                              | `deno run -A --no-lock qa/qa.ts`                    |
+| list reels                   | `deno task qa:list`                         | `deno run -A --no-lock qa/qa.ts list`               |
+| watch the probe              | `deno task qa:probe "?skipto=boss&qa=1" 20` | `deno run -A --no-lock qa/probe.ts --build ...`     |
 
 Options: `--no-build` reuses `qa/.build/dist` (skip the 10 s Vite build when
 only reels changed); `--url=http://localhost:3000/` records against a
@@ -91,7 +91,18 @@ Append an entry to `REELS` in `qa/reels.ts`:
 Step kinds are documented on the `Step` type. Drive with keys like a
 player; `until` reads the QA probe (`window.__nwqa`, see REQUESTS.md) for
 beats pixels cannot prove. Compress time with `autoplay=...&speed=N` rather
-than long waits. If a reel needs something that does not exist yet, list it
+than long waits: auto-play runs the sim N times faster and the Director's
+scene clock min(N, 8) times faster, so scenes keep pace and lines cut each
+other short. In the tutorial, auto-play also performs the movement and focus
+prompts (`src/app/tutorialDemo.ts`).
+
+The probe (`src/app/qaProbe.ts`): `scene()`, `timeline()`, `sim()` (tick,
+sector, phase, outcome, kills, shotsFired, frozen), `flags()` (story flags
+this run), `log` (`sim:`, `scene:`, `line:`, `bark:` entries) and `events`
+(sim events with fields). Per-shot events are left out of both logs. To see
+what a query actually does before writing `until` steps, run
+`deno task qa:probe "<query>" <seconds> [interval]` (add `--build` after a
+source change; it otherwise reuses the last reel build). If a reel needs something that does not exist yet, list it
 in `needs` and file it in `REQUESTS.md`; the reel then reports pending
 instead of failing.
 

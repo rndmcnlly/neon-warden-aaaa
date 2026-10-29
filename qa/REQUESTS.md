@@ -4,6 +4,15 @@ Owner of `src/contracts`, `src/main.ts`, `deno.json`, `.gitignore`: the
 integration agent. QA tooling never edits those; it files requests here.
 Status as of October 28, 2026.
 
+## Status (wiring pass, October 28, 2026)
+
+Items 1–6 are done. The probe also exposes `timeline()`, `flags()`,
+`events`, and `kills`, `phase`, `frozen` in `sim()`; the six gameplay reels
+now assert their real beats and no longer carry `needs`. Item 6 is fixed at
+the source: `music/promote.py` always writes `public/music/manifest.json`
+(every runtime cue, `null` until picked). Item 7 and "For other
+workstreams" remain with their owners.
+
 ## 1. deno.json tasks and config
 
 ```jsonc

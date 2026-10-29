@@ -8,12 +8,14 @@
     uv run music/promote.py             # encode picks, write manifest
     uv run music/promote.py --dry-run   # show what would happen
 
-Reads music/picks.json:
+Reads music/picks.json (absent means nothing picked yet):
     { "gameplay": { "file": "gameplay/gameplay_02.wav",
                     "loopStart": 0.0, "loopEnd": 59.5 }, "boss": null, ... }
 Writes public/music/<cue>.ogg (Ogg Opus 128 kb/s, loudness-normalized to
 -16 LUFS so cues sit together on the music bus) and public/music/manifest.json
-in the shape src/audio/manifests.ts reads. Needs ffmpeg on PATH.
+in the shape src/audio/manifests.ts reads. The manifest is always written,
+with every runtime cue listed (null when unpicked), so the game never
+requests a missing file. Needs ffmpeg on PATH only when something is picked.
 """
 
 from __future__ import annotations
@@ -27,20 +29,23 @@ MUSIC = Path(__file__).resolve().parent
 ROOT = MUSIC.parent
 PUBLIC = ROOT / "public" / "music"
 
-# Candidate cue name -> runtime MusicCueId. "menu" and the two endings wait on
-# a contract change (see music/README.md); until then both endings share
-# "ending", and the pacifist pick wins only if no kill pick exists.
-RUNTIME_ID = {"ending_kill": "ending", "ending_pacifist": "ending"}
+# Candidate cue name -> runtime MusicCueId (src/contracts/timeline.ts).
+RUNTIME_ID = {"ending_kill": "endingKill", "ending_pacifist": "endingPacifist"}
+# Every MusicCueId that plays a track ("silence" plays none).
+RUNTIME_CUES = ("logos", "tutorial", "gameplay", "flashback", "boss", "menu",
+                "ending", "endingKill", "endingPacifist")
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
-    picks = json.loads((MUSIC / "picks.json").read_text())
-    index = json.loads((MUSIC / "candidates" / "index.json").read_text())
+    picks_file = MUSIC / "picks.json"
+    picks = json.loads(picks_file.read_text()) if picks_file.exists() else {}
+    index_file = MUSIC / "candidates" / "index.json"
+    index = json.loads(index_file.read_text()) if index_file.exists() else {"cues": {}}
     loops = {e["file"]: e["loop"] for es in index["cues"].values() for e in es}
-    manifest: dict = {"version": 1, "cues": {}}
+    manifest: dict = {"version": 1, "cues": {cue: None for cue in RUNTIME_CUES}}
     for cue, pick in picks.items():
         runtime = RUNTIME_ID.get(cue, cue)
         if not pick or manifest["cues"].get(runtime):
@@ -61,7 +66,8 @@ def main() -> None:
                 entry[k] = pick[k]
         manifest["cues"][runtime] = entry
     if not args.dry_run:
-        (PUBLIC / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n")
+        PUBLIC.mkdir(parents=True, exist_ok=True)
+        (PUBLIC / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps(manifest, indent=1))
 
 

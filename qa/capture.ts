@@ -40,6 +40,9 @@ export interface ReelResult {
 
 const VIEWPORT = { width: 1280, height: 720 };
 
+/** How long an `until` step waits for the QA probe to be installed. */
+const PROBE_BOOT_MS = 8_000;
+
 // -- build and serve
 
 export async function build(outDir: string): Promise<void> {
@@ -390,9 +393,13 @@ class ReelRun {
         );
       }
       case "until": {
-        const hasProbe = await page.evaluate(() =>
-          typeof (globalThis as { __nwqa?: unknown }).__nwqa === "object"
-        );
+        // The game installs the probe after its async boot (audio, assets),
+        // so give it a few seconds to appear before calling it absent.
+        const hasProbe = await page.waitForFunction(
+          () => typeof (globalThis as { __nwqa?: unknown }).__nwqa === "object",
+          undefined,
+          { timeout: Math.min(s.timeoutMs, PROBE_BOOT_MS) },
+        ).then(() => true, () => false);
         if (!hasProbe) {
           // Keep recording for part of the window so the video still shows
           // whatever the build does, then report pending.
