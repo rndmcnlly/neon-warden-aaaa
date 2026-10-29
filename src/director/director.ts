@@ -145,6 +145,11 @@ export class Director {
     return this.current;
   }
 
+  /** The live action gate, only after its teaching line finishes. */
+  get waitingFlag(): string | null {
+    return this.flagWait?.flag ?? null;
+  }
+
   /**
    * Starts `timeline`. Resolves when it ends or is skipped. Starting a
    * timeline while another runs skips the old one first (see `skipScene`).

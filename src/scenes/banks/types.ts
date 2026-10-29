@@ -54,7 +54,11 @@ export type StatsMoment =
   | "bossLull";
 
 /** App moments outside the sim. */
-export type AppMoment = "pause" | "resume";
+export type AppMoment =
+  | "pause"
+  | "resume"
+  | "tutorialOtherLeft"
+  | "tutorialLockout";
 
 export type BankTrigger =
   /** A sim event; `where` narrows it (all fields must match). */

@@ -653,3 +653,44 @@ Requests:
   `deno task ci` ran in foreground but stopped at unrelated formatting in
   `public/sfx/manifest.json`, `production/status.json`, `docs/WAVE3.md`,
   `docs/WAVE4.md`, `tests/tutorial_gates_test.ts`. These were left intact.
+
+### Onboarding fresh-action gates (October 28, 2026)
+
+- Reproduced with the keyboard pilot, no autoplay: early arrow/Shift input
+  immediately set future movement/focus flags; idle charging also pre-credited
+  a later lesson. No-input alone did not set `tut.focused`. This is slow-flight
+  focus (`InputFrame.focus`), not browser/window focus.
+- Progress now accepts lesson-local evidence only while the Director actually
+  waits for that action, after teaching VO. Held actions must release/re-press;
+  rest requires a fresh release plus charging. Passive scan/rate state needs
+  fresh lesson input (steering/release, or firing for rate). Accessibility mode changes rebase edges,
+  without correction or credit. Remapped keys, touch and toggle actions use
+  the same resolved input policy. Disarm counts and escape respawns remain.
+- Tiny `main.ts` integration replaces the eager flag writer with
+  `tutorialProgress.input(input, before)` and supplies the current wait flag,
+  input mode and commentary callback. Existing B integrations are preserved.
+- The rate lesson now supplies a re-issuing practice target: earlier earnings
+  can decay during explanations, so a fresh gate needs a way to earn again.
+- Eight optional EN/ES/ZH corrections are text-only for now, in
+  `src/scenes/banks/onboarding.ts`. Pending VO is separate from T's live script:
+  `vo/pending/onboarding-lockout.yaml`, ids `bank.tutorialOtherLeft.1`–`.4`
+  and `bank.tutorialLockout.1`–`.4`. Shared scheduler handles bags, teaching
+  priority, global gap and 16 s cooldown. Only an explicit opposite horizontal
+  direction or an interrupted rest exercise qualifies. Unknown keys, alternate
+  bindings, focus toggles and ordinary exploration do not trigger corrections.
+- Narrative follow-up: the existing single `tut_focus_001` recording says
+  "Good. Still focusing" before any action. Gating cannot move words inside a
+  take. Split instruction and acknowledgment in a future VO pass if desired;
+  no audio/UI/render files or `vo/script.yaml` changed here.
+- Keyboard QA (eight assertions, zero uncaught errors):
+  `qa/reports/20261028-onboarding-keyboard/result.json`; short H.264/AAC clip
+  `focus-fresh-input.mp4` in that directory. This covers movement/focus and
+  early-charge non-credit, not a complete human traversal of all modules.
+  Reproduce with `tests/onboarding_keyboard.ts` (build command in its header).
+- Static QA: `qa/reports/20261028-224210/index.html`, 33 pass, 5 warn, zero
+  fail. CI stopped at existing formatting in `production/status.json`,
+  `docs/WAVE3.md`, `docs/WAVE4.md`, `public/sfx/manifest.json` (see `ci.log`).
+  Lint/typecheck and focused tests pass (41/41; `focused.log`). Production
+  Vite build passes. Full-suite snapshot: 191 pass, one failure because
+  T's rendered seed/hash metadata makes the exact generated YAML mirror
+  comparison stale; do not overwrite the live script to silence it.

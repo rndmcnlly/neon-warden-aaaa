@@ -6,6 +6,7 @@
 
 import type { Bank, BankVariant } from "./types.ts";
 import { shipFine } from "./shipFine.ts";
+import { tutorialLockout, tutorialOtherLeft } from "./onboarding.ts";
 import {
   disarm,
   graze,
@@ -42,6 +43,8 @@ export { STATS_MOMENTS } from "./types.ts";
 
 export const ALL_BANKS: readonly Bank[] = [
   shipFine,
+  tutorialLockout,
+  tutorialOtherLeft,
   kill,
   disarm,
   graze,

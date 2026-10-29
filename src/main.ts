@@ -14,7 +14,6 @@
 
 import {
   type EnemyKind,
-  type InputFrame,
   parseUrlFlags,
   type Pilot,
   type Sim,
@@ -70,8 +69,6 @@ const DEFAULT_SEED = 121;
 const MAX_TICKS_PER_FRAME = 8;
 /** How long the warp streak lasts after a sector is cleared. */
 const WARP_MS = 1400;
-/** Analog sticks drift; a tutorial movement step needs a deliberate push. */
-const TUTORIAL_MOVE_THRESHOLD = 0.5;
 
 const flags = parseUrlFlags(location.search);
 const settings = createSettingsStore();
@@ -451,20 +448,6 @@ function endRun(): void {
   engine?.playMusic("menu", 1500);
 }
 
-/** Tutorial progress flags come from what the player actually does. */
-function noteTutorialInput(input: InputFrame): void {
-  if (input.move.x <= -TUTORIAL_MOVE_THRESHOLD) {
-    director.setFlag(FLAGS.tutMovedLeft, true);
-  }
-  if (input.move.x >= TUTORIAL_MOVE_THRESHOLD) {
-    director.setFlag(FLAGS.tutMovedRight, true);
-  }
-  if (Math.abs(input.move.y) >= TUTORIAL_MOVE_THRESHOLD) {
-    director.setFlag(FLAGS.tutMovedVertical, true);
-  }
-  if (input.focus) director.setFlag(FLAGS.tutFocused, true);
-}
-
 /**
  * Human game over: the continue screen. A continue revives the run where it
  * fell; quitting has already sent the front end to the title.
@@ -539,6 +522,14 @@ const tutorialProgress = new TutorialProgress({
   getFlag: (flag) => director.getFlag(flag),
   interject: (line) => director.interject(line),
   escapedLine: () => commentary.deal("tutTargetEscaped"),
+  waitingFlag: () => director.waitingFlag,
+  inputMode: () => {
+    const a = settings.get().accessibility;
+    return `${a.autoFire}:${a.holdToggle}`;
+  },
+  correction: (moment) => {
+    if (sim) commentary.onApp(moment, commentaryContext(sim.snapshot()));
+  },
 });
 
 /** Commentary from the variant banks; bags persist in this browser. */
@@ -689,7 +680,7 @@ function frame(now: number): void {
     for (let i = 0; i < ticks; i++) {
       const before = sim.snapshot();
       const input = pilot.next(before);
-      if (before.phase === "tutorial") noteTutorialInput(input);
+      if (before.phase === "tutorial") tutorialProgress.input(input, before);
       const events = sim.step(input);
       const after = sim.snapshot();
       stage.observe(after, events);

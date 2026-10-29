@@ -12,8 +12,18 @@
  * and no browser.
  */
 
-import { type LineId, lineId, type SimEvent } from "../contracts/index.ts";
+import {
+  type InputFrame,
+  type LineId,
+  lineId,
+  type SimEvent,
+  type SimState,
+} from "../contracts/index.ts";
 import { FLAGS } from "../scenes/flags.ts";
+import {
+  type TutorialCorrection,
+  TutorialGates,
+} from "../scenes/tutorialGates.ts";
 
 export interface TutorialProgressPorts {
   setFlag(name: string): void;
@@ -22,6 +32,11 @@ export interface TutorialProgressPorts {
   interject(line: LineId): boolean;
   /** A fresh "target re-issued" line from a bank, if one exists. */
   escapedLine?(): LineId | null;
+  /** Omit only in isolated sim-event tests, without a timeline. */
+  waitingFlag?(): string | null;
+  correction?(moment: TutorialCorrection): void;
+  /** Accessibility resolution mode; changes rebase edges without feedback. */
+  inputMode?(): string;
 }
 
 /** Taps the trigger drill asks for. */
@@ -34,16 +49,43 @@ export const ESCAPED_FALLBACK: LineId = lineId("tut_target_001");
 export class TutorialProgress {
   private taps = 0;
   private grazes = 0;
+  private lastGate: string | null = null;
+  private lastInputMode: string | null = null;
+  private readonly gates: TutorialGates;
 
-  constructor(private readonly ports: TutorialProgressPorts) {}
+  constructor(private readonly ports: TutorialProgressPorts) {
+    this.gates = new TutorialGates(ports);
+  }
+
+  input(input: InputFrame, state: SimState): void {
+    const mode = this.ports.inputMode?.() ?? "default";
+    if (this.lastInputMode !== null && mode !== this.lastInputMode) {
+      this.gates.rebase(input);
+    }
+    this.lastInputMode = mode;
+    const gate = this.ports.waitingFlag?.() ?? null;
+    if (gate !== this.lastGate) {
+      this.taps = this.grazes = 0;
+      this.lastGate = gate;
+    }
+    this.gates.input(gate, input, state);
+  }
 
   reset(): void {
     this.taps = 0;
     this.grazes = 0;
+    this.gates.reset();
+    this.lastGate = null;
+    this.lastInputMode = null;
   }
 
   note(event: SimEvent): void {
-    const set = (flag: string) => this.ports.setFlag(flag);
+    if (this.ports.waitingFlag && !this.gates.accepts(event)) return;
+    const set = (flag: string) => {
+      if (!this.ports.waitingFlag || this.ports.waitingFlag() === flag) {
+        this.ports.setFlag(flag);
+      }
+    };
     switch (event.type) {
       case "playerFired":
         set(FLAGS.tutFired);

@@ -90,8 +90,12 @@ export const tutorial: Timeline = {
     ...say("tut_graze_002"),
 
     // Module 8: the Contract Rate, which everything above feeds.
+    // A real chance to earn it now, not a stale achievement from an earlier
+    // drill. The target re-issues until the gate ends, as in the scan lesson.
+    setFlag(FLAGS.tutSpawnTarget),
     ...say("tut_rate_001"),
     waitFlag(FLAGS.tutRateDoubled, nudge),
+    setFlag(FLAGS.tutSpawnTarget, false),
     ...say("tut_ratebreak_001"),
 
     // Module 9: survival, salvage, the hangar, and the review nobody asked for.
