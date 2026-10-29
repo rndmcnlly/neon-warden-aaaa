@@ -317,12 +317,47 @@ async function runSteps(
       }
       case "until": {
         const end = clock.now() + Math.min(n("timeoutMs", 10000), left());
+        // Story watchdog (stepped capture only): the probe log gains story
+        // entries (not `sim:` events, which flow even in a stall) whenever a
+        // line, scene or flag moves. None for `stallMs` of game
+        // time means the run is stuck (an autopilot waiting on a drill it
+        // cannot pass), so fail now with what the game was doing, instead
+        // of stepping on to the timeout. A flashback still speaks.
+        const stallMs = n("stallMs", STALL_GAME_MS);
+        let seen = -1;
+        let movedAt = clock.now();
         let ok = false;
         while (clock.now() < end && !ok) {
-          ok = !!(await page.evaluate(
-            `((p) => p && (${str("probe")}))(globalThis.__nwqa)`,
-          ).catch(() => false));
-          if (!ok) await clock.sleep(250);
+          const r = await wallLimit(
+            page.evaluate(
+              `((p) => p && { ok: !!(${
+                str("probe")
+              }), n: p.log.filter((e) => !String(e).startsWith("sim:")).length })(globalThis.__nwqa)`,
+            ).catch(() => null) as Promise<{ ok: boolean; n: number } | null>,
+            `until ${s.label}: probe`,
+          );
+          ok = !!r?.ok;
+          if (r && r.n !== seen) {
+            seen = r.n;
+            movedAt = clock.now();
+          }
+          if (!ok && clock.stepped && clock.now() - movedAt > stallMs) {
+            throw new Error(
+              `stalled: no story progress for ${
+                stallMs / 1000
+              } s of game time waiting for "${s.label}"; ${await stallDiagnostics(
+                page,
+              )}`,
+            );
+          }
+          if (!ok) {
+            await wallLimit(clock.sleep(250), `until ${s.label}: step`);
+          }
+        }
+        if (!ok && clock.stepped) {
+          throw new Error(
+            `MISSING ${s.label} by ${at()} s; ${await stallDiagnostics(page)}`,
+          );
         }
         notes.push(ok ? `${s.label} at ${at()} s` : `MISSING ${s.label}`);
         break;
@@ -333,6 +368,47 @@ async function runSteps(
         break;
     }
   }
+}
+
+/** Game time with no new probe-log entry before a stepped take fails. */
+const STALL_GAME_MS = 120_000;
+/** Wall time one probe or step may take before a stepped take fails. */
+const STALL_WALL_MS = 120_000;
+
+/** Rejects if `p` has not settled within STALL_WALL_MS of wall time. */
+async function wallLimit<T>(p: Promise<T>, what: string): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      p,
+      new Promise<never>((_, reject) => {
+        timer = setTimeout(
+          () =>
+            reject(
+              new Error(
+                `stalled: ${what} made no progress in ${
+                  STALL_WALL_MS / 1000
+                } s of wall time (browser or encoder hung)`,
+              ),
+            ),
+          STALL_WALL_MS,
+        );
+      }),
+    ]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/** What the game was doing: tick, freeze, raised flags, last log entries. */
+async function stallDiagnostics(page: Page): Promise<string> {
+  const d = await page.evaluate(`((p) => p && JSON.stringify({
+    tick: p.sim()?.tick, frozen: p.sim()?.frozen, phase: p.sim()?.phase,
+    enemies: p.sim()?.enemies?.length,
+    flags: Object.keys(p.flags?.() ?? {}).filter((k) => p.flags()[k]).slice(-8),
+    log: p.log.slice(-6),
+  }))(globalThis.__nwqa)`).catch((e) => `diagnostics failed: ${e}`);
+  return String(d ?? "QA probe absent");
 }
 
 // -- capture
@@ -601,14 +677,15 @@ async function captureMaster(
     stepped: true,
     roll: () => rolled = true,
   };
+  let failure: unknown = null;
   let lastReport = Date.now();
   const progress = setInterval(() => {
     if (Date.now() - lastReport < 30000) return;
     lastReport = Date.now();
     log(
       `[take ${key}] ${(grab.count() / FPS).toFixed(1)} s grabbed, ${
-        ((Date.now() - wall0) / 1000).toFixed(0)
-      } s wall`,
+        (grab.skipped() / FPS).toFixed(1)
+      } s pre-rolled, ${((Date.now() - wall0) / 1000).toFixed(0)} s wall`,
     );
   }, 5000);
   try {
@@ -622,9 +699,21 @@ async function captureMaster(
       clock,
     );
   } catch (err) {
+    failure = err;
     notes.push(`ERROR ${String(err).split("\n")[0]}`);
   } finally {
     clearInterval(progress);
+  }
+  if (failure) {
+    // A master take that missed its moment is useless: clean up, then fail
+    // the take loudly rather than caching footage that lacks its event.
+    log(`[take ${key}] FAILED: ${String(failure).split("\n")[0]}`);
+    await grab.close().catch(() => {});
+    await context.close().catch(() => {});
+    await browser.close().catch(() => {});
+    await server.close().catch(() => {});
+    await Deno.remove(dir, { recursive: true }).catch(() => {});
+    throw failure;
   }
   if (grab.count() === 0) await grab.frames(1); // rolled with no steps after
   const timeOrigin = await page.evaluate(() => performance.timeOrigin);
