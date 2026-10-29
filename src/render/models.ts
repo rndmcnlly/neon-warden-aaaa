@@ -68,15 +68,29 @@ const BLOOM_EMITTERS: readonly { match: RegExp; cap: number }[] = [
   { match: /seam/, cap: 2.6 },
   { match: /crystal|shield_ring/, cap: 2.6 },
 ];
+/**
+ * Whole models whose `_emit` materials are the point of the shot: the boot
+ * logos sit alone on a dark stage, so their neon must clear the threshold
+ * (the global cap had dropped their bloomed highlights from 1.52% to 0.46%
+ * of the frame in the boot-cinematic reel).
+ */
+const BLOOM_MODELS: Partial<Record<ModelId, number>> = {
+  logo_adamsmith_systems: 3.2,
+  logo_cm121: 3.2,
+};
 
-function tameEmissive(material: THREE.Material | THREE.Material[]): void {
+function tameEmissive(
+  material: THREE.Material | THREE.Material[],
+  model: ModelId,
+): void {
   for (const m of Array.isArray(material) ? material : [material]) {
     const std = m as THREE.MeshStandardMaterial;
     if (std.emissiveIntensity === undefined) continue;
     const rule = BLOOM_EMITTERS.find((r) => r.match.test(m.name));
+    const hero = /_emit$/.test(m.name) ? BLOOM_MODELS[model] : undefined;
     std.emissiveIntensity = Math.min(
       std.emissiveIntensity,
-      rule?.cap ?? EMISSIVE_CAP,
+      hero ?? rule?.cap ?? EMISSIVE_CAP,
     );
   }
 }
@@ -173,7 +187,7 @@ export class ModelRegistry {
         const mesh = o as THREE.Mesh;
         if (!mesh.isMesh) return;
         mesh.castShadow = true;
-        tameEmissive(mesh.material);
+        tameEmissive(mesh.material, id);
         const fill = ENEMY_FILL[id];
         if (fill !== undefined) fillHull(mesh.material, fill);
       });
