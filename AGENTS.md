@@ -141,8 +141,9 @@ These are repo-owned, not global installs; evidence and promotion gate: `docs/SK
 - Latest in-context A/B selections: Adam chose tutorial B (a_captain) and
   gameplay A (cand1). These supersede the earlier original-voice default;
   retain alternatives for comparison, but Captain is now the default.
-- Model handoff: after Adam exhausted his Claude subscription, default work
-  switched to `openai/gpt-6.1-sol`. Preserve historical model attribution;
+- Model handoff: when Adam's Claude subscription hit its 5-hour window (mostly
+  spent on an unrelated parallel project), work switched to
+  `openai/gpt-6.1-sol` for a segment, then returned to Claude Opus 5.5. Preserve historical model attribution;
   credits must not claim all agent work came from one model.
 - Organize work mostly through subagents with clear, file-scoped tasks.
 - Standing practice (Adam): improve ideas with a panel of isolated judges

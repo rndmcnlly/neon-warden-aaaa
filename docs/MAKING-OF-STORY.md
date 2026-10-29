@@ -54,3 +54,11 @@ Beats the story should hit, in order:
    (atomic shared writes, blind-before-truth review, vary briefs not seeds).
 5. The result: a parked, pedagogical artifact students can read, play, and
    question.
+
+## Model handoff, for accuracy
+
+Orchestration and implementation agents ran mostly on Claude Opus 5.5. For a
+segment, work moved to GPT-6.1 Sol because the Claude subscription hit its
+5-hour usage window; that window was exhausted largely by an unrelated,
+ambitious project running in parallel, not by Neon Warden alone. Credits
+name both models rather than implying one did everything.
