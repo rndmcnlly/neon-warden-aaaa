@@ -1,0 +1,895 @@
+/*
+ * Neon Warden front end. Speculative-2027 console look: glass panels over
+ * the 3D scene, the original's cyan / pink / violet palette, one strong
+ * focus treatment shared by every control. All motion lives behind
+ * `prefers-reduced-motion: no-preference`, so reduced motion is the base
+ * case and animation is the enhancement.
+ */
+
+:root {
+  --nw-cyan: #5ef2ff;
+  --nw-pink: #ff5ea8;
+  --nw-violet: #9d7bff;
+  --nw-gold: #ffe066;
+  --nw-red: #ff4d6d;
+  --nw-ink: #04020c;
+  --nw-text: #e8fdff;
+  --nw-muted: #8fa3c4;
+  --nw-glass: rgba(14, 10, 34, 0.58);
+  --nw-glass-strong: rgba(10, 7, 26, 0.86);
+  --nw-line: rgba(158, 230, 255, 0.16);
+  --nw-radius: 14px;
+  --nw-font: "Avenir Next", "Segoe UI Variable", "Segoe UI", system-ui,
+    "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --nw-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  --nw-unit: clamp(14px, 1.65vh, 22px);
+}
+
+.nw-frontend {
+  position: absolute;
+  inset: 0;
+  font-family: var(--nw-font);
+  font-size: var(--nw-unit);
+  color: var(--nw-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Vignette, scanlines and a slow aurora over the canvas while menus are up. */
+.nw-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 18% 110%, rgba(157, 123, 255, 0.28), transparent
+    55%),
+    radial-gradient(90% 70% at 100% 0%, rgba(255, 94, 168, 0.18), transparent
+    60%),
+    radial-gradient(140% 120% at 50% 50%, transparent 40%, rgba(4, 2, 12,
+    0.85)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 1px,
+    transparent 1px 3px);
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+.nw-frontend.is-playing .nw-backdrop {
+  opacity: 0;
+}
+
+.nw-screens {
+  position: absolute;
+  inset: 0;
+}
+
+.nw-screen {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 4vh 5vw 9vh;
+  pointer-events: auto;
+  box-sizing: border-box;
+}
+.nw-screen[hidden] {
+  display: none;
+}
+.nw-screen.is-modal {
+  background: rgba(4, 2, 12, 0.55);
+}
+.nw-screen.is-under-modal .nw-panel {
+  filter: blur(3px) saturate(0.7);
+  opacity: 0.55;
+}
+
+/* Glass panel with a gradient hairline border (masked pseudo-element). */
+.nw-panel {
+  position: relative;
+  width: min(34em, 92vw);
+  max-height: 82vh;
+  /* clip, not hidden: a hidden box can still be scrolled sideways by focus,
+     which shifts the content out from under the border. */
+  overflow-x: clip;
+  overflow-y: auto;
+  padding: 1.6em 1.8em;
+  box-sizing: border-box;
+  border-radius: var(--nw-radius);
+  background: var(--nw-glass);
+  backdrop-filter: blur(22px) saturate(150%);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255,
+    0.06);
+  scrollbar-width: thin;
+  scrollbar-color: var(--nw-violet) transparent;
+}
+.nw-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--nw-cyan), var(--nw-violet) 50%,
+    var(--nw-pink));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0
+    0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.55;
+  pointer-events: none;
+}
+.is-wide .nw-panel {
+  width: min(64em, 94vw);
+}
+.is-modal .nw-panel {
+  background: var(--nw-glass-strong);
+}
+
+.nw-title {
+  margin: 0 0 1em;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--nw-cyan);
+}
+.nw-subhead {
+  margin: 1.2em 0 0.5em;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--nw-violet);
+}
+.nw-body {
+  margin: 0 0 1em;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+.nw-footnote {
+  margin: 0.8em 0 0;
+  font-size: 0.78em;
+  line-height: 1.5;
+  color: var(--nw-muted);
+}
+.nw-notice {
+  margin: 0 0 1em;
+  padding: 0.6em 0.9em;
+  border-left: 3px solid var(--nw-gold);
+  background: rgba(255, 224, 102, 0.08);
+  font-size: 0.85em;
+}
+.nw-objective {
+  margin: -0.4em 0 1.2em;
+  font-size: 0.85em;
+  color: var(--nw-muted);
+}
+
+/* ---------- Focus: one treatment for buttons, rows, tiles, cells ---------- */
+
+.nw-button,
+.nw-row,
+.nw-scroll {
+  position: relative;
+  outline: none;
+  border-radius: 10px;
+}
+.nw-button:focus-visible,
+.nw-row:focus-visible,
+.nw-scroll:focus-visible,
+.nw-button:focus,
+.nw-row:focus {
+  background: linear-gradient(90deg, rgba(94, 242, 255, 0.2), rgba(157, 123,
+    255, 0.1) 60%, transparent);
+  box-shadow: inset 3px 0 0 var(--nw-cyan), 0 0 0 1px rgba(94, 242, 255, 0.45),
+    0 0 28px rgba(94, 242, 255, 0.18);
+}
+
+/* ---------- Buttons ---------- */
+
+.nw-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 0.8em;
+  width: 100%;
+  padding: 0.7em 1em;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.nw-button-label {
+  font-size: 1.05em;
+  letter-spacing: 0.04em;
+}
+.nw-button-hint {
+  flex-basis: 100%;
+  font-size: 0.78em;
+  line-height: 1.45;
+  color: var(--nw-muted);
+}
+.nw-button[aria-disabled="true"] .nw-button-label {
+  color: var(--nw-muted);
+}
+.nw-badge {
+  margin-left: auto;
+  padding: 0.2em 0.6em;
+  border: 1px solid rgba(255, 94, 168, 0.5);
+  border-radius: 999px;
+  font-size: 0.62em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nw-pink);
+  white-space: nowrap;
+}
+.nw-button.is-primary {
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(94, 242, 255, 0.22), rgba(157, 123,
+    255, 0.22));
+  box-shadow: 0 0 0 1px rgba(94, 242, 255, 0.4);
+}
+.nw-button.is-destructive .nw-button-label {
+  color: var(--nw-red);
+}
+.nw-button.is-quiet {
+  width: auto;
+  font-size: 0.82em;
+}
+
+.nw-actions {
+  display: flex;
+  gap: 0.6em;
+  margin-top: 1.2em;
+}
+.nw-actions > .nw-button {
+  flex: 1;
+  justify-content: center;
+}
+.nw-actions.is-end {
+  justify-content: flex-end;
+}
+.nw-actions.is-end > .nw-button {
+  flex: 0 0 auto;
+}
+
+.nw-menu {
+  display: grid;
+  gap: 0.15em;
+}
+
+/* Tiles: difficulty choices, extras, locked chapters. */
+.nw-tiles,
+.nw-grid {
+  display: grid;
+  gap: 0.6em;
+}
+/* minmax(0, 1fr), not 1fr: a bare 1fr track never shrinks below its widest
+   content, so a long badge would push the grid past the panel. */
+.nw-tiles {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.nw-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.nw-tile {
+  min-width: 0;
+  align-content: start;
+  min-height: 5.2em;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 0 1px var(--nw-line);
+}
+.nw-tile[aria-pressed="true"] {
+  box-shadow: 0 0 0 1px var(--nw-cyan), inset 0 -3px 0 var(--nw-cyan);
+}
+.nw-tile[aria-pressed="true"] .nw-button-label::after {
+  content: " \25c6";
+  color: var(--nw-cyan);
+}
+.nw-tile.is-locked .nw-button-label {
+  color: var(--nw-muted);
+}
+.nw-tile .nw-badge {
+  order: 3;
+  margin: 0.6em 0 0;
+  /* Long localized badges (Spanish runs longer) wrap inside the tile. */
+  white-space: normal;
+  max-width: 100%;
+}
+.nw-chapter {
+  margin-bottom: 1em;
+}
+.nw-beats {
+  display: grid;
+  gap: 0.15em;
+}
+.nw-beat .nw-badge {
+  order: -1;
+  margin: 0;
+  border-color: rgba(94, 242, 255, 0.4);
+  color: var(--nw-cyan);
+  font-family: var(--nw-mono);
+}
+
+/* ---------- Settings rows ---------- */
+
+.nw-rows {
+  display: grid;
+  gap: 0.1em;
+  align-content: start;
+}
+.nw-row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  min-height: 2.6em;
+  padding: 0.45em 1em;
+  cursor: pointer;
+}
+.nw-row.is-static {
+  cursor: default;
+  opacity: 0.85;
+}
+.nw-row.is-locked {
+  /* Stub rows are buttons styled as rows. */
+  flex-wrap: nowrap;
+}
+.nw-row-text {
+  display: grid;
+  gap: 0.15em;
+  flex: 1;
+}
+.nw-row-hint {
+  font-size: 0.76em;
+  color: var(--nw-muted);
+}
+.nw-row-control {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  min-width: 13em;
+  justify-content: flex-end;
+}
+.nw-row-value {
+  min-width: 4.5em;
+  text-align: right;
+  font-family: var(--nw-mono);
+  font-size: 0.9em;
+  color: var(--nw-cyan);
+}
+.nw-arrow {
+  padding: 0 0.3em;
+  color: var(--nw-muted);
+  user-select: none;
+}
+.nw-row:focus .nw-arrow {
+  color: var(--nw-cyan);
+}
+.nw-dots {
+  display: flex;
+  gap: 3px;
+}
+.nw-dots i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--nw-line);
+}
+.nw-dots i.is-on {
+  background: var(--nw-cyan);
+}
+.nw-switch {
+  position: relative;
+  width: 2.4em;
+  height: 1.3em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 1px var(--nw-line);
+}
+.nw-switch-knob {
+  position: absolute;
+  top: 0.15em;
+  left: 0.15em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: var(--nw-muted);
+}
+.nw-row.is-on .nw-switch {
+  background: rgba(94, 242, 255, 0.3);
+}
+.nw-row.is-on .nw-switch-knob {
+  left: 1.25em;
+  background: var(--nw-cyan);
+  box-shadow: 0 0 12px var(--nw-cyan);
+}
+.nw-track {
+  position: relative;
+  width: 9em;
+  height: 0.35em;
+  padding: 0.5em 0;
+  background-clip: content-box;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  cursor: ew-resize;
+  touch-action: none;
+}
+.nw-track-fill {
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  height: 0.35em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--nw-violet), var(--nw-cyan));
+  box-shadow: 0 0 10px rgba(94, 242, 255, 0.5);
+}
+
+/* ---------- Settings layout ---------- */
+
+.nw-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  margin-bottom: 1em;
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid var(--nw-line);
+}
+.nw-tab {
+  width: auto;
+  padding: 0.5em 0.9em;
+  font-size: 0.85em;
+  color: var(--nw-muted);
+}
+.nw-tab.is-selected {
+  color: var(--nw-text);
+  box-shadow: inset 0 -2px 0 var(--nw-pink);
+}
+.nw-settings-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5em;
+  min-height: 22em;
+}
+.nw-settings-aside:empty {
+  display: none;
+}
+
+/* Subtitle preview: the same variables the in-game subtitle layer should use. */
+.nw-subtitle-preview {
+  margin: 0;
+  width: 19em;
+  padding: 1em;
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(255, 94, 168, 0.12)),
+    repeating-linear-gradient(90deg, rgba(94, 242, 255, 0.05) 0 1px, transparent
+    1px 24px),
+    rgba(0, 0, 0, 0.35);
+  display: grid;
+  align-content: space-between;
+  min-height: 12em;
+}
+.nw-subtitle {
+  --subtitle-scale: 1;
+  --subtitle-bg: 0.6;
+  --subtitle-lines: 2;
+  justify-self: center;
+  max-width: 100%;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, var(--subtitle-bg));
+  font-family: system-ui, "PingFang SC", "Noto Sans SC", sans-serif;
+  font-size: calc(1em * var(--subtitle-scale));
+  line-height: 1.35;
+  text-align: center;
+}
+.nw-subtitle[hidden] {
+  display: none;
+}
+.nw-subtitle-speaker {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: var(--nw-gold);
+}
+.nw-subtitle-speaker[hidden] {
+  display: none;
+}
+.nw-subtitle-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--subtitle-lines);
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+/* ---------- Controls table ---------- */
+
+.nw-bind-table {
+  display: grid;
+  gap: 0.1em;
+}
+.nw-bind-row {
+  display: grid;
+  grid-template-columns: minmax(10em, 1.6fr) repeat(3, minmax(5em, 1fr));
+  align-items: center;
+  gap: 0.4em;
+}
+.nw-bind-row.is-header {
+  font-size: 0.68em;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--nw-violet);
+  padding: 0 1em 0.4em;
+}
+.nw-bind-action {
+  padding-left: 1em;
+  font-size: 0.9em;
+}
+.nw-bind-cell {
+  justify-content: center;
+  padding: 0.45em 0.6em;
+  font-family: var(--nw-mono);
+  font-size: 0.88em;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 0 0 1px var(--nw-line);
+}
+.nw-bind-cell.is-capturing {
+  color: var(--nw-gold);
+  box-shadow: 0 0 0 1px var(--nw-gold);
+}
+.nw-bind-cell.is-unbound {
+  color: var(--nw-red);
+}
+
+/* ---------- Prompts and glyphs ---------- */
+
+.nw-prompts {
+  position: absolute;
+  right: 5vw;
+  bottom: 3.2vh;
+  display: flex;
+  gap: 1.6em;
+  font-size: 0.8em;
+  color: var(--nw-muted);
+}
+.nw-prompt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.nw-glyph {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.7em;
+  height: 1.7em;
+  padding: 0 0.45em;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: rgba(232, 253, 255, 0.1);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.35), 0 0 0 1px var(--nw-line);
+  font-family: var(--nw-mono);
+  font-size: 0.9em;
+  color: var(--nw-text);
+}
+.nw-frontend[data-device="gamepad"] .nw-glyph {
+  border-radius: 999px;
+}
+.nw-frontend[data-device="gamepad"] .nw-screens {
+  cursor: none;
+}
+
+/* ---------- Boot, logos, title ---------- */
+
+.nw-screen-gate {
+  align-content: center;
+  gap: 1em;
+  cursor: pointer;
+  background: var(--nw-ink);
+}
+.nw-gate-prompt {
+  margin: 0;
+  font-size: 1.1em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--nw-cyan);
+}
+.nw-gate-note {
+  margin: 0;
+  font-size: 0.78em;
+  color: var(--nw-muted);
+}
+.nw-screen-notice .nw-panel {
+  width: min(38em, 92vw);
+}
+.nw-screen-logos {
+  background: var(--nw-ink);
+  cursor: pointer;
+}
+.nw-logo {
+  display: grid;
+  justify-items: center;
+  gap: 0.6em;
+}
+.nw-logo-mark {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 1.2em;
+  background: conic-gradient(from 210deg, var(--nw-cyan), var(--nw-violet),
+    var(--nw-pink), var(--nw-cyan));
+  -webkit-mask: radial-gradient(circle at center, transparent 34%, #000 36%);
+  mask: radial-gradient(circle at center, transparent 34%, #000 36%);
+}
+.nw-logo.is-publisher .nw-logo-mark {
+  border-radius: 0.3em;
+  transform: rotate(45deg) scale(0.8);
+}
+.nw-logo-name {
+  font-size: 2.2em;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+}
+.nw-logo.is-publisher .nw-logo-name {
+  font-family: var(--nw-mono);
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+.nw-logo-tag {
+  font-size: 0.8em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--nw-muted);
+}
+.nw-skip {
+  opacity: 0.6;
+}
+
+.nw-screen-title {
+  align-content: center;
+  gap: 8vh;
+  cursor: pointer;
+}
+.nw-logotype {
+  text-align: center;
+}
+.nw-logotype-name {
+  margin: 0;
+  font-size: clamp(3rem, 11vh, 9rem);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  background: linear-gradient(100deg, var(--nw-cyan) 10%, #fff 35%,
+    var(--nw-violet) 65%, var(--nw-pink) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 24px rgba(94, 242, 255, 0.35));
+}
+.nw-logotype-sub {
+  margin: 0.8em 0 0;
+  font-size: 0.85em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: var(--nw-pink);
+}
+.nw-logotype.is-small {
+  margin-bottom: 1.4em;
+  text-align: left;
+}
+.nw-logotype.is-small .nw-logotype-name {
+  font-size: 2.4em;
+}
+.nw-logotype.is-small .nw-logotype-sub {
+  font-size: 0.62em;
+}
+.nw-press {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin: 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+/* The main menu sits left, console style, leaving the 3D scene visible. */
+.nw-screen-main {
+  justify-items: start;
+  padding-left: 7vw;
+}
+.nw-screen-main .nw-panel {
+  width: min(24em, 90vw);
+}
+
+/* ---------- Text screens ---------- */
+
+.nw-stub-badge {
+  display: inline-block;
+  margin: 0 0 1em;
+  padding: 0.3em 0.8em;
+  border-radius: 999px;
+  background: rgba(255, 94, 168, 0.14);
+  color: var(--nw-pink);
+  font-size: 0.72em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.nw-scroll {
+  max-height: 52vh;
+  overflow: auto;
+  padding: 0.6em 1em;
+  scrollbar-width: thin;
+}
+.nw-credits-studio {
+  margin: 0 0 0.5em;
+  font-size: 0.8em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--nw-cyan);
+}
+.nw-credit .nw-body {
+  margin: 0;
+}
+.nw-license-list {
+  padding-left: 1.2em;
+  line-height: 1.6;
+}
+.nw-license-text {
+  white-space: pre-wrap;
+  font-family: var(--nw-mono);
+  font-size: 0.72em;
+  line-height: 1.5;
+  color: var(--nw-muted);
+}
+.nw-controls-ref {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5em 2em;
+  margin: 0;
+}
+.nw-controls-ref dd {
+  margin: 0;
+}
+
+/* ---------- Persistent chrome ---------- */
+
+.nw-build-label {
+  position: absolute;
+  left: 1.2em;
+  bottom: 1em;
+  display: grid;
+  font-size: 0.62em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(232, 253, 255, 0.5);
+  pointer-events: none;
+}
+.nw-build-label strong {
+  color: var(--nw-gold);
+  font-weight: 600;
+}
+.nw-toasts {
+  position: absolute;
+  left: 50%;
+  bottom: 9vh;
+  transform: translateX(-50%);
+  display: grid;
+  gap: 0.4em;
+  pointer-events: none;
+}
+.nw-toast {
+  margin: 0;
+  padding: 0.6em 1.1em;
+  border-radius: 10px;
+  background: var(--nw-glass-strong);
+  box-shadow: 0 0 0 1px rgba(255, 224, 102, 0.4);
+  font-size: 0.85em;
+}
+.nw-save-chip {
+  position: absolute;
+  top: 1.2em;
+  right: 1.4em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.45em 0.9em;
+  border-radius: 999px;
+  background: var(--nw-glass-strong);
+  font-size: 0.75em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.nw-save-chip[hidden] {
+  display: none;
+}
+.nw-save-icon {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  border: 2px solid var(--nw-cyan);
+  border-right-color: transparent;
+}
+
+/* ---------- Motion, only when the player has not asked for less ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .nw-screen:not(.is-under-modal) > .nw-panel {
+    animation: nw-rise 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .nw-button,
+  .nw-row {
+    transition: background 140ms ease, box-shadow 140ms ease, transform 140ms
+      ease;
+  }
+  .nw-button:focus,
+  .nw-row:focus {
+    transform: translateX(3px);
+  }
+  .nw-tile:focus,
+  .nw-bind-cell:focus,
+  .nw-tab:focus {
+    transform: none;
+  }
+  .nw-switch-knob {
+    transition: left 160ms ease, background 160ms ease;
+  }
+  .nw-pulse {
+    animation: nw-pulse 2.4s ease-in-out infinite;
+  }
+  .nw-logo {
+    animation: nw-logo 2.4s ease both;
+  }
+  .nw-save-icon {
+    animation: nw-spin 0.9s linear infinite;
+  }
+  .nw-toast {
+    animation: nw-rise 200ms ease;
+  }
+}
+
+@keyframes nw-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+}
+@keyframes nw-pulse {
+  50% {
+    opacity: 0.45;
+  }
+}
+@keyframes nw-logo {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes nw-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 720px) {
+  .nw-tiles,
+  .nw-grid,
+  .nw-settings-body {
+    grid-template-columns: 1fr;
+  }
+  .nw-prompts {
+    display: none;
+  }
+}
+
+/* Only the top screen's prompts apply; hide those of pages under a modal. */
+.is-under-modal > .nw-prompts {
+  display: none;
+}

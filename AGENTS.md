@@ -1,9 +1,9 @@
 # AGENTS.md: Neon Warden AAAA
 
-A deliberately over-overproduced "AAAA" vertical-slice parody of _Neon Warden_,
-the small Phaser shmup written as the CMPM 121 Fall 2026 E4 starter. Comedy
-project by Adam Smith; not course material and not shown to students unless
-Adam decides otherwise.
+A deliberately over-produced, high-polish 3D vertical slice of _Neon Warden_,
+the small Phaser shmup written as the CMPM 121 Fall 2026 E4 starter. Started as
+an "AAAA" parody idea; now an authentic slice (see Framing). Project by Adam
+Smith; students in a later course will read its source.
 
 ## Fiction
 
@@ -40,7 +40,7 @@ structure and the production checklist should be legible and teachable.
 ## Required beats
 
 1. Fake studio and incubator logo sequence.
-2. One annoyingly tedious tutorial.
+2. One tutorial: properly built, knowingly overlong, one small wink.
 3. Main gameplay phase; picking up the first powerup triggers a mid-scene
    narrative flashback.
 4. Over-acted boss battle against the Warden.
@@ -79,6 +79,15 @@ structure and the production checklist should be legible and teachable.
   tokens each, mostly re-reading large pages or sources held in context. Trim
   big fetches in a script (or hand them to a summarizing sub-subagent) before
   they enter context, and split capture work from analysis.
+- Subagents must not end their turn while their own long job (renders, QA
+  runs) is still going: a backgrounded job orphans its reporting. Run long
+  jobs in the foreground with a generous timeout (`timeout: 0` if needed),
+  then report.
+- QA is dogfooded: before any agent reports a workstream done, it runs the
+  relevant `qa/` checks (translation coverage, asset pipeline, focused
+  traversal videos) and cites the report path. Reviewable videos are short
+  and single-topic (menus, gameplay, cinematics, endings, accessibility),
+  never one long capture.
 - Research notes go in `research/YYYY-MM-DD-topic/README.md` (framing question,
   findings as options with tradeoffs, status of what was tried, next step).
 - House style: no emdashes, no emoji; en dashes for ranges.
