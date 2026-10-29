@@ -2,7 +2,7 @@
  "cut": "compendium120",
  "lang": "en",
  "file": "trailer/out/compendium120/en/compendium120-en.mp4",
- "sizeMB": 460.1,
+ "sizeMB": 457.7,
  "video": "1920x1080 h264 yuv420p 60/1",
  "audio": "aac 48000 Hz 2 ch",
  "duration": 120.0,
@@ -11,14 +11,14 @@
  "cfr": true,
  "maxPacketGapMs": 16.67,
  "dupFramesInTakeShots": 14,
- "takeShotFrames": 6462,
+ "takeShotFrames": 6282,
  "staticShots": [],
  "dupByShot": {
   "boot-logos": 7,
   "title-menu": 7
  },
  "lufs": -16.0,
- "truePeak": -2.0,
+ "truePeak": -2.2,
  "sync": [
   {
    "shot": "settings",
@@ -31,12 +31,12 @@
    "corr": 1.0
   },
   {
-   "shot": "tutorial-contract",
+   "shot": "ending-pacifist",
    "lagMs": 0.0,
    "corr": 1.0
   },
   {
-   "shot": "ending-pacifist",
+   "shot": "accessibility",
    "lagMs": 0.0,
    "corr": 1.0
   }

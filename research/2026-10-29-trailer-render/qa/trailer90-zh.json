@@ -2,7 +2,7 @@
  "cut": "trailer90",
  "lang": "zh",
  "file": "trailer/out/trailer90/zh/trailer90-zh.mp4",
- "sizeMB": 424.2,
+ "sizeMB": 424.1,
  "video": "1920x1080 h264 yuv420p 60/1",
  "audio": "aac 48000 Hz 2 ch",
  "duration": 90.567,
@@ -15,22 +15,22 @@
  "staticShots": [],
  "dupByShot": {},
  "lufs": -16.0,
- "truePeak": -2.9,
+ "truePeak": -2.8,
  "sync": [
-  {
-   "shot": "boss-core",
-   "lagMs": -0.7,
-   "corr": 0.395
-  },
   {
    "shot": "boss-pods",
    "lagMs": 3.0,
-   "corr": 0.351
+   "corr": 0.384
   },
   {
-   "shot": "hook-boss",
-   "lagMs": 7.0,
-   "corr": 0.287
+   "shot": "hook-writ",
+   "lagMs": -5.6,
+   "corr": 0.263
+  },
+  {
+   "shot": "boss-core",
+   "lagMs": -1.0,
+   "corr": 0.26
   }
  ],
  "srtCues": 9,

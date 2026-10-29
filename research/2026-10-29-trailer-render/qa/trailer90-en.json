@@ -2,7 +2,7 @@
  "cut": "trailer90",
  "lang": "en",
  "file": "trailer/out/trailer90/en/trailer90-en.mp4",
- "sizeMB": 422.1,
+ "sizeMB": 422.6,
  "video": "1920x1080 h264 yuv420p 60/1",
  "audio": "aac 48000 Hz 2 ch",
  "duration": 90.567,
@@ -15,22 +15,22 @@
  "staticShots": [],
  "dupByShot": {},
  "lufs": -16.0,
- "truePeak": -2.9,
+ "truePeak": -3.0,
  "sync": [
-  {
-   "shot": "boss-core",
-   "lagMs": -0.7,
-   "corr": 0.396
-  },
   {
    "shot": "boss-pods",
    "lagMs": 3.0,
-   "corr": 0.351
+   "corr": 0.384
   },
   {
-   "shot": "hook-boss",
-   "lagMs": 7.0,
-   "corr": 0.286
+   "shot": "hook-writ",
+   "lagMs": -5.6,
+   "corr": 0.263
+  },
+  {
+   "shot": "boss-core",
+   "lagMs": -1.0,
+   "corr": 0.259
   }
  ],
  "srtCues": 10,

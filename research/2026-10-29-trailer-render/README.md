@@ -27,15 +27,24 @@ copied to `masters/`, per-master QA JSON to `qa/`.
 
 | master | duration | frames | size | LUFS / dBTP | dup frames in take shots | captions | QA |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `trailer/out/teaser30/en/teaser30-en.mp4` | 30.10 s | 1806 | 138 MB | -15.9 / -2.9 | 0/1499 | 6 en, burned + SRT | PASS |
-| `trailer/out/teaser30/es/teaser30-es.mp4` | 30.10 s | 1806 | 133 MB | -15.8 / -3.0 | 0/1499 | 6 es, burned + SRT | PASS |
-| `trailer/out/teaser30/zh/teaser30-zh.mp4` | 30.10 s | 1806 | 136 MB | -15.8 / -3.0 | 0/1499 | 5 zh, burned + SRT | PASS |
-| `trailer/out/trailer90/en/trailer90-en.mp4` | 90.57 s | 5434 | 422 MB | -16.0 / -2.9 | 0/4403 | 10 en, burned + SRT | PASS |
-| `trailer/out/trailer90/es/trailer90-es.mp4` | 90.57 s | 5434 | 420 MB | -16.0 / -3.0 | 0/4403 | 11 es, burned + SRT | PASS |
-| `trailer/out/trailer90/zh/trailer90-zh.mp4` | 90.57 s | 5434 | 424 MB | -16.0 / -2.9 | 0/4403 | 9 zh, burned + SRT | PASS |
-| `trailer/out/compendium120/en/compendium120-en.mp4` | 120.00 s | 7200 | 460 MB | -16.0 / -2.0 | 14/6462 (static menus) | in-game, en | PASS |
-| `trailer/out/compendium120/es/compendium120-es.mp4` | 120.00 s | 7200 | 457 MB | -16.0 / -2.8 | 14/6462 (static menus) | in-game, es | PASS |
-| `trailer/out/compendium120/zh/compendium120-zh.mp4` | 120.00 s | 7200 | 464 MB | -16.0 / -2.8 | 14/6462 (static menus) | in-game, zh | PASS |
+| `trailer/out/teaser30/en/teaser30-en.mp4` | 30.10 s | 1806 | 138 MB | -15.9 / -3.0 | 0/1499 | 6 en, burned + SRT | PASS |
+| `trailer/out/teaser30/es/teaser30-es.mp4` | 30.10 s | 1806 | 134 MB | -15.8 / -3.0 | 0/1499 | 6 es, burned + SRT | PASS |
+| `trailer/out/teaser30/zh/teaser30-zh.mp4` | 30.10 s | 1806 | 137 MB | -15.8 / -2.9 | 0/1499 | 5 zh, burned + SRT | PASS |
+| `trailer/out/trailer90/en/trailer90-en.mp4` | 90.57 s | 5434 | 423 MB | -16.0 / -3.0 | 0/4403 | 10 en, burned + SRT | PASS |
+| `trailer/out/trailer90/es/trailer90-es.mp4` | 90.57 s | 5434 | 420 MB | -16.0 / -2.9 | 0/4403 | 11 es, burned + SRT | PASS |
+| `trailer/out/trailer90/zh/trailer90-zh.mp4` | 90.57 s | 5434 | 424 MB | -16.0 / -2.8 | 0/4403 | 9 zh, burned + SRT | PASS |
+| `trailer/out/compendium120/en/compendium120-en.mp4` | 120.00 s | 7200 | 458 MB | -16.0 / -2.2 | 14/6282 (static menus) | in-game, en | PASS |
+| `trailer/out/compendium120/es/compendium120-es.mp4` | stale | | | | | | not re-rendered (see below) |
+| `trailer/out/compendium120/zh/compendium120-zh.mp4` | stale | | | | | | not re-rendered (see below) |
+
+Second pass (October 29, evening, frozen build `cc8fbef`): slates carry the
+play URL (all cuts) and the source repository (trailer90, compendium);
+`boss-fight` ends after the Warden's turn, now a parley the autopilot listens
+to (trailer90 `boss-turn` shows the real line); the compendium shows the
+tutorial wink and ends on a 3 s slate. Picture sync: 0 frames on every
+take shot (6 + 21 + 18 per language) except `warden-rings` at 1 frame in
+each trailer90 (the known in-point snap). Raw picsync tables:
+`qa/picsync-*.txt`.
 
 QA method (`qa.py`, `picsync.py`):
 
@@ -159,13 +168,38 @@ Declined, with reasons:
 - **Avoid places repeating between the verb section and the places
   montage.** That's structural to Tell-Show-Repeat plus places; partly kept.
 
+## Second pass: the ES tutorial stall (October 29, evening)
+
+The ES compendium master hung for 7+ minutes in the `tutorial-es` pre-roll
+(main session diagnosis at 16:28: ffmpeg idle, Chrome near idle; idle ffmpeg
+is normal in pre-roll, but nothing showed sim progress). Cause, reproduced
+headlessly with real line lengths: in ES and ZH the long `tut_parts_001`
+explanation let the autopilot break the practice turret's barrel before the
+parts gate opened (gates want a fresh action), and the disarmed turret flew
+off and was never re-issued, so the gate waited forever. A human who breaks
+it early hits the same wall. EN passed by timing luck. Fix: the sim
+re-issues the practice turret on any loss while the drill wants it, and the
+timeline clears `tut.spawnTurret` as soon as the gate passes;
+`tests/autopilot_story_test.ts` walks the tutorial in all three languages
+(ES and ZH fail without the fix).
+
+Watchdog (`trailer/capture.ts`): in stepped capture an `until` fails the take
+loudly, with tick, freeze, flags and last log entries, when no story entry
+(line, scene, flag; `sim:` events excluded) arrives for `stallMs` of game
+time (default 120 s), when any probe or step takes 120 s of wall time, or
+when its timeout passes (MISSING); the half-made take is deleted, not
+cached. Pre-roll progress is now logged. Verified on a probe that never
+fires: failed after 43 s wall with diagnostics.
+
+Adam (evening): English-only video is acceptable, to save energy. The ES and
+ZH compendium masters were therefore not re-rendered; the files on disk are
+the first pass (no slate, English barks in the verb shots). To make them:
+`TRAILER_BUILD_REV=<rev> TRAILER_PLAY_URL=neon-warden-aaaa.adamsmith.systems
+deno task trailer compendium120 --master --lang es` (and `zh`), about 55 min
+each. The ES/ZH teaser and trailer masters are current and passed.
+
 ## Not done, and why
 
-- **Play URL on the end slate.** No hosting is decided, and DNS or deploy is
-  Adam's call. The slate shows "adamsmith.systems · CM121 f26". With a URL:
-  restore `· {{PLAY_URL}}` in the two sheets, set `TRAILER_PLAY_URL`, then
-  `deno task trailer <cut> --master --lang all --no-capture` (about 1–4 min
-  per master, no capture).
 - **No re-judge after the two adopted fixes** (each was verified by QA and
   an event-density proxy, not by a second model pass).
 - Take cache: about 7.6 GB in `trailer/.cache/takes/`. It can be pruned to the

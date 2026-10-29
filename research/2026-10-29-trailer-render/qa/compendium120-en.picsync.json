@@ -17,7 +17,7 @@
    0,
    0
   ],
-  "motion": 0.17
+  "motion": 0.14
  },
  {
   "shot": "title-menu",
@@ -37,27 +37,27 @@
    0,
    0
   ],
-  "motion": 0.21
+  "motion": 0.22
  },
  {
   "shot": "settings",
   "frames": 420,
   "offsetFrames": 0,
   "offsets": [
-   -3,
    0,
-   1,
    0,
-   1,
    0,
-   1,
+   0,
+   0,
+   0,
+   0,
    0,
    0,
    0,
    0,
    0
   ],
-  "motion": 0.13
+  "motion": 0.14
  },
  {
   "shot": "pause",
@@ -77,7 +77,7 @@
    0,
    0
   ],
-  "motion": 0.12
+  "motion": 0.13
  },
  {
   "shot": "verb-tap",
@@ -117,7 +117,7 @@
    0,
    0
   ],
-  "motion": 0.86
+  "motion": 0.88
  },
  {
   "shot": "verb-writ",
@@ -157,7 +157,7 @@
    0,
    0
   ],
-  "motion": 0.91
+  "motion": 0.89
  },
  {
   "shot": "verb-graze",
@@ -217,7 +217,7 @@
    0,
    0
   ],
-  "motion": 1.32
+  "motion": 1.31
  },
  {
   "shot": "lang-cycle",
@@ -240,8 +240,8 @@
   "motion": 0.51
  },
  {
-  "shot": "tutorial-contract",
-  "frames": 480,
+  "shot": "tutorial-wink",
+  "frames": 600,
   "offsetFrames": 0,
   "offsets": [
    0,
@@ -257,11 +257,11 @@
    0,
    0
   ],
-  "motion": 0.65
+  "motion": 0.74
  },
  {
   "shot": "flashback",
-  "frames": 360,
+  "frames": 300,
   "offsetFrames": 0,
   "offsets": [
    0,
@@ -277,11 +277,11 @@
    0,
    0
   ],
-  "motion": 0.46
+  "motion": 0.47
  },
  {
   "shot": "descent",
-  "frames": 360,
+  "frames": 300,
   "offsetFrames": 0,
   "offsets": [
    0,
@@ -297,7 +297,7 @@
    0,
    0
   ],
-  "motion": 0.5
+  "motion": 0.51
  },
  {
   "shot": "ending-kill",
@@ -317,7 +317,7 @@
    0,
    0
   ],
-  "motion": 0.53
+  "motion": 0.54
  },
  {
   "shot": "ending-pacifist",
@@ -337,17 +337,17 @@
    0,
    0
   ],
-  "motion": 0.65
+  "motion": 0.64
  },
  {
   "shot": "accessibility",
-  "frames": 480,
+  "frames": 300,
   "offsetFrames": 0,
   "offsets": [
-   -3,
+   0,
    -1,
    0,
-   0,
+   1,
    0,
    -1,
    0,
@@ -357,6 +357,6 @@
    0,
    0
   ],
-  "motion": 0.13
+  "motion": 0.12
  }
 ]
