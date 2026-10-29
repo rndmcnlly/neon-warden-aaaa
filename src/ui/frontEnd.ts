@@ -57,6 +57,8 @@ import { hasText, id, t } from "../i18n/index.ts";
 import { glyph, h, widgetIntent } from "./widgets.ts";
 import { createHistoryBridge, type HistoryBridge } from "./historyBack.ts";
 import { createSwipeDetector } from "../input/trackpadSwipe.ts";
+import { createTouchDeck } from "./touchDeck.ts";
+import { runAutoTier } from "../render/autoTier.ts";
 import "./frontend.css";
 
 export interface FrontEndOptions {
@@ -204,6 +206,15 @@ export function createFrontEnd(
     backChip,
   );
   root.appendChild(layer);
+  // The deck's drag surface sits under everything else in the layer, so the
+  // HUD's own chips (tutorial Skip) stay tappable above it.
+  const deck = createTouchDeck({
+    input,
+    settings,
+    onPause: () => pause("player"),
+  });
+  layer.prepend(deck.el);
+  input.touch.setScale(() => hooks.playfieldScale?.() ?? null);
 
   let playing = false;
   let audioUnlocked = false;
@@ -216,7 +227,15 @@ export function createFrontEnd(
     layer.classList.toggle("is-playing", router.depth === 0);
     updatePrompts();
     syncBack();
+    syncDeck();
   });
+
+  function syncDeck(): void {
+    const touch = input.device() === "touch";
+    layer.classList.toggle("is-touch", touch);
+    document.documentElement.classList.toggle("nw-touch", touch);
+    deck.setState(playing && touch, router.depth === 0);
+  }
 
   /** Back means something on the top screen (or Pause, during play). */
   function backMeansSomething(): boolean {
@@ -302,7 +321,24 @@ export function createFrontEnd(
       toasts.append(item);
       setTimeout(() => item.remove(), TOAST_MS);
     },
+    redetectTier: () => void detectTier(true),
   };
+
+  /**
+   * Device probe (src/render/autoTier.ts): once, on the first press, while
+   * the flat logos play; again from Settings. QA runs (`?qa=1`) keep their
+   * fixed preset unless they ask with `?autotier`, so captures by other
+   * tools never change quality underneath them.
+   */
+  async function detectTier(force: boolean): Promise<void> {
+    const result = await runAutoTier(settings, { force });
+    if (!result || (!result.changed && !force)) return;
+    ctx.toast(ctx.t("ui.settings.tierChosen", {
+      preset: ctx.t(`ui.settings.preset.${result.preset}`),
+    }));
+  }
+  const autoTierAllowed = !flags.qa ||
+    new URLSearchParams(location.search).has("autotier");
 
   function pause(reason: PauseReason = "player"): void {
     if (!playing || router.depth > 0) return;
@@ -348,6 +384,7 @@ export function createFrontEnd(
       "ui.common.back",
     );
     pauseChip.setAttribute("aria-label", ctx.t("ui.touch.pause"));
+    deck.relabel((key) => ctx.t(`ui.touch.${key}`));
     buildLabel.replaceChildren(
       h("strong", {}, ctx.t("ui.build.label")),
       h("span", {}, ctx.t("ui.build.detail")),
@@ -396,6 +433,7 @@ export function createFrontEnd(
   const offDevice = input.onDeviceChange(() => {
     layer.dataset.device = input.device();
     updatePrompts();
+    syncDeck();
   });
 
   // Auto-pause: any first press also unlocks audio when boot was skipped.
@@ -403,7 +441,29 @@ export function createFrontEnd(
     if (audioUnlocked) return;
     audioUnlocked = true;
     hooks.onAudioUnlock?.();
+    if (autoTierAllowed) void detectTier(false);
   });
+  /**
+   * iOS audio: WebKit only lets a page start or resume its AudioContext
+   * inside a gesture that counts as user activation, which on iOS is
+   * `touchend` or `click`, not `pointerdown` (where `onAnyPress` fires). A
+   * phone call or Siri also leaves the context "interrupted" until the next
+   * gesture. So every such gesture, and returning to the tab, asks again;
+   * `resume()` on a running context is free. Ogg Opus decoding was checked
+   * in Playwright WebKit (research/2026-10-29-mobile-touch-qa); a real
+   * iPhone is still on the device checklist. The silent switch is respected
+   * (`navigator.audioSession` left at "auto"): right for a class.
+   */
+  const resumeAudio = () => {
+    if (audioUnlocked) hooks.onAudioUnlock?.();
+  };
+  const onReturn = () => {
+    if (!document.hidden) resumeAudio();
+  };
+  for (const type of ["touchend", "click", "keydown"]) {
+    addEventListener(type, resumeAudio, { capture: true, passive: true });
+  }
+  document.addEventListener("visibilitychange", onReturn);
   const offPad = input.onGamepadConnection((connected) => {
     if (!connected) pause("gamepad");
     updatePrompts();
@@ -576,6 +636,7 @@ export function createFrontEnd(
   layer.classList.toggle("is-playing", router.depth === 0);
   updatePrompts();
   syncBack();
+  syncDeck();
 
   /**
    * Meta progress from run events: a first `intel` unlocks its codex entry
@@ -659,7 +720,12 @@ export function createFrontEnd(
       removeEventListener("pointerdown", onPressForMenu, true);
       removeEventListener("contextmenu", onContextMenu);
       removeEventListener("wheel", onWheel);
+      for (const type of ["touchend", "click", "keydown"]) {
+        removeEventListener(type, resumeAudio, { capture: true });
+      }
+      document.removeEventListener("visibilitychange", onReturn);
       bridge?.dispose();
+      deck.dispose();
       document.removeEventListener("visibilitychange", onVisibility);
       document.removeEventListener("fullscreenchange", onFullscreen);
       input.dispose();

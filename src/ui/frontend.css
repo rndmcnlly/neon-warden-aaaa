@@ -2130,3 +2130,217 @@
 .nw-frontend.is-playing.is-in-run[data-device="mouse"] .nw-pause-chip {
   display: block;
 }
+
+/* ---------- Touch deck (src/ui/touchDeck.ts, touchLayout.ts) ---------- */
+
+/* Reads env() for the deck's layout math; never visible. */
+.nw-safe-probe {
+  position: fixed;
+  visibility: hidden;
+  pointer-events: none;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+}
+
+.nw-touch {
+  position: absolute;
+  inset: 0;
+  /* Fingers belong to the game: no pan, no pinch, no callout. */
+  touch-action: none;
+}
+.nw-touch[hidden] {
+  display: none;
+}
+/* The drag zone is the whole screen; buttons sit above it. */
+.nw-touch-drag {
+  position: absolute;
+  inset: 0;
+  pointer-events: auto;
+  touch-action: none;
+}
+.nw-touch-controls {
+  position: absolute;
+  left: var(--nw-controls-x);
+  top: var(--nw-controls-y);
+  width: var(--nw-controls-w);
+  height: var(--nw-controls-h);
+  pointer-events: none;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+.nw-touch[data-mode="deck"] .nw-touch-controls {
+  background: linear-gradient(rgba(4, 2, 12, 0.55), rgba(4, 2, 12, 0.9));
+  border-top: 1px solid rgba(94, 242, 255, 0.18);
+}
+.nw-touch[data-mode="side"] .nw-touch-controls {
+  flex-direction: column;
+  justify-content: center;
+}
+.nw-touch[data-fire-side="left"] .nw-touch-controls {
+  flex-direction: row-reverse;
+}
+.nw-touch[data-mode="side"][data-fire-side="left"] .nw-touch-controls {
+  flex-direction: column;
+  left: 0;
+  padding-left: calc(20px + env(safe-area-inset-left, 0px));
+}
+.nw-touch-hint {
+  margin: 0 auto 0 0;
+  max-width: 11em;
+  color: var(--nw-muted);
+  font-size: 15px;
+  line-height: 1.3;
+}
+.nw-touch[data-fire-side="left"] .nw-touch-hint {
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+.nw-touch.is-flying .nw-touch-hint,
+.nw-touch[data-mode="overlay"] .nw-touch-hint,
+.nw-touch[data-mode="side"] .nw-touch-hint {
+  visibility: hidden;
+}
+.nw-touch-fire,
+.nw-touch-focus,
+.nw-touch-pause {
+  pointer-events: auto;
+  touch-action: none;
+  font: inherit;
+  color: var(--nw-cyan);
+  background: var(--nw-glass-strong);
+  border: 2px solid rgba(94, 242, 255, 0.55);
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* 96 px: big, fixed and forgiving, since a screen gives no tactile edge. */
+.nw-touch-fire {
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  gap: 2px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 15px;
+}
+.nw-touch-fire small {
+  display: none;
+  font-size: 10px;
+  font-weight: 400;
+}
+.nw-touch-fire.is-held {
+  background: rgba(94, 242, 255, 0.28);
+  border-color: var(--nw-cyan);
+  transform: scale(0.96);
+}
+.nw-touch-fire.is-latched {
+  border-style: dashed;
+  border-color: #ffd36b;
+  color: #ffd36b;
+}
+.nw-touch-fire.is-latched small {
+  display: block;
+}
+/* Arcade: the flying finger is the trigger, so FIRE would only confuse. */
+.nw-touch[data-scheme="arcade"] .nw-touch-fire {
+  display: none;
+}
+.nw-touch-focus {
+  flex: none;
+  min-width: 64px;
+  height: 48px;
+  border-radius: 999px;
+  padding: 0 14px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+}
+.nw-touch-focus.is-on {
+  background: rgba(255, 211, 107, 0.2);
+  border-color: #ffd36b;
+  color: #ffd36b;
+}
+/* Pause lives in the deck's top-left corner: far from FIRE, and never over
+   the HUD's corner readouts (score, hull, cannon). */
+.nw-touch-pause {
+  position: absolute;
+  top: calc(var(--nw-controls-y, 0px) + 12px);
+  left: calc(var(--nw-controls-x, 0px) + 16px);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-width: 1px;
+}
+/* Side decks: top of the drag side, opposite FIRE. */
+.nw-touch[data-mode="side"] .nw-touch-pause {
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  left: calc(16px + env(safe-area-inset-left, 0px));
+}
+.nw-touch[data-mode="side"][data-fire-side="left"] .nw-touch-pause {
+  left: auto;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+}
+/* Overlay: just above the translucent controls, left edge clear of iOS
+   swipe-back by its margin. */
+.nw-touch[data-mode="overlay"] .nw-touch-pause {
+  top: calc(var(--nw-controls-y, 0px) - 60px);
+}
+.nw-touch[data-mode="overlay"] .nw-touch-controls {
+  background: none;
+  opacity: 0.85;
+}
+
+/* The stage, its HUD and the subtitles share the layout's stage box during
+   a touch run, so nothing draws under the deck. */
+html.nw-touch-run #stage {
+  inset: auto;
+  left: var(--nw-stage-x);
+  top: var(--nw-stage-y);
+  width: var(--nw-stage-w);
+  height: var(--nw-stage-h);
+}
+html.nw-touch-run .nw-hud {
+  inset: auto;
+  left: var(--nw-stage-x);
+  top: var(--nw-stage-y);
+  width: var(--nw-stage-w);
+  height: var(--nw-stage-h);
+}
+html.nw-touch-run[data-touch-mode="deck"] .nw-subtitle-live {
+  bottom: calc(100% - var(--nw-stage-y) - var(--nw-stage-h) + 10px);
+}
+html.nw-touch-run[data-touch-mode="overlay"] .nw-subtitle-live {
+  bottom: calc(var(--nw-controls-h) + 10px);
+}
+html.nw-touch-run[data-touch-mode="side"] .nw-subtitle-live {
+  max-width: calc(var(--nw-stage-w) - 16px);
+}
+html.nw-touch-run .nw-toasts {
+  bottom: calc(100% - var(--nw-stage-y) - var(--nw-stage-h) + 56px);
+}
+
+/* Phone-size readability: subtitles a size up on touch, HUD never under
+   13 px (research/2026-10-28-chromebook-kids, "Reading and text"). */
+html.nw-touch .nw-subtitle-live {
+  font-size: clamp(17px, 2.6vh, 28px);
+  max-width: 92vw;
+}
+html.nw-touch .nw-frontend {
+  --nw-unit: clamp(15px, 1.65vh, 22px);
+}
+/* Menus on a phone: the panel may scroll, the page never does. */
+html.nw-touch .nw-screen {
+  padding: calc(3vh + env(safe-area-inset-top, 0px))
+    calc(4vw + env(safe-area-inset-right, 0px))
+    calc(76px + env(safe-area-inset-bottom, 0px))
+    calc(4vw + env(safe-area-inset-left, 0px));
+}
+html.nw-touch .nw-prompts {
+  display: none;
+}

@@ -38,6 +38,93 @@ export const UI_STRINGS = {
     zh: "在任意位置拖动即可飞行",
   },
   "ui.touch.latched": { en: "STREAM ON", es: "RÁFAGA ACTIVA", zh: "连射中" },
+  "ui.settings.preset.school": { en: "School", es: "Escolar", zh: "校园" },
+  "ui.settings.redetect": {
+    en: "Detect graphics again",
+    es: "Detectar gráficos de nuevo",
+    zh: "重新检测画质",
+  },
+  "ui.settings.redetectHint": {
+    en: "Takes two seconds",
+    es: "Tarda dos segundos",
+    zh: "需要两秒",
+  },
+  "ui.settings.desc.redetect": {
+    en:
+      "Times this device for two seconds and picks a preset. Picking a preset yourself turns detection off.",
+    es:
+      "Mide este dispositivo durante dos segundos y elige un ajuste. Si eliges uno tú, la detección se apaga.",
+    zh: "用两秒测量本设备并选择画质预设。你自己选择预设后，自动检测会关闭。",
+  },
+  "ui.settings.tierChosen": {
+    en:
+      "Graphics set to {preset} for this device. Change it any time in Settings.",
+    es:
+      "Gráficos en {preset} para este dispositivo. Cámbialo cuando quieras en Ajustes.",
+    zh: "已为本设备设为{preset}画质。可随时在设置中更改。",
+  },
+  "ui.settings.touchScheme": {
+    en: "Touch controls",
+    es: "Controles táctiles",
+    zh: "触屏操作",
+  },
+  "ui.settings.touch.thumbs": { en: "Thumbs", es: "Pulgares", zh: "双拇指" },
+  "ui.settings.touch.oneFinger": {
+    en: "One finger",
+    es: "Un dedo",
+    zh: "单指",
+  },
+  "ui.settings.touch.arcade": { en: "Arcade", es: "Arcade", zh: "街机" },
+  "ui.settings.desc.touchScheme": {
+    en:
+      "Thumbs: drag to fly, FIRE to tap, hold or release a Writ. One finger: never two touches; tap FIRE for one shot, long-press it to keep firing, tap again to stop. Arcade: your flying finger fires; lift it to rest and charge.",
+    es:
+      "Pulgares: arrastra para volar, DISPARAR para tocar, mantener o soltar un Writ. Un dedo: nunca dos toques; toca DISPARAR para un tiro, mantenlo para seguir disparando y toca otra vez para parar. Arcade: el dedo que vuela dispara; levántalo para descansar y cargar.",
+    zh:
+      "双拇指：拖动飞行，开火键可点按、按住或释放令状。单指：从不需要两指同时操作；点开火键射一发，长按持续射击，再点一次停止。街机：飞行的手指即开火，抬起即休息蓄力。",
+  },
+  "ui.settings.touchSensitivity": {
+    en: "Touch sensitivity",
+    es: "Sensibilidad táctil",
+    zh: "触屏灵敏度",
+  },
+  "ui.settings.desc.touchSensitivity": {
+    en:
+      "How far the ship moves for each finger movement. Slow drags are always finer than fast ones.",
+    es:
+      "Cuánto se mueve la nave con cada movimiento del dedo. Arrastrar despacio siempre es más preciso.",
+    zh: "手指每移动一段距离飞船移动多远。慢速拖动总比快速拖动更精细。",
+  },
+  "ui.settings.fireSide": {
+    en: "FIRE button side",
+    es: "Lado del botón DISPARAR",
+    zh: "开火键位置",
+  },
+  "ui.settings.side.left": { en: "Left", es: "Izquierda", zh: "左侧" },
+  "ui.settings.side.right": { en: "Right", es: "Derecha", zh: "右侧" },
+  "ui.settings.desc.fireSide": {
+    en: "Puts FIRE under the left or the right thumb.",
+    es: "Pone DISPARAR bajo el pulgar izquierdo o el derecho.",
+    zh: "把开火键放在左手或右手拇指下。",
+  },
+  "ui.settings.aimAssist": {
+    en: "Writ aim assist",
+    es: "Asistencia de puntería del Writ",
+    zh: "令状瞄准辅助",
+  },
+  "ui.settings.aimAssist.touch": {
+    en: "Touch only",
+    es: "Solo táctil",
+    zh: "仅触屏",
+  },
+  "ui.settings.desc.aimAssist": {
+    en:
+      "A locked Writ picks the weapon part or weak point you are closest to from further away. Choosing to disarm or to kill stays yours. Applies from the next run.",
+    es:
+      "Un Writ fijado elige la pieza de arma o el punto débil más cercano desde más lejos. Desarmar o matar sigue siendo tu decisión. Se aplica desde la siguiente partida.",
+    zh:
+      "锁定的令状能从更远处选中离你最近的武器部件或弱点。缴械还是击杀仍由你决定。从下一局开始生效。",
+  },
 
   "ui.common.select": { en: "Select", es: "Seleccionar", zh: "选择" },
   "ui.common.adjust": { en: "Adjust", es: "Ajustar", zh: "调整" },

@@ -28,6 +28,11 @@ export interface QaProbe {
     bossHp: number | null;
     /** Ticks the Warden has lived (the survival clock reads this). */
     bossAge: number | null;
+    /**
+     * The ship's playfield position, so touch reels can aim by dragging in
+     * a closed loop (tests/mobile_touch_browser.ts). Read-only, like the rest.
+     */
+    player: { x: number; y: number } | null;
   };
   /**
    * The one control, not a state write: autoplay ticks per frame. A reel
@@ -116,6 +121,7 @@ export function installQaProbe(source: {
         bossAge: s?.boss && wardenSpawnTick !== null
           ? s.tick - wardenSpawnTick
           : null,
+        player: s ? { x: s.player.pos.x, y: s.player.pos.y } : null,
       };
     },
     setSpeed(speed) {

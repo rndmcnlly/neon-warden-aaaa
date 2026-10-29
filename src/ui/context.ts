@@ -67,6 +67,11 @@ export interface FrontEndHooks {
   applyLoadout?(loadout: Loadout, look: ShipLookLike): void;
   /** Hangar camera (V's `stage.showHangar`); null returns to the game. */
   showHangar?(shot: "hero" | "turntable" | null): void;
+  /**
+   * From the stage (V): CSS px per playfield unit near the ship's row, or
+   * null before the first layout. Scales touch drags (src/input/touchPilot.ts).
+   */
+  playfieldScale?(): number | null;
   /** A codex entry was unlocked for the first time (A may play a sting). */
   onCodexUnlocked?(id: string): void;
 }
@@ -92,4 +97,6 @@ export interface UiContext {
   restartCheckpoint(): void;
   /** Shows a short message at the bottom of the screen. */
   toast(message: string): void;
+  /** Settings' "Detect graphics again": re-run the device probe now. */
+  redetectTier(): void;
 }

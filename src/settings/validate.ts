@@ -18,11 +18,12 @@ import { DEFAULT_SETTINGS } from "./defaults.ts";
 export const RENDER_SCALE_RANGE = { min: 0.5, max: 2 } as const;
 export const SUBTITLE_SCALE_RANGE = { min: 1, max: 2 } as const;
 export const GAME_SPEED_RANGE = { min: 0.5, max: 1 } as const;
+export const TOUCH_SENSITIVITY_RANGE = { min: 0.5, max: 2 } as const;
 
 /** Render scale each preset implies; picking a preset applies it. */
 export const PRESET_RENDER_SCALE: Readonly<
   Record<Exclude<DisplayPreset, "custom">, number>
-> = { low: 0.5, medium: 0.75, high: 1, ultra: 1.5 };
+> = { school: 1, low: 0.5, medium: 0.75, high: 1, ultra: 1.5 };
 
 export function applyPreset(
   settings: Settings,
@@ -31,7 +32,11 @@ export function applyPreset(
   const renderScale = preset === "custom"
     ? settings.display.renderScale
     : PRESET_RENDER_SCALE[preset];
-  return { ...settings, display: { ...settings.display, preset, renderScale } };
+  // A player's pick ends auto-tiering (src/render/autoTier.ts).
+  return {
+    ...settings,
+    display: { ...settings.display, preset, renderScale, autoTier: false },
+  };
 }
 
 /**
@@ -49,9 +54,19 @@ export function setRenderScale(settings: Settings, scale: number): Settings {
     DisplayPreset,
     number,
   ][];
-  const preset = entries.find(([, value]) => value === renderScale)?.[0] ??
-    "custom";
-  return { ...settings, display: { ...settings.display, renderScale, preset } };
+  // School shares High's scale but not its effects: keep a current School
+  // pick when the slider lands on its scale, never jump to it from elsewhere.
+  const keep = settings.display.preset === "school" &&
+    renderScale === PRESET_RENDER_SCALE.school;
+  const preset = keep
+    ? "school"
+    : entries.find(([name, value]) =>
+      name !== "school" && value === renderScale
+    )?.[0] ?? "custom";
+  return {
+    ...settings,
+    display: { ...settings.display, renderScale, preset, autoTier: false },
+  };
 }
 
 export function clamp(value: number, min: number, max: number): number {
@@ -112,7 +127,7 @@ export function sanitizeSettings(s: Settings): Settings {
     display: {
       preset: oneOf<DisplayPreset>(
         s.display?.preset,
-        ["low", "medium", "high", "ultra", "custom"],
+        ["school", "low", "medium", "high", "ultra", "custom"],
         d.display.preset,
       ),
       renderScale: ranged(
@@ -121,6 +136,7 @@ export function sanitizeSettings(s: Settings): Settings {
         d.display.renderScale,
       ),
       fullscreen: bool(s.display?.fullscreen, d.display.fullscreen),
+      autoTier: bool(s.display?.autoTier, d.display.autoTier),
     },
     audio: {
       master: unit(s.audio?.master, d.audio.master),
@@ -177,7 +193,29 @@ export function sanitizeSettings(s: Settings): Settings {
         s.accessibility?.colorIndependentCues,
         d.accessibility.colorIndependentCues,
       ),
+      aimAssist: oneOf(
+        s.accessibility?.aimAssist,
+        ["touch", "on", "off"] as const,
+        d.accessibility.aimAssist,
+      ),
     },
-    controls: { bindings },
+    controls: {
+      bindings,
+      touchScheme: oneOf(
+        s.controls?.touchScheme,
+        ["thumbs", "oneFinger", "arcade"] as const,
+        d.controls.touchScheme,
+      ),
+      touchSensitivity: ranged(
+        s.controls?.touchSensitivity,
+        TOUCH_SENSITIVITY_RANGE,
+        d.controls.touchSensitivity,
+      ),
+      fireSide: oneOf(
+        s.controls?.fireSide,
+        ["left", "right"] as const,
+        d.controls.fireSide,
+      ),
+    },
   };
 }

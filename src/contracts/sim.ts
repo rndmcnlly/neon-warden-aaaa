@@ -662,6 +662,13 @@ export interface SimOptions {
    * the `gameOver` event.
    */
   readonly autoContinue?: boolean;
+  /**
+   * Writ aim assist (settings `accessibility.aimAssist`): a locked Writ
+   * picks a weapon part or weak point from `WRIT_ASSIST_SLACK` away instead
+   * of `WRIT_ALIGN_SLACK`, nearest first, so a fingertip can choose disarm
+   * or kill. Off by default; recorded with the other options.
+   */
+  readonly aimAssist?: boolean;
 }
 
 /** Enemy bullets passing this close (center to center) emit `nearMiss`. */

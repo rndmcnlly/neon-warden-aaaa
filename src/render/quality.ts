@@ -24,11 +24,45 @@ export interface QualityTier {
   readonly maxParticles: number;
   readonly antialias: boolean;
   readonly shadows: boolean;
+  /**
+   * The post chain runs every frame. False (School) renders straight to the
+   * canvas unless a flash or hit needs the finish pass (`post.ts`): on a
+   * Celeron each full-screen pass costs a render target write and read.
+   */
+  readonly post: boolean;
+  /**
+   * A pixel budget for the drawing buffer (width times height, device px),
+   * applied after `maxPixelRatio`. A ratio cap alone is wrong for phones: a
+   * 393 px wide screen at DPR 1 is a smear, while the same budget a 1366 by
+   * 768 Chromebook gets at DPR 0.85 lets a phone keep DPR 1.5.
+   */
+  readonly maxPixels?: number;
 }
 
 export const QUALITY_TIERS: Readonly<
   Record<Exclude<DisplayPreset, "custom">, QualityTier>
 > = Object.freeze({
+  /**
+   * Managed school Chromebooks and phones (research/2026-10-28-chromebook-
+   * kids, "Proposed School tier"). Diff it against Low: fewer stars and
+   * particles, no composer. Bullets are untouched: atmosphere goes first,
+   * gameplay information never.
+   */
+  school: {
+    maxPixelRatio: 2,
+    // About 1090 by 730: the research's 1024 by 576 target plus headroom.
+    maxPixels: 800_000,
+    bloom: false,
+    bloomStrength: 0,
+    chromaticAberration: 0,
+    grain: 0,
+    trails: 0,
+    starCount: 250,
+    maxParticles: 192,
+    antialias: false,
+    shadows: false,
+    post: false,
+  },
   low: {
     maxPixelRatio: 1,
     bloom: false,
@@ -40,6 +74,7 @@ export const QUALITY_TIERS: Readonly<
     maxParticles: 512,
     antialias: false,
     shadows: false,
+    post: true,
   },
   medium: {
     maxPixelRatio: 1.5,
@@ -52,6 +87,7 @@ export const QUALITY_TIERS: Readonly<
     maxParticles: 1024,
     antialias: true,
     shadows: false,
+    post: true,
   },
   high: {
     maxPixelRatio: 1.5,
@@ -64,6 +100,7 @@ export const QUALITY_TIERS: Readonly<
     maxParticles: 2048,
     antialias: true,
     shadows: false,
+    post: true,
   },
   ultra: {
     maxPixelRatio: 2,
@@ -76,6 +113,7 @@ export const QUALITY_TIERS: Readonly<
     maxParticles: 4096,
     antialias: true,
     shadows: true,
+    post: true,
   },
 });
 

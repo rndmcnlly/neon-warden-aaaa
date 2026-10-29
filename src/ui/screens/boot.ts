@@ -40,7 +40,8 @@ export function gateScreen(ctx: UiContext): ScreenFactory {
     // Mouse proceeds on click (release), keys and buttons on press.
     el.addEventListener("click", proceed);
     const stop = ctx.input.onAnyPress((device) => {
-      if (device !== "mouse") proceed();
+      // Pointers proceed on click (release); keys and buttons on press.
+      if (device !== "mouse" && device !== "touch") proceed();
     });
     return {
       el,

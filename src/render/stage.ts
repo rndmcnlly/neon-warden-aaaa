@@ -36,6 +36,7 @@ import { BulletRenderer } from "./bullets.ts";
 import { ShotTrails } from "./shotTrails.ts";
 import { CameraRig, type RigShotId } from "./cameraRig.ts";
 import { simToWorldLength, simToWorldX, simToWorldZ } from "./coords.ts";
+import { PLAYFIELD } from "../contracts/index.ts";
 import { FlashGuard, REDUCED_LIMITS, STANDARD_LIMITS } from "./flashGuard.ts";
 import { type Pos, SnapshotInterpolator } from "./interp.ts";
 import {
@@ -137,6 +138,12 @@ export interface Stage {
    * arrive as a string from DOM code).
    */
   screenPositionOf(id: EntityId | string): { x: number; y: number } | null;
+  /**
+   * CSS px per playfield unit across the ship's starting row, as the
+   * gameplay camera draws it now. Touch drags use it so one finger
+   * centimeter is the same ship distance on a phone and a tablet.
+   */
+  playfieldPxPerUnit(): number | null;
   stats(): StageStats;
   /** Automatically archived environmental records, available to codex adapters. */
   worldArchive(
@@ -508,15 +515,19 @@ export function createStage(
     aspect: 1,
   };
 
-  function pixelRatio(): number {
-    return Math.min(globalThis.devicePixelRatio || 1, tier.maxPixelRatio) *
-      renderScale;
+  function pixelRatio(width: number, height: number): number {
+    const capped = Math.min(
+      globalThis.devicePixelRatio || 1,
+      tier.maxPixelRatio,
+    ) * renderScale;
+    if (!tier.maxPixels) return capped;
+    return Math.min(capped, Math.sqrt(tier.maxPixels / (width * height)));
   }
 
   function resize(): void {
     const width = Math.max(1, container.clientWidth);
     const height = Math.max(1, container.clientHeight);
-    const pr = pixelRatio();
+    const pr = pixelRatio(width, height);
     renderer.setPixelRatio(pr);
     renderer.setSize(width, height);
     post.setSize(width, height, pr);
@@ -555,6 +566,12 @@ export function createStage(
   const unsubscribe = options.settings?.subscribe(applySettings);
   if (settingsNow) applySettings(settingsNow);
   globalThis.addEventListener("resize", resize);
+  // The touch deck resizes the stage's box without resizing the window
+  // (src/ui/touchLayout.ts), so watch the container itself too.
+  const boxWatch = typeof ResizeObserver === "undefined"
+    ? null
+    : new ResizeObserver(() => resize());
+  boxWatch?.observe(container);
   resize();
 
   // ---- entity pooling ------------------------------------------------------
@@ -1712,6 +1729,17 @@ export function createStage(
       };
     },
 
+    playfieldPxPerUnit() {
+      const rect = renderer.domElement.getBoundingClientRect();
+      if (rect.width < 1) return null;
+      const z = simToWorldZ(PLAYFIELD.height * 0.875);
+      const a = tmpV.set(simToWorldX(0), 0, z).project(rig.camera).x;
+      const b = tmpV.set(simToWorldX(PLAYFIELD.width), 0, z).project(rig.camera)
+        .x;
+      const px = Math.abs(b - a) * 0.5 * rect.width;
+      return px > 0 ? px / PLAYFIELD.width : null;
+    },
+
     stats,
     worldArchive: (language) => sectorWorld.archive.entries(language),
     worldStats: () => sectorWorld.stats(),
@@ -1724,6 +1752,7 @@ export function createStage(
       for (const material of focusMaterials) material.dispose();
       unsubscribe?.();
       globalThis.removeEventListener("resize", resize);
+      boxWatch?.disconnect();
       post.dispose();
       shotTrails.dispose();
       renderer.dispose();

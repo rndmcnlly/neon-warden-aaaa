@@ -80,6 +80,7 @@ import {
   TRIGGER,
   WARDEN_CORE,
   WRIT_ALIGN_SLACK,
+  WRIT_ASSIST_SLACK,
 } from "./tuning.ts";
 import { Trigger, type Volley } from "./trigger.ts";
 import { ContractRate } from "./pay.ts";
@@ -1106,18 +1107,19 @@ export class NeonWardenSim implements Sim {
   ): "weakPoint" | Part | null {
     let best: "weakPoint" | Part | null = null;
     let bestGap = Infinity;
+    const slack = this.options.aimAssist ? WRIT_ASSIST_SLACK : WRIT_ALIGN_SLACK;
     // Parts first, so an exact tie spares the scout.
     for (const part of enemy.parts) {
       if (part.broken) continue;
       const gap = Math.abs(x - (enemy.x + part.offset.x));
-      if (gap <= part.spec.radius + WRIT_ALIGN_SLACK && gap < bestGap) {
+      if (gap <= part.spec.radius + slack && gap < bestGap) {
         best = part;
         bestGap = gap;
       }
     }
     const wp = enemy.weakPoint;
     const gap = Math.abs(x - (enemy.x + wp.offset.x));
-    if (gap <= wp.radius + WRIT_ALIGN_SLACK && gap < bestGap) {
+    if (gap <= wp.radius + slack && gap < bestGap) {
       best = "weakPoint";
     }
     return best;

@@ -18,7 +18,12 @@ export const DEFAULT_BINDINGS: Readonly<Record<Action, Binding>> = {
 };
 
 export const DEFAULT_SETTINGS: Settings = {
-  display: { preset: "high", renderScale: 1, fullscreen: false },
+  display: {
+    preset: "high",
+    renderScale: 1,
+    fullscreen: false,
+    autoTier: true,
+  },
   audio: { master: 0.8, music: 0.7, sfx: 0.8, voice: 1, ui: 0.6, mono: false },
   textLang: "en",
   voiceLang: "en",
@@ -38,6 +43,12 @@ export const DEFAULT_SETTINGS: Settings = {
     gameSpeed: 1,
     difficulty: "normal",
     colorIndependentCues: false,
+    aimAssist: "touch",
   },
-  controls: { bindings: DEFAULT_BINDINGS },
+  controls: {
+    bindings: DEFAULT_BINDINGS,
+    touchScheme: "thumbs",
+    touchSensitivity: 1,
+    fireSide: "right",
+  },
 };

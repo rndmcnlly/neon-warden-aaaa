@@ -9,7 +9,10 @@
  *   tap between two ticks is never lost.
  *
  * It also tracks the last-used device so prompts can follow it, and offers a
- * capture mode for remapping.
+ * capture mode for remapping. Touch gameplay arrives through `touch` (fed by
+ * the deck in `src/ui/touchDeck.ts`) and merges into the same frame. The
+ * last-used device is decided per event, never per session, because one
+ * Chromebook can be a keyboard, a trackpad and a touchscreen in a minute.
  */
 
 import {
@@ -30,8 +33,21 @@ import {
   langCycleButtonStep,
   langCycleKeyStep,
 } from "./langCycle.ts";
+import { type TouchConfig, TouchPilot } from "./touchPilot.ts";
 
-export type Device = "keyboard" | "mouse" | "gamepad";
+export type Device = "keyboard" | "mouse" | "gamepad" | "touch";
+
+/** What the touch deck needs: the pilot, and how to scale its drags. */
+export interface TouchPort {
+  readonly pilot: TouchPilot;
+  /** Settings plus the current playfield scale, read at event time. */
+  config(): TouchConfig;
+  /**
+   * Who measures the playfield: CSS px per playfield unit near the ship, or
+   * null before the stage can say. The deck installs the stage's answer.
+   */
+  setScale(pxPerUnit: () => number | null): void;
+}
 
 export type MenuIntent =
   | "up"
@@ -72,6 +88,7 @@ export interface InputLayer {
   onGamepadConnection(listener: (connected: boolean) => void): () => void;
   device(): Device;
   padFamily(): PadFamily;
+  readonly touch: TouchPort;
   /**
    * Routes the next key or button to `callback` instead of the game, then
    * returns to normal. Calls back with `null` on timeout or `cancel()`.
@@ -168,7 +185,12 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
   const deviceEvents = emitter<Device>();
   const padEvents = emitter<boolean>();
 
-  let currentDevice: Device = "keyboard";
+  // First guess only: a coarse primary pointer means a touchscreen. From
+  // then on the last-used device wins, event by event.
+  let currentDevice: Device =
+    typeof matchMedia === "function" && matchMedia("(pointer: coarse)").matches
+      ? "touch"
+      : "keyboard";
   let family: PadFamily = "generic";
   const heldKeys = new Set<string>();
   let padButtons: boolean[] = [];
@@ -266,8 +288,10 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
   }
 
   function onPointer(event: PointerEvent): void {
-    if (event.pointerType === "mouse") setDevice("mouse");
-    if (event.type === "pointerdown") anyPress.emit("mouse");
+    // A pen is a finger here; a stylus user wants the touch deck.
+    const device: Device = event.pointerType === "mouse" ? "mouse" : "touch";
+    setDevice(device);
+    if (event.type === "pointerdown") anyPress.emit(device);
   }
 
   // Losing focus never sends keyup, so clear held keys or they stick.
@@ -280,6 +304,7 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
       Math.hypot(pad.axes[0] ?? 0, pad.axes[1] ?? 0) > GAME_STICK_DEAD_ZONE;
     heldKeys.clear();
     heldState = INITIAL_HELD;
+    touchPilot.reset();
     padButtons = [];
     padStick = { x: 0, y: 0 };
     padRepeat.clear();
@@ -311,6 +336,21 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
     if (x < -MENU_STICK_THRESHOLD) out.push("left");
     if (x > MENU_STICK_THRESHOLD) out.push("right");
     return out;
+  }
+
+  const touchPilot = new TouchPilot();
+  let pxPerUnit: () => number | null = () => null;
+  function touchConfig(): TouchConfig {
+    const s = settings.get();
+    // Until the stage answers, assume the playfield spans most of the width.
+    const fallback = (globalThis.innerWidth || 480) * 0.85 / 480;
+    return {
+      scheme: s.controls.touchScheme,
+      sensitivity: s.controls.touchSensitivity,
+      unitsPerPx: 1 / Math.max(0.05, pxPerUnit() ?? fallback),
+      autoFire: s.accessibility.autoFire,
+      holdToggle: s.accessibility.holdToggle,
+    };
   }
 
   let rafId = 0;
@@ -421,8 +461,9 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
       const keyX = (isHeld("moveRight") ? 1 : 0) - (isHeld("moveLeft") ? 1 : 0);
       const keyY = (isHeld("moveDown") ? 1 : 0) - (isHeld("moveUp") ? 1 : 0);
       const stick = applyDeadZone(padStick.x, padStick.y, GAME_STICK_DEAD_ZONE);
-      const x = Math.max(-1, Math.min(1, keyX + stick.x));
-      const y = Math.max(-1, Math.min(1, keyY + stick.y));
+      const finger = touchPilot.read(performance.now(), touchConfig());
+      const x = Math.max(-1, Math.min(1, keyX + stick.x + finger.move.x));
+      const y = Math.max(-1, Math.min(1, keyY + stick.y + finger.move.y));
       const held = resolveHeld(heldState, {
         fireDown: isHeld("fire"),
         focusDown: isHeld("focus"),
@@ -430,10 +471,13 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
         focusPresses: edges.focus,
       }, a);
       heldState = held.state;
+      // On touch, the scheme already applied auto-fire and toggling; the
+      // keyboard path's auto-fire would otherwise stream forever under it.
+      const onTouch = currentDevice === "touch";
       const frame: InputFrame = {
         move: { x, y },
-        fire: held.fire,
-        focus: held.focus,
+        fire: onTouch ? finger.fire || isHeld("fire") : held.fire,
+        focus: onTouch ? finger.focus || isHeld("focus") : held.focus,
         pause: edges.pause > 0,
         confirm: edges.confirm > 0,
         back: edges.back > 0,
@@ -452,6 +496,13 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
     onGamepadConnection: padEvents.on,
     device: () => currentDevice,
     padFamily: () => family,
+    touch: {
+      pilot: touchPilot,
+      config: touchConfig,
+      setScale(fn) {
+        pxPerUnit = fn;
+      },
+    },
     capture(kind, callback, timeoutMs) {
       finishCapture(null);
       const timer = setTimeout(() => finishCapture(null), timeoutMs);

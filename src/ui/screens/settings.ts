@@ -7,11 +7,13 @@
 
 import {
   type Action,
+  type AimAssist,
   type Difficulty,
   type DisplayPreset,
   type Lang,
   LANGS,
   type Settings,
+  type TouchScheme,
 } from "../../contracts/index.ts";
 import {
   ACTIONS,
@@ -28,6 +30,7 @@ import {
   RENDER_SCALE_RANGE,
   setRenderScale,
   SUBTITLE_SCALE_RANGE,
+  TOUCH_SENSITIVITY_RANGE,
 } from "../../settings/validate.ts";
 import type { UiContext } from "../context.ts";
 import type { ScreenFactory } from "../router.ts";
@@ -82,7 +85,14 @@ function rows(ctx: UiContext) {
 
 function displayTab(ctx: UiContext): Widget[] {
   const { s, set, onOff } = rows(ctx);
-  const presets: DisplayPreset[] = ["low", "medium", "high", "ultra", "custom"];
+  const presets: DisplayPreset[] = [
+    "school",
+    "low",
+    "medium",
+    "high",
+    "ultra",
+    "custom",
+  ];
   return [
     choiceRow<DisplayPreset>({
       key: "preset",
@@ -122,6 +132,15 @@ function displayTab(ctx: UiContext): Widget[] {
       },
     }),
     staticRow(ctx.t("ui.settings.vsync"), ctx.t("ui.settings.vsyncBody")),
+    {
+      el: button({
+        key: "redetect",
+        label: ctx.t("ui.settings.redetect"),
+        hint: ctx.t("ui.settings.redetectHint"),
+        onActivate: () => ctx.redetectTier(),
+      }),
+      sync() {},
+    },
   ];
 }
 
@@ -322,6 +341,17 @@ function accessibilityTab(ctx: UiContext): Widget[] {
       get: () => s.get().accessibility.autoFire,
       set: (autoFire) => a11y({ autoFire }),
     }),
+    choiceRow<AimAssist>({
+      key: "aimAssist",
+      label: ctx.t("ui.settings.aimAssist"),
+      options: [
+        { value: "touch", label: ctx.t("ui.settings.aimAssist.touch") },
+        { value: "on", label: ctx.t("ui.common.on") },
+        { value: "off", label: ctx.t("ui.common.off") },
+      ],
+      get: () => s.get().accessibility.aimAssist,
+      set: (aimAssist) => a11y({ aimAssist }),
+    }),
     choiceRow<"hold" | "toggle">({
       key: "holdToggle",
       label: ctx.t("ui.settings.holdToggle"),
@@ -441,7 +471,10 @@ function controlsTab(ctx: UiContext): Widget[] {
         cell.slot,
         input,
       );
-      s.update((c) => ({ ...c, controls: { bindings: result.bindings } }));
+      s.update((c) => ({
+        ...c,
+        controls: { ...c.controls, bindings: result.bindings },
+      }));
       uiSound(result.moves.length > 0 ? "notify" : "confirm");
       for (const move of result.moves) {
         ctx.toast(
@@ -514,11 +547,51 @@ function controlsTab(ctx: UiContext): Widget[] {
         body: "ui.confirm.resetControlsBody",
         confirmLabel: "ui.confirm.resetYes",
         onConfirm: () =>
-          s.update((c) => ({ ...c, controls: { bindings: DEFAULT_BINDINGS } })),
+          s.update((c) => ({
+            ...c,
+            controls: { ...c.controls, bindings: DEFAULT_BINDINGS },
+          })),
       })),
   });
+  const touch = (patch: Partial<Settings["controls"]>) =>
+    s.update((c) => ({ ...c, controls: { ...c.controls, ...patch } }));
+  // Touch rows first on touch devices: that is what those players came for.
+  const touchRows: Widget[] = [
+    choiceRow<TouchScheme>({
+      key: "touchScheme",
+      label: ctx.t("ui.settings.touchScheme"),
+      options: (["thumbs", "oneFinger", "arcade"] as const).map((value) => ({
+        value,
+        label: ctx.t(`ui.settings.touch.${value}`),
+      })),
+      get: () => s.get().controls.touchScheme,
+      set: (touchScheme) => touch({ touchScheme }),
+    }),
+    sliderRow({
+      key: "touchSensitivity",
+      label: ctx.t("ui.settings.touchSensitivity"),
+      ...TOUCH_SENSITIVITY_RANGE,
+      step: 0.1,
+      format: percent,
+      get: () => s.get().controls.touchSensitivity,
+      set: (value) => touch({ touchSensitivity: Math.round(value * 10) / 10 }),
+    }),
+    choiceRow<"left" | "right">({
+      key: "fireSide",
+      label: ctx.t("ui.settings.fireSide"),
+      options: (["left", "right"] as const).map((value) => ({
+        value,
+        label: ctx.t(`ui.settings.side.${value}`),
+      })),
+      get: () => s.get().controls.fireSide,
+      set: (fireSide) => touch({ fireSide }),
+    }),
+  ];
+  const onTouch = ctx.input.device() === "touch";
   return [
+    ...(onTouch ? touchRows : []),
     table,
+    ...(onTouch ? [] : touchRows),
     staticRow(
       ctx.t("ui.controls.captureNote"),
       ctx.t("ui.controls.fallbackNote"),
@@ -573,6 +646,11 @@ const DESCRIPTIONS = {
   maxLines: "ui.settings.desc.maxLines",
   autoFire: "ui.settings.desc.autoFire",
   holdToggle: "ui.settings.desc.holdToggle",
+  aimAssist: "ui.settings.desc.aimAssist",
+  touchScheme: "ui.settings.desc.touchScheme",
+  touchSensitivity: "ui.settings.desc.touchSensitivity",
+  fireSide: "ui.settings.desc.fireSide",
+  redetect: "ui.settings.desc.redetect",
   shake: "ui.settings.desc.shake",
   reducedFlashing: "ui.settings.desc.reducedFlashing",
   reduceMotion: "ui.settings.desc.reduceMotion",

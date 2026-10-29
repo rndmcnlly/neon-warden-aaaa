@@ -46,12 +46,19 @@ export function bloomDamping(bullets: number): number {
   return Math.min(1, Math.max(0.5, 1.2 - bullets / 200));
 }
 
+/** True while the look has something only the finish pass can draw. */
+export function needsFinish(look: PostLook): boolean {
+  return look.flash > 0 || look.desaturate > 0 || (look.hurt ?? 0) > 0 ||
+    (look.edge ?? 0) > 0 || (look.wave?.strength ?? 0) > 0;
+}
+
 export class PostChain {
   readonly composer: EffectComposer;
   private readonly bloom: UnrealBloomPass;
   private readonly trails: AfterimagePass;
   private readonly finish: ShaderPass;
   private tier: QualityTier;
+  private readonly direct: () => void;
 
   constructor(
     renderer: THREE.WebGLRenderer,
@@ -60,6 +67,7 @@ export class PostChain {
     tier: QualityTier,
   ) {
     this.tier = tier;
+    this.direct = () => renderer.render(scene, camera);
     // A half-float, multisampled target: HDR headroom for bloom, and MSAA
     // because the canvas's own antialiasing does not apply to offscreen passes.
     const target = new THREE.WebGLRenderTarget(1, 1, {
@@ -143,7 +151,12 @@ export class PostChain {
     );
     this.bloom.strength = this.tier.bloomStrength * look.bloomScale *
       bloomDamping(look.bulletDensity ?? 0);
-    this.composer.render();
+    // School tier: skip the composer's full-screen copies while nothing needs
+    // them. Hits, flashes, the flashback and the Writ wave still go through
+    // the finish pass, so the tier drops atmosphere, never feedback. The
+    // renderer's own tone mapping and sRGB output stand in for OutputPass.
+    if (!this.tier.post && !needsFinish(look)) this.direct();
+    else this.composer.render();
   }
 
   dispose(): void {

@@ -180,6 +180,13 @@ export const TRIGGER = Object.freeze({
 
 /** How a locked Writ picks its component: within this of the x offset. */
 export const WRIT_ALIGN_SLACK = 4;
+/**
+ * The same with aim assist on (touch). About 3 CSS px of slack on a phone is
+ * under fingertip jitter; 10 units is about 8 px. The nearest component
+ * still wins, so the line between disarm and kill does not move: assist
+ * widens the outer reach of each, it never decides for the player.
+ */
+export const WRIT_ASSIST_SLACK = 10;
 
 export interface PartSpec {
   readonly id: string;
