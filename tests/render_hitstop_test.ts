@@ -1,5 +1,6 @@
 import { assertEquals } from "@std/assert";
 import type { SimEvent } from "../src/contracts/index.ts";
+import { LADDER } from "../src/render/feedbackLadder.ts";
 import {
   Hitstop,
   HITSTOP_MAX_SPEED,
@@ -33,7 +34,7 @@ Deno.test("hitstop: big hits only (turret, lancer, boss parts)", () => {
   assertEquals(hitstopFor(kill("turret")), HITSTOP_TICKS);
   assertEquals(hitstopFor(kill("lancer")), HITSTOP_TICKS);
   assertEquals(hitstopFor(kill("drone")), 0);
-  assertEquals(hitstopFor(bossBreak), HITSTOP_TICKS);
+  assertEquals(hitstopFor(bossBreak), LADDER.podBreak.hitstopTicks);
   assertEquals(
     hitstopFor({ ...bossBreak, target: "enemy" } as unknown as SimEvent),
     0,
@@ -43,9 +44,11 @@ Deno.test("hitstop: big hits only (turret, lancer, boss parts)", () => {
 Deno.test("hitstop: holds N ticks, overlapping hits do not stack", () => {
   const h = new Hitstop();
   h.note([kill("turret"), bossBreak]);
-  const held = Array.from({ length: HITSTOP_TICKS + 2 }, () => h.hold());
-  assertEquals(held.filter(Boolean).length, HITSTOP_TICKS);
-  assertEquals(held[HITSTOP_TICKS], false);
+  // The longer freeze wins; the two do not add up.
+  const longest = LADDER.podBreak.hitstopTicks;
+  const held = Array.from({ length: longest + 2 }, () => h.hold());
+  assertEquals(held.filter(Boolean).length, longest);
+  assertEquals(held[longest], false);
   h.note([kill("lancer")]);
   h.reset();
   assertEquals(h.hold(), false);

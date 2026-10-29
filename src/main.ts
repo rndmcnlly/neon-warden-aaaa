@@ -50,6 +50,13 @@ import {
   timelineForEvent,
 } from "./scenes/index.ts";
 import { PausableClock } from "./app/clock.ts";
+import { runTicks } from "./app/tickLoop.ts";
+import { Hitstop } from "./render/hitstop.ts";
+import {
+  DEFERRED_FEEDBACK_S,
+  deferredBy,
+  isDeferrable,
+} from "./render/feedbackLadder.ts";
 import { createSubtitleLayer } from "./app/subtitleView.ts";
 import { RadioDesk } from "./director/radioDesk.ts";
 import { radioFor, type RadioSituation } from "./scenes/radio.ts";
@@ -351,6 +358,11 @@ let flashbackPlayed = false;
  */
 let openingScene: (() => void) | null = null;
 let accumulator = 0;
+/**
+ * Hitstop freezes whole sim ticks (src/render/hitstop.ts): off under
+ * autoplay faster than real time, so QA reels keep their pacing.
+ */
+const hitstop = new Hitstop(flags.autoPlay?.speed ?? 1);
 
 function startFor(at: SkipTo): SimStart {
   const match = at.match(/^sector([1-5])$/);
@@ -402,6 +414,7 @@ function startRun(request: StartRequest): void {
   chatterOn = false;
   simFrozen = false;
   accumulator = 0;
+  hitstop.reset();
   sim = createSim({
     movement: flags.movement,
     seed: flags.seed ?? DEFAULT_SEED,
@@ -494,10 +507,20 @@ function offerContinue(): void {
   });
 }
 
-function onSimEvent(event: SimEvent, phase: string, state: SimState): void {
+function onSimEvent(
+  event: SimEvent,
+  phase: string,
+  state: SimState,
+  deferred = false,
+): void {
   qa?.simEvent(event);
   ui?.hud.event(event);
-  engine?.gameplay.onEvent(event, state);
+  // A kill on the tick a life is lost sounds after the loss, not over it.
+  engine?.gameplay.onEvent(
+    event,
+    state,
+    deferred ? { delayS: DEFERRED_FEEDBACK_S } : {},
+  );
   if (event.type === "gameOver") offerContinue();
   for (const [name, value] of Object.entries(runFlagsAfter(event))) {
     director.setFlag(name, value);
@@ -693,6 +716,7 @@ function frame(now: number): void {
   if (paused !== wasPaused) {
     frontEnd.input.reset();
     sim?.resetMovement();
+    hitstop.reset();
     wasPaused = paused;
     clock.setPaused(paused);
     if (engine) void (paused ? engine.ctx.suspend() : engine.ctx.resume());
@@ -709,14 +733,13 @@ function frame(now: number): void {
       accumulator = Math.min(accumulator - ticks * TICK_MS, TICK_MS);
       alpha = accumulator / TICK_MS;
     }
-    for (let i = 0; i < ticks; i++) {
-      const before = sim.snapshot();
-      const input = pilot.next(before);
-      if (before.phase === "tutorial") tutorialProgress.input(input, before);
-      const events = sim.step(input);
-      const after = sim.snapshot();
+    const run = sim;
+    runTicks(ticks, run, pilot, hitstop, ({ before, events, after }) => {
       stage.observe(after, events);
-      for (const event of events) onSimEvent(event, before.phase, after);
+      const defer = deferredBy(events);
+      for (const event of events) {
+        onSimEvent(event, before.phase, after, defer && isDeferrable(event));
+      }
       engine?.gameplay.frame(after);
       if (chatterOn) radioPatrol(after);
       lastEnemies = after.enemies;
@@ -724,7 +747,12 @@ function frame(now: number): void {
         openingScene();
         openingScene = null;
       }
-    }
+    }, (before, input) => {
+      if (before.phase === "tutorial") tutorialProgress.input(input, before);
+    });
+    // Frozen: hold the picture on the last tick instead of interpolating
+    // toward a tick that has not happened.
+    if (hitstop.pending > 0) alpha = 1;
     devOverlay.update(sim.snapshot());
     ui?.hud.update(sim.snapshot());
   }
