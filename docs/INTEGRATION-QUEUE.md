@@ -491,3 +491,39 @@ Requests:
   `loudness.lufs` to the key if you rely on input loudness.
 - **Spanish (and narrator zh) per-language voice anchors**:
   `vo/voices/<speaker>.<lang>.wav`. No API change; the takes just changed.
+
+## Wave 4
+
+### W Writing: variant and commentary banks (October 28, 2026)
+
+- **P: bank format is live** in `src/scenes/banks/types.ts`. A `Bank` has
+  `id`, `note`, `triggers` (sim `event` with an optional `where` filter,
+  a `stats` moment, or an `app` moment: pause/resume), `conditions`
+  (`run: hasFired | neverFired`, `sectors`, `bossPhases`, `livesLeft`,
+  `chance`, `maxPerRun`), `speaker`, `cooldownMs`, `priority` (0–100;
+  80 safety, 60 events, 40 stats, 20 idle; timelines always win) and
+  `variants`. A variant has `id`, `vo`, `en`/`es`/`zh`, optional
+  `direction` and an optional `when` sub-case (`hit`, `shieldBreak`,
+  `nearDeath`, `respawn`, `spread`, `shield`) so one pool covers related
+  triggers without short pools that repeat.
+- **Selection:** shuffle bag per bank, no repeat until the bag empties, and
+  never the same line twice across a bag boundary. Filter the bag by
+  `when` before dealing.
+- **Stats moments** (`StatsMoment`) are yours to detect; suggested
+  thresholds are in `STATS_MOMENTS` in the same file. Tune freely.
+- **Playback:** `vo: true` variants have `var_*`/`stat_*` ids that are
+  `vo/script.yaml` lines (play like barks); `vo: false` variants have
+  `bank.*` ids that resolve through `t()` (text table `src/i18n/banks.ts`)
+  and show as subtitles only. `ALL_BANKS` in `src/scenes/banks/index.ts`
+  is the registry.
+- The existing `barkFor()` (`bark_lifelost_001`, `bark_shield_001`) is
+  folded into the `shipFine` and `pickup` banks as variants; P may retire
+  `barkFor` once the scheduler deals from banks.
+
+## Wave 4 orchestrator notes (Adam's playtest)
+
+- Hangar: the ship is hidden behind the menu panels and the engine trail
+  cannot be seen. Redesign pending research/2026-10-28-casual-creators-hangar/
+  (Kate Compton's Casual Creators): ship as hero, live test-flight vignette.
+- Back affordance for mouse and touch on every menu (see AGENTS.md
+  Platforms); design pending research/2026-10-28-mobile-touch/.

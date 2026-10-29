@@ -71,6 +71,15 @@ structure and the production checklist should be legible and teachable.
   "Writ" shot; grazing; part damage and disarming; a pay multiplier
   (research/2026-10-28-gameplay-microsystems/). Audio: two layers, feel and
   beat-quantized musical (research/2026-10-28-critique-audio/).
+- Platforms (Adam, October 28): fully playable in desktop AND mobile
+  browsers. Every menu has a visible Back affordance for mouse and touch
+  (not only Esc or a gamepad button); touch gameplay must express the full
+  fire verb (tap, hold, rest-to-charge, Writ release) and scan; mobile
+  performance tiers, portrait-first layout (a vertical shmup), safe areas,
+  iOS audio unlock. Good Chromebook coverage: elementary-school kids will
+  play it on low-end managed school Chromebooks (touchscreen, trackpad,
+  keyboard hybrids), so the low tier must be smooth and the game must suit
+  young players (no data collection, readable text, school-network friendly).
 - Students will read the source: TypeScript for everything except custom
   shaders. No Rust/Bevy swerve.
 - The Warden in three moves: (1) another character builds up its terror in
