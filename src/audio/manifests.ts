@@ -50,19 +50,44 @@ export interface ResolvedVoice {
 /** The language every line is guaranteed to try last. */
 export const FALLBACK_VOICE_LANG: Lang = "en";
 
+/**
+ * A voice variant's own take for a line, if the chosen variant has one
+ * (`src/audio/variants.ts`); same shape as a `cues.json` language entry.
+ */
+export type VariantTakeLookup = (
+  line: LineId,
+  speaker: Speaker,
+  lang: Lang,
+) =>
+  | {
+    readonly file: string;
+    readonly duration: number;
+    readonly words?: readonly WordTiming[];
+  }
+  | undefined;
+
 export class VoCatalog {
   constructor(
     private readonly data: VoCuesFile,
     /** Where `cues.json` lives; file paths in it are relative to here. */
     private readonly base = "vo/",
+    /** The chosen voice variant's takes win over the base files. */
+    private readonly variant: VariantTakeLookup = () => undefined,
   ) {}
+
+  /** The take for one language: the variant's, else the base file's. */
+  private take(line: LineId, lang: Lang) {
+    const entry = this.data.lines[line];
+    if (!entry) return undefined;
+    return this.variant(line, entry.speaker, lang) ?? entry.langs[lang];
+  }
 
   /** Picks `lang` if rendered, else English, else nothing. */
   resolve(line: LineId, lang: Lang): ResolvedVoice | undefined {
     const entry = this.data.lines[line];
     if (!entry) return undefined;
     for (const l of [lang, FALLBACK_VOICE_LANG]) {
-      const take = entry.langs[l];
+      const take = this.take(line, l);
       if (take) {
         return {
           lang: l,
@@ -76,8 +101,8 @@ export class VoCatalog {
 
   /** Word timings of the take `resolve` would pick, if it has any. */
   words(line: LineId, lang: Lang): readonly WordTiming[] | undefined {
-    const entry = this.data.lines[line];
-    const take = entry?.langs[lang] ?? entry?.langs[FALLBACK_VOICE_LANG];
+    const take = this.take(line, lang) ??
+      this.take(line, FALLBACK_VOICE_LANG);
     return take?.words;
   }
 
@@ -129,6 +154,12 @@ export interface MusicTrack {
     readonly root: number;
     readonly mode: "major" | "minor" | "dorian" | "phrygian";
   };
+  /** Which candidate this is (`cand1`); the manifest's default for a cue. */
+  readonly variant?: string;
+  /** Picked by objective stats, not yet by ear (`music/stats.py`). */
+  readonly provisional?: boolean;
+  /** Every candidate of the cue, for A/B (`?v.music.<cue>=<variant>`). */
+  readonly variants?: Readonly<Record<string, MusicTrack>>;
 }
 
 export interface MusicManifestFile {
@@ -145,14 +176,24 @@ export const MUSIC_FALLBACK: Readonly<Partial<Record<MusicCueId, MusicCueId>>> =
     endingKill: "ending",
     endingPacifist: "ending",
     menu: "tutorial",
+    // The generic ending cue, once the two endings have their own picks.
+    ending: "endingKill",
   };
 
+/**
+ * Cue to track, after fallbacks. `choose` picks a cue's variant (the A/B
+ * registry); by default each cue plays the manifest's pick.
+ */
 export function musicTracks(
   file: MusicManifestFile | null,
+  choose: (cue: MusicCueId) => string | undefined = () => undefined,
 ): Map<MusicCueId, MusicTrack> {
   const tracks = new Map<MusicCueId, MusicTrack>();
   for (const [cue, track] of Object.entries(file?.cues ?? {})) {
-    if (track) tracks.set(cue as MusicCueId, track);
+    if (!track) continue;
+    const pick = choose(cue as MusicCueId);
+    const chosen = pick !== undefined ? track.variants?.[pick] : undefined;
+    tracks.set(cue as MusicCueId, chosen ?? track);
   }
   for (const [cue, fallback] of Object.entries(MUSIC_FALLBACK)) {
     const borrowed = tracks.get(fallback);

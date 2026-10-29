@@ -23,7 +23,7 @@ export class MusicPlayer {
   constructor(
     private readonly ctx: BaseAudioContext,
     private readonly out: AudioNode,
-    private readonly tracks: ReadonlyMap<MusicCueId, MusicTrack>,
+    private tracks: ReadonlyMap<MusicCueId, MusicTrack>,
     private readonly load: (url: string) => Promise<AudioBuffer | undefined>,
     private readonly loaded: (url: string) => AudioBuffer | undefined,
   ) {}
@@ -37,6 +37,19 @@ export class MusicPlayer {
     return this.wanted;
   }
 
+  /**
+   * Swaps the track table (an A/B variant changed). If the cue we want now
+   * maps to a different file, crossfades to it from the top.
+   */
+  retrack(tracks: ReadonlyMap<MusicCueId, MusicTrack>, fadeMs: number): void {
+    const before = this.tracks.get(this.wanted)?.src;
+    this.tracks = tracks;
+    if (tracks.get(this.wanted)?.src === before) return;
+    const cue = this.wanted;
+    this.wanted = "silence";
+    this.play(cue, fadeMs);
+  }
+
   play(cue: MusicCueId, fadeMs: number): void {
     if (cue === this.wanted) return;
     this.wanted = cue;
@@ -48,7 +61,10 @@ export class MusicPlayer {
       this.start(cue, track, buffer, fadeMs);
     } else {
       this.load(track.src).then((b) => {
-        if (b && this.wanted === cue && !this.current) {
+        if (
+          b && this.wanted === cue && !this.current &&
+          this.tracks.get(cue) === track
+        ) {
           this.start(cue, track, b, fadeMs);
         }
       });

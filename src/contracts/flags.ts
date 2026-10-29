@@ -7,6 +7,9 @@
  * - `?seed=N` (gameplay RNG seed)
  * - `?ui=menu|title|settings|credits|pause` (front-end entry screen)
  * - `?qa=1` (exposes the read-only QA probe, `globalThis.__nwqa`)
+ * - `?dev=1` (developer panels: the flag overlay and the variant switcher)
+ * - `?v.<axis>=<choice>` (an A/B variant, e.g. `v.voice.tutorial_ai=original`
+ *   or `v.music.gameplay=cand1`; axes are listed in `src/audio/variants.ts`)
  *
  * The parser is pure (takes a query string) so it is testable headless.
  */
@@ -50,11 +53,22 @@ export interface UrlFlags {
   readonly ui: UiEntry | null;
   /** QA tooling is watching: expose the read-only probe (see `src/app/qaProbe.ts`). */
   readonly qa: boolean;
+  /** Developer panels requested (`?dev=1`). */
+  readonly dev: boolean;
+  /**
+   * A/B variant choices from `v.<axis>=<choice>` parameters, unvalidated:
+   * the variant registry knows which axes and choices exist and ignores the
+   * rest (see `src/audio/variants.ts`).
+   */
+  readonly variants: Readonly<Record<string, string>>;
   /** Human-readable notes about ignored or clamped values, for the dev overlay. */
   readonly warnings: readonly string[];
 }
 
 export const MAX_AUTOPLAY_SPEED = 32;
+
+/** URL parameters naming an A/B variant start with this. */
+export const VARIANT_PREFIX = "v.";
 
 function isSkipTo(value: string): value is SkipTo {
   return (SKIP_TARGETS as readonly string[]).includes(value);
@@ -107,6 +121,18 @@ export function parseUrlFlags(search: string): UrlFlags {
   }
 
   const qa = params.get("qa") === "1";
+  const dev = params.get("dev") === "1";
 
-  return { skipTo, autoPlay, seed, ui, qa, warnings };
+  const variants: Record<string, string> = {};
+  for (const [key, value] of params) {
+    if (!key.startsWith(VARIANT_PREFIX)) continue;
+    const axis = key.slice(VARIANT_PREFIX.length);
+    if (
+      /^[a-z]+\.[a-zA-Z0-9_]+$/.test(axis) && /^[a-zA-Z0-9_-]+$/.test(value)
+    ) {
+      variants[axis] = value;
+    } else warnings.push(`malformed variant "${key}=${value}"`);
+  }
+
+  return { skipTo, autoPlay, seed, ui, qa, dev, variants, warnings };
 }

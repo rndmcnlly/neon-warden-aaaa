@@ -4,10 +4,17 @@
  * ports: hand `engine` (voice), `engine.musicPort` and `engine.sfxPort` to
  * the Director.
  *
- *   music -> musicDuck -> eventDuck -> musicFilter --\
- *   sfx -> sfxDuck -> sfxFilter ----------------------+--> master -> limiter
- *   voice (Warden lines via the arena PA) ------------|     -> speakers
- *   ui -----------------------------------------------/
+ *   music -> musicDuck -> eventDuck -> musicFilter -> trim --\
+ *   sfx -> sfxDuck -> sfxFilter --------------------> trim ---+--> master
+ *   voice (Warden lines via the arena PA) ----------> trim ---|   -> limiter
+ *   ui ---------------------------------------------> trim --/    -> ceiling
+ *                                                                 -> speakers
+ *
+ * Two kinds of gain, kept apart: the bus faders are the player's (settings
+ * sliders); the trims are the mix's (`MIX_TRIM_DB`), set by measuring each
+ * bus's loudness in QA reels (`qa/av.ts` records a stem per bus). The
+ * master chain is a limiter (a compressor with its automatic makeup gain
+ * cancelled) and a soft ceiling at -1.2 dBFS (see `masterChain`).
  *
  * Bus gains follow the settings store live. The duck and filter nodes are
  * separate so ducking never fights the player's volume sliders: story VO
@@ -62,6 +69,12 @@ import {
 } from "./gameplaySounds.ts";
 import { SfxPlayer } from "./sfxPlayer.ts";
 import type { Vec2, WordTiming } from "../contracts/index.ts";
+import {
+  defineVoiceAxes,
+  VariantRegistry,
+  type VoiceVariantsFile,
+  voiceVariantTake,
+} from "./variants.ts";
 
 export type Bus = "master" | "music" | "sfx" | "voice" | "ui";
 
@@ -87,6 +100,11 @@ export interface AudioEngineOptions {
   /** Public root of the asset folders, e.g. `import.meta.env.BASE_URL`. */
   readonly base?: string;
   readonly ctx?: AudioContext;
+  /**
+   * A/B variants (voice and music takes). The engine defines the axes it
+   * finds in the manifests; omitted means every default.
+   */
+  readonly variants?: VariantRegistry;
 }
 
 export class AudioEngine implements VoicePort {
@@ -115,16 +133,35 @@ export class AudioEngine implements VoicePort {
   /** Stages asked for so far, so a voice-language change can refetch VO. */
   private readonly stagesWanted = new Set<Stage>();
   private voiceLang: Lang;
+  private readonly vo: VoCatalog;
+  /**
+   * The voice sounding on each layer. A layer holds one line: a new line
+   * cuts the old one. The Director already stops a line it interrupts, but
+   * a line it considers finished by its own clock may still be sounding
+   * (auto-play runs the scene clock up to 8x), and stacked lines were most
+   * of the reels' -8 LUFS.
+   */
+  private readonly layerVoices = new Map<VoiceLayer, VoiceHandle>();
 
   private constructor(
     readonly ctx: AudioContext,
     private readonly store: SettingsStore,
     private readonly base: string,
-    private readonly vo: VoCatalog,
+    voFile: VoCuesFile,
+    voVariants: VoiceVariantsFile | null,
     private readonly sfx: ReadonlyMap<string, string>,
     musicFile: MusicManifestFile | null,
     gameplaySfx: ReadonlyMap<string, readonly string[]>,
+    readonly variants: VariantRegistry,
   ) {
+    defineVoiceAxes(variants, voVariants);
+    defineMusicAxes(variants, musicFile);
+    this.vo = new VoCatalog(
+      voFile,
+      "vo/",
+      (line, speaker, lang) =>
+        voiceVariantTake(variants, voVariants, speaker, line, lang),
+    );
     this.clock = { now: () => ctx.currentTime * 1000 };
     const bus = () => ctx.createGain();
     this.buses = {
@@ -145,26 +182,32 @@ export class AudioEngine implements VoicePort {
     };
     this.musicFilter = lowpass();
     this.sfxFilter = lowpass();
-    const limiter = ctx.createDynamicsCompressor();
-    limiter.threshold.value = -6;
-    limiter.knee.value = 0;
-    limiter.ratio.value = 20;
-    limiter.attack.value = 0.002;
-    limiter.release.value = 0.1;
-    this.buses.master.connect(limiter).connect(ctx.destination);
+    const [chainIn, chainOut] = masterChain(ctx);
+    this.buses.master.connect(chainIn);
+    chainOut.connect(ctx.destination);
+    const trim = (b: MixBus) => {
+      const g = bus();
+      g.gain.value = Math.pow(10, MIX_TRIM_DB[b] / 20);
+      g.connect(this.buses.master);
+      // QA records a stem per bus here (qa/av.ts); absent outside QA.
+      (globalThis as { __nwqaBusTap?: (b: string, n: AudioNode) => void })
+        .__nwqaBusTap?.(b, g);
+      return g;
+    };
     this.buses.music.connect(musicDuck).connect(this.eventDuck)
-      .connect(this.musicFilter).connect(this.buses.master);
+      .connect(this.musicFilter).connect(trim("music"));
     this.buses.sfx.connect(sfxDuck).connect(this.sfxFilter)
-      .connect(this.buses.master);
+      .connect(trim("sfx"));
     for (const b of ["voice", "ui"] as const) {
-      this.buses[b].connect(this.buses.master);
+      this.buses[b].connect(trim(b));
     }
     const now = () => ctx.currentTime;
     this.ducker = new Ducker(musicDuck.gain, now);
     this.sfxDucker = new Ducker(sfxDuck.gain, now, SFX_UNDER_VOICE);
 
     this.loader = new StagedLoader((url) => this.decode(url));
-    const tracks = musicTracks(musicFile);
+    const choose = (cue: MusicCueId) => variants.get(`music.${cue}`);
+    const tracks = musicTracks(musicFile, choose);
     this.music = new MusicPlayer(
       ctx,
       this.buses.music,
@@ -196,6 +239,14 @@ export class AudioEngine implements VoicePort {
       }
     }
 
+    variants.subscribe((axis) => {
+      if (axis.startsWith("music.")) {
+        this.music.retrack(musicTracks(musicFile, choose), 400);
+      } else if (axis.startsWith("voice.")) {
+        for (const stage of this.stagesWanted) void this.loadStage(stage);
+      }
+    });
+
     this.voiceLang = store.get().voiceLang;
     this.applyVolumes(store.get(), 0);
     store.subscribe((s) => {
@@ -213,8 +264,9 @@ export class AudioEngine implements VoicePort {
    */
   static async create(options: AudioEngineOptions): Promise<AudioEngine> {
     const base = options.base ?? "./";
-    const [vo, sfx, music, gameplay] = await Promise.all([
+    const [vo, voVariants, sfx, music, gameplay] = await Promise.all([
       fetchJson<VoCuesFile>(base + "vo/cues.json"),
+      fetchJson<VoiceVariantsFile>(base + "vo/variants/index.json"),
       fetchJson<SfxManifestFile>(base + "sfx/manifest.json"),
       fetchJson<MusicManifestFile>(base + "music/manifest.json"),
       fetchJson<GameplaySfxFile>(base + "sfx/gameplay.json"),
@@ -223,10 +275,12 @@ export class AudioEngine implements VoicePort {
       options.ctx ?? new AudioContext(),
       options.store,
       base,
-      new VoCatalog(vo ?? { lines: {} }),
+      vo ?? { lines: {} },
+      voVariants,
       sfxUrls(sfx),
       music,
       gameplayVariants(gameplay),
+      options.variants ?? new VariantRegistry({}),
     );
   }
 
@@ -283,6 +337,7 @@ export class AudioEngine implements VoicePort {
       this.loader.request(this.url(v.url)); // ready for next time
       return null;
     }
+    this.layerVoices.get(layer)?.stop(LAYER_CUT_MS);
     const ctx = this.ctx;
     const source = ctx.createBufferSource();
     source.buffer = buffer;
@@ -297,18 +352,27 @@ export class AudioEngine implements VoicePort {
         this.sfxDucker.voiceEnded();
       }
       ended = true;
+      if (this.layerVoices.get(layer) === handle) {
+        this.layerVoices.delete(layer);
+      }
     };
     source.start();
-    return {
+    const handle: VoiceHandle = {
       setGain(target, rampMs) {
         gain.gain.setTargetAtTime(target, ctx.currentTime, rampMs / 3000);
       },
-      stop(fadeMs = 0) {
+      stop: (fadeMs = 0) => {
+        if (ended) return;
         const t = ctx.currentTime;
         gain.gain.setTargetAtTime(0, t, fadeMs / 3000);
         source.stop(t + fadeMs / 1000);
+        if (this.layerVoices.get(layer) === handle) {
+          this.layerVoices.delete(layer);
+        }
       },
     };
+    this.layerVoices.set(layer, handle);
+    return handle;
   }
 
   /** Where a voice line enters the graph: the Warden goes through the PA. */
@@ -464,6 +528,108 @@ export class AudioEngine implements VoicePort {
     return await this.ctx.decodeAudioData(await res.arrayBuffer());
   }
 }
+
+type MixBus = Exclude<Bus, "master">;
+
+/**
+ * The mix's own gain per bus, in dB, on top of the player's faders. Set from
+ * QA stem loudness (see `qa/av.ts`, "audio: bus loudness"): with default
+ * faders, story VO lands near -20 LUFS, music beds about 8 LU under VO,
+ * gameplay sfx about 4 LU under VO, and the full mix near -17 LUFS
+ * integrated.
+ */
+export const MIX_TRIM_DB: Readonly<Record<MixBus, number>> = {
+  music: 5,
+  sfx: 2,
+  voice: -1,
+  ui: 2,
+};
+
+/** Where the master limiter starts working, dBFS. */
+export const LIMIT_THRESHOLD_DB = -6;
+const LIMIT_RATIO = 20;
+/** The ceiling the soft clipper approaches, dBFS (true peak target -1). */
+export const CEILING_DB = -1.2;
+
+/**
+ * Web Audio's compressor applies automatic makeup gain: the spec scales its
+ * output by (1 / g)^0.6, where g is its gain at a full-scale input. With a
+ * hard knee g is threshold + (0 - threshold) / ratio dB, so the makeup is
+ * 0.6 of that, in dB. Left alone, a "safety limiter" at -6 dB and 20:1
+ * quietly adds about 3.4 dB to the whole mix.
+ */
+export function compressorMakeupDb(thresholdDb: number, ratio: number): number {
+  return -0.6 * (thresholdDb + (0 - thresholdDb) / ratio);
+}
+
+/**
+ * A soft-clip transfer curve: linear below `kneeDb`, then easing (tanh) to
+ * `ceilingDb`; inputs past full scale clamp to the curve's ends. Pure, so it
+ * is tested.
+ */
+export function ceilingCurve(
+  kneeDb: number,
+  ceilingDb: number,
+  n = 2049,
+): Float32Array<ArrayBuffer> {
+  const k = Math.pow(10, kneeDb / 20);
+  const c = Math.pow(10, ceilingDb / 20);
+  const curve = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    const x = (i / (n - 1)) * 2 - 1;
+    const a = Math.abs(x);
+    const y = a <= k ? a : k + (c - k) * Math.tanh((a - k) / (c - k));
+    curve[i] = Math.sign(x) * y;
+  }
+  return curve;
+}
+
+/**
+ * Master: a fast compressor as the limiter (its makeup gain cancelled), then
+ * a 4x-oversampled soft clipper whose output cannot pass `CEILING_DB`, so
+ * the mix meets -1 dBTP even when the compressor's 3 ms attack lets a
+ * transient through. Native nodes only: cheap enough for a school
+ * Chromebook, no AudioWorklet.
+ */
+function masterChain(ctx: BaseAudioContext): [AudioNode, AudioNode] {
+  const comp = ctx.createDynamicsCompressor();
+  comp.threshold.value = LIMIT_THRESHOLD_DB;
+  comp.knee.value = 0;
+  comp.ratio.value = LIMIT_RATIO;
+  comp.attack.value = 0.003;
+  comp.release.value = 0.15;
+  const unmakeup = ctx.createGain();
+  unmakeup.gain.value = Math.pow(
+    10,
+    -compressorMakeupDb(LIMIT_THRESHOLD_DB, LIMIT_RATIO) / 20,
+  );
+  const ceiling = ctx.createWaveShaper();
+  ceiling.curve = ceilingCurve(CEILING_DB - 2, CEILING_DB);
+  ceiling.oversample = "4x";
+  comp.connect(unmakeup).connect(ceiling);
+  return [comp, ceiling];
+}
+
+/** One `music.<cue>` axis per cue that ships more than one take. */
+function defineMusicAxes(
+  registry: VariantRegistry,
+  file: MusicManifestFile | null,
+): void {
+  for (const [cue, track] of Object.entries(file?.cues ?? {})) {
+    const choices = Object.keys(track?.variants ?? {});
+    if (!track || choices.length < 2 || !track.variant) continue;
+    registry.define({
+      id: `music.${cue}`,
+      kind: "music",
+      choices,
+      defaultChoice: track.variant,
+      note: track.provisional ? "provisional pick (music/stats.py)" : undefined,
+    });
+  }
+}
+
+/** How fast a new line on a layer fades out the one still sounding there. */
+const LAYER_CUT_MS = 80;
 
 /** A low-pass "open" enough to be inaudible. */
 const OPEN_HZ = 20000;

@@ -34,6 +34,8 @@ import { createFrontEnd, type FrontEnd } from "./ui/frontEnd.ts";
 import type { StartRequest } from "./ui/context.ts";
 import { createDevOverlay } from "./ui/devOverlay.ts";
 import { AudioEngine } from "./audio/engine.ts";
+import { VariantRegistry } from "./audio/variants.ts";
+import { mountVariantPanel } from "./audio/variantPanel.ts";
 import { Director } from "./director/director.ts";
 import type { MusicPort, SfxPort, VoicePort } from "./director/ports.ts";
 import { lookup } from "./i18n/index.ts";
@@ -87,12 +89,18 @@ const SILENT_VOICE: VoicePort = {
 const SILENT_MUSIC: MusicPort = { play() {} };
 const SILENT_SFX: SfxPort = { play() {} };
 
-const engine = await AudioEngine.create({ store: settings }).catch(
+/** A/B variants (`?v.voice.tutorial_ai=a_captain`, see src/audio/variants.ts). */
+const variants = new VariantRegistry(flags.variants);
+const engine = await AudioEngine.create({ store: settings, variants }).catch(
   (error: unknown) => {
     console.warn("audio unavailable, running silent", error);
     return null;
   },
 );
+if (flags.dev) mountVariantPanel(document.body, variants);
+for (const w of [...variants.warnings, ...variants.unknownAxes()]) {
+  console.warn("variant ignored:", w);
+}
 if (engine) {
   // The ears ride the player's ship (see src/audio/spatial.ts).
   engine.setEar(() => {
