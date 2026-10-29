@@ -213,8 +213,8 @@
     },
     {
       "title": "Trailer automation prep (30 s teaser, 90 s trailer, 120 s QA compendium)",
-      "status": "queued",
-      "detail": "Starts after the Warden defeat pass. First web research on teaser/trailer craft (e.g. Derek Lieu), derive concerns, judge panel critiques the cut sheets, adopt selectively; then capture recipes and edit pipeline, dry run only.",
+      "status": "done (prep); renders not started",
+      "detail": "Research (Derek Lieu, Steamworks, Netflix timed text, YouTube chapters), derived concerns, three cut sheets (trailer/cuts/teaser30, trailer90, compendium120), three-model judge panel (adopted and declined in README), pipeline `deno task trailer <cut> --lang en|es|zh|all [--draft]` (frozen build, recipe-hash take cache, FFmpeg assembly, -16 LUFS / -2 dBTP measured per master). Dry run: 3 teaser shots, EN/ES/ZH animatics at build 87abcda3a762ff21 (fdfcee6). Gate before master compute: a high-quality 1080p capture path (current takes about 0.76 Mbit/s at 720p). Estimate: about 60 min capture plus 12 min assembly for all nine masters. research/2026-10-29-trailer-prep/README.md",
       "updated": "2026-10-29"
     },
     {

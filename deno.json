@@ -40,6 +40,7 @@
     "qa:topic": "deno run -A --no-lock qa/qa.ts topic",
     "qa:list": "deno run -A --no-lock qa/qa.ts list",
     "qa:probe": "deno run -A --no-lock qa/probe.ts",
+    "trailer": "deno run -A --no-lock trailer/trailer.ts",
     "ci": "deno fmt --check && deno lint && deno task check && deno task test && deno task build"
   },
   "exclude": [
@@ -54,7 +55,9 @@
     "art",
     "public/vo",
     "qa/reports",
-    "qa/.build"
+    "qa/.build",
+    "trailer/.cache",
+    "trailer/out"
   ],
   "imports": {
     "vite": "npm:vite@8.3.1",
