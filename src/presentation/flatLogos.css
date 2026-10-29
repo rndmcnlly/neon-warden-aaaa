@@ -1,4 +1,16 @@
 /* Local vectors and system fonts only. No GPU canvas, animation loop or webfont. */
+.nw-screen-logos .nw-logo-slot {
+  position: absolute;
+  inset: 0;
+}
+.nw-screen-logos .nw-skip {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 1;
+}
 .nw-flat-logos {
   --logo-ink: #a6f4ed;
   position: absolute;

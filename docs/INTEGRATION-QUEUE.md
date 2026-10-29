@@ -721,10 +721,27 @@ Requests:
   T's rendered seed/hash metadata makes the exact generated YAML mirror
   comparison stale; do not overwrite the live script to silence it.
 
-## Flat opening logos: isolated handoff (October 28, 2026)
+## Flat opening logos: integrated (October 28, 2026)
 
-Ready for the main/stage owner after Pilot removal finishes. No shared renderer,
-timeline, UI or `main.ts` changes were made by this workstream.
+Integrated into `main.ts`: Director flags and the existing frame loop drive the
+passive DOM layer. Both 3200 ms holds, music and skip completion flags remain;
+active 3D logo display, turntable and interval polling are removed. Live settings
+are sampled every frame. The full-viewport slot keeps the input-transparent
+logos below Skip. Abort/completion dispose their layer and listener, with guards
+against stale cleanup affecting a newer Director. Removed the retired Pilot
+closeup mapping from `main.ts` to complete the concurrent renderer scope cut.
+
+Production QA: `qa/reports/logo-integration-2026-10-29T06-02-33.288Z/result.json`
+records 69 passing browser checks: normal timing, first/second/immediate skips,
+repeat cold boot, checkpoint restart, reduced motion/flashing, and 390×844 touch.
+Skip remains visible and has a 44px in-bounds target, including on mobile where
+the shared UI would otherwise hide keyboard prompts.
+`static.json` has no asset/translation failures. The existing focused A/V boot
+reel passes: `reels/boot-cinematic/reel.mp4` under that report directory.
+`deno check src/main.ts tests/logo_integration_browser.ts` and both logo timing
+tests pass. Captain/cand1 selections were preserved, not owned by this change.
+
+Original isolated API handoff follows for reference:
 
 ```ts
 import { createFlatLogos } from "./presentation/flatLogos.ts";

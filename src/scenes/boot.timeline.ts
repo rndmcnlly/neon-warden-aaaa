@@ -7,15 +7,18 @@
 import type { Timeline } from "../contracts/index.ts";
 import { music, pause, setFlag } from "./cues.ts";
 
+/** Shared with the passive logo view; the Director remains the clock owner. */
+export const BOOT_LOGO_HOLD_MS = 3200;
+
 export const boot: Timeline = {
   id: "boot",
   cues: [
     music("logos"),
     setFlag("boot.studioLogo"),
-    pause(3200),
+    pause(BOOT_LOGO_HOLD_MS),
     setFlag("boot.studioLogo", false),
     setFlag("boot.publisherLogo"),
-    pause(3200),
+    pause(BOOT_LOGO_HOLD_MS),
     setFlag("boot.publisherLogo", false),
     music("silence", 1500),
     setFlag("boot.logosDone"),

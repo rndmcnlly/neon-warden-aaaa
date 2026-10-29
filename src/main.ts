@@ -28,7 +28,7 @@ import { createSim } from "./sim/sim.ts";
 import { FightingAutopilot } from "./pilots/fighting.ts";
 import { PacifistAutopilot } from "./pilots/pacifist.ts";
 import { createSettingsStore } from "./settings/store.ts";
-import { createStage, type PropId } from "./render/stage.ts";
+import { createStage } from "./render/stage.ts";
 import { createFrontEnd, type FrontEnd } from "./ui/frontEnd.ts";
 import type { StartRequest } from "./ui/context.ts";
 import { createDevOverlay } from "./ui/devOverlay.ts";
@@ -37,7 +37,10 @@ import { VariantRegistry } from "./audio/variants.ts";
 import { mountVariantPanel } from "./audio/variantPanel.ts";
 import { Director } from "./director/director.ts";
 import type { MusicPort, SfxPort, VoicePort } from "./director/ports.ts";
-import { lookup } from "./i18n/index.ts";
+import { id, lookup } from "./i18n/index.ts";
+import { createFlatLogos } from "./presentation/flatLogos.ts";
+import "./presentation/flatLogos.css";
+import { BOOT_LOGO_HOLD_MS } from "./scenes/boot.timeline.ts";
 import {
   chatterFor,
   FLAGS,
@@ -163,10 +166,6 @@ let ui: Pick<FrontEnd, "hud" | "credits" | "tutorial"> | null = null;
 /** Set with `?qa=1`: records scenes, lines and sim events for `qa/`. */
 let qa: QaRecorder | null = null;
 
-const CLOSEUP_PROPS: Partial<Record<string, PropId>> = {
-  pilotCloseup: "pilot_figure",
-};
-
 /**
  * Each run gets a fresh Director, so story flags (and any half-played scene)
  * never leak from one run into the next.
@@ -179,9 +178,7 @@ function makeDirector(): Director {
     sfx: engine?.sfxPort ?? SILENT_SFX,
     camera: {
       shot(shot, durationMs, ease) {
-        if (shot !== "logoTurntable") {
-          stage.showProp(CLOSEUP_PROPS[shot] ?? null);
-        }
+        stage.showProp(null);
         stage.playShot(shot, durationMs, ease);
       },
     },
@@ -287,25 +284,57 @@ function skipTutorial(): void {
   void playScene("tutorialSkip");
 }
 
-/**
- * The logo sequence: the boot timeline flips `boot.*` flags on a clock; the
- * stage turns each 3D logo on its plinth while the flag is up.
- */
+/** A passive DOM layer, driven only by the Director's flags and clock. */
+let updateBootLogos: (() => void) | null = null;
+let disposeBootLogos: (() => void) | null = null;
+
 function playBootLogos(slot: HTMLElement, signal: AbortSignal): Promise<void> {
-  // The 3D logos render on the canvas, so the logo screen goes see-through.
-  slot.closest(".nw-screen-logos")?.classList.add("is-3d");
-  stage.showProp("logo_adamsmith_systems");
-  stage.playShot("logoTurntable", 0);
-  const watch = setInterval(() => {
-    if (director.getFlag("boot.publisherLogo")) stage.showProp("logo_cm121");
-  }, 100);
+  disposeBootLogos?.();
+  if (signal.aborted) return Promise.resolve();
+  const owner = director;
+  const startedAt = clock.now();
+  const logos = createFlatLogos(slot);
+  const update = () => {
+    const current = settings.get();
+    logos.setSettings({
+      reducedMotion: current.accessibility.reduceMotion,
+      reducedFlashing: current.accessibility.reducedFlashing,
+    });
+    const publisher = owner.getFlag("boot.publisherLogo");
+    if (publisher || owner.getFlag("boot.studioLogo")) {
+      logos.show(
+        publisher ? "incubator" : "studio",
+        lookup(
+          id(publisher ? "ui.logo.publisherTag" : "ui.logo.studioTag"),
+          current.textLang,
+        ),
+      );
+      logos.update(
+        clock.now() - startedAt - (publisher ? BOOT_LOGO_HOLD_MS : 0),
+      );
+    } else logos.hide();
+  };
+  const dispose = () => {
+    logos.dispose();
+    signal.removeEventListener("abort", abort);
+    if (updateBootLogos === update) {
+      updateBootLogos = null;
+      disposeBootLogos = null;
+    }
+  };
+  const abort = () => {
+    dispose();
+    // A stale screen must never skip a newer run's Director or scene.
+    if (owner.timeline?.id === "boot") owner.skipScene();
+  };
+  updateBootLogos = update;
+  disposeBootLogos = abort;
+  signal.addEventListener("abort", abort, { once: true });
   const done = playScene("boot");
-  signal.addEventListener("abort", () => director.skipScene(), { once: true });
+  update();
   return done.finally(() => {
-    clearInterval(watch);
-    stage.showProp(null);
-    stage.playShot("gameplay", 0);
-    engine?.playMusic("menu", 1500);
+    dispose();
+    if (director === owner && !owner.timeline) engine?.playMusic("menu", 1500);
   });
 }
 
@@ -698,6 +727,7 @@ function frame(now: number): void {
   }
 
   director.update();
+  updateBootLogos?.();
   radio.update();
   stage.setWarp(Math.max(0, (warpUntil - now) / WARP_MS));
   stage.render(dt, alpha);
