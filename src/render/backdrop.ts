@@ -18,6 +18,18 @@ import { nebulaFragment, nebulaVertex } from "./shaders/nebula.glsl.ts";
 /** Floor plane height: under hulls, above the nebula. */
 const FLOOR_Y = -0.9;
 
+/**
+ * The lane floor's background budget (`floor.glsl.ts`): how much hue
+ * survives, and the linear value its activity compresses toward. Tuned
+ * from measured frames (research/2026-10-29-movement-lane/) so the floor
+ * stays below combat in value and saturation.
+ */
+export const FLOOR_BUDGET = {
+  gain: 0.6,
+  saturation: 0.38,
+  maxLinear: 0.1,
+};
+
 /** Scrolling volume the stars live in, world units. */
 const STAR_SPAN_Z = 80;
 
@@ -79,6 +91,11 @@ export class Backdrop {
         uLine: { value: new THREE.Color() },
         uBright: { value: 1 },
         uScroll: { value: 0 },
+        uTime: { value: 0 },
+        uDetail: { value: 1 },
+        uSat: { value: FLOOR_BUDGET.saturation },
+        uMax: { value: FLOOR_BUDGET.maxLinear },
+        uGain: { value: FLOOR_BUDGET.gain },
         uPlayer: { value: new THREE.Vector2(0, 6) },
         uBoss: { value: new THREE.Vector2(0, -5) },
         uBossOn: { value: 0 },
@@ -117,6 +134,11 @@ export class Backdrop {
       m.color.set(look.worldB).multiplyScalar(0.9);
     }
     for (const m of this.bandMats) m.color.set(look.accent).multiplyScalar(1.2);
+  }
+
+  /** The low tier keeps the grid and glows but skips the floor's activity. */
+  setDetail(full: boolean): void {
+    this.floor.uniforms.uDetail.value = full ? 1 : 0;
   }
 
   /** Per-frame subjects for the floor's ground glows and density column. */
@@ -193,6 +215,9 @@ export class Backdrop {
     this.nebula.uniforms.uScroll.value = -this.scroll * 0.02;
     this.nebula.uniforms.uWarp.value = this.warp;
     this.floor.uniforms.uScroll.value = this.scroll * 4;
+    // Floor traffic keeps its own clock: warp speeds the lane, not the
+    // signals, and a frozen dt (reduced motion) freezes both.
+    this.floor.uniforms.uTime.value += dtSec;
     for (const l of this.layers) {
       l.points.position.z = (this.scroll * l.speed) % STAR_SPAN_Z;
       l.points.scale.z = 1 + this.warp * 6;

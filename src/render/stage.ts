@@ -50,6 +50,7 @@ import { ParticleSystem, ShockwavePool } from "./particles.ts";
 import { PostChain } from "./post.ts";
 import { MuzzleFlashes, PressureWave, ShipKnock } from "./shotLooks.ts";
 import { DebrisField, RicochetPool } from "./debris.ts";
+import { THRUSTER_TIERS, Thrusters } from "./thrusters.ts";
 import {
   DEFERRED_FEEDBACK_S,
   deferredBy,
@@ -249,6 +250,7 @@ export function createStage(
 
   const backdrop = new Backdrop(tier.starCount);
   scene.add(backdrop.group);
+  backdrop.setDetail(tier.bloom);
   const sectorWorld = new SectorWorld();
   scene.add(sectorWorld.group);
 
@@ -277,6 +279,12 @@ export function createStage(
   // Torn-off parts and deflect streaks (src/render/debris.ts).
   const debris = new DebrisField(tier.bloom ? 24 : 8);
   scene.add(debris.group);
+  // Thruster puffs and banking (src/render/thrusters.ts); the low tier
+  // keeps a handful of puffs.
+  const thrusters = new Thrusters(
+    tier.bloom ? THRUSTER_TIERS.full : THRUSTER_TIERS.cheap,
+  );
+  scene.add(thrusters.mesh);
   const ricochets = new RicochetPool();
   scene.add(ricochets.group);
   /**
@@ -467,6 +475,7 @@ export function createStage(
       tier = nextTier;
       post.setTier(tier);
       backdrop.setStarCount(tier.starCount);
+      backdrop.setDetail(tier.bloom);
       if (particles.capacity !== tier.maxParticles) {
         scene.remove(particles.points);
         particles = new ParticleSystem(tier.maxParticles);
@@ -480,6 +489,9 @@ export function createStage(
     reducedFlashing = s.accessibility.reducedFlashing;
     muzzle.reducedFlashing = reducedFlashing;
     debris.setCapacity(tier.bloom ? 24 : 8);
+    thrusters.setOptions(
+      tier.bloom ? THRUSTER_TIERS.full : THRUSTER_TIERS.cheap,
+    );
     flashes.limits = reducedFlashing ? REDUCED_LIMITS : STANDARD_LIMITS;
     resize();
   }
@@ -990,15 +1002,22 @@ export function createStage(
     interp.playerPosition(alpha, tmpPos);
     ship.position.set(simToWorldX(tmpPos.x), SHIP_Y, simToWorldZ(tmpPos.y));
     ctx.player.copy(ship.position);
-    const bank = interp.playerBank(alpha);
-    ship.rotation.set(0, 0, -bank * 1.6);
+    const p = state.player;
+    const quietMotion = reduceMotion || motionQuery.matches || reducedFlashing;
+    // Banking follows the ship's actual lateral motion, not the stick: the
+    // same lean for classic and hybrid, and it springs level when the ship
+    // stops (render-only; the camera never rolls).
+    ship.rotation.set(
+      0,
+      0,
+      thrusters.bank(p.vel.x, p.focused, quietMotion, dt),
+    );
     // Writ knock: the drawn ship only, after ctx.player, so the camera,
     // effects and the focus marker (the true hitbox) never move with it.
     knock.reduceMotion = rig.reduceMotion;
     knock.update(dt * 1000);
     ship.position.z += knock.offset;
     ship.rotation.x = knock.pitch;
-    const p = state.player;
     // Grace blink: slower under reduced flashing.
     const blinkPeriod = reducedFlashing ? 20 : 8;
     ship.visible = state.phase !== "ended" || state.outcome !== "gameOver";
@@ -1012,7 +1031,6 @@ export function createStage(
       : shieldHit;
     shieldMat.uniforms.uTime.value = timeSec;
     const engine = findPart(ship, "engine");
-    const quietMotion = reduceMotion || motionQuery.matches || reducedFlashing;
     if (engine) {
       engine.scale.setScalar(
         p.focused
@@ -1047,6 +1065,15 @@ export function createStage(
     writ.update(dt, p.charge, p.chargeLevel, timeSec);
     beam.setShape(p.scan.halfAngle, simToWorldLength(p.scan.range));
     beam.update(dt, ship.position, p.scan.active && ship.visible && !flashback);
+    thrusters.update(
+      dt,
+      state.tick,
+      p.vel,
+      ctx.player,
+      ship.visible && !flashback && state.phase !== "ended",
+      p.focused,
+      quietMotion,
+    );
     // Engine trail: a few slow sparks per frame streaming down-screen, the
     // original's spark trail. Cheaper and more legible than full-frame blur.
     if (ship.visible && !flashback && !quietMotion) {
