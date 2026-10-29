@@ -105,3 +105,26 @@ gh repo delete rndmcnlly/neon-warden-aaaa
 
 In this repository, revert the commit that added this file to restore the
 subpath (`REPO_NAME`) build.
+
+## GitHub Pages verified domain (October 29, 2026)
+
+Adam authorized adding the TXT record GitHub showed for verifying
+`adamsmith.systems` under the `rndmcnlly` account. A verified domain stops
+other GitHub accounts from claiming a dangling `*.adamsmith.systems`
+subdomain (takeover protection), which covers the "Not done" item above.
+
+- Record ID `b7bf2adb9af9b03cd9dc8de519e0f0a0`: `TXT`
+  `_github-pages-challenge-rndmcnlly.adamsmith.systems` ->
+  `d66017d854133aab95af31a517f761`, DNS only, automatic TTL, with a comment
+  naming this file. Checked first: no record with this name existed. Nothing
+  else in the zone was changed.
+- Verified: `dig +short TXT _github-pages-challenge-rndmcnlly.adamsmith.systems @1.1.1.1`
+  returned `"d66017d854133aab95af31a517f761"`.
+- Remaining step (Adam): click Verify at https://github.com/settings/pages.
+  GitHub recommends keeping the record afterward.
+
+Undo (also remove the domain from https://github.com/settings/pages):
+
+```sh
+cf dns records delete b7bf2adb9af9b03cd9dc8de519e0f0a0 -z 01d5dd6aa6a367bb3c7de7b33791c722 --profile personal
+```
