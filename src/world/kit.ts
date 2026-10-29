@@ -214,6 +214,9 @@ export class SignBoard {
 }
 
 /** Many posed copies of one template, drawn with one InstancedMesh per part. */
+const WHITE = new THREE.Color(1, 1, 1);
+const GLOW = new THREE.Color();
+
 export class InstancedRig {
   readonly group = new THREE.Group();
   readonly copies: THREE.Object3D[] = [];
@@ -249,6 +252,12 @@ export class InstancedRig {
         for (let i = 0; i < count; i++) {
           mesh.setColorAt(i, c.setHex(tints[i] ?? 0xffffff));
         }
+      }
+      // Lit parts carry a per-copy brightness from the start, so the
+      // Warden's finale can fail one buttress lamp at a time without a
+      // shader recompile mid-scene (`setCopyGlow`).
+      if (part.kind === "lit") {
+        for (let i = 0; i < count; i++) mesh.setColorAt(i, WHITE);
       }
       this.group.add(mesh);
       this.meshes.push({ part, mesh });
@@ -326,6 +335,15 @@ export class InstancedRig {
           base * level,
         );
       }
+    }
+  }
+
+  /** Lit-part brightness of one copy, 0 dark to about 1.5 (bloom swell). */
+  setCopyGlow(i: number, level: number): void {
+    for (const { part, mesh } of this.meshes) {
+      if (part.kind !== "lit" || !mesh.instanceColor) continue;
+      mesh.setColorAt(i, GLOW.setScalar(level));
+      mesh.instanceColor.needsUpdate = true;
     }
   }
 

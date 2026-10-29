@@ -3,6 +3,10 @@
  * Pilot #0122 for non-performance exactly as it recalled #0121; this time
  * the Warden cuts the leash. Pilot's single line of the game is here and is
  * optional (`story.pilotSpeaks`); with it off, the silence is the answer.
+ *
+ * The finale draws the turn: the tether snaps on `ending.leashCut` and Last
+ * Approach's lights swell outward from the Warden; on `banner.lanesKept`
+ * its scouts form up and escort it home up the open lane.
  */
 
 import type { Timeline } from "../contracts/index.ts";
@@ -13,7 +17,12 @@ export const endingPacifist: Timeline = {
   id: "ending-pacifist",
   cues: [
     music("silence", 600),
-    camera("bossCloseup", 1500),
+    // A composed wide first: the Warden lowering its guard, intact, with
+    // the red recall tether still running from it into the sky
+    // (src/render/wardenFinale.ts), and both side regions in frame.
+    camera("wardenFall", 1800),
+    pause(2200),
+    camera("bossCloseup", 3000),
     ...sayAll("pac_end_001", "pac_end_002"),
     ...say("pac_end_003"),
     setFlag(FLAGS.endingLeashCut),

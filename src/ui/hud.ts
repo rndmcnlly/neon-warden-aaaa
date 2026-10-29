@@ -58,6 +58,8 @@ export interface WardenModel {
 
 export interface HudModel {
   readonly tutorial: boolean;
+  /** A story ending is playing (the Warden fell or withdrew): skippable. */
+  readonly ending: boolean;
   readonly score: number;
   readonly lives: number;
   readonly power: number;
@@ -80,6 +82,8 @@ export function hudModel(state: SimState, tally: HudTally): HudModel {
       state.enemies.length;
   return {
     tutorial,
+    ending: state.outcome === "bossDefeated" ||
+      state.outcome === "bossSurvived",
     score: state.score,
     lives: state.player.lives,
     power: state.player.power,
@@ -193,7 +197,7 @@ export function bannerFontSize(text: string): string {
 export interface HudOptions {
   readonly t: (key: UiKey, vars?: TextParams) => string;
   readonly lang: () => Lang;
-  /** Pressing the tutorial's skip chip with a pointer. */
+  /** Pressing the skip chip (tutorial or ending) with a pointer. */
   readonly onSkipClick: () => void;
   /** True if a text id exists (intel state names fall back to raw ids). */
   readonly hasText?: (key: string) => boolean;
@@ -213,6 +217,8 @@ export interface Hud {
   reset(): void;
   /** True while the last snapshot was in the tutorial. */
   inTutorial(): boolean;
+  /** True once the Warden fell or withdrew: the ending is playing. */
+  inEnding(): boolean;
   /** Redraw every label (text language changed). */
   relabel(): void;
 }
@@ -300,6 +306,16 @@ export function createHud(options: HudOptions): Hud {
       ),
     );
 
+  function skipLabel(
+    ending = lastState?.outcome === "bossDefeated" ||
+      lastState?.outcome === "bossSurvived",
+  ): void {
+    skip.replaceChildren(
+      glyph("backOnly"),
+      t(ending ? "ui.common.skip" : "ui.tut.skipPrompt"),
+    );
+  }
+
   function relabel(): void {
     score.label.textContent = t("ui.hud.score");
     hull.label.textContent = t("ui.hud.hull");
@@ -307,7 +323,7 @@ export function createHud(options: HudOptions): Hud {
     shield.textContent = t("ui.hud.shield");
     wardenLabel.textContent = t("ui.hud.wardenMeter");
     pacifist.textContent = t("ui.hud.pacifist");
-    skip.replaceChildren(glyph("backOnly"), t("ui.tut.skipPrompt"));
+    skipLabel();
     instruments.relabel();
     drawn = {};
     if (lastState) update(lastState);
@@ -375,7 +391,11 @@ export function createHud(options: HudOptions): Hud {
       spared.hidden = m.spared === 0;
       spared.textContent = t("ui.hud.spared", { count: m.spared });
     }
-    if (changed("tutorial", m.tutorial)) skip.hidden = !m.tutorial;
+    // One chip, two jobs: skip onboarding, or skip a story ending.
+    if (changed("ending", [m.tutorial, m.ending])) {
+      skip.hidden = !m.tutorial && !m.ending;
+      skipLabel(m.ending);
+    }
     if (changed("warden", m.warden)) drawWarden(m.warden);
     // The tutorial teaches one verb at a time: instruments appear after it.
     el.classList.toggle("is-tutorial", m.tutorial);
@@ -483,6 +503,9 @@ export function createHud(options: HudOptions): Hud {
     flag,
     reset,
     inTutorial: () => lastState?.phase === "tutorial",
+    inEnding: () =>
+      lastState?.outcome === "bossDefeated" ||
+      lastState?.outcome === "bossSurvived",
     relabel,
   };
 }

@@ -255,7 +255,8 @@ export class GameplayAudio {
         if (e.phase >= 1) play("boss_roar", { octave: e.phase - 1 });
         break;
       case "bossDefeated":
-        play("boss_collapse");
+        // The staged defeat times its own sounds, impact to collapse, to the
+        // frames that show them (src/render/wardenFinale.ts via the stage).
         break;
       case "gameOver":
         play("game_over");

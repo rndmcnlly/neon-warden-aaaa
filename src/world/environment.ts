@@ -70,6 +70,10 @@ export class SectorWorld {
   private labelSeconds = 0;
   private active = false;
   private updateMs = 0;
+  /** Per-copy light level from the Warden's finale; null is normal power. */
+  private power: ((x: number, z: number, i: number) => number) | null = null;
+  /** True while lights may be off-normal, so clearing restores them once. */
+  private powered = false;
   constructor(baseUrl = "models/world/") {
     this.library = new WorldLibrary(baseUrl);
     this.canvas.width = 1024;
@@ -108,6 +112,15 @@ export class SectorWorld {
     this.group.add(this.sparks);
     void this.library.loadManifest();
   }
+  /**
+   * Lets the Warden's finale fail (or swell) set-piece lights by position:
+   * a shockwave front passing buttress lamps, one by one. Null restores.
+   */
+  setPower(fn: ((x: number, z: number, i: number) => number) | null): void {
+    if (fn) this.powered = true;
+    this.power = fn;
+  }
+
   /** One pooled local light, no shadows or new per-explosion objects. */
   flash(x: number, z: number): void {
     if (this.spillAge < 0.18) return;
@@ -260,6 +273,9 @@ export class SectorWorld {
         }
         root.scale.setScalar(shown ? unit : 0);
         this.animate(p, rig, i, t, toll, crane, nursery);
+        if (this.power) {
+          rig.setCopyGlow(i, this.power(root.position.x, root.position.z, i));
+        } else if (this.powered) rig.setCopyGlow(i, 1);
       });
       rig.commit();
       if (p.activity === "repair" && p.layer === "mid") {

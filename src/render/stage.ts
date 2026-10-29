@@ -68,6 +68,7 @@ import {
 
 import { type QualityTier, tierFor } from "./quality.ts";
 import { shieldFragment, shieldVertex } from "./shaders/shield.glsl.ts";
+import { type FinaleBeat, WardenFinale } from "./wardenFinale.ts";
 
 /** Character cutaways use the ship, never a figure prop. */
 export type PropId = "logo_adamsmith_systems" | "logo_cm121";
@@ -77,6 +78,11 @@ export interface StageOptions {
   readonly settings?: SettingsStore;
   /** Where the .glb files live; defaults to `models/` under the site root. */
   readonly modelBaseUrl?: string;
+  /**
+   * Plays a gameplay sound role. The Warden's finale times its own sounds
+   * (pods, groans, the shockwave, tollgates) to the frames that show them.
+   */
+  readonly sound?: (role: string) => void;
 }
 
 export interface StageStats {
@@ -97,6 +103,10 @@ export interface Stage {
    * accumulator's leftover fraction of a tick (0–1), default 1 (no blending).
    */
   render(dtMs: number, alpha?: number): void;
+  /** A story beat for the Warden's finale (tollgates, the leash, escort). */
+  finaleBeat(beat: FinaleBeat): void;
+  /** A skipped ending: the finale jumps to its aftermath. */
+  finaleSkip(): void;
   /** Camera cue from the Director. A zero duration cuts. */
   playShot(
     shot: RigShotId,
@@ -203,6 +213,15 @@ function partNode(slot: THREE.Object3D, part: string): string | null {
 const MAX_BURSTS_PER_FRAME = 24;
 /** Ship hovers just above the playfield plane, over bullets' shadows. */
 const SHIP_Y = 0.15;
+/** Shots that keep the sector world up behind them (not hangar or logos). */
+const WORLD_SHOTS: ReadonlySet<RigShotId> = new Set([
+  "gameplay",
+  "bossIntro",
+  "bossCloseup",
+  "wardenFall",
+  "shipCloseup",
+  "endingWide",
+]);
 const TRAIL_OFFSET = new THREE.Vector3(0, 0, 0.45);
 /** Trail sparks fall behind the ship at this velocity, world units per second. */
 const TRAIL_DRIFT = new THREE.Vector3(0, 0, 7);
@@ -433,6 +452,41 @@ export function createStage(
   let timeSec = 0;
   let renderScale = settingsNow?.display.renderScale ?? 1;
   let reducedFlashing = settingsNow?.accessibility.reducedFlashing ?? false;
+
+  // The Warden's finale (src/render/wardenFinale.ts): it borrows the stage's
+  // effect pools through these ports and owns the Warden's model until reset.
+  const finale = new WardenFinale({
+    blast: (at, color, count, scale) => blast(at.clone(), color, count, scale),
+    ring: (at, color, scale, life) => rings.spawn(at, color, scale, life),
+    flash: (strength, color) =>
+      flash(reducedFlashing ? Math.min(strength, 0.35) : strength, color),
+    trauma: (amount) => rig.addTrauma(amount),
+    pressure(at, level) {
+      if (!tier.bloom) return;
+      tmpV.copy(at).project(rig.camera);
+      wave.start((tmpV.x + 1) / 2, (tmpV.y + 1) / 2, level);
+    },
+    tearOff(node, at, outward) {
+      debris.spawn({
+        node,
+        at,
+        shotDir: outward,
+        hitOffset: new THREE.Vector3(),
+        size: 1,
+        heavy: true,
+      });
+    },
+    power(slot, level) {
+      ownMaterials(slot);
+      slot.userData.powerTarget = level;
+    },
+    sound: (role) => options.sound?.(role),
+    scout: () => models.create(ENEMY_MODEL.drone),
+  });
+  scene.add(finale.group);
+  /** One closure for the world, not a fresh one per frame. */
+  const finalePower = (x: number, z: number, i: number) =>
+    finale.power(x, z, i, reducedFlashing);
   let flashback = false;
   let shieldHit = 0;
   let hurt = 0;
@@ -956,37 +1010,14 @@ export function createStage(
         }
         break;
       case "bossDefeated":
-        // The original's 8 chained blasts over 1.1 s, then one big flash.
-        for (let i = 0; i < 8; i++) {
-          timers.push({
-            at: timeSec + (i / 7) * 1.1,
-            run: () => {
-              if (!boss) return;
-              tmpV.copy(boss.position).add(
-                new THREE.Vector3(
-                  (Math.random() - 0.5) * 4,
-                  0.5,
-                  (Math.random() - 0.5) * 2.5,
-                ),
-              );
-              blast(
-                tmpV.clone(),
-                i % 2 ? PALETTE.gold : PALETTE.crimson,
-                60,
-                1.8,
-              );
-              rig.addTrauma(0.35);
-            },
-          });
-        }
-        timers.push({
-          at: timeSec + 1.2,
-          run: () => {
-            if (boss) blast(boss.position.clone(), PALETTE.iceWhite, 200, 4);
-            rig.addTrauma(1);
-            flash(1, PALETTE.iceWhite);
-          },
-        });
+        // The staged defeat replaces the original's eight chained blasts:
+        // the finale owns the Warden's model from here (wardenFinale.ts).
+        if (boss) finale.begin("kill", boss, !tier.bloom);
+        break;
+      case "bossSurvived":
+        // Intact and withdrawing: the finale holds the Warden in frame
+        // instead of letting it vanish off the top edge with the sim's.
+        if (boss) finale.begin("pacifist", boss, !tier.bloom);
         break;
       case "gameOver":
         blast(ctx.player, PALETTE.cyan, 80, 2);
@@ -994,7 +1025,6 @@ export function createStage(
         break;
       case "sectorStarted":
       case "sectorCleared":
-      case "bossSurvived":
         break;
     }
   }
@@ -1138,8 +1168,12 @@ export function createStage(
       slot.scale.setScalar(1 + Math.sin(tickNow * 0.12) * 0.12);
     }
 
-    // The Warden.
-    if (state.boss) {
+    // The Warden. After the outcome the finale draws it, not the sim.
+    if (finale.active && boss) {
+      boss.visible = true;
+      ctx.boss.copy(finale.wardenAt);
+      applyInstanceLook(boss, dt, { reducedFlashing });
+    } else if (state.boss) {
       if (!boss) {
         boss = models.create("warden");
         world.add(boss);
@@ -1444,6 +1478,16 @@ export function createStage(
     models,
 
     observe(state, events = []) {
+      // A new run (or a restart) puts the Warden's wreck away: the next
+      // Warden is a fresh model with every pod and plate in place.
+      if (finale.active && state.outcome === null) {
+        finale.reset();
+        sectorWorld.setPower(null);
+        if (boss) {
+          boss.removeFromParent();
+          boss = null;
+        }
+      }
       interp.observe(state);
       const fired = events.find((e) => e.type === "playerFired");
       bullets.tagger.observe(
@@ -1538,6 +1582,16 @@ export function createStage(
       muzzle.update(dt);
       wave.update(dt);
       backdrop.update(rig.reduceMotion ? 0 : flashback ? dt * 0.1 : dt);
+      finale.update({
+        dt,
+        low: !tier.bloom,
+        reducedMotion: rig.reduceMotion,
+        reducedFlashing,
+      });
+      for (const scout of finale.scoutSlots) {
+        applyInstanceLook(scout, dt, { reducedFlashing });
+      }
+      sectorWorld.setPower(finale.active ? finalePower : null);
       rig.update(dtMs, ctx);
       const worldSettings = options.settings?.get();
       backdrop.setWorldActive(!!state && state.phase !== "tutorial");
@@ -1549,8 +1603,10 @@ export function createStage(
         !tier.bloom,
         rig.reduceMotion,
         worldSettings?.textLang ?? "en",
+        // The world stays up behind the story shots in the arena too: a
+        // wide ending shot without it was most of a screen of starfield.
         !flashback && !activeProp && !hangarShip?.visible &&
-          rig.currentShot === "gameplay",
+          WORLD_SHOTS.has(rig.currentShot),
         reducedFlashing,
       );
 
@@ -1581,6 +1637,14 @@ export function createStage(
 
     playShot(shot, durationMs, ease) {
       rig.play(shot, durationMs, ease);
+    },
+
+    finaleBeat(beat) {
+      finale.beat(beat);
+    },
+
+    finaleSkip() {
+      finale.skipToEnd();
     },
 
     showProp(id) {

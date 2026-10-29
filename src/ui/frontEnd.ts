@@ -174,7 +174,8 @@ export function createFrontEnd(
   const hud = createHud({
     t: (key, vars) => t(id(key), lang(), vars),
     lang,
-    onSkipClick: () => requestTutorialSkip(),
+    onSkipClick: () =>
+      hud.inEnding() ? hooks.onSkipScene?.() : requestTutorialSkip(),
     hasText,
     screenPositionOf: (entityId) => hooks.screenPositionOf?.(entityId) ?? null,
   });

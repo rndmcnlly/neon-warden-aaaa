@@ -33,6 +33,7 @@ import { createFrontEnd, type FrontEnd } from "./ui/frontEnd.ts";
 import type { StartRequest } from "./ui/context.ts";
 import { createDevOverlay } from "./ui/devOverlay.ts";
 import { AudioEngine } from "./audio/engine.ts";
+import { isGameplaySound } from "./audio/gameplaySounds.ts";
 import { VariantRegistry } from "./audio/variants.ts";
 import { mountVariantPanel } from "./audio/variantPanel.ts";
 import { Director } from "./director/director.ts";
@@ -83,7 +84,13 @@ const WARP_MS = 1400;
 const flags = parseUrlFlags(location.search);
 const settings = createSettingsStore();
 const overlayRoot = document.getElementById("overlay")!;
-const stage = createStage(document.getElementById("stage")!, { settings });
+const stage = createStage(document.getElementById("stage")!, {
+  settings,
+  // The Warden's finale times its own sounds (src/render/wardenFinale.ts).
+  sound: (role) => {
+    if (isGameplaySound(role)) engine?.playGameplay(role);
+  },
+});
 
 // ------------------------------------------------------------------ audio
 
@@ -208,6 +215,12 @@ function makeDirector(): Director {
       if (name === FLAGS.runHasFired && chatterOn) {
         director.startChatter([chatterFor(value)]);
       }
+      // Ending beats the Warden's finale draws (src/render/wardenFinale.ts).
+      if (value && name === FLAGS.endingTollgates) {
+        stage.finaleBeat("tollgates");
+      }
+      if (value && name === FLAGS.endingLeashCut) stage.finaleBeat("leashCut");
+      if (value && name === FLAGS.bannerLanesKept) stage.finaleBeat("escort");
       if (name === FLAGS.flashbackRecording) {
         stage.setFlashback(value);
         engine?.setMuffled(value);
@@ -266,6 +279,7 @@ const frontEnd = createFrontEnd(overlayRoot, {
     onStartGame: (request) => startRun(request),
     onRestartCheckpoint: () => lastRequest && startRun(lastRequest),
     onQuitToTitle: endRun,
+    onSkipScene: skipEnding,
   },
 });
 const devOverlay = createDevOverlay(overlayRoot, flags);
@@ -277,6 +291,11 @@ if (flags.qa) {
     timeline: () => director.timeline?.id ?? null,
     state: () => sim?.snapshot() ?? null,
     frozen: () => simFrozen,
+    setSpeed(speed) {
+      autoSpeed = speed;
+      clock.setRate(Math.min(SCENE_RATE_CAP, speed));
+      hitstop.setSpeed(speed);
+    },
   });
 }
 
@@ -363,6 +382,11 @@ let accumulator = 0;
  * autoplay faster than real time, so QA reels keep their pacing.
  */
 const hitstop = new Hitstop(flags.autoPlay?.speed ?? 1);
+/**
+ * Autoplay ticks per frame. Starts at the URL's `speed`; only the QA probe
+ * changes it, so a reel can fast-forward a fight and record its end at 1x.
+ */
+let autoSpeed = flags.autoPlay?.speed ?? 1;
 
 function startFor(at: SkipTo): SimStart {
   const match = at.match(/^sector([1-5])$/);
@@ -459,6 +483,17 @@ function startRun(request: StartRequest): void {
       break;
     }
   }
+}
+
+/**
+ * The ending's skip chip: the Director lands every remaining flag (so the
+ * credits still follow) and the Warden's finale jumps to its aftermath.
+ */
+function skipEnding(): void {
+  const id = director.timeline?.id;
+  if (id !== "ending-kill" && id !== "ending-pacifist") return;
+  stage.finaleSkip();
+  director.skipScene();
 }
 
 /** An ending, then the credits, then back to the title (not in auto-play). */
@@ -728,7 +763,7 @@ function frame(now: number): void {
   if (running && sim && pilot) {
     let ticks: number;
     if (flags.autoPlay) {
-      ticks = flags.autoPlay.speed;
+      ticks = autoSpeed;
     } else {
       accumulator += dt * settings.get().accessibility.gameSpeed;
       ticks = Math.min(MAX_TICKS_PER_FRAME, Math.floor(accumulator / TICK_MS));

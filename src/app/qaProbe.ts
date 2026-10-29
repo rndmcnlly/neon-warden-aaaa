@@ -24,7 +24,17 @@ export interface QaProbe {
     shotsFired: number;
     /** True while a `freezeSim` cue holds the world still. */
     frozen: boolean;
+    /** The Warden's hp as a fraction of max, null with no Warden on screen. */
+    bossHp: number | null;
+    /** Ticks the Warden has lived (the survival clock reads this). */
+    bossAge: number | null;
   };
+  /**
+   * The one control, not a state write: autoplay ticks per frame. A reel
+   * fast-forwards a fight, then drops to 1 to record its end at real time.
+   * Returns true so an `until` step can call it.
+   */
+  setSpeed(speed: number): boolean;
   /** Story flags as the Director last set them this run. */
   flags(): Readonly<Record<string, boolean>>;
   /**
@@ -66,12 +76,15 @@ export function installQaProbe(source: {
   timeline(): string | null;
   state(): SimState | null;
   frozen(): boolean;
+  setSpeed(speed: number): void;
 }): QaRecorder {
   const log: string[] = [];
   const events: SimEvent[] = [];
   const impacts: SimEvent[] = [];
   let flags: Record<string, boolean> = {};
   let shotsFired = 0;
+  /** The view carries no age, so the probe dates the Warden by its spawn. */
+  let wardenSpawnTick: number | null = null;
   const push = <T>(list: T[], entry: T, limit: number) => {
     list.push(entry);
     if (list.length > limit) list.splice(0, list.length - limit);
@@ -96,7 +109,15 @@ export function installQaProbe(source: {
         kills: s?.kills ?? 0,
         shotsFired,
         frozen: source.frozen(),
+        bossHp: s?.boss ? s.boss.hp / s.boss.maxHp : null,
+        bossAge: s?.boss && wardenSpawnTick !== null
+          ? s.tick - wardenSpawnTick
+          : null,
       };
+    },
+    setSpeed(speed) {
+      source.setSpeed(Math.max(1, Math.round(speed)));
+      return true;
     },
     flags: () => flags,
     log,
@@ -106,6 +127,9 @@ export function installQaProbe(source: {
   return {
     simEvent(event) {
       if (event.type === "playerFired") shotsFired += event.shots;
+      if (event.type === "spawn" && event.kind === "warden") {
+        wardenSpawnTick = event.tick;
+      }
       if (NOISY.has(event.type)) {
         push(impacts, { ...event }, IMPACT_LIMIT);
         return;
@@ -121,6 +145,7 @@ export function installQaProbe(source: {
     },
     runStarted() {
       shotsFired = 0;
+      wardenSpawnTick = null;
       flags = {};
     },
   };

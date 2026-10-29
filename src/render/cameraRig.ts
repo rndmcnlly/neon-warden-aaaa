@@ -66,6 +66,8 @@ export class CameraRig {
   private blendMs = 0;
   private blendTotal = 0;
   private ease: "linear" | "inOut" = "inOut";
+  /** Time since the current shot was called, for slow push-ins. */
+  private shotAgeMs = 0;
   private trauma = 0;
   private recoil = 0;
   reduceMotion = false;
@@ -120,16 +122,37 @@ export class CameraRig {
         out.fov = 44;
       },
       bossCloseup: (ctx, out) => {
-        const orbit = Math.sin(ctx.timeSec * 0.3) * 1.2;
-        out.target.copy(ctx.boss).setY(0.6);
-        out.position.set(ctx.boss.x + orbit, 3.2, ctx.boss.z + 7);
-        out.fov = 30;
+        // Composed, not centred: the Warden on the left third, Last
+        // Approach's set pieces filling the right and the lane behind. (The
+        // old centred close-up left a disc of Warden in a black frame.)
+        const orbit = this.reduceMotion ? 0 : Math.sin(ctx.timeSec * 0.3) * 0.8;
+        out.target.set(ctx.boss.x + 1.8, 0, ctx.boss.z - 2);
+        out.position.set(ctx.boss.x - 4.2 + orbit, 3.4, ctx.boss.z + 8.5);
+        out.fov = 40;
+      },
+      wardenFall: (ctx, out) => {
+        // Low three-quarter wide from the front left: the lane runs away
+        // under the Warden and both side regions stay in frame, so the
+        // shockwave can be seen leaving the lane and reaching the world.
+        // A slow push-in carries the beat (none under reduced motion).
+        const push = this.reduceMotion
+          ? 0
+          : Math.min(1, this.shotAgeMs / 7000) * 2.4;
+        out.target.set(ctx.boss.x * 0.6 + 0.8, -0.6, ctx.boss.z + 0.2);
+        out.position.set(
+          ctx.boss.x * 0.6 - 5 + push,
+          7.4 - push * 0.4,
+          ctx.boss.z + 8.6 - push,
+        );
+        out.fov = 50;
       },
       shipCloseup: (ctx, out) => {
-        // Pilot remains off-screen: his ship carries the silent reply.
-        out.target.copy(ctx.player);
-        out.position.copy(ctx.player).add(new THREE.Vector3(1.2, 1.4, 2.2));
-        out.fov = 28;
+        // Pilot remains off-screen: his ship carries the silent reply. Over
+        // the ship's shoulder toward the Warden, so the frame holds both.
+        out.target.lerpVectors(ctx.player, ctx.boss, 0.4);
+        // Far enough back that the engine glow does not bloom over the frame.
+        out.position.copy(ctx.player).add(new THREE.Vector3(2.6, 2.2, 4.8));
+        out.fov = 40;
       },
       flashback: (ctx, out) => {
         // Slow drift around the frozen world, from above and to one side,
@@ -144,10 +167,14 @@ export class CameraRig {
         out.fov = 40;
       },
       endingWide: (ctx, out) => {
-        // Pull far back and up: the lanes go on, the corridor is the point.
-        out.target.set(0, -2, -12);
-        out.position.set(14, 24, 26 + Math.sin(ctx.timeSec * 0.05) * 2);
-        out.fov = 46;
+        // Pull back and up: the lanes go on, the corridor is the point. Close
+        // enough that Last Approach and the tollgates fill the side regions.
+        const drift = this.reduceMotion
+          ? 0
+          : Math.sin(ctx.timeSec * 0.05) * 1.5;
+        out.target.set(0.5, -2, -9);
+        out.position.set(3.5, 9, 13 + drift);
+        out.fov = 58;
       },
       hangar: (ctx, out) => {
         // Three-quarter hero shot from the front left, slightly above.
@@ -186,6 +213,7 @@ export class CameraRig {
     this.frozenFrom = this.blendMs > 0 ? copyPose(this.last) : null;
     this.from = this.to;
     this.to = shot;
+    this.shotAgeMs = 0;
     this.blendTotal = Math.max(0, durationMs);
     this.blendMs = this.blendTotal;
     this.ease = ease;
@@ -240,6 +268,7 @@ export class CameraRig {
   }
 
   update(dtMs: number, ctx: ShotContext): void {
+    this.shotAgeMs += dtMs;
     this.shots[this.to](ctx, this.b);
     let pose = this.b;
     if (this.blendMs > 0) {

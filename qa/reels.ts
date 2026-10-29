@@ -471,6 +471,113 @@ export const REELS: readonly Reel[] = [
     ],
     maxSeconds: 60,
   },
+  // The two defeat reels record the moment the fight ends at real time: a
+  // fast-forwarded fight, then `setSpeed(1)` just before the decisive tick,
+  // through to the tally. Longer than the usual 60 s because the whole beat
+  // (health zero to the ending text) is the subject; review trims the run-up.
+  {
+    id: "warden-defeat-kill",
+    topic: "endings",
+    title: "Warden health zero at 1x: staged defeat, tollgates, tally",
+    query: `?skipto=boss&autoplay=fight&speed=12${GAME}`,
+    steps: [
+      { do: "wait", ms: 1500 },
+      {
+        do: "until",
+        probe: "(p.sim().bossHp ?? 1) < 0.05 && p.setSpeed(1)",
+        label: "fight fast-forwarded to the Warden's last hits, then 1x",
+        timeoutMs: 60_000,
+      },
+      {
+        do: "until",
+        probe: "p.sim().outcome === 'kill'",
+        label: "the Warden's health reaches zero",
+        timeoutMs: 45_000,
+      },
+      {
+        do: "until",
+        probe: "p.flags()['ending.tally'] === true",
+        label: "the tally (ending text) appears",
+        timeoutMs: 80_000,
+      },
+      { do: "wait", ms: 2500 },
+    ],
+    maxSeconds: 150,
+  },
+  {
+    // The school-Chromebook version: low preset, reduced motion and flashing.
+    id: "warden-defeat-low",
+    topic: "endings",
+    title: "Warden defeat on the low tier, reduced motion and flashing",
+    query: `?skipto=boss&autoplay=fight&speed=12${GAME}`,
+    settings: {
+      display: { preset: "low" },
+      accessibility: { reduceMotion: true, reducedFlashing: true },
+    },
+    steps: [
+      { do: "wait", ms: 1500 },
+      {
+        do: "until",
+        probe: "(p.sim().bossHp ?? 1) < 0.05 && p.setSpeed(1)",
+        label: "fight fast-forwarded to the Warden's last hits, then 1x",
+        timeoutMs: 60_000,
+      },
+      {
+        do: "until",
+        probe: "p.sim().outcome === 'kill'",
+        label: "the Warden's health reaches zero",
+        timeoutMs: 45_000,
+      },
+      {
+        do: "until",
+        probe: "p.flags()['ending.tollgates'] === true",
+        label: "tollgates unfold",
+        timeoutMs: 45_000,
+      },
+      { do: "wait", ms: 4000 },
+      {
+        do: "until",
+        probe: "globalThis.__nwWorld.stats().render.drawCalls < 140",
+        label:
+          "under 140 draw calls with the tollgates up (low tier; fight is about 60)",
+        timeoutMs: 3_000,
+      },
+      { do: "wait", ms: 3000 },
+    ],
+    maxSeconds: 90,
+  },
+  {
+    id: "warden-defeat-pacifist",
+    topic: "endings",
+    title: "Survival clock runs out at 1x: the Warden withdraws, Lanes Kept",
+    query: `?skipto=boss&autoplay=pacifist&speed=12${GAME}`,
+    steps: [
+      { do: "wait", ms: 1500 },
+      {
+        // Phase 3 is the survival clock's last 600 ticks (10 s at 1x). The
+        // Warden's age is no guide: parley holds age it without the clock.
+        do: "until",
+        probe:
+          "p.events.some((e) => e.type === 'bossPhase' && e.phase === 3) && p.setSpeed(1)",
+        label: "survival fast-forwarded to its last seconds, then 1x",
+        timeoutMs: 60_000,
+      },
+      {
+        do: "until",
+        probe: "p.sim().outcome === 'pacifist'",
+        label: "the survival clock runs out",
+        timeoutMs: 40_000,
+      },
+      {
+        do: "until",
+        probe: "p.flags()['ending.tally'] === true",
+        label: "the tally (ending text) appears",
+        timeoutMs: 90_000,
+      },
+      { do: "wait", ms: 2500 },
+    ],
+    maxSeconds: 150,
+  },
   {
     id: "ending-pacifist",
     topic: "endings",

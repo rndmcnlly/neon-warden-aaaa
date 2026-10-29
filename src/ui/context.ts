@@ -53,6 +53,8 @@ export interface FrontEndHooks {
   onResume?(): void;
   onRestartCheckpoint?(): void;
   onQuitToTitle?(): void;
+  /** The HUD's skip chip during a story ending: jump to its aftermath. */
+  onSkipScene?(): void;
   /**
    * From the stage (V): an entity's position on screen in CSS pixels, or
    * null when off screen. Pins intel tags to enemies.

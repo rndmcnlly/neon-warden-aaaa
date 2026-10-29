@@ -38,6 +38,8 @@ export type CameraShotId =
   | "gameplay"
   | "bossIntro"
   | "bossCloseup"
+  /** The Warden's fall: a composed wide that keeps both side regions. */
+  | "wardenFall"
   | "shipCloseup"
   | "flashback"
   | "endingWide"

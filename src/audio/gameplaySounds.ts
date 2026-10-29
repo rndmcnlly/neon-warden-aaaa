@@ -421,6 +421,89 @@ export const GAMEPLAY_SOUNDS = {
   }),
   game_over: feel(glide, -4, { cap: 1, priority: 10, spatial: false }),
 
+  // ----------------------------------------------------- the Warden's finale
+  // Timed by the renderer (src/render/wardenFinale.ts) to the frames that
+  // show them. Synth-only: built from existing recipes, no new samples.
+  // The impact ducks music hard and long, so the structural sounds and the
+  // dying line that follow land in a near-silent room.
+  finale_impact: feel(heavyThump, 0, {
+    sample: false,
+    octave: -2,
+    cap: 1,
+    priority: 10,
+    spatial: false,
+    protected: true,
+    duck: { db: -18, attackS: 0.01, releaseS: 4, lowpassHz: 500 },
+  }),
+  /** Structure under load: a long servo wind-down, two octaves down. */
+  finale_groan: feel(spinDown, -3, {
+    sample: false,
+    octave: -2,
+    cap: 1,
+    priority: 8,
+    spatial: false,
+  }),
+  /** The heart crest splitting. */
+  finale_crack: feel(crack, -4, {
+    sample: false,
+    octave: -1,
+    cap: 2,
+    priority: 8,
+    spatial: false,
+  }),
+  /** The shockwave leaving the lane. */
+  finale_shock: feel(whoosh, -2, {
+    sample: false,
+    octave: -2,
+    cap: 1,
+    priority: 9,
+    spatial: false,
+  }),
+  /** A relay dropping out: one set-piece light failing. */
+  finale_light_out: feel(tock, -14, {
+    sample: false,
+    octave: -1,
+    jitter: 1,
+    cap: 3,
+    priority: 4,
+    spatial: false,
+  }),
+  /** A tollgate rising out of the lane floor. */
+  finale_toll_arrive: feel(heavyThump, -7, {
+    sample: false,
+    pitch: "offKey",
+    octave: 0,
+    cap: 2,
+    priority: 6,
+    spatial: false,
+  }),
+  /** Its barrier locking: the Authority's mechanical arrival, unscored. */
+  finale_toll_clank: feel(unlatch, -4, {
+    sample: false,
+    octave: -1,
+    jitter: 0.5,
+    cap: 3,
+    priority: 6,
+    spatial: false,
+  }),
+  /** The recall tether cut (pacifist). */
+  finale_leash_snap: feel(crack, -3, {
+    sample: false,
+    octave: 1,
+    cap: 1,
+    priority: 9,
+    spatial: false,
+  }),
+  /** Scouts forming up around the Warden (pacifist). */
+  finale_escort: feel(glide, -8, {
+    sample: false,
+    pitch: 7,
+    octave: 1,
+    cap: 1,
+    priority: 6,
+    spatial: false,
+  }),
+
   // ----------------------------------------------------- hangar UI
   hangar_equip: feel(confirm2, -10, {
     pitch: 0,

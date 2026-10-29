@@ -35,8 +35,16 @@ export const HITSTOP_BUDGET_TICKS = 10;
 /** ...in any window of this many loop ticks (one second). */
 export const HITSTOP_WINDOW_TICKS = 60;
 
+/**
+ * The decisive hit on the Warden holds longest: about 150 ms, the impact
+ * frame of the staged defeat (src/render/wardenFinale.ts). Not on the
+ * feedback ladder, which ranks per-hit feedback, not the end of a fight.
+ */
+export const DEFEAT_HITSTOP_TICKS = 9;
+
 /** How many ticks `event` should freeze the sim for (0 for most). */
 export function hitstopFor(event: SimEvent): number {
+  if (event.type === "bossDefeated") return DEFEAT_HITSTOP_TICKS;
   return hitstopTicksFor(event);
 }
 
@@ -52,9 +60,17 @@ export class Hitstop {
    * player's choice (and tests); both must allow it.
    */
   constructor(
-    private readonly speed = 1,
+    private speed = 1,
     private readonly allowed = true,
   ) {}
+
+  /**
+   * QA can drop autoplay to real time mid-run (`__nwqa.setSpeed`), so a reel
+   * fast-forwards a fight and then records its ending with hitstop intact.
+   */
+  setSpeed(speed: number): void {
+    this.speed = speed;
+  }
 
   get enabled(): boolean {
     return this.allowed && this.speed < HITSTOP_MAX_SPEED;
@@ -71,9 +87,10 @@ export class Hitstop {
     for (const event of events) {
       const want = hitstopFor(event);
       if (want <= this.remaining) continue;
-      // A lost life always gets its full freeze; everything else fits the
+      // A lost life (and the Warden's fall) always gets its full freeze;
+      // everything else fits the
       // crowd budget that is left this second.
-      const room = event.type === "lifeLost"
+      const room = event.type === "lifeLost" || event.type === "bossDefeated"
         ? want
         : Math.max(0, HITSTOP_BUDGET_TICKS - this.spent.length);
       this.remaining = Math.max(this.remaining, Math.min(want, room));
