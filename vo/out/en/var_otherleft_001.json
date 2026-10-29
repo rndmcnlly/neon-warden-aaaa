@@ -1,0 +1,103 @@
+{
+  "hash": "ef6e5b0a23bbf0a7",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_otherleft_001",
+    "seed": 11,
+    "language": "English",
+    "text": "No, your other left. Let's try that direction again.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Patient, a small smile in the voice, then a clear re-ask.",
+  "duration": 4.32,
+  "sample_rate": 24000,
+  "peak": 0.784,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.11,
+    "gain_db": 2.31,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.31,
+    "peak_bound": false
+  },
+  "asr": "No, your other left. Let's try that direction again.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "your",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "other",
+      "charStart": 9,
+      "charEnd": 14,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "left",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.76,
+      "endS": 2.24
+    },
+    {
+      "text": "Let's",
+      "charStart": 21,
+      "charEnd": 26,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "try",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "that",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "direction",
+      "charStart": 36,
+      "charEnd": 45,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "again",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 3.6,
+      "endS": 4.0
+    }
+  ],
+  "words_for": "ef6e5b0a23bbf0a7/wordtiming-v1"
+}

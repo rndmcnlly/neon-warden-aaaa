@@ -1,0 +1,124 @@
+{
+  "hash": "71d812006c55ae5d",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_lockout_004",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "El gatillo ya recibió tu entusiasmo. Ahora dale un momento para recargarse.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Fond, a little amused by the enthusiasm.",
+  "duration": 4.32,
+  "sample_rate": 24000,
+  "peak": 0.776,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.08,
+    "gain_db": 4.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.07,
+    "peak_bound": false
+  },
+  "asr": "El gatillo ya recibió tu entusiasmo, ahora dale un momento para recargarse.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "El",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "gatillo",
+      "charStart": 3,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "ya",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "recibió",
+      "charStart": 14,
+      "charEnd": 21,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "tu",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "entusiasmo",
+      "charStart": 25,
+      "charEnd": 35,
+      "startS": 1.28,
+      "endS": 2.08
+    },
+    {
+      "text": "Ahora",
+      "charStart": 37,
+      "charEnd": 42,
+      "startS": 2.48,
+      "endS": 2.8
+    },
+    {
+      "text": "dale",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "un",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "momento",
+      "charStart": 51,
+      "charEnd": 58,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "para",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "recargarse",
+      "charStart": 64,
+      "charEnd": 74,
+      "startS": 3.6,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "71d812006c55ae5d/wordtiming-v1"
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "6a1c29694753681d",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden1_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¿¡Sabes cuánto cuesta un explorador!? ¡Nada! ¡Yo los CULTIVO! ¡Eso lo hace PEOR!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Shrill, outraged, then cracking on the last word.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.853,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 1.99,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.99,
+    "peak_bound": false
+  },
+  "asr": "Sabes cuánto cuesta un explorador? Nada. Yo los cultivo. Eso lo hace peor.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sabes",
+      "charStart": 2,
+      "charEnd": 7,
+      "startS": 0.0,
+      "endS": 0.4
+    },
+    {
+      "text": "cuánto",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 0.4,
+      "endS": 0.8
+    },
+    {
+      "text": "cuesta",
+      "charStart": 15,
+      "charEnd": 21,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "un",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "explorador",
+      "charStart": 25,
+      "charEnd": 35,
+      "startS": 1.2,
+      "endS": 2.0
+    },
+    {
+      "text": "Nada",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.08,
+      "endS": 2.64
+    },
+    {
+      "text": "Yo",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "los",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "CULTIVO",
+      "charStart": 53,
+      "charEnd": 60,
+      "startS": 3.2,
+      "endS": 3.84
+    },
+    {
+      "text": "Eso",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 3.84,
+      "endS": 4.24
+    },
+    {
+      "text": "lo",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "hace",
+      "charStart": 70,
+      "charEnd": 74,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "PEOR",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 4.64,
+      "endS": 5.04
+    }
+  ],
+  "words_for": "6a1c29694753681d/wordtiming-v1"
+}

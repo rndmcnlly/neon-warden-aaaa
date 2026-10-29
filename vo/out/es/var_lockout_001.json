@@ -1,0 +1,117 @@
+{
+  "hash": "d4082568040202a3",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_lockout_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Comando bloqueado. Es broma. En este paso, deja descansar el gatillo.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Deadpan alarm, an instant retraction, then calm instruction.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.803,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.88,
+    "gain_db": 4.55,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.55,
+    "peak_bound": false
+  },
+  "asr": "Comando bloqueado es broma en este paso deja descansar el gatillo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Comando",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "bloqueado",
+      "charStart": 8,
+      "charEnd": 17,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "Es",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "broma",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 1.68,
+      "endS": 2.08
+    },
+    {
+      "text": "En",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "este",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "paso",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "deja",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "descansar",
+      "charStart": 48,
+      "charEnd": 57,
+      "startS": 4.08,
+      "endS": 4.56
+    },
+    {
+      "text": "el",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "gatillo",
+      "charStart": 61,
+      "charEnd": 68,
+      "startS": 4.64,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "d4082568040202a3/wordtiming-v1"
+}

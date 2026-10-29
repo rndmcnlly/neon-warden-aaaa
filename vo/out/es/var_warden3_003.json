@@ -1,0 +1,145 @@
+{
+  "hash": "010225348b0e5494",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden3_003",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Cielo libre! ¡LIBRE! ¡Puede que seas el último piloto que lo vuele sin pagar peaje!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Almost pleading, still loud.",
+  "duration": 5.44,
+  "sample_rate": 24000,
+  "peak": 0.824,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.68,
+    "gain_db": 1.88,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.88,
+    "peak_bound": false
+  },
+  "asr": "Cielo libre, libre. Puede que seas el último piloto que lo vuela sin pagar peaje.",
+  "asr_similarity": 0.933,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Cielo",
+      "charStart": 1,
+      "charEnd": 6,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "libre",
+      "charStart": 7,
+      "charEnd": 12,
+      "startS": 0.48,
+      "endS": 1.2
+    },
+    {
+      "text": "LIBRE",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "Puede",
+      "charStart": 23,
+      "charEnd": 28,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "que",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "seas",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "el",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "último",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "piloto",
+      "charStart": 48,
+      "charEnd": 54,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "que",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "lo",
+      "charStart": 59,
+      "charEnd": 61,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "vuele",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "sin",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "pagar",
+      "charStart": 72,
+      "charEnd": 77,
+      "startS": 4.48,
+      "endS": 4.88
+    },
+    {
+      "text": "peaje",
+      "charStart": 78,
+      "charEnd": 83,
+      "startS": 4.88,
+      "endS": 5.44
+    }
+  ],
+  "words_for": "010225348b0e5494/wordtiming-v1"
+}

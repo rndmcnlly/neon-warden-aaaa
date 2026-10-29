@@ -1,0 +1,152 @@
+{
+  "hash": "1c39e67e428ca92c",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_scout_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Drift Six, the new one is disarming, not breaking. Pass it along. Keep the lanes wide.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Low, quick, passing it along.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.871,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.2,
+    "gain_db": 3.87,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.87,
+    "peak_bound": false
+  },
+  "asr": "Drift six: The new one is disarming, not breaking. Pass it along. Keep the lanes wide.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Drift",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "Six",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.32,
+      "endS": 0.96
+    },
+    {
+      "text": "the",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "new",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "one",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "is",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "disarming",
+      "charStart": 26,
+      "charEnd": 35,
+      "startS": 1.68,
+      "endS": 2.32
+    },
+    {
+      "text": "not",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "breaking",
+      "charStart": 41,
+      "charEnd": 49,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "Pass",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "it",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "along",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 3.84,
+      "endS": 4.32
+    },
+    {
+      "text": "Keep",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "the",
+      "charStart": 71,
+      "charEnd": 74,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "lanes",
+      "charStart": 75,
+      "charEnd": 80,
+      "startS": 4.88,
+      "endS": 5.2
+    },
+    {
+      "text": "wide",
+      "charStart": 81,
+      "charEnd": 85,
+      "startS": 5.2,
+      "endS": 5.68
+    }
+  ],
+  "words_for": "1c39e67e428ca92c/wordtiming-v1"
+}

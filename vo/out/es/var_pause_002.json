@@ -1,36 +1,36 @@
 {
-  "hash": "253c31253ca9cf03",
+  "hash": "d751c51d4ff9c08b",
   "mode": "clone",
   "request": {
     "id": "es__var_pause_002",
-    "seed": 11,
+    "seed": 111,
     "language": "Spanish",
     "text": "Aquí te espero. Siempre estoy aquí.",
     "voice_ref": "vo/voices/tutorial_ai.es.wav",
     "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sweet, and just slightly too literal.",
-  "duration": 2.64,
+  "duration": 2.72,
   "sample_rate": 24000,
-  "peak": 0.762,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -2.36,
-    "gain_db": 4.3,
-    "limited_db": 0.0,
-    "measured_before_lufs": -22.3,
+    "lufs": -18.12,
+    "true_peak_dbtp": -1.23,
+    "gain_db": 5.38,
+    "limited_db": 2.69,
+    "measured_before_lufs": -23.38,
     "peak_bound": false
   },
-  "asr": "Aquí te espero. Siempre estoy aquí.",
+  "asr": "Aquí te espero, siempre estoy aquí.",
   "asr_similarity": 1.0,
   "align": {
-    "ok": false,
+    "ok": true,
     "monotonic": true,
-    "within": false,
+    "within": true,
     "coverage": 1.0,
     "mapped": 1.0
   },
@@ -39,21 +39,21 @@
       "text": "Aquí",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.08,
-      "endS": 0.4
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "te",
       "charStart": 5,
       "charEnd": 7,
-      "startS": 0.4,
-      "endS": 0.48
+      "startS": 0.48,
+      "endS": 0.56
     },
     {
       "text": "espero",
       "charStart": 8,
       "charEnd": 14,
-      "startS": 0.48,
+      "startS": 0.56,
       "endS": 0.96
     },
     {
@@ -61,22 +61,22 @@
       "charStart": 16,
       "charEnd": 23,
       "startS": 1.6,
-      "endS": 2.0
+      "endS": 2.08
     },
     {
       "text": "estoy",
       "charStart": 24,
       "charEnd": 29,
-      "startS": 2.0,
-      "endS": 2.64
+      "startS": 2.08,
+      "endS": 2.4
     },
     {
       "text": "aquí",
       "charStart": 30,
       "charEnd": 34,
-      "startS": 2.64,
+      "startS": 2.4,
       "endS": 2.72
     }
   ],
-  "words_for": "253c31253ca9cf03/wordtiming-v1"
+  "words_for": "d751c51d4ff9c08b/wordtiming-v1"
 }

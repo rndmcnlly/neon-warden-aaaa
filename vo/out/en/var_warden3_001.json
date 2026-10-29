@@ -1,0 +1,166 @@
+{
+  "hash": "01342d9bc382f3c8",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden3_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Take it, then! Take the last ring! And when they put a tollgate on it, think of ME!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shouting, grief under it.",
+  "duration": 5.36,
+  "sample_rate": 24000,
+  "peak": 0.545,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -5.09,
+    "gain_db": -0.15,
+    "limited_db": 0.0,
+    "measured_before_lufs": -17.85,
+    "peak_bound": false
+  },
+  "asr": "Take it then. Take the last ring, and when they put a tollgate on it, think of me.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Take",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "it",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "then",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "Take",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "the",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "last",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "ring",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.0,
+      "endS": 2.48
+    },
+    {
+      "text": "And",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "when",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "they",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "put",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "a",
+      "charStart": 53,
+      "charEnd": 54,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "tollgate",
+      "charStart": 55,
+      "charEnd": 63,
+      "startS": 3.36,
+      "endS": 4.0
+    },
+    {
+      "text": "on",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "it",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "think",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "of",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "ME",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 4.8,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "01342d9bc382f3c8/wordtiming-v1"
+}

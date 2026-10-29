@@ -1,0 +1,110 @@
+{
+  "hash": "598c46013085e5dd",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_otherleft_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Buena dirección. Para este paso, prueba hacia el otro lado.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Gracious, never scolding: compliments, then redirects.",
+  "duration": 4.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 3.82,
+    "limited_db": 0.35,
+    "measured_before_lufs": -21.82,
+    "peak_bound": false
+  },
+  "asr": "Buena dirección. Para este paso prueba hacia el otro lado.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Buena",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "dirección",
+      "charStart": 6,
+      "charEnd": 15,
+      "startS": 0.4,
+      "endS": 0.96
+    },
+    {
+      "text": "Para",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "este",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "paso",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "prueba",
+      "charStart": 33,
+      "charEnd": 39,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "hacia",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "el",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "otro",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "lado",
+      "charStart": 54,
+      "charEnd": 58,
+      "startS": 3.76,
+      "endS": 4.08
+    }
+  ],
+  "words_for": "598c46013085e5dd/wordtiming-v1"
+}

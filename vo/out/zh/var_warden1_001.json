@@ -1,0 +1,236 @@
+{
+  "hash": "72d07823041ed883",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_warden1_001",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "你知道一架侦察机值多少钱吗？！一分不值！是我亲手养大的！这才更糟！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shrill, outraged, then cracking on the last word.",
+  "duration": 6.48,
+  "sample_rate": 24000,
+  "peak": 0.724,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.75,
+    "gain_db": 3.15,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.15,
+    "peak_bound": false
+  },
+  "asr": "你知道一架侦察机值多少钱吗？一分不值。是我亲手养大的，这才更糟。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "知",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "道",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "一",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "架",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "侦",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "察",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "机",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "值",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "多",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "少",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "钱",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "吗",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.16,
+      "endS": 2.48
+    },
+    {
+      "text": "一",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "分",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "不",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "值",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.28,
+      "endS": 3.68
+    },
+    {
+      "text": "是",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "我",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "亲",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.16,
+      "endS": 4.48
+    },
+    {
+      "text": "手",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "养",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "大",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "的",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "这",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "才",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "更",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "糟",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.08,
+      "endS": 6.4
+    }
+  ],
+  "words_for": "72d07823041ed883/wordtiming-v1"
+}

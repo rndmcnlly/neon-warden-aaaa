@@ -1,0 +1,110 @@
+{
+  "hash": "94a1ff2fdea78366",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_otherleft_002",
+    "seed": 11,
+    "language": "English",
+    "text": "A fine direction. For this step, try the opposite one.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Gracious, never scolding: compliments, then redirects.",
+  "duration": 4.16,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.06,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 3.04,
+    "limited_db": 0.6,
+    "measured_before_lufs": -21.04,
+    "peak_bound": false
+  },
+  "asr": "A fine direction for this step: try the opposite one.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "A",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "fine",
+      "charStart": 2,
+      "charEnd": 6,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "direction",
+      "charStart": 7,
+      "charEnd": 16,
+      "startS": 1.12,
+      "endS": 1.68
+    },
+    {
+      "text": "For",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "this",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "step",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "try",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "the",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "opposite",
+      "charStart": 41,
+      "charEnd": 49,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "one",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.84,
+      "endS": 4.16
+    }
+  ],
+  "words_for": "94a1ff2fdea78366/wordtiming-v1"
+}

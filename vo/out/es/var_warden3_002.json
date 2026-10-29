@@ -1,0 +1,117 @@
+{
+  "hash": "e499adc06a5ff582",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden3_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡No estoy perdiendo! ¡Me estoy QUEDANDO SIN NADA! ¡Hay una DIFERENCIA!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Defensive, voice cracking.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.719,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.86,
+    "gain_db": 1.5,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.5,
+    "peak_bound": false
+  },
+  "asr": "No estoy perdiendo, me estoy quedando sin nada. Hay una diferencia.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "estoy",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "perdiendo",
+      "charStart": 10,
+      "charEnd": 19,
+      "startS": 0.88,
+      "endS": 1.68
+    },
+    {
+      "text": "Me",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "estoy",
+      "charStart": 25,
+      "charEnd": 30,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "QUEDANDO",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.24,
+      "endS": 2.72
+    },
+    {
+      "text": "SIN",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "NADA",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 3.04,
+      "endS": 3.6
+    },
+    {
+      "text": "Hay",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "una",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "DIFERENCIA",
+      "charStart": 59,
+      "charEnd": 69,
+      "startS": 4.0,
+      "endS": 4.96
+    }
+  ],
+  "words_for": "e499adc06a5ff582/wordtiming-v1"
+}

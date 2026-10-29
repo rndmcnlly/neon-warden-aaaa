@@ -1,16 +1,16 @@
 {
-  "hash": "810c7b5c210d1a7e",
+  "hash": "e3494e65c16f3e5e",
   "mode": "clone",
   "request": {
     "id": "en__tut_hangar_001",
     "seed": 11,
     "language": "English",
-    "text": "Between contracts, the hangar is yours. Weapon and sensor packages change how you fly, and your paint, trim and helmet livery are entirely up to you. Self expression is a benefit of employment.",
+    "text": "Between contracts, the hangar is yours. Weapon and sensor packages change how you fly, and the paint, trim and decals on your ship are entirely up to you. Self expression is a benefit of employment.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
     "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Genuinely glad to offer a perk.",
-  "duration": 12.32,
+  "duration": 11.68,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
@@ -18,15 +18,15 @@
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.48,
-    "gain_db": 3.5,
-    "limited_db": 2.28,
-    "measured_before_lufs": -21.5,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 3.11,
+    "limited_db": 0.33,
+    "measured_before_lufs": -21.11,
     "peak_bound": false
   },
-  "asr": "Between contracts, the hangar is yours. Weapon and sensor packages change how you fly, and your paint, trim, and helmet livery are entirely up to you. Self-expression is a benefit of employment.",
-  "asr_similarity": 0.954,
+  "asr": "Between contracts, the hanger is yours. Weapon and sensor packages change how you fly, and the paint, trim, and decals on your ship are entirely up to you. Self-expression is a benefit of employment.",
+  "asr_similarity": 0.928,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -39,233 +39,247 @@
       "text": "Between",
       "charStart": 0,
       "charEnd": 7,
-      "startS": 0.8,
-      "endS": 1.12
+      "startS": 0.64,
+      "endS": 0.96
     },
     {
       "text": "contracts",
       "charStart": 8,
       "charEnd": 17,
-      "startS": 1.12,
-      "endS": 1.76
+      "startS": 0.96,
+      "endS": 1.52
     },
     {
       "text": "the",
       "charStart": 19,
       "charEnd": 22,
-      "startS": 1.92,
-      "endS": 2.0
+      "startS": 1.52,
+      "endS": 1.76
     },
     {
       "text": "hangar",
       "charStart": 23,
       "charEnd": 29,
-      "startS": 2.0,
-      "endS": 2.32
+      "startS": 1.76,
+      "endS": 2.0
     },
     {
       "text": "is",
       "charStart": 30,
       "charEnd": 32,
-      "startS": 2.32,
-      "endS": 2.48
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "yours",
       "charStart": 33,
       "charEnd": 38,
-      "startS": 2.48,
-      "endS": 2.88
+      "startS": 2.16,
+      "endS": 2.56
     },
     {
       "text": "Weapon",
       "charStart": 40,
       "charEnd": 46,
-      "startS": 3.52,
-      "endS": 3.84
+      "startS": 3.2,
+      "endS": 3.52
     },
     {
       "text": "and",
       "charStart": 47,
       "charEnd": 50,
-      "startS": 3.84,
-      "endS": 3.92
+      "startS": 3.52,
+      "endS": 3.68
     },
     {
       "text": "sensor",
       "charStart": 51,
       "charEnd": 57,
-      "startS": 3.92,
-      "endS": 4.24
+      "startS": 3.68,
+      "endS": 4.0
     },
     {
       "text": "packages",
       "charStart": 58,
       "charEnd": 66,
-      "startS": 4.24,
-      "endS": 4.72
+      "startS": 4.0,
+      "endS": 4.56
     },
     {
       "text": "change",
       "charStart": 67,
       "charEnd": 73,
-      "startS": 4.72,
-      "endS": 5.12
+      "startS": 4.56,
+      "endS": 4.88
     },
     {
       "text": "how",
       "charStart": 74,
       "charEnd": 77,
-      "startS": 5.12,
-      "endS": 5.2
+      "startS": 4.88,
+      "endS": 4.96
     },
     {
       "text": "you",
       "charStart": 78,
       "charEnd": 81,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 4.96,
+      "endS": 5.12
     },
     {
       "text": "fly",
       "charStart": 82,
       "charEnd": 85,
-      "startS": 5.36,
-      "endS": 5.84
+      "startS": 5.12,
+      "endS": 5.52
     },
     {
       "text": "and",
       "charStart": 87,
       "charEnd": 90,
-      "startS": 6.08,
-      "endS": 6.16
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
-      "text": "your",
+      "text": "the",
       "charStart": 91,
-      "charEnd": 95,
-      "startS": 6.16,
-      "endS": 6.32
+      "charEnd": 94,
+      "startS": 5.92,
+      "endS": 6.0
     },
     {
       "text": "paint",
-      "charStart": 96,
-      "charEnd": 101,
-      "startS": 6.32,
-      "endS": 6.72
+      "charStart": 95,
+      "charEnd": 100,
+      "startS": 6.0,
+      "endS": 6.4
     },
     {
       "text": "trim",
-      "charStart": 103,
-      "charEnd": 107,
-      "startS": 6.88,
-      "endS": 7.2
+      "charStart": 102,
+      "charEnd": 106,
+      "startS": 6.56,
+      "endS": 6.88
     },
     {
       "text": "and",
-      "charStart": 108,
-      "charEnd": 111,
-      "startS": 7.28,
+      "charStart": 107,
+      "charEnd": 110,
+      "startS": 6.88,
+      "endS": 6.96
+    },
+    {
+      "text": "decals",
+      "charStart": 111,
+      "charEnd": 117,
+      "startS": 6.96,
       "endS": 7.36
     },
     {
-      "text": "helmet",
-      "charStart": 112,
-      "charEnd": 118,
+      "text": "on",
+      "charStart": 118,
+      "charEnd": 120,
       "startS": 7.36,
-      "endS": 7.68
+      "endS": 7.52
     },
     {
-      "text": "livery",
-      "charStart": 119,
+      "text": "your",
+      "charStart": 121,
       "charEnd": 125,
-      "startS": 7.68,
-      "endS": 8.08
+      "startS": 7.52,
+      "endS": 7.6
+    },
+    {
+      "text": "ship",
+      "charStart": 126,
+      "charEnd": 130,
+      "startS": 7.6,
+      "endS": 7.84
     },
     {
       "text": "are",
-      "charStart": 126,
-      "charEnd": 129,
-      "startS": 8.08,
-      "endS": 8.24
+      "charStart": 131,
+      "charEnd": 134,
+      "startS": 7.84,
+      "endS": 8.0
     },
     {
       "text": "entirely",
-      "charStart": 130,
-      "charEnd": 138,
-      "startS": 8.24,
-      "endS": 8.8
+      "charStart": 135,
+      "charEnd": 143,
+      "startS": 8.0,
+      "endS": 8.48
     },
     {
       "text": "up",
-      "charStart": 139,
-      "charEnd": 141,
-      "startS": 8.8,
-      "endS": 8.96
+      "charStart": 144,
+      "charEnd": 146,
+      "startS": 8.48,
+      "endS": 8.56
     },
     {
       "text": "to",
-      "charStart": 142,
-      "charEnd": 144,
-      "startS": 8.96,
-      "endS": 9.04
+      "charStart": 147,
+      "charEnd": 149,
+      "startS": 8.64,
+      "endS": 8.72
     },
     {
       "text": "you",
-      "charStart": 145,
-      "charEnd": 148,
-      "startS": 9.04,
-      "endS": 9.36
+      "charStart": 150,
+      "charEnd": 153,
+      "startS": 8.72,
+      "endS": 8.96
     },
     {
       "text": "Self",
-      "charStart": 150,
-      "charEnd": 154,
-      "startS": 10.24,
-      "endS": 10.56
+      "charStart": 155,
+      "charEnd": 159,
+      "startS": 9.68,
+      "endS": 10.0
     },
     {
       "text": "expression",
-      "charStart": 155,
-      "charEnd": 165,
-      "startS": 10.56,
-      "endS": 11.04
+      "charStart": 160,
+      "charEnd": 170,
+      "startS": 10.0,
+      "endS": 10.48
     },
     {
       "text": "is",
-      "charStart": 166,
-      "charEnd": 168,
-      "startS": 11.04,
-      "endS": 11.12
+      "charStart": 171,
+      "charEnd": 173,
+      "startS": 10.48,
+      "endS": 10.56
     },
     {
       "text": "a",
-      "charStart": 169,
-      "charEnd": 170,
-      "startS": 11.12,
-      "endS": 11.2
+      "charStart": 174,
+      "charEnd": 175,
+      "startS": 10.56,
+      "endS": 10.64
     },
     {
       "text": "benefit",
-      "charStart": 171,
-      "charEnd": 178,
-      "startS": 11.2,
-      "endS": 11.6
+      "charStart": 176,
+      "charEnd": 183,
+      "startS": 10.64,
+      "endS": 10.96
     },
     {
       "text": "of",
-      "charStart": 179,
-      "charEnd": 181,
-      "startS": 11.6,
-      "endS": 11.68
+      "charStart": 184,
+      "charEnd": 186,
+      "startS": 10.96,
+      "endS": 11.04
     },
     {
       "text": "employment",
-      "charStart": 182,
-      "charEnd": 192,
-      "startS": 11.68,
-      "endS": 12.24
+      "charStart": 187,
+      "charEnd": 197,
+      "startS": 11.04,
+      "endS": 11.68
     }
   ],
-  "words_for": "810c7b5c210d1a7e/wordtiming-v1"
+  "words_for": "e3494e65c16f3e5e/wordtiming-v1"
 }

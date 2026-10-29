@@ -1,0 +1,278 @@
+{
+  "hash": "dc4dd44506dadc2c",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_wardenpac_003",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "如果这是个把戏，那可是个非常没礼貌的把戏！如果不是，这就是一百年来最好的事！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shouted, then the second half almost tender.",
+  "duration": 6.56,
+  "sample_rate": 24000,
+  "peak": 0.759,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.37,
+    "gain_db": 1.66,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.66,
+    "peak_bound": false
+  },
+  "asr": "如果这是个把戏，那可是个非常没礼貌的把戏。如果不是，这就是一百年来最好的事。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "如",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "果",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "这",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "是",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "个",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "把",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "戏",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "那",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "可",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "是",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "个",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "非",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "常",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "没",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "礼",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "貌",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "的",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "把",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "戏",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.12,
+      "endS": 3.44
+    },
+    {
+      "text": "如",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "果",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "不",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "是",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.16,
+      "endS": 4.48
+    },
+    {
+      "text": "这",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "就",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "是",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "一",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "百",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.2,
+      "endS": 5.44
+    },
+    {
+      "text": "年",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "来",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "最",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "好",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "的",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "事",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.24,
+      "endS": 6.48
+    }
+  ],
+  "words_for": "dc4dd44506dadc2c/wordtiming-v1"
+}

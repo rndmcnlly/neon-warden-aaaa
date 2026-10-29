@@ -1,0 +1,103 @@
+{
+  "hash": "fe45223efcff1082",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_otherleft_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¿Controles invertidos? Hoy no. Prueba hacia el otro lado.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Light rhetorical question, then plainly helpful.",
+  "duration": 3.6,
+  "sample_rate": 24000,
+  "peak": 0.683,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.29,
+    "gain_db": 3.61,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.61,
+    "peak_bound": false
+  },
+  "asr": "Controles invertidos, hoy no prueba hacia el otro lado.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Controles",
+      "charStart": 1,
+      "charEnd": 10,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "invertidos",
+      "charStart": 11,
+      "charEnd": 21,
+      "startS": 0.64,
+      "endS": 1.36
+    },
+    {
+      "text": "Hoy",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "no",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "Prueba",
+      "charStart": 31,
+      "charEnd": 37,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "hacia",
+      "charStart": 38,
+      "charEnd": 43,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "el",
+      "charStart": 44,
+      "charEnd": 46,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "otro",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "lado",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 3.28,
+      "endS": 3.6
+    }
+  ],
+  "words_for": "fe45223efcff1082/wordtiming-v1"
+}

@@ -1,0 +1,166 @@
+{
+  "hash": "d4662be9492f3d6e",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_otherleft_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "这个方向也不错。不过这一步，请试试反方向。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Gracious, never scolding: compliments, then redirects.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.707,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.99,
+    "gain_db": 2.34,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.34,
+    "peak_bound": false
+  },
+  "asr": "这个方向也不错，不过这一步，请试试反方向。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "这",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "个",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "方",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "向",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "也",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "不",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "错",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "不",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "过",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "这",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "一",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "步",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "请",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "试",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "试",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "反",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.92,
+      "endS": 4.24
+    },
+    {
+      "text": "方",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "向",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.4,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "d4662be9492f3d6e/wordtiming-v1"
+}

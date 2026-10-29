@@ -1,0 +1,96 @@
+{
+  "hash": "1fc01d642e1e75cf",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden1_004",
+    "seed": 33,
+    "language": "English",
+    "text": "Stop shooting my RINGS! They are load-bearing! Emotionally!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Indignant, protective of the rings.",
+  "duration": 3.92,
+  "sample_rate": 24000,
+  "peak": 0.691,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.21,
+    "gain_db": 1.62,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.62,
+    "peak_bound": false
+  },
+  "asr": "Stop shooting my rings. They are load-bearing emotionally.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Stop",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "shooting",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 0.48,
+      "endS": 0.88
+    },
+    {
+      "text": "my",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "RINGS",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "They",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "are",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "load-bearing",
+      "charStart": 33,
+      "charEnd": 45,
+      "startS": 2.0,
+      "endS": 2.88
+    },
+    {
+      "text": "Emotionally",
+      "charStart": 47,
+      "charEnd": 58,
+      "startS": 3.04,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "1fc01d642e1e75cf/wordtiming-v1"
+}

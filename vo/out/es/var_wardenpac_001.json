@@ -1,0 +1,117 @@
+{
+  "hash": "7ec711644140e234",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_wardenpac_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¿¡Por qué no disparas!? ¡Todos disparan! ¡Yo tenía todo un DISCURSO!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Indignant confusion, a performer robbed of a cue.",
+  "duration": 4.72,
+  "sample_rate": 24000,
+  "peak": 0.685,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.27,
+    "gain_db": 1.73,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.73,
+    "peak_bound": false
+  },
+  "asr": "Por qué no disparas todos disparan yo tenía todo un discurso.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Por",
+      "charStart": 2,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.4
+    },
+    {
+      "text": "qué",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "no",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "disparas",
+      "charStart": 13,
+      "charEnd": 21,
+      "startS": 0.64,
+      "endS": 1.36
+    },
+    {
+      "text": "Todos",
+      "charStart": 25,
+      "charEnd": 30,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "disparan",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.0,
+      "endS": 2.64
+    },
+    {
+      "text": "Yo",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "tenía",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "todo",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "un",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "DISCURSO",
+      "charStart": 59,
+      "charEnd": 67,
+      "startS": 3.92,
+      "endS": 4.72
+    }
+  ],
+  "words_for": "7ec711644140e234/wordtiming-v1"
+}

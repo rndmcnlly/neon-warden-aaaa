@@ -1,0 +1,138 @@
+{
+  "hash": "861c10c46d8d0194",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden1_003",
+    "seed": 33,
+    "language": "English",
+    "text": "Hit me again! Go on! It's not like I have FEELINGS! I have SEVERAL!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Sarcastic, then sincerely wounded.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.603,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.29,
+    "gain_db": 0.14,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.14,
+    "peak_bound": false
+  },
+  "asr": "Hit me again! Go on! It's not like I have feelings. I have several.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Hit",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "me",
+      "charStart": 4,
+      "charEnd": 6,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "again",
+      "charStart": 7,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "Go",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "on",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "It's",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "not",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "like",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "I",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "have",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "FEELINGS",
+      "charStart": 42,
+      "charEnd": 50,
+      "startS": 3.12,
+      "endS": 3.84
+    },
+    {
+      "text": "I",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "have",
+      "charStart": 54,
+      "charEnd": 58,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "SEVERAL",
+      "charStart": 59,
+      "charEnd": 66,
+      "startS": 4.24,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "861c10c46d8d0194/wordtiming-v1"
+}

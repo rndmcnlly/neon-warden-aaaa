@@ -1,0 +1,103 @@
+{
+  "hash": "659c6d947c7de64c",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_otherleft_004",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "La navegación tiene dos lados. Aquí necesitamos el otro.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Mock-diplomatic aside, warm and unhurried.",
+  "duration": 4.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 3.87,
+    "limited_db": 0.55,
+    "measured_before_lufs": -21.87,
+    "peak_bound": false
+  },
+  "asr": "La navegación tiene dos lados. Aquí necesitamos el otro.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "La",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "navegación",
+      "charStart": 3,
+      "charEnd": 13,
+      "startS": 0.16,
+      "endS": 0.8
+    },
+    {
+      "text": "tiene",
+      "charStart": 14,
+      "charEnd": 19,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "dos",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "lados",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "Aquí",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 2.4,
+      "endS": 2.72
+    },
+    {
+      "text": "necesitamos",
+      "charStart": 36,
+      "charEnd": 47,
+      "startS": 2.72,
+      "endS": 3.36
+    },
+    {
+      "text": "el",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "otro",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 3.44,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "659c6d947c7de64c/wordtiming-v1"
+}

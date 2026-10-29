@@ -1,0 +1,138 @@
+{
+  "hash": "b25e21e1fcbda873",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden2_002",
+    "seed": 33,
+    "language": "English",
+    "text": "I am NOT tired! I am pacing myself for the next three hundred years!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Out of breath, insisting.",
+  "duration": 4.8,
+  "sample_rate": 24000,
+  "peak": 0.702,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.06,
+    "gain_db": 1.65,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.65,
+    "peak_bound": false
+  },
+  "asr": "I am not tired. I am pacing myself for the next three hundred years.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "I",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "am",
+      "charStart": 2,
+      "charEnd": 4,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "NOT",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "tired",
+      "charStart": 9,
+      "charEnd": 14,
+      "startS": 0.8,
+      "endS": 1.36
+    },
+    {
+      "text": "I",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "am",
+      "charStart": 18,
+      "charEnd": 20,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "pacing",
+      "charStart": 21,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "myself",
+      "charStart": 28,
+      "charEnd": 34,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "for",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "the",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "next",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "three",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "hundred",
+      "charStart": 54,
+      "charEnd": 61,
+      "startS": 3.76,
+      "endS": 4.16
+    },
+    {
+      "text": "years",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 4.16,
+      "endS": 4.72
+    }
+  ],
+  "words_for": "b25e21e1fcbda873/wordtiming-v1"
+}

@@ -1,0 +1,159 @@
+{
+  "hash": "dab1e4e44830f062",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_warden3_002",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "我不是在输！我是快用完了！这是有区别的！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Defensive, voice cracking.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.748,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.52,
+    "gain_db": 1.23,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.23,
+    "peak_bound": false
+  },
+  "asr": "我不是在输，我是快用完了，这是有区别的。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "我",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "不",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "是",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "在",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "输",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "我",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "是",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "快",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.68,
+      "endS": 2.0
+    },
+    {
+      "text": "用",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "完",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "了",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.48,
+      "endS": 2.8
+    },
+    {
+      "text": "这",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "是",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "有",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "区",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "别",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "的",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.92,
+      "endS": 4.16
+    }
+  ],
+  "words_for": "dab1e4e44830f062/wordtiming-v1"
+}

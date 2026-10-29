@@ -1,0 +1,117 @@
+{
+  "hash": "b0d272d2fcb3ddd7",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_lockout_002",
+    "seed": 11,
+    "language": "English",
+    "text": "That shot can wait. Release fire and watch the charge build.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Unhurried, encouraging, like a flight instructor.",
+  "duration": 3.92,
+  "sample_rate": 24000,
+  "peak": 0.787,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.02,
+    "gain_db": 2.53,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.53,
+    "peak_bound": false
+  },
+  "asr": "That shot can wait, release fire, and watch the charge build.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "That",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "shot",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.88,
+      "endS": 1.2
+    },
+    {
+      "text": "can",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "wait",
+      "charStart": 14,
+      "charEnd": 18,
+      "startS": 1.36,
+      "endS": 1.76
+    },
+    {
+      "text": "Release",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "fire",
+      "charStart": 28,
+      "charEnd": 32,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "and",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "watch",
+      "charStart": 37,
+      "charEnd": 42,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "the",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "charge",
+      "charStart": 47,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "build",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 3.52,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "b0d272d2fcb3ddd7/wordtiming-v1"
+}

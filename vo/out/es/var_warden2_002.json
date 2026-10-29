@@ -1,0 +1,117 @@
+{
+  "hash": "c7ec72004df0d882",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden2_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡NO estoy cansado! ¡Me estoy dosificando para los próximos trescientos años!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Out of breath, insisting.",
+  "duration": 4.72,
+  "sample_rate": 24000,
+  "peak": 0.849,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 3.19,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.19,
+    "peak_bound": false
+  },
+  "asr": "No estoy cansado. Me estoy dosificando para los próximos trescientos años.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "NO",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "estoy",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "cansado",
+      "charStart": 10,
+      "charEnd": 17,
+      "startS": 0.64,
+      "endS": 1.36
+    },
+    {
+      "text": "Me",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "estoy",
+      "charStart": 23,
+      "charEnd": 28,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "dosificando",
+      "charStart": 29,
+      "charEnd": 40,
+      "startS": 1.92,
+      "endS": 2.64
+    },
+    {
+      "text": "para",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "los",
+      "charStart": 46,
+      "charEnd": 49,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "próximos",
+      "charStart": 50,
+      "charEnd": 58,
+      "startS": 2.96,
+      "endS": 3.44
+    },
+    {
+      "text": "trescientos",
+      "charStart": 59,
+      "charEnd": 70,
+      "startS": 3.44,
+      "endS": 4.08
+    },
+    {
+      "text": "años",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 4.16,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "c7ec72004df0d882/wordtiming-v1"
+}

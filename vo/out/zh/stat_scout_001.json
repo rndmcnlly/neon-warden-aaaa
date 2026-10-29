@@ -1,0 +1,215 @@
+{
+  "hash": "d05ef42acb08dbf2",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_scout_001",
+    "seed": 55,
+    "language": "Chinese",
+    "text": "漂流六号，新来的只拆武器，不打碎飞船。传下去。保持航道宽敞。",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Low, quick, passing it along.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.3,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 5.07,
+    "limited_db": 2.91,
+    "measured_before_lufs": -23.07,
+    "peak_bound": false
+  },
+  "asr": "漂流六号新来的，只拆武器，不打碎飞船。传下去，保持航道宽敞。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "漂",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "流",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "六",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "号",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "新",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "来",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "的",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "只",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "拆",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "武",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "器",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.08,
+      "endS": 2.48
+    },
+    {
+      "text": "不",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "打",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "碎",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "飞",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "船",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "传",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "下",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "去",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "保",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "持",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "航",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.8,
+      "endS": 5.12
+    },
+    {
+      "text": "道",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "宽",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.2,
+      "endS": 5.44
+    },
+    {
+      "text": "敞",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.44,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "d05ef42acb08dbf2/wordtiming-v1"
+}

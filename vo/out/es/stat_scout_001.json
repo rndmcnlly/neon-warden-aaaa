@@ -1,0 +1,131 @@
+{
+  "hash": "ec2fe0fa3fd95bbd",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_scout_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Deriva Seis, el nuevo está desarmando, no rompiendo. Pásalo. Mantengan las rutas amplias.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Low, quick, passing it along.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.833,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.51,
+    "gain_db": 2.37,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.37,
+    "peak_bound": false
+  },
+  "asr": "Deriva seis, el nuevo está desarmando, no rompiendo, pásalo, mantengan las rutas amplias.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Deriva",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "Seis",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 1.12,
+      "endS": 1.68
+    },
+    {
+      "text": "el",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "nuevo",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "está",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "desarmando",
+      "charStart": 27,
+      "charEnd": 37,
+      "startS": 2.48,
+      "endS": 3.2
+    },
+    {
+      "text": "no",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "rompiendo",
+      "charStart": 42,
+      "charEnd": 51,
+      "startS": 3.52,
+      "endS": 4.16
+    },
+    {
+      "text": "Pásalo",
+      "charStart": 53,
+      "charEnd": 59,
+      "startS": 4.64,
+      "endS": 5.2
+    },
+    {
+      "text": "Mantengan",
+      "charStart": 61,
+      "charEnd": 70,
+      "startS": 5.6,
+      "endS": 6.08
+    },
+    {
+      "text": "las",
+      "charStart": 71,
+      "charEnd": 74,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "rutas",
+      "charStart": 75,
+      "charEnd": 80,
+      "startS": 6.24,
+      "endS": 6.56
+    },
+    {
+      "text": "amplias",
+      "charStart": 81,
+      "charEnd": 88,
+      "startS": 6.64,
+      "endS": 7.04
+    }
+  ],
+  "words_for": "ec2fe0fa3fd95bbd/wordtiming-v1"
+}

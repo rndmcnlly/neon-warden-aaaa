@@ -1,0 +1,166 @@
+{
+  "hash": "08b585a71fd9808f",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_otherleft_004",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "导航也要听听两边的意见。这次，请往另一边。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Mock-diplomatic aside, warm and unhurried.",
+  "duration": 4.88,
+  "sample_rate": 24000,
+  "peak": 0.789,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.93,
+    "gain_db": 3.15,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.15,
+    "peak_bound": false
+  },
+  "asr": "导航也要听听两边的意见。这次请往另一边。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "导",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "航",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.88,
+      "endS": 1.2
+    },
+    {
+      "text": "也",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "要",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "听",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "听",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "两",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "边",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "的",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "意",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "见",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "这",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "次",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "请",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "往",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "另",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "一",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "边",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.64,
+      "endS": 4.8
+    }
+  ],
+  "words_for": "08b585a71fd9808f/wordtiming-v1"
+}

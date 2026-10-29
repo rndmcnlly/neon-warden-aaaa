@@ -1,0 +1,180 @@
+{
+  "hash": "c75aeed209f18bb4",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden1_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Cero uno dos dos! ¡Me aprendo el número de cada piloto! ¡Ya van ciento veintidós! ¡DEJA DE ALARGAR LA LISTA!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Furious roll call, running out of breath.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.836,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.53,
+    "gain_db": 1.75,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.75,
+    "peak_bound": false
+  },
+  "asr": "cero uno dos dos me aprendo el número de cada piloto ya van ciento veintidós deja de alargar la lista",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Cero",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.64
+    },
+    {
+      "text": "uno",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "dos",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "dos",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "Me",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "aprendo",
+      "charStart": 23,
+      "charEnd": 30,
+      "startS": 1.76,
+      "endS": 2.16
+    },
+    {
+      "text": "el",
+      "charStart": 31,
+      "charEnd": 33,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "número",
+      "charStart": 34,
+      "charEnd": 40,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "de",
+      "charStart": 41,
+      "charEnd": 43,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "cada",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "piloto",
+      "charStart": 49,
+      "charEnd": 55,
+      "startS": 3.04,
+      "endS": 3.68
+    },
+    {
+      "text": "Ya",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "van",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "ciento",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "veintidós",
+      "charStart": 72,
+      "charEnd": 81,
+      "startS": 4.64,
+      "endS": 5.36
+    },
+    {
+      "text": "DEJA",
+      "charStart": 84,
+      "charEnd": 88,
+      "startS": 5.52,
+      "endS": 5.92
+    },
+    {
+      "text": "DE",
+      "charStart": 89,
+      "charEnd": 91,
+      "startS": 5.92,
+      "endS": 6.0
+    },
+    {
+      "text": "ALARGAR",
+      "charStart": 92,
+      "charEnd": 99,
+      "startS": 6.0,
+      "endS": 6.4
+    },
+    {
+      "text": "LA",
+      "charStart": 100,
+      "charEnd": 102,
+      "startS": 6.4,
+      "endS": 6.56
+    },
+    {
+      "text": "LISTA",
+      "charStart": 103,
+      "charEnd": 108,
+      "startS": 6.56,
+      "endS": 7.12
+    }
+  ],
+  "words_for": "c75aeed209f18bb4/wordtiming-v1"
+}

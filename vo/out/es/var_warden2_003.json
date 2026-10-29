@@ -1,0 +1,173 @@
+{
+  "hash": "d4953261654a796d",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden2_003",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Por cada anillo que rompes, un transportista vuela a oscuras esta noche! ¿¡Eso te lo dijeron en la inducción!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Furious, the facts landing harder than the volume.",
+  "duration": 6.72,
+  "sample_rate": 24000,
+  "peak": 0.81,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.8,
+    "gain_db": 2.68,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.68,
+    "peak_bound": false
+  },
+  "asr": "Por cada anillo que rompes un transportista vuela a oscuras esta noche. Eso te lo dijeron en la inducción.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Por",
+      "charStart": 1,
+      "charEnd": 4,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "cada",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "anillo",
+      "charStart": 10,
+      "charEnd": 16,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "que",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "rompes",
+      "charStart": 21,
+      "charEnd": 27,
+      "startS": 1.2,
+      "endS": 1.76
+    },
+    {
+      "text": "un",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "transportista",
+      "charStart": 32,
+      "charEnd": 45,
+      "startS": 1.84,
+      "endS": 2.72
+    },
+    {
+      "text": "vuela",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "a",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "oscuras",
+      "charStart": 54,
+      "charEnd": 61,
+      "startS": 3.28,
+      "endS": 3.68
+    },
+    {
+      "text": "esta",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "noche",
+      "charStart": 67,
+      "charEnd": 72,
+      "startS": 4.0,
+      "endS": 4.48
+    },
+    {
+      "text": "Eso",
+      "charStart": 76,
+      "charEnd": 79,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "te",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "lo",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "dijeron",
+      "charStart": 86,
+      "charEnd": 93,
+      "startS": 5.28,
+      "endS": 5.68
+    },
+    {
+      "text": "en",
+      "charStart": 94,
+      "charEnd": 96,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "la",
+      "charStart": 97,
+      "charEnd": 99,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "inducción",
+      "charStart": 100,
+      "charEnd": 109,
+      "startS": 5.92,
+      "endS": 6.56
+    }
+  ],
+  "words_for": "d4953261654a796d/wordtiming-v1"
+}

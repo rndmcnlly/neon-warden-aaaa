@@ -1,0 +1,159 @@
+{
+  "hash": "fa299c9ded18373a",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden3_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Pues llévatelo! ¡Llévate el último anillo! ¡Y cuando le pongan una caseta de peaje, acuérdate de MÍ!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Shouting, grief under it.",
+  "duration": 6.08,
+  "sample_rate": 24000,
+  "peak": 0.696,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.83,
+    "gain_db": 2.59,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.59,
+    "peak_bound": false
+  },
+  "asr": "Pues llévatelo, llevate el último anillo y cuando le pongan una caseta de peaje acuérdate de mí.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Pues",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "llévatelo",
+      "charStart": 6,
+      "charEnd": 15,
+      "startS": 0.24,
+      "endS": 0.96
+    },
+    {
+      "text": "Llévate",
+      "charStart": 18,
+      "charEnd": 25,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "el",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "último",
+      "charStart": 29,
+      "charEnd": 35,
+      "startS": 1.76,
+      "endS": 2.16
+    },
+    {
+      "text": "anillo",
+      "charStart": 36,
+      "charEnd": 42,
+      "startS": 2.16,
+      "endS": 2.72
+    },
+    {
+      "text": "Y",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "cuando",
+      "charStart": 47,
+      "charEnd": 53,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "le",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "pongan",
+      "charStart": 57,
+      "charEnd": 63,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "una",
+      "charStart": 64,
+      "charEnd": 67,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "caseta",
+      "charStart": 68,
+      "charEnd": 74,
+      "startS": 3.84,
+      "endS": 4.32
+    },
+    {
+      "text": "de",
+      "charStart": 75,
+      "charEnd": 77,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "peaje",
+      "charStart": 78,
+      "charEnd": 83,
+      "startS": 4.48,
+      "endS": 4.96
+    },
+    {
+      "text": "acuérdate",
+      "charStart": 85,
+      "charEnd": 94,
+      "startS": 4.96,
+      "endS": 5.6
+    },
+    {
+      "text": "de",
+      "charStart": 95,
+      "charEnd": 97,
+      "startS": 5.6,
+      "endS": 6.0
+    },
+    {
+      "text": "MÍ",
+      "charStart": 98,
+      "charEnd": 100,
+      "startS": 6.0,
+      "endS": 6.08
+    }
+  ],
+  "words_for": "fa299c9ded18373a/wordtiming-v1"
+}

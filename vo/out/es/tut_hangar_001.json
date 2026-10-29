@@ -1,32 +1,32 @@
 {
-  "hash": "8635ae06429f9fc4",
+  "hash": "b8988f1e66301d4d",
   "mode": "clone",
   "request": {
     "id": "es__tut_hangar_001",
     "seed": 11,
     "language": "Spanish",
-    "text": "Entre contratos, el hangar es tuyo. Los paquetes de armas y de sensores cambian tu forma de volar, y la pintura, los acabados y los colores de tu casco dependen completamente de ti. La libre expresión es una prestación laboral.",
+    "text": "Entre contratos, el hangar es tuyo. Los paquetes de armas y de sensores cambian tu forma de volar, y la pintura, los acabados y las calcomanías de tu nave dependen completamente de ti. La libre expresión es una prestación laboral.",
     "voice_ref": "vo/voices/tutorial_ai.es.wav",
     "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Genuinely glad to offer a perk.",
-  "duration": 14.48,
+  "duration": 14.4,
   "sample_rate": 24000,
-  "peak": 0.871,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 4.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -22.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 4.47,
+    "limited_db": 1.18,
+    "measured_before_lufs": -22.47,
     "peak_bound": false
   },
-  "asr": "Entre contratos, el hangar es tuyo. Los paquetes de armas y descensores cambian tu forma de volar, y la pintura, los acabados y los colores de tu casco dependen completamente de ti. La libre expresión es una prestación laboral.",
-  "asr_similarity": 0.962,
+  "asr": "Entre contratos, el hangar es tuyo. Los paquetes de armas y de sensores cambian tu forma de volar, y la pintura, los acabados y las calcomanías de tu nave dependen completamente de ti. La libre expresión es una prestación laboral.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -39,282 +39,282 @@
       "text": "Entre",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.24,
-      "endS": 0.48
+      "startS": 0.48,
+      "endS": 0.72
     },
     {
       "text": "contratos",
       "charStart": 6,
       "charEnd": 15,
-      "startS": 0.48,
-      "endS": 1.2
+      "startS": 0.72,
+      "endS": 1.44
     },
     {
       "text": "el",
       "charStart": 17,
       "charEnd": 19,
-      "startS": 1.52,
-      "endS": 1.6
+      "startS": 1.6,
+      "endS": 1.68
     },
     {
       "text": "hangar",
       "charStart": 20,
       "charEnd": 26,
-      "startS": 1.6,
-      "endS": 1.92
+      "startS": 1.68,
+      "endS": 2.0
     },
     {
       "text": "es",
       "charStart": 27,
       "charEnd": 29,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "tuyo",
       "charStart": 30,
       "charEnd": 34,
-      "startS": 2.08,
-      "endS": 2.4
+      "startS": 2.16,
+      "endS": 2.56
     },
     {
       "text": "Los",
       "charStart": 36,
       "charEnd": 39,
-      "startS": 3.2,
-      "endS": 3.44
+      "startS": 3.44,
+      "endS": 3.6
     },
     {
       "text": "paquetes",
       "charStart": 40,
       "charEnd": 48,
-      "startS": 3.44,
-      "endS": 3.84
+      "startS": 3.6,
+      "endS": 4.0
     },
     {
       "text": "de",
       "charStart": 49,
       "charEnd": 51,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "armas",
       "charStart": 52,
       "charEnd": 57,
-      "startS": 4.0,
-      "endS": 4.32
+      "startS": 4.08,
+      "endS": 4.48
     },
     {
       "text": "y",
       "charStart": 58,
       "charEnd": 59,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 4.48,
+      "endS": 4.56
     },
     {
       "text": "de",
       "charStart": 60,
       "charEnd": 62,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 4.56,
+      "endS": 4.64
     },
     {
       "text": "sensores",
       "charStart": 63,
       "charEnd": 71,
-      "startS": 4.48,
-      "endS": 5.04
+      "startS": 4.64,
+      "endS": 5.2
     },
     {
       "text": "cambian",
       "charStart": 72,
       "charEnd": 79,
-      "startS": 5.04,
-      "endS": 5.36
+      "startS": 5.2,
+      "endS": 5.6
     },
     {
       "text": "tu",
       "charStart": 80,
       "charEnd": 82,
-      "startS": 5.36,
-      "endS": 5.44
+      "startS": 5.6,
+      "endS": 5.68
     },
     {
       "text": "forma",
       "charStart": 83,
       "charEnd": 88,
-      "startS": 5.44,
-      "endS": 5.76
+      "startS": 5.68,
+      "endS": 5.92
     },
     {
       "text": "de",
       "charStart": 89,
       "charEnd": 91,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "volar",
       "charStart": 92,
       "charEnd": 97,
-      "startS": 5.92,
-      "endS": 6.32
+      "startS": 6.08,
+      "endS": 6.48
     },
     {
       "text": "y",
       "charStart": 99,
       "charEnd": 100,
-      "startS": 6.72,
-      "endS": 6.8
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "la",
       "charStart": 101,
       "charEnd": 103,
-      "startS": 6.8,
-      "endS": 6.88
+      "startS": 7.04,
+      "endS": 7.12
     },
     {
       "text": "pintura",
       "charStart": 104,
       "charEnd": 111,
-      "startS": 6.88,
-      "endS": 7.44
+      "startS": 7.12,
+      "endS": 7.68
     },
     {
       "text": "los",
       "charStart": 113,
       "charEnd": 116,
-      "startS": 7.76,
-      "endS": 8.0
+      "startS": 7.84,
+      "endS": 8.08
     },
     {
       "text": "acabados",
       "charStart": 117,
       "charEnd": 125,
-      "startS": 8.0,
-      "endS": 8.48
+      "startS": 8.08,
+      "endS": 8.56
     },
     {
       "text": "y",
       "charStart": 126,
       "charEnd": 127,
-      "startS": 8.48,
-      "endS": 8.56
+      "startS": 8.56,
+      "endS": 8.64
     },
     {
-      "text": "los",
+      "text": "las",
       "charStart": 128,
       "charEnd": 131,
-      "startS": 8.56,
-      "endS": 8.72
+      "startS": 8.64,
+      "endS": 8.8
     },
     {
-      "text": "colores",
+      "text": "calcomanías",
       "charStart": 132,
-      "charEnd": 139,
-      "startS": 8.72,
-      "endS": 9.04
+      "charEnd": 143,
+      "startS": 8.8,
+      "endS": 9.44
     },
     {
       "text": "de",
-      "charStart": 140,
-      "charEnd": 142,
-      "startS": 9.04,
-      "endS": 9.12
+      "charStart": 144,
+      "charEnd": 146,
+      "startS": 9.44,
+      "endS": 9.52
     },
     {
       "text": "tu",
-      "charStart": 143,
-      "charEnd": 145,
-      "startS": 9.12,
-      "endS": 9.28
-    },
-    {
-      "text": "casco",
-      "charStart": 146,
-      "charEnd": 151,
-      "startS": 9.28,
+      "charStart": 147,
+      "charEnd": 149,
+      "startS": 9.52,
       "endS": 9.6
     },
     {
-      "text": "dependen",
-      "charStart": 152,
-      "charEnd": 160,
+      "text": "nave",
+      "charStart": 150,
+      "charEnd": 154,
       "startS": 9.6,
-      "endS": 10.0
+      "endS": 9.92
+    },
+    {
+      "text": "dependen",
+      "charStart": 155,
+      "charEnd": 163,
+      "startS": 9.92,
+      "endS": 10.48
     },
     {
       "text": "completamente",
-      "charStart": 161,
-      "charEnd": 174,
-      "startS": 10.0,
-      "endS": 10.72
-    },
-    {
-      "text": "de",
-      "charStart": 175,
+      "charStart": 164,
       "charEnd": 177,
-      "startS": 10.72,
-      "endS": 10.8
-    },
-    {
-      "text": "ti",
-      "charStart": 178,
-      "charEnd": 180,
-      "startS": 10.8,
+      "startS": 10.48,
       "endS": 11.2
     },
     {
+      "text": "de",
+      "charStart": 178,
+      "charEnd": 180,
+      "startS": 11.2,
+      "endS": 11.36
+    },
+    {
+      "text": "ti",
+      "charStart": 181,
+      "charEnd": 183,
+      "startS": 11.36,
+      "endS": 11.6
+    },
+    {
       "text": "La",
-      "charStart": 182,
-      "charEnd": 184,
-      "startS": 11.92,
-      "endS": 12.08
+      "charStart": 185,
+      "charEnd": 187,
+      "startS": 12.4,
+      "endS": 12.48
     },
     {
       "text": "libre",
-      "charStart": 185,
-      "charEnd": 190,
-      "startS": 12.08,
-      "endS": 12.32
+      "charStart": 188,
+      "charEnd": 193,
+      "startS": 12.48,
+      "endS": 12.72
     },
     {
       "text": "expresión",
-      "charStart": 191,
-      "charEnd": 200,
-      "startS": 12.32,
-      "endS": 12.88
-    },
-    {
-      "text": "es",
-      "charStart": 201,
+      "charStart": 194,
       "charEnd": 203,
-      "startS": 12.88,
-      "endS": 13.04
-    },
-    {
-      "text": "una",
-      "charStart": 204,
-      "charEnd": 207,
-      "startS": 13.04,
+      "startS": 12.72,
       "endS": 13.2
     },
     {
-      "text": "prestación",
-      "charStart": 208,
-      "charEnd": 218,
+      "text": "es",
+      "charStart": 204,
+      "charEnd": 206,
       "startS": 13.2,
-      "endS": 13.68
+      "endS": 13.36
+    },
+    {
+      "text": "una",
+      "charStart": 207,
+      "charEnd": 210,
+      "startS": 13.36,
+      "endS": 13.44
+    },
+    {
+      "text": "prestación",
+      "charStart": 211,
+      "charEnd": 221,
+      "startS": 13.44,
+      "endS": 14.0
     },
     {
       "text": "laboral",
-      "charStart": 219,
-      "charEnd": 226,
-      "startS": 13.68,
-      "endS": 14.24
+      "charStart": 222,
+      "charEnd": 229,
+      "startS": 14.0,
+      "endS": 14.4
     }
   ],
-  "words_for": "8635ae06429f9fc4/wordtiming-v1"
+  "words_for": "b8988f1e66301d4d/wordtiming-v1"
 }

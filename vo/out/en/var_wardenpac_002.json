@@ -1,0 +1,96 @@
+{
+  "hash": "278ed52d6d19cb1c",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_wardenpac_002",
+    "seed": 33,
+    "language": "English",
+    "text": "Stop being polite at me! It's very confusing!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Flustered, almost embarrassed.",
+  "duration": 3.36,
+  "sample_rate": 24000,
+  "peak": 0.703,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.05,
+    "gain_db": 2.88,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.88,
+    "peak_bound": false
+  },
+  "asr": "Stop being polite at me. It's very confusing.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Stop",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.56
+    },
+    {
+      "text": "being",
+      "charStart": 5,
+      "charEnd": 10,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "polite",
+      "charStart": 11,
+      "charEnd": 17,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "at",
+      "charStart": 18,
+      "charEnd": 20,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "me",
+      "charStart": 21,
+      "charEnd": 23,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "It's",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "very",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "confusing",
+      "charStart": 35,
+      "charEnd": 44,
+      "startS": 2.4,
+      "endS": 3.28
+    }
+  ],
+  "words_for": "278ed52d6d19cb1c/wordtiming-v1"
+}

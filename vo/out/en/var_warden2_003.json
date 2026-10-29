@@ -1,0 +1,145 @@
+{
+  "hash": "ee17df9e6dcbae83",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden2_003",
+    "seed": 33,
+    "language": "English",
+    "text": "Every ring you break, a hauler flies dark tonight! Did they mention THAT in onboarding?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Furious, the facts landing harder than the volume.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.689,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.2,
+    "gain_db": 1.79,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.79,
+    "peak_bound": false
+  },
+  "asr": "Every ring you break, a holler flies dark tonight. Did they mention that in onboarding?",
+  "asr_similarity": 0.933,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Every",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "ring",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "you",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "break",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "a",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "hauler",
+      "charStart": 24,
+      "charEnd": 30,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "flies",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.32,
+      "endS": 2.72
+    },
+    {
+      "text": "dark",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "tonight",
+      "charStart": 42,
+      "charEnd": 49,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "Did",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "they",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "mention",
+      "charStart": 60,
+      "charEnd": 67,
+      "startS": 4.0,
+      "endS": 4.48
+    },
+    {
+      "text": "THAT",
+      "charStart": 68,
+      "charEnd": 72,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "in",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "onboarding",
+      "charStart": 76,
+      "charEnd": 86,
+      "startS": 4.96,
+      "endS": 5.68
+    }
+  ],
+  "words_for": "ee17df9e6dcbae83/wordtiming-v1"
+}

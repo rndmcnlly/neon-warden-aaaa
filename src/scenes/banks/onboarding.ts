@@ -1,4 +1,7 @@
-/** Helpful optional corrections, text-only until pending VO is rendered. */
+/**
+ * Helpful optional corrections during the onboarding drills, voiced by the
+ * tutorial AI (folded in from the old `vo/pending/onboarding-lockout.yaml`).
+ */
 import type { Bank } from "./types.ts";
 
 export const tutorialOtherLeft: Bank = {
@@ -11,29 +14,33 @@ export const tutorialOtherLeft: Bank = {
   priority: 20,
   variants: [
     {
-      id: "bank.tutorialOtherLeft.1",
-      vo: false,
+      id: "var_otherleft_001",
+      vo: true,
+      direction: "Patient, a small smile in the voice, then a clear re-ask.",
       en: "No, your other left. Let's try that direction again.",
       es: "No, la otra izquierda. Probemos otra vez en esa dirección.",
       zh: "不对，是另一边的左。我们再试一次。",
     },
     {
-      id: "bank.tutorialOtherLeft.2",
-      vo: false,
+      id: "var_otherleft_002",
+      vo: true,
+      direction: "Gracious, never scolding: compliments, then redirects.",
       en: "A fine direction. For this step, try the opposite one.",
       es: "Buena dirección. Para este paso, prueba hacia el otro lado.",
       zh: "这个方向也不错。不过这一步，请试试反方向。",
     },
     {
-      id: "bank.tutorialOtherLeft.3",
-      vo: false,
+      id: "var_otherleft_003",
+      vo: true,
+      direction: "Light rhetorical question, then plainly helpful.",
       en: "Mirrored controls? Not today. Try the other side.",
       es: "¿Controles invertidos? Hoy no. Prueba hacia el otro lado.",
       zh: "方向反过来了？今天没有哦。试试另一边。",
     },
     {
-      id: "bank.tutorialOtherLeft.4",
-      vo: false,
+      id: "var_otherleft_004",
+      vo: true,
+      direction: "Mock-diplomatic aside, warm and unhurried.",
       en:
         "Navigation has two sides to every story. We need the other side here.",
       es: "La navegación tiene dos lados. Aquí necesitamos el otro.",
@@ -52,8 +59,9 @@ export const tutorialLockout: Bank = {
   priority: 20,
   variants: [
     {
-      id: "bank.tutorialLockout.1",
-      vo: false,
+      id: "var_lockout_001",
+      vo: true,
+      direction: "Deadpan alarm, an instant retraction, then calm instruction.",
       en:
         "Command lockout. Not really. Just let the trigger rest for this step.",
       es:
@@ -61,23 +69,26 @@ export const tutorialLockout: Bank = {
       zh: "指令已锁定。开玩笑的。这一步，先松开扳机，让它歇一歇。",
     },
     {
-      id: "bank.tutorialLockout.2",
-      vo: false,
+      id: "var_lockout_002",
+      vo: true,
+      direction: "Unhurried, encouraging, like a flight instructor.",
       en: "That shot can wait. Release fire and watch the charge build.",
       es:
         "Ese disparo puede esperar. Suelta el gatillo y mira cómo sube la carga.",
       zh: "这一枪可以等等。松开开火键，看看能量慢慢蓄满。",
     },
     {
-      id: "bank.tutorialLockout.3",
-      vo: false,
+      id: "var_lockout_003",
+      vo: true,
+      direction: "Gentle office humor, pleased with the metaphor.",
       en: "A brief ceasefire. The gun does its homework while you rest.",
       es: "Un pequeño alto al fuego. El arma hace su tarea mientras descansas.",
       zh: "先停火一小会儿。你休息的时候，武器会自己做功课。",
     },
     {
-      id: "bank.tutorialLockout.4",
-      vo: false,
+      id: "var_lockout_004",
+      vo: true,
+      direction: "Fond, a little amused by the enthusiasm.",
       en:
         "The trigger has received your enthusiasm. Now give it a moment to recharge.",
       es:

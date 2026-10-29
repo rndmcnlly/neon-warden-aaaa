@@ -124,6 +124,7 @@ lines:
 
   - id: tut_hello_001
     speaker: tutorial_ai
+    seed: {zh: 111}
     scene: tutorial
     route: any
     direction: >-
@@ -572,14 +573,14 @@ lines:
       means every word. Genuinely glad to offer a perk.
     en: >-
       Between contracts, the hangar is yours. Weapon and sensor packages
-      change how you fly, and your paint, trim and helmet livery are entirely
-      up to you. Self expression is a benefit of employment.
+      change how you fly, and the paint, trim and decals on your ship are
+      entirely up to you. Self expression is a benefit of employment.
     es: >-
       Entre contratos, el hangar es tuyo. Los paquetes de armas y de sensores
-      cambian tu forma de volar, y la pintura, los acabados y los colores de
-      tu casco dependen completamente de ti. La libre expresión es una
-      prestación laboral.
-    zh: 合同间隙，机库归你使用。武器组件和传感器组件会改变你的飞行方式，涂装、饰边和头盔配色完全由你决定。自我表达是一项员工福利。
+      cambian tu forma de volar, y la pintura, los acabados y las
+      calcomanías de tu nave dependen completamente de ti. La libre expresión
+      es una prestación laboral.
+    zh: 合同间隙，机库归你使用。武器组件和传感器组件会改变你的飞行方式，飞船的涂装、饰边和贴花完全由你决定。自我表达是一项员工福利。
 
   - id: tut_wink_001
     speaker: tutorial_ai
@@ -2345,6 +2346,86 @@ lines:
     es: "Casco reemplazado. Costo descontado. Tú no tienes precio, lo digo en serio. Dentro de lo razonable."
     zh: "船体已更换。费用已扣除。你是无价的，我是认真的。在合理范围内。"
 
+  - id: var_lockout_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Deadpan alarm, an instant retraction, then calm instruction."
+    en: "Command lockout. Not really. Just let the trigger rest for this step."
+    es: "Comando bloqueado. Es broma. En este paso, deja descansar el gatillo."
+    zh: "指令已锁定。开玩笑的。这一步，先松开扳机，让它歇一歇。"
+
+  - id: var_lockout_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Unhurried, encouraging, like a flight instructor."
+    en: "That shot can wait. Release fire and watch the charge build."
+    es: "Ese disparo puede esperar. Suelta el gatillo y mira cómo sube la carga."
+    zh: "这一枪可以等等。松开开火键，看看能量慢慢蓄满。"
+
+  - id: var_lockout_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Gentle office humor, pleased with the metaphor."
+    en: "A brief ceasefire. The gun does its homework while you rest."
+    es: "Un pequeño alto al fuego. El arma hace su tarea mientras descansas."
+    zh: "先停火一小会儿。你休息的时候，武器会自己做功课。"
+
+  - id: var_lockout_004
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Fond, a little amused by the enthusiasm."
+    en: "The trigger has received your enthusiasm. Now give it a moment to recharge."
+    es: "El gatillo ya recibió tu entusiasmo. Ahora dale un momento para recargarse."
+    zh: "扳机已经感受到你的热情了。现在给它一点时间充能吧。"
+
+  - id: var_otherleft_001
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Patient, a small smile in the voice, then a clear re-ask."
+    en: "No, your other left. Let's try that direction again."
+    es: "No, la otra izquierda. Probemos otra vez en esa dirección."
+    zh: "不对，是另一边的左。我们再试一次。"
+
+  - id: var_otherleft_002
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Gracious, never scolding: compliments, then redirects."
+    en: "A fine direction. For this step, try the opposite one."
+    es: "Buena dirección. Para este paso, prueba hacia el otro lado."
+    zh: "这个方向也不错。不过这一步，请试试反方向。"
+
+  - id: var_otherleft_003
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Light rhetorical question, then plainly helpful."
+    en: "Mirrored controls? Not today. Try the other side."
+    es: "¿Controles invertidos? Hoy no. Prueba hacia el otro lado."
+    zh: "方向反过来了？今天没有哦。试试另一边。"
+
+  - id: var_otherleft_004
+    speaker: tutorial_ai
+    scene: banks
+    route: any
+    optional: true
+    direction: "Mock-diplomatic aside, warm and unhurried."
+    en: "Navigation has two sides to every story. We need the other side here."
+    es: "La navegación tiene dos lados. Aquí necesitamos el otro."
+    zh: "导航也要听听两边的意见。这次，请往另一边。"
+
   - id: var_kill_001
     speaker: tutorial_ai
     scene: banks
@@ -2447,7 +2528,7 @@ lines:
 
   - id: var_graze_003
     speaker: tutorial_ai
-    seed: {en: 211}
+    seed: {en: 211, zh: 311}
     scene: banks
     route: any
     optional: true
@@ -2538,6 +2619,7 @@ lines:
 
   - id: var_pause_002
     speaker: tutorial_ai
+    seed: {es: 111}
     scene: banks
     route: any
     optional: true
@@ -2604,7 +2686,7 @@ lines:
     direction: "Indignant, protective of the rings."
     en: "Stop shooting my RINGS! They are load-bearing! Emotionally!"
     es: "¡Deja de dispararle a mis ANILLOS! ¡Sostienen todo! ¡Emocionalmente!"
-    zh: "别打我的光环！它们是承重的！情感上承重的！"
+    zh: "别打我的光环！那是承重结构！情感上的承重结构！"
 
   - id: var_warden2_001
     speaker: warden
@@ -2678,6 +2760,7 @@ lines:
 
   - id: var_wardenpac_002
     speaker: warden
+    seed: {zh: 133}
     scene: banks
     route: pacifist
     optional: true

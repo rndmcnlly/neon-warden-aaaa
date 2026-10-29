@@ -1,0 +1,180 @@
+{
+  "hash": "16b03c7c2e9ed06d",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_wardenpac_003",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Si esto es un truco, es un truco muy GROSERO! ¡Y si no, es lo más bonito en cien años!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Shouted, then the second half almost tender.",
+  "duration": 5.68,
+  "sample_rate": 24000,
+  "peak": 0.821,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.31,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 1.11,
+    "limited_db": 2.92,
+    "measured_before_lufs": -19.32,
+    "peak_bound": false
+  },
+  "asr": "Si esto es un truco es un truco muy grosero y si no es lo más bonito en cien años.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Si",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "esto",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "es",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "un",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "truco",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "es",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "un",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "truco",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "muy",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.0,
+      "endS": 2.4
+    },
+    {
+      "text": "GROSERO",
+      "charStart": 38,
+      "charEnd": 45,
+      "startS": 2.4,
+      "endS": 3.2
+    },
+    {
+      "text": "Y",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "si",
+      "charStart": 50,
+      "charEnd": 52,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "no",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "es",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "lo",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "más",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "bonito",
+      "charStart": 67,
+      "charEnd": 73,
+      "startS": 4.4,
+      "endS": 4.8
+    },
+    {
+      "text": "en",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "cien",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 4.88,
+      "endS": 5.12
+    },
+    {
+      "text": "años",
+      "charStart": 82,
+      "charEnd": 86,
+      "startS": 5.12,
+      "endS": 5.6
+    }
+  ],
+  "words_for": "16b03c7c2e9ed06d/wordtiming-v1"
+}

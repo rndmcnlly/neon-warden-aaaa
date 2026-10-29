@@ -1,0 +1,250 @@
+{
+  "hash": "0255c220c9f1140e",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_warden2_003",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "你每打碎一个光环，今晚就有一艘货船要摸黑飞！入职培训里讲过这个吗？！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Furious, the facts landing harder than the volume.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.692,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.11,
+    "gain_db": 0.96,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.96,
+    "peak_bound": false
+  },
+  "asr": "你没打碎一个光环，今晚就有一艘货船要抹黑费。入职培训里讲过这个吗？",
+  "asr_similarity": 0.9,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "每",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "打",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "碎",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "一",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "个",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "光",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "环",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "今",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "晚",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "就",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "有",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "一",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "艘",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "货",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "船",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "要",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "摸",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "黑",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "飞",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.6,
+      "endS": 4.08
+    },
+    {
+      "text": "入",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "职",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "培",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "训",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "里",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "讲",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "过",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "这",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "个",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.52,
+      "endS": 5.6
+    },
+    {
+      "text": "吗",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.6,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "0255c220c9f1140e/wordtiming-v1"
+}

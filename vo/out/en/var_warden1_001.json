@@ -1,0 +1,145 @@
+{
+  "hash": "7dcc67f386d0c3c9",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden1_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Do you know what a scout costs?! Nothing! I GROW them! That makes it WORSE!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shrill, outraged, then cracking on the last word.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.756,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.42,
+    "gain_db": 1.93,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.93,
+    "peak_bound": false
+  },
+  "asr": "Do you know what a scout costs? Nothing. I grow them. That makes it worse.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Do",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "you",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "know",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "what",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "a",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "scout",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "costs",
+      "charStart": 25,
+      "charEnd": 30,
+      "startS": 1.2,
+      "endS": 1.84
+    },
+    {
+      "text": "Nothing",
+      "charStart": 33,
+      "charEnd": 40,
+      "startS": 2.0,
+      "endS": 2.64
+    },
+    {
+      "text": "I",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "GROW",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "them",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "That",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "makes",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "it",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "WORSE",
+      "charStart": 69,
+      "charEnd": 74,
+      "startS": 4.64,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "7dcc67f386d0c3c9/wordtiming-v1"
+}

@@ -1,0 +1,124 @@
+{
+  "hash": "f0b1d92b677ab767",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_lockout_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Un pequeño alto al fuego. El arma hace su tarea mientras descansas.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Gentle office humor, pleased with the metaphor.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.866,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 3.67,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.7,
+    "peak_bound": false
+  },
+  "asr": "Un pequeño alto al fuego. El arma hace su tarea mientras descansas.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Un",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "pequeño",
+      "charStart": 3,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "alto",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "al",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "fuego",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "El",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "arma",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.16,
+      "endS": 2.48
+    },
+    {
+      "text": "hace",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "su",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "tarea",
+      "charStart": 42,
+      "charEnd": 47,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "mientras",
+      "charStart": 48,
+      "charEnd": 56,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "descansas",
+      "charStart": 57,
+      "charEnd": 66,
+      "startS": 3.52,
+      "endS": 4.24
+    }
+  ],
+  "words_for": "f0b1d92b677ab767/wordtiming-v1"
+}

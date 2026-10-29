@@ -1,0 +1,117 @@
+{
+  "hash": "b111cffd9bf71876",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_lockout_003",
+    "seed": 11,
+    "language": "English",
+    "text": "A brief ceasefire. The gun does its homework while you rest.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Gentle office humor, pleased with the metaphor.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.653,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.69,
+    "gain_db": 1.83,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.83,
+    "peak_bound": false
+  },
+  "asr": "A brief ceasefire. The gun does its homework while you rest.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "A",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "brief",
+      "charStart": 2,
+      "charEnd": 7,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "ceasefire",
+      "charStart": 8,
+      "charEnd": 17,
+      "startS": 1.04,
+      "endS": 1.84
+    },
+    {
+      "text": "The",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "gun",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "does",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "its",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "homework",
+      "charStart": 36,
+      "charEnd": 44,
+      "startS": 3.28,
+      "endS": 3.76
+    },
+    {
+      "text": "while",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "you",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "rest",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 4.0,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "b111cffd9bf71876/wordtiming-v1"
+}

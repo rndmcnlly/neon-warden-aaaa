@@ -1,0 +1,166 @@
+{
+  "hash": "52c187aa248811e3",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_warden_001",
+    "seed": 33,
+    "language": "English",
+    "text": "You're missing me! On PURPOSE?! Or by ACCIDENT?! I can't tell and it's driving me UP THE WALL!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shrieking, genuinely unable to tell.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.766,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.27,
+    "gain_db": -0.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -17.93,
+    "peak_bound": false
+  },
+  "asr": "You're missing me on purpose, or by accident. I can't tell, and it's driving me up the wall.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "You're",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "missing",
+      "charStart": 7,
+      "charEnd": 14,
+      "startS": 0.4,
+      "endS": 0.88
+    },
+    {
+      "text": "me",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "On",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "PURPOSE",
+      "charStart": 22,
+      "charEnd": 29,
+      "startS": 1.2,
+      "endS": 1.76
+    },
+    {
+      "text": "Or",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "by",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "ACCIDENT",
+      "charStart": 38,
+      "charEnd": 46,
+      "startS": 2.24,
+      "endS": 2.88
+    },
+    {
+      "text": "I",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "can't",
+      "charStart": 51,
+      "charEnd": 56,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "tell",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 3.6,
+      "endS": 4.0
+    },
+    {
+      "text": "and",
+      "charStart": 62,
+      "charEnd": 65,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "it's",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "driving",
+      "charStart": 71,
+      "charEnd": 78,
+      "startS": 4.48,
+      "endS": 4.88
+    },
+    {
+      "text": "me",
+      "charStart": 79,
+      "charEnd": 81,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "UP",
+      "charStart": 82,
+      "charEnd": 84,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "THE",
+      "charStart": 85,
+      "charEnd": 88,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "WALL",
+      "charStart": 89,
+      "charEnd": 93,
+      "startS": 5.28,
+      "endS": 5.92
+    }
+  ],
+  "words_for": "52c187aa248811e3/wordtiming-v1"
+}

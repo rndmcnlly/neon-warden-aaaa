@@ -1,0 +1,96 @@
+{
+  "hash": "e9b32a3c61711f12",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_otherleft_003",
+    "seed": 11,
+    "language": "English",
+    "text": "Mirrored controls? Not today. Try the other side.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Light rhetorical question, then plainly helpful.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 3.82,
+    "limited_db": 0.35,
+    "measured_before_lufs": -21.82,
+    "peak_bound": false
+  },
+  "asr": "Mirrored controls, not today. Try the other side.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Mirrored",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.88,
+      "endS": 1.28
+    },
+    {
+      "text": "controls",
+      "charStart": 9,
+      "charEnd": 17,
+      "startS": 1.28,
+      "endS": 1.84
+    },
+    {
+      "text": "Not",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "today",
+      "charStart": 23,
+      "charEnd": 28,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "Try",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "the",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "other",
+      "charStart": 38,
+      "charEnd": 43,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "side",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 4.08,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "e9b32a3c61711f12/wordtiming-v1"
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "575d6c27857f64ba",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_warden2_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Exploradores, abiertos! ¡MÁS ABIERTOS! ¡Cuiden a los convoyes, no se le pongan enfrente!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Shouting orders, more worried than angry.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.644,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.72,
+    "gain_db": 2.22,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.22,
+    "peak_bound": false
+  },
+  "asr": "Exploradores abiertos, más abiertos, cuiden a los convoyes, no se le pongan enfrente.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Exploradores",
+      "charStart": 1,
+      "charEnd": 13,
+      "startS": 0.0,
+      "endS": 0.96
+    },
+    {
+      "text": "abiertos",
+      "charStart": 15,
+      "charEnd": 23,
+      "startS": 0.96,
+      "endS": 1.76
+    },
+    {
+      "text": "MÁS",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "ABIERTOS",
+      "charStart": 30,
+      "charEnd": 38,
+      "startS": 2.24,
+      "endS": 3.04
+    },
+    {
+      "text": "Cuiden",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 3.2,
+      "endS": 3.6
+    },
+    {
+      "text": "a",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "los",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "convoyes",
+      "charStart": 54,
+      "charEnd": 62,
+      "startS": 3.84,
+      "endS": 4.4
+    },
+    {
+      "text": "no",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "se",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "le",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "pongan",
+      "charStart": 73,
+      "charEnd": 79,
+      "startS": 4.88,
+      "endS": 5.2
+    },
+    {
+      "text": "enfrente",
+      "charStart": 80,
+      "charEnd": 88,
+      "startS": 5.2,
+      "endS": 5.84
+    }
+  ],
+  "words_for": "575d6c27857f64ba/wordtiming-v1"
+}

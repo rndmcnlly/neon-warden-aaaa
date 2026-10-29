@@ -62,7 +62,7 @@ export const wardenPhase1: Bank = {
       en: "Stop shooting my RINGS! They are load-bearing! Emotionally!",
       es:
         "¡Deja de dispararle a mis ANILLOS! ¡Sostienen todo! ¡Emocionalmente!",
-      zh: "别打我的光环！它们是承重的！情感上承重的！",
+      zh: "别打我的光环！那是承重结构！情感上的承重结构！",
     },
     {
       id: "bank.wardenPhase1.1",

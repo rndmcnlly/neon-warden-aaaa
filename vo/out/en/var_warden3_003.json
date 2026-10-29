@@ -1,0 +1,152 @@
+{
+  "hash": "3e0487d9c28a47ad",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden3_003",
+    "seed": 33,
+    "language": "English",
+    "text": "Free sky! FREE! You might be the last pilot who ever flies it without a toll!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Almost pleading, still loud.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.884,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.06,
+    "gain_db": 1.72,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.72,
+    "peak_bound": false
+  },
+  "asr": "Free sky, free! You might be the last pilot who ever flies it without a toll.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Free",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "sky",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "FREE",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 0.96,
+      "endS": 1.68
+    },
+    {
+      "text": "You",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "might",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "be",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "the",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "last",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "pilot",
+      "charStart": 38,
+      "charEnd": 43,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "who",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "ever",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "flies",
+      "charStart": 53,
+      "charEnd": 58,
+      "startS": 3.6,
+      "endS": 4.08
+    },
+    {
+      "text": "it",
+      "charStart": 59,
+      "charEnd": 61,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "without",
+      "charStart": 62,
+      "charEnd": 69,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "a",
+      "charStart": 70,
+      "charEnd": 71,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "toll",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 4.48,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "3e0487d9c28a47ad/wordtiming-v1"
+}

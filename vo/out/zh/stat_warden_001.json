@@ -1,0 +1,215 @@
+{
+  "hash": "5bba126f2388d582",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_warden_001",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "你老打不中我！是故意的？！还是不小心？！我分不清，快把我逼疯了！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shrieking, genuinely unable to tell.",
+  "duration": 6.16,
+  "sample_rate": 24000,
+  "peak": 0.731,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.71,
+    "gain_db": 1.62,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.62,
+    "peak_bound": false
+  },
+  "asr": "你老打不中我，是故意的还是不小心？我分不清，快把我逼疯了！",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "老",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "打",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "不",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "中",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 1.28
+    },
+    {
+      "text": "我",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "是",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "故",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "意",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "的",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "还",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "是",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "不",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "小",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "心",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "我",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "分",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "不",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "清",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "快",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "把",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "我",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "逼",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "疯",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.44,
+      "endS": 5.68
+    },
+    {
+      "text": "了",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.68,
+      "endS": 6.08
+    }
+  ],
+  "words_for": "5bba126f2388d582/wordtiming-v1"
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "19ec0087982a3856",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_lockout_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Ese disparo puede esperar. Suelta el gatillo y mira cómo sube la carga.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Unhurried, encouraging, like a flight instructor.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.47,
+    "gain_db": 3.82,
+    "limited_db": 0.12,
+    "measured_before_lufs": -21.82,
+    "peak_bound": false
+  },
+  "asr": "Ese disparo puede esperar, suelta el gatillo y mira cómo sube la carga.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ese",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "disparo",
+      "charStart": 4,
+      "charEnd": 11,
+      "startS": 0.32,
+      "endS": 0.8
+    },
+    {
+      "text": "puede",
+      "charStart": 12,
+      "charEnd": 17,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "esperar",
+      "charStart": 18,
+      "charEnd": 25,
+      "startS": 1.12,
+      "endS": 1.68
+    },
+    {
+      "text": "Suelta",
+      "charStart": 27,
+      "charEnd": 33,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "el",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "gatillo",
+      "charStart": 37,
+      "charEnd": 44,
+      "startS": 2.64,
+      "endS": 3.2
+    },
+    {
+      "text": "y",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "mira",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "cómo",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "sube",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "la",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "carga",
+      "charStart": 65,
+      "charEnd": 70,
+      "startS": 4.08,
+      "endS": 4.48
+    }
+  ],
+  "words_for": "19ec0087982a3856/wordtiming-v1"
+}

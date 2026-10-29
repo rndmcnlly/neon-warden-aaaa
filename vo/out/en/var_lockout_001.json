@@ -1,0 +1,124 @@
+{
+  "hash": "06dfa021f8ee7212",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_lockout_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Command lockout. Not really. Just let the trigger rest for this step.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Deadpan alarm, an instant retraction, then calm instruction.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.855,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.33,
+    "gain_db": 2.61,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.61,
+    "peak_bound": false
+  },
+  "asr": "Command lockout. Not really, just let the trigger rest for this step.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Command",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "lockout",
+      "charStart": 8,
+      "charEnd": 15,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "Not",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "really",
+      "charStart": 21,
+      "charEnd": 27,
+      "startS": 2.4,
+      "endS": 2.8
+    },
+    {
+      "text": "Just",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "let",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "the",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "trigger",
+      "charStart": 42,
+      "charEnd": 49,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "rest",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "for",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "this",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "step",
+      "charStart": 64,
+      "charEnd": 68,
+      "startS": 4.64,
+      "endS": 4.96
+    }
+  ],
+  "words_for": "06dfa021f8ee7212/wordtiming-v1"
+}

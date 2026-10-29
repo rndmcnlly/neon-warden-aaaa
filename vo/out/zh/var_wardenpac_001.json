@@ -1,0 +1,180 @@
+{
+  "hash": "2929cf7cd8a30561",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_wardenpac_001",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "你怎么不开枪？！人人都开枪！我准备了一整篇演讲！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Indignant confusion, a performer robbed of a cue.",
+  "duration": 4.96,
+  "sample_rate": 24000,
+  "peak": 0.701,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.08,
+    "gain_db": 2.02,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.02,
+    "peak_bound": false
+  },
+  "asr": "你怎么不开枪？人人都开枪！我准备了一整篇演讲。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "怎",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "么",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "不",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "开",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "枪",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "人",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "人",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "都",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "开",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "枪",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.4,
+      "endS": 2.8
+    },
+    {
+      "text": "我",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "准",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "备",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "了",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "一",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "整",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "篇",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "演",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "讲",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.56,
+      "endS": 4.88
+    }
+  ],
+  "words_for": "2929cf7cd8a30561/wordtiming-v1"
+}

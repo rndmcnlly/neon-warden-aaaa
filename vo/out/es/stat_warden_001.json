@@ -1,0 +1,152 @@
+{
+  "hash": "5613faeab8490e35",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_warden_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Me estás fallando! ¿¡A PROPÓSITO!? ¿¡O SIN QUERER!? ¡No lo sé y me está VOLVIENDO LOCO!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Shrieking, genuinely unable to tell.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.744,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.32,
+    "gain_db": 1.23,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.23,
+    "peak_bound": false
+  },
+  "asr": "Me estás fallando a propósito o sin querer no lo sé me está volviendo loco.",
+  "asr_similarity": 0.968,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Me",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "estás",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "fallando",
+      "charStart": 10,
+      "charEnd": 18,
+      "startS": 0.48,
+      "endS": 1.12
+    },
+    {
+      "text": "A",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 1.12,
+      "endS": 1.52
+    },
+    {
+      "text": "PROPÓSITO",
+      "charStart": 24,
+      "charEnd": 33,
+      "startS": 1.52,
+      "endS": 2.72
+    },
+    {
+      "text": "O",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "SIN",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "QUERER",
+      "charStart": 44,
+      "charEnd": 50,
+      "startS": 3.04,
+      "endS": 3.76
+    },
+    {
+      "text": "No",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "lo",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "sé",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "y",
+      "charStart": 63,
+      "charEnd": 64,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "me",
+      "charStart": 65,
+      "charEnd": 67,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "está",
+      "charStart": 68,
+      "charEnd": 72,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "VOLVIENDO",
+      "charStart": 73,
+      "charEnd": 82,
+      "startS": 4.72,
+      "endS": 5.28
+    },
+    {
+      "text": "LOCO",
+      "charStart": 83,
+      "charEnd": 87,
+      "startS": 5.28,
+      "endS": 5.92
+    }
+  ],
+  "words_for": "5613faeab8490e35/wordtiming-v1"
+}

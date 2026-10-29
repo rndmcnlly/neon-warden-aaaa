@@ -1,0 +1,180 @@
+{
+  "hash": "7dc63943f9da37ae",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_warden1_002",
+    "seed": 33,
+    "language": "English",
+    "text": "Zero one two two! I learn every pilot's number! I have learned one hundred twenty-two! STOP ADDING TO THE LIST!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Furious roll call, running out of breath.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.78,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.08,
+    "gain_db": 1.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.07,
+    "peak_bound": false
+  },
+  "asr": "Zero one two two. I learned every pilot's number. I have learned one hundred twenty two. Stop adding to the list.",
+  "asr_similarity": 0.878,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Zero",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "one",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.88
+    },
+    {
+      "text": "two",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 0.88,
+      "endS": 1.2
+    },
+    {
+      "text": "two",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "I",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "learn",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "every",
+      "charStart": 26,
+      "charEnd": 31,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "pilot's",
+      "charStart": 32,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 3.04
+    },
+    {
+      "text": "number",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "I",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "have",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "learned",
+      "charStart": 55,
+      "charEnd": 62,
+      "startS": 3.92,
+      "endS": 4.24
+    },
+    {
+      "text": "one",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "hundred",
+      "charStart": 67,
+      "charEnd": 74,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "twenty-two",
+      "charStart": 75,
+      "charEnd": 85,
+      "startS": 4.72,
+      "endS": 5.44
+    },
+    {
+      "text": "STOP",
+      "charStart": 87,
+      "charEnd": 91,
+      "startS": 5.52,
+      "endS": 5.92
+    },
+    {
+      "text": "ADDING",
+      "charStart": 92,
+      "charEnd": 98,
+      "startS": 5.92,
+      "endS": 6.32
+    },
+    {
+      "text": "TO",
+      "charStart": 99,
+      "charEnd": 101,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "THE",
+      "charStart": 102,
+      "charEnd": 105,
+      "startS": 6.48,
+      "endS": 6.56
+    },
+    {
+      "text": "LIST",
+      "charStart": 106,
+      "charEnd": 110,
+      "startS": 6.56,
+      "endS": 7.12
+    }
+  ],
+  "words_for": "7dc63943f9da37ae/wordtiming-v1"
+}

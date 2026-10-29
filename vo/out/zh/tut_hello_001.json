@@ -1,36 +1,36 @@
 {
-  "hash": "333d816fac3d5ae5",
+  "hash": "aae30876abe95d14",
   "mode": "clone",
   "request": {
     "id": "zh__tut_hello_001",
-    "seed": 11,
+    "seed": 111,
     "language": "Chinese",
     "text": "你好，欢迎参加航道管理局入职培训！我是你的入职助手，每一步我都会陪着你。真的是每一步哦。",
     "voice_ref": "vo/voices/tutorial_ai.zh.wav",
     "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Beaming welcome, as if greeting the first customer of the day.",
-  "duration": 9.28,
+  "duration": 8.24,
   "sample_rate": 24000,
-  "peak": 0.698,
+  "peak": 0.808,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -3.03,
-    "gain_db": 1.97,
+    "true_peak_dbtp": -1.72,
+    "gain_db": 1.8,
     "limited_db": 0.0,
-    "measured_before_lufs": -19.97,
+    "measured_before_lufs": -19.8,
     "peak_bound": false
   },
-  "asr": "你好，欢迎参加航道管理局入职培训。我是你的入职助手，每一步我都会陪着你。真的是每一步哦。",
-  "asr_similarity": 1.0,
+  "asr": "你好，欢迎参加航道管理局入职培训。我是你的入职助手，每一步我都会陪着你。真的是每一步。",
+  "asr_similarity": 0.987,
   "align": {
-    "ok": false,
+    "ok": true,
     "monotonic": true,
-    "within": false,
+    "within": true,
     "coverage": 1.0,
     "mapped": 1.0
   },
@@ -39,275 +39,275 @@
       "text": "你",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.96,
-      "endS": 1.04
+      "startS": 0.4,
+      "endS": 0.48
     },
     {
       "text": "好",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 1.04,
-      "endS": 1.36
+      "startS": 0.48,
+      "endS": 0.8
     },
     {
       "text": "欢",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 2.16,
-      "endS": 2.4
+      "startS": 1.2,
+      "endS": 1.36
     },
     {
       "text": "迎",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 1.36,
+      "endS": 1.52
     },
     {
       "text": "参",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 2.48,
-      "endS": 2.64
+      "startS": 1.52,
+      "endS": 1.68
     },
     {
       "text": "加",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 2.64,
-      "endS": 2.8
+      "startS": 1.68,
+      "endS": 1.84
     },
     {
       "text": "航",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.8,
-      "endS": 3.04
+      "startS": 1.84,
+      "endS": 2.0
     },
     {
       "text": "道",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 3.04,
-      "endS": 3.12
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "管",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 3.12,
-      "endS": 3.28
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "理",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 3.28,
-      "endS": 3.36
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "局",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 2.48,
+      "endS": 2.64
     },
     {
       "text": "入",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 2.64,
+      "endS": 2.8
     },
     {
       "text": "职",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.68,
-      "endS": 3.76
+      "startS": 2.8,
+      "endS": 2.96
     },
     {
       "text": "培",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 2.96,
+      "endS": 3.12
     },
     {
       "text": "训",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.92,
-      "endS": 4.24
+      "startS": 3.12,
+      "endS": 3.44
     },
     {
       "text": "我",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.96,
-      "endS": 5.04
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "是",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 5.04,
-      "endS": 5.12
+      "startS": 4.08,
+      "endS": 4.16
     },
     {
       "text": "你",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 5.12,
-      "endS": 5.2
+      "startS": 4.16,
+      "endS": 4.24
     },
     {
       "text": "的",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 5.2,
-      "endS": 5.28
+      "startS": 4.24,
+      "endS": 4.32
     },
     {
       "text": "入",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 4.32,
+      "endS": 4.48
     },
     {
       "text": "职",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 4.48,
+      "endS": 4.56
     },
     {
       "text": "助",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.6,
-      "endS": 5.68
+      "startS": 4.56,
+      "endS": 4.72
     },
     {
       "text": "手",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.68,
-      "endS": 6.08
+      "startS": 4.72,
+      "endS": 5.12
     },
     {
       "text": "每",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 5.36,
+      "endS": 5.52
     },
     {
       "text": "一",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.56,
-      "endS": 6.64
+      "startS": 5.52,
+      "endS": 5.68
     },
     {
       "text": "步",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 6.64,
-      "endS": 6.96
+      "startS": 5.68,
+      "endS": 6.08
     },
     {
       "text": "我",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 7.04,
-      "endS": 7.12
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "都",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 7.12,
-      "endS": 7.2
+      "startS": 6.24,
+      "endS": 6.32
     },
     {
       "text": "会",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 7.2,
-      "endS": 7.28
+      "startS": 6.32,
+      "endS": 6.4
     },
     {
       "text": "陪",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.28,
-      "endS": 7.52
+      "startS": 6.4,
+      "endS": 6.56
     },
     {
       "text": "着",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 7.52,
-      "endS": 7.6
+      "startS": 6.56,
+      "endS": 6.72
     },
     {
       "text": "你",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 7.6,
-      "endS": 7.84
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "真",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 8.32,
-      "endS": 8.48
+      "startS": 7.28,
+      "endS": 7.44
     },
     {
       "text": "的",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 8.48,
-      "endS": 8.56
+      "startS": 7.44,
+      "endS": 7.52
     },
     {
       "text": "是",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.56,
-      "endS": 8.64
+      "startS": 7.52,
+      "endS": 7.6
     },
     {
       "text": "每",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 8.64,
-      "endS": 8.8
+      "startS": 7.6,
+      "endS": 7.76
     },
     {
       "text": "一",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.8,
-      "endS": 8.88
+      "startS": 7.76,
+      "endS": 7.84
     },
     {
       "text": "步",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 8.88,
-      "endS": 9.28
+      "startS": 7.84,
+      "endS": 8.16
     },
     {
       "text": "哦",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 9.28,
-      "endS": 9.36
+      "startS": 8.16,
+      "endS": 8.24
     }
   ],
-  "words_for": "333d816fac3d5ae5/wordtiming-v1"
+  "words_for": "aae30876abe95d14/wordtiming-v1"
 }

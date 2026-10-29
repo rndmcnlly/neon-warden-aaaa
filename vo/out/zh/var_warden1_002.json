@@ -1,0 +1,299 @@
+{
+  "hash": "c22c18c792f8979a",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_warden1_002",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "零一二二号！每个飞行员的编号我都记得！我已经记了一百二十二个了！别再往名单上加了！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Furious roll call, running out of breath.",
+  "duration": 6.88,
+  "sample_rate": 24000,
+  "peak": 0.605,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.27,
+    "gain_db": 0.65,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.65,
+    "peak_bound": false
+  },
+  "asr": "零一二二号，每个飞行员的编号我都记得，我已经记了一百二十二个了，别再往名单上加了。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "零",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "一",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "二",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.88
+    },
+    {
+      "text": "二",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "号",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "每",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "个",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "飞",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "行",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "员",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "的",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "编",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "号",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "我",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "都",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "记",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "得",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "我",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "已",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "经",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "记",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "了",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "一",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "百",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "二",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "十",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "二",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "个",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "了",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "别",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 5.6,
+      "endS": 5.84
+    },
+    {
+      "text": "再",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "往",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "名",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "单",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "上",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "加",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "了",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 6.72,
+      "endS": 6.8
+    }
+  ],
+  "words_for": "c22c18c792f8979a/wordtiming-v1"
+}

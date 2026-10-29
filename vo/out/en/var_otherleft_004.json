@@ -1,0 +1,131 @@
+{
+  "hash": "973801b8af8fe59b",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_otherleft_004",
+    "seed": 11,
+    "language": "English",
+    "text": "Navigation has two sides to every story. We need the other side here.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Mock-diplomatic aside, warm and unhurried.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 1.43,
+    "limited_db": 0.07,
+    "measured_before_lufs": -19.43,
+    "peak_bound": false
+  },
+  "asr": "Navigation has two sides to every story. We need the other side here.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Navigation",
+      "charStart": 0,
+      "charEnd": 10,
+      "startS": 0.64,
+      "endS": 1.28
+    },
+    {
+      "text": "has",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "two",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "sides",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "to",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "every",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "story",
+      "charStart": 34,
+      "charEnd": 39,
+      "startS": 2.4,
+      "endS": 2.96
+    },
+    {
+      "text": "We",
+      "charStart": 41,
+      "charEnd": 43,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "need",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "the",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "other",
+      "charStart": 53,
+      "charEnd": 58,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "side",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "here",
+      "charStart": 64,
+      "charEnd": 68,
+      "startS": 4.32,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "973801b8af8fe59b/wordtiming-v1"
+}
