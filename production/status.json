@@ -243,6 +243,14 @@
       "revision": "d3348f5 / af7ba3f / 64708d2",
       "detail": "Back chip on every menu, right-click, history bridge (Android/browser/iOS Back go Back in menus, Pause in runs), trackpad swipe pauses. Touch: Thumbs/One finger/Arcade, sim-side Writ aim assist, portrait deck and landscape side decks, safe areas, dvh. iOS audio resume on touchend/click. School tier plus auto-detect. Playwright WebKit decodes Ogg Opus, so no AAC fallback. QA: qa/reports/mobile-touch-2026-10-29T17-38-02.018Z/result.json (126/127; harness fix re-run 3/3 in ...T17-47-19.807Z); deno task ci 295 pass. Unverified on real devices: iOS Opus, swipe-back, Android gesture Back, real multi-touch, school Chromebook frame times. Note: research/2026-10-29-mobile-touch-qa/README.md",
       "updated": "2026-10-29"
+    },
+    {
+      "title": "Auto fullscreen on mobile",
+      "owner": "Auto-fullscreen agent",
+      "status": "done",
+      "revision": "c29d06d",
+      "detail": "First menu tap on touch-primary devices (Chromebook only in tablet mode) requests fullscreen plus a silent portrait lock; never on in-run taps, never in installed PWA, stops after an explicit exit via our toggle; system exit re-arms. iPhone: localized Add to Home Screen hint once. Display setting 'Auto fullscreen on mobile' (default on). Keyboard Lock declined (would make Esc a hold). QA: qa/reports/auto-fullscreen-2026-10-29T18-20-20.449Z/result.json 31/31. CI: lint, check, 300 tests, build pass; fmt:check fails only on trailer/capture.ts (trailer agent's uncommitted work). Unverified on a real Pixel. Note: research/2026-10-29-mobile-touch-qa/README.md addendum",
+      "updated": "2026-10-29"
     }
   ],
   "blockers": [
