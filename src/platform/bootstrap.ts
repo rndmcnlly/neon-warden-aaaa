@@ -1,14 +1,16 @@
 import { createSettingsStore } from "../settings/store.ts";
-import { installFullscreenShortcut, setFullscreen } from "./fullscreen.ts";
+import { installFullscreenShortcut } from "./fullscreen.ts";
+import { UI_STRINGS } from "../i18n/ui.ts";
 import "./platform.css";
 
 const settings = createSettingsStore();
 installFullscreenShortcut();
-const panel = document.createElement("details");
+const panel = document.createElement("dialog");
 panel.id = "platform-tools";
-panel.innerHTML = `<summary>Install / offline / screen</summary>
-<button type="button" id="platform-fullscreen">Fullscreen (F)</button>
-<button type="button" id="platform-install">Install game</button>
+panel.dataset.platformModal = "";
+panel.setAttribute("aria-labelledby", "platform-title");
+panel.innerHTML = `<h2 id="platform-title"></h2>
+ <button type="button" id="platform-install">Installation instructions</button>
 <label>Offline voice pack <select id="platform-lang"><option value="en">English</option><option value="es">Español</option><option value="zh">中文</option></select></label>
 <button type="button" id="platform-download">Download playable slice + voice pack</button>
 <progress id="platform-progress" max="1" value="0" aria-label="Offline download progress"></progress>
@@ -17,6 +19,27 @@ panel.innerHTML = `<summary>Install / offline / screen</summary>
 <button type="button" id="platform-clean">Remove obsolete downloads (close other game tabs first)</button>
 <button type="button" id="platform-close">Back / close</button>`;
 document.body.append(panel);
+// A native modal removes hidden controls from hit testing and makes the page
+// beneath inert. Installation/readiness changes never call showModal().
+function modal(dialog: HTMLDialogElement, first: () => HTMLElement) {
+  let opener: HTMLElement | null = null;
+  dialog.addEventListener("close", () => {
+    if (opener?.isConnected) opener.focus({ preventScroll: true });
+  });
+  dialog.addEventListener("keydown", (event) => {
+    // Keep global game/menu bindings out of native dialog navigation. Default
+    // Tab, Enter, select and Escape behavior still belongs to the browser.
+    event.stopPropagation();
+  });
+  return () => {
+    if (dialog.open) return;
+    opener = document.activeElement instanceof HTMLElement
+      ? document.activeElement
+      : null;
+    dialog.showModal();
+    first().focus();
+  };
+}
 const find = <T extends HTMLElement>(id: string) =>
   panel.querySelector<T>(`#platform-${id}`)!;
 const status = find<HTMLParagraphElement>("status");
@@ -24,45 +47,44 @@ const say = (text: string) => {
   status.textContent = text;
 };
 const lang = find<HTMLSelectElement>("lang");
+const openOffline = modal(panel, () => find("install"));
+globalThis.addEventListener("platform-offline-open", () => {
+  find("title").textContent =
+    UI_STRINGS["ui.settings.offline"][settings.get().textLang];
+  find("close").textContent =
+    UI_STRINGS["ui.common.back"][settings.get().textLang];
+  openOffline();
+});
 lang.value = settings.get().voiceLang;
 settings.subscribe((s) => {
   lang.value = s.voiceLang;
-  find<HTMLButtonElement>("fullscreen").setAttribute(
-    "aria-pressed",
-    String(s.display.fullscreen),
-  );
 });
 find("close").onclick = () => {
-  panel.open = false;
+  panel.close();
 };
-find("fullscreen").onclick = () => {
-  void setFullscreen(!document.fullscreenElement);
-};
+const notice = document.createElement("dialog");
+notice.id = "platform-notice";
+notice.dataset.platformModal = "";
+notice.setAttribute("aria-labelledby", "platform-notice-text");
+notice.innerHTML =
+  `<p id="platform-notice-text" role="status"></p><button type="button"></button>`;
+document.body.append(notice);
+const noticeClose = notice.querySelector("button")!;
+noticeClose.onclick = () => notice.close();
+const openNotice = modal(notice, () => noticeClose);
 globalThis.addEventListener("platform-notice", (event) => {
-  panel.open = true;
-  say((event as CustomEvent<string>).detail);
+  notice.querySelector("p")!.textContent =
+    (event as CustomEvent<string>).detail;
+  noticeClose.textContent =
+    UI_STRINGS["ui.common.close"][settings.get().textLang];
+  openNotice();
 });
 
-interface InstallEvent extends Event {
-  prompt(): Promise<void>;
-  userChoice: Promise<{ outcome: string }>;
-}
-let installPrompt: InstallEvent | null = null;
-globalThis.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  installPrompt = event as InstallEvent;
-});
-find("install").onclick = async () => {
-  if (installPrompt) {
-    await installPrompt.prompt();
-    const choice = await installPrompt.userChoice;
-    say(
-      `Installation ${choice.outcome}. Offline resources must still be downloaded separately.`,
-    );
-    installPrompt = null;
-  } else {say(
-      "Use your browser's Install app menu. On iPhone/iPad: Safari → Share → Add to Home Screen. Installation does not download offline resources.",
-    );}
+// Do not intercept beforeinstallprompt: leave the native browser affordance intact.
+find("install").onclick = () => {
+  say(
+    "Use your browser's Install app menu. On iPhone/iPad: Safari → Share → Add to Home Screen. Installation does not download offline resources.",
+  );
 };
 
 type Reply = {

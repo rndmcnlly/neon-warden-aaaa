@@ -21,6 +21,11 @@
 import type { LocalizedText } from "./types.ts";
 
 export const UI_STRINGS = {
+  "ui.settings.offline": {
+    en: "Offline downloads",
+    es: "Descargas sin conexión",
+    zh: "离线下载",
+  },
   // -- common controls
   "ui.common.back": { en: "Back", es: "Volver", zh: "返回" },
   "ui.common.select": { en: "Select", es: "Seleccionar", zh: "选择" },

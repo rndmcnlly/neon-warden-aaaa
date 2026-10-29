@@ -693,6 +693,13 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
         })),
     });
 
+    const offline = button({
+      key: "offline",
+      label: ctx.t("ui.settings.offline"),
+      onActivate: () =>
+        globalThis.dispatchEvent(new CustomEvent("platform-offline-open")),
+    });
+
     resetAll.addEventListener("focus", () => desc.describe(resetAll));
     const el = panel({
       id: "settings",
@@ -701,7 +708,7 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
       body: [
         h("div", { class: "nw-tabs", role: "tablist" }, ...tabButtons),
         h("div", { class: "nw-settings-body" }, body, aside),
-        h("div", { class: "nw-actions is-end" }, resetAll),
+        h("div", { class: "nw-actions is-end" }, offline, resetAll),
       ],
       prompts: [
         ["confirm", ctx.t("ui.common.select")],
@@ -716,6 +723,15 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
     return {
       el,
       onIntent: (event) => {
+        const platform = document.querySelector<HTMLDialogElement>(
+          "dialog[data-platform-modal][open]",
+        );
+        if (platform) {
+          if (event.intents.has("back") || event.intents.has("pause")) {
+            platform.close();
+          }
+          return true;
+        }
         const delta = event.intents.has("tabPrev")
           ? -1
           : event.intents.has("tabNext")

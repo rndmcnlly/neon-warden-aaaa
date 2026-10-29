@@ -97,6 +97,7 @@ async function run() {
       "--autoplay-policy=no-user-gesture-required",
     ],
     viewport: { width: 960, height: 720 },
+    hasTouch: true,
   };
   async function rpc(page: Page, type: string, lang = "en") {
     return await page.evaluate(async ({ type, lang }) => {
@@ -136,6 +137,18 @@ async function run() {
     });
     await page.goto(base + "?qa=1");
     await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+    ensure(
+      !await page.locator("#platform-tools").isVisible(),
+      "No persistent platform label at boot",
+    );
+    ensure(
+      await page.evaluate(() => {
+        const event = new Event("beforeinstallprompt", { cancelable: true });
+        globalThis.dispatchEvent(event);
+        return !event.defaultPrevented;
+      }),
+      "Native browser installation event is not prevented",
+    );
     await page.keyboard.press("f");
     await page.waitForFunction(() => !!document.fullscreenElement);
     checks.push("F enters browser fullscreen");
@@ -289,9 +302,6 @@ async function run() {
     watchOffline(page);
     await page.goto(base + "?qa=1");
     await page.waitForTimeout(1500);
-    await page.locator("#platform-tools summary").click();
-    await page.screenshot({ path: `${report}/offline.png` });
-    await page.locator("#platform-close").click();
     for (
       let i = 0;
       i < 25 && !await page.locator(".nw-screen-main").count();
@@ -303,6 +313,51 @@ async function run() {
     await page.locator('.nw-screen-main [data-key="settings"]').click();
     await page.locator(".nw-screen-settings").waitFor();
     checks.push("Offline settings menu opens");
+    ensure(
+      !await page.locator("#platform-tools").isVisible(),
+      "No persistent platform label in menus",
+    );
+    const offlineAction = page.locator('[data-key="offline"]');
+    await offlineAction.focus();
+    await page.keyboard.press("Enter");
+    await page.locator("#platform-tools[open]").waitFor();
+    await page.screenshot({ path: `${report}/offline.png` });
+    await page.keyboard.press("Escape");
+    ensure(
+      await offlineAction.evaluate((el) => document.activeElement === el),
+      "Keyboard offline access and Escape restore Settings focus",
+    );
+    ensure(
+      await page.locator(".nw-screen-settings").isVisible(),
+      "Escape closes only offline dialog, not Settings",
+    );
+    await offlineAction.tap();
+    await page.locator("#platform-close").tap();
+    ensure(
+      !await page.locator("#platform-tools").isVisible(),
+      "Touch offline action and Back close without a hidden hit target",
+    );
+    ensure(
+      await offlineAction.evaluate((el) => document.activeElement === el),
+      "Touch Back restores Settings focus",
+    );
+    await page.evaluate(() =>
+      globalThis.dispatchEvent(
+        new CustomEvent("platform-notice", {
+          detail: "Fullscreen unavailable test",
+        }),
+      )
+    );
+    await page.locator("#platform-notice[open]").waitFor();
+    ensure(
+      !await page.locator("#platform-tools").isVisible(),
+      "Fullscreen notice never opens unrelated offline panel",
+    );
+    await page.keyboard.press("Escape");
+    ensure(
+      !await page.locator("#platform-notice").isVisible(),
+      "Contextual fullscreen notice dismisses with Escape",
+    );
     await page.keyboard.press("Escape");
     await page.locator('.nw-screen-main [data-key="newGame"]').click();
     await page.locator('[data-key="start"]').click();
@@ -313,6 +368,10 @@ async function run() {
       }).__nwqa?.sim().phase
     );
     checks.push("Offline menus launch a real run");
+    ensure(
+      !await page.locator("#platform-tools").isVisible(),
+      "No persistent platform label during gameplay",
+    );
     await page.waitForTimeout(3000);
     await page.screenshot({ path: `${report}/offline-run.png` });
     await Deno.writeTextFile(
@@ -401,6 +460,10 @@ async function run() {
           document.documentElement.dataset.updateSentinel === "unchanged"
         ),
       "Pending update never reloads automatically",
+    );
+    ensure(
+      !await page.locator("#platform-tools").isVisible(),
+      "Pending update does not reopen offline controls",
     );
     await page.evaluate(async () => {
       const registration = await navigator.serviceWorker.ready;

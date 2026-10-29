@@ -1,7 +1,6 @@
-#platform-tools {
+#platform-tools,
+#platform-notice {
   position: fixed;
-  top: max(8px, env(safe-area-inset-top));
-  right: max(8px, env(safe-area-inset-right));
   z-index: 10000;
   max-width: min(360px, calc(100vw - 16px));
   max-height: 80dvh;
@@ -13,11 +12,16 @@
   padding: 8px;
   font: 14px/1.5 system-ui, sans-serif;
 }
-#platform-tools summary {
-  cursor: pointer;
-  min-height: 32px;
+#platform-tools:not([open]),
+#platform-notice:not([open]) {
+  display: none;
+}
+#platform-tools::backdrop,
+#platform-notice::backdrop {
+  background: #0009;
 }
 #platform-tools button,
+#platform-notice button,
 #platform-tools select {
   color: #e7f6ff;
   background: #182c40;
