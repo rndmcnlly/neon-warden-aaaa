@@ -11,6 +11,7 @@ import type {
   Lang,
   LineId,
   MusicCueId,
+  RadioChannel,
   SfxRoleId,
   Speaker,
 } from "../contracts/index.ts";
@@ -55,6 +56,13 @@ export interface VoicePort {
   /** Who speaks the line, if known (from `cues.json`). */
   speaker(line: LineId): Speaker | undefined;
 }
+
+/**
+ * Radio text and chatter (a timeline's `radio` cue): shown in the radio box,
+ * apart from subtitles, and voiced where the line has audio. Optional: a
+ * Director without it skips radio cues.
+ */
+export type RadioPort = (line: LineId, channel: RadioChannel) => void;
 
 export interface MusicPort {
   play(cue: MusicCueId, fadeMs: number): void;

@@ -10,7 +10,13 @@
  * Paths are relative to the public root (`vo/en/x.wav`, `sfx/confirm.ogg`).
  */
 
-import type { Lang, LineId, MusicCueId, Speaker } from "../contracts/index.ts";
+import type {
+  Lang,
+  LineId,
+  MusicCueId,
+  Speaker,
+  WordTiming,
+} from "../contracts/index.ts";
 
 // ------------------------------------------------------------------- VO
 
@@ -22,7 +28,12 @@ export interface VoCuesFile {
       readonly scene: string;
       readonly langs: Readonly<
         Partial<
-          Record<Lang, { readonly file: string; readonly duration: number }>
+          Record<Lang, {
+            readonly file: string;
+            readonly duration: number;
+            /** Word-level timing (VO tech fills it; absent on old takes). */
+            readonly words?: readonly WordTiming[];
+          }>
         >
       >;
     }>
@@ -61,6 +72,13 @@ export class VoCatalog {
       }
     }
     return undefined;
+  }
+
+  /** Word timings of the take `resolve` would pick, if it has any. */
+  words(line: LineId, lang: Lang): readonly WordTiming[] | undefined {
+    const entry = this.data.lines[line];
+    const take = entry?.langs[lang] ?? entry?.langs[FALLBACK_VOICE_LANG];
+    return take?.words;
   }
 
   speaker(line: LineId): Speaker | undefined {

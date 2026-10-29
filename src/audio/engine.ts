@@ -55,9 +55,13 @@ import {
 import { MusicPlayer } from "./music.ts";
 import { type BeatGrid, DEFAULT_GRIDS, FALLBACK_GRID } from "./beatGrid.ts";
 import { GameplayAudio } from "./gameplayAudio.ts";
-import type { GameplaySoundId, SoundRole } from "./gameplaySounds.ts";
+import {
+  type GameplaySoundId,
+  isGameplaySound,
+  type SoundRole,
+} from "./gameplaySounds.ts";
 import { SfxPlayer } from "./sfxPlayer.ts";
-import type { Vec2 } from "../contracts/index.ts";
+import type { Vec2, WordTiming } from "../contracts/index.ts";
 
 export type Bus = "master" | "music" | "sfx" | "voice" | "ui";
 
@@ -328,9 +332,46 @@ export class AudioEngine implements VoicePort {
     this.oneShot(role, "sfx");
   }
 
-  /** Menu sounds: plays on the ui bus. Silent if the role has no pick. */
+  /**
+   * Menu sounds on the ui bus: the promoted pick if there is one, else its
+   * synth stand-in (`ui_<role>` in `GAMEPLAY_SOUNDS`), else a hangar role.
+   */
   playUi(role: string): void {
-    this.oneShot(role, "ui");
+    if (this.sfx.has(role)) return this.oneShot(role, "ui");
+    const id = `ui_${role}`;
+    if (isGameplaySound(id)) this.sfxPlayer.play({ role: id });
+    else if (isGameplaySound(role)) this.sfxPlayer.play({ role });
+  }
+
+  /** Word timings for subtitles (see `VoCatalog.words`). */
+  words(line: LineId, lang: Lang): readonly WordTiming[] | undefined {
+    return this.vo.words(line, lang);
+  }
+
+  /**
+   * Radio chatter: a voice line heard over a scout's or Lane Control's
+   * channel, band-limited like a radio and panned to where the speaker is
+   * (`pan`, -1 to 1; 0 for a channel with no position). It does not duck
+   * music. Returns false if the audio is not ready (it is then requested).
+   */
+  playRadio(line: LineId, lang: Lang, pan: number): boolean {
+    const v = this.vo.resolve(line, lang);
+    const buffer = v && this.loader.get(this.url(v.url));
+    if (!buffer) return false;
+    const ctx = this.ctx;
+    const source = ctx.createBufferSource();
+    source.buffer = buffer;
+    const hp = ctx.createBiquadFilter();
+    hp.type = "highpass";
+    hp.frequency.value = 450;
+    const lp = ctx.createBiquadFilter();
+    lp.type = "lowpass";
+    lp.frequency.value = 3600;
+    const panner = ctx.createStereoPanner();
+    panner.pan.value = this.store.get().audio.mono ? 0 : pan;
+    source.connect(hp).connect(lp).connect(panner).connect(this.buses.voice);
+    source.start();
+    return true;
   }
 
   private oneShot(role: string, bus: "sfx" | "ui"): void {

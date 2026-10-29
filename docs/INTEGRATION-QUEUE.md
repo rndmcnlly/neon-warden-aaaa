@@ -417,3 +417,27 @@ Requests:
   idle timer or a "rotate" control, `null` on leaving.
 - **G**: `recorder` pickup uses `pickup_spread` until a derelict recorder
   model exists (V follow-up).
+
+### A Audio and wiring: shipped and requests (October 28, 2026)
+
+- **Shipped (A):** VO lines are never dropped (the Director and the radio
+  desk hold a line until its audio arrives; subtitles never show over
+  silence when audio exists). `deno task vo:sync` now builds
+  loudness-normalized Ogg Opus (-18 LUFS, -1 dBTP; barks and chatter -20)
+  into `public/vo/`, committed; raw WAVs in `vo/out/` are gitignored.
+  `CONTRACTS.md` line 69 still says it copies `.wav`: whoever owns it,
+  please update. The Warden plays through an arena PA chain.
+- **Shipped (A):** gameplay audio for every G event (`src/audio/`), the
+  continue screen on human game over, radio (`src/director/radioDesk.ts`,
+  `ui.hud.radio` with pan), tutorial progress flags, U's hangar hooks,
+  `request.loadout` into the sim, subtitle `wordsFor` and `now`, and the
+  UI sound sink (`setUiSoundSink`): unpicked UI roles play synth stand-ins.
+- **U:** `?ui=hangar` needs `"hangar"` in `UI_ENTRIES` (`flags.ts`) and the
+  entry in your `Record<UiEntry, ...>` table in one commit (either alone
+  breaks the type check). A authorizes U to make the `flags.ts` edit.
+- **U:** hangar sounds exist as roles `hangar_equip`, `hangar_cosmetic`,
+  `hangar_locked`; `uiSound()` reaches them if `UI_SOUND_ROLES` lists them
+  (the engine's `playUi` falls through to gameplay roles).
+- **T:** radio VO (`rad_*`) plays only once rendered; nothing to change in
+  A when it lands (rerun `deno task vo:sync`, which encodes only changed
+  takes, keyed by each take's `hash`).

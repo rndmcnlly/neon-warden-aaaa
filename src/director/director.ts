@@ -30,6 +30,7 @@ import type {
   Clock,
   DirectorSettings,
   MusicPort,
+  RadioPort,
   SfxPort,
   SimPort,
   TextLookup,
@@ -75,6 +76,7 @@ export interface DirectorPorts {
    * sim and UI can honor flags such as `boss.parley` the moment they flip.
    */
   readonly onFlag?: (name: string, value: boolean) => void;
+  readonly radio?: RadioPort;
   /** For chatter shuffling; inject a seeded one in tests. */
   readonly random?: () => number;
 }
@@ -234,6 +236,9 @@ export class Director {
         this.stack.push({ cues: chosen, index: 0 });
         break;
       }
+      case "radio":
+        p.radio?.(cue.line, cue.channel);
+        break;
       case "freezeSim":
         p.sim.freeze();
         break;

@@ -13,6 +13,7 @@
  */
 
 import {
+  type EnemyKind,
   type InputFrame,
   parseUrlFlags,
   type Pilot,
@@ -47,6 +48,10 @@ import {
 } from "./scenes/index.ts";
 import { PausableClock } from "./app/clock.ts";
 import { createSubtitleLayer } from "./app/subtitleView.ts";
+import { RadioDesk } from "./director/radioDesk.ts";
+import { radioFor, type RadioSituation } from "./scenes/radio.ts";
+import { place } from "./audio/spatial.ts";
+import { setUiSoundSink } from "./ui/sound.ts";
 import { installQaProbe, type QaRecorder } from "./app/qaProbe.ts";
 import { withTutorialDemo } from "./app/tutorialDemo.ts";
 import "./style.css";
@@ -109,7 +114,25 @@ const SCENE_RATE_CAP = 8;
 if (flags.autoPlay) {
   clock.setRate(Math.min(SCENE_RATE_CAP, flags.autoPlay.speed));
 }
-const subtitles = createSubtitleLayer(overlayRoot, settings);
+const subtitles = createSubtitleLayer(overlayRoot, settings, {
+  wordsFor: (line, lang) => engine?.words(line, lang),
+  now: () => clock.now(),
+});
+if (engine) setUiSoundSink((role) => engine.playUi(role));
+
+/**
+ * Radio chatter (see `src/director/radioDesk.ts`): timeline `radio` cues
+ * and the event-driven scout and Lane Control traffic below.
+ */
+const radio = new RadioDesk({
+  clock,
+  text: lookup,
+  langs: () => settings.get(),
+  status: (line, lang) => engine?.status(line, lang) ?? "missing",
+  play: (line, lang, pan) => engine?.playRadio(line, lang, pan) ?? false,
+  durationMs: (line, lang) => engine?.durationMs(line, lang),
+  show: (line) => ui?.hud.radio(line),
+});
 
 /** Gameplay-side state the Director's ports reach into. */
 let sim: Sim | null = null;
@@ -182,6 +205,7 @@ function makeDirector(): Director {
     },
     text: lookup,
     settings: () => settings.get(),
+    radio: (line, channel) => radio.say(line, channel),
   });
   for (const [name, value] of Object.entries(INITIAL_FLAGS)) {
     director.setFlag(name, value);
@@ -218,6 +242,10 @@ const frontEnd = createFrontEnd(overlayRoot, {
   uiEntry: flags.ui,
   hooks: {
     onAudioUnlock: () => void engine?.resume(),
+    screenPositionOf: (id) => stage.screenPositionOf(Number(id)),
+    applyLoadout: (loadout) => stage.applyLoadout(loadout),
+    showHangar: (shot) => stage.showHangar(shot),
+    onCodexUnlocked: () => engine?.playGameplay("intel_ping"),
     playBootLogos,
     onStartGame: (request) => startRun(request),
     onRestartCheckpoint: () => lastRequest && startRun(lastRequest),
@@ -320,6 +348,7 @@ function startRun(request: StartRequest): void {
   void engine?.loadStage(stageFor(request.at));
   engine?.sfxPlayer.stopAll();
   engine?.gameplay.reset();
+  resetRunAudio();
   director.skipScene();
   director.stopChatter();
   qa?.runStarted();
@@ -336,6 +365,7 @@ function startRun(request: StartRequest): void {
     seed: flags.seed ?? DEFAULT_SEED,
     start: startFor(request.at),
     difficulty: request.difficulty,
+    loadout: request.loadout,
     // Attract and QA runs spend continues silently; a human gets the
     // continue screen after `gameOver` (see `offerContinue`).
     autoContinue: flags.autoPlay !== null,
@@ -400,6 +430,7 @@ function endRun(): void {
   engine?.sfxPlayer.stopAll();
   engine?.gameplay.reset();
   engine?.setMuffled(false);
+  resetRunAudio();
   stage.setFlashback(false);
   stage.showProp(null);
   engine?.playMusic("menu", 1500);
@@ -443,13 +474,16 @@ function onSimEvent(event: SimEvent, phase: string, state: SimState): void {
   for (const [name, value] of Object.entries(runFlagsAfter(event))) {
     director.setFlag(name, value);
   }
+  if (event.type === "spawn" && event.kind !== "warden") {
+    enemyKinds.set(event.id, event.kind);
+  }
   if (phase === "tutorial") {
-    if (event.type === "playerFired") director.setFlag(FLAGS.tutFired, true);
-    if (event.type === "kill") director.setFlag(FLAGS.tutTargetDestroyed, true);
+    noteTutorialEvent(event);
     return;
   }
   if (event.type === "sectorCleared") warpUntil = performance.now() + WARP_MS;
   updateChatter(event);
+  radioFromEvent(event, state);
   const bark = barkFor(event);
   if (bark && director.bark(bark)) qa?.bark(bark);
   // The Warden arrives on the sim's schedule, which can beat the descent
@@ -475,10 +509,124 @@ function onSimEvent(event: SimEvent, phase: string, state: SimState): void {
   }
 }
 
+/** Per-run radio and tutorial tallies start over. */
+function resetRunAudio(): void {
+  radio.reset();
+  enemyKinds.clear();
+  lastEnemies = [];
+  tutorialTaps = 0;
+  tutorialGrazes = 0;
+}
+
+/** Tutorial progress flags from what the player's weapon and ship do. */
+let tutorialTaps = 0;
+let tutorialGrazes = 0;
+function noteTutorialEvent(event: SimEvent): void {
+  const set = (flag: string) => director.setFlag(flag, true);
+  switch (event.type) {
+    case "playerFired":
+      set(FLAGS.tutFired);
+      if (event.shot === "aimed" && ++tutorialTaps >= 3) set(FLAGS.tutTapped);
+      if (event.shot === "stream") set(FLAGS.tutStreamed);
+      if (event.shot === "writ") set(FLAGS.tutWritFired);
+      break;
+    case "chargeLevel":
+      if (event.level === 3) set(FLAGS.tutCharged);
+      break;
+    case "scanLock":
+      set(FLAGS.tutLocked);
+      break;
+    case "partBreak":
+      set(FLAGS.tutPartBroken);
+      break;
+    case "graze":
+      if (director.getFlag(FLAGS.tutGrazeDrill) && ++tutorialGrazes >= 5) {
+        set(FLAGS.tutGrazed);
+      }
+      break;
+    case "payChanged":
+      if (event.rate >= 2) set(FLAGS.tutRateDoubled);
+      break;
+    case "kill":
+      set(FLAGS.tutTargetDestroyed);
+      break;
+  }
+}
+
+// ------------------------------------------------------------------ radio
+
+/** Enemy kinds by id (spawn events), so a departing scout can be named. */
+const enemyKinds = new Map<number, EnemyKind>();
+let radioPick = 0;
+/** Last tick's enemies, for events about an enemy that just left play. */
+let lastEnemies: SimState["enemies"] = [];
+let nextPatrolAt = 0;
+/** Seconds between patrol-timer radio lines (a range). */
+const PATROL_RADIO_MS: readonly [number, number] = [14_000, 24_000];
+/** A kill within this distance of another scout makes it report the loss. */
+const LOSS_RADIUS = 220;
+
+function radioPan(pos: { x: number; y: number } | undefined): number {
+  const ear = sim?.snapshot().player.pos;
+  return pos && ear ? place(pos, ear, settings.get().audio.mono).pan : 0;
+}
+
+/** Scouts and Lane Control react on the radio, when the air is clear. */
+function radioLine(
+  source: EnemyKind | "authority",
+  situation: RadioSituation,
+  pos?: { x: number; y: number },
+): void {
+  if (!chatterOn || director.timeline || !radio.free) return;
+  const line = radioFor(source, situation, radioPick++, {
+    hasFired: director.getFlag(FLAGS.runHasFired),
+  });
+  if (line) radio.say(line.line, line.channel, radioPan(pos));
+}
+
+function radioFromEvent(event: SimEvent, state: SimState): void {
+  switch (event.type) {
+    case "scanLock":
+      if (event.kind !== "warden") radioLine(event.kind, "locked", event.pos);
+      break;
+    case "disarm":
+      radioLine(event.kind, "disarmed", event.pos);
+      break;
+    case "despawn": {
+      const kind = enemyKinds.get(event.id);
+      if (kind && event.reason !== "wiped") radioLine(kind, "retreat");
+      break;
+    }
+    case "kill": {
+      // A surviving scout nearby reports the loss (kill route only).
+      // The dead scout left this tick's state; look in the tick before.
+      const pos = lastEnemies.find((e) => e.id === event.id)?.pos;
+      const witness = state.enemies.find((e) =>
+        e.id !== event.id && pos &&
+        Math.hypot(e.pos.x - pos.x, e.pos.y - pos.y) < LOSS_RADIUS
+      );
+      if (witness) radioLine(witness.kind, "lost", witness.pos);
+      break;
+    }
+  }
+}
+
+/** Patrol chatter on a timer, from a random scout on screen (or Control). */
+function radioPatrol(state: SimState): void {
+  const now = clock.now();
+  if (now < nextPatrolAt) return;
+  const [min, max] = PATROL_RADIO_MS;
+  nextPatrolAt = now + min + Math.random() * (max - min);
+  const scout = state.enemies[Math.floor(Math.random() * state.enemies.length)];
+  if (scout) radioLine(scout.kind, "patrol", scout.pos);
+  else radioLine("authority", "patrol");
+}
+
 /** Chatter during sectors 1–5; the Warden's arrival ends it for the run. */
 function updateChatter(event: SimEvent): void {
   if (event.type === "sectorStarted" && event.sector <= 5 && !chatterOn) {
     chatterOn = true;
+    nextPatrolAt = clock.now() + PATROL_RADIO_MS[0];
     director.startChatter([chatterFor(director.getFlag(FLAGS.runHasFired))]);
   } else if (
     chatterOn &&
@@ -537,6 +685,8 @@ function frame(now: number): void {
       stage.observe(after, events);
       for (const event of events) onSimEvent(event, before.phase, after);
       engine?.gameplay.frame(after);
+      if (chatterOn) radioPatrol(after);
+      lastEnemies = after.enemies;
       if (openingScene) {
         openingScene();
         openingScene = null;
@@ -547,6 +697,7 @@ function frame(now: number): void {
   }
 
   director.update();
+  radio.update();
   stage.setWarp(Math.max(0, (warpUntil - now) / WARP_MS));
   stage.render(dt, alpha);
   requestAnimationFrame(frame);

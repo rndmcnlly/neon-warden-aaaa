@@ -265,7 +265,45 @@ export const GAMEPLAY_SOUNDS = {
     spatial: false,
     bus: "ui",
   }),
+
+  // ----------------------------------------------------- menu stand-ins
+  // Synth stand-ins for UI roles with no promoted pick yet (`playUi`
+  // falls back to `ui_<role>`). The critique found SA3 bad at tiny clicks,
+  // so focus, slider and toggle ticks may well stay synthesized.
+  ui_focus: ui(tick, -22, 7, 2),
+  ui_confirm: ui(confirm2, -16, 0, 1),
+  ui_back: ui(tick, -18, 4, 1),
+  ui_tab_switch: ui(tick, -19, 2, 2),
+  ui_toggle_on: ui(tick, -18, 4, 2),
+  ui_toggle_off: ui(tick, -18, 0, 2),
+  ui_slider_tick: ui(tick, -24, 9, 2),
+  ui_slider_end: ui(tick, -19, 0, 1),
+  ui_error: ui(tick, -16, "offKey", 0),
+  ui_locked: ui(tick, -17, "offKey", 1),
+  ui_menu_open: ui(pluck, -18, 0, 1),
+  ui_menu_close: ui(pluck, -19, -3, 1),
+  ui_pause_in: ui(pluck, -18, 4, 0),
+  ui_pause_out: ui(pluck, -18, 0, 0),
+  ui_save: ui(confirm2, -18, 2, 1),
+  ui_notify: ui(confirm2, -16, 4, 1),
 } satisfies Record<string, SoundRole>;
+
+function ui(
+  synth: SynthRecipe,
+  gainDb: number,
+  pitch: Pitch,
+  octave: number,
+): SoundRole {
+  return feel(synth, gainDb, {
+    sample: false,
+    pitch,
+    octave,
+    jitter: 0,
+    cap: 2,
+    spatial: false,
+    bus: "ui",
+  });
+}
 
 export type GameplaySoundId = keyof typeof GAMEPLAY_SOUNDS;
 
