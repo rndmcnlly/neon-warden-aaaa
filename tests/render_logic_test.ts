@@ -6,6 +6,10 @@
 
 import { assertAlmostEquals, assertEquals } from "@std/assert";
 import type { SimState } from "../src/contracts/index.ts";
+import { DEFAULT_LOADOUT, PAINT_IDS_FOR_TEST } from "./render_fixtures.ts";
+import { bloomDamping } from "../src/render/post.ts";
+import { helmetFor, PAINT, TRAIL } from "../src/render/loadout.ts";
+import { BLOOM_THRESHOLD, ROLE, SCENE_LOOKS } from "../src/render/palette.ts";
 import {
   FIELD_D,
   FIELD_W,
@@ -46,6 +50,11 @@ function fakeState(tick: number, x: number, enemyX: number): SimState {
       shielded: false,
       graceTicks: 0,
       bank: x / 1000,
+      vel: { x: 0, y: 0 },
+      trigger: "rest",
+      chargeLevel: 0,
+      charge: 0,
+      scan: { active: false, halfAngle: 0.3, range: 300, targetId: null },
     },
     enemies: [{
       id: 7,
@@ -55,13 +64,29 @@ function fakeState(tick: number, x: number, enemyX: number): SimState {
       hp: 2,
       maxHp: 2,
       age: tick,
+      ai: "patrol",
+      aiTicks: 0,
+      parts: [],
+      weakPoint: { offset: { x: 0, y: 0 }, radius: 4 },
+      lock: 0,
+      locked: false,
+      disarmed: false,
     }],
     bullets: [],
     pickups: [],
     boss: null,
     score: 0,
     kills: 0,
-    flags: { pacifistIntact: true, firstPowerupTaken: false },
+    pay: { credits: 0, rate: 1, chainTicks: 0, chainMax: 1 },
+    graze: { meter: 0, count: 0, radius: 18 },
+    scoutsSpared: 0,
+    flags: {
+      pacifistIntact: true,
+      neverFired: true,
+      recorderRecovered: false,
+      firstPowerupTaken: false,
+    },
+    loadout: DEFAULT_LOADOUT,
   };
 }
 
@@ -116,4 +141,47 @@ Deno.test("flash guard: reduced flashing caps rate and strength", () => {
   assertEquals(g.current <= REDUCED_LIMITS.maxStrength, true);
   g.update(5000);
   assertEquals(g.current, 0);
+});
+
+Deno.test("value ladder: only chosen roles exceed the bloom threshold", () => {
+  // Linear-light luma of a role color times its gain, as the bloom pass sees.
+  const luma = (hex: number, gain: number) => {
+    const lin = (c: number) => Math.pow(c / 255, 2.2);
+    const r = lin((hex >> 16) & 255), g = lin((hex >> 8) & 255);
+    const b = lin(hex & 255);
+    return (0.299 * r + 0.587 * g + 0.114 * b) * gain;
+  };
+  const glows = (k: keyof typeof ROLE) =>
+    luma(ROLE[k].hex, ROLE[k].gain) > BLOOM_THRESHOLD;
+  assertEquals(glows("playerEngine"), true);
+  assertEquals(glows("heavyRim"), true);
+  assertEquals(glows("playerShot"), false);
+  assertEquals(glows("enemyTrim"), false);
+  assertEquals(glows("world"), false);
+  // Enemy fire outranks player fire.
+  assertEquals(ROLE.dangerRim.gain > ROLE.playerShot.gain, true);
+});
+
+Deno.test("bloom damps under bullet density, within 0.5–1", () => {
+  assertEquals(bloomDamping(0), 1);
+  assertEquals(bloomDamping(40), 1);
+  assertAlmostEquals(bloomDamping(140), 0.5);
+  assertEquals(bloomDamping(2000), 0.5);
+});
+
+Deno.test("scene looks never use the danger hue for the world", () => {
+  for (const look of Object.values(SCENE_LOOKS)) {
+    assertEquals(look.worldA === ROLE.dangerRim.hex, false);
+    assertEquals(look.worldB === ROLE.dangerRim.hex, false);
+  }
+});
+
+Deno.test("loadout tables cover every cosmetic id", () => {
+  for (const id of PAINT_IDS_FOR_TEST) {
+    assertEquals(typeof PAINT[id], "number");
+  }
+  assertEquals(Object.keys(TRAIL).length, 4);
+  assertEquals(helmetFor("corporateIssue"), "issued");
+  assertEquals(helmetFor("worn"), "worn");
+  assertEquals(helmetFor("repainted"), "worn");
 });

@@ -20,8 +20,16 @@ import * as THREE from "three";
 import type { CameraShotId } from "../contracts/index.ts";
 import { FIELD_D, FIELD_W } from "./coords.ts";
 
-/** Kept as an alias so renderer code reads the same as before the merge. */
-export type RigShotId = CameraShotId;
+/**
+ * The Director's shots plus the renderer-only hangar shots (the hangar is a
+ * UI screen, not a timeline beat, so it is driven by `stage.showHangar`).
+ * `hangar` is a three-quarter hero framing of the ship on its pad;
+ * `hangarTurntable` circles it slowly for the presentation.
+ */
+export type RigShotId = CameraShotId | "hangar" | "hangarTurntable";
+
+/** Shots in which the camera may roll and drift: never during live play. */
+const INTERACTIVE_SHOTS: ReadonlySet<RigShotId> = new Set(["gameplay"]);
 
 export interface ShotContext {
   /** World positions of the shot subjects (the stage keeps these current). */
@@ -29,6 +37,8 @@ export interface ShotContext {
   readonly boss: THREE.Vector3;
   /** A spot off to the side where cutscene props (pilot figure, logos) stand. */
   readonly stagePoint: THREE.Vector3;
+  /** Where the hangar pad sits (the ship on display). */
+  readonly hangarPoint: THREE.Vector3;
   readonly timeSec: number;
   readonly aspect: number;
 }
@@ -41,8 +51,12 @@ interface Pose {
 
 type ShotFn = (ctx: ShotContext, out: Pose) => void;
 
-/** Gameplay camera tilt from straight-down, radians. Enough to read as 3D. */
-const GAMEPLAY_TILT = 0.52;
+/**
+ * Gameplay camera tilt from straight-down, radians (about 27 degrees):
+ * enough to read as 3D, little enough that lanes stay vertical and bullet
+ * spacing reads true (critique item 3).
+ */
+const GAMEPLAY_TILT = 0.47;
 
 export class CameraRig {
   readonly camera: THREE.PerspectiveCamera;
@@ -66,13 +80,14 @@ export class CameraRig {
     this.camera = new THREE.PerspectiveCamera(38, 1, 0.1, 400);
     this.shots = {
       gameplay: (ctx, out) => {
-        // Lean a little toward the player for parallax, never enough to
-        // push the playfield edge off screen.
-        const lean = ctx.player.x * 0.08;
+        // Locked: one fixed tilt, no roll, no orbit. A small sideways truck
+        // toward the player (position and target move together, so lanes
+        // stay vertical) is the only motion.
+        const lean = ctx.player.x * 0.05;
         const d = this.gameplayDistance;
         out.target.set(lean, 0, 0.4);
         out.position.set(
-          lean * 1.5,
+          lean,
           Math.cos(GAMEPLAY_TILT) * d,
           0.4 + Math.sin(GAMEPLAY_TILT) * d,
         );
@@ -112,6 +127,22 @@ export class CameraRig {
         out.target.set(0, -2, -12);
         out.position.set(14, 24, 26 + Math.sin(ctx.timeSec * 0.05) * 2);
         out.fov = 46;
+      },
+      hangar: (ctx, out) => {
+        // Three-quarter hero shot from the front left, slightly above.
+        out.target.copy(ctx.hangarPoint).add(new THREE.Vector3(0, 0.15, 0));
+        out.position.copy(ctx.hangarPoint).add(
+          new THREE.Vector3(-1.9, 1.25, -2.1),
+        );
+        out.fov = 30;
+      },
+      hangarTurntable: (ctx, out) => {
+        const a = ctx.timeSec * 0.35;
+        out.target.copy(ctx.hangarPoint).add(new THREE.Vector3(0, 0.1, 0));
+        out.position.copy(ctx.hangarPoint).add(
+          new THREE.Vector3(Math.sin(a) * 3, 1.1, Math.cos(a) * 3),
+        );
+        out.fov = 30;
       },
       logoTurntable: (ctx, out) => {
         // Aim above the plinth and stand back: the studio mark is tall, and
@@ -215,7 +246,10 @@ export class CameraRig {
     this.camera.position.x += sx * amount * 0.6;
     this.camera.position.y += sy * amount * 0.4;
     this.camera.lookAt(pose.target);
-    this.camera.rotateZ(roll * amount * 0.05);
+    // Roll only outside live play: in gameplay, shake is translation only,
+    // so the playfield never tilts under the player's hands.
+    const cinematic = !INTERACTIVE_SHOTS.has(this.to) || this.blendMs > 0;
+    if (cinematic) this.camera.rotateZ(roll * amount * 0.05);
     if (this.camera.fov !== pose.fov) {
       this.camera.fov = pose.fov;
       this.camera.updateProjectionMatrix();

@@ -17,19 +17,22 @@
 
 import * as THREE from "three";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
+import { DEFAULT_LOADOUT } from "../contracts/index.ts";
 import type {
   EnemyKind,
   EntityId,
+  Loadout,
   PickupKind,
   Settings,
   SettingsStore,
   SimEvent,
   SimState,
+  Vec2,
 } from "../contracts/index.ts";
 import { Backdrop } from "./backdrop.ts";
 import { BulletRenderer } from "./bullets.ts";
 import { CameraRig, type RigShotId } from "./cameraRig.ts";
-import { simToWorldX, simToWorldZ } from "./coords.ts";
+import { simToWorldLength, simToWorldX, simToWorldZ } from "./coords.ts";
 import { FlashGuard, REDUCED_LIMITS, STANDARD_LIMITS } from "./flashGuard.ts";
 import { type Pos, SnapshotInterpolator } from "./interp.ts";
 import {
@@ -38,13 +41,28 @@ import {
   ModelRegistry,
   type ModelSlot,
 } from "./models.ts";
-import { PALETTE } from "./palette.ts";
+import { applyShipLoadout, helmetFor, type HelmetVariant } from "./loadout.ts";
+import { PALETTE, ROLE, SCENE_LOOKS, type SceneLookId } from "./palette.ts";
 import { ParticleSystem, ShockwavePool } from "./particles.ts";
 import { PostChain } from "./post.ts";
+import {
+  applyInstanceLook,
+  ownMaterials,
+  restoreMaterials,
+  ReticlePool,
+  ScanBeam,
+  WritGlow,
+} from "./vfx.ts";
+
 import { type QualityTier, tierFor } from "./quality.ts";
 import { shieldFragment, shieldVertex } from "./shaders/shield.glsl.ts";
 
+/**
+ * `pilot_figure` shows the helmet variant chosen by `setHelmet` (or the
+ * loadout's `helmet`): corporate-issue early, worn by the end.
+ */
 export type PropId = "pilot_figure" | "logo_adamsmith_systems" | "logo_cm121";
+export type { HelmetVariant } from "./loadout.ts";
 
 export interface StageOptions {
   /** When given, the stage follows display and accessibility settings live. */
@@ -83,6 +101,26 @@ export interface Stage {
   setFlashback(on: boolean): void;
   /** Warp-jump intensity, 0–1 (backdrop stretch and speed). */
   setWarp(amount: number): void;
+  /**
+   * Ship customization: package meshes and paint, trim, decal and trail.
+   * Applies to the gameplay ship and the hangar display ship alike.
+   */
+  applyLoadout(loadout: Loadout): void;
+  /** Which helmet the pilot figure wears in cutscenes. */
+  setHelmet(variant: HelmetVariant): void;
+  /**
+   * The hangar: the ship on a lit pad, framed by a hero shot ("hero") or a
+   * slow turntable ("turntable"); null returns to the game camera.
+   */
+  showHangar(shot: "hero" | "turntable" | null): void;
+  /** Forces a scene color budget; null returns to automatic (by sim phase). */
+  setSceneLook(id: SceneLookId | null): void;
+  /**
+   * Where an entity is on screen, in CSS pixels from the canvas's top-left,
+   * or null if it is not drawn. The UI pins intel tags with it (the id may
+   * arrive as a string from DOM code).
+   */
+  screenPositionOf(id: EntityId | string): { x: number; y: number } | null;
   stats(): StageStats;
   readonly models: ModelRegistry;
   dispose(): void;
@@ -111,7 +149,33 @@ const ENEMY_BLAST: Record<EnemyKind, { count: number; trauma: number }> = {
 const PICKUP_MODEL: Record<PickupKind, ModelId> = {
   spread: "pickup_spread",
   shield: "pickup_shield",
+  // #0121's flight recorder: the spread pickup already carries a recorder
+  // sleeve; a dedicated derelict-recorder model is a follow-up.
+  recorder: "pickup_spread",
 };
+
+/**
+ * Sim part ids (src/sim/tuning.ts) to model node names. The Warden's four
+ * pods are `pod_0`..`pod_3` in art/blender/warden.py; the turret's barrel
+ * is its spinning `crown`. Parts without a node still get break effects.
+ */
+const PART_NODES: Readonly<Record<string, string>> = {
+  fanPodL: "pod_0",
+  fanPodR: "pod_1",
+  cannonPod: "pod_2",
+  spiralPod: "pod_3",
+  barrel: "crown",
+};
+
+function loadoutKey(l: Loadout): string {
+  const c = l.cosmetics;
+  return [l.weapon, l.sensor, c.paint, c.trimColor, c.decal, c.trail].join();
+}
+
+function partNode(slot: THREE.Object3D, part: string): string | null {
+  const name = PART_NODES[part];
+  return name && slot.getObjectByName(name) ? name : null;
+}
 
 /** Hard cap on effect bursts per frame, so 30x auto-play stays smooth. */
 const MAX_BURSTS_PER_FRAME = 24;
@@ -122,6 +186,8 @@ const TRAIL_OFFSET = new THREE.Vector3(0, 0, 0.45);
 const TRAIL_DRIFT = new THREE.Vector3(0, 0, 7);
 /** Where cutscene props stand: far up-lane, among the pylons. */
 const STAGE_POINT = new THREE.Vector3(0, 0, -40);
+/** The hangar pad: off to one side, out of every gameplay framing. */
+const HANGAR_POINT = new THREE.Vector3(60, 0, -20);
 
 export function createStage(
   container: HTMLElement,
@@ -178,9 +244,36 @@ export function createStage(
   const bullets = new BulletRenderer();
   scene.add(bullets.group);
 
+  // Wave-3 scan language and charge.
+  const beam = new ScanBeam();
+  scene.add(beam.mesh);
+  const reticles = new ReticlePool();
+  scene.add(reticles.group);
+  const writ = new WritGlow();
+
   // The player ship and its shield bubble.
   const ship = models.create("pilot_ship");
   world.add(ship);
+  ship.add(writ.group);
+  // Engine plume: the hottest point on the player, so the eye finds the
+  // ship first (critique item 8). A stretched additive sprite behind it.
+  const plumeMat = new THREE.SpriteMaterial({
+    color: new THREE.Color(ROLE.playerEngine.hex).multiplyScalar(
+      ROLE.playerEngine.gain,
+    ),
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    toneMapped: false,
+  });
+  const plume = new THREE.Sprite(plumeMat);
+  plume.position.set(0, 0.1, 0.62);
+  plume.scale.set(0.22, 0.5, 1);
+  ship.add(plume);
+  const trailColor = new THREE.Color(PALETTE.cyan);
+  let loadout: Loadout = DEFAULT_LOADOUT;
+  let loadoutKeyNow = loadoutKey(DEFAULT_LOADOUT);
+  let helmet: HelmetVariant = "issued";
   const shieldMat = new THREE.ShaderMaterial({
     vertexShader: shieldVertex,
     fragmentShader: shieldFragment,
@@ -200,6 +293,11 @@ export function createStage(
   shield.scale.y = 0.55;
   shield.visible = false;
   ship.add(shield);
+
+  // The Warden's shield shell uses the same fresnel shader, in Warden red.
+  const wardenShieldMat = shieldMat.clone();
+  wardenShieldMat.uniforms.uColor.value = new THREE.Color(PALETTE.crimson)
+    .multiplyScalar(1.1);
 
   // A soft point light that rides with the ship, tinting nearby hulls cyan.
   const shipLight = new THREE.PointLight(PALETTE.cyan, 6, 5, 2);
@@ -227,6 +325,12 @@ export function createStage(
   let reducedFlashing = settingsNow?.accessibility.reducedFlashing ?? false;
   let flashback = false;
   let shieldHit = 0;
+  let hurt = 0;
+  let lookDirty = 0;
+  let lookOverride: SceneLookId | null = null;
+  let lookNow: SceneLookId | null = null;
+  let hangarShip: ModelSlot | null = null;
+  let hangarPad: THREE.Group | null = null;
   let avgRenderMs = 0;
   let avgFrameMs = 16.7;
 
@@ -236,6 +340,7 @@ export function createStage(
     player: new THREE.Vector3(),
     boss: new THREE.Vector3(0, 0, -8),
     stagePoint: STAGE_POINT,
+    hangarPoint: HANGAR_POINT,
     timeSec: 0,
     aspect: 1,
   };
@@ -300,6 +405,8 @@ export function createStage(
       if (seen.has(id)) continue;
       world.remove(slot);
       live.delete(id);
+      restoreMaterials(slot);
+      unbreak(slot);
       const list = free.get(slot.userData.modelId) ?? [];
       list.push(slot);
       free.set(slot.userData.modelId, list);
@@ -314,6 +421,46 @@ export function createStage(
   ): void {
     interp.position(id, alpha, tmpPos);
     slot.position.set(simToWorldX(tmpPos.x), y, simToWorldZ(tmpPos.y));
+  }
+
+  /** Undoes part breaks before a slot is reused. */
+  function unbreak(slot: THREE.Object3D): void {
+    const broken = slot.userData.broken as Set<string> | undefined;
+    if (!broken) return;
+    for (const name of broken) {
+      const part = slot.getObjectByName(name);
+      if (part) part.visible = true;
+    }
+    delete slot.userData.broken;
+    delete slot.userData.powerTarget;
+  }
+
+  /** Hides a broken part node and remembers it (pooling undoes it). */
+  function breakPart(slot: THREE.Object3D, name: string): THREE.Vector3 {
+    const at = slot.position.clone();
+    const part = name ? slot.getObjectByName(name) : undefined;
+    if (part) {
+      part.getWorldPosition(at);
+      part.visible = false;
+      const broken = (slot.userData.broken as Set<string> | undefined) ??
+        new Set<string>();
+      broken.add(name);
+      slot.userData.broken = broken;
+    }
+    return at;
+  }
+
+  /** Hides model nodes for parts the sim reports broken (late joiners too). */
+  function syncBrokenParts(
+    slot: ModelSlot,
+    parts: readonly { id: string; broken: boolean }[],
+  ): void {
+    for (const part of parts) {
+      if (!part.broken) continue;
+      const node = partNode(slot, part.id);
+      const broken = slot.userData.broken as Set<string> | undefined;
+      if (node && !broken?.has(node)) breakPart(slot, node);
+    }
   }
 
   // ---- effects ---------------------------------------------------------------
@@ -351,8 +498,91 @@ export function createStage(
     return out.copy(ctx.player);
   }
 
+  function simPoint(at: Vec2, out: THREE.Vector3, y = 0.3): THREE.Vector3 {
+    return out.set(simToWorldX(at.x), y, simToWorldZ(at.y));
+  }
+
   function handle(e: SimEvent): void {
     switch (e.type) {
+      case "scanLock":
+        // Lock confirm: a crisp ring snap at the target.
+        rings.spawn(simPoint(e.pos, tmpV), ROLE.scan.hex, 0.9, 0.22);
+        break;
+      case "partBreak": {
+        const slot = e.target === "boss" ? boss : live.get(e.id);
+        const node = slot ? partNode(slot, e.part) : null;
+        const at = slot && node
+          ? breakPart(slot, node)
+          : simPoint(e.pos, new THREE.Vector3());
+        const big = e.target === "boss";
+        // Debris and a hard white-gold crack: a break must read as a win.
+        blast(at, PALETTE.sparkCream, big ? 50 : 30, big ? 1.6 : 0.9);
+        rings.spawn(at, PALETTE.gold, big ? 2.4 : 1.1, 0.3);
+        rig.addTrauma(big ? 0.4 : 0.15);
+        break;
+      }
+      case "disarm": {
+        const slot = live.get(e.id);
+        simPoint(e.pos, tmpV);
+        if (slot) {
+          ownMaterials(slot);
+          slot.userData.powerTarget = 0;
+        }
+        // A cool, soft power-down ring and a few falling embers: spared,
+        // not destroyed, so no blast and no shake. Cancelled bullets get a
+        // shimmer ring of their own size.
+        rings.spawn(tmpV, PALETTE.slate, 1.3 + e.cancelled * 0.05, 0.6);
+        if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
+          particles.burst({
+            at: tmpV,
+            color: PALETTE.slate,
+            count: 10,
+            speed: 1.2,
+            life: 0.9,
+            size: 0.1,
+          });
+        }
+        break;
+      }
+      case "coreExposed":
+        if (boss) {
+          rings.spawn(boss.position, PALETTE.gold, 3, 0.5);
+          rig.addTrauma(0.3);
+        }
+        break;
+      case "graze":
+      case "nearMiss": {
+        if (burstsThisFrame++ >= MAX_BURSTS_PER_FRAME) break;
+        // Sparks skate off the ship's edge toward the bullet.
+        simPoint(e.pos, tmpV).lerp(ctx.player, e.type === "graze" ? 0.5 : 0.2);
+        particles.burst({
+          at: tmpV,
+          color: ROLE.graze.hex,
+          count: e.type === "graze" ? 6 * e.count : 2,
+          speed: 3.5,
+          life: 0.18,
+          size: 0.09,
+        });
+        break;
+      }
+      case "enemyFired":
+        if (burstsThisFrame++ >= MAX_BURSTS_PER_FRAME) break;
+        particles.burst({
+          at: simPoint(e.pos, tmpV),
+          color: PALETTE.enemyShot,
+          count: 3,
+          speed: 1.5,
+          life: 0.12,
+          size: 0.14,
+        });
+        break;
+      case "chargeLevel":
+        if (e.level > 0) rings.spawn(ctx.player, ROLE.writ.hex, 0.5, 0.18);
+        break;
+      case "intel":
+      case "payChanged":
+      case "despawn":
+        break;
       case "spawn":
         // Spawn shimmer: drawn next frame once the slot exists, at its position.
         timers.push({
@@ -367,6 +597,10 @@ export function createStage(
         });
         break;
       case "playerFired":
+        if (e.shot === "writ") {
+          rings.spawn(ctx.player, ROLE.writ.hex, 0.8 + e.level * 0.5, 0.25);
+          rig.addTrauma(0.08 * e.level);
+        }
         if (burstsThisFrame < MAX_BURSTS_PER_FRAME) {
           tmpV.copy(ctx.player).add(new THREE.Vector3(0, 0.2, -0.55));
           particles.burst({
@@ -389,6 +623,7 @@ export function createStage(
             blast(ctx.player, PALETTE.pink, 24);
             rig.addTrauma(0.55);
             flash(0.35, PALETTE.crimson);
+            hurt = 1;
           }
         } else {
           whereIs(e.id, tmpV);
@@ -403,7 +638,12 @@ export function createStage(
             });
           }
           const slot = e.target === "boss" ? boss : live.get(e.id);
-          if (slot) slot.userData.hitPunch = 1;
+          if (slot) {
+            slot.userData.hitPunch = 1;
+            // A two-frame white flash on the instance's own materials.
+            ownMaterials(slot);
+            slot.userData.flash = reducedFlashing ? 0.4 : 1;
+          }
         }
         break;
       case "kill":
@@ -481,7 +721,7 @@ export function createStage(
 
   // ---- per-frame update ------------------------------------------------------
 
-  function updateEntities(state: SimState, alpha: number): void {
+  function updateEntities(state: SimState, alpha: number, dt: number): void {
     const tickNow = interp.tickAt(alpha);
     const tickFrac = tickNow - state.tick; // in [-1, 0]: how far behind "now" we draw
     seen.clear();
@@ -507,13 +747,28 @@ export function createStage(
     shieldMat.uniforms.uTime.value = timeSec;
     const engine = findPart(ship, "engine");
     if (engine) engine.scale.setScalar(0.9 + Math.sin(timeSec * 40) * 0.1);
+    plume.scale.set(0.22, 0.45 + Math.sin(timeSec * 37) * 0.06, 1);
+
+    // The sim carries the loadout; follow it when it changes.
+    const key = loadoutKey(state.loadout);
+    if (key !== loadoutKeyNow) {
+      loadoutKeyNow = key;
+      loadout = state.loadout;
+      applyLook(ship);
+      lookDirty = 30;
+    }
+
+    // Writ charge and the scan beam.
+    writ.update(dt, p.charge, p.chargeLevel, timeSec);
+    beam.setShape(p.scan.halfAngle, simToWorldLength(p.scan.range));
+    beam.update(dt, ship.position, p.scan.active && ship.visible && !flashback);
     // Engine trail: a few slow sparks per frame streaming down-screen, the
     // original's spark trail. Cheaper and more legible than full-frame blur.
     if (ship.visible && !flashback) {
       tmpV.copy(ship.position).add(TRAIL_OFFSET);
       particles.burst({
         at: tmpV,
-        color: PALETTE.cyan,
+        color: trailColor.getHex(),
         count: 2,
         speed: 0.6,
         life: 0.35,
@@ -522,13 +777,24 @@ export function createStage(
       particles.drift(2, TRAIL_DRIFT);
     }
 
-    // Enemies.
+    // Enemies, with their scan state.
+    reticles.begin();
     for (const e of state.enemies) {
       seen.add(e.id);
       const slot = acquire(e.id, ENEMY_MODEL[e.kind]);
       place(slot, e.id, alpha, 0);
       const age = e.age + tickFrac;
       animateEnemy(slot, e.kind, age);
+      if (e.disarmed && slot.userData.powerTarget !== 0) {
+        ownMaterials(slot);
+        slot.userData.powerTarget = 0;
+      }
+      syncBrokenParts(slot, e.parts);
+      if (e.lock > 0 && !e.disarmed) {
+        const size = simToWorldLength(e.radius) * 1.6 + 0.25;
+        reticles.set(e.id, slot.position, size, e.lock, e.locked, timeSec, dt);
+      }
+      applyInstanceLook(slot, dt);
     }
 
     // Pickups: spin 0.04 rad/tick and pulse ±12%, as in the original.
@@ -550,10 +816,31 @@ export function createStage(
       place(boss, state.boss.id, alpha, 0);
       ctx.boss.copy(boss.position);
       animateWarden(boss, state.boss.phase, state.boss.invulnerable, tickNow);
+      syncBrokenParts(boss, state.boss.pods);
+      const b = state.boss;
+      if (b.lock > 0) {
+        // The reticle goes on the weak point, not the hull center.
+        tmpV.set(
+          boss.position.x + simToWorldLength(b.weakPoint.offset.x),
+          0,
+          boss.position.z + simToWorldLength(b.weakPoint.offset.y),
+        );
+        reticles.set(
+          b.id,
+          tmpV,
+          simToWorldLength(b.weakPoint.radius) * 2 + 0.3,
+          b.lock,
+          b.locked,
+          timeSec,
+          dt,
+        );
+      }
+      applyInstanceLook(boss, dt);
     } else if (boss) {
       boss.visible = false;
     }
 
+    reticles.end();
     releaseUnseen();
     bullets.update(state.bullets, interp, alpha, timeSec);
   }
@@ -604,6 +891,40 @@ export function createStage(
     const armor = findPart(slot, "armor");
     const shed = (slot.userData.armorShed as number | undefined) ?? 0;
     if (armor) armor.scale.setScalar(1 - shed * 0.08);
+    // Seams light up a tier per phase: dark in the descent, full in phase 3.
+    const seams = findPart(slot, "warden_seams");
+    if (seams) {
+      seams.traverse((o) => {
+        const mesh = o as THREE.Mesh;
+        const m = mesh.material as THREE.MeshStandardMaterial | undefined;
+        if (!mesh.isMesh || !m?.isMeshStandardMaterial) return;
+        if (!m.userData.seamBase) {
+          // One boss instance at a time: clone once, then drive per phase.
+          mesh.material = m.clone();
+          (mesh.material as THREE.Material).userData.seamBase =
+            m.emissiveIntensity;
+        }
+        const own = mesh.material as THREE.MeshStandardMaterial;
+        const base = own.userData.seamBase as number;
+        const tier = Number(/_(\d)$/.exec(mesh.name)?.[1] ?? 1);
+        const lit = phase >= tier ? 1 : 0.06;
+        own.emissiveIntensity = base * lit *
+          (0.85 + 0.15 * Math.sin(tick * 0.2 + tier));
+      });
+    }
+    // The shield shell: present (and shimmering) only while invulnerable.
+    const shell = findPart(slot, "warden_shield");
+    if (shell) {
+      shell.traverse((o) => {
+        const mesh = o as THREE.Mesh;
+        if (mesh.isMesh && mesh.material !== wardenShieldMat) {
+          mesh.material = wardenShieldMat;
+          mesh.renderOrder = 6;
+        }
+      });
+      shell.visible = invulnerable;
+      wardenShieldMat.uniforms.uTime.value = timeSec;
+    }
     const punch = (slot.userData.hitPunch as number | undefined) ?? 0;
     slot.userData.hitPunch = Math.max(0, punch - 0.2);
     // Invulnerable descent: a slow menacing bob; otherwise a hit recoil.
@@ -611,6 +932,69 @@ export function createStage(
       ? 0.5 + Math.sin(tick * 0.05) * 0.2
       : punch * 0.1;
     slot.rotation.x = invulnerable ? 0.15 : 0;
+  }
+
+  /** Scene color budget: explicit override, else by flashback and sim phase. */
+  function chooseLook(state: SimState | null): void {
+    let id: SceneLookId = "sector";
+    if (lookOverride) id = lookOverride;
+    else if (flashback) id = "flashback";
+    else if (state?.phase === "ended") id = "ending";
+    else if (state?.phase === "boss" || state?.phase === "bossWarning") {
+      id = "boss";
+    }
+    if (id === lookNow) return;
+    lookNow = id;
+    backdrop.setLook(SCENE_LOOKS[id]);
+  }
+
+  function applyLook(target: THREE.Object3D): void {
+    const c = applyShipLoadout(target, loadout);
+    if (target === ship) {
+      trailColor.copy(c);
+      plumeMat.color.copy(c).multiplyScalar(ROLE.playerEngine.gain);
+    }
+  }
+
+  function helmetModel(): ModelId {
+    return helmet === "worn" ? "pilot_figure_worn" : "pilot_figure_issued";
+  }
+
+  function buildHangar(): void {
+    hangarShip = models.create("pilot_ship");
+    hangarShip.position.copy(HANGAR_POINT).setY(0.35);
+    hangarShip.scale.setScalar(0.9);
+    scene.add(hangarShip);
+    // A pad with a lit rim, two practicals and a cool back light.
+    hangarPad = new THREE.Group();
+    hangarPad.position.copy(HANGAR_POINT);
+    const pad = new THREE.Mesh(
+      new THREE.CylinderGeometry(1.6, 1.75, 0.18, 48),
+      new THREE.MeshStandardMaterial({
+        color: 0x2a2f38,
+        metalness: 0.8,
+        roughness: 0.35,
+      }),
+    );
+    hangarPad.add(pad);
+    const rimRing = new THREE.Mesh(
+      new THREE.TorusGeometry(1.62, 0.02, 8, 96),
+      new THREE.MeshBasicMaterial({
+        color: new THREE.Color(PALETTE.cyan).multiplyScalar(1.3),
+        toneMapped: false,
+      }),
+    );
+    rimRing.rotation.x = Math.PI / 2;
+    rimRing.position.y = 0.1;
+    hangarPad.add(rimRing);
+    const keyL = new THREE.SpotLight(0xfff2e0, 40, 12, 0.6, 0.5);
+    keyL.position.set(-2.5, 4, -2.5);
+    keyL.target = pad;
+    hangarPad.add(keyL);
+    const back = new THREE.PointLight(PALETTE.cyan, 12, 8);
+    back.position.set(1.5, 1.2, 2.5);
+    hangarPad.add(back);
+    scene.add(hangarPad);
   }
 
   function stats(): StageStats {
@@ -641,7 +1025,18 @@ export function createStage(
       avgFrameMs += (dtMs - avgFrameMs) * 0.05;
 
       const state = interp.latest;
-      if (state) updateEntities(state, alpha);
+      if (lookDirty > 0 && --lookDirty % 10 === 0) {
+        applyLook(ship);
+        if (hangarShip) applyLook(hangarShip);
+      }
+      if (state) updateEntities(state, alpha, dt);
+      chooseLook(state);
+      backdrop.setSubjects(
+        ctx.player,
+        state?.boss && boss ? boss.position : null,
+        bullets.enemyCount,
+      );
+      hurt = Math.max(0, hurt - dt * 2.2);
 
       // Events after entities, so kills find their last drawn position.
       for (const e of pending) handle(e);
@@ -671,6 +1066,8 @@ export function createStage(
         flashColor: flashes.tint,
         desaturate: flashback ? 0.85 : 0,
         bloomScale: reducedFlashing ? 0.6 : 1,
+        bulletDensity: bullets.enemyCount,
+        hurt: reducedFlashing ? hurt * 0.4 : hurt,
       });
       avgRenderMs += (performance.now() - t0 - avgRenderMs) * 0.05;
     },
@@ -685,7 +1082,7 @@ export function createStage(
       if (!id) return;
       let prop = props.get(id);
       if (!prop) {
-        prop = models.create(id);
+        prop = models.create(id === "pilot_figure" ? helmetModel() : id);
         prop.position.copy(STAGE_POINT);
         // Logos face the camera upright; the pilot stands on the deck.
         if (id !== "pilot_figure") prop.position.y += 0.2;
@@ -701,6 +1098,61 @@ export function createStage(
 
     setWarp(amount) {
       backdrop.warp = Math.max(0, Math.min(1, amount));
+    },
+
+    applyLoadout(next) {
+      loadout = next;
+      loadoutKeyNow = loadoutKey(next);
+      this.setHelmet(helmetFor(next.cosmetics.helmetLivery));
+      // glTF content may swap in late; re-apply on the next frames too.
+      applyLook(ship);
+      if (hangarShip) applyLook(hangarShip);
+      lookDirty = 30;
+    },
+
+    setHelmet(variant) {
+      if (variant === helmet) return;
+      helmet = variant;
+      if (activeProp === "pilot_figure") {
+        const old = props.get("pilot_figure");
+        if (old) scene.remove(old);
+        props.delete("pilot_figure");
+        activeProp = null;
+        this.showProp("pilot_figure");
+      }
+    },
+
+    showHangar(shot) {
+      if (!shot) {
+        if (hangarShip) hangarShip.visible = false;
+        if (hangarPad) hangarPad.visible = false;
+        lookOverride = null;
+        rig.play("gameplay", 600);
+        return;
+      }
+      if (!hangarShip) buildHangar();
+      hangarShip!.visible = true;
+      hangarPad!.visible = true;
+      applyLook(hangarShip!);
+      lookOverride = "hangar";
+      rig.play(shot === "hero" ? "hangar" : "hangarTurntable", 700);
+    },
+
+    setSceneLook(id) {
+      lookOverride = id;
+    },
+
+    screenPositionOf(rawId) {
+      const id = Number(rawId);
+      const slot = interp.latest?.boss?.id === id ? boss : live.get(id);
+      if (!slot || !slot.visible) return null;
+      tmpV.copy(slot.position).project(rig.camera);
+      if (tmpV.z > 1) return null;
+      const rect = renderer.domElement.getBoundingClientRect();
+      return {
+        x: (tmpV.x * 0.5 + 0.5) * rect.width,
+        y: (-tmpV.y * 0.5 + 0.5) * rect.height,
+      };
     },
 
     stats,

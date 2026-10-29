@@ -358,7 +358,8 @@ export const PLACEHOLDERS = {
   warden: makeWarden,
   pickup_spread: () => makePickup(PALETTE.mint, "dots"),
   pickup_shield: () => makePickup(PALETTE.cyan, "ring"),
-  pilot_figure: makePilotFigure,
+  pilot_figure_issued: makePilotFigure,
+  pilot_figure_worn: makePilotFigure,
   logo_adamsmith_systems: () => makeLogo(PALETTE.cyan, PALETTE.pink),
   logo_cm121: () => makeLogo(PALETTE.gold, PALETTE.violet),
 } as const satisfies Record<string, () => THREE.Object3D>;

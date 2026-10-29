@@ -6,7 +6,9 @@
  * every tick, `render(dt, alpha)` once per frame.
  *
  * URL flags:
- *   ?scene=sector|boss|pilot|logo   what to show (default sector)
+ *   ?scene=sector|boss|pilot|logo|hangar   what to show (default sector)
+ *   &turntable=1                    hangar: turntable instead of hero shot
+ *   &helmet=worn                    pilot: the worn helmet variant
  *   &speed=N                        ticks per frame, like auto-play
  *   &preset=low|medium|high|ultra   display preset
  *   &shot=<CameraShotId>            camera shot to blend to after 1 s
@@ -26,7 +28,7 @@ import type {
   SimEvent,
   SimState,
 } from "../contracts/index.ts";
-import { PLAYFIELD, TICK_MS } from "../contracts/index.ts";
+import { DEFAULT_LOADOUT, PLAYFIELD, TICK_MS } from "../contracts/index.ts";
 import { DEFAULT_SETTINGS } from "../settings/defaults.ts";
 import type { RigShotId } from "./cameraRig.ts";
 import { createStage } from "./stage.ts";
@@ -147,7 +149,14 @@ function step(): SimEvent[] {
         radius: 6,
       });
     }
-    events.push({ type: "playerFired", tick, shots: 3 });
+    events.push({
+      type: "playerFired",
+      tick,
+      shots: 3,
+      shot: "stream",
+      level: 0,
+      pos: playerPos(),
+    });
   }
   // Enemy fire: a rotating fan from the top (or the Warden's spiral).
   const src = bossScene ? bossPos() : { x: 240, y: 120 };
@@ -188,6 +197,7 @@ function step(): SimEvent[] {
       kind: e.kind,
       score: 100,
       byRam: false,
+      clean: false,
     });
     if (e.kind === "turret") {
       pickups.push({ id: nextId++, kind: "spread", pos: enemyPos(e) });
@@ -239,15 +249,35 @@ function bossPos(): { x: number; y: number } {
 function snapshot(): SimState {
   const p = playerPos();
   const vx = Math.cos(tick * 0.02) * 170 * 0.02;
-  const enemyViews: EnemyView[] = enemies.map((e) => ({
-    id: e.id,
-    kind: e.kind,
-    pos: enemyPos(e),
-    radius: 13,
-    hp: 2,
-    maxHp: 2,
-    age: tick - e.born,
-  }));
+  // Fake scan: the player rests for half of every 5 s; enemies in a cone
+  // ahead dwell toward a lock (the real rule lives in src/sim/).
+  const resting = tick % 300 < 160;
+  const half = 0.32;
+  const range = 300;
+  const enemyViews: EnemyView[] = enemies.map((e) => {
+    const pos = enemyPos(e);
+    const dx = pos.x - p.x;
+    const dy = p.y - pos.y;
+    const inCone = resting && dy > 0 && dy < range &&
+      Math.abs(Math.atan2(dx, dy)) < half;
+    const dwell = inCone ? Math.min(1, (tick % 300) / 90) : 0;
+    return {
+      id: e.id,
+      kind: e.kind,
+      pos,
+      radius: 13,
+      hp: 2,
+      maxHp: 2,
+      age: tick - e.born,
+      ai: dwell >= 1 ? "aim" : "patrol",
+      aiTicks: 0,
+      parts: [],
+      weakPoint: { offset: { x: 0, y: 4 }, radius: 5 },
+      lock: dwell,
+      locked: dwell >= 1,
+      disarmed: e.id % 7 === 0 && tick - e.born > 120,
+    };
+  });
   return {
     tick,
     seed: 121,
@@ -262,6 +292,13 @@ function snapshot(): SimState {
       shielded,
       graceTicks: 0,
       bank: Math.max(-0.18, Math.min(0.18, vx * 0.06)),
+      vel: { x: vx, y: 0 },
+      trigger: resting ? "rest" : "stream",
+      chargeLevel: resting
+        ? Math.min(3, Math.floor((tick % 300) / 45)) as 0 | 1 | 2 | 3
+        : 0,
+      charge: resting ? ((tick % 300) % 45) / 45 : 0,
+      scan: { active: resting, halfAngle: half, range, targetId: null },
     },
     enemies: enemyViews,
     bullets,
@@ -275,19 +312,51 @@ function snapshot(): SimState {
         maxHp: 900,
         phase: tick < 150 ? 0 : 2,
         invulnerable: tick < 150,
+        ai: tick < 150 ? "descend" : "fan",
+        pods: (["fanPodL", "fanPodR", "cannonPod", "spiralPod"] as const).map(
+          (id, i) => ({
+            id,
+            kind: i < 2
+              ? "fanPod" as const
+              : i === 2
+              ? "cannonPod" as const
+              : "spiralPod" as const,
+            offset: { x: 0, y: 0 },
+            radius: 14,
+            hp: 60,
+            maxHp: 60,
+            broken: i === 1 && tick > 400,
+          }),
+        ),
+        coreOpen: false,
+        weakPoint: { offset: { x: 0, y: 10 }, radius: 16 },
+        lock: resting ? Math.min(1, (tick % 300) / 90) : 0,
+        locked: resting && tick % 300 >= 90,
       }
       : null,
     score: tick * 10,
     kills: 0,
-    flags: { pacifistIntact: false, firstPowerupTaken: true },
+    pay: { credits: 0, rate: 1, chainTicks: 0, chainMax: 1 },
+    graze: { meter: 0, count: 0, radius: 18 },
+    scoutsSpared: 0,
+    flags: {
+      pacifistIntact: false,
+      neverFired: false,
+      recorderRecovered: false,
+      firstPowerupTaken: true,
+    },
+    loadout: DEFAULT_LOADOUT,
   };
 }
 
 // ---- cutscene scenes ---------------------------------------------------------
 
 if (scene === "pilot") {
+  if (params.get("helmet") === "worn") stage.setHelmet("worn");
   stage.showProp("pilot_figure");
   stage.playShot("pilotCloseup", 0);
+} else if (scene === "hangar") {
+  stage.showHangar(params.get("turntable") ? "turntable" : "hero");
 } else if (scene === "logo") {
   stage.showProp("logo_adamsmith_systems");
   stage.playShot("logoTurntable", 0);

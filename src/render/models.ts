@@ -36,10 +36,12 @@ const FOOTPRINT_PX: Record<ModelId, number | null> = {
   dart: 40,
   turret: 48,
   lancer: 52,
-  warden: 200,
+  // About 40% of the playfield width (critique item 7).
+  warden: 192,
   pickup_spread: 28,
   pickup_shield: 28,
-  pilot_figure: null,
+  pilot_figure_issued: null,
+  pilot_figure_worn: null,
   logo_adamsmith_systems: null,
   logo_cm121: null,
 };
@@ -51,18 +53,29 @@ type Status = "placeholder" | "loading" | "gltf" | "missing";
 /**
  * Blender's emissive strengths (6–12) are tuned for Cycles renders. Under our
  * bloom they turn whole surfaces white: the Warden's core erased its own
- * silhouette in the first boss screenshot. Gameplay readability wins, so
- * cap them here; `core` materials (big glowing areas) get the lowest cap.
+ * silhouette in the first boss screenshot. Selective bloom (post.ts) needs
+ * the opposite of "everything glows a little": ordinary trims are capped
+ * under the bloom threshold, and only the emitters in BLOOM_EMITTERS (by
+ * material name) may exceed it. That list is the whole art direction for
+ * what glows in a model, in one place.
  */
-const EMISSIVE_CAP = 3;
-const CORE_EMISSIVE_CAP = 1.6;
+const EMISSIVE_CAP = 1.4;
+const BLOOM_EMITTERS: readonly { match: RegExp; cap: number }[] = [
+  { match: /engine|exhaust|plume/, cap: 3.2 },
+  { match: /core|eye/, cap: 2.4 },
+  { match: /seam/, cap: 2.6 },
+  { match: /crystal|shield_ring/, cap: 2.6 },
+];
 
 function tameEmissive(material: THREE.Material | THREE.Material[]): void {
   for (const m of Array.isArray(material) ? material : [material]) {
     const std = m as THREE.MeshStandardMaterial;
     if (std.emissiveIntensity === undefined) continue;
-    const cap = m.name.includes("core") ? CORE_EMISSIVE_CAP : EMISSIVE_CAP;
-    std.emissiveIntensity = Math.min(std.emissiveIntensity, cap);
+    const rule = BLOOM_EMITTERS.find((r) => r.match.test(m.name));
+    std.emissiveIntensity = Math.min(
+      std.emissiveIntensity,
+      rule?.cap ?? EMISSIVE_CAP,
+    );
   }
 }
 

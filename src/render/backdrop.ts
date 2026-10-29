@@ -10,9 +10,13 @@
 
 import * as THREE from "three";
 import { FIELD_D, FIELD_W } from "./coords.ts";
-import { PALETTE } from "./palette.ts";
+import { PALETTE, SCENE_LOOKS, type SceneLook } from "./palette.ts";
 import { neonMaterial } from "./placeholders.ts";
+import { floorFragment, floorVertex } from "./shaders/floor.glsl.ts";
 import { nebulaFragment, nebulaVertex } from "./shaders/nebula.glsl.ts";
+
+/** Floor plane height: under hulls, above the nebula. */
+const FLOOR_Y = -0.9;
 
 /** Scrolling volume the stars live in, world units. */
 const STAR_SPAN_Z = 80;
@@ -27,6 +31,9 @@ export class Backdrop {
   private readonly nebula: THREE.ShaderMaterial;
   private layers: StarLayer[] = [];
   private readonly pylons = new THREE.Group();
+  private readonly floor: THREE.ShaderMaterial;
+  private readonly railMats: THREE.MeshBasicMaterial[] = [];
+  private readonly bandMats: THREE.MeshBasicMaterial[] = [];
   private scroll = 0;
   warp = 0;
 
@@ -42,6 +49,7 @@ export class Backdrop {
         uPink: { value: new THREE.Color(PALETTE.pink) },
         uCyan: { value: new THREE.Color(PALETTE.cyan) },
         uVoid: { value: new THREE.Color(PALETTE.void) },
+        uCap: { value: 0.35 },
       },
     });
     const plane = new THREE.Mesh(
@@ -53,8 +61,65 @@ export class Backdrop {
     plane.renderOrder = -10;
     this.group.add(plane);
 
+    this.floor = new THREE.ShaderMaterial({
+      vertexShader: floorVertex,
+      fragmentShader: floorFragment,
+      depthWrite: true,
+      uniforms: {
+        uBase: { value: new THREE.Color() },
+        uLine: { value: new THREE.Color() },
+        uBright: { value: 1 },
+        uScroll: { value: 0 },
+        uPlayer: { value: new THREE.Vector2(0, 6) },
+        uBoss: { value: new THREE.Vector2(0, -5) },
+        uBossOn: { value: 0 },
+        uDensity: { value: 0 },
+        uHalf: { value: new THREE.Vector2(FIELD_W / 2 + 0.5, FIELD_D / 2) },
+      },
+    });
+    const floor = new THREE.Mesh(new THREE.PlaneGeometry(90, 110), this.floor);
+    floor.rotation.x = -Math.PI / 2;
+    floor.position.set(0, FLOOR_Y, -18);
+    floor.renderOrder = -5;
+    this.group.add(floor);
+
     this.setStarCount(starCount);
     this.buildLanes();
+    this.setLook(SCENE_LOOKS.sector);
+  }
+
+  /**
+   * Applies a scene color budget: floor, nebula, rails and pylon bands all
+   * take the world hues; danger colors are never used here.
+   */
+  setLook(look: SceneLook): void {
+    const u = this.floor.uniforms;
+    // Floor values are tuned in display terms; the shader works in linear.
+    (u.uBase.value as THREE.Color).set(look.worldA).multiplyScalar(0.45);
+    (u.uLine.value as THREE.Color).set(look.worldB).multiplyScalar(0.5);
+    u.uBright.value = look.floor;
+    const n = this.nebula.uniforms;
+    (n.uViolet.value as THREE.Color).set(look.worldB);
+    (n.uPink.value as THREE.Color).set(look.worldA);
+    (n.uCyan.value as THREE.Color).set(look.accent);
+    n.uCap.value = look.nebulaCap;
+    for (const m of this.railMats) {
+      m.color.set(look.worldB).multiplyScalar(0.9);
+    }
+    for (const m of this.bandMats) m.color.set(look.accent).multiplyScalar(1.2);
+  }
+
+  /** Per-frame subjects for the floor's ground glows and density column. */
+  setSubjects(
+    player: THREE.Vector3,
+    boss: THREE.Vector3 | null,
+    density: number,
+  ): void {
+    const u = this.floor.uniforms;
+    (u.uPlayer.value as THREE.Vector2).set(player.x, player.z);
+    if (boss) (u.uBoss.value as THREE.Vector2).set(boss.x, boss.z);
+    u.uBossOn.value = boss ? 1 : 0;
+    u.uDensity.value = Math.min(1, density / 150);
   }
 
   /** Rebuilds the star layers; called when the quality tier changes. */
@@ -75,6 +140,7 @@ export class Backdrop {
   private buildLanes(): void {
     // Lane rails: the corridor edges, just outside the playfield.
     const railMat = neonMaterial(PALETTE.cyan, 0.9);
+    this.railMats.push(railMat);
     for (const side of [-1, 1]) {
       const rail = new THREE.Mesh(
         new THREE.BoxGeometry(0.05, 0.05, 120),
@@ -99,10 +165,9 @@ export class Backdrop {
       for (const side of [-1, 1]) {
         const p = new THREE.Group();
         p.add(new THREE.Mesh(slab, dark));
-        const b = new THREE.Mesh(
-          band,
-          neonMaterial(i % 3 === 0 ? PALETTE.crimson : PALETTE.violet, 1.6),
-        );
+        const bandMat = neonMaterial(PALETTE.violet, 1.2);
+        this.bandMats.push(bandMat);
+        const b = new THREE.Mesh(band, bandMat);
         b.position.y = 4 + (i % 4);
         p.add(b);
         p.position.set(side * (FIELD_W / 2 + 9 + (i % 3) * 3), -14, -i * 8);
@@ -117,6 +182,7 @@ export class Backdrop {
     this.scroll += dtSec * speed;
     this.nebula.uniforms.uScroll.value = -this.scroll * 0.02;
     this.nebula.uniforms.uWarp.value = this.warp;
+    this.floor.uniforms.uScroll.value = this.scroll * 4;
     for (const l of this.layers) {
       l.points.position.z = (this.scroll * l.speed) % STAR_SPAN_Z;
       l.points.scale.z = 1 + this.warp * 6;

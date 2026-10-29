@@ -4,18 +4,19 @@
  * instance matrices from the interpolated sim positions; there is no per-
  * bullet scene object at all.
  *
- * Two looks:
- * - player shots: stretched saturated-cyan capsules aligned with their
- *   velocity, which doubles as a cheap motion streak (cyan, never white, so
- *   they cannot be confused with enemy fire);
- * - enemy `bullet` and `heavy`: billboarded glowing orbs (see orb.glsl.ts).
+ * Two looks, on the value ladder in palette.ts (ROLE):
+ * - player shots: thin, stretched cyan streaks aligned with their velocity,
+ *   additive at half opacity and under the bloom threshold, so they never
+ *   compete with danger;
+ * - enemy `bullet` and `heavy`: billboarded rings with a dark core and a
+ *   hot colored rim (see orb.glsl.ts), the brightest small things on screen.
  */
 
 import * as THREE from "three";
 import type { BulletView } from "../contracts/index.ts";
 import { simToWorldLength, simToWorldX, simToWorldZ } from "./coords.ts";
 import type { Pos, SnapshotInterpolator } from "./interp.ts";
-import { PALETTE } from "./palette.ts";
+import { ROLE, type RoleColor } from "./palette.ts";
 import { orbFragment, orbVertex } from "./shaders/orb.glsl.ts";
 
 const MAX_SHOTS = 512;
@@ -27,7 +28,8 @@ export class BulletRenderer {
   readonly group = new THREE.Group();
   private readonly shots: THREE.InstancedMesh;
   private readonly orbs: THREE.InstancedMesh;
-  private readonly orbTint: THREE.InstancedBufferAttribute;
+  private readonly orbRim: THREE.InstancedBufferAttribute;
+  private readonly orbCore: THREE.InstancedBufferAttribute;
   private readonly orbMaterial: THREE.ShaderMaterial;
   private readonly m = new THREE.Matrix4();
   private readonly q = new THREE.Quaternion();
@@ -36,15 +38,23 @@ export class BulletRenderer {
   private readonly pos: Pos = { x: 0, y: 0 };
   private readonly up = new THREE.Vector3(0, 1, 0);
   private readonly dir = new THREE.Vector3();
-  private readonly pink = new THREE.Color(PALETTE.enemyShot);
-  private readonly gold = new THREE.Color(PALETTE.heavyGold);
+  private readonly rim = color(ROLE.dangerRim);
+  private readonly core = color(ROLE.dangerCore);
+  private readonly heavyRim = color(ROLE.heavyRim);
+  private readonly heavyCore = color(ROLE.heavyCore);
+  /** Enemy bullets on screen last frame; post.ts damps bloom by it. */
+  enemyCount = 0;
 
   constructor() {
-    const capsule = new THREE.CapsuleGeometry(0.06, 0.4, 4, 8);
+    const capsule = new THREE.CapsuleGeometry(0.035, 0.5, 3, 6);
     this.shots = new THREE.InstancedMesh(
       capsule,
       new THREE.MeshBasicMaterial({
-        color: new THREE.Color(PALETTE.cyan).multiplyScalar(1.6),
+        color: color(ROLE.playerShot).multiplyScalar(ROLE.playerShot.gain),
+        transparent: true,
+        opacity: 0.55,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
         toneMapped: false,
       }),
       MAX_SHOTS,
@@ -53,15 +63,23 @@ export class BulletRenderer {
     this.shots.count = 0;
 
     const quad = new THREE.PlaneGeometry(2, 2);
-    this.orbTint = new THREE.InstancedBufferAttribute(
+    this.orbRim = new THREE.InstancedBufferAttribute(
       new Float32Array(MAX_ORBS * 3),
       3,
     );
-    quad.setAttribute("aTint", this.orbTint);
+    this.orbCore = new THREE.InstancedBufferAttribute(
+      new Float32Array(MAX_ORBS * 3),
+      3,
+    );
+    quad.setAttribute("aRim", this.orbRim);
+    quad.setAttribute("aCore", this.orbCore);
     this.orbMaterial = new THREE.ShaderMaterial({
       vertexShader: orbVertex,
       fragmentShader: orbFragment,
-      uniforms: { uPulse: { value: 0 } },
+      uniforms: {
+        uPulse: { value: 0 },
+        uRimGain: { value: ROLE.dangerRim.gain },
+      },
       transparent: true,
       depthWrite: false,
       blending: THREE.NormalBlending,
@@ -97,13 +115,17 @@ export class BulletRenderer {
         this.shots.setMatrixAt(shotCount++, this.m);
       } else {
         if (orbCount >= MAX_ORBS) continue;
-        // The orb's visible glow is about 1.6x its collision radius, like the
-        // original 16 px sprite around a 5 px hitbox.
-        const r = simToWorldLength(b.radius * 1.6);
+        // The ring's outer edge is about 1.7x the collision radius, like the
+        // original 16 px sprite around a 5 px hitbox; the hitbox sits inside
+        // the dark core, so "touching the ring" is honestly a graze.
+        const r = simToWorldLength(b.radius * 1.7);
         this.m.makeScale(r, r, r).setPosition(this.p);
         this.orbs.setMatrixAt(orbCount, this.m);
-        const c = b.kind === "heavy" ? this.gold : this.pink;
-        this.orbTint.setXYZ(orbCount, c.r, c.g, c.b);
+        const heavy = b.kind === "heavy";
+        const rim = heavy ? this.heavyRim : this.rim;
+        const core = heavy ? this.heavyCore : this.core;
+        this.orbRim.setXYZ(orbCount, rim.r, rim.g, rim.b);
+        this.orbCore.setXYZ(orbCount, core.r, core.g, core.b);
         orbCount++;
       }
     }
@@ -111,7 +133,13 @@ export class BulletRenderer {
     this.orbs.count = orbCount;
     this.shots.instanceMatrix.needsUpdate = true;
     this.orbs.instanceMatrix.needsUpdate = true;
-    this.orbTint.needsUpdate = true;
+    this.orbRim.needsUpdate = true;
+    this.orbCore.needsUpdate = true;
+    this.enemyCount = orbCount;
     this.orbMaterial.uniforms.uPulse.value = Math.sin(timeSec * 10) * 0.5 + 0.5;
   }
+}
+
+function color(role: RoleColor): THREE.Color {
+  return new THREE.Color(role.hex);
 }

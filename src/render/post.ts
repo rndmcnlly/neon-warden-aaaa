@@ -17,6 +17,7 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { AfterimagePass } from "three/examples/jsm/postprocessing/AfterimagePass.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
+import { BLOOM_THRESHOLD } from "./palette.ts";
 import type { QualityTier } from "./quality.ts";
 import { finishFragment, finishVertex } from "./shaders/finish.glsl.ts";
 
@@ -26,6 +27,19 @@ export interface PostLook {
   desaturate: number;
   /** Multiplies bloom; reduced flashing turns it down. */
   bloomScale: number;
+  /**
+   * Enemy bullets on screen. Bloom strength is damped as this rises, so a
+   * dense phase-3 spiral stays a lattice of rings instead of summing into a
+   * white fog over the boss (critique item 2).
+   */
+  bulletDensity?: number;
+  /** Player-damage pulse 0–1: extra aberration and a red vignette. */
+  hurt?: number;
+}
+
+/** Bloom multiplier for a bullet count: 1 when sparse, down to 0.5. */
+export function bloomDamping(bullets: number): number {
+  return Math.min(1, Math.max(0.5, 1.2 - bullets / 200));
 }
 
 export class PostChain {
@@ -54,9 +68,18 @@ export class PostChain {
     this.trails = new AfterimagePass(tier.trails);
     this.composer.addPass(this.trails);
 
-    // Threshold above 1: only HDR emitters bloom, so bullet hues stay
-    // legible instead of melting into one white glow.
-    this.bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 1, 0.35, 1.05);
+    // Selective bloom by threshold: only the emitters palette.ts ROLE pushes
+    // over BLOOM_THRESHOLD glow (enemy bullet rims, the engine plume, the
+    // Warden's core and seams, pickups, a level-3 Writ). Everything else
+    // stays crisp. A tight radius keeps glows from merging. The simpler
+    // two-composer layer approach was weighed and not needed: a threshold
+    // plus a disciplined value ladder gives the same result for one pass.
+    this.bloom = new UnrealBloomPass(
+      new THREE.Vector2(1, 1),
+      1,
+      0.22,
+      BLOOM_THRESHOLD,
+    );
     this.composer.addPass(this.bloom);
 
     this.composer.addPass(new OutputPass());
@@ -71,6 +94,7 @@ export class PostChain {
         uFlash: { value: 0 },
         uFlashColor: { value: new THREE.Vector3(1, 1, 1) },
         uDesaturate: { value: 0 },
+        uHurt: { value: 0 },
       },
       vertexShader: finishVertex,
       fragmentShader: finishFragment,
@@ -94,12 +118,15 @@ export class PostChain {
   render(timeSec: number, look: PostLook): void {
     const u = this.finish.uniforms;
     u.uTime.value = timeSec;
-    u.uAberration.value = this.tier.chromaticAberration;
+    const hurt = look.hurt ?? 0;
+    u.uAberration.value = this.tier.chromaticAberration + hurt * 0.004;
+    u.uHurt.value = hurt;
     u.uGrain.value = this.tier.grain;
     u.uFlash.value = look.flash;
     (u.uFlashColor.value as THREE.Vector3).set(...look.flashColor);
     u.uDesaturate.value = look.desaturate;
-    this.bloom.strength = this.tier.bloomStrength * look.bloomScale;
+    this.bloom.strength = this.tier.bloomStrength * look.bloomScale *
+      bloomDamping(look.bulletDensity ?? 0);
     this.composer.render();
   }
 

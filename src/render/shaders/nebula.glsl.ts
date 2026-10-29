@@ -20,6 +20,7 @@ uniform vec3 uViolet;
 uniform vec3 uPink;
 uniform vec3 uCyan;
 uniform vec3 uVoid;
+uniform float uCap;  // value cap, keeps the nebula under bullet values
 varying vec2 vUv;
 
 float hash(vec2 p) {
@@ -57,6 +58,8 @@ void main() {
   // Fade the edges of the plane into the void so no border ever shows.
   vec2 e = abs(vUv - 0.5) * 2.0;
   c = mix(c, uVoid, smoothstep(0.6, 1.0, max(e.x, e.y)));
+  float v = max(c.r, max(c.g, c.b));
+  c *= min(1.0, uCap / max(v, 1e-4));
   gl_FragColor = vec4(c, 1.0);
 }
 `;

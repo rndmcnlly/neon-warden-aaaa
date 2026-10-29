@@ -24,6 +24,7 @@ uniform float uVignette;    // 0 none, 1 heavy
 uniform float uFlash;       // 0-1, pre-limited
 uniform vec3 uFlashColor;
 uniform float uDesaturate;  // 0-1, for the flashback's recorder look
+uniform float uHurt;        // 0-1, player-damage pulse: red edge vignette
 varying vec2 vUv;
 
 // Cheap hash noise; animated per frame so grain shimmers like film.
@@ -49,6 +50,9 @@ void main() {
 
   float vig = smoothstep(0.85, 0.2, dist2 * (1.0 + uVignette * 2.2));
   col *= mix(1.0, vig, uVignette);
+
+  // Damage pulse: the edges bleed red, the center stays readable.
+  col = mix(col, col * 0.5 + vec3(0.35, 0.02, 0.06), uHurt * smoothstep(0.05, 0.3, dist2));
 
   col += uFlashColor * uFlash;
 
