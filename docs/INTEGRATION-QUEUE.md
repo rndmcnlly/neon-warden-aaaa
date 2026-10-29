@@ -720,3 +720,39 @@ Requests:
   Vite build passes. Full-suite snapshot: 191 pass, one failure because
   T's rendered seed/hash metadata makes the exact generated YAML mirror
   comparison stale; do not overwrite the live script to silence it.
+
+## Flat opening logos: isolated handoff (October 28, 2026)
+
+Ready for the main/stage owner after Pilot removal finishes. No shared renderer,
+timeline, UI or `main.ts` changes were made by this workstream.
+
+```ts
+import { createFlatLogos } from "./presentation/flatLogos.ts";
+import "./presentation/flatLogos.css";
+const logos = createFlatLogos(slot, {
+  reducedMotion: settings.accessibility.reduceMotion,
+  reducedFlashing: settings.accessibility.reducedFlashing,
+});
+// Existing Director boot flag observer / frame callback:
+logos.show(director.getFlag("boot.publisherLogo") ? "incubator" : "studio");
+logos.update(elapsedSinceCurrentBrandCueMs);
+// Abort/skip and the existing playScene("boot").finally cleanup:
+logos.dispose();
+```
+
+Use real localized `ui.logo.studioTag` / `ui.logo.publisherTag` as the optional
+second `show` argument. Do not show anything before the studio flag or after
+both flags clear. The snippet's observer is illustrative, not an added clock.
+Time comes from the Director: retain 3200 + 3200 ms, music, logosDone and the
+AbortSignal → director.skipScene path. Remove legacy `.is-3d`, showProp logo,
+logoTurntable and the old boot-only polling when replacing `playBootLogos`.
+Keep Skip above the layer; position the host full-screen. For integration through
+the stage, pass the DOM slot through, never project this layer into 3D.
+Include `/branding/*.svg` in offline cache ownership when PWA work lands.
+
+API/lifecycle details: `src/presentation/README.md`. Static fallback works with
+only show/hide; explicit `update` enables the reveal. No autonomous timers/audio.
+QA: two timing tests, six grouped isolated browser checks, lint and strict checks
+pass. Review: `qa/reports/20261028-flat-logos/result.json`, phone/desktop PNGs
+and 10-second `.mp4` clips in the same directory. Static asset/translation QA:
+`qa/reports/20261028-225320/index.html` (32 pass, six existing warnings, zero fail).

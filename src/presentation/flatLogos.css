@@ -1,0 +1,99 @@
+/* Local vectors and system fonts only. No GPU canvas, animation loop or webfont. */
+.nw-flat-logos {
+  --logo-ink: #a6f4ed;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  pointer-events: none;
+  color: var(--logo-ink);
+  background: radial-gradient(ellipse at center, #11282b 0%, #070c12 52%,
+    #04070c 100%);
+}
+.nw-flat-logos[hidden],
+.nw-flat-logos [hidden] {
+  display: none;
+}
+.nw-flat-logos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .13;
+  background-image: radial-gradient(#88b5b7 .65px, transparent .75px);
+  background-size: 5px 5px;
+  mask-image: radial-gradient(ellipse, #000, transparent 65%);
+}
+.nw-flat-logos[data-brand="incubator"] {
+  --logo-ink: #f0dfb0;
+  background: radial-gradient(ellipse at center, #28251e 0%, #0d1017 52%,
+    #04070c 100%);
+}
+.nw-flat-lockup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+  padding: 24px max(20px, env(safe-area-inset-left)) 24px max(20px,
+    env(safe-area-inset-right));
+  text-align: center;
+}
+.nw-flat-mark {
+  display: block;
+  width: clamp(88px, 16vmin, 150px);
+  height: clamp(88px, 16vmin, 150px);
+  margin-bottom: clamp(24px, 5vmin, 42px);
+  filter: drop-shadow(0 0 12px #6ed8d222);
+}
+.nw-flat-name {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono",
+    monospace;
+  font-size: clamp(22px, 6vw, 42px);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-shadow: 0 0 22px #a6f4ed18;
+}
+[data-brand="incubator"] .nw-flat-name {
+  font-family: system-ui, sans-serif;
+  font-size: clamp(52px, 10vw, 88px);
+  font-weight: 750;
+  letter-spacing: -.065em;
+}
+.nw-flat-cohort {
+  margin-top: 14px;
+  padding: 5px 15px;
+  border: 1px solid #8b826c;
+  font: 500 14px/1.2 ui-monospace, monospace;
+  letter-spacing: .18em;
+}
+.nw-flat-tag {
+  max-width: 32em;
+  margin-top: 24px;
+  color: #b2bdc5;
+  font: 400 clamp(12px, 2.8vw, 15px)/1.6 system-ui, sans-serif;
+  text-wrap: balance;
+}
+.nw-flat-glint {
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  width: 15%;
+  opacity: 0;
+  background: linear-gradient(90deg, transparent, #c5e7ed, transparent);
+}
+/* OS preferences are a safety net even if the caller has stale settings. */
+@media (prefers-reduced-motion: reduce), (prefers-reduced-transparency:
+  reduce) {
+  .nw-flat-glint {
+    display: none;
+  }
+  .nw-flat-lockup {
+    opacity: 1 !important;
+  }
+}
