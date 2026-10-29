@@ -94,7 +94,7 @@ export class BulletRenderer {
     // cyan and the most opaque player round, still under the threshold.
     this.slugs = instanced(
       slugGeometry(),
-      shotMat(1.3, 0.85, 0xa8f8ff),
+      shotMat(1.35, 0.95, 0xa8f8ff),
       MAX_SHOTS,
     );
     // Stream: thin, long, tapered needles at low opacity. Constant, never
@@ -309,9 +309,9 @@ function slugGeometry(): THREE.BufferGeometry {
     const y = pos.getY(i);
     pos.setXYZ(
       i,
-      pos.getX(i) * 0.065,
-      y > 0 ? y * 0.2 : y * 0.09,
-      pos.getZ(i) * 0.045,
+      pos.getX(i) * 0.1,
+      y > 0 ? y * 0.36 : y * 0.14,
+      pos.getZ(i) * 0.06,
     );
   }
   geo.computeVertexNormals();
