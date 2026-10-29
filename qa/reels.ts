@@ -580,6 +580,17 @@ export const REELS: readonly Reel[] = [
       { do: "wait", ms: 2500 },
       { do: "assertFrame", label: "sector 1 renders" },
       {
+        // The first powerup (seed 121: tick 312) plays the mid-scene
+        // flashback, which freezes the sim for longer than the lock
+        // deadline below; the fight autopilot's first lock comes at tick
+        // 564. Wait until the sim runs again past that pickup, so the lock
+        // deadline measures the beam, not the cutscene.
+        do: "until",
+        probe: "p.sim().tick > 400 && !p.sim().frozen",
+        label: "sim running past the first-powerup flashback",
+        timeoutMs: 60_000,
+      },
+      {
         do: "until",
         probe: "p.events.some((e) => e.type === 'scanLock')",
         label: "the beam locks a target after a dwell",
@@ -594,7 +605,9 @@ export const REELS: readonly Reel[] = [
       },
       {
         do: "waitFor",
-        selector: ".nw-intel-tag",
+        // The tag is `.nw-intel` (src/ui/instruments.ts); `.nw-intel-tag`
+        // was an earlier name and never matched.
+        selector: ".nw-intel",
         label: "intel tag on screen",
         timeoutMs: 4_000,
       },
@@ -608,11 +621,13 @@ export const REELS: readonly Reel[] = [
         do: "until",
         probe: "p.events.some((e) => e.type === 'kill' && e.clean === true)",
         label: "the Writ on a locked weak point is a kill shot",
-        timeoutMs: 15_000,
+        // First clean kill: tick 1978 for this seed, about 22 s after the
+        // lock at the browser's speed=2 pace.
+        timeoutMs: 35_000,
       },
       { do: "wait", ms: 1500 },
     ],
-    maxSeconds: 45,
+    maxSeconds: 90,
     requires: [
       {
         what: "scan beam in the sim (agent G)",
