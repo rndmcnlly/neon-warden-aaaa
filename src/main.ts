@@ -242,7 +242,7 @@ function makeDirector(): Director {
   subtitles.attach(director.subtitles);
   let lastLine: string | null = null;
   director.subtitles.subscribe((view) => {
-    if (view && view.line !== lastLine) qa?.line(view.line);
+    if (view && view.line !== lastLine) qa?.line(view.line, view.lang);
     lastLine = view?.line ?? null;
   });
   return director;

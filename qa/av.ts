@@ -42,6 +42,8 @@ export interface AvOptions {
   readonly spatial?: boolean;
   /** Highlighted subtitle words must land within 80 ms of the cue's word timings. */
   readonly wordPulse?: boolean;
+  /** Each scripted line's voice take and subtitle share a language. */
+  readonly langMatch?: boolean;
 }
 
 // -- page side
@@ -578,6 +580,8 @@ async function pcm(wav: string, rate: number): Promise<Float32Array> {
 export interface CueLine {
   readonly id: string;
   readonly texts: readonly string[];
+  /** The same texts by language, for the language-match check. */
+  readonly byLang: Readonly<Record<string, string>>;
   /** Word start times (s from line start) per language, when the VO pipeline provides them. */
   readonly words: Readonly<Record<string, readonly number[]>>;
 }
@@ -599,9 +603,13 @@ export async function cueTable(): Promise<Map<string, CueLine>> {
   cueCache = new Map();
   for (const [id, l] of Object.entries(raw.lines ?? {})) {
     const texts: string[] = [];
+    const byLang: Record<string, string> = {};
     const words: Record<string, number[]> = {};
     for (const [lang, take] of Object.entries(l.langs ?? {})) {
-      if (typeof take.text === "string") texts.push(take.text);
+      if (typeof take.text === "string") {
+        texts.push(take.text);
+        byLang[lang] = take.text;
+      }
       const ws = take.words;
       if (Array.isArray(ws)) {
         // WordTiming {startS} (src/contracts/text.ts); tolerate older shapes.
@@ -615,7 +623,7 @@ export async function cueTable(): Promise<Map<string, CueLine>> {
         ).filter(Number.isFinite);
       }
     }
-    cueCache.set(id, { id, texts, words });
+    cueCache.set(id, { id, texts, byLang, words });
   }
   return cueCache;
 }
@@ -878,6 +886,54 @@ export async function finishAv(
           : `Pearson r = ${
             r2(r)
           } between L/R balance and mean enemy x (want >= 0.3)`,
+      );
+    }
+
+    // Language match: live language cycling must never pair a voice take
+    // with a subtitle in another language (a mid-phrase switch would).
+    if (opts.langMatch) {
+      const voLang = (url: string) =>
+        /\/vo\/(?:.*\/)?(en|es|zh)\/[^/]+$/.exec(url)?.[1] ?? "?";
+      const textLang = (s: SubInterval) => {
+        const first = log.subs.find((x) =>
+          x.visible && log.t(x.epoch) >= s.start - 0.01
+        );
+        const chunk = squash(first?.text ?? "");
+        const take = cues.get(s.line)?.byLang ?? {};
+        return Object.entries(take).find(([, text]) =>
+          chunk && squash(text).includes(chunk)
+        )?.[0] ?? "?";
+      };
+      const sequence: string[] = [];
+      const mismatched: string[] = [];
+      for (const s of subs) {
+        if (s.layer !== "scripted") continue;
+        // The take starting nearest the subtitle: the Director starts both
+        // in the same frame, the tap reports the source a beat later.
+        const take = log.sources
+          .filter((x) => x.url.includes("/vo/"))
+          .map((x) => ({ t: log.t(x.epoch), lang: voLang(x.url) }))
+          .filter((x) => x.t >= s.start - 1 && x.t <= s.start + 0.8)
+          .sort((a, b) => Math.abs(a.t - s.start) - Math.abs(b.t - s.start))[0];
+        const text = textLang(s);
+        const voice = take?.lang ?? "none";
+        sequence.push(`${s.line} ${voice}/${text}`);
+        if (voice !== text) {
+          mismatched.push(
+            `${r2(s.start)} s ${s.line}: voice ${voice}, subtitle ${text}`,
+          );
+        }
+      }
+      const langs = [...new Set(sequence.map((x) => x.split(" ")[1]))];
+      check(
+        "voice and subtitle languages match per line",
+        mismatched.length || !sequence.length ? "fail" : "pass",
+        `${
+          sequence.length - mismatched.length
+        } of ${sequence.length} lines matched; languages heard: ${
+          langs.join(", ")
+        }`,
+        [...mismatched, ...sequence].slice(0, 16),
       );
     }
 

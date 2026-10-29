@@ -922,4 +922,60 @@ export const REELS: readonly Reel[] = [
     ],
     maxSeconds: 55,
   },
+  {
+    id: "language-cycle",
+    topic: "audio",
+    title:
+      "Live language cycling: ] ] [ during the Warden's descent; each next line speaks and captions in the new language",
+    query: `?skipto=boss${GAME}`,
+    settings: { textLang: "en", voiceLang: "en" },
+    steps: [
+      {
+        do: "until",
+        probe: "p.log.includes('lang:desc_001:en')",
+        label: "the descent starts in English",
+        timeoutMs: 15_000,
+      },
+      ...langStep("BracketRight", "en", "es"),
+      ...langStep("BracketRight", "es", "zh"),
+      ...langStep("BracketLeft", "zh", "es"),
+      { do: "wait", ms: 2500 },
+    ],
+    maxSeconds: 60,
+    av: { langMatch: true },
+  },
 ];
+
+/**
+ * One press of the language-cycle reel: mid-line, the line keeps `from`
+ * (no mid-phrase switch) while the page text and the badge follow `to` at
+ * once; then the next line to start must be in `to`.
+ */
+function langStep(key: string, from: string, to: string): readonly Step[] {
+  const lastLang = "p.log.filter((e) => e.startsWith('lang:')).at(-1) ?? ''";
+  return [
+    { do: "press", key, gapMs: 150 },
+    {
+      do: "waitFor",
+      selector: ".nw-lang-badge:not([hidden])",
+      label: `the ${to.toUpperCase()} badge confirms the press`,
+      timeoutMs: 2000,
+    },
+    {
+      do: "until",
+      probe: `(${lastLang}).endsWith(':${from}') && ` +
+        `document.querySelector('.nw-subtitle-live')?.lang === ` +
+        `'${from === "zh" ? "zh-Hans" : from}' && ` +
+        `document.documentElement.lang === '${to === "zh" ? "zh-Hans" : to}'`,
+      label:
+        `the playing line stays ${from}; HUD and page text switch to ${to} at once`,
+      timeoutMs: 1500,
+    },
+    {
+      do: "until",
+      probe: `(${lastLang}).endsWith(':${to}')`,
+      label: `the next line speaks and captions in ${to}`,
+      timeoutMs: 20_000,
+    },
+  ];
+}

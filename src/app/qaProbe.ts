@@ -6,7 +6,7 @@
  * `?qa=1` none of this runs.
  */
 
-import type { LineId, SimEvent, SimState } from "../contracts/index.ts";
+import type { Lang, LineId, SimEvent, SimState } from "../contracts/index.ts";
 
 export interface QaProbe {
   /** Timeline id now playing, `play` during plain gameplay, `menu` in menus. */
@@ -39,8 +39,10 @@ export interface QaProbe {
   flags(): Readonly<Record<string, boolean>>;
   /**
    * Last 500 entries: `sim:<type>`, `scene:<id>`, `line:<LineId>`,
-   * `bark:<LineId>`. Per-shot events (`playerFired`, `hit`) are left out
-   * here and in `events`: at high speed they would flush everything else.
+   * `lang:<LineId>:<Lang>` (the subtitle language each line started in, for
+   * the language-cycle reel), `bark:<LineId>`. Per-shot events
+   * (`playerFired`, `hit`) are left out here and in `events`: at high
+   * speed they would flush everything else.
    */
   readonly log: readonly string[];
   /** Last 200 sim events with their fields. */
@@ -65,7 +67,8 @@ const NOISY: ReadonlySet<SimEvent["type"]> = new Set(["playerFired", "hit"]);
 export interface QaRecorder {
   simEvent(event: SimEvent): void;
   scene(id: string): void;
-  line(line: LineId): void;
+  /** `lang` is the language the line's subtitle started in. */
+  line(line: LineId, lang?: Lang): void;
   bark(line: LineId): void;
   flag(name: string, value: boolean): void;
   runStarted(): void;
@@ -138,7 +141,10 @@ export function installQaProbe(source: {
       push(events, { ...event }, EVENT_LIMIT);
     },
     scene: (id) => push(log, `scene:${id}`, LOG_LIMIT),
-    line: (line) => push(log, `line:${line}`, LOG_LIMIT),
+    line(line, lang) {
+      push(log, `line:${line}`, LOG_LIMIT);
+      if (lang) push(log, `lang:${line}:${lang}`, LOG_LIMIT);
+    },
     bark: (line) => push(log, `bark:${line}`, LOG_LIMIT),
     flag(name, value) {
       flags = { ...flags, [name]: value };

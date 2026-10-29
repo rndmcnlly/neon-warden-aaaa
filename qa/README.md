@@ -72,7 +72,9 @@ Current reels: `menus-en`, `menus-es`, `menus-zh`, `accessibility`,
 `boot-cinematic`, `tutorial`, `gameplay-fight`, `flashback`, `boss`,
 `ending-kill`, `ending-pacifist`, and wave 3: `hangar`, `scan-lock`,
 `disarm-boss`, `graze`, `spatial-audio`, `subtitle-word-pulse`,
-`vo-no-drop`. A reel's `requires` names code another agent owes; until a
+`vo-no-drop`, and `language-cycle` (`[` `]` between Warden lines; its
+`langMatch` AV check pairs each line's voice take with its subtitle
+language). A reel's `requires` names code another agent owes; until a
 file under its path matches its pattern, the reel's failures report as
 pending (crashes still fail).
 
