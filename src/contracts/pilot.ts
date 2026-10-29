@@ -6,7 +6,16 @@
 import type { InputFrame } from "./input.ts";
 import type { SimState } from "./sim.ts";
 
-export type PilotKind = "keyboard" | "fightingAutopilot" | "pacifistAutopilot";
+/**
+ * `pacifistAutopilot` is the disarmer: no kills, but it scans and spends
+ * Writs on weapon parts. `ghostAutopilot` never presses Fire at all
+ * (`neverFired` stays true), the run the Warden reacts to.
+ */
+export type PilotKind =
+  | "keyboard"
+  | "fightingAutopilot"
+  | "pacifistAutopilot"
+  | "ghostAutopilot";
 
 export interface Pilot {
   readonly kind: PilotKind;

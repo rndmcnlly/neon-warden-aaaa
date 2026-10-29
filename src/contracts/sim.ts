@@ -10,6 +10,7 @@
  */
 
 import type { InputFrame, Vec2 } from "./input.ts";
+import type { Loadout } from "./loadout.ts";
 import type { Tick } from "./time.ts";
 
 /** Playfield size in sim units (the original's pixels). */
@@ -22,9 +23,149 @@ export type EntityId = number;
 export type SectorIndex = 1 | 2 | 3 | 4 | 5 | 6;
 
 export type EnemyKind = "drone" | "dart" | "turret" | "lancer";
-export type PickupKind = "spread" | "shield";
+/**
+ * `recorder` is not a powerup: it is #0121's derelict flight recorder, the
+ * sector 3 salvage cache. Collecting it grants nothing mechanical, but it
+ * counts as the run's first powerup if nothing came before (the flashback
+ * trigger) and its `intel` event unlocks `codex.recorder.0121`.
+ */
+export type PickupKind = "spread" | "shield" | "recorder";
 /** `shot` is the player's; `bullet` and `heavy` are enemy fire. */
 export type BulletKind = "shot" | "bullet" | "heavy";
+
+/**
+ * The one fire verb, three expressions. `aimed`: the press edge fires one
+ * aimed round (breaks parts). `stream`: holding past the tap threshold.
+ * `writ`: the press edge after a rest, spending the charge (pierces, breaks
+ * parts; on a locked weak point it is a kill shot).
+ */
+export type ShotKind = "aimed" | "stream" | "writ";
+
+/** What the trigger is doing this tick; `rest` charges and scans. */
+export type TriggerState = "rest" | "tap" | "stream";
+
+/** Writ charge: 0 is empty, 3 is full. */
+export type ChargeLevel = 0 | 1 | 2 | 3;
+
+/**
+ * Named states of the enemy AI. Each kind runs an explicit state machine
+ * (see `src/sim/enemies.ts`) and these names are its real states, so scan
+ * intel never lies.
+ *
+ * - drone: `patrol` (weave), `aim` (tracking before a shot), `fire`,
+ *   `evade` (after being hit, slides away from the ship).
+ * - dart: `drift`, `aim` (choosing a dive side), `dive` (fires once on entry).
+ * - turret: `descend`, `aim`, `fire` (burst), `reload`, `withdraw`.
+ * - lancer: `strafe`, `aim`, `fire`.
+ * - any: `idle` (a passive practice target), `retreat` (disarmed or
+ *   following the Warden out: holds fire and leaves).
+ */
+export type EnemyAiState =
+  | "idle"
+  | "patrol"
+  | "aim"
+  | "fire"
+  | "evade"
+  | "drift"
+  | "dive"
+  | "descend"
+  | "reload"
+  | "withdraw"
+  | "strafe"
+  | "retreat";
+
+/**
+ * The Warden's named states. `descend` and `parley` are invulnerable;
+ * `sweep` is moving between volleys; `fan`, `cannon`, `summon` and `spiral`
+ * are its four attacks (each owned by a pod, except `summon`); `fallen` and
+ * `withdraw` are the two endings.
+ */
+export type WardenAiState =
+  | "descend"
+  | "parley"
+  | "sweep"
+  | "fan"
+  | "cannon"
+  | "summon"
+  | "spiral"
+  | "fallen"
+  | "withdraw";
+
+/** Every enemy weapon, for `enemyFired` (audio picks a voice per kind). */
+export type EnemyWeaponKind =
+  | "droneGun"
+  | "dartGun"
+  | "turretBarrel"
+  | "lancerEmitter"
+  | "wardenFan"
+  | "wardenCannon"
+  | "wardenSpiral";
+
+/**
+ * Breakable weapon parts. Scouts: `gun` (drone), `nose` (dart), `barrel`
+ * (turret), `emitter` (lancer, two). The Warden's four pods: `fanPod` (two,
+ * left and right halves of its fan), `cannonPod`, `spiralPod`.
+ */
+export type PartKind =
+  | "gun"
+  | "nose"
+  | "barrel"
+  | "emitter"
+  | "fanPod"
+  | "cannonPod"
+  | "spiralPod";
+
+/** Unique within its owner, such as `"gun"`, `"emitterL"`, `"fanPodR"`. */
+export type PartId = string;
+
+export interface PartView {
+  readonly id: PartId;
+  readonly kind: PartKind;
+  /** From the owner's center, in sim units (+y down, toward the player). */
+  readonly offset: Vec2;
+  readonly radius: number;
+  readonly hp: number;
+  readonly maxHp: number;
+  readonly broken: boolean;
+}
+
+/** Where a locked Writ kills outright (scouts) or the open core (Warden). */
+export interface WeakPointView {
+  readonly offset: Vec2;
+  readonly radius: number;
+}
+
+/** The scanning beam, live while the trigger rests. */
+export interface ScanView {
+  readonly active: boolean;
+  /** Cone half-angle (radians) and reach, from the loadout's sensor. */
+  readonly halfAngle: number;
+  readonly range: number;
+  /** The one target the beam is painting this tick, if any. */
+  readonly targetId: EntityId | null;
+}
+
+/** The Contract Rate economy (research: gameplay micro-systems, D). */
+export interface PayView {
+  /** Credits earned this contract. */
+  readonly credits: number;
+  /** Multiplier on every payout, 1.0–8.0. */
+  readonly rate: number;
+  /** Ticks left before the rate starts to decay. */
+  readonly chainTicks: number;
+  /** Full chain length, for drawing the drain bar. */
+  readonly chainMax: number;
+}
+
+/** Near misses ("Clearance"). */
+export interface GrazeView {
+  /** 0–1; a full meter pays a clearance bonus and empties. */
+  readonly meter: number;
+  /** Grazes this run (heavy bullets count two). */
+  readonly count: number;
+  /** Center-to-center distance that counts as a graze, for the focus ring. */
+  readonly radius: number;
+}
 
 /**
  * Where the run is. `tutorial` is the Lane Authority's sandbox; `ended` is
@@ -52,6 +193,13 @@ export interface PlayerView {
   readonly graceTicks: number;
   /** Bank angle in radians, for the renderer's roll. */
   readonly bank: number;
+  /** Movement during the last tick (doppler, trails). */
+  readonly vel: Vec2;
+  readonly trigger: TriggerState;
+  readonly chargeLevel: ChargeLevel;
+  /** 0–1 progress toward a full (level 3) charge, for the pip ring. */
+  readonly charge: number;
+  readonly scan: ScanView;
 }
 
 export interface EnemyView {
@@ -63,6 +211,17 @@ export interface EnemyView {
   readonly maxHp: number;
   /** Ticks since spawn; drives telegraphs such as the dart's commit flare. */
   readonly age: Tick;
+  /** The AI's current state: truthful, but only show it as intel once locked. */
+  readonly ai: EnemyAiState;
+  /** Ticks spent in the current AI state. */
+  readonly aiTicks: Tick;
+  readonly parts: readonly PartView[];
+  readonly weakPoint: WeakPointView;
+  /** Scan dwell, 0–1; 1 means locked. */
+  readonly lock: number;
+  readonly locked: boolean;
+  /** Every weapon part broken: holds fire and leaves, spared. */
+  readonly disarmed: boolean;
 }
 
 export interface BulletView {
@@ -88,12 +247,28 @@ export interface BossView {
   readonly phase: BossPhase;
   /** True during the descent, when damage is ignored. */
   readonly invulnerable: boolean;
+  readonly ai: WardenAiState;
+  /** The four weapon pods; each strips its part of the pattern when broken. */
+  readonly pods: readonly PartView[];
+  /** Two pods broken: core hits deal double, and a locked Writ, more. */
+  readonly coreOpen: boolean;
+  readonly weakPoint: WeakPointView;
+  readonly lock: number;
+  readonly locked: boolean;
 }
 
 /** Run-wide facts the Director branches on. */
 export interface SimFlags {
-  /** No enemy has been destroyed by the player this run (shots or rams). */
+  /**
+   * No enemy destroyed by the player this run (shots or rams), and the
+   * Warden's core never struck. Disarming (breaking weapon parts, Warden
+   * pods included) is allowed.
+   */
   readonly pacifistIntact: boolean;
+  /** The trigger was never pressed outside the tutorial: the purest run. */
+  readonly neverFired: boolean;
+  /** #0121's flight recorder was collected. */
+  readonly recorderRecovered: boolean;
   /** At least one powerup has been collected; the flashback keys off this. */
   readonly firstPowerupTaken: boolean;
 }
@@ -114,10 +289,29 @@ export interface SimState {
   readonly pickups: readonly PickupView[];
   /** Present only once the Warden has spawned. */
   readonly boss: BossView | null;
+  /** Classic arcade points (unmultiplied); PAY is `pay.credits`. */
   readonly score: number;
   readonly kills: number;
+  readonly pay: PayView;
+  readonly graze: GrazeView;
+  /** Scouts disarmed this run (they leave alive). */
+  readonly scoutsSpared: number;
   readonly flags: SimFlags;
+  /** Carried through for replays and the renderer; cosmetics are unread. */
+  readonly loadout: Loadout;
 }
+
+/** Why the pay rate or credits moved. */
+export type PayReason =
+  | "kill"
+  | "cleanKill"
+  | "partBreak"
+  | "disarm"
+  | "graze"
+  | "clearance"
+  | "scan"
+  | "rateBreak"
+  | "decay";
 
 /**
  * Things that happened during one `step`. Audio, VFX, achievements and the
@@ -145,17 +339,122 @@ export type SimEvent =
   | {
     /**
      * An enemy left play without being killed: escorts wiped when the Warden
-     * falls, or retreating with it in the pacifist ending. Never scores.
+     * falls, retreating with it in the pacifist ending, or a disarmed scout
+     * leaving the screen (`spared`). Never scores.
      */
     readonly type: "despawn";
     readonly tick: Tick;
     readonly id: EntityId;
-    readonly reason: "wiped" | "retreat";
+    readonly reason: "wiped" | "retreat" | "spared";
   }
   | {
     readonly type: "playerFired";
     readonly tick: Tick;
+    /** Rounds in this volley (stream spreads fire several). */
     readonly shots: number;
+    readonly shot: ShotKind;
+    /** Writ charge spent (1–3); 0 for aimed and stream. */
+    readonly level: ChargeLevel;
+    readonly pos: Vec2;
+  }
+  | {
+    /** The Writ charge crossed a level (up while resting, 0 when spent). */
+    readonly type: "chargeLevel";
+    readonly tick: Tick;
+    readonly level: ChargeLevel;
+  }
+  | {
+    /** One enemy volley: positional audio for enemy weapons. */
+    readonly type: "enemyFired";
+    readonly tick: Tick;
+    /** The scout's or the Warden's id. */
+    readonly id: EntityId;
+    readonly weapon: EnemyWeaponKind;
+    readonly pos: Vec2;
+    readonly bullets: number;
+  }
+  | {
+    /**
+     * An enemy bullet at its closest approach, within `NEAR_MISS_RADIUS`,
+     * that did not hit: for whooshes. Once per bullet.
+     */
+    readonly type: "nearMiss";
+    readonly tick: Tick;
+    readonly bulletId: EntityId;
+    readonly pos: Vec2;
+    /** Bullet velocity minus ship velocity, units per tick. */
+    readonly relVel: Vec2;
+    /** Closest center-to-center distance. */
+    readonly distance: number;
+    readonly heavy: boolean;
+  }
+  | {
+    /** A bullet came inside the graze radius without hitting. Once each. */
+    readonly type: "graze";
+    readonly tick: Tick;
+    readonly bulletId: EntityId;
+    readonly pos: Vec2;
+    /** 1, or 2 for heavy bullets. */
+    readonly count: number;
+    /** The meter after this graze, 0–1. */
+    readonly meter: number;
+  }
+  | {
+    readonly type: "partBreak";
+    readonly tick: Tick;
+    /** The owner (a scout or the Warden). */
+    readonly id: EntityId;
+    readonly target: "enemy" | "boss";
+    readonly part: PartId;
+    readonly partKind: PartKind;
+    readonly pos: Vec2;
+    readonly by: ShotKind;
+  }
+  | {
+    /** A scout lost its last weapon part: it stops firing and leaves. */
+    readonly type: "disarm";
+    readonly tick: Tick;
+    readonly id: EntityId;
+    readonly kind: EnemyKind;
+    readonly pos: Vec2;
+    /** Its live bullets cancelled with it. */
+    readonly cancelled: number;
+  }
+  | {
+    /** Two Warden pods are broken: the core is open. */
+    readonly type: "coreExposed";
+    readonly tick: Tick;
+    readonly id: EntityId;
+  }
+  | {
+    readonly type: "scanLock";
+    readonly tick: Tick;
+    readonly id: EntityId;
+    readonly target: "enemy" | "boss";
+    readonly kind: EnemyKind | "warden";
+    readonly pos: Vec2;
+  }
+  | {
+    /**
+     * Intel learned, from a scan lock or the flight recorder. `codexId`
+     * names a codex entry to unlock; `first` is true the first time this
+     * run (UI toasts only those).
+     */
+    readonly type: "intel";
+    readonly tick: Tick;
+    readonly id: EntityId;
+    readonly codexId: string;
+    readonly ai: EnemyAiState | WardenAiState | null;
+    readonly first: boolean;
+  }
+  | {
+    readonly type: "payChanged";
+    readonly tick: Tick;
+    readonly credits: number;
+    readonly rate: number;
+    /** Credits added by this event (0 for rate-only changes). */
+    readonly delta: number;
+    readonly reason: PayReason;
   }
   | {
     readonly type: "hit";
@@ -178,6 +477,8 @@ export type SimEvent =
     readonly score: number;
     /** Destroyed by ramming rather than by shots. Still breaks pacifism. */
     readonly byRam: boolean;
+    /** A locked Writ on the weak point: the clean kill. */
+    readonly clean: boolean;
   }
   | {
     readonly type: "lifeLost";
@@ -215,6 +516,8 @@ export interface SimOptions {
   readonly difficulty: Difficulty;
   /** Spawns played in addition to (or, in the tutorial, instead of) waves. */
   readonly scriptedSpawns?: readonly ScriptedSpawn[];
+  /** Weapon, sensor and cosmetics; defaults to `DEFAULT_LOADOUT`. */
+  readonly loadout?: Loadout;
   /**
    * Attract mode: on the last life, silently spend a continue and keep
    * flying. Off for human play, where the UI offers `continueRun()` after
@@ -222,6 +525,9 @@ export interface SimOptions {
    */
   readonly autoContinue?: boolean;
 }
+
+/** Enemy bullets passing this close (center to center) emit `nearMiss`. */
+export const NEAR_MISS_RADIUS = 48;
 
 /** A spawn a timeline asks for, at an absolute sim tick. */
 export interface ScriptedSpawn {

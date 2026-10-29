@@ -152,3 +152,126 @@ Still open, handed to owners:
 - Known CI break outside WS6: type error at `src/input/inputLayer.ts:391`
   (WS2, mid-edit at the time) and unformatted files in other folders.
 - Music: 16 candidates (8 cues x 2) in `music/candidates/`, unauditioned.
+
+## Wave 3
+
+### N Narrative: contract announcements (October 28, 2026)
+
+- **Word timing (T fills, U reads).** `src/contracts/text.ts` gains
+  `WordTiming { text, charStart, charEnd, startS, endS }`: one spoken word
+  of a rendered take; `charStart`/`charEnd` are UTF-16 offsets into the
+  subtitle text for that language (`[start, end)`), `startS`/`endS` are
+  seconds from the start of the take (same unit as `duration`). Chinese
+  words are ASR tokens (often one or two characters); offsets still index
+  the subtitle string. T writes `words: WordTiming[]` beside `duration` in
+  `vo/out/cues.json` at `lines[id].langs[lang].words`; A's manifest type
+  passes it through; U pulses `text.slice(charStart, charEnd)`. A take
+  with no `words` (old render) shows a plain subtitle.
+- **`radio` cue** in `timeline.ts`: `{ type: "radio", line, channel }`,
+  `channel: "scout" | "authority" | "recorder"`. Non-blocking. Shows the
+  line as on-screen radio text (separate from subtitles); if the line is
+  in the VO script it also plays, spatially when the Director knows a
+  source position. Text-only radio ids are `radio.*` in
+  `src/i18n/radio.ts`; `t()` resolves them like any id.
+- **Radio bank** (`src/scenes/radio.ts`): `radioFor(source, situation,
+  pick, run)` returns a `RadioLine { line, channel, voiced }` or null.
+  `source`: `drone | dart | turret | lancer | authority`; `situation`:
+  `patrol | locked | disarmed | retreat | lost`. Director (A): call it on
+  `scanLock` (locked), `disarm` (disarmed; the enemy's `retreat` follows
+  later), a nearby `kill` (lost, kill route only) and a patrol timer, and
+  play voiced ones at the enemy's position with A's spatial panner.
+- **New speakers** `scout` and `authority` in `vo/script.yaml` (casting
+  `description`, `design`, `anchor` written; T: seeds and anchors). Their
+  subtitle names fall back to `radio.callsign.*` (mine), so U need not
+  add `ui.speaker.scout`.
+- **Codex** (`src/scenes/codex.ts`, text in `src/i18n/codex.ts`):
+  `CODEX_ENTRIES` with `{ id, title, body, unlock }`, `unlock` one of
+  `{ scan: EnemyKind | "warden" | "recorder" }`, `{ flag }`, `"start"`.
+  `codexUnlockedBy(event)` lists entries a `scanLock` unlocks. U renders
+  the codex; package entries are `codex.weapon.<id>` /
+  `codex.sensor.<id>` using G's `WeaponPackageId` / `SensorPackageId`.
+- **Events N's scenes expect from G** (coded against these names behind a
+  local `Wave3Event` union in `src/scenes/index.ts`, removed once
+  `SimEvent` has them):
+  `{ type: "scanLock", tick, id, kind: EnemyKind | "warden" | "recorder",
+  state: string, first: boolean }` (`first`: first lock of the run);
+  `{ type: "disarm", tick, id, kind, first }`;
+  `{ type: "graze", tick, first }`;
+  `{ type: "partBroken", tick, id, kind: EnemyKind | "warden", first }`;
+  `{ type: "salvage", tick }` (the sector 3 recorder is collected or
+  locked). Timelines: `firstLock`, `firstDisarm`, `firstGraze`,
+  `recorder`, `wardenPod` (first Warden pod broken).
+- **Flags the Director should set** (names in `src/scenes/flags.ts`):
+  `run.disarmed` (on `disarm`), `run.neverFired` mirrors `!run.hasFired`
+  (the Warden branches on `run.hasFired`, so nothing new needed there),
+  `story.flashbackSeen` (set by the flashback itself). Tutorial progress:
+  `tut.tapped`, `tut.streamed`, `tut.charged` (charge level 3),
+  `tut.writFired`, `tut.locked`, `tut.partBroken`, `tut.grazed` (five
+  grazes), `tut.rateDoubled` (rate reaches x2). Spawns the tutorial asks
+  for (G or A): `tut.spawnTurret` (passive practice turret, one barrel
+  part), `tut.grazeDrill` (slow practice rounds that pass near the ship).
+- **Requests to Q:** coverage should also read `src/i18n/radio.ts`
+  (`RADIO_TEXT`) and `src/i18n/codex.ts` (`CODEX_TEXT`); ids are dotted
+  (`radio.drone.patrol.1`, `codex.writ.body`) so `scanIds` will not
+  mistake them for VO ids.
+
+## Wave 3
+
+### G Gameplay: contracts drafted (October 28, 2026)
+
+Committed first so others can code against them: `src/contracts/sim.ts`,
+`input.ts`, `pilot.ts`, new `loadout.ts` (exported from `index.ts`). The sim
+itself lands in later commits.
+
+Breaking changes others must absorb (typecheck fails until done):
+
+- **V** `src/render/stage.ts:111` `PICKUP_MODEL` needs `recorder` (#0121's
+  flight recorder; a new prop or reuse `pickup_shield` for now).
+- **V** `src/render/harness.ts` builds a fake `SimState`. New required
+  fields: `player.vel, trigger ("rest"|"tap"|"stream"), chargeLevel (0–3),
+  charge (0–1), scan {active, halfAngle, range, targetId}`; each enemy
+  `ai, aiTicks, parts[], weakPoint {offset, radius}, lock, locked,
+  disarmed`; boss `ai, pods[], coreOpen, weakPoint, lock, locked`; top level
+  `pay {credits, rate, chainTicks, chainMax}, graze {meter, count, radius},
+  scoutsSpared, loadout` (use `DEFAULT_LOADOUT`); flags `neverFired,
+  recorderRecovered`. Events: `playerFired` gains `shot, level, pos`; `kill`
+  gains `clean`.
+- **N** `tests/scenes_timelines_test.ts:133` kill literal needs `clean: false`.
+- Everyone: `despawn.reason` gains `"spared"`; `PickupKind` gains
+  `"recorder"` (its `pickup` event still carries `firstPowerup`, so the
+  flashback wiring keeps working when the recorder is the first pickup).
+
+Input semantics (no shape change): `InputFrame.fire` is the raw held state
+of the one fire button. The sim derives tap (press edge: aimed round, or a
+Writ if charged), hold (past 8 ticks: stream) and rest (charge plus scan).
+**Input layer / U**: never synthesize taps; toggle auto-fire streams forever
+and so never charges (offer "pulse" as the assisted variant).
+
+New events (all carry `tick`):
+
+| Event | Fields | For |
+| --- | --- | --- |
+| `playerFired` | `shots, shot: "aimed"\|"stream"\|"writ", level 0–3, pos` | A: tap crack, stream loop, three Writ release tiers |
+| `chargeLevel` | `level 0–3` (0 when spent) | A: pip ticks, full-charge hum; V/U: pip ring |
+| `enemyFired` | `id, weapon: EnemyWeaponKind, pos, bullets` | A: positional enemy weapons (off-key) |
+| `nearMiss` | `bulletId, pos, relVel, distance, heavy` (closest approach within `NEAR_MISS_RADIUS` 48) | A: whoosh, doppler from `relVel` |
+| `graze` | `bulletId, pos, count (1, heavy 2), meter 0–1` | A: crackle; V: ring sparks; musical layer on pacifist runs |
+| `partBreak` | `id, target "enemy"\|"boss", part, partKind, pos, by: ShotKind` | A/V: crack, debris |
+| `disarm` | `id, kind, pos, cancelled` (bullets cancelled) | A: power-down sigh; V: cancel shimmer; U: SCOUTS SPARED |
+| `coreExposed` | `id` | A/V/N: the Warden's core opens |
+| `scanLock` | `id, target, kind, pos` | A: lock chirp; V: reticle |
+| `intel` | `id, codexId, ai, first` | U: codex unlock toast when `first` |
+| `payChanged` | `credits, rate, delta, reason: PayReason` | U: PAY and rate; A: beat-quantized rate tick, rate-break chord on `rateBreak` |
+
+Codex ids emitted by `intel`: `codex.enemy.drone|dart|turret|lancer`,
+`codex.warden`, `codex.warden.core` (on `coreExposed` lock),
+`codex.recorder.0121`. **U/N**: please add entries (text ids are yours).
+
+State for **V/U**: `EnemyView.ai` / `BossView.ai` are the truthful FSM state
+names (`EnemyAiState`, `WardenAiState`); show them only when `locked`. Part
+and weak point `offset`s are relative to the owner center (+y down). Hangar:
+`WEAPON_PACKAGES`, `SENSOR_PACKAGES` (with `inSlice` for honest walls) and
+`Cosmetics` in `loadout.ts`; text ids `hangar.weapon.<id>.name|blurb`,
+`hangar.sensor.<id>.name|blurb`. **A** (`main.ts`): pass the hangar's
+`Loadout` as `SimOptions.loadout`; add `?autoplay=ghost` mapping to the new
+`ghostAutopilot` (`PilotKind`); `pacifist` stays the disarmer.

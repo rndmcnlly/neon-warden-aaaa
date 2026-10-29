@@ -11,3 +11,4 @@ export * from "./text.ts";
 export * from "./timeline.ts";
 export * from "./settings.ts";
 export * from "./flags.ts";
+export * from "./loadout.ts";

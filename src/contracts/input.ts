@@ -17,7 +17,19 @@ export interface InputFrame {
    * focus navigation.
    */
   readonly move: Vec2;
-  /** Fire is held this tick (after auto-fire and hold/toggle are applied). */
+  /**
+   * The one fire button is down this tick (after auto-fire and hold/toggle
+   * are applied). The sim reads its edges and durations, so input sources
+   * report the raw held state and never synthesize taps:
+   *
+   * - press edge (up last tick, down now): one aimed round, or, if the
+   *   trigger rested long enough to charge, a Writ round that spends it;
+   * - held past the tap threshold (8 ticks): the stream;
+   * - released (rest): the Writ charges and the scanning beam sweeps.
+   *
+   * A toggle or permanent auto-fire therefore streams forever and never
+   * charges; an assisted "pulse" mode should release now and then.
+   */
   readonly fire: boolean;
   /** Focus (slow, precise movement) is held this tick. */
   readonly focus: boolean;
