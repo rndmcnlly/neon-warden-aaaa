@@ -1,0 +1,567 @@
+{
+ "stills": [
+  {
+   "arm": "before",
+   "sector": 1,
+   "sideLuma": 0.06,
+   "laneLuma": 0.258,
+   "ticksPerSecond": 50.9,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": null,
+    "drawCalls": null,
+    "triangles": null,
+    "textureBytes": null,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "before",
+   "sector": 2,
+   "sideLuma": 0.048,
+   "laneLuma": 0.271,
+   "ticksPerSecond": 51.1,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": null,
+    "drawCalls": null,
+    "triangles": null,
+    "textureBytes": null,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "before",
+   "sector": 3,
+   "sideLuma": 0.083,
+   "laneLuma": 0.241,
+   "ticksPerSecond": 13.1,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": null,
+    "drawCalls": null,
+    "triangles": null,
+    "textureBytes": null,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "before",
+   "sector": 4,
+   "sideLuma": 0.069,
+   "laneLuma": 0.283,
+   "ticksPerSecond": 51.4,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": null,
+    "drawCalls": null,
+    "triangles": null,
+    "textureBytes": null,
+    "updateMs": 0.09999999403953552
+   }
+  },
+  {
+   "arm": "before",
+   "sector": 5,
+   "sideLuma": 0.108,
+   "laneLuma": 0.409,
+   "ticksPerSecond": 50.8,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": null,
+    "drawCalls": null,
+    "triangles": null,
+    "textureBytes": null,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "after",
+   "sector": 1,
+   "sideLuma": 0.072,
+   "laneLuma": 0.264,
+   "ticksPerSecond": 50.7,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": "high",
+    "drawCalls": 21,
+    "triangles": 12592,
+    "textureBytes": 524288,
+    "updateMs": 0.09999999403953552
+   }
+  },
+  {
+   "arm": "after",
+   "sector": 2,
+   "sideLuma": 0.06,
+   "laneLuma": 0.273,
+   "ticksPerSecond": 51.1,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": "high",
+    "drawCalls": 16,
+    "triangles": 7326,
+    "textureBytes": 87381,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "after",
+   "sector": 3,
+   "sideLuma": 0.104,
+   "laneLuma": 0.243,
+   "ticksPerSecond": 13.1,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": "high",
+    "drawCalls": 22,
+    "triangles": 12076,
+    "textureBytes": 742741,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "after",
+   "sector": 4,
+   "sideLuma": 0.086,
+   "laneLuma": 0.287,
+   "ticksPerSecond": 51.2,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": "high",
+    "drawCalls": 27,
+    "triangles": 19460,
+    "textureBytes": 305835,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "after",
+   "sector": 5,
+   "sideLuma": 0.07,
+   "laneLuma": 0.414,
+   "ticksPerSecond": 50.7,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": "high",
+    "drawCalls": 15,
+    "triangles": 17562,
+    "textureBytes": 436907,
+    "updateMs": 0
+   }
+  },
+  {
+   "arm": "after2",
+   "sector": 5,
+   "sideLuma": 0.072,
+   "laneLuma": 0.413,
+   "ticksPerSecond": 50.8,
+   "pageErrors": 0,
+   "avChecks": {
+    "audio: captured": "pass",
+    "audio: true peak at or under -1 dBTP": "pass",
+    "audio: bus loudness (pre-master)": "pass",
+    "audio: integrated loudness -20 to -14 LUFS": "pass",
+    "VO not dropped": "pass"
+   },
+   "world": {
+    "tier": "high",
+    "drawCalls": 15,
+    "triangles": 21442,
+    "textureBytes": 436907,
+    "updateMs": 0
+   }
+  }
+ ],
+ "budgets": {
+  "geometryBytesAllGlb": 2114828,
+  "sectors": [
+   {
+    "sector": 1,
+    "high": {
+     "drawCalls": 21,
+     "triangles": 12758,
+     "textureBytes": 524288,
+     "pieces": 8
+    },
+    "low": {
+     "drawCalls": 11,
+     "triangles": 5910,
+     "textureBytes": 524288,
+     "pieces": 3
+    }
+   },
+   {
+    "sector": 2,
+    "high": {
+     "drawCalls": 16,
+     "triangles": 7350,
+     "textureBytes": 87381.33333333333,
+     "pieces": 7
+    },
+    "low": {
+     "drawCalls": 9,
+     "triangles": 3330,
+     "textureBytes": 87381.33333333333,
+     "pieces": 3
+    }
+   },
+   {
+    "sector": 3,
+    "high": {
+     "drawCalls": 22,
+     "triangles": 12146,
+     "textureBytes": 742741.3333333333,
+     "pieces": 6
+    },
+    "low": {
+     "drawCalls": 15,
+     "triangles": 4234,
+     "textureBytes": 742741.3333333333,
+     "pieces": 3
+    }
+   },
+   {
+    "sector": 4,
+    "high": {
+     "drawCalls": 27,
+     "triangles": 19460,
+     "textureBytes": 305834.6666666666,
+     "pieces": 8
+    },
+    "low": {
+     "drawCalls": 9,
+     "triangles": 7408,
+     "textureBytes": 131072,
+     "pieces": 2
+    }
+   },
+   {
+    "sector": 5,
+    "high": {
+     "drawCalls": 15,
+     "triangles": 21970,
+     "textureBytes": 436906.6666666666,
+     "pieces": 6
+    },
+    "low": {
+     "drawCalls": 10,
+     "triangles": 7512,
+     "textureBytes": 436906.6666666666,
+     "pieces": 3
+    }
+   }
+  ]
+ },
+ "stillsLowReduced": [
+  {
+   "sector": 1,
+   "mode": "low",
+   "world": {
+    "sector": 1,
+    "name": "Outer Drift",
+    "tier": "low",
+    "pieces": [
+     "od_beacon",
+     "od_hauler_a",
+     "od_waystation"
+    ],
+    "drawCalls": 11,
+    "triangles": 5912,
+    "textureBytes": 524288,
+    "maxDrawCalls": 16,
+    "updateMs": 0,
+    "signVisible": false,
+    "elapsedTicks": 780
+   },
+   "errors": []
+  },
+  {
+   "sector": 2,
+   "mode": "low",
+   "world": {
+    "sector": 2,
+    "name": "Shatter Belt",
+    "tier": "low",
+    "pieces": [
+     "sb_truss",
+     "sb_repair",
+     "sb_rock"
+    ],
+    "drawCalls": 9,
+    "triangles": 3330,
+    "textureBytes": 87381,
+    "maxDrawCalls": 16,
+    "updateMs": 0,
+    "signVisible": false,
+    "elapsedTicks": 786
+   },
+   "errors": []
+  },
+  {
+   "sector": 3,
+   "mode": "low",
+   "world": {
+    "sector": 3,
+    "name": "Gun Lanes",
+    "tier": "low",
+    "pieces": [
+     "gl_gantry",
+     "gl_pod",
+     "gl_tower"
+    ],
+    "drawCalls": 14,
+    "triangles": 4234,
+    "textureBytes": 742741,
+    "maxDrawCalls": 16,
+    "updateMs": 0,
+    "signVisible": false,
+    "elapsedTicks": 255
+   },
+   "errors": []
+  },
+  {
+   "sector": 4,
+   "mode": "low",
+   "world": {
+    "sector": 4,
+    "name": "Lancer Gate",
+    "tier": "low",
+    "pieces": [
+     "lg_crane",
+     "lg_container"
+    ],
+    "drawCalls": 9,
+    "triangles": 7408,
+    "textureBytes": 131072,
+    "maxDrawCalls": 16,
+    "updateMs": 0.09999999403953552,
+    "signVisible": false,
+    "elapsedTicks": 786
+   },
+   "errors": []
+  },
+  {
+   "sector": 5,
+   "mode": "low",
+   "world": {
+    "sector": 5,
+    "name": "Last Approach",
+    "tier": "low",
+    "pieces": [
+     "la_buttress",
+     "la_nursery",
+     "la_heartgate"
+    ],
+    "drawCalls": 10,
+    "triangles": 7512,
+    "textureBytes": 436907,
+    "maxDrawCalls": 16,
+    "updateMs": 0.09999999403953552,
+    "signVisible": false,
+    "elapsedTicks": 789
+   },
+   "errors": []
+  },
+  {
+   "sector": 1,
+   "mode": "reduced",
+   "world": {
+    "sector": 1,
+    "name": "Outer Drift",
+    "tier": "high",
+    "pieces": [
+     "od_beacon",
+     "od_hauler_a",
+     "od_hauler_b",
+     "od_hauler_b",
+     "od_hauler_a",
+     "od_waystation",
+     "od_waystation",
+     "od_hauler_a"
+    ],
+    "drawCalls": 21,
+    "triangles": 12592,
+    "textureBytes": 524288,
+    "maxDrawCalls": 48,
+    "updateMs": 0.10000002384185791,
+    "signVisible": false,
+    "elapsedTicks": 784
+   },
+   "errors": []
+  },
+  {
+   "sector": 2,
+   "mode": "reduced",
+   "world": {
+    "sector": 2,
+    "name": "Shatter Belt",
+    "tier": "high",
+    "pieces": [
+     "sb_truss",
+     "sb_repair",
+     "sb_rock",
+     "sb_truss",
+     "sb_rock",
+     "sb_rock",
+     "sb_rock"
+    ],
+    "drawCalls": 16,
+    "triangles": 7326,
+    "textureBytes": 87381,
+    "maxDrawCalls": 48,
+    "updateMs": 0,
+    "signVisible": false,
+    "elapsedTicks": 786
+   },
+   "errors": []
+  },
+  {
+   "sector": 3,
+   "mode": "reduced",
+   "world": {
+    "sector": 3,
+    "name": "Gun Lanes",
+    "tier": "high",
+    "pieces": [
+     "gl_gantry",
+     "gl_pod",
+     "gl_tower",
+     "gl_tower",
+     "gl_tower",
+     "gl_pod"
+    ],
+    "drawCalls": 21,
+    "triangles": 12074,
+    "textureBytes": 742741,
+    "maxDrawCalls": 48,
+    "updateMs": 0,
+    "signVisible": false,
+    "elapsedTicks": 255
+   },
+   "errors": []
+  },
+  {
+   "sector": 4,
+   "mode": "reduced",
+   "world": {
+    "sector": 4,
+    "name": "Lancer Gate",
+    "tier": "high",
+    "pieces": [
+     "lg_crane",
+     "lg_container",
+     "lg_bay",
+     "lg_bay",
+     "od_hauler_a",
+     "lg_crane",
+     "lg_container",
+     "lg_container"
+    ],
+    "drawCalls": 27,
+    "triangles": 19460,
+    "textureBytes": 305835,
+    "maxDrawCalls": 48,
+    "updateMs": 0,
+    "signVisible": false,
+    "elapsedTicks": 789
+   },
+   "errors": []
+  },
+  {
+   "sector": 5,
+   "mode": "reduced",
+   "world": {
+    "sector": 5,
+    "name": "Last Approach",
+    "tier": "high",
+    "pieces": [
+     "la_buttress",
+     "la_buttress",
+     "la_nursery",
+     "la_heartgate",
+     "la_buttress",
+     "la_buttress"
+    ],
+    "drawCalls": 15,
+    "triangles": 21442,
+    "textureBytes": 436907,
+    "maxDrawCalls": 48,
+    "updateMs": 0.09999999403953552,
+    "signVisible": false,
+    "elapsedTicks": 788
+   },
+   "errors": []
+  }
+ ]
+}

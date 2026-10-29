@@ -1,0 +1,34 @@
+{
+  "id": "B2",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.009262,
+  "wallS": 12.357,
+  "answer": {
+    "place_kind": "An abstract outer-space environment with floating geometric monolithic blocks and distant star-like specks.",
+    "activity": "Nothing is happening in the surrounding scenery; the geometric structures on the left and right remain completely static throughout the clip, with only faint lighting or glow effects.",
+    "inhabitants": "None visible; there are no people, creatures, vehicles, or signs of habitation in the surrounding structures.",
+    "readable_text": [],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "On both the left and right sides of the central lane, dark grey rectangular blocks with recessed openings and small cyan glowing bars float against a dark background with tiny white specks."
+      },
+      {
+        "time": "00:05",
+        "observation": "The geometric blocks on the left and right remain in the exact same positions as at 00:00, showing no movement or mechanical activity."
+      },
+      {
+        "time": "00:10",
+        "observation": "Warm orange-brown nebula-like glow is visible in the bottom-right background behind the lower block, remaining static."
+      },
+      {
+        "time": "00:15",
+        "observation": "At the end of the recording, all surrounding architectural/geometric shapes on both sides are still completely stationary and unchanged."
+      }
+    ],
+    "confidence": 0.05,
+    "uncertainty": "The floating geometric shapes are highly stylized and abstract, making it impossible to tell if they represent stylized space station modules, servers, or purely decorative geometric art."
+  }
+}

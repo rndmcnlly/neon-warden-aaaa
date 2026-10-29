@@ -1,0 +1,968 @@
+{
+  "arm": "before",
+  "sector": 1,
+  "view": "desktop",
+  "size": {
+    "width": 1366,
+    "height": 768
+  },
+  "samples": [
+    {
+      "t": 1863.6000000238419,
+      "tick": 78,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 77,
+        "render": {
+          "renderMs": 1.0703156537323317,
+          "frameMs": 19.49686847178564,
+          "drawCalls": 133,
+          "triangles": 21119,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2367.100000023842,
+      "tick": 104,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 103,
+        "render": {
+          "renderMs": 0.8902549507558983,
+          "frameMs": 19.41941807563365,
+          "drawCalls": 135,
+          "triangles": 21279,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2869.9000000059605,
+      "tick": 130,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 129,
+        "render": {
+          "renderMs": 0.8268607056294885,
+          "frameMs": 19.51248469985675,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3373.100000023842,
+      "tick": 155,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 154,
+        "render": {
+          "renderMs": 0.7602767392503872,
+          "frameMs": 19.62734347451847,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3875,
+      "tick": 181,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 180,
+        "render": {
+          "renderMs": 0.6969545221021382,
+          "frameMs": 19.3422484864115,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4377.300000011921,
+      "tick": 207,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 206,
+        "render": {
+          "renderMs": 0.669370443299864,
+          "frameMs": 19.587542288575573,
+          "drawCalls": 138,
+          "triangles": 21443,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4879.5,
+      "tick": 233,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 232,
+        "render": {
+          "renderMs": 0.8427413439352219,
+          "frameMs": 19.466909358963125,
+          "drawCalls": 139,
+          "triangles": 21451,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5381.600000023842,
+      "tick": 259,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 258,
+        "render": {
+          "renderMs": 0.7907645412164052,
+          "frameMs": 19.44286125010278,
+          "drawCalls": 140,
+          "triangles": 21453,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5884.9000000059605,
+      "tick": 284,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 283,
+        "render": {
+          "renderMs": 0.7770693591964556,
+          "frameMs": 19.78990765350697,
+          "drawCalls": 140,
+          "triangles": 21453,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6387.5,
+      "tick": 309,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 308,
+        "render": {
+          "renderMs": 0.8445148500776124,
+          "frameMs": 19.810524666314464,
+          "drawCalls": 164,
+          "triangles": 22573,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6888.9000000059605,
+      "tick": 335,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 334,
+        "render": {
+          "renderMs": 0.8095529306463352,
+          "frameMs": 19.737715044004922,
+          "drawCalls": 140,
+          "triangles": 21459,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7391.600000023842,
+      "tick": 361,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 360,
+        "render": {
+          "renderMs": 0.8453070446832254,
+          "frameMs": 19.559689427050497,
+          "drawCalls": 179,
+          "triangles": 26341,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7893.800000011921,
+      "tick": 386,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 385,
+        "render": {
+          "renderMs": 0.8435947979782532,
+          "frameMs": 19.769689198776156,
+          "drawCalls": 237,
+          "triangles": 41637,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8417.300000011921,
+      "tick": 413,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 412,
+        "render": {
+          "renderMs": 0.8413786325145255,
+          "frameMs": 19.49955794227084,
+          "drawCalls": 211,
+          "triangles": 40257,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8918.800000011921,
+      "tick": 439,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 438,
+        "render": {
+          "renderMs": 0.897748682574721,
+          "frameMs": 19.3613762409593,
+          "drawCalls": 232,
+          "triangles": 41119,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9421.5,
+      "tick": 464,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 463,
+        "render": {
+          "renderMs": 0.8535222317479164,
+          "frameMs": 19.807134760317687,
+          "drawCalls": 210,
+          "triangles": 40251,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9923.90000000596,
+      "tick": 489,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 488,
+        "render": {
+          "renderMs": 0.8189796255279017,
+          "frameMs": 19.527000916940633,
+          "drawCalls": 232,
+          "triangles": 41113,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10426.200000017881,
+      "tick": 515,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 514,
+        "render": {
+          "renderMs": 0.8032184227487803,
+          "frameMs": 19.596567711347905,
+          "drawCalls": 210,
+          "triangles": 40249,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10929.300000011921,
+      "tick": 540,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 539,
+        "render": {
+          "renderMs": 0.9081371469352887,
+          "frameMs": 20.000969541680792,
+          "drawCalls": 225,
+          "triangles": 40417,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11431.200000017881,
+      "tick": 565,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 564,
+        "render": {
+          "renderMs": 0.9421151753010044,
+          "frameMs": 19.824863005129643,
+          "drawCalls": 154,
+          "triangles": 25213,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11937.800000011921,
+      "tick": 591,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 590,
+        "render": {
+          "renderMs": 0.8586601211233094,
+          "frameMs": 19.591459455394602,
+          "drawCalls": 155,
+          "triangles": 25467,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12440.40000000596,
+      "tick": 616,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 615,
+        "render": {
+          "renderMs": 0.7189791128001864,
+          "frameMs": 19.81659234039403,
+          "drawCalls": 176,
+          "triangles": 26077,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12942.300000011921,
+      "tick": 642,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 641,
+        "render": {
+          "renderMs": 0.7512289324642414,
+          "frameMs": 19.738320482647225,
+          "drawCalls": 156,
+          "triangles": 25473,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13444.5,
+      "tick": 668,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 667,
+        "render": {
+          "renderMs": 0.7323271055173666,
+          "frameMs": 19.450650021759074,
+          "drawCalls": 193,
+          "triangles": 30099,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13946.5,
+      "tick": 693,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 692,
+        "render": {
+          "renderMs": 0.87685642625749,
+          "frameMs": 19.778694211650603,
+          "drawCalls": 251,
+          "triangles": 45395,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14447.600000023842,
+      "tick": 718,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 717,
+        "render": {
+          "renderMs": 0.8464519259786742,
+          "frameMs": 19.716492647425163,
+          "drawCalls": 246,
+          "triangles": 44877,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14949.600000023842,
+      "tick": 744,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 743,
+        "render": {
+          "renderMs": 0.8960608890409342,
+          "frameMs": 19.43964407333349,
+          "drawCalls": 246,
+          "triangles": 44881,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 15450.600000023842,
+      "tick": 770,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "blocks": 97,
+        "maxDrawCalls": 7,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 769,
+        "render": {
+          "renderMs": 0.8067020101513624,
+          "frameMs": 19.334454118426258,
+          "drawCalls": 224,
+          "triangles": 44015,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 102,
+      "voStarted": [
+        "1.68s en/sec1_intro_001.ogg",
+        "6.24s en/lock_ai_001.ogg",
+        "6.73s en/graze_ai_001.ogg",
+        "11.92s en/rad_drone_locked_001.ogg",
+        "12.96s en/amb_nofire_002.ogg"
+      ],
+      "lufs": -18.7,
+      "truePeak": -5.4,
+      "buses": {
+        "music": {
+          "lufs": -23.3,
+          "truePeak": -5.1
+        },
+        "sfx": {
+          "lufs": -35.3,
+          "truePeak": -17.5
+        },
+        "voice": {
+          "lufs": -16.4,
+          "truePeak": -2.4
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 15.39,
+      "voAudible": [
+        {
+          "start": 0.45,
+          "end": 5.41
+        },
+        {
+          "start": 5.97,
+          "end": 6.71
+        },
+        {
+          "start": 7.13,
+          "end": 8.2
+        },
+        {
+          "start": 8.79,
+          "end": 9.96
+        },
+        {
+          "start": 10.42,
+          "end": 13.43
+        }
+      ],
+      "subtitles": []
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "15.39 s audible of 16.01 s, 102 sounds started, 5 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.4 dBTP, -18.7 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -23.3 LUFS / -5.1 dBTP, sfx -35.3 LUFS / -17.5 dBTP, voice -16.4 LUFS / -2.4 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.7 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "no subtitles shown in this reel"
+      }
+    ]
+  }
+}

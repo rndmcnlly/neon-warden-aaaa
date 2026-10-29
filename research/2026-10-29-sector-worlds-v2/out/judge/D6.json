@@ -1,0 +1,34 @@
+{
+  "id": "D6",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.010282,
+  "wallS": 14.037,
+  "answer": {
+    "place_kind": "An abstract outer-space debris field or asteroid belt composed of dark, geometric, rectangular blocks with smaller cross-shaped protrusions floating against a starry background.",
+    "activity": "No discernible motion or activity takes place in the surrounding scenery; the floating geometric blocks and background stars remain completely static throughout the clip.",
+    "inhabitants": "None are visible or suggested by the environment itself.",
+    "readable_text": [],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "On both the left and right sides of the central playfield, dark rectangular prisms with smaller intersecting bar shapes float in front of a black sky dotted with tiny white stars."
+      },
+      {
+        "time": "00:05",
+        "observation": "A faint amber or golden haze is visible behind the geometric blocks in the lower-left and lower-right corners."
+      },
+      {
+        "time": "00:10",
+        "observation": "The positions and orientations of the floating geometric blocks on both sides are unchanged compared to 00:00, showing the background scenery is static."
+      },
+      {
+        "time": "00:15",
+        "observation": "By the end of the recording, the surrounding blocks and starfield remain completely motionless, with no vehicles, structures, or signage appearing in the environment."
+      }
+    ],
+    "confidence": 0.1,
+    "uncertainty": "The shapes in the background are highly stylized and abstract, making it impossible to tell from the scenery alone whether they represent natural crystalline/rocky formations, artificial wreckage, or purely decorative geometric shapes."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "preparedAt": "2026-10-29T08:44:15.340Z",
+  "overlays": {
+    "music/picks.json": "d07b3349a2aba7b2b5c11bf83a60f7837b1c2b3600147e0d3510854dec4c3807",
+    "public/music/manifest.json": "3b69e6da33b96ec322e926b3bbd4274bb40e0e0584eec995ef157dac3923dd89",
+    "public/vo/variants/index.json": "90a05dc22f6d0af2523961cb48a13953f2533d223b89ddc8731bc24aee5e2f31"
+  },
+  "after2": {
+    "rev": "8774627d536199860cb5f22224070c0cc17d7e3e",
+    "worldFiles": {
+      "src/world/environment.ts": "3d6fcd4586f41784665a5b64c12cdd548216c34a27d9841a3a5ef1615e6fa4dc",
+      "src/world/sectors.ts": "1e818da78e4150cee890586059b4c211af4d829d89ead168d84c0f8e5cd2e791"
+    }
+  }
+}

@@ -1,0 +1,1333 @@
+{
+  "arm": "after",
+  "sector": 1,
+  "view": "desktop",
+  "size": {
+    "width": 1366,
+    "height": 768
+  },
+  "samples": [
+    {
+      "t": 1705.5999999940395,
+      "tick": 75,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 74,
+        "render": {
+          "renderMs": 1.2911548966219133,
+          "frameMs": 19.890776075127015,
+          "drawCalls": 159,
+          "triangles": 43893,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2209.9000000059605,
+      "tick": 101,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 100,
+        "render": {
+          "renderMs": 1.1175098769590914,
+          "frameMs": 20.00047470524634,
+          "drawCalls": 161,
+          "triangles": 44053,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2713.2000000178814,
+      "tick": 126,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 125,
+        "render": {
+          "renderMs": 0.9904048509402384,
+          "frameMs": 19.781706609869953,
+          "drawCalls": 166,
+          "triangles": 44473,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3214.4000000059605,
+      "tick": 152,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 151,
+        "render": {
+          "renderMs": 0.8812197608001545,
+          "frameMs": 19.505969299432113,
+          "drawCalls": 164,
+          "triangles": 44217,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3717.2000000178814,
+      "tick": 178,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 177,
+        "render": {
+          "renderMs": 0.8552150271935952,
+          "frameMs": 19.42409850072696,
+          "drawCalls": 164,
+          "triangles": 44217,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4220.5999999940395,
+      "tick": 203,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 202,
+        "render": {
+          "renderMs": 0.8360467583605037,
+          "frameMs": 19.788383726688092,
+          "drawCalls": 164,
+          "triangles": 44217,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4722.5999999940395,
+      "tick": 228,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 227,
+        "render": {
+          "renderMs": 0.9756058804580738,
+          "frameMs": 20.02782151082767,
+          "drawCalls": 165,
+          "triangles": 44225,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5225,
+      "tick": 253,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 252,
+        "render": {
+          "renderMs": 0.9181020465877321,
+          "frameMs": 19.939503912512418,
+          "drawCalls": 166,
+          "triangles": 44227,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5726.700000017881,
+      "tick": 279,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 278,
+        "render": {
+          "renderMs": 0.9723740801356786,
+          "frameMs": 19.63031183726301,
+          "drawCalls": 166,
+          "triangles": 44227,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6230.4000000059605,
+      "tick": 305,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 304,
+        "render": {
+          "renderMs": 1.0283336634462397,
+          "frameMs": 19.822162709782994,
+          "drawCalls": 190,
+          "triangles": 45347,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6731.800000011921,
+      "tick": 330,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 329,
+        "render": {
+          "renderMs": 0.98970343495307,
+          "frameMs": 19.97865207519735,
+          "drawCalls": 188,
+          "triangles": 45097,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7234.200000017881,
+      "tick": 355,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 354,
+        "render": {
+          "renderMs": 0.9707148131298101,
+          "frameMs": 19.74328053741856,
+          "drawCalls": 190,
+          "triangles": 45353,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7737.300000011921,
+      "tick": 380,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 379,
+        "render": {
+          "renderMs": 1.012302389995832,
+          "frameMs": 19.99901733977664,
+          "drawCalls": 267,
+          "triangles": 64923,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8255,
+      "tick": 407,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 406,
+        "render": {
+          "renderMs": 1.0137567065661597,
+          "frameMs": 19.712915488262578,
+          "drawCalls": 237,
+          "triangles": 63031,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8756.40000000596,
+      "tick": 432,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 431,
+        "render": {
+          "renderMs": 1.0038857367481144,
+          "frameMs": 19.6615569288361,
+          "drawCalls": 258,
+          "triangles": 63891,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9258.800000011921,
+      "tick": 458,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 457,
+        "render": {
+          "renderMs": 0.9553185018628609,
+          "frameMs": 19.485577734002877,
+          "drawCalls": 236,
+          "triangles": 63029,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9760.5,
+      "tick": 483,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 482,
+        "render": {
+          "renderMs": 0.9488534208814912,
+          "frameMs": 19.726711191735788,
+          "drawCalls": 236,
+          "triangles": 63025,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10262.5,
+      "tick": 509,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 508,
+        "render": {
+          "renderMs": 0.9015236404501291,
+          "frameMs": 19.469433878306102,
+          "drawCalls": 236,
+          "triangles": 63023,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10765.40000000596,
+      "tick": 534,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 533,
+        "render": {
+          "renderMs": 0.9692830831737562,
+          "frameMs": 19.99837089256507,
+          "drawCalls": 259,
+          "triangles": 63893,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11267.09999999404,
+      "tick": 559,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 558,
+        "render": {
+          "renderMs": 1.0449430576074898,
+          "frameMs": 19.91795909660376,
+          "drawCalls": 180,
+          "triangles": 47987,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11770.40000000596,
+      "tick": 585,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 584,
+        "render": {
+          "renderMs": 1.0948427265829743,
+          "frameMs": 19.694395641636657,
+          "drawCalls": 179,
+          "triangles": 47985,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12273.09999999404,
+      "tick": 610,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 609,
+        "render": {
+          "renderMs": 0.9107532107159122,
+          "frameMs": 19.91506167793884,
+          "drawCalls": 180,
+          "triangles": 47987,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12776.300000011921,
+      "tick": 636,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 635,
+        "render": {
+          "renderMs": 0.9017037826392111,
+          "frameMs": 19.759466035536704,
+          "drawCalls": 182,
+          "triangles": 48243,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13277.800000011921,
+      "tick": 662,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 661,
+        "render": {
+          "renderMs": 0.8346238110664292,
+          "frameMs": 19.445242195652405,
+          "drawCalls": 219,
+          "triangles": 52873,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13779.59999999404,
+      "tick": 687,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 686,
+        "render": {
+          "renderMs": 1.0582202146002504,
+          "frameMs": 19.73598500375542,
+          "drawCalls": 277,
+          "triangles": 68169,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14283,
+      "tick": 712,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 711,
+        "render": {
+          "renderMs": 1.0978240157009498,
+          "frameMs": 19.96926948389164,
+          "drawCalls": 272,
+          "triangles": 67651,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14785.200000017881,
+      "tick": 738,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 737,
+        "render": {
+          "renderMs": 1.0372624996964552,
+          "frameMs": 19.825527287470674,
+          "drawCalls": 272,
+          "triangles": 67653,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 15287.700000017881,
+      "tick": 763,
+      "world": {
+        "sector": 1,
+        "name": "Outer Drift",
+        "tier": "high",
+        "pieces": [
+          "od_beacon",
+          "od_hauler_a",
+          "od_hauler_b",
+          "od_hauler_b",
+          "od_hauler_a",
+          "od_waystation",
+          "od_waystation",
+          "od_hauler_a"
+        ],
+        "drawCalls": 21,
+        "triangles": 12592,
+        "textureBytes": 524288,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 762,
+        "render": {
+          "renderMs": 1.0167759619786094,
+          "frameMs": 19.526410068970318,
+          "drawCalls": 272,
+          "triangles": 67653,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 102,
+      "voStarted": [
+        "1.55s en/sec1_intro_001.ogg",
+        "6.17s en/lock_ai_001.ogg",
+        "6.67s en/graze_ai_001.ogg",
+        "11.87s en/rad_drone_locked_001.ogg",
+        "12.91s en/amb_nofire_002.ogg",
+        "15.23s en/stat_writ_001.ogg"
+      ],
+      "lufs": -18.8,
+      "truePeak": -5.1,
+      "buses": {
+        "music": {
+          "lufs": -23.6,
+          "truePeak": -5.3
+        },
+        "sfx": {
+          "lufs": -35.6,
+          "truePeak": -17.3
+        },
+        "voice": {
+          "lufs": -16.4,
+          "truePeak": -2.5
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 15.53,
+      "voAudible": [
+        {
+          "start": 0.32,
+          "end": 5.36
+        },
+        {
+          "start": 5.91,
+          "end": 6.65
+        },
+        {
+          "start": 7.07,
+          "end": 8.14
+        },
+        {
+          "start": 8.73,
+          "end": 9.92
+        },
+        {
+          "start": 10.46,
+          "end": 13.37
+        }
+      ],
+      "subtitles": []
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "15.53 s audible of 15.85 s, 102 sounds started, 6 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.1 dBTP, -18.8 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -23.6 LUFS / -5.3 dBTP, sfx -35.6 LUFS / -17.3 dBTP, voice -16.4 LUFS / -2.5 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.8 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "no subtitles shown in this reel"
+      }
+    ]
+  }
+}

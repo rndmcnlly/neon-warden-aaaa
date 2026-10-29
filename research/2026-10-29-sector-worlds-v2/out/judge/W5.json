@@ -1,0 +1,38 @@
+{
+  "id": "W5",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.013092,
+  "wallS": 17.054,
+  "answer": {
+    "place_kind": "An orbital or deep-space cargo shipping terminal and dockyard bordering a transit lane.",
+    "activity": "The surrounding dockyard structures and platforms drift slowly downward past the camera while elongated cargo barges carrying rectangular containers travel along the left side of the lane.",
+    "inhabitants": "Logistics workers, dock operators, or automated freight crews, suggested by the industrial gantry crane, standardized cargo containers, freight barges, and stenciled storage modules.",
+    "readable_text": [],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "A dark starfield background surrounds the central lane, establishing an outer-space setting."
+      },
+      {
+        "time": "00:02",
+        "observation": "On the right side of the lane, a large yellow industrial gantry crane sits atop a flat platform alongside stacked rectangular containers."
+      },
+      {
+        "time": "00:05",
+        "observation": "On the left side, an elongated freight vessel or barge loaded with orange and grey containers moves downward parallel to the lane."
+      },
+      {
+        "time": "00:09",
+        "observation": "Grey rectangular dock modules on both sides of the lane feature yellow stenciled industrial markings and small indicator lights."
+      },
+      {
+        "time": "00:14",
+        "observation": "The entire dockyard assembly on the right and the vessels on the left have scrolled noticeably downward relative to their starting positions."
+      }
+    ],
+    "confidence": 0.85,
+    "uncertainty": "The yellow stenciled text on the grey dock modules is too pixelated to read verbatim, and it is unclear whether the crane and cargo vessels are human-crewed or automated."
+  }
+}

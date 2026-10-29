@@ -1,0 +1,30 @@
+{
+  "id": "F0",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.006952,
+  "wallS": 11.701,
+  "answer": {
+    "place_kind": "An outer space setting with abstract, blocky, dark grey geometric structures floating against a starfield on either side of the central track.",
+    "activity": "The structures and starfield remain completely static until 00:13, when the camera rotates and pans, causing the surrounding structures to move out of frame.",
+    "inhabitants": "None visible. There are no signs of life, vehicles, or active machinery in the surrounding environment.",
+    "readable_text": [],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "Symmetrical, blocky grey geometric structures flank the left and right sides of the central lane against a dark background with tiny white specks resembling stars."
+      },
+      {
+        "time": "00:07",
+        "observation": "The surrounding grey structures and starfield show no movement, lights, or activity over several seconds."
+      },
+      {
+        "time": "00:13",
+        "observation": "The entire playfield and surrounding environment rotate clockwise and shift as the camera perspective changes."
+      }
+    ],
+    "confidence": 0.1,
+    "uncertainty": "The surrounding blocky shapes are completely untextured and abstract, making it impossible to tell if they represent parts of a space station, ship hull, or purely decorative greebles."
+  }
+}

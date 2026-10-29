@@ -1,0 +1,1288 @@
+{
+  "arm": "after",
+  "sector": 3,
+  "view": "portrait",
+  "size": {
+    "width": 390,
+    "height": 844
+  },
+  "samples": [
+    {
+      "t": 1722,
+      "tick": 76,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 75,
+        "render": {
+          "renderMs": 1.2932982472187649,
+          "frameMs": 19.913186779161713,
+          "drawCalls": 125,
+          "triangles": 30685,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2225.199999988079,
+      "tick": 102,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 101,
+        "render": {
+          "renderMs": 1.111551016221113,
+          "frameMs": 19.811561739223784,
+          "drawCalls": 127,
+          "triangles": 30845,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2728.7999999821186,
+      "tick": 127,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 126,
+        "render": {
+          "renderMs": 1.079054347182888,
+          "frameMs": 19.690991466651923,
+          "drawCalls": 131,
+          "triangles": 31261,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3232.5,
+      "tick": 153,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 152,
+        "render": {
+          "renderMs": 1.1022418892717711,
+          "frameMs": 19.78271984117646,
+          "drawCalls": 129,
+          "triangles": 31169,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3735.699999988079,
+      "tick": 175,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 174,
+        "render": {
+          "renderMs": 2.190201634086708,
+          "frameMs": 20.786636679929394,
+          "drawCalls": 127,
+          "triangles": 30345,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4238.899999976158,
+      "tick": 201,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 200,
+        "render": {
+          "renderMs": 1.469319525508486,
+          "frameMs": 20.103055528802518,
+          "drawCalls": 123,
+          "triangles": 29833,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4741.199999988079,
+      "tick": 226,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 225,
+        "render": {
+          "renderMs": 1.2040674517385639,
+          "frameMs": 19.899673047946603,
+          "drawCalls": 113,
+          "triangles": 28481,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5243.399999976158,
+      "tick": 251,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.19999998807907104,
+        "signVisible": false,
+        "elapsedTicks": 250,
+        "render": {
+          "renderMs": 1.178844217838149,
+          "frameMs": 20.008108082286604,
+          "drawCalls": 149,
+          "triangles": 36929,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5745.0999999940395,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 1.0843120366114243,
+          "frameMs": 19.566084631360027,
+          "drawCalls": 165,
+          "triangles": 43417,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6248.5999999940395,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.9638633397256835,
+          "frameMs": 19.61038565751846,
+          "drawCalls": 163,
+          "triangles": 43161,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6750.299999982119,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.826949516427083,
+          "frameMs": 19.528368668454448,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7253.799999982119,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7708782227396459,
+          "frameMs": 19.405041680506155,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7755.199999988079,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7559902665511847,
+          "frameMs": 19.59552793835752,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8265.899999976158,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.20000001788139343,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7788082545922048,
+          "frameMs": 19.295366936688826,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8768,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7741369329528351,
+          "frameMs": 19.408318082247757,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9270,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7743241036521771,
+          "frameMs": 19.415041082729584,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9772.399999976158,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7601624056577114,
+          "frameMs": 19.45130086354018,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10274.59999999404,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7798054802057471,
+          "frameMs": 19.5459122410221,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10776.799999982119,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7746315819017722,
+          "frameMs": 19.417213633813745,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11280.09999999404,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.8176582080942577,
+          "frameMs": 19.83991418290261,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11781.299999982119,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.7900345007990104,
+          "frameMs": 19.601891837612367,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12282.799999982119,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.8100316612627699,
+          "frameMs": 19.770671629532824,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12785.199999988079,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 21,
+        "triangles": 12074,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.8590889632881243,
+          "frameMs": 19.697514035690983,
+          "drawCalls": 161,
+          "triangles": 43157,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13287.59999999404,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.8169524725919007,
+          "frameMs": 19.603573952964187,
+          "drawCalls": 125,
+          "triangles": 19039,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13790.199999988079,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.672780395428927,
+          "frameMs": 19.496625908191636,
+          "drawCalls": 100,
+          "triangles": 13843,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14292.899999976158,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.5914878996325306,
+          "frameMs": 19.072349711606563,
+          "drawCalls": 68,
+          "triangles": 3971,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14795.699999988079,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.5867817829541889,
+          "frameMs": 19.10038226219045,
+          "drawCalls": 68,
+          "triangles": 3971,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 15297.399999976158,
+      "tick": 256,
+      "world": {
+        "sector": 3,
+        "name": "Gun Lanes",
+        "tier": "high",
+        "pieces": [
+          "gl_gantry",
+          "gl_pod",
+          "gl_tower",
+          "gl_tower",
+          "gl_tower",
+          "gl_pod"
+        ],
+        "drawCalls": 22,
+        "triangles": 12076,
+        "textureBytes": 742741,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 255,
+        "render": {
+          "renderMs": 0.5559788191382348,
+          "frameMs": 19.223706046565212,
+          "drawCalls": 68,
+          "triangles": 3971,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 28,
+      "voStarted": [
+        "0.23s en/var_secstart_002.ogg",
+        "1.55s en/sec3_intro_001.ogg",
+        "4.16s en/disarm_ai_001.ogg",
+        "5.33s en/flash_ai_001.ogg",
+        "13.89s en/flash_rec_001.ogg"
+      ],
+      "lufs": -18.5,
+      "truePeak": -5.4,
+      "buses": {
+        "music": {
+          "lufs": -21.7,
+          "truePeak": -9
+        },
+        "sfx": {
+          "lufs": -22.4,
+          "truePeak": -5.9
+        },
+        "voice": {
+          "lufs": -16.1,
+          "truePeak": -2.8
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 15.03,
+      "voAudible": [
+        {
+          "start": 0.85,
+          "end": 1.73
+        },
+        {
+          "start": 2.05,
+          "end": 4.97
+        },
+        {
+          "start": 5.76,
+          "end": 8.15
+        },
+        {
+          "start": 8.71,
+          "end": 9.58
+        },
+        {
+          "start": 10.24,
+          "end": 11.13
+        },
+        {
+          "start": 11.56,
+          "end": 12.34
+        },
+        {
+          "start": 14.11,
+          "end": 14.73
+        },
+        {
+          "start": 15.85,
+          "end": 15.85
+        }
+      ],
+      "subtitles": []
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "15.03 s audible of 15.85 s, 28 sounds started, 5 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.4 dBTP, -18.5 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -21.7 LUFS / -9 dBTP, sfx -22.4 LUFS / -5.9 dBTP, voice -16.1 LUFS / -2.8 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.5 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "no subtitles shown in this reel"
+      }
+    ]
+  }
+}

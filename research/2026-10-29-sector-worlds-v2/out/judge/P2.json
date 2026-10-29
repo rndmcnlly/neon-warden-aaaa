@@ -1,0 +1,47 @@
+{
+  "id": "P2",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.009322,
+  "wallS": 14.522,
+  "answer": {
+    "place_kind": "An outer space shipping port or orbital cargo yard.",
+    "activity": "Angular, blocky spacecraft or floating structures slowly drift upward along both sides of the central play area. On a large rectangular cargo ship on the upper right, small yellow cranes or robotic arms slide back and forth along overhead gantry rails above rows of circular containers.",
+    "inhabitants": "Automated systems or port personnel managing space traffic and cargo, suggested by the automated gantry cranes working on the cargo vessel and a radio transmission from 'LANE CONTROL' issuing traffic instructions.",
+    "readable_text": [
+      {
+        "time": "00:03",
+        "text": "G.S.S.T. CLASS\nBulk Freighter"
+      },
+      {
+        "time": "00:15",
+        "text": "LANE CONTROL\nWell met pilot. To our battlefront, please.\nproceeed as normal."
+      }
+    ],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "Dark space background with stars and multiple blocky, monolithic ships or structures floating on the left and right sides, marked with heart and spade symbols."
+      },
+      {
+        "time": "00:01",
+        "observation": "A large rectangular ship on the upper right features a grid of circular tanks or containers on its deck with yellow gantry beams spanning across it."
+      },
+      {
+        "time": "00:03",
+        "observation": "A label appears over the upper-right vessel reading 'G.S.S.T. CLASS Bulk Freighter'."
+      },
+      {
+        "time": "00:08",
+        "observation": "The surrounding ships and the bulk freighter slowly drift downwards relative to the screen (or the camera moves forward past them), while small yellow cranes move along the freighter's deck rails."
+      },
+      {
+        "time": "00:15",
+        "observation": "A communication pop-up on the left side from 'LANE CONTROL' addresses the pilot regarding traffic and a battlefront."
+      }
+    ],
+    "confidence": 0.85,
+    "uncertainty": "It is unclear what the heart and spade symbols on the flanking structures represent (e.g., faction insignias or structural designations), and whether the non-freighter structures are ships or stationary orbital pylons."
+  }
+}

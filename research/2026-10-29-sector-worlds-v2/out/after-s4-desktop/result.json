@@ -1,0 +1,1335 @@
+{
+  "arm": "after",
+  "sector": 4,
+  "view": "desktop",
+  "size": {
+    "width": 1366,
+    "height": 768
+  },
+  "samples": [
+    {
+      "t": 1733.5999999940395,
+      "tick": 78,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 77,
+        "render": {
+          "renderMs": 1.1355435893052341,
+          "frameMs": 19.497906326611645,
+          "drawCalls": 141,
+          "triangles": 44027,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2236.2999999821186,
+      "tick": 104,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 103,
+        "render": {
+          "renderMs": 1.1027298883317829,
+          "frameMs": 19.58958907050554,
+          "drawCalls": 175,
+          "triangles": 46147,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2739.0999999940395,
+      "tick": 129,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 128,
+        "render": {
+          "renderMs": 1.0210693682700003,
+          "frameMs": 19.731263398428954,
+          "drawCalls": 174,
+          "triangles": 45807,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3241.5999999940395,
+      "tick": 155,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 154,
+        "render": {
+          "renderMs": 0.8491778339367451,
+          "frameMs": 19.606409255046977,
+          "drawCalls": 174,
+          "triangles": 45819,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3745.0999999940395,
+      "tick": 181,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 180,
+        "render": {
+          "renderMs": 0.8267548392807152,
+          "frameMs": 19.565983508628413,
+          "drawCalls": 174,
+          "triangles": 45831,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4246.9000000059605,
+      "tick": 207,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 206,
+        "render": {
+          "renderMs": 0.7964470784685684,
+          "frameMs": 19.46150822461752,
+          "drawCalls": 174,
+          "triangles": 45855,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4750.699999988079,
+      "tick": 233,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 232,
+        "render": {
+          "renderMs": 0.7573081562146033,
+          "frameMs": 19.394143057126588,
+          "drawCalls": 174,
+          "triangles": 45867,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5253.699999988079,
+      "tick": 258,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 257,
+        "render": {
+          "renderMs": 0.755356042171617,
+          "frameMs": 19.62733210547877,
+          "drawCalls": 174,
+          "triangles": 45879,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5754.9000000059605,
+      "tick": 283,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 282,
+        "render": {
+          "renderMs": 0.8882521505122956,
+          "frameMs": 19.913964658182664,
+          "drawCalls": 196,
+          "triangles": 46755,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6257.0999999940395,
+      "tick": 309,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 308,
+        "render": {
+          "renderMs": 0.9221274560303362,
+          "frameMs": 19.552465767674224,
+          "drawCalls": 168,
+          "triangles": 45307,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6760,
+      "tick": 335,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 334,
+        "render": {
+          "renderMs": 0.8388362524724877,
+          "frameMs": 19.628263355129384,
+          "drawCalls": 140,
+          "triangles": 43859,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7262.199999988079,
+      "tick": 360,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 359,
+        "render": {
+          "renderMs": 0.7805142804020172,
+          "frameMs": 19.392874235792366,
+          "drawCalls": 118,
+          "triangles": 42979,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7765,
+      "tick": 387,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 386,
+        "render": {
+          "renderMs": 0.8188562355883874,
+          "frameMs": 19.413544190806334,
+          "drawCalls": 186,
+          "triangles": 47831,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8288.90000000596,
+      "tick": 413,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 412,
+        "render": {
+          "renderMs": 0.783759858163265,
+          "frameMs": 19.416591303323848,
+          "drawCalls": 178,
+          "triangles": 46787,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8792.40000000596,
+      "tick": 439,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 438,
+        "render": {
+          "renderMs": 0.887839431541906,
+          "frameMs": 19.842911150022978,
+          "drawCalls": 178,
+          "triangles": 46775,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9294.5,
+      "tick": 464,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 463,
+        "render": {
+          "renderMs": 0.9969670579772647,
+          "frameMs": 19.85462608505412,
+          "drawCalls": 180,
+          "triangles": 46763,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9797,
+      "tick": 489,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 488,
+        "render": {
+          "renderMs": 1.00163119843972,
+          "frameMs": 19.91282789132701,
+          "drawCalls": 180,
+          "triangles": 46755,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10299.699999988079,
+      "tick": 515,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 514,
+        "render": {
+          "renderMs": 0.9722689002229251,
+          "frameMs": 19.698093155860317,
+          "drawCalls": 180,
+          "triangles": 46755,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10802.09999999404,
+      "tick": 541,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 540,
+        "render": {
+          "renderMs": 0.8678579761989289,
+          "frameMs": 19.38015284897787,
+          "drawCalls": 179,
+          "triangles": 46753,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11304,
+      "tick": 567,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 566,
+        "render": {
+          "renderMs": 0.8163588077171015,
+          "frameMs": 19.53429320466841,
+          "drawCalls": 140,
+          "triangles": 43775,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11806.699999988079,
+      "tick": 593,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 592,
+        "render": {
+          "renderMs": 0.8340522145912947,
+          "frameMs": 19.397082156798195,
+          "drawCalls": 118,
+          "triangles": 42911,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12308.299999982119,
+      "tick": 619,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.19999998807907104,
+        "signVisible": false,
+        "elapsedTicks": 618,
+        "render": {
+          "renderMs": 0.7848261862948496,
+          "frameMs": 19.240969632590684,
+          "drawCalls": 146,
+          "triangles": 44359,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12809.699999988079,
+      "tick": 645,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 644,
+        "render": {
+          "renderMs": 0.8374491440428046,
+          "frameMs": 19.195343086640246,
+          "drawCalls": 174,
+          "triangles": 45803,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13312.199999988079,
+      "tick": 671,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 670,
+        "render": {
+          "renderMs": 0.8079643158028583,
+          "frameMs": 19.424202318033313,
+          "drawCalls": 206,
+          "triangles": 47767,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13814.5,
+      "tick": 697,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 696,
+        "render": {
+          "renderMs": 0.7794211914263967,
+          "frameMs": 19.235303438771062,
+          "drawCalls": 202,
+          "triangles": 47267,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14317,
+      "tick": 722,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 721,
+        "render": {
+          "renderMs": 0.9363918996986322,
+          "frameMs": 19.501666632884415,
+          "drawCalls": 202,
+          "triangles": 47291,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14820.199999988079,
+      "tick": 748,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 747,
+        "render": {
+          "renderMs": 0.902794885992513,
+          "frameMs": 19.378833636611258,
+          "drawCalls": 202,
+          "triangles": 47315,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 15322.90000000596,
+      "tick": 774,
+      "world": {
+        "sector": 4,
+        "name": "Lancer Gate",
+        "tier": "high",
+        "pieces": [
+          "lg_crane",
+          "lg_container",
+          "lg_bay",
+          "lg_bay",
+          "od_hauler_a",
+          "lg_crane",
+          "lg_container",
+          "lg_container"
+        ],
+        "drawCalls": 27,
+        "triangles": 19460,
+        "textureBytes": 305835,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 773,
+        "render": {
+          "renderMs": 0.9344538840537947,
+          "frameMs": 19.543271274905745,
+          "drawCalls": 204,
+          "triangles": 47343,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 98,
+      "voStarted": [
+        "0.24s en/var_secstart_003.ogg",
+        "1.55s en/sec4_intro_001.ogg",
+        "6.09s en/graze_ai_001.ogg",
+        "14.14s en/rad_lancer_patrol_001.ogg"
+      ],
+      "lufs": -19,
+      "truePeak": -5.2,
+      "buses": {
+        "music": {
+          "lufs": -70,
+          "truePeak": null
+        },
+        "sfx": {
+          "lufs": -33.9,
+          "truePeak": -15.6
+        },
+        "voice": {
+          "lufs": -16.7,
+          "truePeak": -1
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 15.47,
+      "voAudible": [
+        {
+          "start": 0.8,
+          "end": 1.51
+        },
+        {
+          "start": 1.94,
+          "end": 5.92
+        },
+        {
+          "start": 6.46,
+          "end": 7.21
+        },
+        {
+          "start": 7.63,
+          "end": 8.69
+        },
+        {
+          "start": 9.29,
+          "end": 10.48
+        },
+        {
+          "start": 13.86,
+          "end": 15.49
+        }
+      ],
+      "subtitles": []
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "15.47 s audible of 15.88 s, 98 sounds started, 4 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.2 dBTP, -19 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -70 LUFS / NaN dBTP, sfx -33.9 LUFS / -15.6 dBTP, voice -16.7 LUFS / -1 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-19 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "no subtitles shown in this reel"
+      }
+    ]
+  }
+}

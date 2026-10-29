@@ -1,0 +1,1279 @@
+{
+  "arm": "after2",
+  "sector": 5,
+  "view": "desktop",
+  "size": {
+    "width": 1366,
+    "height": 768
+  },
+  "samples": [
+    {
+      "t": 1860.300000011921,
+      "tick": 78,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 77,
+        "render": {
+          "renderMs": 1.0424506231002337,
+          "frameMs": 19.70698587604891,
+          "drawCalls": 141,
+          "triangles": 53663,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2362.300000011921,
+      "tick": 103,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 102,
+        "render": {
+          "renderMs": 0.9247019703062913,
+          "frameMs": 19.644638338483446,
+          "drawCalls": 143,
+          "triangles": 53823,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2863.600000023842,
+      "tick": 129,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 128,
+        "render": {
+          "renderMs": 0.8493799962634675,
+          "frameMs": 19.4531537008059,
+          "drawCalls": 145,
+          "triangles": 53983,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3366.600000023842,
+      "tick": 155,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 154,
+        "render": {
+          "renderMs": 0.7409449507415207,
+          "frameMs": 19.522266273575546,
+          "drawCalls": 146,
+          "triangles": 54001,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3869.5,
+      "tick": 181,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 180,
+        "render": {
+          "renderMs": 0.7576159060945288,
+          "frameMs": 19.50476534549608,
+          "drawCalls": 178,
+          "triangles": 55979,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4371,
+      "tick": 207,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 206,
+        "render": {
+          "renderMs": 0.7420111953711034,
+          "frameMs": 19.317437269050597,
+          "drawCalls": 174,
+          "triangles": 55467,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4873.200000017881,
+      "tick": 233,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 232,
+        "render": {
+          "renderMs": 0.7538157906677041,
+          "frameMs": 19.107312267917465,
+          "drawCalls": 202,
+          "triangles": 56915,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5375.4000000059605,
+      "tick": 258,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 257,
+        "render": {
+          "renderMs": 0.9106362291794435,
+          "frameMs": 19.779969599367778,
+          "drawCalls": 252,
+          "triangles": 59251,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5877.600000023842,
+      "tick": 284,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 283,
+        "render": {
+          "renderMs": 0.9680150868158377,
+          "frameMs": 19.7026182715102,
+          "drawCalls": 230,
+          "triangles": 58429,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6380.300000011921,
+      "tick": 310,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 309,
+        "render": {
+          "renderMs": 0.8795541281683747,
+          "frameMs": 19.511390043371044,
+          "drawCalls": 230,
+          "triangles": 58453,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6883.800000011921,
+      "tick": 336,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 335,
+        "render": {
+          "renderMs": 1.0381962741021105,
+          "frameMs": 19.512348115699435,
+          "drawCalls": 253,
+          "triangles": 59319,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7387,
+      "tick": 361,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 360,
+        "render": {
+          "renderMs": 1.0608980131804602,
+          "frameMs": 19.700850425503518,
+          "drawCalls": 254,
+          "triangles": 59355,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7889.5,
+      "tick": 386,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 385,
+        "render": {
+          "renderMs": 1.1032222187309522,
+          "frameMs": 20.131768182973012,
+          "drawCalls": 254,
+          "triangles": 59381,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8408.700000017881,
+      "tick": 412,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 411,
+        "render": {
+          "renderMs": 1.0713844332916145,
+          "frameMs": 19.961417599771956,
+          "drawCalls": 253,
+          "triangles": 59391,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8911.100000023842,
+      "tick": 437,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 436,
+        "render": {
+          "renderMs": 0.9423801112427443,
+          "frameMs": 20.104310322119748,
+          "drawCalls": 203,
+          "triangles": 57079,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9413.800000011921,
+      "tick": 462,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 461,
+        "render": {
+          "renderMs": 0.9467528636355642,
+          "frameMs": 20.16953245708518,
+          "drawCalls": 197,
+          "triangles": 56495,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9917.300000011921,
+      "tick": 488,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 487,
+        "render": {
+          "renderMs": 0.8957608722680662,
+          "frameMs": 19.753872193279516,
+          "drawCalls": 168,
+          "triangles": 55033,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10419.200000017881,
+      "tick": 513,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 512,
+        "render": {
+          "renderMs": 0.8534037808552143,
+          "frameMs": 19.70695227897709,
+          "drawCalls": 146,
+          "triangles": 54145,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10921.40000000596,
+      "tick": 539,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 538,
+        "render": {
+          "renderMs": 0.8828556208288287,
+          "frameMs": 19.467030911421713,
+          "drawCalls": 168,
+          "triangles": 54963,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11424.600000023842,
+      "tick": 565,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 564,
+        "render": {
+          "renderMs": 0.8904472514144325,
+          "frameMs": 19.27147464093911,
+          "drawCalls": 190,
+          "triangles": 57129,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11925.5,
+      "tick": 591,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 590,
+        "render": {
+          "renderMs": 0.882422902911642,
+          "frameMs": 19.41098678518343,
+          "drawCalls": 211,
+          "triangles": 58383,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12427.600000023842,
+      "tick": 616,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 615,
+        "render": {
+          "renderMs": 0.9794832953966086,
+          "frameMs": 19.762161389101102,
+          "drawCalls": 231,
+          "triangles": 59655,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12928.90000000596,
+      "tick": 642,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 641,
+        "render": {
+          "renderMs": 0.9232151369945253,
+          "frameMs": 19.654716864473233,
+          "drawCalls": 252,
+          "triangles": 60925,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13432.90000000596,
+      "tick": 667,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 666,
+        "render": {
+          "renderMs": 0.9016901868150297,
+          "frameMs": 19.801186932904727,
+          "drawCalls": 272,
+          "triangles": 62195,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13934.600000023842,
+      "tick": 692,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 691,
+        "render": {
+          "renderMs": 0.9410054594025785,
+          "frameMs": 20.08428903318855,
+          "drawCalls": 269,
+          "triangles": 61689,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14436.200000017881,
+      "tick": 717,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 716,
+        "render": {
+          "renderMs": 0.8896374042460791,
+          "frameMs": 20.13046072504641,
+          "drawCalls": 265,
+          "triangles": 61517,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14938.100000023842,
+      "tick": 742,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 741,
+        "render": {
+          "renderMs": 0.8691820995648283,
+          "frameMs": 20.058980984433283,
+          "drawCalls": 228,
+          "triangles": 59131,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 15441.800000011921,
+      "tick": 768,
+      "world": {
+        "sector": 5,
+        "name": "Last Approach",
+        "tier": "high",
+        "pieces": [
+          "la_buttress",
+          "la_buttress",
+          "la_nursery",
+          "la_heartgate",
+          "la_buttress",
+          "la_buttress"
+        ],
+        "drawCalls": 15,
+        "triangles": 21442,
+        "textureBytes": 436907,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 767,
+        "render": {
+          "renderMs": 1.236866558200083,
+          "frameMs": 19.660641944005995,
+          "drawCalls": 210,
+          "triangles": 57855,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 209,
+      "voStarted": [
+        "1.66s en/sec5_intro_001.ogg",
+        "5.81s en/graze_ai_001.ogg",
+        "8.5s en/lock_ai_001.ogg",
+        "15.43s en/rad_auth_locked_001.ogg"
+      ],
+      "lufs": -18.4,
+      "truePeak": -5.3,
+      "buses": {
+        "music": {
+          "lufs": -70,
+          "truePeak": null
+        },
+        "sfx": {
+          "lufs": -32.5,
+          "truePeak": -14.5
+        },
+        "voice": {
+          "lufs": -16.3,
+          "truePeak": -2.4
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 15.7,
+      "voAudible": [
+        {
+          "start": 0.89,
+          "end": 1.71
+        },
+        {
+          "start": 2.18,
+          "end": 4.5
+        },
+        {
+          "start": 5.05,
+          "end": 5.79
+        },
+        {
+          "start": 6.21,
+          "end": 8.9
+        },
+        {
+          "start": 9.29,
+          "end": 10.19
+        },
+        {
+          "start": 10.99,
+          "end": 13.29
+        }
+      ],
+      "subtitles": []
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "15.7 s audible of 16 s, 209 sounds started, 4 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.3 dBTP, -18.4 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -70 LUFS / NaN dBTP, sfx -32.5 LUFS / -14.5 dBTP, voice -16.3 LUFS / -2.4 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.4 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "no subtitles shown in this reel"
+      }
+    ]
+  }
+}

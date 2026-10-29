@@ -32,3 +32,5 @@ total would pass US $15.
 | 2026-10-28 | B wave 4 A/B music.gameplay | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.016124 | 0.392358 |
 | 2026-10-28 | B wave 4 A/B voice.tutorial_ai | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.016504 | 0.408862 |
 | 2026-10-28 | B wave 4 A/B music.gameplay | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.016424 | 0.425286 |
+
+| 2026-10-29 | Sector worlds v2 blind place-specificity test, 11 picture-only clips | OpenRouter | google/gemini-4-argon (mandatory ZDR/data_collection deny, no fallbacks; returned Google) | 11 | 0.114942 | Previous displayed total + 0.114942; see research/2026-10-29-sector-worlds-v2/out/judge/ |

@@ -1,0 +1,59 @@
+{
+  "id": "K7",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.014452,
+  "wallS": 25.67,
+  "answer": {
+    "place_kind": "An orbital space tollbooth and administrative office complex floating in outer space beside a transit lane.",
+    "activity": "The buildings slowly bob and float in space against a starfield. On the right structure, a yellow digital ticker scrolls text horizontally from right to left. At 00:13, the camera rotates and zooms into the central lane, moving the surrounding buildings out of view.",
+    "inhabitants": "Tollbooth operators, customs inspectors, and billing clerks, suggested by the lit windows on the multi-story office buildings and signage for the 'Lane Authority Billing Department' and 'Lane Authority Tollbooth'.",
+    "readable_text": [
+      {
+        "time": "00:02",
+        "text": "LANE AUTHORITY BILLING DEPARTMENT"
+      },
+      {
+        "time": "00:03",
+        "text": "$3,453.00"
+      },
+      {
+        "time": "00:08",
+        "text": "LANE AUTHORITY TOLLBOOTH"
+      },
+      {
+        "time": "00:09",
+        "text": "INSPECTION CAPACITY 0"
+      },
+      {
+        "time": "00:12",
+        "text": "CAPACITY 0 - TARIFF"
+      }
+    ],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "Cluster of blocky, multi-story buildings with illuminated windows floating in a dark starfield on both sides of the central lane."
+      },
+      {
+        "time": "00:02",
+        "observation": "Sign on the largest building on the left reads 'LANE AUTHORITY BILLING DEPARTMENT'."
+      },
+      {
+        "time": "00:03",
+        "observation": "The structure on the right has a bridge-like overhang with a scrolling yellow LED ticker showing '$3,453.00'."
+      },
+      {
+        "time": "00:09",
+        "observation": "The ticker on the right building scrolls to read 'INSPECTION CAPACITY 0' beneath static text reading 'LANE AUTHORITY TOLLBOOTH'."
+      },
+      {
+        "time": "00:13",
+        "observation": "The camera tilts and zooms in toward the center, pushing the side buildings off-screen."
+      }
+    ],
+    "confidence": 0.9,
+    "uncertainty": "The smaller text on the lower-left building and the bottom-right platform is too low-resolution to read, and it is unclear what the small red glowing dots on the right structure represent."
+  }
+}

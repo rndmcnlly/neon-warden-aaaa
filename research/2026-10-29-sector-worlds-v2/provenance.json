@@ -1,0 +1,22 @@
+{
+  "preparedAt": "2026-10-29T08:32:31.510Z",
+  "overlays": {
+    "music/picks.json": "d07b3349a2aba7b2b5c11bf83a60f7837b1c2b3600147e0d3510854dec4c3807",
+    "public/music/manifest.json": "3b69e6da33b96ec322e926b3bbd4274bb40e0e0584eec995ef157dac3923dd89",
+    "public/vo/variants/index.json": "90a05dc22f6d0af2523961cb48a13953f2533d223b89ddc8731bc24aee5e2f31"
+  },
+  "before": {
+    "rev": "c5fa3bf575e4790d3634ce200836bedc58ed3248",
+    "worldFiles": {
+      "src/world/environment.ts": "265354a3a8090d4b3ec9dfbb3ecd57833d79acca0accb9c8ddc32a0b18c68fd0",
+      "src/world/sectors.ts": "20d08d930b67becb626cf028b70baa62a8c5fbfdda28258065709e022bb5ffd5"
+    }
+  },
+  "after": {
+    "rev": "113ca2736c7cb699c1a93907d3086149c809a42c",
+    "worldFiles": {
+      "src/world/environment.ts": "b112698f63f4b71dfae05bdc1a06ca7271691ad8dc48f26ec5be87c41f6c3b29",
+      "src/world/sectors.ts": "1e818da78e4150cee890586059b4c211af4d829d89ead168d84c0f8e5cd2e791"
+    }
+  }
+}

@@ -1,6 +1,11 @@
 # Isolated snapshots, builds and iteration stills: regenerable, never committed.
 before/
 after/
+after2/
 peek/
 out/build/
 out/raw/
+out/before-s*-portrait/
+out/after-s5-portrait/
+out/judge/*.mp4
+out/*/av/

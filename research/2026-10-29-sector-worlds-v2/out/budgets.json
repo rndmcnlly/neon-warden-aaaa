@@ -1,0 +1,80 @@
+{
+ "geometryBytesAllGlb": 2114828,
+ "sectors": [
+  {
+   "sector": 1,
+   "high": {
+    "drawCalls": 21,
+    "triangles": 12758,
+    "textureBytes": 524288,
+    "pieces": 8
+   },
+   "low": {
+    "drawCalls": 11,
+    "triangles": 5910,
+    "textureBytes": 524288,
+    "pieces": 3
+   }
+  },
+  {
+   "sector": 2,
+   "high": {
+    "drawCalls": 16,
+    "triangles": 7350,
+    "textureBytes": 87381.33333333333,
+    "pieces": 7
+   },
+   "low": {
+    "drawCalls": 9,
+    "triangles": 3330,
+    "textureBytes": 87381.33333333333,
+    "pieces": 3
+   }
+  },
+  {
+   "sector": 3,
+   "high": {
+    "drawCalls": 22,
+    "triangles": 12146,
+    "textureBytes": 742741.3333333333,
+    "pieces": 6
+   },
+   "low": {
+    "drawCalls": 15,
+    "triangles": 4234,
+    "textureBytes": 742741.3333333333,
+    "pieces": 3
+   }
+  },
+  {
+   "sector": 4,
+   "high": {
+    "drawCalls": 27,
+    "triangles": 19460,
+    "textureBytes": 305834.6666666666,
+    "pieces": 8
+   },
+   "low": {
+    "drawCalls": 9,
+    "triangles": 7408,
+    "textureBytes": 131072,
+    "pieces": 2
+   }
+  },
+  {
+   "sector": 5,
+   "high": {
+    "drawCalls": 15,
+    "triangles": 21970,
+    "textureBytes": 436906.6666666666,
+    "pieces": 6
+   },
+   "low": {
+    "drawCalls": 10,
+    "triangles": 7512,
+    "textureBytes": 436906.6666666666,
+    "pieces": 3
+   }
+  }
+ ]
+}

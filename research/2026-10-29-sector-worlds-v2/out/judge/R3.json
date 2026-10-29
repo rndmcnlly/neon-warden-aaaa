@@ -1,0 +1,34 @@
+{
+  "id": "R3",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.009122,
+  "wallS": 11.917,
+  "answer": {
+    "place_kind": "Outer space within an asteroid field near an orbital truss structure or space station module",
+    "activity": "Asteroids slowly tumble and drift downward while a large metallic truss structure on the right drifts steadily downward through space.",
+    "inhabitants": "No visible inhabitants, though the metallic scaffolding, antennas, and warning lights on the right suggest human or artificial construction.",
+    "readable_text": [],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "A dark starfield background is visible on both sides of the central play area, populated by grey rocky asteroids."
+      },
+      {
+        "time": "00:00",
+        "observation": "On the right side, a long metallic truss structure with a boxy module, an antenna boom, and small glowing lights is suspended in space."
+      },
+      {
+        "time": "00:08",
+        "observation": "The metallic truss structure and the surrounding asteroids on the left and right have drifted noticeably lower in the frame compared to 00:00."
+      },
+      {
+        "time": "00:15",
+        "observation": "The top end of the right-hand truss structure has moved down toward the middle-right of the screen as the slow downward scrolling continues, while the asteroids on the left have slowly rotated."
+      }
+    ],
+    "confidence": 0.85,
+    "uncertainty": "It is unclear whether the truss structure on the right is an active orbital facility, a satellite, or floating wreckage/debris."
+  }
+}

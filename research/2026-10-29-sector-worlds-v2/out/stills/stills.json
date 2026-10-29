@@ -1,0 +1,241 @@
+[
+  {
+    "sector": 1,
+    "mode": "low",
+    "world": {
+      "sector": 1,
+      "name": "Outer Drift",
+      "tier": "low",
+      "pieces": [
+        "od_beacon",
+        "od_hauler_a",
+        "od_waystation"
+      ],
+      "drawCalls": 11,
+      "triangles": 5912,
+      "textureBytes": 524288,
+      "maxDrawCalls": 16,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 780
+    },
+    "errors": []
+  },
+  {
+    "sector": 2,
+    "mode": "low",
+    "world": {
+      "sector": 2,
+      "name": "Shatter Belt",
+      "tier": "low",
+      "pieces": [
+        "sb_truss",
+        "sb_repair",
+        "sb_rock"
+      ],
+      "drawCalls": 9,
+      "triangles": 3330,
+      "textureBytes": 87381,
+      "maxDrawCalls": 16,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 786
+    },
+    "errors": []
+  },
+  {
+    "sector": 3,
+    "mode": "low",
+    "world": {
+      "sector": 3,
+      "name": "Gun Lanes",
+      "tier": "low",
+      "pieces": [
+        "gl_gantry",
+        "gl_pod",
+        "gl_tower"
+      ],
+      "drawCalls": 14,
+      "triangles": 4234,
+      "textureBytes": 742741,
+      "maxDrawCalls": 16,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 255
+    },
+    "errors": []
+  },
+  {
+    "sector": 4,
+    "mode": "low",
+    "world": {
+      "sector": 4,
+      "name": "Lancer Gate",
+      "tier": "low",
+      "pieces": [
+        "lg_crane",
+        "lg_container"
+      ],
+      "drawCalls": 9,
+      "triangles": 7408,
+      "textureBytes": 131072,
+      "maxDrawCalls": 16,
+      "updateMs": 0.09999999403953552,
+      "signVisible": false,
+      "elapsedTicks": 786
+    },
+    "errors": []
+  },
+  {
+    "sector": 5,
+    "mode": "low",
+    "world": {
+      "sector": 5,
+      "name": "Last Approach",
+      "tier": "low",
+      "pieces": [
+        "la_buttress",
+        "la_nursery",
+        "la_heartgate"
+      ],
+      "drawCalls": 10,
+      "triangles": 7512,
+      "textureBytes": 436907,
+      "maxDrawCalls": 16,
+      "updateMs": 0.09999999403953552,
+      "signVisible": false,
+      "elapsedTicks": 789
+    },
+    "errors": []
+  },
+  {
+    "sector": 1,
+    "mode": "reduced",
+    "world": {
+      "sector": 1,
+      "name": "Outer Drift",
+      "tier": "high",
+      "pieces": [
+        "od_beacon",
+        "od_hauler_a",
+        "od_hauler_b",
+        "od_hauler_b",
+        "od_hauler_a",
+        "od_waystation",
+        "od_waystation",
+        "od_hauler_a"
+      ],
+      "drawCalls": 21,
+      "triangles": 12592,
+      "textureBytes": 524288,
+      "maxDrawCalls": 48,
+      "updateMs": 0.10000002384185791,
+      "signVisible": false,
+      "elapsedTicks": 784
+    },
+    "errors": []
+  },
+  {
+    "sector": 2,
+    "mode": "reduced",
+    "world": {
+      "sector": 2,
+      "name": "Shatter Belt",
+      "tier": "high",
+      "pieces": [
+        "sb_truss",
+        "sb_repair",
+        "sb_rock",
+        "sb_truss",
+        "sb_rock",
+        "sb_rock",
+        "sb_rock"
+      ],
+      "drawCalls": 16,
+      "triangles": 7326,
+      "textureBytes": 87381,
+      "maxDrawCalls": 48,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 786
+    },
+    "errors": []
+  },
+  {
+    "sector": 3,
+    "mode": "reduced",
+    "world": {
+      "sector": 3,
+      "name": "Gun Lanes",
+      "tier": "high",
+      "pieces": [
+        "gl_gantry",
+        "gl_pod",
+        "gl_tower",
+        "gl_tower",
+        "gl_tower",
+        "gl_pod"
+      ],
+      "drawCalls": 21,
+      "triangles": 12074,
+      "textureBytes": 742741,
+      "maxDrawCalls": 48,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 255
+    },
+    "errors": []
+  },
+  {
+    "sector": 4,
+    "mode": "reduced",
+    "world": {
+      "sector": 4,
+      "name": "Lancer Gate",
+      "tier": "high",
+      "pieces": [
+        "lg_crane",
+        "lg_container",
+        "lg_bay",
+        "lg_bay",
+        "od_hauler_a",
+        "lg_crane",
+        "lg_container",
+        "lg_container"
+      ],
+      "drawCalls": 27,
+      "triangles": 19460,
+      "textureBytes": 305835,
+      "maxDrawCalls": 48,
+      "updateMs": 0,
+      "signVisible": false,
+      "elapsedTicks": 789
+    },
+    "errors": []
+  },
+  {
+    "sector": 5,
+    "mode": "reduced",
+    "world": {
+      "sector": 5,
+      "name": "Last Approach",
+      "tier": "high",
+      "pieces": [
+        "la_buttress",
+        "la_buttress",
+        "la_nursery",
+        "la_heartgate",
+        "la_buttress",
+        "la_buttress"
+      ],
+      "drawCalls": 15,
+      "triangles": 21442,
+      "textureBytes": 436907,
+      "maxDrawCalls": 48,
+      "updateMs": 0.09999999403953552,
+      "signVisible": false,
+      "elapsedTicks": 788
+    },
+    "errors": []
+  }
+]

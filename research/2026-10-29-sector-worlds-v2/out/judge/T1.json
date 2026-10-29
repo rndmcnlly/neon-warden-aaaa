@@ -1,0 +1,39 @@
+{
+  "id": "T1",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.011742,
+  "wallS": 15.359,
+  "answer": {
+    "place_kind": "Outer space filled with floating, caped penguin-like figures and a floating tiered spectator stand (bleachers).",
+    "activity": "Several caped penguin-like figures with glowing heart outlines above their heads and a tiered stand filled with smaller figures slowly drift downward against a starfield background.",
+    "inhabitants": "Caped, penguin-like creatures floating in space and smaller figures seated in the floating bleachers, acting as spectators.",
+    "readable_text": [
+      {
+        "time": "00:04",
+        "text": "QUIET PLEASE"
+      }
+    ],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "On both the left and right sides of the central playfield, several 3D penguin-like figures wearing dark capes float in a dark starfield, each topped with a glowing white heart outline."
+      },
+      {
+        "time": "00:00",
+        "observation": "In the upper right area outside the playfield, a grey tiered bleacher or rack structure holding rows of small round figures floats in space with a small sign attached to its front."
+      },
+      {
+        "time": "00:04",
+        "observation": "The first line of the small sign on the front of the floating tiered stand in the upper right reads 'QUIET PLEASE', though the smaller second line beneath it is too blurry to read clearly."
+      },
+      {
+        "time": "00:15",
+        "observation": "Comparing 00:00 to 00:15, both the floating penguin-like figures on the left and right and the tiered stand on the right have drifted noticeably downward relative to the screen."
+      }
+    ],
+    "confidence": 0.3,
+    "uncertainty": "The second line of text beneath 'QUIET PLEASE' on the floating stand's plaque is too low-resolution to read, and the scene appears to be surreal or whimsical decorative elements floating in space rather than a realistic functioning facility."
+  }
+}

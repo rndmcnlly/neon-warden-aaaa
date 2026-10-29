@@ -1,0 +1,34 @@
+{
+  "id": "H8",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.011722,
+  "wallS": 15.954,
+  "answer": {
+    "place_kind": "An abstract, untextured urban canyon or high-rise cityscape viewed from above at night, consisting of grey geometric building-like blocks flanking the central area over a dark grid.",
+    "activity": "The grey block structures remain completely stationary throughout the clip, while tiny yellow and white specks of light move slowly along horizontal lines in the dark recesses between the blocks, resembling distant street traffic.",
+    "inhabitants": "No inhabitants are directly visible; the building-like massing and tiny moving lights along the ground grid faintly suggest urban commuters or city dwellers, though the environment is rendered as minimalist, low-detail geometry.",
+    "readable_text": [],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "Clusters of untextured, grey rectangular blocks of varying heights flank both the left and right sides of the central play area, resembling simplified skyscrapers seen from a high angle."
+      },
+      {
+        "time": "00:04",
+        "observation": "Faint horizontal lines and tiny yellow dots are visible in the dark gaps between the upper and lower building clusters on both sides."
+      },
+      {
+        "time": "00:08",
+        "observation": "Comparing the tiny yellow specks on the dark background grid to earlier frames shows them drifting slowly along the horizontal lines like distant vehicle headlights."
+      },
+      {
+        "time": "00:15",
+        "observation": "The grey architectural blocks on the left and right remain in the exact same positions as at 00:00, showing no camera scrolling or structural movement in the foreground scenery."
+      }
+    ],
+    "confidence": 0.25,
+    "uncertainty": "Because the surrounding structures are completely untextured grey blocks without windows, signage, or surface details, it is uncertain whether they depict a specific functioning city district or serve as abstract greybox geometry."
+  }
+}

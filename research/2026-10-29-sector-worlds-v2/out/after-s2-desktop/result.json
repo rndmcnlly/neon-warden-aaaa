@@ -1,0 +1,1313 @@
+{
+  "arm": "after",
+  "sector": 2,
+  "view": "desktop",
+  "size": {
+    "width": 1366,
+    "height": 768
+  },
+  "samples": [
+    {
+      "t": 1711.4000000059605,
+      "tick": 79,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 78,
+        "render": {
+          "renderMs": 1.055511127701781,
+          "frameMs": 19.276178513033955,
+          "drawCalls": 159,
+          "triangles": 34429,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2214,
+      "tick": 104,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 103,
+        "render": {
+          "renderMs": 1.009574977719776,
+          "frameMs": 19.50404955645508,
+          "drawCalls": 181,
+          "triangles": 41085,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 2716,
+      "tick": 130,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 129,
+        "render": {
+          "renderMs": 0.9060678293253336,
+          "frameMs": 19.485514352356066,
+          "drawCalls": 184,
+          "triangles": 41247,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3218.0999999940395,
+      "tick": 156,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 155,
+        "render": {
+          "renderMs": 0.7870177757949071,
+          "frameMs": 19.46117265476055,
+          "drawCalls": 184,
+          "triangles": 41253,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 3720.199999988079,
+      "tick": 182,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 181,
+        "render": {
+          "renderMs": 0.7266586339471421,
+          "frameMs": 19.342301895016824,
+          "drawCalls": 184,
+          "triangles": 41253,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4223.5999999940395,
+      "tick": 208,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 207,
+        "render": {
+          "renderMs": 0.71510744594611,
+          "frameMs": 19.451702070397147,
+          "drawCalls": 184,
+          "triangles": 41253,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 4725.299999982119,
+      "tick": 233,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 232,
+        "render": {
+          "renderMs": 0.8367767264539541,
+          "frameMs": 19.502181884742278,
+          "drawCalls": 185,
+          "triangles": 41257,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5227.5,
+      "tick": 259,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 258,
+        "render": {
+          "renderMs": 0.8984509097742933,
+          "frameMs": 19.736076386271733,
+          "drawCalls": 188,
+          "triangles": 41521,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 5729.799999982119,
+      "tick": 285,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 284,
+        "render": {
+          "renderMs": 0.7840666617567691,
+          "frameMs": 19.576444532138815,
+          "drawCalls": 186,
+          "triangles": 41265,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6232.299999982119,
+      "tick": 310,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 309,
+        "render": {
+          "renderMs": 0.9260105112928894,
+          "frameMs": 19.84145507175603,
+          "drawCalls": 258,
+          "triangles": 45717,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 6733.5,
+      "tick": 335,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 334,
+        "render": {
+          "renderMs": 0.967863355216946,
+          "frameMs": 19.893007584377358,
+          "drawCalls": 249,
+          "triangles": 44693,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7235.699999988079,
+      "tick": 360,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 359,
+        "render": {
+          "renderMs": 0.8587849640175372,
+          "frameMs": 19.91990110821112,
+          "drawCalls": 226,
+          "triangles": 43835,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 7737.9000000059605,
+      "tick": 386,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 385,
+        "render": {
+          "renderMs": 0.8711136046820287,
+          "frameMs": 19.642589201622922,
+          "drawCalls": 249,
+          "triangles": 44701,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8261.59999999404,
+      "tick": 412,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 411,
+        "render": {
+          "renderMs": 0.8998815343826821,
+          "frameMs": 19.919209663957457,
+          "drawCalls": 227,
+          "triangles": 43833,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 8764.299999982119,
+      "tick": 437,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 436,
+        "render": {
+          "renderMs": 0.9174527806856281,
+          "frameMs": 19.88799267304022,
+          "drawCalls": 248,
+          "triangles": 44695,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9265.90000000596,
+      "tick": 462,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 461,
+        "render": {
+          "renderMs": 0.9088521776905067,
+          "frameMs": 19.953844821429424,
+          "drawCalls": 226,
+          "triangles": 43827,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 9768.699999988079,
+      "tick": 488,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 487,
+        "render": {
+          "renderMs": 0.8514175086090882,
+          "frameMs": 19.495058062765843,
+          "drawCalls": 186,
+          "triangles": 41265,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10270.699999988079,
+      "tick": 514,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 513,
+        "render": {
+          "renderMs": 0.8604704532295023,
+          "frameMs": 19.459307296764255,
+          "drawCalls": 207,
+          "triangles": 42127,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 10772.799999982119,
+      "tick": 540,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 539,
+        "render": {
+          "renderMs": 0.7827635779590202,
+          "frameMs": 19.534774767288393,
+          "drawCalls": 185,
+          "triangles": 41257,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11274.5,
+      "tick": 566,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 565,
+        "render": {
+          "renderMs": 0.8449955066418702,
+          "frameMs": 19.37319591861802,
+          "drawCalls": 138,
+          "triangles": 25289,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 11777.299999982119,
+      "tick": 592,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 591,
+        "render": {
+          "renderMs": 0.7163506093594255,
+          "frameMs": 19.477287093757994,
+          "drawCalls": 100,
+          "triangles": 18689,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12279.199999988079,
+      "tick": 618,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 617,
+        "render": {
+          "renderMs": 0.735047448762845,
+          "frameMs": 19.332512877565215,
+          "drawCalls": 110,
+          "triangles": 19327,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 12780.40000000596,
+      "tick": 643,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 642,
+        "render": {
+          "renderMs": 0.6844531394526283,
+          "frameMs": 19.467752602240846,
+          "drawCalls": 120,
+          "triangles": 19967,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13282.40000000596,
+      "tick": 670,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.09999999403953552,
+        "signVisible": false,
+        "elapsedTicks": 669,
+        "render": {
+          "renderMs": 0.7070307999642821,
+          "frameMs": 19.093335613385246,
+          "drawCalls": 130,
+          "triangles": 20609,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 13785.299999982119,
+      "tick": 696,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 695,
+        "render": {
+          "renderMs": 0.7750850676830744,
+          "frameMs": 19.20267298613153,
+          "drawCalls": 153,
+          "triangles": 22149,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14286.799999982119,
+      "tick": 721,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 720,
+        "render": {
+          "renderMs": 0.9278111792986014,
+          "frameMs": 19.41725620355477,
+          "drawCalls": 163,
+          "triangles": 22793,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 14788.699999988079,
+      "tick": 747,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0.10000002384185791,
+        "signVisible": false,
+        "elapsedTicks": 746,
+        "render": {
+          "renderMs": 0.8095012955680664,
+          "frameMs": 19.478548947965642,
+          "drawCalls": 174,
+          "triangles": 23437,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    },
+    {
+      "t": 15291.299999982119,
+      "tick": 773,
+      "world": {
+        "sector": 2,
+        "name": "Shatter Belt",
+        "tier": "high",
+        "pieces": [
+          "sb_truss",
+          "sb_repair",
+          "sb_rock",
+          "sb_truss",
+          "sb_rock",
+          "sb_rock",
+          "sb_rock"
+        ],
+        "drawCalls": 16,
+        "triangles": 7326,
+        "textureBytes": 87381,
+        "maxDrawCalls": 48,
+        "updateMs": 0,
+        "signVisible": false,
+        "elapsedTicks": 772,
+        "render": {
+          "renderMs": 0.757712132785819,
+          "frameMs": 19.62256451377673,
+          "drawCalls": 185,
+          "triangles": 24081,
+          "models": {
+            "pilot_ship": "gltf",
+            "drone": "gltf",
+            "dart": "gltf",
+            "turret": "gltf",
+            "lancer": "gltf",
+            "warden": "gltf",
+            "pickup_spread": "gltf",
+            "pickup_shield": "gltf",
+            "logo_adamsmith_systems": "gltf",
+            "logo_cm121": "gltf"
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 106,
+      "voStarted": [
+        "0.22s en/var_secstart_002.ogg",
+        "1.54s en/sec2_intro_001.ogg",
+        "5.2s en/lock_ai_001.ogg",
+        "6.67s en/graze_ai_001.ogg",
+        "12.92s en/amb_nofire_002.ogg",
+        "14.13s en/rad_dart_patrol_001.ogg"
+      ],
+      "lufs": -18.2,
+      "truePeak": -5.1,
+      "buses": {
+        "music": {
+          "lufs": -70,
+          "truePeak": null
+        },
+        "sfx": {
+          "lufs": -37,
+          "truePeak": -19.2
+        },
+        "voice": {
+          "lufs": -16,
+          "truePeak": -0.8
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 15.46,
+      "voAudible": [
+        {
+          "start": 0.84,
+          "end": 1.72
+        },
+        {
+          "start": 1.97,
+          "end": 6.48
+        },
+        {
+          "start": 7.03,
+          "end": 7.77
+        },
+        {
+          "start": 8.19,
+          "end": 9.25
+        },
+        {
+          "start": 9.85,
+          "end": 11.02
+        },
+        {
+          "start": 12.54,
+          "end": 12.57
+        },
+        {
+          "start": 13.29,
+          "end": 15.42
+        }
+      ],
+      "subtitles": []
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "15.46 s audible of 15.85 s, 106 sounds started, 6 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.1 dBTP, -18.2 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -70 LUFS / NaN dBTP, sfx -37 LUFS / -19.2 dBTP, voice -16 LUFS / -0.8 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.2 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "no subtitles shown in this reel"
+      }
+    ]
+  }
+}

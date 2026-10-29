@@ -1,0 +1,47 @@
+{
+  "id": "Q4",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "status": 200,
+  "costUsd": 0.009862,
+  "wallS": 16.196,
+  "answer": {
+    "place_kind": "An outer space dock or orbital station facility",
+    "activity": "The entire background station structure slowly drifts downward relative to the screen. On the left, two cylindrical cargo or transport ships slowly move downward, with the rightmost one detaching or drifting further down and right toward the edge of the central lane. On the right, a circular space station with a central tower projects a wide orange spotlight beam that sweeps clockwise.",
+    "inhabitants": "Spaceport dockworkers, station operators, or cargo ship crews, suggested by the industrial docking modules, cargo vessels on the left, and the automated status readout ('HOLD WORK: 1', 'SHIP DOCK: IDLE') above the circular platform on the right.",
+    "readable_text": [
+      {
+        "time": "00:00",
+        "text": "HOLD WORK: 1"
+      },
+      {
+        "time": "00:00",
+        "text": "SHIP DOCK: IDLE"
+      }
+    ],
+    "evidence": [
+      {
+        "time": "00:00",
+        "observation": "A large circular orbital platform on the right side against a starry black background displays a floating status label reading 'HOLD WORK: 1' and 'SHIP DOCK: IDLE'."
+      },
+      {
+        "time": "00:00",
+        "observation": "A long modular truss or docking spine runs vertically along the right edge of the central play area, with yellow markings and structural nodes."
+      },
+      {
+        "time": "00:02",
+        "observation": "Two elongated, blocky spacecraft or cargo freighters appear in the upper-left starfield, moving slowly downward."
+      },
+      {
+        "time": "00:08",
+        "observation": "The orange spotlight beam emitted from the circular station on the right rotates clockwise, sweeping downward toward a smaller circular ring structure below it."
+      },
+      {
+        "time": "00:15",
+        "observation": "One of the spacecraft on the left has drifted down alongside the left boundary of the central corridor while the other remains stationary higher up."
+      }
+    ],
+    "confidence": 0.9,
+    "uncertainty": "It is unclear what specific function the smaller ring structure below the main right-hand station serves, or whether the central play area itself represents a physical ship deck or an abstract tactical overlay superimposed over space."
+  }
+}
