@@ -17,7 +17,7 @@ import type { Vec2 } from "../contracts/index.ts";
 
 export const SPATIAL = {
   /** Sim units from the listener to a full left or right pan. */
-  panSpan: 260,
+  panSpan: 170,
   /** Never hard-pan: a fully one-sided sound reads as a broken speaker. */
   maxPan: 0.85,
   /** Distance (sim units) at which gain falls to half. */
