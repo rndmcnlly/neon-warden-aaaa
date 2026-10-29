@@ -1527,6 +1527,11 @@ export const UI_STRINGS = {
     es: "Coordinación de líneas de trabajo",
     zh: "工作流统筹",
   },
+  "ui.crawl.role.agentSkills": {
+    en: "Agent Skill Compression",
+    es: "Compresión de habilidades de agentes",
+    zh: "智能体技能精简",
+  },
   "ui.crawl.role.research": {
     en: "Research (tropes, teardowns, checklists)",
     es: "Investigación (tropos, análisis, listas de control)",

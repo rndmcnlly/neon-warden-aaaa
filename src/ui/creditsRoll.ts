@@ -141,7 +141,7 @@ export const CREDITS: readonly CreditSection[] = [
     roles: [
       one("ui.crawl.role.orchestration", ...AGENTS, ADAM),
       // Compressed the repo-local agent skills (.opencode/skills).
-      one("ui.crawl.role.orchestration", {
+      one("ui.crawl.role.agentSkills", {
         agent: "DeepSeek V4.1 Flash (DeepSeek)",
       }),
     ],
