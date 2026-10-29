@@ -1,30 +1,32 @@
 {
-  "hash": "f379924d217e0967",
+  "hash": "d274dddf31f96e3e",
   "mode": "clone",
   "request": {
     "id": "zh__graze_ai_001",
     "seed": 11,
     "language": "Chinese",
     "text": "好险。而险情是可以计费的。感谢你离得这么近。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, a small intake of breath, then professional again.",
-  "duration": 4.32,
+  "duration": 4.4,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.811,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
-    "true_peak_dbtp": -1.26,
-    "gain_db": 7.43,
-    "limited_db": 0.26,
-    "measured_before_lufs": -25.43,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.81,
+    "gain_db": 2.4,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.4,
     "peak_bound": false
   },
+  "asr": "好险！而险情是可以计费的。感谢你离得这么近。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -45,129 +47,127 @@
       "charStart": 1,
       "charEnd": 2,
       "startS": 0.32,
-      "endS": 0.72
+      "endS": 0.64
     },
     {
       "text": "而",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "险",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.12,
-      "endS": 1.36
+      "startS": 1.44,
+      "endS": 1.68
     },
     {
       "text": "情",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.36,
-      "endS": 1.6
+      "startS": 1.68,
+      "endS": 1.84
     },
     {
       "text": "是",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.84,
+      "endS": 2.0
     },
     {
       "text": "可",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.76,
-      "endS": 1.92
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "以",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.92,
-      "endS": 2.0
+      "startS": 2.16,
+      "endS": 2.24
     },
     {
       "text": "计",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.0,
-      "endS": 2.24
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "费",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.24,
-      "endS": 2.48
+      "startS": 2.4,
+      "endS": 2.56
     },
     {
       "text": "的",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 2.56,
+      "endS": 2.8
     },
     {
       "text": "感",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.04,
-      "endS": 3.2
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "谢",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.2,
-      "endS": 3.44
+      "startS": 3.36,
+      "endS": 3.6
     },
     {
       "text": "你",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.44,
-      "endS": 3.52
+      "startS": 3.6,
+      "endS": 3.68
     },
     {
       "text": "离",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "得",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.68,
-      "endS": 3.76
+      "startS": 3.84,
+      "endS": 3.92
     },
     {
       "text": "这",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 3.92,
+      "endS": 4.0
     },
     {
       "text": "么",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.92,
-      "endS": 4.0
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "近",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.0,
+      "startS": 4.08,
       "endS": 4.32
     }
   ],
-  "words_for": "f379924d217e0967/wordtiming-v1",
-  "asr": "好险！而险情是可以计费的。感谢你离得这么近。",
-  "asr_similarity": 1.0
+  "words_for": "d274dddf31f96e3e/wordtiming-v1"
 }

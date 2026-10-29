@@ -1,0 +1,11 @@
+{
+  "speaker": "tutorial_ai",
+  "pick": "a_captain",
+  "design": "A warm adult female alto voice in her forties, calm and unhurried like an airline captain on the cabin intercom, low-medium pitch, reassuring and sincere, gentle institutional warmth, clear professional diction.",
+  "anchor": {
+    "file": "a_captain/anchor.wav",
+    "text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship.",
+    "duration": 8.96,
+    "median_f0_hz": 193.8
+  }
+}

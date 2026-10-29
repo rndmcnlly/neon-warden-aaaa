@@ -1,5 +1,5 @@
 {
-  "hash": "a511b38630ef7dd1",
+  "hash": "309a1748701b5eaa",
   "mode": "clone",
   "request": {
     "id": "en__rec_ai_002",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "Recorder logged. Contents: not relevant to your contract. Please continue.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, back on script, a beat too quickly.",
-  "duration": 5.36,
+  "duration": 6.0,
   "sample_rate": 24000,
-  "peak": 0.81,
+  "peak": 0.752,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.76,
-    "gain_db": 4.64,
+    "true_peak_dbtp": -2.46,
+    "gain_db": 2.93,
     "limited_db": 0.0,
-    "measured_before_lufs": -22.64,
+    "measured_before_lufs": -20.93,
     "peak_bound": false
   },
+  "asr": "Recorder logged contents, not relevant to your contract. Please continue.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,74 +39,72 @@
       "text": "Recorder",
       "charStart": 0,
       "charEnd": 8,
-      "startS": 0.08,
-      "endS": 0.48
+      "startS": 0.96,
+      "endS": 1.36
     },
     {
       "text": "logged",
       "charStart": 9,
       "charEnd": 15,
-      "startS": 0.56,
-      "endS": 1.04
+      "startS": 1.36,
+      "endS": 1.84
     },
     {
       "text": "Contents",
       "charStart": 17,
       "charEnd": 25,
-      "startS": 1.28,
-      "endS": 2.0
+      "startS": 2.32,
+      "endS": 2.96
     },
     {
       "text": "not",
       "charStart": 27,
       "charEnd": 30,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 3.28,
+      "endS": 3.52
     },
     {
       "text": "relevant",
       "charStart": 31,
       "charEnd": 39,
-      "startS": 2.56,
-      "endS": 3.04
+      "startS": 3.52,
+      "endS": 3.92
     },
     {
       "text": "to",
       "charStart": 40,
       "charEnd": 42,
-      "startS": 3.04,
-      "endS": 3.12
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "your",
       "charStart": 43,
       "charEnd": 47,
-      "startS": 3.12,
-      "endS": 3.28
+      "startS": 4.08,
+      "endS": 4.16
     },
     {
       "text": "contract",
       "charStart": 48,
       "charEnd": 56,
-      "startS": 3.28,
-      "endS": 4.0
+      "startS": 4.16,
+      "endS": 4.72
     },
     {
       "text": "Please",
       "charStart": 58,
       "charEnd": 64,
-      "startS": 4.32,
-      "endS": 4.64
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "continue",
       "charStart": 65,
       "charEnd": 73,
-      "startS": 4.64,
-      "endS": 5.28
+      "startS": 5.44,
+      "endS": 5.92
     }
   ],
-  "words_for": "a511b38630ef7dd1/wordtiming-v1",
-  "asr": "Recorder logged contents not relevant to your contract. Please continue.",
-  "asr_similarity": 1.0
+  "words_for": "309a1748701b5eaa/wordtiming-v1"
 }

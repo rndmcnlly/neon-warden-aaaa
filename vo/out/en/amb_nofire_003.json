@@ -1,5 +1,5 @@
 {
-  "hash": "ef3cf8e966f3a95c",
+  "hash": "2dd3526fe125446b",
   "mode": "clone",
   "request": {
     "id": "en__amb_nofire_003",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "The scouts are not firing at you. That is not in my briefing.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, genuinely confused, reading her notes.",
-  "duration": 3.68,
+  "duration": 4.4,
   "sample_rate": 24000,
-  "peak": 0.842,
+  "peak": 0.617,
   "clipping_suspect": false,
-  "asr": "The scouts are not firing at you. That is not in my briefing.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.33,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -4.11,
+    "gain_db": 1.91,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.91,
     "peak_bound": false
   },
-  "words_for": "ef3cf8e966f3a95c/wordtiming-v1",
+  "asr": "The scouts are not firing at you. That is not in my briefing.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,92 +39,93 @@
       "text": "The",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.16,
-      "endS": 0.24
+      "startS": 0.64,
+      "endS": 0.72
     },
     {
       "text": "scouts",
       "charStart": 4,
       "charEnd": 10,
-      "startS": 0.24,
-      "endS": 0.64
+      "startS": 0.72,
+      "endS": 1.12
     },
     {
       "text": "are",
       "charStart": 11,
       "charEnd": 14,
-      "startS": 0.72,
-      "endS": 0.8
+      "startS": 1.12,
+      "endS": 1.2
     },
     {
       "text": "not",
       "charStart": 15,
       "charEnd": 18,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 1.2,
+      "endS": 1.44
     },
     {
       "text": "firing",
       "charStart": 19,
       "charEnd": 25,
-      "startS": 0.96,
-      "endS": 1.44
+      "startS": 1.44,
+      "endS": 1.92
     },
     {
       "text": "at",
       "charStart": 26,
       "charEnd": 28,
-      "startS": 1.44,
-      "endS": 1.68
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "you",
       "charStart": 29,
       "charEnd": 32,
-      "startS": 1.68,
-      "endS": 1.92
+      "startS": 2.0,
+      "endS": 2.32
     },
     {
       "text": "That",
       "charStart": 34,
       "charEnd": 38,
-      "startS": 2.16,
-      "endS": 2.32
+      "startS": 2.8,
+      "endS": 2.88
     },
     {
       "text": "is",
       "charStart": 39,
       "charEnd": 41,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "not",
       "charStart": 42,
       "charEnd": 45,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 3.04,
+      "endS": 3.36
     },
     {
       "text": "in",
       "charStart": 46,
       "charEnd": 48,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 3.44,
+      "endS": 3.52
     },
     {
       "text": "my",
       "charStart": 49,
       "charEnd": 51,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 3.52,
+      "endS": 3.68
     },
     {
       "text": "briefing",
       "charStart": 52,
       "charEnd": 60,
-      "startS": 2.96,
-      "endS": 3.6
+      "startS": 3.68,
+      "endS": 4.16
     }
-  ]
+  ],
+  "words_for": "2dd3526fe125446b/wordtiming-v1"
 }

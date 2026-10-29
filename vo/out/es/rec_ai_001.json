@@ -1,30 +1,32 @@
 {
-  "hash": "48a38af9fca16136",
+  "hash": "3b1be71d83fc3170",
   "mode": "clone",
   "request": {
     "id": "es__rec_ai_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Rescate identificado: registrador de vuelo, piloto cero uno dos uno. Está marcado como cerrado. Sigue transmitiendo.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, reading a status that does not make sense to her.",
-  "duration": 10.0,
+  "duration": 8.4,
   "sample_rate": 24000,
-  "peak": 0.831,
+  "peak": 0.85,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.6,
-    "gain_db": 5.13,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 4.57,
     "limited_db": 0.0,
-    "measured_before_lufs": -23.13,
+    "measured_before_lufs": -22.57,
     "peak_bound": false
   },
+  "asr": "Rescate identificado. Registrador de vuelo: piloto cero uno dos uno. Está marcado como cerrado. Sigue transmitiendo.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,116 +39,114 @@
       "text": "Rescate",
       "charStart": 0,
       "charEnd": 7,
-      "startS": 0.32,
-      "endS": 0.88
+      "startS": 0.16,
+      "endS": 0.56
     },
     {
       "text": "identificado",
       "charStart": 8,
       "charEnd": 20,
-      "startS": 0.88,
-      "endS": 1.84
+      "startS": 0.56,
+      "endS": 1.36
     },
     {
       "text": "registrador",
       "charStart": 22,
       "charEnd": 33,
-      "startS": 2.08,
-      "endS": 2.88
+      "startS": 1.68,
+      "endS": 2.32
     },
     {
       "text": "de",
       "charStart": 34,
       "charEnd": 36,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 2.32,
+      "endS": 2.4
     },
     {
       "text": "vuelo",
       "charStart": 37,
       "charEnd": 42,
-      "startS": 2.96,
-      "endS": 3.52
+      "startS": 2.4,
+      "endS": 2.88
     },
     {
       "text": "piloto",
       "charStart": 44,
       "charEnd": 50,
-      "startS": 3.76,
-      "endS": 4.24
+      "startS": 3.04,
+      "endS": 3.44
     },
     {
       "text": "cero",
       "charStart": 51,
       "charEnd": 55,
-      "startS": 4.24,
-      "endS": 4.72
+      "startS": 3.44,
+      "endS": 3.84
     },
     {
       "text": "uno",
       "charStart": 56,
       "charEnd": 59,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 3.84,
+      "endS": 4.16
     },
     {
       "text": "dos",
       "charStart": 60,
       "charEnd": 63,
-      "startS": 5.2,
-      "endS": 5.44
+      "startS": 4.16,
+      "endS": 4.4
     },
     {
       "text": "uno",
       "charStart": 64,
       "charEnd": 67,
-      "startS": 5.44,
-      "endS": 5.92
+      "startS": 4.4,
+      "endS": 4.72
     },
     {
       "text": "Está",
       "charStart": 69,
       "charEnd": 73,
-      "startS": 6.24,
-      "endS": 6.56
+      "startS": 5.52,
+      "endS": 5.76
     },
     {
       "text": "marcado",
       "charStart": 74,
       "charEnd": 81,
-      "startS": 6.56,
-      "endS": 7.04
+      "startS": 5.76,
+      "endS": 6.16
     },
     {
       "text": "como",
       "charStart": 82,
       "charEnd": 86,
-      "startS": 7.2,
-      "endS": 7.36
+      "startS": 6.16,
+      "endS": 6.32
     },
     {
       "text": "cerrado",
       "charStart": 87,
       "charEnd": 94,
-      "startS": 7.36,
-      "endS": 8.08
+      "startS": 6.32,
+      "endS": 6.88
     },
     {
       "text": "Sigue",
       "charStart": 96,
       "charEnd": 101,
-      "startS": 8.32,
-      "endS": 8.8
+      "startS": 7.36,
+      "endS": 7.68
     },
     {
       "text": "transmitiendo",
       "charStart": 102,
       "charEnd": 115,
-      "startS": 8.8,
-      "endS": 9.92
+      "startS": 7.68,
+      "endS": 8.32
     }
   ],
-  "words_for": "48a38af9fca16136/wordtiming-v1",
-  "asr": "Rescate identificado, registrador de vuelo, piloto zero uno dos uno está marcado como cerrado sigue transmitiendo.",
-  "asr_similarity": 0.938
+  "words_for": "3b1be71d83fc3170/wordtiming-v1"
 }

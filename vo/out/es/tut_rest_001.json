@@ -1,34 +1,36 @@
 {
-  "hash": "296f6e891cd799b0",
+  "hash": "821209f606411e73",
   "mode": "clone",
   "request": {
     "id": "es__tut_rest_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Ahora, por favor, suelta el gatillo por completo. Mientras descansas, tu capacitor se carga. Tres marcas alrededor de tu nave muestran el nivel. Espera a que se enciendan las tres.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Gentle, almost a breathing exercise.",
-  "duration": 11.76,
+  "duration": 12.08,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.875,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.01,
-    "true_peak_dbtp": -1.26,
-    "gain_db": 5.31,
-    "limited_db": 0.19,
-    "measured_before_lufs": -23.31,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.16,
+    "gain_db": 5.44,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.44,
     "peak_bound": false
   },
+  "asr": "Ahora por favor, suelta el gatillo por completo. Mientras descansas, tu capacitor se carga. Tres marcas alrededor de tu nave muestran el nivel. Espera a que se enciendan las tres.",
+  "asr_similarity": 1.0,
   "align": {
-    "ok": false,
+    "ok": true,
     "monotonic": true,
-    "within": false,
+    "within": true,
     "coverage": 1.0,
     "mapped": 1.0
   },
@@ -37,214 +39,212 @@
       "text": "Ahora",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 1.52,
-      "endS": 1.76
+      "startS": 0.16,
+      "endS": 0.48
     },
     {
       "text": "por",
       "charStart": 7,
       "charEnd": 10,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 0.48,
+      "endS": 0.64
     },
     {
       "text": "favor",
       "charStart": 11,
       "charEnd": 16,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 0.64,
+      "endS": 0.96
     },
     {
       "text": "suelta",
       "charStart": 18,
       "charEnd": 24,
-      "startS": 2.0,
-      "endS": 2.24
+      "startS": 1.52,
+      "endS": 1.92
     },
     {
       "text": "el",
       "charStart": 25,
       "charEnd": 27,
-      "startS": 2.72,
-      "endS": 3.84
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "gatillo",
       "charStart": 28,
       "charEnd": 35,
-      "startS": 3.84,
-      "endS": 3.92
+      "startS": 2.0,
+      "endS": 2.4
     },
     {
       "text": "por",
       "charStart": 36,
       "charEnd": 39,
-      "startS": 3.92,
-      "endS": 4.0
+      "startS": 2.4,
+      "endS": 2.56
     },
     {
       "text": "completo",
       "charStart": 40,
       "charEnd": 48,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 2.56,
+      "endS": 3.2
     },
     {
       "text": "Mientras",
       "charStart": 50,
       "charEnd": 58,
-      "startS": 4.4,
-      "endS": 4.72
+      "startS": 3.76,
+      "endS": 4.08
     },
     {
       "text": "descansas",
       "charStart": 59,
       "charEnd": 68,
-      "startS": 4.88,
-      "endS": 5.52
+      "startS": 4.08,
+      "endS": 4.8
     },
     {
       "text": "tu",
       "charStart": 70,
       "charEnd": 72,
-      "startS": 5.6,
-      "endS": 5.68
+      "startS": 5.2,
+      "endS": 5.28
     },
     {
       "text": "capacitor",
       "charStart": 73,
       "charEnd": 82,
-      "startS": 5.68,
-      "endS": 6.16
+      "startS": 5.28,
+      "endS": 5.84
     },
     {
       "text": "se",
       "charStart": 83,
       "charEnd": 85,
-      "startS": 6.24,
-      "endS": 6.4
+      "startS": 5.84,
+      "endS": 6.0
     },
     {
       "text": "carga",
       "charStart": 86,
       "charEnd": 91,
-      "startS": 6.4,
-      "endS": 6.8
+      "startS": 6.0,
+      "endS": 6.4
     },
     {
       "text": "Tres",
       "charStart": 93,
       "charEnd": 97,
       "startS": 7.12,
-      "endS": 7.28
+      "endS": 7.36
     },
     {
       "text": "marcas",
       "charStart": 98,
       "charEnd": 104,
-      "startS": 7.28,
-      "endS": 7.84
+      "startS": 7.36,
+      "endS": 7.76
     },
     {
       "text": "alrededor",
       "charStart": 105,
       "charEnd": 114,
-      "startS": 7.84,
-      "endS": 8.16
+      "startS": 7.76,
+      "endS": 8.24
     },
     {
       "text": "de",
       "charStart": 115,
       "charEnd": 117,
-      "startS": 8.16,
-      "endS": 8.48
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "tu",
       "charStart": 118,
       "charEnd": 120,
-      "startS": 8.48,
-      "endS": 8.56
+      "startS": 8.4,
+      "endS": 8.48
     },
     {
       "text": "nave",
       "charStart": 121,
       "charEnd": 125,
-      "startS": 8.72,
-      "endS": 8.88
+      "startS": 8.48,
+      "endS": 8.8
     },
     {
       "text": "muestran",
       "charStart": 126,
       "charEnd": 134,
-      "startS": 8.88,
-      "endS": 8.96
+      "startS": 8.8,
+      "endS": 9.28
     },
     {
       "text": "el",
       "charStart": 135,
       "charEnd": 137,
-      "startS": 9.76,
-      "endS": 9.84
+      "startS": 9.28,
+      "endS": 9.36
     },
     {
       "text": "nivel",
       "charStart": 138,
       "charEnd": 143,
-      "startS": 9.84,
-      "endS": 9.92
+      "startS": 9.36,
+      "endS": 9.76
     },
     {
       "text": "Espera",
       "charStart": 145,
       "charEnd": 151,
-      "startS": 10.0,
-      "endS": 10.08
+      "startS": 10.4,
+      "endS": 10.8
     },
     {
       "text": "a",
       "charStart": 152,
       "charEnd": 153,
-      "startS": 11.36,
-      "endS": 11.44
+      "startS": 10.8,
+      "endS": 10.88
     },
     {
       "text": "que",
       "charStart": 154,
       "charEnd": 157,
-      "startS": 11.44,
-      "endS": 11.52
+      "startS": 10.88,
+      "endS": 10.96
     },
     {
       "text": "se",
       "charStart": 158,
       "charEnd": 160,
-      "startS": 11.52,
-      "endS": 11.6
+      "startS": 10.96,
+      "endS": 11.04
     },
     {
       "text": "enciendan",
       "charStart": 161,
       "charEnd": 170,
-      "startS": 11.6,
-      "endS": 11.68
+      "startS": 11.04,
+      "endS": 11.52
     },
     {
       "text": "las",
       "charStart": 171,
       "charEnd": 174,
-      "startS": 11.68,
-      "endS": 11.76
+      "startS": 11.52,
+      "endS": 11.68
     },
     {
       "text": "tres",
       "charStart": 175,
       "charEnd": 179,
-      "startS": 11.76,
-      "endS": 11.84
+      "startS": 11.68,
+      "endS": 12.0
     }
   ],
-  "words_for": "296f6e891cd799b0/wordtiming-v1",
-  "asr": "Ahora por favor suelta el gatillo por completo. Mientras descansas tu capacitor se carga. Tres marcas alrededor de tu nave muestran el nivel. Espera que se enciendan las tres.",
-  "asr_similarity": 0.983
+  "words_for": "821209f606411e73/wordtiming-v1"
 }

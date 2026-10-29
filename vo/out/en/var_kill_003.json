@@ -1,0 +1,131 @@
+{
+  "hash": "55a3dcf1ba9f1b58",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_kill_003",
+    "seed": 11,
+    "language": "English",
+    "text": "Ooh, a ram! Very decisive. The bumper is not covered, but very decisive.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Startled, then admiring, then the policy at speed.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.819,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.66,
+    "gain_db": 0.35,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.35,
+    "peak_bound": false
+  },
+  "asr": "Ooh, a ram, very decisive. The bumper is not covered, but very decisive.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ooh",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "a",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "ram",
+      "charStart": 7,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.56
+    },
+    {
+      "text": "Very",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "decisive",
+      "charStart": 17,
+      "charEnd": 25,
+      "startS": 3.28,
+      "endS": 4.0
+    },
+    {
+      "text": "The",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "bumper",
+      "charStart": 31,
+      "charEnd": 37,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "is",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "not",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "covered",
+      "charStart": 45,
+      "charEnd": 52,
+      "startS": 5.36,
+      "endS": 5.76
+    },
+    {
+      "text": "but",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "very",
+      "charStart": 58,
+      "charEnd": 62,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "decisive",
+      "charStart": 63,
+      "charEnd": 71,
+      "startS": 6.16,
+      "endS": 6.8
+    }
+  ],
+  "words_for": "55a3dcf1ba9f1b58/wordtiming-v1"
+}

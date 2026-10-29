@@ -1,0 +1,159 @@
+{
+  "hash": "737dcddcb8b71a92",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_idle_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¿Descansando para cargar? Muy listo. ¿Descansando nada más por descansar? También está bien. Sin paga, pero bien.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Approving, then fair, then the footnote.",
+  "duration": 8.32,
+  "sample_rate": 24000,
+  "peak": 0.819,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.71,
+    "gain_db": 4.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.0,
+    "peak_bound": false
+  },
+  "asr": "Descansando para cargar, muy listo. Descansando nada más por descansar, también está bien. Sin paga pero bien.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Descansando",
+      "charStart": 1,
+      "charEnd": 12,
+      "startS": 0.24,
+      "endS": 0.88
+    },
+    {
+      "text": "para",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "cargar",
+      "charStart": 18,
+      "charEnd": 24,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "Muy",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "listo",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 2.08,
+      "endS": 2.48
+    },
+    {
+      "text": "Descansando",
+      "charStart": 38,
+      "charEnd": 49,
+      "startS": 3.12,
+      "endS": 3.68
+    },
+    {
+      "text": "nada",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "más",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "por",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "descansar",
+      "charStart": 63,
+      "charEnd": 72,
+      "startS": 4.24,
+      "endS": 4.8
+    },
+    {
+      "text": "También",
+      "charStart": 74,
+      "charEnd": 81,
+      "startS": 5.6,
+      "endS": 5.92
+    },
+    {
+      "text": "está",
+      "charStart": 82,
+      "charEnd": 86,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "bien",
+      "charStart": 87,
+      "charEnd": 91,
+      "startS": 6.16,
+      "endS": 6.48
+    },
+    {
+      "text": "Sin",
+      "charStart": 93,
+      "charEnd": 96,
+      "startS": 7.04,
+      "endS": 7.36
+    },
+    {
+      "text": "paga",
+      "charStart": 97,
+      "charEnd": 101,
+      "startS": 7.36,
+      "endS": 7.68
+    },
+    {
+      "text": "pero",
+      "charStart": 103,
+      "charEnd": 107,
+      "startS": 7.68,
+      "endS": 7.92
+    },
+    {
+      "text": "bien",
+      "charStart": 108,
+      "charEnd": 112,
+      "startS": 7.92,
+      "endS": 8.24
+    }
+  ],
+  "words_for": "737dcddcb8b71a92/wordtiming-v1"
+}

@@ -1,0 +1,159 @@
+{
+  "hash": "374d50ac9becb4d8",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_perfect_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Sector perfecto. Lo voy a poner en la pared. No tenemos pared. Voy a solicitar una pared.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Giddy, planning a bulletin board.",
+  "duration": 7.28,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 3.36,
+    "limited_db": 0.49,
+    "measured_before_lufs": -21.36,
+    "peak_bound": false
+  },
+  "asr": "Sector perfecto. Lo voy a poner en la pared. No tenemos pared. Voy a solicitar una pared.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sector",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.24,
+      "endS": 0.8
+    },
+    {
+      "text": "perfecto",
+      "charStart": 7,
+      "charEnd": 15,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "Lo",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "voy",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "a",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "poner",
+      "charStart": 26,
+      "charEnd": 31,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "en",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "la",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "pared",
+      "charStart": 38,
+      "charEnd": 43,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "No",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "tenemos",
+      "charStart": 48,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "pared",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "Voy",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "a",
+      "charStart": 67,
+      "charEnd": 68,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "solicitar",
+      "charStart": 69,
+      "charEnd": 78,
+      "startS": 6.24,
+      "endS": 6.8
+    },
+    {
+      "text": "una",
+      "charStart": 79,
+      "charEnd": 82,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "pared",
+      "charStart": 83,
+      "charEnd": 88,
+      "startS": 6.96,
+      "endS": 7.2
+    }
+  ],
+  "words_for": "374d50ac9becb4d8/wordtiming-v1"
+}

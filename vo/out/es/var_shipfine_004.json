@@ -1,0 +1,145 @@
+{
+  "hash": "878757d09c221f10",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_004",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Ese era el escudo. Está bien sentirse triste por el escudo. Pero tú estás bien.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Gently consoling, as if about a houseplant.",
+  "duration": 6.16,
+  "sample_rate": 24000,
+  "peak": 0.678,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.36,
+    "gain_db": 3.72,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.72,
+    "peak_bound": false
+  },
+  "asr": "Ese era el escudo. Está bien sentirse triste por el escudo, pero tú estás bien.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ese",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "era",
+      "charStart": 4,
+      "charEnd": 7,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "el",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "escudo",
+      "charStart": 11,
+      "charEnd": 17,
+      "startS": 0.72,
+      "endS": 1.28
+    },
+    {
+      "text": "Está",
+      "charStart": 19,
+      "charEnd": 23,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "bien",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "sentirse",
+      "charStart": 29,
+      "charEnd": 37,
+      "startS": 2.56,
+      "endS": 3.04
+    },
+    {
+      "text": "triste",
+      "charStart": 38,
+      "charEnd": 44,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "por",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "el",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "escudo",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 3.6,
+      "endS": 4.08
+    },
+    {
+      "text": "Pero",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "tú",
+      "charStart": 65,
+      "charEnd": 67,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "estás",
+      "charStart": 68,
+      "charEnd": 73,
+      "startS": 5.36,
+      "endS": 5.68
+    },
+    {
+      "text": "bien",
+      "charStart": 74,
+      "charEnd": 78,
+      "startS": 5.68,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "878757d09c221f10/wordtiming-v1"
+}

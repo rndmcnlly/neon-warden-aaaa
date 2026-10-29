@@ -1,30 +1,32 @@
 {
-  "hash": "6db9a49670f31d53",
+  "hash": "cf869501439ac1a3",
   "mode": "clone",
   "request": {
     "id": "es__tut_stream_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Si mantienes el gatillo, disparas una ráfaga continua. La ráfaga es para cascos. Es el mayor volumen por segundo que la Autoridad puede ofrecerte. Por favor, mantenlo presionado.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 12.8,
+  "duration": 12.48,
   "sample_rate": 24000,
-  "peak": 0.868,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.22,
-    "gain_db": 4.58,
-    "limited_db": 0.0,
-    "measured_before_lufs": -22.58,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.25,
+    "gain_db": 4.4,
+    "limited_db": 2.0,
+    "measured_before_lufs": -22.4,
     "peak_bound": false
   },
+  "asr": "Si mantienes el gatillo, disparas una ráfaga continua. La ráfaga es para cascos, es el mayor volumen por segundo que la autoridad puede ofrecerte. Por favor, manténlo presionado.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,21 +39,21 @@
       "text": "Si",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.08,
-      "endS": 0.32
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "mantienes",
       "charStart": 3,
       "charEnd": 12,
-      "startS": 0.32,
-      "endS": 0.8
+      "startS": 0.48,
+      "endS": 0.88
     },
     {
       "text": "el",
       "charStart": 13,
       "charEnd": 15,
-      "startS": 0.8,
+      "startS": 0.88,
       "endS": 0.96
     },
     {
@@ -66,111 +68,111 @@
       "charStart": 25,
       "charEnd": 33,
       "startS": 1.76,
-      "endS": 2.4
+      "endS": 2.32
     },
     {
       "text": "una",
       "charStart": 34,
       "charEnd": 37,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "ráfaga",
       "charStart": 38,
       "charEnd": 44,
-      "startS": 2.56,
-      "endS": 3.04
+      "startS": 2.48,
+      "endS": 2.96
     },
     {
       "text": "continua",
       "charStart": 45,
       "charEnd": 53,
-      "startS": 3.04,
-      "endS": 3.76
+      "startS": 2.96,
+      "endS": 3.52
     },
     {
       "text": "La",
       "charStart": 55,
       "charEnd": 57,
-      "startS": 4.32,
-      "endS": 4.48
+      "startS": 4.72,
+      "endS": 4.8
     },
     {
       "text": "ráfaga",
       "charStart": 58,
       "charEnd": 64,
-      "startS": 4.72,
-      "endS": 4.96
+      "startS": 4.8,
+      "endS": 5.28
     },
     {
       "text": "es",
       "charStart": 65,
       "charEnd": 67,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 5.28,
+      "endS": 5.36
     },
     {
       "text": "para",
       "charStart": 68,
       "charEnd": 72,
-      "startS": 5.12,
-      "endS": 5.36
+      "startS": 5.36,
+      "endS": 5.6
     },
     {
       "text": "cascos",
       "charStart": 73,
       "charEnd": 79,
-      "startS": 5.36,
-      "endS": 6.08
+      "startS": 5.6,
+      "endS": 6.16
     },
     {
       "text": "Es",
       "charStart": 81,
       "charEnd": 83,
-      "startS": 6.48,
-      "endS": 6.56
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "el",
       "charStart": 84,
       "charEnd": 86,
-      "startS": 6.56,
-      "endS": 6.64
+      "startS": 6.88,
+      "endS": 6.96
     },
     {
       "text": "mayor",
       "charStart": 87,
       "charEnd": 92,
-      "startS": 6.8,
-      "endS": 7.04
+      "startS": 6.96,
+      "endS": 7.28
     },
     {
       "text": "volumen",
       "charStart": 93,
       "charEnd": 100,
-      "startS": 7.2,
-      "endS": 7.6
+      "startS": 7.28,
+      "endS": 7.68
     },
     {
       "text": "por",
       "charStart": 101,
       "charEnd": 104,
-      "startS": 7.6,
-      "endS": 7.76
+      "startS": 7.68,
+      "endS": 7.84
     },
     {
       "text": "segundo",
       "charStart": 105,
       "charEnd": 112,
-      "startS": 7.76,
-      "endS": 8.16
+      "startS": 7.84,
+      "endS": 8.24
     },
     {
       "text": "que",
       "charStart": 113,
       "charEnd": 116,
-      "startS": 8.16,
+      "startS": 8.24,
       "endS": 8.32
     },
     {
@@ -178,28 +180,28 @@
       "charStart": 117,
       "charEnd": 119,
       "startS": 8.32,
-      "endS": 8.56
+      "endS": 8.48
     },
     {
       "text": "Autoridad",
       "charStart": 120,
       "charEnd": 129,
-      "startS": 8.56,
-      "endS": 8.88
+      "startS": 8.48,
+      "endS": 8.96
     },
     {
       "text": "puede",
       "charStart": 130,
       "charEnd": 135,
-      "startS": 9.12,
-      "endS": 9.36
+      "startS": 8.96,
+      "endS": 9.2
     },
     {
       "text": "ofrecerte",
       "charStart": 136,
       "charEnd": 145,
-      "startS": 9.36,
-      "endS": 10.16
+      "startS": 9.2,
+      "endS": 9.84
     },
     {
       "text": "Por",
@@ -213,7 +215,7 @@
       "charStart": 151,
       "charEnd": 156,
       "startS": 10.72,
-      "endS": 11.28
+      "endS": 11.12
     },
     {
       "text": "mantenlo",
@@ -227,10 +229,8 @@
       "charStart": 167,
       "charEnd": 177,
       "startS": 11.76,
-      "endS": 12.72
+      "endS": 12.4
     }
   ],
-  "words_for": "6db9a49670f31d53/wordtiming-v1",
-  "asr": "Si mantienes el gatillo, disparas una rafa continua. La rafa es parte de Costco's. Es el mayor volumen por segundo que la autoridad puede ofrecerte. Por favor manténlo presionado.",
-  "asr_similarity": 0.842
+  "words_for": "cf869501439ac1a3/wordtiming-v1"
 }

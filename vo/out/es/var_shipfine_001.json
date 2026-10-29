@@ -1,0 +1,145 @@
+{
+  "hash": "4231f70c7cda9940",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "La integridad del casco bajó. Tu integridad sigue intacta. Esa es la que me importa.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Quick, relieved, then a small professional wince.",
+  "duration": 6.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.07,
+    "gain_db": 4.41,
+    "limited_db": 0.74,
+    "measured_before_lufs": -22.41,
+    "peak_bound": false
+  },
+  "asr": "La integridad del casco bajó. Tu integridad sigue intacta, esa es la que me importa.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "La",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "integridad",
+      "charStart": 3,
+      "charEnd": 13,
+      "startS": 0.24,
+      "endS": 0.8
+    },
+    {
+      "text": "del",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "casco",
+      "charStart": 18,
+      "charEnd": 23,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "bajó",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "Tu",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "integridad",
+      "charStart": 33,
+      "charEnd": 43,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "sigue",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "intacta",
+      "charStart": 50,
+      "charEnd": 57,
+      "startS": 3.52,
+      "endS": 4.08
+    },
+    {
+      "text": "Esa",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 4.72,
+      "endS": 5.12
+    },
+    {
+      "text": "es",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "la",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "que",
+      "charStart": 69,
+      "charEnd": 72,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "me",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "importa",
+      "charStart": 76,
+      "charEnd": 83,
+      "startS": 5.44,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "4231f70c7cda9940/wordtiming-v1"
+}

@@ -1,33 +1,32 @@
 {
-  "hash": "cdee577544c3ccf9",
+  "hash": "6e6403cc8a44cd0c",
   "mode": "clone",
   "request": {
     "id": "es__boss_ai_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Gran impacto! ¡Tu pago ya está consolidado al noventa por ciento!",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, cheerleader; she has not heard a word the Warden said.",
-  "duration": 6.16,
+  "duration": 4.88,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.715,
   "clipping_suspect": false,
-  "asr": "Gran impacto, tu pago ya está consolidado al noventa por ciento.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.25,
-    "gain_db": 0.2,
-    "limited_db": 0.15,
-    "measured_before_lufs": -18.2,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.91,
+    "gain_db": 2.5,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.5,
     "peak_bound": false
   },
-  "words_for": "cdee577544c3ccf9/wordtiming-v1",
+  "asr": "Gran impacto, tu pago ya está consolidado al noventa por ciento.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,78 +39,79 @@
       "text": "Gran",
       "charStart": 1,
       "charEnd": 5,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 0.0,
+      "endS": 1.36
     },
     {
       "text": "impacto",
       "charStart": 6,
       "charEnd": 13,
-      "startS": 2.0,
-      "endS": 2.64
+      "startS": 1.36,
+      "endS": 1.92
     },
     {
       "text": "Tu",
       "charStart": 16,
       "charEnd": 18,
-      "startS": 2.96,
-      "endS": 3.12
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "pago",
       "charStart": 19,
       "charEnd": 23,
-      "startS": 3.12,
-      "endS": 3.28
+      "startS": 2.48,
+      "endS": 2.72
     },
     {
       "text": "ya",
       "charStart": 24,
       "charEnd": 26,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 2.72,
+      "endS": 2.88
     },
     {
       "text": "está",
       "charStart": 27,
       "charEnd": 31,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "consolidado",
       "charStart": 32,
       "charEnd": 43,
-      "startS": 3.84,
-      "endS": 4.56
+      "startS": 3.04,
+      "endS": 3.68
     },
     {
       "text": "al",
       "charStart": 44,
       "charEnd": 46,
-      "startS": 4.56,
-      "endS": 4.96
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "noventa",
       "charStart": 47,
       "charEnd": 54,
-      "startS": 4.96,
-      "endS": 5.2
+      "startS": 3.84,
+      "endS": 4.16
     },
     {
       "text": "por",
       "charStart": 55,
       "charEnd": 58,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "ciento",
       "charStart": 59,
       "charEnd": 65,
-      "startS": 5.44,
-      "endS": 6.08
+      "startS": 4.32,
+      "endS": 4.8
     }
-  ]
+  ],
+  "words_for": "6e6403cc8a44cd0c/wordtiming-v1"
 }

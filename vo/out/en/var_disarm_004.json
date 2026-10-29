@@ -1,0 +1,124 @@
+{
+  "hash": "32b5915576b9e615",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_disarm_004",
+    "seed": 11,
+    "language": "English",
+    "text": "Disarmed! The rate for that is lower, but your manners are excellent.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Kind, with the lower rate tucked in.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.826,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.6,
+    "gain_db": 2.56,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.56,
+    "peak_bound": false
+  },
+  "asr": "Disarmed, the rate for that is lower. But your manners are excellent.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Disarmed",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.72,
+      "endS": 1.28
+    },
+    {
+      "text": "The",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "rate",
+      "charStart": 14,
+      "charEnd": 18,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "for",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "that",
+      "charStart": 23,
+      "charEnd": 27,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "is",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "lower",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "but",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "your",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "manners",
+      "charStart": 47,
+      "charEnd": 54,
+      "startS": 3.28,
+      "endS": 3.68
+    },
+    {
+      "text": "are",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "excellent",
+      "charStart": 59,
+      "charEnd": 68,
+      "startS": 3.84,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "32b5915576b9e615/wordtiming-v1"
+}

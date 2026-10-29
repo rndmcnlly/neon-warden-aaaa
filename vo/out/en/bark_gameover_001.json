@@ -1,5 +1,5 @@
 {
-  "hash": "fbe66a68294da0af",
+  "hash": "63173950a6f74d66",
   "mode": "clone",
   "request": {
     "id": "en__bark_gameover_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Ship lost. The lanes stay closed, for now. Requisitioning a replacement.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, routine procedure, not unkind.",
-  "duration": 4.48,
+  "duration": 5.6,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.866,
   "clipping_suspect": false,
-  "asr": "Ship lost. The lane stay closed for now. Requisitioning a replacement.",
-  "asr_similarity": 0.909,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.38,
-    "gain_db": 0.45,
-    "limited_db": 0.4,
-    "measured_before_lufs": -18.45,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.24,
+    "gain_db": 2.36,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.36,
     "peak_bound": false
   },
-  "words_for": "fbe66a68294da0af/wordtiming-v1",
+  "asr": "Ship lost. The lane stay closed for now. Requisitioning a replacement.",
+  "asr_similarity": 0.909,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,78 +39,79 @@
       "text": "Ship",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.16,
-      "endS": 0.4
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "lost",
       "charStart": 5,
       "charEnd": 9,
-      "startS": 0.56,
-      "endS": 1.12
+      "startS": 0.96,
+      "endS": 1.44
     },
     {
       "text": "The",
       "charStart": 11,
       "charEnd": 14,
-      "startS": 1.28,
-      "endS": 1.36
+      "startS": 1.76,
+      "endS": 1.84
     },
     {
       "text": "lanes",
       "charStart": 15,
       "charEnd": 20,
-      "startS": 1.36,
-      "endS": 1.68
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "stay",
       "charStart": 21,
       "charEnd": 25,
-      "startS": 1.68,
-      "endS": 1.84
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "closed",
       "charStart": 26,
       "charEnd": 32,
-      "startS": 1.84,
-      "endS": 2.32
+      "startS": 2.32,
+      "endS": 2.88
     },
     {
       "text": "for",
       "charStart": 34,
       "charEnd": 37,
-      "startS": 2.32,
-      "endS": 2.48
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "now",
       "charStart": 38,
       "charEnd": 41,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 3.36,
+      "endS": 3.76
     },
     {
       "text": "Requisitioning",
       "charStart": 43,
       "charEnd": 57,
-      "startS": 2.72,
-      "endS": 3.52
+      "startS": 4.16,
+      "endS": 4.88
     },
     {
       "text": "a",
       "charStart": 58,
       "charEnd": 59,
-      "startS": 3.52,
-      "endS": 3.6
+      "startS": 4.88,
+      "endS": 4.96
     },
     {
       "text": "replacement",
       "charStart": 60,
       "charEnd": 71,
-      "startS": 3.6,
-      "endS": 4.32
+      "startS": 4.96,
+      "endS": 5.6
     }
-  ]
+  ],
+  "words_for": "63173950a6f74d66/wordtiming-v1"
 }

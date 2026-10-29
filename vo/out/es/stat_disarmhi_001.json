@@ -1,0 +1,194 @@
+{
+  "hash": "53340a1e85eb1cfb",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_disarmhi_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Una observación rápida: la mayoría de tus objetivos se van con su nave. ¿Es una estrategia? Es una estrategia que paga menos.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Careful, curious, then the pay note very quickly.",
+  "duration": 8.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 4.68,
+    "limited_db": 0.06,
+    "measured_before_lufs": -22.68,
+    "peak_bound": false
+  },
+  "asr": "Una observación rápida: la mayoría de tus objetivos se van con su nave. Es una estrategia, es una estrategia que paga menos.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Una",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "observación",
+      "charStart": 4,
+      "charEnd": 15,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "rápida",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 1.12,
+      "endS": 1.68
+    },
+    {
+      "text": "la",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "mayoría",
+      "charStart": 27,
+      "charEnd": 34,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "de",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "tus",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "objetivos",
+      "charStart": 42,
+      "charEnd": 51,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "se",
+      "charStart": 52,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "van",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "con",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "su",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "nave",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 4.32,
+      "endS": 4.72
+    },
+    {
+      "text": "Es",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "una",
+      "charStart": 76,
+      "charEnd": 79,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "estrategia",
+      "charStart": 80,
+      "charEnd": 90,
+      "startS": 5.76,
+      "endS": 6.48
+    },
+    {
+      "text": "Es",
+      "charStart": 92,
+      "charEnd": 94,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "una",
+      "charStart": 95,
+      "charEnd": 98,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "estrategia",
+      "charStart": 99,
+      "charEnd": 109,
+      "startS": 7.36,
+      "endS": 7.92
+    },
+    {
+      "text": "que",
+      "charStart": 110,
+      "charEnd": 113,
+      "startS": 7.92,
+      "endS": 8.0
+    },
+    {
+      "text": "paga",
+      "charStart": 114,
+      "charEnd": 118,
+      "startS": 8.0,
+      "endS": 8.24
+    },
+    {
+      "text": "menos",
+      "charStart": 119,
+      "charEnd": 124,
+      "startS": 8.24,
+      "endS": 8.8
+    }
+  ],
+  "words_for": "53340a1e85eb1cfb/wordtiming-v1"
+}

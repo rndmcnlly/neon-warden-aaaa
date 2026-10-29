@@ -1,33 +1,32 @@
 {
-  "hash": "326b4a40dfbf80f4",
+  "hash": "07d2c7947517577a",
   "mode": "clone",
   "request": {
     "id": "zh__bark_shield_001",
     "seed": 11,
     "language": "Chinese",
     "text": "护盾已上线！它归管理局所有，所以请尽量少挨打。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, product-safety notice.",
   "duration": 5.2,
   "sample_rate": 24000,
-  "peak": 0.855,
+  "peak": 0.714,
   "clipping_suspect": false,
-  "asr": "护盾已上线，它归管理局所有，所以请尽量少挨打。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.27,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -2.92,
+    "gain_db": 2.13,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.13,
     "peak_bound": false
   },
-  "words_for": "326b4a40dfbf80f4/wordtiming-v1",
+  "asr": "护盾已上线，它归管理局所有，所以请尽量少挨打。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,63 +39,63 @@
       "text": "护",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.24,
-      "endS": 0.48
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "盾",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 0.8,
+      "endS": 1.12
     },
     {
       "text": "已",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 1.12,
+      "endS": 1.2
     },
     {
       "text": "上",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.88,
-      "endS": 1.12
+      "startS": 1.2,
+      "endS": 1.36
     },
     {
       "text": "线",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.12,
-      "endS": 1.52
+      "startS": 1.36,
+      "endS": 1.76
     },
     {
       "text": "它",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "归",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "管",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.24,
-      "endS": 2.48
+      "startS": 2.32,
+      "endS": 2.56
     },
     {
       "text": "理",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.48,
+      "startS": 2.56,
       "endS": 2.64
     },
     {
@@ -124,57 +123,58 @@
       "text": "所",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 3.68,
+      "endS": 3.76
     },
     {
       "text": "以",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 3.76,
+      "endS": 3.92
     },
     {
       "text": "请",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.84,
-      "endS": 3.92
+      "startS": 3.92,
+      "endS": 4.16
     },
     {
       "text": "尽",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.0,
-      "endS": 4.24
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "量",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.24,
-      "endS": 4.4
+      "startS": 4.32,
+      "endS": 4.48
     },
     {
       "text": "少",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.4,
-      "endS": 4.64
+      "startS": 4.48,
+      "endS": 4.72
     },
     {
       "text": "挨",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.64,
-      "endS": 4.8
+      "startS": 4.72,
+      "endS": 4.88
     },
     {
       "text": "打",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.8,
+      "startS": 4.88,
       "endS": 5.2
     }
-  ]
+  ],
+  "words_for": "07d2c7947517577a/wordtiming-v1"
 }

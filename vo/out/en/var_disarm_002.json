@@ -1,0 +1,124 @@
+{
+  "hash": "d459da2ab0e135a5",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_disarm_002",
+    "seed": 11,
+    "language": "English",
+    "text": "You disarmed it. It's still flying. I'll need a form for that.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Puzzled, flipping through a binder.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.637,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.85,
+    "gain_db": 2.53,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.53,
+    "peak_bound": false
+  },
+  "asr": "You disarmed it. It's still flying. I'll need a form for that.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "You",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "disarmed",
+      "charStart": 4,
+      "charEnd": 12,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "it",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "It's",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "still",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "flying",
+      "charStart": 28,
+      "charEnd": 34,
+      "startS": 2.16,
+      "endS": 2.72
+    },
+    {
+      "text": "I'll",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "need",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "a",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "form",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "for",
+      "charStart": 53,
+      "charEnd": 56,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "that",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 4.24,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "d459da2ab0e135a5/wordtiming-v1"
+}

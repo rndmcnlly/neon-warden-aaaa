@@ -1,0 +1,117 @@
+{
+  "hash": "518d773961c13285",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_graze_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Roce registrado. Mi ritmo cardiaco no es facturable, pero sí subió.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Hand on heart, a little breathless.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.785,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.1,
+    "gain_db": 4.05,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.05,
+    "peak_bound": false
+  },
+  "asr": "Rose registrado. Mi ritmo cardíaco no es facturable, pero sí subió.",
+  "asr_similarity": 0.909,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Roce",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "registrado",
+      "charStart": 5,
+      "charEnd": 15,
+      "startS": 0.48,
+      "endS": 1.28
+    },
+    {
+      "text": "Mi",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "ritmo",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "cardiaco",
+      "charStart": 26,
+      "charEnd": 34,
+      "startS": 2.56,
+      "endS": 3.04
+    },
+    {
+      "text": "no",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "es",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "facturable",
+      "charStart": 41,
+      "charEnd": 51,
+      "startS": 3.36,
+      "endS": 4.0
+    },
+    {
+      "text": "pero",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "sí",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "subió",
+      "charStart": 61,
+      "charEnd": 66,
+      "startS": 4.48,
+      "endS": 4.96
+    }
+  ],
+  "words_for": "518d773961c13285/wordtiming-v1"
+}

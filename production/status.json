@@ -8,7 +8,7 @@
     {"title": "Variant banks", "owner": "W", "status": "done", "revision": "796498d", "detail": "169 variants authored; 65 voiced variants pending rendering in recorded QA.", "updated": "2026-10-28"},
     {"title": "UI and visual closing fixes", "owner": "C", "status": "done", "detail": "Reported done by orchestration. Consult dated QA rather than assuming current coverage.", "updated": "2026-10-28"},
     {"title": "Music, loudness and contextual A/B", "owner": "B", "status": "unverified", "detail": "Possibly still running at handoff. Process status not verified. Existing A/B artifacts do not establish final approval.", "updated": "2026-10-28"},
-    {"title": "Captain tutorial render", "owner": "T", "status": "unverified", "detail": "Render process status unverified. Original tutorial voice remains the default; a_captain is an alternative, not the chosen replacement.", "updated": "2026-10-28"}
+    {"title": "Captain tutorial render", "owner": "T", "status": "done", "detail": "Captain base assets and EN/ES/ZH anchors complete, including 50 new tutorial commentary lines. All 600 rendered takes have aligned word timings; ASR mean/min EN .989/.857, ES .990/.865, ZH .981/.857; zero under .85 in every language. Runtime routing verified: original remains default for 243 preserved takes; 150 new commentary takes explicitly fall back to Captain. Static QA qa/reports/20261028-224208/index.html has zero failures; CI blocked by five unrelated formatting failures. No render jobs active.", "updated": "2026-10-28"}
   ],
   "blockers": [
     {"title": "Hot audio mix", "status": "blocked", "detail": "Needs contextual listening with music and fresh loudness QA. Historical passes must not close this issue automatically.", "updated": "2026-10-28"},

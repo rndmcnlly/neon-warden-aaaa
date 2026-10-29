@@ -1,33 +1,32 @@
 {
-  "hash": "b757869f03503207",
+  "hash": "5cecb4e71e7fbd0f",
   "mode": "clone",
   "request": {
     "id": "zh__tut_route_001",
     "seed": 11,
     "language": "Chinese",
     "text": "你的航线：外缘漂流带。碎裂带。炮火航道。枪骑之门。最终进近。然后……",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Tour-guide list, slowing and dropping into a hush on the last words.",
-  "duration": 7.76,
+  "duration": 8.0,
   "sample_rate": 24000,
-  "peak": 0.82,
+  "peak": 0.787,
   "clipping_suspect": false,
-  "asr": "你的航线：外缘漂流带、碎裂带、炮火航道、枪旗之门，最终进舰，然后。",
-  "asr_similarity": 0.923,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.72,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -2.04,
+    "gain_db": 3.18,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.18,
     "peak_bound": false
   },
-  "words_for": "b757869f03503207/wordtiming-v1",
+  "asr": "你的航线：外缘漂流带、碎裂带、炮火航道、枪旗之门，最终进进，然后。",
+  "asr_similarity": 0.923,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,183 +39,184 @@
       "text": "你",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 0.72
     },
     {
       "text": "的",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.72,
+      "endS": 0.8
     },
     {
       "text": "航",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "线",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.64,
-      "endS": 1.04
+      "startS": 0.96,
+      "endS": 1.36
     },
     {
       "text": "外",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 1.76,
+      "endS": 1.84
     },
     {
       "text": "缘",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.84,
+      "endS": 2.0
     },
     {
       "text": "漂",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 2.0,
+      "endS": 2.24
     },
     {
       "text": "流",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.68,
-      "endS": 1.84
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "带",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.84,
-      "endS": 2.24
+      "startS": 2.4,
+      "endS": 2.64
     },
     {
       "text": "碎",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.4,
-      "endS": 2.8
+      "startS": 2.88,
+      "endS": 3.2
     },
     {
       "text": "裂",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.8,
-      "endS": 2.96
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "带",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.96,
-      "endS": 3.28
+      "startS": 3.36,
+      "endS": 3.6
     },
     {
       "text": "炮",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.44,
-      "endS": 3.68
+      "startS": 4.0,
+      "endS": 4.24
     },
     {
       "text": "火",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "航",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.84,
-      "endS": 4.16
+      "startS": 4.4,
+      "endS": 4.64
     },
     {
       "text": "道",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.16,
-      "endS": 4.4
+      "startS": 4.64,
+      "endS": 4.96
     },
     {
       "text": "枪",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 5.12,
+      "endS": 5.36
     },
     {
       "text": "骑",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.88,
-      "endS": 5.12
+      "startS": 5.36,
+      "endS": 5.6
     },
     {
       "text": "之",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 5.6,
+      "endS": 5.68
     },
     {
       "text": "门",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.28,
-      "endS": 5.6
+      "startS": 5.68,
+      "endS": 5.92
     },
     {
       "text": "最",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 6.24,
+      "endS": 6.4
     },
     {
       "text": "终",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 6.4,
+      "endS": 6.64
     },
     {
       "text": "进",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.16,
-      "endS": 6.4
+      "startS": 6.64,
+      "endS": 6.8
     },
     {
       "text": "近",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 6.4,
-      "endS": 6.48
+      "startS": 6.8,
+      "endS": 7.04
     },
     {
       "text": "然",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 7.44,
+      "endS": 7.68
     },
     {
       "text": "后",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 7.2,
-      "endS": 7.6
+      "startS": 7.68,
+      "endS": 7.92
     }
-  ]
+  ],
+  "words_for": "5cecb4e71e7fbd0f/wordtiming-v1"
 }

@@ -1,0 +1,110 @@
+{
+  "hash": "b40f9f9555cb442e",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "La nave no está bien. Tú sí. Mantengamos esa proporción.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Calm, almost tender, keeping score.",
+  "duration": 3.92,
+  "sample_rate": 24000,
+  "peak": 0.757,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.35,
+    "gain_db": 3.22,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.22,
+    "peak_bound": false
+  },
+  "asr": "La nave no está bien. Tú sí, mantengamos esa proporción.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "La",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "nave",
+      "charStart": 3,
+      "charEnd": 7,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "no",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "está",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "bien",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "Tú",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "sí",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "Mantengamos",
+      "charStart": 29,
+      "charEnd": 40,
+      "startS": 2.56,
+      "endS": 3.12
+    },
+    {
+      "text": "esa",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "proporción",
+      "charStart": 45,
+      "charEnd": 55,
+      "startS": 3.28,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "b40f9f9555cb442e/wordtiming-v1"
+}

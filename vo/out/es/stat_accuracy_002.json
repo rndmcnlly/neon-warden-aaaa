@@ -1,0 +1,166 @@
+{
+  "hash": "4f22768c5c8ca2e8",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_accuracy_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Tu tasa de aciertos va a la baja. ¡No pasa nada! Las tendencias son solo sentimientos con gráficas.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Upbeat reframe, believing every word.",
+  "duration": 6.32,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.1,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 4.6,
+    "limited_db": 0.09,
+    "measured_before_lufs": -22.6,
+    "peak_bound": false
+  },
+  "asr": "Tu tasa de aciertos va a la baja, no pasa nada, las tendencias son solo sentimientos con gráficas.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Tu",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "tasa",
+      "charStart": 3,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "de",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "aciertos",
+      "charStart": 11,
+      "charEnd": 19,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "va",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "a",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "la",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "baja",
+      "charStart": 28,
+      "charEnd": 32,
+      "startS": 1.44,
+      "endS": 1.92
+    },
+    {
+      "text": "No",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "pasa",
+      "charStart": 38,
+      "charEnd": 42,
+      "startS": 2.4,
+      "endS": 2.72
+    },
+    {
+      "text": "nada",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "Las",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "tendencias",
+      "charStart": 53,
+      "charEnd": 63,
+      "startS": 4.0,
+      "endS": 4.56
+    },
+    {
+      "text": "son",
+      "charStart": 64,
+      "charEnd": 67,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "solo",
+      "charStart": 68,
+      "charEnd": 72,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "sentimientos",
+      "charStart": 73,
+      "charEnd": 85,
+      "startS": 4.96,
+      "endS": 5.52
+    },
+    {
+      "text": "con",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "gráficas",
+      "charStart": 90,
+      "charEnd": 98,
+      "startS": 5.68,
+      "endS": 6.24
+    }
+  ],
+  "words_for": "4f22768c5c8ca2e8/wordtiming-v1"
+}

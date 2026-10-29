@@ -1,0 +1,145 @@
+{
+  "hash": "e91f0ec98ed4f387",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_writ_001",
+    "seed": 11,
+    "language": "English",
+    "text": "That Writ is fully charged. Holding it longer won't make it more charged. I've checked.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Patient technical support.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.853,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 3.42,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.42,
+    "peak_bound": false
+  },
+  "asr": "That rit is fully charged. Holding it longer won't make it more charged. I've checked.",
+  "asr_similarity": 0.933,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "That",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "Writ",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "is",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "fully",
+      "charStart": 13,
+      "charEnd": 18,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "charged",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 1.6,
+      "endS": 2.16
+    },
+    {
+      "text": "Holding",
+      "charStart": 28,
+      "charEnd": 35,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "it",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "longer",
+      "charStart": 39,
+      "charEnd": 45,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "won't",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "make",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "it",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "more",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "charged",
+      "charStart": 65,
+      "charEnd": 72,
+      "startS": 4.0,
+      "endS": 4.48
+    },
+    {
+      "text": "I've",
+      "charStart": 74,
+      "charEnd": 78,
+      "startS": 4.72,
+      "endS": 4.8
+    },
+    {
+      "text": "checked",
+      "charStart": 79,
+      "charEnd": 86,
+      "startS": 4.8,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "e91f0ec98ed4f387/wordtiming-v1"
+}

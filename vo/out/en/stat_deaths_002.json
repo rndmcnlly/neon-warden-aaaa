@@ -1,0 +1,131 @@
+{
+  "hash": "8a0ebf8e60106574",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_deaths_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Another replacement ship. I've stopped filling out the form and started photocopying it.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Brisk admin, a hint of fatigue, still fond.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.47,
+    "gain_db": 3.59,
+    "limited_db": 0.71,
+    "measured_before_lufs": -21.59,
+    "peak_bound": false
+  },
+  "asr": "Another replacement ship. I've stopped filling out the form and started photocopying it.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Another",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "replacement",
+      "charStart": 8,
+      "charEnd": 19,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "ship",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "I've",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "stopped",
+      "charStart": 31,
+      "charEnd": 38,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "filling",
+      "charStart": 39,
+      "charEnd": 46,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "out",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "the",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "form",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "and",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "started",
+      "charStart": 64,
+      "charEnd": 71,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "photocopying",
+      "charStart": 72,
+      "charEnd": 84,
+      "startS": 4.16,
+      "endS": 4.88
+    },
+    {
+      "text": "it",
+      "charStart": 85,
+      "charEnd": 87,
+      "startS": 4.88,
+      "endS": 4.96
+    }
+  ],
+  "words_for": "8a0ebf8e60106574/wordtiming-v1"
+}

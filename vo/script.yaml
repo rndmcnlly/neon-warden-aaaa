@@ -472,6 +472,7 @@ lines:
 
   - id: tut_graze_002
     speaker: tutorial_ai
+    seed: {zh: 211}
     scene: tutorial
     route: any
     direction: >-
@@ -812,6 +813,7 @@ lines:
 
   - id: sec1_intro_001
     speaker: tutorial_ai
+    seed: {zh: 111}
     scene: sector1
     route: any
     direction: >-
@@ -913,6 +915,7 @@ lines:
 
   - id: amb_fight_004
     speaker: tutorial_ai
+    seed: {es: 111}
     scene: chatter
     route: any
     direction: >-
@@ -1022,6 +1025,7 @@ lines:
 
   - id: bark_gameover_001
     speaker: tutorial_ai
+    seed: {zh: 211}
     scene: barks
     route: any
     direction: >-
@@ -1568,6 +1572,7 @@ lines:
 
   - id: kill_ai_001
     speaker: tutorial_ai
+    seed: {zh: 211}
     scene: ending_kill
     route: kill
     direction: >-
@@ -1606,6 +1611,7 @@ lines:
 
   - id: kill_ai_002
     speaker: tutorial_ai
+    seed: {zh: 211}
     scene: ending_kill
     route: kill
     direction: >-
@@ -2441,6 +2447,7 @@ lines:
 
   - id: var_graze_003
     speaker: tutorial_ai
+    seed: {en: 211}
     scene: banks
     route: any
     optional: true

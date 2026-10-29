@@ -1,5 +1,5 @@
 {
-  "hash": "230892033564b3c9",
+  "hash": "91d714558082bdd5",
   "mode": "clone",
   "request": {
     "id": "en__flash_rec_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Pilot zero one two one, your weapon is cold. Please fire. Please fire. Pilot, please.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Recorded; the script breaks down into pleading on the last word.",
-  "duration": 6.96,
+  "duration": 7.76,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Pilot zero one two one, your weapon is cold. Please fire, please fire, pilot, please.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.01,
-    "true_peak_dbtp": -1.41,
-    "gain_db": 0.13,
-    "limited_db": 0.08,
-    "measured_before_lufs": -18.13,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.42,
+    "gain_db": 3.54,
+    "limited_db": 0.07,
+    "measured_before_lufs": -21.54,
     "peak_bound": false
   },
-  "words_for": "230892033564b3c9/wordtiming-v1",
+  "asr": "Pilot zero one two one, your weapon is cold. Please fire. Please fire, pilot. Please.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,106 +39,107 @@
       "text": "Pilot",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.16,
-      "endS": 0.64
+      "startS": 0.64,
+      "endS": 1.04
     },
     {
       "text": "zero",
       "charStart": 6,
       "charEnd": 10,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 1.04,
+      "endS": 1.36
     },
     {
       "text": "one",
       "charStart": 11,
       "charEnd": 14,
-      "startS": 1.12,
-      "endS": 1.2
+      "startS": 1.36,
+      "endS": 1.68
     },
     {
       "text": "two",
       "charStart": 15,
       "charEnd": 18,
-      "startS": 1.36,
-      "endS": 1.6
+      "startS": 1.68,
+      "endS": 1.84
     },
     {
       "text": "one",
       "charStart": 19,
       "charEnd": 22,
-      "startS": 1.6,
-      "endS": 2.08
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "your",
       "charStart": 24,
       "charEnd": 28,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 2.72,
+      "endS": 2.88
     },
     {
       "text": "weapon",
       "charStart": 29,
       "charEnd": 35,
-      "startS": 2.56,
-      "endS": 2.96
+      "startS": 2.88,
+      "endS": 3.2
     },
     {
       "text": "is",
       "charStart": 36,
       "charEnd": 38,
-      "startS": 2.96,
-      "endS": 3.12
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "cold",
       "charStart": 39,
       "charEnd": 43,
-      "startS": 3.12,
-      "endS": 3.68
+      "startS": 3.36,
+      "endS": 3.76
     },
     {
       "text": "Please",
       "charStart": 45,
       "charEnd": 51,
-      "startS": 3.92,
-      "endS": 4.08
+      "startS": 4.16,
+      "endS": 4.48
     },
     {
       "text": "fire",
       "charStart": 52,
       "charEnd": 56,
-      "startS": 4.32,
-      "endS": 4.8
+      "startS": 4.48,
+      "endS": 4.96
     },
     {
       "text": "Please",
       "charStart": 58,
       "charEnd": 64,
-      "startS": 4.8,
-      "endS": 5.04
+      "startS": 5.52,
+      "endS": 5.84
     },
     {
       "text": "fire",
       "charStart": 65,
       "charEnd": 69,
-      "startS": 5.28,
-      "endS": 5.68
+      "startS": 5.84,
+      "endS": 6.24
     },
     {
       "text": "Pilot",
       "charStart": 71,
       "charEnd": 76,
-      "startS": 5.68,
-      "endS": 6.24
+      "startS": 6.24,
+      "endS": 6.64
     },
     {
       "text": "please",
       "charStart": 78,
       "charEnd": 84,
-      "startS": 6.24,
-      "endS": 6.88
+      "startS": 7.2,
+      "endS": 7.68
     }
-  ]
+  ],
+  "words_for": "91d714558082bdd5/wordtiming-v1"
 }

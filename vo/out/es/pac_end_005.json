@@ -1,33 +1,32 @@
 {
-  "hash": "85339b399640b201",
+  "hash": "15b42f7c610e1266",
   "mode": "clone",
   "request": {
     "id": "es__pac_end_005",
     "seed": 11,
     "language": "Spanish",
     "text": "Conexión perdida. Actualizando registros. Actualizando. Actua.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, glitching out mid-word, never losing the smile.",
-  "duration": 5.92,
+  "duration": 6.0,
   "sample_rate": 24000,
-  "peak": 0.813,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Conexión perdida. Actualizando registros. Actualizando. Actúa.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.48,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 1.51,
-    "limited_db": 1.76,
-    "measured_before_lufs": -19.81,
+    "lufs": -18.1,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 5.56,
+    "limited_db": 2.47,
+    "measured_before_lufs": -23.56,
     "peak_bound": false
   },
-  "words_for": "85339b399640b201/wordtiming-v1",
+  "asr": "Conexión perdida, actualizando registros, actualizando, actúa.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,43 +39,44 @@
       "text": "Conexión",
       "charStart": 0,
       "charEnd": 8,
-      "startS": 0.16,
-      "endS": 0.56
+      "startS": 0.08,
+      "endS": 0.64
     },
     {
       "text": "perdida",
       "charStart": 9,
       "charEnd": 16,
-      "startS": 0.72,
-      "endS": 1.36
+      "startS": 0.64,
+      "endS": 1.28
     },
     {
       "text": "Actualizando",
       "charStart": 18,
       "charEnd": 30,
-      "startS": 1.68,
-      "endS": 2.48
+      "startS": 1.84,
+      "endS": 2.56
     },
     {
       "text": "registros",
       "charStart": 31,
       "charEnd": 40,
-      "startS": 2.48,
+      "startS": 2.56,
       "endS": 3.28
     },
     {
       "text": "Actualizando",
       "charStart": 42,
       "charEnd": 54,
-      "startS": 3.68,
-      "endS": 4.72
+      "startS": 3.84,
+      "endS": 4.64
     },
     {
       "text": "Actua",
       "charStart": 56,
       "charEnd": 61,
-      "startS": 5.2,
-      "endS": 5.84
+      "startS": 5.44,
+      "endS": 6.0
     }
-  ]
+  ],
+  "words_for": "15b42f7c610e1266/wordtiming-v1"
 }

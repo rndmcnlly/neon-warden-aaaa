@@ -221,3 +221,31 @@ mean >= 0.95, min >= 0.85); VO should arrive at -18 LUFS, -1 dBTP.
 - Next: on Adam's tutorial_ai pick, promote it (vo/casting/README.md), add a
   tutorial_ai entry to `ANCHORS["es"]`, audition, promote, then
   `render.py --speaker tutorial_ai --asr --retry-low`.
+
+## Captain alternative completed, October 28, 2026 (22:42 QA)
+
+- Copied Adam's exact `a_captain` audition anchor, updated the casting
+  record, removed 31 old-voice seed overrides, and rendered every tutorial
+  line in all languages. Canonical script text was preserved.
+- Spanish VoiceDesign anchor `design_s11` won on the eight worst lines:
+  mean 0.643 -> 0.997, min 0.973, median f0 0.991x the English anchor.
+  Chinese needed an anchor after `flash_ai_003` scored 0.50 even after
+  retries. Chinese `design_s11` scored mean 0.990, min 0.923, f0 1.018x EN.
+  Both language anchors are at `vo/voices/tutorial_ai.<lang>.wav` with
+  frozen sidecars. Audition indexes retain the evidence.
+- Included the 50 newly authored tutorial commentary lines; 600 takes
+  total now have ASR and word timings. EN mean/min 0.989/0.857,
+  ES 0.990/0.865, ZH 0.981/0.857; zero under 0.85. All alignments pass,
+  including es/tut_rest_001 (the old truncation). Raw WAVs remain ignored.
+- **Casting decision superseded:** Adam prefers original in context, so
+  Captain is an A/B alternative. B's registry remains unchanged with
+  `base: a_captain`, `default: original`: Captain uses base storage
+  `public/vo/{en,es,zh}/` plus `public/vo/cues.json`, and original frozen
+  takes stay at `public/vo/variants/tutorial_ai/original/`. A runtime API
+  check confirms original wins on its 243 takes, while the 150 takes for
+  the 50 new lines explicitly fall back to Captain with matching timings.
+  No old snapshot was restored over new canonical lines.
+- Build sync uses existing metadata-aware linear gain, not double
+  loudnorm. Static QA `qa/reports/20261028-224208/index.html`: 33 pass,
+  5 warnings, zero failures. Foreground `deno task ci` stopped on five
+  unrelated formatting failures, enumerated in the integration queue.

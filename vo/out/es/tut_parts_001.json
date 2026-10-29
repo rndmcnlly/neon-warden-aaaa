@@ -1,30 +1,32 @@
 {
-  "hash": "98a5369a6b57163d",
+  "hash": "0cad905434053c1a",
   "mode": "clone",
   "request": {
     "id": "es__tut_parts_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Esta torreta de práctica tiene una sola pieza de armamento: su cañón. Dispárale con toques, o suelta un Mandato sobre él, hasta que se rompa.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 10.8,
+  "duration": 9.2,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.873,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.09,
-    "true_peak_dbtp": -1.24,
-    "gain_db": 5.09,
-    "limited_db": 1.41,
-    "measured_before_lufs": -23.09,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.14,
+    "gain_db": 4.63,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.63,
     "peak_bound": false
   },
+  "asr": "Esta torreta de práctica tiene una sola pieza de armamento: su cañón. Disparale con toques o suelta un mandato sobre él hasta que se rompa.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,179 +39,177 @@
       "text": "Esta",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 0.16,
+      "endS": 0.4
     },
     {
       "text": "torreta",
       "charStart": 5,
       "charEnd": 12,
-      "startS": 0.88,
-      "endS": 1.28
+      "startS": 0.4,
+      "endS": 0.8
     },
     {
       "text": "de",
       "charStart": 13,
       "charEnd": 15,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "práctica",
       "charStart": 16,
       "charEnd": 24,
-      "startS": 1.44,
-      "endS": 2.0
+      "startS": 0.96,
+      "endS": 1.36
     },
     {
       "text": "tiene",
       "charStart": 25,
       "charEnd": 30,
-      "startS": 2.0,
-      "endS": 2.4
+      "startS": 1.36,
+      "endS": 1.68
     },
     {
       "text": "una",
       "charStart": 31,
       "charEnd": 34,
-      "startS": 2.4,
-      "endS": 2.72
+      "startS": 1.68,
+      "endS": 1.84
     },
     {
       "text": "sola",
       "charStart": 35,
       "charEnd": 39,
-      "startS": 2.72,
-      "endS": 3.04
+      "startS": 1.84,
+      "endS": 2.16
     },
     {
       "text": "pieza",
       "charStart": 40,
       "charEnd": 45,
-      "startS": 3.12,
-      "endS": 3.52
+      "startS": 2.16,
+      "endS": 2.56
     },
     {
       "text": "de",
       "charStart": 46,
       "charEnd": 48,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 2.56,
+      "endS": 2.64
     },
     {
       "text": "armamento",
       "charStart": 49,
       "charEnd": 58,
-      "startS": 3.68,
-      "endS": 4.4
+      "startS": 2.64,
+      "endS": 3.2
     },
     {
       "text": "su",
       "charStart": 60,
       "charEnd": 62,
-      "startS": 4.56,
-      "endS": 4.8
+      "startS": 3.52,
+      "endS": 3.76
     },
     {
       "text": "cañón",
       "charStart": 63,
       "charEnd": 68,
-      "startS": 4.8,
-      "endS": 5.44
+      "startS": 3.76,
+      "endS": 4.24
     },
     {
       "text": "Dispárale",
       "charStart": 70,
       "charEnd": 79,
-      "startS": 5.92,
-      "endS": 6.56
+      "startS": 5.2,
+      "endS": 5.76
     },
     {
       "text": "con",
       "charStart": 80,
       "charEnd": 83,
-      "startS": 6.56,
-      "endS": 6.8
+      "startS": 5.76,
+      "endS": 6.0
     },
     {
       "text": "toques",
       "charStart": 84,
       "charEnd": 90,
-      "startS": 6.8,
-      "endS": 7.36
+      "startS": 6.0,
+      "endS": 6.4
     },
     {
       "text": "o",
       "charStart": 92,
       "charEnd": 93,
-      "startS": 7.6,
-      "endS": 7.68
+      "startS": 6.48,
+      "endS": 6.56
     },
     {
       "text": "suelta",
       "charStart": 94,
       "charEnd": 100,
-      "startS": 7.68,
-      "endS": 8.08
+      "startS": 6.56,
+      "endS": 6.88
     },
     {
       "text": "un",
       "charStart": 101,
       "charEnd": 103,
-      "startS": 8.08,
-      "endS": 8.24
+      "startS": 6.88,
+      "endS": 6.96
     },
     {
       "text": "Mandato",
       "charStart": 104,
       "charEnd": 111,
-      "startS": 8.24,
-      "endS": 8.8
+      "startS": 6.96,
+      "endS": 7.44
     },
     {
       "text": "sobre",
       "charStart": 112,
       "charEnd": 117,
-      "startS": 8.8,
-      "endS": 9.12
+      "startS": 7.44,
+      "endS": 7.76
     },
     {
       "text": "él",
       "charStart": 118,
       "charEnd": 120,
-      "startS": 9.12,
-      "endS": 9.44
+      "startS": 7.76,
+      "endS": 8.0
     },
     {
       "text": "hasta",
       "charStart": 122,
       "charEnd": 127,
-      "startS": 9.68,
-      "endS": 10.0
+      "startS": 8.16,
+      "endS": 8.48
     },
     {
       "text": "que",
       "charStart": 128,
       "charEnd": 131,
-      "startS": 10.0,
-      "endS": 10.08
+      "startS": 8.48,
+      "endS": 8.56
     },
     {
       "text": "se",
       "charStart": 132,
       "charEnd": 134,
-      "startS": 10.08,
-      "endS": 10.24
+      "startS": 8.56,
+      "endS": 8.64
     },
     {
       "text": "rompa",
       "charStart": 135,
       "charEnd": 140,
-      "startS": 10.24,
-      "endS": 10.8
+      "startS": 8.64,
+      "endS": 9.12
     }
   ],
-  "words_for": "98a5369a6b57163d/wordtiming-v1",
-  "asr": "Esta torreta de práctica tiene una sola pieza de armamento, su cañón dispara le contóques o suelta un mandato sobre él hasta que se rompa.",
-  "asr_similarity": 0.88
+  "words_for": "0cad905434053c1a/wordtiming-v1"
 }

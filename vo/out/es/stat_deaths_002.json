@@ -1,0 +1,145 @@
+{
+  "hash": "efaf24f56b8e1c52",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_deaths_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Otra nave de reemplazo. Ya dejé de llenar el formulario y empecé a sacarle copias.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Brisk admin, a hint of fatigue, still fond.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.747,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.52,
+    "gain_db": 3.63,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.63,
+    "peak_bound": false
+  },
+  "asr": "Otra nave de reemplazo. Ya dejé de llenar el formulario y empecé a sacarle copias.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Otra",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "nave",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "de",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "reemplazo",
+      "charStart": 13,
+      "charEnd": 22,
+      "startS": 0.8,
+      "endS": 1.44
+    },
+    {
+      "text": "Ya",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "dejé",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "de",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "llenar",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "el",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "formulario",
+      "charStart": 45,
+      "charEnd": 55,
+      "startS": 2.96,
+      "endS": 3.68
+    },
+    {
+      "text": "y",
+      "charStart": 56,
+      "charEnd": 57,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "empecé",
+      "charStart": 58,
+      "charEnd": 64,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "a",
+      "charStart": 65,
+      "charEnd": 66,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "sacarle",
+      "charStart": 67,
+      "charEnd": 74,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "copias",
+      "charStart": 75,
+      "charEnd": 81,
+      "startS": 4.64,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "efaf24f56b8e1c52/wordtiming-v1"
+}

@@ -1,33 +1,32 @@
 {
-  "hash": "5e38e8d9b1c0357a",
+  "hash": "14c2e05c433a0b21",
   "mode": "clone",
   "request": {
     "id": "es__amb_nofire_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Piloto, tu registro de armas no muestra actividad. ¿Funciona tu gatillo? Por favor, dispara.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, tech-support concern.",
-  "duration": 7.52,
+  "duration": 6.48,
   "sample_rate": 24000,
-  "peak": 0.862,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Piloto, ¿tu registro de armas no muestra actividad? Funciona tu gatillo? Por favor, dispara.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.29,
-    "gain_db": 0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 4.63,
+    "limited_db": 0.08,
+    "measured_before_lufs": -22.63,
     "peak_bound": false
   },
-  "words_for": "5e38e8d9b1c0357a/wordtiming-v1",
+  "asr": "Piloto, tu registro de armas no muestra actividad. Funciona tu gatillo? Por favor dispara.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,99 +39,100 @@
       "text": "Piloto",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.32,
-      "endS": 1.2
+      "startS": 0.16,
+      "endS": 0.88
     },
     {
       "text": "tu",
       "charStart": 8,
       "charEnd": 10,
-      "startS": 1.52,
-      "endS": 1.6
+      "startS": 1.12,
+      "endS": 1.28
     },
     {
       "text": "registro",
       "charStart": 11,
       "charEnd": 19,
-      "startS": 1.6,
-      "endS": 2.08
+      "startS": 1.28,
+      "endS": 1.76
     },
     {
       "text": "de",
       "charStart": 20,
       "charEnd": 22,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 1.76,
+      "endS": 1.84
     },
     {
       "text": "armas",
       "charStart": 23,
       "charEnd": 28,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 1.84,
+      "endS": 2.16
     },
     {
       "text": "no",
       "charStart": 29,
       "charEnd": 31,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "muestra",
       "charStart": 32,
       "charEnd": 39,
-      "startS": 2.8,
-      "endS": 3.12
+      "startS": 2.32,
+      "endS": 2.72
     },
     {
       "text": "actividad",
       "charStart": 40,
       "charEnd": 49,
-      "startS": 3.12,
-      "endS": 3.76
+      "startS": 2.72,
+      "endS": 3.2
     },
     {
       "text": "Funciona",
       "charStart": 52,
       "charEnd": 60,
-      "startS": 3.92,
-      "endS": 4.48
+      "startS": 3.76,
+      "endS": 4.32
     },
     {
       "text": "tu",
       "charStart": 61,
       "charEnd": 63,
-      "startS": 4.48,
-      "endS": 4.56
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "gatillo",
       "charStart": 64,
       "charEnd": 71,
-      "startS": 4.56,
-      "endS": 5.04
+      "startS": 4.4,
+      "endS": 4.88
     },
     {
       "text": "Por",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "favor",
       "charStart": 77,
       "charEnd": 82,
-      "startS": 6.0,
-      "endS": 6.24
+      "startS": 5.44,
+      "endS": 5.68
     },
     {
       "text": "dispara",
       "charStart": 84,
       "charEnd": 91,
-      "startS": 6.48,
-      "endS": 7.28
+      "startS": 5.68,
+      "endS": 6.24
     }
-  ]
+  ],
+  "words_for": "14c2e05c433a0b21/wordtiming-v1"
 }

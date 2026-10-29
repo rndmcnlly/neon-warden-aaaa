@@ -1,0 +1,82 @@
+{
+  "hash": "253c31253ca9cf03",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_pause_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Aquí te espero. Siempre estoy aquí.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Sweet, and just slightly too literal.",
+  "duration": 2.64,
+  "sample_rate": 24000,
+  "peak": 0.762,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.36,
+    "gain_db": 4.3,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.3,
+    "peak_bound": false
+  },
+  "asr": "Aquí te espero. Siempre estoy aquí.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": false,
+    "monotonic": true,
+    "within": false,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Aquí",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "te",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "espero",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "Siempre",
+      "charStart": 16,
+      "charEnd": 23,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "estoy",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 2.0,
+      "endS": 2.64
+    },
+    {
+      "text": "aquí",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.64,
+      "endS": 2.72
+    }
+  ],
+  "words_for": "253c31253ca9cf03/wordtiming-v1"
+}

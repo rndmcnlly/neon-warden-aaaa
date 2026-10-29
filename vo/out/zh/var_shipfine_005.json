@@ -1,0 +1,201 @@
+{
+  "hash": "a826194910f3d315",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_shipfine_005",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "护盾没了。它尽职了，你也没事。租赁协议就没那么没事了。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Proud of the shield, then the fine print at speed.",
+  "duration": 5.36,
+  "sample_rate": 24000,
+  "peak": 0.518,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -5.66,
+    "gain_db": 1.39,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.39,
+    "peak_bound": false
+  },
+  "asr": "护盾没了，他尽职了，你也没事，租赁协议就没那么没事了。",
+  "asr_similarity": 0.957,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "护",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "盾",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "没",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "了",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "它",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "尽",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "职",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "了",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "你",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "也",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "没",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "事",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "租",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "赁",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "协",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "议",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "就",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "没",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "那",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "么",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.72,
+      "endS": 4.8
+    },
+    {
+      "text": "没",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "事",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "了",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.12,
+      "endS": 5.36
+    }
+  ],
+  "words_for": "a826194910f3d315/wordtiming-v1"
+}

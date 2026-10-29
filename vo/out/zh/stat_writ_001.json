@@ -1,0 +1,187 @@
+{
+  "hash": "91783396f7b84bb8",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_writ_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "那道令状已经充满了。再攥着也不会更满。我查过了。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Patient technical support.",
+  "duration": 4.96,
+  "sample_rate": 24000,
+  "peak": 0.681,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.33,
+    "gain_db": 2.53,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.53,
+    "peak_bound": false
+  },
+  "asr": "那道令状已经充满了，再攥着也不会更满。我查过了。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "那",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "道",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "令",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "状",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "已",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "经",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "充",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "满",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "了",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "再",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "攥",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "着",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "也",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "不",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "会",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "更",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "满",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "我",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "查",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "过",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "了",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.72,
+      "endS": 4.88
+    }
+  ],
+  "words_for": "91783396f7b84bb8/wordtiming-v1"
+}

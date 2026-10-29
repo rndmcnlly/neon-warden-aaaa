@@ -1,33 +1,32 @@
 {
-  "hash": "82649a4fffa803a3",
+  "hash": "1da56825eb861a64",
   "mode": "clone",
   "request": {
     "id": "es__tut_fire_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Ahora aprendamos a disparar! Mantén presionado disparar para soltar balas. Las balas van hacia arriba. Arriba es donde están los problemas.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Excited, like unveiling a birthday present.",
-  "duration": 10.56,
+  "duration": 9.04,
   "sample_rate": 24000,
-  "peak": 0.73,
+  "peak": 0.877,
   "clipping_suspect": false,
-  "asr": "Ahora aprendamos a disparar. Mantén presionado disparar para soltar balas. Las balas van hacia arriba. Arriba es donde están los problemas.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.5,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -1.14,
+    "gain_db": 3.7,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.7,
     "peak_bound": false
   },
-  "words_for": "82649a4fffa803a3/wordtiming-v1",
+  "asr": "Ahora aprendamos a disparar. Mantén presionado disparar para soltar balas. Las balas van hacia arriba. Arriba es donde están los problemas.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,148 +39,149 @@
       "text": "Ahora",
       "charStart": 1,
       "charEnd": 6,
-      "startS": 0.64,
-      "endS": 0.96
+      "startS": 0.24,
+      "endS": 0.64
     },
     {
       "text": "aprendamos",
       "charStart": 7,
       "charEnd": 17,
-      "startS": 1.12,
-      "endS": 1.6
+      "startS": 0.64,
+      "endS": 1.2
     },
     {
       "text": "a",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 1.2,
+      "endS": 1.28
     },
     {
       "text": "disparar",
       "charStart": 20,
       "charEnd": 28,
-      "startS": 2.56,
-      "endS": 2.64
+      "startS": 1.28,
+      "endS": 1.84
     },
     {
       "text": "Mantén",
       "charStart": 30,
       "charEnd": 36,
-      "startS": 2.96,
-      "endS": 3.36
+      "startS": 2.48,
+      "endS": 2.8
     },
     {
       "text": "presionado",
       "charStart": 37,
       "charEnd": 47,
-      "startS": 3.44,
-      "endS": 4.0
+      "startS": 2.8,
+      "endS": 3.28
     },
     {
       "text": "disparar",
       "charStart": 48,
       "charEnd": 56,
-      "startS": 4.08,
-      "endS": 4.64
+      "startS": 3.28,
+      "endS": 3.76
     },
     {
       "text": "para",
       "charStart": 57,
       "charEnd": 61,
-      "startS": 4.64,
-      "endS": 4.96
+      "startS": 3.76,
+      "endS": 4.0
     },
     {
       "text": "soltar",
       "charStart": 62,
       "charEnd": 68,
-      "startS": 4.96,
-      "endS": 5.44
+      "startS": 4.0,
+      "endS": 4.4
     },
     {
       "text": "balas",
       "charStart": 69,
       "charEnd": 74,
-      "startS": 5.6,
-      "endS": 6.0
+      "startS": 4.4,
+      "endS": 4.88
     },
     {
       "text": "Las",
       "charStart": 76,
       "charEnd": 79,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 5.36,
+      "endS": 5.6
     },
     {
       "text": "balas",
       "charStart": 80,
       "charEnd": 85,
-      "startS": 6.56,
-      "endS": 6.96
+      "startS": 5.6,
+      "endS": 5.92
     },
     {
       "text": "van",
       "charStart": 86,
       "charEnd": 89,
-      "startS": 6.96,
-      "endS": 7.2
+      "startS": 5.92,
+      "endS": 6.16
     },
     {
       "text": "hacia",
       "charStart": 90,
       "charEnd": 95,
-      "startS": 7.2,
-      "endS": 7.6
+      "startS": 6.16,
+      "endS": 6.4
     },
     {
       "text": "arriba",
       "charStart": 96,
       "charEnd": 102,
-      "startS": 7.6,
-      "endS": 8.0
+      "startS": 6.4,
+      "endS": 6.8
     },
     {
       "text": "Arriba",
       "charStart": 104,
       "charEnd": 110,
-      "startS": 8.4,
-      "endS": 8.64
+      "startS": 7.36,
+      "endS": 7.76
     },
     {
       "text": "es",
       "charStart": 111,
       "charEnd": 113,
-      "startS": 8.96,
-      "endS": 9.12
+      "startS": 7.76,
+      "endS": 7.84
     },
     {
       "text": "donde",
       "charStart": 114,
       "charEnd": 119,
-      "startS": 9.12,
-      "endS": 9.36
+      "startS": 7.84,
+      "endS": 8.0
     },
     {
       "text": "están",
       "charStart": 120,
       "charEnd": 125,
-      "startS": 9.36,
-      "endS": 9.52
+      "startS": 8.0,
+      "endS": 8.24
     },
     {
       "text": "los",
       "charStart": 126,
       "charEnd": 129,
-      "startS": 9.6,
-      "endS": 9.76
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "problemas",
       "charStart": 130,
       "charEnd": 139,
-      "startS": 10.16,
-      "endS": 10.56
+      "startS": 8.4,
+      "endS": 9.04
     }
-  ]
+  ],
+  "words_for": "1da56825eb861a64/wordtiming-v1"
 }

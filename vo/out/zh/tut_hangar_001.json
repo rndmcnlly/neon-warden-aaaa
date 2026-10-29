@@ -1,30 +1,32 @@
 {
-  "hash": "ee4ada8b6fa08451",
+  "hash": "f2f3bbd1703c114e",
   "mode": "clone",
   "request": {
     "id": "zh__tut_hangar_001",
     "seed": 11,
     "language": "Chinese",
     "text": "合同间隙，机库归你使用。武器组件和传感器组件会改变你的飞行方式，涂装、饰边和头盔配色完全由你决定。自我表达是一项员工福利。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Genuinely glad to offer a perk.",
-  "duration": 12.32,
+  "duration": 12.72,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.692,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.29,
-    "gain_db": 6.94,
-    "limited_db": 1.39,
-    "measured_before_lufs": -24.94,
+    "lufs": -18.04,
+    "true_peak_dbtp": -3.16,
+    "gain_db": 2.51,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.51,
     "peak_bound": false
   },
+  "asr": "合同间隙机库归你使用，武器组件和传感器组件会改变你的飞行方式，涂装、饰边和头盔配色完全由你决定。自我表达是一项员工福利。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,389 +39,387 @@
       "text": "合",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.4
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "同",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.4,
-      "endS": 0.56
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "间",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 1.12,
+      "endS": 1.28
     },
     {
       "text": "隙",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.8,
-      "endS": 1.12
+      "startS": 1.28,
+      "endS": 1.84
     },
     {
       "text": "机",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.36,
-      "endS": 1.6
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "库",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "归",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.76,
-      "endS": 2.0
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "你",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.0,
-      "endS": 2.16
+      "startS": 2.48,
+      "endS": 2.64
     },
     {
       "text": "使",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.16,
-      "endS": 2.4
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "用",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.4,
-      "endS": 2.64
+      "startS": 2.88,
+      "endS": 3.12
     },
     {
       "text": "武",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 3.6,
+      "endS": 3.68
     },
     {
       "text": "器",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.96,
-      "endS": 3.2
+      "startS": 3.68,
+      "endS": 3.92
     },
     {
       "text": "组",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 3.92,
+      "endS": 4.08
     },
     {
       "text": "件",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 4.08,
+      "endS": 4.32
     },
     {
       "text": "和",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "传",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.76,
-      "endS": 4.0
+      "startS": 4.4,
+      "endS": 4.56
     },
     {
       "text": "感",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.0,
-      "endS": 4.16
+      "startS": 4.56,
+      "endS": 4.72
     },
     {
       "text": "器",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.16,
-      "endS": 4.32
+      "startS": 4.72,
+      "endS": 4.88
     },
     {
       "text": "组",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.32,
-      "endS": 4.48
+      "startS": 4.88,
+      "endS": 5.04
     },
     {
       "text": "件",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.48,
-      "endS": 4.8
+      "startS": 5.04,
+      "endS": 5.36
     },
     {
       "text": "会",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.88,
-      "endS": 5.04
+      "startS": 5.6,
+      "endS": 5.76
     },
     {
       "text": "改",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.04,
-      "endS": 5.2
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "变",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "你",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.36,
-      "endS": 5.52
+      "startS": 6.08,
+      "endS": 6.16
     },
     {
       "text": "的",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.52,
-      "endS": 5.6
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "飞",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.6,
-      "endS": 5.76
+      "startS": 6.24,
+      "endS": 6.4
     },
     {
       "text": "行",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 6.4,
+      "endS": 6.56
     },
     {
       "text": "方",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 6.56,
+      "endS": 6.72
     },
     {
       "text": "式",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 6.08,
-      "endS": 6.4
+      "startS": 6.72,
+      "endS": 7.04
     },
     {
       "text": "涂",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.72,
-      "endS": 6.96
+      "startS": 7.44,
+      "endS": 7.6
     },
     {
       "text": "装",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.96,
-      "endS": 7.28
+      "startS": 7.6,
+      "endS": 8.0
     },
     {
       "text": "饰",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 7.36,
-      "endS": 7.68
+      "startS": 8.08,
+      "endS": 8.32
     },
     {
       "text": "边",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.68,
-      "endS": 7.84
+      "startS": 8.32,
+      "endS": 8.64
     },
     {
       "text": "和",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 7.84,
-      "endS": 8.0
+      "startS": 8.72,
+      "endS": 8.88
     },
     {
       "text": "头",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.0,
-      "endS": 8.24
+      "startS": 8.88,
+      "endS": 9.04
     },
     {
       "text": "盔",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 8.24,
-      "endS": 8.4
+      "startS": 9.04,
+      "endS": 9.2
     },
     {
       "text": "配",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.4,
-      "endS": 8.64
+      "startS": 9.2,
+      "endS": 9.44
     },
     {
       "text": "色",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 8.64,
-      "endS": 8.88
+      "startS": 9.44,
+      "endS": 9.68
     },
     {
       "text": "完",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 9.12,
-      "endS": 9.2
+      "startS": 9.68,
+      "endS": 9.84
     },
     {
       "text": "全",
       "charStart": 43,
       "charEnd": 44,
-      "startS": 9.2,
-      "endS": 9.44
+      "startS": 9.84,
+      "endS": 10.0
     },
     {
       "text": "由",
       "charStart": 44,
       "charEnd": 45,
-      "startS": 9.44,
-      "endS": 9.6
+      "startS": 10.0,
+      "endS": 10.16
     },
     {
       "text": "你",
       "charStart": 45,
       "charEnd": 46,
-      "startS": 9.6,
-      "endS": 9.68
+      "startS": 10.16,
+      "endS": 10.24
     },
     {
       "text": "决",
       "charStart": 46,
       "charEnd": 47,
-      "startS": 9.68,
-      "endS": 9.84
+      "startS": 10.24,
+      "endS": 10.4
     },
     {
       "text": "定",
       "charStart": 47,
       "charEnd": 48,
-      "startS": 9.84,
-      "endS": 10.08
+      "startS": 10.4,
+      "endS": 10.64
     },
     {
       "text": "自",
       "charStart": 49,
       "charEnd": 50,
-      "startS": 10.24,
-      "endS": 10.4
+      "startS": 10.72,
+      "endS": 10.88
     },
     {
       "text": "我",
       "charStart": 50,
       "charEnd": 51,
-      "startS": 10.48,
-      "endS": 10.56
+      "startS": 11.04,
+      "endS": 11.12
     },
     {
       "text": "表",
       "charStart": 51,
       "charEnd": 52,
-      "startS": 10.56,
-      "endS": 10.72
+      "startS": 11.12,
+      "endS": 11.2
     },
     {
       "text": "达",
       "charStart": 52,
       "charEnd": 53,
-      "startS": 10.72,
-      "endS": 10.96
+      "startS": 11.2,
+      "endS": 11.52
     },
     {
       "text": "是",
       "charStart": 53,
       "charEnd": 54,
-      "startS": 10.96,
-      "endS": 11.2
+      "startS": 11.52,
+      "endS": 11.68
     },
     {
       "text": "一",
       "charStart": 54,
       "charEnd": 55,
-      "startS": 11.2,
-      "endS": 11.28
+      "startS": 11.68,
+      "endS": 11.76
     },
     {
       "text": "项",
       "charStart": 55,
       "charEnd": 56,
-      "startS": 11.28,
-      "endS": 11.44
+      "startS": 11.76,
+      "endS": 11.92
     },
     {
       "text": "员",
       "charStart": 56,
       "charEnd": 57,
-      "startS": 11.44,
-      "endS": 11.6
+      "startS": 11.92,
+      "endS": 12.0
     },
     {
       "text": "工",
       "charStart": 57,
       "charEnd": 58,
-      "startS": 11.6,
-      "endS": 11.76
+      "startS": 12.0,
+      "endS": 12.16
     },
     {
       "text": "福",
       "charStart": 58,
       "charEnd": 59,
-      "startS": 11.76,
-      "endS": 12.0
+      "startS": 12.16,
+      "endS": 12.4
     },
     {
       "text": "利",
       "charStart": 59,
       "charEnd": 60,
-      "startS": 12.0,
-      "endS": 12.24
+      "startS": 12.4,
+      "endS": 12.64
     }
   ],
-  "words_for": "ee4ada8b6fa08451/wordtiming-v1",
-  "asr": "合同间隙机库归你使用。武器组件和传感器组件会改变你的飞行方式。涂装、饰边和头盔配色完全由你决定。自我表达是一项员工福利。",
-  "asr_similarity": 1.0
+  "words_for": "f2f3bbd1703c114e/wordtiming-v1"
 }

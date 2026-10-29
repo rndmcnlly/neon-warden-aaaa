@@ -1,0 +1,187 @@
+{
+  "hash": "85bd377c772eb589",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_pickup_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "散射！子弹更多，预算不变。请让每一颗都朝着目标打。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Excited product demo, then a request.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.708,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.97,
+    "gain_db": 1.71,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.71,
+    "peak_bound": false
+  },
+  "asr": "散射子弹更多，预算不变，请让每一颗都朝着目标打。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "散",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "射",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "子",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "弹",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "更",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "多",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "预",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "算",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "不",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "变",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "请",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "让",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "每",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "一",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "颗",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "都",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "朝",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "着",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "目",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "标",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "打",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.88,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "85bd377c772eb589/wordtiming-v1"
+}

@@ -1,5 +1,5 @@
 {
-  "hash": "d89c917b557287dd",
+  "hash": "0de464d287dd2bb0",
   "mode": "clone",
   "request": {
     "id": "en__tut_disarm_001",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "Disarmed. A disarmed asset stops firing and leaves the lane. Disarms are paid at forty percent of a kill. A partial deliverable is still a deliverable.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Reads the pay rate as good news.",
   "duration": 8.96,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.826,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.12,
-    "true_peak_dbtp": -1.41,
-    "gain_db": 5.57,
-    "limited_db": 1.1,
-    "measured_before_lufs": -23.57,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.58,
+    "gain_db": 2.8,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.8,
     "peak_bound": false
   },
+  "asr": "Disarmed: A disarmed asset stops firing and leaves the lane. Disarms are paid at forty percent of a kill. A partial deliverable is still a deliverable.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,28 +39,28 @@
       "text": "Disarmed",
       "charStart": 0,
       "charEnd": 8,
-      "startS": 0.16,
-      "endS": 0.8
+      "startS": 0.56,
+      "endS": 1.28
     },
     {
       "text": "A",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 1.2,
-      "endS": 1.28
+      "startS": 1.44,
+      "endS": 1.52
     },
     {
       "text": "disarmed",
       "charStart": 12,
       "charEnd": 20,
-      "startS": 1.28,
-      "endS": 1.76
+      "startS": 1.52,
+      "endS": 1.92
     },
     {
       "text": "asset",
       "charStart": 21,
       "charEnd": 26,
-      "startS": 1.84,
+      "startS": 1.92,
       "endS": 2.24
     },
     {
@@ -80,143 +82,141 @@
       "charStart": 40,
       "charEnd": 43,
       "startS": 3.04,
-      "endS": 3.12
+      "endS": 3.2
     },
     {
       "text": "leaves",
       "charStart": 44,
       "charEnd": 50,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 3.2,
+      "endS": 3.44
     },
     {
       "text": "the",
       "charStart": 51,
       "charEnd": 54,
-      "startS": 3.36,
+      "startS": 3.44,
       "endS": 3.52
     },
     {
       "text": "lane",
       "charStart": 55,
       "charEnd": 59,
-      "startS": 3.68,
-      "endS": 3.92
+      "startS": 3.52,
+      "endS": 3.84
     },
     {
       "text": "Disarms",
       "charStart": 61,
       "charEnd": 68,
-      "startS": 4.24,
-      "endS": 4.72
+      "startS": 4.48,
+      "endS": 4.88
     },
     {
       "text": "are",
       "charStart": 69,
       "charEnd": 72,
-      "startS": 4.72,
-      "endS": 4.8
+      "startS": 4.96,
+      "endS": 5.04
     },
     {
       "text": "paid",
       "charStart": 73,
       "charEnd": 77,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 5.04,
+      "endS": 5.2
     },
     {
       "text": "at",
       "charStart": 78,
       "charEnd": 80,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 5.2,
+      "endS": 5.28
     },
     {
       "text": "forty",
       "charStart": 81,
       "charEnd": 86,
-      "startS": 5.12,
-      "endS": 5.44
+      "startS": 5.28,
+      "endS": 5.6
     },
     {
       "text": "percent",
       "charStart": 87,
       "charEnd": 94,
-      "startS": 5.44,
-      "endS": 5.76
+      "startS": 5.6,
+      "endS": 5.92
     },
     {
       "text": "of",
       "charStart": 95,
       "charEnd": 97,
-      "startS": 5.76,
-      "endS": 5.84
+      "startS": 5.92,
+      "endS": 6.0
     },
     {
       "text": "a",
       "charStart": 98,
       "charEnd": 99,
-      "startS": 5.84,
-      "endS": 5.92
+      "startS": 6.0,
+      "endS": 6.08
     },
     {
       "text": "kill",
       "charStart": 100,
       "charEnd": 104,
-      "startS": 5.92,
-      "endS": 6.24
+      "startS": 6.08,
+      "endS": 6.4
     },
     {
       "text": "A",
       "charStart": 106,
       "charEnd": 107,
-      "startS": 6.64,
-      "endS": 6.72
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "partial",
       "charStart": 108,
       "charEnd": 115,
-      "startS": 6.72,
-      "endS": 7.12
+      "startS": 6.88,
+      "endS": 7.28
     },
     {
       "text": "deliverable",
       "charStart": 116,
       "charEnd": 127,
-      "startS": 7.12,
-      "endS": 7.6
+      "startS": 7.28,
+      "endS": 7.84
     },
     {
       "text": "is",
       "charStart": 128,
       "charEnd": 130,
-      "startS": 7.68,
-      "endS": 7.76
+      "startS": 7.84,
+      "endS": 8.0
     },
     {
       "text": "still",
       "charStart": 131,
       "charEnd": 136,
-      "startS": 7.76,
-      "endS": 8.08
+      "startS": 8.0,
+      "endS": 8.24
     },
     {
       "text": "a",
       "charStart": 137,
       "charEnd": 138,
-      "startS": 8.08,
-      "endS": 8.16
+      "startS": 8.24,
+      "endS": 8.32
     },
     {
       "text": "deliverable",
       "charStart": 139,
       "charEnd": 150,
-      "startS": 8.16,
-      "endS": 8.88
+      "startS": 8.32,
+      "endS": 8.96
     }
   ],
-  "words_for": "d89c917b557287dd/wordtiming-v1",
-  "asr": "Disarmed, a disarmed asset stops firing and leaves the lane. Disarms are paid at forty percent of a kill. A partial deliverable is still a deliverable.",
-  "asr_similarity": 1.0
+  "words_for": "0de464d287dd2bb0/wordtiming-v1"
 }

@@ -1,33 +1,32 @@
 {
-  "hash": "4473d591ab0aad6a",
+  "hash": "ab2af3a57942a204",
   "mode": "clone",
   "request": {
     "id": "es__tut_fire_002",
     "seed": 11,
     "language": "Spanish",
     "text": "Tus balas son cian. Las balas que te disparan son rosas. Las balas rosas son malas. Las doradas también son malas. En general, las balas son malas, salvo las tuyas.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Captain Obvious, completely sincere, a careful list.",
-  "duration": 14.56,
+  "duration": 11.68,
   "sample_rate": 24000,
-  "peak": 0.791,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Los balas son cian, las balas que te disparan son rosas, las balas rosas son malas, las doradas también son malas, en general, las balas son malas, sal balas tuyas.",
-  "asr_similarity": 0.9,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.91,
-    "gain_db": -0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.15,
+    "gain_db": 5.11,
+    "limited_db": 0.63,
+    "measured_before_lufs": -23.11,
     "peak_bound": false
   },
-  "words_for": "4473d591ab0aad6a/wordtiming-v1",
+  "asr": "Tus balas son cian. Las balas que te disparan son rosas. Las balas rosas son malas. Las doradas también son malas. En general, las balas son malas, salvo las tuyas.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,211 +39,212 @@
       "text": "Tus",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.8,
-      "endS": 0.88
+      "startS": 0.16,
+      "endS": 0.4
     },
     {
       "text": "balas",
       "charStart": 4,
       "charEnd": 9,
-      "startS": 1.12,
-      "endS": 1.44
+      "startS": 0.4,
+      "endS": 0.8
     },
     {
       "text": "son",
       "charStart": 10,
       "charEnd": 13,
-      "startS": 1.44,
-      "endS": 1.76
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "cian",
       "charStart": 14,
       "charEnd": 18,
-      "startS": 1.76,
-      "endS": 2.32
+      "startS": 0.96,
+      "endS": 1.44
     },
     {
       "text": "Las",
       "charStart": 20,
       "charEnd": 23,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "balas",
       "charStart": 24,
       "charEnd": 29,
-      "startS": 3.12,
-      "endS": 3.52
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "que",
       "charStart": 30,
       "charEnd": 33,
-      "startS": 3.52,
-      "endS": 3.6
+      "startS": 2.48,
+      "endS": 2.56
     },
     {
       "text": "te",
       "charStart": 34,
       "charEnd": 36,
-      "startS": 3.6,
-      "endS": 3.68
+      "startS": 2.56,
+      "endS": 2.72
     },
     {
       "text": "disparan",
       "charStart": 37,
       "charEnd": 45,
-      "startS": 3.68,
-      "endS": 4.32
+      "startS": 2.72,
+      "endS": 3.2
     },
     {
       "text": "son",
       "charStart": 46,
       "charEnd": 49,
-      "startS": 4.32,
-      "endS": 4.48
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "rosas",
       "charStart": 50,
       "charEnd": 55,
-      "startS": 4.56,
-      "endS": 5.12
+      "startS": 3.36,
+      "endS": 3.92
     },
     {
       "text": "Las",
       "charStart": 57,
       "charEnd": 60,
-      "startS": 5.92,
-      "endS": 6.16
+      "startS": 4.4,
+      "endS": 4.64
     },
     {
       "text": "balas",
       "charStart": 61,
       "charEnd": 66,
-      "startS": 6.16,
-      "endS": 6.24
+      "startS": 4.64,
+      "endS": 4.96
     },
     {
       "text": "rosas",
       "charStart": 67,
       "charEnd": 72,
-      "startS": 6.56,
-      "endS": 6.88
+      "startS": 4.96,
+      "endS": 5.2
     },
     {
       "text": "son",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "malas",
       "charStart": 77,
       "charEnd": 82,
-      "startS": 7.44,
-      "endS": 7.68
+      "startS": 5.44,
+      "endS": 6.0
     },
     {
       "text": "Las",
       "charStart": 84,
       "charEnd": 87,
-      "startS": 8.0,
-      "endS": 8.24
+      "startS": 6.32,
+      "endS": 6.56
     },
     {
       "text": "doradas",
       "charStart": 88,
       "charEnd": 95,
-      "startS": 8.24,
-      "endS": 8.56
+      "startS": 6.56,
+      "endS": 6.96
     },
     {
       "text": "también",
       "charStart": 96,
       "charEnd": 103,
-      "startS": 8.8,
-      "endS": 9.28
+      "startS": 6.96,
+      "endS": 7.28
     },
     {
       "text": "son",
       "charStart": 104,
       "charEnd": 107,
-      "startS": 9.28,
-      "endS": 9.6
+      "startS": 7.28,
+      "endS": 7.52
     },
     {
       "text": "malas",
       "charStart": 108,
       "charEnd": 113,
-      "startS": 9.6,
-      "endS": 10.08
+      "startS": 7.52,
+      "endS": 8.08
     },
     {
       "text": "En",
       "charStart": 115,
       "charEnd": 117,
-      "startS": 10.48,
-      "endS": 10.64
+      "startS": 8.4,
+      "endS": 8.56
     },
     {
       "text": "general",
       "charStart": 118,
       "charEnd": 125,
-      "startS": 10.72,
-      "endS": 11.12
+      "startS": 8.56,
+      "endS": 9.04
     },
     {
       "text": "las",
       "charStart": 127,
       "charEnd": 130,
-      "startS": 11.6,
-      "endS": 11.84
+      "startS": 9.12,
+      "endS": 9.36
     },
     {
       "text": "balas",
       "charStart": 131,
       "charEnd": 136,
-      "startS": 11.84,
-      "endS": 12.16
+      "startS": 9.36,
+      "endS": 9.68
     },
     {
       "text": "son",
       "charStart": 137,
       "charEnd": 140,
-      "startS": 12.16,
-      "endS": 12.48
+      "startS": 9.68,
+      "endS": 9.84
     },
     {
       "text": "malas",
       "charStart": 141,
       "charEnd": 146,
-      "startS": 12.48,
-      "endS": 12.96
+      "startS": 9.84,
+      "endS": 10.32
     },
     {
       "text": "salvo",
       "charStart": 148,
       "charEnd": 153,
-      "startS": 13.2,
-      "endS": 13.6
+      "startS": 10.4,
+      "endS": 10.8
     },
     {
       "text": "las",
       "charStart": 154,
       "charEnd": 157,
-      "startS": 13.76,
-      "endS": 13.92
+      "startS": 10.8,
+      "endS": 11.04
     },
     {
       "text": "tuyas",
       "charStart": 158,
       "charEnd": 163,
-      "startS": 13.92,
-      "endS": 14.48
+      "startS": 11.04,
+      "endS": 11.52
     }
-  ]
+  ],
+  "words_for": "ab2af3a57942a204/wordtiming-v1"
 }

@@ -1,5 +1,5 @@
 {
-  "hash": "4178e65868bc3036",
+  "hash": "4d2051c862e8fcf1",
   "mode": "clone",
   "request": {
     "id": "en__tut_done_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Onboarding complete! Your contract is now active. Please proceed to Outer Drift. And remember: stay in your lane, Pilot.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Graduation-day pride; the last sentence is a catchphrase.",
-  "duration": 7.84,
+  "duration": 8.56,
   "sample_rate": 24000,
-  "peak": 0.827,
+  "peak": 0.661,
   "clipping_suspect": false,
-  "asr": "Onboarding complete. Your contract is now active. Please proceed to outer drift, and remember, stay in your lane, pilot.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.33,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 1.98,
-    "limited_db": 2.08,
-    "measured_before_lufs": -20.13,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.5,
+    "gain_db": 2.63,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.63,
     "peak_bound": false
   },
-  "words_for": "4178e65868bc3036/wordtiming-v1",
+  "asr": "Onboarding complete. Your contract is now active. Please proceed to outer drift, and remember, stay in your lane, pilot.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,134 +39,135 @@
       "text": "Onboarding",
       "charStart": 0,
       "charEnd": 10,
-      "startS": 0.16,
-      "endS": 0.64
+      "startS": 0.64,
+      "endS": 1.12
     },
     {
       "text": "complete",
       "charStart": 11,
       "charEnd": 19,
-      "startS": 0.64,
-      "endS": 1.2
+      "startS": 1.12,
+      "endS": 1.68
     },
     {
       "text": "Your",
       "charStart": 21,
       "charEnd": 25,
-      "startS": 1.44,
-      "endS": 1.68
+      "startS": 2.32,
+      "endS": 2.4
     },
     {
       "text": "contract",
       "charStart": 26,
       "charEnd": 34,
-      "startS": 1.68,
-      "endS": 2.24
+      "startS": 2.4,
+      "endS": 2.88
     },
     {
       "text": "is",
       "charStart": 35,
       "charEnd": 37,
-      "startS": 2.24,
-      "endS": 2.32
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "now",
       "charStart": 38,
       "charEnd": 41,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 3.04,
+      "endS": 3.2
     },
     {
       "text": "active",
       "charStart": 42,
       "charEnd": 48,
-      "startS": 2.56,
-      "endS": 3.12
+      "startS": 3.28,
+      "endS": 3.76
     },
     {
       "text": "Please",
       "charStart": 50,
       "charEnd": 56,
-      "startS": 3.52,
-      "endS": 3.84
+      "startS": 4.16,
+      "endS": 4.4
     },
     {
       "text": "proceed",
       "charStart": 57,
       "charEnd": 64,
-      "startS": 3.84,
-      "endS": 4.32
+      "startS": 4.4,
+      "endS": 4.8
     },
     {
       "text": "to",
       "charStart": 65,
       "charEnd": 67,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 4.8,
+      "endS": 4.88
     },
     {
       "text": "Outer",
       "charStart": 68,
       "charEnd": 73,
-      "startS": 4.48,
-      "endS": 4.72
+      "startS": 4.96,
+      "endS": 5.12
     },
     {
       "text": "Drift",
       "charStart": 74,
       "charEnd": 79,
-      "startS": 4.72,
-      "endS": 5.12
+      "startS": 5.12,
+      "endS": 5.6
     },
     {
       "text": "And",
       "charStart": 81,
       "charEnd": 84,
-      "startS": 5.36,
-      "endS": 5.52
+      "startS": 6.0,
+      "endS": 6.08
     },
     {
       "text": "remember",
       "charStart": 85,
       "charEnd": 93,
-      "startS": 5.52,
-      "endS": 6.08
+      "startS": 6.08,
+      "endS": 6.56
     },
     {
       "text": "stay",
       "charStart": 95,
       "charEnd": 99,
-      "startS": 6.24,
-      "endS": 6.56
+      "startS": 6.88,
+      "endS": 7.28
     },
     {
       "text": "in",
       "charStart": 100,
       "charEnd": 102,
-      "startS": 6.56,
-      "endS": 6.8
+      "startS": 7.28,
+      "endS": 7.36
     },
     {
       "text": "your",
       "charStart": 103,
       "charEnd": 107,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "lane",
       "charStart": 108,
       "charEnd": 112,
-      "startS": 6.96,
-      "endS": 7.2
+      "startS": 7.52,
+      "endS": 7.92
     },
     {
       "text": "Pilot",
       "charStart": 114,
       "charEnd": 119,
-      "startS": 7.2,
-      "endS": 7.84
+      "startS": 8.0,
+      "endS": 8.48
     }
-  ]
+  ],
+  "words_for": "4d2051c862e8fcf1/wordtiming-v1"
 }

@@ -1,5 +1,5 @@
 {
-  "hash": "6db615ffa45bdbc5",
+  "hash": "b16580cf49bd1a54",
   "mode": "clone",
   "request": {
     "id": "en__amb_fight_003",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "You're doing great. Your predecessor was also doing great at this point.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, encouraging, unaware of how it sounds.",
-  "duration": 4.4,
+  "duration": 4.56,
   "sample_rate": 24000,
-  "peak": 0.718,
+  "peak": 0.761,
   "clipping_suspect": false,
-  "asr": "You're doing great. Your predecessor was also doing great at this point.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.88,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -2.36,
+    "gain_db": 2.72,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.72,
     "peak_bound": false
   },
-  "words_for": "6db615ffa45bdbc5/wordtiming-v1",
+  "asr": "You're doing great. Your predecessor was also doing great at this point.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,14 +39,14 @@
       "text": "You're",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "doing",
       "charStart": 7,
       "charEnd": 12,
-      "startS": 0.4,
+      "startS": 0.8,
       "endS": 1.12
     },
     {
@@ -55,70 +54,71 @@
       "charStart": 13,
       "charEnd": 18,
       "startS": 1.12,
-      "endS": 1.2
+      "endS": 1.52
     },
     {
       "text": "Your",
       "charStart": 20,
       "charEnd": 24,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "predecessor",
       "charStart": 25,
       "charEnd": 36,
-      "startS": 1.76,
-      "endS": 2.4
+      "startS": 2.32,
+      "endS": 2.96
     },
     {
       "text": "was",
       "charStart": 37,
       "charEnd": 40,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 2.96,
+      "endS": 3.12
     },
     {
       "text": "also",
       "charStart": 41,
       "charEnd": 45,
-      "startS": 2.72,
-      "endS": 3.04
+      "startS": 3.12,
+      "endS": 3.44
     },
     {
       "text": "doing",
       "charStart": 46,
       "charEnd": 51,
-      "startS": 3.04,
-      "endS": 3.28
+      "startS": 3.44,
+      "endS": 3.68
     },
     {
       "text": "great",
       "charStart": 52,
       "charEnd": 57,
-      "startS": 3.28,
-      "endS": 3.52
+      "startS": 3.68,
+      "endS": 3.92
     },
     {
       "text": "at",
       "charStart": 58,
       "charEnd": 60,
-      "startS": 3.52,
-      "endS": 3.6
+      "startS": 3.92,
+      "endS": 4.0
     },
     {
       "text": "this",
       "charStart": 61,
       "charEnd": 65,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "point",
       "charStart": 66,
       "charEnd": 71,
-      "startS": 3.84,
-      "endS": 4.32
+      "startS": 4.16,
+      "endS": 4.56
     }
-  ]
+  ],
+  "words_for": "b16580cf49bd1a54/wordtiming-v1"
 }

@@ -1,33 +1,32 @@
 {
-  "hash": "c245a13e751be497",
+  "hash": "732962510765f1c3",
   "mode": "clone",
   "request": {
     "id": "es__flash_ai_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Oh! Ese cristal es una grabadora de vuelo recuperada. Por favor, no la abras. La estás abriendo. Se está abriendo.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Rising alarm under the customer-service smile, faster each sentence.",
-  "duration": 8.32,
+  "duration": 7.84,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.839,
   "clipping_suspect": false,
-  "asr": "Oh, ese cristal es una grabadora de viola recuperada, por favor no la abras. La estás abriendo, se está abriendo.",
-  "asr_similarity": 0.95,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.05,
-    "true_peak_dbtp": -1.3,
-    "gain_db": 0.96,
-    "limited_db": 0.91,
-    "measured_before_lufs": -18.96,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 4.69,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.69,
     "peak_bound": false
   },
-  "words_for": "c245a13e751be497/wordtiming-v1",
+  "asr": "Oh, ese cristal es una grabadora de vuelo recuperada. Por favor no la abrás, la estás abriendo, se está abriendo.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,15 +39,15 @@
       "text": "Oh",
       "charStart": 1,
       "charEnd": 3,
-      "startS": 0.4,
-      "endS": 0.72
+      "startS": 0.08,
+      "endS": 0.48
     },
     {
       "text": "Ese",
       "charStart": 5,
       "charEnd": 8,
-      "startS": 0.96,
-      "endS": 1.2
+      "startS": 1.04,
+      "endS": 1.28
     },
     {
       "text": "cristal",
@@ -61,120 +60,121 @@
       "text": "es",
       "charStart": 17,
       "charEnd": 19,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 1.68,
+      "endS": 1.76
     },
     {
       "text": "una",
       "charStart": 20,
       "charEnd": 23,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "grabadora",
       "charStart": 24,
       "charEnd": 33,
-      "startS": 2.08,
+      "startS": 1.92,
       "endS": 2.48
     },
     {
       "text": "de",
       "charStart": 34,
       "charEnd": 36,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.48,
+      "endS": 2.56
     },
     {
       "text": "vuelo",
       "charStart": 37,
       "charEnd": 42,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 2.56,
+      "endS": 2.88
     },
     {
       "text": "recuperada",
       "charStart": 43,
       "charEnd": 53,
-      "startS": 3.2,
-      "endS": 3.92
+      "startS": 2.88,
+      "endS": 3.6
     },
     {
       "text": "Por",
       "charStart": 55,
       "charEnd": 58,
-      "startS": 4.16,
-      "endS": 4.32
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "favor",
       "charStart": 59,
       "charEnd": 64,
-      "startS": 4.32,
-      "endS": 4.56
+      "startS": 4.16,
+      "endS": 4.48
     },
     {
       "text": "no",
       "charStart": 66,
       "charEnd": 68,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 4.48,
+      "endS": 4.56
     },
     {
       "text": "la",
       "charStart": 69,
       "charEnd": 71,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 4.56,
+      "endS": 4.8
     },
     {
       "text": "abras",
       "charStart": 72,
       "charEnd": 77,
-      "startS": 5.28,
-      "endS": 5.6
+      "startS": 4.8,
+      "endS": 5.2
     },
     {
       "text": "La",
       "charStart": 79,
       "charEnd": 81,
-      "startS": 5.84,
-      "endS": 6.0
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "estás",
       "charStart": 82,
       "charEnd": 87,
-      "startS": 6.0,
-      "endS": 6.16
+      "startS": 5.6,
+      "endS": 5.84
     },
     {
       "text": "abriendo",
       "charStart": 88,
       "charEnd": 96,
-      "startS": 6.4,
-      "endS": 6.96
+      "startS": 5.84,
+      "endS": 6.32
     },
     {
       "text": "Se",
       "charStart": 98,
       "charEnd": 100,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "está",
       "charStart": 101,
       "charEnd": 105,
-      "startS": 7.2,
-      "endS": 7.44
+      "startS": 7.04,
+      "endS": 7.36
     },
     {
       "text": "abriendo",
       "charStart": 106,
       "charEnd": 114,
-      "startS": 8.08,
-      "endS": 8.16
+      "startS": 7.36,
+      "endS": 7.84
     }
-  ]
+  ],
+  "words_for": "732962510765f1c3/wordtiming-v1"
 }

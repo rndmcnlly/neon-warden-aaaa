@@ -1,0 +1,124 @@
+{
+  "hash": "da96ceb58b58010b",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_pickup_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Shield up! It's like a hug, if a hug had a deductible.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Affectionate, then the deductible at speed.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.829,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.62,
+    "gain_db": 2.83,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.83,
+    "peak_bound": false
+  },
+  "asr": "Shield up! It's like a hug. If a hug had a deductible.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Shield",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "up",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "It's",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "like",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "a",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "hug",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "if",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "a",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "hug",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "had",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "a",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "deductible",
+      "charStart": 43,
+      "charEnd": 53,
+      "startS": 3.84,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "da96ceb58b58010b/wordtiming-v1"
+}

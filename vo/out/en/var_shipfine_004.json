@@ -1,0 +1,145 @@
+{
+  "hash": "2649aac8a3ba86b7",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_004",
+    "seed": 11,
+    "language": "English",
+    "text": "That was the shield. It's okay to be sad about the shield. You're fine, though.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Gently consoling, as if about a houseplant.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.06,
+    "true_peak_dbtp": -1.45,
+    "gain_db": 4.44,
+    "limited_db": 0.84,
+    "measured_before_lufs": -22.44,
+    "peak_bound": false
+  },
+  "asr": "That was the shield. It's okay to be sad about the shield. You're fine though.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "That",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "was",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "the",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "shield",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "It's",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "okay",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "to",
+      "charStart": 31,
+      "charEnd": 33,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "be",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "sad",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "about",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "the",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "shield",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "You're",
+      "charStart": 59,
+      "charEnd": 65,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "fine",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 4.4,
+      "endS": 4.8
+    },
+    {
+      "text": "though",
+      "charStart": 72,
+      "charEnd": 78,
+      "startS": 4.8,
+      "endS": 5.04
+    }
+  ],
+  "words_for": "2649aac8a3ba86b7/wordtiming-v1"
+}

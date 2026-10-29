@@ -1,30 +1,32 @@
 {
-  "hash": "f83b16342042d292",
+  "hash": "8635ae06429f9fc4",
   "mode": "clone",
   "request": {
     "id": "es__tut_hangar_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Entre contratos, el hangar es tuyo. Los paquetes de armas y de sensores cambian tu forma de volar, y la pintura, los acabados y los colores de tu casco dependen completamente de ti. La libre expresión es una prestación laboral.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Genuinely glad to offer a perk.",
-  "duration": 15.84,
+  "duration": 14.48,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.871,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.09,
-    "true_peak_dbtp": -1.2,
-    "gain_db": 6.86,
-    "limited_db": 2.2,
-    "measured_before_lufs": -24.86,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 4.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.0,
     "peak_bound": false
   },
+  "asr": "Entre contratos, el hangar es tuyo. Los paquetes de armas y descensores cambian tu forma de volar, y la pintura, los acabados y los colores de tu casco dependen completamente de ti. La libre expresión es una prestación laboral.",
+  "asr_similarity": 0.962,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,21 +39,21 @@
       "text": "Entre",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.08,
-      "endS": 0.32
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "contratos",
       "charStart": 6,
       "charEnd": 15,
-      "startS": 0.32,
-      "endS": 1.12
+      "startS": 0.48,
+      "endS": 1.2
     },
     {
       "text": "el",
       "charStart": 17,
       "charEnd": 19,
-      "startS": 1.36,
+      "startS": 1.52,
       "endS": 1.6
     },
     {
@@ -66,255 +68,253 @@
       "charStart": 27,
       "charEnd": 29,
       "startS": 1.92,
-      "endS": 2.16
+      "endS": 2.08
     },
     {
       "text": "tuyo",
       "charStart": 30,
       "charEnd": 34,
-      "startS": 2.16,
-      "endS": 2.72
+      "startS": 2.08,
+      "endS": 2.4
     },
     {
       "text": "Los",
       "charStart": 36,
       "charEnd": 39,
-      "startS": 3.04,
-      "endS": 3.28
+      "startS": 3.2,
+      "endS": 3.44
     },
     {
       "text": "paquetes",
       "charStart": 40,
       "charEnd": 48,
-      "startS": 3.28,
-      "endS": 3.76
+      "startS": 3.44,
+      "endS": 3.84
     },
     {
       "text": "de",
       "charStart": 49,
       "charEnd": 51,
       "startS": 3.84,
-      "endS": 3.92
+      "endS": 4.0
     },
     {
       "text": "armas",
       "charStart": 52,
       "charEnd": 57,
-      "startS": 3.92,
+      "startS": 4.0,
       "endS": 4.32
     },
     {
       "text": "y",
       "charStart": 58,
       "charEnd": 59,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "de",
       "charStart": 60,
       "charEnd": 62,
-      "startS": 4.48,
-      "endS": 4.56
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "sensores",
       "charStart": 63,
       "charEnd": 71,
-      "startS": 4.56,
-      "endS": 5.2
+      "startS": 4.48,
+      "endS": 5.04
     },
     {
       "text": "cambian",
       "charStart": 72,
       "charEnd": 79,
-      "startS": 5.28,
-      "endS": 5.68
+      "startS": 5.04,
+      "endS": 5.36
     },
     {
       "text": "tu",
       "charStart": 80,
       "charEnd": 82,
-      "startS": 5.68,
-      "endS": 5.76
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "forma",
       "charStart": 83,
       "charEnd": 88,
-      "startS": 5.76,
-      "endS": 6.08
+      "startS": 5.44,
+      "endS": 5.76
     },
     {
       "text": "de",
       "charStart": 89,
       "charEnd": 91,
-      "startS": 6.16,
-      "endS": 6.24
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "volar",
       "charStart": 92,
       "charEnd": 97,
-      "startS": 6.24,
-      "endS": 6.72
+      "startS": 5.92,
+      "endS": 6.32
     },
     {
       "text": "y",
       "charStart": 99,
       "charEnd": 100,
-      "startS": 7.04,
-      "endS": 7.12
+      "startS": 6.72,
+      "endS": 6.8
     },
     {
       "text": "la",
       "charStart": 101,
       "charEnd": 103,
-      "startS": 7.12,
-      "endS": 7.28
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "pintura",
       "charStart": 104,
       "charEnd": 111,
-      "startS": 7.28,
-      "endS": 7.92
+      "startS": 6.88,
+      "endS": 7.44
     },
     {
       "text": "los",
       "charStart": 113,
       "charEnd": 116,
-      "startS": 8.24,
-      "endS": 8.4
+      "startS": 7.76,
+      "endS": 8.0
     },
     {
       "text": "acabados",
       "charStart": 117,
       "charEnd": 125,
-      "startS": 8.4,
-      "endS": 9.04
+      "startS": 8.0,
+      "endS": 8.48
     },
     {
       "text": "y",
       "charStart": 126,
       "charEnd": 127,
-      "startS": 9.04,
-      "endS": 9.12
+      "startS": 8.48,
+      "endS": 8.56
     },
     {
       "text": "los",
       "charStart": 128,
       "charEnd": 131,
-      "startS": 9.12,
-      "endS": 9.28
+      "startS": 8.56,
+      "endS": 8.72
     },
     {
       "text": "colores",
       "charStart": 132,
       "charEnd": 139,
-      "startS": 9.28,
-      "endS": 9.76
+      "startS": 8.72,
+      "endS": 9.04
     },
     {
       "text": "de",
       "charStart": 140,
       "charEnd": 142,
-      "startS": 9.76,
-      "endS": 9.84
+      "startS": 9.04,
+      "endS": 9.12
     },
     {
       "text": "tu",
       "charStart": 143,
       "charEnd": 145,
-      "startS": 9.84,
-      "endS": 10.0
+      "startS": 9.12,
+      "endS": 9.28
     },
     {
       "text": "casco",
       "charStart": 146,
       "charEnd": 151,
-      "startS": 10.0,
-      "endS": 10.48
+      "startS": 9.28,
+      "endS": 9.6
     },
     {
       "text": "dependen",
       "charStart": 152,
       "charEnd": 160,
-      "startS": 10.48,
-      "endS": 10.96
+      "startS": 9.6,
+      "endS": 10.0
     },
     {
       "text": "completamente",
       "charStart": 161,
       "charEnd": 174,
-      "startS": 10.96,
-      "endS": 11.76
+      "startS": 10.0,
+      "endS": 10.72
     },
     {
       "text": "de",
       "charStart": 175,
       "charEnd": 177,
-      "startS": 11.76,
-      "endS": 11.84
+      "startS": 10.72,
+      "endS": 10.8
     },
     {
       "text": "ti",
       "charStart": 178,
       "charEnd": 180,
-      "startS": 11.84,
-      "endS": 12.24
+      "startS": 10.8,
+      "endS": 11.2
     },
     {
       "text": "La",
       "charStart": 182,
       "charEnd": 184,
-      "startS": 12.72,
-      "endS": 12.8
+      "startS": 11.92,
+      "endS": 12.08
     },
     {
       "text": "libre",
       "charStart": 185,
       "charEnd": 190,
-      "startS": 12.8,
-      "endS": 13.12
+      "startS": 12.08,
+      "endS": 12.32
     },
     {
       "text": "expresión",
       "charStart": 191,
       "charEnd": 200,
-      "startS": 13.2,
-      "endS": 13.84
+      "startS": 12.32,
+      "endS": 12.88
     },
     {
       "text": "es",
       "charStart": 201,
       "charEnd": 203,
-      "startS": 13.92,
-      "endS": 14.0
+      "startS": 12.88,
+      "endS": 13.04
     },
     {
       "text": "una",
       "charStart": 204,
       "charEnd": 207,
-      "startS": 14.08,
-      "endS": 14.24
+      "startS": 13.04,
+      "endS": 13.2
     },
     {
       "text": "prestación",
       "charStart": 208,
       "charEnd": 218,
-      "startS": 14.24,
-      "endS": 14.8
+      "startS": 13.2,
+      "endS": 13.68
     },
     {
       "text": "laboral",
       "charStart": 219,
       "charEnd": 226,
-      "startS": 14.8,
-      "endS": 15.36
+      "startS": 13.68,
+      "endS": 14.24
     }
   ],
-  "words_for": "f83b16342042d292/wordtiming-v1",
-  "asr": "En contratos el hangar es tuyo. Los paquetes de armas y de sensores cambian de forma de velar. La pintura, los acabados y los colores del tocasco dependen completamente de ti. La libre expresión es una procesión laboral.",
-  "asr_similarity": 0.821
+  "words_for": "8635ae06429f9fc4/wordtiming-v1"
 }

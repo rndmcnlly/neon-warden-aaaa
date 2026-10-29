@@ -1,0 +1,117 @@
+{
+  "hash": "af520c0071bb6914",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_pause_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Paused. Take your time. The contract clock respects your break. Mostly.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Gentle, then the qualifier.",
+  "duration": 5.52,
+  "sample_rate": 24000,
+  "peak": 0.801,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.87,
+    "gain_db": 5.43,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.43,
+    "peak_bound": false
+  },
+  "asr": "Paused. Take your time. The contract clock respects your break mostly.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Paused",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "Take",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "your",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "time",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.68,
+      "endS": 2.08
+    },
+    {
+      "text": "The",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "contract",
+      "charStart": 28,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "clock",
+      "charStart": 37,
+      "charEnd": 42,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "respects",
+      "charStart": 43,
+      "charEnd": 51,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "your",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "break",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 4.08,
+      "endS": 4.48
+    },
+    {
+      "text": "Mostly",
+      "charStart": 64,
+      "charEnd": 70,
+      "startS": 4.64,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "af520c0071bb6914/wordtiming-v1"
+}

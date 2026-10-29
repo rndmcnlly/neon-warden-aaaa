@@ -1,30 +1,32 @@
 {
-  "hash": "836edc9c8822cf87",
+  "hash": "bf11d8c61b53e7c9",
   "mode": "clone",
   "request": {
     "id": "es__tut_tap_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Ahora, disciplina de gatillo. Una pulsación corta lanza un solo disparo de precisión. Tarda más en repetirse, pero va justo a donde apuntas. Por favor, pulsa tres veces.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 13.2,
+  "duration": 11.36,
   "sample_rate": 24000,
-  "peak": 0.862,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.21,
-    "gain_db": 5.39,
-    "limited_db": 0.0,
-    "measured_before_lufs": -23.39,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.17,
+    "gain_db": 5.08,
+    "limited_db": 1.58,
+    "measured_before_lufs": -23.08,
     "peak_bound": false
   },
+  "asr": "Ahora, disciplina de gatillo: una pulsación corta lanza un solo disparo de precisión. Tarda más en repetirse pero va justo a donde apuntas. Por favor, pulsa tres veces.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -45,13 +47,13 @@
       "charStart": 7,
       "charEnd": 17,
       "startS": 1.04,
-      "endS": 1.52
+      "endS": 1.6
     },
     {
       "text": "de",
       "charStart": 18,
       "charEnd": 20,
-      "startS": 1.68,
+      "startS": 1.6,
       "endS": 1.76
     },
     {
@@ -59,178 +61,176 @@
       "charStart": 21,
       "charEnd": 28,
       "startS": 1.76,
-      "endS": 2.4
+      "endS": 2.24
     },
     {
       "text": "Una",
       "charStart": 30,
       "charEnd": 33,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 2.72,
+      "endS": 2.96
     },
     {
       "text": "pulsación",
       "charStart": 34,
       "charEnd": 43,
-      "startS": 3.04,
-      "endS": 3.68
+      "startS": 2.96,
+      "endS": 3.52
     },
     {
       "text": "corta",
       "charStart": 44,
       "charEnd": 49,
-      "startS": 3.68,
-      "endS": 4.08
+      "startS": 3.52,
+      "endS": 3.84
     },
     {
       "text": "lanza",
       "charStart": 50,
       "charEnd": 55,
-      "startS": 4.08,
-      "endS": 4.48
+      "startS": 3.84,
+      "endS": 4.08
     },
     {
       "text": "un",
       "charStart": 56,
       "charEnd": 58,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 4.08,
+      "endS": 4.24
     },
     {
       "text": "solo",
       "charStart": 59,
       "charEnd": 63,
-      "startS": 4.72,
-      "endS": 5.12
+      "startS": 4.24,
+      "endS": 4.48
     },
     {
       "text": "disparo",
       "charStart": 64,
       "charEnd": 71,
-      "startS": 5.12,
-      "endS": 5.6
+      "startS": 4.48,
+      "endS": 4.88
     },
     {
       "text": "de",
       "charStart": 72,
       "charEnd": 74,
-      "startS": 5.6,
-      "endS": 5.68
+      "startS": 4.88,
+      "endS": 4.96
     },
     {
       "text": "precisión",
       "charStart": 75,
       "charEnd": 84,
-      "startS": 5.68,
-      "endS": 6.48
+      "startS": 4.96,
+      "endS": 5.6
     },
     {
       "text": "Tarda",
       "charStart": 86,
       "charEnd": 91,
-      "startS": 6.96,
-      "endS": 7.28
+      "startS": 6.32,
+      "endS": 6.56
     },
     {
       "text": "más",
       "charStart": 92,
       "charEnd": 95,
-      "startS": 7.28,
-      "endS": 7.6
+      "startS": 6.56,
+      "endS": 6.88
     },
     {
       "text": "en",
       "charStart": 96,
       "charEnd": 98,
-      "startS": 7.6,
-      "endS": 7.68
+      "startS": 6.88,
+      "endS": 6.96
     },
     {
       "text": "repetirse",
       "charStart": 99,
       "charEnd": 108,
-      "startS": 7.68,
-      "endS": 8.48
+      "startS": 6.96,
+      "endS": 7.52
     },
     {
       "text": "pero",
       "charStart": 110,
       "charEnd": 114,
-      "startS": 8.8,
-      "endS": 9.04
+      "startS": 7.52,
+      "endS": 7.68
     },
     {
       "text": "va",
       "charStart": 115,
       "charEnd": 117,
-      "startS": 9.04,
-      "endS": 9.12
+      "startS": 7.68,
+      "endS": 7.76
     },
     {
       "text": "justo",
       "charStart": 118,
       "charEnd": 123,
-      "startS": 9.28,
-      "endS": 9.6
+      "startS": 7.76,
+      "endS": 8.16
     },
     {
       "text": "a",
       "charStart": 124,
       "charEnd": 125,
-      "startS": 9.6,
-      "endS": 9.68
+      "startS": 8.16,
+      "endS": 8.24
     },
     {
       "text": "donde",
       "charStart": 126,
       "charEnd": 131,
-      "startS": 9.68,
-      "endS": 10.0
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "apuntas",
       "charStart": 132,
       "charEnd": 139,
-      "startS": 10.0,
-      "endS": 10.64
+      "startS": 8.4,
+      "endS": 8.96
     },
     {
       "text": "Por",
       "charStart": 141,
       "charEnd": 144,
-      "startS": 10.88,
-      "endS": 11.04
+      "startS": 9.44,
+      "endS": 9.6
     },
     {
       "text": "favor",
       "charStart": 145,
       "charEnd": 150,
-      "startS": 11.44,
-      "endS": 11.6
+      "startS": 9.6,
+      "endS": 9.92
     },
     {
       "text": "pulsa",
       "charStart": 152,
       "charEnd": 157,
-      "startS": 11.84,
-      "endS": 12.16
+      "startS": 10.08,
+      "endS": 10.48
     },
     {
       "text": "tres",
       "charStart": 158,
       "charEnd": 162,
-      "startS": 12.8,
-      "endS": 13.12
+      "startS": 10.48,
+      "endS": 10.72
     },
     {
       "text": "veces",
       "charStart": 163,
       "charEnd": 168,
-      "startS": 13.12,
-      "endS": 13.2
+      "startS": 10.72,
+      "endS": 11.2
     }
   ],
-  "words_for": "836edc9c8822cf87/wordtiming-v1",
-  "asr": "Ahora, disciplina de gatillo: una pulsación corta lança un solo disparo de precisión. Tarda más en repetirse, pero va justo a donde apuntas. Por favor, pula tres veces.",
-  "asr_similarity": 0.929
+  "words_for": "bf11d8c61b53e7c9/wordtiming-v1"
 }

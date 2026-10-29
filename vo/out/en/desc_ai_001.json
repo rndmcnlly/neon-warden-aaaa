@@ -1,5 +1,5 @@
 {
-  "hash": "acc65957b5c2c2be",
+  "hash": "8888656b30cffb98",
   "mode": "clone",
   "request": {
     "id": "en__desc_ai_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "That is not the voice from the briefing.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, small and baffled, half to herself.",
-  "duration": 2.08,
+  "duration": 2.4,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.811,
   "clipping_suspect": false,
-  "asr": "That is not the voice from the briefing.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.25,
-    "true_peak_dbtp": -1.1,
-    "gain_db": 0.99,
-    "limited_db": 0.94,
-    "measured_before_lufs": -18.99,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.7,
+    "gain_db": 1.92,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.92,
     "peak_bound": false
   },
-  "words_for": "acc65957b5c2c2be/wordtiming-v1",
+  "asr": "That is not the voice from the briefing.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,57 +39,58 @@
       "text": "That",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "is",
       "charStart": 5,
       "charEnd": 7,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.88,
+      "endS": 0.96
     },
     {
       "text": "not",
       "charStart": 8,
       "charEnd": 11,
-      "startS": 0.48,
-      "endS": 0.72
+      "startS": 0.96,
+      "endS": 1.2
     },
     {
       "text": "the",
       "charStart": 12,
       "charEnd": 15,
-      "startS": 0.72,
-      "endS": 0.8
+      "startS": 1.2,
+      "endS": 1.28
     },
     {
       "text": "voice",
       "charStart": 16,
       "charEnd": 21,
-      "startS": 0.8,
-      "endS": 1.12
+      "startS": 1.28,
+      "endS": 1.6
     },
     {
       "text": "from",
       "charStart": 22,
       "charEnd": 26,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 1.6,
+      "endS": 1.84
     },
     {
       "text": "the",
       "charStart": 27,
       "charEnd": 30,
-      "startS": 1.28,
-      "endS": 1.36
+      "startS": 1.84,
+      "endS": 1.92
     },
     {
       "text": "briefing",
       "charStart": 31,
       "charEnd": 39,
-      "startS": 1.36,
-      "endS": 1.92
+      "startS": 1.92,
+      "endS": 2.4
     }
-  ]
+  ],
+  "words_for": "8888656b30cffb98/wordtiming-v1"
 }

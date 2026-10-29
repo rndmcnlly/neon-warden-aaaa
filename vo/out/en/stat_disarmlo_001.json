@@ -1,0 +1,159 @@
+{
+  "hash": "c7f43b26ea2634ca",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_disarmlo_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Tip: shooting the weapon parts makes a ship harmless. It pays less. I'm required to mention it.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Compliance notice, read a bit too fast, then sincere.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.695,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.15,
+    "gain_db": 2.49,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.49,
+    "peak_bound": false
+  },
+  "asr": "Tip: Shooting the weapon parts makes a ship harmless. It pays less. I'm required to mention it.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Tip",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "shooting",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 1.76,
+      "endS": 2.24
+    },
+    {
+      "text": "the",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "weapon",
+      "charStart": 18,
+      "charEnd": 24,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "parts",
+      "charStart": 25,
+      "charEnd": 30,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "makes",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "ship",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "harmless",
+      "charStart": 44,
+      "charEnd": 52,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "It",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "pays",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "less",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 4.72,
+      "endS": 5.12
+    },
+    {
+      "text": "I'm",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "required",
+      "charStart": 72,
+      "charEnd": 80,
+      "startS": 5.76,
+      "endS": 6.24
+    },
+    {
+      "text": "to",
+      "charStart": 81,
+      "charEnd": 83,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "mention",
+      "charStart": 84,
+      "charEnd": 91,
+      "startS": 6.32,
+      "endS": 6.64
+    },
+    {
+      "text": "it",
+      "charStart": 92,
+      "charEnd": 94,
+      "startS": 6.64,
+      "endS": 6.8
+    }
+  ],
+  "words_for": "c7f43b26ea2634ca/wordtiming-v1"
+}

@@ -1,33 +1,32 @@
 {
-  "hash": "595b773e7b28b260",
+  "hash": "0a307bdb453ed3fd",
   "mode": "clone",
   "request": {
     "id": "es__tut_warden_002",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "¿Verdad que fue emocionante? Por favor, no te asustes. El miedo no está cubierto por tu contrato.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Breathless from the reel, then soothing customer service.",
-  "duration": 6.96,
+  "duration": 5.84,
   "sample_rate": 24000,
-  "peak": 0.832,
+  "peak": 0.735,
   "clipping_suspect": false,
-  "asr": "Verdad que fue emocionante, por favor no te asustes, el miedo no está cubierto por tu contrato.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.24,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 1.58,
-    "limited_db": 1.63,
-    "measured_before_lufs": -19.68,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.67,
+    "gain_db": 3.4,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.4,
     "peak_bound": false
   },
-  "words_for": "595b773e7b28b260/wordtiming-v1",
+  "asr": "Verdad que fue emocionante, por favor no te asustes, el miedo no está cubierto por tu contrato.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,120 +39,121 @@
       "text": "Verdad",
       "charStart": 1,
       "charEnd": 7,
-      "startS": 0.4,
-      "endS": 0.64
+      "startS": 0.16,
+      "endS": 0.48
     },
     {
       "text": "que",
       "charStart": 8,
       "charEnd": 11,
-      "startS": 0.96,
-      "endS": 1.04
+      "startS": 0.48,
+      "endS": 0.56
     },
     {
       "text": "fue",
       "charStart": 12,
       "charEnd": 15,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 0.56,
+      "endS": 0.8
     },
     {
       "text": "emocionante",
       "charStart": 16,
       "charEnd": 27,
-      "startS": 1.28,
-      "endS": 1.92
+      "startS": 0.8,
+      "endS": 1.44
     },
     {
       "text": "Por",
       "charStart": 29,
       "charEnd": 32,
-      "startS": 2.56,
-      "endS": 2.64
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "favor",
       "charStart": 33,
       "charEnd": 38,
-      "startS": 2.72,
-      "endS": 3.12
+      "startS": 2.24,
+      "endS": 2.56
     },
     {
       "text": "no",
       "charStart": 40,
       "charEnd": 42,
-      "startS": 3.12,
-      "endS": 3.2
+      "startS": 2.56,
+      "endS": 2.72
     },
     {
       "text": "te",
       "charStart": 43,
       "charEnd": 45,
-      "startS": 3.2,
-      "endS": 3.28
+      "startS": 2.72,
+      "endS": 2.8
     },
     {
       "text": "asustes",
       "charStart": 46,
       "charEnd": 53,
-      "startS": 3.76,
-      "endS": 4.16
+      "startS": 2.8,
+      "endS": 3.36
     },
     {
       "text": "El",
       "charStart": 55,
       "charEnd": 57,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 3.76,
+      "endS": 3.92
     },
     {
       "text": "miedo",
       "charStart": 58,
       "charEnd": 63,
-      "startS": 4.64,
-      "endS": 4.72
+      "startS": 3.92,
+      "endS": 4.24
     },
     {
       "text": "no",
       "charStart": 64,
       "charEnd": 66,
-      "startS": 5.04,
-      "endS": 5.2
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "está",
       "charStart": 67,
       "charEnd": 71,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 4.4,
+      "endS": 4.64
     },
     {
       "text": "cubierto",
       "charStart": 72,
       "charEnd": 80,
-      "startS": 5.44,
-      "endS": 5.84
+      "startS": 4.64,
+      "endS": 5.12
     },
     {
       "text": "por",
       "charStart": 81,
       "charEnd": 84,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "tu",
       "charStart": 85,
       "charEnd": 87,
-      "startS": 6.08,
-      "endS": 6.16
+      "startS": 5.28,
+      "endS": 5.36
     },
     {
       "text": "contrato",
       "charStart": 88,
       "charEnd": 96,
-      "startS": 6.16,
-      "endS": 6.88
+      "startS": 5.36,
+      "endS": 5.84
     }
-  ]
+  ],
+  "words_for": "0a307bdb453ed3fd/wordtiming-v1"
 }

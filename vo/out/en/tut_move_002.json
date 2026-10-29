@@ -1,5 +1,5 @@
 {
-  "hash": "6d5f4b628a31c4d6",
+  "hash": "b8b3fe4671119661",
   "mode": "clone",
   "request": {
     "id": "en__tut_move_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Wonderful! Now up. And now down. You have flown in all four directions. That is every direction we offer.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Delighted, then a proud little flourish on the last sentence.",
-  "duration": 7.2,
+  "duration": 8.4,
   "sample_rate": 24000,
-  "peak": 0.808,
+  "peak": 0.745,
   "clipping_suspect": false,
-  "asr": "Wonderful! Now up and now down, you have flown in all four directions. That is every direction we offer.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.85,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -2.56,
+    "gain_db": 1.17,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.17,
     "peak_bound": false
   },
-  "words_for": "6d5f4b628a31c4d6/wordtiming-v1",
+  "asr": "Wonderful, now up, and now down, you have flown in all four directions. That is every direction we offer.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,134 +39,135 @@
       "text": "Wonderful",
       "charStart": 0,
       "charEnd": 9,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 0.72,
+      "endS": 1.44
     },
     {
       "text": "Now",
       "charStart": 11,
       "charEnd": 14,
-      "startS": 1.2,
-      "endS": 1.36
+      "startS": 1.92,
+      "endS": 2.24
     },
     {
       "text": "up",
       "charStart": 15,
       "charEnd": 17,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "And",
       "charStart": 19,
       "charEnd": 22,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 2.96,
+      "endS": 3.12
     },
     {
       "text": "now",
       "charStart": 23,
       "charEnd": 26,
-      "startS": 1.92,
-      "endS": 2.0
+      "startS": 3.12,
+      "endS": 3.28
     },
     {
       "text": "down",
       "charStart": 27,
       "charEnd": 31,
-      "startS": 2.16,
-      "endS": 2.56
+      "startS": 3.28,
+      "endS": 3.76
     },
     {
       "text": "You",
       "charStart": 33,
       "charEnd": 36,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "have",
       "charStart": 37,
       "charEnd": 41,
-      "startS": 3.2,
-      "endS": 3.28
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "flown",
       "charStart": 42,
       "charEnd": 47,
-      "startS": 3.28,
-      "endS": 3.6
+      "startS": 4.48,
+      "endS": 4.88
     },
     {
       "text": "in",
       "charStart": 48,
       "charEnd": 50,
-      "startS": 3.6,
-      "endS": 3.68
+      "startS": 4.88,
+      "endS": 5.04
     },
     {
       "text": "all",
       "charStart": 51,
       "charEnd": 54,
-      "startS": 3.76,
-      "endS": 3.84
+      "startS": 5.04,
+      "endS": 5.28
     },
     {
       "text": "four",
       "charStart": 55,
       "charEnd": 59,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 5.28,
+      "endS": 5.52
     },
     {
       "text": "directions",
       "charStart": 60,
       "charEnd": 70,
-      "startS": 4.24,
-      "endS": 4.96
+      "startS": 5.52,
+      "endS": 6.16
     },
     {
       "text": "That",
       "charStart": 72,
       "charEnd": 76,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 6.56,
+      "endS": 6.8
     },
     {
       "text": "is",
       "charStart": 77,
       "charEnd": 79,
-      "startS": 5.36,
-      "endS": 5.52
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "every",
       "charStart": 80,
       "charEnd": 85,
-      "startS": 5.6,
-      "endS": 5.76
+      "startS": 6.96,
+      "endS": 7.28
     },
     {
       "text": "direction",
       "charStart": 86,
       "charEnd": 95,
-      "startS": 5.92,
-      "endS": 6.4
+      "startS": 7.28,
+      "endS": 7.76
     },
     {
       "text": "we",
       "charStart": 96,
       "charEnd": 98,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 7.76,
+      "endS": 7.84
     },
     {
       "text": "offer",
       "charStart": 99,
       "charEnd": 104,
-      "startS": 6.72,
-      "endS": 7.04
+      "startS": 7.84,
+      "endS": 8.32
     }
-  ]
+  ],
+  "words_for": "b8b3fe4671119661/wordtiming-v1"
 }

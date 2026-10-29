@@ -1,0 +1,96 @@
+{
+  "hash": "b3cb10c8a950ba51",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_pause_002",
+    "seed": 11,
+    "language": "English",
+    "text": "I'll wait right here. I'm always right here.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Sweet, and just slightly too literal.",
+  "duration": 3.04,
+  "sample_rate": 24000,
+  "peak": 0.654,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.58,
+    "gain_db": 2.38,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.38,
+    "peak_bound": false
+  },
+  "asr": "I'll wait right here. I'm always right here.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "I'll",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "wait",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "right",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "here",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 1.2,
+      "endS": 1.6
+    },
+    {
+      "text": "I'm",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "always",
+      "charStart": 26,
+      "charEnd": 32,
+      "startS": 2.16,
+      "endS": 2.48
+    },
+    {
+      "text": "right",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "here",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.72,
+      "endS": 3.04
+    }
+  ],
+  "words_for": "b3cb10c8a950ba51/wordtiming-v1"
+}

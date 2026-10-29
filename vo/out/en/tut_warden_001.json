@@ -1,5 +1,5 @@
 {
-  "hash": "653533c1b4cc3867",
+  "hash": "a274eb430f17dbb3",
   "mode": "clone",
   "request": {
     "id": "en__tut_warden_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "And then, the Warden. Before we continue, the Lane Authority requires you to watch a short threat briefing. Please enjoy it.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "A theatrical gulp, then flight-attendant brightness.",
-  "duration": 7.6,
+  "duration": 8.08,
   "sample_rate": 24000,
-  "peak": 0.878,
+  "peak": 0.795,
   "clipping_suspect": false,
-  "asr": "And then the warden. Before we continue, the lane authority requires you to watch a short threat briefing. Please enjoy it.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.12,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -1.98,
+    "gain_db": 2.45,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.45,
     "peak_bound": false
   },
-  "words_for": "653533c1b4cc3867/wordtiming-v1",
+  "asr": "And then, the warden. Before we continue, the lane authority requires you to watch a short threat briefing. Please enjoy it.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,148 +39,149 @@
       "text": "And",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.8,
+      "endS": 0.88
     },
     {
       "text": "then",
       "charStart": 4,
       "charEnd": 8,
-      "startS": 0.32,
-      "endS": 0.4
+      "startS": 0.96,
+      "endS": 1.28
     },
     {
       "text": "the",
       "charStart": 10,
       "charEnd": 13,
-      "startS": 0.64,
-      "endS": 0.72
+      "startS": 1.84,
+      "endS": 1.92
     },
     {
       "text": "Warden",
       "charStart": 14,
       "charEnd": 20,
-      "startS": 0.72,
-      "endS": 1.28
+      "startS": 1.92,
+      "endS": 2.4
     },
     {
       "text": "Before",
       "charStart": 22,
       "charEnd": 28,
-      "startS": 1.76,
-      "endS": 2.0
+      "startS": 2.72,
+      "endS": 3.04
     },
     {
       "text": "we",
       "charStart": 29,
       "charEnd": 31,
-      "startS": 2.16,
-      "endS": 2.24
+      "startS": 3.04,
+      "endS": 3.12
     },
     {
       "text": "continue",
       "charStart": 32,
       "charEnd": 40,
-      "startS": 2.48,
-      "endS": 2.96
+      "startS": 3.12,
+      "endS": 3.68
     },
     {
       "text": "the",
       "charStart": 42,
       "charEnd": 45,
-      "startS": 3.2,
-      "endS": 3.28
+      "startS": 4.08,
+      "endS": 4.16
     },
     {
       "text": "Lane",
       "charStart": 46,
       "charEnd": 50,
-      "startS": 3.28,
-      "endS": 3.44
+      "startS": 4.16,
+      "endS": 4.4
     },
     {
       "text": "Authority",
       "charStart": 51,
       "charEnd": 60,
-      "startS": 3.6,
-      "endS": 4.08
+      "startS": 4.4,
+      "endS": 4.88
     },
     {
       "text": "requires",
       "charStart": 61,
       "charEnd": 69,
-      "startS": 4.08,
-      "endS": 4.56
+      "startS": 4.88,
+      "endS": 5.36
     },
     {
       "text": "you",
       "charStart": 70,
       "charEnd": 73,
-      "startS": 4.56,
-      "endS": 4.64
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "to",
       "charStart": 74,
       "charEnd": 76,
-      "startS": 4.72,
-      "endS": 4.8
+      "startS": 5.44,
+      "endS": 5.52
     },
     {
       "text": "watch",
       "charStart": 77,
       "charEnd": 82,
-      "startS": 4.8,
-      "endS": 5.04
+      "startS": 5.52,
+      "endS": 5.76
     },
     {
       "text": "a",
       "charStart": 83,
       "charEnd": 84,
-      "startS": 5.04,
-      "endS": 5.12
+      "startS": 5.76,
+      "endS": 5.84
     },
     {
       "text": "short",
       "charStart": 85,
       "charEnd": 90,
-      "startS": 5.12,
-      "endS": 5.44
+      "startS": 5.84,
+      "endS": 6.16
     },
     {
       "text": "threat",
       "charStart": 91,
       "charEnd": 97,
-      "startS": 5.52,
-      "endS": 5.68
+      "startS": 6.16,
+      "endS": 6.4
     },
     {
       "text": "briefing",
       "charStart": 98,
       "charEnd": 106,
-      "startS": 5.76,
-      "endS": 6.24
+      "startS": 6.48,
+      "endS": 6.96
     },
     {
       "text": "Please",
       "charStart": 108,
       "charEnd": 114,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 7.28,
+      "endS": 7.52
     },
     {
       "text": "enjoy",
       "charStart": 115,
       "charEnd": 120,
-      "startS": 6.96,
-      "endS": 7.28
+      "startS": 7.52,
+      "endS": 7.92
     },
     {
       "text": "it",
       "charStart": 121,
       "charEnd": 123,
-      "startS": 7.36,
-      "endS": 7.52
+      "startS": 7.92,
+      "endS": 8.0
     }
-  ]
+  ],
+  "words_for": "a274eb430f17dbb3/wordtiming-v1"
 }

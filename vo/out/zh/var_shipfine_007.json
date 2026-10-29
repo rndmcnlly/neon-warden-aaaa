@@ -1,0 +1,215 @@
+{
+  "hash": "fe593ec83644b2e2",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_shipfine_007",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "最后一艘备用飞船。我不担心。我是故意用这么平静的语气的。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Deliberately soothing, slightly too slow.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.662,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.53,
+    "gain_db": 1.78,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.78,
+    "peak_bound": false
+  },
+  "asr": "最后一艘备用飞船。我不担心，我是故意用这么平静的语气的。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "最",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "后",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "一",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "艘",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "备",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "用",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "飞",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "船",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "我",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "不",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "担",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "心",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "我",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "是",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "故",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "意",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "用",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "这",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "么",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "平",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "静",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "的",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "语",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "气",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "的",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.4,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "fe593ec83644b2e2/wordtiming-v1"
+}

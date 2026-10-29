@@ -1,33 +1,32 @@
 {
-  "hash": "c5875e4ee20383cf",
+  "hash": "adae90f798c98970",
   "mode": "clone",
   "request": {
     "id": "zh__tut_hitbox_001",
     "seed": 11,
     "language": "Chinese",
     "text": "你的飞船又大又漂亮，但只有中央那颗发光的小宝石会被击中。请保护好宝石。宝石就是你。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Sincere and a little tender on the last sentence.",
-  "duration": 7.76,
+  "duration": 7.84,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.673,
   "clipping_suspect": false,
-  "asr": "你的飞船又大又漂亮，但只有中央那颗发光的小宝石会被击中。请保护好宝石，宝石就是你。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.08,
-    "true_peak_dbtp": -1.18,
-    "gain_db": 1.33,
-    "limited_db": 1.28,
-    "measured_before_lufs": -19.33,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.41,
+    "gain_db": 2.21,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.21,
     "peak_bound": false
   },
-  "words_for": "c5875e4ee20383cf/wordtiming-v1",
+  "asr": "你的飞船又大又漂亮，但只有中央那颗发光的小宝石会被击中。请保护好宝石，宝石就是你。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -48,20 +47,20 @@
       "charStart": 1,
       "charEnd": 2,
       "startS": 0.24,
-      "endS": 0.4
+      "endS": 0.32
     },
     {
       "text": "飞",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.4,
-      "endS": 0.56
+      "startS": 0.32,
+      "endS": 0.48
     },
     {
       "text": "船",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.56,
+      "startS": 0.48,
       "endS": 0.8
     },
     {
@@ -90,104 +89,104 @@
       "charStart": 7,
       "charEnd": 8,
       "startS": 1.28,
-      "endS": 1.6
+      "endS": 1.52
     },
     {
       "text": "亮",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.6,
-      "endS": 1.84
+      "startS": 1.52,
+      "endS": 1.76
     },
     {
       "text": "但",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "只",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.24,
-      "endS": 2.32
+      "startS": 2.4,
+      "endS": 2.48
     },
     {
       "text": "有",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.32,
-      "endS": 2.48
+      "startS": 2.48,
+      "endS": 2.64
     },
     {
       "text": "中",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "央",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.88,
+      "endS": 2.96
     },
     {
       "text": "那",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 2.96,
+      "endS": 3.04
     },
     {
       "text": "颗",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 2.96,
-      "endS": 3.12
+      "startS": 3.04,
+      "endS": 3.2
     },
     {
       "text": "发",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.12,
-      "endS": 3.28
+      "startS": 3.2,
+      "endS": 3.44
     },
     {
       "text": "光",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.28,
-      "endS": 3.52
+      "startS": 3.44,
+      "endS": 3.6
     },
     {
       "text": "的",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.52,
-      "endS": 3.6
+      "startS": 3.6,
+      "endS": 3.68
     },
     {
       "text": "小",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "宝",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "石",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 3.92,
+      "startS": 4.0,
       "endS": 4.16
     },
     {
@@ -202,13 +201,13 @@
       "charStart": 24,
       "charEnd": 25,
       "startS": 4.32,
-      "endS": 4.4
+      "endS": 4.48
     },
     {
       "text": "击",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 4.4,
+      "startS": 4.48,
       "endS": 4.64
     },
     {
@@ -222,78 +221,79 @@
       "text": "请",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.2,
-      "endS": 5.44
+      "startS": 5.36,
+      "endS": 5.52
     },
     {
       "text": "保",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 5.52,
+      "endS": 5.68
     },
     {
       "text": "护",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 5.6,
-      "endS": 5.76
+      "startS": 5.68,
+      "endS": 5.84
     },
     {
       "text": "好",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 5.76,
-      "endS": 5.84
+      "startS": 5.84,
+      "endS": 6.08
     },
     {
       "text": "宝",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 5.84,
-      "endS": 6.08
+      "startS": 6.08,
+      "endS": 6.24
     },
     {
       "text": "石",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.08,
-      "endS": 6.4
+      "startS": 6.24,
+      "endS": 6.64
     },
     {
       "text": "宝",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 6.64,
-      "endS": 6.88
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "石",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 6.88,
-      "endS": 7.12
+      "startS": 7.04,
+      "endS": 7.2
     },
     {
       "text": "就",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 7.12,
-      "endS": 7.28
+      "startS": 7.2,
+      "endS": 7.36
     },
     {
       "text": "是",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 7.28,
-      "endS": 7.44
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "你",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 7.44,
-      "endS": 7.68
+      "startS": 7.52,
+      "endS": 7.76
     }
-  ]
+  ],
+  "words_for": "adae90f798c98970/wordtiming-v1"
 }

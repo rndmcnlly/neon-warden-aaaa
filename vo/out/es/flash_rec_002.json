@@ -1,33 +1,32 @@
 {
-  "hash": "951383d2807ec2a0",
+  "hash": "7fb8e16c1b5c44a8",
   "mode": "clone",
   "request": {
     "id": "es__flash_rec_002",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "Piloto cero uno dos uno, tu arma está fría. Por favor, dispara. Por favor, dispara. Piloto, por favor.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Recorded; the script breaks down into pleading on the last word.",
-  "duration": 10.72,
+  "duration": 8.08,
   "sample_rate": 24000,
-  "peak": 0.678,
+  "peak": 0.825,
   "clipping_suspect": false,
-  "asr": "Piloto, sero, uno dos uno, tu arma está fría, por favor dispara, por favor dispara, piloto por favor.",
-  "asr_similarity": 0.944,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -3.26,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -1.66,
+    "gain_db": 4.56,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -22.56,
     "peak_bound": false
   },
-  "words_for": "951383d2807ec2a0/wordtiming-v1",
+  "asr": "Piloto cero uno dos uno tu arma está fría por favor dispara por favor dispara piloto por favor",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,127 +39,128 @@
       "text": "Piloto",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.0,
-      "endS": 0.96
+      "startS": 0.16,
+      "endS": 0.56
     },
     {
       "text": "cero",
       "charStart": 7,
       "charEnd": 11,
-      "startS": 1.04,
-      "endS": 1.6
+      "startS": 0.56,
+      "endS": 0.88
     },
     {
       "text": "uno",
       "charStart": 12,
       "charEnd": 15,
-      "startS": 1.6,
-      "endS": 1.68
+      "startS": 0.88,
+      "endS": 1.12
     },
     {
       "text": "dos",
       "charStart": 16,
       "charEnd": 19,
-      "startS": 2.0,
-      "endS": 2.24
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "uno",
       "charStart": 20,
       "charEnd": 23,
-      "startS": 2.56,
-      "endS": 2.8
+      "startS": 1.36,
+      "endS": 1.76
     },
     {
       "text": "tu",
       "charStart": 25,
       "charEnd": 27,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "arma",
       "charStart": 28,
       "charEnd": 32,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "está",
       "charStart": 33,
       "charEnd": 37,
-      "startS": 3.6,
-      "endS": 3.92
+      "startS": 2.48,
+      "endS": 2.72
     },
     {
       "text": "fría",
       "charStart": 38,
       "charEnd": 42,
-      "startS": 3.92,
-      "endS": 4.56
+      "startS": 2.72,
+      "endS": 3.12
     },
     {
       "text": "Por",
       "charStart": 44,
       "charEnd": 47,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "favor",
       "charStart": 48,
       "charEnd": 53,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 3.76,
+      "endS": 4.08
     },
     {
       "text": "dispara",
       "charStart": 55,
       "charEnd": 62,
-      "startS": 5.44,
-      "endS": 6.16
+      "startS": 4.08,
+      "endS": 4.64
     },
     {
       "text": "Por",
       "charStart": 64,
       "charEnd": 67,
-      "startS": 6.64,
-      "endS": 6.72
+      "startS": 5.28,
+      "endS": 5.36
     },
     {
       "text": "favor",
       "charStart": 68,
       "charEnd": 73,
-      "startS": 7.04,
-      "endS": 7.12
+      "startS": 5.36,
+      "endS": 5.84
     },
     {
       "text": "dispara",
       "charStart": 75,
       "charEnd": 82,
-      "startS": 7.68,
-      "endS": 8.56
+      "startS": 5.84,
+      "endS": 6.4
     },
     {
       "text": "Piloto",
       "charStart": 84,
       "charEnd": 90,
-      "startS": 9.04,
-      "endS": 9.76
+      "startS": 6.96,
+      "endS": 7.44
     },
     {
       "text": "por",
       "charStart": 92,
       "charEnd": 95,
-      "startS": 9.76,
-      "endS": 10.0
+      "startS": 7.44,
+      "endS": 7.68
     },
     {
       "text": "favor",
       "charStart": 96,
       "charEnd": 101,
-      "startS": 10.0,
-      "endS": 10.32
+      "startS": 7.68,
+      "endS": 8.0
     }
-  ]
+  ],
+  "words_for": "7fb8e16c1b5c44a8/wordtiming-v1"
 }

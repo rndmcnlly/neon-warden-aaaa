@@ -1,30 +1,32 @@
 {
-  "hash": "e740af9fc1f25506",
+  "hash": "c4418aa907ad5224",
   "mode": "clone",
   "request": {
     "id": "es__lock_ai_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Tu primer fijado en vivo! Información archivada. Cada escaneo ayuda a la Autoridad a cartografiar sus rutas.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, pleased, filing paperwork with real enthusiasm.",
-  "duration": 8.16,
+  "duration": 7.36,
   "sample_rate": 24000,
-  "peak": 0.831,
+  "peak": 0.746,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.58,
-    "gain_db": 3.72,
+    "true_peak_dbtp": -2.52,
+    "gain_db": 3.19,
     "limited_db": 0.0,
-    "measured_before_lufs": -21.72,
+    "measured_before_lufs": -21.19,
     "peak_bound": false
   },
+  "asr": "Tu primer fijado en vivo, información archivada. Cada escaneo ayuda a la autoridad a cartografiar sus rutas.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,123 +39,121 @@
       "text": "Tu",
       "charStart": 1,
       "charEnd": 3,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.0,
+      "endS": 0.16
     },
     {
       "text": "primer",
       "charStart": 4,
       "charEnd": 10,
-      "startS": 0.32,
-      "endS": 0.64
+      "startS": 0.16,
+      "endS": 0.48
     },
     {
       "text": "fijado",
       "charStart": 11,
       "charEnd": 17,
-      "startS": 0.8,
-      "endS": 1.2
+      "startS": 0.48,
+      "endS": 0.88
     },
     {
       "text": "en",
       "charStart": 18,
       "charEnd": 20,
-      "startS": 1.44,
-      "endS": 1.52
+      "startS": 0.88,
+      "endS": 0.96
     },
     {
       "text": "vivo",
       "charStart": 21,
       "charEnd": 25,
-      "startS": 1.52,
-      "endS": 2.0
+      "startS": 0.96,
+      "endS": 1.36
     },
     {
       "text": "Información",
       "charStart": 27,
       "charEnd": 38,
-      "startS": 2.24,
-      "endS": 3.04
+      "startS": 1.84,
+      "endS": 2.4
     },
     {
       "text": "archivada",
       "charStart": 39,
       "charEnd": 48,
-      "startS": 3.12,
-      "endS": 3.84
+      "startS": 2.4,
+      "endS": 3.04
     },
     {
       "text": "Cada",
       "charStart": 50,
       "charEnd": 54,
-      "startS": 4.24,
-      "endS": 4.32
+      "startS": 3.84,
+      "endS": 4.08
     },
     {
       "text": "escaneo",
       "charStart": 55,
       "charEnd": 62,
-      "startS": 4.56,
-      "endS": 5.12
+      "startS": 4.08,
+      "endS": 4.56
     },
     {
       "text": "ayuda",
       "charStart": 63,
       "charEnd": 68,
-      "startS": 5.12,
-      "endS": 5.52
+      "startS": 4.56,
+      "endS": 4.96
     },
     {
       "text": "a",
       "charStart": 69,
       "charEnd": 70,
-      "startS": 5.52,
-      "endS": 5.76
+      "startS": 4.96,
+      "endS": 5.04
     },
     {
       "text": "la",
       "charStart": 71,
       "charEnd": 73,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 5.04,
+      "endS": 5.12
     },
     {
       "text": "Autoridad",
       "charStart": 74,
       "charEnd": 83,
-      "startS": 5.92,
-      "endS": 6.48
+      "startS": 5.12,
+      "endS": 5.6
     },
     {
       "text": "a",
       "charStart": 84,
       "charEnd": 85,
-      "startS": 6.48,
-      "endS": 6.56
+      "startS": 5.68,
+      "endS": 5.76
     },
     {
       "text": "cartografiar",
       "charStart": 86,
       "charEnd": 98,
-      "startS": 6.56,
-      "endS": 7.36
+      "startS": 5.76,
+      "endS": 6.48
     },
     {
       "text": "sus",
       "charStart": 99,
       "charEnd": 102,
-      "startS": 7.36,
-      "endS": 7.6
+      "startS": 6.48,
+      "endS": 6.64
     },
     {
       "text": "rutas",
       "charStart": 103,
       "charEnd": 108,
-      "startS": 7.6,
-      "endS": 8.08
+      "startS": 6.64,
+      "endS": 7.2
     }
   ],
-  "words_for": "e740af9fc1f25506/wordtiming-v1",
-  "asr": "Para premer fichado en vivo, información archivada, cada escaneo ayuda a la autoridad a cartografiar sus rutas.",
-  "asr_similarity": 0.824
+  "words_for": "c4418aa907ad5224/wordtiming-v1"
 }

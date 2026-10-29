@@ -1,33 +1,32 @@
 {
-  "hash": "04265b1bf98382a2",
+  "hash": "8431fc144da3dd1d",
   "mode": "clone",
   "request": {
     "id": "es__amb_fight_005",
     "seed": 11,
     "language": "Spanish",
     "text": "Si ves naves desarmadas en las rutas, por favor ignóralas. Todavía no son clientes de pago.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, breezy, as if about litter.",
-  "duration": 6.64,
+  "duration": 6.24,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.657,
   "clipping_suspect": false,
-  "asr": "Si ves neves y armadas en las rutas, por favor ignóralas. Todavía no son clientes de pago.",
-  "asr_similarity": 0.848,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.04,
-    "true_peak_dbtp": -1.35,
-    "gain_db": 0.52,
-    "limited_db": 0.47,
-    "measured_before_lufs": -18.52,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.46,
+    "gain_db": 3.53,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.53,
     "peak_bound": false
   },
-  "words_for": "04265b1bf98382a2/wordtiming-v1",
+  "asr": "Si ves naves desarmadas en las rutas, por favor ignóralas. Todavía no son clientes de pago.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,14 +39,14 @@
       "text": "Si",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.08,
-      "endS": 0.32
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "ves",
       "charStart": 3,
       "charEnd": 6,
-      "startS": 0.32,
+      "startS": 0.48,
       "endS": 0.64
     },
     {
@@ -62,91 +61,92 @@
       "charStart": 13,
       "charEnd": 23,
       "startS": 0.96,
-      "endS": 1.6
+      "endS": 1.52
     },
     {
       "text": "en",
       "charStart": 24,
       "charEnd": 26,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.52,
+      "endS": 1.6
     },
     {
       "text": "las",
       "charStart": 27,
       "charEnd": 30,
-      "startS": 1.76,
-      "endS": 1.92
+      "startS": 1.6,
+      "endS": 1.84
     },
     {
       "text": "rutas",
       "charStart": 31,
       "charEnd": 36,
-      "startS": 1.92,
-      "endS": 2.4
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "por",
       "charStart": 38,
       "charEnd": 41,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.56,
+      "endS": 2.72
     },
     {
       "text": "favor",
       "charStart": 42,
       "charEnd": 47,
-      "startS": 2.88,
-      "endS": 3.2
+      "startS": 2.72,
+      "endS": 3.04
     },
     {
       "text": "ignóralas",
       "charStart": 48,
       "charEnd": 57,
-      "startS": 3.36,
-      "endS": 4.16
+      "startS": 3.04,
+      "endS": 3.76
     },
     {
       "text": "Todavía",
       "charStart": 59,
       "charEnd": 66,
       "startS": 4.48,
-      "endS": 4.96
+      "endS": 4.88
     },
     {
       "text": "no",
       "charStart": 67,
       "charEnd": 69,
-      "startS": 4.96,
-      "endS": 5.2
+      "startS": 4.88,
+      "endS": 4.96
     },
     {
       "text": "son",
       "charStart": 70,
       "charEnd": 73,
-      "startS": 5.2,
-      "endS": 5.44
+      "startS": 4.96,
+      "endS": 5.2
     },
     {
       "text": "clientes",
       "charStart": 74,
       "charEnd": 82,
-      "startS": 5.44,
-      "endS": 5.84
+      "startS": 5.2,
+      "endS": 5.68
     },
     {
       "text": "de",
       "charStart": 83,
       "charEnd": 85,
-      "startS": 5.92,
-      "endS": 6.0
+      "startS": 5.68,
+      "endS": 5.76
     },
     {
       "text": "pago",
       "charStart": 86,
       "charEnd": 90,
-      "startS": 6.0,
-      "endS": 6.56
+      "startS": 5.76,
+      "endS": 6.24
     }
-  ]
+  ],
+  "words_for": "8431fc144da3dd1d/wordtiming-v1"
 }

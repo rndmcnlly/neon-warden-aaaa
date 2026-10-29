@@ -1,0 +1,152 @@
+{
+  "hash": "ecf9c95a51b22aa5",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_kill_004",
+    "seed": 11,
+    "language": "English",
+    "text": "That was clean. Clean work is fast work, and fast work is affordable work. Thank you.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Sincere efficiency gospel, a chain of logic she loves.",
+  "duration": 6.08,
+  "sample_rate": 24000,
+  "peak": 0.85,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 3.2,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.2,
+    "peak_bound": false
+  },
+  "asr": "That was clean. Clean work is fast work, and fast work is affordable work. Thank you.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "That",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "was",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "clean",
+      "charStart": 9,
+      "charEnd": 14,
+      "startS": 0.88,
+      "endS": 1.36
+    },
+    {
+      "text": "Clean",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "work",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "is",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "fast",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "work",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "and",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "fast",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.6,
+      "endS": 4.0
+    },
+    {
+      "text": "work",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "is",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "affordable",
+      "charStart": 58,
+      "charEnd": 68,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "work",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 4.8,
+      "endS": 5.2
+    },
+    {
+      "text": "Thank",
+      "charStart": 75,
+      "charEnd": 80,
+      "startS": 5.52,
+      "endS": 5.84
+    },
+    {
+      "text": "you",
+      "charStart": 81,
+      "charEnd": 84,
+      "startS": 5.84,
+      "endS": 6.08
+    }
+  ],
+  "words_for": "ecf9c95a51b22aa5/wordtiming-v1"
+}

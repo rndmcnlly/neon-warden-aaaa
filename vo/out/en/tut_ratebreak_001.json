@@ -1,5 +1,5 @@
 {
-  "hash": "d2e29fcec2958a75",
+  "hash": "8ab5a14a3811ee40",
   "mode": "clone",
   "request": {
     "id": "en__tut_ratebreak_001",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "One more thing. If you are hit, your rate is halved. The Authority is not upset when that happens. It simply pays for results.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Reassuring, completely sincere.",
-  "duration": 7.76,
+  "duration": 8.8,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.707,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.05,
-    "true_peak_dbtp": -1.19,
-    "gain_db": 3.85,
-    "limited_db": 0.98,
-    "measured_before_lufs": -21.85,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.98,
+    "gain_db": 2.39,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.39,
     "peak_bound": false
   },
+  "asr": "One more thing: if you are hit, your raid is halved. The authority is not upset when that happens; it simply pays for results.",
+  "asr_similarity": 0.958,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,172 +39,170 @@
       "text": "One",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.72,
+      "endS": 0.96
     },
     {
       "text": "more",
       "charStart": 4,
       "charEnd": 8,
-      "startS": 0.32,
-      "endS": 0.4
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "thing",
       "charStart": 9,
       "charEnd": 14,
-      "startS": 0.64,
-      "endS": 0.96
+      "startS": 1.12,
+      "endS": 1.52
     },
     {
       "text": "If",
       "charStart": 16,
       "charEnd": 18,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "you",
       "charStart": 19,
       "charEnd": 22,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "are",
       "charStart": 23,
       "charEnd": 26,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 2.4,
+      "endS": 2.48
     },
     {
       "text": "hit",
       "charStart": 27,
       "charEnd": 30,
-      "startS": 1.84,
-      "endS": 2.0
+      "startS": 2.48,
+      "endS": 2.8
     },
     {
       "text": "your",
       "charStart": 32,
       "charEnd": 36,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 3.2,
+      "endS": 3.28
     },
     {
       "text": "rate",
       "charStart": 37,
       "charEnd": 41,
-      "startS": 2.56,
-      "endS": 2.88
+      "startS": 3.28,
+      "endS": 3.52
     },
     {
       "text": "is",
       "charStart": 42,
       "charEnd": 44,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 3.52,
+      "endS": 3.76
     },
     {
       "text": "halved",
       "charStart": 45,
       "charEnd": 51,
-      "startS": 3.12,
-      "endS": 3.52
+      "startS": 3.76,
+      "endS": 4.16
     },
     {
       "text": "The",
       "charStart": 53,
       "charEnd": 56,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 4.72,
+      "endS": 4.88
     },
     {
       "text": "Authority",
       "charStart": 57,
       "charEnd": 66,
-      "startS": 3.92,
-      "endS": 4.08
+      "startS": 4.88,
+      "endS": 5.36
     },
     {
       "text": "is",
       "charStart": 67,
       "charEnd": 69,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "not",
       "charStart": 70,
       "charEnd": 73,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 5.44,
+      "endS": 5.68
     },
     {
       "text": "upset",
       "charStart": 74,
       "charEnd": 79,
-      "startS": 4.72,
-      "endS": 5.04
+      "startS": 5.68,
+      "endS": 6.16
     },
     {
       "text": "when",
       "charStart": 80,
       "charEnd": 84,
-      "startS": 5.12,
-      "endS": 5.2
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "that",
       "charStart": 85,
       "charEnd": 89,
-      "startS": 5.28,
-      "endS": 5.36
+      "startS": 6.24,
+      "endS": 6.4
     },
     {
       "text": "happens",
       "charStart": 90,
       "charEnd": 97,
-      "startS": 5.36,
-      "endS": 5.92
+      "startS": 6.4,
+      "endS": 6.88
     },
     {
       "text": "It",
       "charStart": 99,
       "charEnd": 101,
-      "startS": 6.16,
-      "endS": 6.32
+      "startS": 7.28,
+      "endS": 7.44
     },
     {
       "text": "simply",
       "charStart": 102,
       "charEnd": 108,
-      "startS": 6.32,
-      "endS": 6.72
+      "startS": 7.44,
+      "endS": 7.76
     },
     {
       "text": "pays",
       "charStart": 109,
       "charEnd": 113,
-      "startS": 6.72,
-      "endS": 7.04
+      "startS": 7.76,
+      "endS": 8.08
     },
     {
       "text": "for",
       "charStart": 114,
       "charEnd": 117,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 8.08,
+      "endS": 8.24
     },
     {
       "text": "results",
       "charStart": 118,
       "charEnd": 125,
-      "startS": 7.2,
-      "endS": 7.68
+      "startS": 8.24,
+      "endS": 8.8
     }
   ],
-  "words_for": "d2e29fcec2958a75/wordtiming-v1",
-  "asr": "One more thing: if you are hit, your rate is halved. The authority is not upset when that happens; it simply pays for results.",
-  "asr_similarity": 1.0
+  "words_for": "8ab5a14a3811ee40/wordtiming-v1"
 }

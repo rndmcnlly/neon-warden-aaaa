@@ -1,0 +1,103 @@
+{
+  "hash": "851495aba00db0e7",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_resume_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Welcome back! I didn't go anywhere. I can't, actually.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Happy, then a tiny matter-of-fact admission.",
+  "duration": 5.44,
+  "sample_rate": 24000,
+  "peak": 0.826,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.65,
+    "gain_db": 0.03,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.03,
+    "peak_bound": false
+  },
+  "asr": "Welcome back. I didn't go anywhere. I can't actually.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Welcome",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "back",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 1.44,
+      "endS": 1.92
+    },
+    {
+      "text": "I",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "didn't",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "go",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "anywhere",
+      "charStart": 26,
+      "charEnd": 34,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "I",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "can't",
+      "charStart": 38,
+      "charEnd": 43,
+      "startS": 4.16,
+      "endS": 4.72
+    },
+    {
+      "text": "actually",
+      "charStart": 45,
+      "charEnd": 53,
+      "startS": 4.8,
+      "endS": 5.36
+    }
+  ],
+  "words_for": "851495aba00db0e7/wordtiming-v1"
+}

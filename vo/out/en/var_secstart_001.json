@@ -1,0 +1,138 @@
+{
+  "hash": "bfb335f660e895b7",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_secstart_001",
+    "seed": 11,
+    "language": "English",
+    "text": "New sector, fresh start. Your accuracy resets in my heart, not in the ledger.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Encouraging, a coach before a match, then honest.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.47,
+    "gain_db": 4.36,
+    "limited_db": 0.6,
+    "measured_before_lufs": -22.36,
+    "peak_bound": false
+  },
+  "asr": "New sector, fresh start. Your accuracy resets in my heart, not in the ledger.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "New",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "sector",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "fresh",
+      "charStart": 12,
+      "charEnd": 17,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "start",
+      "charStart": 18,
+      "charEnd": 23,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "Your",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "accuracy",
+      "charStart": 30,
+      "charEnd": 38,
+      "startS": 3.12,
+      "endS": 3.68
+    },
+    {
+      "text": "resets",
+      "charStart": 39,
+      "charEnd": 45,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "in",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "my",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "heart",
+      "charStart": 52,
+      "charEnd": 57,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "not",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "in",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "the",
+      "charStart": 66,
+      "charEnd": 69,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "ledger",
+      "charStart": 70,
+      "charEnd": 76,
+      "startS": 5.44,
+      "endS": 5.92
+    }
+  ],
+  "words_for": "bfb335f660e895b7/wordtiming-v1"
+}

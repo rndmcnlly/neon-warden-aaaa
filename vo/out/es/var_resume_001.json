@@ -1,0 +1,138 @@
+{
+  "hash": "fa2b56c08ecfbc6a",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_resume_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Bienvenido de vuelta! Yo no me fui a ningún lado. De hecho, no puedo.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Happy, then a tiny matter-of-fact admission.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.754,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.34,
+    "gain_db": 3.23,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.23,
+    "peak_bound": false
+  },
+  "asr": "Bienvenido de vuelta. Yo no me fui a ningún lado, de hecho, no puedo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Bienvenido",
+      "charStart": 1,
+      "charEnd": 11,
+      "startS": 0.24,
+      "endS": 0.96
+    },
+    {
+      "text": "de",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "vuelta",
+      "charStart": 15,
+      "charEnd": 21,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "Yo",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "no",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "me",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "fui",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "a",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "ningún",
+      "charStart": 38,
+      "charEnd": 44,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "lado",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.6
+    },
+    {
+      "text": "De",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "hecho",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "no",
+      "charStart": 61,
+      "charEnd": 63,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "puedo",
+      "charStart": 64,
+      "charEnd": 69,
+      "startS": 5.36,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "fa2b56c08ecfbc6a/wordtiming-v1"
+}

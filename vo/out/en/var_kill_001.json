@@ -1,0 +1,131 @@
+{
+  "hash": "516b6664a170f44e",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_kill_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Target removed. Pay adjusted upward. I'm proud of you, and so is accounting.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Proud, then a small aside about accounting.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.11,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 3.88,
+    "limited_db": 0.92,
+    "measured_before_lufs": -21.88,
+    "peak_bound": false
+  },
+  "asr": "Target removed. Pay adjusted upward. I'm proud of you, and so is accounting.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Target",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.88,
+      "endS": 1.2
+    },
+    {
+      "text": "removed",
+      "charStart": 7,
+      "charEnd": 14,
+      "startS": 1.2,
+      "endS": 1.76
+    },
+    {
+      "text": "Pay",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "adjusted",
+      "charStart": 20,
+      "charEnd": 28,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "upward",
+      "charStart": 29,
+      "charEnd": 35,
+      "startS": 2.88,
+      "endS": 3.36
+    },
+    {
+      "text": "I'm",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "proud",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "of",
+      "charStart": 47,
+      "charEnd": 49,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "you",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "and",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "so",
+      "charStart": 59,
+      "charEnd": 61,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "is",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "accounting",
+      "charStart": 65,
+      "charEnd": 75,
+      "startS": 5.28,
+      "endS": 5.84
+    }
+  ],
+  "words_for": "516b6664a170f44e/wordtiming-v1"
+}

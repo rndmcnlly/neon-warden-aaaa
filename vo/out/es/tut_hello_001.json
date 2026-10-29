@@ -1,33 +1,32 @@
 {
-  "hash": "0e20dd4d7c2bfe12",
+  "hash": "fa56a292e0d06e9c",
   "mode": "clone",
   "request": {
     "id": "es__tut_hello_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Hola, y bienvenido a la inducción de la Autoridad de Rutas! Soy tu asistente de inducción y estaré contigo en cada paso del camino. En cada uno de ellos.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Beaming welcome, as if greeting the first customer of the day.",
-  "duration": 10.4,
+  "duration": 9.28,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.779,
   "clipping_suspect": false,
-  "asr": "Hola y bienvenido a la inducción de la autoridad de rutas. Soy tu asistente de inducción y estaré contigo en cada paso del camino, en cada uno de ellos.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.26,
-    "gain_db": 0.43,
-    "limited_db": 0.38,
-    "measured_before_lufs": -18.43,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.16,
+    "gain_db": 4.11,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.11,
     "peak_bound": false
   },
-  "words_for": "0e20dd4d7c2bfe12/wordtiming-v1",
+  "asr": "Hola y bienvenido a la inducción de la autoridad de rutas. Soy tu asistente de inducción y estaré contigo en cada paso del camino, en cada uno de ellos.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,204 +39,205 @@
       "text": "Hola",
       "charStart": 1,
       "charEnd": 5,
-      "startS": 0.24,
-      "endS": 0.64
+      "startS": 0.08,
+      "endS": 0.48
     },
     {
       "text": "y",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 0.88,
-      "endS": 0.96
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "bienvenido",
       "charStart": 9,
       "charEnd": 19,
-      "startS": 0.96,
-      "endS": 1.6
+      "startS": 0.8,
+      "endS": 1.28
     },
     {
       "text": "a",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.28,
+      "endS": 1.36
     },
     {
       "text": "la",
       "charStart": 22,
       "charEnd": 24,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "inducción",
       "charStart": 25,
       "charEnd": 34,
-      "startS": 1.84,
-      "endS": 2.4
+      "startS": 1.44,
+      "endS": 1.92
     },
     {
       "text": "de",
       "charStart": 35,
       "charEnd": 37,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "la",
       "charStart": 38,
       "charEnd": 40,
-      "startS": 2.48,
-      "endS": 2.64
+      "startS": 2.0,
+      "endS": 2.08
     },
     {
       "text": "Autoridad",
       "charStart": 41,
       "charEnd": 50,
-      "startS": 2.64,
-      "endS": 3.2
+      "startS": 2.08,
+      "endS": 2.56
     },
     {
       "text": "de",
       "charStart": 51,
       "charEnd": 53,
-      "startS": 3.2,
-      "endS": 3.28
+      "startS": 2.56,
+      "endS": 2.72
     },
     {
       "text": "Rutas",
       "charStart": 54,
       "charEnd": 59,
-      "startS": 3.28,
-      "endS": 3.92
+      "startS": 2.72,
+      "endS": 3.28
     },
     {
       "text": "Soy",
       "charStart": 61,
       "charEnd": 64,
-      "startS": 4.16,
-      "endS": 4.32
+      "startS": 3.76,
+      "endS": 4.0
     },
     {
       "text": "tu",
       "charStart": 65,
       "charEnd": 67,
-      "startS": 4.48,
-      "endS": 4.72
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "asistente",
       "charStart": 68,
       "charEnd": 77,
-      "startS": 4.72,
-      "endS": 5.2
+      "startS": 4.08,
+      "endS": 4.64
     },
     {
       "text": "de",
       "charStart": 78,
       "charEnd": 80,
-      "startS": 5.2,
-      "endS": 5.28
+      "startS": 4.64,
+      "endS": 4.72
     },
     {
       "text": "inducción",
       "charStart": 81,
       "charEnd": 90,
-      "startS": 5.28,
-      "endS": 5.76
+      "startS": 4.72,
+      "endS": 5.36
     },
     {
       "text": "y",
       "charStart": 91,
       "charEnd": 92,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "estaré",
       "charStart": 93,
       "charEnd": 99,
-      "startS": 6.08,
-      "endS": 6.4
+      "startS": 5.44,
+      "endS": 5.76
     },
     {
       "text": "contigo",
       "charStart": 100,
       "charEnd": 107,
-      "startS": 6.4,
-      "endS": 6.88
+      "startS": 5.76,
+      "endS": 6.16
     },
     {
       "text": "en",
       "charStart": 108,
       "charEnd": 110,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "cada",
       "charStart": 111,
       "charEnd": 115,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 6.24,
+      "endS": 6.56
     },
     {
       "text": "paso",
       "charStart": 116,
       "charEnd": 120,
-      "startS": 7.36,
-      "endS": 7.68
+      "startS": 6.56,
+      "endS": 6.88
     },
     {
       "text": "del",
       "charStart": 121,
       "charEnd": 124,
-      "startS": 7.68,
-      "endS": 7.84
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "camino",
       "charStart": 125,
       "charEnd": 131,
-      "startS": 7.92,
-      "endS": 8.48
+      "startS": 7.04,
+      "endS": 7.52
     },
     {
       "text": "En",
       "charStart": 133,
       "charEnd": 135,
-      "startS": 8.88,
-      "endS": 9.04
+      "startS": 8.0,
+      "endS": 8.16
     },
     {
       "text": "cada",
       "charStart": 136,
       "charEnd": 140,
-      "startS": 9.04,
-      "endS": 9.36
+      "startS": 8.16,
+      "endS": 8.4
     },
     {
       "text": "uno",
       "charStart": 141,
       "charEnd": 144,
-      "startS": 9.36,
-      "endS": 9.6
+      "startS": 8.4,
+      "endS": 8.64
     },
     {
       "text": "de",
       "charStart": 145,
       "charEnd": 147,
-      "startS": 9.6,
-      "endS": 10.0
+      "startS": 8.64,
+      "endS": 8.8
     },
     {
       "text": "ellos",
       "charStart": 148,
       "charEnd": 153,
-      "startS": 10.0,
-      "endS": 10.32
+      "startS": 8.8,
+      "endS": 9.2
     }
-  ]
+  ],
+  "words_for": "fa56a292e0d06e9c/wordtiming-v1"
 }

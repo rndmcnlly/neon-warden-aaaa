@@ -1,0 +1,131 @@
+{
+  "hash": "0229a44678bd9c87",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_graze_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Graze logged. My heart rate is not billable, but it did go up.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Hand on heart, a little breathless.",
+  "duration": 4.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.06,
+    "true_peak_dbtp": -1.37,
+    "gain_db": 2.03,
+    "limited_db": 1.08,
+    "measured_before_lufs": -20.03,
+    "peak_bound": false
+  },
+  "asr": "Gray's logged. My heart rate is not billable, but it did go up.",
+  "asr_similarity": 0.923,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Graze",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "logged",
+      "charStart": 6,
+      "charEnd": 12,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "My",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "heart",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "rate",
+      "charStart": 23,
+      "charEnd": 27,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "is",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "not",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "billable",
+      "charStart": 35,
+      "charEnd": 43,
+      "startS": 3.2,
+      "endS": 3.76
+    },
+    {
+      "text": "but",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "it",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "did",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "go",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "up",
+      "charStart": 59,
+      "charEnd": 61,
+      "startS": 4.48,
+      "endS": 4.72
+    }
+  ],
+  "words_for": "0229a44678bd9c87/wordtiming-v1"
+}

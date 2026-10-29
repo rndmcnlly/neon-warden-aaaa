@@ -1,0 +1,131 @@
+{
+  "hash": "423381307646974c",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_idle_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Resting to charge? Smart. Resting just to rest? Also fine. Unpaid, but fine.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Approving, then fair, then the footnote.",
+  "duration": 6.88,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.12,
+    "true_peak_dbtp": -1.28,
+    "gain_db": 2.87,
+    "limited_db": 1.4,
+    "measured_before_lufs": -20.87,
+    "peak_bound": false
+  },
+  "asr": "Resting to charge, smart; resting just to rest, also fine. Unpaid, but fine.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Resting",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "to",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "charge",
+      "charStart": 11,
+      "charEnd": 17,
+      "startS": 1.2,
+      "endS": 1.68
+    },
+    {
+      "text": "Smart",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "Resting",
+      "charStart": 26,
+      "charEnd": 33,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "just",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "to",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "rest",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.6,
+      "endS": 4.0
+    },
+    {
+      "text": "Also",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "fine",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 4.72,
+      "endS": 5.12
+    },
+    {
+      "text": "Unpaid",
+      "charStart": 59,
+      "charEnd": 65,
+      "startS": 5.36,
+      "endS": 5.92
+    },
+    {
+      "text": "but",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "fine",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 6.24,
+      "endS": 6.64
+    }
+  ],
+  "words_for": "423381307646974c/wordtiming-v1"
+}

@@ -1,0 +1,215 @@
+{
+  "hash": "b0955a4e5ee93f02",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_idle_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "在休息蓄力吗？聪明。只是为了休息而休息？也行。不计薪，但也行。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Approving, then fair, then the footnote.",
+  "duration": 7.52,
+  "sample_rate": 24000,
+  "peak": 0.66,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.45,
+    "gain_db": 2.91,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.91,
+    "peak_bound": false
+  },
+  "asr": "在休息蓄力吗？聪明，只是为了休息而休息也行，不计心，但也行。",
+  "asr_similarity": 0.96,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "在",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "休",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "息",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "蓄",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "力",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "吗",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "聪",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "明",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "只",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "是",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "为",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "了",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "休",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "息",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "而",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "休",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "息",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.56,
+      "endS": 4.88
+    },
+    {
+      "text": "也",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "行",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 5.28,
+      "endS": 5.68
+    },
+    {
+      "text": "不",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "计",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 6.08,
+      "endS": 6.32
+    },
+    {
+      "text": "薪",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 6.32,
+      "endS": 6.64
+    },
+    {
+      "text": "但",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "也",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "行",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 7.2,
+      "endS": 7.52
+    }
+  ],
+  "words_for": "b0955a4e5ee93f02/wordtiming-v1"
+}

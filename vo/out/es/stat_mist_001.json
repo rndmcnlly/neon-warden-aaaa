@@ -1,0 +1,131 @@
+{
+  "hash": "41d761972d6a8a51",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_mist_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Esos tiros se están yendo a la neblina. La neblina no nos contrató.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Polite, as if pointing out a typo.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.873,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 2.78,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.82,
+    "peak_bound": false
+  },
+  "asr": "Esos tiros están yendo a la neblina. La neblina no nos contrató.",
+  "asr_similarity": 0.96,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Esos",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "tiros",
+      "charStart": 5,
+      "charEnd": 10,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "se",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "están",
+      "charStart": 14,
+      "charEnd": 19,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "yendo",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "a",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "la",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "neblina",
+      "charStart": 31,
+      "charEnd": 38,
+      "startS": 1.6,
+      "endS": 2.08
+    },
+    {
+      "text": "La",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "neblina",
+      "charStart": 43,
+      "charEnd": 50,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "no",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "nos",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "contrató",
+      "charStart": 58,
+      "charEnd": 66,
+      "startS": 3.68,
+      "endS": 4.24
+    }
+  ],
+  "words_for": "41d761972d6a8a51/wordtiming-v1"
+}

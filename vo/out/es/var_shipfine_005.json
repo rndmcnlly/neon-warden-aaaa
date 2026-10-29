@@ -1,0 +1,159 @@
+{
+  "hash": "59bc78b676aa1fe6",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_005",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Se acabó el escudo. Cumplió su trabajo y tú estás bien. El contrato de renta, no tanto.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Proud of the shield, then the fine print at speed.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.839,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.42,
+    "gain_db": 4.36,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.36,
+    "peak_bound": false
+  },
+  "asr": "Se acabó el escudo. Cumplió su trabajo y tú estás bien. El contrato de renta no tanto.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Se",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "acabó",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "el",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "escudo",
+      "charStart": 12,
+      "charEnd": 18,
+      "startS": 0.8,
+      "endS": 1.36
+    },
+    {
+      "text": "Cumplió",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 2.24,
+      "endS": 2.64
+    },
+    {
+      "text": "su",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "trabajo",
+      "charStart": 31,
+      "charEnd": 38,
+      "startS": 2.72,
+      "endS": 3.28
+    },
+    {
+      "text": "y",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "tú",
+      "charStart": 41,
+      "charEnd": 43,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "estás",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 3.52,
+      "endS": 3.92
+    },
+    {
+      "text": "bien",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "El",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "contrato",
+      "charStart": 59,
+      "charEnd": 67,
+      "startS": 5.04,
+      "endS": 5.44
+    },
+    {
+      "text": "de",
+      "charStart": 68,
+      "charEnd": 70,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "renta",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 5.6,
+      "endS": 6.0
+    },
+    {
+      "text": "no",
+      "charStart": 78,
+      "charEnd": 80,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "tanto",
+      "charStart": 81,
+      "charEnd": 86,
+      "startS": 6.48,
+      "endS": 6.88
+    }
+  ],
+  "words_for": "59bc78b676aa1fe6/wordtiming-v1"
+}

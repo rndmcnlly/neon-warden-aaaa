@@ -1,5 +1,5 @@
 {
-  "hash": "ef72103ec40e089c",
+  "hash": "13a83da1c2bbbd9b",
   "mode": "clone",
   "request": {
     "id": "en__tut_fire_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Your bullets are cyan. Bullets fired at you are pink. Pink bullets are bad. Gold bullets are also bad. In general, bullets are bad, unless they are yours.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Captain Obvious, completely sincere, a careful list.",
-  "duration": 9.84,
+  "duration": 11.44,
   "sample_rate": 24000,
-  "peak": 0.709,
+  "peak": 0.817,
   "clipping_suspect": false,
-  "asr": "Your bullets are cyan. Bullets fired at you are pink. Pink bullets are bad. Gold bullets are also bad in general. Bullets are bad unless they are yours.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.9,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -1.66,
+    "gain_db": 2.65,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.65,
     "peak_bound": false
   },
-  "words_for": "ef72103ec40e089c/wordtiming-v1",
+  "asr": "Your bullets are cyan. Bullets fired at you are pink. Pink bullets are bad. Gold bullets are also bad. In general, bullets are bad unless they are yours.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,197 +39,198 @@
       "text": "Your",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.24,
-      "endS": 0.4
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "bullets",
       "charStart": 5,
       "charEnd": 12,
-      "startS": 0.4,
-      "endS": 0.8
+      "startS": 0.96,
+      "endS": 1.36
     },
     {
       "text": "are",
       "charStart": 13,
       "charEnd": 16,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "cyan",
       "charStart": 17,
       "charEnd": 21,
-      "startS": 0.96,
-      "endS": 1.6
+      "startS": 1.44,
+      "endS": 2.08
     },
     {
       "text": "Bullets",
       "charStart": 23,
       "charEnd": 30,
-      "startS": 1.92,
-      "endS": 2.24
+      "startS": 2.8,
+      "endS": 3.2
     },
     {
       "text": "fired",
       "charStart": 31,
       "charEnd": 36,
-      "startS": 2.24,
-      "endS": 2.4
+      "startS": 3.2,
+      "endS": 3.52
     },
     {
       "text": "at",
       "charStart": 37,
       "charEnd": 39,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "you",
       "charStart": 40,
       "charEnd": 43,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 3.76,
+      "endS": 3.84
     },
     {
       "text": "are",
       "charStart": 44,
       "charEnd": 47,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 3.84,
+      "endS": 3.92
     },
     {
       "text": "pink",
       "charStart": 48,
       "charEnd": 52,
-      "startS": 3.04,
-      "endS": 3.44
+      "startS": 3.92,
+      "endS": 4.32
     },
     {
       "text": "Pink",
       "charStart": 54,
       "charEnd": 58,
-      "startS": 3.68,
-      "endS": 3.92
+      "startS": 4.88,
+      "endS": 5.12
     },
     {
       "text": "bullets",
       "charStart": 59,
       "charEnd": 66,
-      "startS": 3.92,
-      "endS": 4.32
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "are",
       "charStart": 67,
       "charEnd": 70,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "bad",
       "charStart": 71,
       "charEnd": 74,
-      "startS": 4.64,
-      "endS": 4.8
+      "startS": 5.6,
+      "endS": 5.92
     },
     {
       "text": "Gold",
       "charStart": 76,
       "charEnd": 80,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 6.48,
+      "endS": 6.72
     },
     {
       "text": "bullets",
       "charStart": 81,
       "charEnd": 88,
-      "startS": 5.52,
-      "endS": 5.84
+      "startS": 6.72,
+      "endS": 7.04
     },
     {
       "text": "are",
       "charStart": 89,
       "charEnd": 92,
-      "startS": 5.84,
-      "endS": 6.0
+      "startS": 7.04,
+      "endS": 7.12
     },
     {
       "text": "also",
       "charStart": 93,
       "charEnd": 97,
-      "startS": 6.0,
-      "endS": 6.4
+      "startS": 7.12,
+      "endS": 7.52
     },
     {
       "text": "bad",
       "charStart": 98,
       "charEnd": 101,
-      "startS": 6.4,
-      "endS": 6.72
+      "startS": 7.52,
+      "endS": 7.84
     },
     {
       "text": "In",
       "charStart": 103,
       "charEnd": 105,
-      "startS": 6.72,
-      "endS": 6.8
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "general",
       "charStart": 106,
       "charEnd": 113,
-      "startS": 6.8,
-      "endS": 7.36
+      "startS": 8.4,
+      "endS": 8.88
     },
     {
       "text": "bullets",
       "charStart": 115,
       "charEnd": 122,
-      "startS": 7.68,
-      "endS": 7.92
+      "startS": 9.12,
+      "endS": 9.44
     },
     {
       "text": "are",
       "charStart": 123,
       "charEnd": 126,
-      "startS": 8.0,
-      "endS": 8.08
+      "startS": 9.44,
+      "endS": 9.52
     },
     {
       "text": "bad",
       "charStart": 127,
       "charEnd": 130,
-      "startS": 8.08,
-      "endS": 8.48
+      "startS": 9.52,
+      "endS": 9.92
     },
     {
       "text": "unless",
       "charStart": 132,
       "charEnd": 138,
-      "startS": 8.48,
-      "endS": 8.8
+      "startS": 10.24,
+      "endS": 10.56
     },
     {
       "text": "they",
       "charStart": 139,
       "charEnd": 143,
-      "startS": 8.8,
-      "endS": 8.96
+      "startS": 10.56,
+      "endS": 10.72
     },
     {
       "text": "are",
       "charStart": 144,
       "charEnd": 147,
-      "startS": 8.96,
-      "endS": 9.04
+      "startS": 10.72,
+      "endS": 10.8
     },
     {
       "text": "yours",
       "charStart": 148,
       "charEnd": 153,
-      "startS": 9.36,
-      "endS": 9.68
+      "startS": 10.8,
+      "endS": 11.28
     }
-  ]
+  ],
+  "words_for": "13a83da1c2bbbd9b/wordtiming-v1"
 }

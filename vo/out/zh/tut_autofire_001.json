@@ -1,33 +1,32 @@
 {
-  "hash": "5fc8952358b71ab5",
+  "hash": "77131f2912876e00",
   "mode": "clone",
   "request": {
     "id": "zh__tut_autofire_001",
     "seed": 11,
     "language": "Chinese",
     "text": "如果长时间按住射击键让你不舒服，可以在无障碍设置中开启自动射击。航道管理局希望你的双手健康又高效。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Genuinely helpful, then corporate on the last sentence.",
-  "duration": 9.12,
+  "duration": 8.56,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.687,
   "clipping_suspect": false,
-  "asr": "如果长时间按住射击键让你不舒服，可以在无障碍设置中开启自动射击。航道管理局希望你的双手健康又高效。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.12,
-    "gain_db": 0.92,
-    "limited_db": 0.87,
-    "measured_before_lufs": -18.92,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.18,
+    "gain_db": 2.25,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.25,
     "peak_bound": false
   },
-  "words_for": "5fc8952358b71ab5/wordtiming-v1",
+  "asr": "如果长时间按住射击键让你不舒服，可以在无障碍设置中开启自动射击。航道管理局希望你的双手健康又高效。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -48,315 +47,316 @@
       "charStart": 1,
       "charEnd": 2,
       "startS": 0.32,
-      "endS": 0.48
+      "endS": 0.4
     },
     {
       "text": "长",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.48,
-      "endS": 0.72
+      "startS": 0.4,
+      "endS": 0.64
     },
     {
       "text": "时",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.72,
-      "endS": 0.96
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "间",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "按",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "住",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.12,
+      "endS": 1.2
     },
     {
       "text": "射",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 1.2,
+      "endS": 1.44
     },
     {
       "text": "击",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.6,
-      "endS": 1.84
+      "startS": 1.44,
+      "endS": 1.52
     },
     {
       "text": "键",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.84,
-      "endS": 2.08
+      "startS": 1.52,
+      "endS": 1.76
     },
     {
       "text": "让",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "你",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.24,
-      "endS": 2.4
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "不",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 2.0,
+      "endS": 2.08
     },
     {
       "text": "舒",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.48,
-      "endS": 2.8
+      "startS": 2.08,
+      "endS": 2.32
     },
     {
       "text": "服",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.8,
-      "endS": 3.04
+      "startS": 2.32,
+      "endS": 2.64
     },
     {
       "text": "可",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.28,
-      "endS": 3.44
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "以",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.44,
-      "endS": 3.52
+      "startS": 3.04,
+      "endS": 3.12
     },
     {
       "text": "在",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 3.12,
+      "endS": 3.28
     },
     {
       "text": "无",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 3.28,
+      "endS": 3.44
     },
     {
       "text": "障",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 3.44,
+      "endS": 3.52
     },
     {
       "text": "碍",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.0,
-      "endS": 4.16
+      "startS": 3.52,
+      "endS": 3.68
     },
     {
       "text": "设",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.16,
-      "endS": 4.4
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "置",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "中",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.48,
-      "endS": 4.72
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "开",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 4.72,
-      "endS": 4.96
+      "startS": 4.16,
+      "endS": 4.4
     },
     {
       "text": "启",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 4.4,
+      "endS": 4.56
     },
     {
       "text": "自",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 4.56,
+      "endS": 4.72
     },
     {
       "text": "动",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 4.72,
+      "endS": 4.8
     },
     {
       "text": "射",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 4.8,
+      "endS": 5.04
     },
     {
       "text": "击",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 5.6,
-      "endS": 5.92
+      "startS": 5.04,
+      "endS": 5.36
     },
     {
       "text": "航",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.24,
-      "endS": 6.48
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "道",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.48,
-      "endS": 6.64
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "管",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 6.08,
+      "endS": 6.24
     },
     {
       "text": "理",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 6.24,
+      "endS": 6.32
     },
     {
       "text": "局",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 6.96,
-      "endS": 7.12
+      "startS": 6.32,
+      "endS": 6.48
     },
     {
       "text": "希",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 7.12,
-      "endS": 7.28
+      "startS": 6.48,
+      "endS": 6.72
     },
     {
       "text": "望",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 7.28,
-      "endS": 7.44
+      "startS": 6.72,
+      "endS": 6.8
     },
     {
       "text": "你",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 7.44,
-      "endS": 7.52
+      "startS": 6.8,
+      "endS": 6.96
     },
     {
       "text": "的",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 7.52,
-      "endS": 7.68
+      "startS": 6.96,
+      "endS": 7.04
     },
     {
       "text": "双",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 7.68,
-      "endS": 7.84
+      "startS": 7.04,
+      "endS": 7.2
     },
     {
       "text": "手",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 7.84,
-      "endS": 8.08
+      "startS": 7.2,
+      "endS": 7.36
     },
     {
       "text": "健",
       "charStart": 43,
       "charEnd": 44,
-      "startS": 8.08,
-      "endS": 8.24
+      "startS": 7.36,
+      "endS": 7.68
     },
     {
       "text": "康",
       "charStart": 44,
       "charEnd": 45,
-      "startS": 8.24,
-      "endS": 8.4
+      "startS": 7.68,
+      "endS": 7.84
     },
     {
       "text": "又",
       "charStart": 45,
       "charEnd": 46,
-      "startS": 8.4,
-      "endS": 8.56
+      "startS": 7.84,
+      "endS": 8.0
     },
     {
       "text": "高",
       "charStart": 46,
       "charEnd": 47,
-      "startS": 8.56,
-      "endS": 8.72
+      "startS": 8.0,
+      "endS": 8.16
     },
     {
       "text": "效",
       "charStart": 47,
       "charEnd": 48,
-      "startS": 8.8,
-      "endS": 9.12
+      "startS": 8.16,
+      "endS": 8.48
     }
-  ]
+  ],
+  "words_for": "77131f2912876e00/wordtiming-v1"
 }

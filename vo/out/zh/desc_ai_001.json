@@ -1,33 +1,32 @@
 {
-  "hash": "4f5edf96520aea25",
+  "hash": "4c72e33847d49c39",
   "mode": "clone",
   "request": {
     "id": "zh__desc_ai_001",
     "seed": 11,
     "language": "Chinese",
     "text": "这和简报里的声音不一样。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, small and baffled, half to herself.",
-  "duration": 2.08,
+  "duration": 2.56,
   "sample_rate": 24000,
-  "peak": 0.811,
+  "peak": 0.515,
   "clipping_suspect": false,
-  "asr": "这和简报里的声音不一样。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.77,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -5.75,
+    "gain_db": 0.74,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -18.74,
     "peak_bound": false
   },
-  "words_for": "4f5edf96520aea25/wordtiming-v1",
+  "asr": "这和简报里的声音不一样。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,78 +39,79 @@
       "text": "这",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.96,
+      "endS": 1.04
     },
     {
       "text": "和",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 1.04,
+      "endS": 1.12
     },
     {
       "text": "简",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "报",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 1.36,
+      "endS": 1.52
     },
     {
       "text": "里",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.88,
-      "endS": 0.96
+      "startS": 1.52,
+      "endS": 1.6
     },
     {
       "text": "的",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 1.6,
+      "endS": 1.68
     },
     {
       "text": "声",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 1.68,
+      "endS": 1.84
     },
     {
       "text": "音",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.28,
-      "endS": 1.36
+      "startS": 1.84,
+      "endS": 2.0
     },
     {
       "text": "不",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.44,
-      "endS": 1.52
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "一",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.52,
-      "endS": 1.76
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "样",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 1.76,
-      "endS": 2.0
+      "startS": 2.32,
+      "endS": 2.56
     }
-  ]
+  ],
+  "words_for": "4c72e33847d49c39/wordtiming-v1"
 }

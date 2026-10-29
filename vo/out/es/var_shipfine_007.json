@@ -1,0 +1,138 @@
+{
+  "hash": "6d379778a515687f",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_007",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Última nave de reserva. No estoy preocupada. Estoy usando mi voz tranquila a propósito.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Deliberately soothing, slightly too slow.",
+  "duration": 5.52,
+  "sample_rate": 24000,
+  "peak": 0.738,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.64,
+    "gain_db": 4.1,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.1,
+    "peak_bound": false
+  },
+  "asr": "Última nave de reserva. No estoy preocupada. Estoy usando mi voz tranquila a propósito.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Última",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "nave",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "de",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "reserva",
+      "charStart": 15,
+      "charEnd": 22,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "No",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "estoy",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "preocupada",
+      "charStart": 33,
+      "charEnd": 43,
+      "startS": 2.24,
+      "endS": 2.96
+    },
+    {
+      "text": "Estoy",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "usando",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "mi",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "voz",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "tranquila",
+      "charStart": 65,
+      "charEnd": 74,
+      "startS": 4.32,
+      "endS": 4.88
+    },
+    {
+      "text": "a",
+      "charStart": 75,
+      "charEnd": 76,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "propósito",
+      "charStart": 77,
+      "charEnd": 86,
+      "startS": 4.96,
+      "endS": 5.44
+    }
+  ],
+  "words_for": "6d379778a515687f/wordtiming-v1"
+}

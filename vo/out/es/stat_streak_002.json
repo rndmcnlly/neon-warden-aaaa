@@ -1,0 +1,124 @@
+{
+  "hash": "33da109efc472fba",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_streak_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Qué trabajo tan excelente. Quisiera reenviárselo a alguien. A todos, de preferencia.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Proud manager, reaching for the reply-all button.",
+  "duration": 6.24,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.11,
+    "true_peak_dbtp": -1.34,
+    "gain_db": 5.61,
+    "limited_db": 0.53,
+    "measured_before_lufs": -23.61,
+    "peak_bound": false
+  },
+  "asr": "Qué trabajo tan excelente, quisiera reenviárselo a alguien, a todos, de preferencia.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Qué",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "trabajo",
+      "charStart": 4,
+      "charEnd": 11,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "tan",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "excelente",
+      "charStart": 16,
+      "charEnd": 25,
+      "startS": 0.88,
+      "endS": 1.68
+    },
+    {
+      "text": "Quisiera",
+      "charStart": 27,
+      "charEnd": 35,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "reenviárselo",
+      "charStart": 36,
+      "charEnd": 48,
+      "startS": 2.64,
+      "endS": 3.44
+    },
+    {
+      "text": "a",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "alguien",
+      "charStart": 51,
+      "charEnd": 58,
+      "startS": 3.52,
+      "endS": 3.92
+    },
+    {
+      "text": "A",
+      "charStart": 60,
+      "charEnd": 61,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "todos",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 4.48,
+      "endS": 5.04
+    },
+    {
+      "text": "de",
+      "charStart": 69,
+      "charEnd": 71,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "preferencia",
+      "charStart": 72,
+      "charEnd": 83,
+      "startS": 5.36,
+      "endS": 6.16
+    }
+  ],
+  "words_for": "33da109efc472fba/wordtiming-v1"
+}

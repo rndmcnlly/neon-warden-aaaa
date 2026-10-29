@@ -1,0 +1,152 @@
+{
+  "hash": "61261bab1ca8ae2e",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_perfect_001",
+    "seed": 11,
+    "language": "English",
+    "text": "A whole sector without a scratch! The hull says thank you. The hull rarely says anything.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Delighted, a little misty.",
+  "duration": 6.64,
+  "sample_rate": 24000,
+  "peak": 0.717,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.86,
+    "gain_db": 2.64,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.64,
+    "peak_bound": false
+  },
+  "asr": "A whole sector without a scratch. The hull says thank you. The hull rarely says anything.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "A",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "whole",
+      "charStart": 2,
+      "charEnd": 7,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "sector",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "without",
+      "charStart": 15,
+      "charEnd": 22,
+      "startS": 1.36,
+      "endS": 1.68
+    },
+    {
+      "text": "a",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "scratch",
+      "charStart": 25,
+      "charEnd": 32,
+      "startS": 1.76,
+      "endS": 2.32
+    },
+    {
+      "text": "The",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "hull",
+      "charStart": 38,
+      "charEnd": 42,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "says",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "thank",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "you",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "The",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "hull",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "rarely",
+      "charStart": 68,
+      "charEnd": 74,
+      "startS": 5.2,
+      "endS": 5.6
+    },
+    {
+      "text": "says",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 5.6,
+      "endS": 5.84
+    },
+    {
+      "text": "anything",
+      "charStart": 80,
+      "charEnd": 88,
+      "startS": 5.84,
+      "endS": 6.4
+    }
+  ],
+  "words_for": "61261bab1ca8ae2e/wordtiming-v1"
+}

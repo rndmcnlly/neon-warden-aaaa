@@ -1,0 +1,117 @@
+{
+  "hash": "708b8a97998b55e2",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_disarm_004",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Desarmado! La tarifa es más baja, pero tus modales son excelentes.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Kind, with the lower rate tucked in.",
+  "duration": 4.32,
+  "sample_rate": 24000,
+  "peak": 0.743,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.39,
+    "gain_db": 2.89,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.89,
+    "peak_bound": false
+  },
+  "asr": "Desarmado, la tarifa es más baja pero tus modales son excelentes.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Desarmado",
+      "charStart": 1,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.96
+    },
+    {
+      "text": "La",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "tarifa",
+      "charStart": 15,
+      "charEnd": 21,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "es",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "más",
+      "charStart": 25,
+      "charEnd": 28,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "baja",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.08,
+      "endS": 2.48
+    },
+    {
+      "text": "pero",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "tus",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "modales",
+      "charStart": 44,
+      "charEnd": 51,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "son",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "excelentes",
+      "charStart": 56,
+      "charEnd": 66,
+      "startS": 3.68,
+      "endS": 4.24
+    }
+  ],
+  "words_for": "708b8a97998b55e2/wordtiming-v1"
+}

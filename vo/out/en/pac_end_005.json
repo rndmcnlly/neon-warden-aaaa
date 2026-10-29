@@ -1,5 +1,5 @@
 {
-  "hash": "73e39da1631e4038",
+  "hash": "410066948e38bfc7",
   "mode": "clone",
   "request": {
     "id": "en__pac_end_005",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Connection lost. Updating records. Updating. Up.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, glitching out mid-word, never losing the smile.",
-  "duration": 3.52,
+  "duration": 4.96,
   "sample_rate": 24000,
-  "peak": 0.779,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Connection lost. Updating records. Updating up.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -2.13,
-    "gain_db": -0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.42,
+    "gain_db": 2.68,
+    "limited_db": 0.34,
+    "measured_before_lufs": -20.68,
     "peak_bound": false
   },
-  "words_for": "73e39da1631e4038/wordtiming-v1",
+  "asr": "Connection lost. Updating records. Updating, up.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,43 +39,44 @@
       "text": "Connection",
       "charStart": 0,
       "charEnd": 10,
-      "startS": 0.16,
-      "endS": 0.72
+      "startS": 0.64,
+      "endS": 1.12
     },
     {
       "text": "lost",
       "charStart": 11,
       "charEnd": 15,
-      "startS": 0.72,
-      "endS": 1.12
+      "startS": 1.12,
+      "endS": 1.6
     },
     {
       "text": "Updating",
       "charStart": 17,
       "charEnd": 25,
-      "startS": 1.44,
-      "endS": 2.0
+      "startS": 2.0,
+      "endS": 2.4
     },
     {
       "text": "records",
       "charStart": 26,
       "charEnd": 33,
-      "startS": 2.0,
-      "endS": 2.56
+      "startS": 2.4,
+      "endS": 2.96
     },
     {
       "text": "Updating",
       "charStart": 35,
       "charEnd": 43,
-      "startS": 2.8,
-      "endS": 3.28
+      "startS": 3.44,
+      "endS": 4.0
     },
     {
       "text": "Up",
       "charStart": 45,
       "charEnd": 47,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 4.56,
+      "endS": 4.88
     }
-  ]
+  ],
+  "words_for": "410066948e38bfc7/wordtiming-v1"
 }

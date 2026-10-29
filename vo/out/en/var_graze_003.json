@@ -1,0 +1,152 @@
+{
+  "hash": "7f9d548571a2c4c8",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_graze_003",
+    "seed": 211,
+    "language": "English",
+    "text": "Another graze. You and danger are on a first-name basis, and I'm copied on every message.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Office humor, pleased with herself.",
+  "duration": 6.48,
+  "sample_rate": 24000,
+  "peak": 0.687,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.2,
+    "gain_db": 2.43,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.43,
+    "peak_bound": false
+  },
+  "asr": "Another graze. You and danger are on a first name basis, and I'm copied on every message.",
+  "asr_similarity": 0.909,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Another",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "graze",
+      "charStart": 8,
+      "charEnd": 13,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "You",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "and",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "danger",
+      "charStart": 23,
+      "charEnd": 29,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "are",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "on",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "a",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "first-name",
+      "charStart": 39,
+      "charEnd": 49,
+      "startS": 3.36,
+      "endS": 3.84
+    },
+    {
+      "text": "basis",
+      "charStart": 50,
+      "charEnd": 55,
+      "startS": 3.84,
+      "endS": 4.4
+    },
+    {
+      "text": "and",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "I'm",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "copied",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 4.96,
+      "endS": 5.36
+    },
+    {
+      "text": "on",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "every",
+      "charStart": 75,
+      "charEnd": 80,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "message",
+      "charStart": 81,
+      "charEnd": 88,
+      "startS": 5.76,
+      "endS": 6.24
+    }
+  ],
+  "words_for": "7f9d548571a2c4c8/wordtiming-v1"
+}

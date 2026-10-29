@@ -1,33 +1,32 @@
 {
-  "hash": "94c417718504a8e7",
+  "hash": "c00d1559e734d277",
   "mode": "clone",
   "request": {
     "id": "zh__amb_nofire_004",
     "seed": 11,
     "language": "Chinese",
     "text": "未履约是严重的合同问题。我这么说，只是因为我关心你。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, HR voice: soft words, firm meaning.",
-  "duration": 5.6,
+  "duration": 5.44,
   "sample_rate": 24000,
-  "peak": 0.869,
+  "peak": 0.574,
   "clipping_suspect": false,
-  "asr": "未履约是严重的合同问题。我这么说，只是因为我关心你。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.17,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -4.7,
+    "gain_db": 1.23,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.23,
     "peak_bound": false
   },
-  "words_for": "94c417718504a8e7/wordtiming-v1",
+  "asr": "未履约是严重的合同问题。我这么说，只是因为我关心你。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,14 +39,14 @@
       "text": "未",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 0.72,
+      "endS": 0.88
     },
     {
       "text": "履",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.8,
+      "startS": 0.88,
       "endS": 1.04
     },
     {
@@ -76,126 +75,127 @@
       "charStart": 5,
       "charEnd": 6,
       "startS": 1.6,
-      "endS": 1.76
+      "endS": 1.68
     },
     {
       "text": "的",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 1.68,
+      "endS": 1.76
     },
     {
       "text": "合",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.84,
-      "endS": 2.08
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "同",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 1.92,
+      "endS": 2.08
     },
     {
       "text": "问",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.24,
-      "endS": 2.4
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "题",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.4,
-      "endS": 2.72
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "我",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.52,
-      "endS": 3.6
+      "startS": 3.12,
+      "endS": 3.2
     },
     {
       "text": "这",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.6,
-      "endS": 3.68
+      "startS": 3.2,
+      "endS": 3.28
     },
     {
       "text": "么",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 3.28,
+      "endS": 3.36
     },
     {
       "text": "说",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.84,
-      "endS": 4.16
+      "startS": 3.36,
+      "endS": 3.68
     },
     {
       "text": "只",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.16,
-      "endS": 4.32
+      "startS": 4.08,
+      "endS": 4.24
     },
     {
       "text": "是",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 4.24,
+      "endS": 4.32
     },
     {
       "text": "因",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.4,
-      "endS": 4.56
+      "startS": 4.32,
+      "endS": 4.48
     },
     {
       "text": "为",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.56,
+      "startS": 4.48,
       "endS": 4.64
     },
     {
       "text": "我",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 4.64,
+      "endS": 4.72
     },
     {
       "text": "关",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.88,
-      "endS": 4.96
+      "startS": 4.72,
+      "endS": 4.88
     },
     {
       "text": "心",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.96,
-      "endS": 5.28
+      "startS": 4.88,
+      "endS": 5.12
     },
     {
       "text": "你",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.28,
-      "endS": 5.52
+      "startS": 5.12,
+      "endS": 5.36
     }
-  ]
+  ],
+  "words_for": "c00d1559e734d277/wordtiming-v1"
 }

@@ -1,0 +1,145 @@
+{
+  "hash": "94ebe533331aad1a",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_006",
+    "seed": 11,
+    "language": "English",
+    "text": "One hull left. You're fine! Statistically, you're about to be less fine, so please dodge.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Bright, then a careful, steady warning.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.88,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.11,
+    "gain_db": 3.35,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.35,
+    "peak_bound": false
+  },
+  "asr": "One hull left. You're fine, statistically. You're about to be less fine, so please dodge.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "One",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "hull",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "left",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "You're",
+      "charStart": 15,
+      "charEnd": 21,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "fine",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.24,
+      "endS": 2.72
+    },
+    {
+      "text": "Statistically",
+      "charStart": 28,
+      "charEnd": 41,
+      "startS": 3.2,
+      "endS": 4.08
+    },
+    {
+      "text": "you're",
+      "charStart": 43,
+      "charEnd": 49,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "about",
+      "charStart": 50,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "to",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "be",
+      "charStart": 59,
+      "charEnd": 61,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "less",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "fine",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 5.28,
+      "endS": 5.76
+    },
+    {
+      "text": "so",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "please",
+      "charStart": 76,
+      "charEnd": 82,
+      "startS": 6.24,
+      "endS": 6.56
+    },
+    {
+      "text": "dodge",
+      "charStart": 83,
+      "charEnd": 88,
+      "startS": 6.56,
+      "endS": 7.04
+    }
+  ],
+  "words_for": "94ebe533331aad1a/wordtiming-v1"
+}

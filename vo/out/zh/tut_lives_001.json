@@ -1,33 +1,32 @@
 {
-  "hash": "98c0895ded5c3f62",
+  "hash": "bbdf87a04b5ed60f",
   "mode": "clone",
   "request": {
     "id": "zh__tut_lives_001",
     "seed": 11,
     "language": "Chinese",
     "text": "你的船体能承受三次命中。每次命中还会让主炮降一级。请跟我一起数到三。一。二。三。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Slow and deliberate counting, like a crossing guard.",
-  "duration": 7.36,
+  "duration": 8.0,
   "sample_rate": 24000,
-  "peak": 0.839,
+  "peak": 0.644,
   "clipping_suspect": false,
-  "asr": "你的船体能承受三次命中，每次命中还会让主炮降一级。请跟我一起数到三：一二三。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.26,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 1.65,
-    "limited_db": 1.62,
-    "measured_before_lufs": -19.67,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.77,
+    "gain_db": 2.5,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.5,
     "peak_bound": false
   },
-  "words_for": "98c0895ded5c3f62/wordtiming-v1",
+  "asr": "你的船体能承受三次命中，每次命中还会让主炮降一级。请跟我一起数到三：一、二、三。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,70 +39,70 @@
       "text": "你",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.48,
+      "endS": 0.56
     },
     {
       "text": "的",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
-      "endS": 0.4
+      "startS": 0.56,
+      "endS": 0.64
     },
     {
       "text": "船",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.4,
-      "endS": 0.64
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "体",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 0.88,
+      "endS": 1.04
     },
     {
       "text": "能",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.88,
-      "endS": 0.96
+      "startS": 1.04,
+      "endS": 1.12
     },
     {
       "text": "承",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 0.96,
-      "endS": 1.2
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "受",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.2,
-      "endS": 1.36
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "三",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.36,
-      "endS": 1.52
+      "startS": 1.44,
+      "endS": 1.68
     },
     {
       "text": "次",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.68,
+      "endS": 1.84
     },
     {
       "text": "命",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.76,
+      "startS": 1.84,
       "endS": 2.0
     },
     {
@@ -117,14 +116,14 @@
       "text": "每",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.64,
+      "endS": 2.8
     },
     {
       "text": "次",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.72,
+      "startS": 2.8,
       "endS": 2.96
     },
     {
@@ -139,13 +138,13 @@
       "charStart": 15,
       "charEnd": 16,
       "startS": 3.12,
-      "endS": 3.36
+      "endS": 3.28
     },
     {
       "text": "还",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.36,
+      "startS": 3.28,
       "endS": 3.44
     },
     {
@@ -153,13 +152,13 @@
       "charStart": 17,
       "charEnd": 18,
       "startS": 3.44,
-      "endS": 3.6
+      "endS": 3.52
     },
     {
       "text": "让",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.6,
+      "startS": 3.52,
       "endS": 3.68
     },
     {
@@ -174,34 +173,34 @@
       "charStart": 20,
       "charEnd": 21,
       "startS": 3.84,
-      "endS": 4.08
+      "endS": 4.0
     },
     {
       "text": "降",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.08,
-      "endS": 4.16
+      "startS": 4.0,
+      "endS": 4.24
     },
     {
       "text": "一",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 4.24,
+      "endS": 4.32
     },
     {
       "text": "级",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.4,
-      "endS": 4.72
+      "startS": 4.32,
+      "endS": 4.64
     },
     {
       "text": "请",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 4.88,
+      "startS": 4.96,
       "endS": 5.04
     },
     {
@@ -215,21 +214,21 @@
       "text": "我",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.28,
-      "endS": 5.36
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "一",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.36,
-      "endS": 5.44
+      "startS": 5.44,
+      "endS": 5.52
     },
     {
       "text": "起",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.44,
+      "startS": 5.52,
       "endS": 5.6
     },
     {
@@ -251,28 +250,29 @@
       "charStart": 32,
       "charEnd": 33,
       "startS": 5.92,
-      "endS": 6.24
+      "endS": 6.16
     },
     {
       "text": "一",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 6.48,
-      "endS": 6.64
+      "startS": 6.64,
+      "endS": 6.88
     },
     {
       "text": "二",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 6.72,
-      "endS": 6.88
+      "startS": 7.12,
+      "endS": 7.36
     },
     {
       "text": "三",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 6.88,
-      "endS": 7.12
+      "startS": 7.52,
+      "endS": 7.84
     }
-  ]
+  ],
+  "words_for": "bbdf87a04b5ed60f/wordtiming-v1"
 }

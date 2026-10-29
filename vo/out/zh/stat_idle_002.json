@@ -1,0 +1,250 @@
+{
+  "hash": "001a31bed6d68037",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_idle_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "好安静啊。你是在蓄力、在思考，还是在发呆？三种都可以。其中一种可以计费。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Soft, checking in, with one practical clause.",
+  "duration": 8.4,
+  "sample_rate": 24000,
+  "peak": 0.822,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.67,
+    "gain_db": 2.49,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.49,
+    "peak_bound": false
+  },
+  "asr": "好安静啊！你是在蓄力、在思考，还是在发呆？三种都可以，其中一种可以即废。",
+  "asr_similarity": 0.933,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "好",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "安",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "静",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "啊",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "你",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "是",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "在",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "蓄",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "力",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.64,
+      "endS": 3.04
+    },
+    {
+      "text": "在",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "思",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "考",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "还",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "是",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "在",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "发",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "呆",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "三",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 5.2,
+      "endS": 5.44
+    },
+    {
+      "text": "种",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "都",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "可",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "以",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "其",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 6.96,
+      "endS": 7.12
+    },
+    {
+      "text": "中",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "一",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 7.28,
+      "endS": 7.36
+    },
+    {
+      "text": "种",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 7.36,
+      "endS": 7.6
+    },
+    {
+      "text": "可",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 7.6,
+      "endS": 7.76
+    },
+    {
+      "text": "以",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 7.76,
+      "endS": 7.84
+    },
+    {
+      "text": "计",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 7.84,
+      "endS": 8.0
+    },
+    {
+      "text": "费",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 8.0,
+      "endS": 8.32
+    }
+  ],
+  "words_for": "001a31bed6d68037/wordtiming-v1"
+}

@@ -1,5 +1,5 @@
 {
-  "hash": "7c6fc9e4f21fa2a3",
+  "hash": "0fd51737d27a1444",
   "mode": "clone",
   "request": {
     "id": "en__tut_review_002",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "And to review the trigger: tap for parts, hold for hulls, rest to charge a Writ and to scan. Graze for rate. Scan for intel. Please try not to be hit.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. A patient recap, every item given its due.",
-  "duration": 10.64,
+  "duration": 10.72,
   "sample_rate": 24000,
-  "peak": 0.832,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.2,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 5.65,
-    "limited_db": 1.19,
-    "measured_before_lufs": -23.74,
+    "lufs": -18.13,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 3.85,
+    "limited_db": 2.13,
+    "measured_before_lufs": -21.85,
     "peak_bound": false
   },
+  "asr": "And to review the trigger, tap for parts, hold for hulls, rest to charge a writ, and to scan. Grays for rate, scan for intel. Please try not to be hit.",
+  "asr_similarity": 0.968,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,221 +39,219 @@
       "text": "And",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.48,
+      "endS": 0.64
     },
     {
       "text": "to",
       "charStart": 4,
       "charEnd": 6,
-      "startS": 0.32,
-      "endS": 0.4
+      "startS": 0.64,
+      "endS": 0.72
     },
     {
       "text": "review",
       "charStart": 7,
       "charEnd": 13,
-      "startS": 0.4,
-      "endS": 0.72
+      "startS": 0.72,
+      "endS": 1.12
     },
     {
       "text": "the",
       "charStart": 14,
       "charEnd": 17,
-      "startS": 0.72,
-      "endS": 0.88
+      "startS": 1.12,
+      "endS": 1.2
     },
     {
       "text": "trigger",
       "charStart": 18,
       "charEnd": 25,
-      "startS": 0.88,
-      "endS": 1.36
+      "startS": 1.2,
+      "endS": 1.68
     },
     {
       "text": "tap",
       "charStart": 27,
       "charEnd": 30,
-      "startS": 1.68,
-      "endS": 2.0
+      "startS": 2.08,
+      "endS": 2.32
     },
     {
       "text": "for",
       "charStart": 31,
       "charEnd": 34,
-      "startS": 2.0,
-      "endS": 2.08
+      "startS": 2.32,
+      "endS": 2.4
     },
     {
       "text": "parts",
       "charStart": 35,
       "charEnd": 40,
-      "startS": 2.16,
-      "endS": 2.64
+      "startS": 2.4,
+      "endS": 2.96
     },
     {
       "text": "hold",
       "charStart": 42,
       "charEnd": 46,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "for",
       "charStart": 47,
       "charEnd": 50,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 3.36,
+      "endS": 3.6
     },
     {
       "text": "hulls",
       "charStart": 51,
       "charEnd": 56,
-      "startS": 3.36,
-      "endS": 3.76
+      "startS": 3.6,
+      "endS": 4.0
     },
     {
       "text": "rest",
       "charStart": 58,
       "charEnd": 62,
-      "startS": 3.92,
-      "endS": 4.32
+      "startS": 4.32,
+      "endS": 4.8
     },
     {
       "text": "to",
       "charStart": 63,
       "charEnd": 65,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 4.8,
+      "endS": 4.88
     },
     {
       "text": "charge",
       "charStart": 66,
       "charEnd": 72,
-      "startS": 4.4,
-      "endS": 4.72
+      "startS": 4.88,
+      "endS": 5.2
     },
     {
       "text": "a",
       "charStart": 73,
       "charEnd": 74,
-      "startS": 4.72,
-      "endS": 4.8
+      "startS": 5.2,
+      "endS": 5.28
     },
     {
       "text": "Writ",
       "charStart": 75,
       "charEnd": 79,
-      "startS": 4.8,
-      "endS": 5.12
+      "startS": 5.28,
+      "endS": 5.6
     },
     {
       "text": "and",
       "charStart": 80,
       "charEnd": 83,
-      "startS": 5.28,
-      "endS": 5.6
+      "startS": 5.68,
+      "endS": 5.84
     },
     {
       "text": "to",
       "charStart": 84,
       "charEnd": 86,
-      "startS": 5.6,
-      "endS": 5.68
+      "startS": 5.84,
+      "endS": 5.92
     },
     {
       "text": "scan",
       "charStart": 87,
       "charEnd": 91,
-      "startS": 5.68,
-      "endS": 6.24
+      "startS": 5.92,
+      "endS": 6.4
     },
     {
       "text": "Graze",
       "charStart": 93,
       "charEnd": 98,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 6.88,
+      "endS": 7.2
     },
     {
       "text": "for",
       "charStart": 99,
       "charEnd": 102,
-      "startS": 6.96,
-      "endS": 7.12
+      "startS": 7.2,
+      "endS": 7.36
     },
     {
       "text": "rate",
       "charStart": 103,
       "charEnd": 107,
-      "startS": 7.12,
-      "endS": 7.52
+      "startS": 7.36,
+      "endS": 7.68
     },
     {
       "text": "Scan",
       "charStart": 109,
       "charEnd": 113,
-      "startS": 7.68,
-      "endS": 8.0
+      "startS": 8.0,
+      "endS": 8.4
     },
     {
       "text": "for",
       "charStart": 114,
       "charEnd": 117,
-      "startS": 8.16,
-      "endS": 8.32
+      "startS": 8.4,
+      "endS": 8.48
     },
     {
       "text": "intel",
       "charStart": 118,
       "charEnd": 123,
-      "startS": 8.32,
-      "endS": 8.88
+      "startS": 8.56,
+      "endS": 9.04
     },
     {
       "text": "Please",
       "charStart": 125,
       "charEnd": 131,
-      "startS": 9.12,
-      "endS": 9.36
+      "startS": 9.52,
+      "endS": 9.76
     },
     {
       "text": "try",
       "charStart": 132,
       "charEnd": 135,
-      "startS": 9.52,
-      "endS": 9.76
+      "startS": 9.76,
+      "endS": 10.0
     },
     {
       "text": "not",
       "charStart": 136,
       "charEnd": 139,
-      "startS": 9.76,
-      "endS": 9.92
+      "startS": 10.0,
+      "endS": 10.16
     },
     {
       "text": "to",
       "charStart": 140,
       "charEnd": 142,
-      "startS": 10.0,
-      "endS": 10.08
+      "startS": 10.24,
+      "endS": 10.32
     },
     {
       "text": "be",
       "charStart": 143,
       "charEnd": 145,
-      "startS": 10.08,
-      "endS": 10.24
+      "startS": 10.32,
+      "endS": 10.4
     },
     {
       "text": "hit",
       "charStart": 146,
       "charEnd": 149,
-      "startS": 10.24,
+      "startS": 10.4,
       "endS": 10.64
     }
   ],
-  "words_for": "7c6fc9e4f21fa2a3/wordtiming-v1",
-  "asr": "And to review the trigger, tap for parts, hold for hulls, rest to charge a rit, and to scan. Grace for rate, scan for intel. Please try not to be hit.",
-  "asr_similarity": 0.935
+  "words_for": "0fd51737d27a1444/wordtiming-v1"
 }

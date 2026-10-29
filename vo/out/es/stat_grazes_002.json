@@ -1,0 +1,166 @@
+{
+  "hash": "5b11b1506cb95dd5",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_grazes_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Racha de roces! El renglón de cercanía en tu factura ya es más largo que todo lo demás.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Reading an invoice in mild disbelief.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.715,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.91,
+    "gain_db": 3.18,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.18,
+    "peak_bound": false
+  },
+  "asr": "Racha de roses. El renglón de cercanía en tu factura ya es más largo que todo lo demás.",
+  "asr_similarity": 0.944,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Racha",
+      "charStart": 1,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "de",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "roces",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 1.28
+    },
+    {
+      "text": "El",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "renglón",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "de",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "cercanía",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.4,
+      "endS": 2.96
+    },
+    {
+      "text": "en",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "tu",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "factura",
+      "charStart": 46,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "ya",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "es",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "más",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "largo",
+      "charStart": 64,
+      "charEnd": 69,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "que",
+      "charStart": 70,
+      "charEnd": 73,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "todo",
+      "charStart": 74,
+      "charEnd": 78,
+      "startS": 4.8,
+      "endS": 5.12
+    },
+    {
+      "text": "lo",
+      "charStart": 79,
+      "charEnd": 81,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "demás",
+      "charStart": 82,
+      "charEnd": 87,
+      "startS": 5.2,
+      "endS": 5.68
+    }
+  ],
+  "words_for": "5b11b1506cb95dd5/wordtiming-v1"
+}

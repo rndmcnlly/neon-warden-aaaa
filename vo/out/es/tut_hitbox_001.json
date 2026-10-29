@@ -1,33 +1,32 @@
 {
-  "hash": "90ad580594e2c0b2",
+  "hash": "cdfbf5a3d6c31b02",
   "mode": "clone",
   "request": {
     "id": "es__tut_hitbox_001",
-    "seed": 211,
+    "seed": 11,
     "language": "Spanish",
     "text": "Tu nave es grande y hermosa, pero solo la pequeña gema brillante del centro puede recibir impactos. Por favor, protege la gema. La gema eres tú.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere and a little tender on the last sentence.",
-  "duration": 10.4,
+  "duration": 9.28,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.813,
   "clipping_suspect": false,
-  "asr": "Tu nave es grande y remota, pero solo la pequeña hema brillante del centro puede recibir impactos. Por favor protege la hema, la hema es tú.",
-  "asr_similarity": 0.808,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.01,
-    "true_peak_dbtp": -1.44,
-    "gain_db": 0.06,
-    "limited_db": 0.01,
-    "measured_before_lufs": -18.06,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.75,
+    "gain_db": 3.68,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.68,
     "peak_bound": false
   },
-  "words_for": "90ad580594e2c0b2/wordtiming-v1",
+  "asr": "Tu nave es grande y hermosa, pero solo la pequeña gemma brillante del centro puede recibir impactos. Por favor, protege la gemma. La gemma eres tú.",
+  "asr_similarity": 0.885,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,183 +39,184 @@
       "text": "Tu",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.48,
-      "endS": 0.56
+      "startS": 0.08,
+      "endS": 0.16
     },
     {
       "text": "nave",
       "charStart": 3,
       "charEnd": 7,
-      "startS": 0.56,
-      "endS": 0.96
+      "startS": 0.16,
+      "endS": 0.4
     },
     {
       "text": "es",
       "charStart": 8,
       "charEnd": 10,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 0.4,
+      "endS": 0.48
     },
     {
       "text": "grande",
       "charStart": 11,
       "charEnd": 17,
-      "startS": 1.12,
-      "endS": 1.6
+      "startS": 0.48,
+      "endS": 0.88
     },
     {
       "text": "y",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 1.6,
-      "endS": 1.84
+      "startS": 0.88,
+      "endS": 0.96
     },
     {
       "text": "hermosa",
       "charStart": 20,
       "charEnd": 27,
-      "startS": 1.84,
-      "endS": 2.24
+      "startS": 0.96,
+      "endS": 1.52
     },
     {
       "text": "pero",
       "charStart": 29,
       "charEnd": 33,
-      "startS": 2.64,
-      "endS": 2.88
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "solo",
       "charStart": 34,
       "charEnd": 38,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "la",
       "charStart": 39,
       "charEnd": 41,
-      "startS": 3.28,
-      "endS": 3.36
+      "startS": 2.48,
+      "endS": 2.56
     },
     {
       "text": "pequeña",
       "charStart": 42,
       "charEnd": 49,
-      "startS": 3.36,
-      "endS": 3.84
+      "startS": 2.56,
+      "endS": 2.88
     },
     {
       "text": "gema",
       "charStart": 50,
       "charEnd": 54,
-      "startS": 3.84,
-      "endS": 4.16
+      "startS": 2.88,
+      "endS": 3.12
     },
     {
       "text": "brillante",
       "charStart": 55,
       "charEnd": 64,
-      "startS": 4.16,
-      "endS": 4.8
+      "startS": 3.2,
+      "endS": 3.6
     },
     {
       "text": "del",
       "charStart": 65,
       "charEnd": 68,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "centro",
       "charStart": 69,
       "charEnd": 75,
-      "startS": 4.96,
-      "endS": 5.36
+      "startS": 3.76,
+      "endS": 4.16
     },
     {
       "text": "puede",
       "charStart": 76,
       "charEnd": 81,
-      "startS": 5.36,
-      "endS": 5.68
+      "startS": 4.16,
+      "endS": 4.48
     },
     {
       "text": "recibir",
       "charStart": 82,
       "charEnd": 89,
-      "startS": 5.68,
-      "endS": 6.16
+      "startS": 4.48,
+      "endS": 4.8
     },
     {
       "text": "impactos",
       "charStart": 90,
       "charEnd": 98,
-      "startS": 6.24,
-      "endS": 6.88
+      "startS": 4.8,
+      "endS": 5.52
     },
     {
       "text": "Por",
       "charStart": 100,
       "charEnd": 103,
-      "startS": 7.2,
-      "endS": 7.36
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "favor",
       "charStart": 104,
       "charEnd": 109,
-      "startS": 7.36,
-      "endS": 7.6
+      "startS": 6.08,
+      "endS": 6.48
     },
     {
       "text": "protege",
       "charStart": 111,
       "charEnd": 118,
-      "startS": 7.76,
-      "endS": 8.08
+      "startS": 6.8,
+      "endS": 7.28
     },
     {
       "text": "la",
       "charStart": 119,
       "charEnd": 121,
-      "startS": 8.4,
-      "endS": 8.48
+      "startS": 7.28,
+      "endS": 7.36
     },
     {
       "text": "gema",
       "charStart": 122,
       "charEnd": 126,
-      "startS": 8.48,
-      "endS": 8.88
+      "startS": 7.36,
+      "endS": 7.84
     },
     {
       "text": "La",
       "charStart": 128,
       "charEnd": 130,
-      "startS": 8.88,
-      "endS": 8.96
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "gema",
       "charStart": 131,
       "charEnd": 135,
-      "startS": 8.96,
-      "endS": 9.04
+      "startS": 8.4,
+      "endS": 8.8
     },
     {
       "text": "eres",
       "charStart": 136,
       "charEnd": 140,
-      "startS": 9.68,
-      "endS": 9.84
+      "startS": 8.8,
+      "endS": 9.04
     },
     {
       "text": "tú",
       "charStart": 141,
       "charEnd": 143,
-      "startS": 9.84,
-      "endS": 10.0
+      "startS": 9.04,
+      "endS": 9.28
     }
-  ]
+  ],
+  "words_for": "cdfbf5a3d6c31b02/wordtiming-v1"
 }

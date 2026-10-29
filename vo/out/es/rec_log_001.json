@@ -1,30 +1,32 @@
 {
-  "hash": "dcb70b87a1be6ab4",
+  "hash": "31acce85809918f1",
   "mode": "clone",
   "request": {
     "id": "es__rec_log_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Grabando. Piloto cero uno dos uno: retirado. Nave: abandonada. Registro, día trescientos doce.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Recorded log header, flatter and older than her present self, like the flashback header.",
-  "duration": 10.16,
+  "duration": 9.2,
   "sample_rate": 24000,
-  "peak": 0.854,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.32,
-    "gain_db": 5.3,
-    "limited_db": 0.0,
-    "measured_before_lufs": -23.3,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 4.01,
+    "limited_db": 0.13,
+    "measured_before_lufs": -22.01,
     "peak_bound": false
   },
+  "asr": "Gravando piloto cero uno dos uno retirado nave abandonada registro día trescientos doce",
+  "asr_similarity": 0.923,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,95 +39,93 @@
       "text": "Grabando",
       "charStart": 0,
       "charEnd": 8,
-      "startS": 0.64,
-      "endS": 1.52
+      "startS": 0.08,
+      "endS": 0.64
     },
     {
       "text": "Piloto",
       "charStart": 10,
       "charEnd": 16,
-      "startS": 1.84,
-      "endS": 2.32
+      "startS": 1.36,
+      "endS": 1.76
     },
     {
       "text": "cero",
       "charStart": 17,
       "charEnd": 21,
-      "startS": 2.32,
-      "endS": 2.88
+      "startS": 1.76,
+      "endS": 2.16
     },
     {
       "text": "uno",
       "charStart": 22,
       "charEnd": 25,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "dos",
       "charStart": 26,
       "charEnd": 29,
-      "startS": 3.28,
-      "endS": 3.52
+      "startS": 2.32,
+      "endS": 2.56
     },
     {
       "text": "uno",
       "charStart": 30,
       "charEnd": 33,
-      "startS": 3.6,
-      "endS": 4.0
+      "startS": 2.56,
+      "endS": 2.96
     },
     {
       "text": "retirado",
       "charStart": 35,
       "charEnd": 43,
-      "startS": 4.32,
-      "endS": 5.2
+      "startS": 3.44,
+      "endS": 4.16
     },
     {
       "text": "Nave",
       "charStart": 45,
       "charEnd": 49,
-      "startS": 5.44,
-      "endS": 6.08
+      "startS": 4.72,
+      "endS": 5.2
     },
     {
       "text": "abandonada",
       "charStart": 51,
       "charEnd": 61,
-      "startS": 6.24,
-      "endS": 7.28
+      "startS": 5.44,
+      "endS": 6.24
     },
     {
       "text": "Registro",
       "charStart": 63,
       "charEnd": 71,
-      "startS": 7.6,
-      "endS": 8.24
+      "startS": 6.88,
+      "endS": 7.6
     },
     {
       "text": "día",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 8.48,
-      "endS": 8.8
+      "startS": 7.84,
+      "endS": 8.08
     },
     {
       "text": "trescientos",
       "charStart": 77,
       "charEnd": 88,
-      "startS": 8.8,
-      "endS": 9.36
+      "startS": 8.08,
+      "endS": 8.64
     },
     {
       "text": "doce",
       "charStart": 89,
       "charEnd": 93,
-      "startS": 9.52,
-      "endS": 10.08
+      "startS": 8.64,
+      "endS": 9.04
     }
   ],
-  "words_for": "dcb70b87a1be6ab4/wordtiming-v1",
-  "asr": "Grabando, piloto sero uno dos uno, retirado, nave abandonada, registro día trescientos doce.",
-  "asr_similarity": 0.923
+  "words_for": "31acce85809918f1/wordtiming-v1"
 }

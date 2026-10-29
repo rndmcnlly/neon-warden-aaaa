@@ -1,33 +1,32 @@
 {
-  "hash": "060ca44ff0c4b71b",
+  "hash": "97733c224763acce",
   "mode": "clone",
   "request": {
     "id": "es__kill_ai_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Guardián derribado! ¡Las rutas están abiertas!",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, pure celebration, confetti in the voice.",
-  "duration": 3.6,
+  "duration": 3.36,
   "sample_rate": 24000,
-  "peak": 0.675,
+  "peak": 0.809,
   "clipping_suspect": false,
-  "asr": "Guardián de Ribado, las rutas están abiertas.",
-  "asr_similarity": 0.769,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -3.41,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -1.8,
+    "gain_db": 2.16,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.16,
     "peak_bound": false
   },
-  "words_for": "060ca44ff0c4b71b/wordtiming-v1",
+  "asr": "Guardián derribado, las rutas están abiertas.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,7 +39,7 @@
       "text": "Guardián",
       "charStart": 1,
       "charEnd": 9,
-      "startS": 0.16,
+      "startS": 0.24,
       "endS": 0.8
     },
     {
@@ -48,35 +47,36 @@
       "charStart": 10,
       "charEnd": 19,
       "startS": 0.8,
-      "endS": 1.36
+      "endS": 1.44
     },
     {
       "text": "Las",
       "charStart": 22,
       "charEnd": 25,
-      "startS": 1.6,
-      "endS": 2.4
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "rutas",
       "charStart": 26,
       "charEnd": 31,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 1.92,
+      "endS": 2.24
     },
     {
       "text": "están",
       "charStart": 32,
       "charEnd": 37,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.24,
+      "endS": 2.56
     },
     {
       "text": "abiertas",
       "charStart": 38,
       "charEnd": 46,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 2.56,
+      "endS": 3.28
     }
-  ]
+  ],
+  "words_for": "97733c224763acce/wordtiming-v1"
 }

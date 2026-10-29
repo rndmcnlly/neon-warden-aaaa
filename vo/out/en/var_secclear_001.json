@@ -1,0 +1,124 @@
+{
+  "hash": "c009c0adadc77772",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_secclear_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Sector clear! Lovely work. Payroll has been notified and is cautiously excited.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Delighted, reporting upward.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.86,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.29,
+    "gain_db": 3.18,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.18,
+    "peak_bound": false
+  },
+  "asr": "Sector clear. Lovely work. Payroll has been notified and is cautiously excited.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sector",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "clear",
+      "charStart": 7,
+      "charEnd": 12,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "Lovely",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "work",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "Payroll",
+      "charStart": 27,
+      "charEnd": 34,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "has",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "been",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "notified",
+      "charStart": 44,
+      "charEnd": 52,
+      "startS": 3.84,
+      "endS": 4.4
+    },
+    {
+      "text": "and",
+      "charStart": 53,
+      "charEnd": 56,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "is",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "cautiously",
+      "charStart": 60,
+      "charEnd": 70,
+      "startS": 4.64,
+      "endS": 5.2
+    },
+    {
+      "text": "excited",
+      "charStart": 71,
+      "charEnd": 78,
+      "startS": 5.2,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "c009c0adadc77772/wordtiming-v1"
+}

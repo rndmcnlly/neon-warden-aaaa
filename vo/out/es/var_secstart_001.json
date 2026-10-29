@@ -1,0 +1,173 @@
+{
+  "hash": "5ae678c39850128d",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_secstart_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Sector nuevo, borrón y cuenta nueva. Tu puntería se reinicia en mi corazón, no en el libro de cuentas.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Encouraging, a coach before a match, then honest.",
+  "duration": 6.8,
+  "sample_rate": 24000,
+  "peak": 0.694,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.16,
+    "gain_db": 2.79,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.79,
+    "peak_bound": false
+  },
+  "asr": "Sector nuevo, borrón y cuenta nueva. Tu puntería se reinicia en mi corazón, no en el libro de cuentas.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sector",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "nuevo",
+      "charStart": 7,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "borrón",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "y",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "cuenta",
+      "charStart": 23,
+      "charEnd": 29,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "nueva",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "Tu",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "puntería",
+      "charStart": 40,
+      "charEnd": 48,
+      "startS": 3.12,
+      "endS": 3.6
+    },
+    {
+      "text": "se",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "reinicia",
+      "charStart": 52,
+      "charEnd": 60,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "en",
+      "charStart": 61,
+      "charEnd": 63,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "mi",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "corazón",
+      "charStart": 67,
+      "charEnd": 74,
+      "startS": 4.32,
+      "endS": 4.88
+    },
+    {
+      "text": "no",
+      "charStart": 76,
+      "charEnd": 78,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "en",
+      "charStart": 79,
+      "charEnd": 81,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "el",
+      "charStart": 82,
+      "charEnd": 84,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "libro",
+      "charStart": 85,
+      "charEnd": 90,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "de",
+      "charStart": 91,
+      "charEnd": 93,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "cuentas",
+      "charStart": 94,
+      "charEnd": 101,
+      "startS": 6.24,
+      "endS": 6.72
+    }
+  ],
+  "words_for": "5ae678c39850128d/wordtiming-v1"
+}

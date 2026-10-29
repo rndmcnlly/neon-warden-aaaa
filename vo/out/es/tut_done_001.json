@@ -1,33 +1,32 @@
 {
-  "hash": "9b35f53d82c2268f",
+  "hash": "69300d5efde821e2",
   "mode": "clone",
   "request": {
     "id": "es__tut_done_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Inducción completada! Tu contrato ya está activo. Por favor, dirígete a la Deriva Exterior. Y recuerda: no te salgas de tu ruta, piloto.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Graduation-day pride; the last sentence is a catchphrase.",
-  "duration": 10.64,
+  "duration": 9.52,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.74,
   "clipping_suspect": false,
-  "asr": "Inducción completada, tu contrato deista activo, por favor dirígete a la derecha exterior y recuerda no te salgas de tu ruta piloto.",
-  "asr_similarity": 0.889,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.24,
-    "gain_db": 0.73,
-    "limited_db": 0.68,
-    "measured_before_lufs": -18.73,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.51,
+    "gain_db": 4.03,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.03,
     "peak_bound": false
   },
-  "words_for": "9b35f53d82c2268f/wordtiming-v1",
+  "asr": "Inducción completada. Tu contrato ya está activo. Por favor, dirígete a la deriva exterior. Y recuerda no te salgas de tu ruta piloto.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -41,20 +40,20 @@
       "charStart": 1,
       "charEnd": 10,
       "startS": 0.16,
-      "endS": 0.56
+      "endS": 0.64
     },
     {
       "text": "completada",
       "charStart": 11,
       "charEnd": 21,
-      "startS": 0.88,
-      "endS": 1.12
+      "startS": 0.64,
+      "endS": 1.36
     },
     {
       "text": "Tu",
       "charStart": 23,
       "charEnd": 25,
-      "startS": 1.92,
+      "startS": 2.0,
       "endS": 2.08
     },
     {
@@ -62,140 +61,141 @@
       "charStart": 26,
       "charEnd": 34,
       "startS": 2.08,
-      "endS": 2.4
+      "endS": 2.48
     },
     {
       "text": "ya",
       "charStart": 35,
       "charEnd": 37,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.48,
+      "endS": 2.64
     },
     {
       "text": "está",
       "charStart": 38,
       "charEnd": 42,
-      "startS": 2.88,
-      "endS": 3.2
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "activo",
       "charStart": 43,
       "charEnd": 49,
-      "startS": 3.52,
-      "endS": 3.84
+      "startS": 2.88,
+      "endS": 3.36
     },
     {
       "text": "Por",
       "charStart": 51,
       "charEnd": 54,
-      "startS": 4.24,
-      "endS": 4.4
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "favor",
       "charStart": 55,
       "charEnd": 60,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 3.84,
+      "endS": 4.24
     },
     {
       "text": "dirígete",
       "charStart": 62,
       "charEnd": 70,
-      "startS": 4.96,
-      "endS": 5.52
+      "startS": 4.48,
+      "endS": 5.04
     },
     {
       "text": "a",
       "charStart": 71,
       "charEnd": 72,
-      "startS": 5.52,
-      "endS": 5.76
+      "startS": 5.04,
+      "endS": 5.12
     },
     {
       "text": "la",
       "charStart": 73,
       "charEnd": 75,
-      "startS": 5.84,
-      "endS": 5.92
+      "startS": 5.12,
+      "endS": 5.2
     },
     {
       "text": "Deriva",
       "charStart": 76,
       "charEnd": 82,
-      "startS": 5.92,
-      "endS": 6.4
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "Exterior",
       "charStart": 83,
       "charEnd": 91,
-      "startS": 6.4,
-      "endS": 7.2
+      "startS": 5.44,
+      "endS": 6.08
     },
     {
       "text": "Y",
       "charStart": 93,
       "charEnd": 94,
-      "startS": 7.52,
-      "endS": 7.68
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "recuerda",
       "charStart": 95,
       "charEnd": 103,
-      "startS": 7.68,
-      "endS": 8.32
+      "startS": 6.88,
+      "endS": 7.36
     },
     {
       "text": "no",
       "charStart": 105,
       "charEnd": 107,
-      "startS": 8.48,
-      "endS": 8.56
+      "startS": 7.68,
+      "endS": 7.92
     },
     {
       "text": "te",
       "charStart": 108,
       "charEnd": 110,
-      "startS": 8.56,
-      "endS": 8.64
+      "startS": 7.92,
+      "endS": 8.0
     },
     {
       "text": "salgas",
       "charStart": 111,
       "charEnd": 117,
-      "startS": 8.88,
-      "endS": 8.96
+      "startS": 8.0,
+      "endS": 8.4
     },
     {
       "text": "de",
       "charStart": 118,
       "charEnd": 120,
-      "startS": 9.44,
-      "endS": 9.52
+      "startS": 8.4,
+      "endS": 8.48
     },
     {
       "text": "tu",
       "charStart": 121,
       "charEnd": 123,
-      "startS": 9.52,
-      "endS": 9.6
+      "startS": 8.48,
+      "endS": 8.56
     },
     {
       "text": "ruta",
       "charStart": 124,
       "charEnd": 128,
-      "startS": 9.6,
-      "endS": 9.68
+      "startS": 8.56,
+      "endS": 8.96
     },
     {
       "text": "piloto",
       "charStart": 130,
       "charEnd": 136,
-      "startS": 9.92,
-      "endS": 10.32
+      "startS": 8.96,
+      "endS": 9.44
     }
-  ]
+  ],
+  "words_for": "69300d5efde821e2/wordtiming-v1"
 }

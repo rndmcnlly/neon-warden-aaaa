@@ -1,5 +1,5 @@
 {
-  "hash": "9d2d44fc5eed2102",
+  "hash": "40a0508bc3023a14",
   "mode": "clone",
   "request": {
     "id": "en__tut_fire_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Now, let's learn to fire! Hold fire to release bullets. Bullets go up. Up is where the problems are.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Excited, like unveiling a birthday present.",
-  "duration": 7.12,
+  "duration": 8.16,
   "sample_rate": 24000,
-  "peak": 0.653,
+  "peak": 0.818,
   "clipping_suspect": false,
-  "asr": "Now let's learn to fire. Hold fire to release bullets. Bullets go up. Up is where the problems are.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -3.62,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -1.65,
+    "gain_db": 1.86,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.86,
     "peak_bound": false
   },
-  "words_for": "9d2d44fc5eed2102/wordtiming-v1",
+  "asr": "Now let's learn to fire. Hold fire to release bullets. Bullets go up. Up is where the problems are.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,134 +39,135 @@
       "text": "Now",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.48,
-      "endS": 0.8
+      "startS": 0.72,
+      "endS": 1.12
     },
     {
       "text": "let's",
       "charStart": 5,
       "charEnd": 10,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 1.12,
+      "endS": 1.44
     },
     {
       "text": "learn",
       "charStart": 11,
       "charEnd": 16,
-      "startS": 1.6,
-      "endS": 1.84
+      "startS": 1.44,
+      "endS": 1.6
     },
     {
       "text": "to",
       "charStart": 17,
       "charEnd": 19,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 1.68,
+      "endS": 1.76
     },
     {
       "text": "fire",
       "charStart": 20,
       "charEnd": 24,
-      "startS": 1.92,
-      "endS": 2.0
+      "startS": 1.76,
+      "endS": 2.24
     },
     {
       "text": "Hold",
       "charStart": 26,
       "charEnd": 30,
-      "startS": 2.0,
-      "endS": 2.08
+      "startS": 2.96,
+      "endS": 3.2
     },
     {
       "text": "fire",
       "charStart": 31,
       "charEnd": 35,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 3.2,
+      "endS": 3.52
     },
     {
       "text": "to",
       "charStart": 36,
       "charEnd": 38,
-      "startS": 3.04,
-      "endS": 3.2
+      "startS": 3.52,
+      "endS": 3.68
     },
     {
       "text": "release",
       "charStart": 39,
       "charEnd": 46,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 3.68,
+      "endS": 4.0
     },
     {
       "text": "bullets",
       "charStart": 47,
       "charEnd": 54,
-      "startS": 3.68,
-      "endS": 4.0
+      "startS": 4.0,
+      "endS": 4.48
     },
     {
       "text": "Bullets",
       "charStart": 56,
       "charEnd": 63,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 5.2,
+      "endS": 5.6
     },
     {
       "text": "go",
       "charStart": 64,
       "charEnd": 66,
-      "startS": 4.72,
-      "endS": 4.96
+      "startS": 5.6,
+      "endS": 5.84
     },
     {
       "text": "up",
       "charStart": 67,
       "charEnd": 69,
-      "startS": 4.96,
-      "endS": 5.2
+      "startS": 5.84,
+      "endS": 6.08
     },
     {
       "text": "Up",
       "charStart": 71,
       "charEnd": 73,
-      "startS": 5.6,
-      "endS": 5.76
+      "startS": 6.64,
+      "endS": 6.88
     },
     {
       "text": "is",
       "charStart": 74,
       "charEnd": 76,
-      "startS": 5.92,
-      "endS": 6.0
+      "startS": 6.88,
+      "endS": 6.96
     },
     {
       "text": "where",
       "charStart": 77,
       "charEnd": 82,
-      "startS": 6.0,
-      "endS": 6.16
+      "startS": 6.96,
+      "endS": 7.12
     },
     {
       "text": "the",
       "charStart": 83,
       "charEnd": 86,
-      "startS": 6.16,
-      "endS": 6.24
+      "startS": 7.12,
+      "endS": 7.2
     },
     {
       "text": "problems",
       "charStart": 87,
       "charEnd": 95,
-      "startS": 6.24,
-      "endS": 6.72
+      "startS": 7.2,
+      "endS": 7.68
     },
     {
       "text": "are",
       "charStart": 96,
       "charEnd": 99,
-      "startS": 6.96,
-      "endS": 7.12
+      "startS": 7.68,
+      "endS": 8.0
     }
-  ]
+  ],
+  "words_for": "40a0508bc3023a14/wordtiming-v1"
 }

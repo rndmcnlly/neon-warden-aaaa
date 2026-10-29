@@ -1,0 +1,138 @@
+{
+  "hash": "10621faac09d1d23",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_007",
+    "seed": 11,
+    "language": "English",
+    "text": "Last ship in reserve. I'm not worried. I'm using my calm voice on purpose.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Deliberately soothing, slightly too slow.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.703,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.98,
+    "gain_db": 1.37,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.37,
+    "peak_bound": false
+  },
+  "asr": "Last ship in reserve. I'm not worried. I'm using my calm voice on purpose.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Last",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "ship",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 1.04,
+      "endS": 1.36
+    },
+    {
+      "text": "in",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "reserve",
+      "charStart": 13,
+      "charEnd": 20,
+      "startS": 1.44,
+      "endS": 1.92
+    },
+    {
+      "text": "I'm",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "not",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "worried",
+      "charStart": 30,
+      "charEnd": 37,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "I'm",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "using",
+      "charStart": 43,
+      "charEnd": 48,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "my",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "calm",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 4.48,
+      "endS": 4.88
+    },
+    {
+      "text": "voice",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 4.88,
+      "endS": 5.12
+    },
+    {
+      "text": "on",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "purpose",
+      "charStart": 66,
+      "charEnd": 73,
+      "startS": 5.28,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "10621faac09d1d23/wordtiming-v1"
+}

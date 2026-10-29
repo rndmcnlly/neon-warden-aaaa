@@ -1,0 +1,138 @@
+{
+  "hash": "7606f30cf1b4d663",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Hull integrity is down. Your integrity is intact. That's the one I care about.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Quick, relieved, then a small professional wince.",
+  "duration": 6.08,
+  "sample_rate": 24000,
+  "peak": 0.821,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.65,
+    "gain_db": 2.01,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.01,
+    "peak_bound": false
+  },
+  "asr": "Hull integrity is down. Your integrity is intact. That's the one I care about.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Hull",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "integrity",
+      "charStart": 5,
+      "charEnd": 14,
+      "startS": 1.12,
+      "endS": 1.68
+    },
+    {
+      "text": "is",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "down",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "Your",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "integrity",
+      "charStart": 29,
+      "charEnd": 38,
+      "startS": 3.04,
+      "endS": 3.6
+    },
+    {
+      "text": "is",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "intact",
+      "charStart": 42,
+      "charEnd": 48,
+      "startS": 3.68,
+      "endS": 4.32
+    },
+    {
+      "text": "That's",
+      "charStart": 50,
+      "charEnd": 56,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "the",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "one",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "I",
+      "charStart": 65,
+      "charEnd": 66,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "care",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "about",
+      "charStart": 72,
+      "charEnd": 77,
+      "startS": 5.6,
+      "endS": 6.08
+    }
+  ],
+  "words_for": "7606f30cf1b4d663/wordtiming-v1"
+}

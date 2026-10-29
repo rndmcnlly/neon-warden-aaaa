@@ -1,33 +1,32 @@
 {
-  "hash": "21f38b1f4bd28d06",
+  "hash": "9e89d3e2215ea2c2",
   "mode": "clone",
   "request": {
     "id": "zh__tut_move_001",
     "seed": 11,
     "language": "Chinese",
     "text": "太棒了，你按下了左键！接下来，你的下一个挑战是：按下右键。我相信你。慢慢来，不着急。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Maximum cheer, as if this were the most important lesson ever taught; tiny forced giggle at the end.",
-  "duration": 8.96,
+  "duration": 8.72,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "太棒了！你按下了左键。接下来，你的下一个挑战是按下右键。我相信你，慢慢来，不着急。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.32,
-    "gain_db": 0.54,
-    "limited_db": 0.49,
-    "measured_before_lufs": -18.54,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 2.42,
+    "limited_db": 1.48,
+    "measured_before_lufs": -20.42,
     "peak_bound": false
   },
-  "words_for": "21f38b1f4bd28d06/wordtiming-v1",
+  "asr": "太棒了！你按下了左键。接下来，你的下一个挑战是按下右键。我相信你，慢慢来，不着急。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,84 +39,84 @@
       "text": "太",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.32,
-      "endS": 0.4
+      "startS": 0.08,
+      "endS": 0.32
     },
     {
       "text": "棒",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.64,
-      "endS": 0.8
+      "startS": 0.32,
+      "endS": 0.56
     },
     {
       "text": "了",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 0.56,
+      "endS": 0.8
     },
     {
       "text": "你",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.2,
+      "endS": 1.28
     },
     {
       "text": "按",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 1.28,
+      "endS": 1.44
     },
     {
       "text": "下",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.44,
+      "endS": 1.6
     },
     {
       "text": "了",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 1.6,
+      "endS": 1.68
     },
     {
       "text": "左",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.84,
-      "endS": 2.08
+      "startS": 1.68,
+      "endS": 1.76
     },
     {
       "text": "键",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.08,
-      "endS": 2.32
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "接",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.64,
+      "endS": 2.8
     },
     {
       "text": "下",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 2.8,
+      "endS": 2.96
     },
     {
       "text": "来",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.04,
+      "startS": 2.96,
       "endS": 3.28
     },
     {
@@ -139,7 +138,7 @@
       "charStart": 17,
       "charEnd": 18,
       "startS": 3.68,
-      "endS": 3.84
+      "endS": 3.92
     },
     {
       "text": "一",
@@ -160,49 +159,49 @@
       "charStart": 20,
       "charEnd": 21,
       "startS": 4.08,
-      "endS": 4.32
+      "endS": 4.24
     },
     {
       "text": "战",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.32,
-      "endS": 4.48
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "是",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.48,
+      "startS": 4.4,
       "endS": 4.8
     },
     {
       "text": "按",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 5.04,
+      "endS": 5.12
     },
     {
       "text": "下",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 4.88,
-      "endS": 4.96
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "右",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 4.96,
-      "endS": 5.04
+      "startS": 5.28,
+      "endS": 5.52
     },
     {
       "text": "键",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.76,
-      "endS": 6.0
+      "startS": 5.52,
+      "endS": 5.84
     },
     {
       "text": "我",
@@ -216,48 +215,48 @@
       "charStart": 30,
       "charEnd": 31,
       "startS": 6.32,
-      "endS": 6.48
+      "endS": 6.4
     },
     {
       "text": "信",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 6.56,
+      "startS": 6.4,
       "endS": 6.64
     },
     {
       "text": "你",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.8,
-      "endS": 7.04
+      "startS": 6.64,
+      "endS": 6.88
     },
     {
       "text": "慢",
       "charStart": 34,
       "charEnd": 35,
       "startS": 7.36,
-      "endS": 7.44
+      "endS": 7.52
     },
     {
       "text": "慢",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 7.84,
-      "endS": 7.92
+      "startS": 7.52,
+      "endS": 7.68
     },
     {
       "text": "来",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.92,
+      "startS": 7.68,
       "endS": 8.0
     },
     {
       "text": "不",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.16,
+      "startS": 8.08,
       "endS": 8.24
     },
     {
@@ -271,8 +270,9 @@
       "text": "急",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.48,
-      "endS": 8.88
+      "startS": 8.4,
+      "endS": 8.64
     }
-  ]
+  ],
+  "words_for": "9e89d3e2215ea2c2/wordtiming-v1"
 }

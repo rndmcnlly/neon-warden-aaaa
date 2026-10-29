@@ -1,0 +1,159 @@
+{
+  "hash": "97506931a90fcc39",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_streak_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Ay, vas en racha! No lo pienses. Yo lo pienso por ti. Estoy pensando en tu bono.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Whispered excitement, like not wanting to jinx it.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.828,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.52,
+    "gain_db": 3.28,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.28,
+    "peak_bound": false
+  },
+  "asr": "Ay vas en racha, no lo pienses, yo lo pienso por ti, estoy pensando en tu bono.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ay",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "vas",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "en",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "racha",
+      "charStart": 12,
+      "charEnd": 17,
+      "startS": 0.72,
+      "endS": 1.28
+    },
+    {
+      "text": "No",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "lo",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "pienses",
+      "charStart": 25,
+      "charEnd": 32,
+      "startS": 2.0,
+      "endS": 2.56
+    },
+    {
+      "text": "Yo",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "lo",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "pienso",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "por",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "ti",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "Estoy",
+      "charStart": 55,
+      "charEnd": 60,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "pensando",
+      "charStart": 61,
+      "charEnd": 69,
+      "startS": 4.64,
+      "endS": 5.12
+    },
+    {
+      "text": "en",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "tu",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "bono",
+      "charStart": 76,
+      "charEnd": 80,
+      "startS": 5.36,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "97506931a90fcc39/wordtiming-v1"
+}

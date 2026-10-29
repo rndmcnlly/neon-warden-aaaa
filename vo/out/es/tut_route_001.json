@@ -1,33 +1,32 @@
 {
-  "hash": "4fcaf898417eaa50",
+  "hash": "96b15d32d483761f",
   "mode": "clone",
   "request": {
     "id": "es__tut_route_001",
-    "seed": 311,
+    "seed": 11,
     "language": "Spanish",
     "text": "Tu ruta: Deriva Exterior. Cinturón Quebrado. Rutas de Artillería. Puerta de los Lanceros. Aproximación Final. Y luego...",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Tour-guide list, slowing and dropping into a hush on the last words.",
-  "duration": 10.88,
+  "duration": 8.72,
   "sample_rate": 24000,
-  "peak": 0.818,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Tirada, deriva exterior, centro en quebrado, ruedas de artillería, puerta de los lanzeros, aproximación final, ilego.",
-  "asr_similarity": 0.606,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.63,
-    "gain_db": -0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.48,
+    "gain_db": 4.11,
+    "limited_db": 0.21,
+    "measured_before_lufs": -22.11,
     "peak_bound": false
   },
-  "words_for": "4fcaf898417eaa50/wordtiming-v1",
+  "asr": "Tu ruta deriva exterior, cinturón quebrado, rutas de artillería, puerta de los lanceros, aproximación final y luego.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,120 +39,121 @@
       "text": "Tu",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.64,
-      "endS": 0.8
+      "startS": 0.08,
+      "endS": 0.16
     },
     {
       "text": "ruta",
       "charStart": 3,
       "charEnd": 7,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 0.16,
+      "endS": 0.64
     },
     {
       "text": "Deriva",
       "charStart": 9,
       "charEnd": 15,
-      "startS": 1.52,
-      "endS": 1.92
+      "startS": 1.04,
+      "endS": 1.36
     },
     {
       "text": "Exterior",
       "charStart": 16,
       "charEnd": 24,
-      "startS": 2.0,
-      "endS": 2.48
+      "startS": 1.36,
+      "endS": 1.92
     },
     {
       "text": "Cinturón",
       "charStart": 26,
       "charEnd": 34,
-      "startS": 3.04,
-      "endS": 3.68
+      "startS": 2.24,
+      "endS": 2.8
     },
     {
       "text": "Quebrado",
       "charStart": 35,
       "charEnd": 43,
-      "startS": 3.68,
-      "endS": 4.16
+      "startS": 2.8,
+      "endS": 3.36
     },
     {
       "text": "Rutas",
       "charStart": 45,
       "charEnd": 50,
-      "startS": 4.64,
-      "endS": 5.04
+      "startS": 3.68,
+      "endS": 4.0
     },
     {
       "text": "de",
       "charStart": 51,
       "charEnd": 53,
-      "startS": 5.04,
-      "endS": 5.12
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "Artillería",
       "charStart": 54,
       "charEnd": 64,
-      "startS": 5.12,
-      "endS": 5.76
+      "startS": 4.08,
+      "endS": 4.8
     },
     {
       "text": "Puerta",
       "charStart": 66,
       "charEnd": 72,
-      "startS": 6.4,
-      "endS": 6.72
+      "startS": 5.04,
+      "endS": 5.36
     },
     {
       "text": "de",
       "charStart": 73,
       "charEnd": 75,
-      "startS": 6.72,
-      "endS": 6.88
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "los",
       "charStart": 76,
       "charEnd": 79,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "Lanceros",
       "charStart": 80,
       "charEnd": 88,
-      "startS": 7.04,
-      "endS": 7.84
+      "startS": 5.6,
+      "endS": 6.24
     },
     {
       "text": "Aproximación",
       "charStart": 90,
       "charEnd": 102,
-      "startS": 8.24,
-      "endS": 9.12
+      "startS": 6.56,
+      "endS": 7.28
     },
     {
       "text": "Final",
       "charStart": 103,
       "charEnd": 108,
-      "startS": 9.2,
-      "endS": 9.6
+      "startS": 7.28,
+      "endS": 7.68
     },
     {
       "text": "Y",
       "charStart": 110,
       "charEnd": 111,
-      "startS": 10.08,
-      "endS": 10.16
+      "startS": 8.08,
+      "endS": 8.24
     },
     {
       "text": "luego",
       "charStart": 112,
       "charEnd": 117,
-      "startS": 10.4,
-      "endS": 10.56
+      "startS": 8.24,
+      "endS": 8.64
     }
-  ]
+  ],
+  "words_for": "96b15d32d483761f/wordtiming-v1"
 }

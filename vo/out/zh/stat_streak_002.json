@@ -1,0 +1,208 @@
+{
+  "hash": "2d9c6e35e22649ab",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_streak_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "干得太棒了。我想把这个转发给别人。最好是转发给所有人。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Proud manager, reaching for the reply-all button.",
+  "duration": 4.72,
+  "sample_rate": 24000,
+  "peak": 0.831,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.58,
+    "gain_db": 2.33,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.33,
+    "peak_bound": false
+  },
+  "asr": "干得太棒了！我想把这个转发给别人，最好是转发给所有人。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "干",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "得",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "太",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "棒",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "了",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "我",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "想",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "把",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "这",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "个",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "转",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "发",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "给",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "别",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "人",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "最",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "好",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "是",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "转",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "发",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "给",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "所",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "有",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "人",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.48,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "2d9c6e35e22649ab/wordtiming-v1"
+}

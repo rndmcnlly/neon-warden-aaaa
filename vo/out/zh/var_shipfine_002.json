@@ -1,0 +1,180 @@
+{
+  "hash": "9a35605bb5815a3b",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_shipfine_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "轻微结构事件！你毫发无伤。飞船已经提交了投诉。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Cheerful incident report, slightly too brisk.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.687,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.25,
+    "gain_db": 3.16,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.16,
+    "peak_bound": false
+  },
+  "asr": "轻微结构事件，你毫发无伤。飞船已经提交了投诉。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "轻",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "微",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "结",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "构",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "事",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "件",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "你",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "毫",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "发",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "无",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "伤",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "飞",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "船",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "已",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "经",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "提",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "交",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "了",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "投",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "诉",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.96,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "9a35605bb5815a3b/wordtiming-v1"
+}

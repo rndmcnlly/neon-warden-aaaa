@@ -1,0 +1,103 @@
+{
+  "hash": "da7488547c0be184",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_resume_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Reanudando. ¿Te hidrataste? Voy a registrar que te hidrataste.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Checklist voice, answering for him.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.835,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.56,
+    "gain_db": 3.88,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.88,
+    "peak_bound": false
+  },
+  "asr": "Reanudando, te hidrataste, voy a registrar que te hidrataste.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Reanudando",
+      "charStart": 0,
+      "charEnd": 10,
+      "startS": 0.08,
+      "endS": 0.96
+    },
+    {
+      "text": "Te",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "hidrataste",
+      "charStart": 16,
+      "charEnd": 26,
+      "startS": 1.52,
+      "endS": 2.24
+    },
+    {
+      "text": "Voy",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "a",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "registrar",
+      "charStart": 34,
+      "charEnd": 43,
+      "startS": 3.04,
+      "endS": 3.6
+    },
+    {
+      "text": "que",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "te",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "hidrataste",
+      "charStart": 51,
+      "charEnd": 61,
+      "startS": 3.76,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "da7488547c0be184/wordtiming-v1"
+}

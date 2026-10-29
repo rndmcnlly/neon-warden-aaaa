@@ -1,0 +1,124 @@
+{
+  "hash": "8efaa0402f053047",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_pickup_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Spread shot! More bullets, same budget. Please aim them all at something.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Excited product demo, then a request.",
+  "duration": 5.36,
+  "sample_rate": 24000,
+  "peak": 0.601,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.41,
+    "gain_db": 2.53,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.53,
+    "peak_bound": false
+  },
+  "asr": "Spread shot, more bullets, same budget. Please aim them all at something.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Spread",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "shot",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "More",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "bullets",
+      "charStart": 18,
+      "charEnd": 25,
+      "startS": 2.08,
+      "endS": 2.64
+    },
+    {
+      "text": "same",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "budget",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "Please",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "aim",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "them",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "all",
+      "charStart": 56,
+      "charEnd": 59,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "at",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "something",
+      "charStart": 63,
+      "charEnd": 72,
+      "startS": 4.88,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "8efaa0402f053047/wordtiming-v1"
+}

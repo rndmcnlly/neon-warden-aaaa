@@ -1,0 +1,166 @@
+{
+  "hash": "cdc49ab21493c802",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_accuracy_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Una nota rápida sobre la puntería: está bajando. Yo no estoy molesta. La hoja de cálculo, un poquito.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Kind, measured, a teacher's aside.",
+  "duration": 8.16,
+  "sample_rate": 24000,
+  "peak": 0.886,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 4.21,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.24,
+    "peak_bound": false
+  },
+  "asr": "Una nota rápida sobre la puntería, está bajando. Yo no estoy molesta, la hoja de cálculo un poquito.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Una",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "nota",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "rápida",
+      "charStart": 9,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "sobre",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "la",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "puntería",
+      "charStart": 25,
+      "charEnd": 33,
+      "startS": 1.44,
+      "endS": 2.08
+    },
+    {
+      "text": "está",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "bajando",
+      "charStart": 40,
+      "charEnd": 47,
+      "startS": 2.96,
+      "endS": 3.52
+    },
+    {
+      "text": "Yo",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "no",
+      "charStart": 52,
+      "charEnd": 54,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "estoy",
+      "charStart": 55,
+      "charEnd": 60,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "molesta",
+      "charStart": 61,
+      "charEnd": 68,
+      "startS": 4.88,
+      "endS": 5.44
+    },
+    {
+      "text": "La",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 6.08,
+      "endS": 6.32
+    },
+    {
+      "text": "hoja",
+      "charStart": 73,
+      "charEnd": 77,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "de",
+      "charStart": 78,
+      "charEnd": 80,
+      "startS": 6.48,
+      "endS": 6.56
+    },
+    {
+      "text": "cálculo",
+      "charStart": 81,
+      "charEnd": 88,
+      "startS": 6.56,
+      "endS": 7.28
+    },
+    {
+      "text": "un",
+      "charStart": 90,
+      "charEnd": 92,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "poquito",
+      "charStart": 93,
+      "charEnd": 100,
+      "startS": 7.52,
+      "endS": 8.08
+    }
+  ],
+  "words_for": "cdc49ab21493c802/wordtiming-v1"
+}

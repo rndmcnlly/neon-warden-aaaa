@@ -1,0 +1,166 @@
+{
+  "hash": "b41aa9df87e25120",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_idle_002",
+    "seed": 11,
+    "language": "English",
+    "text": "It's very quiet. Are you charging, thinking, or having a moment? All three are valid. One is billable.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Soft, checking in, with one practical clause.",
+  "duration": 7.28,
+  "sample_rate": 24000,
+  "peak": 0.732,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.49,
+    "gain_db": 1.85,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.85,
+    "peak_bound": false
+  },
+  "asr": "It's very quiet. Are you charging, thinking, or having a moment? All three are valid. One is billable.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "It's",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "very",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "quiet",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "Are",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "you",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "charging",
+      "charStart": 25,
+      "charEnd": 33,
+      "startS": 2.48,
+      "endS": 2.96
+    },
+    {
+      "text": "thinking",
+      "charStart": 35,
+      "charEnd": 43,
+      "startS": 2.96,
+      "endS": 3.44
+    },
+    {
+      "text": "or",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "having",
+      "charStart": 48,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "a",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "moment",
+      "charStart": 57,
+      "charEnd": 63,
+      "startS": 3.92,
+      "endS": 4.32
+    },
+    {
+      "text": "All",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "three",
+      "charStart": 69,
+      "charEnd": 74,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "are",
+      "charStart": 75,
+      "charEnd": 78,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "valid",
+      "charStart": 79,
+      "charEnd": 84,
+      "startS": 5.52,
+      "endS": 6.0
+    },
+    {
+      "text": "One",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 6.4,
+      "endS": 6.64
+    },
+    {
+      "text": "is",
+      "charStart": 90,
+      "charEnd": 92,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "billable",
+      "charStart": 93,
+      "charEnd": 101,
+      "startS": 6.8,
+      "endS": 7.28
+    }
+  ],
+  "words_for": "b41aa9df87e25120/wordtiming-v1"
+}

@@ -1,0 +1,124 @@
+{
+  "hash": "4e2dfaa4c365af4c",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_003",
+    "seed": 11,
+    "language": "English",
+    "text": "The ship is not okay. You are okay. Let's keep that ratio.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Calm, almost tender, keeping score.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.877,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.14,
+    "gain_db": 3.35,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.35,
+    "peak_bound": false
+  },
+  "asr": "The ship is not okay. You are okay. Let's keep that ratio.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "The",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "ship",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "is",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "not",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "okay",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "You",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "are",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "okay",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "Let's",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "keep",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "that",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "ratio",
+      "charStart": 52,
+      "charEnd": 57,
+      "startS": 4.56,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "4e2dfaa4c365af4c/wordtiming-v1"
+}

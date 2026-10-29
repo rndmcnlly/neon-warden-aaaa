@@ -1,5 +1,5 @@
 {
-  "hash": "5a3ff39152d8d13c",
+  "hash": "c0a0e73868f2d303",
   "mode": "clone",
   "request": {
     "id": "en__tut_hello_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Hello, and welcome to Lane Authority onboarding! I am your onboarding assistant, and I will be with you every step of the way. Every single step.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Beaming welcome, as if greeting the first customer of the day.",
-  "duration": 9.36,
+  "duration": 9.28,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.719,
   "clipping_suspect": false,
-  "asr": "Hello, and welcome to Lane Authority onboarding. I am your onboarding assistant, and I will be with you every step of the way, every single step.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.11,
-    "true_peak_dbtp": -1.31,
-    "gain_db": 0.76,
-    "limited_db": 0.71,
-    "measured_before_lufs": -18.76,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.77,
+    "gain_db": 1.36,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.36,
     "peak_bound": false
   },
-  "words_for": "5a3ff39152d8d13c/wordtiming-v1",
+  "asr": "Hello and welcome to Lane Authority onboarding. I am your onboarding assistant, and I will be with you every step of the way, every single step.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -41,63 +40,63 @@
       "charStart": 0,
       "charEnd": 5,
       "startS": 0.72,
-      "endS": 0.96
+      "endS": 1.2
     },
     {
       "text": "and",
       "charStart": 7,
       "charEnd": 10,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.36,
+      "endS": 1.52
     },
     {
       "text": "welcome",
       "charStart": 11,
       "charEnd": 18,
-      "startS": 1.44,
-      "endS": 1.52
+      "startS": 1.52,
+      "endS": 1.84
     },
     {
       "text": "to",
       "charStart": 19,
       "charEnd": 21,
-      "startS": 1.92,
-      "endS": 2.0
+      "startS": 1.84,
+      "endS": 1.92
     },
     {
       "text": "Lane",
       "charStart": 22,
       "charEnd": 26,
-      "startS": 2.0,
-      "endS": 2.24
+      "startS": 1.92,
+      "endS": 2.16
     },
     {
       "text": "Authority",
       "charStart": 27,
       "charEnd": 36,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.16,
+      "endS": 2.64
     },
     {
       "text": "onboarding",
       "charStart": 37,
       "charEnd": 47,
-      "startS": 2.88,
-      "endS": 3.52
+      "startS": 2.64,
+      "endS": 3.28
     },
     {
       "text": "I",
       "charStart": 49,
       "charEnd": 50,
-      "startS": 3.92,
-      "endS": 4.0
+      "startS": 4.16,
+      "endS": 4.24
     },
     {
       "text": "am",
       "charStart": 51,
       "charEnd": 53,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "your",
@@ -117,14 +116,14 @@
       "text": "assistant",
       "charStart": 70,
       "charEnd": 79,
-      "startS": 5.04,
-      "endS": 5.6
+      "startS": 4.96,
+      "endS": 5.52
     },
     {
       "text": "and",
       "charStart": 81,
       "charEnd": 84,
-      "startS": 5.84,
+      "startS": 5.92,
       "endS": 6.0
     },
     {
@@ -132,91 +131,92 @@
       "charStart": 85,
       "charEnd": 86,
       "startS": 6.0,
-      "endS": 6.16
+      "endS": 6.08
     },
     {
       "text": "will",
       "charStart": 87,
       "charEnd": 91,
-      "startS": 6.16,
-      "endS": 6.24
+      "startS": 6.08,
+      "endS": 6.16
     },
     {
       "text": "be",
       "charStart": 92,
       "charEnd": 94,
-      "startS": 6.32,
-      "endS": 6.48
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "with",
       "charStart": 95,
       "charEnd": 99,
-      "startS": 6.48,
-      "endS": 6.72
+      "startS": 6.24,
+      "endS": 6.56
     },
     {
       "text": "you",
       "charStart": 100,
       "charEnd": 103,
-      "startS": 6.72,
-      "endS": 6.8
+      "startS": 6.56,
+      "endS": 6.72
     },
     {
       "text": "every",
       "charStart": 104,
       "charEnd": 109,
-      "startS": 6.88,
+      "startS": 6.72,
       "endS": 7.04
     },
     {
       "text": "step",
       "charStart": 110,
       "charEnd": 114,
-      "startS": 7.2,
-      "endS": 7.44
+      "startS": 7.04,
+      "endS": 7.28
     },
     {
       "text": "of",
       "charStart": 115,
       "charEnd": 117,
-      "startS": 7.44,
-      "endS": 7.6
+      "startS": 7.28,
+      "endS": 7.36
     },
     {
       "text": "the",
       "charStart": 118,
       "charEnd": 121,
-      "startS": 7.6,
-      "endS": 7.68
+      "startS": 7.36,
+      "endS": 7.44
     },
     {
       "text": "way",
       "charStart": 122,
       "charEnd": 125,
-      "startS": 7.68,
-      "endS": 8.0
+      "startS": 7.44,
+      "endS": 7.76
     },
     {
       "text": "Every",
       "charStart": 127,
       "charEnd": 132,
-      "startS": 8.32,
-      "endS": 8.4
+      "startS": 8.24,
+      "endS": 8.48
     },
     {
       "text": "single",
       "charStart": 133,
       "charEnd": 139,
-      "startS": 8.64,
-      "endS": 8.96
+      "startS": 8.48,
+      "endS": 8.88
     },
     {
       "text": "step",
       "charStart": 140,
       "charEnd": 144,
-      "startS": 8.96,
-      "endS": 9.28
+      "startS": 8.88,
+      "endS": 9.12
     }
-  ]
+  ],
+  "words_for": "c0a0e73868f2d303/wordtiming-v1"
 }

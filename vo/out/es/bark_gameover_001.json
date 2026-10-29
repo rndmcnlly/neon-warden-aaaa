@@ -1,33 +1,32 @@
 {
-  "hash": "b084785a43bd705b",
+  "hash": "c521d68a6dbc6dc1",
   "mode": "clone",
   "request": {
     "id": "es__bark_gameover_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Nave perdida. Las rutas siguen cerradas, por ahora. Requisando un reemplazo.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, routine procedure, not unkind.",
-  "duration": 6.16,
+  "duration": 6.24,
   "sample_rate": 24000,
-  "peak": 0.749,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Nave perdida, las rutas siguen cerradas por ahora, revisando un reemplazo.",
-  "asr_similarity": 0.909,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -2.47,
-    "gain_db": -0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.13,
+    "gain_db": 4.22,
+    "limited_db": 0.53,
+    "measured_before_lufs": -22.22,
     "peak_bound": false
   },
-  "words_for": "b084785a43bd705b/wordtiming-v1",
+  "asr": "Nave perdida. Las rutas siguen cerradas por ahora, requisiendo un reemplazo.",
+  "asr_similarity": 0.909,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,78 +39,79 @@
       "text": "Nave",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.16,
-      "endS": 0.4
+      "startS": 0.24,
+      "endS": 0.56
     },
     {
       "text": "perdida",
       "charStart": 5,
       "charEnd": 12,
       "startS": 0.56,
-      "endS": 1.28
+      "endS": 1.12
     },
     {
       "text": "Las",
       "charStart": 14,
       "charEnd": 17,
-      "startS": 1.44,
-      "endS": 1.76
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "rutas",
       "charStart": 18,
       "charEnd": 23,
-      "startS": 1.76,
-      "endS": 2.24
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "siguen",
       "charStart": 24,
       "charEnd": 30,
-      "startS": 2.24,
-      "endS": 2.64
+      "startS": 2.48,
+      "endS": 2.8
     },
     {
       "text": "cerradas",
       "charStart": 31,
       "charEnd": 39,
-      "startS": 2.64,
-      "endS": 3.28
+      "startS": 2.8,
+      "endS": 3.44
     },
     {
       "text": "por",
       "charStart": 41,
       "charEnd": 44,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "ahora",
       "charStart": 45,
       "charEnd": 50,
-      "startS": 3.52,
-      "endS": 4.0
+      "startS": 3.76,
+      "endS": 4.16
     },
     {
       "text": "Requisando",
       "charStart": 52,
       "charEnd": 62,
-      "startS": 4.24,
-      "endS": 4.72
+      "startS": 4.8,
+      "endS": 5.44
     },
     {
       "text": "un",
       "charStart": 63,
       "charEnd": 65,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "reemplazo",
       "charStart": 66,
       "charEnd": 75,
-      "startS": 5.12,
-      "endS": 6.08
+      "startS": 5.6,
+      "endS": 6.16
     }
-  ]
+  ],
+  "words_for": "c521d68a6dbc6dc1/wordtiming-v1"
 }

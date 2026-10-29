@@ -1,0 +1,131 @@
+{
+  "hash": "ac859f94d0396387",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_009",
+    "seed": 11,
+    "language": "English",
+    "text": "Hull replaced. Cost deducted. You are, and I mean this, priceless. Within reason.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Warm, then the deduction slipped in, then warm again.",
+  "duration": 7.28,
+  "sample_rate": 24000,
+  "peak": 0.737,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.55,
+    "gain_db": 2.95,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.95,
+    "peak_bound": false
+  },
+  "asr": "Hall replaced, cost deducted. You are, and I mean this, priceless within reason.",
+  "asr_similarity": 0.923,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Hull",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "replaced",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 1.12,
+      "endS": 1.76
+    },
+    {
+      "text": "Cost",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "deducted",
+      "charStart": 20,
+      "charEnd": 28,
+      "startS": 2.4,
+      "endS": 3.04
+    },
+    {
+      "text": "You",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "are",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "and",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "I",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "mean",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "this",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 4.8,
+      "endS": 5.2
+    },
+    {
+      "text": "priceless",
+      "charStart": 56,
+      "charEnd": 65,
+      "startS": 5.36,
+      "endS": 6.08
+    },
+    {
+      "text": "Within",
+      "charStart": 67,
+      "charEnd": 73,
+      "startS": 6.32,
+      "endS": 6.72
+    },
+    {
+      "text": "reason",
+      "charStart": 74,
+      "charEnd": 80,
+      "startS": 6.72,
+      "endS": 7.2
+    }
+  ],
+  "words_for": "ac859f94d0396387/wordtiming-v1"
+}

@@ -1,16 +1,16 @@
 {
-  "hash": "8f697467b22c7575",
+  "hash": "d9f23c78ed88abaa",
   "mode": "clone",
   "request": {
     "id": "es__tut_review_002",
     "seed": 11,
     "language": "Spanish",
     "text": "Y para repasar el gatillo: toque para piezas, ráfaga para cascos, descanso para cargar un Mandato y escanear. Roces para la tarifa. Escaneos para información. Por favor, intenta que no te den.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. A patient recap, every item given its due.",
-  "duration": 15.52,
+  "duration": 13.84,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
@@ -18,13 +18,15 @@
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.26,
-    "gain_db": 6.03,
-    "limited_db": 0.44,
-    "measured_before_lufs": -24.03,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 4.34,
+    "limited_db": 0.84,
+    "measured_before_lufs": -22.34,
     "peak_bound": false
   },
+  "asr": "Y para repasar el gatillo, toque para piezas, ráfaga para cascos, descanso para cargar un mandato y escanear. Roses para la tarifa, escaneos para información. Por favor, intenta que no te den.",
+  "asr_similarity": 0.969,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,228 +39,226 @@
       "text": "Y",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.08,
+      "endS": 0.24
     },
     {
       "text": "para",
       "charStart": 2,
       "charEnd": 6,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "repasar",
       "charStart": 7,
       "charEnd": 14,
-      "startS": 0.8,
-      "endS": 1.44
+      "startS": 0.48,
+      "endS": 0.88
     },
     {
       "text": "el",
       "charStart": 15,
       "charEnd": 17,
-      "startS": 1.44,
-      "endS": 1.52
+      "startS": 0.88,
+      "endS": 0.96
     },
     {
       "text": "gatillo",
       "charStart": 18,
       "charEnd": 25,
-      "startS": 1.52,
-      "endS": 2.24
+      "startS": 0.96,
+      "endS": 1.52
     },
     {
       "text": "toque",
       "charStart": 27,
       "charEnd": 32,
-      "startS": 2.4,
-      "endS": 2.72
+      "startS": 1.76,
+      "endS": 2.08
     },
     {
       "text": "para",
       "charStart": 33,
       "charEnd": 37,
-      "startS": 2.8,
-      "endS": 3.04
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "piezas",
       "charStart": 38,
       "charEnd": 44,
-      "startS": 3.04,
-      "endS": 3.44
+      "startS": 2.24,
+      "endS": 2.88
     },
     {
       "text": "ráfaga",
       "charStart": 46,
       "charEnd": 52,
-      "startS": 3.92,
-      "endS": 4.0
+      "startS": 3.12,
+      "endS": 3.6
     },
     {
       "text": "para",
       "charStart": 53,
       "charEnd": 57,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "cascos",
       "charStart": 58,
       "charEnd": 64,
-      "startS": 4.64,
-      "endS": 5.04
+      "startS": 3.76,
+      "endS": 4.32
     },
     {
       "text": "descanso",
       "charStart": 66,
       "charEnd": 74,
-      "startS": 5.68,
-      "endS": 6.24
+      "startS": 4.64,
+      "endS": 5.2
     },
     {
       "text": "para",
       "charStart": 75,
       "charEnd": 79,
-      "startS": 6.24,
-      "endS": 6.4
+      "startS": 5.2,
+      "endS": 5.36
     },
     {
       "text": "cargar",
       "charStart": 80,
       "charEnd": 86,
-      "startS": 6.4,
-      "endS": 6.88
+      "startS": 5.36,
+      "endS": 5.68
     },
     {
       "text": "un",
       "charStart": 87,
       "charEnd": 89,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 5.68,
+      "endS": 5.76
     },
     {
       "text": "Mandato",
       "charStart": 90,
       "charEnd": 97,
-      "startS": 7.04,
-      "endS": 7.44
+      "startS": 5.76,
+      "endS": 6.32
     },
     {
       "text": "y",
       "charStart": 98,
       "charEnd": 99,
-      "startS": 7.6,
-      "endS": 7.68
+      "startS": 6.32,
+      "endS": 6.4
     },
     {
       "text": "escanear",
       "charStart": 100,
       "charEnd": 108,
-      "startS": 7.68,
-      "endS": 8.48
+      "startS": 6.4,
+      "endS": 7.04
     },
     {
       "text": "Roces",
       "charStart": 110,
       "charEnd": 115,
-      "startS": 8.96,
-      "endS": 9.04
+      "startS": 7.76,
+      "endS": 8.24
     },
     {
       "text": "para",
       "charStart": 116,
       "charEnd": 120,
-      "startS": 9.44,
-      "endS": 9.68
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "la",
       "charStart": 121,
       "charEnd": 123,
-      "startS": 9.68,
-      "endS": 9.84
+      "startS": 8.4,
+      "endS": 8.56
     },
     {
       "text": "tarifa",
       "charStart": 124,
       "charEnd": 130,
-      "startS": 9.84,
-      "endS": 10.48
+      "startS": 8.56,
+      "endS": 9.04
     },
     {
       "text": "Escaneos",
       "charStart": 132,
       "charEnd": 140,
-      "startS": 10.88,
-      "endS": 10.96
+      "startS": 9.52,
+      "endS": 10.08
     },
     {
       "text": "para",
       "charStart": 141,
       "charEnd": 145,
-      "startS": 11.52,
-      "endS": 12.0
+      "startS": 10.08,
+      "endS": 10.24
     },
     {
       "text": "información",
       "charStart": 146,
       "charEnd": 157,
-      "startS": 12.0,
-      "endS": 12.64
+      "startS": 10.24,
+      "endS": 11.04
     },
     {
       "text": "Por",
       "charStart": 159,
       "charEnd": 162,
-      "startS": 13.04,
-      "endS": 13.2
+      "startS": 11.52,
+      "endS": 11.76
     },
     {
       "text": "favor",
       "charStart": 163,
       "charEnd": 168,
-      "startS": 13.68,
-      "endS": 13.76
+      "startS": 11.76,
+      "endS": 12.16
     },
     {
       "text": "intenta",
       "charStart": 170,
       "charEnd": 177,
-      "startS": 14.0,
-      "endS": 14.48
+      "startS": 12.4,
+      "endS": 12.96
     },
     {
       "text": "que",
       "charStart": 178,
       "charEnd": 181,
-      "startS": 14.48,
-      "endS": 14.56
+      "startS": 12.96,
+      "endS": 13.04
     },
     {
       "text": "no",
       "charStart": 182,
       "charEnd": 184,
-      "startS": 14.64,
-      "endS": 14.8
+      "startS": 13.04,
+      "endS": 13.2
     },
     {
       "text": "te",
       "charStart": 185,
       "charEnd": 187,
-      "startS": 14.8,
-      "endS": 14.96
+      "startS": 13.2,
+      "endS": 13.36
     },
     {
       "text": "den",
       "charStart": 188,
       "charEnd": 191,
-      "startS": 14.96,
-      "endS": 15.36
+      "startS": 13.36,
+      "endS": 13.68
     }
   ],
-  "words_for": "8f697467b22c7575/wordtiming-v1",
-  "asr": "Ipar represario, toki para piezas, rafa para cascos, descansa para cargar un mandato y escanear, roses para la tarifa, escaneos para información, por favor intenten notar bien.",
-  "asr_similarity": 0.61
+  "words_for": "d9f23c78ed88abaa/wordtiming-v1"
 }

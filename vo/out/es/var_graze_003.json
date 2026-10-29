@@ -1,0 +1,166 @@
+{
+  "hash": "89307a6cc5d044f8",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_graze_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Otro roce. Tú y el peligro ya se tutean, y a mí me ponen en copia de todo.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Office humor, pleased with herself.",
+  "duration": 5.52,
+  "sample_rate": 24000,
+  "peak": 0.866,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.21,
+    "gain_db": 4.79,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.79,
+    "peak_bound": false
+  },
+  "asr": "Otro roce, tú y el peligro ya se tutean y a mí me ponen en copia de todo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Otro",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "roce",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "Tú",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "y",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "el",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "peligro",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "ya",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "se",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "tutean",
+      "charStart": 33,
+      "charEnd": 39,
+      "startS": 2.64,
+      "endS": 3.2
+    },
+    {
+      "text": "y",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "a",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "mí",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "me",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "ponen",
+      "charStart": 51,
+      "charEnd": 56,
+      "startS": 4.16,
+      "endS": 4.48
+    },
+    {
+      "text": "en",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "copia",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "de",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "todo",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 5.04,
+      "endS": 5.52
+    }
+  ],
+  "words_for": "89307a6cc5d044f8/wordtiming-v1"
+}

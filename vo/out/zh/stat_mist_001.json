@@ -1,0 +1,159 @@
+{
+  "hash": "eaa871edc797fd2c",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_mist_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "那些子弹都打进雾里了。雾可没有雇我们。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Polite, as if pointing out a typo.",
+  "duration": 3.92,
+  "sample_rate": 24000,
+  "peak": 0.564,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.9,
+    "gain_db": 2.01,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.01,
+    "peak_bound": false
+  },
+  "asr": "那些子弹都打进雾里了，雾可没有顾我们。",
+  "asr_similarity": 0.941,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "那",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "些",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "子",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "弹",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "都",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "打",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "进",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "雾",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "里",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "了",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "雾",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "可",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "没",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "有",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "雇",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "我",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "们",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "eaa871edc797fd2c/wordtiming-v1"
+}

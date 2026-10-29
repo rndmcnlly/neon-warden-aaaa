@@ -1,0 +1,201 @@
+{
+  "hash": "2043c837596f25fa",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_mist_003",
+    "seed": 11,
+    "language": "English",
+    "text": "Every round into the mist is a round we can't bill. I only mention it because I care. About you. And about rounds.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "HR-soft, the care sincere, the rounds also sincere.",
+  "duration": 8.08,
+  "sample_rate": 24000,
+  "peak": 0.87,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.07,
+    "gain_db": 2.5,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.5,
+    "peak_bound": false
+  },
+  "asr": "Every round into the mist is a round we can't build. I only mention it because I care about you and about rounds.",
+  "asr_similarity": 0.957,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Every",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "round",
+      "charStart": 6,
+      "charEnd": 11,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "into",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "the",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "mist",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 1.68,
+      "endS": 2.08
+    },
+    {
+      "text": "is",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "a",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "round",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "we",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "can't",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "bill",
+      "charStart": 46,
+      "charEnd": 50,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "I",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "only",
+      "charStart": 54,
+      "charEnd": 58,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "mention",
+      "charStart": 59,
+      "charEnd": 66,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "it",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "because",
+      "charStart": 70,
+      "charEnd": 77,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "I",
+      "charStart": 78,
+      "charEnd": 79,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "care",
+      "charStart": 80,
+      "charEnd": 84,
+      "startS": 5.12,
+      "endS": 5.52
+    },
+    {
+      "text": "About",
+      "charStart": 86,
+      "charEnd": 91,
+      "startS": 6.0,
+      "endS": 6.32
+    },
+    {
+      "text": "you",
+      "charStart": 92,
+      "charEnd": 95,
+      "startS": 6.32,
+      "endS": 6.72
+    },
+    {
+      "text": "And",
+      "charStart": 97,
+      "charEnd": 100,
+      "startS": 7.12,
+      "endS": 7.2
+    },
+    {
+      "text": "about",
+      "charStart": 101,
+      "charEnd": 106,
+      "startS": 7.2,
+      "endS": 7.52
+    },
+    {
+      "text": "rounds",
+      "charStart": 107,
+      "charEnd": 113,
+      "startS": 7.52,
+      "endS": 8.0
+    }
+  ],
+  "words_for": "2043c837596f25fa/wordtiming-v1"
+}

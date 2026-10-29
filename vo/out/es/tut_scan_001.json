@@ -1,30 +1,32 @@
 {
-  "hash": "ccd2dd8df888549d",
+  "hash": "a1060e88ce92e042",
   "mode": "clone",
   "request": {
     "id": "es__tut_scan_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Mientras descansas, tu paquete de sensores también barre un haz de escaneo frente a ti. Aquí tienes un nuevo holograma. Mantén el haz sobre él hasta fijarlo.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 11.44,
+  "duration": 9.44,
   "sample_rate": 24000,
-  "peak": 0.795,
+  "peak": 0.767,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.99,
-    "gain_db": 4.95,
+    "true_peak_dbtp": -2.21,
+    "gain_db": 3.79,
     "limited_db": 0.0,
-    "measured_before_lufs": -22.95,
+    "measured_before_lufs": -21.79,
     "peak_bound": false
   },
+  "asr": "Mientras descansas, tu paquete de sensores también barre un haz de escaneo frente a ti. Aquí tienes un nuevo holograma. Mantén el haz sobre él hasta fijarlo.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,193 +39,191 @@
       "text": "Mientras",
       "charStart": 0,
       "charEnd": 8,
-      "startS": 0.64,
-      "endS": 1.04
+      "startS": 0.16,
+      "endS": 0.56
     },
     {
       "text": "descansas",
       "charStart": 9,
       "charEnd": 18,
-      "startS": 1.04,
-      "endS": 1.84
+      "startS": 0.56,
+      "endS": 1.28
     },
     {
       "text": "tu",
       "charStart": 20,
       "charEnd": 22,
-      "startS": 2.08,
-      "endS": 2.16
+      "startS": 1.44,
+      "endS": 1.6
     },
     {
       "text": "paquete",
       "charStart": 23,
       "charEnd": 30,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 1.6,
+      "endS": 1.92
     },
     {
       "text": "de",
       "charStart": 31,
       "charEnd": 33,
-      "startS": 2.88,
-      "endS": 2.96
+      "startS": 1.92,
+      "endS": 2.08
     },
     {
       "text": "sensores",
       "charStart": 34,
       "charEnd": 42,
-      "startS": 3.04,
-      "endS": 3.36
+      "startS": 2.08,
+      "endS": 2.64
     },
     {
       "text": "también",
       "charStart": 43,
       "charEnd": 50,
-      "startS": 3.36,
-      "endS": 3.84
+      "startS": 2.64,
+      "endS": 2.96
     },
     {
       "text": "barre",
       "charStart": 51,
       "charEnd": 56,
-      "startS": 3.84,
-      "endS": 4.24
+      "startS": 2.96,
+      "endS": 3.2
     },
     {
       "text": "un",
       "charStart": 57,
       "charEnd": 59,
-      "startS": 4.24,
-      "endS": 4.4
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "haz",
       "charStart": 60,
       "charEnd": 63,
-      "startS": 4.48,
-      "endS": 4.72
+      "startS": 3.36,
+      "endS": 3.52
     },
     {
       "text": "de",
       "charStart": 64,
       "charEnd": 66,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 3.52,
+      "endS": 3.6
     },
     {
       "text": "escaneo",
       "charStart": 67,
       "charEnd": 74,
-      "startS": 4.88,
-      "endS": 5.36
+      "startS": 3.6,
+      "endS": 4.08
     },
     {
       "text": "frente",
       "charStart": 75,
       "charEnd": 81,
-      "startS": 5.36,
-      "endS": 5.68
+      "startS": 4.16,
+      "endS": 4.4
     },
     {
       "text": "a",
       "charStart": 82,
       "charEnd": 83,
-      "startS": 5.68,
-      "endS": 5.84
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "ti",
       "charStart": 84,
       "charEnd": 86,
-      "startS": 5.84,
-      "endS": 6.24
+      "startS": 4.48,
+      "endS": 4.8
     },
     {
       "text": "Aquí",
       "charStart": 88,
       "charEnd": 92,
-      "startS": 6.48,
-      "endS": 6.64
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "tienes",
       "charStart": 93,
       "charEnd": 99,
-      "startS": 6.8,
-      "endS": 7.12
+      "startS": 5.6,
+      "endS": 5.92
     },
     {
       "text": "un",
       "charStart": 100,
       "charEnd": 102,
-      "startS": 7.12,
-      "endS": 7.28
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "nuevo",
       "charStart": 103,
       "charEnd": 108,
-      "startS": 7.28,
-      "endS": 7.6
+      "startS": 6.08,
+      "endS": 6.4
     },
     {
       "text": "holograma",
       "charStart": 109,
       "charEnd": 118,
-      "startS": 7.6,
-      "endS": 8.48
+      "startS": 6.4,
+      "endS": 6.88
     },
     {
       "text": "Mantén",
       "charStart": 120,
       "charEnd": 126,
-      "startS": 8.8,
-      "endS": 9.2
+      "startS": 7.44,
+      "endS": 7.76
     },
     {
       "text": "el",
       "charStart": 127,
       "charEnd": 129,
-      "startS": 9.44,
-      "endS": 9.52
+      "startS": 7.76,
+      "endS": 7.92
     },
     {
       "text": "haz",
       "charStart": 130,
       "charEnd": 133,
-      "startS": 9.52,
-      "endS": 9.6
+      "startS": 7.92,
+      "endS": 8.08
     },
     {
       "text": "sobre",
       "charStart": 134,
       "charEnd": 139,
-      "startS": 9.6,
-      "endS": 9.92
+      "startS": 8.08,
+      "endS": 8.48
     },
     {
       "text": "él",
       "charStart": 140,
       "charEnd": 142,
-      "startS": 9.92,
-      "endS": 10.0
+      "startS": 8.48,
+      "endS": 8.56
     },
     {
       "text": "hasta",
       "charStart": 143,
       "charEnd": 148,
-      "startS": 10.32,
-      "endS": 10.64
+      "startS": 8.56,
+      "endS": 8.8
     },
     {
       "text": "fijarlo",
       "charStart": 149,
       "charEnd": 156,
-      "startS": 10.64,
-      "endS": 11.36
+      "startS": 8.8,
+      "endS": 9.36
     }
   ],
-  "words_for": "ccd2dd8df888549d/wordtiming-v1",
-  "asr": "Mientras descansas, tu parque de los sensorios también barre un ás de escaneo frente a ti, aquí tienes un nuevo holograma. Montana asobre el asta fijarlo.",
-  "asr_similarity": 0.717
+  "words_for": "a1060e88ce92e042/wordtiming-v1"
 }

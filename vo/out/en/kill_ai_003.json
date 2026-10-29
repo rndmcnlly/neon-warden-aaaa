@@ -1,5 +1,5 @@
 {
-  "hash": "dbe277b44bce21e0",
+  "hash": "8cb2caadbc5beb85",
   "mode": "clone",
   "request": {
     "id": "en__kill_ai_003",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Congratulations, Pilot zero one two two. Your contract is complete. Payment will be issued in thirty to ninety business days.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, warm and proud, then the payroll fine print at speed.",
-  "duration": 8.48,
+  "duration": 8.4,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.826,
   "clipping_suspect": false,
-  "asr": "Congratulations, Pilot Zero One Two Two. Your contract is complete. Payment will be issued in thirty to ninety business days.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.15,
-    "true_peak_dbtp": -1.21,
-    "gain_db": 2.36,
-    "limited_db": 2.31,
-    "measured_before_lufs": -20.36,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.66,
+    "gain_db": 2.09,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.09,
     "peak_bound": false
   },
-  "words_for": "dbe277b44bce21e0/wordtiming-v1",
+  "asr": "Congratulations, Pilot Zero One Two Two. Your contract is complete. Payment will be issued in 30 to 90 business days.",
+  "asr_similarity": 0.9,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,133 +39,133 @@
       "text": "Congratulations",
       "charStart": 0,
       "charEnd": 15,
-      "startS": 0.08,
-      "endS": 1.28
+      "startS": 0.64,
+      "endS": 1.6
     },
     {
       "text": "Pilot",
       "charStart": 17,
       "charEnd": 22,
-      "startS": 1.52,
-      "endS": 1.92
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "zero",
       "charStart": 23,
       "charEnd": 27,
-      "startS": 1.92,
-      "endS": 2.32
+      "startS": 2.24,
+      "endS": 2.56
     },
     {
       "text": "one",
       "charStart": 28,
       "charEnd": 31,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 2.56,
+      "endS": 2.88
     },
     {
       "text": "two",
       "charStart": 32,
       "charEnd": 35,
-      "startS": 2.56,
-      "endS": 2.8
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "two",
       "charStart": 36,
       "charEnd": 39,
-      "startS": 2.8,
-      "endS": 3.28
+      "startS": 3.04,
+      "endS": 3.36
     },
     {
       "text": "Your",
       "charStart": 41,
       "charEnd": 45,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 3.92,
+      "endS": 4.0
     },
     {
       "text": "contract",
       "charStart": 46,
       "charEnd": 54,
-      "startS": 3.84,
-      "endS": 4.4
+      "startS": 4.0,
+      "endS": 4.56
     },
     {
       "text": "is",
       "charStart": 55,
       "charEnd": 57,
-      "startS": 4.4,
-      "endS": 4.56
+      "startS": 4.56,
+      "endS": 4.72
     },
     {
       "text": "complete",
       "charStart": 58,
       "charEnd": 66,
-      "startS": 4.56,
-      "endS": 5.12
+      "startS": 4.72,
+      "endS": 5.2
     },
     {
       "text": "Payment",
       "charStart": 68,
       "charEnd": 75,
-      "startS": 5.36,
-      "endS": 5.76
+      "startS": 5.76,
+      "endS": 6.08
     },
     {
       "text": "will",
       "charStart": 76,
       "charEnd": 80,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 6.08,
+      "endS": 6.24
     },
     {
       "text": "be",
       "charStart": 81,
       "charEnd": 83,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 6.24,
+      "endS": 6.32
     },
     {
       "text": "issued",
       "charStart": 84,
       "charEnd": 90,
-      "startS": 6.08,
-      "endS": 6.4
+      "startS": 6.32,
+      "endS": 6.64
     },
     {
       "text": "in",
       "charStart": 91,
       "charEnd": 93,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 6.64,
+      "endS": 6.8
     },
     {
       "text": "thirty",
       "charStart": 94,
       "charEnd": 100,
-      "startS": 6.64,
-      "endS": 6.96
+      "startS": 6.8,
+      "endS": 7.12
     },
     {
       "text": "to",
       "charStart": 101,
       "charEnd": 103,
-      "startS": 7.04,
-      "endS": 7.12
+      "startS": 7.12,
+      "endS": 7.28
     },
     {
       "text": "ninety",
       "charStart": 104,
       "charEnd": 110,
-      "startS": 7.12,
-      "endS": 7.52
+      "startS": 7.28,
+      "endS": 7.6
     },
     {
       "text": "business",
       "charStart": 111,
       "charEnd": 119,
-      "startS": 7.52,
+      "startS": 7.6,
       "endS": 8.0
     },
     {
@@ -174,7 +173,8 @@
       "charStart": 120,
       "charEnd": 124,
       "startS": 8.0,
-      "endS": 8.4
+      "endS": 8.32
     }
-  ]
+  ],
+  "words_for": "8cb2caadbc5beb85/wordtiming-v1"
 }

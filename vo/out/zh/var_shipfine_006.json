@@ -1,0 +1,250 @@
+{
+  "hash": "c18f75fe3cfa5aaf",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_shipfine_006",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "只剩一艘飞船了。你没事！不过从统计上看，你马上就要有事了，所以请躲开。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Bright, then a careful, steady warning.",
+  "duration": 7.44,
+  "sample_rate": 24000,
+  "peak": 0.613,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.06,
+    "gain_db": 2.49,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.49,
+    "peak_bound": false
+  },
+  "asr": "只剩一艘飞船了。你没事，不过从统计上看，你马上就要有事了，所以请躲开。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "只",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "剩",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "一",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "艘",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "飞",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "船",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "了",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "你",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "没",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "事",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "不",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "过",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "从",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "统",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "计",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "上",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "看",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.4,
+      "endS": 4.8
+    },
+    {
+      "text": "你",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "马",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "上",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "就",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.44,
+      "endS": 5.52
+    },
+    {
+      "text": "要",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "有",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "事",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "了",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "所",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 6.56,
+      "endS": 6.64
+    },
+    {
+      "text": "以",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "请",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "躲",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.96,
+      "endS": 7.04
+    },
+    {
+      "text": "开",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 7.12,
+      "endS": 7.44
+    }
+  ],
+  "words_for": "c18f75fe3cfa5aaf/wordtiming-v1"
+}

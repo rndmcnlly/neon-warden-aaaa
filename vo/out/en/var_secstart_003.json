@@ -1,0 +1,124 @@
+{
+  "hash": "a9ae411e4a481566",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_secstart_003",
+    "seed": 11,
+    "language": "English",
+    "text": "Deep breath. Pilots who breathe have a fourteen percent better pay rate.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Wellness-seminar calm, a made-up statistic delivered sincerely.",
+  "duration": 4.88,
+  "sample_rate": 24000,
+  "peak": 0.846,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 4.19,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.19,
+    "peak_bound": false
+  },
+  "asr": "Deep breath. Pilots who breathe have a fourteen percent better pay rate.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Deep",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "breath",
+      "charStart": 5,
+      "charEnd": 11,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "Pilots",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 2.0,
+      "endS": 2.48
+    },
+    {
+      "text": "who",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "breathe",
+      "charStart": 24,
+      "charEnd": 31,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "have",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "fourteen",
+      "charStart": 39,
+      "charEnd": 47,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "percent",
+      "charStart": 48,
+      "charEnd": 55,
+      "startS": 3.68,
+      "endS": 4.08
+    },
+    {
+      "text": "better",
+      "charStart": 56,
+      "charEnd": 62,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "pay",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "rate",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 4.56,
+      "endS": 4.8
+    }
+  ],
+  "words_for": "a9ae411e4a481566/wordtiming-v1"
+}

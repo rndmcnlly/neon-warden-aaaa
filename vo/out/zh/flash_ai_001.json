@@ -1,33 +1,32 @@
 {
-  "hash": "fac388406d6610d7",
+  "hash": "11b7943fc24bd820",
   "mode": "clone",
   "request": {
     "id": "zh__flash_ai_001",
     "seed": 11,
     "language": "Chinese",
     "text": "哦！那块水晶是一个回收的飞行记录仪。请不要打开它。你在打开它。它打开了。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Rising alarm under the customer-service smile, faster each sentence.",
-  "duration": 7.84,
+  "duration": 6.88,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.625,
   "clipping_suspect": false,
-  "asr": "哦，那块水晶是一个回收的飞行记录仪，请不要打开它。你再打开它，它打开了。",
-  "asr_similarity": 0.968,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.04,
-    "true_peak_dbtp": -1.29,
-    "gain_db": 0.79,
-    "limited_db": 0.74,
-    "measured_before_lufs": -18.79,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.01,
+    "gain_db": 2.46,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.46,
     "peak_bound": false
   },
-  "words_for": "fac388406d6610d7/wordtiming-v1",
+  "asr": "哦，那块水晶是一个回收的飞行记录仪，请不要打开它。你再打开它，它打开了。",
+  "asr_similarity": 0.968,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,218 +39,219 @@
       "text": "哦",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 1.12,
-      "endS": 1.44
+      "startS": 0.16,
+      "endS": 0.56
     },
     {
       "text": "那",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 1.12,
+      "endS": 1.2
     },
     {
       "text": "块",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 1.92,
-      "endS": 2.16
+      "startS": 1.2,
+      "endS": 1.36
     },
     {
       "text": "水",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 2.16,
-      "endS": 2.32
+      "startS": 1.36,
+      "endS": 1.6
     },
     {
       "text": "晶",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "是",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "一",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.72,
-      "endS": 2.8
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "个",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.8,
-      "endS": 2.88
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "回",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "收",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 3.04,
-      "endS": 3.2
+      "startS": 2.32,
+      "endS": 2.56
     },
     {
       "text": "的",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 2.56,
+      "endS": 2.64
     },
     {
       "text": "飞",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 2.64,
+      "endS": 2.72
     },
     {
       "text": "行",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 2.72,
+      "endS": 2.88
     },
     {
       "text": "记",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "录",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 3.04,
+      "endS": 3.2
     },
     {
       "text": "仪",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 4.0,
-      "endS": 4.24
+      "startS": 3.2,
+      "endS": 3.52
     },
     {
       "text": "请",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.64,
-      "endS": 4.72
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "不",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "要",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.88,
-      "endS": 4.96
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "打",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 5.04,
-      "endS": 5.2
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "开",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 4.4,
+      "endS": 4.56
     },
     {
       "text": "它",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.36,
-      "endS": 5.6
+      "startS": 4.56,
+      "endS": 4.8
     },
     {
       "text": "你",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 6.0,
-      "endS": 6.08
+      "startS": 5.28,
+      "endS": 5.36
     },
     {
       "text": "在",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.08,
-      "endS": 6.24
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "打",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.24,
-      "endS": 6.4
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "开",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 5.6,
+      "endS": 5.68
     },
     {
       "text": "它",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 6.56,
-      "endS": 6.8
+      "startS": 5.68,
+      "endS": 5.92
     },
     {
       "text": "它",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 7.04,
-      "endS": 7.12
+      "startS": 6.24,
+      "endS": 6.32
     },
     {
       "text": "打",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.12,
-      "endS": 7.28
+      "startS": 6.32,
+      "endS": 6.48
     },
     {
       "text": "开",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 7.28,
-      "endS": 7.52
+      "startS": 6.48,
+      "endS": 6.64
     },
     {
       "text": "了",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 7.52,
-      "endS": 7.76
+      "startS": 6.64,
+      "endS": 6.8
     }
-  ]
+  ],
+  "words_for": "11b7943fc24bd820/wordtiming-v1"
 }

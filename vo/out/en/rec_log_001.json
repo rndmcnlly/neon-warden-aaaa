@@ -1,5 +1,5 @@
 {
-  "hash": "57c4384f9efa79a0",
+  "hash": "3ced798f631bf521",
   "mode": "clone",
   "request": {
     "id": "en__rec_log_001",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "Recording. Pilot zero one two one: recalled. Vessel: abandoned. Log day three hundred twelve.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Recorded log header, flatter and older than her present self, like the flashback header.",
-  "duration": 6.24,
+  "duration": 8.56,
   "sample_rate": 24000,
-  "peak": 0.768,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -2.1,
-    "gain_db": 3.77,
-    "limited_db": 0.0,
-    "measured_before_lufs": -21.77,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.33,
+    "gain_db": 3.74,
+    "limited_db": 0.89,
+    "measured_before_lufs": -21.74,
     "peak_bound": false
   },
+  "asr": "Recording, pilot zero one two one recalled, vessel abandoned, log day three hundred twelve.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,102 +39,100 @@
       "text": "Recording",
       "charStart": 0,
       "charEnd": 9,
-      "startS": 0.24,
-      "endS": 0.72
+      "startS": 0.72,
+      "endS": 1.28
     },
     {
       "text": "Pilot",
       "charStart": 11,
       "charEnd": 16,
-      "startS": 0.72,
-      "endS": 1.2
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "zero",
       "charStart": 17,
       "charEnd": 21,
-      "startS": 1.2,
-      "endS": 1.6
+      "startS": 2.24,
+      "endS": 2.64
     },
     {
       "text": "one",
       "charStart": 22,
       "charEnd": 25,
-      "startS": 1.6,
-      "endS": 1.84
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "two",
       "charStart": 26,
       "charEnd": 29,
-      "startS": 1.84,
-      "endS": 2.16
+      "startS": 2.88,
+      "endS": 3.12
     },
     {
       "text": "one",
       "charStart": 30,
       "charEnd": 33,
-      "startS": 2.16,
-      "endS": 2.48
+      "startS": 3.12,
+      "endS": 3.52
     },
     {
       "text": "recalled",
       "charStart": 35,
       "charEnd": 43,
-      "startS": 2.72,
-      "endS": 3.2
+      "startS": 3.84,
+      "endS": 4.4
     },
     {
       "text": "Vessel",
       "charStart": 45,
       "charEnd": 51,
-      "startS": 3.28,
-      "endS": 3.68
+      "startS": 5.04,
+      "endS": 5.6
     },
     {
       "text": "abandoned",
       "charStart": 53,
       "charEnd": 62,
-      "startS": 3.76,
-      "endS": 4.4
+      "startS": 5.6,
+      "endS": 6.24
     },
     {
       "text": "Log",
       "charStart": 64,
       "charEnd": 67,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 6.72,
+      "endS": 7.04
     },
     {
       "text": "day",
       "charStart": 68,
       "charEnd": 71,
-      "startS": 4.72,
-      "endS": 4.96
+      "startS": 7.04,
+      "endS": 7.44
     },
     {
       "text": "three",
       "charStart": 72,
       "charEnd": 77,
-      "startS": 5.04,
-      "endS": 5.12
+      "startS": 7.44,
+      "endS": 7.68
     },
     {
       "text": "hundred",
       "charStart": 78,
       "charEnd": 85,
-      "startS": 5.12,
-      "endS": 5.2
+      "startS": 7.68,
+      "endS": 8.0
     },
     {
       "text": "twelve",
       "charStart": 86,
       "charEnd": 92,
-      "startS": 5.68,
-      "endS": 6.24
+      "startS": 8.0,
+      "endS": 8.48
     }
   ],
-  "words_for": "57c4384f9efa79a0/wordtiming-v1",
-  "asr": "Recording pilot zero one two one recalled vessel abandoned log day three hundred twelve.",
-  "asr_similarity": 1.0
+  "words_for": "3ced798f631bf521/wordtiming-v1"
 }

@@ -1,5 +1,5 @@
 {
-  "hash": "51c951da7e50b556",
+  "hash": "8b932ad909562f45",
   "mode": "clone",
   "request": {
     "id": "en__tut_contract_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Your contract has been countersigned! Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Cheerful legal boilerplate, read fast and proud of it.",
-  "duration": 10.56,
+  "duration": 9.76,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.613,
   "clipping_suspect": false,
-  "asr": "Your contract has been countersigned. Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.04,
-    "true_peak_dbtp": -1.31,
-    "gain_db": 0.6,
-    "limited_db": 0.55,
-    "measured_before_lufs": -18.6,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.24,
+    "gain_db": 3.61,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.61,
     "peak_bound": false
   },
-  "words_for": "51c951da7e50b556/wordtiming-v1",
+  "asr": "Your contract has been countersigned. Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,35 +39,35 @@
       "text": "Your",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.4,
-      "endS": 0.56
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "contract",
       "charStart": 5,
       "charEnd": 13,
-      "startS": 0.56,
-      "endS": 1.2
+      "startS": 0.96,
+      "endS": 1.52
     },
     {
       "text": "has",
       "charStart": 14,
       "charEnd": 17,
-      "startS": 1.2,
-      "endS": 1.36
+      "startS": 1.52,
+      "endS": 1.6
     },
     {
       "text": "been",
       "charStart": 18,
       "charEnd": 22,
-      "startS": 1.36,
-      "endS": 1.6
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "countersigned",
       "charStart": 23,
       "charEnd": 36,
-      "startS": 1.6,
+      "startS": 1.76,
       "endS": 2.48
     },
     {
@@ -76,7 +75,7 @@
       "charStart": 38,
       "charEnd": 45,
       "startS": 2.96,
-      "endS": 3.12
+      "endS": 3.36
     },
     {
       "text": "is",
@@ -89,127 +88,128 @@
       "text": "issued",
       "charStart": 49,
       "charEnd": 55,
-      "startS": 3.52,
-      "endS": 3.84
+      "startS": 3.44,
+      "endS": 3.76
     },
     {
       "text": "on",
       "charStart": 56,
       "charEnd": 58,
-      "startS": 3.92,
-      "endS": 4.08
+      "startS": 3.76,
+      "endS": 3.92
     },
     {
       "text": "completion",
       "charStart": 59,
       "charEnd": 69,
-      "startS": 4.08,
-      "endS": 4.56
+      "startS": 3.92,
+      "endS": 4.4
     },
     {
       "text": "of",
       "charStart": 70,
       "charEnd": 72,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "contract",
       "charStart": 73,
       "charEnd": 81,
-      "startS": 4.72,
-      "endS": 5.36
+      "startS": 4.48,
+      "endS": 5.12
     },
     {
       "text": "Completion",
       "charStart": 83,
       "charEnd": 93,
-      "startS": 5.76,
-      "endS": 6.32
+      "startS": 5.6,
+      "endS": 6.08
     },
     {
       "text": "of",
       "charStart": 94,
       "charEnd": 96,
-      "startS": 6.32,
-      "endS": 6.4
+      "startS": 6.08,
+      "endS": 6.16
     },
     {
       "text": "contract",
       "charStart": 97,
       "charEnd": 105,
-      "startS": 6.4,
-      "endS": 6.96
+      "startS": 6.16,
+      "endS": 6.64
     },
     {
       "text": "is",
       "charStart": 106,
       "charEnd": 108,
-      "startS": 6.96,
-      "endS": 7.04
+      "startS": 6.64,
+      "endS": 6.72
     },
     {
       "text": "defined",
       "charStart": 109,
       "charEnd": 116,
-      "startS": 7.04,
-      "endS": 7.6
+      "startS": 6.72,
+      "endS": 7.2
     },
     {
       "text": "in",
       "charStart": 117,
       "charEnd": 119,
-      "startS": 7.6,
-      "endS": 7.76
+      "startS": 7.2,
+      "endS": 7.28
     },
     {
       "text": "Appendix",
       "charStart": 120,
       "charEnd": 128,
-      "startS": 7.76,
-      "endS": 8.24
+      "startS": 7.28,
+      "endS": 7.68
     },
     {
       "text": "F",
       "charStart": 129,
       "charEnd": 130,
-      "startS": 8.32,
-      "endS": 8.64
+      "startS": 7.68,
+      "endS": 8.0
     },
     {
       "text": "which",
       "charStart": 132,
       "charEnd": 137,
-      "startS": 8.88,
-      "endS": 9.04
+      "startS": 8.24,
+      "endS": 8.4
     },
     {
       "text": "is",
       "charStart": 138,
       "charEnd": 140,
-      "startS": 9.04,
-      "endS": 9.2
+      "startS": 8.4,
+      "endS": 8.48
     },
     {
       "text": "available",
       "charStart": 141,
       "charEnd": 150,
-      "startS": 9.2,
-      "endS": 9.76
+      "startS": 8.48,
+      "endS": 9.04
     },
     {
       "text": "on",
       "charStart": 151,
       "charEnd": 153,
-      "startS": 9.76,
-      "endS": 10.0
+      "startS": 9.04,
+      "endS": 9.12
     },
     {
       "text": "request",
       "charStart": 154,
       "charEnd": 161,
-      "startS": 10.0,
-      "endS": 10.56
+      "startS": 9.12,
+      "endS": 9.68
     }
-  ]
+  ],
+  "words_for": "8b932ad909562f45/wordtiming-v1"
 }

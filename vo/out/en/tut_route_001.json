@@ -1,5 +1,5 @@
 {
-  "hash": "ec1c25f9973abf90",
+  "hash": "641c8452242b8b44",
   "mode": "clone",
   "request": {
     "id": "en__tut_route_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Your route: Outer Drift. Shatter Belt. Gun Lanes. Lancer Gate. Last Approach. And then...",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Tour-guide list, slowing and dropping into a hush on the last words.",
-  "duration": 6.0,
+  "duration": 8.88,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Your route: Outer Drift, Shatterbelt, Gun Lanes, Lancer Gate, Last Approach, and then.",
-  "asr_similarity": 0.889,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.16,
-    "gain_db": 1.61,
-    "limited_db": 1.56,
-    "measured_before_lufs": -19.61,
+    "lufs": -18.08,
+    "true_peak_dbtp": -1.3,
+    "gain_db": 2.35,
+    "limited_db": 0.91,
+    "measured_before_lufs": -20.35,
     "peak_bound": false
   },
-  "words_for": "ec1c25f9973abf90/wordtiming-v1",
+  "asr": "Your route: Outer Drift, Shatterbelt, Gun Lanes, Lancer Gate, Last Approach, and then.",
+  "asr_similarity": 0.889,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,99 +39,100 @@
       "text": "Your",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "route",
       "charStart": 5,
       "charEnd": 10,
-      "startS": 0.48,
-      "endS": 0.8
+      "startS": 0.88,
+      "endS": 1.28
     },
     {
       "text": "Outer",
       "charStart": 12,
       "charEnd": 17,
-      "startS": 1.04,
-      "endS": 1.52
+      "startS": 1.84,
+      "endS": 2.08
     },
     {
       "text": "Drift",
       "charStart": 18,
       "charEnd": 23,
-      "startS": 1.52,
-      "endS": 1.76
+      "startS": 2.08,
+      "endS": 2.56
     },
     {
       "text": "Shatter",
       "charStart": 25,
       "charEnd": 32,
-      "startS": 1.84,
-      "endS": 2.24
+      "startS": 2.96,
+      "endS": 3.36
     },
     {
       "text": "Belt",
       "charStart": 33,
       "charEnd": 37,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 3.36,
+      "endS": 3.76
     },
     {
       "text": "Gun",
       "charStart": 39,
       "charEnd": 42,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 4.24,
+      "endS": 4.56
     },
     {
       "text": "Lanes",
       "charStart": 43,
       "charEnd": 48,
-      "startS": 3.04,
-      "endS": 3.44
+      "startS": 4.56,
+      "endS": 5.04
     },
     {
       "text": "Lancer",
       "charStart": 50,
       "charEnd": 56,
-      "startS": 3.6,
-      "endS": 4.0
+      "startS": 5.36,
+      "endS": 5.84
     },
     {
       "text": "Gate",
       "charStart": 57,
       "charEnd": 61,
-      "startS": 4.0,
-      "endS": 4.24
+      "startS": 5.84,
+      "endS": 6.16
     },
     {
       "text": "Last",
       "charStart": 63,
       "charEnd": 67,
-      "startS": 4.4,
-      "endS": 4.8
+      "startS": 6.72,
+      "endS": 7.12
     },
     {
       "text": "Approach",
       "charStart": 68,
       "charEnd": 76,
-      "startS": 4.8,
-      "endS": 5.28
+      "startS": 7.12,
+      "endS": 7.6
     },
     {
       "text": "And",
       "charStart": 78,
       "charEnd": 81,
-      "startS": 5.44,
-      "endS": 5.52
+      "startS": 8.16,
+      "endS": 8.32
     },
     {
       "text": "then",
       "charStart": 82,
       "charEnd": 86,
-      "startS": 5.92,
-      "endS": 6.0
+      "startS": 8.32,
+      "endS": 8.64
     }
-  ]
+  ],
+  "words_for": "641c8452242b8b44/wordtiming-v1"
 }

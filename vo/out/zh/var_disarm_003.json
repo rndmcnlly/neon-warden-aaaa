@@ -1,0 +1,222 @@
+{
+  "hash": "2e13092e270a36d1",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_disarm_003",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "没有枪，没有损伤，没有麻烦。我不知道该怎么计费，但真的很利落。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Genuinely impressed, not sure why.",
+  "duration": 6.08,
+  "sample_rate": 24000,
+  "peak": 0.798,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.94,
+    "gain_db": 2.28,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.28,
+    "peak_bound": false
+  },
+  "asr": "没有枪，没有损伤，没有麻烦。我不知道该怎么计费，但真的很利落。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "没",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "有",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "枪",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "没",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "有",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "损",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "伤",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "没",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "有",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "麻",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "烦",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "我",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "不",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "知",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "道",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "该",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "怎",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "么",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "计",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "费",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "但",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "真",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "的",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "很",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "利",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "落",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.76,
+      "endS": 6.08
+    }
+  ],
+  "words_for": "2e13092e270a36d1/wordtiming-v1"
+}

@@ -1,5 +1,5 @@
 {
-  "hash": "b14ea7293acfd6fc",
+  "hash": "0e846245cb10602d",
   "mode": "clone",
   "request": {
     "id": "en__warn_ai_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Warning. The Warden approaches. This is it, Pilot. Everything we trained for. Remember the briefing.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, trying hard to sound brave.",
-  "duration": 6.64,
+  "duration": 6.8,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.749,
   "clipping_suspect": false,
-  "asr": "Warning: The warden approaches. This is it, pilot. Everything we trained for. Remember the briefing.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.32,
-    "gain_db": 1.6,
-    "limited_db": 1.55,
-    "measured_before_lufs": -19.6,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.46,
+    "gain_db": 3.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.07,
     "peak_bound": false
   },
-  "words_for": "b14ea7293acfd6fc/wordtiming-v1",
+  "asr": "Warning: The warden approaches. This is it, pilot. Everything we trained for. Remember the briefing.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,106 +39,107 @@
       "text": "Warning",
       "charStart": 0,
       "charEnd": 7,
-      "startS": 0.24,
-      "endS": 0.72
+      "startS": 0.72,
+      "endS": 1.28
     },
     {
       "text": "The",
       "charStart": 9,
       "charEnd": 12,
-      "startS": 1.04,
-      "endS": 1.12
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "Warden",
       "charStart": 13,
       "charEnd": 19,
-      "startS": 1.12,
-      "endS": 1.36
+      "startS": 1.76,
+      "endS": 2.08
     },
     {
       "text": "approaches",
       "charStart": 20,
       "charEnd": 30,
-      "startS": 1.44,
-      "endS": 2.16
+      "startS": 2.08,
+      "endS": 2.72
     },
     {
       "text": "This",
       "charStart": 32,
       "charEnd": 36,
-      "startS": 2.16,
-      "endS": 2.24
+      "startS": 3.04,
+      "endS": 3.2
     },
     {
       "text": "is",
       "charStart": 37,
       "charEnd": 39,
-      "startS": 2.72,
-      "endS": 2.8
+      "startS": 3.2,
+      "endS": 3.28
     },
     {
       "text": "it",
       "charStart": 40,
       "charEnd": 42,
-      "startS": 2.96,
-      "endS": 3.04
+      "startS": 3.28,
+      "endS": 3.44
     },
     {
       "text": "Pilot",
       "charStart": 44,
       "charEnd": 49,
-      "startS": 3.04,
-      "endS": 3.52
+      "startS": 3.52,
+      "endS": 4.0
     },
     {
       "text": "Everything",
       "charStart": 51,
       "charEnd": 61,
-      "startS": 3.76,
-      "endS": 4.24
+      "startS": 4.32,
+      "endS": 4.8
     },
     {
       "text": "we",
       "charStart": 62,
       "charEnd": 64,
-      "startS": 4.24,
-      "endS": 4.32
+      "startS": 4.8,
+      "endS": 4.88
     },
     {
       "text": "trained",
       "charStart": 65,
       "charEnd": 72,
-      "startS": 4.32,
-      "endS": 4.72
+      "startS": 4.88,
+      "endS": 5.2
     },
     {
       "text": "for",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 4.72,
-      "endS": 5.04
+      "startS": 5.2,
+      "endS": 5.52
     },
     {
       "text": "Remember",
       "charStart": 78,
       "charEnd": 86,
-      "startS": 5.04,
-      "endS": 5.12
+      "startS": 5.92,
+      "endS": 6.24
     },
     {
       "text": "the",
       "charStart": 87,
       "charEnd": 90,
-      "startS": 5.84,
-      "endS": 5.92
+      "startS": 6.24,
+      "endS": 6.32
     },
     {
       "text": "briefing",
       "charStart": 91,
       "charEnd": 99,
-      "startS": 5.92,
-      "endS": 6.48
+      "startS": 6.32,
+      "endS": 6.8
     }
-  ]
+  ],
+  "words_for": "0e846245cb10602d/wordtiming-v1"
 }

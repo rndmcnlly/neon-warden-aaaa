@@ -1,0 +1,159 @@
+{
+  "hash": "b5310c52d6e291a3",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_006",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Te queda un casco. ¡Estás bien! Estadísticamente, estás por estar menos bien, así que esquiva, por favor.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Bright, then a careful, steady warning.",
+  "duration": 7.44,
+  "sample_rate": 24000,
+  "peak": 0.875,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.12,
+    "gain_db": 4.33,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.33,
+    "peak_bound": false
+  },
+  "asr": "Te queda un casco. Estás bien. Estadísticamente, estás por estar menos bien, así que esquiva por favor.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Te",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "queda",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "un",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "casco",
+      "charStart": 12,
+      "charEnd": 17,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "Estás",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "bien",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "Estadísticamente",
+      "charStart": 32,
+      "charEnd": 48,
+      "startS": 3.04,
+      "endS": 4.16
+    },
+    {
+      "text": "estás",
+      "charStart": 50,
+      "charEnd": 55,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "por",
+      "charStart": 56,
+      "charEnd": 59,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "estar",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "menos",
+      "charStart": 66,
+      "charEnd": 71,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "bien",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "así",
+      "charStart": 78,
+      "charEnd": 81,
+      "startS": 6.0,
+      "endS": 6.24
+    },
+    {
+      "text": "que",
+      "charStart": 82,
+      "charEnd": 85,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "esquiva",
+      "charStart": 86,
+      "charEnd": 93,
+      "startS": 6.32,
+      "endS": 6.8
+    },
+    {
+      "text": "por",
+      "charStart": 95,
+      "charEnd": 98,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "favor",
+      "charStart": 99,
+      "charEnd": 104,
+      "startS": 6.96,
+      "endS": 7.36
+    }
+  ],
+  "words_for": "b5310c52d6e291a3/wordtiming-v1"
+}

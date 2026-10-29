@@ -1,0 +1,138 @@
+{
+  "hash": "b6b9bdd0c25ca48f",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_disarm_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Sin armas, sin daños, sin alboroto. No sé cómo cobrarlo, pero quedó muy limpio.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Genuinely impressed, not sure why.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.825,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.45,
+    "gain_db": 4.86,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.86,
+    "peak_bound": false
+  },
+  "asr": "Sin armas, sin daños, sin alboroto, no sé cómo cobrarlo, pero quedó muy limpio.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sin",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "armas",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 1.04
+    },
+    {
+      "text": "sin",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.2,
+      "endS": 1.6
+    },
+    {
+      "text": "daños",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.6,
+      "endS": 2.16
+    },
+    {
+      "text": "sin",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "alboroto",
+      "charStart": 26,
+      "charEnd": 34,
+      "startS": 2.56,
+      "endS": 3.2
+    },
+    {
+      "text": "No",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "sé",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "cómo",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "cobrarlo",
+      "charStart": 47,
+      "charEnd": 55,
+      "startS": 4.24,
+      "endS": 4.8
+    },
+    {
+      "text": "pero",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "quedó",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "muy",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "limpio",
+      "charStart": 72,
+      "charEnd": 78,
+      "startS": 5.44,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "b6b9bdd0c25ca48f/wordtiming-v1"
+}

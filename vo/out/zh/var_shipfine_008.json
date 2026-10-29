@@ -1,0 +1,166 @@
+{
+  "hash": "8f7d9d4371deb46f",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_shipfine_008",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "新船体，还是你！旧船体现在是一次学习机会。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Upbeat welcome back, like a new semester.",
+  "duration": 4.96,
+  "sample_rate": 24000,
+  "peak": 0.57,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.88,
+    "gain_db": 2.8,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.8,
+    "peak_bound": false
+  },
+  "asr": "新船体还是你，旧船体现在是一次学习机会。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "新",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "船",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "体",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.04,
+      "endS": 1.36
+    },
+    {
+      "text": "还",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "是",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "你",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "旧",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "船",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "体",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "现",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "在",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "是",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "一",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "次",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "学",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "习",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "机",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "会",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.64,
+      "endS": 4.88
+    }
+  ],
+  "words_for": "8f7d9d4371deb46f/wordtiming-v1"
+}

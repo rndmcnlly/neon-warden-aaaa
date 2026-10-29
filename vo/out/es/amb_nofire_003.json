@@ -1,33 +1,32 @@
 {
-  "hash": "50f04d97b56df755",
+  "hash": "1866c8db98bbb9ae",
   "mode": "clone",
   "request": {
     "id": "es__amb_nofire_003",
     "seed": 11,
     "language": "Spanish",
     "text": "Los exploradores no te están disparando. Eso no está en mi sesión informativa.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, genuinely confused, reading her notes.",
-  "duration": 5.36,
+  "duration": 4.48,
   "sample_rate": 24000,
-  "peak": 0.775,
+  "peak": 0.667,
   "clipping_suspect": false,
-  "asr": "Los exploradores no están disparando. Eso no está en mi sesión informativa.",
-  "asr_similarity": 0.96,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.12,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -3.41,
+    "gain_db": 3.16,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.16,
     "peak_bound": false
   },
-  "words_for": "50f04d97b56df755/wordtiming-v1",
+  "asr": "Los exploradores no te están disparando. Eso no está en mi sesión informativa.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,14 +39,14 @@
       "text": "Los",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.24,
-      "endS": 0.48
+      "startS": 0.08,
+      "endS": 0.24
     },
     {
       "text": "exploradores",
       "charStart": 4,
       "charEnd": 16,
-      "startS": 0.48,
+      "startS": 0.24,
       "endS": 0.96
     },
     {
@@ -55,77 +54,78 @@
       "charStart": 17,
       "charEnd": 19,
       "startS": 0.96,
-      "endS": 1.36
+      "endS": 1.2
     },
     {
       "text": "te",
       "charStart": 20,
       "charEnd": 22,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 1.2,
+      "endS": 1.28
     },
     {
       "text": "están",
       "charStart": 23,
       "charEnd": 28,
-      "startS": 1.6,
-      "endS": 1.84
+      "startS": 1.28,
+      "endS": 1.6
     },
     {
       "text": "disparando",
       "charStart": 29,
       "charEnd": 39,
-      "startS": 1.84,
+      "startS": 1.6,
       "endS": 2.24
     },
     {
       "text": "Eso",
       "charStart": 41,
       "charEnd": 44,
-      "startS": 2.96,
-      "endS": 3.04
+      "startS": 2.72,
+      "endS": 2.96
     },
     {
       "text": "no",
       "charStart": 45,
       "charEnd": 47,
-      "startS": 3.28,
-      "endS": 3.44
+      "startS": 2.96,
+      "endS": 3.04
     },
     {
       "text": "está",
       "charStart": 48,
       "charEnd": 52,
-      "startS": 3.44,
-      "endS": 3.68
+      "startS": 3.04,
+      "endS": 3.28
     },
     {
       "text": "en",
       "charStart": 53,
       "charEnd": 55,
-      "startS": 3.68,
-      "endS": 3.76
+      "startS": 3.28,
+      "endS": 3.36
     },
     {
       "text": "mi",
       "charStart": 56,
       "charEnd": 58,
-      "startS": 3.76,
-      "endS": 3.84
+      "startS": 3.36,
+      "endS": 3.44
     },
     {
       "text": "sesión",
       "charStart": 59,
       "charEnd": 65,
-      "startS": 3.84,
-      "endS": 4.24
+      "startS": 3.44,
+      "endS": 3.76
     },
     {
       "text": "informativa",
       "charStart": 66,
       "charEnd": 77,
-      "startS": 4.24,
-      "endS": 5.2
+      "startS": 3.76,
+      "endS": 4.4
     }
-  ]
+  ],
+  "words_for": "1866c8db98bbb9ae/wordtiming-v1"
 }

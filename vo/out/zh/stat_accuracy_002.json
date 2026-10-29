@@ -1,0 +1,208 @@
+{
+  "hash": "7a1c4b1369201b85",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_accuracy_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "你的命中率在走低。没关系！趋势不过是带图表的情绪而已。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Upbeat reframe, believing every word.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.628,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.98,
+    "gain_db": 1.82,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.82,
+    "peak_bound": false
+  },
+  "asr": "你的命中率在走低，没关系，趋势不过是带图表的情绪而已。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "的",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "命",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "中",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "率",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "在",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "走",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "低",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "没",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "关",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "系",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "趋",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "势",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "不",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "过",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "是",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "带",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "图",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "表",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "的",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "情",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "绪",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "而",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "已",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.28,
+      "endS": 5.52
+    }
+  ],
+  "words_for": "7a1c4b1369201b85/wordtiming-v1"
+}

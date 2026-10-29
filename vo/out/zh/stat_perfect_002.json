@@ -1,0 +1,208 @@
+{
+  "hash": "11eae72db4ae84b2",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_perfect_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "完美扇区。我要把它贴到墙上。我们没有墙。我去申请一面墙。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Giddy, planning a bulletin board.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.85,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.33,
+    "gain_db": 2.82,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.82,
+    "peak_bound": false
+  },
+  "asr": "完美扇区，我要把它贴到墙上。我们没有墙，我去申请一面墙。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "完",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "美",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "扇",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "区",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "我",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "要",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "把",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "它",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "贴",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "到",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "墙",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "上",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "我",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "们",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "没",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "有",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "墙",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "我",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "去",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "申",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "请",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "一",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "面",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "墙",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.28,
+      "endS": 5.6
+    }
+  ],
+  "words_for": "11eae72db4ae84b2/wordtiming-v1"
+}

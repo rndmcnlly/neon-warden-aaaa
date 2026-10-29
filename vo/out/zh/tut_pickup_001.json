@@ -1,33 +1,32 @@
 {
-  "hash": "77a36310553a7a4d",
+  "hash": "6b870aac2ef6c8ad",
   "mode": "clone",
   "request": {
     "id": "zh__tut_pickup_001",
     "seed": 11,
     "language": "Chinese",
     "text": "道具！绿色水晶能扩大射击范围。青色菱形能提供护盾。道具均为回收物资，仍归航道管理局所有。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Product-demo enthusiasm, then fine print read slightly faster.",
-  "duration": 10.0,
+  "duration": 8.96,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.602,
   "clipping_suspect": false,
-  "asr": "道具：绿色水晶能扩大射击范围，青色菱形能提供护盾。道具均为回收物资，仍归航道管理局所有。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.06,
-    "true_peak_dbtp": -1.21,
-    "gain_db": 1.17,
-    "limited_db": 1.12,
-    "measured_before_lufs": -19.17,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.36,
+    "gain_db": 1.8,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.8,
     "peak_bound": false
   },
-  "words_for": "77a36310553a7a4d/wordtiming-v1",
+  "asr": "道具：绿色水晶能扩大射击范围，青色菱形能提供护盾。道具均为回收物资，人归航道管理局所有。",
+  "asr_similarity": 0.974,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,274 +39,275 @@
       "text": "道",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.64,
-      "endS": 0.8
+      "startS": 0.08,
+      "endS": 0.24
     },
     {
       "text": "具",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.8,
-      "endS": 1.2
+      "startS": 0.24,
+      "endS": 0.56
     },
     {
       "text": "绿",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 1.52,
-      "endS": 1.68
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "色",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.68,
-      "endS": 1.92
+      "startS": 1.12,
+      "endS": 1.28
     },
     {
       "text": "水",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 1.28,
+      "endS": 1.52
     },
     {
       "text": "晶",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 2.08,
-      "endS": 2.4
+      "startS": 1.52,
+      "endS": 1.76
     },
     {
       "text": "能",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "扩",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.56,
-      "endS": 2.64
+      "startS": 1.92,
+      "endS": 2.08
     },
     {
       "text": "大",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.64,
-      "endS": 2.8
+      "startS": 2.08,
+      "endS": 2.16
     },
     {
       "text": "射",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.8,
-      "endS": 2.96
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "击",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.96,
-      "endS": 3.12
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "范",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 2.48,
+      "endS": 2.72
     },
     {
       "text": "围",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 2.72,
+      "endS": 2.96
     },
     {
       "text": "青",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 4.0,
-      "endS": 4.24
+      "startS": 3.36,
+      "endS": 3.6
     },
     {
       "text": "色",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 4.24,
-      "endS": 4.48
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "菱",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 3.76,
+      "endS": 3.92
     },
     {
       "text": "形",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.64,
-      "endS": 4.88
+      "startS": 3.92,
+      "endS": 4.16
     },
     {
       "text": "能",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.88,
-      "endS": 5.04
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "提",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 5.04,
-      "endS": 5.2
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "供",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 4.48,
+      "endS": 4.56
     },
     {
       "text": "护",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.36,
-      "endS": 5.52
+      "startS": 4.56,
+      "endS": 4.72
     },
     {
       "text": "盾",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.52,
-      "endS": 5.76
+      "startS": 4.72,
+      "endS": 4.96
     },
     {
       "text": "道",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 5.52,
+      "endS": 5.76
     },
     {
       "text": "具",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.56,
-      "endS": 6.8
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "均",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.8,
-      "endS": 7.04
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "为",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 6.08,
+      "endS": 6.24
     },
     {
       "text": "回",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 7.2,
-      "endS": 7.36
+      "startS": 6.24,
+      "endS": 6.4
     },
     {
       "text": "收",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 7.36,
-      "endS": 7.52
+      "startS": 6.4,
+      "endS": 6.56
     },
     {
       "text": "物",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 7.52,
-      "endS": 7.68
+      "startS": 6.56,
+      "endS": 6.72
     },
     {
       "text": "资",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.68,
-      "endS": 8.0
+      "startS": 6.72,
+      "endS": 7.04
     },
     {
       "text": "仍",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 8.24,
-      "endS": 8.4
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "归",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 8.4,
-      "endS": 8.56
+      "startS": 7.52,
+      "endS": 7.68
     },
     {
       "text": "航",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 8.56,
-      "endS": 8.8
+      "startS": 7.68,
+      "endS": 7.92
     },
     {
       "text": "道",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 8.8,
-      "endS": 8.96
+      "startS": 7.92,
+      "endS": 8.08
     },
     {
       "text": "管",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.96,
-      "endS": 9.12
+      "startS": 8.08,
+      "endS": 8.24
     },
     {
       "text": "理",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 9.12,
-      "endS": 9.28
+      "startS": 8.24,
+      "endS": 8.32
     },
     {
       "text": "局",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 9.28,
-      "endS": 9.44
+      "startS": 8.32,
+      "endS": 8.48
     },
     {
       "text": "所",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 9.44,
-      "endS": 9.6
+      "startS": 8.48,
+      "endS": 8.64
     },
     {
       "text": "有",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 9.6,
-      "endS": 10.0
+      "startS": 8.64,
+      "endS": 8.88
     }
-  ]
+  ],
+  "words_for": "6b870aac2ef6c8ad/wordtiming-v1"
 }

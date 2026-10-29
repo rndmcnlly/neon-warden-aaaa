@@ -1,0 +1,131 @@
+{
+  "hash": "9ea652d92a8b2bc2",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_secstart_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Respira hondo. Los pilotos que respiran tienen una tarifa catorce por ciento mejor.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Wellness-seminar calm, a made-up statistic delivered sincerely.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.812,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.52,
+    "gain_db": 6.24,
+    "limited_db": 0.0,
+    "measured_before_lufs": -24.24,
+    "peak_bound": false
+  },
+  "asr": "Respira hondo. Los pilotos que respiran tienen una tarifa catorce por ciento mejor.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Respira",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "hondo",
+      "charStart": 8,
+      "charEnd": 13,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "Los",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "pilotos",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 1.76,
+      "endS": 2.16
+    },
+    {
+      "text": "que",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "respiran",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "tienen",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "una",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "tarifa",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.28,
+      "endS": 3.68
+    },
+    {
+      "text": "catorce",
+      "charStart": 58,
+      "charEnd": 65,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "por",
+      "charStart": 66,
+      "charEnd": 69,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "ciento",
+      "charStart": 70,
+      "charEnd": 76,
+      "startS": 4.32,
+      "endS": 4.72
+    },
+    {
+      "text": "mejor",
+      "charStart": 77,
+      "charEnd": 82,
+      "startS": 4.72,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "9ea652d92a8b2bc2/wordtiming-v1"
+}

@@ -1,5 +1,5 @@
 {
-  "hash": "5b337a0ed57e2fbd",
+  "hash": "eaf0dfe0a1a731f9",
   "mode": "clone",
   "request": {
     "id": "en__boss_ai_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Great hit! Your payment is ninety percent vested!",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, cheerleader; she has not heard a word the Warden said.",
-  "duration": 3.36,
+  "duration": 3.84,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.688,
   "clipping_suspect": false,
-  "asr": "Great hit! Your payment is ninety percent vested.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
-    "true_peak_dbtp": -1.12,
-    "gain_db": 0.14,
-    "limited_db": 0.09,
-    "measured_before_lufs": -18.14,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.24,
+    "gain_db": 1.95,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.95,
     "peak_bound": false
   },
-  "words_for": "5b337a0ed57e2fbd/wordtiming-v1",
+  "asr": "Great hit! Your payment is ninety percent vested.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,57 +39,58 @@
       "text": "Great",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 1.04
     },
     {
       "text": "hit",
       "charStart": 6,
       "charEnd": 9,
-      "startS": 0.72,
-      "endS": 0.96
+      "startS": 1.04,
+      "endS": 1.28
     },
     {
       "text": "Your",
       "charStart": 11,
       "charEnd": 15,
-      "startS": 1.2,
-      "endS": 1.44
+      "startS": 1.84,
+      "endS": 1.92
     },
     {
       "text": "payment",
       "charStart": 16,
       "charEnd": 23,
-      "startS": 1.44,
-      "endS": 1.84
+      "startS": 1.92,
+      "endS": 2.32
     },
     {
       "text": "is",
       "charStart": 24,
       "charEnd": 26,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 2.4,
+      "endS": 2.56
     },
     {
       "text": "ninety",
       "charStart": 27,
       "charEnd": 33,
-      "startS": 1.92,
-      "endS": 2.32
+      "startS": 2.56,
+      "endS": 2.88
     },
     {
       "text": "percent",
       "charStart": 34,
       "charEnd": 41,
-      "startS": 2.4,
-      "endS": 2.72
+      "startS": 2.88,
+      "endS": 3.28
     },
     {
       "text": "vested",
       "charStart": 42,
       "charEnd": 48,
-      "startS": 2.8,
-      "endS": 3.28
+      "startS": 3.28,
+      "endS": 3.76
     }
-  ]
+  ],
+  "words_for": "eaf0dfe0a1a731f9/wordtiming-v1"
 }

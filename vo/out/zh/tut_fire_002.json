@@ -1,33 +1,32 @@
 {
-  "hash": "586ff1807f79e245",
+  "hash": "155473d859db7d6f",
   "mode": "clone",
   "request": {
     "id": "zh__tut_fire_002",
     "seed": 11,
     "language": "Chinese",
     "text": "你的子弹是青色的。射向你的子弹是粉色的。粉色子弹很危险。金色子弹也很危险。总之，子弹都很危险，除非是你自己的。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Captain Obvious, completely sincere, a careful list.",
-  "duration": 10.8,
+  "duration": 11.6,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.707,
   "clipping_suspect": false,
-  "asr": "你的子弹是青色的，射向你的子弹是粉色的。粉色子弹很危险，金色子弹也很危险。总之，子弹都很危险，除非是你自己。",
-  "asr_similarity": 0.989,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
-    "true_peak_dbtp": -1.1,
-    "gain_db": 0.69,
-    "limited_db": 0.64,
-    "measured_before_lufs": -18.69,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.85,
+    "gain_db": 3.14,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.14,
     "peak_bound": false
   },
-  "words_for": "586ff1807f79e245/wordtiming-v1",
+  "asr": "你的子弹是青色的，射向你的子弹是粉色的。粉色子弹很危险，金色子弹也很危险。总之，子弹都很危险，除非是你自己的。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,337 +39,338 @@
       "text": "你",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.08,
-      "endS": 0.24
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "的",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.24,
-      "endS": 0.32
+      "startS": 0.96,
+      "endS": 1.04
     },
     {
       "text": "子",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.32,
-      "endS": 0.56
+      "startS": 1.04,
+      "endS": 1.2
     },
     {
       "text": "弹",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 1.2,
+      "endS": 1.36
     },
     {
       "text": "是",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "青",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 1.44,
+      "endS": 1.6
     },
     {
       "text": "色",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.2,
-      "endS": 1.28
+      "startS": 1.6,
+      "endS": 1.84
     },
     {
       "text": "的",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.44,
-      "endS": 1.68
+      "startS": 1.84,
+      "endS": 2.16
     },
     {
       "text": "射",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.92,
-      "endS": 2.16
+      "startS": 2.4,
+      "endS": 2.64
     },
     {
       "text": "向",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.16,
-      "endS": 2.4
+      "startS": 2.64,
+      "endS": 2.8
     },
     {
       "text": "你",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 2.8,
+      "endS": 2.88
     },
     {
       "text": "的",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.48,
-      "endS": 2.64
+      "startS": 2.88,
+      "endS": 2.96
     },
     {
       "text": "子",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.64,
-      "endS": 2.8
+      "startS": 2.96,
+      "endS": 3.12
     },
     {
       "text": "弹",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.8,
-      "endS": 2.96
+      "startS": 3.12,
+      "endS": 3.28
     },
     {
       "text": "是",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 2.96,
-      "endS": 3.12
+      "startS": 3.28,
+      "endS": 3.36
     },
     {
       "text": "粉",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 3.36,
+      "endS": 3.52
     },
     {
       "text": "色",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 3.52,
+      "endS": 3.76
     },
     {
       "text": "的",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.68,
-      "endS": 3.92
+      "startS": 3.76,
+      "endS": 4.0
     },
     {
       "text": "粉",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.16,
-      "endS": 4.4
+      "startS": 4.56,
+      "endS": 4.72
     },
     {
       "text": "色",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 4.72,
+      "endS": 4.88
     },
     {
       "text": "子",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 4.88,
+      "endS": 5.04
     },
     {
       "text": "弹",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 5.04,
+      "endS": 5.2
     },
     {
       "text": "很",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.88,
-      "endS": 5.12
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "危",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 5.44,
+      "endS": 5.52
     },
     {
       "text": "险",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.28,
-      "endS": 5.6
+      "startS": 5.52,
+      "endS": 5.92
     },
     {
       "text": "金",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.76,
-      "endS": 6.0
+      "startS": 6.24,
+      "endS": 6.48
     },
     {
       "text": "色",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 6.0,
-      "endS": 6.16
+      "startS": 6.48,
+      "endS": 6.64
     },
     {
       "text": "子",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 6.16,
-      "endS": 6.32
+      "startS": 6.64,
+      "endS": 6.72
     },
     {
       "text": "弹",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 6.32,
-      "endS": 6.48
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "也",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.48,
-      "endS": 6.72
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "很",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.72,
-      "endS": 6.96
+      "startS": 7.04,
+      "endS": 7.2
     },
     {
       "text": "危",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 6.96,
-      "endS": 7.04
+      "startS": 7.2,
+      "endS": 7.36
     },
     {
       "text": "险",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 7.04,
-      "endS": 7.44
+      "startS": 7.36,
+      "endS": 7.68
     },
     {
       "text": "总",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 7.68,
-      "endS": 7.92
+      "startS": 8.32,
+      "endS": 8.48
     },
     {
       "text": "之",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 7.92,
-      "endS": 8.16
+      "startS": 8.48,
+      "endS": 8.8
     },
     {
       "text": "子",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.32,
-      "endS": 8.48
+      "startS": 9.12,
+      "endS": 9.28
     },
     {
       "text": "弹",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 8.48,
-      "endS": 8.72
+      "startS": 9.28,
+      "endS": 9.44
     },
     {
       "text": "都",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 8.72,
-      "endS": 8.88
+      "startS": 9.44,
+      "endS": 9.52
     },
     {
       "text": "很",
       "charStart": 43,
       "charEnd": 44,
-      "startS": 8.88,
-      "endS": 9.04
+      "startS": 9.52,
+      "endS": 9.76
     },
     {
       "text": "危",
       "charStart": 44,
       "charEnd": 45,
-      "startS": 9.04,
-      "endS": 9.2
+      "startS": 9.76,
+      "endS": 9.84
     },
     {
       "text": "险",
       "charStart": 45,
       "charEnd": 46,
-      "startS": 9.2,
-      "endS": 9.52
+      "startS": 9.84,
+      "endS": 10.16
     },
     {
       "text": "除",
       "charStart": 47,
       "charEnd": 48,
-      "startS": 9.76,
-      "endS": 9.92
+      "startS": 10.56,
+      "endS": 10.72
     },
     {
       "text": "非",
       "charStart": 48,
       "charEnd": 49,
-      "startS": 9.92,
-      "endS": 10.08
+      "startS": 10.72,
+      "endS": 10.8
     },
     {
       "text": "是",
       "charStart": 49,
       "charEnd": 50,
-      "startS": 10.08,
-      "endS": 10.24
+      "startS": 10.8,
+      "endS": 10.96
     },
     {
       "text": "你",
       "charStart": 50,
       "charEnd": 51,
-      "startS": 10.24,
-      "endS": 10.4
+      "startS": 10.96,
+      "endS": 11.04
     },
     {
       "text": "自",
       "charStart": 51,
       "charEnd": 52,
-      "startS": 10.4,
-      "endS": 10.56
+      "startS": 11.04,
+      "endS": 11.2
     },
     {
       "text": "己",
       "charStart": 52,
       "charEnd": 53,
-      "startS": 10.56,
-      "endS": 10.72
+      "startS": 11.2,
+      "endS": 11.36
     },
     {
       "text": "的",
       "charStart": 53,
       "charEnd": 54,
-      "startS": 10.72,
-      "endS": 10.8
+      "startS": 11.36,
+      "endS": 11.6
     }
-  ]
+  ],
+  "words_for": "155473d859db7d6f/wordtiming-v1"
 }

@@ -1,0 +1,138 @@
+{
+  "hash": "70442f4b6ebf4a8b",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_accuracy_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Your hit rate is trending down. That's okay! Trends are just feelings with graphs.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Upbeat reframe, believing every word.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.885,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 2.58,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.58,
+    "peak_bound": false
+  },
+  "asr": "Your hit rate is trending down. That's okay. Trends are just feelings with graphs.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Your",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "hit",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "rate",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "is",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "trending",
+      "charStart": 17,
+      "charEnd": 25,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "down",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "That's",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "okay",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "Trends",
+      "charStart": 45,
+      "charEnd": 51,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "are",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "just",
+      "charStart": 56,
+      "charEnd": 60,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "feelings",
+      "charStart": 61,
+      "charEnd": 69,
+      "startS": 4.24,
+      "endS": 4.56
+    },
+    {
+      "text": "with",
+      "charStart": 70,
+      "charEnd": 74,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "graphs",
+      "charStart": 75,
+      "charEnd": 81,
+      "startS": 4.72,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "70442f4b6ebf4a8b/wordtiming-v1"
+}

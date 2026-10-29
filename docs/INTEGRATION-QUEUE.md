@@ -629,3 +629,27 @@ Requests:
   **complete handoff to sector 1 PASS at 45.0 s**; its sole traversal failure
   is the wink deadline described above. Static QA also reports W's 65 new
   unrendered voiced variants and existing VO ASR issues.
+
+### T: Captain alternative complete (October 28, 2026, 22:42 QA)
+
+- Captain remains **base storage**, not the audible default: B's unchanged
+  `public/vo/variants/index.json` declares `base: a_captain`,
+  `default: original`. Captain Opus lives at `public/vo/{en,es,zh}/`, its
+  metadata at `public/vo/cues.json`; original lives under
+  `public/vo/variants/tutorial_ai/original/`. No variant registry or frozen
+  original files were replaced.
+- Verified through the actual `VariantRegistry`, `voiceVariantTake`, and
+  `VoCatalog.resolve`/`words` APIs: 243 tutorial takes route to original;
+  **150 new commentary takes (50 lines x 3 languages) fall back to Captain**
+  because original never recorded them. Audio and timing lookups agree.
+  Explicit `v.voice.tutorial_ai=a_captain` chooses Captain throughout.
+- All 600 rendered takes: EN ASR mean/min 0.989/0.857, ES 0.990/0.865,
+  ZH 0.981/0.857; **zero under 0.85 in every language**. Spanish and Chinese
+  tutorial anchors were auditioned per language. es/tut_rest_001 is no
+  longer truncated; all alignment checks pass. See `vo/out/REPORT.md`.
+- `deno task vo:sync` completed with zero missing takes, using B's existing
+  metadata-aware gain path (no second loudnorm). Static QA:
+  `qa/reports/20261028-224208/index.html`, 33 pass, 5 warn, zero fail.
+  `deno task ci` ran in foreground but stopped at unrelated formatting in
+  `public/sfx/manifest.json`, `production/status.json`, `docs/WAVE3.md`,
+  `docs/WAVE4.md`, `tests/tutorial_gates_test.ts`. These were left intact.

@@ -1,33 +1,32 @@
 {
-  "hash": "07703ad934f42a36",
+  "hash": "4ddef36b674b27bf",
   "mode": "clone",
   "request": {
     "id": "zh__sec1_intro_001",
-    "seed": 11,
+    "seed": 111,
     "language": "Chinese",
     "text": "外缘漂流带。前方有侦察机。侦察机火力很弱，而且完全是无端挑衅。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, crisp mission-control energy.",
-  "duration": 7.04,
+  "duration": 6.96,
   "sample_rate": 24000,
-  "peak": 0.847,
+  "peak": 0.686,
   "clipping_suspect": false,
-  "asr": "外缘漂流带，前方有侦察机。侦察机火力很弱，而且完全是无端挑衅。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.41,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -3.27,
+    "gain_db": 2.7,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.7,
     "peak_bound": false
   },
-  "words_for": "07703ad934f42a36/wordtiming-v1",
+  "asr": "外缘漂流带，前方有侦察机。侦察机火力很弱，而且完全是无端挑衅。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,91 +39,91 @@
       "text": "外",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 0.4,
+      "endS": 0.56
     },
     {
       "text": "缘",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.88,
-      "endS": 1.04
+      "startS": 0.56,
+      "endS": 0.72
     },
     {
       "text": "漂",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 1.04,
-      "endS": 1.2
+      "startS": 0.72,
+      "endS": 0.96
     },
     {
       "text": "流",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "带",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.44,
-      "endS": 1.84
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "前",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 2.24,
-      "endS": 2.48
+      "startS": 2.0,
+      "endS": 2.24
     },
     {
       "text": "方",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "有",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.4,
+      "endS": 2.48
     },
     {
       "text": "侦",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 2.48,
+      "endS": 2.64
     },
     {
       "text": "察",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 3.04,
-      "endS": 3.2
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "机",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 3.2,
-      "endS": 3.52
+      "startS": 2.88,
+      "endS": 3.2
     },
     {
       "text": "侦",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "察",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.92,
+      "startS": 3.84,
       "endS": 4.08
     },
     {
@@ -132,55 +131,55 @@
       "charStart": 15,
       "charEnd": 16,
       "startS": 4.08,
-      "endS": 4.24
+      "endS": 4.16
     },
     {
       "text": "火",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 4.24,
-      "endS": 4.4
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "力",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.4,
+      "startS": 4.32,
       "endS": 4.48
     },
     {
       "text": "很",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 4.48,
+      "endS": 4.64
     },
     {
       "text": "弱",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 4.64,
+      "endS": 5.04
     },
     {
       "text": "而",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 5.36,
-      "endS": 5.44
+      "startS": 5.44,
+      "endS": 5.52
     },
     {
       "text": "且",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 5.52,
+      "endS": 5.68
     },
     {
       "text": "完",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.6,
+      "startS": 5.68,
       "endS": 5.84
     },
     {
@@ -188,20 +187,20 @@
       "charStart": 24,
       "charEnd": 25,
       "startS": 5.84,
-      "endS": 6.0
+      "endS": 5.92
     },
     {
       "text": "是",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 6.0,
-      "endS": 6.16
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "无",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.16,
+      "startS": 6.08,
       "endS": 6.24
     },
     {
@@ -209,21 +208,22 @@
       "charStart": 27,
       "charEnd": 28,
       "startS": 6.24,
-      "endS": 6.48
+      "endS": 6.4
     },
     {
       "text": "挑",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 6.48,
-      "endS": 6.64
+      "startS": 6.4,
+      "endS": 6.56
     },
     {
       "text": "衅",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 6.64,
-      "endS": 6.96
+      "startS": 6.56,
+      "endS": 6.88
     }
-  ]
+  ],
+  "words_for": "4ddef36b674b27bf/wordtiming-v1"
 }

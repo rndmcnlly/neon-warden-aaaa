@@ -1,33 +1,32 @@
 {
-  "hash": "a9367631d3e732de",
+  "hash": "b2a95c028c1768ed",
   "mode": "clone",
   "request": {
     "id": "es__tut_continue_001",
-    "seed": 311,
+    "seed": 11,
     "language": "Spanish",
     "text": "Y si te quedas sin casco, ¡no te preocupes! La Autoridad de Rutas requisará una nave nueva y la inducción continuará. Casi ni lo notarás.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Breezy reassurance; the last sentence is meant kindly and lands badly.",
-  "duration": 10.96,
+  "duration": 8.72,
   "sample_rate": 24000,
-  "peak": 0.818,
+  "peak": 0.815,
   "clipping_suspect": false,
-  "asr": "Y si te quedas sin casco, no te preocupes. La autoridad de ruta requerirá una nave nueva y la inducción continuará. Casino lo notarás.",
-  "asr_similarity": 0.857,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
     "true_peak_dbtp": -1.74,
-    "gain_db": 0.0,
+    "gain_db": 3.79,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.79,
     "peak_bound": false
   },
-  "words_for": "a9367631d3e732de/wordtiming-v1",
+  "asr": "Y si te quedas sin casco, no te preocupes, la autoridad de rutas requisará una nave nueva y la inducción continuará, casi ni lo notarás.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,176 +39,177 @@
       "text": "Y",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.64,
-      "endS": 0.72
+      "startS": 0.16,
+      "endS": 0.32
     },
     {
       "text": "si",
       "charStart": 2,
       "charEnd": 4,
-      "startS": 0.72,
-      "endS": 0.8
+      "startS": 0.32,
+      "endS": 0.4
     },
     {
       "text": "te",
       "charStart": 5,
       "charEnd": 7,
-      "startS": 0.88,
-      "endS": 0.96
+      "startS": 0.4,
+      "endS": 0.48
     },
     {
       "text": "quedas",
       "charStart": 8,
       "charEnd": 14,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 0.48,
+      "endS": 0.8
     },
     {
       "text": "sin",
       "charStart": 15,
       "charEnd": 18,
-      "startS": 1.28,
-      "endS": 1.52
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "casco",
       "charStart": 19,
       "charEnd": 24,
-      "startS": 1.52,
-      "endS": 2.08
+      "startS": 0.96,
+      "endS": 1.44
     },
     {
       "text": "no",
       "charStart": 27,
       "charEnd": 29,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 1.68,
+      "endS": 1.92
     },
     {
       "text": "te",
       "charStart": 30,
       "charEnd": 32,
-      "startS": 2.56,
-      "endS": 2.64
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "preocupes",
       "charStart": 33,
       "charEnd": 42,
-      "startS": 2.64,
-      "endS": 3.52
+      "startS": 2.0,
+      "endS": 2.72
     },
     {
       "text": "La",
       "charStart": 44,
       "charEnd": 46,
-      "startS": 4.24,
-      "endS": 4.48
+      "startS": 3.44,
+      "endS": 3.52
     },
     {
       "text": "Autoridad",
       "charStart": 47,
       "charEnd": 56,
-      "startS": 4.48,
-      "endS": 4.88
+      "startS": 3.52,
+      "endS": 3.92
     },
     {
       "text": "de",
       "charStart": 57,
       "charEnd": 59,
-      "startS": 4.88,
-      "endS": 5.2
+      "startS": 3.92,
+      "endS": 4.08
     },
     {
       "text": "Rutas",
       "charStart": 60,
       "charEnd": 65,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 4.08,
+      "endS": 4.48
     },
     {
       "text": "requisará",
       "charStart": 66,
       "charEnd": 75,
-      "startS": 5.6,
-      "endS": 6.16
+      "startS": 4.48,
+      "endS": 4.96
     },
     {
       "text": "una",
       "charStart": 76,
       "charEnd": 79,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 4.96,
+      "endS": 5.2
     },
     {
       "text": "nave",
       "charStart": 80,
       "charEnd": 84,
-      "startS": 6.56,
-      "endS": 6.8
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "nueva",
       "charStart": 85,
       "charEnd": 90,
-      "startS": 6.8,
-      "endS": 7.28
+      "startS": 5.44,
+      "endS": 5.84
     },
     {
       "text": "y",
       "charStart": 91,
       "charEnd": 92,
-      "startS": 7.28,
-      "endS": 7.36
+      "startS": 5.84,
+      "endS": 6.0
     },
     {
       "text": "la",
       "charStart": 93,
       "charEnd": 95,
-      "startS": 7.36,
-      "endS": 7.52
+      "startS": 6.0,
+      "endS": 6.08
     },
     {
       "text": "inducción",
       "charStart": 96,
       "charEnd": 105,
-      "startS": 7.52,
-      "endS": 8.0
+      "startS": 6.08,
+      "endS": 6.56
     },
     {
       "text": "continuará",
       "charStart": 106,
       "charEnd": 116,
-      "startS": 8.08,
-      "endS": 8.56
+      "startS": 6.56,
+      "endS": 7.2
     },
     {
       "text": "Casi",
       "charStart": 118,
       "charEnd": 122,
-      "startS": 9.44,
-      "endS": 9.84
+      "startS": 7.6,
+      "endS": 7.92
     },
     {
       "text": "ni",
       "charStart": 123,
       "charEnd": 125,
-      "startS": 9.92,
-      "endS": 10.0
+      "startS": 7.92,
+      "endS": 8.0
     },
     {
       "text": "lo",
       "charStart": 126,
       "charEnd": 128,
-      "startS": 10.0,
-      "endS": 10.08
+      "startS": 8.0,
+      "endS": 8.16
     },
     {
       "text": "notarás",
       "charStart": 129,
       "charEnd": 136,
-      "startS": 10.16,
-      "endS": 10.88
+      "startS": 8.16,
+      "endS": 8.64
     }
-  ]
+  ],
+  "words_for": "b2a95c028c1768ed/wordtiming-v1"
 }

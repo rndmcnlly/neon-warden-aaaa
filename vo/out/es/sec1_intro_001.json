@@ -1,33 +1,32 @@
 {
-  "hash": "999dc8d9e0900fa2",
+  "hash": "52c31fe7c6161ac2",
   "mode": "clone",
   "request": {
     "id": "es__sec1_intro_001",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "Deriva Exterior. Exploradores al frente. Su fuego es ligero y totalmente sin provocación.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, crisp mission-control energy.",
-  "duration": 7.6,
+  "duration": 6.72,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.806,
   "clipping_suspect": false,
-  "asr": "Deriva exterior, explorador es al frente, su fuego es ligero y totalmente sin provocación.",
-  "asr_similarity": 0.889,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.01,
-    "true_peak_dbtp": -1.31,
-    "gain_db": 0.08,
-    "limited_db": 0.03,
-    "measured_before_lufs": -18.08,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.8,
+    "gain_db": 3.38,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.38,
     "peak_bound": false
   },
-  "words_for": "999dc8d9e0900fa2/wordtiming-v1",
+  "asr": "Deriva exterior, exploradores al frente. Su fuego es ligero y totalmente sin provocación.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,92 +39,93 @@
       "text": "Deriva",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.4,
-      "endS": 0.8
+      "startS": 0.24,
+      "endS": 0.64
     },
     {
       "text": "Exterior",
       "charStart": 7,
       "charEnd": 15,
-      "startS": 0.96,
-      "endS": 1.68
+      "startS": 0.64,
+      "endS": 1.28
     },
     {
       "text": "Exploradores",
       "charStart": 17,
       "charEnd": 29,
-      "startS": 2.32,
-      "endS": 2.4
+      "startS": 1.76,
+      "endS": 2.56
     },
     {
       "text": "al",
       "charStart": 30,
       "charEnd": 32,
-      "startS": 3.12,
-      "endS": 3.28
+      "startS": 2.56,
+      "endS": 2.64
     },
     {
       "text": "frente",
       "charStart": 33,
       "charEnd": 39,
-      "startS": 3.28,
-      "endS": 3.76
+      "startS": 2.64,
+      "endS": 3.12
     },
     {
       "text": "Su",
       "charStart": 41,
       "charEnd": 43,
-      "startS": 4.08,
-      "endS": 4.32
+      "startS": 3.84,
+      "endS": 4.08
     },
     {
       "text": "fuego",
       "charStart": 44,
       "charEnd": 49,
-      "startS": 4.32,
-      "endS": 4.64
+      "startS": 4.08,
+      "endS": 4.4
     },
     {
       "text": "es",
       "charStart": 50,
       "charEnd": 52,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "ligero",
       "charStart": 53,
       "charEnd": 59,
-      "startS": 4.88,
-      "endS": 5.36
+      "startS": 4.48,
+      "endS": 4.96
     },
     {
       "text": "y",
       "charStart": 60,
       "charEnd": 61,
-      "startS": 5.36,
-      "endS": 5.44
+      "startS": 4.96,
+      "endS": 5.04
     },
     {
       "text": "totalmente",
       "charStart": 62,
       "charEnd": 72,
-      "startS": 5.44,
-      "endS": 6.24
+      "startS": 5.04,
+      "endS": 5.76
     },
     {
       "text": "sin",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 6.24,
-      "endS": 6.48
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "provocación",
       "charStart": 77,
       "charEnd": 88,
-      "startS": 6.48,
-      "endS": 7.36
+      "startS": 5.92,
+      "endS": 6.64
     }
-  ]
+  ],
+  "words_for": "52c31fe7c6161ac2/wordtiming-v1"
 }

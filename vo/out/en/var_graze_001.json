@@ -1,0 +1,89 @@
+{
+  "hash": "230040c59ea93299",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_graze_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Close! Billable proximity, again. You really commit.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Sharp intake of breath, then delighted.",
+  "duration": 5.44,
+  "sample_rate": 24000,
+  "peak": 0.78,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.12,
+    "gain_db": 0.1,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.1,
+    "peak_bound": false
+  },
+  "asr": "Close, billable proximity. Again, you really commit.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Close",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "Billable",
+      "charStart": 7,
+      "charEnd": 15,
+      "startS": 1.84,
+      "endS": 2.24
+    },
+    {
+      "text": "proximity",
+      "charStart": 16,
+      "charEnd": 25,
+      "startS": 2.24,
+      "endS": 2.88
+    },
+    {
+      "text": "again",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "You",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "really",
+      "charStart": 38,
+      "charEnd": 44,
+      "startS": 4.56,
+      "endS": 4.88
+    },
+    {
+      "text": "commit",
+      "charStart": 45,
+      "charEnd": 51,
+      "startS": 4.88,
+      "endS": 5.44
+    }
+  ],
+  "words_for": "230040c59ea93299/wordtiming-v1"
+}

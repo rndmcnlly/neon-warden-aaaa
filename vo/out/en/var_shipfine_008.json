@@ -1,0 +1,124 @@
+{
+  "hash": "9123aa9725388755",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_008",
+    "seed": 11,
+    "language": "English",
+    "text": "New hull, same you! The old hull is now a learning opportunity.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Upbeat welcome back, like a new semester.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.708,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.95,
+    "gain_db": 3.04,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.04,
+    "peak_bound": false
+  },
+  "asr": "New hull, same you. The old hull is now a learning opportunity.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "New",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "hull",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "same",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "you",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "The",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "old",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "hull",
+      "charStart": 28,
+      "charEnd": 32,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "is",
+      "charStart": 33,
+      "charEnd": 35,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "now",
+      "charStart": 36,
+      "charEnd": 39,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "a",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "learning",
+      "charStart": 42,
+      "charEnd": 50,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "opportunity",
+      "charStart": 51,
+      "charEnd": 62,
+      "startS": 4.4,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "9123aa9725388755/wordtiming-v1"
+}

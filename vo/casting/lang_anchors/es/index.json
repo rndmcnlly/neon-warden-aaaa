@@ -278,5 +278,63 @@
       }
     },
     "pick": null
+  },
+  "tutorial_ai": {
+    "en_anchor_f0": 193.8,
+    "test_lines": [
+      "bark_lifelost_001",
+      "tut_route_001",
+      "tut_review_002",
+      "graze_ai_001",
+      "tut_graze_001",
+      "tut_graze_002",
+      "tut_rule_001",
+      "flash_ai_003"
+    ],
+    "anchor": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave.",
+    "design": "Una voz femenina adulta y cálida, contralto, de unos cuarenta años, tranquila y sin prisa como una capitana de avión hablando por el intercomunicador de cabina, tono medio-bajo, tranquilizadora y sincera, con calidez institucional y dicción profesional muy clara. Español latinoamericano neutro.",
+    "candidates": {
+      "current": {
+        "mean": 0.643,
+        "min": 0.56
+      },
+      "bootstrap_s11": {
+        "method": "bootstrap",
+        "seed": 11,
+        "mean": 0.818,
+        "min": 0.545,
+        "anchor_asr": 1.0,
+        "anchor_f0": 180.8,
+        "f0_ratio": 0.933
+      },
+      "bootstrap_s111": {
+        "method": "bootstrap",
+        "seed": 111,
+        "mean": 0.781,
+        "min": 0.424,
+        "anchor_asr": 1.0,
+        "anchor_f0": 190.5,
+        "f0_ratio": 0.983
+      },
+      "design_s11": {
+        "method": "design",
+        "seed": 11,
+        "mean": 0.997,
+        "min": 0.973,
+        "anchor_asr": 1.0,
+        "anchor_f0": 192.1,
+        "f0_ratio": 0.991
+      },
+      "design_s111": {
+        "method": "design",
+        "seed": 111,
+        "mean": 0.988,
+        "min": 0.929,
+        "anchor_asr": 0.958,
+        "anchor_f0": 192.7,
+        "f0_ratio": 0.994
+      }
+    },
+    "pick": "design_s11"
   }
 }

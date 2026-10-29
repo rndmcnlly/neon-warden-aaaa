@@ -1,0 +1,327 @@
+{
+  "hash": "d66b6c33496f88a1",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_disarmhi_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "简单观察一下：你的大多数目标都开着自己的飞船走了。这是一种策略吗？这是一种收入更低的策略。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Careful, curious, then the pay note very quickly.",
+  "duration": 7.68,
+  "sample_rate": 24000,
+  "peak": 0.667,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.48,
+    "gain_db": 2.43,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.43,
+    "peak_bound": false
+  },
+  "asr": "简单观察一下，你的大多数目标都开着自己的飞船走了。这是一种策略吗？这是一种收入更低的策略。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "简",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "单",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "观",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "察",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "一",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "下",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "你",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "的",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "大",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "多",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "数",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "目",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "标",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "都",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "开",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "着",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "自",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "己",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "的",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "飞",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "船",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "走",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "了",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "这",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "是",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "一",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 4.72,
+      "endS": 4.8
+    },
+    {
+      "text": "种",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "策",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 4.88,
+      "endS": 5.12
+    },
+    {
+      "text": "略",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "吗",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "这",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "是",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "一",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "种",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "收",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 6.4,
+      "endS": 6.64
+    },
+    {
+      "text": "入",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 6.64,
+      "endS": 6.72
+    },
+    {
+      "text": "更",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 6.72,
+      "endS": 6.96
+    },
+    {
+      "text": "低",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 6.96,
+      "endS": 7.04
+    },
+    {
+      "text": "的",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "策",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "略",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 7.36,
+      "endS": 7.68
+    }
+  ],
+  "words_for": "d66b6c33496f88a1/wordtiming-v1"
+}

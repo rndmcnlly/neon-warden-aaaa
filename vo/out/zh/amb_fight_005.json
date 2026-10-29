@@ -1,33 +1,32 @@
 {
-  "hash": "a0150a268eb966a4",
+  "hash": "09d8b951164d2a7c",
   "mode": "clone",
   "request": {
     "id": "zh__amb_fight_005",
     "seed": 11,
     "language": "Chinese",
     "text": "如果你在航道里看到没有武装的船，请无视它们。它们还不是付费客户。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, breezy, as if about litter.",
-  "duration": 5.92,
+  "duration": 6.4,
   "sample_rate": 24000,
-  "peak": 0.741,
+  "peak": 0.609,
   "clipping_suspect": false,
-  "asr": "如果你在航道里看到没有武装的船，请无视他们，他们还不是付费客户。",
-  "asr_similarity": 0.931,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.59,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -4.28,
+    "gain_db": 2.0,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.0,
     "peak_bound": false
   },
-  "words_for": "a0150a268eb966a4/wordtiming-v1",
+  "asr": "如果你在航道里看到没有武装的船，请无视他们，他们还不是付费客户。",
+  "asr_similarity": 0.931,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,204 +39,205 @@
       "text": "如",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "果",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 1.12,
+      "endS": 1.28
     },
     {
       "text": "你",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.64,
-      "endS": 0.72
+      "startS": 1.28,
+      "endS": 1.36
     },
     {
       "text": "在",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.72,
-      "endS": 0.88
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "航",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.88,
-      "endS": 1.12
+      "startS": 1.44,
+      "endS": 1.68
     },
     {
       "text": "道",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 1.68,
+      "endS": 1.92
     },
     {
       "text": "里",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.92,
+      "endS": 2.08
     },
     {
       "text": "看",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.44,
-      "endS": 1.68
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "到",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.68,
-      "endS": 1.76
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "没",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 2.4,
+      "endS": 2.56
     },
     {
       "text": "有",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 1.84,
-      "endS": 1.92
+      "startS": 2.56,
+      "endS": 2.64
     },
     {
       "text": "武",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 1.92,
-      "endS": 2.16
+      "startS": 2.64,
+      "endS": 2.8
     },
     {
       "text": "装",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.16,
-      "endS": 2.32
+      "startS": 2.8,
+      "endS": 2.96
     },
     {
       "text": "的",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.32,
-      "endS": 2.4
+      "startS": 2.96,
+      "endS": 3.04
     },
     {
       "text": "船",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.4,
-      "endS": 2.8
+      "startS": 3.04,
+      "endS": 3.44
     },
     {
       "text": "请",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 2.96,
-      "endS": 3.2
+      "startS": 3.68,
+      "endS": 3.76
     },
     {
       "text": "无",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 3.76,
+      "endS": 4.0
     },
     {
       "text": "视",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "它",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "们",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 3.76,
-      "endS": 4.0
+      "startS": 4.32,
+      "endS": 4.56
     },
     {
       "text": "它",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 5.04,
+      "endS": 5.12
     },
     {
       "text": "们",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 5.12,
+      "endS": 5.2
     },
     {
       "text": "还",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 5.2,
+      "endS": 5.36
     },
     {
       "text": "不",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 4.64,
-      "endS": 4.8
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "是",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "付",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 4.88,
-      "endS": 5.12
+      "startS": 5.6,
+      "endS": 5.76
     },
     {
       "text": "费",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "客",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.28,
-      "endS": 5.52
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "户",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 5.52,
-      "endS": 5.84
+      "startS": 6.08,
+      "endS": 6.4
     }
-  ]
+  ],
+  "words_for": "09d8b951164d2a7c/wordtiming-v1"
 }

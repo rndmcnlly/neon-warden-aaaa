@@ -1,0 +1,124 @@
+{
+  "hash": "5a3d423d427fc2f6",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_disarm_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Armas retiradas, nave intacta. Eso es, este, una decisión. ¡Una válida! Probablemente.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Hesitant, reaching for supportive language.",
+  "duration": 7.36,
+  "sample_rate": 24000,
+  "peak": 0.856,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.35,
+    "gain_db": 3.16,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.16,
+    "peak_bound": false
+  },
+  "asr": "Armas retiradas, nave intacta, eso es, este una decisión, una válida probablemente.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Armas",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "retiradas",
+      "charStart": 6,
+      "charEnd": 15,
+      "startS": 0.48,
+      "endS": 1.2
+    },
+    {
+      "text": "nave",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "intacta",
+      "charStart": 22,
+      "charEnd": 29,
+      "startS": 1.76,
+      "endS": 2.32
+    },
+    {
+      "text": "Eso",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "es",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "este",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "una",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "decisión",
+      "charStart": 49,
+      "charEnd": 57,
+      "startS": 4.32,
+      "endS": 4.96
+    },
+    {
+      "text": "Una",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "válida",
+      "charStart": 64,
+      "charEnd": 70,
+      "startS": 5.76,
+      "endS": 6.32
+    },
+    {
+      "text": "Probablemente",
+      "charStart": 72,
+      "charEnd": 85,
+      "startS": 6.48,
+      "endS": 7.36
+    }
+  ],
+  "words_for": "5a3d423d427fc2f6/wordtiming-v1"
+}

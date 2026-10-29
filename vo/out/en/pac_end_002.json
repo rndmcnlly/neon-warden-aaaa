@@ -1,5 +1,5 @@
 {
-  "hash": "c29387b96d8fbc21",
+  "hash": "89711aad06d3dc7f",
   "mode": "clone",
   "request": {
     "id": "en__pac_end_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Pilot zero one two two, non-performance confirmed. Recall in three. Two.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, the same procedural politeness as the flashback recall.",
   "duration": 5.52,
   "sample_rate": 24000,
-  "peak": 0.839,
+  "peak": 0.775,
   "clipping_suspect": false,
-  "asr": "Pilot zero one two two, non-performance confirmed. Recall in three two.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.06,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 1.57,
-    "limited_db": 1.54,
-    "measured_before_lufs": -19.59,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.99,
+    "gain_db": 1.79,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.79,
     "peak_bound": false
   },
-  "words_for": "c29387b96d8fbc21/wordtiming-v1",
+  "asr": "Pilot zero one two two non performance confirmed. Recall in three two.",
+  "asr_similarity": 0.87,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,78 +39,79 @@
       "text": "Pilot",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.48,
+      "endS": 0.96
     },
     {
       "text": "zero",
       "charStart": 6,
       "charEnd": 10,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 0.96,
+      "endS": 1.2
     },
     {
       "text": "one",
       "charStart": 11,
       "charEnd": 14,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 1.2,
+      "endS": 1.68
     },
     {
       "text": "two",
       "charStart": 15,
       "charEnd": 18,
-      "startS": 1.2,
-      "endS": 1.44
+      "startS": 1.76,
+      "endS": 2.0
     },
     {
       "text": "two",
       "charStart": 19,
       "charEnd": 22,
-      "startS": 1.44,
-      "endS": 1.84
+      "startS": 2.0,
+      "endS": 2.32
     },
     {
       "text": "non-performance",
       "charStart": 24,
       "charEnd": 39,
-      "startS": 2.16,
-      "endS": 3.04
+      "startS": 2.64,
+      "endS": 3.44
     },
     {
       "text": "confirmed",
       "charStart": 40,
       "charEnd": 49,
-      "startS": 3.04,
-      "endS": 3.6
+      "startS": 3.44,
+      "endS": 4.0
     },
     {
       "text": "Recall",
       "charStart": 51,
       "charEnd": 57,
-      "startS": 4.0,
-      "endS": 4.32
+      "startS": 4.32,
+      "endS": 4.72
     },
     {
       "text": "in",
       "charStart": 58,
       "charEnd": 60,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 4.72,
+      "endS": 4.88
     },
     {
       "text": "three",
       "charStart": 61,
       "charEnd": 66,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 4.88,
+      "endS": 5.12
     },
     {
       "text": "Two",
       "charStart": 68,
       "charEnd": 71,
-      "startS": 5.04,
+      "startS": 5.12,
       "endS": 5.44
     }
-  ]
+  ],
+  "words_for": "89711aad06d3dc7f/wordtiming-v1"
 }

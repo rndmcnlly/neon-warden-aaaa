@@ -1,33 +1,32 @@
 {
-  "hash": "925f1d2b306442b8",
+  "hash": "b6fd1030a844a52f",
   "mode": "clone",
   "request": {
     "id": "zh__tut_skip_002",
     "seed": 11,
     "language": "Chinese",
     "text": "已记录：拒绝入职培训。没关系。反正我会一直在通讯频道里。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Reading a log entry aloud, then brave and bright.",
-  "duration": 5.68,
+  "duration": 5.76,
   "sample_rate": 24000,
-  "peak": 0.846,
+  "peak": 0.683,
   "clipping_suspect": false,
-  "asr": "已记录拒绝入职培训。没关系，反正我会一直在通讯频道里。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.22,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.3,
+    "gain_db": 1.52,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.52,
     "peak_bound": false
   },
-  "words_for": "925f1d2b306442b8/wordtiming-v1",
+  "asr": "已记录拒绝入职培训，没关系，反正我会一直在通讯频道里。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -41,13 +40,13 @@
       "charStart": 0,
       "charEnd": 1,
       "startS": 0.16,
-      "endS": 0.32
+      "endS": 0.24
     },
     {
       "text": "记",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
+      "startS": 0.24,
       "endS": 0.48
     },
     {
@@ -61,21 +60,21 @@
       "text": "拒",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "绝",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.36,
+      "endS": 1.52
     },
     {
       "text": "入",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.44,
+      "startS": 1.52,
       "endS": 1.68
     },
     {
@@ -83,13 +82,13 @@
       "charStart": 7,
       "charEnd": 8,
       "startS": 1.68,
-      "endS": 1.84
+      "endS": 1.76
     },
     {
       "text": "培",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.84,
+      "startS": 1.76,
       "endS": 2.0
     },
     {
@@ -97,21 +96,21 @@
       "charStart": 9,
       "charEnd": 10,
       "startS": 2.0,
-      "endS": 2.32
+      "endS": 2.24
     },
     {
       "text": "没",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.64,
-      "endS": 2.8
+      "startS": 2.72,
+      "endS": 2.88
     },
     {
       "text": "关",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.8,
-      "endS": 2.88
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "系",
@@ -124,85 +123,86 @@
       "text": "反",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "正",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.76,
-      "endS": 4.0
+      "startS": 4.0,
+      "endS": 4.24
     },
     {
       "text": "我",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 4.24,
+      "endS": 4.32
     },
     {
       "text": "会",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.08,
-      "endS": 4.16
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "一",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.16,
-      "endS": 4.32
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "直",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.32,
-      "endS": 4.48
+      "startS": 4.48,
+      "endS": 4.64
     },
     {
       "text": "在",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.48,
-      "endS": 4.56
+      "startS": 4.64,
+      "endS": 4.72
     },
     {
       "text": "通",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.56,
-      "endS": 4.8
+      "startS": 4.72,
+      "endS": 4.96
     },
     {
       "text": "讯",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 4.96,
+      "endS": 5.12
     },
     {
       "text": "频",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.96,
-      "endS": 5.2
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "道",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "里",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.36,
-      "endS": 5.6
+      "startS": 5.44,
+      "endS": 5.68
     }
-  ]
+  ],
+  "words_for": "b6fd1030a844a52f/wordtiming-v1"
 }

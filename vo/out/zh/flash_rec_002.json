@@ -1,33 +1,32 @@
 {
-  "hash": "40ed06901bab0b3f",
+  "hash": "a780ad31900e27b7",
   "mode": "clone",
   "request": {
     "id": "zh__flash_rec_002",
     "seed": 11,
     "language": "Chinese",
     "text": "零一二一号飞行员，你的武器没有开火。请射击。请射击。飞行员，拜托了。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Recorded; the script breaks down into pleading on the last word.",
-  "duration": 7.68,
+  "duration": 8.0,
   "sample_rate": 24000,
-  "peak": 0.766,
+  "peak": 0.708,
   "clipping_suspect": false,
-  "asr": "零一二一号飞行员，你的武器没有开火，请射击，请射击，飞行员拜托了。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.09,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.0,
+    "gain_db": 2.75,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.75,
     "peak_bound": false
   },
-  "words_for": "40ed06901bab0b3f/wordtiming-v1",
+  "asr": "零一二一号飞行员，你的武器没有开火，请射击，请射击，飞行员，拜托了。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,197 +39,198 @@
       "text": "零",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.56,
-      "endS": 0.96
+      "startS": 0.72,
+      "endS": 0.88
     },
     {
       "text": "一",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 1.04,
-      "endS": 1.12
+      "startS": 0.88,
+      "endS": 1.04
     },
     {
       "text": "二",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 1.04,
+      "endS": 1.2
     },
     {
       "text": "一",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 1.28,
+      "startS": 1.2,
       "endS": 1.44
     },
     {
       "text": "号",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.52,
-      "endS": 1.68
+      "startS": 1.44,
+      "endS": 1.6
     },
     {
       "text": "飞",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.68,
-      "endS": 1.84
+      "startS": 1.6,
+      "endS": 1.68
     },
     {
       "text": "行",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.84,
-      "endS": 2.08
+      "startS": 1.68,
+      "endS": 1.92
     },
     {
       "text": "员",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.08,
-      "endS": 2.4
+      "startS": 1.92,
+      "endS": 2.16
     },
     {
       "text": "你",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 2.72,
+      "endS": 2.8
     },
     {
       "text": "的",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 3.04,
-      "endS": 3.2
+      "startS": 2.8,
+      "endS": 2.88
     },
     {
       "text": "武",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "器",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 3.04,
+      "endS": 3.2
     },
     {
       "text": "没",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "有",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.68,
-      "endS": 3.76
+      "startS": 3.36,
+      "endS": 3.44
     },
     {
       "text": "开",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.76,
-      "endS": 4.0
+      "startS": 3.44,
+      "endS": 3.68
     },
     {
       "text": "火",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 4.0,
-      "endS": 4.48
+      "startS": 3.68,
+      "endS": 4.0
     },
     {
       "text": "请",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.88,
-      "endS": 5.04
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "射",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 5.04,
-      "endS": 5.28
+      "startS": 4.4,
+      "endS": 4.56
     },
     {
       "text": "击",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 4.56,
+      "endS": 4.88
     },
     {
       "text": "请",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "射",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.6,
-      "endS": 5.84
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "击",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.84,
-      "endS": 6.16
+      "startS": 5.6,
+      "endS": 5.92
     },
     {
       "text": "飞",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.4,
-      "endS": 6.64
+      "startS": 6.32,
+      "endS": 6.48
     },
     {
       "text": "行",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 6.48,
+      "endS": 6.72
     },
     {
       "text": "员",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 6.72,
+      "endS": 7.12
     },
     {
       "text": "拜",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 6.96,
-      "endS": 7.12
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "托",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 7.12,
-      "endS": 7.28
+      "startS": 7.52,
+      "endS": 7.76
     },
     {
       "text": "了",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.52,
-      "endS": 7.68
+      "startS": 7.76,
+      "endS": 7.92
     }
-  ]
+  ],
+  "words_for": "a780ad31900e27b7/wordtiming-v1"
 }

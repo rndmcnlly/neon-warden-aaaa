@@ -1,30 +1,32 @@
 {
-  "hash": "d3a38b5605bd868c",
+  "hash": "e3de1f2aeb135a91",
   "mode": "clone",
   "request": {
     "id": "zh__tut_parts_001",
     "seed": 11,
     "language": "Chinese",
     "text": "这座练习炮塔只有一个武器部件：炮管。轻按射击，或者对它释放令状，直到它损坏。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 7.44,
+  "duration": 7.68,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.669,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.33,
-    "gain_db": 8.44,
-    "limited_db": 0.71,
-    "measured_before_lufs": -26.44,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.47,
+    "gain_db": 2.45,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.45,
     "peak_bound": false
   },
+  "asr": "这座练习炮塔只有一个武器部件——炮管。轻暗射击或者对它释放令状，直到它损坏。",
+  "asr_similarity": 0.97,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,235 +39,233 @@
       "text": "这",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 0.72
     },
     {
       "text": "座",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.72,
+      "endS": 0.88
     },
     {
       "text": "练",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 0.88,
+      "endS": 0.96
     },
     {
       "text": "习",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.64,
-      "endS": 0.8
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "炮",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "塔",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 0.96,
-      "endS": 1.28
+      "startS": 1.36,
+      "endS": 1.6
     },
     {
       "text": "只",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "有",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.44,
-      "endS": 1.52
+      "startS": 1.76,
+      "endS": 1.84
     },
     {
       "text": "一",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.52,
-      "endS": 1.6
+      "startS": 1.84,
+      "endS": 1.92
     },
     {
       "text": "个",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.92,
+      "endS": 2.08
     },
     {
       "text": "武",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 1.76,
-      "endS": 1.92
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "器",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "部",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 2.4,
+      "endS": 2.56
     },
     {
       "text": "件",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 2.56,
+      "endS": 2.8
     },
     {
       "text": "炮",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 2.8,
-      "endS": 3.04
+      "startS": 3.04,
+      "endS": 3.28
     },
     {
       "text": "管",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.04,
-      "endS": 3.36
+      "startS": 3.28,
+      "endS": 3.6
     },
     {
       "text": "轻",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 4.08,
+      "endS": 4.24
     },
     {
       "text": "按",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.92,
-      "endS": 4.08
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "射",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.08,
-      "endS": 4.32
+      "startS": 4.4,
+      "endS": 4.56
     },
     {
       "text": "击",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.32,
-      "endS": 4.64
+      "startS": 4.56,
+      "endS": 4.96
     },
     {
       "text": "或",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "者",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 5.28,
+      "endS": 5.36
     },
     {
       "text": "对",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.12,
-      "endS": 5.2
+      "startS": 5.36,
+      "endS": 5.52
     },
     {
       "text": "它",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 5.52,
+      "endS": 5.6
     },
     {
       "text": "释",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.36,
-      "endS": 5.52
+      "startS": 5.6,
+      "endS": 5.76
     },
     {
       "text": "放",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.52,
-      "endS": 5.68
+      "startS": 5.76,
+      "endS": 5.92
     },
     {
       "text": "令",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.68,
-      "endS": 5.92
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "状",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 5.92,
-      "endS": 6.16
+      "startS": 6.08,
+      "endS": 6.4
     },
     {
       "text": "直",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.4,
-      "endS": 6.56
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "到",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.56,
-      "endS": 6.64
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "它",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 7.04,
+      "endS": 7.12
     },
     {
       "text": "损",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 6.8,
-      "endS": 7.04
+      "startS": 7.12,
+      "endS": 7.36
     },
     {
       "text": "坏",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.04,
-      "endS": 7.36
+      "startS": 7.36,
+      "endS": 7.68
     }
   ],
-  "words_for": "d3a38b5605bd868c/wordtiming-v1",
-  "asr": "这座练习炮塔只有一个武器部件——炮管。轻按射击，或者对它释放令状，直到它损坏。",
-  "asr_similarity": 1.0
+  "words_for": "e3de1f2aeb135a91/wordtiming-v1"
 }

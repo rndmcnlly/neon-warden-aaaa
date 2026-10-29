@@ -1,0 +1,110 @@
+{
+  "hash": "06a0360469ade1b0",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_graze_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Cerca! Cercanía facturable, otra vez. Tú sí que te comprometes.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Sharp intake of breath, then delighted.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.08,
+    "true_peak_dbtp": -1.2,
+    "gain_db": 3.6,
+    "limited_db": 1.05,
+    "measured_before_lufs": -21.6,
+    "peak_bound": false
+  },
+  "asr": "Cerca, cercanía facturable otra vez, tú sí que te comprometes.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Cerca",
+      "charStart": 1,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.72
+    },
+    {
+      "text": "Cercanía",
+      "charStart": 8,
+      "charEnd": 16,
+      "startS": 1.28,
+      "endS": 1.84
+    },
+    {
+      "text": "facturable",
+      "charStart": 17,
+      "charEnd": 27,
+      "startS": 1.84,
+      "endS": 2.56
+    },
+    {
+      "text": "otra",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "vez",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "Tú",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "sí",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "que",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "te",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "comprometes",
+      "charStart": 52,
+      "charEnd": 63,
+      "startS": 4.24,
+      "endS": 4.96
+    }
+  ],
+  "words_for": "06a0360469ade1b0/wordtiming-v1"
+}

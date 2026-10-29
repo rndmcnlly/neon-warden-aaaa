@@ -1,16 +1,16 @@
 {
-  "hash": "6fba66fe81eac3ee",
+  "hash": "073f32995d231bdd",
   "mode": "clone",
   "request": {
     "id": "es__tut_rule_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Entonces: ráfaga para cascos, toque para piezas. Es una regla corta, y hará que te sigan pagando.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Stating a rule worth remembering.",
-  "duration": 9.28,
+  "duration": 6.56,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
@@ -18,13 +18,15 @@
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.13,
-    "true_peak_dbtp": -1.15,
-    "gain_db": 6.08,
-    "limited_db": 0.79,
-    "measured_before_lufs": -24.08,
+    "lufs": -18.14,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 5.62,
+    "limited_db": 2.73,
+    "measured_before_lufs": -23.62,
     "peak_bound": false
   },
+  "asr": "Entonces ráfaga para cascos, toque para piezas, es una regla corta y hará que te sigan pagando.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,123 +39,121 @@
       "text": "Entonces",
       "charStart": 0,
       "charEnd": 8,
-      "startS": 1.04,
-      "endS": 1.84
+      "startS": 0.16,
+      "endS": 0.8
     },
     {
       "text": "ráfaga",
       "charStart": 10,
       "charEnd": 16,
-      "startS": 2.32,
-      "endS": 2.8
+      "startS": 1.12,
+      "endS": 1.52
     },
     {
       "text": "para",
       "charStart": 17,
       "charEnd": 21,
-      "startS": 2.8,
-      "endS": 3.04
+      "startS": 1.52,
+      "endS": 1.76
     },
     {
       "text": "cascos",
       "charStart": 22,
       "charEnd": 28,
-      "startS": 3.04,
-      "endS": 3.84
+      "startS": 1.76,
+      "endS": 2.32
     },
     {
       "text": "toque",
       "charStart": 30,
       "charEnd": 35,
-      "startS": 4.16,
-      "endS": 4.48
+      "startS": 2.48,
+      "endS": 2.72
     },
     {
       "text": "para",
       "charStart": 36,
       "charEnd": 40,
-      "startS": 4.56,
-      "endS": 4.8
+      "startS": 2.72,
+      "endS": 2.88
     },
     {
       "text": "piezas",
       "charStart": 41,
       "charEnd": 47,
-      "startS": 4.8,
-      "endS": 5.52
+      "startS": 2.88,
+      "endS": 3.44
     },
     {
       "text": "Es",
       "charStart": 49,
       "charEnd": 51,
-      "startS": 5.92,
-      "endS": 6.0
+      "startS": 3.92,
+      "endS": 4.08
     },
     {
       "text": "una",
       "charStart": 52,
       "charEnd": 55,
-      "startS": 6.0,
-      "endS": 6.16
+      "startS": 4.08,
+      "endS": 4.24
     },
     {
       "text": "regla",
       "charStart": 56,
       "charEnd": 61,
-      "startS": 6.24,
-      "endS": 6.64
+      "startS": 4.24,
+      "endS": 4.56
     },
     {
       "text": "corta",
       "charStart": 62,
       "charEnd": 67,
-      "startS": 6.64,
-      "endS": 7.2
+      "startS": 4.56,
+      "endS": 5.04
     },
     {
       "text": "y",
       "charStart": 69,
       "charEnd": 70,
-      "startS": 7.52,
-      "endS": 7.6
+      "startS": 5.2,
+      "endS": 5.28
     },
     {
       "text": "hará",
       "charStart": 71,
       "charEnd": 75,
-      "startS": 7.6,
-      "endS": 7.68
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "que",
       "charStart": 76,
       "charEnd": 79,
-      "startS": 7.84,
-      "endS": 8.0
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "te",
       "charStart": 80,
       "charEnd": 82,
-      "startS": 8.0,
-      "endS": 8.08
+      "startS": 5.6,
+      "endS": 5.68
     },
     {
       "text": "sigan",
       "charStart": 83,
       "charEnd": 88,
-      "startS": 8.16,
-      "endS": 8.48
+      "startS": 5.68,
+      "endS": 6.0
     },
     {
       "text": "pagando",
       "charStart": 89,
       "charEnd": 96,
-      "startS": 8.48,
-      "endS": 9.2
+      "startS": 6.0,
+      "endS": 6.4
     }
   ],
-  "words_for": "6fba66fe81eac3ee/wordtiming-v1",
-  "asr": "En tonos, rafaga para cascos, toque para piesas, es una regla corta y araque de sigan pagando.",
-  "asr_similarity": 0.706
+  "words_for": "073f32995d231bdd/wordtiming-v1"
 }

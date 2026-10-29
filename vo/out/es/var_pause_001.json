@@ -1,0 +1,138 @@
+{
+  "hash": "041bad48af55774f",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_pause_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "En pausa. Tómate tu tiempo. El reloj del contrato respeta tu descanso. Casi siempre.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Gentle, then the qualifier.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.12,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 4.43,
+    "limited_db": 1.83,
+    "measured_before_lufs": -22.43,
+    "peak_bound": false
+  },
+  "asr": "En pausa, tómate tu tiempo. El reloj del contrato respeta tu descanso casi siempre.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "En",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "pausa",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "Tómate",
+      "charStart": 10,
+      "charEnd": 16,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "tu",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "tiempo",
+      "charStart": 20,
+      "charEnd": 26,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "El",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "reloj",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.64,
+      "endS": 3.04
+    },
+    {
+      "text": "del",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "contrato",
+      "charStart": 41,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.6
+    },
+    {
+      "text": "respeta",
+      "charStart": 50,
+      "charEnd": 57,
+      "startS": 3.6,
+      "endS": 4.08
+    },
+    {
+      "text": "tu",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "descanso",
+      "charStart": 61,
+      "charEnd": 69,
+      "startS": 4.16,
+      "endS": 4.8
+    },
+    {
+      "text": "Casi",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "siempre",
+      "charStart": 76,
+      "charEnd": 83,
+      "startS": 5.28,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "041bad48af55774f/wordtiming-v1"
+}

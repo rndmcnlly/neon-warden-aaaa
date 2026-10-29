@@ -1,0 +1,124 @@
+{
+  "hash": "2352d17a530f4526",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Minor structural event! You are uninjured. The ship has filed a complaint.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Cheerful incident report, slightly too brisk.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.714,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.91,
+    "gain_db": 3.09,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.09,
+    "peak_bound": false
+  },
+  "asr": "Minor structural event. You are uninjured. The ship has filed a complaint.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Minor",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "structural",
+      "charStart": 6,
+      "charEnd": 16,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "event",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "You",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "are",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "uninjured",
+      "charStart": 32,
+      "charEnd": 41,
+      "startS": 3.12,
+      "endS": 3.68
+    },
+    {
+      "text": "The",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "ship",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "has",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "filed",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 4.64,
+      "endS": 4.96
+    },
+    {
+      "text": "a",
+      "charStart": 62,
+      "charEnd": 63,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "complaint",
+      "charStart": 64,
+      "charEnd": 73,
+      "startS": 5.04,
+      "endS": 5.6
+    }
+  ],
+  "words_for": "2352d17a530f4526/wordtiming-v1"
+}

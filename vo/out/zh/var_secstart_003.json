@@ -1,0 +1,180 @@
+{
+  "hash": "be65bea4c6701a6e",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_secstart_003",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "深呼吸。会呼吸的飞行员，薪酬率高出百分之十四。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Wellness-seminar calm, a made-up statistic delivered sincerely.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.644,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.8,
+    "gain_db": 2.13,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.13,
+    "peak_bound": false
+  },
+  "asr": "深呼吸，会呼吸的飞行员薪酬率高出百分之十四。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "深",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "呼",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "吸",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "会",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "呼",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "吸",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "的",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "飞",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "行",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "员",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "薪",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "酬",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "率",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "高",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "出",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "百",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "分",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "之",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "十",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "四",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.16,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "be65bea4c6701a6e/wordtiming-v1"
+}

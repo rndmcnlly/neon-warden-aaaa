@@ -1,33 +1,32 @@
 {
-  "hash": "13465d4ff1a20108",
+  "hash": "b621cb04d48316b0",
   "mode": "clone",
   "request": {
     "id": "es__tut_lives_001",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "Tu casco resiste tres impactos. Cada impacto también te cuesta un nivel de cañón. Cuenta conmigo hasta tres. Uno. Dos. Tres.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Slow and deliberate counting, like a crossing guard.",
-  "duration": 9.6,
+  "duration": 8.72,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.839,
   "clipping_suspect": false,
-  "asr": "Tu casco reciste tres impactos. Cada impacto también te cuesta un nivel de cañón. Cuéntame conmigo hasta tres. Uno, dos, tres.",
-  "asr_similarity": 0.905,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.2,
-    "gain_db": 0.75,
-    "limited_db": 0.7,
-    "measured_before_lufs": -18.75,
+    "lufs": -18.12,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 4.98,
+    "limited_db": 1.95,
+    "measured_before_lufs": -23.0,
     "peak_bound": false
   },
-  "words_for": "13465d4ff1a20108/wordtiming-v1",
+  "asr": "Tu casco resiste tres impactos. Cada impacto también te cuesta un nivel de cañón. Cuenta conmigo hasta tres: uno, dos, tres.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,148 +39,149 @@
       "text": "Tu",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.4,
-      "endS": 0.48
+      "startS": 0.08,
+      "endS": 0.16
     },
     {
       "text": "casco",
       "charStart": 3,
       "charEnd": 8,
-      "startS": 0.56,
-      "endS": 0.96
+      "startS": 0.16,
+      "endS": 0.48
     },
     {
       "text": "resiste",
       "charStart": 9,
       "charEnd": 16,
-      "startS": 0.96,
-      "endS": 1.44
+      "startS": 0.48,
+      "endS": 0.96
     },
     {
       "text": "tres",
       "charStart": 17,
       "charEnd": 21,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 0.96,
+      "endS": 1.28
     },
     {
       "text": "impactos",
       "charStart": 22,
       "charEnd": 30,
-      "startS": 1.84,
-      "endS": 2.56
+      "startS": 1.28,
+      "endS": 1.92
     },
     {
       "text": "Cada",
       "charStart": 32,
       "charEnd": 36,
-      "startS": 2.8,
-      "endS": 2.96
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "impacto",
       "charStart": 37,
       "charEnd": 44,
-      "startS": 3.2,
-      "endS": 3.6
+      "startS": 2.48,
+      "endS": 2.88
     },
     {
       "text": "también",
       "charStart": 45,
       "charEnd": 52,
-      "startS": 3.6,
-      "endS": 4.0
+      "startS": 2.88,
+      "endS": 3.2
     },
     {
       "text": "te",
       "charStart": 53,
       "charEnd": 55,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 3.2,
+      "endS": 3.28
     },
     {
       "text": "cuesta",
       "charStart": 56,
       "charEnd": 62,
-      "startS": 4.08,
-      "endS": 4.48
+      "startS": 3.28,
+      "endS": 3.6
     },
     {
       "text": "un",
       "charStart": 63,
       "charEnd": 65,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 3.6,
+      "endS": 3.68
     },
     {
       "text": "nivel",
       "charStart": 66,
       "charEnd": 71,
-      "startS": 4.72,
-      "endS": 5.04
+      "startS": 3.68,
+      "endS": 3.92
     },
     {
       "text": "de",
       "charStart": 72,
       "charEnd": 74,
-      "startS": 5.04,
-      "endS": 5.12
+      "startS": 3.92,
+      "endS": 4.0
     },
     {
       "text": "cañón",
       "charStart": 75,
       "charEnd": 80,
-      "startS": 5.12,
-      "endS": 5.36
+      "startS": 4.0,
+      "endS": 4.48
     },
     {
       "text": "Cuenta",
       "charStart": 82,
       "charEnd": 88,
-      "startS": 5.52,
-      "endS": 5.68
+      "startS": 4.96,
+      "endS": 5.28
     },
     {
       "text": "conmigo",
       "charStart": 89,
       "charEnd": 96,
-      "startS": 6.32,
-      "endS": 6.72
+      "startS": 5.28,
+      "endS": 5.68
     },
     {
       "text": "hasta",
       "charStart": 97,
       "charEnd": 102,
-      "startS": 6.8,
-      "endS": 7.04
+      "startS": 5.68,
+      "endS": 5.92
     },
     {
       "text": "tres",
       "charStart": 103,
       "charEnd": 107,
-      "startS": 7.04,
-      "endS": 7.52
+      "startS": 5.92,
+      "endS": 6.4
     },
     {
       "text": "Uno",
       "charStart": 109,
       "charEnd": 112,
-      "startS": 7.68,
-      "endS": 8.24
+      "startS": 6.72,
+      "endS": 7.12
     },
     {
       "text": "Dos",
       "charStart": 114,
       "charEnd": 117,
-      "startS": 8.64,
-      "endS": 8.96
+      "startS": 7.28,
+      "endS": 7.84
     },
     {
       "text": "Tres",
       "charStart": 119,
       "charEnd": 123,
-      "startS": 9.36,
-      "endS": 9.6
+      "startS": 8.08,
+      "endS": 8.48
     }
-  ]
+  ],
+  "words_for": "b621cb04d48316b0/wordtiming-v1"
 }

@@ -1,0 +1,166 @@
+{
+  "hash": "a1918dcbecd7f8c5",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_disarm_003",
+    "seed": 11,
+    "language": "English",
+    "text": "No guns, no damage, no fuss. I'm not sure how to bill it, but it was very neat.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Genuinely impressed, not sure why.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.591,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.31,
+    "gain_db": 2.08,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.08,
+    "peak_bound": false
+  },
+  "asr": "No guns, no damage, no fuss. I'm not sure how to bill it, but it was very neat.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "guns",
+      "charStart": 3,
+      "charEnd": 7,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "no",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "damage",
+      "charStart": 12,
+      "charEnd": 18,
+      "startS": 1.6,
+      "endS": 2.16
+    },
+    {
+      "text": "no",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "fuss",
+      "charStart": 23,
+      "charEnd": 27,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "I'm",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "not",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "sure",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "how",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "to",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "bill",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "it",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "but",
+      "charStart": 58,
+      "charEnd": 61,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "it",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "was",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "very",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "neat",
+      "charStart": 74,
+      "charEnd": 78,
+      "startS": 5.36,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "a1918dcbecd7f8c5/wordtiming-v1"
+}

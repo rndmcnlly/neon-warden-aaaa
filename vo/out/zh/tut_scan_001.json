@@ -1,30 +1,32 @@
 {
-  "hash": "842f48daac7554ef",
+  "hash": "8e26a66c1cd5771e",
   "mode": "clone",
   "request": {
     "id": "zh__tut_scan_001",
     "seed": 11,
     "language": "Chinese",
     "text": "你休息的时候，传感器组件还会在前方扫出一道扫描光束。这里有一个新的全息目标。让光束一直照着它，直到锁定。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 10.24,
+  "duration": 10.48,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.773,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
-    "true_peak_dbtp": -1.37,
-    "gain_db": 5.48,
-    "limited_db": 0.06,
-    "measured_before_lufs": -23.48,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.19,
+    "gain_db": 2.69,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.69,
     "peak_bound": false
   },
+  "asr": "你休息的时候，传感器组件还会在前方扫出一道扫描光束。这里有一个新的全息目标，让光束一直照着它，直到锁定。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,231 +39,231 @@
       "text": "你",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.24,
-      "endS": 0.4
+      "startS": 0.56,
+      "endS": 0.64
     },
     {
       "text": "休",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.4,
-      "endS": 0.48
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "息",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.64,
-      "endS": 0.72
+      "startS": 0.88,
+      "endS": 0.96
     },
     {
       "text": "的",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.72,
-      "endS": 0.8
+      "startS": 0.96,
+      "endS": 1.04
     },
     {
       "text": "时",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 1.04,
+      "endS": 1.2
     },
     {
       "text": "候",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 1.2,
+      "endS": 1.52
     },
     {
       "text": "传",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 1.76,
+      "endS": 2.0
     },
     {
       "text": "感",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "器",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 1.76,
-      "endS": 1.92
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "组",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 1.92,
-      "endS": 2.16
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "件",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.16,
-      "endS": 2.4
+      "startS": 2.48,
+      "endS": 2.8
     },
     {
       "text": "还",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 2.8,
+      "endS": 2.96
     },
     {
       "text": "会",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.96,
+      "endS": 3.12
     },
     {
       "text": "在",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 3.12,
+      "endS": 3.2
     },
     {
       "text": "前",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 3.2,
+      "endS": 3.44
     },
     {
       "text": "方",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 3.44,
+      "endS": 3.6
     },
     {
       "text": "扫",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 3.6,
+      "endS": 3.84
     },
     {
       "text": "出",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "一",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.76,
-      "endS": 3.84
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "道",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 4.08,
+      "endS": 4.24
     },
     {
       "text": "扫",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.0,
-      "endS": 4.24
+      "startS": 4.24,
+      "endS": 4.48
     },
     {
       "text": "描",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.24,
-      "endS": 4.4
+      "startS": 4.48,
+      "endS": 4.56
     },
     {
       "text": "光",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.4,
-      "endS": 4.56
+      "startS": 4.56,
+      "endS": 4.8
     },
     {
       "text": "束",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.64,
-      "endS": 4.96
+      "startS": 4.8,
+      "endS": 5.12
     },
     {
       "text": "这",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.28,
-      "endS": 5.52
+      "startS": 5.68,
+      "endS": 5.84
     },
     {
       "text": "里",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.52,
-      "endS": 5.68
+      "startS": 5.84,
+      "endS": 5.92
     },
     {
       "text": "有",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.68,
-      "endS": 5.76
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "一",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 6.08,
+      "endS": 6.16
     },
     {
       "text": "个",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "新",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 6.08,
-      "endS": 6.24
+      "startS": 6.24,
+      "endS": 6.48
     },
     {
       "text": "的",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.4,
-      "endS": 6.48
+      "startS": 6.48,
+      "endS": 6.56
     },
     {
       "text": "全",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.48,
-      "endS": 6.64
+      "startS": 6.56,
+      "endS": 6.72
     },
     {
       "text": "息",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 6.64,
+      "startS": 6.72,
       "endS": 6.88
     },
     {
@@ -276,94 +278,92 @@
       "charStart": 36,
       "charEnd": 37,
       "startS": 7.04,
-      "endS": 7.28
+      "endS": 7.36
     },
     {
       "text": "让",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 7.52,
-      "endS": 7.68
+      "startS": 8.0,
+      "endS": 8.16
     },
     {
       "text": "光",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 7.68,
-      "endS": 7.92
+      "startS": 8.16,
+      "endS": 8.32
     },
     {
       "text": "束",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 7.92,
-      "endS": 8.16
+      "startS": 8.32,
+      "endS": 8.48
     },
     {
       "text": "一",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 8.16,
-      "endS": 8.24
+      "startS": 8.48,
+      "endS": 8.64
     },
     {
       "text": "直",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 8.32,
-      "endS": 8.48
+      "startS": 8.64,
+      "endS": 8.88
     },
     {
       "text": "照",
       "charStart": 43,
       "charEnd": 44,
-      "startS": 8.48,
-      "endS": 8.72
+      "startS": 8.88,
+      "endS": 9.04
     },
     {
       "text": "着",
       "charStart": 44,
       "charEnd": 45,
-      "startS": 8.72,
-      "endS": 8.8
+      "startS": 9.04,
+      "endS": 9.12
     },
     {
       "text": "它",
       "charStart": 45,
       "charEnd": 46,
-      "startS": 8.8,
-      "endS": 9.12
+      "startS": 9.12,
+      "endS": 9.44
     },
     {
       "text": "直",
       "charStart": 47,
       "charEnd": 48,
-      "startS": 9.28,
-      "endS": 9.44
+      "startS": 9.6,
+      "endS": 9.76
     },
     {
       "text": "到",
       "charStart": 48,
       "charEnd": 49,
-      "startS": 9.44,
-      "endS": 9.6
+      "startS": 9.76,
+      "endS": 9.92
     },
     {
       "text": "锁",
       "charStart": 49,
       "charEnd": 50,
-      "startS": 9.68,
-      "endS": 9.76
+      "startS": 9.92,
+      "endS": 10.08
     },
     {
       "text": "定",
       "charStart": 50,
       "charEnd": 51,
-      "startS": 9.92,
-      "endS": 10.16
+      "startS": 10.16,
+      "endS": 10.4
     }
   ],
-  "words_for": "842f48daac7554ef/wordtiming-v1",
-  "asr": "你休息的时候，传感器组件还会在前方扫出一道扫描光束。这里有一个新的全息目标，让光束一直照着它，直到锁定。",
-  "asr_similarity": 1.0
+  "words_for": "8e26a66c1cd5771e/wordtiming-v1"
 }

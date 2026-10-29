@@ -1,33 +1,32 @@
 {
-  "hash": "bafabce3f57616d3",
+  "hash": "ec3477b2d4a94390",
   "mode": "clone",
   "request": {
     "id": "es__pac_end_002",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "Piloto cero uno dos dos, no desempeño confirmado. Retiro en tres. Dos.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, the same procedural politeness as the flashback recall.",
-  "duration": 7.92,
+  "duration": 5.52,
   "sample_rate": 24000,
-  "peak": 0.81,
+  "peak": 0.673,
   "clipping_suspect": false,
-  "asr": "Piloto, sero, uno dos dos, no desempeño confirmado, retiro en trace dos.",
-  "asr_similarity": 0.833,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.74,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.44,
+    "gain_db": 3.62,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.62,
     "peak_bound": false
   },
-  "words_for": "bafabce3f57616d3/wordtiming-v1",
+  "asr": "Piloto cero uno dos dos no desempeño confirmado retiro en tres dos",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -41,84 +40,85 @@
       "charStart": 0,
       "charEnd": 6,
       "startS": 0.0,
-      "endS": 1.2
+      "endS": 0.4
     },
     {
       "text": "cero",
       "charStart": 7,
       "charEnd": 11,
-      "startS": 1.2,
-      "endS": 1.76
+      "startS": 0.4,
+      "endS": 0.72
     },
     {
       "text": "uno",
       "charStart": 12,
       "charEnd": 15,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 0.72,
+      "endS": 0.96
     },
     {
       "text": "dos",
       "charStart": 16,
       "charEnd": 19,
-      "startS": 2.4,
-      "endS": 2.72
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "dos",
       "charStart": 20,
       "charEnd": 23,
-      "startS": 2.72,
-      "endS": 3.28
+      "startS": 1.12,
+      "endS": 1.52
     },
     {
       "text": "no",
       "charStart": 25,
       "charEnd": 27,
-      "startS": 3.52,
-      "endS": 3.68
+      "startS": 1.84,
+      "endS": 2.0
     },
     {
       "text": "desempeño",
       "charStart": 28,
       "charEnd": 37,
-      "startS": 3.84,
-      "endS": 4.48
+      "startS": 2.0,
+      "endS": 2.56
     },
     {
       "text": "confirmado",
       "charStart": 38,
       "charEnd": 48,
-      "startS": 4.48,
-      "endS": 5.36
+      "startS": 2.56,
+      "endS": 3.2
     },
     {
       "text": "Retiro",
       "charStart": 50,
       "charEnd": 56,
-      "startS": 5.68,
-      "endS": 6.0
+      "startS": 3.6,
+      "endS": 4.0
     },
     {
       "text": "en",
       "charStart": 57,
       "charEnd": 59,
-      "startS": 6.24,
-      "endS": 6.4
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "tres",
       "charStart": 60,
       "charEnd": 64,
-      "startS": 6.4,
-      "endS": 7.04
+      "startS": 4.16,
+      "endS": 4.56
     },
     {
       "text": "Dos",
       "charStart": 66,
       "charEnd": 69,
-      "startS": 7.28,
-      "endS": 7.84
+      "startS": 5.04,
+      "endS": 5.52
     }
-  ]
+  ],
+  "words_for": "ec3477b2d4a94390/wordtiming-v1"
 }

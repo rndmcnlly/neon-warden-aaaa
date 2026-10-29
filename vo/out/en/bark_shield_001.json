@@ -1,5 +1,5 @@
 {
-  "hash": "615aaf3cfbff51fa",
+  "hash": "8c731448e08310dc",
   "mode": "clone",
   "request": {
     "id": "en__bark_shield_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Shield online! It is Authority property, so please get hit as little as possible.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, product-safety notice.",
-  "duration": 5.6,
+  "duration": 5.36,
   "sample_rate": 24000,
-  "peak": 0.748,
+  "peak": 0.639,
   "clipping_suspect": false,
-  "asr": "Shield online. It is authority property, so please get hit as little as possible.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.3,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.89,
+    "gain_db": 3.13,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.13,
     "peak_bound": false
   },
-  "words_for": "615aaf3cfbff51fa/wordtiming-v1",
+  "asr": "Shield online. It is authority property, so please get hit as little as possible.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,43 +39,43 @@
       "text": "Shield",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.4,
-      "endS": 0.8
+      "startS": 0.72,
+      "endS": 1.12
     },
     {
       "text": "online",
       "charStart": 7,
       "charEnd": 13,
-      "startS": 0.8,
-      "endS": 1.36
+      "startS": 1.12,
+      "endS": 1.76
     },
     {
       "text": "It",
       "charStart": 15,
       "charEnd": 17,
-      "startS": 1.68,
-      "endS": 1.84
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "is",
       "charStart": 18,
       "charEnd": 20,
-      "startS": 1.84,
-      "endS": 2.0
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "Authority",
       "charStart": 21,
       "charEnd": 30,
-      "startS": 2.0,
-      "endS": 2.32
+      "startS": 2.48,
+      "endS": 2.88
     },
     {
       "text": "property",
       "charStart": 31,
       "charEnd": 39,
-      "startS": 2.56,
-      "endS": 3.12
+      "startS": 2.88,
+      "endS": 3.36
     },
     {
       "text": "so",
@@ -90,7 +89,7 @@
       "charStart": 44,
       "charEnd": 50,
       "startS": 3.52,
-      "endS": 3.76
+      "endS": 3.92
     },
     {
       "text": "get",
@@ -104,13 +103,13 @@
       "charStart": 55,
       "charEnd": 58,
       "startS": 4.16,
-      "endS": 4.32
+      "endS": 4.24
     },
     {
       "text": "as",
       "charStart": 59,
       "charEnd": 61,
-      "startS": 4.32,
+      "startS": 4.24,
       "endS": 4.4
     },
     {
@@ -124,7 +123,7 @@
       "text": "as",
       "charStart": 69,
       "charEnd": 71,
-      "startS": 4.72,
+      "startS": 4.64,
       "endS": 4.8
     },
     {
@@ -132,7 +131,8 @@
       "charStart": 72,
       "charEnd": 80,
       "startS": 4.8,
-      "endS": 5.44
+      "endS": 5.28
     }
-  ]
+  ],
+  "words_for": "8c731448e08310dc/wordtiming-v1"
 }

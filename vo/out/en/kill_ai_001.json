@@ -1,5 +1,5 @@
 {
-  "hash": "79d86a000d9ebed3",
+  "hash": "a11f145061b71bc6",
   "mode": "clone",
   "request": {
     "id": "en__kill_ai_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Warden down! The lanes are open!",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, pure celebration, confetti in the voice.",
-  "duration": 2.96,
+  "duration": 2.88,
   "sample_rate": 24000,
-  "peak": 0.749,
+  "peak": 0.717,
   "clipping_suspect": false,
-  "asr": "Warden down! The lanes are open.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.46,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -2.89,
+    "gain_db": 1.75,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.75,
     "peak_bound": false
   },
-  "words_for": "79d86a000d9ebed3/wordtiming-v1",
+  "asr": "Warden down, the lanes are open.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,43 +39,44 @@
       "text": "Warden",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.24,
-      "endS": 1.2
+      "startS": 0.72,
+      "endS": 1.12
     },
     {
       "text": "down",
       "charStart": 7,
       "charEnd": 11,
-      "startS": 1.2,
-      "endS": 1.28
+      "startS": 1.12,
+      "endS": 1.52
     },
     {
       "text": "The",
       "charStart": 13,
       "charEnd": 16,
-      "startS": 1.52,
-      "endS": 1.6
+      "startS": 1.92,
+      "endS": 2.0
     },
     {
       "text": "lanes",
       "charStart": 17,
       "charEnd": 22,
-      "startS": 2.4,
-      "endS": 2.64
+      "startS": 2.0,
+      "endS": 2.32
     },
     {
       "text": "are",
       "charStart": 23,
       "charEnd": 26,
-      "startS": 2.64,
-      "endS": 2.72
+      "startS": 2.32,
+      "endS": 2.4
     },
     {
       "text": "open",
       "charStart": 27,
       "charEnd": 31,
-      "startS": 2.72,
-      "endS": 2.8
+      "startS": 2.4,
+      "endS": 2.88
     }
-  ]
+  ],
+  "words_for": "a11f145061b71bc6/wordtiming-v1"
 }

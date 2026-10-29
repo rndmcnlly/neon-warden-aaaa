@@ -1,30 +1,32 @@
 {
-  "hash": "a768f8377acf6ec8",
+  "hash": "d7fbfdb092128cbd",
   "mode": "clone",
   "request": {
     "id": "zh__tut_rest_001",
     "seed": 11,
     "language": "Chinese",
     "text": "接下来，请完全松开扳机。你休息的时候，电容器会充能。飞船周围的三个标记显示充能等级。请等三个全部亮起。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Gentle, almost a breathing exercise.",
-  "duration": 10.8,
+  "duration": 11.44,
   "sample_rate": 24000,
-  "peak": 0.823,
+  "peak": 0.667,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.23,
-    "true_peak_dbtp": -1.05,
-    "gain_db": 5.66,
-    "limited_db": 0.52,
-    "measured_before_lufs": -23.85,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.45,
+    "gain_db": 2.62,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.62,
     "peak_bound": false
   },
+  "asr": "接下来，请完全松开扳机。你休息的时候，电容器会充能。飞船周围的三个标记显示充能等级，请等三个全部亮起。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,319 +39,317 @@
       "text": "接",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 0.56,
+      "endS": 0.8
     },
     {
       "text": "下",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "来",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 1.12,
-      "endS": 1.36
+      "startS": 0.96,
+      "endS": 1.28
     },
     {
       "text": "请",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.36,
-      "endS": 1.52
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "完",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.52,
-      "endS": 1.76
+      "startS": 1.76,
+      "endS": 2.0
     },
     {
       "text": "全",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.76,
-      "endS": 2.0
+      "startS": 2.0,
+      "endS": 2.16
     },
     {
       "text": "松",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.0,
-      "endS": 2.16
+      "startS": 2.16,
+      "endS": 2.32
     },
     {
       "text": "开",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.16,
-      "endS": 2.32
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "扳",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 2.48,
+      "endS": 2.64
     },
     {
       "text": "机",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.56,
-      "endS": 2.88
+      "startS": 2.64,
+      "endS": 2.96
     },
     {
       "text": "你",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.36,
-      "endS": 3.44
+      "startS": 3.76,
+      "endS": 3.84
     },
     {
       "text": "休",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.44,
-      "endS": 3.68
+      "startS": 3.84,
+      "endS": 4.08
     },
     {
       "text": "息",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.68,
-      "endS": 3.84
+      "startS": 4.08,
+      "endS": 4.16
     },
     {
       "text": "的",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 4.16,
+      "endS": 4.24
     },
     {
       "text": "时",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 4.0,
-      "endS": 4.16
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "候",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 4.16,
-      "endS": 4.48
+      "startS": 4.4,
+      "endS": 4.8
     },
     {
       "text": "电",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 4.96,
+      "endS": 5.12
     },
     {
       "text": "容",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.64,
-      "endS": 4.8
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "器",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.8,
-      "endS": 4.96
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "会",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "充",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 5.6,
+      "endS": 5.84
     },
     {
       "text": "能",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.44,
-      "endS": 5.68
+      "startS": 5.84,
+      "endS": 6.08
     },
     {
       "text": "飞",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.08,
-      "endS": 6.24
+      "startS": 6.72,
+      "endS": 6.96
     },
     {
       "text": "船",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.24,
-      "endS": 6.48
+      "startS": 6.96,
+      "endS": 7.2
     },
     {
       "text": "周",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 6.48,
-      "endS": 6.64
+      "startS": 7.2,
+      "endS": 7.36
     },
     {
       "text": "围",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 7.36,
+      "endS": 7.44
     },
     {
       "text": "的",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 6.8,
-      "endS": 6.88
+      "startS": 7.44,
+      "endS": 7.52
     },
     {
       "text": "三",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 7.52,
+      "endS": 7.76
     },
     {
       "text": "个",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 7.76,
+      "endS": 7.84
     },
     {
       "text": "标",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 7.2,
-      "endS": 7.36
+      "startS": 7.84,
+      "endS": 8.0
     },
     {
       "text": "记",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 7.36,
-      "endS": 7.52
+      "startS": 8.0,
+      "endS": 8.16
     },
     {
       "text": "显",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 7.52,
-      "endS": 7.76
+      "startS": 8.16,
+      "endS": 8.4
     },
     {
       "text": "示",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.76,
-      "endS": 7.92
+      "startS": 8.4,
+      "endS": 8.56
     },
     {
       "text": "充",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 7.92,
-      "endS": 8.08
+      "startS": 8.56,
+      "endS": 8.72
     },
     {
       "text": "能",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.16,
-      "endS": 8.24
+      "startS": 8.72,
+      "endS": 8.88
     },
     {
       "text": "等",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 8.24,
-      "endS": 8.32
+      "startS": 8.88,
+      "endS": 8.96
     },
     {
       "text": "级",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.48,
-      "endS": 8.8
+      "startS": 9.04,
+      "endS": 9.44
     },
     {
       "text": "请",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 9.12,
-      "endS": 9.36
+      "startS": 9.76,
+      "endS": 10.0
     },
     {
       "text": "等",
       "charStart": 43,
       "charEnd": 44,
-      "startS": 9.36,
-      "endS": 9.44
+      "startS": 10.0,
+      "endS": 10.08
     },
     {
       "text": "三",
       "charStart": 44,
       "charEnd": 45,
-      "startS": 9.6,
-      "endS": 9.76
+      "startS": 10.08,
+      "endS": 10.32
     },
     {
       "text": "个",
       "charStart": 45,
       "charEnd": 46,
-      "startS": 9.76,
-      "endS": 9.84
+      "startS": 10.32,
+      "endS": 10.48
     },
     {
       "text": "全",
       "charStart": 46,
       "charEnd": 47,
-      "startS": 9.84,
-      "endS": 10.08
+      "startS": 10.48,
+      "endS": 10.72
     },
     {
       "text": "部",
       "charStart": 47,
       "charEnd": 48,
-      "startS": 10.08,
-      "endS": 10.16
+      "startS": 10.72,
+      "endS": 10.88
     },
     {
       "text": "亮",
       "charStart": 48,
       "charEnd": 49,
-      "startS": 10.4,
-      "endS": 10.48
+      "startS": 10.88,
+      "endS": 11.04
     },
     {
       "text": "起",
       "charStart": 49,
       "charEnd": 50,
-      "startS": 10.48,
-      "endS": 10.72
+      "startS": 11.04,
+      "endS": 11.36
     }
   ],
-  "words_for": "a768f8377acf6ec8/wordtiming-v1",
-  "asr": "接下来，请完全松开扳机。你休息的时候，电容器会充能。飞船周围的三个标记显示充能等级，请等三个全部亮起。",
-  "asr_similarity": 1.0
+  "words_for": "d7fbfdb092128cbd/wordtiming-v1"
 }

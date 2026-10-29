@@ -1,0 +1,27 @@
+{
+  "hash": "807636b9508a27e4",
+  "method": "design",
+  "candidate": "design_s11",
+  "from_anchor": "2a8060a93a011a3c",
+  "request": {
+    "id": "tutorial_ai.es",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave.",
+    "instruct": "Una voz femenina adulta y cálida, contralto, de unos cuarenta años, tranquila y sin prisa como una capitana de avión hablando por el intercomunicador de cabina, tono medio-bajo, tranquilizadora y sincera, con calidez institucional y dicción profesional muy clara. Español latinoamericano neutro."
+  },
+  "duration": 10.08,
+  "sample_rate": 24000,
+  "peak": 0.515,
+  "clipping_suspect": false,
+  "median_f0": 192.1,
+  "audition": {
+    "method": "design",
+    "seed": 11,
+    "mean": 0.997,
+    "min": 0.973,
+    "anchor_asr": 1.0,
+    "anchor_f0": 192.1,
+    "f0_ratio": 0.991
+  }
+}

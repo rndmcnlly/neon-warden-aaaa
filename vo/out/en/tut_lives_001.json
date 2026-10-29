@@ -1,5 +1,5 @@
 {
-  "hash": "f9d67296d807d4ab",
+  "hash": "dfc2953f3da4fbd3",
   "mode": "clone",
   "request": {
     "id": "en__tut_lives_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Your hull holds three hits. Each hit also costs one cannon level. Please count to three with me. One. Two. Three.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Slow and deliberate counting, like a crossing guard.",
-  "duration": 7.68,
+  "duration": 8.64,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.84,
   "clipping_suspect": false,
-  "asr": "Your hull holds three hits. Each hit also costs one cannon level. Please count to three with me: one, two, three.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.05,
-    "true_peak_dbtp": -1.29,
-    "gain_db": 0.61,
-    "limited_db": 0.56,
-    "measured_before_lufs": -18.61,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 2.91,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.91,
     "peak_bound": false
   },
-  "words_for": "f9d67296d807d4ab/wordtiming-v1",
+  "asr": "Your hull holds three hits. Each hit also costs one cannon level. Please count to three with me: one, two, three.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,148 +39,149 @@
       "text": "Your",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.24,
-      "endS": 0.4
+      "startS": 0.48,
+      "endS": 0.8
     },
     {
       "text": "hull",
       "charStart": 5,
       "charEnd": 9,
-      "startS": 0.4,
-      "endS": 0.8
+      "startS": 0.8,
+      "endS": 1.12
     },
     {
       "text": "holds",
       "charStart": 10,
       "charEnd": 15,
-      "startS": 0.8,
-      "endS": 1.12
+      "startS": 1.12,
+      "endS": 1.36
     },
     {
       "text": "three",
       "charStart": 16,
       "charEnd": 21,
-      "startS": 1.12,
-      "endS": 1.44
+      "startS": 1.36,
+      "endS": 1.6
     },
     {
       "text": "hits",
       "charStart": 22,
       "charEnd": 26,
-      "startS": 1.44,
-      "endS": 1.84
+      "startS": 1.6,
+      "endS": 2.08
     },
     {
       "text": "Each",
       "charStart": 28,
       "charEnd": 32,
-      "startS": 2.16,
-      "endS": 2.4
+      "startS": 2.4,
+      "endS": 2.72
     },
     {
       "text": "hit",
       "charStart": 33,
       "charEnd": 36,
-      "startS": 2.4,
-      "endS": 2.64
+      "startS": 2.72,
+      "endS": 2.96
     },
     {
       "text": "also",
       "charStart": 37,
       "charEnd": 41,
-      "startS": 2.64,
-      "endS": 2.96
+      "startS": 2.96,
+      "endS": 3.28
     },
     {
       "text": "costs",
       "charStart": 42,
       "charEnd": 47,
-      "startS": 2.96,
-      "endS": 3.28
+      "startS": 3.28,
+      "endS": 3.68
     },
     {
       "text": "one",
       "charStart": 48,
       "charEnd": 51,
-      "startS": 3.28,
-      "endS": 3.6
+      "startS": 3.68,
+      "endS": 4.0
     },
     {
       "text": "cannon",
       "charStart": 52,
       "charEnd": 58,
-      "startS": 3.6,
-      "endS": 4.0
+      "startS": 4.0,
+      "endS": 4.32
     },
     {
       "text": "level",
       "charStart": 59,
       "charEnd": 64,
-      "startS": 4.0,
-      "endS": 4.4
+      "startS": 4.32,
+      "endS": 4.64
     },
     {
       "text": "Please",
       "charStart": 66,
       "charEnd": 72,
-      "startS": 4.64,
-      "endS": 4.96
+      "startS": 5.28,
+      "endS": 5.52
     },
     {
       "text": "count",
       "charStart": 73,
       "charEnd": 78,
-      "startS": 4.96,
-      "endS": 5.28
+      "startS": 5.52,
+      "endS": 5.76
     },
     {
       "text": "to",
       "charStart": 79,
       "charEnd": 81,
-      "startS": 5.28,
-      "endS": 5.36
+      "startS": 5.84,
+      "endS": 5.92
     },
     {
       "text": "three",
       "charStart": 82,
       "charEnd": 87,
-      "startS": 5.36,
-      "endS": 5.6
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "with",
       "charStart": 88,
       "charEnd": 92,
-      "startS": 5.6,
-      "endS": 5.84
+      "startS": 6.08,
+      "endS": 6.24
     },
     {
       "text": "me",
       "charStart": 93,
       "charEnd": 95,
-      "startS": 5.84,
-      "endS": 6.16
+      "startS": 6.24,
+      "endS": 6.64
     },
     {
       "text": "One",
       "charStart": 97,
       "charEnd": 100,
-      "startS": 6.32,
-      "endS": 6.48
+      "startS": 6.8,
+      "endS": 7.2
     },
     {
       "text": "Two",
       "charStart": 102,
       "charEnd": 105,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 7.52,
+      "endS": 7.92
     },
     {
       "text": "Three",
       "charStart": 107,
       "charEnd": 112,
-      "startS": 7.28,
-      "endS": 7.44
+      "startS": 8.08,
+      "endS": 8.56
     }
-  ]
+  ],
+  "words_for": "dfc2953f3da4fbd3/wordtiming-v1"
 }

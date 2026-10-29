@@ -1,33 +1,32 @@
 {
-  "hash": "954449d55b499ae0",
+  "hash": "5b300d10b4259579",
   "mode": "clone",
   "request": {
     "id": "zh__tut_move_000",
     "seed": 11,
     "language": "Chinese",
     "text": "我们先从移动开始！移动，就是从一个地方到另一个地方。请向左飞。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Kindergarten-teacher patience, explaining the obvious with great care.",
-  "duration": 5.28,
+  "duration": 5.76,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.584,
   "clipping_suspect": false,
-  "asr": "我们先从移动开始。移动就是从一个地方到另一个地方，请向左飞。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.09,
-    "true_peak_dbtp": -1.25,
-    "gain_db": 0.76,
-    "limited_db": 0.71,
-    "measured_before_lufs": -18.76,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.61,
+    "gain_db": 2.02,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.02,
     "peak_bound": false
   },
-  "words_for": "954449d55b499ae0/wordtiming-v1",
+  "asr": "我们先从移动开始。移动就是从一个地方到另一个地方，请向左飞。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,57 +39,57 @@
       "text": "我",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.32,
-      "endS": 0.4
+      "startS": 0.24,
+      "endS": 0.32
     },
     {
       "text": "们",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.4,
-      "endS": 0.48
+      "startS": 0.32,
+      "endS": 0.4
     },
     {
       "text": "先",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 0.4,
+      "endS": 0.48
     },
     {
       "text": "从",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.64,
-      "endS": 0.8
+      "startS": 0.48,
+      "endS": 0.64
     },
     {
       "text": "移",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 0.8,
-      "endS": 0.96
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "动",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 0.96,
-      "endS": 1.12
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "开",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.12,
-      "endS": 1.36
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "始",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.36,
-      "endS": 1.68
+      "startS": 1.12,
+      "endS": 1.44
     },
     {
       "text": "移",
@@ -104,126 +103,127 @@
       "charStart": 10,
       "charEnd": 11,
       "startS": 2.08,
-      "endS": 2.24
+      "endS": 2.4
     },
     {
       "text": "就",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.24,
-      "endS": 2.4
+      "startS": 2.64,
+      "endS": 2.72
     },
     {
       "text": "是",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.4,
-      "endS": 2.56
+      "startS": 2.72,
+      "endS": 2.88
     },
     {
       "text": "从",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "一",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 2.72,
-      "endS": 2.8
+      "startS": 3.04,
+      "endS": 3.12
     },
     {
       "text": "个",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 2.8,
-      "endS": 2.88
+      "startS": 3.12,
+      "endS": 3.2
     },
     {
       "text": "地",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "方",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.04,
-      "endS": 3.28
+      "startS": 3.36,
+      "endS": 3.68
     },
     {
       "text": "到",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.28,
-      "endS": 3.44
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "另",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 3.44,
-      "endS": 3.52
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "一",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 3.68,
-      "endS": 3.76
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "个",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 3.76,
-      "endS": 3.84
+      "startS": 4.08,
+      "endS": 4.16
     },
     {
       "text": "地",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 3.84,
-      "endS": 3.92
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "方",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 3.92,
-      "endS": 4.16
+      "startS": 4.32,
+      "endS": 4.56
     },
     {
       "text": "请",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 4.4,
-      "endS": 4.56
+      "startS": 4.96,
+      "endS": 5.12
     },
     {
       "text": "向",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "左",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "飞",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 4.96,
-      "endS": 5.28
+      "startS": 5.44,
+      "endS": 5.76
     }
-  ]
+  ],
+  "words_for": "5b300d10b4259579/wordtiming-v1"
 }

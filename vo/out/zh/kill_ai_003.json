@@ -1,33 +1,32 @@
 {
-  "hash": "26cf2b373552b62d",
+  "hash": "27ca18add5503566",
   "mode": "clone",
   "request": {
     "id": "zh__kill_ai_003",
     "seed": 11,
     "language": "Chinese",
     "text": "恭喜你，零一二二号飞行员。你的合同已完成。报酬将在三十至九十个工作日内发放。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, warm and proud, then the payroll fine print at speed.",
-  "duration": 7.52,
+  "duration": 7.84,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.648,
   "clipping_suspect": false,
-  "asr": "恭喜你，零一二二号飞行员，你的合同已完成，报酬将在三十至九十个工作日内发放。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.07,
-    "true_peak_dbtp": -1.38,
-    "gain_db": 0.87,
-    "limited_db": 0.82,
-    "measured_before_lufs": -18.87,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.57,
+    "gain_db": 2.05,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.05,
     "peak_bound": false
   },
-  "words_for": "26cf2b373552b62d/wordtiming-v1",
+  "asr": "恭喜你，零一二二号飞行员，你的合同已完成，报酬将在三十至九十个工作日内发放。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -41,13 +40,13 @@
       "charStart": 0,
       "charEnd": 1,
       "startS": 0.08,
-      "endS": 0.16
+      "endS": 0.24
     },
     {
       "text": "喜",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
+      "startS": 0.24,
       "endS": 0.48
     },
     {
@@ -61,7 +60,7 @@
       "text": "零",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.2,
+      "startS": 1.28,
       "endS": 1.44
     },
     {
@@ -69,210 +68,211 @@
       "charStart": 5,
       "charEnd": 6,
       "startS": 1.44,
-      "endS": 1.6
+      "endS": 1.52
     },
     {
       "text": "二",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.6,
-      "endS": 1.76
+      "startS": 1.52,
+      "endS": 1.6
     },
     {
       "text": "二",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.76,
-      "endS": 2.0
+      "startS": 1.6,
+      "endS": 1.84
     },
     {
       "text": "号",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.0,
-      "endS": 2.16
+      "startS": 1.84,
+      "endS": 2.08
     },
     {
       "text": "飞",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.16,
-      "endS": 2.32
+      "startS": 2.08,
+      "endS": 2.24
     },
     {
       "text": "行",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.32,
-      "endS": 2.56
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "员",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.56,
-      "endS": 2.8
+      "startS": 2.4,
+      "endS": 2.72
     },
     {
       "text": "你",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.12,
-      "endS": 3.2
+      "startS": 3.36,
+      "endS": 3.44
     },
     {
       "text": "的",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.2,
-      "endS": 3.28
+      "startS": 3.44,
+      "endS": 3.52
     },
     {
       "text": "合",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.28,
-      "endS": 3.44
+      "startS": 3.52,
+      "endS": 3.68
     },
     {
       "text": "同",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.44,
-      "endS": 3.6
+      "startS": 3.68,
+      "endS": 3.84
     },
     {
       "text": "已",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "完",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.76,
-      "endS": 3.92
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "成",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.92,
-      "endS": 4.24
+      "startS": 4.16,
+      "endS": 4.48
     },
     {
       "text": "报",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "酬",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.64,
-      "endS": 4.88
+      "startS": 5.44,
+      "endS": 5.68
     },
     {
       "text": "将",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.88,
-      "endS": 5.12
+      "startS": 5.68,
+      "endS": 5.84
     },
     {
       "text": "在",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.12,
-      "endS": 5.2
+      "startS": 5.84,
+      "endS": 5.92
     },
     {
       "text": "三",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 5.92,
+      "endS": 6.16
     },
     {
       "text": "十",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 5.52,
-      "endS": 5.76
+      "startS": 6.16,
+      "endS": 6.4
     },
     {
       "text": "至",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.76,
-      "endS": 5.84
+      "startS": 6.4,
+      "endS": 6.48
     },
     {
       "text": "九",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.84,
-      "endS": 6.08
+      "startS": 6.48,
+      "endS": 6.64
     },
     {
       "text": "十",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 6.08,
-      "endS": 6.24
+      "startS": 6.64,
+      "endS": 6.8
     },
     {
       "text": "个",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 6.24,
-      "endS": 6.32
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "工",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 6.32,
-      "endS": 6.48
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "作",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 6.56,
-      "endS": 6.64
+      "startS": 7.04,
+      "endS": 7.12
     },
     {
       "text": "日",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 6.64,
-      "endS": 6.8
+      "startS": 7.12,
+      "endS": 7.28
     },
     {
       "text": "内",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 7.28,
+      "endS": 7.36
     },
     {
       "text": "发",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 6.96,
-      "endS": 7.12
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "放",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.12,
-      "endS": 7.44
+      "startS": 7.52,
+      "endS": 7.84
     }
-  ]
+  ],
+  "words_for": "27ca18add5503566/wordtiming-v1"
 }

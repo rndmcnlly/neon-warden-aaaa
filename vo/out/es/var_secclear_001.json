@@ -1,0 +1,138 @@
+{
+  "hash": "09c32913e102d464",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_secclear_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Sector despejado! Qué buen trabajo. Ya avisé a nómina y está emocionada, con cautela.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Delighted, reporting upward.",
+  "duration": 6.08,
+  "sample_rate": 24000,
+  "peak": 0.794,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.99,
+    "gain_db": 3.29,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.29,
+    "peak_bound": false
+  },
+  "asr": "Sector despejado. Qué buen trabajo. Ya avise a Nómina y está emocionada. Con cautela.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sector",
+      "charStart": 1,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "despejado",
+      "charStart": 8,
+      "charEnd": 17,
+      "startS": 0.64,
+      "endS": 1.28
+    },
+    {
+      "text": "Qué",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "buen",
+      "charStart": 23,
+      "charEnd": 27,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "trabajo",
+      "charStart": 28,
+      "charEnd": 35,
+      "startS": 2.0,
+      "endS": 2.56
+    },
+    {
+      "text": "Ya",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "avisé",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "a",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "nómina",
+      "charStart": 48,
+      "charEnd": 54,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "y",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "está",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "emocionada",
+      "charStart": 62,
+      "charEnd": 72,
+      "startS": 4.16,
+      "endS": 4.8
+    },
+    {
+      "text": "con",
+      "charStart": 74,
+      "charEnd": 77,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "cautela",
+      "charStart": 78,
+      "charEnd": 85,
+      "startS": 5.12,
+      "endS": 5.68
+    }
+  ],
+  "words_for": "09c32913e102d464/wordtiming-v1"
+}

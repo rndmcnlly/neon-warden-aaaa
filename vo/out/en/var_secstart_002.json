@@ -1,0 +1,103 @@
+{
+  "hash": "a607ac6ae2466db7",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_secstart_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Here we go again! I've pre-filled your forms. Optimistically.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Cheerful, already holding a clipboard.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.804,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.85,
+    "gain_db": 2.35,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.35,
+    "peak_bound": false
+  },
+  "asr": "Here we go again. I've pre-filled your forms optimistically.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Here",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "we",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "go",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "again",
+      "charStart": 11,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.6
+    },
+    {
+      "text": "I've",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "pre-filled",
+      "charStart": 23,
+      "charEnd": 33,
+      "startS": 2.4,
+      "endS": 2.96
+    },
+    {
+      "text": "your",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "forms",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "Optimistically",
+      "charStart": 46,
+      "charEnd": 60,
+      "startS": 3.76,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "a607ac6ae2466db7/wordtiming-v1"
+}

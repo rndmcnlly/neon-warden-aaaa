@@ -1,0 +1,166 @@
+{
+  "hash": "37695e4e5381759f",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_writ_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Ese Mandato ya está cargado al máximo. Sostenerlo más no lo va a cargar más. Ya lo revisé.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Patient technical support.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.741,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.47,
+    "gain_db": 4.13,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.13,
+    "peak_bound": false
+  },
+  "asr": "Ese mandato ya está cargado al máximo. Sostenerlo más no lo va a cargar más. Ya lo revise.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ese",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "Mandato",
+      "charStart": 4,
+      "charEnd": 11,
+      "startS": 0.4,
+      "endS": 0.88
+    },
+    {
+      "text": "ya",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "está",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "cargado",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.2,
+      "endS": 1.6
+    },
+    {
+      "text": "al",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "máximo",
+      "charStart": 31,
+      "charEnd": 37,
+      "startS": 1.68,
+      "endS": 2.24
+    },
+    {
+      "text": "Sostenerlo",
+      "charStart": 39,
+      "charEnd": 49,
+      "startS": 2.64,
+      "endS": 3.2
+    },
+    {
+      "text": "más",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "no",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "lo",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "va",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "a",
+      "charStart": 63,
+      "charEnd": 64,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "cargar",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "más",
+      "charStart": 72,
+      "charEnd": 75,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "Ya",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "lo",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "revisé",
+      "charStart": 83,
+      "charEnd": 89,
+      "startS": 5.52,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "37695e4e5381759f/wordtiming-v1"
+}

@@ -1,30 +1,32 @@
 {
-  "hash": "2abb593aaf87a24e",
+  "hash": "b1fa881f1eba24d2",
   "mode": "clone",
   "request": {
     "id": "es__rec_ai_002",
     "seed": 11,
     "language": "Spanish",
     "text": "Registrador archivado. Contenido: no relevante para tu contrato. Por favor, continúa.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, back on script, a beat too quickly.",
-  "duration": 6.72,
+  "duration": 6.4,
   "sample_rate": 24000,
-  "peak": 0.788,
+  "peak": 0.841,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -2.02,
-    "gain_db": 3.13,
-    "limited_db": 0.0,
-    "measured_before_lufs": -21.13,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 3.9,
+    "limited_db": 0.23,
+    "measured_before_lufs": -21.9,
     "peak_bound": false
   },
+  "asr": "Registrador archivado contenido no relevante para tu contrato por favor continúa",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,81 +39,79 @@
       "text": "Registrador",
       "charStart": 0,
       "charEnd": 11,
-      "startS": 0.16,
-      "endS": 0.64
+      "startS": 0.08,
+      "endS": 0.8
     },
     {
       "text": "archivado",
       "charStart": 12,
       "charEnd": 21,
-      "startS": 0.96,
-      "endS": 1.84
+      "startS": 0.8,
+      "endS": 1.44
     },
     {
       "text": "Contenido",
       "charStart": 23,
       "charEnd": 32,
-      "startS": 2.0,
-      "endS": 2.72
+      "startS": 1.84,
+      "endS": 2.48
     },
     {
       "text": "no",
       "charStart": 34,
       "charEnd": 36,
-      "startS": 2.72,
-      "endS": 2.8
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "relevante",
       "charStart": 37,
       "charEnd": 46,
-      "startS": 3.28,
-      "endS": 3.68
+      "startS": 2.88,
+      "endS": 3.44
     },
     {
       "text": "para",
       "charStart": 47,
       "charEnd": 51,
-      "startS": 3.68,
-      "endS": 4.0
+      "startS": 3.44,
+      "endS": 3.6
     },
     {
       "text": "tu",
       "charStart": 52,
       "charEnd": 54,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 3.6,
+      "endS": 3.68
     },
     {
       "text": "contrato",
       "charStart": 55,
       "charEnd": 63,
-      "startS": 4.08,
-      "endS": 4.88
+      "startS": 3.68,
+      "endS": 4.32
     },
     {
       "text": "Por",
       "charStart": 65,
       "charEnd": 68,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 4.88,
+      "endS": 5.04
     },
     {
       "text": "favor",
       "charStart": 69,
       "charEnd": 74,
-      "startS": 5.36,
-      "endS": 5.6
+      "startS": 5.04,
+      "endS": 5.52
     },
     {
       "text": "continúa",
       "charStart": 76,
       "charEnd": 84,
-      "startS": 5.84,
-      "endS": 6.64
+      "startS": 5.68,
+      "endS": 6.4
     }
   ],
-  "words_for": "2abb593aaf87a24e/wordtiming-v1",
-  "asr": "Registro archivo continuo no relevante para tu contrato por favor continúa",
-  "asr_similarity": 0.727
+  "words_for": "b1fa881f1eba24d2/wordtiming-v1"
 }

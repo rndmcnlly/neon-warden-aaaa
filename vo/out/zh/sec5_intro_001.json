@@ -1,33 +1,32 @@
 {
-  "hash": "23c62d6a1f7fa6b7",
+  "hash": "6e2c561ec339a246",
   "mode": "clone",
   "request": {
     "id": "zh__sec5_intro_001",
     "seed": 11,
     "language": "Chinese",
     "text": "最终进近。倾巢而出。分析师说，守望者已经动用最后的储备了。这就是一个盈利季度该有的样子！",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, quarterly-earnings-call triumph.",
-  "duration": 9.36,
+  "duration": 8.88,
   "sample_rate": 24000,
-  "peak": 0.853,
+  "peak": 0.686,
   "clipping_suspect": false,
-  "asr": "最终进进倾巢而出。分析师说：“守望者已经动用最后的储备了，这就是一个盈利季度该有的样子。”",
-  "asr_similarity": 0.974,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.28,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -3.27,
+    "gain_db": 1.97,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -19.97,
     "peak_bound": false
   },
-  "words_for": "23c62d6a1f7fa6b7/wordtiming-v1",
+  "asr": "最终进进，倾巢而出。分析师说：“守望者已经动用最后的储备了，这就是一个盈利季度该有的样子。”",
+  "asr_similarity": 0.974,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,29 +39,29 @@
       "text": "最",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.4,
-      "endS": 0.64
+      "startS": 0.16,
+      "endS": 0.32
     },
     {
       "text": "终",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.64,
-      "endS": 0.88
+      "startS": 0.32,
+      "endS": 0.48
     },
     {
       "text": "进",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.88,
-      "endS": 1.12
+      "startS": 0.48,
+      "endS": 0.72
     },
     {
       "text": "近",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 1.12,
-      "endS": 1.44
+      "startS": 0.72,
+      "endS": 0.96
     },
     {
       "text": "倾",
@@ -76,55 +75,55 @@
       "charStart": 6,
       "charEnd": 7,
       "startS": 1.76,
-      "endS": 2.0
+      "endS": 1.92
     },
     {
       "text": "而",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 2.0,
-      "endS": 2.16
+      "startS": 1.92,
+      "endS": 2.08
     },
     {
       "text": "出",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 2.16,
-      "endS": 2.32
+      "startS": 2.08,
+      "endS": 2.4
     },
     {
       "text": "分",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 2.96,
+      "endS": 3.2
     },
     {
       "text": "析",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 3.2,
+      "endS": 3.28
     },
     {
       "text": "师",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 3.28,
+      "endS": 3.44
     },
     {
       "text": "说",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 3.52,
+      "startS": 3.44,
       "endS": 3.84
     },
     {
       "text": "守",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 4.0,
+      "startS": 4.08,
       "endS": 4.32
     },
     {
@@ -139,13 +138,13 @@
       "charStart": 17,
       "charEnd": 18,
       "startS": 4.48,
-      "endS": 4.72
+      "endS": 4.64
     },
     {
       "text": "已",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 4.72,
+      "startS": 4.64,
       "endS": 4.8
     },
     {
@@ -153,161 +152,162 @@
       "charStart": 19,
       "charEnd": 20,
       "startS": 4.8,
-      "endS": 5.04
+      "endS": 4.96
     },
     {
       "text": "动",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 5.04,
-      "endS": 5.2
+      "startS": 4.96,
+      "endS": 5.12
     },
     {
       "text": "用",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 5.2,
-      "endS": 5.36
+      "startS": 5.12,
+      "endS": 5.2
     },
     {
       "text": "最",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 5.36,
-      "endS": 5.6
+      "startS": 5.2,
+      "endS": 5.36
     },
     {
       "text": "后",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 5.6,
-      "endS": 5.76
+      "startS": 5.36,
+      "endS": 5.6
     },
     {
       "text": "的",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 5.6,
+      "endS": 5.68
     },
     {
       "text": "储",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 5.92,
-      "endS": 6.16
+      "startS": 5.68,
+      "endS": 5.84
     },
     {
       "text": "备",
       "charStart": 26,
       "charEnd": 27,
-      "startS": 6.16,
-      "endS": 6.32
+      "startS": 5.84,
+      "endS": 6.08
     },
     {
       "text": "了",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 6.32,
-      "endS": 6.56
+      "startS": 6.08,
+      "endS": 6.24
     },
     {
       "text": "这",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "就",
       "charStart": 30,
       "charEnd": 31,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 6.88,
+      "endS": 6.96
     },
     {
       "text": "是",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 7.2,
-      "endS": 7.28
+      "startS": 6.96,
+      "endS": 7.12
     },
     {
       "text": "一",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.28,
-      "endS": 7.36
+      "startS": 7.12,
+      "endS": 7.2
     },
     {
       "text": "个",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 7.36,
-      "endS": 7.52
+      "startS": 7.2,
+      "endS": 7.28
     },
     {
       "text": "盈",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 7.52,
-      "endS": 7.76
+      "startS": 7.28,
+      "endS": 7.52
     },
     {
       "text": "利",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 7.76,
-      "endS": 7.84
+      "startS": 7.52,
+      "endS": 7.6
     },
     {
       "text": "季",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.84,
-      "endS": 8.0
+      "startS": 7.6,
+      "endS": 7.76
     },
     {
       "text": "度",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 8.0,
-      "endS": 8.24
+      "startS": 7.84,
+      "endS": 7.92
     },
     {
       "text": "该",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.24,
-      "endS": 8.4
+      "startS": 7.92,
+      "endS": 8.08
     },
     {
       "text": "有",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 8.4,
-      "endS": 8.64
+      "startS": 8.08,
+      "endS": 8.24
     },
     {
       "text": "的",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.64,
-      "endS": 8.72
+      "startS": 8.24,
+      "endS": 8.32
     },
     {
       "text": "样",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 8.72,
-      "endS": 8.96
+      "startS": 8.32,
+      "endS": 8.56
     },
     {
       "text": "子",
       "charStart": 42,
       "charEnd": 43,
-      "startS": 8.96,
-      "endS": 9.2
+      "startS": 8.56,
+      "endS": 8.8
     }
-  ]
+  ],
+  "words_for": "6e2c561ec339a246/wordtiming-v1"
 }

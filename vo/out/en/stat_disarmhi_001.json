@@ -1,0 +1,173 @@
+{
+  "hash": "45161c50a41386fb",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_disarmhi_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Quick observation: most of your targets are leaving with their ships. Is that a strategy? It's a lower-paying strategy.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Careful, curious, then the pay note very quickly.",
+  "duration": 7.68,
+  "sample_rate": 24000,
+  "peak": 0.813,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.7,
+    "gain_db": 2.58,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.58,
+    "peak_bound": false
+  },
+  "asr": "Quick observation: Most of your targets are leaving with their ships. Is that a strategy? It's a lower-paying strategy.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Quick",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "observation",
+      "charStart": 6,
+      "charEnd": 17,
+      "startS": 0.88,
+      "endS": 1.6
+    },
+    {
+      "text": "most",
+      "charStart": 19,
+      "charEnd": 23,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "of",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "your",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "targets",
+      "charStart": 32,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "are",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "leaving",
+      "charStart": 44,
+      "charEnd": 51,
+      "startS": 3.12,
+      "endS": 3.44
+    },
+    {
+      "text": "with",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "their",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "ships",
+      "charStart": 63,
+      "charEnd": 68,
+      "startS": 3.68,
+      "endS": 4.24
+    },
+    {
+      "text": "Is",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "that",
+      "charStart": 73,
+      "charEnd": 77,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "a",
+      "charStart": 78,
+      "charEnd": 79,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "strategy",
+      "charStart": 80,
+      "charEnd": 88,
+      "startS": 5.04,
+      "endS": 5.52
+    },
+    {
+      "text": "It's",
+      "charStart": 90,
+      "charEnd": 94,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "a",
+      "charStart": 95,
+      "charEnd": 96,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "lower-paying",
+      "charStart": 97,
+      "charEnd": 109,
+      "startS": 6.32,
+      "endS": 7.04
+    },
+    {
+      "text": "strategy",
+      "charStart": 110,
+      "charEnd": 118,
+      "startS": 7.04,
+      "endS": 7.6
+    }
+  ],
+  "words_for": "45161c50a41386fb/wordtiming-v1"
+}

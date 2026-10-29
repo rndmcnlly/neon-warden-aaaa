@@ -1,0 +1,138 @@
+{
+  "hash": "50f4c468de0f2119",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_shipfine_008",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Casco nuevo, el mismo tú! El casco viejo ahora es una oportunidad de aprendizaje.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Upbeat welcome back, like a new semester.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.608,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.32,
+    "gain_db": 3.02,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.02,
+    "peak_bound": false
+  },
+  "asr": "Casco nuevo, el mismo tú, el casco viejo ahora es una oportunidad de aprendizaje.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Casco",
+      "charStart": 1,
+      "charEnd": 6,
+      "startS": 0.24,
+      "endS": 0.56
+    },
+    {
+      "text": "nuevo",
+      "charStart": 7,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 1.04
+    },
+    {
+      "text": "el",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "mismo",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "tú",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "El",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "casco",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "viejo",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "ahora",
+      "charStart": 42,
+      "charEnd": 47,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "es",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "una",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "oportunidad",
+      "charStart": 55,
+      "charEnd": 66,
+      "startS": 3.92,
+      "endS": 4.48
+    },
+    {
+      "text": "de",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "aprendizaje",
+      "charStart": 70,
+      "charEnd": 81,
+      "startS": 4.56,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "50f4c468de0f2119/wordtiming-v1"
+}

@@ -1,33 +1,32 @@
 {
-  "hash": "fb940bbf587d57e7",
+  "hash": "ae79ea2a106c3ae0",
   "mode": "clone",
   "request": {
     "id": "es__tut_autofire_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Si mantener presionado disparar por mucho tiempo te resulta incómodo, el disparo automático está en los ajustes de accesibilidad. La Autoridad de Rutas quiere tus manos sanas y productivas.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Genuinely helpful, then corporate on the last sentence.",
-  "duration": 13.04,
+  "duration": 11.04,
   "sample_rate": 24000,
-  "peak": 0.846,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Si mantener presionado disparar por mucho tiempo, te resulta incómodo. El disparo automático está en los ajustes de accesibilidad. La autoridad de rutas quiere tus manos sanas y productivas.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.41,
-    "gain_db": 0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 3.99,
+    "limited_db": 0.46,
+    "measured_before_lufs": -21.99,
     "peak_bound": false
   },
-  "words_for": "fb940bbf587d57e7/wordtiming-v1",
+  "asr": "Si mantener presionado disparar por mucho tiempo te resulta incómodo, el disparo automático está en los ajustes de accesibilidad. La autoridad de rutas quiere tus manos sanas y productivas.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,21 +39,21 @@
       "text": "Si",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.48,
+      "endS": 0.64
     },
     {
       "text": "mantener",
       "charStart": 3,
       "charEnd": 11,
-      "startS": 0.4,
-      "endS": 0.88
+      "startS": 0.64,
+      "endS": 1.04
     },
     {
       "text": "presionado",
       "charStart": 12,
       "charEnd": 22,
-      "startS": 0.96,
+      "startS": 1.04,
       "endS": 1.6
     },
     {
@@ -69,175 +68,176 @@
       "charStart": 32,
       "charEnd": 35,
       "startS": 2.08,
-      "endS": 2.32
+      "endS": 2.24
     },
     {
       "text": "mucho",
       "charStart": 36,
       "charEnd": 41,
-      "startS": 2.32,
-      "endS": 2.72
+      "startS": 2.24,
+      "endS": 2.48
     },
     {
       "text": "tiempo",
       "charStart": 42,
       "charEnd": 48,
-      "startS": 2.72,
-      "endS": 3.2
+      "startS": 2.48,
+      "endS": 2.8
     },
     {
       "text": "te",
       "charStart": 49,
       "charEnd": 51,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 2.8,
+      "endS": 2.88
     },
     {
       "text": "resulta",
       "charStart": 52,
       "charEnd": 59,
-      "startS": 3.36,
-      "endS": 3.76
+      "startS": 2.88,
+      "endS": 3.28
     },
     {
       "text": "incómodo",
       "charStart": 60,
       "charEnd": 68,
-      "startS": 3.92,
-      "endS": 4.72
+      "startS": 3.28,
+      "endS": 3.84
     },
     {
       "text": "el",
       "charStart": 70,
       "charEnd": 72,
-      "startS": 5.12,
-      "endS": 5.28
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "disparo",
       "charStart": 73,
       "charEnd": 80,
-      "startS": 5.28,
-      "endS": 5.68
+      "startS": 4.32,
+      "endS": 4.72
     },
     {
       "text": "automático",
       "charStart": 81,
       "charEnd": 91,
-      "startS": 5.84,
-      "endS": 6.48
+      "startS": 4.72,
+      "endS": 5.28
     },
     {
       "text": "está",
       "charStart": 92,
       "charEnd": 96,
-      "startS": 6.48,
-      "endS": 6.88
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "en",
       "charStart": 97,
       "charEnd": 99,
-      "startS": 6.96,
-      "endS": 7.04
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "los",
       "charStart": 100,
       "charEnd": 103,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 5.6,
+      "endS": 5.68
     },
     {
       "text": "ajustes",
       "charStart": 104,
       "charEnd": 111,
-      "startS": 7.2,
-      "endS": 7.68
+      "startS": 5.68,
+      "endS": 6.16
     },
     {
       "text": "de",
       "charStart": 112,
       "charEnd": 114,
-      "startS": 7.68,
-      "endS": 7.84
+      "startS": 6.16,
+      "endS": 6.24
     },
     {
       "text": "accesibilidad",
       "charStart": 115,
       "charEnd": 128,
-      "startS": 7.84,
-      "endS": 8.88
+      "startS": 6.24,
+      "endS": 7.04
     },
     {
       "text": "La",
       "charStart": 130,
       "charEnd": 132,
-      "startS": 8.88,
-      "endS": 8.96
+      "startS": 7.76,
+      "endS": 7.92
     },
     {
       "text": "Autoridad",
       "charStart": 133,
       "charEnd": 142,
-      "startS": 9.6,
-      "endS": 10.16
+      "startS": 7.92,
+      "endS": 8.32
     },
     {
       "text": "de",
       "charStart": 143,
       "charEnd": 145,
-      "startS": 10.16,
-      "endS": 10.24
+      "startS": 8.32,
+      "endS": 8.48
     },
     {
       "text": "Rutas",
       "charStart": 146,
       "charEnd": 151,
-      "startS": 10.24,
-      "endS": 10.72
+      "startS": 8.48,
+      "endS": 8.96
     },
     {
       "text": "quiere",
       "charStart": 152,
       "charEnd": 158,
-      "startS": 10.8,
-      "endS": 11.04
+      "startS": 8.96,
+      "endS": 9.2
     },
     {
       "text": "tus",
       "charStart": 159,
       "charEnd": 162,
-      "startS": 11.04,
-      "endS": 11.2
+      "startS": 9.2,
+      "endS": 9.36
     },
     {
       "text": "manos",
       "charStart": 163,
       "charEnd": 168,
-      "startS": 11.2,
-      "endS": 11.52
+      "startS": 9.36,
+      "endS": 9.68
     },
     {
       "text": "sanas",
       "charStart": 169,
       "charEnd": 174,
-      "startS": 11.52,
-      "endS": 11.84
+      "startS": 9.68,
+      "endS": 10.08
     },
     {
       "text": "y",
       "charStart": 175,
       "charEnd": 176,
-      "startS": 12.0,
-      "endS": 12.16
+      "startS": 10.16,
+      "endS": 10.24
     },
     {
       "text": "productivas",
       "charStart": 177,
       "charEnd": 188,
-      "startS": 12.16,
-      "endS": 12.96
+      "startS": 10.24,
+      "endS": 10.96
     }
-  ]
+  ],
+  "words_for": "ae79ea2a106c3ae0/wordtiming-v1"
 }

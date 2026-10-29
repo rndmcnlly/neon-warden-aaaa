@@ -1,5 +1,5 @@
 {
-  "hash": "2780c1a9a877e2de",
+  "hash": "9ba2554775a84763",
   "mode": "clone",
   "request": {
     "id": "en__tut_target_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Excellent! Scouts are the Warden's eyes. Every eye you close is one less eye on you.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Proud applause, then a motivational-poster cadence.",
-  "duration": 5.36,
+  "duration": 6.16,
   "sample_rate": 24000,
-  "peak": 0.779,
+  "peak": 0.842,
   "clipping_suspect": false,
-  "asr": "Excellent, scouts are the warden's eyes. Every eye you close is one less eye on you.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.01,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -1.48,
+    "gain_db": 2.39,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.39,
     "peak_bound": false
   },
-  "words_for": "2780c1a9a877e2de/wordtiming-v1",
+  "asr": "Excellent, scouts are the warden's eyes. Every eye you close is one less eye on you.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,113 +39,114 @@
       "text": "Excellent",
       "charStart": 0,
       "charEnd": 9,
-      "startS": 0.24,
-      "endS": 0.8
+      "startS": 0.8,
+      "endS": 1.36
     },
     {
       "text": "Scouts",
       "charStart": 11,
       "charEnd": 17,
-      "startS": 1.04,
-      "endS": 1.52
+      "startS": 1.84,
+      "endS": 2.24
     },
     {
       "text": "are",
       "charStart": 18,
       "charEnd": 21,
-      "startS": 1.52,
-      "endS": 1.68
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "the",
       "charStart": 22,
       "charEnd": 25,
-      "startS": 1.68,
-      "endS": 1.76
+      "startS": 2.32,
+      "endS": 2.48
     },
     {
       "text": "Warden's",
       "charStart": 26,
       "charEnd": 34,
-      "startS": 1.76,
-      "endS": 2.08
+      "startS": 2.48,
+      "endS": 2.88
     },
     {
       "text": "eyes",
       "charStart": 35,
       "charEnd": 39,
-      "startS": 2.4,
-      "endS": 2.64
+      "startS": 2.88,
+      "endS": 3.28
     },
     {
       "text": "Every",
       "charStart": 41,
       "charEnd": 46,
-      "startS": 2.8,
-      "endS": 2.88
+      "startS": 3.84,
+      "endS": 4.16
     },
     {
       "text": "eye",
       "charStart": 47,
       "charEnd": 50,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "you",
       "charStart": 51,
       "charEnd": 54,
-      "startS": 3.36,
-      "endS": 3.44
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "close",
       "charStart": 55,
       "charEnd": 60,
-      "startS": 3.44,
-      "endS": 3.84
+      "startS": 4.4,
+      "endS": 4.8
     },
     {
       "text": "is",
       "charStart": 61,
       "charEnd": 63,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 4.8,
+      "endS": 4.96
     },
     {
       "text": "one",
       "charStart": 64,
       "charEnd": 67,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 4.96,
+      "endS": 5.2
     },
     {
       "text": "less",
       "charStart": 68,
       "charEnd": 72,
-      "startS": 4.24,
-      "endS": 4.48
+      "startS": 5.2,
+      "endS": 5.44
     },
     {
       "text": "eye",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 4.48,
-      "endS": 4.72
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "on",
       "charStart": 77,
       "charEnd": 79,
-      "startS": 4.72,
-      "endS": 4.96
+      "startS": 5.6,
+      "endS": 5.76
     },
     {
       "text": "you",
       "charStart": 80,
       "charEnd": 83,
-      "startS": 4.96,
-      "endS": 5.28
+      "startS": 5.76,
+      "endS": 6.0
     }
-  ]
+  ],
+  "words_for": "9ba2554775a84763/wordtiming-v1"
 }

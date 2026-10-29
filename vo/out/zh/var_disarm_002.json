@@ -1,0 +1,194 @@
+{
+  "hash": "9920e7c2c3c68099",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_disarm_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "你解除了它的武装。它还在飞。这个我得找张表格来填。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Puzzled, flipping through a binder.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.751,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.37,
+    "gain_db": 4.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.07,
+    "peak_bound": false
+  },
+  "asr": "你解除了他的武装，他还在飞。这个我得找张表格来填。",
+  "asr_similarity": 0.909,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "解",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "除",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "了",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "它",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "的",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "武",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "装",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "它",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "还",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "在",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "飞",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "这",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "个",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.84,
+      "endS": 4.32
+    },
+    {
+      "text": "我",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "得",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "找",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "张",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.72,
+      "endS": 4.8
+    },
+    {
+      "text": "表",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "格",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "来",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "填",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.36,
+      "endS": 5.68
+    }
+  ],
+  "words_for": "9920e7c2c3c68099/wordtiming-v1"
+}

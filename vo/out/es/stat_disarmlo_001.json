@@ -1,0 +1,173 @@
+{
+  "hash": "8c72893d26310fcb",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_disarmlo_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Consejo: si le disparas a las piezas de armamento, la nave queda inofensiva. Paga menos. Estoy obligada a mencionarlo.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Compliance notice, read a bit too fast, then sincere.",
+  "duration": 7.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.09,
+    "gain_db": 3.86,
+    "limited_db": 0.79,
+    "measured_before_lufs": -21.86,
+    "peak_bound": false
+  },
+  "asr": "Consejo: si le disparas a las piezas de armamento, la nave queda inofensiva. Paga menos, estoy obligada a mencionarlo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Consejo",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.24,
+      "endS": 0.88
+    },
+    {
+      "text": "si",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "le",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "disparas",
+      "charStart": 15,
+      "charEnd": 23,
+      "startS": 1.6,
+      "endS": 2.08
+    },
+    {
+      "text": "a",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "las",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "piezas",
+      "charStart": 30,
+      "charEnd": 36,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "de",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "armamento",
+      "charStart": 40,
+      "charEnd": 49,
+      "startS": 2.64,
+      "endS": 3.2
+    },
+    {
+      "text": "la",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "nave",
+      "charStart": 54,
+      "charEnd": 58,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "queda",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "inofensiva",
+      "charStart": 65,
+      "charEnd": 75,
+      "startS": 4.08,
+      "endS": 4.8
+    },
+    {
+      "text": "Paga",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "menos",
+      "charStart": 82,
+      "charEnd": 87,
+      "startS": 5.6,
+      "endS": 6.08
+    },
+    {
+      "text": "Estoy",
+      "charStart": 89,
+      "charEnd": 94,
+      "startS": 6.4,
+      "endS": 6.72
+    },
+    {
+      "text": "obligada",
+      "charStart": 95,
+      "charEnd": 103,
+      "startS": 6.72,
+      "endS": 7.04
+    },
+    {
+      "text": "a",
+      "charStart": 104,
+      "charEnd": 105,
+      "startS": 7.04,
+      "endS": 7.12
+    },
+    {
+      "text": "mencionarlo",
+      "charStart": 106,
+      "charEnd": 117,
+      "startS": 7.12,
+      "endS": 7.84
+    }
+  ],
+  "words_for": "8c72893d26310fcb/wordtiming-v1"
+}

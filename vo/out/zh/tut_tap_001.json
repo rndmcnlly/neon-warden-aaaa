@@ -1,30 +1,32 @@
 {
-  "hash": "3f842d3b0f04839c",
+  "hash": "68e2c796e94db448",
   "mode": "clone",
   "request": {
     "id": "zh__tut_tap_001",
     "seed": 11,
     "language": "Chinese",
     "text": "现在讲扳机纪律。轻按一下，会打出一发精确射击。它的冷却稍长，但会准确打到你瞄准的地方。请轻按三次。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 10.4,
+  "duration": 10.32,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.688,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.05,
-    "true_peak_dbtp": -1.1,
-    "gain_db": 4.18,
-    "limited_db": 1.12,
-    "measured_before_lufs": -22.18,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.14,
+    "gain_db": 2.14,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.14,
     "peak_bound": false
   },
+  "asr": "现在讲扳机纪律：轻按一下，会打出一发精确射击。它的冷却稍长，但会准确打到你瞄准的地方。请轻按三次。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,140 +39,140 @@
       "text": "现",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.4
+      "startS": 0.48,
+      "endS": 0.72
     },
     {
       "text": "在",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.4,
-      "endS": 0.56
+      "startS": 0.72,
+      "endS": 0.88
     },
     {
       "text": "讲",
       "charStart": 2,
       "charEnd": 3,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 0.88,
+      "endS": 1.04
     },
     {
       "text": "扳",
       "charStart": 3,
       "charEnd": 4,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 1.04,
+      "endS": 1.2
     },
     {
       "text": "机",
       "charStart": 4,
       "charEnd": 5,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 1.2,
+      "endS": 1.36
     },
     {
       "text": "纪",
       "charStart": 5,
       "charEnd": 6,
-      "startS": 1.28,
-      "endS": 1.44
+      "startS": 1.36,
+      "endS": 1.6
     },
     {
       "text": "律",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.44,
-      "endS": 1.76
+      "startS": 1.6,
+      "endS": 2.0
     },
     {
       "text": "轻",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 2.08,
+      "endS": 2.32
     },
     {
       "text": "按",
       "charStart": 9,
       "charEnd": 10,
       "startS": 2.32,
-      "endS": 2.4
+      "endS": 2.48
     },
     {
       "text": "一",
       "charStart": 10,
       "charEnd": 11,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 2.48,
+      "endS": 2.56
     },
     {
       "text": "下",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 2.56,
+      "endS": 2.88
     },
     {
       "text": "会",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.88,
-      "endS": 3.04
+      "startS": 3.2,
+      "endS": 3.36
     },
     {
       "text": "打",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 3.04,
-      "endS": 3.28
+      "startS": 3.36,
+      "endS": 3.52
     },
     {
       "text": "出",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 3.28,
-      "endS": 3.36
+      "startS": 3.52,
+      "endS": 3.68
     },
     {
       "text": "一",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.36,
-      "endS": 3.52
+      "startS": 3.68,
+      "endS": 3.76
     },
     {
       "text": "发",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.52,
-      "endS": 3.76
+      "startS": 3.76,
+      "endS": 3.92
     },
     {
       "text": "精",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.76,
-      "endS": 4.0
+      "startS": 3.92,
+      "endS": 4.16
     },
     {
       "text": "确",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 4.0,
-      "endS": 4.16
+      "startS": 4.16,
+      "endS": 4.24
     },
     {
       "text": "射",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 4.16,
-      "endS": 4.4
+      "startS": 4.24,
+      "endS": 4.48
     },
     {
       "text": "击",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.4,
+      "startS": 4.48,
       "endS": 4.8
     },
     {
@@ -178,13 +180,13 @@
       "charStart": 23,
       "charEnd": 24,
       "startS": 5.28,
-      "endS": 5.36
+      "endS": 5.44
     },
     {
       "text": "的",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 5.36,
+      "startS": 5.44,
       "endS": 5.52
     },
     {
@@ -199,13 +201,13 @@
       "charStart": 26,
       "charEnd": 27,
       "startS": 5.68,
-      "endS": 5.92
+      "endS": 5.84
     },
     {
       "text": "稍",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.92,
+      "startS": 5.84,
       "endS": 6.08
     },
     {
@@ -220,122 +222,120 @@
       "charStart": 30,
       "charEnd": 31,
       "startS": 6.72,
-      "endS": 6.88
+      "endS": 6.8
     },
     {
       "text": "会",
       "charStart": 31,
       "charEnd": 32,
-      "startS": 6.88,
-      "endS": 7.04
+      "startS": 6.8,
+      "endS": 6.96
     },
     {
       "text": "准",
       "charStart": 32,
       "charEnd": 33,
-      "startS": 7.04,
-      "endS": 7.28
+      "startS": 6.96,
+      "endS": 7.2
     },
     {
       "text": "确",
       "charStart": 33,
       "charEnd": 34,
-      "startS": 7.28,
-      "endS": 7.44
+      "startS": 7.2,
+      "endS": 7.36
     },
     {
       "text": "打",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 7.52,
-      "endS": 7.68
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "到",
       "charStart": 35,
       "charEnd": 36,
-      "startS": 7.68,
-      "endS": 7.76
+      "startS": 7.52,
+      "endS": 7.68
     },
     {
       "text": "你",
       "charStart": 36,
       "charEnd": 37,
-      "startS": 7.76,
-      "endS": 7.92
+      "startS": 7.68,
+      "endS": 7.76
     },
     {
       "text": "瞄",
       "charStart": 37,
       "charEnd": 38,
-      "startS": 7.92,
-      "endS": 8.08
+      "startS": 7.76,
+      "endS": 8.0
     },
     {
       "text": "准",
       "charStart": 38,
       "charEnd": 39,
-      "startS": 8.08,
-      "endS": 8.24
+      "startS": 8.0,
+      "endS": 8.08
     },
     {
       "text": "的",
       "charStart": 39,
       "charEnd": 40,
-      "startS": 8.24,
-      "endS": 8.32
+      "startS": 8.08,
+      "endS": 8.16
     },
     {
       "text": "地",
       "charStart": 40,
       "charEnd": 41,
-      "startS": 8.32,
-      "endS": 8.56
+      "startS": 8.16,
+      "endS": 8.32
     },
     {
       "text": "方",
       "charStart": 41,
       "charEnd": 42,
-      "startS": 8.56,
-      "endS": 8.8
+      "startS": 8.32,
+      "endS": 8.64
     },
     {
       "text": "请",
       "charStart": 43,
       "charEnd": 44,
       "startS": 9.2,
-      "endS": 9.28
+      "endS": 9.36
     },
     {
       "text": "轻",
       "charStart": 44,
       "charEnd": 45,
       "startS": 9.36,
-      "endS": 9.52
+      "endS": 9.6
     },
     {
       "text": "按",
       "charStart": 45,
       "charEnd": 46,
-      "startS": 9.68,
-      "endS": 9.76
+      "startS": 9.6,
+      "endS": 9.68
     },
     {
       "text": "三",
       "charStart": 46,
       "charEnd": 47,
-      "startS": 9.76,
-      "endS": 10.0
+      "startS": 9.68,
+      "endS": 9.92
     },
     {
       "text": "次",
       "charStart": 47,
       "charEnd": 48,
-      "startS": 10.08,
-      "endS": 10.32
+      "startS": 9.92,
+      "endS": 10.24
     }
   ],
-  "words_for": "3f842d3b0f04839c/wordtiming-v1",
-  "asr": "现在讲扳机纪律：轻按一下，会打出一发精确射击。它的冷却稍长，但会准确打到你瞄准的地方。请轻按三次。",
-  "asr_similarity": 1.0
+  "words_for": "68e2c796e94db448/wordtiming-v1"
 }

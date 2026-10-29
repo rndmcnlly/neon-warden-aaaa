@@ -1,0 +1,187 @@
+{
+  "hash": "861584d01203b5a6",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_pickup_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "护盾升起！就像一个拥抱，只不过这个拥抱有免赔额。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Affectionate, then the deductible at speed.",
+  "duration": 4.72,
+  "sample_rate": 24000,
+  "peak": 0.606,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.33,
+    "gain_db": 1.85,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.85,
+    "peak_bound": false
+  },
+  "asr": "护盾升起，就像一个拥抱，只不过这个拥抱有免赔额。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "护",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "盾",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "升",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "起",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "就",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "像",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "一",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "个",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "拥",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "抱",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "只",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "不",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "过",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "这",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "个",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "拥",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "抱",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "有",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "免",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "赔",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "额",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.32,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "861584d01203b5a6/wordtiming-v1"
+}

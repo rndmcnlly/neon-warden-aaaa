@@ -1,0 +1,124 @@
+{
+  "hash": "a10dc6ee9806006f",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_kill_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Lovely shot. That one goes on your record and on your invoice.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Bright compliment, filing it twice.",
+  "duration": 4.32,
+  "sample_rate": 24000,
+  "peak": 0.844,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.43,
+    "gain_db": 1.05,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.05,
+    "peak_bound": false
+  },
+  "asr": "Lovely shot! That one goes on your record and on your invoice.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lovely",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "shot",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "That",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "one",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "goes",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "on",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "your",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "record",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "and",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "on",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "your",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "invoice",
+      "charStart": 54,
+      "charEnd": 61,
+      "startS": 3.68,
+      "endS": 4.24
+    }
+  ],
+  "words_for": "a10dc6ee9806006f/wordtiming-v1"
+}

@@ -1,0 +1,159 @@
+{
+  "hash": "0fd4de8cda0feee1",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_disarmhi_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Your disarm ratio is very high. That's not a criticism. There just isn't a column for it.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Reassuring, a bit lost in a form.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.733,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.66,
+    "gain_db": 3.81,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.81,
+    "peak_bound": false
+  },
+  "asr": "Your disarm ratio is very high. That's not a criticism. There just isn't a column for it.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Your",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "disarm",
+      "charStart": 5,
+      "charEnd": 11,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "ratio",
+      "charStart": 12,
+      "charEnd": 17,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "is",
+      "charStart": 18,
+      "charEnd": 20,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "very",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 1.68,
+      "endS": 2.0
+    },
+    {
+      "text": "high",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 2.0,
+      "endS": 2.4
+    },
+    {
+      "text": "That's",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "not",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "criticism",
+      "charStart": 45,
+      "charEnd": 54,
+      "startS": 3.2,
+      "endS": 3.84
+    },
+    {
+      "text": "There",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "just",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "isn't",
+      "charStart": 67,
+      "charEnd": 72,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "a",
+      "charStart": 73,
+      "charEnd": 74,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "column",
+      "charStart": 75,
+      "charEnd": 81,
+      "startS": 5.12,
+      "endS": 5.52
+    },
+    {
+      "text": "for",
+      "charStart": 82,
+      "charEnd": 85,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "it",
+      "charStart": 86,
+      "charEnd": 88,
+      "startS": 5.76,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "0fd4de8cda0feee1/wordtiming-v1"
+}

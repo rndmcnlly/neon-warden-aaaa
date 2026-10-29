@@ -1,0 +1,117 @@
+{
+  "hash": "b026901c779cc4d4",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_disarm_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Lo desarmaste. Sigue volando. Voy a necesitar un formulario para eso.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Puzzled, flipping through a binder.",
+  "duration": 5.36,
+  "sample_rate": 24000,
+  "peak": 0.768,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.22,
+    "gain_db": 3.41,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.41,
+    "peak_bound": false
+  },
+  "asr": "Lo desarmaste. Sigue volando. Voy a necesitar un formulario para eso.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lo",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "desarmaste",
+      "charStart": 3,
+      "charEnd": 13,
+      "startS": 0.24,
+      "endS": 0.96
+    },
+    {
+      "text": "Sigue",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "volando",
+      "charStart": 21,
+      "charEnd": 28,
+      "startS": 1.92,
+      "endS": 2.48
+    },
+    {
+      "text": "Voy",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "a",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "necesitar",
+      "charStart": 36,
+      "charEnd": 45,
+      "startS": 3.6,
+      "endS": 4.0
+    },
+    {
+      "text": "un",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "formulario",
+      "charStart": 49,
+      "charEnd": 59,
+      "startS": 4.08,
+      "endS": 4.64
+    },
+    {
+      "text": "para",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "eso",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 4.8,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "b026901c779cc4d4/wordtiming-v1"
+}

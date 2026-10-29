@@ -1,33 +1,32 @@
 {
-  "hash": "6bc1270192f0e4d1",
+  "hash": "78f8a4799abbd178",
   "mode": "clone",
   "request": {
     "id": "es__amb_fight_003",
-    "seed": 211,
+    "seed": 11,
     "language": "Spanish",
     "text": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, encouraging, unaware of how it sounds.",
-  "duration": 7.04,
+  "duration": 4.64,
   "sample_rate": 24000,
-  "peak": 0.652,
+  "peak": 0.764,
   "clipping_suspect": false,
-  "asr": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -3.67,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -2.18,
+    "gain_db": 3.93,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -21.93,
     "peak_bound": false
   },
-  "words_for": "6bc1270192f0e4d1/wordtiming-v1",
+  "asr": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,99 +39,100 @@
       "text": "Lo",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.56,
-      "endS": 0.64
+      "startS": 0.08,
+      "endS": 0.16
     },
     {
       "text": "estás",
       "charStart": 3,
       "charEnd": 8,
-      "startS": 0.64,
-      "endS": 0.8
+      "startS": 0.16,
+      "endS": 0.48
     },
     {
       "text": "haciendo",
       "charStart": 9,
       "charEnd": 17,
-      "startS": 1.12,
-      "endS": 1.52
+      "startS": 0.48,
+      "endS": 0.8
     },
     {
       "text": "genial",
       "charStart": 18,
       "charEnd": 24,
-      "startS": 1.52,
-      "endS": 2.24
+      "startS": 0.8,
+      "endS": 1.28
     },
     {
       "text": "Tu",
       "charStart": 26,
       "charEnd": 28,
-      "startS": 2.72,
-      "endS": 2.8
+      "startS": 1.68,
+      "endS": 1.76
     },
     {
       "text": "predecesor",
       "charStart": 29,
       "charEnd": 39,
-      "startS": 2.8,
-      "endS": 3.44
+      "startS": 1.76,
+      "endS": 2.32
     },
     {
       "text": "también",
       "charStart": 40,
       "charEnd": 47,
-      "startS": 3.68,
-      "endS": 4.0
+      "startS": 2.32,
+      "endS": 2.72
     },
     {
       "text": "lo",
       "charStart": 48,
       "charEnd": 50,
-      "startS": 4.16,
-      "endS": 4.24
+      "startS": 2.72,
+      "endS": 2.8
     },
     {
       "text": "estaba",
       "charStart": 51,
       "charEnd": 57,
-      "startS": 4.24,
-      "endS": 4.64
+      "startS": 2.8,
+      "endS": 3.04
     },
     {
       "text": "haciendo",
       "charStart": 58,
       "charEnd": 66,
-      "startS": 4.64,
-      "endS": 5.04
+      "startS": 3.04,
+      "endS": 3.36
     },
     {
       "text": "genial",
       "charStart": 67,
       "charEnd": 73,
-      "startS": 5.04,
-      "endS": 5.36
+      "startS": 3.36,
+      "endS": 3.76
     },
     {
       "text": "en",
       "charStart": 74,
       "charEnd": 76,
-      "startS": 5.6,
-      "endS": 5.68
+      "startS": 3.76,
+      "endS": 3.84
     },
     {
       "text": "este",
       "charStart": 77,
       "charEnd": 81,
-      "startS": 5.68,
-      "endS": 5.92
+      "startS": 3.84,
+      "endS": 4.08
     },
     {
       "text": "punto",
       "charStart": 82,
       "charEnd": 87,
-      "startS": 5.92,
-      "endS": 6.48
+      "startS": 4.08,
+      "endS": 4.48
     }
-  ]
+  ],
+  "words_for": "78f8a4799abbd178/wordtiming-v1"
 }

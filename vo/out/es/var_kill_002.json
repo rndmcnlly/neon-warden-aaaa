@@ -1,0 +1,124 @@
+{
+  "hash": "868390ba24d3039d",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_kill_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Qué buen tiro. Ese va a tu expediente y a tu factura.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Bright compliment, filing it twice.",
+  "duration": 3.52,
+  "sample_rate": 24000,
+  "peak": 0.81,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.82,
+    "gain_db": 5.09,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.09,
+    "peak_bound": false
+  },
+  "asr": "Qué buen tiro, ese va a tu expediente y a tu factura.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Qué",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "buen",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "tiro",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.4,
+      "endS": 0.8
+    },
+    {
+      "text": "Ese",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "va",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "a",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "tu",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "expediente",
+      "charStart": 27,
+      "charEnd": 37,
+      "startS": 1.92,
+      "endS": 2.56
+    },
+    {
+      "text": "y",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "a",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "tu",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "factura",
+      "charStart": 45,
+      "charEnd": 52,
+      "startS": 2.88,
+      "endS": 3.44
+    }
+  ],
+  "words_for": "868390ba24d3039d/wordtiming-v1"
+}

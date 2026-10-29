@@ -1,0 +1,131 @@
+{
+  "hash": "9ed4a1ca0aed7b58",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_kill_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Uy, una embestida! Muy decidido. La defensa no está cubierta, pero muy decidido.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Startled, then admiring, then the policy at speed.",
+  "duration": 6.16,
+  "sample_rate": 24000,
+  "peak": 0.611,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.27,
+    "gain_db": 2.03,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.03,
+    "peak_bound": false
+  },
+  "asr": "Uy, una investida, muy decidido, la defensa no está cubierta, pero muy decidido.",
+  "asr_similarity": 0.923,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Uy",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "una",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "embestida",
+      "charStart": 9,
+      "charEnd": 18,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "Muy",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "decidido",
+      "charStart": 24,
+      "charEnd": 32,
+      "startS": 2.24,
+      "endS": 2.8
+    },
+    {
+      "text": "La",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "defensa",
+      "charStart": 37,
+      "charEnd": 44,
+      "startS": 3.52,
+      "endS": 3.92
+    },
+    {
+      "text": "no",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "está",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "cubierta",
+      "charStart": 53,
+      "charEnd": 61,
+      "startS": 4.16,
+      "endS": 4.8
+    },
+    {
+      "text": "pero",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "muy",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "decidido",
+      "charStart": 72,
+      "charEnd": 80,
+      "startS": 5.6,
+      "endS": 6.08
+    }
+  ],
+  "words_for": "9ed4a1ca0aed7b58/wordtiming-v1"
+}

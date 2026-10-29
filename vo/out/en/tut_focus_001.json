@@ -1,5 +1,5 @@
 {
-  "hash": "25d5727ddf979368",
+  "hash": "6c0af1549c07b119",
   "mode": "clone",
   "request": {
     "id": "en__tut_focus_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Hold focus to fly slowly and precisely. Focus is for threading the gem between bullets. Let's practice. Focus. Good. Still focusing. Great.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Meditation-app calm that keeps slipping back into perkiness.",
-  "duration": 9.76,
+  "duration": 10.48,
   "sample_rate": 24000,
-  "peak": 0.835,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Hold focus to fly slowly and precisely. Focus is for threading the gem between bullets. Let's practice focus. Good, still focusing. Great.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.39,
-    "gain_db": 0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 4.56,
+    "limited_db": 1.04,
+    "measured_before_lufs": -22.56,
     "peak_bound": false
   },
-  "words_for": "25d5727ddf979368/wordtiming-v1",
+  "asr": "Hold focus to fly slowly and precisely. Focus is for threading the gem between bullets. Let's practice. Focus, good, still focusing, great.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,155 +39,156 @@
       "text": "Hold",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.32,
-      "endS": 0.56
+      "startS": 0.72,
+      "endS": 0.96
     },
     {
       "text": "focus",
       "charStart": 5,
       "charEnd": 10,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 0.96,
+      "endS": 1.28
     },
     {
       "text": "to",
       "charStart": 11,
       "charEnd": 13,
-      "startS": 1.12,
-      "endS": 1.2
+      "startS": 1.36,
+      "endS": 1.44
     },
     {
       "text": "fly",
       "charStart": 14,
       "charEnd": 17,
-      "startS": 1.2,
-      "endS": 1.28
+      "startS": 1.44,
+      "endS": 1.68
     },
     {
       "text": "slowly",
       "charStart": 18,
       "charEnd": 24,
-      "startS": 1.44,
-      "endS": 2.08
+      "startS": 1.68,
+      "endS": 2.24
     },
     {
       "text": "and",
       "charStart": 25,
       "charEnd": 28,
-      "startS": 2.32,
-      "endS": 2.48
+      "startS": 2.24,
+      "endS": 2.32
     },
     {
       "text": "precisely",
       "charStart": 29,
       "charEnd": 38,
-      "startS": 2.48,
-      "endS": 3.2
+      "startS": 2.32,
+      "endS": 3.04
     },
     {
       "text": "Focus",
       "charStart": 40,
       "charEnd": 45,
-      "startS": 3.2,
-      "endS": 3.36
+      "startS": 3.52,
+      "endS": 4.0
     },
     {
       "text": "is",
       "charStart": 46,
       "charEnd": 48,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 4.0,
+      "endS": 4.16
     },
     {
       "text": "for",
       "charStart": 49,
       "charEnd": 52,
-      "startS": 3.76,
-      "endS": 3.84
+      "startS": 4.16,
+      "endS": 4.24
     },
     {
       "text": "threading",
       "charStart": 53,
       "charEnd": 62,
-      "startS": 4.0,
-      "endS": 4.32
+      "startS": 4.24,
+      "endS": 4.64
     },
     {
       "text": "the",
       "charStart": 63,
       "charEnd": 66,
-      "startS": 4.32,
-      "endS": 4.4
+      "startS": 4.64,
+      "endS": 4.72
     },
     {
       "text": "gem",
       "charStart": 67,
       "charEnd": 70,
-      "startS": 4.4,
-      "endS": 4.56
+      "startS": 4.72,
+      "endS": 5.04
     },
     {
       "text": "between",
       "charStart": 71,
       "charEnd": 78,
-      "startS": 4.64,
-      "endS": 5.04
+      "startS": 5.04,
+      "endS": 5.36
     },
     {
       "text": "bullets",
       "charStart": 79,
       "charEnd": 86,
-      "startS": 5.04,
-      "endS": 5.52
+      "startS": 5.44,
+      "endS": 5.84
     },
     {
       "text": "Let's",
       "charStart": 88,
       "charEnd": 93,
-      "startS": 5.84,
-      "endS": 6.08
+      "startS": 6.24,
+      "endS": 6.4
     },
     {
       "text": "practice",
       "charStart": 94,
       "charEnd": 102,
       "startS": 6.4,
-      "endS": 6.64
+      "endS": 7.04
     },
     {
       "text": "Focus",
       "charStart": 104,
       "charEnd": 109,
-      "startS": 6.88,
-      "endS": 7.28
+      "startS": 7.44,
+      "endS": 7.92
     },
     {
       "text": "Good",
       "charStart": 111,
       "charEnd": 115,
-      "startS": 7.76,
-      "endS": 8.16
+      "startS": 8.32,
+      "endS": 8.64
     },
     {
       "text": "Still",
       "charStart": 117,
       "charEnd": 122,
-      "startS": 8.16,
-      "endS": 8.4
+      "startS": 9.04,
+      "endS": 9.28
     },
     {
       "text": "focusing",
       "charStart": 123,
       "charEnd": 131,
-      "startS": 8.48,
-      "endS": 8.96
+      "startS": 9.28,
+      "endS": 9.92
     },
     {
       "text": "Great",
       "charStart": 133,
       "charEnd": 138,
-      "startS": 9.36,
-      "endS": 9.68
+      "startS": 10.16,
+      "endS": 10.4
     }
-  ]
+  ],
+  "words_for": "6c0af1549c07b119/wordtiming-v1"
 }

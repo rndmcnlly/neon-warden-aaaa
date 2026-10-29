@@ -1,0 +1,110 @@
+{
+  "hash": "361fd6bbc519e711",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_secstart_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Aquí vamos otra vez! Ya llené tus formularios. Con optimismo.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Cheerful, already holding a clipboard.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 3.86,
+    "limited_db": 2.45,
+    "measured_before_lufs": -21.86,
+    "peak_bound": false
+  },
+  "asr": "Aquí vamos otra vez, ya llené tus formularios, con optimismo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Aquí",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "vamos",
+      "charStart": 6,
+      "charEnd": 11,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "otra",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "vez",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "Ya",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "llené",
+      "charStart": 25,
+      "charEnd": 30,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "tus",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "formularios",
+      "charStart": 35,
+      "charEnd": 46,
+      "startS": 2.32,
+      "endS": 3.04
+    },
+    {
+      "text": "Con",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "optimismo",
+      "charStart": 52,
+      "charEnd": 61,
+      "startS": 3.6,
+      "endS": 4.24
+    }
+  ],
+  "words_for": "361fd6bbc519e711/wordtiming-v1"
+}

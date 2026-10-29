@@ -1,0 +1,166 @@
+{
+  "hash": "07b0aa4849b665f3",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_streak_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Oh, you're on a streak! Don't think about it. I'll think about it. I'm thinking about your bonus.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Whispered excitement, like not wanting to jinx it.",
+  "duration": 6.48,
+  "sample_rate": 24000,
+  "peak": 0.606,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.31,
+    "gain_db": 2.52,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.52,
+    "peak_bound": false
+  },
+  "asr": "Oh, you're on a streak. Don't think about it. I'll think about it. I'm thinking about your bonus.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Oh",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "you're",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "on",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "a",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "streak",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 1.6,
+      "endS": 2.08
+    },
+    {
+      "text": "Don't",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "think",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "about",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "it",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "I'll",
+      "charStart": 46,
+      "charEnd": 50,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "think",
+      "charStart": 51,
+      "charEnd": 56,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "about",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "it",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "I'm",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "thinking",
+      "charStart": 71,
+      "charEnd": 79,
+      "startS": 5.2,
+      "endS": 5.52
+    },
+    {
+      "text": "about",
+      "charStart": 80,
+      "charEnd": 85,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "your",
+      "charStart": 86,
+      "charEnd": 90,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "bonus",
+      "charStart": 91,
+      "charEnd": 96,
+      "startS": 5.92,
+      "endS": 6.4
+    }
+  ],
+  "words_for": "07b0aa4849b665f3/wordtiming-v1"
+}

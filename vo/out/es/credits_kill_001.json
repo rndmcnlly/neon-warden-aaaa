@@ -1,33 +1,32 @@
 {
-  "hash": "ccac736597f3f470",
+  "hash": "d936c96a03b1497d",
   "mode": "clone",
   "request": {
     "id": "es__credits_kill_001",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Hola, y bienvenido a la inducción de la Autoridad de Rutas, piloto cero uno dos tres!",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Exactly the delivery of tut_hello_001, as if for the first time.",
-  "duration": 6.24,
+  "duration": 5.76,
   "sample_rate": 24000,
-  "peak": 0.719,
+  "peak": 0.656,
   "clipping_suspect": false,
-  "asr": "Hola, y bienvenido a la inducción de la Autoridad de Rutas Piloto cero uno dos tres.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.67,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.66,
+    "gain_db": 2.93,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.93,
     "peak_bound": false
   },
-  "words_for": "ccac736597f3f470/wordtiming-v1",
+  "asr": "Hola y bienvenido a la inducción de la autoridad de rutas piloto cero uno dos tres.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,113 +39,114 @@
       "text": "Hola",
       "charStart": 1,
       "charEnd": 5,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 0.08,
+      "endS": 0.48
     },
     {
       "text": "y",
       "charStart": 7,
       "charEnd": 8,
-      "startS": 1.52,
-      "endS": 1.6
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "bienvenido",
       "charStart": 9,
       "charEnd": 19,
-      "startS": 1.6,
-      "endS": 2.24
+      "startS": 0.96,
+      "endS": 1.44
     },
     {
       "text": "a",
       "charStart": 20,
       "charEnd": 21,
-      "startS": 2.32,
-      "endS": 2.4
+      "startS": 1.44,
+      "endS": 1.52
     },
     {
       "text": "la",
       "charStart": 22,
       "charEnd": 24,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 1.52,
+      "endS": 1.6
     },
     {
       "text": "inducción",
       "charStart": 25,
       "charEnd": 34,
-      "startS": 2.48,
-      "endS": 2.88
+      "startS": 1.6,
+      "endS": 2.08
     },
     {
       "text": "de",
       "charStart": 35,
       "charEnd": 37,
-      "startS": 3.2,
-      "endS": 3.28
+      "startS": 2.08,
+      "endS": 2.16
     },
     {
       "text": "la",
       "charStart": 38,
       "charEnd": 40,
-      "startS": 3.28,
-      "endS": 3.36
+      "startS": 2.16,
+      "endS": 2.24
     },
     {
       "text": "Autoridad",
       "charStart": 41,
       "charEnd": 50,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 2.24,
+      "endS": 2.72
     },
     {
       "text": "de",
       "charStart": 51,
       "charEnd": 53,
-      "startS": 3.84,
-      "endS": 3.92
+      "startS": 2.72,
+      "endS": 2.96
     },
     {
       "text": "Rutas",
       "charStart": 54,
       "charEnd": 59,
-      "startS": 3.92,
-      "endS": 4.0
+      "startS": 2.96,
+      "endS": 3.44
     },
     {
       "text": "piloto",
       "charStart": 61,
       "charEnd": 67,
-      "startS": 4.56,
-      "endS": 4.8
+      "startS": 3.68,
+      "endS": 4.16
     },
     {
       "text": "cero",
       "charStart": 68,
       "charEnd": 72,
-      "startS": 4.96,
-      "endS": 5.2
+      "startS": 4.16,
+      "endS": 4.56
     },
     {
       "text": "uno",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 5.44,
-      "endS": 5.52
+      "startS": 4.56,
+      "endS": 4.8
     },
     {
       "text": "dos",
       "charStart": 77,
       "charEnd": 80,
-      "startS": 6.08,
-      "endS": 6.16
+      "startS": 4.8,
+      "endS": 5.04
     },
     {
       "text": "tres",
       "charStart": 81,
       "charEnd": 85,
-      "startS": 6.16,
-      "endS": 6.24
+      "startS": 5.04,
+      "endS": 5.44
     }
-  ]
+  ],
+  "words_for": "d936c96a03b1497d/wordtiming-v1"
 }

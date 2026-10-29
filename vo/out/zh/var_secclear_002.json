@@ -1,0 +1,201 @@
+{
+  "hash": "1472e52144e6a640",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_secclear_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "扇区已肃清。又多一条航道畅通，你的账单上也多了一行。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Warm, then reading the statement.",
+  "duration": 4.88,
+  "sample_rate": 24000,
+  "peak": 0.704,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.04,
+    "gain_db": 2.86,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.86,
+    "peak_bound": false
+  },
+  "asr": "善曲已肃清，又多一条航道畅通，你的账单上也多了一行。",
+  "asr_similarity": 0.913,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "扇",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "区",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "已",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "肃",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "清",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "又",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "多",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "一",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "条",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "航",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "道",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "畅",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "通",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "你",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "的",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "账",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "单",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "上",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "也",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "多",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "了",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "一",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "行",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.56,
+      "endS": 4.8
+    }
+  ],
+  "words_for": "1472e52144e6a640/wordtiming-v1"
+}

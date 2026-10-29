@@ -1,0 +1,180 @@
+{
+  "hash": "58d1500e895a3955",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_deaths_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "又一艘替换飞船。我已经不填表了，直接开始复印。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Brisk admin, a hint of fatigue, still fond.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.667,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.49,
+    "gain_db": 2.11,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.11,
+    "peak_bound": false
+  },
+  "asr": "又一艘替换飞船。我已经不填表了，直接开始复印。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "又",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "一",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "艘",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "替",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "换",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "飞",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "船",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "我",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "已",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "经",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "不",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "填",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "表",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "了",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "直",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "接",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "开",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "始",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "复",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "印",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.92,
+      "endS": 4.16
+    }
+  ],
+  "words_for": "58d1500e895a3955/wordtiming-v1"
+}

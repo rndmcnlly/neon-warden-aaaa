@@ -1,5 +1,5 @@
 {
-  "hash": "2e65747eede03768",
+  "hash": "b006bb49bad19279",
   "mode": "clone",
   "request": {
     "id": "en__tut_continue_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "And if you run out of hull, don't worry! The Lane Authority will requisition a new ship, and onboarding will continue. You will hardly notice.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Breezy reassurance; the last sentence is meant kindly and lands badly.",
-  "duration": 8.24,
+  "duration": 8.56,
   "sample_rate": 24000,
-  "peak": 0.711,
+  "peak": 0.691,
   "clipping_suspect": false,
-  "asr": "And if you run out of hull, don't worry. The lane authority will requisition a new ship, and onboarding will continue. You will hardly notice.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.95,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.2,
+    "gain_db": 0.56,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -18.56,
     "peak_bound": false
   },
-  "words_for": "2e65747eede03768/wordtiming-v1",
+  "asr": "And if you run out of hull, don't worry. The lane authority will requisition a new ship, and onboarding will continue. You will hardly notice.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,98 +39,98 @@
       "text": "And",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.16,
-      "endS": 0.24
+      "startS": 0.56,
+      "endS": 0.64
     },
     {
       "text": "if",
       "charStart": 4,
       "charEnd": 6,
-      "startS": 0.24,
-      "endS": 0.32
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "you",
       "charStart": 7,
       "charEnd": 10,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.8,
+      "endS": 0.88
     },
     {
       "text": "run",
       "charStart": 11,
       "charEnd": 14,
-      "startS": 0.56,
-      "endS": 0.72
+      "startS": 0.88,
+      "endS": 1.04
     },
     {
       "text": "out",
       "charStart": 15,
       "charEnd": 18,
-      "startS": 0.8,
-      "endS": 0.88
+      "startS": 1.04,
+      "endS": 1.2
     },
     {
       "text": "of",
       "charStart": 19,
       "charEnd": 21,
-      "startS": 0.88,
-      "endS": 1.04
+      "startS": 1.2,
+      "endS": 1.36
     },
     {
       "text": "hull",
       "charStart": 22,
       "charEnd": 26,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 1.36,
+      "endS": 1.6
     },
     {
       "text": "don't",
       "charStart": 28,
       "charEnd": 33,
-      "startS": 1.36,
-      "endS": 1.44
+      "startS": 1.68,
+      "endS": 1.92
     },
     {
       "text": "worry",
       "charStart": 34,
       "charEnd": 39,
-      "startS": 1.84,
-      "endS": 2.08
+      "startS": 1.92,
+      "endS": 2.32
     },
     {
       "text": "The",
       "charStart": 41,
       "charEnd": 44,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.8,
+      "endS": 2.88
     },
     {
       "text": "Lane",
       "charStart": 45,
       "charEnd": 49,
-      "startS": 2.72,
-      "endS": 2.88
+      "startS": 2.88,
+      "endS": 3.12
     },
     {
       "text": "Authority",
       "charStart": 50,
       "charEnd": 59,
-      "startS": 3.04,
-      "endS": 3.44
+      "startS": 3.12,
+      "endS": 3.6
     },
     {
       "text": "will",
       "charStart": 60,
       "charEnd": 64,
-      "startS": 3.44,
-      "endS": 3.68
+      "startS": 3.6,
+      "endS": 3.76
     },
     {
       "text": "requisition",
       "charStart": 65,
       "charEnd": 76,
-      "startS": 3.68,
+      "startS": 3.76,
       "endS": 4.32
     },
     {
@@ -146,7 +145,7 @@
       "charStart": 79,
       "charEnd": 82,
       "startS": 4.4,
-      "endS": 4.48
+      "endS": 4.56
     },
     {
       "text": "ship",
@@ -159,49 +158,49 @@
       "text": "and",
       "charStart": 89,
       "charEnd": 92,
-      "startS": 5.2,
-      "endS": 5.28
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "onboarding",
       "charStart": 93,
       "charEnd": 103,
-      "startS": 5.6,
-      "endS": 5.92
+      "startS": 5.44,
+      "endS": 6.0
     },
     {
       "text": "will",
       "charStart": 104,
       "charEnd": 108,
-      "startS": 5.92,
-      "endS": 6.0
+      "startS": 6.0,
+      "endS": 6.08
     },
     {
       "text": "continue",
       "charStart": 109,
       "charEnd": 117,
-      "startS": 6.0,
-      "endS": 6.24
+      "startS": 6.08,
+      "endS": 6.72
     },
     {
       "text": "You",
       "charStart": 119,
       "charEnd": 122,
-      "startS": 6.56,
-      "endS": 6.72
+      "startS": 7.28,
+      "endS": 7.44
     },
     {
       "text": "will",
       "charStart": 123,
       "charEnd": 127,
-      "startS": 6.72,
-      "endS": 6.8
+      "startS": 7.44,
+      "endS": 7.68
     },
     {
       "text": "hardly",
       "charStart": 128,
       "charEnd": 134,
-      "startS": 7.92,
+      "startS": 7.68,
       "endS": 8.0
     },
     {
@@ -209,7 +208,8 @@
       "charStart": 135,
       "charEnd": 141,
       "startS": 8.0,
-      "endS": 8.16
+      "endS": 8.48
     }
-  ]
+  ],
+  "words_for": "b006bb49bad19279/wordtiming-v1"
 }

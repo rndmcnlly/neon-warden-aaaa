@@ -1,5 +1,5 @@
 {
-  "hash": "50d525e8769d0c42",
+  "hash": "2bf8a2605a9ac623",
   "mode": "clone",
   "request": {
     "id": "en__tut_idle_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Take all the time you need. I am timing it, but take all the time you need.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Patient, with a stopwatch audible in the smile.",
-  "duration": 5.2,
+  "duration": 4.88,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.708,
   "clipping_suspect": false,
-  "asr": "Take all the time you need. I am timing it, but take all the time you need.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.32,
-    "true_peak_dbtp": -1.31,
-    "gain_db": 1.69,
-    "limited_db": 1.64,
-    "measured_before_lufs": -19.69,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.99,
+    "gain_db": 1.14,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.14,
     "peak_bound": false
   },
-  "words_for": "50d525e8769d0c42/wordtiming-v1",
+  "asr": "Take all the time you need. I am timing it, but take all the time you need.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,49 +39,49 @@
       "text": "Take",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.24,
-      "endS": 0.48
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "all",
       "charStart": 5,
       "charEnd": 8,
-      "startS": 0.48,
-      "endS": 0.72
+      "startS": 0.88,
+      "endS": 1.04
     },
     {
       "text": "the",
       "charStart": 9,
       "charEnd": 12,
-      "startS": 0.72,
-      "endS": 0.8
+      "startS": 1.04,
+      "endS": 1.12
     },
     {
       "text": "time",
       "charStart": 13,
       "charEnd": 17,
-      "startS": 0.8,
-      "endS": 1.12
+      "startS": 1.12,
+      "endS": 1.44
     },
     {
       "text": "you",
       "charStart": 18,
       "charEnd": 21,
-      "startS": 1.12,
-      "endS": 1.28
+      "startS": 1.44,
+      "endS": 1.52
     },
     {
       "text": "need",
       "charStart": 22,
       "charEnd": 26,
-      "startS": 1.28,
-      "endS": 1.68
+      "startS": 1.52,
+      "endS": 1.84
     },
     {
       "text": "I",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 2.24,
+      "startS": 2.16,
       "endS": 2.32
     },
     {
@@ -90,70 +89,71 @@
       "charStart": 30,
       "charEnd": 32,
       "startS": 2.32,
-      "endS": 2.48
+      "endS": 2.4
     },
     {
       "text": "timing",
       "charStart": 33,
       "charEnd": 39,
-      "startS": 2.48,
-      "endS": 2.88
+      "startS": 2.4,
+      "endS": 2.8
     },
     {
       "text": "it",
       "charStart": 40,
       "charEnd": 42,
-      "startS": 2.88,
-      "endS": 3.12
+      "startS": 2.8,
+      "endS": 2.88
     },
     {
       "text": "but",
       "charStart": 44,
       "charEnd": 47,
       "startS": 3.52,
-      "endS": 3.68
+      "endS": 3.6
     },
     {
       "text": "take",
       "charStart": 48,
       "charEnd": 52,
-      "startS": 3.68,
-      "endS": 3.92
+      "startS": 3.6,
+      "endS": 3.84
     },
     {
       "text": "all",
       "charStart": 53,
       "charEnd": 56,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "the",
       "charStart": 57,
       "charEnd": 60,
-      "startS": 4.24,
-      "endS": 4.32
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "time",
       "charStart": 61,
       "charEnd": 65,
-      "startS": 4.32,
-      "endS": 4.56
+      "startS": 4.08,
+      "endS": 4.32
     },
     {
       "text": "you",
       "charStart": 66,
       "charEnd": 69,
-      "startS": 4.56,
-      "endS": 4.64
+      "startS": 4.32,
+      "endS": 4.4
     },
     {
       "text": "need",
       "charStart": 70,
       "charEnd": 74,
-      "startS": 4.96,
-      "endS": 5.12
+      "startS": 4.4,
+      "endS": 4.8
     }
-  ]
+  ],
+  "words_for": "2bf8a2605a9ac623/wordtiming-v1"
 }

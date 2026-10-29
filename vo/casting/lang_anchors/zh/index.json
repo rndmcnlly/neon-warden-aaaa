@@ -56,5 +56,63 @@
       }
     },
     "pick": "design_s122"
+  },
+  "tutorial_ai": {
+    "en_anchor_f0": 193.8,
+    "test_lines": [
+      "flash_ai_003",
+      "tut_stream_001",
+      "boss_ai_001",
+      "flash_rec_002",
+      "tut_graze_002",
+      "amb_nofire_004",
+      "tut_route_001",
+      "tut_warden_001"
+    ],
+    "anchor": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。",
+    "design": "一位四十多岁的成熟女性，温暖的女低音，像航空机长通过客舱广播说话一样平静从容，中低音调，真诚可靠，带有温和的机构式关怀，专业清晰的吐字。说标准普通话。",
+    "candidates": {
+      "current": {
+        "mean": 0.851,
+        "min": 0.5
+      },
+      "bootstrap_s11": {
+        "method": "bootstrap",
+        "seed": 11,
+        "mean": 0.99,
+        "min": 0.923,
+        "anchor_asr": 1.0,
+        "anchor_f0": 180.8,
+        "f0_ratio": 0.933
+      },
+      "bootstrap_s111": {
+        "method": "bootstrap",
+        "seed": 111,
+        "mean": 0.974,
+        "min": 0.917,
+        "anchor_asr": 1.0,
+        "anchor_f0": 181.9,
+        "f0_ratio": 0.939
+      },
+      "design_s11": {
+        "method": "design",
+        "seed": 11,
+        "mean": 0.99,
+        "min": 0.923,
+        "anchor_asr": 1.0,
+        "anchor_f0": 197.2,
+        "f0_ratio": 1.018
+      },
+      "design_s111": {
+        "method": "design",
+        "seed": 111,
+        "mean": 0.985,
+        "min": 0.917,
+        "anchor_asr": 1.0,
+        "anchor_f0": 177.7,
+        "f0_ratio": 0.917
+      }
+    },
+    "pick": "design_s11"
   }
 }

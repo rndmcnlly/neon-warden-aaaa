@@ -1,0 +1,208 @@
+{
+  "hash": "a25921ea3177af50",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_mist_003",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Cada bala que va a la neblina es una bala que no podemos cobrar. Solo lo menciono porque me importa. Tú. Y las balas.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "HR-soft, the care sincere, the rounds also sincere.",
+  "duration": 7.6,
+  "sample_rate": 24000,
+  "peak": 0.757,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.24,
+    "gain_db": 3.09,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.09,
+    "peak_bound": false
+  },
+  "asr": "Cada bala que va la neblina es una bala que no podemos cobrar. Solo lo menciono porque me importa tú y las balas.",
+  "asr_similarity": 0.979,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Cada",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "bala",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "que",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "va",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "a",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "la",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "neblina",
+      "charStart": 22,
+      "charEnd": 29,
+      "startS": 1.2,
+      "endS": 1.68
+    },
+    {
+      "text": "es",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "una",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "bala",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "que",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "no",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "podemos",
+      "charStart": 49,
+      "charEnd": 56,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "cobrar",
+      "charStart": 57,
+      "charEnd": 63,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "Solo",
+      "charStart": 65,
+      "charEnd": 69,
+      "startS": 4.0,
+      "endS": 4.4
+    },
+    {
+      "text": "lo",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "menciono",
+      "charStart": 73,
+      "charEnd": 81,
+      "startS": 4.48,
+      "endS": 4.96
+    },
+    {
+      "text": "porque",
+      "charStart": 82,
+      "charEnd": 88,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "me",
+      "charStart": 89,
+      "charEnd": 91,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "importa",
+      "charStart": 92,
+      "charEnd": 99,
+      "startS": 5.28,
+      "endS": 5.84
+    },
+    {
+      "text": "Tú",
+      "charStart": 101,
+      "charEnd": 103,
+      "startS": 6.24,
+      "endS": 6.48
+    },
+    {
+      "text": "Y",
+      "charStart": 105,
+      "charEnd": 106,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "las",
+      "charStart": 107,
+      "charEnd": 110,
+      "startS": 6.96,
+      "endS": 7.12
+    },
+    {
+      "text": "balas",
+      "charStart": 111,
+      "charEnd": 116,
+      "startS": 7.12,
+      "endS": 7.6
+    }
+  ],
+  "words_for": "a25921ea3177af50/wordtiming-v1"
+}

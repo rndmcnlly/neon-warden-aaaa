@@ -1,5 +1,5 @@
 {
-  "hash": "ae7cb8fa07198220",
+  "hash": "61020bbf0f5a0603",
   "mode": "clone",
   "request": {
     "id": "en__rec_ai_001",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "Salvage identified: flight recorder, Pilot zero one two one. It is marked closed. It is still transmitting.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, reading a status that does not make sense to her.",
-  "duration": 7.52,
+  "duration": 7.84,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.875,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.06,
-    "true_peak_dbtp": -1.21,
-    "gain_db": 4.97,
-    "limited_db": 0.85,
-    "measured_before_lufs": -22.97,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.14,
+    "gain_db": 2.8,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.8,
     "peak_bound": false
   },
+  "asr": "Salvage identified, flight recorder, pilot zero one two one. It is marked closed. It is still transmitting.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,123 +39,121 @@
       "text": "Salvage",
       "charStart": 0,
       "charEnd": 7,
-      "startS": 0.16,
-      "endS": 0.64
+      "startS": 0.64,
+      "endS": 1.2
     },
     {
       "text": "identified",
       "charStart": 8,
       "charEnd": 18,
-      "startS": 0.64,
-      "endS": 1.36
+      "startS": 1.2,
+      "endS": 1.84
     },
     {
       "text": "flight",
       "charStart": 20,
       "charEnd": 26,
-      "startS": 1.52,
-      "endS": 1.84
+      "startS": 2.32,
+      "endS": 2.64
     },
     {
       "text": "recorder",
       "charStart": 27,
       "charEnd": 35,
-      "startS": 1.84,
-      "endS": 2.4
+      "startS": 2.64,
+      "endS": 3.2
     },
     {
       "text": "Pilot",
       "charStart": 37,
       "charEnd": 42,
-      "startS": 2.56,
-      "endS": 3.04
+      "startS": 3.52,
+      "endS": 3.84
     },
     {
       "text": "zero",
       "charStart": 43,
       "charEnd": 47,
-      "startS": 3.04,
-      "endS": 3.36
+      "startS": 3.84,
+      "endS": 4.08
     },
     {
       "text": "one",
       "charStart": 48,
       "charEnd": 51,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 4.08,
+      "endS": 4.32
     },
     {
       "text": "two",
       "charStart": 52,
       "charEnd": 55,
-      "startS": 3.6,
-      "endS": 3.84
+      "startS": 4.32,
+      "endS": 4.56
     },
     {
       "text": "one",
       "charStart": 56,
       "charEnd": 59,
-      "startS": 3.84,
-      "endS": 4.16
+      "startS": 4.56,
+      "endS": 4.88
     },
     {
       "text": "It",
       "charStart": 61,
       "charEnd": 63,
-      "startS": 4.48,
-      "endS": 4.64
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "is",
       "charStart": 64,
       "charEnd": 66,
-      "startS": 4.64,
-      "endS": 4.72
+      "startS": 5.44,
+      "endS": 5.6
     },
     {
       "text": "marked",
       "charStart": 67,
       "charEnd": 73,
-      "startS": 4.72,
-      "endS": 5.12
+      "startS": 5.6,
+      "endS": 5.92
     },
     {
       "text": "closed",
       "charStart": 74,
       "charEnd": 80,
-      "startS": 5.12,
-      "endS": 5.68
+      "startS": 5.92,
+      "endS": 6.4
     },
     {
       "text": "It",
       "charStart": 82,
       "charEnd": 84,
-      "startS": 5.68,
-      "endS": 5.84
+      "startS": 6.64,
+      "endS": 6.72
     },
     {
       "text": "is",
       "charStart": 85,
       "charEnd": 87,
-      "startS": 5.84,
-      "endS": 5.92
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "still",
       "charStart": 88,
       "charEnd": 93,
-      "startS": 5.92,
-      "endS": 6.24
+      "startS": 6.88,
+      "endS": 7.12
     },
     {
       "text": "transmitting",
       "charStart": 94,
       "charEnd": 106,
-      "startS": 6.24,
-      "endS": 6.96
+      "startS": 7.12,
+      "endS": 7.84
     }
   ],
-  "words_for": "ae7cb8fa07198220/wordtiming-v1",
-  "asr": "Salvage identified flight recorder pilot zero one two one. It is marked closed. It is still transmitting.",
-  "asr_similarity": 1.0
+  "words_for": "61020bbf0f5a0603/wordtiming-v1"
 }

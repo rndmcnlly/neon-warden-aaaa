@@ -1,5 +1,5 @@
 {
-  "hash": "a288237fef7732ec",
+  "hash": "8fa18015042f189c",
   "mode": "clone",
   "request": {
     "id": "en__boss_pac_ai_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Pilot, your weapon shows no activity during a contracted engagement. This has been escalated.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, compliance-officer calm.",
-  "duration": 7.04,
+  "duration": 5.84,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Pilot, your weapon shows no activity during a contracted engagement. This has been escalated.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
-    "true_peak_dbtp": -1.27,
-    "gain_db": 0.09,
-    "limited_db": 0.04,
-    "measured_before_lufs": -18.09,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.44,
+    "gain_db": 2.91,
+    "limited_db": 0.85,
+    "measured_before_lufs": -20.91,
     "peak_bound": false
   },
-  "words_for": "a288237fef7732ec/wordtiming-v1",
+  "asr": "Pilot, your weapon shows no activity during a contracted engagement. This has been escalated.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,99 +39,100 @@
       "text": "Pilot",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.72,
-      "endS": 1.28
+      "startS": 0.64,
+      "endS": 1.2
     },
     {
       "text": "your",
       "charStart": 7,
       "charEnd": 11,
-      "startS": 1.76,
-      "endS": 1.84
+      "startS": 1.52,
+      "endS": 1.6
     },
     {
       "text": "weapon",
       "charStart": 12,
       "charEnd": 18,
-      "startS": 1.92,
-      "endS": 2.24
+      "startS": 1.6,
+      "endS": 1.92
     },
     {
       "text": "shows",
       "charStart": 19,
       "charEnd": 24,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 1.92,
+      "endS": 2.24
     },
     {
       "text": "no",
       "charStart": 25,
       "charEnd": 27,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "activity",
       "charStart": 28,
       "charEnd": 36,
-      "startS": 2.88,
-      "endS": 3.36
+      "startS": 2.4,
+      "endS": 2.88
     },
     {
       "text": "during",
       "charStart": 37,
       "charEnd": 43,
-      "startS": 3.36,
-      "endS": 3.6
+      "startS": 2.88,
+      "endS": 3.04
     },
     {
       "text": "a",
       "charStart": 44,
       "charEnd": 45,
-      "startS": 3.6,
-      "endS": 3.68
+      "startS": 3.04,
+      "endS": 3.12
     },
     {
       "text": "contracted",
       "charStart": 46,
       "charEnd": 56,
-      "startS": 3.68,
-      "endS": 4.4
+      "startS": 3.12,
+      "endS": 3.76
     },
     {
       "text": "engagement",
       "charStart": 57,
       "charEnd": 67,
-      "startS": 4.4,
-      "endS": 5.04
+      "startS": 3.76,
+      "endS": 4.32
     },
     {
       "text": "This",
       "charStart": 69,
       "charEnd": 73,
-      "startS": 5.44,
-      "endS": 5.76
+      "startS": 4.72,
+      "endS": 4.96
     },
     {
       "text": "has",
       "charStart": 74,
       "charEnd": 77,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 4.96,
+      "endS": 5.04
     },
     {
       "text": "been",
       "charStart": 78,
       "charEnd": 82,
-      "startS": 5.92,
-      "endS": 6.16
+      "startS": 5.04,
+      "endS": 5.2
     },
     {
       "text": "escalated",
       "charStart": 83,
       "charEnd": 92,
-      "startS": 6.16,
-      "endS": 6.88
+      "startS": 5.2,
+      "endS": 5.84
     }
-  ]
+  ],
+  "words_for": "8fa18015042f189c/wordtiming-v1"
 }

@@ -1,5 +1,5 @@
 {
-  "hash": "d8cfae7263190b84",
+  "hash": "9dd0e2b640b63944",
   "mode": "clone",
   "request": {
     "id": "en__pac_end_004",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Connection unstable. Pilot zero one two two, if you return for recall now, your full payment will be honored.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, weak signal, still smiling, an offer read off a card.",
-  "duration": 7.68,
+  "duration": 7.52,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.88,
   "clipping_suspect": false,
-  "asr": "Connection unstable. Pilot zero one two two. If you return for recall now, your full payment will be honored.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
+    "lufs": -18.0,
     "true_peak_dbtp": -1.1,
-    "gain_db": 0.64,
-    "limited_db": 0.59,
-    "measured_before_lufs": -18.64,
+    "gain_db": 2.75,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.75,
     "peak_bound": false
   },
-  "words_for": "d8cfae7263190b84/wordtiming-v1",
+  "asr": "Connection unstable. Pilot zero one two two. If you return for recall now, your full payment will be honored.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,134 +39,135 @@
       "text": "Connection",
       "charStart": 0,
       "charEnd": 10,
-      "startS": 0.24,
-      "endS": 0.72
+      "startS": 0.64,
+      "endS": 1.04
     },
     {
       "text": "unstable",
       "charStart": 11,
       "charEnd": 19,
-      "startS": 0.96,
-      "endS": 1.52
+      "startS": 1.12,
+      "endS": 1.76
     },
     {
       "text": "Pilot",
       "charStart": 21,
       "charEnd": 26,
-      "startS": 2.08,
-      "endS": 2.24
+      "startS": 2.32,
+      "endS": 2.72
     },
     {
       "text": "zero",
       "charStart": 27,
       "charEnd": 31,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 2.72,
+      "endS": 3.04
     },
     {
       "text": "one",
       "charStart": 32,
       "charEnd": 35,
-      "startS": 2.8,
-      "endS": 3.12
+      "startS": 3.04,
+      "endS": 3.36
     },
     {
       "text": "two",
       "charStart": 36,
       "charEnd": 39,
-      "startS": 3.12,
-      "endS": 3.36
+      "startS": 3.36,
+      "endS": 3.52
     },
     {
       "text": "two",
       "charStart": 40,
       "charEnd": 43,
-      "startS": 3.36,
-      "endS": 3.76
+      "startS": 3.52,
+      "endS": 3.92
     },
     {
       "text": "if",
       "charStart": 45,
       "charEnd": 47,
-      "startS": 4.08,
-      "endS": 4.24
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "you",
       "charStart": 48,
       "charEnd": 51,
-      "startS": 4.24,
-      "endS": 4.32
+      "startS": 4.4,
+      "endS": 4.48
     },
     {
       "text": "return",
       "charStart": 52,
       "charEnd": 58,
-      "startS": 4.32,
-      "endS": 4.64
+      "startS": 4.48,
+      "endS": 4.88
     },
     {
       "text": "for",
       "charStart": 59,
       "charEnd": 62,
-      "startS": 4.72,
-      "endS": 4.88
+      "startS": 4.88,
+      "endS": 5.04
     },
     {
       "text": "recall",
       "charStart": 63,
       "charEnd": 69,
-      "startS": 4.88,
-      "endS": 5.28
+      "startS": 5.04,
+      "endS": 5.44
     },
     {
       "text": "now",
       "charStart": 70,
       "charEnd": 73,
-      "startS": 5.36,
-      "endS": 5.68
+      "startS": 5.44,
+      "endS": 5.76
     },
     {
       "text": "your",
       "charStart": 75,
       "charEnd": 79,
-      "startS": 5.92,
-      "endS": 6.08
+      "startS": 6.0,
+      "endS": 6.16
     },
     {
       "text": "full",
       "charStart": 80,
       "charEnd": 84,
-      "startS": 6.08,
-      "endS": 6.24
+      "startS": 6.16,
+      "endS": 6.4
     },
     {
       "text": "payment",
       "charStart": 85,
       "charEnd": 92,
-      "startS": 6.72,
-      "endS": 6.88
+      "startS": 6.4,
+      "endS": 6.8
     },
     {
       "text": "will",
       "charStart": 93,
       "charEnd": 97,
-      "startS": 6.88,
-      "endS": 6.96
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "be",
       "charStart": 98,
       "charEnd": 100,
-      "startS": 6.96,
-      "endS": 7.12
+      "startS": 6.88,
+      "endS": 7.04
     },
     {
       "text": "honored",
       "charStart": 101,
       "charEnd": 108,
-      "startS": 7.36,
-      "endS": 7.6
+      "startS": 7.04,
+      "endS": 7.44
     }
-  ]
+  ],
+  "words_for": "9dd0e2b640b63944/wordtiming-v1"
 }

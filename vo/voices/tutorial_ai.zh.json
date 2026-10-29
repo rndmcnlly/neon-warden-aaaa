@@ -1,0 +1,27 @@
+{
+  "hash": "df7304e0e0b885df",
+  "method": "design",
+  "candidate": "design_s11",
+  "from_anchor": "2a8060a93a011a3c",
+  "request": {
+    "id": "tutorial_ai.zh",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。",
+    "instruct": "一位四十多岁的成熟女性，温暖的女低音，像航空机长通过客舱广播说话一样平静从容，中低音调，真诚可靠，带有温和的机构式关怀，专业清晰的吐字。说标准普通话。"
+  },
+  "duration": 8.0,
+  "sample_rate": 24000,
+  "peak": 0.549,
+  "clipping_suspect": false,
+  "median_f0": 197.2,
+  "audition": {
+    "method": "design",
+    "seed": 11,
+    "mean": 0.99,
+    "min": 0.923,
+    "anchor_asr": 1.0,
+    "anchor_f0": 197.2,
+    "f0_ratio": 1.018
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "hash": "6a83739fe3b6bd34",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_shipfine_005",
+    "seed": 11,
+    "language": "English",
+    "text": "Shield's gone. It did its job, and you're fine. The rental agreement is less fine.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Proud of the shield, then the fine print at speed.",
+  "duration": 5.68,
+  "sample_rate": 24000,
+  "peak": 0.815,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.71,
+    "gain_db": 1.99,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.99,
+    "peak_bound": false
+  },
+  "asr": "Shield's gone. It did its job, and you're fine. The rental agreement is less fine.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Shield's",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "gone",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "It",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "did",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "its",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "job",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.24,
+      "endS": 2.64
+    },
+    {
+      "text": "and",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "you're",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "fine",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 2.88,
+      "endS": 3.44
+    },
+    {
+      "text": "The",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "rental",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "agreement",
+      "charStart": 59,
+      "charEnd": 68,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "is",
+      "charStart": 69,
+      "charEnd": 71,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "less",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "fine",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 5.2,
+      "endS": 5.6
+    }
+  ],
+  "words_for": "6a83739fe3b6bd34/wordtiming-v1"
+}

@@ -57,9 +57,17 @@ ANCHOR_ASR_FLOOR = 0.9
 
 # Per language, per speaker: the anchor line (a translation of the English
 # anchor, so the reference says comparable things) and a design written in
-# that language. tutorial_ai waits for Adam's recast pick (vo/casting/README.md).
+# that language. tutorial_ai uses the recast anchor (vo/casting/tutorial_ai/PICK).
 ANCHORS = {
     "es": {
+        "tutorial_ai": {
+            "anchor": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso "
+                      "del camino. Empecemos con algo sencillo: mover tu nave.",
+            "design": "Una voz femenina adulta y cálida, contralto, de unos cuarenta años, tranquila y sin prisa "
+                      "como una capitana de avión hablando por el intercomunicador de cabina, tono medio-bajo, "
+                      "tranquilizadora y sincera, con calidez institucional y dicción profesional muy clara. "
+                      "Español latinoamericano neutro.",
+        },
         "narrator": {
             "anchor": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. "
                       "Y la promesa que no pudo cumplir.",
@@ -100,6 +108,11 @@ ANCHORS = {
     # Chinese scores well from the English anchors (mean 0.975); only the
     # narrator's one-word line 守望者 kept coming back as "Show wander".
     "zh": {
+        "tutorial_ai": {
+            "anchor": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。",
+            "design": "一位四十多岁的成熟女性，温暖的女低音，像航空机长通过客舱广播说话一样平静从容，"
+                      "中低音调，真诚可靠，带有温和的机构式关怀，专业清晰的吐字。说标准普通话。",
+        },
         "narrator": {
             "anchor": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。",
             "design": "一位五十多岁的男性电影预告片旁白，声音低沉、缓慢、沙哑，疲惫而富有戏剧性，带有长长的停顿和"
@@ -119,7 +132,8 @@ def median_f0(wav: Path) -> float | None:
 def test_lines(script: dict, speaker: str, lang: str) -> list[dict]:
     """The speaker's lowest-scoring current takes in `lang` (from cues.json), worst first."""
     cues = json.loads((VO / "out" / "cues.json").read_text(encoding="utf-8"))["lines"]
-    mine = [ln for ln in script["lines"] if ln["speaker"] == speaker]
+    mine = [ln for ln in script["lines"] if ln["speaker"] == speaker
+            and cues.get(ln["id"], {}).get("langs", {}).get(lang, {}).get("asr_similarity") is not None]
     sim = lambda ln: cues.get(ln["id"], {}).get("langs", {}).get(lang, {}).get("asr_similarity") or 0.0
     return sorted(mine, key=sim)[:N_TEST_LINES]
 

@@ -1,0 +1,215 @@
+{
+  "hash": "6d60e877631c37eb",
+  "mode": "clone",
+  "request": {
+    "id": "zh__var_secclear_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "扇区已肃清！干得漂亮。薪资部已收到通知，正在谨慎地兴奋着。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Delighted, reporting upward.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.688,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.23,
+    "gain_db": 2.39,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.39,
+    "peak_bound": false
+  },
+  "asr": "善曲已肃清，干得漂亮。薪资部已收到通知，正在谨慎地兴奋着。",
+  "asr_similarity": 0.92,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "扇",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "区",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "已",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "肃",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "清",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 1.28
+    },
+    {
+      "text": "干",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "得",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "漂",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "亮",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "薪",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "资",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "部",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "已",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "收",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "到",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "通",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "知",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "正",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "在",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "谨",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "慎",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "地",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "兴",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "奋",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "着",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.6,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "6d60e877631c37eb/wordtiming-v1"
+}

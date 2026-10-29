@@ -1,0 +1,103 @@
+{
+  "hash": "f356635845a213ba",
+  "mode": "clone",
+  "request": {
+    "id": "en__var_resume_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Resuming. Did you hydrate? I'm logging that you hydrated.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Checklist voice, answering for him.",
+  "duration": 4.32,
+  "sample_rate": 24000,
+  "peak": 0.703,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.95,
+    "gain_db": 1.74,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.74,
+    "peak_bound": false
+  },
+  "asr": "Resuming. Did you hydrate? I'm logging that you hydrated.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Resuming",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.56,
+      "endS": 1.2
+    },
+    {
+      "text": "Did",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "you",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "hydrate",
+      "charStart": 18,
+      "charEnd": 25,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "I'm",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "logging",
+      "charStart": 31,
+      "charEnd": 38,
+      "startS": 3.12,
+      "endS": 3.44
+    },
+    {
+      "text": "that",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "you",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "hydrated",
+      "charStart": 48,
+      "charEnd": 56,
+      "startS": 3.76,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "f356635845a213ba/wordtiming-v1"
+}

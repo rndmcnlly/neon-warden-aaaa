@@ -1,5 +1,5 @@
 {
-  "hash": "7414e2e5edc30348",
+  "hash": "452fe4e0b6847282",
   "mode": "clone",
   "request": {
     "id": "en__tut_scan_001",
@@ -7,24 +7,26 @@
     "language": "English",
     "text": "While you rest, your sensor package also sweeps a scanning beam ahead of you. Here is a new hologram. Keep the beam on it until it locks.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
-  "duration": 9.44,
+  "duration": 8.48,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.774,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.02,
-    "true_peak_dbtp": -1.49,
-    "gain_db": 4.93,
-    "limited_db": 0.23,
-    "measured_before_lufs": -22.93,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.22,
+    "gain_db": 2.15,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.15,
     "peak_bound": false
   },
+  "asr": "While you rest, your sensor package also sweeps a scanning beam ahead of you. Here is a new hologram. Keep the beam on it until it locks.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,22 +39,22 @@
       "text": "While",
       "charStart": 0,
       "charEnd": 5,
-      "startS": 0.56,
-      "endS": 0.8
+      "startS": 0.8,
+      "endS": 0.96
     },
     {
       "text": "you",
       "charStart": 6,
       "charEnd": 9,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 0.96,
+      "endS": 1.12
     },
     {
       "text": "rest",
       "charStart": 10,
       "charEnd": 14,
-      "startS": 1.04,
-      "endS": 1.52
+      "startS": 1.12,
+      "endS": 1.44
     },
     {
       "text": "your",
@@ -66,164 +68,162 @@
       "charStart": 21,
       "charEnd": 27,
       "startS": 1.92,
-      "endS": 2.32
+      "endS": 2.24
     },
     {
       "text": "package",
       "charStart": 28,
       "charEnd": 35,
-      "startS": 2.32,
-      "endS": 2.88
+      "startS": 2.24,
+      "endS": 2.64
     },
     {
       "text": "also",
       "charStart": 36,
       "charEnd": 40,
-      "startS": 2.96,
-      "endS": 3.36
+      "startS": 2.64,
+      "endS": 2.88
     },
     {
       "text": "sweeps",
       "charStart": 41,
       "charEnd": 47,
-      "startS": 3.36,
-      "endS": 3.76
+      "startS": 2.88,
+      "endS": 3.2
     },
     {
       "text": "a",
       "charStart": 48,
       "charEnd": 49,
-      "startS": 3.76,
-      "endS": 3.84
+      "startS": 3.2,
+      "endS": 3.28
     },
     {
       "text": "scanning",
       "charStart": 50,
       "charEnd": 58,
-      "startS": 3.84,
-      "endS": 4.32
+      "startS": 3.28,
+      "endS": 3.76
     },
     {
       "text": "beam",
       "charStart": 59,
       "charEnd": 63,
-      "startS": 4.32,
-      "endS": 4.56
+      "startS": 3.76,
+      "endS": 3.92
     },
     {
       "text": "ahead",
       "charStart": 64,
       "charEnd": 69,
-      "startS": 4.56,
-      "endS": 4.8
+      "startS": 3.92,
+      "endS": 4.16
     },
     {
       "text": "of",
       "charStart": 70,
       "charEnd": 72,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "you",
       "charStart": 73,
       "charEnd": 76,
-      "startS": 4.88,
-      "endS": 5.2
+      "startS": 4.32,
+      "endS": 4.56
     },
     {
       "text": "Here",
       "charStart": 78,
       "charEnd": 82,
-      "startS": 5.76,
-      "endS": 5.92
+      "startS": 5.12,
+      "endS": 5.28
     },
     {
       "text": "is",
       "charStart": 83,
       "charEnd": 85,
-      "startS": 6.0,
-      "endS": 6.08
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "a",
       "charStart": 86,
       "charEnd": 87,
-      "startS": 6.08,
-      "endS": 6.16
+      "startS": 5.44,
+      "endS": 5.52
     },
     {
       "text": "new",
       "charStart": 88,
       "charEnd": 91,
-      "startS": 6.4,
-      "endS": 6.48
+      "startS": 5.52,
+      "endS": 5.6
     },
     {
       "text": "hologram",
       "charStart": 92,
       "charEnd": 100,
-      "startS": 6.48,
-      "endS": 7.12
+      "startS": 5.6,
+      "endS": 6.32
     },
     {
       "text": "Keep",
       "charStart": 102,
       "charEnd": 106,
-      "startS": 7.52,
-      "endS": 7.76
+      "startS": 6.8,
+      "endS": 7.04
     },
     {
       "text": "the",
       "charStart": 107,
       "charEnd": 110,
-      "startS": 7.76,
-      "endS": 7.84
+      "startS": 7.04,
+      "endS": 7.12
     },
     {
       "text": "beam",
       "charStart": 111,
       "charEnd": 115,
-      "startS": 7.92,
-      "endS": 8.16
+      "startS": 7.12,
+      "endS": 7.36
     },
     {
       "text": "on",
       "charStart": 116,
       "charEnd": 118,
-      "startS": 8.16,
-      "endS": 8.32
+      "startS": 7.36,
+      "endS": 7.52
     },
     {
       "text": "it",
       "charStart": 119,
       "charEnd": 121,
-      "startS": 8.32,
-      "endS": 8.48
+      "startS": 7.52,
+      "endS": 7.68
     },
     {
       "text": "until",
       "charStart": 122,
       "charEnd": 127,
-      "startS": 8.48,
-      "endS": 8.8
+      "startS": 7.68,
+      "endS": 7.92
     },
     {
       "text": "it",
       "charStart": 128,
       "charEnd": 130,
-      "startS": 8.8,
-      "endS": 8.88
+      "startS": 7.92,
+      "endS": 8.0
     },
     {
       "text": "locks",
       "charStart": 131,
       "charEnd": 136,
-      "startS": 8.88,
-      "endS": 9.44
+      "startS": 8.0,
+      "endS": 8.4
     }
   ],
-  "words_for": "7414e2e5edc30348/wordtiming-v1",
-  "asr": "While you rest, your sensor package also sweeps a scanning beam ahead of you. Here's a new hologram. Keep the beam on it until it locks.",
-  "asr_similarity": 0.943
+  "words_for": "452fe4e0b6847282/wordtiming-v1"
 }

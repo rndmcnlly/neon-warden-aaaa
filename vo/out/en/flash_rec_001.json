@@ -1,5 +1,5 @@
 {
-  "hash": "00f148b508d32989",
+  "hash": "d577210c02638ba9",
   "mode": "clone",
   "request": {
     "id": "en__flash_rec_001",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Recording. Pilot zero one two one. Last Approach. Weapon status: cold.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "Recorded log header, flatter and older than her present self.",
-  "duration": 5.76,
+  "duration": 7.28,
   "sample_rate": 24000,
   "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Recording pilot zero one two one. Last approach. Weapon status cold.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.09,
-    "true_peak_dbtp": -1.08,
-    "gain_db": 1.22,
-    "limited_db": 1.17,
-    "measured_before_lufs": -19.22,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 4.04,
+    "limited_db": 0.29,
+    "measured_before_lufs": -22.04,
     "peak_bound": false
   },
-  "words_for": "00f148b508d32989/wordtiming-v1",
+  "asr": "Recording, pilot zero one two one, last approach, weapon status cold.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,78 +39,79 @@
       "text": "Recording",
       "charStart": 0,
       "charEnd": 9,
-      "startS": 0.16,
-      "endS": 0.72
+      "startS": 0.64,
+      "endS": 1.36
     },
     {
       "text": "Pilot",
       "charStart": 11,
       "charEnd": 16,
-      "startS": 0.72,
-      "endS": 1.28
+      "startS": 1.92,
+      "endS": 2.32
     },
     {
       "text": "zero",
       "charStart": 17,
       "charEnd": 21,
-      "startS": 1.44,
-      "endS": 1.6
+      "startS": 2.32,
+      "endS": 2.72
     },
     {
       "text": "one",
       "charStart": 22,
       "charEnd": 25,
-      "startS": 1.84,
-      "endS": 2.08
+      "startS": 2.72,
+      "endS": 3.04
     },
     {
       "text": "two",
       "charStart": 26,
       "charEnd": 29,
-      "startS": 2.08,
-      "endS": 2.32
+      "startS": 3.04,
+      "endS": 3.2
     },
     {
       "text": "one",
       "charStart": 30,
       "charEnd": 33,
-      "startS": 2.32,
-      "endS": 2.72
+      "startS": 3.2,
+      "endS": 3.68
     },
     {
       "text": "Last",
       "charStart": 35,
       "charEnd": 39,
-      "startS": 2.96,
-      "endS": 3.28
+      "startS": 4.32,
+      "endS": 4.64
     },
     {
       "text": "Approach",
       "charStart": 40,
       "charEnd": 48,
-      "startS": 3.28,
-      "endS": 3.84
+      "startS": 4.64,
+      "endS": 5.2
     },
     {
       "text": "Weapon",
       "charStart": 50,
       "charEnd": 56,
-      "startS": 4.08,
-      "endS": 4.32
+      "startS": 5.52,
+      "endS": 5.92
     },
     {
       "text": "status",
       "charStart": 57,
       "charEnd": 63,
-      "startS": 4.48,
-      "endS": 5.04
+      "startS": 5.92,
+      "endS": 6.48
     },
     {
       "text": "cold",
       "charStart": 65,
       "charEnd": 69,
-      "startS": 5.12,
-      "endS": 5.6
+      "startS": 6.72,
+      "endS": 7.28
     }
-  ]
+  ],
+  "words_for": "d577210c02638ba9/wordtiming-v1"
 }

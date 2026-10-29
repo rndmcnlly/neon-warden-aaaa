@@ -1,0 +1,173 @@
+{
+  "hash": "4ee4664a0741d5a5",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_perfect_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Perfect sector. I'm going to put that on the wall. We don't have a wall. I'm requesting a wall.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Giddy, planning a bulletin board.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.686,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.08,
+    "true_peak_dbtp": -3.27,
+    "gain_db": 2.11,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.11,
+    "peak_bound": false
+  },
+  "asr": "Perfect sector. I'm going to put that on the wall. We don't have a wall. I'm requesting a wall.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Perfect",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "sector",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "I'm",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "going",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "to",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "put",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "that",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "on",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "the",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "wall",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "We",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "don't",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "have",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "a",
+      "charStart": 65,
+      "charEnd": 66,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "wall",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 4.72,
+      "endS": 5.2
+    },
+    {
+      "text": "I'm",
+      "charStart": 73,
+      "charEnd": 76,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "requesting",
+      "charStart": 77,
+      "charEnd": 87,
+      "startS": 5.92,
+      "endS": 6.4
+    },
+    {
+      "text": "a",
+      "charStart": 88,
+      "charEnd": 89,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "wall",
+      "charStart": 90,
+      "charEnd": 94,
+      "startS": 6.48,
+      "endS": 6.88
+    }
+  ],
+  "words_for": "4ee4664a0741d5a5/wordtiming-v1"
+}

@@ -1,33 +1,32 @@
 {
-  "hash": "386fb1a658956435",
+  "hash": "06fcdf158cd0ba66",
   "mode": "clone",
   "request": {
     "id": "es__amb_nofire_002",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "Tu arma sigue fría. Lo estoy anotando. De forma neutral.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, carefully neutral, which is not neutral.",
-  "duration": 4.8,
+  "duration": 4.24,
   "sample_rate": 24000,
-  "peak": 0.738,
+  "peak": 0.774,
   "clipping_suspect": false,
-  "asr": "Tu arma sigue fría, lo estoy en otando, de forma neutral.",
-  "asr_similarity": 0.857,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.61,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -2.22,
+    "gain_db": 4.29,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -22.29,
     "peak_bound": false
   },
-  "words_for": "386fb1a658956435/wordtiming-v1",
+  "asr": "Tu arma sigue fría, lo estoy anotando de forma neutral.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,71 +39,72 @@
       "text": "Tu",
       "charStart": 0,
       "charEnd": 2,
-      "startS": 0.4,
-      "endS": 0.48
+      "startS": 0.08,
+      "endS": 0.24
     },
     {
       "text": "arma",
       "charStart": 3,
       "charEnd": 7,
-      "startS": 0.48,
-      "endS": 0.64
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "sigue",
       "charStart": 8,
       "charEnd": 13,
-      "startS": 0.8,
-      "endS": 1.04
+      "startS": 0.48,
+      "endS": 0.8
     },
     {
       "text": "fría",
       "charStart": 14,
       "charEnd": 18,
-      "startS": 1.04,
-      "endS": 1.6
+      "startS": 0.8,
+      "endS": 1.2
     },
     {
       "text": "Lo",
       "charStart": 20,
       "charEnd": 22,
-      "startS": 1.84,
-      "endS": 2.0
+      "startS": 1.6,
+      "endS": 1.68
     },
     {
       "text": "estoy",
       "charStart": 23,
       "charEnd": 28,
-      "startS": 2.0,
-      "endS": 2.24
+      "startS": 1.68,
+      "endS": 2.0
     },
     {
       "text": "anotando",
       "charStart": 29,
       "charEnd": 37,
-      "startS": 2.4,
-      "endS": 3.12
+      "startS": 2.0,
+      "endS": 2.64
     },
     {
       "text": "De",
       "charStart": 39,
       "charEnd": 41,
-      "startS": 3.36,
-      "endS": 3.44
+      "startS": 3.12,
+      "endS": 3.28
     },
     {
       "text": "forma",
       "charStart": 42,
       "charEnd": 47,
-      "startS": 3.52,
+      "startS": 3.28,
       "endS": 3.6
     },
     {
       "text": "neutral",
       "charStart": 48,
       "charEnd": 55,
-      "startS": 4.4,
-      "endS": 4.56
+      "startS": 3.6,
+      "endS": 4.08
     }
-  ]
+  ],
+  "words_for": "06fcdf158cd0ba66/wordtiming-v1"
 }

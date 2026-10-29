@@ -1,33 +1,32 @@
 {
-  "hash": "639fd2d3d442ced2",
+  "hash": "1027256d553ff11d",
   "mode": "clone",
   "request": {
     "id": "es__tut_idle_001",
-    "seed": 111,
+    "seed": 11,
     "language": "Spanish",
     "text": "Tómate todo el tiempo que necesites. Lo estoy cronometrando, pero tómate todo el tiempo que necesites.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Patient, with a stopwatch audible in the smile.",
-  "duration": 8.24,
+  "duration": 6.48,
   "sample_rate": 24000,
-  "peak": 0.868,
+  "peak": 0.701,
   "clipping_suspect": false,
-  "asr": "Tomate todo el tiempo que necesites. Lo estoy cronometrando, pero tomate todo el tiempo que necesites.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.12,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -3.06,
+    "gain_db": 4.31,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -22.31,
     "peak_bound": false
   },
-  "words_for": "639fd2d3d442ced2/wordtiming-v1",
+  "asr": "Tómate todo el tiempo que necesites. Lo estoy cronometrando, pero tómate todo el tiempo que necesites.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,113 +39,114 @@
       "text": "Tómate",
       "charStart": 0,
       "charEnd": 6,
-      "startS": 0.4,
-      "endS": 0.96
+      "startS": 0.24,
+      "endS": 0.64
     },
     {
       "text": "todo",
       "charStart": 7,
       "charEnd": 11,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 0.64,
+      "endS": 0.88
     },
     {
       "text": "el",
       "charStart": 12,
       "charEnd": 14,
-      "startS": 1.6,
-      "endS": 1.68
+      "startS": 0.88,
+      "endS": 1.04
     },
     {
       "text": "tiempo",
       "charStart": 15,
       "charEnd": 21,
-      "startS": 1.68,
-      "endS": 2.0
+      "startS": 1.04,
+      "endS": 1.28
     },
     {
       "text": "que",
       "charStart": 22,
       "charEnd": 25,
-      "startS": 2.0,
-      "endS": 2.08
+      "startS": 1.28,
+      "endS": 1.36
     },
     {
       "text": "necesites",
       "charStart": 26,
       "charEnd": 35,
-      "startS": 2.08,
-      "endS": 3.04
+      "startS": 1.36,
+      "endS": 2.08
     },
     {
       "text": "Lo",
       "charStart": 37,
       "charEnd": 39,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 2.64,
+      "endS": 2.72
     },
     {
       "text": "estoy",
       "charStart": 40,
       "charEnd": 45,
-      "startS": 3.84,
-      "endS": 4.0
+      "startS": 2.72,
+      "endS": 3.04
     },
     {
       "text": "cronometrando",
       "charStart": 46,
       "charEnd": 59,
-      "startS": 4.96,
-      "endS": 5.2
+      "startS": 3.04,
+      "endS": 3.84
     },
     {
       "text": "pero",
       "charStart": 61,
       "charEnd": 65,
-      "startS": 5.44,
-      "endS": 5.6
+      "startS": 4.24,
+      "endS": 4.4
     },
     {
       "text": "tómate",
       "charStart": 66,
       "charEnd": 72,
-      "startS": 5.6,
-      "endS": 6.16
+      "startS": 4.4,
+      "endS": 4.88
     },
     {
       "text": "todo",
       "charStart": 73,
       "charEnd": 77,
-      "startS": 6.24,
-      "endS": 6.48
+      "startS": 4.88,
+      "endS": 5.2
     },
     {
       "text": "el",
       "charStart": 78,
       "charEnd": 80,
-      "startS": 6.72,
-      "endS": 6.8
+      "startS": 5.2,
+      "endS": 5.36
     },
     {
       "text": "tiempo",
       "charStart": 81,
       "charEnd": 87,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 5.36,
+      "endS": 5.68
     },
     {
       "text": "que",
       "charStart": 88,
       "charEnd": 91,
-      "startS": 7.2,
-      "endS": 7.36
+      "startS": 5.68,
+      "endS": 5.76
     },
     {
       "text": "necesites",
       "charStart": 92,
       "charEnd": 101,
-      "startS": 7.36,
-      "endS": 8.0
+      "startS": 5.76,
+      "endS": 6.4
     }
-  ]
+  ],
+  "words_for": "1027256d553ff11d/wordtiming-v1"
 }

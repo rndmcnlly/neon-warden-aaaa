@@ -1,0 +1,117 @@
+{
+  "hash": "4a37c4e80ba6f10b",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_pickup_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Escudo arriba! Es como un abrazo, si los abrazos tuvieran deducible.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Affectionate, then the deductible at speed.",
+  "duration": 4.88,
+  "sample_rate": 24000,
+  "peak": 0.774,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.2,
+    "gain_db": 3.46,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.46,
+    "peak_bound": false
+  },
+  "asr": "Escudo arriba es como un abrazo si los abrazos tuvieran deducible.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Escudo",
+      "charStart": 1,
+      "charEnd": 7,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "arriba",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "Es",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "como",
+      "charStart": 19,
+      "charEnd": 23,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "un",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "abrazo",
+      "charStart": 27,
+      "charEnd": 33,
+      "startS": 2.08,
+      "endS": 2.64
+    },
+    {
+      "text": "si",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "los",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "abrazos",
+      "charStart": 42,
+      "charEnd": 49,
+      "startS": 3.28,
+      "endS": 3.76
+    },
+    {
+      "text": "tuvieran",
+      "charStart": 50,
+      "charEnd": 58,
+      "startS": 3.76,
+      "endS": 4.16
+    },
+    {
+      "text": "deducible",
+      "charStart": 59,
+      "charEnd": 68,
+      "startS": 4.16,
+      "endS": 4.8
+    }
+  ],
+  "words_for": "4a37c4e80ba6f10b/wordtiming-v1"
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "da3122db06d5ba91",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_pickup_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Disparo abierto! Más balas, el mismo presupuesto. Por favor, apúntalas todas a algo.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Excited product demo, then a request.",
+  "duration": 7.2,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.1,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 3.35,
+    "limited_db": 1.5,
+    "measured_before_lufs": -21.35,
+    "peak_bound": false
+  },
+  "asr": "Disparo abierto, más balas, el mismo presupuesto, por favor apunta las todas a algo.",
+  "asr_similarity": 0.889,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Disparo",
+      "charStart": 1,
+      "charEnd": 8,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "abierto",
+      "charStart": 9,
+      "charEnd": 16,
+      "startS": 1.6,
+      "endS": 2.24
+    },
+    {
+      "text": "Más",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "balas",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 3.12,
+      "endS": 3.68
+    },
+    {
+      "text": "el",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "mismo",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "presupuesto",
+      "charStart": 38,
+      "charEnd": 49,
+      "startS": 4.16,
+      "endS": 4.88
+    },
+    {
+      "text": "Por",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "favor",
+      "charStart": 55,
+      "charEnd": 60,
+      "startS": 5.36,
+      "endS": 5.68
+    },
+    {
+      "text": "apúntalas",
+      "charStart": 62,
+      "charEnd": 71,
+      "startS": 5.76,
+      "endS": 6.4
+    },
+    {
+      "text": "todas",
+      "charStart": 72,
+      "charEnd": 77,
+      "startS": 6.4,
+      "endS": 6.8
+    },
+    {
+      "text": "a",
+      "charStart": 78,
+      "charEnd": 79,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "algo",
+      "charStart": 80,
+      "charEnd": 84,
+      "startS": 6.96,
+      "endS": 7.2
+    }
+  ],
+  "words_for": "da3122db06d5ba91/wordtiming-v1"
+}

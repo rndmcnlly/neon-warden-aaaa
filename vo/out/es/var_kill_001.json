@@ -1,0 +1,131 @@
+{
+  "hash": "4dbeed6313952358",
+  "mode": "clone",
+  "request": {
+    "id": "es__var_kill_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Objetivo eliminado. Pago ajustado hacia arriba. Estoy orgullosa de ti, y contabilidad también.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Proud, then a small aside about accounting.",
+  "duration": 6.48,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.42,
+    "gain_db": 5.71,
+    "limited_db": 1.71,
+    "measured_before_lufs": -23.71,
+    "peak_bound": false
+  },
+  "asr": "Objetivo eliminado, pago ajustado hacia arriba, estoy orgullosa de ti y contabilidad también.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Objetivo",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.08,
+      "endS": 0.64
+    },
+    {
+      "text": "eliminado",
+      "charStart": 9,
+      "charEnd": 18,
+      "startS": 0.64,
+      "endS": 1.28
+    },
+    {
+      "text": "Pago",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "ajustado",
+      "charStart": 25,
+      "charEnd": 33,
+      "startS": 2.0,
+      "endS": 2.48
+    },
+    {
+      "text": "hacia",
+      "charStart": 34,
+      "charEnd": 39,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "arriba",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "Estoy",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "orgullosa",
+      "charStart": 54,
+      "charEnd": 63,
+      "startS": 3.92,
+      "endS": 4.4
+    },
+    {
+      "text": "de",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "ti",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "y",
+      "charStart": 71,
+      "charEnd": 72,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "contabilidad",
+      "charStart": 73,
+      "charEnd": 85,
+      "startS": 5.2,
+      "endS": 5.92
+    },
+    {
+      "text": "también",
+      "charStart": 86,
+      "charEnd": 93,
+      "startS": 6.0,
+      "endS": 6.48
+    }
+  ],
+  "words_for": "4dbeed6313952358/wordtiming-v1"
+}

@@ -1,33 +1,32 @@
 {
-  "hash": "ce1f7b1f47a92348",
+  "hash": "2ef671ef1f940b13",
   "mode": "clone",
   "request": {
     "id": "es__kill_ai_002",
-    "seed": 311,
+    "seed": 11,
     "language": "Spanish",
     "text": "Comenzó el despliegue de casetas de peaje. Las rutas estarán abiertas para todos los suscriptores en menos de una hora.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, a service announcement, completely sincere.",
-  "duration": 8.24,
+  "duration": 7.52,
   "sample_rate": 24000,
-  "peak": 0.878,
+  "peak": 0.874,
   "clipping_suspect": false,
-  "asr": "Comenzó el despliegue de cajetas de peaje. Las rutas se estarán abiertas para todos los suscriptores en menos de una hora.",
-  "asr_similarity": 0.927,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.12,
-    "gain_db": -0.0,
+    "true_peak_dbtp": -1.07,
+    "gain_db": 4.4,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -22.4,
     "peak_bound": false
   },
-  "words_for": "ce1f7b1f47a92348/wordtiming-v1",
+  "asr": "Comenzó el despliegue de cassetas de peaje. Las rutas estarán abiertas para todos los suscriptores en menos de una hora.",
+  "asr_similarity": 0.95,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -47,134 +46,135 @@
       "text": "el",
       "charStart": 8,
       "charEnd": 10,
-      "startS": 0.8,
-      "endS": 0.88
+      "startS": 0.64,
+      "endS": 0.72
     },
     {
       "text": "despliegue",
       "charStart": 11,
       "charEnd": 21,
-      "startS": 0.88,
-      "endS": 1.44
+      "startS": 0.72,
+      "endS": 1.2
     },
     {
       "text": "de",
       "charStart": 22,
       "charEnd": 24,
-      "startS": 1.44,
-      "endS": 1.52
+      "startS": 1.2,
+      "endS": 1.28
     },
     {
       "text": "casetas",
       "charStart": 25,
       "charEnd": 32,
-      "startS": 1.52,
-      "endS": 2.24
+      "startS": 1.28,
+      "endS": 1.76
     },
     {
       "text": "de",
       "charStart": 33,
       "charEnd": 35,
-      "startS": 2.24,
-      "endS": 2.32
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "peaje",
       "charStart": 36,
       "charEnd": 41,
-      "startS": 2.32,
+      "startS": 1.92,
       "endS": 2.48
     },
     {
       "text": "Las",
       "charStart": 43,
       "charEnd": 46,
-      "startS": 2.72,
-      "endS": 2.96
+      "startS": 3.36,
+      "endS": 3.52
     },
     {
       "text": "rutas",
       "charStart": 47,
       "charEnd": 52,
-      "startS": 3.36,
-      "endS": 3.44
+      "startS": 3.52,
+      "endS": 3.84
     },
     {
       "text": "estarán",
       "charStart": 53,
       "charEnd": 60,
-      "startS": 4.0,
-      "endS": 5.28
+      "startS": 3.84,
+      "endS": 4.16
     },
     {
       "text": "abiertas",
       "charStart": 61,
       "charEnd": 69,
-      "startS": 5.28,
-      "endS": 5.36
+      "startS": 4.16,
+      "endS": 4.64
     },
     {
       "text": "para",
       "charStart": 70,
       "charEnd": 74,
-      "startS": 5.36,
-      "endS": 5.44
+      "startS": 4.64,
+      "endS": 4.88
     },
     {
       "text": "todos",
       "charStart": 75,
       "charEnd": 80,
-      "startS": 5.44,
-      "endS": 5.52
+      "startS": 4.88,
+      "endS": 5.28
     },
     {
       "text": "los",
       "charStart": 81,
       "charEnd": 84,
-      "startS": 5.76,
-      "endS": 6.0
+      "startS": 5.28,
+      "endS": 5.44
     },
     {
       "text": "suscriptores",
       "charStart": 85,
       "charEnd": 97,
-      "startS": 6.0,
-      "endS": 6.56
+      "startS": 5.44,
+      "endS": 6.24
     },
     {
       "text": "en",
       "charStart": 98,
       "charEnd": 100,
-      "startS": 6.8,
-      "endS": 6.96
+      "startS": 6.24,
+      "endS": 6.48
     },
     {
       "text": "menos",
       "charStart": 101,
       "charEnd": 106,
-      "startS": 6.96,
-      "endS": 7.28
+      "startS": 6.48,
+      "endS": 6.8
     },
     {
       "text": "de",
       "charStart": 107,
       "charEnd": 109,
-      "startS": 7.28,
-      "endS": 7.44
+      "startS": 6.8,
+      "endS": 6.88
     },
     {
       "text": "una",
       "charStart": 110,
       "charEnd": 113,
-      "startS": 7.44,
-      "endS": 8.16
+      "startS": 6.88,
+      "endS": 7.2
     },
     {
       "text": "hora",
       "charStart": 114,
       "charEnd": 118,
-      "startS": 8.16,
-      "endS": 8.24
+      "startS": 7.2,
+      "endS": 7.44
     }
-  ]
+  ],
+  "words_for": "2ef671ef1f940b13/wordtiming-v1"
 }

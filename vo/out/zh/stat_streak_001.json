@@ -1,0 +1,180 @@
+{
+  "hash": "796059331c291060",
+  "mode": "clone",
+  "request": {
+    "id": "zh__stat_streak_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "哦，你手感正热！别多想。我替你想。我在想你的奖金。",
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
+  },
+  "direction": "Whispered excitement, like not wanting to jinx it.",
+  "duration": 6.24,
+  "sample_rate": 24000,
+  "peak": 0.687,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.21,
+    "gain_db": 3.35,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.35,
+    "peak_bound": false
+  },
+  "asr": "哦，你手感正热，别多想，我替你想，我在想你的奖金。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "哦",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "你",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "手",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "感",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "正",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "热",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.32,
+      "endS": 2.72
+    },
+    {
+      "text": "别",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "多",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "想",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "我",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "替",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "你",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "想",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "我",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "在",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "想",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "你",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 5.6,
+      "endS": 5.68
+    },
+    {
+      "text": "的",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "奖",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "金",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.92,
+      "endS": 6.16
+    }
+  ],
+  "words_for": "796059331c291060/wordtiming-v1"
+}

@@ -1,0 +1,166 @@
+{
+  "hash": "dd9db7684f6ad84d",
+  "mode": "clone",
+  "request": {
+    "id": "es__stat_perfect_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Un sector entero sin un rasguño! El casco te da las gracias. El casco casi nunca dice nada.",
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
+  },
+  "direction": "Delighted, a little misty.",
+  "duration": 6.88,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 4.47,
+    "limited_db": 0.71,
+    "measured_before_lufs": -22.47,
+    "peak_bound": false
+  },
+  "asr": "Un sector entero sin un rasguño. El casco te da las gracias. El casco casi nunca dice nada.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Un",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "sector",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "entero",
+      "charStart": 11,
+      "charEnd": 17,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "sin",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "un",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "rasguño",
+      "charStart": 25,
+      "charEnd": 32,
+      "startS": 1.28,
+      "endS": 1.92
+    },
+    {
+      "text": "El",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "casco",
+      "charStart": 37,
+      "charEnd": 42,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "te",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "da",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "las",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "gracias",
+      "charStart": 53,
+      "charEnd": 60,
+      "startS": 3.92,
+      "endS": 4.48
+    },
+    {
+      "text": "El",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "casco",
+      "charStart": 65,
+      "charEnd": 70,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "casi",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 5.6,
+      "endS": 5.92
+    },
+    {
+      "text": "nunca",
+      "charStart": 76,
+      "charEnd": 81,
+      "startS": 5.92,
+      "endS": 6.32
+    },
+    {
+      "text": "dice",
+      "charStart": 82,
+      "charEnd": 86,
+      "startS": 6.32,
+      "endS": 6.56
+    },
+    {
+      "text": "nada",
+      "charStart": 87,
+      "charEnd": 91,
+      "startS": 6.56,
+      "endS": 6.8
+    }
+  ],
+  "words_for": "dd9db7684f6ad84d/wordtiming-v1"
+}

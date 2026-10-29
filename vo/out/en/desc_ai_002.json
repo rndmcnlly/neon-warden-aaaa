@@ -1,5 +1,5 @@
 {
-  "hash": "49ef5bc365611120",
+  "hash": "4d6328c321de6e36",
   "mode": "clone",
   "request": {
     "id": "en__desc_ai_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Proceed with the engagement, Pilot. Statements by the Warden are not covered by your contract.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, firmly back on script.",
-  "duration": 5.92,
+  "duration": 6.16,
   "sample_rate": 24000,
-  "peak": 0.786,
+  "peak": 0.701,
   "clipping_suspect": false,
-  "asr": "Proceed with the engagement. Pilot statements by the warden are not covered by your contract.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.98,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -3.08,
+    "gain_db": 2.99,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.99,
     "peak_bound": false
   },
-  "words_for": "49ef5bc365611120/wordtiming-v1",
+  "asr": "Proceed with the engagement. Pilot statements by the warden are not covered by your contract.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,106 +39,107 @@
       "text": "Proceed",
       "charStart": 0,
       "charEnd": 7,
-      "startS": 0.24,
-      "endS": 0.72
+      "startS": 1.04,
+      "endS": 1.44
     },
     {
       "text": "with",
       "charStart": 8,
       "charEnd": 12,
-      "startS": 0.72,
-      "endS": 0.88
+      "startS": 1.44,
+      "endS": 1.6
     },
     {
       "text": "the",
       "charStart": 13,
       "charEnd": 16,
-      "startS": 0.88,
-      "endS": 0.96
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "engagement",
       "charStart": 17,
       "charEnd": 27,
-      "startS": 0.96,
-      "endS": 1.68
+      "startS": 1.76,
+      "endS": 2.4
     },
     {
       "text": "Pilot",
       "charStart": 29,
       "charEnd": 34,
-      "startS": 2.24,
-      "endS": 2.72
+      "startS": 2.56,
+      "endS": 3.04
     },
     {
       "text": "Statements",
       "charStart": 36,
       "charEnd": 46,
-      "startS": 2.72,
-      "endS": 3.2
+      "startS": 3.36,
+      "endS": 3.84
     },
     {
       "text": "by",
       "charStart": 47,
       "charEnd": 49,
-      "startS": 3.2,
-      "endS": 3.44
+      "startS": 3.84,
+      "endS": 4.0
     },
     {
       "text": "the",
       "charStart": 50,
       "charEnd": 53,
-      "startS": 3.44,
-      "endS": 3.52
+      "startS": 4.0,
+      "endS": 4.08
     },
     {
       "text": "Warden",
       "charStart": 54,
       "charEnd": 60,
-      "startS": 3.52,
-      "endS": 4.0
+      "startS": 4.08,
+      "endS": 4.48
     },
     {
       "text": "are",
       "charStart": 61,
       "charEnd": 64,
-      "startS": 4.0,
-      "endS": 4.08
+      "startS": 4.48,
+      "endS": 4.56
     },
     {
       "text": "not",
       "charStart": 65,
       "charEnd": 68,
-      "startS": 4.08,
-      "endS": 4.4
+      "startS": 4.56,
+      "endS": 4.96
     },
     {
       "text": "covered",
       "charStart": 69,
       "charEnd": 76,
-      "startS": 4.4,
-      "endS": 4.8
+      "startS": 4.96,
+      "endS": 5.2
     },
     {
       "text": "by",
       "charStart": 77,
       "charEnd": 79,
-      "startS": 4.8,
-      "endS": 4.88
+      "startS": 5.2,
+      "endS": 5.36
     },
     {
       "text": "your",
       "charStart": 80,
       "charEnd": 84,
-      "startS": 4.88,
-      "endS": 5.04
+      "startS": 5.36,
+      "endS": 5.44
     },
     {
       "text": "contract",
       "charStart": 85,
       "charEnd": 93,
-      "startS": 5.04,
-      "endS": 5.92
+      "startS": 5.44,
+      "endS": 6.08
     }
-  ]
+  ],
+  "words_for": "4d6328c321de6e36/wordtiming-v1"
 }

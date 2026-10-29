@@ -1,30 +1,32 @@
 {
-  "hash": "c14f6cac9d3401f1",
+  "hash": "30cdb173f93c15d3",
   "mode": "clone",
   "request": {
     "id": "es__tut_ratebreak_001",
     "seed": 11,
     "language": "Spanish",
     "text": "Una cosa más. Si recibes un impacto, tu tarifa se reduce a la mitad. La Autoridad no se molesta cuando eso pasa. Simplemente paga por resultados.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Reassuring, completely sincere.",
-  "duration": 11.12,
+  "duration": 9.52,
   "sample_rate": 24000,
-  "peak": 0.813,
+  "peak": 0.84,
   "clipping_suspect": false,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -1.72,
-    "gain_db": 5.39,
+    "true_peak_dbtp": -1.51,
+    "gain_db": 4.44,
     "limited_db": 0.0,
-    "measured_before_lufs": -23.39,
+    "measured_before_lufs": -22.44,
     "peak_bound": false
   },
+  "asr": "Una cosa más: si recibes un impacto, tu tarifa se reduce a la mitad. La autoridad no se molesta cuando eso pasa, simplemente paga por resultados.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -37,186 +39,184 @@
       "text": "Una",
       "charStart": 0,
       "charEnd": 3,
-      "startS": 0.0,
-      "endS": 0.08
+      "startS": 0.16,
+      "endS": 0.4
     },
     {
       "text": "cosa",
       "charStart": 4,
       "charEnd": 8,
-      "startS": 1.12,
-      "endS": 1.2
+      "startS": 0.4,
+      "endS": 0.64
     },
     {
       "text": "más",
       "charStart": 9,
       "charEnd": 12,
-      "startS": 1.2,
-      "endS": 1.6
+      "startS": 0.64,
+      "endS": 1.12
     },
     {
       "text": "Si",
       "charStart": 14,
       "charEnd": 16,
-      "startS": 1.92,
-      "endS": 2.08
+      "startS": 1.6,
+      "endS": 1.76
     },
     {
       "text": "recibes",
       "charStart": 17,
       "charEnd": 24,
-      "startS": 2.08,
-      "endS": 2.32
+      "startS": 1.76,
+      "endS": 2.16
     },
     {
       "text": "un",
       "charStart": 25,
       "charEnd": 27,
-      "startS": 2.56,
-      "endS": 2.72
+      "startS": 2.16,
+      "endS": 2.24
     },
     {
       "text": "impacto",
       "charStart": 28,
       "charEnd": 35,
-      "startS": 2.72,
-      "endS": 3.2
+      "startS": 2.24,
+      "endS": 2.8
     },
     {
       "text": "tu",
       "charStart": 37,
       "charEnd": 39,
-      "startS": 3.6,
-      "endS": 3.76
+      "startS": 3.12,
+      "endS": 3.28
     },
     {
       "text": "tarifa",
       "charStart": 40,
       "charEnd": 46,
-      "startS": 3.76,
-      "endS": 4.48
+      "startS": 3.28,
+      "endS": 3.68
     },
     {
       "text": "se",
       "charStart": 47,
       "charEnd": 49,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 3.68,
+      "endS": 3.76
     },
     {
       "text": "reduce",
       "charStart": 50,
       "charEnd": 56,
-      "startS": 4.72,
-      "endS": 5.04
+      "startS": 3.76,
+      "endS": 4.16
     },
     {
       "text": "a",
       "charStart": 57,
       "charEnd": 58,
-      "startS": 5.04,
-      "endS": 5.28
+      "startS": 4.16,
+      "endS": 4.24
     },
     {
       "text": "la",
       "charStart": 59,
       "charEnd": 61,
-      "startS": 5.28,
-      "endS": 5.36
+      "startS": 4.24,
+      "endS": 4.32
     },
     {
       "text": "mitad",
       "charStart": 62,
       "charEnd": 67,
-      "startS": 5.36,
-      "endS": 5.52
+      "startS": 4.32,
+      "endS": 4.64
     },
     {
       "text": "La",
       "charStart": 69,
       "charEnd": 71,
-      "startS": 5.68,
-      "endS": 5.84
+      "startS": 5.28,
+      "endS": 5.36
     },
     {
       "text": "Autoridad",
       "charStart": 72,
       "charEnd": 81,
-      "startS": 6.48,
-      "endS": 6.56
+      "startS": 5.36,
+      "endS": 5.84
     },
     {
       "text": "no",
       "charStart": 82,
       "charEnd": 84,
-      "startS": 7.04,
-      "endS": 7.2
+      "startS": 5.84,
+      "endS": 6.0
     },
     {
       "text": "se",
       "charStart": 85,
       "charEnd": 87,
-      "startS": 7.2,
-      "endS": 7.28
+      "startS": 6.0,
+      "endS": 6.08
     },
     {
       "text": "molesta",
       "charStart": 88,
       "charEnd": 95,
-      "startS": 7.28,
-      "endS": 7.76
+      "startS": 6.08,
+      "endS": 6.48
     },
     {
       "text": "cuando",
       "charStart": 96,
       "charEnd": 102,
-      "startS": 7.76,
-      "endS": 8.08
+      "startS": 6.48,
+      "endS": 6.72
     },
     {
       "text": "eso",
       "charStart": 103,
       "charEnd": 106,
-      "startS": 8.08,
-      "endS": 8.32
+      "startS": 6.72,
+      "endS": 6.88
     },
     {
       "text": "pasa",
       "charStart": 107,
       "charEnd": 111,
-      "startS": 8.32,
-      "endS": 8.8
+      "startS": 6.88,
+      "endS": 7.28
     },
     {
       "text": "Simplemente",
       "charStart": 113,
       "charEnd": 124,
-      "startS": 9.12,
-      "endS": 9.76
+      "startS": 7.68,
+      "endS": 8.32
     },
     {
       "text": "paga",
       "charStart": 125,
       "charEnd": 129,
-      "startS": 9.76,
-      "endS": 10.08
+      "startS": 8.32,
+      "endS": 8.64
     },
     {
       "text": "por",
       "charStart": 130,
       "charEnd": 133,
-      "startS": 10.16,
-      "endS": 10.32
+      "startS": 8.64,
+      "endS": 8.8
     },
     {
       "text": "resultados",
       "charStart": 134,
       "charEnd": 144,
-      "startS": 10.32,
-      "endS": 10.72
+      "startS": 8.8,
+      "endS": 9.52
     }
   ],
-  "words_for": "c14f6cac9d3401f1/wordtiming-v1",
-  "asr": "Unico somos si recibes un impacto tu te te refias se reducirá la mitad la autoridad no se molesta cuando eso pasa simplemente paga por resultados.",
-  "asr_similarity": 0.769
+  "words_for": "30cdb173f93c15d3/wordtiming-v1"
 }

@@ -1,0 +1,152 @@
+{
+  "hash": "fdc6cf83eb8b804c",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_grazes_001",
+    "seed": 11,
+    "language": "English",
+    "text": "That's a lot of grazing. Are you doing that on purpose? You're doing that on purpose.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Suspicious, then certain, then resigned.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.613,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.13,
+    "gain_db": 1.05,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.05,
+    "peak_bound": false
+  },
+  "asr": "That's a lot of grazing. Are you doing that on purpose? You're doing that on purpose.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "That's",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "a",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "lot",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "of",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "grazing",
+      "charStart": 16,
+      "charEnd": 23,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "Are",
+      "charStart": 25,
+      "charEnd": 28,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "you",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "doing",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "that",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "on",
+      "charStart": 44,
+      "charEnd": 46,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "purpose",
+      "charStart": 47,
+      "charEnd": 54,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "You're",
+      "charStart": 56,
+      "charEnd": 62,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "doing",
+      "charStart": 63,
+      "charEnd": 68,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "that",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "on",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "purpose",
+      "charStart": 77,
+      "charEnd": 84,
+      "startS": 4.0,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "fdc6cf83eb8b804c/wordtiming-v1"
+}

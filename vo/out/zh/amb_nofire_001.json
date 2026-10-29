@@ -1,33 +1,32 @@
 {
-  "hash": "5e1512aed679b0fc",
+  "hash": "1467a31e53a4aebe",
   "mode": "clone",
   "request": {
     "id": "zh__amb_nofire_001",
     "seed": 11,
     "language": "Chinese",
     "text": "飞行员，你的武器日志显示没有任何开火记录。扳机正常吗？请射击。",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.zh.wav",
+    "reference_text": "欢迎参加航道管理局入职培训。我会陪你走过每一步。让我们从简单的事情开始：移动你的飞船。"
   },
   "direction": "On comms, tech-support concern.",
   "duration": 6.16,
   "sample_rate": 24000,
-  "peak": 0.886,
+  "peak": 0.673,
   "clipping_suspect": false,
-  "asr": "飞行员，你的武器日志显示没有任何开火记录。扳机正常吗？请射击。",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.03,
-    "true_peak_dbtp": -1.05,
-    "gain_db": -0.03,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.43,
+    "gain_db": 2.3,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.3,
     "peak_bound": false
   },
-  "words_for": "5e1512aed679b0fc/wordtiming-v1",
+  "asr": "飞行员，你的武器日志显示没有任何开火记录。扳机正常吗？请射击。",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,22 +39,22 @@
       "text": "飞",
       "charStart": 0,
       "charEnd": 1,
-      "startS": 0.16,
-      "endS": 0.32
+      "startS": 0.24,
+      "endS": 0.48
     },
     {
       "text": "行",
       "charStart": 1,
       "charEnd": 2,
-      "startS": 0.32,
-      "endS": 0.48
+      "startS": 0.48,
+      "endS": 0.64
     },
     {
       "text": "员",
       "charStart": 2,
       "charEnd": 3,
       "startS": 0.64,
-      "endS": 0.96
+      "endS": 1.04
     },
     {
       "text": "你",
@@ -69,13 +68,13 @@
       "charStart": 5,
       "charEnd": 6,
       "startS": 1.36,
-      "endS": 1.52
+      "endS": 1.44
     },
     {
       "text": "武",
       "charStart": 6,
       "charEnd": 7,
-      "startS": 1.52,
+      "startS": 1.44,
       "endS": 1.6
     },
     {
@@ -83,20 +82,20 @@
       "charStart": 7,
       "charEnd": 8,
       "startS": 1.6,
-      "endS": 1.84
+      "endS": 1.76
     },
     {
       "text": "日",
       "charStart": 8,
       "charEnd": 9,
-      "startS": 1.84,
-      "endS": 2.0
+      "startS": 1.76,
+      "endS": 1.92
     },
     {
       "text": "志",
       "charStart": 9,
       "charEnd": 10,
-      "startS": 2.0,
+      "startS": 1.92,
       "endS": 2.08
     },
     {
@@ -104,126 +103,127 @@
       "charStart": 10,
       "charEnd": 11,
       "startS": 2.08,
-      "endS": 2.32
+      "endS": 2.24
     },
     {
       "text": "示",
       "charStart": 11,
       "charEnd": 12,
-      "startS": 2.32,
-      "endS": 2.48
+      "startS": 2.24,
+      "endS": 2.4
     },
     {
       "text": "没",
       "charStart": 12,
       "charEnd": 13,
-      "startS": 2.48,
-      "endS": 2.64
+      "startS": 2.4,
+      "endS": 2.56
     },
     {
       "text": "有",
       "charStart": 13,
       "charEnd": 14,
-      "startS": 2.64,
-      "endS": 2.72
+      "startS": 2.56,
+      "endS": 2.64
     },
     {
       "text": "任",
       "charStart": 14,
       "charEnd": 15,
-      "startS": 2.72,
+      "startS": 2.64,
       "endS": 2.8
     },
     {
       "text": "何",
       "charStart": 15,
       "charEnd": 16,
-      "startS": 2.96,
-      "endS": 3.12
+      "startS": 2.8,
+      "endS": 2.96
     },
     {
       "text": "开",
       "charStart": 16,
       "charEnd": 17,
-      "startS": 3.12,
-      "endS": 3.28
+      "startS": 2.96,
+      "endS": 3.12
     },
     {
       "text": "火",
       "charStart": 17,
       "charEnd": 18,
-      "startS": 3.28,
-      "endS": 3.44
+      "startS": 3.12,
+      "endS": 3.28
     },
     {
       "text": "记",
       "charStart": 18,
       "charEnd": 19,
-      "startS": 3.44,
-      "endS": 3.6
+      "startS": 3.28,
+      "endS": 3.44
     },
     {
       "text": "录",
       "charStart": 19,
       "charEnd": 20,
-      "startS": 3.6,
-      "endS": 3.84
+      "startS": 3.44,
+      "endS": 3.68
     },
     {
       "text": "扳",
       "charStart": 21,
       "charEnd": 22,
-      "startS": 4.0,
-      "endS": 4.16
+      "startS": 4.32,
+      "endS": 4.48
     },
     {
       "text": "机",
       "charStart": 22,
       "charEnd": 23,
-      "startS": 4.16,
-      "endS": 4.4
+      "startS": 4.48,
+      "endS": 4.64
     },
     {
       "text": "正",
       "charStart": 23,
       "charEnd": 24,
-      "startS": 4.4,
-      "endS": 4.48
+      "startS": 4.64,
+      "endS": 4.8
     },
     {
       "text": "常",
       "charStart": 24,
       "charEnd": 25,
-      "startS": 4.56,
-      "endS": 4.72
+      "startS": 4.8,
+      "endS": 4.96
     },
     {
       "text": "吗",
       "charStart": 25,
       "charEnd": 26,
-      "startS": 4.72,
-      "endS": 5.04
+      "startS": 4.96,
+      "endS": 5.2
     },
     {
       "text": "请",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 5.52,
+      "endS": 5.68
     },
     {
       "text": "射",
       "charStart": 28,
       "charEnd": 29,
-      "startS": 5.52,
-      "endS": 5.68
+      "startS": 5.68,
+      "endS": 5.84
     },
     {
       "text": "击",
       "charStart": 29,
       "charEnd": 30,
-      "startS": 5.68,
-      "endS": 6.0
+      "startS": 5.84,
+      "endS": 6.08
     }
-  ]
+  ],
+  "words_for": "1467a31e53a4aebe/wordtiming-v1"
 }

@@ -1,33 +1,32 @@
 {
-  "hash": "34a742a6f29a5afc",
+  "hash": "23de55716f77c2df",
   "mode": "clone",
   "request": {
     "id": "es__tut_move_002",
     "seed": 11,
     "language": "Spanish",
     "text": "¡Maravilloso! Ahora hacia arriba. Y ahora hacia abajo. Ya volaste en las cuatro direcciones. Son todas las direcciones que ofrecemos.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "Delighted, then a proud little flourish on the last sentence.",
-  "duration": 10.08,
+  "duration": 10.16,
   "sample_rate": 24000,
-  "peak": 0.825,
+  "peak": 0.841,
   "clipping_suspect": false,
-  "asr": "Maravilloso, ahora hacia arriba y ahora hacia abajo. Ya volaste en las cuatro direcciones. Son todas las direcciones que ofrecemos.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.0,
-    "true_peak_dbtp": -1.36,
-    "gain_db": -0.0,
-    "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 3.82,
+    "limited_db": 0.6,
+    "measured_before_lufs": -21.82,
     "peak_bound": false
   },
-  "words_for": "34a742a6f29a5afc/wordtiming-v1",
+  "asr": "Maravilloso, ahora hacia arriba y ahora hacia abajo. Ya volaste en las cuatro direcciones. Son todas las direcciones que ofrecemos.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,43 +39,43 @@
       "text": "Maravilloso",
       "charStart": 1,
       "charEnd": 12,
-      "startS": 1.68,
-      "endS": 1.76
+      "startS": 0.16,
+      "endS": 0.96
     },
     {
       "text": "Ahora",
       "charStart": 14,
       "charEnd": 19,
-      "startS": 1.76,
+      "startS": 1.68,
       "endS": 2.0
     },
     {
       "text": "hacia",
       "charStart": 20,
       "charEnd": 25,
-      "startS": 2.24,
-      "endS": 2.56
+      "startS": 2.0,
+      "endS": 2.24
     },
     {
       "text": "arriba",
       "charStart": 26,
       "charEnd": 32,
-      "startS": 2.56,
-      "endS": 3.04
+      "startS": 2.24,
+      "endS": 2.64
     },
     {
       "text": "Y",
       "charStart": 34,
       "charEnd": 35,
-      "startS": 3.36,
-      "endS": 3.44
+      "startS": 3.52,
+      "endS": 3.6
     },
     {
       "text": "ahora",
       "charStart": 36,
       "charEnd": 41,
-      "startS": 3.44,
-      "endS": 3.76
+      "startS": 3.6,
+      "endS": 3.92
     },
     {
       "text": "hacia",
@@ -90,21 +89,21 @@
       "charStart": 48,
       "charEnd": 53,
       "startS": 4.16,
-      "endS": 4.64
+      "endS": 4.56
     },
     {
       "text": "Ya",
       "charStart": 55,
       "charEnd": 57,
-      "startS": 5.28,
-      "endS": 5.44
+      "startS": 5.52,
+      "endS": 5.76
     },
     {
       "text": "volaste",
       "charStart": 58,
       "charEnd": 65,
-      "startS": 5.44,
-      "endS": 5.92
+      "startS": 5.76,
+      "endS": 6.08
     },
     {
       "text": "en",
@@ -118,63 +117,64 @@
       "charStart": 69,
       "charEnd": 72,
       "startS": 6.16,
-      "endS": 6.24
+      "endS": 6.32
     },
     {
       "text": "cuatro",
       "charStart": 73,
       "charEnd": 79,
       "startS": 6.32,
-      "endS": 6.72
+      "endS": 6.64
     },
     {
       "text": "direcciones",
       "charStart": 80,
       "charEnd": 91,
-      "startS": 6.72,
+      "startS": 6.64,
       "endS": 7.44
     },
     {
       "text": "Son",
       "charStart": 93,
       "charEnd": 96,
-      "startS": 7.84,
-      "endS": 8.08
+      "startS": 8.0,
+      "endS": 8.32
     },
     {
       "text": "todas",
       "charStart": 97,
       "charEnd": 102,
-      "startS": 8.08,
-      "endS": 8.24
+      "startS": 8.32,
+      "endS": 8.64
     },
     {
       "text": "las",
       "charStart": 103,
       "charEnd": 106,
-      "startS": 8.48,
-      "endS": 8.64
+      "startS": 8.64,
+      "endS": 8.8
     },
     {
       "text": "direcciones",
       "charStart": 107,
       "charEnd": 118,
-      "startS": 8.64,
-      "endS": 9.2
+      "startS": 8.8,
+      "endS": 9.36
     },
     {
       "text": "que",
       "charStart": 119,
       "charEnd": 122,
-      "startS": 9.2,
-      "endS": 9.28
+      "startS": 9.36,
+      "endS": 9.44
     },
     {
       "text": "ofrecemos",
       "charStart": 123,
       "charEnd": 132,
-      "startS": 9.28,
-      "endS": 9.92
+      "startS": 9.44,
+      "endS": 10.08
     }
-  ]
+  ],
+  "words_for": "23de55716f77c2df/wordtiming-v1"
 }

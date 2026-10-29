@@ -1,33 +1,32 @@
 {
-  "hash": "828e7476ca8361ff",
+  "hash": "f8832a7106d08f96",
   "mode": "clone",
   "request": {
     "id": "es__desc_ai_002",
     "seed": 11,
     "language": "Spanish",
     "text": "Procede con el enfrentamiento, piloto. Las declaraciones del Guardián no están cubiertas por tu contrato.",
-    "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "voice_ref": "vo/voices/tutorial_ai.es.wav",
+    "reference_text": "Bienvenido al programa de inducción de la Autoridad de Rutas. Estaré contigo en cada paso del camino. Empecemos con algo sencillo: mover tu nave."
   },
   "direction": "On comms, firmly back on script.",
-  "duration": 6.8,
+  "duration": 6.72,
   "sample_rate": 24000,
-  "peak": 0.841,
+  "peak": 0.774,
   "clipping_suspect": false,
-  "asr": "Proseve con el enfrentamiento piloto, las declaraciones del guardián no están cubiertas por tu contrato.",
-  "asr_similarity": 0.933,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
-    "lufs": -18.08,
-    "true_peak_dbtp": -1.1,
-    "gain_db": 0.95,
-    "limited_db": 0.9,
-    "measured_before_lufs": -18.95,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.22,
+    "gain_db": 3.3,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.3,
     "peak_bound": false
   },
-  "words_for": "828e7476ca8361ff/wordtiming-v1",
+  "asr": "Procede con el enfrentamiento, piloto. Las declaraciones del guardián no están cubiertas por tu contrato.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,7 +39,7 @@
       "text": "Procede",
       "charStart": 0,
       "charEnd": 7,
-      "startS": 0.16,
+      "startS": 0.24,
       "endS": 0.72
     },
     {
@@ -48,13 +47,13 @@
       "charStart": 8,
       "charEnd": 11,
       "startS": 0.72,
-      "endS": 0.88
+      "endS": 0.8
     },
     {
       "text": "el",
       "charStart": 12,
       "charEnd": 14,
-      "startS": 0.88,
+      "startS": 0.8,
       "endS": 0.96
     },
     {
@@ -62,84 +61,85 @@
       "charStart": 15,
       "charEnd": 29,
       "startS": 0.96,
-      "endS": 1.76
+      "endS": 1.84
     },
     {
       "text": "piloto",
       "charStart": 31,
       "charEnd": 37,
-      "startS": 1.76,
-      "endS": 2.48
+      "startS": 2.08,
+      "endS": 2.64
     },
     {
       "text": "Las",
       "charStart": 39,
       "charEnd": 42,
-      "startS": 2.96,
-      "endS": 3.2
+      "startS": 3.44,
+      "endS": 3.6
     },
     {
       "text": "declaraciones",
       "charStart": 43,
       "charEnd": 56,
-      "startS": 3.2,
-      "endS": 4.0
+      "startS": 3.6,
+      "endS": 4.16
     },
     {
       "text": "del",
       "charStart": 57,
       "charEnd": 60,
-      "startS": 4.0,
-      "endS": 4.16
+      "startS": 4.16,
+      "endS": 4.32
     },
     {
       "text": "Guardián",
       "charStart": 61,
       "charEnd": 69,
-      "startS": 4.16,
-      "endS": 4.64
+      "startS": 4.32,
+      "endS": 4.8
     },
     {
       "text": "no",
       "charStart": 70,
       "charEnd": 72,
-      "startS": 4.64,
-      "endS": 4.8
+      "startS": 4.88,
+      "endS": 5.12
     },
     {
       "text": "están",
       "charStart": 73,
       "charEnd": 78,
-      "startS": 4.8,
-      "endS": 5.12
+      "startS": 5.12,
+      "endS": 5.36
     },
     {
       "text": "cubiertas",
       "charStart": 79,
       "charEnd": 88,
-      "startS": 5.12,
-      "endS": 5.68
+      "startS": 5.36,
+      "endS": 5.92
     },
     {
       "text": "por",
       "charStart": 89,
       "charEnd": 92,
-      "startS": 5.68,
-      "endS": 5.84
+      "startS": 5.92,
+      "endS": 6.08
     },
     {
       "text": "tu",
       "charStart": 93,
       "charEnd": 95,
-      "startS": 5.84,
-      "endS": 5.92
+      "startS": 6.08,
+      "endS": 6.16
     },
     {
       "text": "contrato",
       "charStart": 96,
       "charEnd": 104,
-      "startS": 5.92,
-      "endS": 6.72
+      "startS": 6.16,
+      "endS": 6.64
     }
-  ]
+  ],
+  "words_for": "f8832a7106d08f96/wordtiming-v1"
 }

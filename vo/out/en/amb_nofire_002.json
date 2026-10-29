@@ -1,5 +1,5 @@
 {
-  "hash": "f65e688d14015e96",
+  "hash": "c8f5c0150cd03885",
   "mode": "clone",
   "request": {
     "id": "en__amb_nofire_002",
@@ -7,27 +7,26 @@
     "language": "English",
     "text": "Your weapon is still cold. I am noting that. Neutrally.",
     "voice_ref": "vo/voices/tutorial_ai.wav",
-    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
   },
   "direction": "On comms, carefully neutral, which is not neutral.",
-  "duration": 4.0,
+  "duration": 4.56,
   "sample_rate": 24000,
-  "peak": 0.754,
+  "peak": 0.674,
   "clipping_suspect": false,
-  "asr": "Your weapon is still cold. I am noting that neutrally.",
-  "asr_similarity": 1.0,
   "loudness": {
     "recipe": "gain+alimiter-v1",
     "target_lufs": -18.0,
     "ceiling_dbtp": -1.0,
     "lufs": -18.0,
-    "true_peak_dbtp": -2.41,
-    "gain_db": 0.0,
+    "true_peak_dbtp": -3.3,
+    "gain_db": 2.9,
     "limited_db": 0.0,
-    "measured_before_lufs": -18.0,
+    "measured_before_lufs": -20.9,
     "peak_bound": false
   },
-  "words_for": "f65e688d14015e96/wordtiming-v1",
+  "asr": "Your weapon is still cold. I am noting that neutrally.",
+  "asr_similarity": 1.0,
   "align": {
     "ok": true,
     "monotonic": true,
@@ -40,71 +39,72 @@
       "text": "Your",
       "charStart": 0,
       "charEnd": 4,
-      "startS": 0.24,
-      "endS": 0.48
+      "startS": 0.64,
+      "endS": 0.8
     },
     {
       "text": "weapon",
       "charStart": 5,
       "charEnd": 11,
-      "startS": 0.48,
-      "endS": 0.88
+      "startS": 0.8,
+      "endS": 1.12
     },
     {
       "text": "is",
       "charStart": 12,
       "charEnd": 14,
-      "startS": 0.88,
-      "endS": 1.04
+      "startS": 1.12,
+      "endS": 1.2
     },
     {
       "text": "still",
       "charStart": 15,
       "charEnd": 20,
-      "startS": 1.04,
-      "endS": 1.28
+      "startS": 1.2,
+      "endS": 1.44
     },
     {
       "text": "cold",
       "charStart": 21,
       "charEnd": 25,
-      "startS": 1.28,
+      "startS": 1.44,
       "endS": 1.92
     },
     {
       "text": "I",
       "charStart": 27,
       "charEnd": 28,
-      "startS": 2.4,
-      "endS": 2.48
+      "startS": 2.56,
+      "endS": 2.64
     },
     {
       "text": "am",
       "charStart": 29,
       "charEnd": 31,
-      "startS": 2.48,
-      "endS": 2.72
+      "startS": 2.64,
+      "endS": 2.8
     },
     {
       "text": "noting",
       "charStart": 32,
       "charEnd": 38,
-      "startS": 2.72,
-      "endS": 3.04
+      "startS": 2.8,
+      "endS": 3.12
     },
     {
       "text": "that",
       "charStart": 39,
       "charEnd": 43,
-      "startS": 3.04,
-      "endS": 3.2
+      "startS": 3.12,
+      "endS": 3.44
     },
     {
       "text": "Neutrally",
       "charStart": 45,
       "charEnd": 54,
-      "startS": 3.2,
-      "endS": 3.92
+      "startS": 3.84,
+      "endS": 4.48
     }
-  ]
+  ],
+  "words_for": "c8f5c0150cd03885/wordtiming-v1"
 }

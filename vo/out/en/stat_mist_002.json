@@ -1,0 +1,145 @@
+{
+  "hash": "8571fd9c8d679adb",
+  "mode": "clone",
+  "request": {
+    "id": "en__stat_mist_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Lovely enthusiasm! There's nothing up there, though. Just the mist, and it's very far away.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Welcome to the Lane Authority onboarding program. I will be with you every step of the way. Let's begin with something simple: moving your ship."
+  },
+  "direction": "Encouraging, then gently factual.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.25,
+    "gain_db": 2.74,
+    "limited_db": 0.27,
+    "measured_before_lufs": -20.74,
+    "peak_bound": false
+  },
+  "asr": "Lovely enthusiasm. There's nothing up there though—just the mist, and it's very far away.",
+  "asr_similarity": 0.897,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lovely",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "enthusiasm",
+      "charStart": 7,
+      "charEnd": 17,
+      "startS": 1.2,
+      "endS": 2.08
+    },
+    {
+      "text": "There's",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "nothing",
+      "charStart": 27,
+      "charEnd": 34,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "up",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "there",
+      "charStart": 38,
+      "charEnd": 43,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "though",
+      "charStart": 45,
+      "charEnd": 51,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "Just",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "the",
+      "charStart": 58,
+      "charEnd": 61,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "mist",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "and",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "it's",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "very",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 5.44,
+      "endS": 5.76
+    },
+    {
+      "text": "far",
+      "charStart": 82,
+      "charEnd": 85,
+      "startS": 5.76,
+      "endS": 6.0
+    },
+    {
+      "text": "away",
+      "charStart": 86,
+      "charEnd": 90,
+      "startS": 6.0,
+      "endS": 6.4
+    }
+  ],
+  "words_for": "8571fd9c8d679adb/wordtiming-v1"
+}
