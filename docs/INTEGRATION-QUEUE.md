@@ -215,8 +215,6 @@ Still open, handed to owners:
   (`radio.drone.patrol.1`, `codex.writ.body`) so `scanIds` will not
   mistake them for VO ids.
 
-## Wave 3
-
 ### G Gameplay: contracts drafted (October 28, 2026)
 
 Committed first so others can code against them: `src/contracts/sim.ts`,
