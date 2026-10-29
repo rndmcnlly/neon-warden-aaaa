@@ -1,0 +1,222 @@
+{
+  "hash": "b99b15c12894a58b",
+  "mode": "clone",
+  "request": {
+    "id": "zh__flash_rec_005",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "确认未履约。零一二一号飞行员，召回程序已启动。感谢你的服务。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded, procedural and polite, as if closing a support ticket.",
+  "duration": 6.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "确认未履约。零一二一号飞行员，召回程序已启动。感谢你的服务。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.2,
+    "gain_db": 1.08,
+    "limited_db": 1.03,
+    "measured_before_lufs": -19.08,
+    "peak_bound": false
+  },
+  "words_for": "b99b15c12894a58b/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "确",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "认",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "未",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "履",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "约",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "零",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "一",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "二",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "一",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "号",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "飞",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "行",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "员",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "召",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "回",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "程",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "序",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "已",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "启",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "动",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 5.2,
+      "endS": 5.52
+    },
+    {
+      "text": "感",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "谢",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "你",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "的",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "服",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 6.24,
+      "endS": 6.56
+    },
+    {
+      "text": "务",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.64,
+      "endS": 6.72
+    }
+  ]
+}

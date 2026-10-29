@@ -1,0 +1,236 @@
+{
+  "hash": "a5c6b48efc851d72",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_tap_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Now, trigger discipline. A short press fires a single aimed round. It is slower to repeat, but it goes exactly where you point it. Please tap three times.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 9.44,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 7.35,
+    "limited_db": 1.54,
+    "measured_before_lufs": -25.35,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Now",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "trigger",
+      "charStart": 5,
+      "charEnd": 12,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "discipline",
+      "charStart": 13,
+      "charEnd": 23,
+      "startS": 1.12,
+      "endS": 1.76
+    },
+    {
+      "text": "A",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "short",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "press",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "fires",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "a",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "single",
+      "charStart": 47,
+      "charEnd": 53,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "aimed",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "round",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 4.08,
+      "endS": 4.48
+    },
+    {
+      "text": "It",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "is",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "slower",
+      "charStart": 73,
+      "charEnd": 79,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "to",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "repeat",
+      "charStart": 83,
+      "charEnd": 89,
+      "startS": 5.44,
+      "endS": 6.0
+    },
+    {
+      "text": "but",
+      "charStart": 91,
+      "charEnd": 94,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "it",
+      "charStart": 95,
+      "charEnd": 97,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "goes",
+      "charStart": 98,
+      "charEnd": 102,
+      "startS": 6.24,
+      "endS": 6.48
+    },
+    {
+      "text": "exactly",
+      "charStart": 103,
+      "charEnd": 110,
+      "startS": 6.48,
+      "endS": 7.04
+    },
+    {
+      "text": "where",
+      "charStart": 111,
+      "charEnd": 116,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "you",
+      "charStart": 117,
+      "charEnd": 120,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "point",
+      "charStart": 121,
+      "charEnd": 126,
+      "startS": 7.36,
+      "endS": 7.68
+    },
+    {
+      "text": "it",
+      "charStart": 127,
+      "charEnd": 129,
+      "startS": 7.68,
+      "endS": 7.84
+    },
+    {
+      "text": "Please",
+      "charStart": 131,
+      "charEnd": 137,
+      "startS": 8.08,
+      "endS": 8.24
+    },
+    {
+      "text": "tap",
+      "charStart": 138,
+      "charEnd": 141,
+      "startS": 8.4,
+      "endS": 8.64
+    },
+    {
+      "text": "three",
+      "charStart": 142,
+      "charEnd": 147,
+      "startS": 8.72,
+      "endS": 8.88
+    },
+    {
+      "text": "times",
+      "charStart": 148,
+      "charEnd": 153,
+      "startS": 9.2,
+      "endS": 9.36
+    }
+  ],
+  "words_for": "a5c6b48efc851d72/wordtiming-v1",
+  "asr": "Now trigger discipline. A short press fires a single aimed round. It is slower to repeat, but it goes exactly where you point it. Please tap three times.",
+  "asr_similarity": 1.0
+}

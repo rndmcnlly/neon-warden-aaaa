@@ -1,0 +1,187 @@
+{
+  "hash": "615685998590733c",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_wink_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Fun fact! An independent review rated this onboarding thorough. It also rated it long. We have chosen to focus on thorough.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Conspiratorial little aside, then brightly back on message.",
+  "duration": 8.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Fun fact: An independent review rated this onboarding thorough. It also rated it long. We have chosen to focus on thorough.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.23,
+    "gain_db": 0.6,
+    "limited_db": 0.55,
+    "measured_before_lufs": -18.6,
+    "peak_bound": false
+  },
+  "words_for": "615685998590733c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Fun",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "fact",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "An",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "independent",
+      "charStart": 13,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.92
+    },
+    {
+      "text": "review",
+      "charStart": 25,
+      "charEnd": 31,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "rated",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 2.32,
+      "endS": 2.72
+    },
+    {
+      "text": "this",
+      "charStart": 38,
+      "charEnd": 42,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "onboarding",
+      "charStart": 43,
+      "charEnd": 53,
+      "startS": 2.88,
+      "endS": 3.52
+    },
+    {
+      "text": "thorough",
+      "charStart": 54,
+      "charEnd": 62,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "It",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "also",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 4.48,
+      "endS": 4.88
+    },
+    {
+      "text": "rated",
+      "charStart": 72,
+      "charEnd": 77,
+      "startS": 4.88,
+      "endS": 5.2
+    },
+    {
+      "text": "it",
+      "charStart": 78,
+      "charEnd": 80,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "long",
+      "charStart": 81,
+      "charEnd": 85,
+      "startS": 5.28,
+      "endS": 5.76
+    },
+    {
+      "text": "We",
+      "charStart": 87,
+      "charEnd": 89,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "have",
+      "charStart": 90,
+      "charEnd": 94,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "chosen",
+      "charStart": 95,
+      "charEnd": 101,
+      "startS": 6.32,
+      "endS": 6.72
+    },
+    {
+      "text": "to",
+      "charStart": 102,
+      "charEnd": 104,
+      "startS": 6.72,
+      "endS": 6.8
+    },
+    {
+      "text": "focus",
+      "charStart": 105,
+      "charEnd": 110,
+      "startS": 6.8,
+      "endS": 7.2
+    },
+    {
+      "text": "on",
+      "charStart": 111,
+      "charEnd": 113,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "thorough",
+      "charStart": 114,
+      "charEnd": 122,
+      "startS": 7.68,
+      "endS": 7.92
+    }
+  ]
+}

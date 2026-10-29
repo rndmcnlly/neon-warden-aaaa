@@ -1,0 +1,145 @@
+{
+  "hash": "a1656d1851911b4a",
+  "mode": "clone",
+  "request": {
+    "id": "zh__kill_ai_004",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "你的接替者已经在接受入职培训了。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Same warmth, meant as good news. No irony.",
+  "duration": 2.96,
+  "sample_rate": 24000,
+  "peak": 0.773,
+  "clipping_suspect": false,
+  "asr": "你的接替者已经在接受入职培训了。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.23,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "a1656d1851911b4a/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "的",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "接",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "替",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "者",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "已",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "经",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "在",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "接",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "受",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "入",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "职",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "培",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "训",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "了",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.64,
+      "endS": 2.88
+    }
+  ]
+}

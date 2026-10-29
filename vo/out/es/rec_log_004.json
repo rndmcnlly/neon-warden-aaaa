@@ -1,0 +1,145 @@
+{
+  "hash": "9d926575b5ef0790",
+  "mode": "clone",
+  "request": {
+    "id": "es__rec_log_004",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "Si alguien encuentra esto: él se detuvo. Anótenlo en algún lugar donde no puedan cobrarlo.",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Recorded, as quiet as this voice gets, which is not very.",
+  "duration": 6.72,
+  "sample_rate": 24000,
+  "peak": 0.639,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.76,
+    "gain_db": 2.03,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.03,
+    "peak_bound": false
+  },
+  "asr": "Si alguien encuentra esto, él se detuvo, anotenlo en algún lugar donde no puedan cobrarlo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Si",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "alguien",
+      "charStart": 3,
+      "charEnd": 10,
+      "startS": 0.32,
+      "endS": 0.8
+    },
+    {
+      "text": "encuentra",
+      "charStart": 11,
+      "charEnd": 20,
+      "startS": 0.8,
+      "endS": 1.36
+    },
+    {
+      "text": "esto",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 1.36,
+      "endS": 1.76
+    },
+    {
+      "text": "él",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "se",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "detuvo",
+      "charStart": 33,
+      "charEnd": 39,
+      "startS": 2.48,
+      "endS": 3.12
+    },
+    {
+      "text": "Anótenlo",
+      "charStart": 41,
+      "charEnd": 49,
+      "startS": 3.28,
+      "endS": 4.16
+    },
+    {
+      "text": "en",
+      "charStart": 50,
+      "charEnd": 52,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "algún",
+      "charStart": 53,
+      "charEnd": 58,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "lugar",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 4.64,
+      "endS": 5.04
+    },
+    {
+      "text": "donde",
+      "charStart": 65,
+      "charEnd": 70,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "no",
+      "charStart": 71,
+      "charEnd": 73,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "puedan",
+      "charStart": 74,
+      "charEnd": 80,
+      "startS": 5.6,
+      "endS": 5.92
+    },
+    {
+      "text": "cobrarlo",
+      "charStart": 81,
+      "charEnd": 89,
+      "startS": 5.92,
+      "endS": 6.72
+    }
+  ],
+  "words_for": "9d926575b5ef0790/wordtiming-v1"
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "580ef2792cf690e7",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_turn_003",
+    "seed": 233,
+    "language": "Spanish",
+    "text": "¡Cero uno dos uno se detuvo! ¡Él escuchó! ¿¡Por qué TÚ no escuchas!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Grief breaking through the fury.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.801,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.89,
+    "gain_db": 1.96,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.96,
+    "peak_bound": false
+  },
+  "asr": "cero uno dos uno se detuvo él escuchó porque tú no escuchas",
+  "asr_similarity": 0.88,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Cero",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "uno",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "dos",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "uno",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "se",
+      "charStart": 18,
+      "charEnd": 20,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "detuvo",
+      "charStart": 21,
+      "charEnd": 27,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "Él",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "escuchó",
+      "charStart": 33,
+      "charEnd": 40,
+      "startS": 2.32,
+      "endS": 2.72
+    },
+    {
+      "text": "Por",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "qué",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "TÚ",
+      "charStart": 52,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "no",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "escuchas",
+      "charStart": 58,
+      "charEnd": 66,
+      "startS": 4.0,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "580ef2792cf690e7/wordtiming-v1"
+}

@@ -1,0 +1,117 @@
+{
+  "hash": "2abb593aaf87a24e",
+  "mode": "clone",
+  "request": {
+    "id": "es__rec_ai_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Registrador archivado. Contenido: no relevante para tu contrato. Por favor, continúa.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, back on script, a beat too quickly.",
+  "duration": 6.72,
+  "sample_rate": 24000,
+  "peak": 0.788,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.02,
+    "gain_db": 3.13,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.13,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Registrador",
+      "charStart": 0,
+      "charEnd": 11,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "archivado",
+      "charStart": 12,
+      "charEnd": 21,
+      "startS": 0.96,
+      "endS": 1.84
+    },
+    {
+      "text": "Contenido",
+      "charStart": 23,
+      "charEnd": 32,
+      "startS": 2.0,
+      "endS": 2.72
+    },
+    {
+      "text": "no",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "relevante",
+      "charStart": 37,
+      "charEnd": 46,
+      "startS": 3.28,
+      "endS": 3.68
+    },
+    {
+      "text": "para",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "tu",
+      "charStart": 52,
+      "charEnd": 54,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "contrato",
+      "charStart": 55,
+      "charEnd": 63,
+      "startS": 4.08,
+      "endS": 4.88
+    },
+    {
+      "text": "Por",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "favor",
+      "charStart": 69,
+      "charEnd": 74,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "continúa",
+      "charStart": 76,
+      "charEnd": 84,
+      "startS": 5.84,
+      "endS": 6.64
+    }
+  ],
+  "words_for": "2abb593aaf87a24e/wordtiming-v1",
+  "asr": "Registro archivo continuo no relevante para tu contrato por favor continúa",
+  "asr_similarity": 0.727
+}

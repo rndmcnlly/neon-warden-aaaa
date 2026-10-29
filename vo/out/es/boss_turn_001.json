@@ -1,0 +1,152 @@
+{
+  "hash": "bf55fb5c48e9ad6c",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_turn_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¿¡Sabes qué hay detrás de mí!? ¡Nada! ¡Cielo! ¡Cielo libre, para cualquiera que venga sin armas!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "The turn: still shouting, but pleading now, not threatening.",
+  "duration": 5.36,
+  "sample_rate": 24000,
+  "peak": 0.631,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.84,
+    "gain_db": 1.9,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.9,
+    "peak_bound": false
+  },
+  "asr": "Sabes que hay detrás de mí nada, cielo, cielo libre para cualquiera que venga sin armas.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sabes",
+      "charStart": 2,
+      "charEnd": 7,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "qué",
+      "charStart": 8,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "hay",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "detrás",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "de",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "mí",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "Nada",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 1.76,
+      "endS": 2.32
+    },
+    {
+      "text": "Cielo",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 2.48,
+      "endS": 3.04
+    },
+    {
+      "text": "Cielo",
+      "charStart": 47,
+      "charEnd": 52,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "libre",
+      "charStart": 53,
+      "charEnd": 58,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "para",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "cualquiera",
+      "charStart": 65,
+      "charEnd": 75,
+      "startS": 3.84,
+      "endS": 4.32
+    },
+    {
+      "text": "que",
+      "charStart": 76,
+      "charEnd": 79,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "venga",
+      "charStart": 80,
+      "charEnd": 85,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "sin",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "armas",
+      "charStart": 90,
+      "charEnd": 95,
+      "startS": 4.88,
+      "endS": 5.36
+    }
+  ],
+  "words_for": "bf55fb5c48e9ad6c/wordtiming-v1"
+}

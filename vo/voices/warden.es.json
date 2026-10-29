@@ -1,0 +1,27 @@
+{
+  "hash": "03fd449b47e27742",
+  "method": "design",
+  "candidate": "design_s33",
+  "from_anchor": "b640bed5f2064032",
+  "request": {
+    "id": "warden.es",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!",
+    "instruct": "Una voz masculina aguda, chillona e indignada, operística y exagerada, que grita con furia teatral y se quiebra cuando se enoja: un viejo guardián harto de repetir la misma advertencia. Nada grave ni ronca, un poco cómica. Español latinoamericano neutro, con dicción muy clara."
+  },
+  "duration": 7.36,
+  "sample_rate": 24000,
+  "peak": 0.696,
+  "clipping_suspect": false,
+  "median_f0": 278.9,
+  "audition": {
+    "method": "design",
+    "seed": 33,
+    "mean": 0.994,
+    "min": 0.952,
+    "anchor_asr": 0.962,
+    "anchor_f0": 278.9,
+    "f0_ratio": 0.901
+  }
+}

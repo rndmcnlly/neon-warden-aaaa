@@ -1,0 +1,278 @@
+{
+  "hash": "98c0895ded5c3f62",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_lives_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "你的船体能承受三次命中。每次命中还会让主炮降一级。请跟我一起数到三。一。二。三。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Slow and deliberate counting, like a crossing guard.",
+  "duration": 7.36,
+  "sample_rate": 24000,
+  "peak": 0.839,
+  "clipping_suspect": false,
+  "asr": "你的船体能承受三次命中，每次命中还会让主炮降一级。请跟我一起数到三：一二三。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.26,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 1.65,
+    "limited_db": 1.62,
+    "measured_before_lufs": -19.67,
+    "peak_bound": false
+  },
+  "words_for": "98c0895ded5c3f62/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "的",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "船",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "体",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "能",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "承",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "受",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "三",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "次",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "命",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "中",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "每",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "次",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "命",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "中",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "还",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "会",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "让",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "主",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "炮",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "降",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "一",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "级",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "请",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "跟",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "我",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "一",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "起",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "数",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "到",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "三",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 5.92,
+      "endS": 6.24
+    },
+    {
+      "text": "一",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 6.48,
+      "endS": 6.64
+    },
+    {
+      "text": "二",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.72,
+      "endS": 6.88
+    },
+    {
+      "text": "三",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 6.88,
+      "endS": 7.12
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "ef3cf8e966f3a95c",
+  "mode": "clone",
+  "request": {
+    "id": "en__amb_nofire_003",
+    "seed": 11,
+    "language": "English",
+    "text": "The scouts are not firing at you. That is not in my briefing.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, genuinely confused, reading her notes.",
+  "duration": 3.68,
+  "sample_rate": 24000,
+  "peak": 0.842,
+  "clipping_suspect": false,
+  "asr": "The scouts are not firing at you. That is not in my briefing.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.33,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "ef3cf8e966f3a95c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "The",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "scouts",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "are",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "not",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "firing",
+      "charStart": 19,
+      "charEnd": 25,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "at",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "you",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "That",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "is",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "not",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "in",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "my",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "briefing",
+      "charStart": 52,
+      "charEnd": 60,
+      "startS": 2.96,
+      "endS": 3.6
+    }
+  ]
+}

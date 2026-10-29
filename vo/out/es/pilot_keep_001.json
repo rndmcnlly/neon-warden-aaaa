@@ -1,0 +1,67 @@
+{
+  "hash": "c55830614b05419f",
+  "mode": "design",
+  "request": {
+    "id": "es__pilot_keep_001",
+    "seed": 744,
+    "language": "Spanish",
+    "text": "Quédense con el dinero.",
+    "instruct": "A terse, low, quiet adult male voice heard through a sealed helmet, mid thirties, flat and economical, slightly muffled and close to the microphone, no warmth and no hurry, every word deliberate. Delivery for this line: Flat, quiet, final. No emphasis on either word."
+  },
+  "direction": "Flat, quiet, final. No emphasis on either word.",
+  "duration": 1.44,
+  "sample_rate": 24000,
+  "peak": 0.687,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.25,
+    "gain_db": 1.27,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.27,
+    "peak_bound": false
+  },
+  "asr": "Quédense con el dinero.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Quédense",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "con",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "el",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "dinero",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 0.8,
+      "endS": 1.28
+    }
+  ],
+  "words_for": "c55830614b05419f/wordtiming-v1"
+}

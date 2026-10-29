@@ -1,0 +1,124 @@
+{
+  "hash": "bc2740d1f6e96274",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_drone_patrol_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Contract ship in the Drift. Gun's warm. Same as the last one.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates.",
+  "duration": 3.76,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.28,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 3.63,
+    "limited_db": 2.13,
+    "measured_before_lufs": -21.63,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Contract",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.0,
+      "endS": 0.64
+    },
+    {
+      "text": "ship",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "in",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "the",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "Drift",
+      "charStart": 21,
+      "charEnd": 26,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "Gun's",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 1.68,
+      "endS": 2.0
+    },
+    {
+      "text": "warm",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 2.0,
+      "endS": 2.48
+    },
+    {
+      "text": "Same",
+      "charStart": 40,
+      "charEnd": 44,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "as",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "the",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "last",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "one",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 3.52,
+      "endS": 3.76
+    }
+  ],
+  "words_for": "bc2740d1f6e96274/wordtiming-v1",
+  "asr": "Contract ship in the drift guns warm, same as the last one.",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,138 @@
+{
+  "hash": "94c68c2630a4ec4c",
+  "mode": "clone",
+  "request": {
+    "id": "en__amb_fight_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Every scout you clear is logged to your performance record. Your record looks wonderful.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, warm performance-review praise.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.861,
+  "clipping_suspect": false,
+  "asr": "Every scout you clear is logged to your performance record. Your record looks wonderful.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.26,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "94c68c2630a4ec4c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Every",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "scout",
+      "charStart": 6,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "you",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "clear",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "is",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "logged",
+      "charStart": 25,
+      "charEnd": 31,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "to",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "your",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "performance",
+      "charStart": 40,
+      "charEnd": 51,
+      "startS": 1.92,
+      "endS": 2.56
+    },
+    {
+      "text": "record",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "Your",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "record",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 3.6,
+      "endS": 4.0
+    },
+    {
+      "text": "looks",
+      "charStart": 72,
+      "charEnd": 77,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "wonderful",
+      "charStart": 78,
+      "charEnd": 87,
+      "startS": 4.24,
+      "endS": 4.96
+    }
+  ]
+}

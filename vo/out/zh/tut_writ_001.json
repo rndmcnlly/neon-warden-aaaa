@@ -1,0 +1,495 @@
+{
+  "hash": "be6b35702a100627",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_writ_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "你的电容器已经充满，满充能的一击叫作令状。全称是圈地令状，得名于创立管理局的那份法律文书。令状会贯穿挡在前面的一切。请对准扫描标出的弱点释放。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. A little ceremony on the full name.",
+  "duration": 12.32,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.08,
+    "true_peak_dbtp": -1.09,
+    "gain_db": 5.95,
+    "limited_db": 1.13,
+    "measured_before_lufs": -23.95,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "的",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "电",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "容",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "器",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "已",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "经",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "充",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "满",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "满",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "充",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "能",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "的",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "一",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "击",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "叫",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "作",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "令",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "状",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "全",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "称",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "是",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "圈",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "地",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "令",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "状",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "得",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "名",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "于",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.76,
+      "endS": 5.84
+    },
+    {
+      "text": "创",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "立",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "管",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "理",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "局",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.48,
+      "endS": 6.56
+    },
+    {
+      "text": "的",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 6.56,
+      "endS": 6.72
+    },
+    {
+      "text": "那",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 6.72,
+      "endS": 6.8
+    },
+    {
+      "text": "份",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "法",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 6.96,
+      "endS": 7.2
+    },
+    {
+      "text": "律",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "文",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 7.36,
+      "endS": 7.44
+    },
+    {
+      "text": "书",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 7.44,
+      "endS": 7.6
+    },
+    {
+      "text": "令",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 7.84,
+      "endS": 8.08
+    },
+    {
+      "text": "状",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 8.08,
+      "endS": 8.24
+    },
+    {
+      "text": "会",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 8.24,
+      "endS": 8.4
+    },
+    {
+      "text": "贯",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 8.4,
+      "endS": 8.56
+    },
+    {
+      "text": "穿",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 8.56,
+      "endS": 8.8
+    },
+    {
+      "text": "挡",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 8.8,
+      "endS": 8.96
+    },
+    {
+      "text": "在",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "前",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "面",
+      "charStart": 53,
+      "charEnd": 54,
+      "startS": 9.2,
+      "endS": 9.36
+    },
+    {
+      "text": "的",
+      "charStart": 54,
+      "charEnd": 55,
+      "startS": 9.36,
+      "endS": 9.44
+    },
+    {
+      "text": "一",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 9.44,
+      "endS": 9.6
+    },
+    {
+      "text": "切",
+      "charStart": 56,
+      "charEnd": 57,
+      "startS": 9.6,
+      "endS": 9.92
+    },
+    {
+      "text": "请",
+      "charStart": 58,
+      "charEnd": 59,
+      "startS": 10.16,
+      "endS": 10.4
+    },
+    {
+      "text": "对",
+      "charStart": 59,
+      "charEnd": 60,
+      "startS": 10.4,
+      "endS": 10.56
+    },
+    {
+      "text": "准",
+      "charStart": 60,
+      "charEnd": 61,
+      "startS": 10.56,
+      "endS": 10.72
+    },
+    {
+      "text": "扫",
+      "charStart": 61,
+      "charEnd": 62,
+      "startS": 10.72,
+      "endS": 10.88
+    },
+    {
+      "text": "描",
+      "charStart": 62,
+      "charEnd": 63,
+      "startS": 10.88,
+      "endS": 11.04
+    },
+    {
+      "text": "标",
+      "charStart": 63,
+      "charEnd": 64,
+      "startS": 11.04,
+      "endS": 11.2
+    },
+    {
+      "text": "出",
+      "charStart": 64,
+      "charEnd": 65,
+      "startS": 11.28,
+      "endS": 11.36
+    },
+    {
+      "text": "的",
+      "charStart": 65,
+      "charEnd": 66,
+      "startS": 11.36,
+      "endS": 11.44
+    },
+    {
+      "text": "弱",
+      "charStart": 66,
+      "charEnd": 67,
+      "startS": 11.52,
+      "endS": 11.68
+    },
+    {
+      "text": "点",
+      "charStart": 67,
+      "charEnd": 68,
+      "startS": 11.68,
+      "endS": 11.84
+    },
+    {
+      "text": "释",
+      "charStart": 68,
+      "charEnd": 69,
+      "startS": 11.84,
+      "endS": 12.0
+    },
+    {
+      "text": "放",
+      "charStart": 69,
+      "charEnd": 70,
+      "startS": 12.08,
+      "endS": 12.16
+    }
+  ],
+  "words_for": "be6b35702a100627/wordtiming-v1",
+  "asr": "你的电容器已经充满满充，能的一击叫做令状，全称是圈地令状，得名于创立管理局的那份法律文书。令状会贯穿挡在前面的一切，请对准扫描标出的弱点释放。",
+  "asr_similarity": 0.985
+}

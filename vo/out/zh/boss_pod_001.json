@@ -1,0 +1,159 @@
+{
+  "hash": "b74eb4d433f5375d",
+  "mode": "clone",
+  "request": {
+    "id": "zh__boss_pod_001",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "我的炮舱！你知道长出一个炮舱要多久吗？！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Outraged, high, a callback to its first line about growing scouts.",
+  "duration": 3.68,
+  "sample_rate": 24000,
+  "peak": 0.643,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.81,
+    "gain_db": 1.23,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.23,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "我",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "的",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "炮",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "舱",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "你",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "知",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "道",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "长",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "出",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "一",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "个",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "炮",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "舱",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "要",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "多",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "久",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "吗",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.2,
+      "endS": 3.6
+    }
+  ],
+  "words_for": "b74eb4d433f5375d/wordtiming-v1",
+  "asr": "我的炮仓，你知道长出一个炮仓要多久吗？",
+  "asr_similarity": 0.882
+}

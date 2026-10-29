@@ -1,0 +1,180 @@
+{
+  "hash": "dcbb6f7a471b0555",
+  "mode": "clone",
+  "request": {
+    "id": "en__kill_warden_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Oh. Oh, there goes another ring. Count them, zero one two two. Count what they put where the rings were.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Dying, the high voice small and almost calm for the first time.",
+  "duration": 6.32,
+  "sample_rate": 24000,
+  "peak": 0.738,
+  "clipping_suspect": false,
+  "asr": "Oh, oh! There goes another ring. Count them: zero, one, two, two. Count what they put where the rings were.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.49,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "dcbb6f7a471b0555/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Oh",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "Oh",
+      "charStart": 4,
+      "charEnd": 6,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "there",
+      "charStart": 8,
+      "charEnd": 13,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "goes",
+      "charStart": 14,
+      "charEnd": 18,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "another",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "ring",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "Count",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "them",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "zero",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "one",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "two",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "two",
+      "charStart": 58,
+      "charEnd": 61,
+      "startS": 3.76,
+      "endS": 4.24
+    },
+    {
+      "text": "Count",
+      "charStart": 63,
+      "charEnd": 68,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "what",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "they",
+      "charStart": 74,
+      "charEnd": 78,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "put",
+      "charStart": 79,
+      "charEnd": 82,
+      "startS": 5.04,
+      "endS": 5.36
+    },
+    {
+      "text": "where",
+      "charStart": 83,
+      "charEnd": 88,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "the",
+      "charStart": 89,
+      "charEnd": 92,
+      "startS": 5.52,
+      "endS": 5.6
+    },
+    {
+      "text": "rings",
+      "charStart": 93,
+      "charEnd": 98,
+      "startS": 5.6,
+      "endS": 5.92
+    },
+    {
+      "text": "were",
+      "charStart": 99,
+      "charEnd": 103,
+      "startS": 5.92,
+      "endS": 6.32
+    }
+  ]
+}

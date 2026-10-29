@@ -1,0 +1,138 @@
+{
+  "hash": "15ed81c356b1f676",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_lancer_disarmed_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Emisores muertos. La Puerta está abierta y nadie la vigila. Ese es el problema.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Relief turning to worry.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.14,
+    "gain_db": 3.24,
+    "limited_db": 0.41,
+    "measured_before_lufs": -21.24,
+    "peak_bound": false
+  },
+  "asr": "Emisores muertos. La puerta está abierta y nadie la vigila. Ese es el problema.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Emisores",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "muertos",
+      "charStart": 9,
+      "charEnd": 16,
+      "startS": 1.12,
+      "endS": 1.76
+    },
+    {
+      "text": "La",
+      "charStart": 18,
+      "charEnd": 20,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "Puerta",
+      "charStart": 21,
+      "charEnd": 27,
+      "startS": 2.8,
+      "endS": 3.2
+    },
+    {
+      "text": "está",
+      "charStart": 28,
+      "charEnd": 32,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "abierta",
+      "charStart": 33,
+      "charEnd": 40,
+      "startS": 3.44,
+      "endS": 4.0
+    },
+    {
+      "text": "y",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "nadie",
+      "charStart": 43,
+      "charEnd": 48,
+      "startS": 4.16,
+      "endS": 4.56
+    },
+    {
+      "text": "la",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "vigila",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 4.64,
+      "endS": 5.2
+    },
+    {
+      "text": "Ese",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 5.92,
+      "endS": 6.24
+    },
+    {
+      "text": "es",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "el",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 6.32,
+      "endS": 6.4
+    },
+    {
+      "text": "problema",
+      "charStart": 70,
+      "charEnd": 78,
+      "startS": 6.4,
+      "endS": 6.88
+    }
+  ],
+  "words_for": "15ed81c356b1f676/wordtiming-v1"
+}

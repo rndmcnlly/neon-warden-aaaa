@@ -1,0 +1,369 @@
+{
+  "hash": "ac0af638efd7fcdc",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_review_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "再复习一下扳机：轻按打部件，按住打船体，松开充能令状并进行扫描。擦弹提升费率。扫描获取情报。请尽量别被击中。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. A patient recap, every item given its due.",
+  "duration": 11.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.12,
+    "true_peak_dbtp": -1.15,
+    "gain_db": 4.43,
+    "limited_db": 2.1,
+    "measured_before_lufs": -22.43,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "再",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "复",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "习",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "一",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "下",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "扳",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "机",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.12,
+      "endS": 1.52
+    },
+    {
+      "text": "轻",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "按",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "打",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "部",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "件",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "按",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "住",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "打",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "船",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "体",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "松",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "开",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "充",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "能",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "令",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "状",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.36,
+      "endS": 5.68
+    },
+    {
+      "text": "并",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "进",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "行",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "扫",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "描",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.4,
+      "endS": 6.72
+    },
+    {
+      "text": "擦",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "弹",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 7.28,
+      "endS": 7.52
+    },
+    {
+      "text": "提",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 7.52,
+      "endS": 7.68
+    },
+    {
+      "text": "升",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 7.68,
+      "endS": 7.84
+    },
+    {
+      "text": "费",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 7.84,
+      "endS": 8.0
+    },
+    {
+      "text": "率",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 8.0,
+      "endS": 8.24
+    },
+    {
+      "text": "扫",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "描",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 8.64,
+      "endS": 8.88
+    },
+    {
+      "text": "获",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 8.88,
+      "endS": 9.04
+    },
+    {
+      "text": "取",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "情",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 9.2,
+      "endS": 9.36
+    },
+    {
+      "text": "报",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 9.36,
+      "endS": 9.68
+    },
+    {
+      "text": "请",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 9.84,
+      "endS": 10.0
+    },
+    {
+      "text": "尽",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 10.0,
+      "endS": 10.16
+    },
+    {
+      "text": "量",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 10.16,
+      "endS": 10.4
+    },
+    {
+      "text": "别",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 10.4,
+      "endS": 10.56
+    },
+    {
+      "text": "被",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 10.56,
+      "endS": 10.64
+    },
+    {
+      "text": "击",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 10.64,
+      "endS": 10.8
+    },
+    {
+      "text": "中",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 10.8,
+      "endS": 11.12
+    }
+  ],
+  "words_for": "ac0af638efd7fcdc/wordtiming-v1",
+  "asr": "再复习一下：扳机，轻按打部件，按住打船体，松开充能令状，并进行扫描，擦弹提升费率，扫描获取情报，请尽量别被击中。",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,75 @@
+{
+  "hash": "a1b77f847e9170ac",
+  "mode": "clone",
+  "request": {
+    "id": "en__end_epi_003",
+    "seed": 22,
+    "language": "English",
+    "text": "Ahead, the long way home.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "direction": "The last line of the original game. Let it hang.",
+  "duration": 2.88,
+  "sample_rate": 24000,
+  "peak": 0.738,
+  "clipping_suspect": false,
+  "asr": "Ahead, the long way home.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.61,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "a1b77f847e9170ac/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ahead",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.64
+    },
+    {
+      "text": "the",
+      "charStart": 7,
+      "charEnd": 10,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "long",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 1.36,
+      "endS": 1.84
+    },
+    {
+      "text": "way",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "home",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 2.08,
+      "endS": 2.8
+    }
+  ]
+}

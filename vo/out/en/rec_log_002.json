@@ -1,0 +1,173 @@
+{
+  "hash": "3ff222e7d7eb4dd3",
+  "mode": "clone",
+  "request": {
+    "id": "en__rec_log_002",
+    "seed": 33,
+    "language": "English",
+    "text": "It's me again. I towed you out of the crossfire. I didn't know what else to do with you.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Recorded, still loud by habit, but talking to an empty cockpit.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.628,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.91,
+    "gain_db": 1.74,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.74,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "It's",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "me",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.24,
+      "endS": 0.56
+    },
+    {
+      "text": "again",
+      "charStart": 8,
+      "charEnd": 13,
+      "startS": 0.56,
+      "endS": 1.04
+    },
+    {
+      "text": "I",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "towed",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 1.36,
+      "endS": 1.68
+    },
+    {
+      "text": "you",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "out",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "of",
+      "charStart": 31,
+      "charEnd": 33,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "the",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "crossfire",
+      "charStart": 38,
+      "charEnd": 47,
+      "startS": 2.16,
+      "endS": 3.04
+    },
+    {
+      "text": "I",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "didn't",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "know",
+      "charStart": 58,
+      "charEnd": 62,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "what",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "else",
+      "charStart": 68,
+      "charEnd": 72,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "to",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "do",
+      "charStart": 76,
+      "charEnd": 78,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "with",
+      "charStart": 79,
+      "charEnd": 83,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "you",
+      "charStart": 84,
+      "charEnd": 87,
+      "startS": 4.64,
+      "endS": 5.04
+    }
+  ],
+  "words_for": "3ff222e7d7eb4dd3/wordtiming-v1",
+  "asr": "It's me again. I told you out of the crossfire. I didn't know what else to do with you.",
+  "asr_similarity": 0.947
+}

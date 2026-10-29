@@ -1,0 +1,131 @@
+{
+  "hash": "bab9194b2ae770a4",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_auth_patrol_002",
+    "seed": 66,
+    "language": "English",
+    "text": "Recall desk, confirm stock: Pilot zero one two three is ready in onboarding.",
+    "voice_ref": "vo/voices/authority.wav",
+    "reference_text": "Lane Control to all survey teams. Tollgate footings approved, pending clearance. Please log your hours before the end of the cycle."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.16,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 4.18,
+    "limited_db": 1.39,
+    "measured_before_lufs": -22.18,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Recall",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.48,
+      "endS": 0.88
+    },
+    {
+      "text": "desk",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.88,
+      "endS": 1.44
+    },
+    {
+      "text": "confirm",
+      "charStart": 13,
+      "charEnd": 20,
+      "startS": 1.76,
+      "endS": 2.16
+    },
+    {
+      "text": "stock",
+      "charStart": 21,
+      "charEnd": 26,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "Pilot",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "zero",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "one",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "two",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "three",
+      "charStart": 47,
+      "charEnd": 52,
+      "startS": 4.24,
+      "endS": 4.56
+    },
+    {
+      "text": "is",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "ready",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 4.72,
+      "endS": 5.12
+    },
+    {
+      "text": "in",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "onboarding",
+      "charStart": 65,
+      "charEnd": 75,
+      "startS": 5.2,
+      "endS": 5.92
+    }
+  ],
+  "words_for": "bab9194b2ae770a4/wordtiming-v1",
+  "asr": "Recall desk, confirm stock. Pilot zero one two three is ready and onboarding.",
+  "asr_similarity": 0.923
+}

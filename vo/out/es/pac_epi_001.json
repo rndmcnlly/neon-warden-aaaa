@@ -1,0 +1,117 @@
+{
+  "hash": "3019a997b53c2fa8",
+  "mode": "clone",
+  "request": {
+    "id": "es__pac_epi_001",
+    "seed": 22,
+    "language": "Spanish",
+    "text": "Las luces del Guardián siguen encendidas, cada uno de sus anillos.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "Echo of the kill epilogue, warmer, slower.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.697,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.08,
+    "gain_db": 5.31,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.31,
+    "peak_bound": false
+  },
+  "asr": "Las luces del Guardian siguen encendidas, cada uno de sus anillos.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Las",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "luces",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "del",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "Guardián",
+      "charStart": 14,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.84
+    },
+    {
+      "text": "siguen",
+      "charStart": 23,
+      "charEnd": 29,
+      "startS": 1.84,
+      "endS": 2.24
+    },
+    {
+      "text": "encendidas",
+      "charStart": 30,
+      "charEnd": 40,
+      "startS": 2.24,
+      "endS": 3.2
+    },
+    {
+      "text": "cada",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "uno",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "de",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "sus",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "anillos",
+      "charStart": 58,
+      "charEnd": 65,
+      "startS": 4.4,
+      "endS": 5.04
+    }
+  ],
+  "words_for": "3019a997b53c2fa8/wordtiming-v1"
+}

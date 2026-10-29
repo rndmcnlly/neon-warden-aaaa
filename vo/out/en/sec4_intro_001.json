@@ -1,0 +1,194 @@
+{
+  "hash": "1aae48dff58d3cd0",
+  "mode": "clone",
+  "request": {
+    "id": "en__sec4_intro_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Lancer Gate. Crossfire. Lancers fire across the lane, never along it. Almost as if they were keeping the lane itself clear. Odd.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, briefing voice that trails off into honest puzzlement.",
+  "duration": 9.28,
+  "sample_rate": 24000,
+  "peak": 0.858,
+  "clipping_suspect": false,
+  "asr": "Lancer gate crossfire. Lancers fire across the lane, never along it, almost as if they were keeping the lane itself clear. Odd.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.18,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "1aae48dff58d3cd0/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lancer",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.32,
+      "endS": 0.8
+    },
+    {
+      "text": "Gate",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "Crossfire",
+      "charStart": 13,
+      "charEnd": 22,
+      "startS": 1.12,
+      "endS": 1.92
+    },
+    {
+      "text": "Lancers",
+      "charStart": 24,
+      "charEnd": 31,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "fire",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "across",
+      "charStart": 37,
+      "charEnd": 43,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "the",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "lane",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "never",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "along",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 4.64,
+      "endS": 4.96
+    },
+    {
+      "text": "it",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "Almost",
+      "charStart": 70,
+      "charEnd": 76,
+      "startS": 5.84,
+      "endS": 5.92
+    },
+    {
+      "text": "as",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "if",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 6.48,
+      "endS": 6.56
+    },
+    {
+      "text": "they",
+      "charStart": 83,
+      "charEnd": 87,
+      "startS": 6.56,
+      "endS": 6.64
+    },
+    {
+      "text": "were",
+      "charStart": 88,
+      "charEnd": 92,
+      "startS": 6.64,
+      "endS": 6.72
+    },
+    {
+      "text": "keeping",
+      "charStart": 93,
+      "charEnd": 100,
+      "startS": 6.72,
+      "endS": 7.04
+    },
+    {
+      "text": "the",
+      "charStart": 101,
+      "charEnd": 104,
+      "startS": 7.2,
+      "endS": 7.28
+    },
+    {
+      "text": "lane",
+      "charStart": 105,
+      "charEnd": 109,
+      "startS": 7.28,
+      "endS": 7.52
+    },
+    {
+      "text": "itself",
+      "charStart": 110,
+      "charEnd": 116,
+      "startS": 7.52,
+      "endS": 8.0
+    },
+    {
+      "text": "clear",
+      "charStart": 117,
+      "charEnd": 122,
+      "startS": 8.0,
+      "endS": 8.4
+    },
+    {
+      "text": "Odd",
+      "charStart": 124,
+      "charEnd": 127,
+      "startS": 8.48,
+      "endS": 8.56
+    }
+  ]
+}

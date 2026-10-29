@@ -1,0 +1,103 @@
+{
+  "hash": "ff2e5b93ca9dd0ae",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_dart_locked_001",
+    "seed": 55,
+    "language": "English",
+    "text": "It locked a dart. Nothing to find. We're empty.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Wry.",
+  "duration": 3.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.19,
+    "true_peak_dbtp": -1.37,
+    "gain_db": 5.38,
+    "limited_db": 1.33,
+    "measured_before_lufs": -23.38,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "It",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "locked",
+      "charStart": 3,
+      "charEnd": 9,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "a",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "dart",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "Nothing",
+      "charStart": 18,
+      "charEnd": 25,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "to",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "find",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 1.68,
+      "endS": 2.16
+    },
+    {
+      "text": "We're",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "empty",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 2.64,
+      "endS": 3.12
+    }
+  ],
+  "words_for": "ff2e5b93ca9dd0ae/wordtiming-v1",
+  "asr": "It locked a dart. Nothing to find. We're empty.",
+  "asr_similarity": 1.0
+}

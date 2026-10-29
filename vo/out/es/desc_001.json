@@ -1,0 +1,145 @@
+{
+  "hash": "00c2557d7c610639",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡ALTO! ¡Alto ahí! ¿¡Tienes la MÁS MÍNIMA idea de cuánto tarda en crecer un explorador!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "First words ever heard from the Warden: high, shrill, indignant. The joke is that it is not the briefing voice.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.79,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.02,
+    "gain_db": 0.81,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.81,
+    "peak_bound": false
+  },
+  "asr": "Alto, alto ahí. Tienes la más mínima idea de cuánto tarda en crecer un explorador.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "ALTO",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.8
+    },
+    {
+      "text": "Alto",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "ahí",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.76
+    },
+    {
+      "text": "Tienes",
+      "charStart": 20,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "la",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "MÁS",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "MÍNIMA",
+      "charStart": 34,
+      "charEnd": 40,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "idea",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "de",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "cuánto",
+      "charStart": 49,
+      "charEnd": 55,
+      "startS": 3.68,
+      "endS": 4.08
+    },
+    {
+      "text": "tarda",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "en",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "crecer",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 4.48,
+      "endS": 4.88
+    },
+    {
+      "text": "un",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "explorador",
+      "charStart": 75,
+      "charEnd": 85,
+      "startS": 4.96,
+      "endS": 5.92
+    }
+  ],
+  "words_for": "00c2557d7c610639/wordtiming-v1"
+}

@@ -1,0 +1,89 @@
+{
+  "hash": "3deba3cc37530a33",
+  "mode": "clone",
+  "request": {
+    "id": "en__pac_end_006",
+    "seed": 33,
+    "language": "English",
+    "text": "HA! Ha! Oh, I like this one.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Explosive laugh, then fond. Plays after Pilot speaks.",
+  "duration": 2.8,
+  "sample_rate": 24000,
+  "peak": 0.559,
+  "clipping_suspect": false,
+  "asr": "Ha ha! Oh, I like this one.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.97,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "3deba3cc37530a33/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "HA",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "Ha",
+      "charStart": 4,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "Oh",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "I",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "like",
+      "charStart": 14,
+      "charEnd": 18,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "this",
+      "charStart": 19,
+      "charEnd": 23,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "one",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 2.08,
+      "endS": 2.72
+    }
+  ]
+}

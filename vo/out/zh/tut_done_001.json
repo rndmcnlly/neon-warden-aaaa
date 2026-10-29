@@ -1,0 +1,278 @@
+{
+  "hash": "dddfbf302f358a36",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_done_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "入职培训完成！你的合同现已生效。请前往外缘漂流带。记住：别偏离你的航道，飞行员。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Graduation-day pride; the last sentence is a catchphrase.",
+  "duration": 8.16,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "入职培训完成，你的合同现已生效，请前往外源漂流带。记住，别偏离你的航道，飞行员。",
+  "asr_similarity": 0.971,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.29,
+    "gain_db": 0.11,
+    "limited_db": 0.06,
+    "measured_before_lufs": -18.11,
+    "peak_bound": false
+  },
+  "words_for": "dddfbf302f358a36/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "入",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "职",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "培",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "训",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "完",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "成",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "你",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "的",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "合",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "同",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "现",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "已",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "生",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "效",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.8,
+      "endS": 3.2
+    },
+    {
+      "text": "请",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "前",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "往",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "外",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "缘",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "漂",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "流",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "带",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.72,
+      "endS": 5.12
+    },
+    {
+      "text": "记",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "住",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.68,
+      "endS": 6.0
+    },
+    {
+      "text": "别",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "偏",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "离",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "你",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.8,
+      "endS": 6.88
+    },
+    {
+      "text": "的",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.88,
+      "endS": 6.96
+    },
+    {
+      "text": "航",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.96,
+      "endS": 7.2
+    },
+    {
+      "text": "道",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 7.2,
+      "endS": 7.44
+    },
+    {
+      "text": "飞",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 7.44,
+      "endS": 7.6
+    },
+    {
+      "text": "行",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 7.6,
+      "endS": 7.84
+    },
+    {
+      "text": "员",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 7.84,
+      "endS": 8.08
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "hash": "3787195c62db9720",
+  "mode": "clone",
+  "request": {
+    "id": "en__kill_ai_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Tollgate deployment has begun. The lanes will be open to all subscribers within the hour.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, a service announcement, completely sincere.",
+  "duration": 6.4,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Tollgate deployment has begun. The lanes will be open to all subscribers within the hour.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 0.2,
+    "limited_db": 0.15,
+    "measured_before_lufs": -18.2,
+    "peak_bound": false
+  },
+  "words_for": "3787195c62db9720/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Tollgate",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "deployment",
+      "charStart": 9,
+      "charEnd": 19,
+      "startS": 1.44,
+      "endS": 2.08
+    },
+    {
+      "text": "has",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "begun",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 2.24,
+      "endS": 2.72
+    },
+    {
+      "text": "The",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "lanes",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "will",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "be",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "open",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "to",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "all",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "subscribers",
+      "charStart": 61,
+      "charEnd": 72,
+      "startS": 4.8,
+      "endS": 5.52
+    },
+    {
+      "text": "within",
+      "charStart": 73,
+      "charEnd": 79,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "the",
+      "charStart": 80,
+      "charEnd": 83,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "hour",
+      "charStart": 84,
+      "charEnd": 88,
+      "startS": 5.92,
+      "endS": 6.4
+    }
+  ]
+}

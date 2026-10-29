@@ -1,0 +1,124 @@
+{
+  "hash": "1b35e84b59900235",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_turret_patrol_002",
+    "seed": 55,
+    "language": "English",
+    "text": "The old derelict is still drifting past station nine. Leave it be.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Protective.",
+  "duration": 4.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.22,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 5.63,
+    "limited_db": 1.84,
+    "measured_before_lufs": -23.63,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "The",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "old",
+      "charStart": 4,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "derelict",
+      "charStart": 8,
+      "charEnd": 16,
+      "startS": 0.48,
+      "endS": 1.04
+    },
+    {
+      "text": "is",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "still",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "drifting",
+      "charStart": 26,
+      "charEnd": 34,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "past",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "station",
+      "charStart": 40,
+      "charEnd": 47,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "nine",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 2.64,
+      "endS": 3.12
+    },
+    {
+      "text": "Leave",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "it",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "be",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 3.6,
+      "endS": 3.92
+    }
+  ],
+  "words_for": "1b35e84b59900235/wordtiming-v1",
+  "asr": "The old derelict is still drifting past Station Nine. Leave it be.",
+  "asr_similarity": 1.0
+}

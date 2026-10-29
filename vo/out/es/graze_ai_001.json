@@ -1,0 +1,124 @@
+{
+  "hash": "dff973c8f57c9a59",
+  "mode": "clone",
+  "request": {
+    "id": "es__graze_ai_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Eso estuvo cerca, y lo cerca es facturable. Gracias por tu cercanía.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, a small intake of breath, then professional again.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.825,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 4.35,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.35,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Eso",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "estuvo",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "cerca",
+      "charStart": 11,
+      "charEnd": 16,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "y",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "lo",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "cerca",
+      "charStart": 23,
+      "charEnd": 28,
+      "startS": 2.08,
+      "endS": 2.56
+    },
+    {
+      "text": "es",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "facturable",
+      "charStart": 32,
+      "charEnd": 42,
+      "startS": 2.72,
+      "endS": 3.6
+    },
+    {
+      "text": "Gracias",
+      "charStart": 44,
+      "charEnd": 51,
+      "startS": 4.0,
+      "endS": 4.56
+    },
+    {
+      "text": "por",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "tu",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "cercanía",
+      "charStart": 59,
+      "charEnd": 67,
+      "startS": 4.96,
+      "endS": 5.84
+    }
+  ],
+  "words_for": "dff973c8f57c9a59/wordtiming-v1",
+  "asr": "eso es tu vocera, y lo serca es factorable y gracias por tu cercanía.",
+  "asr_similarity": 0.615
+}

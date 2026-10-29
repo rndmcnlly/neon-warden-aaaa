@@ -1,0 +1,103 @@
+{
+  "hash": "3b053834449108b2",
+  "mode": "clone",
+  "request": {
+    "id": "en__pac_epi_001",
+    "seed": 22,
+    "language": "English",
+    "text": "The Warden's lights stay on, every ring of them.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "direction": "Echo of the kill epilogue, warmer, slower.",
+  "duration": 2.8,
+  "sample_rate": 24000,
+  "peak": 0.855,
+  "clipping_suspect": false,
+  "asr": "The warden's lights stay on. Every ring of them.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.35,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "3b053834449108b2/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "The",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "Warden's",
+      "charStart": 4,
+      "charEnd": 12,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "lights",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "stay",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "on",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "every",
+      "charStart": 29,
+      "charEnd": 34,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "ring",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "of",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "them",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 2.4,
+      "endS": 2.72
+    }
+  ]
+}

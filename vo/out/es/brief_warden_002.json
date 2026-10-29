@@ -1,0 +1,96 @@
+{
+  "hash": "119c1ecad232d25e",
+  "mode": "clone",
+  "request": {
+    "id": "es__brief_warden_002",
+    "seed": 22,
+    "language": "Spanish",
+    "text": "No tiene nombre. Solo un título. El Guardián.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "Each sentence its own beat; let the title land like a door slamming.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 5.52,
+    "limited_db": 0.05,
+    "measured_before_lufs": -23.52,
+    "peak_bound": false
+  },
+  "asr": "No tienen nombre, solo un título: el guardián.",
+  "asr_similarity": 0.875,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "tiene",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "nombre",
+      "charStart": 9,
+      "charEnd": 15,
+      "startS": 0.96,
+      "endS": 1.6
+    },
+    {
+      "text": "Solo",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "un",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "título",
+      "charStart": 25,
+      "charEnd": 31,
+      "startS": 2.8,
+      "endS": 3.52
+    },
+    {
+      "text": "El",
+      "charStart": 33,
+      "charEnd": 35,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "Guardián",
+      "charStart": 36,
+      "charEnd": 44,
+      "startS": 4.16,
+      "endS": 4.96
+    }
+  ],
+  "words_for": "119c1ecad232d25e/wordtiming-v1"
+}

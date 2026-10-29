@@ -1,0 +1,131 @@
+{
+  "hash": "8bcdcf6c437f8efc",
+  "mode": "clone",
+  "request": {
+    "id": "en__amb_nofire_004",
+    "seed": 11,
+    "language": "English",
+    "text": "Non-performance is a serious contract matter. I'm only saying that because I care.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, HR voice: soft words, firm meaning.",
+  "duration": 5.52,
+  "sample_rate": 24000,
+  "peak": 0.748,
+  "clipping_suspect": false,
+  "asr": "Non-performance is a serious contract matter. I'm only saying that because I care.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.41,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "8bcdcf6c437f8efc/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Non-performance",
+      "charStart": 0,
+      "charEnd": 15,
+      "startS": 0.24,
+      "endS": 1.12
+    },
+    {
+      "text": "is",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "a",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "serious",
+      "charStart": 21,
+      "charEnd": 28,
+      "startS": 1.36,
+      "endS": 1.84
+    },
+    {
+      "text": "contract",
+      "charStart": 29,
+      "charEnd": 37,
+      "startS": 1.84,
+      "endS": 2.4
+    },
+    {
+      "text": "matter",
+      "charStart": 38,
+      "charEnd": 44,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "I'm",
+      "charStart": 46,
+      "charEnd": 49,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "only",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "saying",
+      "charStart": 55,
+      "charEnd": 61,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "that",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "because",
+      "charStart": 67,
+      "charEnd": 74,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "I",
+      "charStart": 75,
+      "charEnd": 76,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "care",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 4.88,
+      "endS": 5.04
+    }
+  ]
+}

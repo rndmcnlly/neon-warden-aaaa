@@ -1,0 +1,89 @@
+{
+  "hash": "67b79fbc39f3cfe4",
+  "mode": "clone",
+  "request": {
+    "id": "es__end_epi_003",
+    "seed": 122,
+    "language": "Spanish",
+    "text": "Por delante, el largo camino a casa.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "The last line of the original game. Let it hang.",
+  "duration": 3.68,
+  "sample_rate": 24000,
+  "peak": 0.753,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.46,
+    "gain_db": 6.01,
+    "limited_db": 0.0,
+    "measured_before_lufs": -24.01,
+    "peak_bound": false
+  },
+  "asr": "Por delante, el largo camino a casa.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Por",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "delante",
+      "charStart": 4,
+      "charEnd": 11,
+      "startS": 0.8,
+      "endS": 1.52
+    },
+    {
+      "text": "el",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "largo",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "camino",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "a",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "casa",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 2.88,
+      "endS": 3.44
+    }
+  ],
+  "words_for": "67b79fbc39f3cfe4/wordtiming-v1"
+}

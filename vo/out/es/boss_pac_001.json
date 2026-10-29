@@ -1,0 +1,124 @@
+{
+  "hash": "f408e89d39718756",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_pac_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "No estás disparando. NO ESTÁS DISPARANDO. ¿Es un truco? ¿¡Es un truco!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Paranoid, high, repeating itself.",
+  "duration": 5.52,
+  "sample_rate": 24000,
+  "peak": 0.766,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.13,
+    "gain_db": 3.14,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.14,
+    "peak_bound": false
+  },
+  "asr": "No estás disparando, no estás disparando, es un truco, es un truco.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "estás",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "disparando",
+      "charStart": 9,
+      "charEnd": 19,
+      "startS": 0.8,
+      "endS": 1.52
+    },
+    {
+      "text": "NO",
+      "charStart": 21,
+      "charEnd": 23,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "ESTÁS",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "DISPARANDO",
+      "charStart": 30,
+      "charEnd": 40,
+      "startS": 2.32,
+      "endS": 3.36
+    },
+    {
+      "text": "Es",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "un",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "truco",
+      "charStart": 49,
+      "charEnd": 54,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "Es",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "un",
+      "charStart": 61,
+      "charEnd": 63,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "truco",
+      "charStart": 64,
+      "charEnd": 69,
+      "startS": 4.96,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "f408e89d39718756/wordtiming-v1"
+}

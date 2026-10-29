@@ -12,6 +12,204 @@
   "direction": "Maximum cheer, as if this were the most important lesson ever taught; tiny forced giggle at the end.",
   "duration": 9.36,
   "sample_rate": 24000,
-  "peak": 0.473,
-  "clipping_suspect": false
+  "peak": 0.834,
+  "clipping_suspect": false,
+  "asr": "Great job pressing the left key. Now for your next challenge: press the right key. I believe in you. Take all the time you need.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.53,
+    "gain_db": 0.05,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.05,
+    "peak_bound": false
+  },
+  "words_for": "1d610a7da8ba6bce/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Great",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "job",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "pressing",
+      "charStart": 10,
+      "charEnd": 18,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "the",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "left",
+      "charStart": 23,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "key",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 2.24,
+      "endS": 2.64
+    },
+    {
+      "text": "Now",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "for",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "your",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "next",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.68,
+      "endS": 4.08
+    },
+    {
+      "text": "challenge",
+      "charStart": 52,
+      "charEnd": 61,
+      "startS": 4.08,
+      "endS": 4.56
+    },
+    {
+      "text": "press",
+      "charStart": 63,
+      "charEnd": 68,
+      "startS": 4.8,
+      "endS": 5.12
+    },
+    {
+      "text": "the",
+      "charStart": 69,
+      "charEnd": 72,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "right",
+      "charStart": 73,
+      "charEnd": 78,
+      "startS": 5.28,
+      "endS": 5.52
+    },
+    {
+      "text": "key",
+      "charStart": 79,
+      "charEnd": 82,
+      "startS": 5.6,
+      "endS": 5.92
+    },
+    {
+      "text": "I",
+      "charStart": 84,
+      "charEnd": 85,
+      "startS": 6.32,
+      "endS": 6.56
+    },
+    {
+      "text": "believe",
+      "charStart": 86,
+      "charEnd": 93,
+      "startS": 6.56,
+      "endS": 6.88
+    },
+    {
+      "text": "in",
+      "charStart": 94,
+      "charEnd": 96,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "you",
+      "charStart": 97,
+      "charEnd": 100,
+      "startS": 7.04,
+      "endS": 7.36
+    },
+    {
+      "text": "Take",
+      "charStart": 102,
+      "charEnd": 106,
+      "startS": 7.68,
+      "endS": 7.84
+    },
+    {
+      "text": "all",
+      "charStart": 107,
+      "charEnd": 110,
+      "startS": 8.0,
+      "endS": 8.16
+    },
+    {
+      "text": "the",
+      "charStart": 111,
+      "charEnd": 114,
+      "startS": 8.16,
+      "endS": 8.24
+    },
+    {
+      "text": "time",
+      "charStart": 115,
+      "charEnd": 119,
+      "startS": 8.24,
+      "endS": 8.56
+    },
+    {
+      "text": "you",
+      "charStart": 120,
+      "charEnd": 123,
+      "startS": 8.56,
+      "endS": 8.72
+    },
+    {
+      "text": "need",
+      "charStart": 124,
+      "charEnd": 128,
+      "startS": 8.72,
+      "endS": 9.04
+    }
+  ]
 }

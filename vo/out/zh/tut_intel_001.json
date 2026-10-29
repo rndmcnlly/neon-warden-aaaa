@@ -1,0 +1,446 @@
+{
+  "hash": "33f78c8ab8bf6a85",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_intel_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "已锁定。锁定后你能看到目标正在做什么：巡逻、瞄准、开火、闪避或撤退。它还会标出目标的武器部件和弱点。你扫描到的一切都会归档到资料库。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Quietly proud of the technology.",
+  "duration": 13.44,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.21,
+    "gain_db": 5.5,
+    "limited_db": 0.8,
+    "measured_before_lufs": -23.5,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "已",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "锁",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "定",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "锁",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "定",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "后",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "你",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "能",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "看",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "到",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "目",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "标",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "正",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "在",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "做",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "什",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "么",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "巡",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "逻",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "瞄",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "准",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.04,
+      "endS": 5.36
+    },
+    {
+      "text": "开",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "火",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "闪",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.16,
+      "endS": 6.48
+    },
+    {
+      "text": "避",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 6.48,
+      "endS": 6.64
+    },
+    {
+      "text": "或",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "撤",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "退",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 7.04,
+      "endS": 7.36
+    },
+    {
+      "text": "它",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 7.76,
+      "endS": 7.92
+    },
+    {
+      "text": "还",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 7.92,
+      "endS": 8.0
+    },
+    {
+      "text": "会",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 8.0,
+      "endS": 8.16
+    },
+    {
+      "text": "标",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 8.16,
+      "endS": 8.32
+    },
+    {
+      "text": "出",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 8.32,
+      "endS": 8.48
+    },
+    {
+      "text": "目",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "标",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 8.64,
+      "endS": 8.8
+    },
+    {
+      "text": "的",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 8.8,
+      "endS": 8.96
+    },
+    {
+      "text": "武",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "器",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 9.04,
+      "endS": 9.28
+    },
+    {
+      "text": "部",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 9.28,
+      "endS": 9.44
+    },
+    {
+      "text": "件",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 9.44,
+      "endS": 9.68
+    },
+    {
+      "text": "和",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 9.68,
+      "endS": 9.84
+    },
+    {
+      "text": "弱",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 9.84,
+      "endS": 10.0
+    },
+    {
+      "text": "点",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 10.08,
+      "endS": 10.4
+    },
+    {
+      "text": "你",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 10.88,
+      "endS": 10.96
+    },
+    {
+      "text": "扫",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 10.96,
+      "endS": 11.2
+    },
+    {
+      "text": "描",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 11.2,
+      "endS": 11.36
+    },
+    {
+      "text": "到",
+      "charStart": 53,
+      "charEnd": 54,
+      "startS": 11.36,
+      "endS": 11.52
+    },
+    {
+      "text": "的",
+      "charStart": 54,
+      "charEnd": 55,
+      "startS": 11.52,
+      "endS": 11.6
+    },
+    {
+      "text": "一",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 11.6,
+      "endS": 11.68
+    },
+    {
+      "text": "切",
+      "charStart": 56,
+      "charEnd": 57,
+      "startS": 11.68,
+      "endS": 12.0
+    },
+    {
+      "text": "都",
+      "charStart": 57,
+      "charEnd": 58,
+      "startS": 12.0,
+      "endS": 12.16
+    },
+    {
+      "text": "会",
+      "charStart": 58,
+      "charEnd": 59,
+      "startS": 12.16,
+      "endS": 12.32
+    },
+    {
+      "text": "归",
+      "charStart": 59,
+      "charEnd": 60,
+      "startS": 12.32,
+      "endS": 12.48
+    },
+    {
+      "text": "档",
+      "charStart": 60,
+      "charEnd": 61,
+      "startS": 12.48,
+      "endS": 12.64
+    },
+    {
+      "text": "到",
+      "charStart": 61,
+      "charEnd": 62,
+      "startS": 12.64,
+      "endS": 12.8
+    },
+    {
+      "text": "资",
+      "charStart": 62,
+      "charEnd": 63,
+      "startS": 12.8,
+      "endS": 12.96
+    },
+    {
+      "text": "料",
+      "charStart": 63,
+      "charEnd": 64,
+      "startS": 12.96,
+      "endS": 13.12
+    },
+    {
+      "text": "库",
+      "charStart": 64,
+      "charEnd": 65,
+      "startS": 13.12,
+      "endS": 13.44
+    }
+  ],
+  "words_for": "33f78c8ab8bf6a85/wordtiming-v1",
+  "asr": "已锁定。锁定后，你能看到目标正在做什么：巡逻、瞄准、开火、闪避或撤退。它还会标出目标的武器部件和弱点。你扫描到的一切都会归档到资料库。",
+  "asr_similarity": 1.0
+}

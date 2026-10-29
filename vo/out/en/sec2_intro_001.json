@@ -1,0 +1,194 @@
+{
+  "hash": "5c9d52f1adb6ef74",
+  "mode": "clone",
+  "request": {
+    "id": "en__sec2_intro_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Shatter Belt. Divers incoming. Did you know? Darts used to carry guns, until a treaty disarmed them. We did not sign it.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, trivia-night sparkle.",
+  "duration": 9.28,
+  "sample_rate": 24000,
+  "peak": 0.834,
+  "clipping_suspect": false,
+  "asr": "Shatterbelt divers incoming. Did you know, darts used to carry guns until a treaty disarmed them? We did not sign it.",
+  "asr_similarity": 0.93,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.57,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "5c9d52f1adb6ef74/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Shatter",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "Belt",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "Divers",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "incoming",
+      "charStart": 21,
+      "charEnd": 29,
+      "startS": 1.84,
+      "endS": 2.64
+    },
+    {
+      "text": "Did",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "you",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "know",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "Darts",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 4.24,
+      "endS": 4.56
+    },
+    {
+      "text": "used",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "to",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "carry",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "guns",
+      "charStart": 65,
+      "charEnd": 69,
+      "startS": 5.28,
+      "endS": 5.76
+    },
+    {
+      "text": "until",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 5.84,
+      "endS": 6.08
+    },
+    {
+      "text": "a",
+      "charStart": 77,
+      "charEnd": 78,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "treaty",
+      "charStart": 79,
+      "charEnd": 85,
+      "startS": 6.16,
+      "endS": 6.72
+    },
+    {
+      "text": "disarmed",
+      "charStart": 86,
+      "charEnd": 94,
+      "startS": 6.72,
+      "endS": 7.28
+    },
+    {
+      "text": "them",
+      "charStart": 95,
+      "charEnd": 99,
+      "startS": 7.28,
+      "endS": 7.52
+    },
+    {
+      "text": "We",
+      "charStart": 101,
+      "charEnd": 103,
+      "startS": 8.0,
+      "endS": 8.16
+    },
+    {
+      "text": "did",
+      "charStart": 104,
+      "charEnd": 107,
+      "startS": 8.24,
+      "endS": 8.32
+    },
+    {
+      "text": "not",
+      "charStart": 108,
+      "charEnd": 111,
+      "startS": 8.4,
+      "endS": 8.64
+    },
+    {
+      "text": "sign",
+      "charStart": 112,
+      "charEnd": 116,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "it",
+      "charStart": 117,
+      "charEnd": 119,
+      "startS": 9.04,
+      "endS": 9.2
+    }
+  ]
+}

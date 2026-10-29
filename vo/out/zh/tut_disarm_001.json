@@ -1,0 +1,369 @@
+{
+  "hash": "c359e1da7f109c59",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_disarm_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "已解除武装。被解除武装的目标会停止开火，离开航道。解除武装按击毁报酬的百分之四十支付。部分交付也是交付。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Reads the pay rate as good news.",
+  "duration": 9.52,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.18,
+    "gain_db": 5.69,
+    "limited_db": 0.52,
+    "measured_before_lufs": -23.69,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "已",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "解",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "除",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "武",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "装",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 1.2
+    },
+    {
+      "text": "被",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "解",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "除",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "武",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "装",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "的",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "目",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "标",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "会",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "停",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "止",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "开",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "火",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "离",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "开",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "航",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "道",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.56,
+      "endS": 4.88
+    },
+    {
+      "text": "解",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "除",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "武",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "装",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "按",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.6,
+      "endS": 5.84
+    },
+    {
+      "text": "击",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "毁",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "报",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "酬",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "的",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 6.48,
+      "endS": 6.56
+    },
+    {
+      "text": "百",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.56,
+      "endS": 6.64
+    },
+    {
+      "text": "分",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "之",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "四",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 6.96,
+      "endS": 7.12
+    },
+    {
+      "text": "十",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 7.12,
+      "endS": 7.2
+    },
+    {
+      "text": "支",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "付",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 7.36,
+      "endS": 7.68
+    },
+    {
+      "text": "部",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 8.0,
+      "endS": 8.08
+    },
+    {
+      "text": "分",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 8.16,
+      "endS": 8.32
+    },
+    {
+      "text": "交",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 8.32,
+      "endS": 8.48
+    },
+    {
+      "text": "付",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "也",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 8.64,
+      "endS": 8.8
+    },
+    {
+      "text": "是",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 8.8,
+      "endS": 8.88
+    },
+    {
+      "text": "交",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 8.88,
+      "endS": 9.12
+    },
+    {
+      "text": "付",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 9.12,
+      "endS": 9.44
+    }
+  ],
+  "words_for": "c359e1da7f109c59/wordtiming-v1",
+  "asr": "一解除武装，被解除武装的目标会停止开火，离开航道。解除武装按机会报酬的百分之四十支付，部分交付也是交付。",
+  "asr_similarity": 0.936
+}

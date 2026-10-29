@@ -1,0 +1,264 @@
+{
+  "hash": "59c9e59867b0b74e",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_graze_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Next, clearance. Hold focus to see the ring around your gem. When a round passes inside the ring without touching you, that is a graze. Please let five slow rounds pass close.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 10.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.49,
+    "gain_db": 5.45,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.45,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Next",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "clearance",
+      "charStart": 6,
+      "charEnd": 15,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "Hold",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "focus",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "to",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "see",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "the",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "ring",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "around",
+      "charStart": 44,
+      "charEnd": 50,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "your",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "gem",
+      "charStart": 56,
+      "charEnd": 59,
+      "startS": 3.52,
+      "endS": 3.92
+    },
+    {
+      "text": "When",
+      "charStart": 61,
+      "charEnd": 65,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "a",
+      "charStart": 66,
+      "charEnd": 67,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "round",
+      "charStart": 68,
+      "charEnd": 73,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "passes",
+      "charStart": 74,
+      "charEnd": 80,
+      "startS": 4.72,
+      "endS": 5.2
+    },
+    {
+      "text": "inside",
+      "charStart": 81,
+      "charEnd": 87,
+      "startS": 5.2,
+      "endS": 5.6
+    },
+    {
+      "text": "the",
+      "charStart": 88,
+      "charEnd": 91,
+      "startS": 5.6,
+      "endS": 5.68
+    },
+    {
+      "text": "ring",
+      "charStart": 92,
+      "charEnd": 96,
+      "startS": 5.68,
+      "endS": 5.92
+    },
+    {
+      "text": "without",
+      "charStart": 97,
+      "charEnd": 104,
+      "startS": 5.92,
+      "endS": 6.24
+    },
+    {
+      "text": "touching",
+      "charStart": 105,
+      "charEnd": 113,
+      "startS": 6.24,
+      "endS": 6.56
+    },
+    {
+      "text": "you",
+      "charStart": 114,
+      "charEnd": 117,
+      "startS": 6.56,
+      "endS": 6.72
+    },
+    {
+      "text": "that",
+      "charStart": 119,
+      "charEnd": 123,
+      "startS": 7.12,
+      "endS": 7.2
+    },
+    {
+      "text": "is",
+      "charStart": 124,
+      "charEnd": 126,
+      "startS": 7.44,
+      "endS": 7.52
+    },
+    {
+      "text": "a",
+      "charStart": 127,
+      "charEnd": 128,
+      "startS": 7.52,
+      "endS": 7.6
+    },
+    {
+      "text": "graze",
+      "charStart": 129,
+      "charEnd": 134,
+      "startS": 7.84,
+      "endS": 8.16
+    },
+    {
+      "text": "Please",
+      "charStart": 136,
+      "charEnd": 142,
+      "startS": 8.32,
+      "endS": 8.72
+    },
+    {
+      "text": "let",
+      "charStart": 143,
+      "charEnd": 146,
+      "startS": 8.72,
+      "endS": 8.88
+    },
+    {
+      "text": "five",
+      "charStart": 147,
+      "charEnd": 151,
+      "startS": 8.88,
+      "endS": 9.12
+    },
+    {
+      "text": "slow",
+      "charStart": 152,
+      "charEnd": 156,
+      "startS": 9.28,
+      "endS": 9.6
+    },
+    {
+      "text": "rounds",
+      "charStart": 157,
+      "charEnd": 163,
+      "startS": 9.6,
+      "endS": 10.0
+    },
+    {
+      "text": "pass",
+      "charStart": 164,
+      "charEnd": 168,
+      "startS": 10.0,
+      "endS": 10.32
+    },
+    {
+      "text": "close",
+      "charStart": 169,
+      "charEnd": 174,
+      "startS": 10.32,
+      "endS": 10.72
+    }
+  ],
+  "words_for": "59c9e59867b0b74e/wordtiming-v1",
+  "asr": "Next, clearance. Hold focus to see the ring around your gem. When a round passes inside the ring without touching you, that is a graze. Please let five slow rounds pass close.",
+  "asr_similarity": 1.0
+}

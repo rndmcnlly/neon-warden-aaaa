@@ -1,0 +1,222 @@
+{
+  "hash": "641bae2276d9d6af",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_stream_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Holding the trigger fires a steady stream. The stream is for hulls. It is the most volume per second the Authority can offer you. Please hold.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 9.44,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 7.04,
+    "limited_db": 1.54,
+    "measured_before_lufs": -25.04,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Holding",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "the",
+      "charStart": 8,
+      "charEnd": 11,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "trigger",
+      "charStart": 12,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "fires",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "a",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "steady",
+      "charStart": 28,
+      "charEnd": 34,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "stream",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 2.24,
+      "endS": 2.8
+    },
+    {
+      "text": "The",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "stream",
+      "charStart": 47,
+      "charEnd": 53,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "is",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "for",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "hulls",
+      "charStart": 61,
+      "charEnd": 66,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "It",
+      "charStart": 68,
+      "charEnd": 70,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "is",
+      "charStart": 71,
+      "charEnd": 73,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "the",
+      "charStart": 74,
+      "charEnd": 77,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "most",
+      "charStart": 78,
+      "charEnd": 82,
+      "startS": 5.36,
+      "endS": 5.68
+    },
+    {
+      "text": "volume",
+      "charStart": 83,
+      "charEnd": 89,
+      "startS": 5.68,
+      "endS": 6.16
+    },
+    {
+      "text": "per",
+      "charStart": 90,
+      "charEnd": 93,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "second",
+      "charStart": 94,
+      "charEnd": 100,
+      "startS": 6.32,
+      "endS": 6.8
+    },
+    {
+      "text": "the",
+      "charStart": 101,
+      "charEnd": 104,
+      "startS": 6.8,
+      "endS": 6.88
+    },
+    {
+      "text": "Authority",
+      "charStart": 105,
+      "charEnd": 114,
+      "startS": 6.88,
+      "endS": 7.36
+    },
+    {
+      "text": "can",
+      "charStart": 115,
+      "charEnd": 118,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "offer",
+      "charStart": 119,
+      "charEnd": 124,
+      "startS": 7.52,
+      "endS": 7.84
+    },
+    {
+      "text": "you",
+      "charStart": 125,
+      "charEnd": 128,
+      "startS": 7.84,
+      "endS": 8.16
+    },
+    {
+      "text": "Please",
+      "charStart": 130,
+      "charEnd": 136,
+      "startS": 8.72,
+      "endS": 8.96
+    },
+    {
+      "text": "hold",
+      "charStart": 137,
+      "charEnd": 141,
+      "startS": 9.12,
+      "endS": 9.36
+    }
+  ],
+  "words_for": "641bae2276d9d6af/wordtiming-v1",
+  "asr": "Holding the trigger fires a steady stream. The stream is for hulls. It is the most volume per second the authority can offer you. Please hold.",
+  "asr_similarity": 1.0
+}

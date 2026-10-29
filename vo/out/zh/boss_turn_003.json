@@ -1,0 +1,187 @@
+{
+  "hash": "05ef2873015494de",
+  "mode": "clone",
+  "request": {
+    "id": "zh__boss_turn_003",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "零一二一号停手了！他听进去了！你为什么就是不听？！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Grief breaking through the fury.",
+  "duration": 4.88,
+  "sample_rate": 24000,
+  "peak": 0.572,
+  "clipping_suspect": false,
+  "asr": "零一二一号听受了，他听进去了。你为什么就是不听？",
+  "asr_similarity": 0.905,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.6,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "05ef2873015494de/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "零",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "一",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "二",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "一",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "号",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "停",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "手",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "了",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "他",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "听",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "进",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "去",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "了",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "你",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "为",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "什",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "么",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "就",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "是",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "不",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "听",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.32,
+      "endS": 4.8
+    }
+  ]
+}

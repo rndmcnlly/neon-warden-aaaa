@@ -1,0 +1,271 @@
+{
+  "hash": "41dde257292aed17",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_hangar_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Between contracts, the hangar is yours. Weapon and sensor packages change how you fly, and your paint, trim and helmet livery are entirely up to you. Self expression is a benefit of employment.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Genuinely glad to offer a perk.",
+  "duration": 11.92,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.06,
+    "gain_db": 5.39,
+    "limited_db": 1.72,
+    "measured_before_lufs": -23.39,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Between",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "contracts",
+      "charStart": 8,
+      "charEnd": 17,
+      "startS": 0.48,
+      "endS": 1.2
+    },
+    {
+      "text": "the",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "hangar",
+      "charStart": 23,
+      "charEnd": 29,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "is",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "yours",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "Weapon",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "and",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "sensor",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "packages",
+      "charStart": 58,
+      "charEnd": 66,
+      "startS": 4.0,
+      "endS": 4.56
+    },
+    {
+      "text": "change",
+      "charStart": 67,
+      "charEnd": 73,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "how",
+      "charStart": 74,
+      "charEnd": 77,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "you",
+      "charStart": 78,
+      "charEnd": 81,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "fly",
+      "charStart": 82,
+      "charEnd": 85,
+      "startS": 5.2,
+      "endS": 5.68
+    },
+    {
+      "text": "and",
+      "charStart": 87,
+      "charEnd": 90,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "your",
+      "charStart": 91,
+      "charEnd": 95,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "paint",
+      "charStart": 96,
+      "charEnd": 101,
+      "startS": 6.08,
+      "endS": 6.48
+    },
+    {
+      "text": "trim",
+      "charStart": 103,
+      "charEnd": 107,
+      "startS": 6.56,
+      "endS": 6.8
+    },
+    {
+      "text": "and",
+      "charStart": 108,
+      "charEnd": 111,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "helmet",
+      "charStart": 112,
+      "charEnd": 118,
+      "startS": 7.04,
+      "endS": 7.36
+    },
+    {
+      "text": "livery",
+      "charStart": 119,
+      "charEnd": 125,
+      "startS": 7.36,
+      "endS": 7.84
+    },
+    {
+      "text": "are",
+      "charStart": 126,
+      "charEnd": 129,
+      "startS": 7.84,
+      "endS": 8.0
+    },
+    {
+      "text": "entirely",
+      "charStart": 130,
+      "charEnd": 138,
+      "startS": 8.0,
+      "endS": 8.64
+    },
+    {
+      "text": "up",
+      "charStart": 139,
+      "charEnd": 141,
+      "startS": 8.64,
+      "endS": 8.72
+    },
+    {
+      "text": "to",
+      "charStart": 142,
+      "charEnd": 144,
+      "startS": 8.8,
+      "endS": 8.88
+    },
+    {
+      "text": "you",
+      "charStart": 145,
+      "charEnd": 148,
+      "startS": 8.88,
+      "endS": 9.2
+    },
+    {
+      "text": "Self",
+      "charStart": 150,
+      "charEnd": 154,
+      "startS": 9.44,
+      "endS": 9.84
+    },
+    {
+      "text": "expression",
+      "charStart": 155,
+      "charEnd": 165,
+      "startS": 9.84,
+      "endS": 10.4
+    },
+    {
+      "text": "is",
+      "charStart": 166,
+      "charEnd": 168,
+      "startS": 10.4,
+      "endS": 10.56
+    },
+    {
+      "text": "a",
+      "charStart": 169,
+      "charEnd": 170,
+      "startS": 10.56,
+      "endS": 10.64
+    },
+    {
+      "text": "benefit",
+      "charStart": 171,
+      "charEnd": 178,
+      "startS": 10.64,
+      "endS": 11.04
+    },
+    {
+      "text": "of",
+      "charStart": 179,
+      "charEnd": 181,
+      "startS": 11.04,
+      "endS": 11.2
+    },
+    {
+      "text": "employment",
+      "charStart": 182,
+      "charEnd": 192,
+      "startS": 11.2,
+      "endS": 11.84
+    }
+  ],
+  "words_for": "41dde257292aed17/wordtiming-v1",
+  "asr": "Between contracts, the hangar is yours. Weapon and sensor packages change how you fly, and your paint, trim, and helmet livery are entirely up to you. Self-expression is a benefit of employment.",
+  "asr_similarity": 0.954
+}

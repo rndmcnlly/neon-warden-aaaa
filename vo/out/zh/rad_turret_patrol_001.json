@@ -1,0 +1,180 @@
+{
+  "hash": "389e5bb0fd397732",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rad_turret_patrol_001",
+    "seed": 55,
+    "language": "Chinese",
+    "text": "炮火航道就位。货船可以通行。合同工，你不是货船。",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Deadpan.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.44,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 6.72,
+    "limited_db": 3.82,
+    "measured_before_lufs": -24.72,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "炮",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "火",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "航",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "道",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "就",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "位",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "货",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "船",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "可",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "以",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "通",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "行",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "合",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "同",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "工",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "你",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "不",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "是",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "货",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "船",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.0,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "389e5bb0fd397732/wordtiming-v1",
+  "asr": "炮火航道就位，货船可以通行。合同工，你不是货船。",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,117 @@
+{
+  "hash": "91496f93571d1120",
+  "mode": "clone",
+  "request": {
+    "id": "es__pac_end_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "Esquivaste todo. ¡Todo! Y nunca devolviste el fuego. Ni una vez.",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Awed, still loud, voice wobbling.",
+  "duration": 4.8,
+  "sample_rate": 24000,
+  "peak": 0.692,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.19,
+    "gain_db": 2.04,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.04,
+    "peak_bound": false
+  },
+  "asr": "Esquivaste todo todo y nunca devolviste el fuego ni una vez.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Esquivaste",
+      "charStart": 0,
+      "charEnd": 10,
+      "startS": 0.0,
+      "endS": 0.72
+    },
+    {
+      "text": "todo",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "Todo",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.28,
+      "endS": 1.92
+    },
+    {
+      "text": "Y",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "nunca",
+      "charStart": 26,
+      "charEnd": 31,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "devolviste",
+      "charStart": 32,
+      "charEnd": 42,
+      "startS": 2.56,
+      "endS": 3.12
+    },
+    {
+      "text": "el",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "fuego",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 3.2,
+      "endS": 3.84
+    },
+    {
+      "text": "Ni",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "una",
+      "charStart": 56,
+      "charEnd": 59,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "vez",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 4.4,
+      "endS": 4.72
+    }
+  ],
+  "words_for": "91496f93571d1120/wordtiming-v1"
+}

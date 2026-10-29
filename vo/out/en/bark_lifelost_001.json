@@ -1,0 +1,110 @@
+{
+  "hash": "e80295c453f3cbe1",
+  "mode": "clone",
+  "request": {
+    "id": "en__bark_lifelost_001",
+    "seed": 111,
+    "language": "English",
+    "text": "Hull breach! You're fine. The ship isn't, but you're fine.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, quick and chipper damage report.",
+  "duration": 4.16,
+  "sample_rate": 24000,
+  "peak": 0.684,
+  "clipping_suspect": false,
+  "asr": "Hull breach! You're fine, the ship isn't. But you're fine.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.19,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "e80295c453f3cbe1/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Hull",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "breach",
+      "charStart": 5,
+      "charEnd": 11,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "You're",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "fine",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 1.36,
+      "endS": 1.92
+    },
+    {
+      "text": "The",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "ship",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.4,
+      "endS": 2.72
+    },
+    {
+      "text": "isn't",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "but",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "you're",
+      "charStart": 46,
+      "charEnd": 52,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "fine",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 3.44,
+      "endS": 4.0
+    }
+  ]
+}

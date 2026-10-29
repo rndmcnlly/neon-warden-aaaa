@@ -1,17 +1,187 @@
 {
-  "hash": "b2157fb5c57b347f",
+  "hash": "9ac517f211ad24f5",
   "mode": "clone",
   "request": {
     "id": "es__boss_taunt_001",
-    "seed": 33,
+    "seed": 133,
     "language": "Spanish",
     "text": "¿A eso le llamas disparar? ¡He peleado contra tostadoras con más valor que tú! ¡Acércate, pilotito, y conoce tu última oleada!",
-    "voice_ref": "vo/voices/warden.wav",
-    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
   },
   "direction": "Booming, hammy fury; build to a roar on the last sentence, then a short menacing laugh.",
-  "duration": 9.36,
+  "duration": 8.08,
   "sample_rate": 24000,
-  "peak": 0.61,
-  "clipping_suspect": false
+  "peak": 0.687,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.26,
+    "gain_db": 1.57,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.57,
+    "peak_bound": false
+  },
+  "asr": "A eso le llamas disparar? He peleado contra tostadoras con más valor que tú. Acércate pilotito y conoce tu última oleada.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "A",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "eso",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "le",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "llamas",
+      "charStart": 10,
+      "charEnd": 16,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "disparar",
+      "charStart": 17,
+      "charEnd": 25,
+      "startS": 0.8,
+      "endS": 1.44
+    },
+    {
+      "text": "He",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "peleado",
+      "charStart": 31,
+      "charEnd": 38,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "contra",
+      "charStart": 39,
+      "charEnd": 45,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "tostadoras",
+      "charStart": 46,
+      "charEnd": 56,
+      "startS": 2.64,
+      "endS": 3.28
+    },
+    {
+      "text": "con",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "más",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "valor",
+      "charStart": 65,
+      "charEnd": 70,
+      "startS": 3.68,
+      "endS": 4.08
+    },
+    {
+      "text": "que",
+      "charStart": 71,
+      "charEnd": 74,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "tú",
+      "charStart": 75,
+      "charEnd": 77,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "Acércate",
+      "charStart": 80,
+      "charEnd": 88,
+      "startS": 4.64,
+      "endS": 5.36
+    },
+    {
+      "text": "pilotito",
+      "charStart": 90,
+      "charEnd": 98,
+      "startS": 5.36,
+      "endS": 6.0
+    },
+    {
+      "text": "y",
+      "charStart": 100,
+      "charEnd": 101,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "conoce",
+      "charStart": 102,
+      "charEnd": 108,
+      "startS": 6.24,
+      "endS": 6.8
+    },
+    {
+      "text": "tu",
+      "charStart": 109,
+      "charEnd": 111,
+      "startS": 6.8,
+      "endS": 6.88
+    },
+    {
+      "text": "última",
+      "charStart": 112,
+      "charEnd": 118,
+      "startS": 6.88,
+      "endS": 7.36
+    },
+    {
+      "text": "oleada",
+      "charStart": 119,
+      "charEnd": 125,
+      "startS": 7.36,
+      "endS": 8.0
+    }
+  ],
+  "words_for": "9ac517f211ad24f5/wordtiming-v1"
 }

@@ -1,0 +1,138 @@
+{
+  "hash": "b3d8db3aeb707352",
+  "mode": "clone",
+  "request": {
+    "id": "zh__brief_warden_002",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "它没有名字。只有一个称号。守望者。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "Each sentence its own beat; let the title land like a door slamming.",
+  "duration": 3.84,
+  "sample_rate": 24000,
+  "peak": 0.819,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.73,
+    "gain_db": 6.46,
+    "limited_db": 0.0,
+    "measured_before_lufs": -24.46,
+    "peak_bound": false
+  },
+  "asr": "他没有名字，只有一个称号：守望者。",
+  "asr_similarity": 0.929,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "它",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "没",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "有",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "名",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "字",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "只",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "有",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "一",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "个",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "称",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "号",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "守",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "望",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "者",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.52,
+      "endS": 3.76
+    }
+  ],
+  "words_for": "b3d8db3aeb707352/wordtiming-v1"
+}

@@ -1,0 +1,145 @@
+{
+  "hash": "b14ea7293acfd6fc",
+  "mode": "clone",
+  "request": {
+    "id": "en__warn_ai_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Warning. The Warden approaches. This is it, Pilot. Everything we trained for. Remember the briefing.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, trying hard to sound brave.",
+  "duration": 6.64,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Warning: The warden approaches. This is it, pilot. Everything we trained for. Remember the briefing.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 1.6,
+    "limited_db": 1.55,
+    "measured_before_lufs": -19.6,
+    "peak_bound": false
+  },
+  "words_for": "b14ea7293acfd6fc/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Warning",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "The",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "Warden",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "approaches",
+      "charStart": 20,
+      "charEnd": 30,
+      "startS": 1.44,
+      "endS": 2.16
+    },
+    {
+      "text": "This",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "is",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "it",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "Pilot",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "Everything",
+      "charStart": 51,
+      "charEnd": 61,
+      "startS": 3.76,
+      "endS": 4.24
+    },
+    {
+      "text": "we",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "trained",
+      "charStart": 65,
+      "charEnd": 72,
+      "startS": 4.32,
+      "endS": 4.72
+    },
+    {
+      "text": "for",
+      "charStart": 73,
+      "charEnd": 76,
+      "startS": 4.72,
+      "endS": 5.04
+    },
+    {
+      "text": "Remember",
+      "charStart": 78,
+      "charEnd": 86,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "the",
+      "charStart": 87,
+      "charEnd": 90,
+      "startS": 5.84,
+      "endS": 5.92
+    },
+    {
+      "text": "briefing",
+      "charStart": 91,
+      "charEnd": 99,
+      "startS": 5.92,
+      "endS": 6.48
+    }
+  ]
+}

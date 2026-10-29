@@ -1,0 +1,117 @@
+{
+  "hash": "55d056372a2c7a73",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_pac_003",
+    "seed": 33,
+    "language": "English",
+    "text": "Ha! Good! Very good! You fly like a freighter with opinions!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Delighted cackle, a proud coach.",
+  "duration": 4.72,
+  "sample_rate": 24000,
+  "peak": 0.72,
+  "clipping_suspect": false,
+  "asr": "Ha! Good, very good. You fly like a freighter with opinions.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.79,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "55d056372a2c7a73/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ha",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "Good",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "Very",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "good",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.68,
+      "endS": 2.0
+    },
+    {
+      "text": "You",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "fly",
+      "charStart": 25,
+      "charEnd": 28,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "like",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "freighter",
+      "charStart": 36,
+      "charEnd": 45,
+      "startS": 3.2,
+      "endS": 3.76
+    },
+    {
+      "text": "with",
+      "charStart": 46,
+      "charEnd": 50,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "opinions",
+      "charStart": 51,
+      "charEnd": 59,
+      "startS": 3.92,
+      "endS": 4.64
+    }
+  ]
+}

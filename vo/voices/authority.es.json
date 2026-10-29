@@ -1,0 +1,27 @@
+{
+  "hash": "7ed9c5c39b245739",
+  "method": "design",
+  "candidate": "design_s66",
+  "from_anchor": "44b587ac263698d4",
+  "request": {
+    "id": "authority.es",
+    "seed": 66,
+    "language": "Spanish",
+    "text": "Control de Rutas a todos los equipos de reconocimiento. Cimientos del peaje aprobados, pendientes de autorización. Registren sus horas antes del fin del ciclo.",
+    "instruct": "Un despachador de control de tráfico de mediana edad, seco y aburrido, en un canal de radio corporativo limpio, monótono y sin prisa, ligeramente comprimido, que lo lee todo como una partida de una factura. Español latinoamericano neutro."
+  },
+  "duration": 12.88,
+  "sample_rate": 24000,
+  "peak": 0.511,
+  "clipping_suspect": false,
+  "median_f0": 122.1,
+  "audition": {
+    "method": "design",
+    "seed": 66,
+    "mean": 0.972,
+    "min": 0.909,
+    "anchor_asr": 0.939,
+    "anchor_f0": 122.1,
+    "f0_ratio": 1.231
+  }
+}

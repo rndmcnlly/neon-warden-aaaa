@@ -1,0 +1,138 @@
+{
+  "hash": "615aaf3cfbff51fa",
+  "mode": "clone",
+  "request": {
+    "id": "en__bark_shield_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Shield online! It is Authority property, so please get hit as little as possible.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, product-safety notice.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.748,
+  "clipping_suspect": false,
+  "asr": "Shield online. It is authority property, so please get hit as little as possible.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.3,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "615aaf3cfbff51fa/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Shield",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.4,
+      "endS": 0.8
+    },
+    {
+      "text": "online",
+      "charStart": 7,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 1.36
+    },
+    {
+      "text": "It",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "is",
+      "charStart": 18,
+      "charEnd": 20,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "Authority",
+      "charStart": 21,
+      "charEnd": 30,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "property",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 3.12
+    },
+    {
+      "text": "so",
+      "charStart": 41,
+      "charEnd": 43,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "please",
+      "charStart": 44,
+      "charEnd": 50,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "get",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "hit",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "as",
+      "charStart": 59,
+      "charEnd": 61,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "little",
+      "charStart": 62,
+      "charEnd": 68,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "as",
+      "charStart": 69,
+      "charEnd": 71,
+      "startS": 4.72,
+      "endS": 4.8
+    },
+    {
+      "text": "possible",
+      "charStart": 72,
+      "charEnd": 80,
+      "startS": 4.8,
+      "endS": 5.44
+    }
+  ]
+}

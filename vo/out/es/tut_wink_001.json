@@ -1,0 +1,173 @@
+{
+  "hash": "d8c8f5fa9f10a768",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_wink_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Dato curioso! Una evaluación independiente calificó esta inducción como exhaustiva. También la calificó como larga. Decidimos quedarnos con exhaustiva.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Conspiratorial little aside, then brightly back on message.",
+  "duration": 11.52,
+  "sample_rate": 24000,
+  "peak": 0.824,
+  "clipping_suspect": false,
+  "asr": "dato curioso: una evaluación independiente calificó esta inducción como exhaustiva, también la calificó como larga. Decidimos quedarnos con exhaustiva.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.23,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 1.3,
+    "limited_db": 1.43,
+    "measured_before_lufs": -19.48,
+    "peak_bound": false
+  },
+  "words_for": "d8c8f5fa9f10a768/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Dato",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "curioso",
+      "charStart": 6,
+      "charEnd": 13,
+      "startS": 0.96,
+      "endS": 1.76
+    },
+    {
+      "text": "Una",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "evaluación",
+      "charStart": 19,
+      "charEnd": 29,
+      "startS": 2.56,
+      "endS": 3.28
+    },
+    {
+      "text": "independiente",
+      "charStart": 30,
+      "charEnd": 43,
+      "startS": 3.28,
+      "endS": 4.08
+    },
+    {
+      "text": "calificó",
+      "charStart": 44,
+      "charEnd": 52,
+      "startS": 4.08,
+      "endS": 4.72
+    },
+    {
+      "text": "esta",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "inducción",
+      "charStart": 58,
+      "charEnd": 67,
+      "startS": 4.96,
+      "endS": 5.52
+    },
+    {
+      "text": "como",
+      "charStart": 68,
+      "charEnd": 72,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "exhaustiva",
+      "charStart": 73,
+      "charEnd": 83,
+      "startS": 5.76,
+      "endS": 6.56
+    },
+    {
+      "text": "También",
+      "charStart": 85,
+      "charEnd": 92,
+      "startS": 6.88,
+      "endS": 7.36
+    },
+    {
+      "text": "la",
+      "charStart": 93,
+      "charEnd": 95,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "calificó",
+      "charStart": 96,
+      "charEnd": 104,
+      "startS": 7.52,
+      "endS": 8.08
+    },
+    {
+      "text": "como",
+      "charStart": 105,
+      "charEnd": 109,
+      "startS": 8.16,
+      "endS": 8.4
+    },
+    {
+      "text": "larga",
+      "charStart": 110,
+      "charEnd": 115,
+      "startS": 8.72,
+      "endS": 8.96
+    },
+    {
+      "text": "Decidimos",
+      "charStart": 117,
+      "charEnd": 126,
+      "startS": 9.44,
+      "endS": 10.0
+    },
+    {
+      "text": "quedarnos",
+      "charStart": 127,
+      "charEnd": 136,
+      "startS": 10.0,
+      "endS": 10.56
+    },
+    {
+      "text": "con",
+      "charStart": 137,
+      "charEnd": 140,
+      "startS": 10.56,
+      "endS": 10.72
+    },
+    {
+      "text": "exhaustiva",
+      "charStart": 141,
+      "charEnd": 151,
+      "startS": 10.72,
+      "endS": 11.52
+    }
+  ]
+}

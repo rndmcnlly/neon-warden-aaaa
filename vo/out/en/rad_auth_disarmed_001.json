@@ -1,0 +1,103 @@
+{
+  "hash": "b9286dc1fc690273",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_auth_disarmed_001",
+    "seed": 66,
+    "language": "English",
+    "text": "Lane Control logs a disarm. Partial deliverable. Rate adjusted.",
+    "voice_ref": "vo/voices/authority.wav",
+    "reference_text": "Lane Control to all survey teams. Tollgate footings approved, pending clearance. Please log your hours before the end of the cycle."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 5.44,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.2,
+    "true_peak_dbtp": -1.3,
+    "gain_db": 2.98,
+    "limited_db": 0.99,
+    "measured_before_lufs": -20.98,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lane",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "Control",
+      "charStart": 5,
+      "charEnd": 12,
+      "startS": 0.8,
+      "endS": 1.36
+    },
+    {
+      "text": "logs",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 1.36,
+      "endS": 1.76
+    },
+    {
+      "text": "a",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "disarm",
+      "charStart": 20,
+      "charEnd": 26,
+      "startS": 1.84,
+      "endS": 2.56
+    },
+    {
+      "text": "Partial",
+      "charStart": 28,
+      "charEnd": 35,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "deliverable",
+      "charStart": 36,
+      "charEnd": 47,
+      "startS": 3.36,
+      "endS": 4.0
+    },
+    {
+      "text": "Rate",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "adjusted",
+      "charStart": 54,
+      "charEnd": 62,
+      "startS": 4.72,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "b9286dc1fc690273/wordtiming-v1",
+  "asr": "Lane control logs a disarm, partial deliverable, rate adjusted.",
+  "asr_similarity": 1.0
+}

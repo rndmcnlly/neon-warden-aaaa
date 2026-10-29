@@ -1,0 +1,159 @@
+{
+  "hash": "6f8468214430f27f",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_skip_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Registrado como: rechazó la inducción. Está bien. De todos modos estaré en la radio todo el tiempo.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Reading a log entry aloud, then brave and bright.",
+  "duration": 8.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Registrado como, rechazo la inducción, está bien, de todos modos estaré en la radio todo el tiempo.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.29,
+    "gain_db": 0.42,
+    "limited_db": 0.37,
+    "measured_before_lufs": -18.42,
+    "peak_bound": false
+  },
+  "words_for": "6f8468214430f27f/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Registrado",
+      "charStart": 0,
+      "charEnd": 10,
+      "startS": 0.56,
+      "endS": 1.28
+    },
+    {
+      "text": "como",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "rechazó",
+      "charStart": 17,
+      "charEnd": 24,
+      "startS": 2.0,
+      "endS": 2.4
+    },
+    {
+      "text": "la",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "inducción",
+      "charStart": 28,
+      "charEnd": 37,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "Está",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "bien",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "De",
+      "charStart": 50,
+      "charEnd": 52,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "todos",
+      "charStart": 53,
+      "charEnd": 58,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "modos",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 5.44,
+      "endS": 5.84
+    },
+    {
+      "text": "estaré",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 5.84,
+      "endS": 6.24
+    },
+    {
+      "text": "en",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "la",
+      "charStart": 75,
+      "charEnd": 77,
+      "startS": 6.32,
+      "endS": 6.4
+    },
+    {
+      "text": "radio",
+      "charStart": 78,
+      "charEnd": 83,
+      "startS": 6.4,
+      "endS": 6.8
+    },
+    {
+      "text": "todo",
+      "charStart": 84,
+      "charEnd": 88,
+      "startS": 6.8,
+      "endS": 7.12
+    },
+    {
+      "text": "el",
+      "charStart": 89,
+      "charEnd": 91,
+      "startS": 7.12,
+      "endS": 7.2
+    },
+    {
+      "text": "tiempo",
+      "charStart": 92,
+      "charEnd": 98,
+      "startS": 7.28,
+      "endS": 7.84
+    }
+  ]
+}

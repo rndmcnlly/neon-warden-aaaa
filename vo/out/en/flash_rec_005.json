@@ -1,0 +1,138 @@
+{
+  "hash": "f65b318982daf45e",
+  "mode": "clone",
+  "request": {
+    "id": "en__flash_rec_005",
+    "seed": 11,
+    "language": "English",
+    "text": "Non-performance confirmed. Pilot zero one two one, recall initiated. Thank you for your service.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded, procedural and polite, as if closing a support ticket.",
+  "duration": 6.4,
+  "sample_rate": 24000,
+  "peak": 0.752,
+  "clipping_suspect": false,
+  "asr": "Non-performance confirmed. Pilot zero one two one recall initiated. Thank you for your service.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.42,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "f65b318982daf45e/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Non-performance",
+      "charStart": 0,
+      "charEnd": 15,
+      "startS": 0.16,
+      "endS": 1.12
+    },
+    {
+      "text": "confirmed",
+      "charStart": 16,
+      "charEnd": 25,
+      "startS": 1.12,
+      "endS": 1.76
+    },
+    {
+      "text": "Pilot",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "zero",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "one",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "two",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "one",
+      "charStart": 46,
+      "charEnd": 49,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "recall",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.76,
+      "endS": 4.24
+    },
+    {
+      "text": "initiated",
+      "charStart": 58,
+      "charEnd": 67,
+      "startS": 4.24,
+      "endS": 4.96
+    },
+    {
+      "text": "Thank",
+      "charStart": 69,
+      "charEnd": 74,
+      "startS": 5.2,
+      "endS": 5.44
+    },
+    {
+      "text": "you",
+      "charStart": 75,
+      "charEnd": 78,
+      "startS": 5.44,
+      "endS": 5.52
+    },
+    {
+      "text": "for",
+      "charStart": 79,
+      "charEnd": 82,
+      "startS": 5.52,
+      "endS": 5.6
+    },
+    {
+      "text": "your",
+      "charStart": 83,
+      "charEnd": 87,
+      "startS": 5.6,
+      "endS": 5.84
+    },
+    {
+      "text": "service",
+      "charStart": 88,
+      "charEnd": 95,
+      "startS": 5.84,
+      "endS": 6.32
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "hash": "3ff91394f72cb10d",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_review_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Repaso rápido! ¿Qué balas son malas? Así es. Las rosas, las doradas y, en general, las balas. ¿Qué parte de la nave puede recibir impactos? La gema. Tienes talento nato.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Quiz-show host answering her own questions without a pause.",
+  "duration": 14.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Rapaso rápido, qué balas son malas, así es, las rosas, las doradas y en general las balas, que parte de la navy puede recibir impactos, la hema, tienes talento nato.",
+  "asr_similarity": 0.9,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 0.06,
+    "limited_db": 0.01,
+    "measured_before_lufs": -18.06,
+    "peak_bound": false
+  },
+  "words_for": "3ff91394f72cb10d/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Repaso",
+      "charStart": 1,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "rápido",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "Qué",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "balas",
+      "charStart": 21,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "son",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "malas",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "Así",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "es",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "Las",
+      "charStart": 46,
+      "charEnd": 49,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "rosas",
+      "charStart": 50,
+      "charEnd": 55,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "las",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 5.28,
+      "endS": 5.52
+    },
+    {
+      "text": "doradas",
+      "charStart": 61,
+      "charEnd": 68,
+      "startS": 5.52,
+      "endS": 6.08
+    },
+    {
+      "text": "y",
+      "charStart": 69,
+      "charEnd": 70,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "en",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "general",
+      "charStart": 75,
+      "charEnd": 82,
+      "startS": 6.48,
+      "endS": 7.04
+    },
+    {
+      "text": "las",
+      "charStart": 84,
+      "charEnd": 87,
+      "startS": 7.28,
+      "endS": 7.52
+    },
+    {
+      "text": "balas",
+      "charStart": 88,
+      "charEnd": 93,
+      "startS": 7.76,
+      "endS": 8.08
+    },
+    {
+      "text": "Qué",
+      "charStart": 96,
+      "charEnd": 99,
+      "startS": 8.48,
+      "endS": 8.56
+    },
+    {
+      "text": "parte",
+      "charStart": 100,
+      "charEnd": 105,
+      "startS": 8.64,
+      "endS": 8.96
+    },
+    {
+      "text": "de",
+      "charStart": 106,
+      "charEnd": 108,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "la",
+      "charStart": 109,
+      "charEnd": 111,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "nave",
+      "charStart": 112,
+      "charEnd": 116,
+      "startS": 9.2,
+      "endS": 9.52
+    },
+    {
+      "text": "puede",
+      "charStart": 117,
+      "charEnd": 122,
+      "startS": 9.6,
+      "endS": 9.84
+    },
+    {
+      "text": "recibir",
+      "charStart": 123,
+      "charEnd": 130,
+      "startS": 9.84,
+      "endS": 10.32
+    },
+    {
+      "text": "impactos",
+      "charStart": 131,
+      "charEnd": 139,
+      "startS": 10.4,
+      "endS": 11.2
+    },
+    {
+      "text": "La",
+      "charStart": 141,
+      "charEnd": 143,
+      "startS": 11.52,
+      "endS": 11.68
+    },
+    {
+      "text": "gema",
+      "charStart": 144,
+      "charEnd": 148,
+      "startS": 12.0,
+      "endS": 12.16
+    },
+    {
+      "text": "Tienes",
+      "charStart": 150,
+      "charEnd": 156,
+      "startS": 12.56,
+      "endS": 12.72
+    },
+    {
+      "text": "talento",
+      "charStart": 157,
+      "charEnd": 164,
+      "startS": 12.8,
+      "endS": 13.28
+    },
+    {
+      "text": "nato",
+      "charStart": 165,
+      "charEnd": 169,
+      "startS": 13.28,
+      "endS": 13.84
+    }
+  ]
+}

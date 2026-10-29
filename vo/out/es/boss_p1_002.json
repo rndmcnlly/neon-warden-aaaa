@@ -1,0 +1,131 @@
+{
+  "hash": "411d0f9ca430f7d2",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_p1_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Ay! ¡AY! ¡Eso era un anillo! ¿¡Sabes lo VIEJO que es ese anillo!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Yelp of pain turning into outrage.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.632,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.96,
+    "gain_db": 0.72,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.72,
+    "peak_bound": false
+  },
+  "asr": "Ay, ay, eso era un anillo. Sabes lo viejo que es ese anillo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ay",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.8
+    },
+    {
+      "text": "AY",
+      "charStart": 6,
+      "charEnd": 8,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "Eso",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "era",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "un",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "anillo",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 1.68,
+      "endS": 2.24
+    },
+    {
+      "text": "Sabes",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "lo",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "VIEJO",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "que",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "es",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "ese",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "anillo",
+      "charStart": 58,
+      "charEnd": 64,
+      "startS": 3.92,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "411d0f9ca430f7d2/wordtiming-v1"
+}

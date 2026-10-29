@@ -1,0 +1,103 @@
+{
+  "hash": "4202496ec611d1ff",
+  "mode": "clone",
+  "request": {
+    "id": "en__brief_warden_002",
+    "seed": 22,
+    "language": "English",
+    "text": "It has no name. Only a title. The Warden.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "direction": "Each sentence its own beat; let the title land like a door slamming.",
+  "duration": 4.0,
+  "sample_rate": 24000,
+  "peak": 0.805,
+  "clipping_suspect": false,
+  "asr": "It has no name, only a title: the warden.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.88,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "4202496ec611d1ff/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "It",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "has",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "no",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "name",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "Only",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 1.68,
+      "endS": 2.0
+    },
+    {
+      "text": "a",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "title",
+      "charStart": 23,
+      "charEnd": 28,
+      "startS": 2.08,
+      "endS": 2.72
+    },
+    {
+      "text": "The",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "Warden",
+      "charStart": 34,
+      "charEnd": 40,
+      "startS": 3.12,
+      "endS": 3.84
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "hash": "95623974e7760c3c",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_pod_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Mi CÁPSULA! ¿¡Tienes ALGUNA idea de cuánto tarda en crecer una cápsula!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Outraged, high, a callback to its first line about growing scouts.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.35,
+    "gain_db": 1.5,
+    "limited_db": 0.13,
+    "measured_before_lufs": -19.5,
+    "peak_bound": false
+  },
+  "asr": "Mi cápsula, tienes alguna idea de cuánto tarda en crecer una cápsula.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Mi",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "CÁPSULA",
+      "charStart": 4,
+      "charEnd": 11,
+      "startS": 0.24,
+      "endS": 1.12
+    },
+    {
+      "text": "Tienes",
+      "charStart": 15,
+      "charEnd": 21,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "ALGUNA",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 1.68,
+      "endS": 2.0
+    },
+    {
+      "text": "idea",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "de",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "cuánto",
+      "charStart": 37,
+      "charEnd": 43,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "tarda",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "en",
+      "charStart": 50,
+      "charEnd": 52,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "crecer",
+      "charStart": 53,
+      "charEnd": 59,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "una",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "cápsula",
+      "charStart": 64,
+      "charEnd": 71,
+      "startS": 3.84,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "95623974e7760c3c/wordtiming-v1"
+}

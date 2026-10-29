@@ -1,0 +1,145 @@
+{
+  "hash": "313d91ab59c97992",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_pod_001",
+    "seed": 33,
+    "language": "English",
+    "text": "My POD! Do you have ANY idea how long it takes to grow a pod?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Outraged, high, a callback to its first line about growing scouts.",
+  "duration": 3.92,
+  "sample_rate": 24000,
+  "peak": 0.586,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.61,
+    "gain_db": 0.79,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.79,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "My",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "POD",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "Do",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "you",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "have",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "ANY",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "idea",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 1.6,
+      "endS": 2.08
+    },
+    {
+      "text": "how",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "long",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "it",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "takes",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "to",
+      "charStart": 47,
+      "charEnd": 49,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "grow",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "a",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "pod",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 3.36,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "313d91ab59c97992/wordtiming-v1",
+  "asr": "My pod. Do you have any idea how long it takes to grow a pod?",
+  "asr_similarity": 1.0
+}

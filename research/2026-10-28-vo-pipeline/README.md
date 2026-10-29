@@ -137,3 +137,87 @@ instrumental logo, tutorial, gameplay, boss, and ending cues.
    per-line `seed` overrides in `script.yaml`.
 4. If the clone voices sound too flat for the parody, run a small IndexTTS2
    bake-off, since it conditions emotion separately from timbre.
+
+## Status, October 28, 2026 (evening): full render
+
+- `vo/render.py` changes: anchors are locked (identity is the anchor
+  sidecar's hash, and the clone reference text comes from that sidecar), so a
+  speaker's `design` can be edited without recasting; `--recast <speaker>`
+  re-makes one. Per-line `seed` overrides (all languages or per language) and
+  a per-line `mode: design` override join the cache hash. New flags:
+  `--dry-run`, `--prune`, `--retry-low` (with `--threshold`, default 0.85, and
+  `--retry-seeds`, default 3). ASR runs batched, one audiocpp session per
+  language (about 0.4 s per clip), and its results live in each take's
+  sidecar. The scorer is now accent-insensitive, since Qwen3-ASR drops Spanish
+  accents on correctly spoken words.
+- The dry run confirmed that the refactor alone rendered nothing: the 12
+  existing takes stayed current. `--prune` removed the 9 `flash_rain_001`
+  files.
+- Full pass: 288 takes in 38 min wall (render RTF 0.79). Total VO is 32.5 min
+  across 300 takes (en 9:38, es 12:49, zh 10:02). Mean ASR is en 0.991,
+  es 0.924, zh 0.976. Retry reseeded 62 low takes; 49 lines now carry seed
+  overrides. Spanish improved the least.
+- Pilot's "Keep the money.": 15 clone seeds plateaued (es 0.75, zh 0.55), so
+  the line now renders in design mode. That fixes zh. In es the "-se" of
+  "Quédense" is swallowed ("Queden con el dinero") in both modes.
+- 16 takes are still under 0.85 (15 es, 1 zh). See `vo/out/REPORT.md`.
+  Several of these are ASR artifacts, such as zh `warn_narr_001`, a single
+  word, "守望者". Others are real slurs: es `bark_lifelost_001` and
+  `tut_route_001`.
+- Next: Adam listens to the 16 flagged takes and the design-mode Pilot line.
+  For Spanish, try a Spanish-language anchor per speaker (a recast, so ask
+  first) or small text edits ("Quédate con el dinero" if the Pilot addresses
+  one person).
+
+## Wave 3, October 28, 2026 (night): word timing, language anchors, loudness
+
+Framing: subtitles need word-level timing; Spanish needed better ASR (goal:
+mean >= 0.95, min >= 0.85); VO should arrive at -18 LUFS, -1 dBTP.
+
+- **Word timing: forced alignment, not ASR timestamps.** Qwen3 Forced
+  Aligner 0.6B (q8_0 GGUF, `audio-cpp/audio.cpp-gguf`, 1.1 GB, in the shared
+  models dir) aligns the *script* text, so spans never inherit ASR
+  mishearings. It is fast: 450 takes in about 60 s, one audiocpp session via
+  `--request-sequence` plus `--words-out` (writes `words_<id>.json` per
+  request). Word spans in en and es, character spans in zh, 80 ms
+  resolution. It drops hyphens and apostrophes ("non-performance" returns as
+  "nonperformance"), so `attach_chars` matches on letters and digits only.
+  Output is N's `WordTiming { text, charStart, charEnd, startS, endS }`
+  (UTF-16 offsets) in each sidecar and in `cues.json`; VTTs now time
+  sentences from the words and carry WebVTT inline word timestamps.
+  Sanity on all 450 takes: 100% coverage, 0 non-monotonic, 1 out of bounds
+  (es `tut_rest_001`, words packed into the last 80 ms: a truncated take,
+  which the tutorial_ai recast replaces). The bounds check doubles as a
+  listen-free truncation detector.
+- **Per-language anchors** (`vo/casting/cast_lang_anchors.py`, index at
+  `vo/casting/lang_anchors/<lang>/index.json`). Two methods per speaker, 2
+  seeds each, scored by ES ASR on the speaker's 8 worst lines and by median
+  f0 against the English anchor:
+  - *bootstrap* (Base clones the EN anchor speaking a Spanish line) keeps
+    identity but also the accent: warden, scout, authority anchors only
+    transcribed at 0.47–0.81.
+  - *design* (VoiceDesign from a Spanish-language description of the voice
+    as `description` says it sounds) won for warden (test mean 0.715 ->
+    0.994), scout (0.588 -> 0.996), authority (0.818 -> 0.972; f0 1.23x EN,
+    past the 20% proxy, accepted as still adult male at 122 Hz).
+  - bootstrap won for narrator and pilot (already near-native).
+  - zh: only the narrator needed one (守望者 heard as "Show wander" on 7 of 8
+    seeds); bootstrap_s22 chosen over the ASR-max design for identity.
+  Result: every non-tutorial_ai take is >= 0.85 in all languages. ES overall
+  0.877 -> 0.935 mean (the tutorial_ai voice is pending Adam's recast; its
+  ES anchor should be auditioned from the picked anchor right after). zh
+  mean 0.981, min 0.857.
+- **Loudness at render time**: gain to -18 LUFS (pyloudnorm, BS.1770), and
+  only when that pushes true peak (4x oversampled) over -1 dBTP, a
+  latency-compensated `alimiter` on those peaks (up to 4.3 dB on shouted
+  lines, about a third of takes). All 450 land at -18.0 to -18.9 LUFS,
+  max -1.05 dBTP. A plain-gain first attempt left 104 takes up to 3.9 LU
+  quiet, which is why the limiter is there. Measurements are in each
+  sidecar and in `cues.json` (`loudness`), with `recipe` so a change
+  re-normalizes once.
+- Process note: run `--dry-run` before every render. One plain run here
+  rendered 150 new takes N had just committed, tutorial_ai included, because
+  the cache saw them as stale.
+- Next: on Adam's tutorial_ai pick, promote it (vo/casting/README.md), add a
+  tutorial_ai entry to `ANCHORS["es"]`, audition, promote, then
+  `render.py --speaker tutorial_ai --asr --retry-low`.

@@ -1,0 +1,117 @@
+{
+  "hash": "5151abfb5da95bfa",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_auth_locked_001",
+    "seed": 66,
+    "language": "Spanish",
+    "text": "Información recibida. Conducta del explorador: patrulla. Por favor, anótalo como hostil.",
+    "voice_ref": "vo/voices/authority.es.wav",
+    "reference_text": "Control de Rutas a todos los equipos de reconocimiento. Cimientos del peaje aprobados, pendientes de autorización. Registren sus horas antes del fin del ciclo."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 7.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.14,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 7.1,
+    "limited_db": 1.88,
+    "measured_before_lufs": -25.1,
+    "peak_bound": false
+  },
+  "asr": "Información recibida. Conducta del explorador. Patrulla, por favor anótalo como hostil.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Información",
+      "charStart": 0,
+      "charEnd": 11,
+      "startS": 0.16,
+      "endS": 0.88
+    },
+    {
+      "text": "recibida",
+      "charStart": 12,
+      "charEnd": 20,
+      "startS": 0.88,
+      "endS": 1.44
+    },
+    {
+      "text": "Conducta",
+      "charStart": 22,
+      "charEnd": 30,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "del",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "explorador",
+      "charStart": 35,
+      "charEnd": 45,
+      "startS": 2.8,
+      "endS": 3.52
+    },
+    {
+      "text": "patrulla",
+      "charStart": 47,
+      "charEnd": 55,
+      "startS": 4.32,
+      "endS": 4.96
+    },
+    {
+      "text": "Por",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "favor",
+      "charStart": 61,
+      "charEnd": 66,
+      "startS": 5.68,
+      "endS": 6.08
+    },
+    {
+      "text": "anótalo",
+      "charStart": 68,
+      "charEnd": 75,
+      "startS": 6.24,
+      "endS": 6.8
+    },
+    {
+      "text": "como",
+      "charStart": 76,
+      "charEnd": 80,
+      "startS": 6.8,
+      "endS": 7.12
+    },
+    {
+      "text": "hostil",
+      "charStart": 81,
+      "charEnd": 87,
+      "startS": 7.12,
+      "endS": 7.52
+    }
+  ],
+  "words_for": "5151abfb5da95bfa/wordtiming-v1"
+}

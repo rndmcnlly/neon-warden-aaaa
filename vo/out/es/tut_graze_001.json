@@ -1,0 +1,299 @@
+{
+  "hash": "3e33957d7dcfd350",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_graze_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Lo siguiente es el margen. Mantén el enfoque para ver el anillo alrededor de tu gema. Cuando un disparo pasa dentro del anillo sin tocarte, eso es un roce. Por favor, deja pasar cerca cinco disparos lentos.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 14.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.35,
+    "gain_db": 10.01,
+    "limited_db": 1.53,
+    "measured_before_lufs": -28.01,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lo",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "siguiente",
+      "charStart": 3,
+      "charEnd": 12,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "es",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "el",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "margen",
+      "charStart": 19,
+      "charEnd": 25,
+      "startS": 1.28,
+      "endS": 1.84
+    },
+    {
+      "text": "Mantén",
+      "charStart": 27,
+      "charEnd": 33,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "el",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "enfoque",
+      "charStart": 37,
+      "charEnd": 44,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "para",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "ver",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "el",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "anillo",
+      "charStart": 57,
+      "charEnd": 63,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "alrededor",
+      "charStart": 64,
+      "charEnd": 73,
+      "startS": 4.16,
+      "endS": 4.72
+    },
+    {
+      "text": "de",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "tu",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "gema",
+      "charStart": 80,
+      "charEnd": 84,
+      "startS": 5.04,
+      "endS": 5.52
+    },
+    {
+      "text": "Cuando",
+      "charStart": 86,
+      "charEnd": 92,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "un",
+      "charStart": 93,
+      "charEnd": 95,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "disparo",
+      "charStart": 96,
+      "charEnd": 103,
+      "startS": 6.16,
+      "endS": 6.72
+    },
+    {
+      "text": "pasa",
+      "charStart": 104,
+      "charEnd": 108,
+      "startS": 6.72,
+      "endS": 7.12
+    },
+    {
+      "text": "dentro",
+      "charStart": 109,
+      "charEnd": 115,
+      "startS": 7.12,
+      "endS": 7.52
+    },
+    {
+      "text": "del",
+      "charStart": 116,
+      "charEnd": 119,
+      "startS": 7.52,
+      "endS": 7.6
+    },
+    {
+      "text": "anillo",
+      "charStart": 120,
+      "charEnd": 126,
+      "startS": 7.68,
+      "endS": 8.08
+    },
+    {
+      "text": "sin",
+      "charStart": 127,
+      "charEnd": 130,
+      "startS": 8.08,
+      "endS": 8.32
+    },
+    {
+      "text": "tocarte",
+      "charStart": 131,
+      "charEnd": 138,
+      "startS": 8.32,
+      "endS": 8.8
+    },
+    {
+      "text": "eso",
+      "charStart": 140,
+      "charEnd": 143,
+      "startS": 9.28,
+      "endS": 9.6
+    },
+    {
+      "text": "es",
+      "charStart": 144,
+      "charEnd": 146,
+      "startS": 9.6,
+      "endS": 9.76
+    },
+    {
+      "text": "un",
+      "charStart": 147,
+      "charEnd": 149,
+      "startS": 9.76,
+      "endS": 9.92
+    },
+    {
+      "text": "roce",
+      "charStart": 150,
+      "charEnd": 154,
+      "startS": 9.92,
+      "endS": 10.48
+    },
+    {
+      "text": "Por",
+      "charStart": 156,
+      "charEnd": 159,
+      "startS": 10.72,
+      "endS": 10.88
+    },
+    {
+      "text": "favor",
+      "charStart": 160,
+      "charEnd": 165,
+      "startS": 10.88,
+      "endS": 11.2
+    },
+    {
+      "text": "deja",
+      "charStart": 167,
+      "charEnd": 171,
+      "startS": 11.44,
+      "endS": 11.52
+    },
+    {
+      "text": "pasar",
+      "charStart": 172,
+      "charEnd": 177,
+      "startS": 11.76,
+      "endS": 12.08
+    },
+    {
+      "text": "cerca",
+      "charStart": 178,
+      "charEnd": 183,
+      "startS": 12.08,
+      "endS": 12.48
+    },
+    {
+      "text": "cinco",
+      "charStart": 184,
+      "charEnd": 189,
+      "startS": 12.48,
+      "endS": 12.88
+    },
+    {
+      "text": "disparos",
+      "charStart": 190,
+      "charEnd": 198,
+      "startS": 12.88,
+      "endS": 13.44
+    },
+    {
+      "text": "lentos",
+      "charStart": 199,
+      "charEnd": 205,
+      "startS": 13.44,
+      "endS": 14.08
+    }
+  ],
+  "words_for": "3e33957d7dcfd350/wordtiming-v1",
+  "asr": "Lo siguiente es el marín. Mantenió en focus para ver la niebla redonda que se huma cuando un disparo pasó dentro de la niebla sin tocarte. Eso es un roce. Por favor deja pasar cerca cinco disparos lentos.",
+  "asr_similarity": 0.64
+}

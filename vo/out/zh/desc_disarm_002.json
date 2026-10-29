@@ -1,0 +1,166 @@
+{
+  "hash": "a06b885d9569b4a1",
+  "mode": "clone",
+  "request": {
+    "id": "zh__desc_disarm_002",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "行。行！武器还会再长出来。这不是重点。谢谢你。",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Flustered, trying to stay angry and failing, the thank you almost swallowed.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.639,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.84,
+    "gain_db": 2.31,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.31,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "行",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "行",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "武",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "器",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "还",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "会",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "再",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "长",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "出",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "来",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "这",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "不",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "是",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "重",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "点",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "谢",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "谢",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "你",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.24,
+      "endS": 4.48
+    }
+  ],
+  "words_for": "a06b885d9569b4a1/wordtiming-v1",
+  "asr": "行行，武器还会再长出来。这不是重点。谢谢你。",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,145 @@
+{
+  "hash": "c6c0dc3432149186",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_turret_patrol_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Rutas de Artillería en posición. Cargueros con paso libre. Contratista, tú no eres un carguero.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Deadpan.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.886,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 3.01,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.04,
+    "peak_bound": false
+  },
+  "asr": "Rutas de artillería en posición, cargueros con paso libre, contratista, tú no eres un carguero.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Rutas",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "de",
+      "charStart": 6,
+      "charEnd": 8,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "Artillería",
+      "charStart": 9,
+      "charEnd": 19,
+      "startS": 1.2,
+      "endS": 1.76
+    },
+    {
+      "text": "en",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "posición",
+      "charStart": 23,
+      "charEnd": 31,
+      "startS": 1.84,
+      "endS": 2.4
+    },
+    {
+      "text": "Cargueros",
+      "charStart": 33,
+      "charEnd": 42,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "con",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "paso",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "libre",
+      "charStart": 52,
+      "charEnd": 57,
+      "startS": 3.92,
+      "endS": 4.32
+    },
+    {
+      "text": "Contratista",
+      "charStart": 59,
+      "charEnd": 70,
+      "startS": 4.8,
+      "endS": 5.52
+    },
+    {
+      "text": "tú",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "no",
+      "charStart": 75,
+      "charEnd": 77,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "eres",
+      "charStart": 78,
+      "charEnd": 82,
+      "startS": 6.24,
+      "endS": 6.56
+    },
+    {
+      "text": "un",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 6.56,
+      "endS": 6.64
+    },
+    {
+      "text": "carguero",
+      "charStart": 86,
+      "charEnd": 94,
+      "startS": 6.64,
+      "endS": 7.04
+    }
+  ],
+  "words_for": "c6c0dc3432149186/wordtiming-v1"
+}

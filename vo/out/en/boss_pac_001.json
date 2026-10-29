@@ -1,0 +1,145 @@
+{
+  "hash": "64db84153b6da506",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_pac_001",
+    "seed": 33,
+    "language": "English",
+    "text": "You're not shooting. You are NOT SHOOTING. Is this a trick? Is it a trick?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Paranoid, high, repeating itself.",
+  "duration": 4.72,
+  "sample_rate": 24000,
+  "peak": 0.643,
+  "clipping_suspect": false,
+  "asr": "You're not shooting. You are not shooting. Is this a trick? Is it a trick?",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.82,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "64db84153b6da506/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "You're",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "not",
+      "charStart": 7,
+      "charEnd": 10,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "shooting",
+      "charStart": 11,
+      "charEnd": 19,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "You",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "are",
+      "charStart": 25,
+      "charEnd": 28,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "NOT",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "SHOOTING",
+      "charStart": 33,
+      "charEnd": 41,
+      "startS": 1.76,
+      "endS": 2.48
+    },
+    {
+      "text": "Is",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "this",
+      "charStart": 46,
+      "charEnd": 50,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "trick",
+      "charStart": 53,
+      "charEnd": 58,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "Is",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "it",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "a",
+      "charStart": 66,
+      "charEnd": 67,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "trick",
+      "charStart": 68,
+      "charEnd": 73,
+      "startS": 4.16,
+      "endS": 4.64
+    }
+  ]
+}

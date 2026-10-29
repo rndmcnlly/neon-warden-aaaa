@@ -1,0 +1,82 @@
+{
+  "hash": "79d86a000d9ebed3",
+  "mode": "clone",
+  "request": {
+    "id": "en__kill_ai_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Warden down! The lanes are open!",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, pure celebration, confetti in the voice.",
+  "duration": 2.96,
+  "sample_rate": 24000,
+  "peak": 0.749,
+  "clipping_suspect": false,
+  "asr": "Warden down! The lanes are open.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.46,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "79d86a000d9ebed3/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Warden",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.24,
+      "endS": 1.2
+    },
+    {
+      "text": "down",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "The",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "lanes",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "are",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "open",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.72,
+      "endS": 2.8
+    }
+  ]
+}

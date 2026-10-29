@@ -1,0 +1,201 @@
+{
+  "hash": "1de1c30c89da2e29",
+  "mode": "clone",
+  "request": {
+    "id": "en__sec5_intro_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Last Approach. Everything they have. Analysts say the Warden is down to its last reserves. This is what a winning quarter looks like!",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, quarterly-earnings-call triumph.",
+  "duration": 7.76,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Last approach. Everything they have, analysts say the warden is down to its last reserves. This is what a winning quarter looks like.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.11,
+    "true_peak_dbtp": -1.13,
+    "gain_db": 0.79,
+    "limited_db": 0.74,
+    "measured_before_lufs": -18.79,
+    "peak_bound": false
+  },
+  "words_for": "1de1c30c89da2e29/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Last",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "Approach",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "Everything",
+      "charStart": 15,
+      "charEnd": 25,
+      "startS": 1.36,
+      "endS": 1.76
+    },
+    {
+      "text": "they",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "have",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "Analysts",
+      "charStart": 37,
+      "charEnd": 45,
+      "startS": 2.48,
+      "endS": 3.04
+    },
+    {
+      "text": "say",
+      "charStart": 46,
+      "charEnd": 49,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "the",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "Warden",
+      "charStart": 54,
+      "charEnd": 60,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "is",
+      "charStart": 61,
+      "charEnd": 63,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "down",
+      "charStart": 64,
+      "charEnd": 68,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "to",
+      "charStart": 69,
+      "charEnd": 71,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "its",
+      "charStart": 72,
+      "charEnd": 75,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "last",
+      "charStart": 76,
+      "charEnd": 80,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "reserves",
+      "charStart": 81,
+      "charEnd": 89,
+      "startS": 4.8,
+      "endS": 5.36
+    },
+    {
+      "text": "This",
+      "charStart": 91,
+      "charEnd": 95,
+      "startS": 5.68,
+      "endS": 5.92
+    },
+    {
+      "text": "is",
+      "charStart": 96,
+      "charEnd": 98,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "what",
+      "charStart": 99,
+      "charEnd": 103,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "a",
+      "charStart": 104,
+      "charEnd": 105,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "winning",
+      "charStart": 106,
+      "charEnd": 113,
+      "startS": 6.32,
+      "endS": 6.56
+    },
+    {
+      "text": "quarter",
+      "charStart": 114,
+      "charEnd": 121,
+      "startS": 6.56,
+      "endS": 6.96
+    },
+    {
+      "text": "looks",
+      "charStart": 122,
+      "charEnd": 127,
+      "startS": 6.96,
+      "endS": 7.28
+    },
+    {
+      "text": "like",
+      "charStart": 128,
+      "charEnd": 132,
+      "startS": 7.28,
+      "endS": 7.6
+    }
+  ]
+}

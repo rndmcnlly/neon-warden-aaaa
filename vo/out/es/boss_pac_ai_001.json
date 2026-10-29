@@ -1,0 +1,138 @@
+{
+  "hash": "7ac3baefc9e61f45",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_pac_ai_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Piloto, tu arma no muestra actividad durante un enfrentamiento contratado. Esto ha sido escalado.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, compliance-officer calm.",
+  "duration": 7.84,
+  "sample_rate": 24000,
+  "peak": 0.874,
+  "clipping_suspect": false,
+  "asr": "Piloto, tu arma no muestra actividad durante un enfrentamiento contratado, esto ha sido escalado.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.16,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "7ac3baefc9e61f45/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Piloto",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 1.04
+    },
+    {
+      "text": "tu",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "arma",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "no",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "muestra",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "actividad",
+      "charStart": 27,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 3.36
+    },
+    {
+      "text": "durante",
+      "charStart": 37,
+      "charEnd": 44,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "un",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "enfrentamiento",
+      "charStart": 48,
+      "charEnd": 62,
+      "startS": 4.0,
+      "endS": 4.64
+    },
+    {
+      "text": "contratado",
+      "charStart": 63,
+      "charEnd": 73,
+      "startS": 4.64,
+      "endS": 5.52
+    },
+    {
+      "text": "Esto",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 5.92,
+      "endS": 6.24
+    },
+    {
+      "text": "ha",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "sido",
+      "charStart": 83,
+      "charEnd": 87,
+      "startS": 6.48,
+      "endS": 6.8
+    },
+    {
+      "text": "escalado",
+      "charStart": 88,
+      "charEnd": 96,
+      "startS": 6.8,
+      "endS": 7.68
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "hash": "e8ef4c0a4944e8b7",
+  "mode": "clone",
+  "request": {
+    "id": "es__flash_rec_005",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "No desempeño confirmado. Piloto cero uno dos uno, retiro iniciado. Gracias por tus servicios.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded, procedural and polite, as if closing a support ticket.",
+  "duration": 8.88,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "No, desempeño confirmado, piloto serio uno dos uno, retiro iniciado, gracias por tus servicios.",
+  "asr_similarity": 0.929,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.25,
+    "gain_db": 0.28,
+    "limited_db": 0.23,
+    "measured_before_lufs": -18.28,
+    "peak_bound": false
+  },
+  "words_for": "e8ef4c0a4944e8b7/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "desempeño",
+      "charStart": 3,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "confirmado",
+      "charStart": 13,
+      "charEnd": 23,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "Piloto",
+      "charStart": 25,
+      "charEnd": 31,
+      "startS": 2.64,
+      "endS": 3.2
+    },
+    {
+      "text": "cero",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "uno",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "dos",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "uno",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "retiro",
+      "charStart": 50,
+      "charEnd": 56,
+      "startS": 4.8,
+      "endS": 5.12
+    },
+    {
+      "text": "iniciado",
+      "charStart": 57,
+      "charEnd": 65,
+      "startS": 5.36,
+      "endS": 6.16
+    },
+    {
+      "text": "Gracias",
+      "charStart": 67,
+      "charEnd": 74,
+      "startS": 6.48,
+      "endS": 7.04
+    },
+    {
+      "text": "por",
+      "charStart": 75,
+      "charEnd": 78,
+      "startS": 7.04,
+      "endS": 7.28
+    },
+    {
+      "text": "tus",
+      "charStart": 79,
+      "charEnd": 82,
+      "startS": 7.28,
+      "endS": 7.44
+    },
+    {
+      "text": "servicios",
+      "charStart": 83,
+      "charEnd": 92,
+      "startS": 7.44,
+      "endS": 8.32
+    }
+  ]
+}

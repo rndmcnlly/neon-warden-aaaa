@@ -1,0 +1,124 @@
+{
+  "hash": "d7fb43e6704efb56",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_disarm_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "Bien. ¡BIEN! Les vuelven a crecer. Ese no es el punto. Gracias.",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Flustered, trying to stay angry and failing, the thank you almost swallowed.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 1.92,
+    "limited_db": 0.02,
+    "measured_before_lufs": -19.92,
+    "peak_bound": false
+  },
+  "asr": "Bien, bien, les vuelven a crecer. Ese no es el punto. Gracias.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Bien",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "BIEN",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.64,
+      "endS": 1.28
+    },
+    {
+      "text": "Les",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "vuelven",
+      "charStart": 17,
+      "charEnd": 24,
+      "startS": 1.52,
+      "endS": 1.92
+    },
+    {
+      "text": "a",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "crecer",
+      "charStart": 27,
+      "charEnd": 33,
+      "startS": 2.0,
+      "endS": 2.56
+    },
+    {
+      "text": "Ese",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "no",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "es",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "el",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "punto",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "Gracias",
+      "charStart": 55,
+      "charEnd": 62,
+      "startS": 3.92,
+      "endS": 4.48
+    }
+  ],
+  "words_for": "d7fb43e6704efb56/wordtiming-v1"
+}

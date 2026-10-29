@@ -1,0 +1,306 @@
+{
+  "hash": "8997c8098a5b43fa",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_rate_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Todo lo que acabas de aprender alimenta tu Tarifa de Contrato, que aparece junto a tu paga. Eliminaciones, piezas rotas, desarmes, roces y escaneos nuevos la suben, siempre que no dejes de encadenarlos. Por favor, llévala al doble.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 14.24,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.16,
+    "true_peak_dbtp": -1.08,
+    "gain_db": 7.74,
+    "limited_db": 2.21,
+    "measured_before_lufs": -25.74,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Todo",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "lo",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "que",
+      "charStart": 8,
+      "charEnd": 11,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "acabas",
+      "charStart": 12,
+      "charEnd": 18,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "de",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "aprender",
+      "charStart": 22,
+      "charEnd": 30,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "alimenta",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.32,
+      "endS": 2.88
+    },
+    {
+      "text": "tu",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "Tarifa",
+      "charStart": 43,
+      "charEnd": 49,
+      "startS": 2.96,
+      "endS": 3.28
+    },
+    {
+      "text": "de",
+      "charStart": 50,
+      "charEnd": 52,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "Contrato",
+      "charStart": 53,
+      "charEnd": 61,
+      "startS": 3.44,
+      "endS": 4.0
+    },
+    {
+      "text": "que",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "aparece",
+      "charStart": 67,
+      "charEnd": 74,
+      "startS": 4.4,
+      "endS": 4.88
+    },
+    {
+      "text": "junto",
+      "charStart": 75,
+      "charEnd": 80,
+      "startS": 4.88,
+      "endS": 5.12
+    },
+    {
+      "text": "a",
+      "charStart": 81,
+      "charEnd": 82,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "tu",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "paga",
+      "charStart": 86,
+      "charEnd": 90,
+      "startS": 5.28,
+      "endS": 5.84
+    },
+    {
+      "text": "Eliminaciones",
+      "charStart": 92,
+      "charEnd": 105,
+      "startS": 6.08,
+      "endS": 7.04
+    },
+    {
+      "text": "piezas",
+      "charStart": 107,
+      "charEnd": 113,
+      "startS": 7.04,
+      "endS": 7.36
+    },
+    {
+      "text": "rotas",
+      "charStart": 114,
+      "charEnd": 119,
+      "startS": 7.36,
+      "endS": 7.84
+    },
+    {
+      "text": "desarmes",
+      "charStart": 121,
+      "charEnd": 129,
+      "startS": 7.84,
+      "endS": 8.48
+    },
+    {
+      "text": "roces",
+      "charStart": 131,
+      "charEnd": 136,
+      "startS": 8.48,
+      "endS": 8.96
+    },
+    {
+      "text": "y",
+      "charStart": 137,
+      "charEnd": 138,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "escaneos",
+      "charStart": 139,
+      "charEnd": 147,
+      "startS": 9.04,
+      "endS": 9.6
+    },
+    {
+      "text": "nuevos",
+      "charStart": 148,
+      "charEnd": 154,
+      "startS": 9.6,
+      "endS": 10.0
+    },
+    {
+      "text": "la",
+      "charStart": 155,
+      "charEnd": 157,
+      "startS": 10.0,
+      "endS": 10.08
+    },
+    {
+      "text": "suben",
+      "charStart": 158,
+      "charEnd": 163,
+      "startS": 10.08,
+      "endS": 10.48
+    },
+    {
+      "text": "siempre",
+      "charStart": 165,
+      "charEnd": 172,
+      "startS": 10.72,
+      "endS": 11.12
+    },
+    {
+      "text": "que",
+      "charStart": 173,
+      "charEnd": 176,
+      "startS": 11.12,
+      "endS": 11.2
+    },
+    {
+      "text": "no",
+      "charStart": 177,
+      "charEnd": 179,
+      "startS": 11.2,
+      "endS": 11.28
+    },
+    {
+      "text": "dejes",
+      "charStart": 180,
+      "charEnd": 185,
+      "startS": 11.28,
+      "endS": 11.52
+    },
+    {
+      "text": "de",
+      "charStart": 186,
+      "charEnd": 188,
+      "startS": 11.6,
+      "endS": 11.68
+    },
+    {
+      "text": "encadenarlos",
+      "charStart": 189,
+      "charEnd": 201,
+      "startS": 11.68,
+      "endS": 12.4
+    },
+    {
+      "text": "Por",
+      "charStart": 203,
+      "charEnd": 206,
+      "startS": 12.64,
+      "endS": 12.8
+    },
+    {
+      "text": "favor",
+      "charStart": 207,
+      "charEnd": 212,
+      "startS": 12.8,
+      "endS": 13.12
+    },
+    {
+      "text": "llévala",
+      "charStart": 214,
+      "charEnd": 221,
+      "startS": 13.12,
+      "endS": 13.52
+    },
+    {
+      "text": "al",
+      "charStart": 222,
+      "charEnd": 224,
+      "startS": 13.52,
+      "endS": 13.68
+    },
+    {
+      "text": "doble",
+      "charStart": 225,
+      "charEnd": 230,
+      "startS": 13.68,
+      "endS": 14.08
+    }
+  ],
+  "words_for": "8997c8098a5b43fa/wordtiming-v1",
+  "asr": "Todo lo que acabas de aprender alimenta tu tarifa de contrato, que aparece junto a tu paga. Eliminaciones, piezas rotas, desarmes, roces y escaneos nuevos la suben siempre que no dejes de encadenarlos. Por favor, lleva la al doble.",
+  "asr_similarity": 0.961
+}

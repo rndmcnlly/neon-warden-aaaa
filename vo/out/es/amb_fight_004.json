@@ -1,0 +1,145 @@
+{
+  "hash": "9953b3320cdcfa48",
+  "mode": "clone",
+  "request": {
+    "id": "es__amb_fight_004",
+    "seed": 111,
+    "language": "Spanish",
+    "text": "Recordatorio: los objetos son propiedad de la Autoridad de Rutas. Por favor, no te encariñes.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, gentle policy reminder.",
+  "duration": 7.2,
+  "sample_rate": 24000,
+  "peak": 0.761,
+  "clipping_suspect": false,
+  "asr": "Recordatorio: Los objetos son propiedad de la autoridad de rutas, por favor no tengan cariños.",
+  "asr_similarity": 0.867,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.19,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "9953b3320cdcfa48/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Recordatorio",
+      "charStart": 0,
+      "charEnd": 12,
+      "startS": 0.4,
+      "endS": 1.44
+    },
+    {
+      "text": "los",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "objetos",
+      "charStart": 18,
+      "charEnd": 25,
+      "startS": 1.92,
+      "endS": 2.48
+    },
+    {
+      "text": "son",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "propiedad",
+      "charStart": 30,
+      "charEnd": 39,
+      "startS": 2.64,
+      "endS": 3.2
+    },
+    {
+      "text": "de",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "la",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 46,
+      "charEnd": 55,
+      "startS": 3.52,
+      "endS": 4.16
+    },
+    {
+      "text": "de",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "Rutas",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 4.32,
+      "endS": 4.96
+    },
+    {
+      "text": "Por",
+      "charStart": 66,
+      "charEnd": 69,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "favor",
+      "charStart": 70,
+      "charEnd": 75,
+      "startS": 5.44,
+      "endS": 5.76
+    },
+    {
+      "text": "no",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "te",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "encariñes",
+      "charStart": 83,
+      "charEnd": 92,
+      "startS": 6.24,
+      "endS": 7.12
+    }
+  ]
+}

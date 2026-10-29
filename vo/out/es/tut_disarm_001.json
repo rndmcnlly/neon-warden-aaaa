@@ -1,0 +1,250 @@
+{
+  "hash": "f7c729490ae995c3",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_disarm_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Desarmado. Un activo desarmado deja de disparar y sale de la ruta. Los desarmes se pagan al cuarenta por ciento de una eliminación. Un entregable parcial sigue siendo un entregable.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Reads the pay rate as good news.",
+  "duration": 12.0,
+  "sample_rate": 24000,
+  "peak": 0.739,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.6,
+    "gain_db": 7.03,
+    "limited_db": 0.0,
+    "measured_before_lufs": -25.03,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Desarmado",
+      "charStart": 0,
+      "charEnd": 9,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "Un",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "activo",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 1.84,
+      "endS": 2.4
+    },
+    {
+      "text": "desarmado",
+      "charStart": 21,
+      "charEnd": 30,
+      "startS": 2.4,
+      "endS": 3.04
+    },
+    {
+      "text": "deja",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "de",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "disparar",
+      "charStart": 39,
+      "charEnd": 47,
+      "startS": 3.52,
+      "endS": 4.08
+    },
+    {
+      "text": "y",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "sale",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 4.24,
+      "endS": 4.56
+    },
+    {
+      "text": "de",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "la",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "ruta",
+      "charStart": 61,
+      "charEnd": 65,
+      "startS": 4.8,
+      "endS": 5.28
+    },
+    {
+      "text": "Los",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 5.68,
+      "endS": 5.92
+    },
+    {
+      "text": "desarmes",
+      "charStart": 71,
+      "charEnd": 79,
+      "startS": 5.92,
+      "endS": 6.4
+    },
+    {
+      "text": "se",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "pagan",
+      "charStart": 83,
+      "charEnd": 88,
+      "startS": 6.48,
+      "endS": 6.88
+    },
+    {
+      "text": "al",
+      "charStart": 89,
+      "charEnd": 91,
+      "startS": 6.88,
+      "endS": 6.96
+    },
+    {
+      "text": "cuarenta",
+      "charStart": 92,
+      "charEnd": 100,
+      "startS": 6.96,
+      "endS": 7.36
+    },
+    {
+      "text": "por",
+      "charStart": 101,
+      "charEnd": 104,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "ciento",
+      "charStart": 105,
+      "charEnd": 111,
+      "startS": 7.52,
+      "endS": 7.92
+    },
+    {
+      "text": "de",
+      "charStart": 112,
+      "charEnd": 114,
+      "startS": 7.92,
+      "endS": 8.0
+    },
+    {
+      "text": "una",
+      "charStart": 115,
+      "charEnd": 118,
+      "startS": 8.0,
+      "endS": 8.16
+    },
+    {
+      "text": "eliminación",
+      "charStart": 119,
+      "charEnd": 130,
+      "startS": 8.16,
+      "endS": 8.96
+    },
+    {
+      "text": "Un",
+      "charStart": 132,
+      "charEnd": 134,
+      "startS": 9.28,
+      "endS": 9.44
+    },
+    {
+      "text": "entregable",
+      "charStart": 135,
+      "charEnd": 145,
+      "startS": 9.44,
+      "endS": 10.0
+    },
+    {
+      "text": "parcial",
+      "charStart": 146,
+      "charEnd": 153,
+      "startS": 10.0,
+      "endS": 10.48
+    },
+    {
+      "text": "sigue",
+      "charStart": 154,
+      "charEnd": 159,
+      "startS": 10.48,
+      "endS": 10.72
+    },
+    {
+      "text": "siendo",
+      "charStart": 160,
+      "charEnd": 166,
+      "startS": 10.72,
+      "endS": 11.04
+    },
+    {
+      "text": "un",
+      "charStart": 167,
+      "charEnd": 169,
+      "startS": 11.04,
+      "endS": 11.12
+    },
+    {
+      "text": "entregable",
+      "charStart": 170,
+      "charEnd": 180,
+      "startS": 11.12,
+      "endS": 11.84
+    }
+  ],
+  "words_for": "f7c729490ae995c3/wordtiming-v1",
+  "asr": "Desarmado, un activo desarmado deja de disparar y sale de la ruta. Los desarmes se pagan al cuarenta por ciento de una eliminación. Un entregable parcial sigue siendo un entregable.",
+  "asr_similarity": 1.0
+}

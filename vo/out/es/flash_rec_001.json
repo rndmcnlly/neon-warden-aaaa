@@ -1,0 +1,124 @@
+{
+  "hash": "1580eb831662b735",
+  "mode": "clone",
+  "request": {
+    "id": "es__flash_rec_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Grabando. Piloto cero uno dos uno. Aproximación Final. Estado del arma: fría.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded log header, flatter and older than her present self.",
+  "duration": 9.68,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Grabando, piloto cerro uno dos uno, aproximación final, estado del arma, fría.",
+  "asr_similarity": 0.917,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.06,
+    "true_peak_dbtp": -1.34,
+    "gain_db": 0.9,
+    "limited_db": 0.85,
+    "measured_before_lufs": -18.9,
+    "peak_bound": false
+  },
+  "words_for": "1580eb831662b735/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Grabando",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 1.04,
+      "endS": 1.84
+    },
+    {
+      "text": "Piloto",
+      "charStart": 10,
+      "charEnd": 16,
+      "startS": 2.32,
+      "endS": 2.88
+    },
+    {
+      "text": "cero",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 2.88,
+      "endS": 3.44
+    },
+    {
+      "text": "uno",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "dos",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "uno",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 4.16,
+      "endS": 4.56
+    },
+    {
+      "text": "Aproximación",
+      "charStart": 35,
+      "charEnd": 47,
+      "startS": 5.28,
+      "endS": 6.24
+    },
+    {
+      "text": "Final",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 6.24,
+      "endS": 6.8
+    },
+    {
+      "text": "Estado",
+      "charStart": 55,
+      "charEnd": 61,
+      "startS": 7.36,
+      "endS": 7.84
+    },
+    {
+      "text": "del",
+      "charStart": 62,
+      "charEnd": 65,
+      "startS": 7.92,
+      "endS": 8.08
+    },
+    {
+      "text": "arma",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 8.08,
+      "endS": 8.64
+    },
+    {
+      "text": "fría",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 9.04,
+      "endS": 9.6
+    }
+  ]
+}

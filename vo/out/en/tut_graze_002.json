@@ -1,0 +1,117 @@
+{
+  "hash": "031120c7f2280d01",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_graze_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Near misses are billable. The Authority values your proximity to risk.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Means it as a compliment.",
+  "duration": 4.88,
+  "sample_rate": 24000,
+  "peak": 0.767,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.3,
+    "gain_db": 4.15,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.15,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Near",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "misses",
+      "charStart": 5,
+      "charEnd": 11,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "are",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "billable",
+      "charStart": 16,
+      "charEnd": 24,
+      "startS": 1.12,
+      "endS": 1.76
+    },
+    {
+      "text": "The",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "Authority",
+      "charStart": 30,
+      "charEnd": 39,
+      "startS": 2.32,
+      "endS": 2.88
+    },
+    {
+      "text": "values",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 2.88,
+      "endS": 3.36
+    },
+    {
+      "text": "your",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "proximity",
+      "charStart": 52,
+      "charEnd": 61,
+      "startS": 3.52,
+      "endS": 4.32
+    },
+    {
+      "text": "to",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "risk",
+      "charStart": 65,
+      "charEnd": 69,
+      "startS": 4.72,
+      "endS": 4.8
+    }
+  ],
+  "words_for": "031120c7f2280d01/wordtiming-v1",
+  "asr": "Near misses are billable. The authority values your proximity to risk.",
+  "asr_similarity": 1.0
+}

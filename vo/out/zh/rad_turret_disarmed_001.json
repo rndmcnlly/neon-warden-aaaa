@@ -1,0 +1,166 @@
+{
+  "hash": "954f3f3a87f3a342",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rad_turret_disarmed_001",
+    "seed": 55,
+    "language": "Chinese",
+    "text": "炮管掉了。四号站进入静默。咦，它瞄的是武器。",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Surprised, almost grateful.",
+  "duration": 4.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.21,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 4.62,
+    "limited_db": 2.49,
+    "measured_before_lufs": -22.62,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "炮",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "管",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "掉",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "了",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "四",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "号",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "站",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "进",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "入",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "静",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "默",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "咦",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "它",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "瞄",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "的",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "是",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "武",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "器",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.32,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "954f3f3a87f3a342/wordtiming-v1",
+  "asr": "炮管掉了。四号站进入静默。咦，他瞄的是武器。",
+  "asr_similarity": 0.944
+}

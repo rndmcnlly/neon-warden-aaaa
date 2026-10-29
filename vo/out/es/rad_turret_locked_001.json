@@ -1,0 +1,138 @@
+{
+  "hash": "4e6bcd622dde3d13",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_turret_locked_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Fijado en la estación cuatro. Me está mirando el cañón. Todos miran el cañón.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.762,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.36,
+    "gain_db": 1.98,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.98,
+    "peak_bound": false
+  },
+  "asr": "Fijado en la estación cuatro, me está mirando el cañón. Todos miran el cañón.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Fijado",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "en",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "la",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "estación",
+      "charStart": 13,
+      "charEnd": 21,
+      "startS": 1.36,
+      "endS": 1.84
+    },
+    {
+      "text": "cuatro",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 1.84,
+      "endS": 2.24
+    },
+    {
+      "text": "Me",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "está",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "mirando",
+      "charStart": 38,
+      "charEnd": 45,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "el",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "cañón",
+      "charStart": 49,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "Todos",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 4.8,
+      "endS": 5.12
+    },
+    {
+      "text": "miran",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 5.12,
+      "endS": 5.52
+    },
+    {
+      "text": "el",
+      "charStart": 68,
+      "charEnd": 70,
+      "startS": 5.52,
+      "endS": 5.6
+    },
+    {
+      "text": "cañón",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 5.6,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "4e6bcd622dde3d13/wordtiming-v1"
+}

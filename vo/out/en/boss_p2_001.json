@@ -1,0 +1,124 @@
+{
+  "hash": "c1fc62bd15f0d6cb",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_p2_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Scouts, to me! No, not AT him, AROUND him! Protect the lane!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Barking orders at its own scouts, frazzled.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.856,
+  "clipping_suspect": false,
+  "asr": "Scouts to me! No, not at him, around him. Protect the lane.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.25,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "c1fc62bd15f0d6cb/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Scouts",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.08,
+      "endS": 0.56
+    },
+    {
+      "text": "to",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "me",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "No",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "not",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "AT",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "him",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.4,
+      "endS": 2.8
+    },
+    {
+      "text": "AROUND",
+      "charStart": 31,
+      "charEnd": 37,
+      "startS": 2.96,
+      "endS": 3.52
+    },
+    {
+      "text": "him",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "Protect",
+      "charStart": 43,
+      "charEnd": 50,
+      "startS": 3.92,
+      "endS": 4.4
+    },
+    {
+      "text": "the",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "lane",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 4.48,
+      "endS": 5.04
+    }
+  ]
+}

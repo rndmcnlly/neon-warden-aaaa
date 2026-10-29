@@ -1,0 +1,138 @@
+{
+  "hash": "5c021f0ae4ac9a95",
+  "mode": "clone",
+  "request": {
+    "id": "en__rec_log_004",
+    "seed": 33,
+    "language": "English",
+    "text": "If anyone finds this: he stopped. Write that down somewhere they can't bill for.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Recorded, as quiet as this voice gets, which is not very.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.796,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.89,
+    "gain_db": 3.08,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.08,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "If",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "anyone",
+      "charStart": 3,
+      "charEnd": 9,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "finds",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "this",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "he",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "stopped",
+      "charStart": 25,
+      "charEnd": 32,
+      "startS": 1.92,
+      "endS": 2.56
+    },
+    {
+      "text": "Write",
+      "charStart": 34,
+      "charEnd": 39,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "that",
+      "charStart": 40,
+      "charEnd": 44,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "down",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "somewhere",
+      "charStart": 50,
+      "charEnd": 59,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "they",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "can't",
+      "charStart": 65,
+      "charEnd": 70,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "bill",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "for",
+      "charStart": 76,
+      "charEnd": 79,
+      "startS": 4.8,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "5c021f0ae4ac9a95/wordtiming-v1",
+  "asr": "If anyone finds this, he stopped. Write that down somewhere they can't build for.",
+  "asr_similarity": 0.929
+}

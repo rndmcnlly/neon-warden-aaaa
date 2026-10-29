@@ -1,0 +1,103 @@
+{
+  "hash": "1a1422b0dd6cfd14",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_dart_lost_001",
+    "seed": 55,
+    "language": "English",
+    "text": "It shot a dart. It shot an EMPTY dart.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Disbelief.",
+  "duration": 2.64,
+  "sample_rate": 24000,
+  "peak": 0.884,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.07,
+    "gain_db": 5.13,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.13,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "It",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "shot",
+      "charStart": 3,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "a",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "dart",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "It",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "shot",
+      "charStart": 19,
+      "charEnd": 23,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "an",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "EMPTY",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 1.6,
+      "endS": 2.16
+    },
+    {
+      "text": "dart",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.16,
+      "endS": 2.64
+    }
+  ],
+  "words_for": "1a1422b0dd6cfd14/wordtiming-v1",
+  "asr": "It shot a dart. It shot an Elmity dart.",
+  "asr_similarity": 0.889
+}

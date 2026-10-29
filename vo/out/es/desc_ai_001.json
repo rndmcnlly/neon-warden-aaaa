@@ -1,0 +1,103 @@
+{
+  "hash": "ece34446327e07a0",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_ai_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Esa no es la voz de la sesión informativa.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, small and baffled, half to herself.",
+  "duration": 3.2,
+  "sample_rate": 24000,
+  "peak": 0.806,
+  "clipping_suspect": false,
+  "asr": "Esa no es la voz de la sesión informativa.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.8,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "ece34446327e07a0/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Esa",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "no",
+      "charStart": 4,
+      "charEnd": 6,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "es",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "la",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "voz",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "de",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "la",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "sesión",
+      "charStart": 23,
+      "charEnd": 29,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "informativa",
+      "charStart": 30,
+      "charEnd": 41,
+      "startS": 2.32,
+      "endS": 3.12
+    }
+  ]
+}

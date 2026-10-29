@@ -1,0 +1,138 @@
+{
+  "hash": "41424af8fce9b632",
+  "mode": "clone",
+  "request": {
+    "id": "zh__end_epi_002",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "在你身后，是五个星区的开阔天空。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "Quiet, wide, a breath before it.",
+  "duration": 3.2,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.43,
+    "gain_db": 7.53,
+    "limited_db": 0.66,
+    "measured_before_lufs": -25.53,
+    "peak_bound": false
+  },
+  "asr": "在你身后，是五个新区的开阔天空。",
+  "asr_similarity": 0.929,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "在",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "你",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "身",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "后",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.88
+    },
+    {
+      "text": "是",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "五",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "个",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "星",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "区",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "的",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "开",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "阔",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "天",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "空",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.72,
+      "endS": 2.96
+    }
+  ],
+  "words_for": "41424af8fce9b632/wordtiming-v1"
+}

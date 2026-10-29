@@ -1,0 +1,243 @@
+{
+  "hash": "8e5c392f7e625b28",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_contract_001",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "¡Tu contrato ya fue firmado por ambas partes! El pago se emite al completar el contrato. La definición de contrato completado está en el Apéndice F, disponible a solicitud.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Cheerful legal boilerplate, read fast and proud of it.",
+  "duration": 12.32,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Tu contrato ya fue firmado por ambas partes. El pago se imite al completar el contrato. La definición de contrato completado está en el índice F disponible a solicitud.",
+  "asr_similarity": 0.931,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.3,
+    "gain_db": 0.53,
+    "limited_db": 0.48,
+    "measured_before_lufs": -18.53,
+    "peak_bound": false
+  },
+  "words_for": "8e5c392f7e625b28/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Tu",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "contrato",
+      "charStart": 4,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "ya",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "fue",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "firmado",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "por",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "ambas",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "partes",
+      "charStart": 38,
+      "charEnd": 44,
+      "startS": 2.56,
+      "endS": 3.12
+    },
+    {
+      "text": "El",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "pago",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "se",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "emite",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "al",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "completar",
+      "charStart": 66,
+      "charEnd": 75,
+      "startS": 4.64,
+      "endS": 5.2
+    },
+    {
+      "text": "el",
+      "charStart": 76,
+      "charEnd": 78,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "contrato",
+      "charStart": 79,
+      "charEnd": 87,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "La",
+      "charStart": 89,
+      "charEnd": 91,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "definición",
+      "charStart": 92,
+      "charEnd": 102,
+      "startS": 6.56,
+      "endS": 6.64
+    },
+    {
+      "text": "de",
+      "charStart": 103,
+      "charEnd": 105,
+      "startS": 7.28,
+      "endS": 7.36
+    },
+    {
+      "text": "contrato",
+      "charStart": 106,
+      "charEnd": 114,
+      "startS": 7.36,
+      "endS": 7.84
+    },
+    {
+      "text": "completado",
+      "charStart": 115,
+      "charEnd": 125,
+      "startS": 7.84,
+      "endS": 8.32
+    },
+    {
+      "text": "está",
+      "charStart": 126,
+      "charEnd": 130,
+      "startS": 8.56,
+      "endS": 8.8
+    },
+    {
+      "text": "en",
+      "charStart": 131,
+      "charEnd": 133,
+      "startS": 8.96,
+      "endS": 9.12
+    },
+    {
+      "text": "el",
+      "charStart": 134,
+      "charEnd": 136,
+      "startS": 9.12,
+      "endS": 9.28
+    },
+    {
+      "text": "Apéndice",
+      "charStart": 137,
+      "charEnd": 145,
+      "startS": 9.28,
+      "endS": 9.52
+    },
+    {
+      "text": "F",
+      "charStart": 146,
+      "charEnd": 147,
+      "startS": 9.92,
+      "endS": 10.24
+    },
+    {
+      "text": "disponible",
+      "charStart": 149,
+      "charEnd": 159,
+      "startS": 10.48,
+      "endS": 10.96
+    },
+    {
+      "text": "a",
+      "charStart": 160,
+      "charEnd": 161,
+      "startS": 11.2,
+      "endS": 11.28
+    },
+    {
+      "text": "solicitud",
+      "charStart": 162,
+      "charEnd": 171,
+      "startS": 11.28,
+      "endS": 11.84
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "hash": "6d5f4b628a31c4d6",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_move_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Wonderful! Now up. And now down. You have flown in all four directions. That is every direction we offer.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Delighted, then a proud little flourish on the last sentence.",
+  "duration": 7.2,
+  "sample_rate": 24000,
+  "peak": 0.808,
+  "clipping_suspect": false,
+  "asr": "Wonderful! Now up and now down, you have flown in all four directions. That is every direction we offer.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.85,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "6d5f4b628a31c4d6/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Wonderful",
+      "charStart": 0,
+      "charEnd": 9,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "Now",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "up",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "And",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "now",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "down",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "You",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "have",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "flown",
+      "charStart": 42,
+      "charEnd": 47,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "in",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "all",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "four",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "directions",
+      "charStart": 60,
+      "charEnd": 70,
+      "startS": 4.24,
+      "endS": 4.96
+    },
+    {
+      "text": "That",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "is",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "every",
+      "charStart": 80,
+      "charEnd": 85,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "direction",
+      "charStart": 86,
+      "charEnd": 95,
+      "startS": 5.92,
+      "endS": 6.4
+    },
+    {
+      "text": "we",
+      "charStart": 96,
+      "charEnd": 98,
+      "startS": 6.4,
+      "endS": 6.56
+    },
+    {
+      "text": "offer",
+      "charStart": 99,
+      "charEnd": 104,
+      "startS": 6.72,
+      "endS": 7.04
+    }
+  ]
+}

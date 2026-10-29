@@ -1,0 +1,110 @@
+{
+  "hash": "e589508dc38c6237",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_turret_disarmed_001",
+    "seed": 155,
+    "language": "Spanish",
+    "text": "Sin cañón. Estación cuatro en silencio. Vaya. Apuntó al arma.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Surprised, almost grateful.",
+  "duration": 6.48,
+  "sample_rate": 24000,
+  "peak": 0.778,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.17,
+    "gain_db": 3.91,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.91,
+    "peak_bound": false
+  },
+  "asr": "Sin cañón, estación cuatro en silencio, vaya, apuntó al arma.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sin",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "cañón",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "Estación",
+      "charStart": 11,
+      "charEnd": 19,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "cuatro",
+      "charStart": 20,
+      "charEnd": 26,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "en",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "silencio",
+      "charStart": 30,
+      "charEnd": 38,
+      "startS": 2.88,
+      "endS": 3.52
+    },
+    {
+      "text": "Vaya",
+      "charStart": 40,
+      "charEnd": 44,
+      "startS": 4.32,
+      "endS": 4.88
+    },
+    {
+      "text": "Apuntó",
+      "charStart": 46,
+      "charEnd": 52,
+      "startS": 5.44,
+      "endS": 6.0
+    },
+    {
+      "text": "al",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "arma",
+      "charStart": 56,
+      "charEnd": 60,
+      "startS": 6.16,
+      "endS": 6.4
+    }
+  ],
+  "words_for": "e589508dc38c6237/wordtiming-v1"
+}

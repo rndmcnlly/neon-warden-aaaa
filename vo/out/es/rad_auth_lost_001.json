@@ -1,0 +1,96 @@
+{
+  "hash": "cb76bfe1d122d748",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_auth_lost_001",
+    "seed": 66,
+    "language": "Spanish",
+    "text": "Despeje confirmado. Segmento de ruta apto para suscripción.",
+    "voice_ref": "vo/voices/authority.es.wav",
+    "reference_text": "Control de Rutas a todos los equipos de reconocimiento. Cimientos del peaje aprobados, pendientes de autorización. Registren sus horas antes del fin del ciclo."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 4.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.34,
+    "gain_db": 6.1,
+    "limited_db": 1.45,
+    "measured_before_lufs": -24.1,
+    "peak_bound": false
+  },
+  "asr": "Despeje confirmado, segmento de ruta apto para suscripción.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Despeje",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "confirmado",
+      "charStart": 8,
+      "charEnd": 18,
+      "startS": 0.72,
+      "endS": 1.44
+    },
+    {
+      "text": "Segmento",
+      "charStart": 20,
+      "charEnd": 28,
+      "startS": 2.08,
+      "endS": 2.64
+    },
+    {
+      "text": "de",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "ruta",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "apto",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 3.12,
+      "endS": 3.44
+    },
+    {
+      "text": "para",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "suscripción",
+      "charStart": 47,
+      "charEnd": 58,
+      "startS": 3.68,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "cb76bfe1d122d748/wordtiming-v1"
+}

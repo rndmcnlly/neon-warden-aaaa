@@ -1,0 +1,138 @@
+{
+  "hash": "9b820525b3252e4f",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_disarm_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Wait. You took their GUNS? You took their guns and you let them GO?",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shrill disbelief, building, at a pilot who disarmed its scouts and let them go.",
+  "duration": 4.96,
+  "sample_rate": 24000,
+  "peak": 0.622,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.04,
+    "gain_db": 0.77,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.77,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Wait",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.56
+    },
+    {
+      "text": "You",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "took",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "their",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "GUNS",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 1.52,
+      "endS": 2.16
+    },
+    {
+      "text": "You",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "took",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "their",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "guns",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.2,
+      "endS": 3.6
+    },
+    {
+      "text": "and",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "you",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "let",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "them",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "GO",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.88
+    }
+  ],
+  "words_for": "9b820525b3252e4f/wordtiming-v1",
+  "asr": "Wait! You took their guns. You took their guns and you let them go.",
+  "asr_similarity": 1.0
+}

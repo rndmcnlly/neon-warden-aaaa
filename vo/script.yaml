@@ -1742,6 +1742,7 @@ lines:
   # story.pilotSpeaks. Spent once, never reused.
   - id: pilot_keep_001
     speaker: pilot
+    seed: {es: 744}
     # Clone mode mangled this short line in es and zh across 15 seeds (best
     # ASR 0.75 and 0.55): the muffled English anchor does not carry over.
     # The Pilot speaks once, so cross-line identity drift does not matter.
@@ -2111,6 +2112,7 @@ lines:
 
   - id: rad_turret_patrol_002
     speaker: scout
+    seed: {zh: 155}
     scene: radio
     route: any
     direction: >-
@@ -2139,6 +2141,7 @@ lines:
 
   - id: rad_turret_disarmed_001
     speaker: scout
+    seed: {es: 155}
     scene: radio
     route: any
     direction: >-

@@ -1,0 +1,138 @@
+{
+  "hash": "41801cab434a24bc",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_p1_002",
+    "seed": 33,
+    "language": "English",
+    "text": "Ow! OW! That was a ring! Do you know how OLD that ring is?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Yelp of pain turning into outrage.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.675,
+  "clipping_suspect": false,
+  "asr": "Ow! Ow! That was a ring. Do you know how old that ring is?",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.41,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "41801cab434a24bc/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ow",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.88
+    },
+    {
+      "text": "OW",
+      "charStart": 4,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "That",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "was",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "a",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "ring",
+      "charStart": 19,
+      "charEnd": 23,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "Do",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "you",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "know",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "how",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "OLD",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "that",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "ring",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 4.24,
+      "endS": 4.56
+    },
+    {
+      "text": "is",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 4.56,
+      "endS": 4.96
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "hash": "5c90b3a736bd887d",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_intel_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Objetivo fijado. Un fijado te dice qué está haciendo el objetivo: patrullar, apuntar, disparar, evadir o retirarse. También marca sus piezas de armamento y su punto débil. Todo lo que escaneas se archiva en tu códice.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Quietly proud of the technology.",
+  "duration": 15.6,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.24,
+    "gain_db": 5.93,
+    "limited_db": 0.79,
+    "measured_before_lufs": -23.93,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Objetivo",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "fijado",
+      "charStart": 9,
+      "charEnd": 15,
+      "startS": 0.8,
+      "endS": 1.52
+    },
+    {
+      "text": "Un",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "fijado",
+      "charStart": 20,
+      "charEnd": 26,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "te",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "dice",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "qué",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "está",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "haciendo",
+      "charStart": 44,
+      "charEnd": 52,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "el",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "objetivo",
+      "charStart": 56,
+      "charEnd": 64,
+      "startS": 4.16,
+      "endS": 4.88
+    },
+    {
+      "text": "patrullar",
+      "charStart": 66,
+      "charEnd": 75,
+      "startS": 5.12,
+      "endS": 5.2
+    },
+    {
+      "text": "apuntar",
+      "charStart": 77,
+      "charEnd": 84,
+      "startS": 5.92,
+      "endS": 6.4
+    },
+    {
+      "text": "disparar",
+      "charStart": 86,
+      "charEnd": 94,
+      "startS": 6.88,
+      "endS": 7.36
+    },
+    {
+      "text": "evadir",
+      "charStart": 96,
+      "charEnd": 102,
+      "startS": 7.76,
+      "endS": 8.08
+    },
+    {
+      "text": "o",
+      "charStart": 103,
+      "charEnd": 104,
+      "startS": 8.32,
+      "endS": 8.4
+    },
+    {
+      "text": "retirarse",
+      "charStart": 105,
+      "charEnd": 114,
+      "startS": 8.4,
+      "endS": 9.2
+    },
+    {
+      "text": "También",
+      "charStart": 116,
+      "charEnd": 123,
+      "startS": 9.52,
+      "endS": 9.84
+    },
+    {
+      "text": "marca",
+      "charStart": 124,
+      "charEnd": 129,
+      "startS": 9.92,
+      "endS": 10.16
+    },
+    {
+      "text": "sus",
+      "charStart": 130,
+      "charEnd": 133,
+      "startS": 10.16,
+      "endS": 10.4
+    },
+    {
+      "text": "piezas",
+      "charStart": 134,
+      "charEnd": 140,
+      "startS": 10.4,
+      "endS": 10.72
+    },
+    {
+      "text": "de",
+      "charStart": 141,
+      "charEnd": 143,
+      "startS": 10.72,
+      "endS": 10.88
+    },
+    {
+      "text": "armamento",
+      "charStart": 144,
+      "charEnd": 153,
+      "startS": 10.88,
+      "endS": 11.44
+    },
+    {
+      "text": "y",
+      "charStart": 154,
+      "charEnd": 155,
+      "startS": 11.6,
+      "endS": 11.68
+    },
+    {
+      "text": "su",
+      "charStart": 156,
+      "charEnd": 158,
+      "startS": 11.68,
+      "endS": 11.84
+    },
+    {
+      "text": "punto",
+      "charStart": 159,
+      "charEnd": 164,
+      "startS": 11.84,
+      "endS": 12.16
+    },
+    {
+      "text": "débil",
+      "charStart": 165,
+      "charEnd": 170,
+      "startS": 12.16,
+      "endS": 12.64
+    },
+    {
+      "text": "Todo",
+      "charStart": 172,
+      "charEnd": 176,
+      "startS": 12.96,
+      "endS": 13.04
+    },
+    {
+      "text": "lo",
+      "charStart": 177,
+      "charEnd": 179,
+      "startS": 13.28,
+      "endS": 13.36
+    },
+    {
+      "text": "que",
+      "charStart": 180,
+      "charEnd": 183,
+      "startS": 13.44,
+      "endS": 13.52
+    },
+    {
+      "text": "escaneas",
+      "charStart": 184,
+      "charEnd": 192,
+      "startS": 13.52,
+      "endS": 14.08
+    },
+    {
+      "text": "se",
+      "charStart": 193,
+      "charEnd": 195,
+      "startS": 14.08,
+      "endS": 14.16
+    },
+    {
+      "text": "archiva",
+      "charStart": 196,
+      "charEnd": 203,
+      "startS": 14.16,
+      "endS": 14.72
+    },
+    {
+      "text": "en",
+      "charStart": 204,
+      "charEnd": 206,
+      "startS": 14.72,
+      "endS": 14.8
+    },
+    {
+      "text": "tu",
+      "charStart": 207,
+      "charEnd": 209,
+      "startS": 14.8,
+      "endS": 14.88
+    },
+    {
+      "text": "códice",
+      "charStart": 210,
+      "charEnd": 216,
+      "startS": 14.88,
+      "endS": 15.52
+    }
+  ],
+  "words_for": "5c90b3a736bd887d/wordtiming-v1",
+  "asr": "Objetivo fijado: un fijado te dice que esta haciendo lo objetivo, patriar apuntar disparar evadir o retirarse. También marca sus piezas de arremento y su punto débil. Todo lo que es canea se archiva en tu codice.",
+  "asr_similarity": 0.877
+}

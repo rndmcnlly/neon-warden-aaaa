@@ -1,0 +1,159 @@
+{
+  "hash": "e3fa9fcc6a4a253c",
+  "mode": "clone",
+  "request": {
+    "id": "en__credits_pac_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Fly safe, zero one two two! And if anyone with a gun asks, I am EXTREMELY scary!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Shouted after a departing ship, affectionate, absurdly proud of its reputation.",
+  "duration": 7.52,
+  "sample_rate": 24000,
+  "peak": 0.635,
+  "clipping_suspect": false,
+  "asr": "Fly safe! Zero one two two, and if anyone with a gun asks, I am extremely scary.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.82,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "e3fa9fcc6a4a253c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Fly",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.56
+    },
+    {
+      "text": "safe",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "zero",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 1.28,
+      "endS": 1.84
+    },
+    {
+      "text": "one",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.84,
+      "endS": 2.24
+    },
+    {
+      "text": "two",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 2.24,
+      "endS": 2.64
+    },
+    {
+      "text": "two",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "And",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "if",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "anyone",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "with",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "a",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "gun",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "asks",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 4.72,
+      "endS": 5.28
+    },
+    {
+      "text": "I",
+      "charStart": 59,
+      "charEnd": 60,
+      "startS": 5.52,
+      "endS": 5.76
+    },
+    {
+      "text": "am",
+      "charStart": 61,
+      "charEnd": 63,
+      "startS": 5.76,
+      "endS": 5.84
+    },
+    {
+      "text": "EXTREMELY",
+      "charStart": 64,
+      "charEnd": 73,
+      "startS": 5.84,
+      "endS": 6.64
+    },
+    {
+      "text": "scary",
+      "charStart": 74,
+      "charEnd": 79,
+      "startS": 6.64,
+      "endS": 7.36
+    }
+  ]
+}

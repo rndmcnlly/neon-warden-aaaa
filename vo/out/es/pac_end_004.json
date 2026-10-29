@@ -1,0 +1,166 @@
+{
+  "hash": "8d6565bf78c58fe3",
+  "mode": "clone",
+  "request": {
+    "id": "es__pac_end_004",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "Conexión inestable. Piloto cero uno dos dos, si regresas ahora para el retiro, se respetará tu pago completo.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, weak signal, still smiling, an offer read off a card.",
+  "duration": 9.52,
+  "sample_rate": 24000,
+  "peak": 0.884,
+  "clipping_suspect": false,
+  "asr": "Conexión en estable, piloto cero uno dos dos, si regresas ahora para el retiro se respetará tu pago completo.",
+  "asr_similarity": 0.919,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.07,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "8d6565bf78c58fe3/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Conexión",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 1.04
+    },
+    {
+      "text": "inestable",
+      "charStart": 9,
+      "charEnd": 18,
+      "startS": 1.28,
+      "endS": 2.0
+    },
+    {
+      "text": "Piloto",
+      "charStart": 20,
+      "charEnd": 26,
+      "startS": 2.48,
+      "endS": 3.12
+    },
+    {
+      "text": "cero",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "uno",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "dos",
+      "charStart": 36,
+      "charEnd": 39,
+      "startS": 3.76,
+      "endS": 4.16
+    },
+    {
+      "text": "dos",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 4.16,
+      "endS": 4.56
+    },
+    {
+      "text": "si",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "regresas",
+      "charStart": 48,
+      "charEnd": 56,
+      "startS": 5.04,
+      "endS": 5.6
+    },
+    {
+      "text": "ahora",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 5.6,
+      "endS": 6.0
+    },
+    {
+      "text": "para",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 6.0,
+      "endS": 6.4
+    },
+    {
+      "text": "el",
+      "charStart": 68,
+      "charEnd": 70,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "retiro",
+      "charStart": 71,
+      "charEnd": 77,
+      "startS": 6.48,
+      "endS": 7.12
+    },
+    {
+      "text": "se",
+      "charStart": 79,
+      "charEnd": 81,
+      "startS": 7.28,
+      "endS": 7.44
+    },
+    {
+      "text": "respetará",
+      "charStart": 82,
+      "charEnd": 91,
+      "startS": 7.44,
+      "endS": 8.0
+    },
+    {
+      "text": "tu",
+      "charStart": 92,
+      "charEnd": 94,
+      "startS": 8.16,
+      "endS": 8.32
+    },
+    {
+      "text": "pago",
+      "charStart": 95,
+      "charEnd": 99,
+      "startS": 8.32,
+      "endS": 8.64
+    },
+    {
+      "text": "completo",
+      "charStart": 100,
+      "charEnd": 108,
+      "startS": 8.64,
+      "endS": 9.44
+    }
+  ]
+}

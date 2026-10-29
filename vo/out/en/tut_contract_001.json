@@ -1,0 +1,215 @@
+{
+  "hash": "51c951da7e50b556",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_contract_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Your contract has been countersigned! Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Cheerful legal boilerplate, read fast and proud of it.",
+  "duration": 10.56,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Your contract has been countersigned. Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 0.6,
+    "limited_db": 0.55,
+    "measured_before_lufs": -18.6,
+    "peak_bound": false
+  },
+  "words_for": "51c951da7e50b556/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Your",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "contract",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 0.56,
+      "endS": 1.2
+    },
+    {
+      "text": "has",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "been",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "countersigned",
+      "charStart": 23,
+      "charEnd": 36,
+      "startS": 1.6,
+      "endS": 2.48
+    },
+    {
+      "text": "Payment",
+      "charStart": 38,
+      "charEnd": 45,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "is",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "issued",
+      "charStart": 49,
+      "charEnd": 55,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "on",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "completion",
+      "charStart": 59,
+      "charEnd": 69,
+      "startS": 4.08,
+      "endS": 4.56
+    },
+    {
+      "text": "of",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "contract",
+      "charStart": 73,
+      "charEnd": 81,
+      "startS": 4.72,
+      "endS": 5.36
+    },
+    {
+      "text": "Completion",
+      "charStart": 83,
+      "charEnd": 93,
+      "startS": 5.76,
+      "endS": 6.32
+    },
+    {
+      "text": "of",
+      "charStart": 94,
+      "charEnd": 96,
+      "startS": 6.32,
+      "endS": 6.4
+    },
+    {
+      "text": "contract",
+      "charStart": 97,
+      "charEnd": 105,
+      "startS": 6.4,
+      "endS": 6.96
+    },
+    {
+      "text": "is",
+      "charStart": 106,
+      "charEnd": 108,
+      "startS": 6.96,
+      "endS": 7.04
+    },
+    {
+      "text": "defined",
+      "charStart": 109,
+      "charEnd": 116,
+      "startS": 7.04,
+      "endS": 7.6
+    },
+    {
+      "text": "in",
+      "charStart": 117,
+      "charEnd": 119,
+      "startS": 7.6,
+      "endS": 7.76
+    },
+    {
+      "text": "Appendix",
+      "charStart": 120,
+      "charEnd": 128,
+      "startS": 7.76,
+      "endS": 8.24
+    },
+    {
+      "text": "F",
+      "charStart": 129,
+      "charEnd": 130,
+      "startS": 8.32,
+      "endS": 8.64
+    },
+    {
+      "text": "which",
+      "charStart": 132,
+      "charEnd": 137,
+      "startS": 8.88,
+      "endS": 9.04
+    },
+    {
+      "text": "is",
+      "charStart": 138,
+      "charEnd": 140,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "available",
+      "charStart": 141,
+      "charEnd": 150,
+      "startS": 9.2,
+      "endS": 9.76
+    },
+    {
+      "text": "on",
+      "charStart": 151,
+      "charEnd": 153,
+      "startS": 9.76,
+      "endS": 10.0
+    },
+    {
+      "text": "request",
+      "charStart": 154,
+      "charEnd": 161,
+      "startS": 10.0,
+      "endS": 10.56
+    }
+  ]
+}

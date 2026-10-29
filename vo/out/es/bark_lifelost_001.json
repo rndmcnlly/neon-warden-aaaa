@@ -1,0 +1,138 @@
+{
+  "hash": "03ec2024b2eed75e",
+  "mode": "clone",
+  "request": {
+    "id": "es__bark_lifelost_001",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "¡Brecha en el casco! Tú estás bien. La nave no, pero tú estás bien.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, quick and chipper damage report.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.74,
+  "clipping_suspect": false,
+  "asr": "Pero chino Costco, tú estás bien, Lenovo, pero tú estás bien.",
+  "asr_similarity": 0.56,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.51,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "03ec2024b2eed75e/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Brecha",
+      "charStart": 1,
+      "charEnd": 7,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "en",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "el",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "casco",
+      "charStart": 14,
+      "charEnd": 19,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "Tú",
+      "charStart": 21,
+      "charEnd": 23,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "estás",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 2.56,
+      "endS": 3.44
+    },
+    {
+      "text": "bien",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "La",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "nave",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "no",
+      "charStart": 44,
+      "charEnd": 46,
+      "startS": 4.8,
+      "endS": 5.28
+    },
+    {
+      "text": "pero",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 5.44,
+      "endS": 5.68
+    },
+    {
+      "text": "tú",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 5.68,
+      "endS": 5.84
+    },
+    {
+      "text": "estás",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "bien",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 6.32,
+      "endS": 6.8
+    }
+  ]
+}

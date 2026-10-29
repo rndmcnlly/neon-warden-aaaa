@@ -1,0 +1,124 @@
+{
+  "hash": "3fb37f42e28750f0",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_drone_patrol_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Nave de contrato en la Deriva. Arma caliente. Igual que la anterior.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.858,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.33,
+    "gain_db": 2.45,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.45,
+    "peak_bound": false
+  },
+  "asr": "Nave de contrato en la deriva, arma caliente, igual que el anterior.",
+  "asr_similarity": 0.917,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Nave",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "de",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "contrato",
+      "charStart": 8,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.68
+    },
+    {
+      "text": "en",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "la",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "Deriva",
+      "charStart": 23,
+      "charEnd": 29,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "Arma",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "caliente",
+      "charStart": 36,
+      "charEnd": 44,
+      "startS": 3.2,
+      "endS": 3.76
+    },
+    {
+      "text": "Igual",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "que",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "la",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "anterior",
+      "charStart": 59,
+      "charEnd": 67,
+      "startS": 4.88,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "3fb37f42e28750f0/wordtiming-v1"
+}

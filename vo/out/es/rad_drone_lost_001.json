@@ -1,0 +1,96 @@
+{
+  "hash": "86505d8248c4cced",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_drone_lost_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Deriva Dos se apagó. ¡Deriva Dos se APAGÓ!",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Composure breaking on the repeat.",
+  "duration": 3.76,
+  "sample_rate": 24000,
+  "peak": 0.771,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.12,
+    "gain_db": 1.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.07,
+    "peak_bound": false
+  },
+  "asr": "Deriva dos se apagó. Deriva dos se apagó.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Deriva",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "Dos",
+      "charStart": 7,
+      "charEnd": 10,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "se",
+      "charStart": 11,
+      "charEnd": 13,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "apagó",
+      "charStart": 14,
+      "charEnd": 19,
+      "startS": 1.28,
+      "endS": 1.84
+    },
+    {
+      "text": "Deriva",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 2.48,
+      "endS": 2.8
+    },
+    {
+      "text": "Dos",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "se",
+      "charStart": 33,
+      "charEnd": 35,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "APAGÓ",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 3.2,
+      "endS": 3.6
+    }
+  ],
+  "words_for": "86505d8248c4cced/wordtiming-v1"
+}

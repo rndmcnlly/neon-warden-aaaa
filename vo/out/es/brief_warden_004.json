@@ -1,0 +1,145 @@
+{
+  "hash": "3d5767e7a836ea66",
+  "mode": "clone",
+  "request": {
+    "id": "es__brief_warden_004",
+    "seed": 22,
+    "language": "Spanish",
+    "text": "Su voz, por sí sola, ha agrietado cascos. Quienes la han oído jamás la olvidan.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "Hushed dread, as if afraid it might hear.",
+  "duration": 7.36,
+  "sample_rate": 24000,
+  "peak": 0.724,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.8,
+    "gain_db": 5.32,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.32,
+    "peak_bound": false
+  },
+  "asr": "Su voz por sí sola ha agrietado cascos, quienes la han oído jamás la olvidan.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Su",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "voz",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "por",
+      "charStart": 8,
+      "charEnd": 11,
+      "startS": 1.04,
+      "endS": 1.36
+    },
+    {
+      "text": "sí",
+      "charStart": 12,
+      "charEnd": 14,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "sola",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.6,
+      "endS": 2.24
+    },
+    {
+      "text": "ha",
+      "charStart": 21,
+      "charEnd": 23,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "agrietado",
+      "charStart": 24,
+      "charEnd": 33,
+      "startS": 2.72,
+      "endS": 3.36
+    },
+    {
+      "text": "cascos",
+      "charStart": 34,
+      "charEnd": 40,
+      "startS": 3.36,
+      "endS": 4.16
+    },
+    {
+      "text": "Quienes",
+      "charStart": 42,
+      "charEnd": 49,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "la",
+      "charStart": 50,
+      "charEnd": 52,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "han",
+      "charStart": 53,
+      "charEnd": 56,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "oído",
+      "charStart": 57,
+      "charEnd": 61,
+      "startS": 5.28,
+      "endS": 5.68
+    },
+    {
+      "text": "jamás",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 5.68,
+      "endS": 6.24
+    },
+    {
+      "text": "la",
+      "charStart": 68,
+      "charEnd": 70,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "olvidan",
+      "charStart": 71,
+      "charEnd": 78,
+      "startS": 6.32,
+      "endS": 7.12
+    }
+  ],
+  "words_for": "3d5767e7a836ea66/wordtiming-v1"
+}

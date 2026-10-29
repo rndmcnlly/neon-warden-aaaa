@@ -1,0 +1,152 @@
+{
+  "hash": "a367916b2a1d2fa8",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_auth_patrol_002",
+    "seed": 66,
+    "language": "Spanish",
+    "text": "Mesa de retiros, confirmen inventario: el piloto cero uno dos tres está listo en la inducción.",
+    "voice_ref": "vo/voices/authority.es.wav",
+    "reference_text": "Control de Rutas a todos los equipos de reconocimiento. Cimientos del peaje aprobados, pendientes de autorización. Registren sus horas antes del fin del ciclo."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 6.88,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 5.72,
+    "limited_db": 0.8,
+    "measured_before_lufs": -23.72,
+    "peak_bound": false
+  },
+  "asr": "Mesa de retiros, confirma en inventario. El piloto cero uno dos tres está listo en la inducción.",
+  "asr_similarity": 0.909,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Mesa",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.48
+    },
+    {
+      "text": "de",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "retiros",
+      "charStart": 8,
+      "charEnd": 15,
+      "startS": 0.64,
+      "endS": 1.28
+    },
+    {
+      "text": "confirmen",
+      "charStart": 17,
+      "charEnd": 26,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "inventario",
+      "charStart": 27,
+      "charEnd": 37,
+      "startS": 2.0,
+      "endS": 2.72
+    },
+    {
+      "text": "el",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "piloto",
+      "charStart": 42,
+      "charEnd": 48,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "cero",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 4.0,
+      "endS": 4.24
+    },
+    {
+      "text": "uno",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "dos",
+      "charStart": 58,
+      "charEnd": 61,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "tres",
+      "charStart": 62,
+      "charEnd": 66,
+      "startS": 4.64,
+      "endS": 4.96
+    },
+    {
+      "text": "está",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 5.2,
+      "endS": 5.44
+    },
+    {
+      "text": "listo",
+      "charStart": 72,
+      "charEnd": 77,
+      "startS": 5.44,
+      "endS": 5.84
+    },
+    {
+      "text": "en",
+      "charStart": 78,
+      "charEnd": 80,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "la",
+      "charStart": 81,
+      "charEnd": 83,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "inducción",
+      "charStart": 84,
+      "charEnd": 93,
+      "startS": 6.08,
+      "endS": 6.72
+    }
+  ],
+  "words_for": "a367916b2a1d2fa8/wordtiming-v1"
+}

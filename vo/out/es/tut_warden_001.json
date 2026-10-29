@@ -1,0 +1,187 @@
+{
+  "hash": "9f9507dc2cadb19b",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_warden_001",
+    "seed": 311,
+    "language": "Spanish",
+    "text": "Y luego, el Guardián. Antes de continuar, la Autoridad de Rutas requiere que veas una breve sesión informativa sobre amenazas. Disfrútala.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "A theatrical gulp, then flight-attendant brightness.",
+  "duration": 10.8,
+  "sample_rate": 24000,
+  "peak": 0.826,
+  "clipping_suspect": false,
+  "asr": "Illego, el guardián antes de continuar la autoridad de rutas requiere que veas una breve sesión informativa sobre amenazas disfruta",
+  "asr_similarity": 0.878,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.66,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "9f9507dc2cadb19b/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Y",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "luego",
+      "charStart": 2,
+      "charEnd": 7,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "el",
+      "charStart": 9,
+      "charEnd": 11,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "Guardián",
+      "charStart": 12,
+      "charEnd": 20,
+      "startS": 1.76,
+      "endS": 2.64
+    },
+    {
+      "text": "Antes",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "de",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "continuar",
+      "charStart": 31,
+      "charEnd": 40,
+      "startS": 3.6,
+      "endS": 4.32
+    },
+    {
+      "text": "la",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 45,
+      "charEnd": 54,
+      "startS": 4.8,
+      "endS": 5.28
+    },
+    {
+      "text": "de",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "Rutas",
+      "charStart": 58,
+      "charEnd": 63,
+      "startS": 5.6,
+      "endS": 5.92
+    },
+    {
+      "text": "requiere",
+      "charStart": 64,
+      "charEnd": 72,
+      "startS": 5.92,
+      "endS": 6.32
+    },
+    {
+      "text": "que",
+      "charStart": 73,
+      "charEnd": 76,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "veas",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 6.48,
+      "endS": 6.8
+    },
+    {
+      "text": "una",
+      "charStart": 82,
+      "charEnd": 85,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "breve",
+      "charStart": 86,
+      "charEnd": 91,
+      "startS": 6.96,
+      "endS": 7.28
+    },
+    {
+      "text": "sesión",
+      "charStart": 92,
+      "charEnd": 98,
+      "startS": 7.28,
+      "endS": 7.68
+    },
+    {
+      "text": "informativa",
+      "charStart": 99,
+      "charEnd": 110,
+      "startS": 7.68,
+      "endS": 8.4
+    },
+    {
+      "text": "sobre",
+      "charStart": 111,
+      "charEnd": 116,
+      "startS": 8.4,
+      "endS": 8.64
+    },
+    {
+      "text": "amenazas",
+      "charStart": 117,
+      "charEnd": 125,
+      "startS": 8.64,
+      "endS": 9.44
+    },
+    {
+      "text": "Disfrútala",
+      "charStart": 127,
+      "charEnd": 137,
+      "startS": 9.76,
+      "endS": 10.72
+    }
+  ]
+}

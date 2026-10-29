@@ -1,0 +1,60 @@
+{
+  "narrator": {
+    "en_anchor_f0": 72.2,
+    "test_lines": [
+      "warn_narr_001",
+      "brief_warden_004",
+      "brief_warden_002",
+      "end_epi_002",
+      "pac_epi_002",
+      "end_epi_001",
+      "brief_warden_003",
+      "brief_warden_005"
+    ],
+    "anchor": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。",
+    "design": "一位五十多岁的男性电影预告片旁白，声音低沉、缓慢、沙哑，疲惫而富有戏剧性，带有长长的停顿和胸腔共鸣。说标准普通话，吐字清晰，仿佛每一句都是一场悲剧的最后一句。",
+    "candidates": {
+      "current": {
+        "mean": 0.859,
+        "min": 0.333
+      },
+      "bootstrap_s22": {
+        "method": "bootstrap",
+        "seed": 22,
+        "mean": 0.957,
+        "min": 0.929,
+        "anchor_asr": 1.0,
+        "anchor_f0": 75.6,
+        "f0_ratio": 1.047
+      },
+      "bootstrap_s122": {
+        "method": "bootstrap",
+        "seed": 122,
+        "mean": 0.951,
+        "min": 0.909,
+        "anchor_asr": 1.0,
+        "anchor_f0": 75.2,
+        "f0_ratio": 1.042
+      },
+      "design_s22": {
+        "method": "design",
+        "seed": 22,
+        "mean": 0.951,
+        "min": 0.909,
+        "anchor_asr": 1.0,
+        "anchor_f0": 68.1,
+        "f0_ratio": 0.943
+      },
+      "design_s122": {
+        "method": "design",
+        "seed": 122,
+        "mean": 0.969,
+        "min": 0.909,
+        "anchor_asr": 1.0,
+        "anchor_f0": 67.0,
+        "f0_ratio": 0.928
+      }
+    },
+    "pick": "design_s122"
+  }
+}

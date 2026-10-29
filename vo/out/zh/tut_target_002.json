@@ -1,0 +1,257 @@
+{
+  "hash": "8f3a37d27266de50",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_target_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "太棒了！侦察机是守望者的眼睛。你每关掉一只眼睛，盯着你的眼睛就少一只。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Proud applause, then a motivational-poster cadence.",
+  "duration": 6.72,
+  "sample_rate": 24000,
+  "peak": 0.839,
+  "clipping_suspect": false,
+  "asr": "太棒了！侦察机是守望者的眼睛。你每关掉一只眼睛，盯着你的眼睛就少一只。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.23,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 1.65,
+    "limited_db": 1.63,
+    "measured_before_lufs": -19.68,
+    "peak_bound": false
+  },
+  "words_for": "8f3a37d27266de50/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "太",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "棒",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "了",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "侦",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "察",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "机",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "是",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "守",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "望",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "者",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "的",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "眼",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "睛",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "你",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "每",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "关",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "掉",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "一",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "只",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "眼",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "睛",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "盯",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "着",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "你",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "的",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "眼",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "睛",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "就",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.76,
+      "endS": 5.84
+    },
+    {
+      "text": "少",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.84,
+      "endS": 6.16
+    },
+    {
+      "text": "一",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "只",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.24,
+      "endS": 6.56
+    }
+  ]
+}

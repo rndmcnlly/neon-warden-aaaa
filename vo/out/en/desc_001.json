@@ -1,0 +1,159 @@
+{
+  "hash": "b4f48434c8ab1c58",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_001",
+    "seed": 33,
+    "language": "English",
+    "text": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "First words ever heard from the Warden: high, shrill, indignant. The joke is that it is not the briefing voice.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.637,
+  "clipping_suspect": false,
+  "asr": "Stop! Stop right there! Do you have any idea how long it takes to grow a scout?",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.66,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "b4f48434c8ab1c58/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "STOP",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.64
+    },
+    {
+      "text": "Stop",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "right",
+      "charStart": 11,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "there",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "Do",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "you",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "have",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "ANY",
+      "charStart": 36,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "idea",
+      "charStart": 40,
+      "charEnd": 44,
+      "startS": 2.8,
+      "endS": 3.28
+    },
+    {
+      "text": "how",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "long",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "it",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "takes",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "to",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "grow",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "a",
+      "charStart": 71,
+      "charEnd": 72,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "scout",
+      "charStart": 73,
+      "charEnd": 78,
+      "startS": 4.56,
+      "endS": 5.12
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "hash": "acac9a4f24b1de5a",
+  "mode": "clone",
+  "request": {
+    "id": "zh__kill_ai_002",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "收费站已开始部署。一小时内，航道将向所有订阅用户开放。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, a service announcement, completely sincere.",
+  "duration": 5.44,
+  "sample_rate": 24000,
+  "peak": 0.777,
+  "clipping_suspect": false,
+  "asr": "收费站已开始部署，一小时内航道将向所有订阅用户开放。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.18,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "acac9a4f24b1de5a/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "收",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "费",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "站",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "已",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "开",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "始",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "部",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "署",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "一",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "小",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "时",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "内",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "航",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "道",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "将",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "向",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "所",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "有",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "订",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "阅",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "用",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "户",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "开",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "放",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.12,
+      "endS": 5.44
+    }
+  ]
+}

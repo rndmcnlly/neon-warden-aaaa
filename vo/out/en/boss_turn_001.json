@@ -1,0 +1,159 @@
+{
+  "hash": "03cfbbaa89006992",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_turn_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Do you know what's behind me? Nothing! Sky! Free sky, for anyone who comes without a gun!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "The turn: still shouting, but pleading now, not threatening.",
+  "duration": 6.8,
+  "sample_rate": 24000,
+  "peak": 0.604,
+  "clipping_suspect": false,
+  "asr": "Do you know what's behind me? Nothing. Sky, free sky for anyone who comes without a gun.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.37,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "03cfbbaa89006992/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Do",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "you",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "know",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "what's",
+      "charStart": 12,
+      "charEnd": 18,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "behind",
+      "charStart": 19,
+      "charEnd": 25,
+      "startS": 0.88,
+      "endS": 1.36
+    },
+    {
+      "text": "me",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "Nothing",
+      "charStart": 30,
+      "charEnd": 37,
+      "startS": 1.76,
+      "endS": 2.48
+    },
+    {
+      "text": "Sky",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 2.64,
+      "endS": 3.36
+    },
+    {
+      "text": "Free",
+      "charStart": 44,
+      "charEnd": 48,
+      "startS": 3.36,
+      "endS": 3.84
+    },
+    {
+      "text": "sky",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 3.84,
+      "endS": 4.4
+    },
+    {
+      "text": "for",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "anyone",
+      "charStart": 58,
+      "charEnd": 64,
+      "startS": 4.72,
+      "endS": 5.12
+    },
+    {
+      "text": "who",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "comes",
+      "charStart": 69,
+      "charEnd": 74,
+      "startS": 5.28,
+      "endS": 5.76
+    },
+    {
+      "text": "without",
+      "charStart": 75,
+      "charEnd": 82,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "a",
+      "charStart": 83,
+      "charEnd": 84,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "gun",
+      "charStart": 85,
+      "charEnd": 88,
+      "startS": 6.16,
+      "endS": 6.72
+    }
+  ]
+}

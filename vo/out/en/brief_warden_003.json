@@ -1,0 +1,194 @@
+{
+  "hash": "4f8f86691f6c56ea",
+  "mode": "clone",
+  "request": {
+    "id": "en__brief_warden_003",
+    "seed": 22,
+    "language": "English",
+    "text": "For three hundred years it has held the lanes shut. One hundred and twenty-one pilots have flown against it. None came back.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "direction": "Grave statistics, a long pause before the last sentence.",
+  "duration": 7.44,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "For three hundred years, it has held the lanes shut. One hundred and twenty-one pilots have flown against it; none came back.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.47,
+    "gain_db": 1.83,
+    "limited_db": 1.78,
+    "measured_before_lufs": -19.83,
+    "peak_bound": false
+  },
+  "words_for": "4f8f86691f6c56ea/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "For",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "three",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "hundred",
+      "charStart": 10,
+      "charEnd": 17,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "years",
+      "charStart": 18,
+      "charEnd": 23,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "it",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "has",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "held",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "the",
+      "charStart": 36,
+      "charEnd": 39,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "lanes",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "shut",
+      "charStart": 46,
+      "charEnd": 50,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "One",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "hundred",
+      "charStart": 56,
+      "charEnd": 63,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "and",
+      "charStart": 64,
+      "charEnd": 67,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "twenty-one",
+      "charStart": 68,
+      "charEnd": 78,
+      "startS": 4.08,
+      "endS": 4.56
+    },
+    {
+      "text": "pilots",
+      "charStart": 79,
+      "charEnd": 85,
+      "startS": 4.56,
+      "endS": 5.04
+    },
+    {
+      "text": "have",
+      "charStart": 86,
+      "charEnd": 90,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "flown",
+      "charStart": 91,
+      "charEnd": 96,
+      "startS": 5.12,
+      "endS": 5.52
+    },
+    {
+      "text": "against",
+      "charStart": 97,
+      "charEnd": 104,
+      "startS": 5.52,
+      "endS": 5.92
+    },
+    {
+      "text": "it",
+      "charStart": 105,
+      "charEnd": 107,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "None",
+      "charStart": 109,
+      "charEnd": 113,
+      "startS": 6.4,
+      "endS": 6.72
+    },
+    {
+      "text": "came",
+      "charStart": 114,
+      "charEnd": 118,
+      "startS": 6.72,
+      "endS": 7.04
+    },
+    {
+      "text": "back",
+      "charStart": 119,
+      "charEnd": 123,
+      "startS": 7.04,
+      "endS": 7.36
+    }
+  ]
+}

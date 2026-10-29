@@ -1,0 +1,89 @@
+{
+  "hash": "c1accadd187194f6",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_drone_locked_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Me marcaron. Sensor de contrato, fijado total.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Startled.",
+  "duration": 3.52,
+  "sample_rate": 24000,
+  "peak": 0.885,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 4.13,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.14,
+    "peak_bound": false
+  },
+  "asr": "Me marcaron sensor de contrato fijado total.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Me",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "marcaron",
+      "charStart": 3,
+      "charEnd": 11,
+      "startS": 0.72,
+      "endS": 1.28
+    },
+    {
+      "text": "Sensor",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "de",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "contrato",
+      "charStart": 23,
+      "charEnd": 31,
+      "startS": 2.08,
+      "endS": 2.72
+    },
+    {
+      "text": "fijado",
+      "charStart": 33,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "total",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 3.12,
+      "endS": 3.52
+    }
+  ],
+  "words_for": "c1accadd187194f6/wordtiming-v1"
+}

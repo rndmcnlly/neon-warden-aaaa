@@ -1,0 +1,103 @@
+{
+  "hash": "d825d51f8579e1aa",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_auth_locked_001",
+    "seed": 66,
+    "language": "English",
+    "text": "Intel received. Scout behavior: patrol. Please annotate as hostile.",
+    "voice_ref": "vo/voices/authority.wav",
+    "reference_text": "Lane Control to all survey teams. Tollgate footings approved, pending clearance. Please log your hours before the end of the cycle."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 1.49,
+    "limited_db": 0.24,
+    "measured_before_lufs": -19.49,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Intel",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "received",
+      "charStart": 6,
+      "charEnd": 14,
+      "startS": 1.68,
+      "endS": 2.48
+    },
+    {
+      "text": "Scout",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "behavior",
+      "charStart": 22,
+      "charEnd": 30,
+      "startS": 3.2,
+      "endS": 3.92
+    },
+    {
+      "text": "patrol",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 4.16,
+      "endS": 4.88
+    },
+    {
+      "text": "Please",
+      "charStart": 40,
+      "charEnd": 46,
+      "startS": 5.44,
+      "endS": 5.68
+    },
+    {
+      "text": "annotate",
+      "charStart": 47,
+      "charEnd": 55,
+      "startS": 5.68,
+      "endS": 6.16
+    },
+    {
+      "text": "as",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "hostile",
+      "charStart": 59,
+      "charEnd": 66,
+      "startS": 6.32,
+      "endS": 6.88
+    }
+  ],
+  "words_for": "d825d51f8579e1aa/wordtiming-v1",
+  "asr": "Intel received scout behavior patrol. Please annotate as hostile.",
+  "asr_similarity": 1.0
+}

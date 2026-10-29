@@ -1,0 +1,194 @@
+{
+  "hash": "8437f844b0e77721",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_move_000",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Empecemos con el movimiento! El movimiento es lo que te lleva de un lugar a otro. Por favor, vuela hacia la izquierda.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Kindergarten-teacher patience, explaining the obvious with great care.",
+  "duration": 7.84,
+  "sample_rate": 24000,
+  "peak": 0.8,
+  "clipping_suspect": false,
+  "asr": "Empecemos con el movimiento. El movimiento es lo que te lleva de un lugar a otro. Por favor, vuela hacia la izquierda.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.79,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "8437f844b0e77721/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Empecemos",
+      "charStart": 1,
+      "charEnd": 10,
+      "startS": 0.4,
+      "endS": 0.48
+    },
+    {
+      "text": "con",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 0.64,
+      "endS": 1.76
+    },
+    {
+      "text": "el",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "movimiento",
+      "charStart": 18,
+      "charEnd": 28,
+      "startS": 2.32,
+      "endS": 2.88
+    },
+    {
+      "text": "El",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "movimiento",
+      "charStart": 33,
+      "charEnd": 43,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "es",
+      "charStart": 44,
+      "charEnd": 46,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "lo",
+      "charStart": 47,
+      "charEnd": 49,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "que",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.2,
+      "endS": 3.28
+    },
+    {
+      "text": "te",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "lleva",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "de",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "un",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "lugar",
+      "charStart": 69,
+      "charEnd": 74,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "a",
+      "charStart": 75,
+      "charEnd": 76,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "otro",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 4.48,
+      "endS": 4.88
+    },
+    {
+      "text": "Por",
+      "charStart": 83,
+      "charEnd": 86,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "favor",
+      "charStart": 87,
+      "charEnd": 92,
+      "startS": 5.44,
+      "endS": 6.0
+    },
+    {
+      "text": "vuela",
+      "charStart": 94,
+      "charEnd": 99,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "hacia",
+      "charStart": 100,
+      "charEnd": 105,
+      "startS": 6.72,
+      "endS": 7.04
+    },
+    {
+      "text": "la",
+      "charStart": 106,
+      "charEnd": 108,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "izquierda",
+      "charStart": 109,
+      "charEnd": 118,
+      "startS": 7.2,
+      "endS": 7.76
+    }
+  ]
+}

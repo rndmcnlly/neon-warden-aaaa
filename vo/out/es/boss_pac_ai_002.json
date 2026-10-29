@@ -1,0 +1,131 @@
+{
+  "hash": "a0516f09abf27fb3",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_pac_ai_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Autorización de retiro solicitada. Por favor, espera. Tu llamada es importante para nosotros.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, hold-music politeness.",
+  "duration": 7.36,
+  "sample_rate": 24000,
+  "peak": 0.751,
+  "clipping_suspect": false,
+  "asr": "Autorización de retiro solicitada. Por favor espera, tu llamada es importante para nosotros.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.34,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "a0516f09abf27fb3/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Autorización",
+      "charStart": 0,
+      "charEnd": 12,
+      "startS": 0.08,
+      "endS": 1.04
+    },
+    {
+      "text": "de",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "retiro",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "solicitada",
+      "charStart": 23,
+      "charEnd": 33,
+      "startS": 1.68,
+      "endS": 2.64
+    },
+    {
+      "text": "Por",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "favor",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 3.36,
+      "endS": 3.68
+    },
+    {
+      "text": "espera",
+      "charStart": 46,
+      "charEnd": 52,
+      "startS": 4.0,
+      "endS": 4.56
+    },
+    {
+      "text": "Tu",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "llamada",
+      "charStart": 57,
+      "charEnd": 64,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "es",
+      "charStart": 65,
+      "charEnd": 67,
+      "startS": 5.6,
+      "endS": 5.68
+    },
+    {
+      "text": "importante",
+      "charStart": 68,
+      "charEnd": 78,
+      "startS": 5.68,
+      "endS": 6.32
+    },
+    {
+      "text": "para",
+      "charStart": 79,
+      "charEnd": 83,
+      "startS": 6.32,
+      "endS": 6.56
+    },
+    {
+      "text": "nosotros",
+      "charStart": 84,
+      "charEnd": 92,
+      "startS": 6.56,
+      "endS": 7.36
+    }
+  ]
+}

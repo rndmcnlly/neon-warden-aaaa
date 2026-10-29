@@ -1,0 +1,180 @@
+{
+  "hash": "25cd802464bf6ec4",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_auth_patrol_001",
+    "seed": 66,
+    "language": "Spanish",
+    "text": "Control de Rutas a equipos de topografía: cimientos de casetas de peaje aprobados para la Deriva Exterior, pendientes de despeje.",
+    "voice_ref": "vo/voices/authority.es.wav",
+    "reference_text": "Control de Rutas a todos los equipos de reconocimiento. Cimientos del peaje aprobados, pendientes de autorización. Registren sus horas antes del fin del ciclo."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 8.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.27,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 8.62,
+    "limited_db": 2.81,
+    "measured_before_lufs": -26.62,
+    "peak_bound": false
+  },
+  "asr": "Control de rutas a equipos de topografía, cimientos de cassetas de peaje aprobados para la deriva exterior, pendientes de despeje.",
+  "asr_similarity": 0.95,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Control",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "de",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "Rutas",
+      "charStart": 11,
+      "charEnd": 16,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "a",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "equipos",
+      "charStart": 19,
+      "charEnd": 26,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "de",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "topografía",
+      "charStart": 30,
+      "charEnd": 40,
+      "startS": 1.84,
+      "endS": 2.64
+    },
+    {
+      "text": "cimientos",
+      "charStart": 42,
+      "charEnd": 51,
+      "startS": 3.04,
+      "endS": 3.6
+    },
+    {
+      "text": "de",
+      "charStart": 52,
+      "charEnd": 54,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "casetas",
+      "charStart": 55,
+      "charEnd": 62,
+      "startS": 3.68,
+      "endS": 4.24
+    },
+    {
+      "text": "de",
+      "charStart": 63,
+      "charEnd": 65,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "peaje",
+      "charStart": 66,
+      "charEnd": 71,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "aprobados",
+      "charStart": 72,
+      "charEnd": 81,
+      "startS": 4.8,
+      "endS": 5.36
+    },
+    {
+      "text": "para",
+      "charStart": 82,
+      "charEnd": 86,
+      "startS": 5.36,
+      "endS": 5.6
+    },
+    {
+      "text": "la",
+      "charStart": 87,
+      "charEnd": 89,
+      "startS": 5.6,
+      "endS": 5.68
+    },
+    {
+      "text": "Deriva",
+      "charStart": 90,
+      "charEnd": 96,
+      "startS": 5.68,
+      "endS": 6.08
+    },
+    {
+      "text": "Exterior",
+      "charStart": 97,
+      "charEnd": 105,
+      "startS": 6.08,
+      "endS": 6.64
+    },
+    {
+      "text": "pendientes",
+      "charStart": 107,
+      "charEnd": 117,
+      "startS": 7.12,
+      "endS": 7.84
+    },
+    {
+      "text": "de",
+      "charStart": 118,
+      "charEnd": 120,
+      "startS": 7.84,
+      "endS": 8.0
+    },
+    {
+      "text": "despeje",
+      "charStart": 121,
+      "charEnd": 128,
+      "startS": 8.0,
+      "endS": 8.64
+    }
+  ],
+  "words_for": "25cd802464bf6ec4/wordtiming-v1"
+}

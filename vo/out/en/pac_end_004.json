@@ -1,0 +1,173 @@
+{
+  "hash": "d8cfae7263190b84",
+  "mode": "clone",
+  "request": {
+    "id": "en__pac_end_004",
+    "seed": 11,
+    "language": "English",
+    "text": "Connection unstable. Pilot zero one two two, if you return for recall now, your full payment will be honored.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, weak signal, still smiling, an offer read off a card.",
+  "duration": 7.68,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Connection unstable. Pilot zero one two two. If you return for recall now, your full payment will be honored.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.1,
+    "gain_db": 0.64,
+    "limited_db": 0.59,
+    "measured_before_lufs": -18.64,
+    "peak_bound": false
+  },
+  "words_for": "d8cfae7263190b84/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Connection",
+      "charStart": 0,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "unstable",
+      "charStart": 11,
+      "charEnd": 19,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "Pilot",
+      "charStart": 21,
+      "charEnd": 26,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "zero",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "one",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "two",
+      "charStart": 36,
+      "charEnd": 39,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "two",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "if",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "you",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "return",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "for",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "recall",
+      "charStart": 63,
+      "charEnd": 69,
+      "startS": 4.88,
+      "endS": 5.28
+    },
+    {
+      "text": "now",
+      "charStart": 70,
+      "charEnd": 73,
+      "startS": 5.36,
+      "endS": 5.68
+    },
+    {
+      "text": "your",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "full",
+      "charStart": 80,
+      "charEnd": 84,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "payment",
+      "charStart": 85,
+      "charEnd": 92,
+      "startS": 6.72,
+      "endS": 6.88
+    },
+    {
+      "text": "will",
+      "charStart": 93,
+      "charEnd": 97,
+      "startS": 6.88,
+      "endS": 6.96
+    },
+    {
+      "text": "be",
+      "charStart": 98,
+      "charEnd": 100,
+      "startS": 6.96,
+      "endS": 7.12
+    },
+    {
+      "text": "honored",
+      "charStart": 101,
+      "charEnd": 108,
+      "startS": 7.36,
+      "endS": 7.6
+    }
+  ]
+}

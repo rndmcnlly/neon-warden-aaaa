@@ -1,0 +1,299 @@
+{
+  "hash": "ff5ea9578c53aa2c",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_rate_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Everything you have just learned feeds your Contract Rate, shown beside your pay. Kills, broken parts, disarms, grazes and new scans all raise it, as long as you keep them coming. Please raise it to times two.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 12.24,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.16,
+    "gain_db": 5.08,
+    "limited_db": 0.97,
+    "measured_before_lufs": -23.08,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Everything",
+      "charStart": 0,
+      "charEnd": 10,
+      "startS": 0.08,
+      "endS": 0.56
+    },
+    {
+      "text": "you",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "have",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "just",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "learned",
+      "charStart": 25,
+      "charEnd": 32,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "feeds",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "your",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "Contract",
+      "charStart": 44,
+      "charEnd": 52,
+      "startS": 1.76,
+      "endS": 2.32
+    },
+    {
+      "text": "Rate",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "shown",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "beside",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "your",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "pay",
+      "charStart": 77,
+      "charEnd": 80,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "Kills",
+      "charStart": 82,
+      "charEnd": 87,
+      "startS": 4.4,
+      "endS": 4.88
+    },
+    {
+      "text": "broken",
+      "charStart": 89,
+      "charEnd": 95,
+      "startS": 5.12,
+      "endS": 5.44
+    },
+    {
+      "text": "parts",
+      "charStart": 96,
+      "charEnd": 101,
+      "startS": 5.44,
+      "endS": 5.84
+    },
+    {
+      "text": "disarms",
+      "charStart": 103,
+      "charEnd": 110,
+      "startS": 6.0,
+      "endS": 6.56
+    },
+    {
+      "text": "grazes",
+      "charStart": 112,
+      "charEnd": 118,
+      "startS": 6.8,
+      "endS": 6.96
+    },
+    {
+      "text": "and",
+      "charStart": 119,
+      "charEnd": 122,
+      "startS": 7.28,
+      "endS": 7.44
+    },
+    {
+      "text": "new",
+      "charStart": 123,
+      "charEnd": 126,
+      "startS": 7.44,
+      "endS": 7.52
+    },
+    {
+      "text": "scans",
+      "charStart": 127,
+      "charEnd": 132,
+      "startS": 7.6,
+      "endS": 8.0
+    },
+    {
+      "text": "all",
+      "charStart": 133,
+      "charEnd": 136,
+      "startS": 8.0,
+      "endS": 8.08
+    },
+    {
+      "text": "raise",
+      "charStart": 137,
+      "charEnd": 142,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "it",
+      "charStart": 143,
+      "charEnd": 145,
+      "startS": 8.64,
+      "endS": 8.72
+    },
+    {
+      "text": "as",
+      "charStart": 147,
+      "charEnd": 149,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "long",
+      "charStart": 150,
+      "charEnd": 154,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "as",
+      "charStart": 155,
+      "charEnd": 157,
+      "startS": 9.36,
+      "endS": 9.44
+    },
+    {
+      "text": "you",
+      "charStart": 158,
+      "charEnd": 161,
+      "startS": 9.44,
+      "endS": 9.52
+    },
+    {
+      "text": "keep",
+      "charStart": 162,
+      "charEnd": 166,
+      "startS": 9.52,
+      "endS": 9.76
+    },
+    {
+      "text": "them",
+      "charStart": 167,
+      "charEnd": 171,
+      "startS": 9.76,
+      "endS": 9.92
+    },
+    {
+      "text": "coming",
+      "charStart": 172,
+      "charEnd": 178,
+      "startS": 9.92,
+      "endS": 10.4
+    },
+    {
+      "text": "Please",
+      "charStart": 180,
+      "charEnd": 186,
+      "startS": 10.64,
+      "endS": 10.72
+    },
+    {
+      "text": "raise",
+      "charStart": 187,
+      "charEnd": 192,
+      "startS": 10.96,
+      "endS": 11.2
+    },
+    {
+      "text": "it",
+      "charStart": 193,
+      "charEnd": 195,
+      "startS": 11.2,
+      "endS": 11.36
+    },
+    {
+      "text": "to",
+      "charStart": 196,
+      "charEnd": 198,
+      "startS": 11.44,
+      "endS": 11.52
+    },
+    {
+      "text": "times",
+      "charStart": 199,
+      "charEnd": 204,
+      "startS": 11.52,
+      "endS": 11.76
+    },
+    {
+      "text": "two",
+      "charStart": 205,
+      "charEnd": 208,
+      "startS": 11.76,
+      "endS": 11.92
+    }
+  ],
+  "words_for": "ff5ea9578c53aa2c/wordtiming-v1",
+  "asr": "Everything you have just learned feeds your contract rate, shown beside your pay. Kills, broken parts, disarms, grazes, and new scans all raise it as long as you keep them coming. Please raise it to times two.",
+  "asr_similarity": 1.0
+}

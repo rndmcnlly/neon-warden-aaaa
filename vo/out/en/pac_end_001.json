@@ -1,0 +1,117 @@
+{
+  "hash": "8cd15fbee9d91ad2",
+  "mode": "clone",
+  "request": {
+    "id": "en__pac_end_001",
+    "seed": 33,
+    "language": "English",
+    "text": "You dodged everything. Everything! And you never fired back. Not once.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Awed, still loud, voice wobbling.",
+  "duration": 5.44,
+  "sample_rate": 24000,
+  "peak": 0.667,
+  "clipping_suspect": false,
+  "asr": "You dodged everything, everything, and you never fired back—not once.",
+  "asr_similarity": 0.857,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.49,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "8cd15fbee9d91ad2/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "You",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "dodged",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 0.24,
+      "endS": 0.8
+    },
+    {
+      "text": "everything",
+      "charStart": 11,
+      "charEnd": 21,
+      "startS": 0.8,
+      "endS": 1.44
+    },
+    {
+      "text": "Everything",
+      "charStart": 23,
+      "charEnd": 33,
+      "startS": 1.6,
+      "endS": 2.56
+    },
+    {
+      "text": "And",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "you",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "never",
+      "charStart": 43,
+      "charEnd": 48,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "fired",
+      "charStart": 49,
+      "charEnd": 54,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "back",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 3.84,
+      "endS": 4.32
+    },
+    {
+      "text": "Not",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 4.48,
+      "endS": 4.8
+    },
+    {
+      "text": "once",
+      "charStart": 65,
+      "charEnd": 69,
+      "startS": 4.8,
+      "endS": 5.44
+    }
+  ]
+}

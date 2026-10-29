@@ -1,0 +1,173 @@
+{
+  "hash": "438d079ea2cf30f2",
+  "mode": "clone",
+  "request": {
+    "id": "es__warn_ai_001",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "Advertencia. Se acerca el Guardián. Llegó la hora, piloto. Todo aquello para lo que entrenamos. Recuerda la sesión informativa.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, trying hard to sound brave.",
+  "duration": 10.48,
+  "sample_rate": 24000,
+  "peak": 0.872,
+  "clipping_suspect": false,
+  "asr": "Advertencia, se acerca el guardián. De gola ahora piloto, todo aquello para lo que entrenamos requiere de la sesión informativa.",
+  "asr_similarity": 0.769,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.05,
+    "gain_db": -0.03,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "438d079ea2cf30f2/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Advertencia",
+      "charStart": 0,
+      "charEnd": 11,
+      "startS": 0.32,
+      "endS": 0.4
+    },
+    {
+      "text": "Se",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "acerca",
+      "charStart": 16,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "el",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "Guardián",
+      "charStart": 26,
+      "charEnd": 34,
+      "startS": 2.72,
+      "endS": 3.44
+    },
+    {
+      "text": "Llegó",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "la",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "hora",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "piloto",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 4.72,
+      "endS": 5.44
+    },
+    {
+      "text": "Todo",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 5.44,
+      "endS": 5.52
+    },
+    {
+      "text": "aquello",
+      "charStart": 64,
+      "charEnd": 71,
+      "startS": 6.16,
+      "endS": 6.48
+    },
+    {
+      "text": "para",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "lo",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 6.72,
+      "endS": 6.88
+    },
+    {
+      "text": "que",
+      "charStart": 80,
+      "charEnd": 83,
+      "startS": 6.88,
+      "endS": 6.96
+    },
+    {
+      "text": "entrenamos",
+      "charStart": 84,
+      "charEnd": 94,
+      "startS": 6.96,
+      "endS": 7.84
+    },
+    {
+      "text": "Recuerda",
+      "charStart": 96,
+      "charEnd": 104,
+      "startS": 8.08,
+      "endS": 8.48
+    },
+    {
+      "text": "la",
+      "charStart": 105,
+      "charEnd": 107,
+      "startS": 8.72,
+      "endS": 8.8
+    },
+    {
+      "text": "sesión",
+      "charStart": 108,
+      "charEnd": 114,
+      "startS": 8.8,
+      "endS": 9.28
+    },
+    {
+      "text": "informativa",
+      "charStart": 115,
+      "charEnd": 126,
+      "startS": 9.28,
+      "endS": 10.32
+    }
+  ]
+}

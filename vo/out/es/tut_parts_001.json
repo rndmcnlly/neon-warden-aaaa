@@ -1,0 +1,215 @@
+{
+  "hash": "98a5369a6b57163d",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_parts_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Esta torreta de práctica tiene una sola pieza de armamento: su cañón. Dispárale con toques, o suelta un Mandato sobre él, hasta que se rompa.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 10.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.24,
+    "gain_db": 5.09,
+    "limited_db": 1.41,
+    "measured_before_lufs": -23.09,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Esta",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "torreta",
+      "charStart": 5,
+      "charEnd": 12,
+      "startS": 0.88,
+      "endS": 1.28
+    },
+    {
+      "text": "de",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "práctica",
+      "charStart": 16,
+      "charEnd": 24,
+      "startS": 1.44,
+      "endS": 2.0
+    },
+    {
+      "text": "tiene",
+      "charStart": 25,
+      "charEnd": 30,
+      "startS": 2.0,
+      "endS": 2.4
+    },
+    {
+      "text": "una",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.4,
+      "endS": 2.72
+    },
+    {
+      "text": "sola",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "pieza",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "de",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "armamento",
+      "charStart": 49,
+      "charEnd": 58,
+      "startS": 3.68,
+      "endS": 4.4
+    },
+    {
+      "text": "su",
+      "charStart": 60,
+      "charEnd": 62,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "cañón",
+      "charStart": 63,
+      "charEnd": 68,
+      "startS": 4.8,
+      "endS": 5.44
+    },
+    {
+      "text": "Dispárale",
+      "charStart": 70,
+      "charEnd": 79,
+      "startS": 5.92,
+      "endS": 6.56
+    },
+    {
+      "text": "con",
+      "charStart": 80,
+      "charEnd": 83,
+      "startS": 6.56,
+      "endS": 6.8
+    },
+    {
+      "text": "toques",
+      "charStart": 84,
+      "charEnd": 90,
+      "startS": 6.8,
+      "endS": 7.36
+    },
+    {
+      "text": "o",
+      "charStart": 92,
+      "charEnd": 93,
+      "startS": 7.6,
+      "endS": 7.68
+    },
+    {
+      "text": "suelta",
+      "charStart": 94,
+      "charEnd": 100,
+      "startS": 7.68,
+      "endS": 8.08
+    },
+    {
+      "text": "un",
+      "charStart": 101,
+      "charEnd": 103,
+      "startS": 8.08,
+      "endS": 8.24
+    },
+    {
+      "text": "Mandato",
+      "charStart": 104,
+      "charEnd": 111,
+      "startS": 8.24,
+      "endS": 8.8
+    },
+    {
+      "text": "sobre",
+      "charStart": 112,
+      "charEnd": 117,
+      "startS": 8.8,
+      "endS": 9.12
+    },
+    {
+      "text": "él",
+      "charStart": 118,
+      "charEnd": 120,
+      "startS": 9.12,
+      "endS": 9.44
+    },
+    {
+      "text": "hasta",
+      "charStart": 122,
+      "charEnd": 127,
+      "startS": 9.68,
+      "endS": 10.0
+    },
+    {
+      "text": "que",
+      "charStart": 128,
+      "charEnd": 131,
+      "startS": 10.0,
+      "endS": 10.08
+    },
+    {
+      "text": "se",
+      "charStart": 132,
+      "charEnd": 134,
+      "startS": 10.08,
+      "endS": 10.24
+    },
+    {
+      "text": "rompa",
+      "charStart": 135,
+      "charEnd": 140,
+      "startS": 10.24,
+      "endS": 10.8
+    }
+  ],
+  "words_for": "98a5369a6b57163d/wordtiming-v1",
+  "asr": "Esta torreta de práctica tiene una sola pieza de armamento, su cañón dispara le contóques o suelta un mandato sobre él hasta que se rompa.",
+  "asr_similarity": 0.88
+}

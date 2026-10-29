@@ -1,0 +1,131 @@
+{
+  "hash": "69b46864f395cfad",
+  "mode": "clone",
+  "request": {
+    "id": "es__flash_rec_003",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Te detuviste! ¿¡Por qué te detuviste!? ¡Nadie se detiene! ¡Nadie se detiene NUNCA!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Recorded, shrill astonishment, almost offended that someone stopped.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.808,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.84,
+    "gain_db": 2.2,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.2,
+    "peak_bound": false
+  },
+  "asr": "Te detuviste. Por qué te detuviste. Nadie se detiene. Nadie se detiene nunca.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Te",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.24
+    },
+    {
+      "text": "detuviste",
+      "charStart": 4,
+      "charEnd": 13,
+      "startS": 0.24,
+      "endS": 1.12
+    },
+    {
+      "text": "Por",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "qué",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "te",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "detuviste",
+      "charStart": 28,
+      "charEnd": 37,
+      "startS": 1.68,
+      "endS": 2.48
+    },
+    {
+      "text": "Nadie",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "se",
+      "charStart": 47,
+      "charEnd": 49,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "detiene",
+      "charStart": 50,
+      "charEnd": 57,
+      "startS": 3.12,
+      "endS": 3.68
+    },
+    {
+      "text": "Nadie",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 3.76,
+      "endS": 4.16
+    },
+    {
+      "text": "se",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "detiene",
+      "charStart": 69,
+      "charEnd": 76,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "NUNCA",
+      "charStart": 77,
+      "charEnd": 82,
+      "startS": 4.64,
+      "endS": 5.2
+    }
+  ],
+  "words_for": "69b46864f395cfad/wordtiming-v1"
+}

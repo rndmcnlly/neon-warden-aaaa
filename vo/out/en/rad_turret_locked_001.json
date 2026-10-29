@@ -1,0 +1,138 @@
+{
+  "hash": "eef561b8fdedc1a7",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_turret_locked_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Lock on station four. It's looking at my barrel. Everyone looks at the barrel.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.836,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.85,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 5.01,
+    "limited_db": 3.42,
+    "measured_before_lufs": -23.07,
+    "peak_bound": true
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lock",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "on",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "station",
+      "charStart": 8,
+      "charEnd": 15,
+      "startS": 0.88,
+      "endS": 1.28
+    },
+    {
+      "text": "four",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "It's",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "looking",
+      "charStart": 27,
+      "charEnd": 34,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "at",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "my",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "barrel",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 2.64,
+      "endS": 3.04
+    },
+    {
+      "text": "Everyone",
+      "charStart": 49,
+      "charEnd": 57,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "looks",
+      "charStart": 58,
+      "charEnd": 63,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "at",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "the",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "barrel",
+      "charStart": 71,
+      "charEnd": 77,
+      "startS": 4.08,
+      "endS": 4.48
+    }
+  ],
+  "words_for": "eef561b8fdedc1a7/wordtiming-v1",
+  "asr": "Lock on station four. It's looking at my barrel. Everyone looks at the barrel.",
+  "asr_similarity": 1.0
+}

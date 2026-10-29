@@ -1,0 +1,152 @@
+{
+  "hash": "7fb0744e9c06b1db",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_lancer_patrol_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Fuego cruzado activo. A través de la ruta, nunca a lo largo. Mantengan libre el centro.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Drill- like.",
+  "duration": 6.56,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.23,
+    "gain_db": 2.68,
+    "limited_db": 0.43,
+    "measured_before_lufs": -20.68,
+    "peak_bound": false
+  },
+  "asr": "Fuego cruzado activo, a través de la ruta nunca a lo largo, mantengan libre el centro.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Fuego",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "cruzado",
+      "charStart": 6,
+      "charEnd": 13,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "activo",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 1.44,
+      "endS": 1.92
+    },
+    {
+      "text": "A",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "través",
+      "charStart": 24,
+      "charEnd": 30,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "de",
+      "charStart": 31,
+      "charEnd": 33,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "la",
+      "charStart": 34,
+      "charEnd": 36,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "ruta",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 3.12,
+      "endS": 3.52
+    },
+    {
+      "text": "nunca",
+      "charStart": 43,
+      "charEnd": 48,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "a",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "lo",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "largo",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "Mantengan",
+      "charStart": 61,
+      "charEnd": 70,
+      "startS": 5.2,
+      "endS": 5.76
+    },
+    {
+      "text": "libre",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 5.76,
+      "endS": 6.0
+    },
+    {
+      "text": "el",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "centro",
+      "charStart": 80,
+      "charEnd": 86,
+      "startS": 6.08,
+      "endS": 6.56
+    }
+  ],
+  "words_for": "7fb0744e9c06b1db/wordtiming-v1"
+}

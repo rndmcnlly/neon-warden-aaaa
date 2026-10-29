@@ -1,0 +1,166 @@
+{
+  "hash": "1eb0fe5da1d36751",
+  "mode": "clone",
+  "request": {
+    "id": "zh__desc_003",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "我是守望者！我守护这些航道！我真的说烦了！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Grand proclamation that collapses into weariness.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.682,
+  "clipping_suspect": false,
+  "asr": "我是守望者，我守护这些航道。我真的说烦了。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.27,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "1eb0fe5da1d36751/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "我",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "是",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "守",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "望",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "者",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "我",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "守",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "护",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "这",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "些",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "航",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "道",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "我",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "真",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "的",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.6,
+      "endS": 3.68
+    },
+    {
+      "text": "说",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "烦",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.92,
+      "endS": 4.24
+    },
+    {
+      "text": "了",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.24,
+      "endS": 4.48
+    }
+  ]
+}

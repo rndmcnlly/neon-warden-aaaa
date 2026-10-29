@@ -1,0 +1,131 @@
+{
+  "hash": "15066bedb3556e08",
+  "mode": "clone",
+  "request": {
+    "id": "zh__boss_p3_001",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "好！好啊！我所有的一切！全都给你！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Turning red: all-in, voice cracking at the top.",
+  "duration": 4.08,
+  "sample_rate": 24000,
+  "peak": 0.641,
+  "clipping_suspect": false,
+  "asr": "好好啊！我所有的一切全都给你。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.8,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "15066bedb3556e08/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "好",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "好",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "啊",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "我",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "所",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "有",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "的",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "一",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "切",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "全",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "都",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "给",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "你",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.6,
+      "endS": 4.0
+    }
+  ]
+}

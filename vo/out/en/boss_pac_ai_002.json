@@ -1,0 +1,117 @@
+{
+  "hash": "ad3edaedfb4e8f28",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_pac_ai_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Recall authorization requested. Please hold. Your call is important to us.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, hold-music politeness.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Recall authorization requested. Please hold. Your call is important to us.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.17,
+    "true_peak_dbtp": -1.4,
+    "gain_db": 1.03,
+    "limited_db": 0.98,
+    "measured_before_lufs": -19.03,
+    "peak_bound": false
+  },
+  "words_for": "ad3edaedfb4e8f28/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Recall",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "authorization",
+      "charStart": 7,
+      "charEnd": 20,
+      "startS": 0.72,
+      "endS": 1.52
+    },
+    {
+      "text": "requested",
+      "charStart": 21,
+      "charEnd": 30,
+      "startS": 1.52,
+      "endS": 2.16
+    },
+    {
+      "text": "Please",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "hold",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "Your",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "call",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "is",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "important",
+      "charStart": 58,
+      "charEnd": 67,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "to",
+      "charStart": 68,
+      "charEnd": 70,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "us",
+      "charStart": 71,
+      "charEnd": 73,
+      "startS": 4.96,
+      "endS": 5.2
+    }
+  ]
+}

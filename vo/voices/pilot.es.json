@@ -1,0 +1,28 @@
+{
+  "hash": "7d2c965813aa7bda",
+  "method": "bootstrap",
+  "candidate": "bootstrap_s144",
+  "from_anchor": "eb9a25e228986c1b",
+  "request": {
+    "id": "pilot.es",
+    "seed": 144,
+    "language": "Spanish",
+    "text": "Un trabajo es un trabajo. Vuelo la ruta, me pagan, me voy a casa. Eso es todo lo que hay que decir.",
+    "voice_ref": "vo/voices/pilot.wav",
+    "reference_text": "Job's a job. I fly the route, I get paid, I go home. That is all there is to say about it."
+  },
+  "duration": 9.04,
+  "sample_rate": 24000,
+  "peak": 0.6,
+  "clipping_suspect": false,
+  "median_f0": 99.2,
+  "audition": {
+    "method": "bootstrap",
+    "seed": 144,
+    "mean": 1.0,
+    "min": 1.0,
+    "anchor_asr": 0.955,
+    "anchor_f0": 99.2,
+    "f0_ratio": 0.96
+  }
+}

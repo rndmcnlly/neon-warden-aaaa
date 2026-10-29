@@ -1,0 +1,180 @@
+{
+  "hash": "189846614415f79e",
+  "mode": "clone",
+  "request": {
+    "id": "es__flash_rec_004",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Mira! ¡Las navecitas! ¡Sin armas! ¡Vuelan por mis rutas porque yo las mantengo libres! ¡LIBRES! ¿¡Sabes lo que significa libre!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Recorded, furious joy, showing off something precious.",
+  "duration": 8.24,
+  "sample_rate": 24000,
+  "peak": 0.852,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.36,
+    "gain_db": 2.18,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.18,
+    "peak_bound": false
+  },
+  "asr": "Mira las navecitas sin armas vuelan por mis rutas porque yo las mantengo libres libres sabes lo que significa libre",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Mira",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.56
+    },
+    {
+      "text": "Las",
+      "charStart": 8,
+      "charEnd": 11,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "navecitas",
+      "charStart": 12,
+      "charEnd": 21,
+      "startS": 0.96,
+      "endS": 1.84
+    },
+    {
+      "text": "Sin",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "armas",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 2.24,
+      "endS": 2.8
+    },
+    {
+      "text": "Vuelan",
+      "charStart": 36,
+      "charEnd": 42,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "por",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "mis",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "rutas",
+      "charStart": 51,
+      "charEnd": 56,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "porque",
+      "charStart": 57,
+      "charEnd": 63,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "yo",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "las",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "mantengo",
+      "charStart": 71,
+      "charEnd": 79,
+      "startS": 4.64,
+      "endS": 5.12
+    },
+    {
+      "text": "libres",
+      "charStart": 80,
+      "charEnd": 86,
+      "startS": 5.12,
+      "endS": 5.6
+    },
+    {
+      "text": "LIBRES",
+      "charStart": 89,
+      "charEnd": 95,
+      "startS": 5.76,
+      "endS": 6.48
+    },
+    {
+      "text": "Sabes",
+      "charStart": 99,
+      "charEnd": 104,
+      "startS": 6.64,
+      "endS": 7.04
+    },
+    {
+      "text": "lo",
+      "charStart": 105,
+      "charEnd": 107,
+      "startS": 7.04,
+      "endS": 7.12
+    },
+    {
+      "text": "que",
+      "charStart": 108,
+      "charEnd": 111,
+      "startS": 7.12,
+      "endS": 7.2
+    },
+    {
+      "text": "significa",
+      "charStart": 112,
+      "charEnd": 121,
+      "startS": 7.2,
+      "endS": 7.76
+    },
+    {
+      "text": "libre",
+      "charStart": 122,
+      "charEnd": 127,
+      "startS": 7.76,
+      "endS": 8.16
+    }
+  ],
+  "words_for": "189846614415f79e/wordtiming-v1"
+}

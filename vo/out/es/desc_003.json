@@ -1,0 +1,131 @@
+{
+  "hash": "dc2c22e2449bb9ec",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_003",
+    "seed": 133,
+    "language": "Spanish",
+    "text": "¡Soy el Guardián! ¡Yo cuido estas rutas! ¡Y estoy TAN CANSADO de repetirlo!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Grand proclamation that collapses into weariness.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.698,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.08,
+    "gain_db": 2.46,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.46,
+    "peak_bound": false
+  },
+  "asr": "Soy el guardián, yo cuido estas rutas y estoy tan cansado de repetirlo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Soy",
+      "charStart": 1,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.4
+    },
+    {
+      "text": "el",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "Guardián",
+      "charStart": 8,
+      "charEnd": 16,
+      "startS": 0.56,
+      "endS": 1.2
+    },
+    {
+      "text": "Yo",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "cuido",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "estas",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "rutas",
+      "charStart": 34,
+      "charEnd": 39,
+      "startS": 2.24,
+      "endS": 2.72
+    },
+    {
+      "text": "Y",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "estoy",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 2.96,
+      "endS": 3.28
+    },
+    {
+      "text": "TAN",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "CANSADO",
+      "charStart": 54,
+      "charEnd": 61,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "de",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "repetirlo",
+      "charStart": 65,
+      "charEnd": 74,
+      "startS": 4.16,
+      "endS": 5.04
+    }
+  ],
+  "words_for": "dc2c22e2449bb9ec/wordtiming-v1"
+}

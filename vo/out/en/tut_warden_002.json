@@ -1,0 +1,138 @@
+{
+  "hash": "d4804447b77181e1",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_warden_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Wasn't that exciting? Please don't be frightened. Fear is not covered by your contract.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Breathless from the reel, then soothing customer service.",
+  "duration": 5.04,
+  "sample_rate": 24000,
+  "peak": 0.775,
+  "clipping_suspect": false,
+  "asr": "Wasn't that exciting? Please don't be frightened. Fear is not covered by your contract.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.99,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "d4804447b77181e1/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Wasn't",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "that",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "exciting",
+      "charStart": 12,
+      "charEnd": 20,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "Please",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "don't",
+      "charStart": 29,
+      "charEnd": 34,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "be",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "frightened",
+      "charStart": 38,
+      "charEnd": 48,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "Fear",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "is",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "not",
+      "charStart": 58,
+      "charEnd": 61,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "covered",
+      "charStart": 62,
+      "charEnd": 69,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "by",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "your",
+      "charStart": 73,
+      "charEnd": 77,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "contract",
+      "charStart": 78,
+      "charEnd": 86,
+      "startS": 4.32,
+      "endS": 4.96
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "hash": "a1466a58c8f80546",
+  "mode": "clone",
+  "request": {
+    "id": "zh__brief_warden_004",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "单是它的声音，就能震裂船体。听过的人，永远不会忘记。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "Hushed dread, as if afraid it might hear.",
+  "duration": 5.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.44,
+    "gain_db": 5.65,
+    "limited_db": 0.41,
+    "measured_before_lufs": -23.65,
+    "peak_bound": false
+  },
+  "asr": "单是他的声音，就能震裂船体。听过的人永远不会忘记。",
+  "asr_similarity": 0.955,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "单",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "是",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "它",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "的",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "声",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "音",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "就",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "能",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "震",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "裂",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "船",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "体",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "听",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "过",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "的",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "人",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.92,
+      "endS": 4.32
+    },
+    {
+      "text": "永",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "远",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "不",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "会",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "忘",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.12,
+      "endS": 5.44
+    },
+    {
+      "text": "记",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.44,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "a1466a58c8f80546/wordtiming-v1"
+}

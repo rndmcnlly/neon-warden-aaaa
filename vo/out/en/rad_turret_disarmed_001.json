@@ -1,0 +1,124 @@
+{
+  "hash": "e299bf660d850dfa",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_turret_disarmed_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Barrel's off. Station four going quiet. Huh. It aimed for the gun.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Surprised, almost grateful.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.822,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.58,
+    "gain_db": 3.93,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.93,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Barrel's",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.08,
+      "endS": 0.56
+    },
+    {
+      "text": "off",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "Station",
+      "charStart": 14,
+      "charEnd": 21,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "four",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "going",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "quiet",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "Huh",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "It",
+      "charStart": 45,
+      "charEnd": 47,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "aimed",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "for",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "the",
+      "charStart": 58,
+      "charEnd": 61,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "gun",
+      "charStart": 62,
+      "charEnd": 65,
+      "startS": 3.92,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "e299bf660d850dfa/wordtiming-v1",
+  "asr": "Barrels off, Station Four, going quiet. Huh? It aimed for the gun.",
+  "asr_similarity": 1.0
+}

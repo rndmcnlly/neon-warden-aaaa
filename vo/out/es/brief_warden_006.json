@@ -1,0 +1,131 @@
+{
+  "hash": "28b1c512d05bab36",
+  "mode": "clone",
+  "request": {
+    "id": "es__brief_warden_006",
+    "seed": 22,
+    "language": "Spanish",
+    "text": "La Autoridad de Rutas. Abriendo las rutas para todos. Aplican términos y condiciones.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "Triumphant brand tag, then the disclaimer in the same grave voice.",
+  "duration": 7.2,
+  "sample_rate": 24000,
+  "peak": 0.804,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.89,
+    "gain_db": 4.56,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.56,
+    "peak_bound": false
+  },
+  "asr": "La autoridad de rutas abriendo las rutas para todos aplican términos y condiciones.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "La",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 3,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "de",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "Rutas",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 1.44,
+      "endS": 2.08
+    },
+    {
+      "text": "Abriendo",
+      "charStart": 23,
+      "charEnd": 31,
+      "startS": 2.4,
+      "endS": 2.88
+    },
+    {
+      "text": "las",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "rutas",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "para",
+      "charStart": 42,
+      "charEnd": 46,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "todos",
+      "charStart": 47,
+      "charEnd": 52,
+      "startS": 3.76,
+      "endS": 4.48
+    },
+    {
+      "text": "Aplican",
+      "charStart": 54,
+      "charEnd": 61,
+      "startS": 4.64,
+      "endS": 5.28
+    },
+    {
+      "text": "términos",
+      "charStart": 62,
+      "charEnd": 70,
+      "startS": 5.28,
+      "endS": 6.0
+    },
+    {
+      "text": "y",
+      "charStart": 71,
+      "charEnd": 72,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "condiciones",
+      "charStart": 73,
+      "charEnd": 84,
+      "startS": 6.08,
+      "endS": 7.04
+    }
+  ],
+  "words_for": "28b1c512d05bab36/wordtiming-v1"
+}

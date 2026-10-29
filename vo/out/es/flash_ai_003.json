@@ -1,0 +1,89 @@
+{
+  "hash": "9b1c8cc6fa64bd85",
+  "mode": "clone",
+  "request": {
+    "id": "es__flash_ai_003",
+    "seed": 111,
+    "language": "Spanish",
+    "text": "¡Disparo amplio equipado! ¿Verdad que es bonito?",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Aggressively normal, changing the subject.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.723,
+  "clipping_suspect": false,
+  "asr": "Despido amplio equipo, verdad que es bonito.",
+  "asr_similarity": 0.714,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.81,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "9b1c8cc6fa64bd85/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Disparo",
+      "charStart": 1,
+      "charEnd": 8,
+      "startS": 0.4,
+      "endS": 1.04
+    },
+    {
+      "text": "amplio",
+      "charStart": 9,
+      "charEnd": 15,
+      "startS": 1.04,
+      "endS": 1.52
+    },
+    {
+      "text": "equipado",
+      "charStart": 16,
+      "charEnd": 24,
+      "startS": 1.52,
+      "endS": 2.32
+    },
+    {
+      "text": "Verdad",
+      "charStart": 27,
+      "charEnd": 33,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "que",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "es",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "bonito",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 4.08,
+      "endS": 4.16
+    }
+  ]
+}

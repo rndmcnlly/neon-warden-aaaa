@@ -1,0 +1,159 @@
+{
+  "hash": "52deed0ae30d3f5a",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rad_turret_patrol_002",
+    "seed": 155,
+    "language": "Chinese",
+    "text": "那艘旧残骸还在九号站附近漂着。别碰它。",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Protective.",
+  "duration": 4.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.18,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 5.46,
+    "limited_db": 1.12,
+    "measured_before_lufs": -23.46,
+    "peak_bound": false
+  },
+  "asr": "那艘旧残骸还在九号站附近飘着，别碰它。",
+  "asr_similarity": 0.941,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "那",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "艘",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "旧",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "残",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 1.04
+    },
+    {
+      "text": "骸",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "还",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "在",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "九",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "号",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "站",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "附",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "近",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "漂",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "着",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "别",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "碰",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "它",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.84,
+      "endS": 4.0
+    }
+  ],
+  "words_for": "52deed0ae30d3f5a/wordtiming-v1"
+}

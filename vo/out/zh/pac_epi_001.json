@@ -1,0 +1,152 @@
+{
+  "hash": "9da3254a9f495fb5",
+  "mode": "clone",
+  "request": {
+    "id": "zh__pac_epi_001",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "守望者的光芒依旧亮着，每一环都亮着。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "Echo of the kill epilogue, warmer, slower.",
+  "duration": 4.16,
+  "sample_rate": 24000,
+  "peak": 0.837,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.53,
+    "gain_db": 5.73,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.73,
+    "peak_bound": false
+  },
+  "asr": "守望者的光芒依旧亮着，每一环都亮着。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "守",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "望",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "者",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "的",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "光",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "芒",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "依",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "旧",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "亮",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "着",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "每",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "一",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "环",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.12,
+      "endS": 3.44
+    },
+    {
+      "text": "都",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "亮",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "着",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.76,
+      "endS": 3.92
+    }
+  ],
+  "words_for": "9da3254a9f495fb5/wordtiming-v1"
+}

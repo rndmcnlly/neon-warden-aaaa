@@ -1,0 +1,201 @@
+{
+  "hash": "8883a6dfa580f233",
+  "mode": "clone",
+  "request": {
+    "id": "es__sec5_intro_001",
+    "seed": 111,
+    "language": "Spanish",
+    "text": "Aproximación Final. Todo lo que tienen. Los analistas dicen que al Guardián le quedan sus últimas reservas. ¡Así se ve un trimestre ganador!",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, quarterly-earnings-call triumph.",
+  "duration": 10.24,
+  "sample_rate": 24000,
+  "peak": 0.7,
+  "clipping_suspect": false,
+  "asr": "Aproximación final. Todo lo que tienen, los analistas dicen que al Guardian le quedan sus últimas reservas. Así se ve un trimestre ganador.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.92,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "8883a6dfa580f233/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Aproximación",
+      "charStart": 0,
+      "charEnd": 12,
+      "startS": 0.0,
+      "endS": 0.96
+    },
+    {
+      "text": "Final",
+      "charStart": 13,
+      "charEnd": 18,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "Todo",
+      "charStart": 20,
+      "charEnd": 24,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "lo",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "que",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "tienen",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 3.28,
+      "endS": 3.76
+    },
+    {
+      "text": "Los",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "analistas",
+      "charStart": 44,
+      "charEnd": 53,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "dicen",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 5.2,
+      "endS": 5.52
+    },
+    {
+      "text": "que",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "al",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "Guardián",
+      "charStart": 67,
+      "charEnd": 75,
+      "startS": 5.76,
+      "endS": 6.16
+    },
+    {
+      "text": "le",
+      "charStart": 76,
+      "charEnd": 78,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "quedan",
+      "charStart": 79,
+      "charEnd": 85,
+      "startS": 6.32,
+      "endS": 6.56
+    },
+    {
+      "text": "sus",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 6.56,
+      "endS": 6.8
+    },
+    {
+      "text": "últimas",
+      "charStart": 90,
+      "charEnd": 97,
+      "startS": 6.8,
+      "endS": 7.2
+    },
+    {
+      "text": "reservas",
+      "charStart": 98,
+      "charEnd": 106,
+      "startS": 7.2,
+      "endS": 7.84
+    },
+    {
+      "text": "Así",
+      "charStart": 109,
+      "charEnd": 112,
+      "startS": 8.48,
+      "endS": 8.8
+    },
+    {
+      "text": "se",
+      "charStart": 113,
+      "charEnd": 115,
+      "startS": 8.88,
+      "endS": 8.96
+    },
+    {
+      "text": "ve",
+      "charStart": 116,
+      "charEnd": 118,
+      "startS": 9.04,
+      "endS": 9.12
+    },
+    {
+      "text": "un",
+      "charStart": 119,
+      "charEnd": 121,
+      "startS": 9.2,
+      "endS": 9.28
+    },
+    {
+      "text": "trimestre",
+      "charStart": 122,
+      "charEnd": 131,
+      "startS": 9.28,
+      "endS": 9.68
+    },
+    {
+      "text": "ganador",
+      "charStart": 132,
+      "charEnd": 139,
+      "startS": 9.76,
+      "endS": 10.0
+    }
+  ]
+}

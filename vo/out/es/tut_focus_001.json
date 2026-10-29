@@ -1,0 +1,215 @@
+{
+  "hash": "f9701e4d04d1bae4",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_focus_001",
+    "seed": 311,
+    "language": "Spanish",
+    "text": "Mantén el enfoque para volar despacio y con precisión. El enfoque sirve para pasar la gema entre las balas. Practiquemos. Enfócate. Bien. Sigue enfocado. Genial.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Meditation-app calm that keeps slipping back into perkiness.",
+  "duration": 12.32,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Mantén el enfoque para volar despacio y con precisión. El enfoque sirve para pasar la hema entre las balas. Practiquemos enfócate. Bien, sigue enfocado. Héñuelo.",
+  "asr_similarity": 0.92,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.15,
+    "gain_db": 0.5,
+    "limited_db": 0.45,
+    "measured_before_lufs": -18.5,
+    "peak_bound": false
+  },
+  "words_for": "f9701e4d04d1bae4/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Mantén",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.32,
+      "endS": 0.8
+    },
+    {
+      "text": "el",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "enfoque",
+      "charStart": 10,
+      "charEnd": 17,
+      "startS": 1.12,
+      "endS": 1.52
+    },
+    {
+      "text": "para",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "volar",
+      "charStart": 23,
+      "charEnd": 28,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "despacio",
+      "charStart": 29,
+      "charEnd": 37,
+      "startS": 2.08,
+      "endS": 2.72
+    },
+    {
+      "text": "y",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "con",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "precisión",
+      "charStart": 44,
+      "charEnd": 53,
+      "startS": 3.04,
+      "endS": 3.84
+    },
+    {
+      "text": "El",
+      "charStart": 55,
+      "charEnd": 57,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "enfoque",
+      "charStart": 58,
+      "charEnd": 65,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "sirve",
+      "charStart": 66,
+      "charEnd": 71,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "para",
+      "charStart": 72,
+      "charEnd": 76,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "pasar",
+      "charStart": 77,
+      "charEnd": 82,
+      "startS": 5.44,
+      "endS": 5.76
+    },
+    {
+      "text": "la",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 5.84,
+      "endS": 5.92
+    },
+    {
+      "text": "gema",
+      "charStart": 86,
+      "charEnd": 90,
+      "startS": 5.92,
+      "endS": 6.24
+    },
+    {
+      "text": "entre",
+      "charStart": 91,
+      "charEnd": 96,
+      "startS": 6.24,
+      "endS": 6.48
+    },
+    {
+      "text": "las",
+      "charStart": 97,
+      "charEnd": 100,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "balas",
+      "charStart": 101,
+      "charEnd": 106,
+      "startS": 6.72,
+      "endS": 7.28
+    },
+    {
+      "text": "Practiquemos",
+      "charStart": 108,
+      "charEnd": 120,
+      "startS": 7.68,
+      "endS": 8.4
+    },
+    {
+      "text": "Enfócate",
+      "charStart": 122,
+      "charEnd": 130,
+      "startS": 8.64,
+      "endS": 9.44
+    },
+    {
+      "text": "Bien",
+      "charStart": 132,
+      "charEnd": 136,
+      "startS": 10.08,
+      "endS": 10.24
+    },
+    {
+      "text": "Sigue",
+      "charStart": 138,
+      "charEnd": 143,
+      "startS": 10.4,
+      "endS": 10.56
+    },
+    {
+      "text": "enfocado",
+      "charStart": 144,
+      "charEnd": 152,
+      "startS": 10.72,
+      "endS": 11.36
+    },
+    {
+      "text": "Genial",
+      "charStart": 154,
+      "charEnd": 160,
+      "startS": 11.92,
+      "endS": 12.16
+    }
+  ]
+}

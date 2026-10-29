@@ -1,0 +1,131 @@
+{
+  "hash": "339c170688852a4a",
+  "mode": "clone",
+  "request": {
+    "id": "en__boss_p2_002",
+    "seed": 33,
+    "language": "English",
+    "text": "You think I WANT to do this? I would rather be counting freighters!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Wounded pride, nearly a whine.",
+  "duration": 4.0,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "You think I want to do this? I would rather be counting freighters.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.29,
+    "gain_db": 0.24,
+    "limited_db": 0.19,
+    "measured_before_lufs": -18.24,
+    "peak_bound": false
+  },
+  "words_for": "339c170688852a4a/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "You",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "think",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "I",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "WANT",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "to",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "do",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "this",
+      "charStart": 23,
+      "charEnd": 27,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "I",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "would",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "rather",
+      "charStart": 37,
+      "charEnd": 43,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "be",
+      "charStart": 44,
+      "charEnd": 46,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "counting",
+      "charStart": 47,
+      "charEnd": 55,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "freighters",
+      "charStart": 56,
+      "charEnd": 66,
+      "startS": 3.2,
+      "endS": 3.92
+    }
+  ]
+}

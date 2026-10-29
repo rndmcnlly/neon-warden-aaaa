@@ -1,0 +1,166 @@
+{
+  "hash": "42e553d1faf538a7",
+  "mode": "clone",
+  "request": {
+    "id": "es__disarm_ai_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Un desarme. Eso es el cuarenta por ciento. Seguro que tuviste una razón, y seguro que fue buena.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, kind, giving the benefit of the doubt a little too carefully.",
+  "duration": 7.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.33,
+    "gain_db": 6.3,
+    "limited_db": 0.28,
+    "measured_before_lufs": -24.3,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Un",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.08
+    },
+    {
+      "text": "desarme",
+      "charStart": 3,
+      "charEnd": 10,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "Eso",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "es",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "el",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "cuarenta",
+      "charStart": 22,
+      "charEnd": 30,
+      "startS": 2.56,
+      "endS": 3.04
+    },
+    {
+      "text": "por",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "ciento",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 3.28,
+      "endS": 3.84
+    },
+    {
+      "text": "Seguro",
+      "charStart": 43,
+      "charEnd": 49,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "que",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "tuviste",
+      "charStart": 54,
+      "charEnd": 61,
+      "startS": 4.96,
+      "endS": 5.36
+    },
+    {
+      "text": "una",
+      "charStart": 62,
+      "charEnd": 65,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "razón",
+      "charStart": 66,
+      "charEnd": 71,
+      "startS": 5.52,
+      "endS": 6.08
+    },
+    {
+      "text": "y",
+      "charStart": 73,
+      "charEnd": 74,
+      "startS": 6.48,
+      "endS": 6.56
+    },
+    {
+      "text": "seguro",
+      "charStart": 75,
+      "charEnd": 81,
+      "startS": 6.56,
+      "endS": 6.88
+    },
+    {
+      "text": "que",
+      "charStart": 82,
+      "charEnd": 85,
+      "startS": 6.96,
+      "endS": 7.12
+    },
+    {
+      "text": "fue",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "buena",
+      "charStart": 90,
+      "charEnd": 95,
+      "startS": 7.28,
+      "endS": 7.76
+    }
+  ],
+  "words_for": "42e553d1faf538a7/wordtiming-v1",
+  "asr": "Un desarme, eso es un cuarenta por ciento. Seguro que tuviste una razón, y seguro que fue buena.",
+  "asr_similarity": 0.944
+}

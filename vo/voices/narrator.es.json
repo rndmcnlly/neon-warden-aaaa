@@ -1,0 +1,28 @@
+{
+  "hash": "75d6644f528dfa14",
+  "method": "bootstrap",
+  "candidate": "bootstrap_s122",
+  "from_anchor": "77d83ada0eeeffab",
+  "request": {
+    "id": "narrator.es",
+    "seed": 122,
+    "language": "Spanish",
+    "text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "duration": 10.64,
+  "sample_rate": 24000,
+  "peak": 0.547,
+  "clipping_suspect": false,
+  "median_f0": 81.5,
+  "audition": {
+    "method": "bootstrap",
+    "seed": 122,
+    "mean": 0.993,
+    "min": 0.941,
+    "anchor_asr": 1.0,
+    "anchor_f0": 81.5,
+    "f0_ratio": 1.129
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "hash": "188fb861bac91100",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_auth_lost_001",
+    "seed": 66,
+    "language": "English",
+    "text": "Clearance confirmed. Lane segment eligible for subscription.",
+    "voice_ref": "vo/voices/authority.wav",
+    "reference_text": "Lane Control to all survey teams. Tollgate footings approved, pending clearance. Please log your hours before the end of the cycle."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.11,
+    "true_peak_dbtp": -1.28,
+    "gain_db": 2.83,
+    "limited_db": 0.49,
+    "measured_before_lufs": -20.83,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Clearance",
+      "charStart": 0,
+      "charEnd": 9,
+      "startS": 0.56,
+      "endS": 1.04
+    },
+    {
+      "text": "confirmed",
+      "charStart": 10,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.68
+    },
+    {
+      "text": "Lane",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "segment",
+      "charStart": 26,
+      "charEnd": 33,
+      "startS": 2.64,
+      "endS": 3.12
+    },
+    {
+      "text": "eligible",
+      "charStart": 34,
+      "charEnd": 42,
+      "startS": 3.12,
+      "endS": 3.6
+    },
+    {
+      "text": "for",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "subscription",
+      "charStart": 47,
+      "charEnd": 59,
+      "startS": 3.76,
+      "endS": 4.48
+    }
+  ],
+  "words_for": "188fb861bac91100/wordtiming-v1",
+  "asr": "Clearance confirmed, lane segment eligible for subscription.",
+  "asr_similarity": 1.0
+}

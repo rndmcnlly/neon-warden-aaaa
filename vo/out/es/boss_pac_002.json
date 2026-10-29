@@ -1,0 +1,145 @@
+{
+  "hash": "92449dbfa8f4ce57",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_pac_002",
+    "seed": 233,
+    "language": "Spanish",
+    "text": "¡Igual tengo que ponerte a prueba! ¡Toda nave pasa la prueba! ¡Así que esquiva! ¡ESQUIVA!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Duty-bound, almost apologetic, still shouting.",
+  "duration": 6.0,
+  "sample_rate": 24000,
+  "peak": 0.748,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.52,
+    "gain_db": 0.98,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.98,
+    "peak_bound": false
+  },
+  "asr": "Igual tengo que ponerte a prueba, toda nave pasa la prueba, así que esquiva, esquiva.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Igual",
+      "charStart": 1,
+      "charEnd": 6,
+      "startS": 0.0,
+      "endS": 0.56
+    },
+    {
+      "text": "tengo",
+      "charStart": 7,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 0.88
+    },
+    {
+      "text": "que",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 0.88,
+      "endS": 1.04
+    },
+    {
+      "text": "ponerte",
+      "charStart": 17,
+      "charEnd": 24,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "a",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "prueba",
+      "charStart": 27,
+      "charEnd": 33,
+      "startS": 1.52,
+      "endS": 1.92
+    },
+    {
+      "text": "Toda",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "nave",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 2.4,
+      "endS": 2.72
+    },
+    {
+      "text": "pasa",
+      "charStart": 46,
+      "charEnd": 50,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "la",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "prueba",
+      "charStart": 54,
+      "charEnd": 60,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "Así",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 3.84,
+      "endS": 4.24
+    },
+    {
+      "text": "que",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "esquiva",
+      "charStart": 71,
+      "charEnd": 78,
+      "startS": 4.4,
+      "endS": 5.04
+    },
+    {
+      "text": "ESQUIVA",
+      "charStart": 81,
+      "charEnd": 88,
+      "startS": 5.28,
+      "endS": 6.0
+    }
+  ],
+  "words_for": "92449dbfa8f4ce57/wordtiming-v1"
+}

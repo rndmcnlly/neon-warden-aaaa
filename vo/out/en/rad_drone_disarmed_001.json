@@ -1,0 +1,96 @@
+{
+  "hash": "6ee701fe7e2ee341",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_drone_disarmed_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Gun's gone. I'm out. It let me go?",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Shaken, then surprised.",
+  "duration": 2.8,
+  "sample_rate": 24000,
+  "peak": 0.777,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.18,
+    "gain_db": 4.01,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.01,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Gun's",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "gone",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "I'm",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "out",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 1.36,
+      "endS": 1.76
+    },
+    {
+      "text": "It",
+      "charStart": 21,
+      "charEnd": 23,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "let",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "me",
+      "charStart": 28,
+      "charEnd": 30,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "go",
+      "charStart": 31,
+      "charEnd": 33,
+      "startS": 2.32,
+      "endS": 2.72
+    }
+  ],
+  "words_for": "6ee701fe7e2ee341/wordtiming-v1",
+  "asr": "Gun's gone. I'm out. It let me go.",
+  "asr_similarity": 1.0
+}

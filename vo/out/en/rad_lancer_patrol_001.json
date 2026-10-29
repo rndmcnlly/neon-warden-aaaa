@@ -1,0 +1,124 @@
+{
+  "hash": "6c239832807c2b8b",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_lancer_patrol_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Crossfire up. Across the lane, never along it. Keep the middle open.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Drill- like.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.29,
+    "gain_db": 4.55,
+    "limited_db": 0.24,
+    "measured_before_lufs": -22.55,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Crossfire",
+      "charStart": 0,
+      "charEnd": 9,
+      "startS": 0.0,
+      "endS": 0.64
+    },
+    {
+      "text": "up",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "Across",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "the",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "lane",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 1.68,
+      "endS": 2.08
+    },
+    {
+      "text": "never",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "along",
+      "charStart": 37,
+      "charEnd": 42,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "it",
+      "charStart": 43,
+      "charEnd": 45,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "Keep",
+      "charStart": 47,
+      "charEnd": 51,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "the",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "middle",
+      "charStart": 56,
+      "charEnd": 62,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "open",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 3.92,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "6c239832807c2b8b/wordtiming-v1",
+  "asr": "Cross fire up across the lane, never along it. Keep the middle open.",
+  "asr_similarity": 0.88
+}

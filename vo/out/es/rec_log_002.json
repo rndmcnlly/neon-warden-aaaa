@@ -1,0 +1,152 @@
+{
+  "hash": "3f910ec35886aaeb",
+  "mode": "clone",
+  "request": {
+    "id": "es__rec_log_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "Soy yo otra vez. Te remolqué fuera del fuego cruzado. No sabía qué más hacer contigo.",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Recorded, still loud by habit, but talking to an empty cockpit.",
+  "duration": 5.76,
+  "sample_rate": 24000,
+  "peak": 0.674,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.42,
+    "gain_db": 2.31,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.31,
+    "peak_bound": false
+  },
+  "asr": "Soy yo otra vez te remolqué fuera del fuego cruzado no sabía qué más hacer contigo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Soy",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "yo",
+      "charStart": 4,
+      "charEnd": 6,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "otra",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "vez",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "Te",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "remolqué",
+      "charStart": 20,
+      "charEnd": 28,
+      "startS": 1.44,
+      "endS": 2.0
+    },
+    {
+      "text": "fuera",
+      "charStart": 29,
+      "charEnd": 34,
+      "startS": 2.0,
+      "endS": 2.32
+    },
+    {
+      "text": "del",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "fuego",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 2.4,
+      "endS": 2.72
+    },
+    {
+      "text": "cruzado",
+      "charStart": 45,
+      "charEnd": 52,
+      "startS": 2.72,
+      "endS": 3.36
+    },
+    {
+      "text": "No",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "sabía",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 3.76,
+      "endS": 4.24
+    },
+    {
+      "text": "qué",
+      "charStart": 63,
+      "charEnd": 66,
+      "startS": 4.24,
+      "endS": 4.4
+    },
+    {
+      "text": "más",
+      "charStart": 67,
+      "charEnd": 70,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "hacer",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "contigo",
+      "charStart": 77,
+      "charEnd": 84,
+      "startS": 4.96,
+      "endS": 5.76
+    }
+  ],
+  "words_for": "3f910ec35886aaeb/wordtiming-v1"
+}

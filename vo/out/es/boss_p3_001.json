@@ -1,0 +1,89 @@
+{
+  "hash": "a21fa92800e13246",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_p3_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Bien! ¡BIEN! ¡Todo lo que tengo! ¡TODO!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Turning red: all-in, voice cracking at the top.",
+  "duration": 2.96,
+  "sample_rate": 24000,
+  "peak": 0.652,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.93,
+    "gain_db": -3.72,
+    "limited_db": 0.0,
+    "measured_before_lufs": -14.28,
+    "peak_bound": false
+  },
+  "asr": "Bien, bien, todo lo que tengo, todo.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Bien",
+      "charStart": 1,
+      "charEnd": 5,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "BIEN",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "Todo",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.36,
+      "endS": 1.68
+    },
+    {
+      "text": "lo",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "que",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "tengo",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 1.92,
+      "endS": 2.4
+    },
+    {
+      "text": "TODO",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.48,
+      "endS": 2.88
+    }
+  ],
+  "words_for": "a21fa92800e13246/wordtiming-v1"
+}

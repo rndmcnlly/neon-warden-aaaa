@@ -1,0 +1,327 @@
+{
+  "hash": "5653ff42b93a8345",
+  "mode": "clone",
+  "request": {
+    "id": "zh__sec4_intro_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "枪骑之门。交叉火力。枪骑机总是横穿航道开火，从不沿着航道。简直像是在让航道本身保持畅通。奇怪。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, briefing voice that trails off into honest puzzlement.",
+  "duration": 11.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "枪旗之门交叉火力，枪旗机总是横穿航道开火，从不沿着航道，简直像是在让航道本身保持畅通。奇怪。",
+  "asr_similarity": 0.951,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.2,
+    "true_peak_dbtp": -1.22,
+    "gain_db": 1.62,
+    "limited_db": 1.57,
+    "measured_before_lufs": -19.62,
+    "peak_bound": false
+  },
+  "words_for": "5653ff42b93a8345/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "枪",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "骑",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "之",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "门",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "交",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "叉",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "火",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "力",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "枪",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "骑",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "机",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "总",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "是",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "横",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "穿",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "航",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.64,
+      "endS": 4.88
+    },
+    {
+      "text": "道",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.88,
+      "endS": 5.12
+    },
+    {
+      "text": "开",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "火",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "从",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "不",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "沿",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "着",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "航",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "道",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 6.72,
+      "endS": 6.96
+    },
+    {
+      "text": "简",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "直",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 7.36,
+      "endS": 7.44
+    },
+    {
+      "text": "像",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 7.44,
+      "endS": 7.68
+    },
+    {
+      "text": "是",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 7.68,
+      "endS": 7.76
+    },
+    {
+      "text": "在",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 7.76,
+      "endS": 7.92
+    },
+    {
+      "text": "让",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 7.92,
+      "endS": 8.08
+    },
+    {
+      "text": "航",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 8.08,
+      "endS": 8.24
+    },
+    {
+      "text": "道",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 8.24,
+      "endS": 8.4
+    },
+    {
+      "text": "本",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 8.4,
+      "endS": 8.64
+    },
+    {
+      "text": "身",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 8.64,
+      "endS": 8.88
+    },
+    {
+      "text": "保",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 8.88,
+      "endS": 9.04
+    },
+    {
+      "text": "持",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "畅",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 9.2,
+      "endS": 9.36
+    },
+    {
+      "text": "通",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 9.44,
+      "endS": 9.68
+    },
+    {
+      "text": "奇",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 10.4,
+      "endS": 10.64
+    },
+    {
+      "text": "怪",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 10.64,
+      "endS": 11.04
+    }
+  ]
+}

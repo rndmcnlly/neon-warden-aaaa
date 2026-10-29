@@ -1,0 +1,145 @@
+{
+  "hash": "3b26c8a596b2dbee",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_turret_patrol_002",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "El viejo pecio sigue a la deriva frente a la estación nueve. Déjenlo en paz.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Protective.",
+  "duration": 5.12,
+  "sample_rate": 24000,
+  "peak": 0.823,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.56,
+    "gain_db": 2.29,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.29,
+    "peak_bound": false
+  },
+  "asr": "El viejo pecio sigue a la deriva frente a la estación nueve. Déjenlo en paz.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "El",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "viejo",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "pecio",
+      "charStart": 9,
+      "charEnd": 14,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "sigue",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "a",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "la",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "deriva",
+      "charStart": 26,
+      "charEnd": 32,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "frente",
+      "charStart": 33,
+      "charEnd": 39,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "a",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "la",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "estación",
+      "charStart": 45,
+      "charEnd": 53,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "nueve",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "Déjenlo",
+      "charStart": 61,
+      "charEnd": 68,
+      "startS": 4.0,
+      "endS": 4.48
+    },
+    {
+      "text": "en",
+      "charStart": 69,
+      "charEnd": 71,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "paz",
+      "charStart": 72,
+      "charEnd": 75,
+      "startS": 4.56,
+      "endS": 5.04
+    }
+  ],
+  "words_for": "3b26c8a596b2dbee/wordtiming-v1"
+}

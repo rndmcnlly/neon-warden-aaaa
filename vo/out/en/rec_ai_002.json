@@ -1,0 +1,110 @@
+{
+  "hash": "a511b38630ef7dd1",
+  "mode": "clone",
+  "request": {
+    "id": "en__rec_ai_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Recorder logged. Contents: not relevant to your contract. Please continue.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, back on script, a beat too quickly.",
+  "duration": 5.36,
+  "sample_rate": 24000,
+  "peak": 0.81,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.76,
+    "gain_db": 4.64,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.64,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Recorder",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "logged",
+      "charStart": 9,
+      "charEnd": 15,
+      "startS": 0.56,
+      "endS": 1.04
+    },
+    {
+      "text": "Contents",
+      "charStart": 17,
+      "charEnd": 25,
+      "startS": 1.28,
+      "endS": 2.0
+    },
+    {
+      "text": "not",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "relevant",
+      "charStart": 31,
+      "charEnd": 39,
+      "startS": 2.56,
+      "endS": 3.04
+    },
+    {
+      "text": "to",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "your",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "contract",
+      "charStart": 48,
+      "charEnd": 56,
+      "startS": 3.28,
+      "endS": 4.0
+    },
+    {
+      "text": "Please",
+      "charStart": 58,
+      "charEnd": 64,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "continue",
+      "charStart": 65,
+      "charEnd": 73,
+      "startS": 4.64,
+      "endS": 5.28
+    }
+  ],
+  "words_for": "a511b38630ef7dd1/wordtiming-v1",
+  "asr": "Recorder logged contents not relevant to your contract. Please continue.",
+  "asr_similarity": 1.0
+}

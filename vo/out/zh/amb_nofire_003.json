@@ -1,0 +1,159 @@
+{
+  "hash": "2963e5349eb8028b",
+  "mode": "clone",
+  "request": {
+    "id": "zh__amb_nofire_003",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "侦察机没有向你开火。简报里可没写这个。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, genuinely confused, reading her notes.",
+  "duration": 3.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "侦察机没有向你开火，简报里可没写这个。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.13,
+    "true_peak_dbtp": -1.1,
+    "gain_db": 0.7,
+    "limited_db": 0.65,
+    "measured_before_lufs": -18.7,
+    "peak_bound": false
+  },
+  "words_for": "2963e5349eb8028b/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "侦",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "察",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "机",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "没",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "有",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "向",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "你",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "开",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "火",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "简",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "报",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "里",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "可",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "没",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "写",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "这",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "个",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.36,
+      "endS": 3.68
+    }
+  ]
+}

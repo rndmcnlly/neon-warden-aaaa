@@ -1,0 +1,341 @@
+{
+  "hash": "2e88b6b4f9d3ccbe",
+  "mode": "clone",
+  "request": {
+    "id": "zh__flash_rec_004",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "看！那些小船！没有武器！它们能在我的航道上飞，是因为我让航道保持自由！自由！你知道自由是什么意思吗？！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Recorded, furious joy, showing off something precious.",
+  "duration": 9.12,
+  "sample_rate": 24000,
+  "peak": 0.835,
+  "clipping_suspect": false,
+  "asr": "看那些小船，没有武器。他们能在我的航道上飞，是因为我让航道保持自由。自由，你知道自由是什么意思吗？",
+  "asr_similarity": 0.977,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 1.06,
+    "limited_db": 1.07,
+    "measured_before_lufs": -19.12,
+    "peak_bound": false
+  },
+  "words_for": "2e88b6b4f9d3ccbe/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "看",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "那",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "些",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "小",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "船",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "没",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "有",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "武",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "器",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "它",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "们",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "能",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "在",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.96,
+      "endS": 3.28
+    },
+    {
+      "text": "我",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "的",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "航",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "道",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "上",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "飞",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.92,
+      "endS": 4.24
+    },
+    {
+      "text": "是",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "因",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "为",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.64,
+      "endS": 4.72
+    },
+    {
+      "text": "我",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "让",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "航",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "道",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "保",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "持",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.6,
+      "endS": 5.84
+    },
+    {
+      "text": "自",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "由",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.0,
+      "endS": 6.24
+    },
+    {
+      "text": "自",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.4,
+      "endS": 6.72
+    },
+    {
+      "text": "由",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.72,
+      "endS": 7.04
+    },
+    {
+      "text": "你",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "知",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "道",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 7.52,
+      "endS": 7.68
+    },
+    {
+      "text": "自",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 7.68,
+      "endS": 7.92
+    },
+    {
+      "text": "由",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 7.92,
+      "endS": 8.08
+    },
+    {
+      "text": "是",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 8.08,
+      "endS": 8.24
+    },
+    {
+      "text": "什",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 8.24,
+      "endS": 8.4
+    },
+    {
+      "text": "么",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 8.4,
+      "endS": 8.48
+    },
+    {
+      "text": "意",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "思",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 8.64,
+      "endS": 8.8
+    },
+    {
+      "text": "吗",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 8.8,
+      "endS": 9.12
+    }
+  ]
+}

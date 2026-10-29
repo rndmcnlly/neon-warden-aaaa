@@ -1,0 +1,117 @@
+{
+  "hash": "088932e23e7124cd",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_drone_patrol_002",
+    "seed": 55,
+    "language": "English",
+    "text": "It hasn't fired. Rule stands: we don't fire unless it fires.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Puzzled.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.15,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 4.57,
+    "limited_db": 1.37,
+    "measured_before_lufs": -22.57,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "It",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.4
+    },
+    {
+      "text": "hasn't",
+      "charStart": 3,
+      "charEnd": 9,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "fired",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 1.28
+    },
+    {
+      "text": "Rule",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "stands",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 1.84,
+      "endS": 2.48
+    },
+    {
+      "text": "we",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "don't",
+      "charStart": 33,
+      "charEnd": 38,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "fire",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.2,
+      "endS": 3.6
+    },
+    {
+      "text": "unless",
+      "charStart": 44,
+      "charEnd": 50,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "it",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "fires",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 4.08,
+      "endS": 4.56
+    }
+  ],
+  "words_for": "088932e23e7124cd/wordtiming-v1",
+  "asr": "It hasn't fired. Rule stands: we don't fire unless it fires.",
+  "asr_similarity": 1.0
+}

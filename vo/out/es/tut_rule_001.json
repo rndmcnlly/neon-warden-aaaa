@@ -1,0 +1,159 @@
+{
+  "hash": "6fba66fe81eac3ee",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_rule_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Entonces: ráfaga para cascos, toque para piezas. Es una regla corta, y hará que te sigan pagando.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Stating a rule worth remembering.",
+  "duration": 9.28,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.13,
+    "true_peak_dbtp": -1.15,
+    "gain_db": 6.08,
+    "limited_db": 0.79,
+    "measured_before_lufs": -24.08,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Entonces",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 1.04,
+      "endS": 1.84
+    },
+    {
+      "text": "ráfaga",
+      "charStart": 10,
+      "charEnd": 16,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "para",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "cascos",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 3.04,
+      "endS": 3.84
+    },
+    {
+      "text": "toque",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 4.16,
+      "endS": 4.48
+    },
+    {
+      "text": "para",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 4.56,
+      "endS": 4.8
+    },
+    {
+      "text": "piezas",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 4.8,
+      "endS": 5.52
+    },
+    {
+      "text": "Es",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 5.92,
+      "endS": 6.0
+    },
+    {
+      "text": "una",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "regla",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 6.24,
+      "endS": 6.64
+    },
+    {
+      "text": "corta",
+      "charStart": 62,
+      "charEnd": 67,
+      "startS": 6.64,
+      "endS": 7.2
+    },
+    {
+      "text": "y",
+      "charStart": 69,
+      "charEnd": 70,
+      "startS": 7.52,
+      "endS": 7.6
+    },
+    {
+      "text": "hará",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 7.6,
+      "endS": 7.68
+    },
+    {
+      "text": "que",
+      "charStart": 76,
+      "charEnd": 79,
+      "startS": 7.84,
+      "endS": 8.0
+    },
+    {
+      "text": "te",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 8.0,
+      "endS": 8.08
+    },
+    {
+      "text": "sigan",
+      "charStart": 83,
+      "charEnd": 88,
+      "startS": 8.16,
+      "endS": 8.48
+    },
+    {
+      "text": "pagando",
+      "charStart": 89,
+      "charEnd": 96,
+      "startS": 8.48,
+      "endS": 9.2
+    }
+  ],
+  "words_for": "6fba66fe81eac3ee/wordtiming-v1",
+  "asr": "En tonos, rafaga para cascos, toque para piesas, es una regla corta y araque de sigan pagando.",
+  "asr_similarity": 0.706
+}

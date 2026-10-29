@@ -1,0 +1,222 @@
+{
+  "hash": "b3ca147078a6ebef",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_rest_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Next, please let go of the trigger entirely. While you rest, your capacitor charges. Three marks around your ship show the level. Wait for all three.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Gentle, almost a breathing exercise.",
+  "duration": 9.76,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.08,
+    "gain_db": 4.78,
+    "limited_db": 1.38,
+    "measured_before_lufs": -22.78,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Next",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "please",
+      "charStart": 6,
+      "charEnd": 12,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "let",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "go",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "of",
+      "charStart": 20,
+      "charEnd": 22,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "the",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "trigger",
+      "charStart": 27,
+      "charEnd": 34,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "entirely",
+      "charStart": 35,
+      "charEnd": 43,
+      "startS": 2.24,
+      "endS": 3.2
+    },
+    {
+      "text": "While",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "you",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "rest",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 3.76,
+      "endS": 4.16
+    },
+    {
+      "text": "your",
+      "charStart": 61,
+      "charEnd": 65,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "capacitor",
+      "charStart": 66,
+      "charEnd": 75,
+      "startS": 4.56,
+      "endS": 5.12
+    },
+    {
+      "text": "charges",
+      "charStart": 76,
+      "charEnd": 83,
+      "startS": 5.2,
+      "endS": 5.76
+    },
+    {
+      "text": "Three",
+      "charStart": 85,
+      "charEnd": 90,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "marks",
+      "charStart": 91,
+      "charEnd": 96,
+      "startS": 6.32,
+      "endS": 6.56
+    },
+    {
+      "text": "around",
+      "charStart": 97,
+      "charEnd": 103,
+      "startS": 6.56,
+      "endS": 6.88
+    },
+    {
+      "text": "your",
+      "charStart": 104,
+      "charEnd": 108,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "ship",
+      "charStart": 109,
+      "charEnd": 113,
+      "startS": 7.04,
+      "endS": 7.28
+    },
+    {
+      "text": "show",
+      "charStart": 114,
+      "charEnd": 118,
+      "startS": 7.28,
+      "endS": 7.52
+    },
+    {
+      "text": "the",
+      "charStart": 119,
+      "charEnd": 122,
+      "startS": 7.52,
+      "endS": 7.68
+    },
+    {
+      "text": "level",
+      "charStart": 123,
+      "charEnd": 128,
+      "startS": 7.68,
+      "endS": 8.08
+    },
+    {
+      "text": "Wait",
+      "charStart": 130,
+      "charEnd": 134,
+      "startS": 8.24,
+      "endS": 8.64
+    },
+    {
+      "text": "for",
+      "charStart": 135,
+      "charEnd": 138,
+      "startS": 8.64,
+      "endS": 8.8
+    },
+    {
+      "text": "all",
+      "charStart": 139,
+      "charEnd": 142,
+      "startS": 8.88,
+      "endS": 9.12
+    },
+    {
+      "text": "three",
+      "charStart": 143,
+      "charEnd": 148,
+      "startS": 9.12,
+      "endS": 9.68
+    }
+  ],
+  "words_for": "b3ca147078a6ebef/wordtiming-v1",
+  "asr": "Next, please let go of the trigger entirely while you rest. Your capacitor charges. Three marks around your ship show the level. Wait for all three.",
+  "asr_similarity": 1.0
+}

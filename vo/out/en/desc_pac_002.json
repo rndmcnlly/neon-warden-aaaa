@@ -1,0 +1,152 @@
+{
+  "hash": "0cef89bb7694f5fb",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_pac_002",
+    "seed": 33,
+    "language": "English",
+    "text": "The last cold gun was zero one two one. Oh. Oh, no. You're the next number.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Realization; the shout drains out of the voice for once.",
+  "duration": 6.32,
+  "sample_rate": 24000,
+  "peak": 0.67,
+  "clipping_suspect": false,
+  "asr": "The last cold gun was zero one two one. Oh, oh no! You're the next number.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.48,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "0cef89bb7694f5fb/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "The",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.08,
+      "endS": 0.16
+    },
+    {
+      "text": "last",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "cold",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "gun",
+      "charStart": 14,
+      "charEnd": 17,
+      "startS": 1.04,
+      "endS": 1.36
+    },
+    {
+      "text": "was",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "zero",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 1.52,
+      "endS": 1.92
+    },
+    {
+      "text": "one",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "two",
+      "charStart": 31,
+      "charEnd": 34,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "one",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.56,
+      "endS": 3.12
+    },
+    {
+      "text": "Oh",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 3.28,
+      "endS": 3.92
+    },
+    {
+      "text": "Oh",
+      "charStart": 44,
+      "charEnd": 46,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "no",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "You're",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "the",
+      "charStart": 59,
+      "charEnd": 62,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "next",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "number",
+      "charStart": 68,
+      "charEnd": 74,
+      "startS": 5.6,
+      "endS": 6.16
+    }
+  ]
+}

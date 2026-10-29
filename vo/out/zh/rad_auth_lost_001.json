@@ -1,0 +1,138 @@
+{
+  "hash": "e99aabc03820dc68",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rad_auth_lost_001",
+    "seed": 66,
+    "language": "Chinese",
+    "text": "清场确认。该航段已符合订阅条件。",
+    "voice_ref": "vo/voices/authority.wav",
+    "reference_text": "Lane Control to all survey teams. Tollgate footings approved, pending clearance. Please log your hours before the end of the cycle."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 4.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.45,
+    "true_peak_dbtp": -1.39,
+    "gain_db": 3.58,
+    "limited_db": 2.61,
+    "measured_before_lufs": -21.58,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "清",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "场",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "确",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "认",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "该",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "航",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "段",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "已",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "符",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "合",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "订",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.04,
+      "endS": 3.12
+    },
+    {
+      "text": "阅",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "条",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.28,
+      "endS": 3.52
+    },
+    {
+      "text": "件",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.52,
+      "endS": 3.68
+    }
+  ],
+  "words_for": "e99aabc03820dc68/wordtiming-v1",
+  "asr": "清场确认，该航段已符合订阅条件。",
+  "asr_similarity": 1.0
+}

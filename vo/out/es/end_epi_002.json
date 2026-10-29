@@ -1,0 +1,96 @@
+{
+  "hash": "9d1490e6f5ccd5b4",
+  "mode": "clone",
+  "request": {
+    "id": "es__end_epi_002",
+    "seed": 122,
+    "language": "Spanish",
+    "text": "Detrás de ti, cinco sectores de cielo abierto.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "Quiet, wide, a breath before it.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.48,
+    "gain_db": 6.52,
+    "limited_db": 0.01,
+    "measured_before_lufs": -24.52,
+    "peak_bound": false
+  },
+  "asr": "Detrás de ti cinco sectores de cielo abierto.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Detrás",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "de",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 0.96,
+      "endS": 1.04
+    },
+    {
+      "text": "ti",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "cinco",
+      "charStart": 14,
+      "charEnd": 19,
+      "startS": 1.76,
+      "endS": 2.24
+    },
+    {
+      "text": "sectores",
+      "charStart": 20,
+      "charEnd": 28,
+      "startS": 2.24,
+      "endS": 2.8
+    },
+    {
+      "text": "de",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.8,
+      "endS": 2.88
+    },
+    {
+      "text": "cielo",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "abierto",
+      "charStart": 38,
+      "charEnd": 45,
+      "startS": 3.28,
+      "endS": 4.0
+    }
+  ],
+  "words_for": "9d1490e6f5ccd5b4/wordtiming-v1"
+}

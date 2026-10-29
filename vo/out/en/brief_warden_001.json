@@ -1,0 +1,103 @@
+{
+  "hash": "c418ca82795c4ce4",
+  "mode": "clone",
+  "request": {
+    "id": "en__brief_warden_001",
+    "seed": 22,
+    "language": "English",
+    "text": "In the deepest lanes of the nebula, something waits.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "direction": "Trailer cold open over a black screen. Slow, low, enormous.",
+  "duration": 3.36,
+  "sample_rate": 24000,
+  "peak": 0.813,
+  "clipping_suspect": false,
+  "asr": "In the deepest lanes of the nebula, something waits.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.79,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "c418ca82795c4ce4/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "In",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "the",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "deepest",
+      "charStart": 7,
+      "charEnd": 14,
+      "startS": 0.24,
+      "endS": 0.8
+    },
+    {
+      "text": "lanes",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "of",
+      "charStart": 21,
+      "charEnd": 23,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "the",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "nebula",
+      "charStart": 28,
+      "charEnd": 34,
+      "startS": 1.36,
+      "endS": 2.0
+    },
+    {
+      "text": "something",
+      "charStart": 36,
+      "charEnd": 45,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "waits",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 2.8,
+      "endS": 3.28
+    }
+  ]
+}

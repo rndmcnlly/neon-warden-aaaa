@@ -1,0 +1,229 @@
+{
+  "hash": "496f1468e690de13",
+  "mode": "clone",
+  "request": {
+    "id": "es__sec4_intro_001",
+    "seed": 111,
+    "language": "Spanish",
+    "text": "Puerta de los Lanceros. Fuego cruzado. Los lanceros disparan a través de la ruta, nunca a lo largo. Casi como si mantuvieran la ruta despejada. Qué raro.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, briefing voice that trails off into honest puzzlement.",
+  "duration": 12.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Puerto de los Lanceros, fuego cruzado, los Lanceros disparan a través de la ruta nunca al largo casi como si mantuvieran la ruta despejada, que rato.",
+  "asr_similarity": 0.868,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.09,
+    "true_peak_dbtp": -1.22,
+    "gain_db": 1.37,
+    "limited_db": 1.32,
+    "measured_before_lufs": -19.37,
+    "peak_bound": false
+  },
+  "words_for": "496f1468e690de13/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Puerta",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "de",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "los",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "Lanceros",
+      "charStart": 14,
+      "charEnd": 22,
+      "startS": 1.04,
+      "endS": 1.84
+    },
+    {
+      "text": "Fuego",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 2.24,
+      "endS": 2.64
+    },
+    {
+      "text": "cruzado",
+      "charStart": 30,
+      "charEnd": 37,
+      "startS": 2.64,
+      "endS": 3.44
+    },
+    {
+      "text": "Los",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "lanceros",
+      "charStart": 43,
+      "charEnd": 51,
+      "startS": 4.08,
+      "endS": 4.48
+    },
+    {
+      "text": "disparan",
+      "charStart": 52,
+      "charEnd": 60,
+      "startS": 4.64,
+      "endS": 5.2
+    },
+    {
+      "text": "a",
+      "charStart": 61,
+      "charEnd": 62,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "través",
+      "charStart": 63,
+      "charEnd": 69,
+      "startS": 5.28,
+      "endS": 5.68
+    },
+    {
+      "text": "de",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "la",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "ruta",
+      "charStart": 76,
+      "charEnd": 80,
+      "startS": 5.92,
+      "endS": 6.4
+    },
+    {
+      "text": "nunca",
+      "charStart": 82,
+      "charEnd": 87,
+      "startS": 6.56,
+      "endS": 6.88
+    },
+    {
+      "text": "a",
+      "charStart": 88,
+      "charEnd": 89,
+      "startS": 7.04,
+      "endS": 7.12
+    },
+    {
+      "text": "lo",
+      "charStart": 90,
+      "charEnd": 92,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "largo",
+      "charStart": 93,
+      "charEnd": 98,
+      "startS": 7.28,
+      "endS": 7.84
+    },
+    {
+      "text": "Casi",
+      "charStart": 100,
+      "charEnd": 104,
+      "startS": 8.08,
+      "endS": 8.4
+    },
+    {
+      "text": "como",
+      "charStart": 105,
+      "charEnd": 109,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "si",
+      "charStart": 110,
+      "charEnd": 112,
+      "startS": 8.72,
+      "endS": 8.8
+    },
+    {
+      "text": "mantuvieran",
+      "charStart": 113,
+      "charEnd": 124,
+      "startS": 8.88,
+      "endS": 9.44
+    },
+    {
+      "text": "la",
+      "charStart": 125,
+      "charEnd": 127,
+      "startS": 9.44,
+      "endS": 9.52
+    },
+    {
+      "text": "ruta",
+      "charStart": 128,
+      "charEnd": 132,
+      "startS": 9.52,
+      "endS": 9.92
+    },
+    {
+      "text": "despejada",
+      "charStart": 133,
+      "charEnd": 142,
+      "startS": 9.92,
+      "endS": 10.64
+    },
+    {
+      "text": "Qué",
+      "charStart": 144,
+      "charEnd": 147,
+      "startS": 11.12,
+      "endS": 11.2
+    },
+    {
+      "text": "raro",
+      "charStart": 148,
+      "charEnd": 152,
+      "startS": 11.68,
+      "endS": 11.92
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "hash": "76b80647f0e49044",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_rule_001",
+    "seed": 11,
+    "language": "English",
+    "text": "So: stream for hulls, tap for parts. It is a short rule, and it will keep you paid.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Stating a rule worth remembering.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.881,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 6.17,
+    "limited_db": 0.0,
+    "measured_before_lufs": -24.19,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "So",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "stream",
+      "charStart": 4,
+      "charEnd": 10,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "for",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "hulls",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "tap",
+      "charStart": 22,
+      "charEnd": 25,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "for",
+      "charStart": 26,
+      "charEnd": 29,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "parts",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 2.96,
+      "endS": 3.44
+    },
+    {
+      "text": "It",
+      "charStart": 37,
+      "charEnd": 39,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "is",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "a",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "short",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "rule",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "and",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "it",
+      "charStart": 61,
+      "charEnd": 63,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "will",
+      "charStart": 64,
+      "charEnd": 68,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "keep",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "you",
+      "charStart": 74,
+      "charEnd": 77,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "paid",
+      "charStart": 78,
+      "charEnd": 82,
+      "startS": 5.76,
+      "endS": 5.92
+    }
+  ],
+  "words_for": "76b80647f0e49044/wordtiming-v1",
+  "asr": "So, stream for hulls, tap for parts. It is a short rule, and it will keep you paid.",
+  "asr_similarity": 1.0
+}

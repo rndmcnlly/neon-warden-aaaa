@@ -1,0 +1,481 @@
+{
+  "hash": "d01954412d92ef47",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_rate_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "你刚学会的一切都会提升你的合同费率，它显示在报酬旁边。击毁、破坏部件、解除武装、擦弹和新的扫描都会提高费率，只要你接连不断。请把它提升到两倍。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 14.08,
+  "sample_rate": 24000,
+  "peak": 0.858,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.32,
+    "gain_db": 4.68,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.68,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "你",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "刚",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "学",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "会",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "的",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "一",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "切",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.12,
+      "endS": 1.36
+    },
+    {
+      "text": "都",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "会",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "提",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "升",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "你",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "的",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "合",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "同",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "费",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "率",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "它",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "显",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "示",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "在",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "报",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "酬",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "旁",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "边",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "击",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "毁",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.44,
+      "endS": 5.92
+    },
+    {
+      "text": "破",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "坏",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "部",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "件",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.48,
+      "endS": 6.8
+    },
+    {
+      "text": "解",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.96,
+      "endS": 7.12
+    },
+    {
+      "text": "除",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "武",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 7.28,
+      "endS": 7.44
+    },
+    {
+      "text": "装",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 7.44,
+      "endS": 7.76
+    },
+    {
+      "text": "擦",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 7.92,
+      "endS": 8.16
+    },
+    {
+      "text": "弹",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 8.16,
+      "endS": 8.48
+    },
+    {
+      "text": "和",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 8.56,
+      "endS": 8.72
+    },
+    {
+      "text": "新",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 8.72,
+      "endS": 8.88
+    },
+    {
+      "text": "的",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 9.04,
+      "endS": 9.12
+    },
+    {
+      "text": "扫",
+      "charStart": 45,
+      "charEnd": 46,
+      "startS": 9.12,
+      "endS": 9.28
+    },
+    {
+      "text": "描",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 9.28,
+      "endS": 9.44
+    },
+    {
+      "text": "都",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 9.52,
+      "endS": 9.6
+    },
+    {
+      "text": "会",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 9.6,
+      "endS": 9.84
+    },
+    {
+      "text": "提",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 9.92,
+      "endS": 10.0
+    },
+    {
+      "text": "高",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 10.0,
+      "endS": 10.24
+    },
+    {
+      "text": "费",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 10.24,
+      "endS": 10.4
+    },
+    {
+      "text": "率",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 10.4,
+      "endS": 10.72
+    },
+    {
+      "text": "只",
+      "charStart": 54,
+      "charEnd": 55,
+      "startS": 11.12,
+      "endS": 11.2
+    },
+    {
+      "text": "要",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 11.2,
+      "endS": 11.36
+    },
+    {
+      "text": "你",
+      "charStart": 56,
+      "charEnd": 57,
+      "startS": 11.36,
+      "endS": 11.52
+    },
+    {
+      "text": "接",
+      "charStart": 57,
+      "charEnd": 58,
+      "startS": 11.52,
+      "endS": 11.68
+    },
+    {
+      "text": "连",
+      "charStart": 58,
+      "charEnd": 59,
+      "startS": 11.68,
+      "endS": 11.84
+    },
+    {
+      "text": "不",
+      "charStart": 59,
+      "charEnd": 60,
+      "startS": 11.84,
+      "endS": 12.0
+    },
+    {
+      "text": "断",
+      "charStart": 60,
+      "charEnd": 61,
+      "startS": 12.0,
+      "endS": 12.08
+    },
+    {
+      "text": "请",
+      "charStart": 62,
+      "charEnd": 63,
+      "startS": 12.48,
+      "endS": 12.72
+    },
+    {
+      "text": "把",
+      "charStart": 63,
+      "charEnd": 64,
+      "startS": 12.72,
+      "endS": 12.88
+    },
+    {
+      "text": "它",
+      "charStart": 64,
+      "charEnd": 65,
+      "startS": 12.88,
+      "endS": 12.96
+    },
+    {
+      "text": "提",
+      "charStart": 65,
+      "charEnd": 66,
+      "startS": 12.96,
+      "endS": 13.2
+    },
+    {
+      "text": "升",
+      "charStart": 66,
+      "charEnd": 67,
+      "startS": 13.2,
+      "endS": 13.36
+    },
+    {
+      "text": "到",
+      "charStart": 67,
+      "charEnd": 68,
+      "startS": 13.36,
+      "endS": 13.52
+    },
+    {
+      "text": "两",
+      "charStart": 68,
+      "charEnd": 69,
+      "startS": 13.52,
+      "endS": 13.76
+    },
+    {
+      "text": "倍",
+      "charStart": 69,
+      "charEnd": 70,
+      "startS": 13.76,
+      "endS": 14.0
+    }
+  ],
+  "words_for": "d01954412d92ef47/wordtiming-v1",
+  "asr": "你刚学会的一切都会提升你的合同费率。它显示在报酬旁边。击毁、破坏部件、解除武装、擦弹和新的扫描都会提高费率。只要你接连不断，请把它提升到两倍。",
+  "asr_similarity": 1.0
+}

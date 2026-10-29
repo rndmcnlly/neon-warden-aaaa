@@ -1,0 +1,250 @@
+{
+  "hash": "22348c3e82604518",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_fire_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "现在来学习射击吧！按住射击键就会发射子弹。子弹向上飞。问题都在上面。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Excited, like unveiling a birthday present.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "现在来学习射击吧。按住射击键就会发射子弹，子弹向上飞。问题都在上面。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 0.19,
+    "limited_db": 0.14,
+    "measured_before_lufs": -18.19,
+    "peak_bound": false
+  },
+  "words_for": "22348c3e82604518/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "现",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "在",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "来",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "学",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "习",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "射",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "击",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "吧",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "按",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "住",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "射",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "击",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "键",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "就",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "会",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "发",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "射",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "子",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "弹",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.08,
+      "endS": 4.32
+    },
+    {
+      "text": "子",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "弹",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "向",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.96,
+      "endS": 5.2
+    },
+    {
+      "text": "上",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.2,
+      "endS": 5.28
+    },
+    {
+      "text": "飞",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.44,
+      "endS": 5.68
+    },
+    {
+      "text": "问",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "题",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "都",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 6.24,
+      "endS": 6.32
+    },
+    {
+      "text": "在",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "上",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "面",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.72,
+      "endS": 7.04
+    }
+  ]
+}

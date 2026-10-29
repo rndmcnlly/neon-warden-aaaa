@@ -1,0 +1,236 @@
+{
+  "hash": "f4df313a06ebb65d",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_pickup_001",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "¡Objetos! Los cristales verdes amplían tu disparo. Los diamantes cian te dan un escudo. Los objetos son material recuperado y siguen siendo propiedad de la Autoridad de Rutas.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Product-demo enthusiasm, then fine print read slightly faster.",
+  "duration": 11.68,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Objetos: los cristales verdes ampliando el disparo, los diamantes cien te dan un escudo, los pedos son material recuperado y siguen siendo propiedad de la autoridad de rutas.",
+  "asr_similarity": 0.857,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.09,
+    "gain_db": 0.38,
+    "limited_db": 0.33,
+    "measured_before_lufs": -18.38,
+    "peak_bound": false
+  },
+  "words_for": "f4df313a06ebb65d/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Objetos",
+      "charStart": 1,
+      "charEnd": 8,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "Los",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "cristales",
+      "charStart": 14,
+      "charEnd": 23,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "verdes",
+      "charStart": 24,
+      "charEnd": 30,
+      "startS": 2.24,
+      "endS": 2.64
+    },
+    {
+      "text": "amplían",
+      "charStart": 31,
+      "charEnd": 38,
+      "startS": 2.64,
+      "endS": 3.12
+    },
+    {
+      "text": "tu",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "disparo",
+      "charStart": 42,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.92
+    },
+    {
+      "text": "Los",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "diamantes",
+      "charStart": 55,
+      "charEnd": 64,
+      "startS": 4.48,
+      "endS": 5.04
+    },
+    {
+      "text": "cian",
+      "charStart": 65,
+      "charEnd": 69,
+      "startS": 5.04,
+      "endS": 5.36
+    },
+    {
+      "text": "te",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "dan",
+      "charStart": 73,
+      "charEnd": 76,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "un",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "escudo",
+      "charStart": 80,
+      "charEnd": 86,
+      "startS": 5.76,
+      "endS": 6.4
+    },
+    {
+      "text": "Los",
+      "charStart": 88,
+      "charEnd": 91,
+      "startS": 6.72,
+      "endS": 6.8
+    },
+    {
+      "text": "objetos",
+      "charStart": 92,
+      "charEnd": 99,
+      "startS": 6.8,
+      "endS": 7.36
+    },
+    {
+      "text": "son",
+      "charStart": 100,
+      "charEnd": 103,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "material",
+      "charStart": 104,
+      "charEnd": 112,
+      "startS": 7.52,
+      "endS": 8.0
+    },
+    {
+      "text": "recuperado",
+      "charStart": 113,
+      "charEnd": 123,
+      "startS": 8.08,
+      "endS": 8.8
+    },
+    {
+      "text": "y",
+      "charStart": 124,
+      "charEnd": 125,
+      "startS": 8.8,
+      "endS": 8.96
+    },
+    {
+      "text": "siguen",
+      "charStart": 126,
+      "charEnd": 132,
+      "startS": 8.96,
+      "endS": 9.12
+    },
+    {
+      "text": "siendo",
+      "charStart": 133,
+      "charEnd": 139,
+      "startS": 9.28,
+      "endS": 9.6
+    },
+    {
+      "text": "propiedad",
+      "charStart": 140,
+      "charEnd": 149,
+      "startS": 9.6,
+      "endS": 10.08
+    },
+    {
+      "text": "de",
+      "charStart": 150,
+      "charEnd": 152,
+      "startS": 10.16,
+      "endS": 10.24
+    },
+    {
+      "text": "la",
+      "charStart": 153,
+      "charEnd": 155,
+      "startS": 10.24,
+      "endS": 10.48
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 156,
+      "charEnd": 165,
+      "startS": 10.48,
+      "endS": 10.96
+    },
+    {
+      "text": "de",
+      "charStart": 166,
+      "charEnd": 168,
+      "startS": 10.96,
+      "endS": 11.12
+    },
+    {
+      "text": "Rutas",
+      "charStart": 169,
+      "charEnd": 174,
+      "startS": 11.12,
+      "endS": 11.6
+    }
+  ]
+}

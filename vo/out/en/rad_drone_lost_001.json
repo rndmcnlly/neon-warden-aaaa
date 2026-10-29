@@ -1,0 +1,96 @@
+{
+  "hash": "113a9009dc65dce9",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_drone_lost_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Drift Two is dark. Drift Two is DARK.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Composure breaking on the repeat.",
+  "duration": 2.72,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.2,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 7.37,
+    "limited_db": 0.73,
+    "measured_before_lufs": -25.37,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Drift",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "Two",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "is",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "dark",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "Drift",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "Two",
+      "charStart": 25,
+      "charEnd": 28,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "is",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "DARK",
+      "charStart": 32,
+      "charEnd": 36,
+      "startS": 2.16,
+      "endS": 2.64
+    }
+  ],
+  "words_for": "113a9009dc65dce9/wordtiming-v1",
+  "asr": "Drift two is dark. Drift two is dark.",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,124 @@
+{
+  "hash": "46e3e87977bbe6c0",
+  "mode": "clone",
+  "request": {
+    "id": "en__graze_ai_001",
+    "seed": 11,
+    "language": "English",
+    "text": "That was close, and close is billable. Thank you for your proximity.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, a small intake of breath, then professional again.",
+  "duration": 3.84,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 6.35,
+    "limited_db": 0.2,
+    "measured_before_lufs": -24.35,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "That",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "was",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "close",
+      "charStart": 9,
+      "charEnd": 14,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "and",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "close",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "is",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.52,
+      "endS": 1.6
+    },
+    {
+      "text": "billable",
+      "charStart": 29,
+      "charEnd": 37,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "Thank",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "you",
+      "charStart": 45,
+      "charEnd": 48,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "for",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "your",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "proximity",
+      "charStart": 58,
+      "charEnd": 67,
+      "startS": 3.04,
+      "endS": 3.84
+    }
+  ],
+  "words_for": "46e3e87977bbe6c0/wordtiming-v1",
+  "asr": "That was close, and close is billable. Thank you for your proximity.",
+  "asr_similarity": 1.0
+}

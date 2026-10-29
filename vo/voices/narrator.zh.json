@@ -1,0 +1,28 @@
+{
+  "hash": "f776d36a2818bc1e",
+  "method": "bootstrap",
+  "candidate": "bootstrap_s22",
+  "from_anchor": "77d83ada0eeeffab",
+  "request": {
+    "id": "narrator.zh",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "duration": 9.84,
+  "sample_rate": 24000,
+  "peak": 0.363,
+  "clipping_suspect": false,
+  "median_f0": 75.6,
+  "audition": {
+    "method": "bootstrap",
+    "seed": 22,
+    "mean": 0.957,
+    "min": 0.929,
+    "anchor_asr": 1.0,
+    "anchor_f0": 75.6,
+    "f0_ratio": 1.047
+  }
+}

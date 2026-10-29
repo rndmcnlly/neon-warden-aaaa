@@ -1,0 +1,124 @@
+{
+  "hash": "38c7dc5fb90f7c2c",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_lancer_lost_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Lancer down. Who keeps the lane clear now? They do? For who?",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Bitter questions.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.739,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.45,
+    "gain_db": 7.54,
+    "limited_db": 0.0,
+    "measured_before_lufs": -25.54,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lancer",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.08,
+      "endS": 0.48
+    },
+    {
+      "text": "down",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "Who",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "keeps",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "the",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "lane",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "clear",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "now",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 2.4,
+      "endS": 2.8
+    },
+    {
+      "text": "They",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "do",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "For",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "who",
+      "charStart": 56,
+      "charEnd": 59,
+      "startS": 3.84,
+      "endS": 4.16
+    }
+  ],
+  "words_for": "38c7dc5fb90f7c2c/wordtiming-v1",
+  "asr": "Lancer Down. Who keeps the lane clear now? They do for who?",
+  "asr_similarity": 1.0
+}

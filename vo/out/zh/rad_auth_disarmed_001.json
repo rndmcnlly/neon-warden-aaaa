@@ -1,0 +1,194 @@
+{
+  "hash": "d9a59cc8f87055dd",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rad_auth_disarmed_001",
+    "seed": 66,
+    "language": "Chinese",
+    "text": "航道控制记录到一次解除武装。部分交付。费率已调整。",
+    "voice_ref": "vo/voices/authority.wav",
+    "reference_text": "Lane Control to all survey teams. Tollgate footings approved, pending clearance. Please log your hours before the end of the cycle."
+  },
+  "direction": "Radio, Lane Control: dry dispatcher, every sentence a line item.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.12,
+    "true_peak_dbtp": -1.42,
+    "gain_db": 3.24,
+    "limited_db": 1.93,
+    "measured_before_lufs": -21.24,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "航",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "道",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "控",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "制",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "记",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "录",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "到",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "一",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "次",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "解",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "除",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "武",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "装",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.8
+    },
+    {
+      "text": "部",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.12,
+      "endS": 3.28
+    },
+    {
+      "text": "分",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "交",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "付",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "费",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "率",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "已",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "调",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "整",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.28,
+      "endS": 5.36
+    }
+  ],
+  "words_for": "d9a59cc8f87055dd/wordtiming-v1",
+  "asr": "航道控制记录到一次解除武装部分交付，费率已调整。",
+  "asr_similarity": 1.0
+}

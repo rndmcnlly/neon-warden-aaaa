@@ -1,0 +1,138 @@
+{
+  "hash": "6bc1270192f0e4d1",
+  "mode": "clone",
+  "request": {
+    "id": "es__amb_fight_003",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, encouraging, unaware of how it sounds.",
+  "duration": 7.04,
+  "sample_rate": 24000,
+  "peak": 0.652,
+  "clipping_suspect": false,
+  "asr": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.67,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "6bc1270192f0e4d1/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Lo",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "estás",
+      "charStart": 3,
+      "charEnd": 8,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "haciendo",
+      "charStart": 9,
+      "charEnd": 17,
+      "startS": 1.12,
+      "endS": 1.52
+    },
+    {
+      "text": "genial",
+      "charStart": 18,
+      "charEnd": 24,
+      "startS": 1.52,
+      "endS": 2.24
+    },
+    {
+      "text": "Tu",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "predecesor",
+      "charStart": 29,
+      "charEnd": 39,
+      "startS": 2.8,
+      "endS": 3.44
+    },
+    {
+      "text": "también",
+      "charStart": 40,
+      "charEnd": 47,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "lo",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "estaba",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 4.24,
+      "endS": 4.64
+    },
+    {
+      "text": "haciendo",
+      "charStart": 58,
+      "charEnd": 66,
+      "startS": 4.64,
+      "endS": 5.04
+    },
+    {
+      "text": "genial",
+      "charStart": 67,
+      "charEnd": 73,
+      "startS": 5.04,
+      "endS": 5.36
+    },
+    {
+      "text": "en",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 5.6,
+      "endS": 5.68
+    },
+    {
+      "text": "este",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 5.68,
+      "endS": 5.92
+    },
+    {
+      "text": "punto",
+      "charStart": 82,
+      "charEnd": 87,
+      "startS": 5.92,
+      "endS": 6.48
+    }
+  ]
+}

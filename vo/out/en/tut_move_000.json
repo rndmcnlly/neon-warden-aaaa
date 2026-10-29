@@ -1,0 +1,173 @@
+{
+  "hash": "47e84023c9902e54",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_move_000",
+    "seed": 11,
+    "language": "English",
+    "text": "Let's start with movement! Movement is how you get from one place to another. Please fly to the left.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Kindergarten-teacher patience, explaining the obvious with great care.",
+  "duration": 6.32,
+  "sample_rate": 24000,
+  "peak": 0.886,
+  "clipping_suspect": false,
+  "asr": "Let's start with movement. Movement is how you get from one place to another. Please fly to the left.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.05,
+    "gain_db": -0.02,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "47e84023c9902e54/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Let's",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.48,
+      "endS": 0.8
+    },
+    {
+      "text": "start",
+      "charStart": 6,
+      "charEnd": 11,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "with",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "movement",
+      "charStart": 17,
+      "charEnd": 25,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "Movement",
+      "charStart": 27,
+      "charEnd": 35,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "is",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "how",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "you",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "get",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "from",
+      "charStart": 51,
+      "charEnd": 55,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "one",
+      "charStart": 56,
+      "charEnd": 59,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "place",
+      "charStart": 60,
+      "charEnd": 65,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "to",
+      "charStart": 66,
+      "charEnd": 68,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "another",
+      "charStart": 69,
+      "charEnd": 76,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "Please",
+      "charStart": 78,
+      "charEnd": 84,
+      "startS": 5.04,
+      "endS": 5.2
+    },
+    {
+      "text": "fly",
+      "charStart": 85,
+      "charEnd": 88,
+      "startS": 5.44,
+      "endS": 5.68
+    },
+    {
+      "text": "to",
+      "charStart": 89,
+      "charEnd": 91,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "the",
+      "charStart": 92,
+      "charEnd": 95,
+      "startS": 5.76,
+      "endS": 5.84
+    },
+    {
+      "text": "left",
+      "charStart": 96,
+      "charEnd": 100,
+      "startS": 6.16,
+      "endS": 6.24
+    }
+  ]
+}

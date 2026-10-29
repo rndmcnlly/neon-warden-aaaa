@@ -1,0 +1,138 @@
+{
+  "hash": "4a921f59f30f5c6b",
+  "mode": "clone",
+  "request": {
+    "id": "zh__pac_epi_002",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "在你身后，是五个星区的自由天空。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "Quiet, wide; lean on the word free.",
+  "duration": 3.28,
+  "sample_rate": 24000,
+  "peak": 0.822,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.63,
+    "gain_db": 5.43,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.43,
+    "peak_bound": false
+  },
+  "asr": "在你身后是五个新区的自由天空。",
+  "asr_similarity": 0.929,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "在",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "你",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "身",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "后",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.88,
+      "endS": 1.28
+    },
+    {
+      "text": "是",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "五",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "个",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "星",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "区",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "的",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "自",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "由",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "天",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "空",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.8,
+      "endS": 3.12
+    }
+  ],
+  "words_for": "4a921f59f30f5c6b/wordtiming-v1"
+}

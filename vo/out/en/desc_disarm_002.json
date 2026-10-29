@@ -1,0 +1,124 @@
+{
+  "hash": "c579c2fc163d7091",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_disarm_002",
+    "seed": 33,
+    "language": "English",
+    "text": "Fine. FINE. They grow back. That is not the point. Thank you.",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Flustered, trying to stay angry and failing, the thank you almost swallowed.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.804,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.87,
+    "gain_db": 2.11,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.11,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Fine",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.64
+    },
+    {
+      "text": "FINE",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.8,
+      "endS": 1.36
+    },
+    {
+      "text": "They",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "grow",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "back",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "That",
+      "charStart": 28,
+      "charEnd": 32,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "is",
+      "charStart": 33,
+      "charEnd": 35,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "not",
+      "charStart": 36,
+      "charEnd": 39,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "the",
+      "charStart": 40,
+      "charEnd": 43,
+      "startS": 2.96,
+      "endS": 3.04
+    },
+    {
+      "text": "point",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "Thank",
+      "charStart": 51,
+      "charEnd": 56,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "you",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 4.0,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "c579c2fc163d7091/wordtiming-v1",
+  "asr": "Fine, fine. They grow back. That is not the point. Thank you.",
+  "asr_similarity": 1.0
+}

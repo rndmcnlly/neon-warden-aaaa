@@ -1,0 +1,124 @@
+{
+  "hash": "0b7108badb6204a6",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_lancer_disarmed_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Emitters dead. The Gate's open, and nobody's guarding it. That's the problem.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Relief turning to worry.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.682,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.29,
+    "gain_db": 5.94,
+    "limited_db": 0.0,
+    "measured_before_lufs": -23.94,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Emitters",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.08,
+      "endS": 0.56
+    },
+    {
+      "text": "dead",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.56,
+      "endS": 0.88
+    },
+    {
+      "text": "The",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "Gate's",
+      "charStart": 19,
+      "charEnd": 25,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "open",
+      "charStart": 26,
+      "charEnd": 30,
+      "startS": 1.44,
+      "endS": 1.92
+    },
+    {
+      "text": "and",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "nobody's",
+      "charStart": 36,
+      "charEnd": 44,
+      "startS": 2.08,
+      "endS": 2.56
+    },
+    {
+      "text": "guarding",
+      "charStart": 45,
+      "charEnd": 53,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "it",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "That's",
+      "charStart": 58,
+      "charEnd": 64,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "the",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "problem",
+      "charStart": 69,
+      "charEnd": 76,
+      "startS": 3.84,
+      "endS": 4.4
+    }
+  ],
+  "words_for": "0b7108badb6204a6/wordtiming-v1",
+  "asr": "Emitter's dead. The gate's open, and nobody's guarding it. That's the problem.",
+  "asr_similarity": 1.0
+}

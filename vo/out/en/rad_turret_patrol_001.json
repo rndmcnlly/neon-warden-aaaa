@@ -1,0 +1,131 @@
+{
+  "hash": "702462288c6fdf28",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_turret_patrol_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Gun Lanes holding. Freighters clear to pass. Contractor, you are not a freighter.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Deadpan.",
+  "duration": 4.64,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.2,
+    "gain_db": 2.33,
+    "limited_db": 0.71,
+    "measured_before_lufs": -20.33,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Gun",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "Lanes",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "holding",
+      "charStart": 10,
+      "charEnd": 17,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "Freighters",
+      "charStart": 19,
+      "charEnd": 29,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "clear",
+      "charStart": 30,
+      "charEnd": 35,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "to",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "pass",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 2.08,
+      "endS": 2.56
+    },
+    {
+      "text": "Contractor",
+      "charStart": 45,
+      "charEnd": 55,
+      "startS": 2.64,
+      "endS": 3.44
+    },
+    {
+      "text": "you",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "are",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 3.68,
+      "endS": 3.76
+    },
+    {
+      "text": "not",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "a",
+      "charStart": 69,
+      "charEnd": 70,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "freighter",
+      "charStart": 71,
+      "charEnd": 80,
+      "startS": 4.16,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "702462288c6fdf28/wordtiming-v1",
+  "asr": "Gun lanes holding. Freighters clear to pass. Contractor, you are not a freighter.",
+  "asr_similarity": 1.0
+}

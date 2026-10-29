@@ -1,0 +1,159 @@
+{
+  "hash": "50d525e8769d0c42",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_idle_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Take all the time you need. I am timing it, but take all the time you need.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Patient, with a stopwatch audible in the smile.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Take all the time you need. I am timing it, but take all the time you need.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.32,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 1.69,
+    "limited_db": 1.64,
+    "measured_before_lufs": -19.69,
+    "peak_bound": false
+  },
+  "words_for": "50d525e8769d0c42/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Take",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.24,
+      "endS": 0.48
+    },
+    {
+      "text": "all",
+      "charStart": 5,
+      "charEnd": 8,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "the",
+      "charStart": 9,
+      "charEnd": 12,
+      "startS": 0.72,
+      "endS": 0.8
+    },
+    {
+      "text": "time",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "you",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "need",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 1.28,
+      "endS": 1.68
+    },
+    {
+      "text": "I",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "am",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "timing",
+      "charStart": 33,
+      "charEnd": 39,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "it",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "but",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "take",
+      "charStart": 48,
+      "charEnd": 52,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "all",
+      "charStart": 53,
+      "charEnd": 56,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "the",
+      "charStart": 57,
+      "charEnd": 60,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "time",
+      "charStart": 61,
+      "charEnd": 65,
+      "startS": 4.32,
+      "endS": 4.56
+    },
+    {
+      "text": "you",
+      "charStart": 66,
+      "charEnd": 69,
+      "startS": 4.56,
+      "endS": 4.64
+    },
+    {
+      "text": "need",
+      "charStart": 70,
+      "charEnd": 74,
+      "startS": 4.96,
+      "endS": 5.12
+    }
+  ]
+}

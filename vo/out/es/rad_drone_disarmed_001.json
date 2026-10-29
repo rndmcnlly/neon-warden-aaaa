@@ -1,0 +1,89 @@
+{
+  "hash": "26d7c5aa5f9b26e2",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_drone_disarmed_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Sin arma. Me retiro. ¿Me dejó ir?",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Shaken, then surprised.",
+  "duration": 3.68,
+  "sample_rate": 24000,
+  "peak": 0.862,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.25,
+    "gain_db": 2.72,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.72,
+    "peak_bound": false
+  },
+  "asr": "Sin arma, me retiro, me dejó ir.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Sin",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "arma",
+      "charStart": 4,
+      "charEnd": 8,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "Me",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "retiro",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "Me",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "dejó",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "ir",
+      "charStart": 30,
+      "charEnd": 32,
+      "startS": 3.36,
+      "endS": 3.6
+    }
+  ],
+  "words_for": "26d7c5aa5f9b26e2/wordtiming-v1"
+}

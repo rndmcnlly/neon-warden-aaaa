@@ -1,0 +1,180 @@
+{
+  "hash": "b0eac10aed6d5b3c",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_ghost_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "Y tu arma está LLENA. La oigo zumbar desde aquí. Cargaste un Mandato todo el camino y nunca lo usaste.",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Loud and awed at once, listening to the pilot's charged gun.",
+  "duration": 7.12,
+  "sample_rate": 24000,
+  "peak": 0.763,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.27,
+    "gain_db": 2.58,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.58,
+    "peak_bound": false
+  },
+  "asr": "Y tu arma está llena, la oigo zumbar desde aquí. Cargaste un mandato todo el camino y nunca lo usaste.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Y",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "tu",
+      "charStart": 2,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "arma",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.32,
+      "endS": 0.64
+    },
+    {
+      "text": "está",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "LLENA",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 0.88,
+      "endS": 1.52
+    },
+    {
+      "text": "La",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "oigo",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "zumbar",
+      "charStart": 30,
+      "charEnd": 36,
+      "startS": 2.4,
+      "endS": 2.8
+    },
+    {
+      "text": "desde",
+      "charStart": 37,
+      "charEnd": 42,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "aquí",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "Cargaste",
+      "charStart": 49,
+      "charEnd": 57,
+      "startS": 3.84,
+      "endS": 4.4
+    },
+    {
+      "text": "un",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "Mandato",
+      "charStart": 61,
+      "charEnd": 68,
+      "startS": 4.56,
+      "endS": 5.04
+    },
+    {
+      "text": "todo",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 5.04,
+      "endS": 5.36
+    },
+    {
+      "text": "el",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 5.36,
+      "endS": 5.44
+    },
+    {
+      "text": "camino",
+      "charStart": 77,
+      "charEnd": 83,
+      "startS": 5.44,
+      "endS": 5.84
+    },
+    {
+      "text": "y",
+      "charStart": 84,
+      "charEnd": 85,
+      "startS": 5.84,
+      "endS": 5.92
+    },
+    {
+      "text": "nunca",
+      "charStart": 86,
+      "charEnd": 91,
+      "startS": 5.92,
+      "endS": 6.32
+    },
+    {
+      "text": "lo",
+      "charStart": 92,
+      "charEnd": 94,
+      "startS": 6.32,
+      "endS": 6.4
+    },
+    {
+      "text": "usaste",
+      "charStart": 95,
+      "charEnd": 101,
+      "startS": 6.4,
+      "endS": 7.12
+    }
+  ],
+  "words_for": "b0eac10aed6d5b3c/wordtiming-v1"
+}

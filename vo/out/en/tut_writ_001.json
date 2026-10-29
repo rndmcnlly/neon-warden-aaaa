@@ -1,0 +1,362 @@
+{
+  "hash": "ed863b629b8ac43f",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_writ_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Your capacitor is full, and a full charge is called a Writ. Its full name is the Writ of Enclosure, after the instrument that founded the Authority. A Writ passes through anything in its way. Please release it on the weak point your scan has marked.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. A little ceremony on the full name.",
+  "duration": 14.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.13,
+    "true_peak_dbtp": -1.19,
+    "gain_db": 6.04,
+    "limited_db": 2.45,
+    "measured_before_lufs": -24.04,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Your",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "capacitor",
+      "charStart": 5,
+      "charEnd": 14,
+      "startS": 0.32,
+      "endS": 0.96
+    },
+    {
+      "text": "is",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "full",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.6
+    },
+    {
+      "text": "and",
+      "charStart": 24,
+      "charEnd": 27,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "a",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 2.0,
+      "endS": 2.08
+    },
+    {
+      "text": "full",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "charge",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 2.32,
+      "endS": 2.72
+    },
+    {
+      "text": "is",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "called",
+      "charStart": 45,
+      "charEnd": 51,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "Writ",
+      "charStart": 54,
+      "charEnd": 58,
+      "startS": 3.2,
+      "endS": 3.68
+    },
+    {
+      "text": "Its",
+      "charStart": 60,
+      "charEnd": 63,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "full",
+      "charStart": 64,
+      "charEnd": 68,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "name",
+      "charStart": 69,
+      "charEnd": 73,
+      "startS": 4.4,
+      "endS": 4.64
+    },
+    {
+      "text": "is",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "the",
+      "charStart": 77,
+      "charEnd": 80,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "Writ",
+      "charStart": 81,
+      "charEnd": 85,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "of",
+      "charStart": 86,
+      "charEnd": 88,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "Enclosure",
+      "charStart": 89,
+      "charEnd": 98,
+      "startS": 5.44,
+      "endS": 6.08
+    },
+    {
+      "text": "after",
+      "charStart": 100,
+      "charEnd": 105,
+      "startS": 6.56,
+      "endS": 6.8
+    },
+    {
+      "text": "the",
+      "charStart": 106,
+      "charEnd": 109,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "instrument",
+      "charStart": 110,
+      "charEnd": 120,
+      "startS": 7.04,
+      "endS": 7.52
+    },
+    {
+      "text": "that",
+      "charStart": 121,
+      "charEnd": 125,
+      "startS": 7.52,
+      "endS": 7.68
+    },
+    {
+      "text": "founded",
+      "charStart": 126,
+      "charEnd": 133,
+      "startS": 7.68,
+      "endS": 8.0
+    },
+    {
+      "text": "the",
+      "charStart": 134,
+      "charEnd": 137,
+      "startS": 8.08,
+      "endS": 8.16
+    },
+    {
+      "text": "Authority",
+      "charStart": 138,
+      "charEnd": 147,
+      "startS": 8.16,
+      "endS": 8.64
+    },
+    {
+      "text": "A",
+      "charStart": 149,
+      "charEnd": 150,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "Writ",
+      "charStart": 151,
+      "charEnd": 155,
+      "startS": 9.04,
+      "endS": 9.28
+    },
+    {
+      "text": "passes",
+      "charStart": 156,
+      "charEnd": 162,
+      "startS": 9.36,
+      "endS": 9.76
+    },
+    {
+      "text": "through",
+      "charStart": 163,
+      "charEnd": 170,
+      "startS": 9.76,
+      "endS": 9.92
+    },
+    {
+      "text": "anything",
+      "charStart": 171,
+      "charEnd": 179,
+      "startS": 10.0,
+      "endS": 10.48
+    },
+    {
+      "text": "in",
+      "charStart": 180,
+      "charEnd": 182,
+      "startS": 10.48,
+      "endS": 10.56
+    },
+    {
+      "text": "its",
+      "charStart": 183,
+      "charEnd": 186,
+      "startS": 10.56,
+      "endS": 10.72
+    },
+    {
+      "text": "way",
+      "charStart": 187,
+      "charEnd": 190,
+      "startS": 10.72,
+      "endS": 11.12
+    },
+    {
+      "text": "Please",
+      "charStart": 192,
+      "charEnd": 198,
+      "startS": 11.52,
+      "endS": 11.84
+    },
+    {
+      "text": "release",
+      "charStart": 199,
+      "charEnd": 206,
+      "startS": 11.84,
+      "endS": 12.16
+    },
+    {
+      "text": "it",
+      "charStart": 207,
+      "charEnd": 209,
+      "startS": 12.16,
+      "endS": 12.24
+    },
+    {
+      "text": "on",
+      "charStart": 210,
+      "charEnd": 212,
+      "startS": 12.24,
+      "endS": 12.4
+    },
+    {
+      "text": "the",
+      "charStart": 213,
+      "charEnd": 216,
+      "startS": 12.4,
+      "endS": 12.48
+    },
+    {
+      "text": "weak",
+      "charStart": 217,
+      "charEnd": 221,
+      "startS": 12.48,
+      "endS": 12.72
+    },
+    {
+      "text": "point",
+      "charStart": 222,
+      "charEnd": 227,
+      "startS": 12.72,
+      "endS": 12.96
+    },
+    {
+      "text": "your",
+      "charStart": 228,
+      "charEnd": 232,
+      "startS": 12.96,
+      "endS": 13.12
+    },
+    {
+      "text": "scan",
+      "charStart": 233,
+      "charEnd": 237,
+      "startS": 13.12,
+      "endS": 13.44
+    },
+    {
+      "text": "has",
+      "charStart": 238,
+      "charEnd": 241,
+      "startS": 13.44,
+      "endS": 13.6
+    },
+    {
+      "text": "marked",
+      "charStart": 242,
+      "charEnd": 248,
+      "startS": 13.6,
+      "endS": 14.08
+    }
+  ],
+  "words_for": "ed863b629b8ac43f/wordtiming-v1",
+  "asr": "Your capacitor is full, and a full charge is called a rit. Its full name is the rit of enclosure, after the instrument that founded the authority. A rit passes through anything in its way. Please release it on the weak point your scan has marked.",
+  "asr_similarity": 0.935
+}

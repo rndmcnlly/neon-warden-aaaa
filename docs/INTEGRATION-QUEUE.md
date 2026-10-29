@@ -471,3 +471,23 @@ Requests:
   against a -18 LUFS target. Synth trim and stacked-voice attenuation did
   not move it, so the excess is probably not gameplay sfx density. Next:
   per-bus stems (VO, barks, sfx) in `qa/av.ts` would locate it.
+
+### T VO tech: word timings, loudness, language anchors (October 28, 2026)
+
+- **U/A: `words` landed** in `vo/out/cues.json` at
+  `lines[id].langs[lang].words`, exactly N's `WordTiming` (UTF-16
+  `charStart`/`charEnd` into that entry's `text`; `startS`/`endS` in
+  seconds). Forced-aligned to the script text, every one of the 450 takes,
+  zh per character. Each take also has `align: { ok, monotonic, within,
+  coverage, mapped }`; treat `ok: false` as "show a plain subtitle". VTTs
+  carry WebVTT inline word timestamps too.
+- **A: VO WAVs are already at -18 LUFS integrated, <= -1 dBTP** (render time,
+  gain plus a peak limiter only where needed). `langs[lang].loudness =
+  { lufs, true_peak_dbtp, limited_db }` is the measurement. Suggest
+  `sync_vo.ts` stop running two-pass `loudnorm` on story lines (it can only
+  re-process) and apply plain `volume=` gain for the amb/bark -2 LU offset,
+  checking `loudness.lufs` instead of re-measuring. Note that its cache key
+  is the take `hash`, which does not change when T re-normalizes; add
+  `loudness.lufs` to the key if you rely on input loudness.
+- **Spanish (and narrator zh) per-language voice anchors**:
+  `vo/voices/<speaker>.<lang>.wav`. No API change; the takes just changed.

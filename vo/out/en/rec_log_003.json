@@ -1,0 +1,145 @@
+{
+  "hash": "2f32c199d05cb546",
+  "mode": "clone",
+  "request": {
+    "id": "en__rec_log_003",
+    "seed": 33,
+    "language": "English",
+    "text": "They sent another one today. Gun warm. I yelled. I always yell. It NEVER helps!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Recorded, ranting, exhausted, the last sentence a wail.",
+  "duration": 5.68,
+  "sample_rate": 24000,
+  "peak": 0.853,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.33,
+    "gain_db": 1.52,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.52,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "They",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.16
+    },
+    {
+      "text": "sent",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "another",
+      "charStart": 10,
+      "charEnd": 17,
+      "startS": 0.56,
+      "endS": 0.88
+    },
+    {
+      "text": "one",
+      "charStart": 18,
+      "charEnd": 21,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "today",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 1.12,
+      "endS": 1.68
+    },
+    {
+      "text": "Gun",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 1.92,
+      "endS": 2.32
+    },
+    {
+      "text": "warm",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.32,
+      "endS": 2.64
+    },
+    {
+      "text": "I",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "yelled",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 2.8,
+      "endS": 3.28
+    },
+    {
+      "text": "I",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "always",
+      "charStart": 51,
+      "charEnd": 57,
+      "startS": 3.68,
+      "endS": 4.16
+    },
+    {
+      "text": "yell",
+      "charStart": 58,
+      "charEnd": 62,
+      "startS": 4.16,
+      "endS": 4.56
+    },
+    {
+      "text": "It",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "NEVER",
+      "charStart": 67,
+      "charEnd": 72,
+      "startS": 4.8,
+      "endS": 5.2
+    },
+    {
+      "text": "helps",
+      "charStart": 73,
+      "charEnd": 78,
+      "startS": 5.2,
+      "endS": 5.68
+    }
+  ],
+  "words_for": "2f32c199d05cb546/wordtiming-v1",
+  "asr": "They sent another one today. Gun warm! I yelled. I always yell. It never helps.",
+  "asr_similarity": 1.0
+}

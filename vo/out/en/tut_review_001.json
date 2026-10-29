@@ -1,0 +1,257 @@
+{
+  "hash": "17fe3a3499ec9374",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_review_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Quick review! Which bullets are bad? That's right. The pink ones, the gold ones, and, in general, bullets. Which part of the ship can be hit? The gem. You're a natural.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Quiz-show host answering her own questions without a pause.",
+  "duration": 9.68,
+  "sample_rate": 24000,
+  "peak": 0.818,
+  "clipping_suspect": false,
+  "asr": "Quick review: Which bullets are bad? That's right—the pink ones, the gold ones, and in general bullets. Which part of the ship can be hit? The gem. You're unnatural.",
+  "asr_similarity": 0.9,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.39,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 2.16,
+    "limited_db": 2.36,
+    "measured_before_lufs": -20.41,
+    "peak_bound": false
+  },
+  "words_for": "17fe3a3499ec9374/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Quick",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "review",
+      "charStart": 6,
+      "charEnd": 12,
+      "startS": 0.4,
+      "endS": 0.88
+    },
+    {
+      "text": "Which",
+      "charStart": 14,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "bullets",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "are",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "bad",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 1.76,
+      "endS": 2.16
+    },
+    {
+      "text": "That's",
+      "charStart": 37,
+      "charEnd": 43,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "right",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "The",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "pink",
+      "charStart": 55,
+      "charEnd": 59,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "ones",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 3.52,
+      "endS": 3.84
+    },
+    {
+      "text": "the",
+      "charStart": 66,
+      "charEnd": 69,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "gold",
+      "charStart": 70,
+      "charEnd": 74,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "ones",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 4.4,
+      "endS": 4.72
+    },
+    {
+      "text": "and",
+      "charStart": 81,
+      "charEnd": 84,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "in",
+      "charStart": 86,
+      "charEnd": 88,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "general",
+      "charStart": 89,
+      "charEnd": 96,
+      "startS": 5.04,
+      "endS": 5.52
+    },
+    {
+      "text": "bullets",
+      "charStart": 98,
+      "charEnd": 105,
+      "startS": 5.52,
+      "endS": 6.0
+    },
+    {
+      "text": "Which",
+      "charStart": 107,
+      "charEnd": 112,
+      "startS": 6.16,
+      "endS": 6.48
+    },
+    {
+      "text": "part",
+      "charStart": 113,
+      "charEnd": 117,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "of",
+      "charStart": 118,
+      "charEnd": 120,
+      "startS": 6.72,
+      "endS": 6.8
+    },
+    {
+      "text": "the",
+      "charStart": 121,
+      "charEnd": 124,
+      "startS": 6.8,
+      "endS": 6.88
+    },
+    {
+      "text": "ship",
+      "charStart": 125,
+      "charEnd": 129,
+      "startS": 6.88,
+      "endS": 7.12
+    },
+    {
+      "text": "can",
+      "charStart": 130,
+      "charEnd": 133,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "be",
+      "charStart": 134,
+      "charEnd": 136,
+      "startS": 7.28,
+      "endS": 7.44
+    },
+    {
+      "text": "hit",
+      "charStart": 137,
+      "charEnd": 140,
+      "startS": 7.44,
+      "endS": 7.84
+    },
+    {
+      "text": "The",
+      "charStart": 142,
+      "charEnd": 145,
+      "startS": 8.16,
+      "endS": 8.24
+    },
+    {
+      "text": "gem",
+      "charStart": 146,
+      "charEnd": 149,
+      "startS": 8.24,
+      "endS": 8.4
+    },
+    {
+      "text": "You're",
+      "charStart": 151,
+      "charEnd": 157,
+      "startS": 8.8,
+      "endS": 8.96
+    },
+    {
+      "text": "a",
+      "charStart": 158,
+      "charEnd": 159,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "natural",
+      "charStart": 160,
+      "charEnd": 167,
+      "startS": 9.2,
+      "endS": 9.6
+    }
+  ]
+}

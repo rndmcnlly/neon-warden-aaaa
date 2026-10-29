@@ -1,0 +1,222 @@
+{
+  "hash": "2bed9606e81cfaf2",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_hitbox_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Your ship is large and beautiful, but only the small glowing gem at its center can be hit. Please protect the gem. The gem is you.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere and a little tender on the last sentence.",
+  "duration": 8.48,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Your ship is large and beautiful, but only the small glowing gem at its center can be hit. Please protect the gem. The gem is you.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.07,
+    "gain_db": 0.82,
+    "limited_db": 0.77,
+    "measured_before_lufs": -18.82,
+    "peak_bound": false
+  },
+  "words_for": "2bed9606e81cfaf2/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Your",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "ship",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "is",
+      "charStart": 10,
+      "charEnd": 12,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "large",
+      "charStart": 13,
+      "charEnd": 18,
+      "startS": 0.88,
+      "endS": 1.2
+    },
+    {
+      "text": "and",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "beautiful",
+      "charStart": 23,
+      "charEnd": 32,
+      "startS": 1.36,
+      "endS": 1.92
+    },
+    {
+      "text": "but",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.16,
+      "endS": 2.32
+    },
+    {
+      "text": "only",
+      "charStart": 38,
+      "charEnd": 42,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "the",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "small",
+      "charStart": 47,
+      "charEnd": 52,
+      "startS": 2.72,
+      "endS": 3.12
+    },
+    {
+      "text": "glowing",
+      "charStart": 53,
+      "charEnd": 60,
+      "startS": 3.12,
+      "endS": 3.6
+    },
+    {
+      "text": "gem",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 3.6,
+      "endS": 3.84
+    },
+    {
+      "text": "at",
+      "charStart": 65,
+      "charEnd": 67,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "its",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "center",
+      "charStart": 72,
+      "charEnd": 78,
+      "startS": 4.16,
+      "endS": 4.48
+    },
+    {
+      "text": "can",
+      "charStart": 79,
+      "charEnd": 82,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "be",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 4.72,
+      "endS": 4.88
+    },
+    {
+      "text": "hit",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 4.88,
+      "endS": 5.28
+    },
+    {
+      "text": "Please",
+      "charStart": 91,
+      "charEnd": 97,
+      "startS": 5.76,
+      "endS": 6.16
+    },
+    {
+      "text": "protect",
+      "charStart": 98,
+      "charEnd": 105,
+      "startS": 6.16,
+      "endS": 6.64
+    },
+    {
+      "text": "the",
+      "charStart": 106,
+      "charEnd": 109,
+      "startS": 6.64,
+      "endS": 6.72
+    },
+    {
+      "text": "gem",
+      "charStart": 110,
+      "charEnd": 113,
+      "startS": 6.72,
+      "endS": 7.04
+    },
+    {
+      "text": "The",
+      "charStart": 115,
+      "charEnd": 118,
+      "startS": 7.28,
+      "endS": 7.36
+    },
+    {
+      "text": "gem",
+      "charStart": 119,
+      "charEnd": 122,
+      "startS": 7.36,
+      "endS": 7.6
+    },
+    {
+      "text": "is",
+      "charStart": 123,
+      "charEnd": 125,
+      "startS": 7.84,
+      "endS": 7.92
+    },
+    {
+      "text": "you",
+      "charStart": 126,
+      "charEnd": 129,
+      "startS": 7.92,
+      "endS": 8.08
+    }
+  ]
+}

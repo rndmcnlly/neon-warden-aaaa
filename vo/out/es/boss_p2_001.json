@@ -1,0 +1,124 @@
+{
+  "hash": "bf6f095c89a1744c",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_p2_001",
+    "seed": 233,
+    "language": "Spanish",
+    "text": "¡Exploradores, conmigo! ¡No, no CONTRA él, ALREDEDOR de él! ¡Protejan la ruta!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Barking orders at its own scouts, frazzled.",
+  "duration": 6.64,
+  "sample_rate": 24000,
+  "peak": 0.595,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.5,
+    "gain_db": 0.87,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.87,
+    "peak_bound": false
+  },
+  "asr": "Exploradores conmigo, no no contra él, alrededor de él, protejan la ruta.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Exploradores",
+      "charStart": 1,
+      "charEnd": 13,
+      "startS": 0.0,
+      "endS": 1.2
+    },
+    {
+      "text": "conmigo",
+      "charStart": 15,
+      "charEnd": 22,
+      "startS": 1.2,
+      "endS": 1.84
+    },
+    {
+      "text": "No",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 2.08,
+      "endS": 2.4
+    },
+    {
+      "text": "no",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "CONTRA",
+      "charStart": 32,
+      "charEnd": 38,
+      "startS": 2.72,
+      "endS": 3.36
+    },
+    {
+      "text": "él",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "ALREDEDOR",
+      "charStart": 43,
+      "charEnd": 52,
+      "startS": 3.92,
+      "endS": 4.96
+    },
+    {
+      "text": "de",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 4.96,
+      "endS": 5.04
+    },
+    {
+      "text": "él",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "Protejan",
+      "charStart": 61,
+      "charEnd": 69,
+      "startS": 5.2,
+      "endS": 5.76
+    },
+    {
+      "text": "la",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "ruta",
+      "charStart": 73,
+      "charEnd": 77,
+      "startS": 6.0,
+      "endS": 6.56
+    }
+  ],
+  "words_for": "bf6f095c89a1744c/wordtiming-v1"
+}

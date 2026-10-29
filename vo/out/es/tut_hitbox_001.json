@@ -1,0 +1,222 @@
+{
+  "hash": "90ad580594e2c0b2",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_hitbox_001",
+    "seed": 211,
+    "language": "Spanish",
+    "text": "Tu nave es grande y hermosa, pero solo la pequeña gema brillante del centro puede recibir impactos. Por favor, protege la gema. La gema eres tú.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere and a little tender on the last sentence.",
+  "duration": 10.4,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Tu nave es grande y remota, pero solo la pequeña hema brillante del centro puede recibir impactos. Por favor protege la hema, la hema es tú.",
+  "asr_similarity": 0.808,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.44,
+    "gain_db": 0.06,
+    "limited_db": 0.01,
+    "measured_before_lufs": -18.06,
+    "peak_bound": false
+  },
+  "words_for": "90ad580594e2c0b2/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Tu",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.48,
+      "endS": 0.56
+    },
+    {
+      "text": "nave",
+      "charStart": 3,
+      "charEnd": 7,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "es",
+      "charStart": 8,
+      "charEnd": 10,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "grande",
+      "charStart": 11,
+      "charEnd": 17,
+      "startS": 1.12,
+      "endS": 1.6
+    },
+    {
+      "text": "y",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 1.6,
+      "endS": 1.84
+    },
+    {
+      "text": "hermosa",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.84,
+      "endS": 2.24
+    },
+    {
+      "text": "pero",
+      "charStart": 29,
+      "charEnd": 33,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "solo",
+      "charStart": 34,
+      "charEnd": 38,
+      "startS": 2.88,
+      "endS": 3.12
+    },
+    {
+      "text": "la",
+      "charStart": 39,
+      "charEnd": 41,
+      "startS": 3.28,
+      "endS": 3.36
+    },
+    {
+      "text": "pequeña",
+      "charStart": 42,
+      "charEnd": 49,
+      "startS": 3.36,
+      "endS": 3.84
+    },
+    {
+      "text": "gema",
+      "charStart": 50,
+      "charEnd": 54,
+      "startS": 3.84,
+      "endS": 4.16
+    },
+    {
+      "text": "brillante",
+      "charStart": 55,
+      "charEnd": 64,
+      "startS": 4.16,
+      "endS": 4.8
+    },
+    {
+      "text": "del",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 4.8,
+      "endS": 4.96
+    },
+    {
+      "text": "centro",
+      "charStart": 69,
+      "charEnd": 75,
+      "startS": 4.96,
+      "endS": 5.36
+    },
+    {
+      "text": "puede",
+      "charStart": 76,
+      "charEnd": 81,
+      "startS": 5.36,
+      "endS": 5.68
+    },
+    {
+      "text": "recibir",
+      "charStart": 82,
+      "charEnd": 89,
+      "startS": 5.68,
+      "endS": 6.16
+    },
+    {
+      "text": "impactos",
+      "charStart": 90,
+      "charEnd": 98,
+      "startS": 6.24,
+      "endS": 6.88
+    },
+    {
+      "text": "Por",
+      "charStart": 100,
+      "charEnd": 103,
+      "startS": 7.2,
+      "endS": 7.36
+    },
+    {
+      "text": "favor",
+      "charStart": 104,
+      "charEnd": 109,
+      "startS": 7.36,
+      "endS": 7.6
+    },
+    {
+      "text": "protege",
+      "charStart": 111,
+      "charEnd": 118,
+      "startS": 7.76,
+      "endS": 8.08
+    },
+    {
+      "text": "la",
+      "charStart": 119,
+      "charEnd": 121,
+      "startS": 8.4,
+      "endS": 8.48
+    },
+    {
+      "text": "gema",
+      "charStart": 122,
+      "charEnd": 126,
+      "startS": 8.48,
+      "endS": 8.88
+    },
+    {
+      "text": "La",
+      "charStart": 128,
+      "charEnd": 130,
+      "startS": 8.88,
+      "endS": 8.96
+    },
+    {
+      "text": "gema",
+      "charStart": 131,
+      "charEnd": 135,
+      "startS": 8.96,
+      "endS": 9.04
+    },
+    {
+      "text": "eres",
+      "charStart": 136,
+      "charEnd": 140,
+      "startS": 9.68,
+      "endS": 9.84
+    },
+    {
+      "text": "tú",
+      "charStart": 141,
+      "charEnd": 143,
+      "startS": 9.84,
+      "endS": 10.0
+    }
+  ]
+}

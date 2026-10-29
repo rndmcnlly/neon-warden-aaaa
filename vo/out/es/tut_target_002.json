@@ -1,0 +1,166 @@
+{
+  "hash": "cf410bea224d439c",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_target_002",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "¡Excelente! Los exploradores son los ojos del Guardián. Cada ojo que cierras es un ojo menos sobre ti.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Proud applause, then a motivational-poster cadence.",
+  "duration": 7.76,
+  "sample_rate": 24000,
+  "peak": 0.769,
+  "clipping_suspect": false,
+  "asr": "Excelente, los exploradores son los ojos del guardián. Cada ojo que cierras es un ojo menos soberbio.",
+  "asr_similarity": 0.914,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.13,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "cf410bea224d439c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Excelente",
+      "charStart": 1,
+      "charEnd": 10,
+      "startS": 0.16,
+      "endS": 1.12
+    },
+    {
+      "text": "Los",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "exploradores",
+      "charStart": 16,
+      "charEnd": 28,
+      "startS": 1.76,
+      "endS": 2.48
+    },
+    {
+      "text": "son",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "los",
+      "charStart": 33,
+      "charEnd": 36,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "ojos",
+      "charStart": 37,
+      "charEnd": 41,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "del",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "Guardián",
+      "charStart": 46,
+      "charEnd": 54,
+      "startS": 3.36,
+      "endS": 4.0
+    },
+    {
+      "text": "Cada",
+      "charStart": 56,
+      "charEnd": 60,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "ojo",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "que",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "cierras",
+      "charStart": 69,
+      "charEnd": 76,
+      "startS": 5.36,
+      "endS": 5.76
+    },
+    {
+      "text": "es",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "un",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "ojo",
+      "charStart": 83,
+      "charEnd": 86,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "menos",
+      "charStart": 87,
+      "charEnd": 92,
+      "startS": 6.4,
+      "endS": 6.72
+    },
+    {
+      "text": "sobre",
+      "charStart": 93,
+      "charEnd": 98,
+      "startS": 6.72,
+      "endS": 6.96
+    },
+    {
+      "text": "ti",
+      "charStart": 99,
+      "charEnd": 101,
+      "startS": 7.28,
+      "endS": 7.44
+    }
+  ]
+}

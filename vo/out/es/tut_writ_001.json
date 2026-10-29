@@ -1,0 +1,348 @@
+{
+  "hash": "92a3f5d49e44e6a9",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_writ_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Tu capacitor está lleno, y una carga completa se llama Mandato. Su nombre completo es Mandato de Cercamiento, por el instrumento que fundó la Autoridad. Un Mandato atraviesa todo lo que se interponga. Por favor, suéltalo sobre el punto débil que marcó tu escaneo.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. A little ceremony on the full name.",
+  "duration": 18.24,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.25,
+    "gain_db": 5.81,
+    "limited_db": 1.26,
+    "measured_before_lufs": -23.81,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Tu",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.0,
+      "endS": 0.64
+    },
+    {
+      "text": "capacitor",
+      "charStart": 3,
+      "charEnd": 12,
+      "startS": 0.64,
+      "endS": 1.2
+    },
+    {
+      "text": "está",
+      "charStart": 13,
+      "charEnd": 17,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "lleno",
+      "charStart": 18,
+      "charEnd": 23,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "y",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 2.32,
+      "endS": 2.4
+    },
+    {
+      "text": "una",
+      "charStart": 27,
+      "charEnd": 30,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "carga",
+      "charStart": 31,
+      "charEnd": 36,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "completa",
+      "charStart": 37,
+      "charEnd": 45,
+      "startS": 2.96,
+      "endS": 3.44
+    },
+    {
+      "text": "se",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "llama",
+      "charStart": 49,
+      "charEnd": 54,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "Mandato",
+      "charStart": 55,
+      "charEnd": 62,
+      "startS": 3.92,
+      "endS": 4.64
+    },
+    {
+      "text": "Su",
+      "charStart": 64,
+      "charEnd": 66,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "nombre",
+      "charStart": 67,
+      "charEnd": 73,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "completo",
+      "charStart": 74,
+      "charEnd": 82,
+      "startS": 5.76,
+      "endS": 6.32
+    },
+    {
+      "text": "es",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "Mandato",
+      "charStart": 86,
+      "charEnd": 93,
+      "startS": 6.48,
+      "endS": 7.04
+    },
+    {
+      "text": "de",
+      "charStart": 94,
+      "charEnd": 96,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "Cercamiento",
+      "charStart": 97,
+      "charEnd": 108,
+      "startS": 7.2,
+      "endS": 8.08
+    },
+    {
+      "text": "por",
+      "charStart": 110,
+      "charEnd": 113,
+      "startS": 8.32,
+      "endS": 8.48
+    },
+    {
+      "text": "el",
+      "charStart": 114,
+      "charEnd": 116,
+      "startS": 8.48,
+      "endS": 8.64
+    },
+    {
+      "text": "instrumento",
+      "charStart": 117,
+      "charEnd": 128,
+      "startS": 8.72,
+      "endS": 9.28
+    },
+    {
+      "text": "que",
+      "charStart": 129,
+      "charEnd": 132,
+      "startS": 9.28,
+      "endS": 9.36
+    },
+    {
+      "text": "fundó",
+      "charStart": 133,
+      "charEnd": 138,
+      "startS": 9.36,
+      "endS": 9.76
+    },
+    {
+      "text": "la",
+      "charStart": 139,
+      "charEnd": 141,
+      "startS": 9.76,
+      "endS": 9.92
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 142,
+      "charEnd": 151,
+      "startS": 9.92,
+      "endS": 10.56
+    },
+    {
+      "text": "Un",
+      "charStart": 153,
+      "charEnd": 155,
+      "startS": 11.12,
+      "endS": 11.2
+    },
+    {
+      "text": "Mandato",
+      "charStart": 156,
+      "charEnd": 163,
+      "startS": 11.2,
+      "endS": 11.68
+    },
+    {
+      "text": "atraviesa",
+      "charStart": 164,
+      "charEnd": 173,
+      "startS": 11.76,
+      "endS": 12.32
+    },
+    {
+      "text": "todo",
+      "charStart": 174,
+      "charEnd": 178,
+      "startS": 12.4,
+      "endS": 12.48
+    },
+    {
+      "text": "lo",
+      "charStart": 179,
+      "charEnd": 181,
+      "startS": 12.72,
+      "endS": 12.8
+    },
+    {
+      "text": "que",
+      "charStart": 182,
+      "charEnd": 185,
+      "startS": 12.8,
+      "endS": 12.88
+    },
+    {
+      "text": "se",
+      "charStart": 186,
+      "charEnd": 188,
+      "startS": 12.88,
+      "endS": 13.04
+    },
+    {
+      "text": "interponga",
+      "charStart": 189,
+      "charEnd": 199,
+      "startS": 13.04,
+      "endS": 13.76
+    },
+    {
+      "text": "Por",
+      "charStart": 201,
+      "charEnd": 204,
+      "startS": 14.24,
+      "endS": 14.4
+    },
+    {
+      "text": "favor",
+      "charStart": 205,
+      "charEnd": 210,
+      "startS": 14.72,
+      "endS": 14.88
+    },
+    {
+      "text": "suéltalo",
+      "charStart": 212,
+      "charEnd": 220,
+      "startS": 15.04,
+      "endS": 15.68
+    },
+    {
+      "text": "sobre",
+      "charStart": 221,
+      "charEnd": 226,
+      "startS": 15.68,
+      "endS": 16.0
+    },
+    {
+      "text": "el",
+      "charStart": 227,
+      "charEnd": 229,
+      "startS": 16.0,
+      "endS": 16.16
+    },
+    {
+      "text": "punto",
+      "charStart": 230,
+      "charEnd": 235,
+      "startS": 16.16,
+      "endS": 16.48
+    },
+    {
+      "text": "débil",
+      "charStart": 236,
+      "charEnd": 241,
+      "startS": 16.56,
+      "endS": 16.88
+    },
+    {
+      "text": "que",
+      "charStart": 242,
+      "charEnd": 245,
+      "startS": 16.88,
+      "endS": 16.96
+    },
+    {
+      "text": "marcó",
+      "charStart": 246,
+      "charEnd": 251,
+      "startS": 17.04,
+      "endS": 17.36
+    },
+    {
+      "text": "tu",
+      "charStart": 252,
+      "charEnd": 254,
+      "startS": 17.44,
+      "endS": 17.52
+    },
+    {
+      "text": "escaneo",
+      "charStart": 255,
+      "charEnd": 262,
+      "startS": 17.6,
+      "endS": 18.16
+    }
+  ],
+  "words_for": "92a3f5d49e44e6a9/wordtiming-v1",
+  "asr": "Tu capacitor está lleno. Un cargo completo se llama mandato. Su nombre completo es mandato de ser comiendo por el instrumento que fundó la autoridad. Un mandato atraviesa todo lo que se interpone. Por favor, suelto sobre el punto de vio que marcó tu escaneo.",
+  "asr_similarity": 0.809
+}

@@ -1,0 +1,82 @@
+{
+  "hash": "06b71fe17f39be05",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_drone_locked_001",
+    "seed": 55,
+    "language": "English",
+    "text": "I'm painted. Contract sensor, full lock.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Startled.",
+  "duration": 2.72,
+  "sample_rate": 24000,
+  "peak": 0.779,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.17,
+    "gain_db": 3.8,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.8,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "I'm",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "painted",
+      "charStart": 4,
+      "charEnd": 11,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "Contract",
+      "charStart": 13,
+      "charEnd": 21,
+      "startS": 0.8,
+      "endS": 1.44
+    },
+    {
+      "text": "sensor",
+      "charStart": 22,
+      "charEnd": 28,
+      "startS": 1.44,
+      "endS": 2.0
+    },
+    {
+      "text": "full",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "lock",
+      "charStart": 35,
+      "charEnd": 39,
+      "startS": 2.32,
+      "endS": 2.64
+    }
+  ],
+  "words_for": "06b71fe17f39be05/wordtiming-v1",
+  "asr": "I'm painted. Contract sensor, full lock.",
+  "asr_similarity": 1.0
+}

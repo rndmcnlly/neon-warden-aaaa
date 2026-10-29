@@ -1,0 +1,152 @@
+{
+  "hash": "b396787c4938a7a3",
+  "mode": "clone",
+  "request": {
+    "id": "zh__boss_pac_003",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "哈！好！很好！你飞得像一艘有主见的货船！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Delighted cackle, a proud coach.",
+  "duration": 4.24,
+  "sample_rate": 24000,
+  "peak": 0.721,
+  "clipping_suspect": false,
+  "asr": "哈，好很好！你飞得像一艘有主见的货船。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.83,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "b396787c4938a7a3/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "哈",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "好",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 1.12
+    },
+    {
+      "text": "很",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "好",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "你",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "飞",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "得",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "像",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "一",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "艘",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "有",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "主",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "见",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "的",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "货",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "船",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.84,
+      "endS": 4.16
+    }
+  ]
+}

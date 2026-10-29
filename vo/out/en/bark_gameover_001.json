@@ -1,0 +1,117 @@
+{
+  "hash": "fbe66a68294da0af",
+  "mode": "clone",
+  "request": {
+    "id": "en__bark_gameover_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Ship lost. The lanes stay closed, for now. Requisitioning a replacement.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, routine procedure, not unkind.",
+  "duration": 4.48,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Ship lost. The lane stay closed for now. Requisitioning a replacement.",
+  "asr_similarity": 0.909,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 0.45,
+    "limited_db": 0.4,
+    "measured_before_lufs": -18.45,
+    "peak_bound": false
+  },
+  "words_for": "fbe66a68294da0af/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ship",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "lost",
+      "charStart": 5,
+      "charEnd": 9,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "The",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.28,
+      "endS": 1.36
+    },
+    {
+      "text": "lanes",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.36,
+      "endS": 1.68
+    },
+    {
+      "text": "stay",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "closed",
+      "charStart": 26,
+      "charEnd": 32,
+      "startS": 1.84,
+      "endS": 2.32
+    },
+    {
+      "text": "for",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "now",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "Requisitioning",
+      "charStart": 43,
+      "charEnd": 57,
+      "startS": 2.72,
+      "endS": 3.52
+    },
+    {
+      "text": "a",
+      "charStart": 58,
+      "charEnd": 59,
+      "startS": 3.52,
+      "endS": 3.6
+    },
+    {
+      "text": "replacement",
+      "charStart": 60,
+      "charEnd": 71,
+      "startS": 3.6,
+      "endS": 4.32
+    }
+  ]
+}

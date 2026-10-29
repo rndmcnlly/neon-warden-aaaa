@@ -1,0 +1,103 @@
+{
+  "hash": "044628a8f7b630f6",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_p2_002",
+    "seed": 233,
+    "language": "Spanish",
+    "text": "¿¡Crees que QUIERO hacer esto!? ¡Preferiría estar contando cargueros!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Wounded pride, nearly a whine.",
+  "duration": 4.8,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.23,
+    "gain_db": 1.12,
+    "limited_db": 0.09,
+    "measured_before_lufs": -19.12,
+    "peak_bound": false
+  },
+  "asr": "Crees que quiero hacer esto. Preferiría estar contando cargueros.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Crees",
+      "charStart": 2,
+      "charEnd": 7,
+      "startS": 0.32,
+      "endS": 0.8
+    },
+    {
+      "text": "que",
+      "charStart": 8,
+      "charEnd": 11,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "QUIERO",
+      "charStart": 12,
+      "charEnd": 18,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "hacer",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "esto",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 1.52,
+      "endS": 2.0
+    },
+    {
+      "text": "Preferiría",
+      "charStart": 33,
+      "charEnd": 43,
+      "startS": 2.32,
+      "endS": 2.96
+    },
+    {
+      "text": "estar",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 2.96,
+      "endS": 3.28
+    },
+    {
+      "text": "contando",
+      "charStart": 50,
+      "charEnd": 58,
+      "startS": 3.28,
+      "endS": 3.92
+    },
+    {
+      "text": "cargueros",
+      "charStart": 59,
+      "charEnd": 68,
+      "startS": 3.92,
+      "endS": 4.64
+    }
+  ],
+  "words_for": "044628a8f7b630f6/wordtiming-v1"
+}

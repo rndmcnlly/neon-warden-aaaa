@@ -1,0 +1,278 @@
+{
+  "hash": "f016b7a4484ce34f",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_intel_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Locked. A lock tells you what the target is doing: patrolling, aiming, firing, evading or retreating. It also marks its weapon parts and its weak point. Everything you scan is filed to your codex.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word. Quietly proud of the technology.",
+  "duration": 12.56,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.25,
+    "gain_db": 4.0,
+    "limited_db": 0.15,
+    "measured_before_lufs": -22.0,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Locked",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "A",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.04,
+      "endS": 1.12
+    },
+    {
+      "text": "lock",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 1.12,
+      "endS": 1.44
+    },
+    {
+      "text": "tells",
+      "charStart": 15,
+      "charEnd": 20,
+      "startS": 1.44,
+      "endS": 1.68
+    },
+    {
+      "text": "you",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 1.68,
+      "endS": 1.76
+    },
+    {
+      "text": "what",
+      "charStart": 25,
+      "charEnd": 29,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "the",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "target",
+      "charStart": 34,
+      "charEnd": 40,
+      "startS": 2.0,
+      "endS": 2.4
+    },
+    {
+      "text": "is",
+      "charStart": 41,
+      "charEnd": 43,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "doing",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "patrolling",
+      "charStart": 51,
+      "charEnd": 61,
+      "startS": 3.36,
+      "endS": 4.08
+    },
+    {
+      "text": "aiming",
+      "charStart": 63,
+      "charEnd": 69,
+      "startS": 4.16,
+      "endS": 4.56
+    },
+    {
+      "text": "firing",
+      "charStart": 71,
+      "charEnd": 77,
+      "startS": 4.56,
+      "endS": 5.2
+    },
+    {
+      "text": "evading",
+      "charStart": 79,
+      "charEnd": 86,
+      "startS": 5.2,
+      "endS": 5.68
+    },
+    {
+      "text": "or",
+      "charStart": 87,
+      "charEnd": 89,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "retreating",
+      "charStart": 90,
+      "charEnd": 100,
+      "startS": 5.92,
+      "endS": 6.56
+    },
+    {
+      "text": "It",
+      "charStart": 102,
+      "charEnd": 104,
+      "startS": 7.12,
+      "endS": 7.2
+    },
+    {
+      "text": "also",
+      "charStart": 105,
+      "charEnd": 109,
+      "startS": 7.2,
+      "endS": 7.28
+    },
+    {
+      "text": "marks",
+      "charStart": 110,
+      "charEnd": 115,
+      "startS": 7.52,
+      "endS": 7.84
+    },
+    {
+      "text": "its",
+      "charStart": 116,
+      "charEnd": 119,
+      "startS": 7.84,
+      "endS": 8.0
+    },
+    {
+      "text": "weapon",
+      "charStart": 120,
+      "charEnd": 126,
+      "startS": 8.0,
+      "endS": 8.32
+    },
+    {
+      "text": "parts",
+      "charStart": 127,
+      "charEnd": 132,
+      "startS": 8.32,
+      "endS": 8.72
+    },
+    {
+      "text": "and",
+      "charStart": 133,
+      "charEnd": 136,
+      "startS": 8.72,
+      "endS": 8.8
+    },
+    {
+      "text": "its",
+      "charStart": 137,
+      "charEnd": 140,
+      "startS": 8.8,
+      "endS": 9.04
+    },
+    {
+      "text": "weak",
+      "charStart": 141,
+      "charEnd": 145,
+      "startS": 9.04,
+      "endS": 9.2
+    },
+    {
+      "text": "point",
+      "charStart": 146,
+      "charEnd": 151,
+      "startS": 9.28,
+      "endS": 9.68
+    },
+    {
+      "text": "Everything",
+      "charStart": 153,
+      "charEnd": 163,
+      "startS": 10.24,
+      "endS": 10.72
+    },
+    {
+      "text": "you",
+      "charStart": 164,
+      "charEnd": 167,
+      "startS": 10.72,
+      "endS": 10.88
+    },
+    {
+      "text": "scan",
+      "charStart": 168,
+      "charEnd": 172,
+      "startS": 10.88,
+      "endS": 11.2
+    },
+    {
+      "text": "is",
+      "charStart": 173,
+      "charEnd": 175,
+      "startS": 11.2,
+      "endS": 11.36
+    },
+    {
+      "text": "filed",
+      "charStart": 176,
+      "charEnd": 181,
+      "startS": 11.36,
+      "endS": 11.68
+    },
+    {
+      "text": "to",
+      "charStart": 182,
+      "charEnd": 184,
+      "startS": 11.76,
+      "endS": 11.84
+    },
+    {
+      "text": "your",
+      "charStart": 185,
+      "charEnd": 189,
+      "startS": 11.84,
+      "endS": 11.92
+    },
+    {
+      "text": "codex",
+      "charStart": 190,
+      "charEnd": 195,
+      "startS": 11.92,
+      "endS": 12.48
+    }
+  ],
+  "words_for": "f016b7a4484ce34f/wordtiming-v1",
+  "asr": "Locked, a lock tells you what the target is doing: patrolling, aiming, firing, evading, or retreating. It also marks its weapon parts and its weak point. Everything you scan is filed to your codex.",
+  "asr_similarity": 1.0
+}

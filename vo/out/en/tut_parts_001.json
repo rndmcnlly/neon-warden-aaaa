@@ -1,0 +1,180 @@
+{
+  "hash": "f285907cbbb0b7cd",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_parts_001",
+    "seed": 11,
+    "language": "English",
+    "text": "This practice turret has one weapon part: its barrel. Tap it, or release a Writ on it, until it breaks.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 6.88,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.25,
+    "true_peak_dbtp": -1.12,
+    "gain_db": 4.97,
+    "limited_db": 1.84,
+    "measured_before_lufs": -22.97,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "This",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "practice",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 0.4,
+      "endS": 0.96
+    },
+    {
+      "text": "turret",
+      "charStart": 14,
+      "charEnd": 20,
+      "startS": 0.96,
+      "endS": 1.28
+    },
+    {
+      "text": "has",
+      "charStart": 21,
+      "charEnd": 24,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "one",
+      "charStart": 25,
+      "charEnd": 28,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "weapon",
+      "charStart": 29,
+      "charEnd": 35,
+      "startS": 1.84,
+      "endS": 2.16
+    },
+    {
+      "text": "part",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "its",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "barrel",
+      "charStart": 46,
+      "charEnd": 52,
+      "startS": 3.04,
+      "endS": 3.52
+    },
+    {
+      "text": "Tap",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "it",
+      "charStart": 58,
+      "charEnd": 60,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "or",
+      "charStart": 62,
+      "charEnd": 64,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "release",
+      "charStart": 65,
+      "charEnd": 72,
+      "startS": 4.64,
+      "endS": 5.04
+    },
+    {
+      "text": "a",
+      "charStart": 73,
+      "charEnd": 74,
+      "startS": 5.04,
+      "endS": 5.12
+    },
+    {
+      "text": "Writ",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "on",
+      "charStart": 80,
+      "charEnd": 82,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "it",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "until",
+      "charStart": 87,
+      "charEnd": 92,
+      "startS": 5.76,
+      "endS": 6.08
+    },
+    {
+      "text": "it",
+      "charStart": 93,
+      "charEnd": 95,
+      "startS": 6.08,
+      "endS": 6.24
+    },
+    {
+      "text": "breaks",
+      "charStart": 96,
+      "charEnd": 102,
+      "startS": 6.24,
+      "endS": 6.8
+    }
+  ],
+  "words_for": "f285907cbbb0b7cd/wordtiming-v1",
+  "asr": "This practice turret has one weapon part: its barrel. Tap it or release a rite on it until it breaks.",
+  "asr_similarity": 0.95
+}

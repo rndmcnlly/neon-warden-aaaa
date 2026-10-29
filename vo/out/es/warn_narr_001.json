@@ -1,0 +1,54 @@
+{
+  "hash": "238798863b131201",
+  "mode": "clone",
+  "request": {
+    "id": "es__warn_narr_001",
+    "seed": 22,
+    "language": "Spanish",
+    "text": "El Guardián.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "The biggest, lowest, slowest two words in the game.",
+  "duration": 1.6,
+  "sample_rate": 24000,
+  "peak": 0.686,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.23,
+    "gain_db": 7.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -25.07,
+    "peak_bound": false
+  },
+  "asr": "El guardián.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "El",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.48,
+      "endS": 0.72
+    },
+    {
+      "text": "Guardián",
+      "charStart": 3,
+      "charEnd": 11,
+      "startS": 0.72,
+      "endS": 1.52
+    }
+  ],
+  "words_for": "238798863b131201/wordtiming-v1"
+}

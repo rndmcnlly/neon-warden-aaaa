@@ -1,0 +1,383 @@
+{
+  "hash": "f2c048ac39b918c0",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_focus_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "按住专注键，就能缓慢而精准地飞行。专注，是为了让宝石从子弹缝隙中穿过。我们来练习一下。专注。很好。继续专注。太棒了。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Meditation-app calm that keeps slipping back into perkiness.",
+  "duration": 11.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "按住专注键就能缓慢而精准的飞行。专注是为了让宝石从子弹缝隙中穿过。我们来练习一下：专注，很好，继续专注，太棒了。",
+  "asr_similarity": 0.98,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.03,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 1.58,
+    "limited_db": 1.53,
+    "measured_before_lufs": -19.58,
+    "peak_bound": false
+  },
+  "words_for": "f2c048ac39b918c0/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "按",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.24,
+      "endS": 0.32
+    },
+    {
+      "text": "住",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "专",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "注",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "键",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "就",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "能",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "缓",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "慢",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.92,
+      "endS": 2.16
+    },
+    {
+      "text": "而",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.16,
+      "endS": 2.24
+    },
+    {
+      "text": "精",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "准",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.72
+    },
+    {
+      "text": "地",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "飞",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "行",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 2.96,
+      "endS": 3.36
+    },
+    {
+      "text": "专",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "注",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.76,
+      "endS": 3.92
+    },
+    {
+      "text": "是",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "为",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "了",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "让",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "宝",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "石",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "从",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "子",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.12,
+      "endS": 5.36
+    },
+    {
+      "text": "弹",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.36,
+      "endS": 5.52
+    },
+    {
+      "text": "缝",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.52,
+      "endS": 5.68
+    },
+    {
+      "text": "隙",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.68,
+      "endS": 5.84
+    },
+    {
+      "text": "中",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "穿",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "过",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.4,
+      "endS": 6.56
+    },
+    {
+      "text": "我",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.88,
+      "endS": 6.96
+    },
+    {
+      "text": "们",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.96,
+      "endS": 7.04
+    },
+    {
+      "text": "来",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 7.04,
+      "endS": 7.12
+    },
+    {
+      "text": "练",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 7.12,
+      "endS": 7.36
+    },
+    {
+      "text": "习",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 7.36,
+      "endS": 7.52
+    },
+    {
+      "text": "一",
+      "charStart": 40,
+      "charEnd": 41,
+      "startS": 7.52,
+      "endS": 7.6
+    },
+    {
+      "text": "下",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 7.6,
+      "endS": 7.84
+    },
+    {
+      "text": "专",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 8.08,
+      "endS": 8.16
+    },
+    {
+      "text": "注",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 8.24,
+      "endS": 8.56
+    },
+    {
+      "text": "很",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 8.72,
+      "endS": 8.8
+    },
+    {
+      "text": "好",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 9.2,
+      "endS": 9.36
+    },
+    {
+      "text": "继",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 9.44,
+      "endS": 9.6
+    },
+    {
+      "text": "续",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 9.6,
+      "endS": 9.76
+    },
+    {
+      "text": "专",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 9.76,
+      "endS": 10.0
+    },
+    {
+      "text": "注",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 10.0,
+      "endS": 10.24
+    },
+    {
+      "text": "太",
+      "charStart": 54,
+      "charEnd": 55,
+      "startS": 10.32,
+      "endS": 10.4
+    },
+    {
+      "text": "棒",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 10.56,
+      "endS": 10.72
+    },
+    {
+      "text": "了",
+      "charStart": 56,
+      "charEnd": 57,
+      "startS": 10.72,
+      "endS": 11.04
+    }
+  ]
+}

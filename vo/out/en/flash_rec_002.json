@@ -1,0 +1,145 @@
+{
+  "hash": "230892033564b3c9",
+  "mode": "clone",
+  "request": {
+    "id": "en__flash_rec_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Pilot zero one two one, your weapon is cold. Please fire. Please fire. Pilot, please.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded; the script breaks down into pleading on the last word.",
+  "duration": 6.96,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Pilot zero one two one, your weapon is cold. Please fire, please fire, pilot, please.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 0.13,
+    "limited_db": 0.08,
+    "measured_before_lufs": -18.13,
+    "peak_bound": false
+  },
+  "words_for": "230892033564b3c9/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Pilot",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.16,
+      "endS": 0.64
+    },
+    {
+      "text": "zero",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.64,
+      "endS": 0.88
+    },
+    {
+      "text": "one",
+      "charStart": 11,
+      "charEnd": 14,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "two",
+      "charStart": 15,
+      "charEnd": 18,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "one",
+      "charStart": 19,
+      "charEnd": 22,
+      "startS": 1.6,
+      "endS": 2.08
+    },
+    {
+      "text": "your",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 2.4,
+      "endS": 2.56
+    },
+    {
+      "text": "weapon",
+      "charStart": 29,
+      "charEnd": 35,
+      "startS": 2.56,
+      "endS": 2.96
+    },
+    {
+      "text": "is",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "cold",
+      "charStart": 39,
+      "charEnd": 43,
+      "startS": 3.12,
+      "endS": 3.68
+    },
+    {
+      "text": "Please",
+      "charStart": 45,
+      "charEnd": 51,
+      "startS": 3.92,
+      "endS": 4.08
+    },
+    {
+      "text": "fire",
+      "charStart": 52,
+      "charEnd": 56,
+      "startS": 4.32,
+      "endS": 4.8
+    },
+    {
+      "text": "Please",
+      "charStart": 58,
+      "charEnd": 64,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "fire",
+      "charStart": 65,
+      "charEnd": 69,
+      "startS": 5.28,
+      "endS": 5.68
+    },
+    {
+      "text": "Pilot",
+      "charStart": 71,
+      "charEnd": 76,
+      "startS": 5.68,
+      "endS": 6.24
+    },
+    {
+      "text": "please",
+      "charStart": 78,
+      "charEnd": 84,
+      "startS": 6.24,
+      "endS": 6.88
+    }
+  ]
+}

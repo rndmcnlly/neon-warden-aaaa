@@ -1,0 +1,138 @@
+{
+  "hash": "f8b15386882eec71",
+  "mode": "clone",
+  "request": {
+    "id": "zh__boss_p3_002",
+    "seed": 333,
+    "language": "Chinese",
+    "text": "三百年了，你们带的都是同一把枪！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Exhausted contempt.",
+  "duration": 3.52,
+  "sample_rate": 24000,
+  "peak": 0.659,
+  "clipping_suspect": false,
+  "asr": "三百年了，你们大家都是同一把枪。",
+  "asr_similarity": 0.857,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.61,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "f8b15386882eec71/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "三",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.0,
+      "endS": 0.4
+    },
+    {
+      "text": "百",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.64
+    },
+    {
+      "text": "年",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "了",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 1.12
+    },
+    {
+      "text": "你",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "们",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "带",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "的",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "都",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "是",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "同",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.24,
+      "endS": 2.56
+    },
+    {
+      "text": "一",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "把",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "枪",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.8,
+      "endS": 3.52
+    }
+  ]
+}

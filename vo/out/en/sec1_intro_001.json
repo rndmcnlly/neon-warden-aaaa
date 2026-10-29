@@ -1,0 +1,117 @@
+{
+  "hash": "30955137614dc28d",
+  "mode": "clone",
+  "request": {
+    "id": "en__sec1_intro_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, crisp mission-control energy.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.765,
+  "clipping_suspect": false,
+  "asr": "Outer drift scouts ahead. Scout fire is light and completely unprovoked.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.3,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "30955137614dc28d/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Outer",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "Drift",
+      "charStart": 6,
+      "charEnd": 11,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "Scouts",
+      "charStart": 13,
+      "charEnd": 19,
+      "startS": 1.68,
+      "endS": 2.16
+    },
+    {
+      "text": "ahead",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 2.16,
+      "endS": 2.64
+    },
+    {
+      "text": "Scout",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 2.8,
+      "endS": 3.2
+    },
+    {
+      "text": "fire",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 3.2,
+      "endS": 3.6
+    },
+    {
+      "text": "is",
+      "charStart": 38,
+      "charEnd": 40,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "light",
+      "charStart": 41,
+      "charEnd": 46,
+      "startS": 3.76,
+      "endS": 4.16
+    },
+    {
+      "text": "and",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "completely",
+      "charStart": 52,
+      "charEnd": 62,
+      "startS": 4.48,
+      "endS": 5.12
+    },
+    {
+      "text": "unprovoked",
+      "charStart": 63,
+      "charEnd": 73,
+      "startS": 5.12,
+      "endS": 5.92
+    }
+  ]
+}

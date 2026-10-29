@@ -1,0 +1,131 @@
+{
+  "hash": "e169935500534ec9",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_dart_patrol_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Belt is clear. No guns on us, per the treaty. Never needed them.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. A little proud.",
+  "duration": 4.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.19,
+    "true_peak_dbtp": -1.15,
+    "gain_db": 4.0,
+    "limited_db": 1.64,
+    "measured_before_lufs": -22.0,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Belt",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "is",
+      "charStart": 5,
+      "charEnd": 7,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "clear",
+      "charStart": 8,
+      "charEnd": 13,
+      "startS": 0.56,
+      "endS": 1.12
+    },
+    {
+      "text": "No",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "guns",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.52,
+      "endS": 1.84
+    },
+    {
+      "text": "on",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 1.84,
+      "endS": 1.92
+    },
+    {
+      "text": "us",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "per",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "the",
+      "charStart": 34,
+      "charEnd": 37,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "treaty",
+      "charStart": 38,
+      "charEnd": 44,
+      "startS": 2.48,
+      "endS": 2.96
+    },
+    {
+      "text": "Never",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 3.12,
+      "endS": 3.44
+    },
+    {
+      "text": "needed",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 3.44,
+      "endS": 3.76
+    },
+    {
+      "text": "them",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 3.76,
+      "endS": 4.0
+    }
+  ],
+  "words_for": "e169935500534ec9/wordtiming-v1",
+  "asr": "Belt is clear. No guns on us per the treaty. Never needed them.",
+  "asr_similarity": 1.0
+}

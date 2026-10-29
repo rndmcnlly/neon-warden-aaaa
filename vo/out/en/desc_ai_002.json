@@ -1,0 +1,145 @@
+{
+  "hash": "49ef5bc365611120",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_ai_002",
+    "seed": 11,
+    "language": "English",
+    "text": "Proceed with the engagement, Pilot. Statements by the Warden are not covered by your contract.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, firmly back on script.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.786,
+  "clipping_suspect": false,
+  "asr": "Proceed with the engagement. Pilot statements by the warden are not covered by your contract.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.98,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "49ef5bc365611120/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Proceed",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.24,
+      "endS": 0.72
+    },
+    {
+      "text": "with",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "the",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 0.88,
+      "endS": 0.96
+    },
+    {
+      "text": "engagement",
+      "charStart": 17,
+      "charEnd": 27,
+      "startS": 0.96,
+      "endS": 1.68
+    },
+    {
+      "text": "Pilot",
+      "charStart": 29,
+      "charEnd": 34,
+      "startS": 2.24,
+      "endS": 2.72
+    },
+    {
+      "text": "Statements",
+      "charStart": 36,
+      "charEnd": 46,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "by",
+      "charStart": 47,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.44
+    },
+    {
+      "text": "the",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "Warden",
+      "charStart": 54,
+      "charEnd": 60,
+      "startS": 3.52,
+      "endS": 4.0
+    },
+    {
+      "text": "are",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "not",
+      "charStart": 65,
+      "charEnd": 68,
+      "startS": 4.08,
+      "endS": 4.4
+    },
+    {
+      "text": "covered",
+      "charStart": 69,
+      "charEnd": 76,
+      "startS": 4.4,
+      "endS": 4.8
+    },
+    {
+      "text": "by",
+      "charStart": 77,
+      "charEnd": 79,
+      "startS": 4.8,
+      "endS": 4.88
+    },
+    {
+      "text": "your",
+      "charStart": 80,
+      "charEnd": 84,
+      "startS": 4.88,
+      "endS": 5.04
+    },
+    {
+      "text": "contract",
+      "charStart": 85,
+      "charEnd": 93,
+      "startS": 5.04,
+      "endS": 5.92
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "hash": "a1a7d16be9aa2e09",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_dart_lost_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Le disparó a un dardo. ¡A un dardo VACÍO!",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Disbelief.",
+  "duration": 3.68,
+  "sample_rate": 24000,
+  "peak": 0.731,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.65,
+    "gain_db": 0.2,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.2,
+    "peak_bound": false
+  },
+  "asr": "Le disparó a un dardo, a un dardo vacío.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Le",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "disparó",
+      "charStart": 3,
+      "charEnd": 10,
+      "startS": 0.96,
+      "endS": 1.36
+    },
+    {
+      "text": "a",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "un",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "dardo",
+      "charStart": 16,
+      "charEnd": 21,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "A",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "un",
+      "charStart": 26,
+      "charEnd": 28,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "dardo",
+      "charStart": 29,
+      "charEnd": 34,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "VACÍO",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 3.12,
+      "endS": 3.68
+    }
+  ],
+  "words_for": "a1a7d16be9aa2e09/wordtiming-v1"
+}

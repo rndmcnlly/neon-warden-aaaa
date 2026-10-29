@@ -1,0 +1,145 @@
+{
+  "hash": "f15c4fd2298e0fbd",
+  "mode": "clone",
+  "request": {
+    "id": "zh__flash_rec_006",
+    "seed": 33,
+    "language": "Chinese",
+    "text": "不。不，不，不！别把他带走！他已经停手了！",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Recorded, the high voice cracking into a scream as the signal cuts.",
+  "duration": 5.68,
+  "sample_rate": 24000,
+  "peak": 0.61,
+  "clipping_suspect": false,
+  "asr": "不不不不！别把他带走，他已经停手了。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.29,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "f15c4fd2298e0fbd/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "不",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "不",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "不",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 2.32,
+      "endS": 2.48
+    },
+    {
+      "text": "不",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "别",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "把",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "他",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "带",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.52,
+      "endS": 3.76
+    },
+    {
+      "text": "走",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.76,
+      "endS": 4.08
+    },
+    {
+      "text": "他",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "已",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "经",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "停",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "手",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "了",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 5.28,
+      "endS": 5.6
+    }
+  ]
+}

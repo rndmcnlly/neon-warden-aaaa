@@ -1,0 +1,173 @@
+{
+  "hash": "87d3a216c1829dc8",
+  "mode": "clone",
+  "request": {
+    "id": "es__brief_warden_005",
+    "seed": 22,
+    "language": "Spanish",
+    "text": "Mientras siga en pie, no se puede cobrar ningún peaje. Ninguna ruta puede concesionarse. Ninguna ruta puede tener dueño.",
+    "voice_ref": "vo/voices/narrator.es.wav",
+    "reference_text": "En un mundo donde el neón nunca duerme, un piloto recuerda. La lluvia. El silencio. Y la promesa que no pudo cumplir."
+  },
+  "direction": "Same doom, but the stakes are commercial; play it with no irony at all.",
+  "duration": 9.76,
+  "sample_rate": 24000,
+  "peak": 0.853,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.37,
+    "gain_db": 4.07,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.07,
+    "peak_bound": false
+  },
+  "asr": "Mientras siga en pie, no se puede cobrar ningún peaje, ninguna ruta puede concesionarse, ninguna ruta puede tener dueño.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Mientras",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.4,
+      "endS": 0.8
+    },
+    {
+      "text": "siga",
+      "charStart": 9,
+      "charEnd": 13,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "en",
+      "charStart": 14,
+      "charEnd": 16,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "pie",
+      "charStart": 17,
+      "charEnd": 20,
+      "startS": 1.2,
+      "endS": 1.52
+    },
+    {
+      "text": "no",
+      "charStart": 22,
+      "charEnd": 24,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "se",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 2.0,
+      "endS": 2.16
+    },
+    {
+      "text": "puede",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 2.16,
+      "endS": 2.56
+    },
+    {
+      "text": "cobrar",
+      "charStart": 34,
+      "charEnd": 40,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "ningún",
+      "charStart": 41,
+      "charEnd": 47,
+      "startS": 2.88,
+      "endS": 3.28
+    },
+    {
+      "text": "peaje",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 3.28,
+      "endS": 4.0
+    },
+    {
+      "text": "Ninguna",
+      "charStart": 55,
+      "charEnd": 62,
+      "startS": 4.4,
+      "endS": 4.8
+    },
+    {
+      "text": "ruta",
+      "charStart": 63,
+      "charEnd": 67,
+      "startS": 4.8,
+      "endS": 5.28
+    },
+    {
+      "text": "puede",
+      "charStart": 68,
+      "charEnd": 73,
+      "startS": 5.28,
+      "endS": 5.6
+    },
+    {
+      "text": "concesionarse",
+      "charStart": 74,
+      "charEnd": 87,
+      "startS": 5.6,
+      "endS": 6.72
+    },
+    {
+      "text": "Ninguna",
+      "charStart": 89,
+      "charEnd": 96,
+      "startS": 7.2,
+      "endS": 7.68
+    },
+    {
+      "text": "ruta",
+      "charStart": 97,
+      "charEnd": 101,
+      "startS": 7.68,
+      "endS": 8.0
+    },
+    {
+      "text": "puede",
+      "charStart": 102,
+      "charEnd": 107,
+      "startS": 8.0,
+      "endS": 8.4
+    },
+    {
+      "text": "tener",
+      "charStart": 108,
+      "charEnd": 113,
+      "startS": 8.4,
+      "endS": 8.72
+    },
+    {
+      "text": "dueño",
+      "charStart": 114,
+      "charEnd": 119,
+      "startS": 8.72,
+      "endS": 9.28
+    }
+  ],
+  "words_for": "87d3a216c1829dc8/wordtiming-v1"
+}

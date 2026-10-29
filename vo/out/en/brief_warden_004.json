@@ -1,0 +1,138 @@
+{
+  "hash": "062906d232fdcca6",
+  "mode": "clone",
+  "request": {
+    "id": "en__brief_warden_004",
+    "seed": 22,
+    "language": "English",
+    "text": "Its voice alone has cracked hulls. Those who have heard it never forget it.",
+    "voice_ref": "vo/voices/narrator.wav",
+    "reference_text": "In a world where the neon never sleeps, one pilot remembers. The rain. The silence. And the promise he could not keep."
+  },
+  "direction": "Hushed dread, as if afraid it might hear.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Its voice alone has cracked hulls. Those who have heard it never forget it.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.14,
+    "true_peak_dbtp": -1.45,
+    "gain_db": 1.27,
+    "limited_db": 1.22,
+    "measured_before_lufs": -19.27,
+    "peak_bound": false
+  },
+  "words_for": "062906d232fdcca6/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Its",
+      "charStart": 0,
+      "charEnd": 3,
+      "startS": 0.0,
+      "endS": 0.24
+    },
+    {
+      "text": "voice",
+      "charStart": 4,
+      "charEnd": 9,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "alone",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 0.64,
+      "endS": 0.96
+    },
+    {
+      "text": "has",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 0.96,
+      "endS": 1.2
+    },
+    {
+      "text": "cracked",
+      "charStart": 20,
+      "charEnd": 27,
+      "startS": 1.2,
+      "endS": 1.76
+    },
+    {
+      "text": "hulls",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 1.76,
+      "endS": 2.4
+    },
+    {
+      "text": "Those",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 2.8,
+      "endS": 3.04
+    },
+    {
+      "text": "who",
+      "charStart": 41,
+      "charEnd": 44,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "have",
+      "charStart": 45,
+      "charEnd": 49,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "heard",
+      "charStart": 50,
+      "charEnd": 55,
+      "startS": 3.36,
+      "endS": 3.52
+    },
+    {
+      "text": "it",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "never",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "forget",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 3.92,
+      "endS": 4.32
+    },
+    {
+      "text": "it",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 4.32,
+      "endS": 4.48
+    }
+  ]
+}

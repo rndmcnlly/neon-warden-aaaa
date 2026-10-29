@@ -1,0 +1,138 @@
+{
+  "hash": "7f8a5c586565979a",
+  "mode": "clone",
+  "request": {
+    "id": "en__lock_ai_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Your first live lock! Intel filed. Every scan helps the Authority map its lanes.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, pleased, filing paperwork with real enthusiasm.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.849,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.13,
+    "gain_db": 4.59,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.59,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Your",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "first",
+      "charStart": 5,
+      "charEnd": 10,
+      "startS": 0.32,
+      "endS": 0.72
+    },
+    {
+      "text": "live",
+      "charStart": 11,
+      "charEnd": 15,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "lock",
+      "charStart": 16,
+      "charEnd": 20,
+      "startS": 0.96,
+      "endS": 1.44
+    },
+    {
+      "text": "Intel",
+      "charStart": 22,
+      "charEnd": 27,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "filed",
+      "charStart": 28,
+      "charEnd": 33,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "Every",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "scan",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 3.44,
+      "endS": 3.84
+    },
+    {
+      "text": "helps",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 3.84,
+      "endS": 4.08
+    },
+    {
+      "text": "the",
+      "charStart": 52,
+      "charEnd": 55,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "Authority",
+      "charStart": 56,
+      "charEnd": 65,
+      "startS": 4.24,
+      "endS": 4.72
+    },
+    {
+      "text": "map",
+      "charStart": 66,
+      "charEnd": 69,
+      "startS": 4.72,
+      "endS": 4.96
+    },
+    {
+      "text": "its",
+      "charStart": 70,
+      "charEnd": 73,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "lanes",
+      "charStart": 74,
+      "charEnd": 79,
+      "startS": 5.12,
+      "endS": 5.6
+    }
+  ],
+  "words_for": "7f8a5c586565979a/wordtiming-v1",
+  "asr": "Your first live lock. Intel filed. Every scan helps the authority map its lanes.",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,166 @@
+{
+  "hash": "951383d2807ec2a0",
+  "mode": "clone",
+  "request": {
+    "id": "es__flash_rec_002",
+    "seed": 111,
+    "language": "Spanish",
+    "text": "Piloto cero uno dos uno, tu arma está fría. Por favor, dispara. Por favor, dispara. Piloto, por favor.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded; the script breaks down into pleading on the last word.",
+  "duration": 10.72,
+  "sample_rate": 24000,
+  "peak": 0.678,
+  "clipping_suspect": false,
+  "asr": "Piloto, sero, uno dos uno, tu arma está fría, por favor dispara, por favor dispara, piloto por favor.",
+  "asr_similarity": 0.944,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.26,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "951383d2807ec2a0/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Piloto",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.0,
+      "endS": 0.96
+    },
+    {
+      "text": "cero",
+      "charStart": 7,
+      "charEnd": 11,
+      "startS": 1.04,
+      "endS": 1.6
+    },
+    {
+      "text": "uno",
+      "charStart": 12,
+      "charEnd": 15,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "dos",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "uno",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "tu",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "arma",
+      "charStart": 28,
+      "charEnd": 32,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "está",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "fría",
+      "charStart": 38,
+      "charEnd": 42,
+      "startS": 3.92,
+      "endS": 4.56
+    },
+    {
+      "text": "Por",
+      "charStart": 44,
+      "charEnd": 47,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "favor",
+      "charStart": 48,
+      "charEnd": 53,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "dispara",
+      "charStart": 55,
+      "charEnd": 62,
+      "startS": 5.44,
+      "endS": 6.16
+    },
+    {
+      "text": "Por",
+      "charStart": 64,
+      "charEnd": 67,
+      "startS": 6.64,
+      "endS": 6.72
+    },
+    {
+      "text": "favor",
+      "charStart": 68,
+      "charEnd": 73,
+      "startS": 7.04,
+      "endS": 7.12
+    },
+    {
+      "text": "dispara",
+      "charStart": 75,
+      "charEnd": 82,
+      "startS": 7.68,
+      "endS": 8.56
+    },
+    {
+      "text": "Piloto",
+      "charStart": 84,
+      "charEnd": 90,
+      "startS": 9.04,
+      "endS": 9.76
+    },
+    {
+      "text": "por",
+      "charStart": 92,
+      "charEnd": 95,
+      "startS": 9.76,
+      "endS": 10.0
+    },
+    {
+      "text": "favor",
+      "charStart": 96,
+      "charEnd": 101,
+      "startS": 10.0,
+      "endS": 10.32
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "hash": "dfa4980792914a00",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_004",
+    "seed": 133,
+    "language": "Spanish",
+    "text": "Da la vuelta. Vete a casa. ¡Con esa arma, las rutas siguen cerradas!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "A furious final warning, pointing at the gun.",
+  "duration": 4.4,
+  "sample_rate": 24000,
+  "peak": 0.711,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.93,
+    "gain_db": 1.52,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.52,
+    "peak_bound": false
+  },
+  "asr": "Da la vuelta, vete a casa. Con esa arma las rutas siguen cerradas.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Da",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.08,
+      "endS": 0.32
+    },
+    {
+      "text": "la",
+      "charStart": 3,
+      "charEnd": 5,
+      "startS": 0.32,
+      "endS": 0.48
+    },
+    {
+      "text": "vuelta",
+      "charStart": 6,
+      "charEnd": 12,
+      "startS": 0.48,
+      "endS": 0.96
+    },
+    {
+      "text": "Vete",
+      "charStart": 14,
+      "charEnd": 18,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "a",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "casa",
+      "charStart": 21,
+      "charEnd": 25,
+      "startS": 1.6,
+      "endS": 2.0
+    },
+    {
+      "text": "Con",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "esa",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "arma",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 2.64,
+      "endS": 2.88
+    },
+    {
+      "text": "las",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "rutas",
+      "charStart": 46,
+      "charEnd": 51,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "siguen",
+      "charStart": 52,
+      "charEnd": 58,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "cerradas",
+      "charStart": 59,
+      "charEnd": 67,
+      "startS": 3.76,
+      "endS": 4.32
+    }
+  ],
+  "words_for": "dfa4980792914a00/wordtiming-v1"
+}

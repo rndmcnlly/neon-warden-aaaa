@@ -1,0 +1,236 @@
+{
+  "hash": "8588234fd50e5dee",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rec_log_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "记录中。零一二一号飞行员：已召回。飞船：已弃置。日志第三百一十二天。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Recorded log header, flatter and older than her present self, like the flashback header.",
+  "duration": 7.28,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.05,
+    "true_peak_dbtp": -1.34,
+    "gain_db": 5.6,
+    "limited_db": 0.37,
+    "measured_before_lufs": -23.6,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "记",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "录",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "中",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.88
+    },
+    {
+      "text": "零",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.52
+    },
+    {
+      "text": "一",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.52,
+      "endS": 1.68
+    },
+    {
+      "text": "二",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "一",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.84,
+      "endS": 2.08
+    },
+    {
+      "text": "号",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "飞",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.24,
+      "endS": 2.4
+    },
+    {
+      "text": "行",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.4,
+      "endS": 2.64
+    },
+    {
+      "text": "员",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 2.64,
+      "endS": 2.96
+    },
+    {
+      "text": "已",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "召",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.36,
+      "endS": 3.6
+    },
+    {
+      "text": "回",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "飞",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "船",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "已",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 4.64,
+      "endS": 4.8
+    },
+    {
+      "text": "弃",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.8,
+      "endS": 5.04
+    },
+    {
+      "text": "置",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.04,
+      "endS": 5.28
+    },
+    {
+      "text": "日",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "志",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.44,
+      "endS": 5.76
+    },
+    {
+      "text": "第",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "三",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "百",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "一",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "十",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.48,
+      "endS": 6.64
+    },
+    {
+      "text": "二",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "天",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.8,
+      "endS": 7.2
+    }
+  ],
+  "words_for": "8588234fd50e5dee/wordtiming-v1",
+  "asr": "记录中，零一二一号飞行员已召回飞船，已弃置日志第三百一十二天。",
+  "asr_similarity": 1.0
+}

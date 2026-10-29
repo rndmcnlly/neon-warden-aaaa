@@ -1,0 +1,117 @@
+{
+  "hash": "34d08ecccd2e501c",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_dart_locked_001",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "Fijó a un dardo. No hay nada que encontrar. Vamos vacíos.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Wry.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.02,
+    "true_peak_dbtp": -1.44,
+    "gain_db": 2.29,
+    "limited_db": 0.03,
+    "measured_before_lufs": -20.29,
+    "peak_bound": false
+  },
+  "asr": "Fijó a un dardo: \"No hay nada que encontrar, vamos vacíos.\"",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Fijó",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "a",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.2,
+      "endS": 1.28
+    },
+    {
+      "text": "un",
+      "charStart": 7,
+      "charEnd": 9,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "dardo",
+      "charStart": 10,
+      "charEnd": 15,
+      "startS": 1.44,
+      "endS": 1.92
+    },
+    {
+      "text": "No",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "hay",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "nada",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "que",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "encontrar",
+      "charStart": 33,
+      "charEnd": 42,
+      "startS": 3.2,
+      "endS": 3.84
+    },
+    {
+      "text": "Vamos",
+      "charStart": 44,
+      "charEnd": 49,
+      "startS": 4.64,
+      "endS": 4.96
+    },
+    {
+      "text": "vacíos",
+      "charStart": 50,
+      "charEnd": 56,
+      "startS": 4.96,
+      "endS": 5.6
+    }
+  ],
+  "words_for": "34d08ecccd2e501c/wordtiming-v1"
+}

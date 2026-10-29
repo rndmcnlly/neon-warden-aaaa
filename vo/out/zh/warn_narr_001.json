@@ -1,0 +1,61 @@
+{
+  "hash": "2d79adcb39a0762f",
+  "mode": "clone",
+  "request": {
+    "id": "zh__warn_narr_001",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "守望者。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "The biggest, lowest, slowest two words in the game.",
+  "duration": 1.12,
+  "sample_rate": 24000,
+  "peak": 0.748,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.52,
+    "gain_db": 9.2,
+    "limited_db": 0.0,
+    "measured_before_lufs": -27.2,
+    "peak_bound": false
+  },
+  "asr": "守望者。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "守",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.24,
+      "endS": 0.56
+    },
+    {
+      "text": "望",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "者",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.72,
+      "endS": 0.96
+    }
+  ],
+  "words_for": "2d79adcb39a0762f/wordtiming-v1"
+}

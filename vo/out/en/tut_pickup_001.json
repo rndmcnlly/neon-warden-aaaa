@@ -1,0 +1,180 @@
+{
+  "hash": "1e52db2068f0c38c",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_pickup_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Pickups! Green crystals widen your spread. Cyan diamonds grant a shield. Pickups are recovered salvage and remain Lane Authority property.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Product-demo enthusiasm, then fine print read slightly faster.",
+  "duration": 8.16,
+  "sample_rate": 24000,
+  "peak": 0.839,
+  "clipping_suspect": false,
+  "asr": "Pickups, green crystals widen your spread. Cyan diamonds grant a shield. Pickups are recovered salvage and remain lane authority property.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.12,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "1e52db2068f0c38c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Pickups",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.08,
+      "endS": 0.64
+    },
+    {
+      "text": "Green",
+      "charStart": 9,
+      "charEnd": 14,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "crystals",
+      "charStart": 15,
+      "charEnd": 23,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "widen",
+      "charStart": 24,
+      "charEnd": 29,
+      "startS": 1.76,
+      "endS": 2.08
+    },
+    {
+      "text": "your",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "spread",
+      "charStart": 35,
+      "charEnd": 41,
+      "startS": 2.32,
+      "endS": 2.8
+    },
+    {
+      "text": "Cyan",
+      "charStart": 43,
+      "charEnd": 47,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "diamonds",
+      "charStart": 48,
+      "charEnd": 56,
+      "startS": 3.52,
+      "endS": 3.92
+    },
+    {
+      "text": "grant",
+      "charStart": 57,
+      "charEnd": 62,
+      "startS": 3.92,
+      "endS": 4.24
+    },
+    {
+      "text": "a",
+      "charStart": 63,
+      "charEnd": 64,
+      "startS": 4.24,
+      "endS": 4.32
+    },
+    {
+      "text": "shield",
+      "charStart": 65,
+      "charEnd": 71,
+      "startS": 4.32,
+      "endS": 4.72
+    },
+    {
+      "text": "Pickups",
+      "charStart": 73,
+      "charEnd": 80,
+      "startS": 5.04,
+      "endS": 5.44
+    },
+    {
+      "text": "are",
+      "charStart": 81,
+      "charEnd": 84,
+      "startS": 5.44,
+      "endS": 5.52
+    },
+    {
+      "text": "recovered",
+      "charStart": 85,
+      "charEnd": 94,
+      "startS": 5.52,
+      "endS": 5.92
+    },
+    {
+      "text": "salvage",
+      "charStart": 95,
+      "charEnd": 102,
+      "startS": 5.92,
+      "endS": 6.4
+    },
+    {
+      "text": "and",
+      "charStart": 103,
+      "charEnd": 106,
+      "startS": 6.4,
+      "endS": 6.48
+    },
+    {
+      "text": "remain",
+      "charStart": 107,
+      "charEnd": 113,
+      "startS": 6.48,
+      "endS": 6.88
+    },
+    {
+      "text": "Lane",
+      "charStart": 114,
+      "charEnd": 118,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "Authority",
+      "charStart": 119,
+      "charEnd": 128,
+      "startS": 7.04,
+      "endS": 7.44
+    },
+    {
+      "text": "property",
+      "charStart": 129,
+      "charEnd": 137,
+      "startS": 7.44,
+      "endS": 8.0
+    }
+  ]
+}

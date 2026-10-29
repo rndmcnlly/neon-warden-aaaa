@@ -1,0 +1,131 @@
+{
+  "hash": "bcc05cba8cc5d181",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_disarm_001",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "Espera. ¿¡Les quitaste las ARMAS!? ¿¡Les quitaste las armas y los dejaste IR!?",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Shrill disbelief, building, at a pilot who disarmed its scouts and let them go.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.868,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 2.11,
+    "limited_db": 0.0,
+    "measured_before_lufs": -20.15,
+    "peak_bound": false
+  },
+  "asr": "Espera, les quitaste las armas, les quitaste las armas y los dejaste híper.",
+  "asr_similarity": 0.923,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Espera",
+      "charStart": 0,
+      "charEnd": 6,
+      "startS": 0.0,
+      "endS": 0.8
+    },
+    {
+      "text": "Les",
+      "charStart": 10,
+      "charEnd": 13,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "quitaste",
+      "charStart": 14,
+      "charEnd": 22,
+      "startS": 1.28,
+      "endS": 1.76
+    },
+    {
+      "text": "las",
+      "charStart": 23,
+      "charEnd": 26,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "ARMAS",
+      "charStart": 27,
+      "charEnd": 32,
+      "startS": 2.0,
+      "endS": 2.56
+    },
+    {
+      "text": "Les",
+      "charStart": 37,
+      "charEnd": 40,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "quitaste",
+      "charStart": 41,
+      "charEnd": 49,
+      "startS": 3.04,
+      "endS": 3.44
+    },
+    {
+      "text": "las",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 3.44,
+      "endS": 3.68
+    },
+    {
+      "text": "armas",
+      "charStart": 54,
+      "charEnd": 59,
+      "startS": 3.68,
+      "endS": 4.0
+    },
+    {
+      "text": "y",
+      "charStart": 60,
+      "charEnd": 61,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "los",
+      "charStart": 62,
+      "charEnd": 65,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "dejaste",
+      "charStart": 66,
+      "charEnd": 73,
+      "startS": 4.24,
+      "endS": 4.72
+    },
+    {
+      "text": "IR",
+      "charStart": 74,
+      "charEnd": 76,
+      "startS": 4.72,
+      "endS": 4.88
+    }
+  ],
+  "words_for": "bcc05cba8cc5d181/wordtiming-v1"
+}

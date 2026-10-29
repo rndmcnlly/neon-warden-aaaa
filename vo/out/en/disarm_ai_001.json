@@ -1,0 +1,194 @@
+{
+  "hash": "b471b7810f8eda3a",
+  "mode": "clone",
+  "request": {
+    "id": "en__disarm_ai_001",
+    "seed": 11,
+    "language": "English",
+    "text": "A disarm. That is forty percent. I am sure you had a reason, and I am sure it was a good one.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, kind, giving the benefit of the doubt a little too carefully.",
+  "duration": 5.28,
+  "sample_rate": 24000,
+  "peak": 0.821,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.4,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 5.0,
+    "limited_db": 2.13,
+    "measured_before_lufs": -23.22,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "A",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.24
+    },
+    {
+      "text": "disarm",
+      "charStart": 2,
+      "charEnd": 8,
+      "startS": 0.24,
+      "endS": 0.88
+    },
+    {
+      "text": "That",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 1.04,
+      "endS": 1.2
+    },
+    {
+      "text": "is",
+      "charStart": 15,
+      "charEnd": 17,
+      "startS": 1.2,
+      "endS": 1.36
+    },
+    {
+      "text": "forty",
+      "charStart": 18,
+      "charEnd": 23,
+      "startS": 1.36,
+      "endS": 1.68
+    },
+    {
+      "text": "percent",
+      "charStart": 24,
+      "charEnd": 31,
+      "startS": 1.68,
+      "endS": 2.24
+    },
+    {
+      "text": "I",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 2.4,
+      "endS": 2.48
+    },
+    {
+      "text": "am",
+      "charStart": 35,
+      "charEnd": 37,
+      "startS": 2.48,
+      "endS": 2.56
+    },
+    {
+      "text": "sure",
+      "charStart": 38,
+      "charEnd": 42,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "you",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 2.8,
+      "endS": 2.96
+    },
+    {
+      "text": "had",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 2.96,
+      "endS": 3.12
+    },
+    {
+      "text": "a",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 3.12,
+      "endS": 3.2
+    },
+    {
+      "text": "reason",
+      "charStart": 53,
+      "charEnd": 59,
+      "startS": 3.2,
+      "endS": 3.76
+    },
+    {
+      "text": "and",
+      "charStart": 61,
+      "charEnd": 64,
+      "startS": 3.84,
+      "endS": 3.92
+    },
+    {
+      "text": "I",
+      "charStart": 65,
+      "charEnd": 66,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "am",
+      "charStart": 67,
+      "charEnd": 69,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "sure",
+      "charStart": 70,
+      "charEnd": 74,
+      "startS": 4.08,
+      "endS": 4.24
+    },
+    {
+      "text": "it",
+      "charStart": 75,
+      "charEnd": 77,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "was",
+      "charStart": 78,
+      "charEnd": 81,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "a",
+      "charStart": 82,
+      "charEnd": 83,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "good",
+      "charStart": 84,
+      "charEnd": 88,
+      "startS": 4.56,
+      "endS": 4.72
+    },
+    {
+      "text": "one",
+      "charStart": 89,
+      "charEnd": 92,
+      "startS": 4.8,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "b471b7810f8eda3a/wordtiming-v1",
+  "asr": "A disarm that is forty percent. I'm sure you had a reason, and I'm sure it was a good one.",
+  "asr_similarity": 0.857
+}

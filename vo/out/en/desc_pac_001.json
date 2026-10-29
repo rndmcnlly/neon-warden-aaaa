@@ -1,0 +1,131 @@
+{
+  "hash": "9c0c5a8f6c813aa7",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_pac_001",
+    "seed": 33,
+    "language": "English",
+    "text": "Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Sudden suspicion, rapid-fire.",
+  "duration": 5.68,
+  "sample_rate": 24000,
+  "peak": 0.718,
+  "clipping_suspect": false,
+  "asr": "Wait! Wait! Wait! Wait! Your gun is cold. Why is your gun cold?",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.84,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "9c0c5a8f6c813aa7/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Wait",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.48
+    },
+    {
+      "text": "Wait",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.64,
+      "endS": 1.04
+    },
+    {
+      "text": "wait",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.6
+    },
+    {
+      "text": "wait",
+      "charStart": 18,
+      "charEnd": 22,
+      "startS": 1.76,
+      "endS": 2.24
+    },
+    {
+      "text": "Your",
+      "charStart": 24,
+      "charEnd": 28,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "gun",
+      "charStart": 29,
+      "charEnd": 32,
+      "startS": 2.56,
+      "endS": 3.04
+    },
+    {
+      "text": "is",
+      "charStart": 33,
+      "charEnd": 35,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "cold",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 3.2,
+      "endS": 3.92
+    },
+    {
+      "text": "Why",
+      "charStart": 42,
+      "charEnd": 45,
+      "startS": 4.0,
+      "endS": 4.32
+    },
+    {
+      "text": "is",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 4.32,
+      "endS": 4.48
+    },
+    {
+      "text": "your",
+      "charStart": 49,
+      "charEnd": 53,
+      "startS": 4.48,
+      "endS": 4.56
+    },
+    {
+      "text": "gun",
+      "charStart": 54,
+      "charEnd": 57,
+      "startS": 4.56,
+      "endS": 4.96
+    },
+    {
+      "text": "cold",
+      "charStart": 58,
+      "charEnd": 62,
+      "startS": 4.96,
+      "endS": 5.6
+    }
+  ]
+}

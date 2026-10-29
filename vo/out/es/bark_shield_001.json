@@ -1,0 +1,166 @@
+{
+  "hash": "94a676e0cb9cfc0a",
+  "mode": "clone",
+  "request": {
+    "id": "es__bark_shield_001",
+    "seed": 111,
+    "language": "Spanish",
+    "text": "¡Escudo activo! Es propiedad de la Autoridad, así que, por favor, recibe la menor cantidad de impactos posible.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, product-safety notice.",
+  "duration": 8.08,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Escudo activo, es propiedad de la autoridad, así que por favor recibe la menor cantidad de impactos posible.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.04,
+    "true_peak_dbtp": -1.17,
+    "gain_db": 0.92,
+    "limited_db": 0.87,
+    "measured_before_lufs": -18.92,
+    "peak_bound": false
+  },
+  "words_for": "94a676e0cb9cfc0a/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Escudo",
+      "charStart": 1,
+      "charEnd": 7,
+      "startS": 0.4,
+      "endS": 0.72
+    },
+    {
+      "text": "activo",
+      "charStart": 8,
+      "charEnd": 14,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "Es",
+      "charStart": 16,
+      "charEnd": 18,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "propiedad",
+      "charStart": 19,
+      "charEnd": 28,
+      "startS": 2.08,
+      "endS": 2.64
+    },
+    {
+      "text": "de",
+      "charStart": 29,
+      "charEnd": 31,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "la",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 2.72,
+      "endS": 2.96
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 35,
+      "charEnd": 44,
+      "startS": 2.96,
+      "endS": 3.6
+    },
+    {
+      "text": "así",
+      "charStart": 46,
+      "charEnd": 49,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "que",
+      "charStart": 50,
+      "charEnd": 53,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "por",
+      "charStart": 55,
+      "charEnd": 58,
+      "startS": 4.24,
+      "endS": 4.48
+    },
+    {
+      "text": "favor",
+      "charStart": 59,
+      "charEnd": 64,
+      "startS": 4.48,
+      "endS": 4.96
+    },
+    {
+      "text": "recibe",
+      "charStart": 66,
+      "charEnd": 72,
+      "startS": 5.2,
+      "endS": 5.68
+    },
+    {
+      "text": "la",
+      "charStart": 73,
+      "charEnd": 75,
+      "startS": 5.68,
+      "endS": 5.76
+    },
+    {
+      "text": "menor",
+      "charStart": 76,
+      "charEnd": 81,
+      "startS": 5.76,
+      "endS": 6.16
+    },
+    {
+      "text": "cantidad",
+      "charStart": 82,
+      "charEnd": 90,
+      "startS": 6.24,
+      "endS": 6.72
+    },
+    {
+      "text": "de",
+      "charStart": 91,
+      "charEnd": 93,
+      "startS": 6.72,
+      "endS": 6.8
+    },
+    {
+      "text": "impactos",
+      "charStart": 94,
+      "charEnd": 102,
+      "startS": 6.8,
+      "endS": 7.36
+    },
+    {
+      "text": "posible",
+      "charStart": 103,
+      "charEnd": 110,
+      "startS": 7.36,
+      "endS": 8.0
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "hash": "6d56c2485b6f7b08",
+  "mode": "clone",
+  "request": {
+    "id": "zh__bark_lifelost_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "船体破损！你没事。飞船有事，但你没事。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, quick and chipper damage report.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.835,
+  "clipping_suspect": false,
+  "asr": "船体破损。你没事，飞船有事，但你没事。",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.51,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "6d56c2485b6f7b08/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "船",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "体",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "破",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "损",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.8,
+      "endS": 1.2
+    },
+    {
+      "text": "你",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "没",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.84,
+      "endS": 2.0
+    },
+    {
+      "text": "事",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "飞",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.56,
+      "endS": 2.88
+    },
+    {
+      "text": "船",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.88,
+      "endS": 3.04
+    },
+    {
+      "text": "有",
+      "charStart": 11,
+      "charEnd": 12,
+      "startS": 3.04,
+      "endS": 3.2
+    },
+    {
+      "text": "事",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.2,
+      "endS": 3.52
+    },
+    {
+      "text": "但",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.76,
+      "endS": 3.84
+    },
+    {
+      "text": "你",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.84,
+      "endS": 4.0
+    },
+    {
+      "text": "没",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "事",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.16,
+      "endS": 4.48
+    }
+  ]
+}

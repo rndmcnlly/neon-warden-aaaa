@@ -1,0 +1,117 @@
+{
+  "hash": "6403a2ad9d5e7e4f",
+  "mode": "clone",
+  "request": {
+    "id": "es__boss_pac_003",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "¡Ja! ¡Bien! ¡Muy bien! ¡Vuelas como un carguero con opiniones propias!",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Delighted cackle, a proud coach.",
+  "duration": 4.56,
+  "sample_rate": 24000,
+  "peak": 0.745,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.41,
+    "gain_db": 1.53,
+    "limited_db": 0.0,
+    "measured_before_lufs": -19.53,
+    "peak_bound": false
+  },
+  "asr": "ja bien muy bien vuelas como un carguero con opiniones propias",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Ja",
+      "charStart": 1,
+      "charEnd": 3,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "Bien",
+      "charStart": 6,
+      "charEnd": 10,
+      "startS": 0.48,
+      "endS": 1.04
+    },
+    {
+      "text": "Muy",
+      "charStart": 13,
+      "charEnd": 16,
+      "startS": 1.2,
+      "endS": 1.44
+    },
+    {
+      "text": "bien",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.44,
+      "endS": 1.84
+    },
+    {
+      "text": "Vuelas",
+      "charStart": 24,
+      "charEnd": 30,
+      "startS": 2.08,
+      "endS": 2.48
+    },
+    {
+      "text": "como",
+      "charStart": 31,
+      "charEnd": 35,
+      "startS": 2.48,
+      "endS": 2.64
+    },
+    {
+      "text": "un",
+      "charStart": 36,
+      "charEnd": 38,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "carguero",
+      "charStart": 39,
+      "charEnd": 47,
+      "startS": 2.8,
+      "endS": 3.28
+    },
+    {
+      "text": "con",
+      "charStart": 48,
+      "charEnd": 51,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "opiniones",
+      "charStart": 52,
+      "charEnd": 61,
+      "startS": 3.44,
+      "endS": 3.92
+    },
+    {
+      "text": "propias",
+      "charStart": 62,
+      "charEnd": 69,
+      "startS": 3.92,
+      "endS": 4.48
+    }
+  ],
+  "words_for": "6403a2ad9d5e7e4f/wordtiming-v1"
+}

@@ -1,0 +1,201 @@
+{
+  "hash": "4fa2d5592b4ace5a",
+  "mode": "clone",
+  "request": {
+    "id": "es__sec3_intro_001",
+    "seed": 311,
+    "language": "Spanish",
+    "text": "Rutas de Artillería. Torretas activas. Estas rutas se construyeron para el paso libre, hace tres siglos. Ni una caseta de peaje. Muy ineficiente.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, mildly scandalized by the waste.",
+  "duration": 12.32,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Rutas de artillería, torretas activas. Estas rutas se construyeron para el paso libre a se tres siglos, ni una caseta de peaje muy eficiente.",
+  "asr_similarity": 0.894,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.07,
+    "true_peak_dbtp": -1.12,
+    "gain_db": 1.96,
+    "limited_db": 1.91,
+    "measured_before_lufs": -19.96,
+    "peak_bound": false
+  },
+  "words_for": "4fa2d5592b4ace5a/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Rutas",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "de",
+      "charStart": 6,
+      "charEnd": 8,
+      "startS": 0.96,
+      "endS": 1.12
+    },
+    {
+      "text": "Artillería",
+      "charStart": 9,
+      "charEnd": 19,
+      "startS": 1.12,
+      "endS": 2.16
+    },
+    {
+      "text": "Torretas",
+      "charStart": 21,
+      "charEnd": 29,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "activas",
+      "charStart": 30,
+      "charEnd": 37,
+      "startS": 3.12,
+      "endS": 3.92
+    },
+    {
+      "text": "Estas",
+      "charStart": 39,
+      "charEnd": 44,
+      "startS": 4.4,
+      "endS": 4.88
+    },
+    {
+      "text": "rutas",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 4.88,
+      "endS": 4.96
+    },
+    {
+      "text": "se",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 5.2,
+      "endS": 5.36
+    },
+    {
+      "text": "construyeron",
+      "charStart": 54,
+      "charEnd": 66,
+      "startS": 5.36,
+      "endS": 6.16
+    },
+    {
+      "text": "para",
+      "charStart": 67,
+      "charEnd": 71,
+      "startS": 6.16,
+      "endS": 6.4
+    },
+    {
+      "text": "el",
+      "charStart": 72,
+      "charEnd": 74,
+      "startS": 6.4,
+      "endS": 6.56
+    },
+    {
+      "text": "paso",
+      "charStart": 75,
+      "charEnd": 79,
+      "startS": 6.56,
+      "endS": 6.72
+    },
+    {
+      "text": "libre",
+      "charStart": 80,
+      "charEnd": 85,
+      "startS": 7.2,
+      "endS": 7.44
+    },
+    {
+      "text": "hace",
+      "charStart": 87,
+      "charEnd": 91,
+      "startS": 7.68,
+      "endS": 8.0
+    },
+    {
+      "text": "tres",
+      "charStart": 92,
+      "charEnd": 96,
+      "startS": 8.0,
+      "endS": 8.24
+    },
+    {
+      "text": "siglos",
+      "charStart": 97,
+      "charEnd": 103,
+      "startS": 8.24,
+      "endS": 8.96
+    },
+    {
+      "text": "Ni",
+      "charStart": 105,
+      "charEnd": 107,
+      "startS": 9.28,
+      "endS": 9.36
+    },
+    {
+      "text": "una",
+      "charStart": 108,
+      "charEnd": 111,
+      "startS": 9.36,
+      "endS": 9.44
+    },
+    {
+      "text": "caseta",
+      "charStart": 112,
+      "charEnd": 118,
+      "startS": 9.6,
+      "endS": 10.08
+    },
+    {
+      "text": "de",
+      "charStart": 119,
+      "charEnd": 121,
+      "startS": 10.16,
+      "endS": 10.8
+    },
+    {
+      "text": "peaje",
+      "charStart": 122,
+      "charEnd": 127,
+      "startS": 10.8,
+      "endS": 10.88
+    },
+    {
+      "text": "Muy",
+      "charStart": 129,
+      "charEnd": 132,
+      "startS": 11.2,
+      "endS": 11.28
+    },
+    {
+      "text": "ineficiente",
+      "charStart": 133,
+      "charEnd": 144,
+      "startS": 11.52,
+      "endS": 11.92
+    }
+  ]
+}

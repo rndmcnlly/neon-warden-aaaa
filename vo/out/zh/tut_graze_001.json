@@ -1,0 +1,411 @@
+{
+  "hash": "212237508b685510",
+  "mode": "clone",
+  "request": {
+    "id": "zh__tut_graze_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "接下来是净空。按住专注，就能看到你那颗宝石周围的圆环。子弹从圆环内穿过却没碰到你，就叫擦弹。请让五发慢速子弹贴身飞过。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Sincere institutional warmth, unhurried and kind, a good trainer who means every word.",
+  "duration": 11.2,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.08,
+    "true_peak_dbtp": -1.1,
+    "gain_db": 4.68,
+    "limited_db": 1.15,
+    "measured_before_lufs": -22.68,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "接",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "下",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "来",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "是",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 0.72,
+      "endS": 0.88
+    },
+    {
+      "text": "净",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 0.88,
+      "endS": 1.12
+    },
+    {
+      "text": "空",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.12,
+      "endS": 1.2
+    },
+    {
+      "text": "按",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "住",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "专",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "注",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "就",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "能",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 2.88,
+      "endS": 2.96
+    },
+    {
+      "text": "看",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 2.96,
+      "endS": 3.2
+    },
+    {
+      "text": "到",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "你",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.36,
+      "endS": 3.44
+    },
+    {
+      "text": "那",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 3.44,
+      "endS": 3.52
+    },
+    {
+      "text": "颗",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 3.52,
+      "endS": 3.68
+    },
+    {
+      "text": "宝",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 3.68,
+      "endS": 3.92
+    },
+    {
+      "text": "石",
+      "charStart": 20,
+      "charEnd": 21,
+      "startS": 3.92,
+      "endS": 4.16
+    },
+    {
+      "text": "周",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "围",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 4.32,
+      "endS": 4.4
+    },
+    {
+      "text": "的",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "圆",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 4.48,
+      "endS": 4.72
+    },
+    {
+      "text": "环",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 4.72,
+      "endS": 5.04
+    },
+    {
+      "text": "子",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.2,
+      "endS": 5.44
+    },
+    {
+      "text": "弹",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "从",
+      "charStart": 29,
+      "charEnd": 30,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "圆",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "环",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 5.92,
+      "endS": 6.16
+    },
+    {
+      "text": "内",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "穿",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 6.24,
+      "endS": 6.4
+    },
+    {
+      "text": "过",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 6.56,
+      "endS": 6.64
+    },
+    {
+      "text": "却",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "没",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 6.8,
+      "endS": 6.88
+    },
+    {
+      "text": "碰",
+      "charStart": 37,
+      "charEnd": 38,
+      "startS": 6.88,
+      "endS": 7.12
+    },
+    {
+      "text": "到",
+      "charStart": 38,
+      "charEnd": 39,
+      "startS": 7.12,
+      "endS": 7.28
+    },
+    {
+      "text": "你",
+      "charStart": 39,
+      "charEnd": 40,
+      "startS": 7.28,
+      "endS": 7.52
+    },
+    {
+      "text": "就",
+      "charStart": 41,
+      "charEnd": 42,
+      "startS": 7.68,
+      "endS": 7.76
+    },
+    {
+      "text": "叫",
+      "charStart": 42,
+      "charEnd": 43,
+      "startS": 7.76,
+      "endS": 7.92
+    },
+    {
+      "text": "擦",
+      "charStart": 43,
+      "charEnd": 44,
+      "startS": 7.92,
+      "endS": 8.16
+    },
+    {
+      "text": "弹",
+      "charStart": 44,
+      "charEnd": 45,
+      "startS": 8.16,
+      "endS": 8.48
+    },
+    {
+      "text": "请",
+      "charStart": 46,
+      "charEnd": 47,
+      "startS": 8.8,
+      "endS": 8.96
+    },
+    {
+      "text": "让",
+      "charStart": 47,
+      "charEnd": 48,
+      "startS": 8.96,
+      "endS": 9.2
+    },
+    {
+      "text": "五",
+      "charStart": 48,
+      "charEnd": 49,
+      "startS": 9.2,
+      "endS": 9.28
+    },
+    {
+      "text": "发",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 9.28,
+      "endS": 9.52
+    },
+    {
+      "text": "慢",
+      "charStart": 50,
+      "charEnd": 51,
+      "startS": 9.52,
+      "endS": 9.68
+    },
+    {
+      "text": "速",
+      "charStart": 51,
+      "charEnd": 52,
+      "startS": 9.68,
+      "endS": 9.84
+    },
+    {
+      "text": "子",
+      "charStart": 52,
+      "charEnd": 53,
+      "startS": 9.84,
+      "endS": 10.0
+    },
+    {
+      "text": "弹",
+      "charStart": 53,
+      "charEnd": 54,
+      "startS": 10.0,
+      "endS": 10.16
+    },
+    {
+      "text": "贴",
+      "charStart": 54,
+      "charEnd": 55,
+      "startS": 10.16,
+      "endS": 10.4
+    },
+    {
+      "text": "身",
+      "charStart": 55,
+      "charEnd": 56,
+      "startS": 10.4,
+      "endS": 10.48
+    },
+    {
+      "text": "飞",
+      "charStart": 56,
+      "charEnd": 57,
+      "startS": 10.64,
+      "endS": 10.8
+    },
+    {
+      "text": "过",
+      "charStart": 57,
+      "charEnd": 58,
+      "startS": 10.96,
+      "endS": 11.12
+    }
+  ],
+  "words_for": "212237508b685510/wordtiming-v1",
+  "asr": "接下来是净空，按住专注就能看到你那颗宝石周围的圆环。子弹从圆环内穿过却没碰到你，就叫擦弹。请让五发慢速子弹贴身飞过。",
+  "asr_similarity": 1.0
+}

@@ -1,0 +1,117 @@
+{
+  "hash": "fe7d04f169decc93",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_drone_retreat_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Falling back to the rings. Keep the lane open behind me.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates.",
+  "duration": 2.96,
+  "sample_rate": 24000,
+  "peak": 0.706,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.98,
+    "gain_db": 4.83,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.83,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Falling",
+      "charStart": 0,
+      "charEnd": 7,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "back",
+      "charStart": 8,
+      "charEnd": 12,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "to",
+      "charStart": 13,
+      "charEnd": 15,
+      "startS": 0.56,
+      "endS": 0.64
+    },
+    {
+      "text": "the",
+      "charStart": 16,
+      "charEnd": 19,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "rings",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "Keep",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 1.36,
+      "endS": 1.6
+    },
+    {
+      "text": "the",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 1.6,
+      "endS": 1.68
+    },
+    {
+      "text": "lane",
+      "charStart": 36,
+      "charEnd": 40,
+      "startS": 1.68,
+      "endS": 1.92
+    },
+    {
+      "text": "open",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "behind",
+      "charStart": 46,
+      "charEnd": 52,
+      "startS": 2.24,
+      "endS": 2.72
+    },
+    {
+      "text": "me",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 2.72,
+      "endS": 2.96
+    }
+  ],
+  "words_for": "fe7d04f169decc93/wordtiming-v1",
+  "asr": "Falling back to the rings. Keep the lane open behind me.",
+  "asr_similarity": 1.0
+}

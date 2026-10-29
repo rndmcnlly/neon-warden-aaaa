@@ -1,0 +1,271 @@
+{
+  "hash": "b4e9e92ebdd49a93",
+  "mode": "clone",
+  "request": {
+    "id": "zh__rec_ai_001",
+    "seed": 11,
+    "language": "Chinese",
+    "text": "已识别残骸：飞行记录仪，零一二一号飞行员。它已被标记为结案。它仍在发送信号。",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, reading a status that does not make sense to her.",
+  "duration": 8.32,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.01,
+    "true_peak_dbtp": -1.24,
+    "gain_db": 5.68,
+    "limited_db": 0.07,
+    "measured_before_lufs": -23.68,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "已",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.48,
+      "endS": 0.64
+    },
+    {
+      "text": "识",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.64,
+      "endS": 0.8
+    },
+    {
+      "text": "别",
+      "charStart": 2,
+      "charEnd": 3,
+      "startS": 0.8,
+      "endS": 0.96
+    },
+    {
+      "text": "残",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.04,
+      "endS": 1.28
+    },
+    {
+      "text": "骸",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "飞",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.76,
+      "endS": 2.0
+    },
+    {
+      "text": "行",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "记",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.24,
+      "endS": 2.32
+    },
+    {
+      "text": "录",
+      "charStart": 9,
+      "charEnd": 10,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "仪",
+      "charStart": 10,
+      "charEnd": 11,
+      "startS": 2.56,
+      "endS": 2.8
+    },
+    {
+      "text": "零",
+      "charStart": 12,
+      "charEnd": 13,
+      "startS": 3.04,
+      "endS": 3.28
+    },
+    {
+      "text": "一",
+      "charStart": 13,
+      "charEnd": 14,
+      "startS": 3.28,
+      "endS": 3.44
+    },
+    {
+      "text": "二",
+      "charStart": 14,
+      "charEnd": 15,
+      "startS": 3.44,
+      "endS": 3.6
+    },
+    {
+      "text": "一",
+      "charStart": 15,
+      "charEnd": 16,
+      "startS": 3.6,
+      "endS": 3.76
+    },
+    {
+      "text": "号",
+      "charStart": 16,
+      "charEnd": 17,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "飞",
+      "charStart": 17,
+      "charEnd": 18,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "行",
+      "charStart": 18,
+      "charEnd": 19,
+      "startS": 4.16,
+      "endS": 4.32
+    },
+    {
+      "text": "员",
+      "charStart": 19,
+      "charEnd": 20,
+      "startS": 4.32,
+      "endS": 4.64
+    },
+    {
+      "text": "它",
+      "charStart": 21,
+      "charEnd": 22,
+      "startS": 4.96,
+      "endS": 5.12
+    },
+    {
+      "text": "已",
+      "charStart": 22,
+      "charEnd": 23,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "被",
+      "charStart": 23,
+      "charEnd": 24,
+      "startS": 5.28,
+      "endS": 5.44
+    },
+    {
+      "text": "标",
+      "charStart": 24,
+      "charEnd": 25,
+      "startS": 5.44,
+      "endS": 5.6
+    },
+    {
+      "text": "记",
+      "charStart": 25,
+      "charEnd": 26,
+      "startS": 5.6,
+      "endS": 5.76
+    },
+    {
+      "text": "为",
+      "charStart": 26,
+      "charEnd": 27,
+      "startS": 5.76,
+      "endS": 5.92
+    },
+    {
+      "text": "结",
+      "charStart": 27,
+      "charEnd": 28,
+      "startS": 5.92,
+      "endS": 6.08
+    },
+    {
+      "text": "案",
+      "charStart": 28,
+      "charEnd": 29,
+      "startS": 6.08,
+      "endS": 6.48
+    },
+    {
+      "text": "它",
+      "charStart": 30,
+      "charEnd": 31,
+      "startS": 6.64,
+      "endS": 6.8
+    },
+    {
+      "text": "仍",
+      "charStart": 31,
+      "charEnd": 32,
+      "startS": 6.8,
+      "endS": 7.04
+    },
+    {
+      "text": "在",
+      "charStart": 32,
+      "charEnd": 33,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "发",
+      "charStart": 33,
+      "charEnd": 34,
+      "startS": 7.2,
+      "endS": 7.44
+    },
+    {
+      "text": "送",
+      "charStart": 34,
+      "charEnd": 35,
+      "startS": 7.44,
+      "endS": 7.6
+    },
+    {
+      "text": "信",
+      "charStart": 35,
+      "charEnd": 36,
+      "startS": 7.6,
+      "endS": 7.76
+    },
+    {
+      "text": "号",
+      "charStart": 36,
+      "charEnd": 37,
+      "startS": 7.76,
+      "endS": 8.08
+    }
+  ],
+  "words_for": "b4e9e92ebdd49a93/wordtiming-v1",
+  "asr": "已识别残骸。飞行记录仪零一二一号飞行员，他已被标记为结案。他仍在发送信号。",
+  "asr_similarity": 0.939
+}

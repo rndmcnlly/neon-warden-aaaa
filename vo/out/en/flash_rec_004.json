@@ -1,0 +1,194 @@
+{
+  "hash": "1cc96845899f2b6e",
+  "mode": "clone",
+  "request": {
+    "id": "en__flash_rec_004",
+    "seed": 33,
+    "language": "English",
+    "text": "Look! The little ships! No guns! They fly my lanes because I keep them free! FREE! Do you know what free means?!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Recorded, furious joy, showing off something precious.",
+  "duration": 7.28,
+  "sample_rate": 24000,
+  "peak": 0.634,
+  "clipping_suspect": false,
+  "asr": "Look, the little ships, no guns. They fly my lanes because I keep them free. Free. Do you know what free means?",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.95,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "1cc96845899f2b6e/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Look",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.08,
+      "endS": 0.4
+    },
+    {
+      "text": "The",
+      "charStart": 6,
+      "charEnd": 9,
+      "startS": 0.64,
+      "endS": 0.72
+    },
+    {
+      "text": "little",
+      "charStart": 10,
+      "charEnd": 16,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "ships",
+      "charStart": 17,
+      "charEnd": 22,
+      "startS": 0.96,
+      "endS": 1.52
+    },
+    {
+      "text": "No",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.68,
+      "endS": 1.84
+    },
+    {
+      "text": "guns",
+      "charStart": 27,
+      "charEnd": 31,
+      "startS": 2.16,
+      "endS": 2.4
+    },
+    {
+      "text": "They",
+      "charStart": 33,
+      "charEnd": 37,
+      "startS": 2.64,
+      "endS": 2.8
+    },
+    {
+      "text": "fly",
+      "charStart": 38,
+      "charEnd": 41,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "my",
+      "charStart": 42,
+      "charEnd": 44,
+      "startS": 3.12,
+      "endS": 3.36
+    },
+    {
+      "text": "lanes",
+      "charStart": 45,
+      "charEnd": 50,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "because",
+      "charStart": 51,
+      "charEnd": 58,
+      "startS": 3.76,
+      "endS": 4.0
+    },
+    {
+      "text": "I",
+      "charStart": 59,
+      "charEnd": 60,
+      "startS": 4.0,
+      "endS": 4.16
+    },
+    {
+      "text": "keep",
+      "charStart": 61,
+      "charEnd": 65,
+      "startS": 4.16,
+      "endS": 4.4
+    },
+    {
+      "text": "them",
+      "charStart": 66,
+      "charEnd": 70,
+      "startS": 4.4,
+      "endS": 4.56
+    },
+    {
+      "text": "free",
+      "charStart": 71,
+      "charEnd": 75,
+      "startS": 4.56,
+      "endS": 5.12
+    },
+    {
+      "text": "FREE",
+      "charStart": 77,
+      "charEnd": 81,
+      "startS": 5.12,
+      "endS": 5.76
+    },
+    {
+      "text": "Do",
+      "charStart": 83,
+      "charEnd": 85,
+      "startS": 6.0,
+      "endS": 6.08
+    },
+    {
+      "text": "you",
+      "charStart": 86,
+      "charEnd": 89,
+      "startS": 6.08,
+      "endS": 6.16
+    },
+    {
+      "text": "know",
+      "charStart": 90,
+      "charEnd": 94,
+      "startS": 6.16,
+      "endS": 6.32
+    },
+    {
+      "text": "what",
+      "charStart": 95,
+      "charEnd": 99,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "free",
+      "charStart": 100,
+      "charEnd": 104,
+      "startS": 6.48,
+      "endS": 6.8
+    },
+    {
+      "text": "means",
+      "charStart": 105,
+      "charEnd": 110,
+      "startS": 6.8,
+      "endS": 7.28
+    }
+  ]
+}

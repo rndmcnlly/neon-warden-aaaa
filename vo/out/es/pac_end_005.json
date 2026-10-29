@@ -1,0 +1,82 @@
+{
+  "hash": "85339b399640b201",
+  "mode": "clone",
+  "request": {
+    "id": "es__pac_end_005",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Conexión perdida. Actualizando registros. Actualizando. Actua.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, glitching out mid-word, never losing the smile.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.813,
+  "clipping_suspect": false,
+  "asr": "Conexión perdida. Actualizando registros. Actualizando. Actúa.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.48,
+    "true_peak_dbtp": -1.05,
+    "gain_db": 1.51,
+    "limited_db": 1.76,
+    "measured_before_lufs": -19.81,
+    "peak_bound": false
+  },
+  "words_for": "85339b399640b201/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Conexión",
+      "charStart": 0,
+      "charEnd": 8,
+      "startS": 0.16,
+      "endS": 0.56
+    },
+    {
+      "text": "perdida",
+      "charStart": 9,
+      "charEnd": 16,
+      "startS": 0.72,
+      "endS": 1.36
+    },
+    {
+      "text": "Actualizando",
+      "charStart": 18,
+      "charEnd": 30,
+      "startS": 1.68,
+      "endS": 2.48
+    },
+    {
+      "text": "registros",
+      "charStart": 31,
+      "charEnd": 40,
+      "startS": 2.48,
+      "endS": 3.28
+    },
+    {
+      "text": "Actualizando",
+      "charStart": 42,
+      "charEnd": 54,
+      "startS": 3.68,
+      "endS": 4.72
+    },
+    {
+      "text": "Actua",
+      "charStart": 56,
+      "charEnd": 61,
+      "startS": 5.2,
+      "endS": 5.84
+    }
+  ]
+}

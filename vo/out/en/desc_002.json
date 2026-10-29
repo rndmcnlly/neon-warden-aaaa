@@ -1,0 +1,124 @@
+{
+  "hash": "fc3f1da1828684ac",
+  "mode": "clone",
+  "request": {
+    "id": "en__desc_002",
+    "seed": 33,
+    "language": "English",
+    "text": "Every cycle they send another one! Shiny ship! Big gun! NO MANNERS!",
+    "voice_ref": "vo/voices/warden.wav",
+    "reference_text": "You dare enter MY grid? I am the Warden! I have watched a thousand pilots burn, and I will watch you burn brightest of all!"
+  },
+  "direction": "Exasperated list, each item louder.",
+  "duration": 5.6,
+  "sample_rate": 24000,
+  "peak": 0.625,
+  "clipping_suspect": false,
+  "asr": "Every cycle, they send another one: shiny ship, big gun, no manners.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.99,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "fc3f1da1828684ac/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Every",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.24,
+      "endS": 0.64
+    },
+    {
+      "text": "cycle",
+      "charStart": 6,
+      "charEnd": 11,
+      "startS": 0.64,
+      "endS": 1.12
+    },
+    {
+      "text": "they",
+      "charStart": 12,
+      "charEnd": 16,
+      "startS": 1.12,
+      "endS": 1.28
+    },
+    {
+      "text": "send",
+      "charStart": 17,
+      "charEnd": 21,
+      "startS": 1.28,
+      "endS": 1.6
+    },
+    {
+      "text": "another",
+      "charStart": 22,
+      "charEnd": 29,
+      "startS": 1.6,
+      "endS": 1.92
+    },
+    {
+      "text": "one",
+      "charStart": 30,
+      "charEnd": 33,
+      "startS": 1.92,
+      "endS": 2.24
+    },
+    {
+      "text": "Shiny",
+      "charStart": 35,
+      "charEnd": 40,
+      "startS": 2.32,
+      "endS": 2.96
+    },
+    {
+      "text": "ship",
+      "charStart": 41,
+      "charEnd": 45,
+      "startS": 3.04,
+      "endS": 3.36
+    },
+    {
+      "text": "Big",
+      "charStart": 47,
+      "charEnd": 50,
+      "startS": 3.6,
+      "endS": 3.92
+    },
+    {
+      "text": "gun",
+      "charStart": 51,
+      "charEnd": 54,
+      "startS": 3.92,
+      "endS": 4.32
+    },
+    {
+      "text": "NO",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "MANNERS",
+      "charStart": 59,
+      "charEnd": 66,
+      "startS": 4.96,
+      "endS": 5.6
+    }
+  ]
+}

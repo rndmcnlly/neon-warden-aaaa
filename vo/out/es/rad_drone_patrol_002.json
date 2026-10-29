@@ -1,0 +1,131 @@
+{
+  "hash": "3578d5624e6effa0",
+  "mode": "clone",
+  "request": {
+    "id": "es__rad_drone_patrol_002",
+    "seed": 55,
+    "language": "Spanish",
+    "text": "No ha disparado. La regla sigue en pie: no disparamos si no dispara.",
+    "voice_ref": "vo/voices/scout.es.wav",
+    "reference_text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Puzzled.",
+  "duration": 5.2,
+  "sample_rate": 24000,
+  "peak": 0.663,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.5,
+    "gain_db": 3.19,
+    "limited_db": 0.0,
+    "measured_before_lufs": -21.19,
+    "peak_bound": false
+  },
+  "asr": "No ha disparado, la regla sigue en pie, no disparamos si no dispara.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "No",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.8
+    },
+    {
+      "text": "ha",
+      "charStart": 3,
+      "charEnd": 5,
+      "startS": 0.8,
+      "endS": 0.88
+    },
+    {
+      "text": "disparado",
+      "charStart": 6,
+      "charEnd": 15,
+      "startS": 0.88,
+      "endS": 1.52
+    },
+    {
+      "text": "La",
+      "charStart": 17,
+      "charEnd": 19,
+      "startS": 2.08,
+      "endS": 2.16
+    },
+    {
+      "text": "regla",
+      "charStart": 20,
+      "charEnd": 25,
+      "startS": 2.16,
+      "endS": 2.48
+    },
+    {
+      "text": "sigue",
+      "charStart": 26,
+      "charEnd": 31,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "en",
+      "charStart": 32,
+      "charEnd": 34,
+      "startS": 2.72,
+      "endS": 2.8
+    },
+    {
+      "text": "pie",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.8,
+      "endS": 3.12
+    },
+    {
+      "text": "no",
+      "charStart": 40,
+      "charEnd": 42,
+      "startS": 3.68,
+      "endS": 3.84
+    },
+    {
+      "text": "disparamos",
+      "charStart": 43,
+      "charEnd": 53,
+      "startS": 3.84,
+      "endS": 4.4
+    },
+    {
+      "text": "si",
+      "charStart": 54,
+      "charEnd": 56,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "no",
+      "charStart": 57,
+      "charEnd": 59,
+      "startS": 4.48,
+      "endS": 4.64
+    },
+    {
+      "text": "dispara",
+      "charStart": 60,
+      "charEnd": 67,
+      "startS": 4.64,
+      "endS": 5.12
+    }
+  ],
+  "words_for": "3578d5624e6effa0/wordtiming-v1"
+}

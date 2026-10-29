@@ -1,0 +1,166 @@
+{
+  "hash": "3d18345d1dfcd6c1",
+  "mode": "clone",
+  "request": {
+    "id": "es__desc_pac_002",
+    "seed": 33,
+    "language": "Spanish",
+    "text": "La última arma fría fue la de cero uno dos uno. Oh. Oh, no. Eres el siguiente número.",
+    "voice_ref": "vo/voices/warden.es.wav",
+    "reference_text": "¿Te atreves a entrar en MI red? ¡Soy el Guardián! He visto arder a mil pilotos, ¡y a ti te veré arder más que a ninguno!"
+  },
+  "direction": "Realization; the shout drains out of the voice for once.",
+  "duration": 6.32,
+  "sample_rate": 24000,
+  "peak": 0.834,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.57,
+    "gain_db": 4.31,
+    "limited_db": 0.0,
+    "measured_before_lufs": -22.31,
+    "peak_bound": false
+  },
+  "asr": "La última arma fría fue la de cero uno dos uno. Oh, oh no, eres el siguiente número.",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "La",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.4
+    },
+    {
+      "text": "última",
+      "charStart": 3,
+      "charEnd": 9,
+      "startS": 0.4,
+      "endS": 0.8
+    },
+    {
+      "text": "arma",
+      "charStart": 10,
+      "charEnd": 14,
+      "startS": 0.8,
+      "endS": 1.04
+    },
+    {
+      "text": "fría",
+      "charStart": 15,
+      "charEnd": 19,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "fue",
+      "charStart": 20,
+      "charEnd": 23,
+      "startS": 1.44,
+      "endS": 1.6
+    },
+    {
+      "text": "la",
+      "charStart": 24,
+      "charEnd": 26,
+      "startS": 1.6,
+      "endS": 1.76
+    },
+    {
+      "text": "de",
+      "charStart": 27,
+      "charEnd": 29,
+      "startS": 1.76,
+      "endS": 1.84
+    },
+    {
+      "text": "cero",
+      "charStart": 30,
+      "charEnd": 34,
+      "startS": 1.84,
+      "endS": 2.24
+    },
+    {
+      "text": "uno",
+      "charStart": 35,
+      "charEnd": 38,
+      "startS": 2.24,
+      "endS": 2.48
+    },
+    {
+      "text": "dos",
+      "charStart": 39,
+      "charEnd": 42,
+      "startS": 2.48,
+      "endS": 2.72
+    },
+    {
+      "text": "uno",
+      "charStart": 43,
+      "charEnd": 46,
+      "startS": 2.72,
+      "endS": 3.04
+    },
+    {
+      "text": "Oh",
+      "charStart": 48,
+      "charEnd": 50,
+      "startS": 3.28,
+      "endS": 3.68
+    },
+    {
+      "text": "Oh",
+      "charStart": 52,
+      "charEnd": 54,
+      "startS": 3.92,
+      "endS": 4.24
+    },
+    {
+      "text": "no",
+      "charStart": 56,
+      "charEnd": 58,
+      "startS": 4.24,
+      "endS": 4.72
+    },
+    {
+      "text": "Eres",
+      "charStart": 60,
+      "charEnd": 64,
+      "startS": 4.96,
+      "endS": 5.28
+    },
+    {
+      "text": "el",
+      "charStart": 65,
+      "charEnd": 67,
+      "startS": 5.28,
+      "endS": 5.36
+    },
+    {
+      "text": "siguiente",
+      "charStart": 68,
+      "charEnd": 77,
+      "startS": 5.36,
+      "endS": 5.84
+    },
+    {
+      "text": "número",
+      "charStart": 78,
+      "charEnd": 84,
+      "startS": 5.84,
+      "endS": 6.24
+    }
+  ],
+  "words_for": "3d18345d1dfcd6c1/wordtiming-v1"
+}

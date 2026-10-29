@@ -1,0 +1,27 @@
+{
+  "hash": "6e923f1625a95ec2",
+  "method": "design",
+  "candidate": "design_s155",
+  "from_anchor": "762884493fdd4425",
+  "request": {
+    "id": "scout.es",
+    "seed": 155,
+    "language": "Spanish",
+    "text": "Deriva Cuatro a Deriva Seis. El convoy pasa a media campana. Mantengan la ruta despejada, y no disparen a menos que dispare.",
+    "instruct": "Una voz joven, rápida y sincera en una radio de corto alcance, de género neutro, con frases profesionales y cortas pero cálida por dentro, con un leve brillo sintético, hablando bajo como para no ser oída. Español latinoamericano neutro y bien articulado."
+  },
+  "duration": 8.56,
+  "sample_rate": 24000,
+  "peak": 0.675,
+  "clipping_suspect": false,
+  "median_f0": 271.0,
+  "audition": {
+    "method": "design",
+    "seed": 155,
+    "mean": 0.996,
+    "min": 0.968,
+    "anchor_asr": 0.955,
+    "anchor_f0": 271.0,
+    "f0_ratio": 1.042
+  }
+}

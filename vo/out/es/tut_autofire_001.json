@@ -1,0 +1,243 @@
+{
+  "hash": "fb940bbf587d57e7",
+  "mode": "clone",
+  "request": {
+    "id": "es__tut_autofire_001",
+    "seed": 11,
+    "language": "Spanish",
+    "text": "Si mantener presionado disparar por mucho tiempo te resulta incómodo, el disparo automático está en los ajustes de accesibilidad. La Autoridad de Rutas quiere tus manos sanas y productivas.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Genuinely helpful, then corporate on the last sentence.",
+  "duration": 13.04,
+  "sample_rate": 24000,
+  "peak": 0.846,
+  "clipping_suspect": false,
+  "asr": "Si mantener presionado disparar por mucho tiempo, te resulta incómodo. El disparo automático está en los ajustes de accesibilidad. La autoridad de rutas quiere tus manos sanas y productivas.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.41,
+    "gain_db": 0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "fb940bbf587d57e7/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Si",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.16,
+      "endS": 0.32
+    },
+    {
+      "text": "mantener",
+      "charStart": 3,
+      "charEnd": 11,
+      "startS": 0.4,
+      "endS": 0.88
+    },
+    {
+      "text": "presionado",
+      "charStart": 12,
+      "charEnd": 22,
+      "startS": 0.96,
+      "endS": 1.6
+    },
+    {
+      "text": "disparar",
+      "charStart": 23,
+      "charEnd": 31,
+      "startS": 1.6,
+      "endS": 2.08
+    },
+    {
+      "text": "por",
+      "charStart": 32,
+      "charEnd": 35,
+      "startS": 2.08,
+      "endS": 2.32
+    },
+    {
+      "text": "mucho",
+      "charStart": 36,
+      "charEnd": 41,
+      "startS": 2.32,
+      "endS": 2.72
+    },
+    {
+      "text": "tiempo",
+      "charStart": 42,
+      "charEnd": 48,
+      "startS": 2.72,
+      "endS": 3.2
+    },
+    {
+      "text": "te",
+      "charStart": 49,
+      "charEnd": 51,
+      "startS": 3.2,
+      "endS": 3.36
+    },
+    {
+      "text": "resulta",
+      "charStart": 52,
+      "charEnd": 59,
+      "startS": 3.36,
+      "endS": 3.76
+    },
+    {
+      "text": "incómodo",
+      "charStart": 60,
+      "charEnd": 68,
+      "startS": 3.92,
+      "endS": 4.72
+    },
+    {
+      "text": "el",
+      "charStart": 70,
+      "charEnd": 72,
+      "startS": 5.12,
+      "endS": 5.28
+    },
+    {
+      "text": "disparo",
+      "charStart": 73,
+      "charEnd": 80,
+      "startS": 5.28,
+      "endS": 5.68
+    },
+    {
+      "text": "automático",
+      "charStart": 81,
+      "charEnd": 91,
+      "startS": 5.84,
+      "endS": 6.48
+    },
+    {
+      "text": "está",
+      "charStart": 92,
+      "charEnd": 96,
+      "startS": 6.48,
+      "endS": 6.88
+    },
+    {
+      "text": "en",
+      "charStart": 97,
+      "charEnd": 99,
+      "startS": 6.96,
+      "endS": 7.04
+    },
+    {
+      "text": "los",
+      "charStart": 100,
+      "charEnd": 103,
+      "startS": 7.04,
+      "endS": 7.2
+    },
+    {
+      "text": "ajustes",
+      "charStart": 104,
+      "charEnd": 111,
+      "startS": 7.2,
+      "endS": 7.68
+    },
+    {
+      "text": "de",
+      "charStart": 112,
+      "charEnd": 114,
+      "startS": 7.68,
+      "endS": 7.84
+    },
+    {
+      "text": "accesibilidad",
+      "charStart": 115,
+      "charEnd": 128,
+      "startS": 7.84,
+      "endS": 8.88
+    },
+    {
+      "text": "La",
+      "charStart": 130,
+      "charEnd": 132,
+      "startS": 8.88,
+      "endS": 8.96
+    },
+    {
+      "text": "Autoridad",
+      "charStart": 133,
+      "charEnd": 142,
+      "startS": 9.6,
+      "endS": 10.16
+    },
+    {
+      "text": "de",
+      "charStart": 143,
+      "charEnd": 145,
+      "startS": 10.16,
+      "endS": 10.24
+    },
+    {
+      "text": "Rutas",
+      "charStart": 146,
+      "charEnd": 151,
+      "startS": 10.24,
+      "endS": 10.72
+    },
+    {
+      "text": "quiere",
+      "charStart": 152,
+      "charEnd": 158,
+      "startS": 10.8,
+      "endS": 11.04
+    },
+    {
+      "text": "tus",
+      "charStart": 159,
+      "charEnd": 162,
+      "startS": 11.04,
+      "endS": 11.2
+    },
+    {
+      "text": "manos",
+      "charStart": 163,
+      "charEnd": 168,
+      "startS": 11.2,
+      "endS": 11.52
+    },
+    {
+      "text": "sanas",
+      "charStart": 169,
+      "charEnd": 174,
+      "startS": 11.52,
+      "endS": 11.84
+    },
+    {
+      "text": "y",
+      "charStart": 175,
+      "charEnd": 176,
+      "startS": 12.0,
+      "endS": 12.16
+    },
+    {
+      "text": "productivas",
+      "charStart": 177,
+      "charEnd": 188,
+      "startS": 12.16,
+      "endS": 12.96
+    }
+  ]
+}

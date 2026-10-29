@@ -1,0 +1,222 @@
+{
+  "hash": "5a3ff39152d8d13c",
+  "mode": "clone",
+  "request": {
+    "id": "en__tut_hello_001",
+    "seed": 11,
+    "language": "English",
+    "text": "Hello, and welcome to Lane Authority onboarding! I am your onboarding assistant, and I will be with you every step of the way. Every single step.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "Beaming welcome, as if greeting the first customer of the day.",
+  "duration": 9.36,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "asr": "Hello, and welcome to Lane Authority onboarding. I am your onboarding assistant, and I will be with you every step of the way, every single step.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.11,
+    "true_peak_dbtp": -1.31,
+    "gain_db": 0.76,
+    "limited_db": 0.71,
+    "measured_before_lufs": -18.76,
+    "peak_bound": false
+  },
+  "words_for": "5a3ff39152d8d13c/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Hello",
+      "charStart": 0,
+      "charEnd": 5,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "and",
+      "charStart": 7,
+      "charEnd": 10,
+      "startS": 1.28,
+      "endS": 1.44
+    },
+    {
+      "text": "welcome",
+      "charStart": 11,
+      "charEnd": 18,
+      "startS": 1.44,
+      "endS": 1.52
+    },
+    {
+      "text": "to",
+      "charStart": 19,
+      "charEnd": 21,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "Lane",
+      "charStart": 22,
+      "charEnd": 26,
+      "startS": 2.0,
+      "endS": 2.24
+    },
+    {
+      "text": "Authority",
+      "charStart": 27,
+      "charEnd": 36,
+      "startS": 2.72,
+      "endS": 2.88
+    },
+    {
+      "text": "onboarding",
+      "charStart": 37,
+      "charEnd": 47,
+      "startS": 2.88,
+      "endS": 3.52
+    },
+    {
+      "text": "I",
+      "charStart": 49,
+      "charEnd": 50,
+      "startS": 3.92,
+      "endS": 4.0
+    },
+    {
+      "text": "am",
+      "charStart": 51,
+      "charEnd": 53,
+      "startS": 4.0,
+      "endS": 4.08
+    },
+    {
+      "text": "your",
+      "charStart": 54,
+      "charEnd": 58,
+      "startS": 4.4,
+      "endS": 4.48
+    },
+    {
+      "text": "onboarding",
+      "charStart": 59,
+      "charEnd": 69,
+      "startS": 4.48,
+      "endS": 4.96
+    },
+    {
+      "text": "assistant",
+      "charStart": 70,
+      "charEnd": 79,
+      "startS": 5.04,
+      "endS": 5.6
+    },
+    {
+      "text": "and",
+      "charStart": 81,
+      "charEnd": 84,
+      "startS": 5.84,
+      "endS": 6.0
+    },
+    {
+      "text": "I",
+      "charStart": 85,
+      "charEnd": 86,
+      "startS": 6.0,
+      "endS": 6.16
+    },
+    {
+      "text": "will",
+      "charStart": 87,
+      "charEnd": 91,
+      "startS": 6.16,
+      "endS": 6.24
+    },
+    {
+      "text": "be",
+      "charStart": 92,
+      "charEnd": 94,
+      "startS": 6.32,
+      "endS": 6.48
+    },
+    {
+      "text": "with",
+      "charStart": 95,
+      "charEnd": 99,
+      "startS": 6.48,
+      "endS": 6.72
+    },
+    {
+      "text": "you",
+      "charStart": 100,
+      "charEnd": 103,
+      "startS": 6.72,
+      "endS": 6.8
+    },
+    {
+      "text": "every",
+      "charStart": 104,
+      "charEnd": 109,
+      "startS": 6.88,
+      "endS": 7.04
+    },
+    {
+      "text": "step",
+      "charStart": 110,
+      "charEnd": 114,
+      "startS": 7.2,
+      "endS": 7.44
+    },
+    {
+      "text": "of",
+      "charStart": 115,
+      "charEnd": 117,
+      "startS": 7.44,
+      "endS": 7.6
+    },
+    {
+      "text": "the",
+      "charStart": 118,
+      "charEnd": 121,
+      "startS": 7.6,
+      "endS": 7.68
+    },
+    {
+      "text": "way",
+      "charStart": 122,
+      "charEnd": 125,
+      "startS": 7.68,
+      "endS": 8.0
+    },
+    {
+      "text": "Every",
+      "charStart": 127,
+      "charEnd": 132,
+      "startS": 8.32,
+      "endS": 8.4
+    },
+    {
+      "text": "single",
+      "charStart": 133,
+      "charEnd": 139,
+      "startS": 8.64,
+      "endS": 8.96
+    },
+    {
+      "text": "step",
+      "charStart": 140,
+      "charEnd": 144,
+      "startS": 8.96,
+      "endS": 9.28
+    }
+  ]
+}

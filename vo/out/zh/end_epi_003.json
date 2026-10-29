@@ -1,0 +1,96 @@
+{
+  "hash": "28c6a1f5b821737a",
+  "mode": "clone",
+  "request": {
+    "id": "zh__end_epi_003",
+    "seed": 22,
+    "language": "Chinese",
+    "text": "前方，是漫长的归途。",
+    "voice_ref": "vo/voices/narrator.zh.wav",
+    "reference_text": "在一个霓虹永不熄灭的世界里，一名飞行员记得。那场雨。那片寂静。还有他没能守住的承诺。"
+  },
+  "direction": "The last line of the original game. Let it hang.",
+  "duration": 2.64,
+  "sample_rate": 24000,
+  "peak": 0.871,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.17,
+    "gain_db": 7.75,
+    "limited_db": 0.0,
+    "measured_before_lufs": -25.75,
+    "peak_bound": false
+  },
+  "asr": "前方是漫长的归途。",
+  "asr_similarity": 1.0,
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "前",
+      "charStart": 0,
+      "charEnd": 1,
+      "startS": 0.32,
+      "endS": 0.56
+    },
+    {
+      "text": "方",
+      "charStart": 1,
+      "charEnd": 2,
+      "startS": 0.56,
+      "endS": 0.96
+    },
+    {
+      "text": "是",
+      "charStart": 3,
+      "charEnd": 4,
+      "startS": 1.36,
+      "endS": 1.52
+    },
+    {
+      "text": "漫",
+      "charStart": 4,
+      "charEnd": 5,
+      "startS": 1.52,
+      "endS": 1.76
+    },
+    {
+      "text": "长",
+      "charStart": 5,
+      "charEnd": 6,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "的",
+      "charStart": 6,
+      "charEnd": 7,
+      "startS": 1.92,
+      "endS": 2.08
+    },
+    {
+      "text": "归",
+      "charStart": 7,
+      "charEnd": 8,
+      "startS": 2.08,
+      "endS": 2.24
+    },
+    {
+      "text": "途",
+      "charStart": 8,
+      "charEnd": 9,
+      "startS": 2.24,
+      "endS": 2.56
+    }
+  ],
+  "words_for": "28c6a1f5b821737a/wordtiming-v1"
+}

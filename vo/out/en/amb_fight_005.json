@@ -1,0 +1,159 @@
+{
+  "hash": "fcb622afc3edafb7",
+  "mode": "clone",
+  "request": {
+    "id": "en__amb_fight_005",
+    "seed": 11,
+    "language": "English",
+    "text": "If you see unarmed ships in the lanes, please ignore them. They are not paying customers yet.",
+    "voice_ref": "vo/voices/tutorial_ai.wav",
+    "reference_text": "Hi there, Warden-slayer! I am so, so excited to help you today! Let's learn how to move. Isn't moving fun? I think moving is fun!"
+  },
+  "direction": "On comms, breezy, as if about litter.",
+  "duration": 5.92,
+  "sample_rate": 24000,
+  "peak": 0.858,
+  "clipping_suspect": false,
+  "asr": "If you see unarmed ships in the lanes, please ignore them. They are not paying customers yet.",
+  "asr_similarity": 1.0,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.0,
+    "true_peak_dbtp": -1.25,
+    "gain_db": -0.0,
+    "limited_db": 0.0,
+    "measured_before_lufs": -18.0,
+    "peak_bound": false
+  },
+  "words_for": "fcb622afc3edafb7/wordtiming-v1",
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "If",
+      "charStart": 0,
+      "charEnd": 2,
+      "startS": 0.4,
+      "endS": 0.56
+    },
+    {
+      "text": "you",
+      "charStart": 3,
+      "charEnd": 6,
+      "startS": 0.56,
+      "endS": 0.72
+    },
+    {
+      "text": "see",
+      "charStart": 7,
+      "charEnd": 10,
+      "startS": 0.72,
+      "endS": 0.96
+    },
+    {
+      "text": "unarmed",
+      "charStart": 11,
+      "charEnd": 18,
+      "startS": 1.04,
+      "endS": 1.44
+    },
+    {
+      "text": "ships",
+      "charStart": 19,
+      "charEnd": 24,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "in",
+      "charStart": 25,
+      "charEnd": 27,
+      "startS": 1.76,
+      "endS": 1.92
+    },
+    {
+      "text": "the",
+      "charStart": 28,
+      "charEnd": 31,
+      "startS": 1.92,
+      "endS": 2.0
+    },
+    {
+      "text": "lanes",
+      "charStart": 32,
+      "charEnd": 37,
+      "startS": 2.0,
+      "endS": 2.48
+    },
+    {
+      "text": "please",
+      "charStart": 39,
+      "charEnd": 45,
+      "startS": 2.48,
+      "endS": 2.88
+    },
+    {
+      "text": "ignore",
+      "charStart": 46,
+      "charEnd": 52,
+      "startS": 2.88,
+      "endS": 3.2
+    },
+    {
+      "text": "them",
+      "charStart": 53,
+      "charEnd": 57,
+      "startS": 3.28,
+      "endS": 3.6
+    },
+    {
+      "text": "They",
+      "charStart": 59,
+      "charEnd": 63,
+      "startS": 4.08,
+      "endS": 4.16
+    },
+    {
+      "text": "are",
+      "charStart": 64,
+      "charEnd": 67,
+      "startS": 4.16,
+      "endS": 4.24
+    },
+    {
+      "text": "not",
+      "charStart": 68,
+      "charEnd": 71,
+      "startS": 4.24,
+      "endS": 4.56
+    },
+    {
+      "text": "paying",
+      "charStart": 72,
+      "charEnd": 78,
+      "startS": 4.56,
+      "endS": 4.88
+    },
+    {
+      "text": "customers",
+      "charStart": 79,
+      "charEnd": 88,
+      "startS": 4.88,
+      "endS": 5.44
+    },
+    {
+      "text": "yet",
+      "charStart": 89,
+      "charEnd": 92,
+      "startS": 5.44,
+      "endS": 5.92
+    }
+  ]
+}

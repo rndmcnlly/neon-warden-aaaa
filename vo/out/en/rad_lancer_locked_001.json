@@ -1,0 +1,110 @@
+{
+  "hash": "067907b4fb7d2b92",
+  "mode": "clone",
+  "request": {
+    "id": "en__rad_lancer_locked_001",
+    "seed": 55,
+    "language": "English",
+    "text": "Both emitters painted. It knows exactly where to hit us.",
+    "voice_ref": "vo/voices/scout.wav",
+    "reference_text": "Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane wide, and do not fire unless it fires."
+  },
+  "direction": "Radio, scout channel: low, quick, shop talk between wingmates. Tense.",
+  "duration": 3.12,
+  "sample_rate": 24000,
+  "peak": 0.841,
+  "clipping_suspect": false,
+  "loudness": {
+    "recipe": "gain+alimiter-v1",
+    "target_lufs": -18.0,
+    "ceiling_dbtp": -1.0,
+    "lufs": -18.36,
+    "true_peak_dbtp": -1.38,
+    "gain_db": 4.0,
+    "limited_db": 2.93,
+    "measured_before_lufs": -22.0,
+    "peak_bound": false
+  },
+  "align": {
+    "ok": true,
+    "monotonic": true,
+    "within": true,
+    "coverage": 1.0,
+    "mapped": 1.0
+  },
+  "words": [
+    {
+      "text": "Both",
+      "charStart": 0,
+      "charEnd": 4,
+      "startS": 0.0,
+      "endS": 0.32
+    },
+    {
+      "text": "emitters",
+      "charStart": 5,
+      "charEnd": 13,
+      "startS": 0.32,
+      "endS": 0.72
+    },
+    {
+      "text": "painted",
+      "charStart": 14,
+      "charEnd": 21,
+      "startS": 0.72,
+      "endS": 1.2
+    },
+    {
+      "text": "It",
+      "charStart": 23,
+      "charEnd": 25,
+      "startS": 1.36,
+      "endS": 1.44
+    },
+    {
+      "text": "knows",
+      "charStart": 26,
+      "charEnd": 31,
+      "startS": 1.44,
+      "endS": 1.76
+    },
+    {
+      "text": "exactly",
+      "charStart": 32,
+      "charEnd": 39,
+      "startS": 1.76,
+      "endS": 2.32
+    },
+    {
+      "text": "where",
+      "charStart": 40,
+      "charEnd": 45,
+      "startS": 2.32,
+      "endS": 2.56
+    },
+    {
+      "text": "to",
+      "charStart": 46,
+      "charEnd": 48,
+      "startS": 2.56,
+      "endS": 2.64
+    },
+    {
+      "text": "hit",
+      "charStart": 49,
+      "charEnd": 52,
+      "startS": 2.64,
+      "endS": 2.72
+    },
+    {
+      "text": "us",
+      "charStart": 53,
+      "charEnd": 55,
+      "startS": 2.72,
+      "endS": 3.12
+    }
+  ],
+  "words_for": "067907b4fb7d2b92/wordtiming-v1",
+  "asr": "Both emitters painted. It knows exactly where to hit us.",
+  "asr_similarity": 1.0
+}
