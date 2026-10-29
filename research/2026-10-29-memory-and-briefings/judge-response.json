@@ -1,0 +1,54 @@
+{
+  "id": "gen-1793259468-ORxN3aMYoX1cVwQ8aLfY",
+  "object": "chat.completion",
+  "created": 1793259468,
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\"clips\":{\"A\":{\"ordered_events\":[{\"timestamp\":\"00:00-00:08\",\"event\":\"A larger black-and-white triangular spacecraft rests stationary in a lane in front of a cyan rectangular block, with a large red-and-black structure to the upper right. The HUD reads '0121 \u00b7 LAST APPROACH \u00b7 WEAPON COLD'. A calm female voice logs: 'Recording. Pilot zero one two one. Last Approach. Weapon status: cold.'\"},{\"timestamp\":\"00:08-00:16\",\"event\":\"The camera zooms out slightly. The HUD updates to '0121 \u00b7 VELOCITY 0 \u00b7 WEAPON COLD'. The female voice instructs: 'Pilot zero one two one, your weapon is cold. Please fire. Please fire. Pilot, please.' Neither the ship nor any other object moves or fires.\"},{\"timestamp\":\"00:16-00:22\",\"event\":\"An agitated male voice shouts: 'You stopped! Why did you stop?! Nobody stops! Nobody EVER stops!' The scene remains static.\"},{\"timestamp\":\"00:22-00:29\",\"event\":\"Three smaller black-and-white ships appear in the adjacent lane to the right. The HUD changes to 'LANE TRAFFIC \u00b7 NO WEAPONS'. The male voice continues: 'Look! The little ships! No guns! They fly my lanes because I keep them free! FREE! Do you know what free means?!' Visually, the three smaller ships remain stationary.\"},{\"timestamp\":\"00:29-00:36\",\"event\":\"The camera zooms back in toward the main ship. A vertical orange-gold beam or pillar appears, extending downward from above into the top of the main ship. The HUD reads '0121 \u00b7 RECALL INITIATED'. The female voice states: 'Non-performance confirmed. Pilot zero one two one, recall initiated. Thank you for your service.'\"},{\"timestamp\":\"00:36-00:41\",\"event\":\"The HUD updates to '0121 \u00b7 SIGNAL LOST'. The male voice pleads: 'No. No, no, no! Don't you take him! He STOPPED!' The vertical beam remains attached to the stationary ship until the clip ends.\"}],\"visible_only_account\":\"A triangular spacecraft sits motionless on a lined surface behind a cyan block, with a large red-and-black object nearby. The camera shifts framing at 00:08, 00:22, and 00:29. At 00:22, three smaller spacecraft appear in the middle lane; none of the craft visibly move across the lanes. At 00:29, a vertical orange column appears connected to the main spacecraft and stays there through the end of the clip. On-screen text readouts change from 'LAST APPROACH \u00b7 WEAPON COLD' to 'VELOCITY 0 \u00b7 WEAPON COLD', 'LANE TRAFFIC \u00b7 NO WEAPONS', 'RECALL INITIATED', and finally 'SIGNAL LOST'.\",\"heard_account\":\"An automated or dispatch-like female voice records that Pilot 0121 is on last approach with a cold weapon, then repeatedly asks the pilot to fire. A second, agitated male speaker reacts with shock that the pilot stopped, claims little unarmed ships fly his lanes because he keeps them free, and objects when the female voice announces 'non-performance confirmed' and initiates a recall for Pilot 0121.\",\"uncertainty\":\"From visuals alone, it is uncertain who the two speakers are (e.g., whether the male voice belongs to the red-and-black structure) and what the vertical orange column physically does to the pilot or ship during 'recall'. Additionally, the heard dialogue and HUD refer to the pilot 'stopping' and little ships 'flying' the lanes, whereas in this prototype presentation all ships are depicted as stationary throughout, creating a tension between the spoken description of motion/stopping and the static visual staging.\"},\"B\":{\"ordered_events\":[{\"timestamp\":\"00:00-00:06\",\"event\":\"A gold V-shaped object labeled 'Dart' is displayed against a dark background, slowly rotating/bobbing in place. On-screen text states: 'Commits to a dive. Move out of its path.' The top-left readout counts 'SCANNER \u00b7 NEXT SECTOR: 2' with a running timer. No audio is present.\"}],\"visible_only_account\":\"A golden, V-shaped geometric craft or object hovers and gently tilts in place at the center of a dark screen. Text in the top left reads 'SCANNER \u00b7 NEXT SECTOR: 2' with a timer from 0.405 to 5.380. Text in the lower left names the object 'Dart' and provides the instruction: 'Commits to a dive. Move out of its path.' UI buttons at the bottom show 'Skip', a 'Don't show again' checkbox, and 'isolated presentation prototype'.\",\"heard_account\":\"Audio is completely absent in Clip B.\",\"uncertainty\":\"The text describes the object's behavior ('Commits to a dive. Move out of its path.'), but the visual animation only shows the object gently tilting in place rather than actively diving across the screen.\"}},\"comprehension_limits\":\"Both clips are labeled 'isolated presentation prototype' and use static or minimal placeholder animations. Consequently, actions described in speech or text\u2014such as a ship coming to a stop, small traffic ships flying through lanes, a pilot being 'taken' during recall, or the 'Dart' committing to a dive\u2014are established by readouts, subtitles, and voice acting rather than fully animated movement.\"}",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "AY89a1/0FpTQTgwZdStGUIQDTeO3gHM3CtsmZkhvpX6aDS81DZ6cg1nYkFj9W+XJbH1sCDXOZDvJXZOnY/waOr2uis6Y5UB8pF1yc7yKXsoLcoVA+Q==",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5291,
+    "completion_tokens": 1182,
+    "total_tokens": 6473,
+    "cost": 0.022402,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 4848
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022402,
+      "upstream_inference_prompt_cost": 0.010582,
+      "upstream_inference_completions_cost": 0.01182
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

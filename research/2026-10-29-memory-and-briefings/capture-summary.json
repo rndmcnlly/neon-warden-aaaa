@@ -1,0 +1,366 @@
+{
+  "A": {
+    "case": {
+      "id": "A",
+      "query": "mode=memory",
+      "width": 1280,
+      "height": 720
+    },
+    "cutStart": 0.664,
+    "duration": 41.82000000000001,
+    "pacing": {
+      "frames": 5032,
+      "wallS": 42.50629999998212
+    },
+    "overflow": false,
+    "errors": [],
+    "av": {
+      "av": {
+        "hasAudio": true,
+        "voStem": true,
+        "contextStates": [
+          "running"
+        ],
+        "sourcesStarted": 7,
+        "voStarted": [
+          "0.7s en/flash_rec_001.ogg",
+          "0.7s en/flash_rec_002.ogg",
+          "0.7s en/flash_rec_003.ogg",
+          "0.7s en/flash_rec_004.ogg",
+          "0.7s en/flash_rec_005.ogg",
+          "0.7s en/flash_rec_006.ogg"
+        ],
+        "lufs": -18.3,
+        "truePeak": -4.3,
+        "buses": {},
+        "audibleS": 40.32,
+        "voAudible": [
+          {
+            "start": 2.31,
+            "end": 2.92
+          },
+          {
+            "start": 3.55,
+            "end": 5.26
+          },
+          {
+            "start": 5.91,
+            "end": 6.76
+          },
+          {
+            "start": 7.18,
+            "end": 8.85
+          },
+          {
+            "start": 9.98,
+            "end": 11.49
+          },
+          {
+            "start": 12.02,
+            "end": 13.06
+          },
+          {
+            "start": 13.47,
+            "end": 14.23
+          },
+          {
+            "start": 14.82,
+            "end": 15.94
+          },
+          {
+            "start": 16.54,
+            "end": 16.98
+          },
+          {
+            "start": 17.5,
+            "end": 19.56
+          },
+          {
+            "start": 19.92,
+            "end": 22.43
+          },
+          {
+            "start": 22.86,
+            "end": 28.5
+          },
+          {
+            "start": 28.78,
+            "end": 30.02
+          },
+          {
+            "start": 31.66,
+            "end": 36.16
+          },
+          {
+            "start": 36.51,
+            "end": 39.99
+          },
+          {
+            "start": 40.42,
+            "end": 41.05
+          },
+          {
+            "start": 43.28,
+            "end": 43.28
+          }
+        ],
+        "subtitles": []
+      },
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "40.32 s audible of 43.28 s, 7 sounds started, 6 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-4.3 dBTP, -18.3 LUFS integrated"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.3 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "no subtitles shown in this reel"
+        }
+      ]
+    }
+  },
+  "B": {
+    "case": {
+      "id": "B",
+      "query": "mode=briefing",
+      "width": 1280,
+      "height": 720
+    },
+    "cutStart": 0.362,
+    "duration": 6,
+    "pacing": {
+      "frames": 732,
+      "wallS": 6.68190000000596
+    },
+    "overflow": false,
+    "errors": [],
+    "av": {
+      "av": {
+        "hasAudio": false,
+        "voStem": false,
+        "contextStates": [],
+        "sourcesStarted": 0,
+        "voStarted": [],
+        "lufs": null,
+        "truePeak": null,
+        "buses": {},
+        "audibleS": 0,
+        "voAudible": [],
+        "subtitles": []
+      },
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "warn",
+          "detail": "the game never wired a node to the speakers"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "no subtitles shown in this reel"
+        }
+      ]
+    }
+  },
+  "C": {
+    "case": {
+      "id": "C",
+      "query": "mode=briefing&lang=es&quiet=1",
+      "width": 390,
+      "height": 844
+    },
+    "cutStart": 0.35,
+    "duration": 6,
+    "pacing": {
+      "frames": 732,
+      "wallS": 6.684
+    },
+    "overflow": false,
+    "errors": [],
+    "av": {
+      "av": {
+        "hasAudio": false,
+        "voStem": false,
+        "contextStates": [],
+        "sourcesStarted": 0,
+        "voStarted": [],
+        "lufs": null,
+        "truePeak": null,
+        "buses": {},
+        "audibleS": 0,
+        "voAudible": [],
+        "subtitles": []
+      },
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "warn",
+          "detail": "the game never wired a node to the speakers"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "no subtitles shown in this reel"
+        }
+      ]
+    }
+  },
+  "D": {
+    "case": {
+      "id": "D",
+      "query": "mode=memory&lang=zh&quiet=1",
+      "width": 390,
+      "height": 844
+    },
+    "cutStart": 0.757,
+    "duration": 44.22,
+    "pacing": {
+      "frames": 5318,
+      "wallS": 44.901800000011924
+    },
+    "overflow": false,
+    "errors": [],
+    "av": {
+      "av": {
+        "hasAudio": true,
+        "voStem": true,
+        "contextStates": [
+          "running"
+        ],
+        "sourcesStarted": 7,
+        "voStarted": [
+          "0.78s zh/flash_rec_001.ogg",
+          "0.78s zh/flash_rec_002.ogg",
+          "0.78s zh/flash_rec_003.ogg",
+          "0.78s zh/flash_rec_004.ogg",
+          "0.78s zh/flash_rec_005.ogg",
+          "0.78s zh/flash_rec_006.ogg"
+        ],
+        "lufs": -18.3,
+        "truePeak": -4.1,
+        "buses": {},
+        "audibleS": 42.72,
+        "voAudible": [
+          {
+            "start": 1.83,
+            "end": 2.41
+          },
+          {
+            "start": 3.02,
+            "end": 3.6
+          },
+          {
+            "start": 3.93,
+            "end": 4.83
+          },
+          {
+            "start": 5.26,
+            "end": 6.07
+          },
+          {
+            "start": 6.5,
+            "end": 7.22
+          },
+          {
+            "start": 7.52,
+            "end": 8.18
+          },
+          {
+            "start": 8.96,
+            "end": 10.81
+          },
+          {
+            "start": 11.36,
+            "end": 12.63
+          },
+          {
+            "start": 12.91,
+            "end": 13.48
+          },
+          {
+            "start": 13.93,
+            "end": 14.52
+          },
+          {
+            "start": 14.98,
+            "end": 15.73
+          },
+          {
+            "start": 16.04,
+            "end": 18.61
+          },
+          {
+            "start": 18.9,
+            "end": 21.16
+          },
+          {
+            "start": 21.72,
+            "end": 30.65
+          },
+          {
+            "start": 31.76,
+            "end": 32.73
+          },
+          {
+            "start": 33.45,
+            "end": 34.83
+          },
+          {
+            "start": 35.28,
+            "end": 36.43
+          },
+          {
+            "start": 36.95,
+            "end": 37.83
+          },
+          {
+            "start": 38.14,
+            "end": 38.4
+          },
+          {
+            "start": 38.71,
+            "end": 39.84
+          },
+          {
+            "start": 40.12,
+            "end": 43.51
+          }
+        ],
+        "subtitles": []
+      },
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "42.72 s audible of 45.76 s, 7 sounds started, 6 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-4.1 dBTP, -18.3 LUFS integrated"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.3 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "no subtitles shown in this reel"
+        }
+      ]
+    }
+  }
+}

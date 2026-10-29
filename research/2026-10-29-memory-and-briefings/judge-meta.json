@@ -1,0 +1,13 @@
+{
+  "requested_model": "google/gemini-4-argon",
+  "returned_model": "google/gemini-4-argon",
+  "provider": "Google",
+  "policy": {
+    "zdr": true,
+    "data_collection": "deny"
+  },
+  "estimate_upper_usd": 0.1,
+  "cost_usd": 0.022402,
+  "status": 200,
+  "wall_s": 20.30190896987915
+}

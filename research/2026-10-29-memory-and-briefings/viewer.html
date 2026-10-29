@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memory and inspection: focused prototype review</title>
+<style>
+body{margin:0 auto;max-width:1000px;padding:24px;background:#09131e;color:#dce7ee;font:17px/1.5 system-ui} h1{font-size:24px} video{display:block;width:100%;max-height:68vh;background:#02070b} button{font:inherit;padding:8px 14px;color:inherit;background:#1c3445;border:1px solid #65869a;border-radius:4px} nav{display:flex;gap:16px;margin:14px 0;align-items:center} a{color:#9bd9f5} details{padding:16px;background:#132535;margin:16px 0} [hidden]{display:none} img{max-width:100%;max-height:400px} .muted{color:#a9bac6}
+</style>
+<h1>Watch first, then reconstruct the actions</h1>
+<p class="muted">Isolated prototypes, not live gameplay. All clips play at normal speed. A/D contain existing VO and music; B/C are silent. What moved, who acted, and what changed?</p>
+<video controls preload="metadata" src="out/A/clip.mp4"></video>
+<nav><button id="prev">Previous</button><span id="label">Clip A · EN · 1280×720</span><button id="next">Next</button></nav>
+<details id="truth"><summary>After watching: baseline, intended event chain and limits</summary><div id="notes"></div></details>
+<details><summary>Blind test and revision disclosure</summary><p>The single ZDR Argon judge saw v1, not these revised clips. It reconstructed the spoken refusal/recall sequence, but missed visible stopping/traffic and could not map the voice to the Warden. The initial Dart motion read as a tilt, not a dive. This was a partial comprehension failure. The revision strengthens those motions and anchors a Warden comms label. No second paid judgment was made.</p><p>Actual cost: $0.022402. See <a href="judge.json">blind response</a>, <a href="README.md">full report</a> and <a href="INTEGRATION.md">integration request</a>.</p></details>
+<script>
+const cases=[
+['A · EN · 1280×720','A','Baseline: existing gameplay is frozen and desaturated while we hear the recording. Proposal: #0121 approaches and stops without firing; the Warden reacts; three unarmed ships cross its lane; an amber recall uplink appears; signal is lost while the hull remains. Five shots follow flash_rec_001–006. The amber uplink is symbolic, not proof of death or a teleport. Existing present-day AI lines are outside this recording-only clip.'],
+['B · EN · 1280×720','B','Sector 2 introduces the Dart, first encountered at sector tick 300 in the real wave table. Six seconds of glTF inspection, a short committed dive, one name and one tactical instruction. Skip and repeat suppression are real prototype controls. Production boundary pause and settings ownership are not wired. Audio is intentionally absent.'],
+['C · ES · 390×844 · reduced motion','C','Same enemy introduction at native portrait dimensions. Static inspection replaces the dive and rotation. Spanish name/instruction and visible skip/repeat control. This is Mac browser emulation, not a phone or Chromebook hardware performance claim. Silent prototype.'],
+['D · ZH · 390×844 · reduced motion','D','Original Chinese VO/timings, native portrait layout and simplified cuts/still compositions. Same remembered events, no Pilot body. This is not a finished production subtitle view, mix, compositor or language-switch test.']
+];let i=0;const v=document.querySelector('video');function show(){v.pause();v.src='out/'+cases[i][1]+'/clip.mp4';document.querySelector('#label').textContent='Clip '+cases[i][0];document.querySelector('#notes').textContent=cases[i][2];document.querySelector('#truth').open=false}document.querySelector('#prev').onclick=()=>{i=(i+3)%4;show()};document.querySelector('#next').onclick=()=>{i=(i+1)%4;show()};show();
+</script>
