@@ -67,15 +67,15 @@ export const STRINGS = {
     zh: "制作过程",
   },
   "teaser.title": {
-    en: "Teaser, draft cut",
-    es: "Avance, versión preliminar",
-    zh: "预告片（草剪版）",
+    en: "Teaser (English)",
+    es: "Avance (en inglés)",
+    zh: "预告片（英文）",
   },
   "teaser.meta": {
-    en: "30 seconds, 1.8 MB, with sound. Loads only when you press play.",
+    en: "30 seconds, 4.7 MB, with sound. Loads only when you press play.",
     es:
-      "30 segundos, 1,8 MB, con sonido. Solo se descarga al pulsar reproducir.",
-    zh: "30 秒，1.8 MB，有声音。只有在你按下播放后才会加载。",
+      "30 segundos, 4,7 MB, con sonido. Solo se descarga al pulsar reproducir.",
+    zh: "30 秒，4.7 MB，有声音。只有在你按下播放后才会加载。",
   },
   "teaser.how": {
     en:
