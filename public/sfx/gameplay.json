@@ -1,359 +1,359 @@
 {
- "version": 1,
- "generated": "2026-10-28T20:32:08-0700",
- "model": "elevenlabs/fal-ai/elevenlabs/sound-effects/v2",
- "note": "Normalized to one level; runtime gains live in src/audio/gameplaySounds.ts.",
- "sounds": {
-  "shot_aimed": {
-   "variants": [
-    "sfx/gameplay/shot_aimed_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/shot_aimed_1.ogg",
-     "from": "shot_aimed/shot_aimed_01.wav",
-     "hash": "0cab447fb1bac053",
-     "provisional": true
+  "version": 1,
+  "generated": "2026-10-28T20:36:17-0700",
+  "model": "elevenlabs/fal-ai/elevenlabs/sound-effects/v2",
+  "note": "Normalized to one level; runtime gains live in src/audio/gameplaySounds.ts.",
+  "sounds": {
+    "shot_aimed": {
+      "variants": [
+        "sfx/gameplay/shot_aimed_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/shot_aimed_1.ogg",
+          "from": "shot_aimed/shot_aimed_01.wav",
+          "hash": "0cab447fb1bac053",
+          "provisional": true
+        }
+      ]
+    },
+    "writ_release_1": {
+      "variants": [
+        "sfx/gameplay/writ_release_1_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/writ_release_1_1.ogg",
+          "from": "writ_release_1/writ_release_1_01.wav",
+          "hash": "ffd72636006b85dd",
+          "provisional": true
+        }
+      ]
+    },
+    "writ_release_2": {
+      "variants": [
+        "sfx/gameplay/writ_release_2_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/writ_release_2_1.ogg",
+          "from": "writ_release_2/writ_release_2_02.wav",
+          "hash": "82a1a19c67e0628b",
+          "provisional": true
+        }
+      ]
+    },
+    "writ_release_3": {
+      "variants": [
+        "sfx/gameplay/writ_release_3_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/writ_release_3_1.ogg",
+          "from": "writ_release_3/writ_release_3_01.wav",
+          "hash": "4a4169e368399efa",
+          "provisional": true
+        }
+      ]
+    },
+    "enemy_fire_heavy": {
+      "variants": [
+        "sfx/gameplay/enemy_fire_heavy_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+          "from": "enemy_fire_heavy/enemy_fire_heavy_01.wav",
+          "hash": "8bbb0bf1d94cb6b5",
+          "provisional": true
+        }
+      ]
+    },
+    "near_miss": {
+      "variants": [
+        "sfx/gameplay/near_miss_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/near_miss_1.ogg",
+          "from": "near_miss/near_miss_01.wav",
+          "hash": "eb5423ec5b0162d2",
+          "provisional": true
+        }
+      ]
+    },
+    "flyby": {
+      "variants": [
+        "sfx/gameplay/flyby_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/flyby_1.ogg",
+          "from": "flyby/flyby_01.wav",
+          "hash": "42ecca77f6382a71",
+          "provisional": true
+        }
+      ]
+    },
+    "spawn": {
+      "variants": [
+        "sfx/gameplay/spawn_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/spawn_1.ogg",
+          "from": "spawn/spawn_01.wav",
+          "hash": "53959d2a135560b1",
+          "provisional": true
+        }
+      ]
+    },
+    "retreat": {
+      "variants": [
+        "sfx/gameplay/retreat_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/retreat_1.ogg",
+          "from": "retreat/retreat_01.wav",
+          "hash": "7710f841ee2e339d",
+          "provisional": true
+        }
+      ]
+    },
+    "hit_enemy": {
+      "variants": [
+        "sfx/gameplay/hit_enemy_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hit_enemy_1.ogg",
+          "from": "hit_enemy/hit_enemy_01.wav",
+          "hash": "b02128a0dd0eef12",
+          "provisional": true
+        }
+      ]
+    },
+    "hit_boss": {
+      "variants": [
+        "sfx/gameplay/hit_boss_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hit_boss_1.ogg",
+          "from": "hit_boss/hit_boss_01.wav",
+          "hash": "dc3dac8c193b534f",
+          "provisional": true
+        }
+      ]
+    },
+    "hit_deflect": {
+      "variants": [
+        "sfx/gameplay/hit_deflect_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hit_deflect_1.ogg",
+          "from": "hit_deflect/hit_deflect_01.wav",
+          "hash": "69640a997c9330db",
+          "provisional": true
+        }
+      ]
+    },
+    "hit_player": {
+      "variants": [
+        "sfx/gameplay/hit_player_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hit_player_1.ogg",
+          "from": "hit_player/hit_player_01.wav",
+          "hash": "87ef5609c0fc9d34",
+          "provisional": true
+        }
+      ]
+    },
+    "shield_bloom": {
+      "variants": [
+        "sfx/gameplay/shield_bloom_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/shield_bloom_1.ogg",
+          "from": "shield_bloom/shield_bloom_01.wav",
+          "hash": "11586cbecd0a3cd8",
+          "provisional": true
+        }
+      ]
+    },
+    "life_lost": {
+      "variants": [
+        "sfx/gameplay/life_lost_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/life_lost_1.ogg",
+          "from": "life_lost/life_lost_03.wav",
+          "hash": "d0550f6429996f71",
+          "provisional": true
+        }
+      ]
+    },
+    "kill_small": {
+      "variants": [
+        "sfx/gameplay/kill_small_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/kill_small_1.ogg",
+          "from": "kill_small/kill_small_03.wav",
+          "hash": "551b6111c09a62f5",
+          "provisional": true
+        }
+      ]
+    },
+    "kill_large": {
+      "variants": [
+        "sfx/gameplay/kill_large_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/kill_large_1.ogg",
+          "from": "kill_large/kill_large_01.wav",
+          "hash": "b3d51ddcdada0aaa",
+          "provisional": true
+        }
+      ]
+    },
+    "kill_ram": {
+      "variants": [
+        "sfx/gameplay/kill_ram_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/kill_ram_1.ogg",
+          "from": "kill_ram/kill_ram_01.wav",
+          "hash": "ae9497eec76518bf",
+          "provisional": true
+        }
+      ]
+    },
+    "part_break": {
+      "variants": [
+        "sfx/gameplay/part_break_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/part_break_1.ogg",
+          "from": "part_break/part_break_03.wav",
+          "hash": "66b388b0ab2ed1c5",
+          "provisional": true
+        }
+      ]
+    },
+    "disarm": {
+      "variants": [
+        "sfx/gameplay/disarm_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/disarm_1.ogg",
+          "from": "disarm/disarm_01.wav",
+          "hash": "f472c66dd1d293a2",
+          "provisional": true
+        }
+      ]
+    },
+    "core_exposed": {
+      "variants": [
+        "sfx/gameplay/core_exposed_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/core_exposed_1.ogg",
+          "from": "core_exposed/core_exposed_01.wav",
+          "hash": "c1c35c511475b5cc",
+          "provisional": true
+        }
+      ]
+    },
+    "boss_roar": {
+      "variants": [
+        "sfx/gameplay/boss_roar_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/boss_roar_1.ogg",
+          "from": "boss_roar/boss_roar_01.wav",
+          "hash": "9438e74bfdcac124",
+          "provisional": true
+        }
+      ]
+    },
+    "boss_collapse": {
+      "variants": [
+        "sfx/gameplay/boss_collapse_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/boss_collapse_1.ogg",
+          "from": "boss_collapse/boss_collapse_01.wav",
+          "hash": "a626316169444fb0",
+          "provisional": true
+        }
+      ]
+    },
+    "game_over": {
+      "variants": [
+        "sfx/gameplay/game_over_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/game_over_1.ogg",
+          "from": "game_over/game_over_01.wav",
+          "hash": "f9fafc6371b448f9",
+          "provisional": true
+        }
+      ]
+    },
+    "hangar_equip": {
+      "variants": [
+        "sfx/gameplay/hangar_equip_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hangar_equip_1.ogg",
+          "from": "hangar_equip/hangar_equip_03.wav",
+          "hash": "89bfac2477fa6b62",
+          "provisional": true
+        }
+      ]
+    },
+    "hangar_cosmetic": {
+      "variants": [
+        "sfx/gameplay/hangar_cosmetic_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hangar_cosmetic_1.ogg",
+          "from": "hangar_cosmetic/hangar_cosmetic_01.wav",
+          "hash": "2a6e09a5f45cd884",
+          "provisional": true
+        }
+      ]
+    },
+    "hangar_locked": {
+      "variants": [
+        "sfx/gameplay/hangar_locked_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/hangar_locked_1.ogg",
+          "from": "hangar_locked/hangar_locked_01.wav",
+          "hash": "dc9f09dff27f86a9",
+          "provisional": true
+        }
+      ]
     }
-   ]
-  },
-  "writ_release_1": {
-   "variants": [
-    "sfx/gameplay/writ_release_1_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/writ_release_1_1.ogg",
-     "from": "writ_release_1/writ_release_1_01.wav",
-     "hash": "ffd72636006b85dd",
-     "provisional": true
-    }
-   ]
-  },
-  "writ_release_2": {
-   "variants": [
-    "sfx/gameplay/writ_release_2_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/writ_release_2_1.ogg",
-     "from": "writ_release_2/writ_release_2_02.wav",
-     "hash": "82a1a19c67e0628b",
-     "provisional": true
-    }
-   ]
-  },
-  "writ_release_3": {
-   "variants": [
-    "sfx/gameplay/writ_release_3_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/writ_release_3_1.ogg",
-     "from": "writ_release_3/writ_release_3_01.wav",
-     "hash": "4a4169e368399efa",
-     "provisional": true
-    }
-   ]
-  },
-  "enemy_fire_heavy": {
-   "variants": [
-    "sfx/gameplay/enemy_fire_heavy_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/enemy_fire_heavy_1.ogg",
-     "from": "enemy_fire_heavy/enemy_fire_heavy_01.wav",
-     "hash": "8bbb0bf1d94cb6b5",
-     "provisional": true
-    }
-   ]
-  },
-  "near_miss": {
-   "variants": [
-    "sfx/gameplay/near_miss_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/near_miss_1.ogg",
-     "from": "near_miss/near_miss_01.wav",
-     "hash": "eb5423ec5b0162d2",
-     "provisional": true
-    }
-   ]
-  },
-  "flyby": {
-   "variants": [
-    "sfx/gameplay/flyby_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/flyby_1.ogg",
-     "from": "flyby/flyby_01.wav",
-     "hash": "42ecca77f6382a71",
-     "provisional": true
-    }
-   ]
-  },
-  "spawn": {
-   "variants": [
-    "sfx/gameplay/spawn_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/spawn_1.ogg",
-     "from": "spawn/spawn_01.wav",
-     "hash": "53959d2a135560b1",
-     "provisional": true
-    }
-   ]
-  },
-  "retreat": {
-   "variants": [
-    "sfx/gameplay/retreat_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/retreat_1.ogg",
-     "from": "retreat/retreat_01.wav",
-     "hash": "7710f841ee2e339d",
-     "provisional": true
-    }
-   ]
-  },
-  "hit_enemy": {
-   "variants": [
-    "sfx/gameplay/hit_enemy_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hit_enemy_1.ogg",
-     "from": "hit_enemy/hit_enemy_01.wav",
-     "hash": "b02128a0dd0eef12",
-     "provisional": true
-    }
-   ]
-  },
-  "hit_boss": {
-   "variants": [
-    "sfx/gameplay/hit_boss_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hit_boss_1.ogg",
-     "from": "hit_boss/hit_boss_01.wav",
-     "hash": "dc3dac8c193b534f",
-     "provisional": true
-    }
-   ]
-  },
-  "hit_deflect": {
-   "variants": [
-    "sfx/gameplay/hit_deflect_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hit_deflect_1.ogg",
-     "from": "hit_deflect/hit_deflect_01.wav",
-     "hash": "69640a997c9330db",
-     "provisional": true
-    }
-   ]
-  },
-  "hit_player": {
-   "variants": [
-    "sfx/gameplay/hit_player_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hit_player_1.ogg",
-     "from": "hit_player/hit_player_01.wav",
-     "hash": "87ef5609c0fc9d34",
-     "provisional": true
-    }
-   ]
-  },
-  "shield_bloom": {
-   "variants": [
-    "sfx/gameplay/shield_bloom_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/shield_bloom_1.ogg",
-     "from": "shield_bloom/shield_bloom_01.wav",
-     "hash": "11586cbecd0a3cd8",
-     "provisional": true
-    }
-   ]
-  },
-  "life_lost": {
-   "variants": [
-    "sfx/gameplay/life_lost_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/life_lost_1.ogg",
-     "from": "life_lost/life_lost_03.wav",
-     "hash": "d0550f6429996f71",
-     "provisional": true
-    }
-   ]
-  },
-  "kill_small": {
-   "variants": [
-    "sfx/gameplay/kill_small_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/kill_small_1.ogg",
-     "from": "kill_small/kill_small_03.wav",
-     "hash": "551b6111c09a62f5",
-     "provisional": true
-    }
-   ]
-  },
-  "kill_large": {
-   "variants": [
-    "sfx/gameplay/kill_large_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/kill_large_1.ogg",
-     "from": "kill_large/kill_large_01.wav",
-     "hash": "b3d51ddcdada0aaa",
-     "provisional": true
-    }
-   ]
-  },
-  "kill_ram": {
-   "variants": [
-    "sfx/gameplay/kill_ram_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/kill_ram_1.ogg",
-     "from": "kill_ram/kill_ram_01.wav",
-     "hash": "ae9497eec76518bf",
-     "provisional": true
-    }
-   ]
-  },
-  "part_break": {
-   "variants": [
-    "sfx/gameplay/part_break_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/part_break_1.ogg",
-     "from": "part_break/part_break_03.wav",
-     "hash": "66b388b0ab2ed1c5",
-     "provisional": true
-    }
-   ]
-  },
-  "disarm": {
-   "variants": [
-    "sfx/gameplay/disarm_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/disarm_1.ogg",
-     "from": "disarm/disarm_01.wav",
-     "hash": "f472c66dd1d293a2",
-     "provisional": true
-    }
-   ]
-  },
-  "core_exposed": {
-   "variants": [
-    "sfx/gameplay/core_exposed_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/core_exposed_1.ogg",
-     "from": "core_exposed/core_exposed_01.wav",
-     "hash": "c1c35c511475b5cc",
-     "provisional": true
-    }
-   ]
-  },
-  "boss_roar": {
-   "variants": [
-    "sfx/gameplay/boss_roar_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/boss_roar_1.ogg",
-     "from": "boss_roar/boss_roar_01.wav",
-     "hash": "9438e74bfdcac124",
-     "provisional": true
-    }
-   ]
-  },
-  "boss_collapse": {
-   "variants": [
-    "sfx/gameplay/boss_collapse_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/boss_collapse_1.ogg",
-     "from": "boss_collapse/boss_collapse_01.wav",
-     "hash": "a626316169444fb0",
-     "provisional": true
-    }
-   ]
-  },
-  "game_over": {
-   "variants": [
-    "sfx/gameplay/game_over_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/game_over_1.ogg",
-     "from": "game_over/game_over_01.wav",
-     "hash": "f9fafc6371b448f9",
-     "provisional": true
-    }
-   ]
-  },
-  "hangar_equip": {
-   "variants": [
-    "sfx/gameplay/hangar_equip_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hangar_equip_1.ogg",
-     "from": "hangar_equip/hangar_equip_03.wav",
-     "hash": "89bfac2477fa6b62",
-     "provisional": true
-    }
-   ]
-  },
-  "hangar_cosmetic": {
-   "variants": [
-    "sfx/gameplay/hangar_cosmetic_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hangar_cosmetic_1.ogg",
-     "from": "hangar_cosmetic/hangar_cosmetic_01.wav",
-     "hash": "2a6e09a5f45cd884",
-     "provisional": true
-    }
-   ]
-  },
-  "hangar_locked": {
-   "variants": [
-    "sfx/gameplay/hangar_locked_1.ogg"
-   ],
-   "takes": [
-    {
-     "src": "sfx/gameplay/hangar_locked_1.ogg",
-     "from": "hangar_locked/hangar_locked_01.wav",
-     "hash": "dc9f09dff27f86a9",
-     "provisional": true
-    }
-   ]
   }
- }
 }

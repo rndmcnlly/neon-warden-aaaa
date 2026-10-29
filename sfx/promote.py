@@ -89,7 +89,7 @@ def promote_gameplay(args) -> None:
             "model": index.get("model"),
             "note": "Normalized to one level; runtime gains live in src/audio/gameplaySounds.ts.",
             "sounds": sounds,
-        }, indent=1) + "\n")
+        }, indent=2) + "\n")
     n = sum(1 for v in sounds.values() if v)
     print(f"gameplay: {n}/{len(sounds)} roles promoted ({sum(len(v['variants']) for v in sounds.values() if v)} variants)")
 
