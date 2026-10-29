@@ -1,0 +1,592 @@
+=== deno task lint
+[0m[32mTask[0m [0m[36mlint[0m deno lint
+[0m[1m[31merror[no-regex-spaces][0m: [0m[1mmore than one consecutive spaces in RegExp is not allowed[0m
+  [0m[38;5;12m-->[0m [0m[36msrc/scenes/banks/emit_yaml.ts[0m[0m[33m:30:15[0m
+  [0m[38;5;12m | [0m
+[0m[38;5;12m30 | [0m    const m = /^  - id: (\S+)\s*$/.exec(row);
+  [0m[38;5;12m | [0m              [0m[1m[31m^^^^^^^^^^^^^^^^^^^^[0m
+
+  [0m[38;5;12mdocs[0m: https://docs.deno.com/lint/rules/no-regex-spaces
+
+
+Found 1 problem
+Checked 240 files
+=== exit 1 (lint)
+=== deno task check
+[0m[32mTask[0m [0m[36mcheck[0m deno check src/ tests/ scripts/ vite.config.ts
+[0m[32mCheck[0m vite.config.ts
+[0m[32mCheck[0m scripts/extract_voice_variant.ts
+[0m[32mCheck[0m scripts/sync_vo.ts
+[0m[32mCheck[0m src/app/clock.ts
+[0m[32mCheck[0m src/app/qaProbe.ts
+[0m[32mCheck[0m src/app/subtitleView.ts
+[0m[32mCheck[0m src/app/tickLoop.ts
+[0m[32mCheck[0m src/app/tutorialDemo.ts
+[0m[32mCheck[0m src/audio/arenaPa.ts
+[0m[32mCheck[0m src/audio/beatGrid.ts
+[0m[32mCheck[0m src/audio/ducker.ts
+[0m[32mCheck[0m src/audio/engine.ts
+[0m[32mCheck[0m src/audio/gameplayAudio.ts
+[0m[32mCheck[0m src/audio/gameplaySounds.ts
+[0m[32mCheck[0m src/audio/loader.ts
+[0m[32mCheck[0m src/audio/manifests.ts
+[0m[32mCheck[0m src/audio/music.ts
+[0m[32mCheck[0m src/audio/sfxPlayer.ts
+[0m[32mCheck[0m src/audio/spatial.ts
+[0m[32mCheck[0m src/audio/synth.ts
+[0m[32mCheck[0m src/audio/variantPanel.ts
+[0m[32mCheck[0m src/audio/variants.ts
+[0m[32mCheck[0m src/contracts/flags.ts
+[0m[32mCheck[0m src/contracts/index.ts
+[0m[32mCheck[0m src/contracts/input.ts
+[0m[32mCheck[0m src/contracts/loadout.ts
+[0m[32mCheck[0m src/contracts/pilot.ts
+[0m[32mCheck[0m src/contracts/settings.ts
+[0m[32mCheck[0m src/contracts/sim.ts
+[0m[32mCheck[0m src/contracts/text.ts
+[0m[32mCheck[0m src/contracts/time.ts
+[0m[32mCheck[0m src/contracts/timeline.ts
+[0m[32mCheck[0m src/data/hangar.ts
+[0m[32mCheck[0m src/data/thirdParty.ts
+[0m[32mCheck[0m src/director/ambient.ts
+[0m[32mCheck[0m src/director/commentary.ts
+[0m[32mCheck[0m src/director/director.ts
+[0m[32mCheck[0m src/director/fakes.ts
+[0m[32mCheck[0m src/director/ports.ts
+[0m[32mCheck[0m src/director/radioDesk.ts
+[0m[32mCheck[0m src/director/subtitles.ts
+[0m[32mCheck[0m src/director/tutorialProgress.ts
+[0m[32mCheck[0m src/i18n/banks.ts
+[0m[32mCheck[0m src/i18n/codex.ts
+[0m[32mCheck[0m src/i18n/gen_script.ts
+[0m[32mCheck[0m src/i18n/index.ts
+[0m[32mCheck[0m src/i18n/radio.ts
+[0m[32mCheck[0m src/i18n/script.gen.ts
+[0m[32mCheck[0m src/i18n/types.ts
+[0m[32mCheck[0m src/i18n/ui.ts
+[0m[32mCheck[0m src/input/bindings.ts
+[0m[32mCheck[0m src/input/heldActions.ts
+[0m[32mCheck[0m src/input/inputLayer.ts
+[0m[32mCheck[0m src/input/labels.ts
+[0m[32mCheck[0m src/main.ts
+[0m[32mCheck[0m src/pilots/aim.ts
+[0m[32mCheck[0m src/pilots/fighting.ts
+[0m[32mCheck[0m src/pilots/pacifist.ts
+[0m[32mCheck[0m src/pilots/planner.ts
+[0m[32mCheck[0m src/platform/bootstrap.ts
+[0m[32mCheck[0m src/platform/build.ts
+[0m[32mCheck[0m src/platform/fullscreen.ts
+[0m[32mCheck[0m src/platform/worker.ts
+[0m[32mCheck[0m src/presentation/enemyBriefing.ts
+[0m[32mCheck[0m src/presentation/flatLogos.ts
+[0m[32mCheck[0m src/presentation/inspectionScene.ts
+[0m[32mCheck[0m src/presentation/memoryScene.ts
+[0m[32mCheck[0m src/presentation/routeRibbon/harness.ts
+[0m[32mCheck[0m src/presentation/routeRibbon/math.ts
+[0m[32mCheck[0m src/render/backdrop.ts
+[0m[32mCheck[0m src/render/bullets.ts
+[0m[32mCheck[0m src/render/cameraRig.ts
+[0m[32mCheck[0m src/render/coords.ts
+[0m[32mCheck[0m src/render/debris.ts
+[0m[32mCheck[0m src/render/feedbackLadder.ts
+[0m[32mCheck[0m src/render/flashGuard.ts
+[0m[32mCheck[0m src/render/harness.ts
+[0m[32mCheck[0m src/render/hitstop.ts
+[0m[32mCheck[0m src/render/interp.ts
+[0m[32mCheck[0m src/render/loadout.ts
+[0m[32mCheck[0m src/render/models.ts
+[0m[32mCheck[0m src/render/palette.ts
+[0m[32mCheck[0m src/render/particles.ts
+[0m[32mCheck[0m src/render/placeholders.ts
+[0m[32mCheck[0m src/render/post.ts
+[0m[32mCheck[0m src/render/quality.ts
+[0m[32mCheck[0m src/render/shaders/finish.glsl.ts
+[0m[32mCheck[0m src/render/shaders/floor.glsl.ts
+[0m[32mCheck[0m src/render/shaders/nebula.glsl.ts
+[0m[32mCheck[0m src/render/shaders/orb.glsl.ts
+[0m[32mCheck[0m src/render/shaders/particles.glsl.ts
+[0m[32mCheck[0m src/render/shaders/shield.glsl.ts
+[0m[32mCheck[0m src/render/shotLooks.ts
+[0m[32mCheck[0m src/render/shotTrails.ts
+[0m[32mCheck[0m src/render/stage.ts
+[0m[32mCheck[0m src/render/vfx.ts
+[0m[32mCheck[0m src/scenes/banks/emit_yaml.ts
+[0m[32mCheck[0m src/scenes/banks/events.ts
+[0m[32mCheck[0m src/scenes/banks/index.ts
+[0m[32mCheck[0m src/scenes/banks/onboarding.ts
+[0m[32mCheck[0m src/scenes/banks/shipFine.ts
+[0m[32mCheck[0m src/scenes/banks/stats.ts
+[0m[32mCheck[0m src/scenes/banks/types.ts
+[0m[32mCheck[0m src/scenes/banks/warden.ts
+[0m[32mCheck[0m src/scenes/barks.ts
+[0m[32mCheck[0m src/scenes/beats.ts
+[0m[32mCheck[0m src/scenes/boot.timeline.ts
+[0m[32mCheck[0m src/scenes/bossPhase2.timeline.ts
+[0m[32mCheck[0m src/scenes/bossPhase3.timeline.ts
+[0m[32mCheck[0m src/scenes/chatter.ts
+[0m[32mCheck[0m src/scenes/codex.ts
+[0m[32mCheck[0m src/scenes/credits.timeline.ts
+[0m[32mCheck[0m src/scenes/cues.ts
+[0m[32mCheck[0m src/scenes/endingKill.timeline.ts
+[0m[32mCheck[0m src/scenes/endingPacifist.timeline.ts
+[0m[32mCheck[0m src/scenes/flags.ts
+[0m[32mCheck[0m src/scenes/flashback.timeline.ts
+[0m[32mCheck[0m src/scenes/index.ts
+[0m[32mCheck[0m src/scenes/radio.ts
+[0m[32mCheck[0m src/scenes/recorder.timeline.ts
+[0m[32mCheck[0m src/scenes/sector1.timeline.ts
+[0m[32mCheck[0m src/scenes/sector2.timeline.ts
+[0m[32mCheck[0m src/scenes/sector3.timeline.ts
+[0m[32mCheck[0m src/scenes/sector4.timeline.ts
+[0m[32mCheck[0m src/scenes/sector5.timeline.ts
+[0m[32mCheck[0m src/scenes/sectors.ts
+[0m[32mCheck[0m src/scenes/tutorial.timeline.ts
+[0m[32mCheck[0m src/scenes/tutorialGates.ts
+[0m[32mCheck[0m src/scenes/tutorialSkip.timeline.ts
+[0m[32mCheck[0m src/scenes/wardenDescent.timeline.ts
+[0m[32mCheck[0m src/settings/defaults.ts
+[0m[32mCheck[0m src/settings/saveGame.ts
+[0m[32mCheck[0m src/settings/store.ts
+[0m[32mCheck[0m src/settings/validate.ts
+[0m[32mCheck[0m src/sim/boss.ts
+[0m[32mCheck[0m src/sim/enemies.ts
+[0m[32mCheck[0m src/sim/hash.ts
+[0m[32mCheck[0m src/sim/movement.ts
+[0m[32mCheck[0m src/sim/pay.ts
+[0m[32mCheck[0m src/sim/rng.ts
+[0m[32mCheck[0m src/sim/scan.ts
+[0m[32mCheck[0m src/sim/sim.ts
+[0m[32mCheck[0m src/sim/stats.ts
+[0m[32mCheck[0m src/sim/sweep.ts
+[0m[32mCheck[0m src/sim/trigger.ts
+[0m[32mCheck[0m src/sim/tuning.ts
+[0m[32mCheck[0m src/sim/waves.ts
+[0m[32mCheck[0m src/ui/context.ts
+[0m[32mCheck[0m src/ui/creditsRoll.ts
+[0m[32mCheck[0m src/ui/devOverlay.ts
+[0m[32mCheck[0m src/ui/dispatch.ts
+[0m[32mCheck[0m src/ui/focus.ts
+[0m[32mCheck[0m src/ui/frontEnd.ts
+[0m[32mCheck[0m src/ui/hud.ts
+[0m[32mCheck[0m src/ui/instruments.ts
+[0m[32mCheck[0m src/ui/progress.ts
+[0m[32mCheck[0m src/ui/prompts.ts
+[0m[32mCheck[0m src/ui/router.ts
+[0m[32mCheck[0m src/ui/screens/boot.ts
+[0m[32mCheck[0m src/ui/screens/dialogs.ts
+[0m[32mCheck[0m src/ui/screens/hangar.ts
+[0m[32mCheck[0m src/ui/screens/menus.ts
+[0m[32mCheck[0m src/ui/screens/pause.ts
+[0m[32mCheck[0m src/ui/screens/run.ts
+[0m[32mCheck[0m src/ui/screens/settings.ts
+[0m[32mCheck[0m src/ui/sound.ts
+[0m[32mCheck[0m src/ui/widgets.ts
+[0m[32mCheck[0m src/ui/wordPulse.ts
+[0m[32mCheck[0m src/world/activity.ts
+[0m[32mCheck[0m src/world/environment.ts
+[0m[32mCheck[0m src/world/kit.ts
+[0m[32mCheck[0m src/world/lore.ts
+[0m[32mCheck[0m src/world/route.ts
+[0m[32mCheck[0m src/world/sectors.ts
+[0m[32mCheck[0m src/world/signage.ts
+[0m[32mCheck[0m tests/app_clock_test.ts
+[0m[32mCheck[0m tests/audio_gameplay_test.ts
+[0m[32mCheck[0m tests/audio_grid_space_test.ts
+[0m[32mCheck[0m tests/audio_mix_test.ts
+[0m[32mCheck[0m tests/audio_variants_test.ts
+[0m[32mCheck[0m tests/banks_test.ts
+[0m[32mCheck[0m tests/bolt_identity_test.ts
+[0m[32mCheck[0m tests/commentary_test.ts
+[0m[32mCheck[0m tests/core_feedback_test.ts
+[0m[32mCheck[0m tests/director_ambient_test.ts
+[0m[32mCheck[0m tests/director_radio_test.ts
+[0m[32mCheck[0m tests/director_timeline_test.ts
+[0m[32mCheck[0m tests/i18n_text_test.ts
+[0m[32mCheck[0m tests/input_bindings_test.ts
+[0m[32mCheck[0m tests/input_reset_test.ts
+[0m[32mCheck[0m tests/integration_contracts_test.ts
+[0m[32mCheck[0m tests/logo_capture.ts
+[0m[32mCheck[0m tests/logo_integration_browser.ts
+[0m[32mCheck[0m tests/logo_timing_test.ts
+[0m[32mCheck[0m tests/movement_test.ts
+[0m[32mCheck[0m tests/onboarding_keyboard.ts
+[0m[32mCheck[0m tests/platform_browser.ts
+[0m[32mCheck[0m tests/platform_test.ts
+[0m[32mCheck[0m tests/presentation_memory_test.ts
+[0m[32mCheck[0m tests/qa_audio_test.ts
+[0m[32mCheck[0m tests/qa_gltf_test.ts
+[0m[32mCheck[0m tests/qa_text_test.ts
+[0m[32mCheck[0m tests/render_fixtures.ts
+[0m[32mCheck[0m tests/render_hitstop_test.ts
+[0m[32mCheck[0m tests/render_logic_test.ts
+[0m[32mCheck[0m tests/route_ribbon_test.ts
+[0m[32mCheck[0m tests/scenes_timelines_test.ts
+[0m[32mCheck[0m tests/scenes_wave3_test.ts
+[0m[32mCheck[0m tests/scope_cut_browser.ts
+[0m[32mCheck[0m tests/settings_store_test.ts
+[0m[32mCheck[0m tests/shot_feel_test.ts
+[0m[32mCheck[0m tests/sim_harness.ts
+[0m[32mCheck[0m tests/sim_runs_test.ts
+[0m[32mCheck[0m tests/sim_smoke_test.ts
+[0m[32mCheck[0m tests/sim_wave3_test.ts
+[0m[32mCheck[0m tests/tutorial_gates_test.ts
+[0m[32mCheck[0m tests/tutorial_practice_test.ts
+[0m[32mCheck[0m tests/ui_dispatch_test.ts
+[0m[32mCheck[0m tests/ui_focus_strings_test.ts
+[0m[32mCheck[0m tests/ui_hangar_test.ts
+[0m[32mCheck[0m tests/ui_hud_test.ts
+[0m[32mCheck[0m tests/ui_instruments_test.ts
+[0m[32mCheck[0m tests/ui_wordPulse_test.ts
+[0m[32mCheck[0m tests/world_sectors_test.ts
+=== exit 0 (check)
+=== deno task test
+[0m[32mTask[0m [0m[36mtest[0m deno test --allow-read tests/
+[0m[32mCheck[0m tests/app_clock_test.ts
+[0m[32mCheck[0m tests/audio_gameplay_test.ts
+[0m[32mCheck[0m tests/audio_grid_space_test.ts
+[0m[32mCheck[0m tests/audio_mix_test.ts
+[0m[32mCheck[0m tests/audio_variants_test.ts
+[0m[32mCheck[0m tests/banks_test.ts
+[0m[32mCheck[0m tests/bolt_identity_test.ts
+[0m[32mCheck[0m tests/commentary_test.ts
+[0m[32mCheck[0m tests/core_feedback_test.ts
+[0m[32mCheck[0m tests/director_ambient_test.ts
+[0m[32mCheck[0m tests/director_radio_test.ts
+[0m[32mCheck[0m tests/director_timeline_test.ts
+[0m[32mCheck[0m tests/i18n_text_test.ts
+[0m[32mCheck[0m tests/input_bindings_test.ts
+[0m[32mCheck[0m tests/input_reset_test.ts
+[0m[32mCheck[0m tests/integration_contracts_test.ts
+[0m[32mCheck[0m tests/logo_timing_test.ts
+[0m[32mCheck[0m tests/movement_test.ts
+[0m[32mCheck[0m tests/platform_test.ts
+[0m[32mCheck[0m tests/presentation_memory_test.ts
+[0m[32mCheck[0m tests/qa_audio_test.ts
+[0m[32mCheck[0m tests/qa_gltf_test.ts
+[0m[32mCheck[0m tests/qa_text_test.ts
+[0m[32mCheck[0m tests/render_hitstop_test.ts
+[0m[32mCheck[0m tests/render_logic_test.ts
+[0m[32mCheck[0m tests/route_ribbon_test.ts
+[0m[32mCheck[0m tests/scenes_timelines_test.ts
+[0m[32mCheck[0m tests/scenes_wave3_test.ts
+[0m[32mCheck[0m tests/settings_store_test.ts
+[0m[32mCheck[0m tests/shot_feel_test.ts
+[0m[32mCheck[0m tests/sim_runs_test.ts
+[0m[32mCheck[0m tests/sim_smoke_test.ts
+[0m[32mCheck[0m tests/sim_wave3_test.ts
+[0m[32mCheck[0m tests/tutorial_gates_test.ts
+[0m[32mCheck[0m tests/tutorial_practice_test.ts
+[0m[32mCheck[0m tests/ui_dispatch_test.ts
+[0m[32mCheck[0m tests/ui_focus_strings_test.ts
+[0m[32mCheck[0m tests/ui_hangar_test.ts
+[0m[32mCheck[0m tests/ui_hud_test.ts
+[0m[32mCheck[0m tests/ui_instruments_test.ts
+[0m[32mCheck[0m tests/ui_wordPulse_test.ts
+[0m[32mCheck[0m tests/world_sectors_test.ts
+[0m[38;5;245mrunning 1 test from ./tests/app_clock_test.ts[0m
+clock stops while paused and scales with its rate ... [0m[32mok[0m [0m[38;5;245m(302µs)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/audio_gameplay_test.ts[0m
+every role referenced by the mapping exists in the table ... [0m[32mok[0m [0m[38;5;245m(689µs)[0m
+a killed enemy is heard where it last was ... [0m[32mok[0m [0m[38;5;245m(95µs)[0m
+grazes climb in a streak, and sing a melody when pacifist ... [0m[32mok[0m [0m[38;5;245m(82µs)[0m
+scan loop follows the beam; lock ticks rise; fly-bys once ... [0m[32mok[0m [0m[38;5;245m(154µs)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/audio_grid_space_test.ts[0m
+musical sounds wait for the next grid line ... [0m[32mok[0m [0m[38;5;245m(190µs)[0m
+scale degrees stay in key; enemy fire never does ... [0m[32mok[0m [0m[38;5;245m(161µs)[0m
+panning follows the ship's point of view; mono centers ... [0m[32mok[0m [0m[38;5;245m(69µs)[0m
+doppler rises on approach and falls on retreat ... [0m[32mok[0m [0m[38;5;245m(53µs)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/audio_mix_test.ts[0m
+voice ducks music until the last voice ends ... [0m[32mok[0m [0m[38;5;245m(287µs)[0m
+VO falls back to English when a language is missing ... [0m[32mok[0m [0m[38;5;245m(96µs)[0m
+unpicked sfx roles are silent, not errors ... [0m[32mok[0m [0m[38;5;245m(76µs)[0m
+staged loader survives failures and reports progress ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+subtitle chunks respect the line cap and cover the duration ... [0m[32mok[0m [0m[38;5;245m(262µs)[0m
+[0m[38;5;245mrunning 3 tests from ./tests/audio_variants_test.ts[0m
+variant URL parsing and registry reject unknown choices ... [0m[32mok[0m [0m[38;5;245m(583µs)[0m
+master ceiling is monotonic, symmetric and bounded ... [0m[32mok[0m [0m[38;5;245m(478µs)[0m
+Warden PA distortion cannot secretly amplify quiet speech ... [0m[32mok[0m [0m[38;5;245m(173µs)[0m
+[0m[38;5;245mrunning 6 tests from ./tests/banks_test.ts[0m
+bank and variant ids are unique ... [0m[32mok[0m [0m[38;5;245m(285µs)[0m
+voiced variants are script lines with the same text and speaker ... [0m[32mok[0m [0m[38;5;245m(123µs)[0m
+text-only variants use bank ids and resolve through t() ... [0m[32mok[0m [0m[38;5;245m(129µs)[0m
+every variant has all three languages and house style ... [0m[32mok[0m [0m[38;5;245m(178µs)[0m
+pools are deep enough not to repeat ... [0m[32mok[0m [0m[38;5;245m(36µs)[0m
+vo/script.yaml mirrors the voiced variants ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/bolt_identity_test.ts[0m
+bolt identity: fallback classification reads tuning ... [0m[32mok[0m [0m[38;5;245m(281µs)[0m
+bolt identity: new rounds take the step's volley tag ... [0m[32mok[0m [0m[38;5;245m(104µs)[0m
+bolt identity: tags agree with the sim across a tap, a hold and a Writ ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+bolt identity: Writ knock scales by level and beats the tap ... [0m[32mok[0m [0m[38;5;245m(797µs)[0m
+bolt identity: shake zero and reduced motion remove every knock ... [0m[32mok[0m [0m[38;5;245m(256µs)[0m
+[0m[38;5;245mrunning 14 tests from ./tests/commentary_test.ts[0m
+commentary: stats moment names match the banks ... [0m[32mok[0m [0m[38;5;245m(152µs)[0m
+commentary: a bag never repeats until it empties ... [0m[32mok[0m [0m[38;5;245m(620µs)[0m
+commentary: bags persist across runs and sessions ... [0m[32mok[0m [0m[38;5;245m(103µs)[0m
+commentary: malformed persisted bags are ignored ... [0m[32mok[0m [0m[38;5;245m(170µs)[0m
+commentary: cooldowns, the global gap, and urgent lines ... [0m[32mok[0m [0m[38;5;245m(103µs)[0m
+commentary: higher priority wins; conditions filter ... [0m[32mok[0m [0m[38;5;245m(62µs)[0m
+commentary: scenes win; tutorial_ai may interject in the tutorial ... [0m[32mok[0m [0m[38;5;245m(76µs)[0m
+commentary: an unspoken line goes back in the bag ... [0m[32mok[0m [0m[38;5;245m(83µs)[0m
+commentary: every registered variant has text in every language ... [0m[32mok[0m [0m[38;5;245m(161µs)[0m
+director: interject speaks only while a scene waits ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+stats: firing at nothing is intoTheMist, once per spell ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+stats: hysteresis and gaps keep moments rare ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+stats: deaths in quick succession, accuracy and ratio ... [0m[32mok[0m [0m[38;5;245m(94µs)[0m
+stats: a fighting run says something, but not much ... [0m[32mok[0m [0m[38;5;245m(12ms)[0m
+[0m[38;5;245mrunning 10 tests from ./tests/core_feedback_test.ts[0m
+ladder: neighbors differ in at least two channels ... [0m[32mok[0m [0m[38;5;245m(341µs)[0m
+ladder: events find their rungs ... [0m[32mok[0m [0m[38;5;245m(92µs)[0m
+hitstop: a lost life freezes longest and ignores the budget ... [0m[32mok[0m [0m[38;5;245m(127µs)[0m
+hitstop: off under autoplay faster than real time ... [0m[32mok[0m [0m[38;5;245m(31µs)[0m
+hitstop: a fighting run to the Warden replays identically ... [0m[32mok[0m [0m[38;5;245m(924ms)[0m
+hitstop: autopilot endings stay deterministic (sector 1) ... [0m[32mok[0m [0m[38;5;245m(4s)[0m
+sim: hits, part breaks and Writ misses carry impact data ... [0m[32mok[0m [0m[38;5;245m(1s)[0m
+audio: stream hits in one tick merge into one louder voice ... [0m[32mok[0m [0m[38;5;245m(442µs)[0m
+audio: each rung has its own sound ... [0m[32mok[0m [0m[38;5;245m(134µs)[0m
+audio: deferred kills wait; threat cues are protected ... [0m[32mok[0m [0m[38;5;245m(69µs)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/director_ambient_test.ts[0m
+a scripted line ducks a bark instead of cutting it ... [0m[32mok[0m [0m[38;5;245m(964µs)[0m
+chatter yields while a scene runs, then waits a beat ... [0m[32mok[0m [0m[38;5;245m(166µs)[0m
+deck never repeats a card within a round or across the seam ... [0m[32mok[0m [0m[38;5;245m(112µs)[0m
+an event bark yields to scenes, cuts chatter, then holds it ... [0m[32mok[0m [0m[38;5;245m(258µs)[0m
+[0m[38;5;245mrunning 2 tests from ./tests/director_radio_test.ts[0m
+radio holds a voiced line until its audio arrives ... [0m[32mok[0m [0m[38;5;245m(412µs)[0m
+text-only radio ids never touch the voice ... [0m[32mok[0m [0m[38;5;245m(41µs)[0m
+[0m[38;5;245mrunning 8 tests from ./tests/director_timeline_test.ts[0m
+timeline plays in order against the clock ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+subtitles follow textLang, audio follows voiceLang ... [0m[32mok[0m [0m[38;5;245m(124µs)[0m
+branch on flag, including a flag set earlier in the scene ... [0m[32mok[0m [0m[38;5;245m(78µs)[0m
+skipLine cuts the line and releases its wait ... [0m[32mok[0m [0m[38;5;245m(107µs)[0m
+skipScene keeps lasting state and drops the rest ... [0m[32mok[0m [0m[38;5;245m(120µs)[0m
+waits do not drift with frame timing ... [0m[32mok[0m [0m[38;5;245m(60µs)[0m
+a loading line waits, subtitle and all, then plays ... [0m[32mok[0m [0m[38;5;245m(117µs)[0m
+a line that never loads falls back to subtitles alone ... [0m[32mok[0m [0m[38;5;245m(253µs)[0m
+[0m[38;5;245mrunning 8 tests from ./tests/i18n_text_test.ts[0m
+every text id has non-empty EN, ES and ZH ... [0m[32mok[0m [0m[38;5;245m(509µs)[0m
+script and UI ids do not collide, and UI ids start with ui. ... [0m[32mok[0m [0m[38;5;245m(404µs)[0m
+house style: no emdashes; spoken text has no parentheses ... [0m[32mok[0m [0m[38;5;245m(461µs)[0m
+t() fills params, falls back, and warns once for unknown ids ... [0m[32mok[0m [0m[38;5;245m(116µs)[0m
+every speaker has a subtitle name; scriptLine fills the contract shape ... [0m[32mok[0m [0m[38;5;245m(288µs)[0m
+script.gen.ts is in sync with vo/script.yaml ... [0m[32mok[0m [0m[38;5;245m(10ms)[0m
+placeholders match across languages ... [0m[32mok[0m [0m[38;5;245m(858µs)[0m
+every ui.* id the front end names exists in the UI table ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+[0m[38;5;245mrunning 8 tests from ./tests/input_bindings_test.ts[0m
+menu and gameplay actions may share keys; same-context ones may not ... [0m[32mok[0m [0m[38;5;245m(257µs)[0m
+Space triggers both fire and confirm by default ... [0m[32mok[0m [0m[38;5;245m(70µs)[0m
+rebinding a taken key swaps it with the displaced action ... [0m[32mok[0m [0m[38;5;245m(130µs)[0m
+rebinding into an empty slot removes the input elsewhere ... [0m[32mok[0m [0m[38;5;245m(59µs)[0m
+gamepad rebinds resolve conflicts within the button list ... [0m[32mok[0m [0m[38;5;245m(72µs)[0m
+hold and toggle resolve fire and focus ... [0m[32mok[0m [0m[38;5;245m(67µs)[0m
+radial dead zone zeroes small input and keeps direction ... [0m[32mok[0m [0m[38;5;245m(44µs)[0m
+labels follow device family ... [0m[32mok[0m [0m[38;5;245m(102µs)[0m
+[0m[38;5;245mrunning 1 test from ./tests/input_reset_test.ts[0m
+input blur/pause reset clears held keys, toggle latches and queued press edges ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/integration_contracts_test.ts[0m
+waitFlag blocks until the flag flips, nudging once ... [0m[32mok[0m [0m[38;5;245m(860µs)[0m
+skipping a scene releases a flag wait and reports flags ... [0m[32mok[0m [0m[38;5;245m(118µs)[0m
+the Warden's arrival is a spawn event ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+boss.parley holds the Warden still and blocks damage ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+tut.spawnTarget drops one passive practice drone ... [0m[32mok[0m [0m[38;5;245m(253µs)[0m
+[0m[38;5;245mrunning 2 tests from ./tests/logo_timing_test.ts[0m
+logo reveal is finite, seekable and only glints once ... [0m[32mok[0m [0m[38;5;245m(290µs)[0m
+either accessibility setting yields the full static identity ... [0m[32mok[0m [0m[38;5;245m(67µs)[0m
+[0m[38;5;245mrunning 7 tests from ./tests/movement_test.ts[0m
+movement flags are typed opt-in, invalid values remain classic ... [0m[32mok[0m [0m[38;5;245m(473µs)[0m
+hybrid first tick126, tick16 252px/s, cruise release168/84/0 ... [0m[32mok[0m [0m[38;5;245m(213µs)[0m
+classic: normalize diagonals, preserve partial analogue, instant reverse/corner ... [0m[32mok[0m [0m[38;5;245m(144µs)[0m
+classic: fixed input replay includes response state and focus transitions only ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+hybrid: normalize diagonals, preserve partial analogue, instant reverse/corner ... [0m[32mok[0m [0m[38;5;245m(74µs)[0m
+hybrid: fixed input replay includes response state and focus transitions only ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+hybrid neutral-gap memory, precision release, wall coast do not store a launch ... [0m[32mok[0m [0m[38;5;245m(81µs)[0m
+[0m[38;5;245mrunning 2 tests from ./tests/platform_test.ts[0m
+fullscreen shortcut respects focus, rebinding, bound controls and modifiers ... [0m[32mok[0m [0m[38;5;245m(184µs)[0m
+manifest has standalone same-scope identity and valid local PNG icons ... [0m[32mok[0m [0m[38;5;245m(870µs)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/presentation_memory_test.ts[0m
+completion and skip leave the frozen snapshot untouched ... [0m[32mok[0m [0m[38;5;245m(33ms)[0m
+recording has five shots, cold weapon before Warden reaction ... [0m[32mok[0m [0m[38;5;245m(46µs)[0m
+every presentation readout and enemy has EN ES ZH ... [0m[32mok[0m [0m[38;5;245m(68µs)[0m
+real wave order introduces only drone dart turret lancer ... [0m[32mok[0m [0m[38;5;245m(141µs)[0m
+unsafe transition, suppression, encountered and resume are guarded ... [0m[32mok[0m [0m[38;5;245m(80µs)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/qa_audio_test.ts[0m
+silencedetect output becomes spans, an open silence runs to the end ... [0m[32mok[0m [0m[38;5;245m(483µs)[0m
+stereo balance reads hard left, centre and hard right ... [0m[32mok[0m [0m[38;5;245m(430µs)[0m
+word alignment fits the line offset and measures per-word error ... [0m[32mok[0m [0m[38;5;245m(136µs)[0m
+transcripts match script lines across scripts and fragments ... [0m[32mok[0m [0m[38;5;245m(822µs)[0m
+canary trusts heard lines only when scripted and actually audible ... [0m[32mok[0m [0m[38;5;245m(151µs)[0m
+[0m[38;5;245mrunning 3 tests from ./tests/qa_gltf_test.ts[0m
+reads triangles and node names from a valid GLB ... [0m[32mok[0m [0m[38;5;245m(554µs)[0m
+flags a buffer view that runs past its buffer ... [0m[32mok[0m [0m[38;5;245m(50µs)[0m
+rejects non-GLB bytes ... [0m[32mok[0m [0m[38;5;245m(39µs)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/qa_text_test.ts[0m
+placeholders are sorted and deduplicated ... [0m[32mok[0m [0m[38;5;245m(342µs)[0m
+placeholder parity ignores order but not names ... [0m[32mok[0m [0m[38;5;245m(63µs)[0m
+CJK counts wider than Latin ... [0m[32mok[0m [0m[38;5;245m(115µs)[0m
+scanIds finds script and ui ids, skips comments and prose ... [0m[32mok[0m [0m[38;5;245m(177µs)[0m
+[0m[38;5;245mrunning 3 tests from ./tests/render_hitstop_test.ts[0m
+hitstop: big hits only (turret, lancer, boss parts) ... [0m[32mok[0m [0m[38;5;245m(268µs)[0m
+hitstop: holds N ticks, overlapping hits do not stack ... [0m[32mok[0m [0m[38;5;245m(103µs)[0m
+hitstop: off under fast autoplay ... [0m[32mok[0m [0m[38;5;245m(25µs)[0m
+[0m[38;5;245mrunning 11 tests from ./tests/render_logic_test.ts[0m
+playfield maps to a centered 12 x 16 plane, +y down to +Z ... [0m[32mok[0m [0m[38;5;245m(252µs)[0m
+interpolator blends the last two ticks by alpha ... [0m[32mok[0m [0m[38;5;245m(190µs)[0m
+many ticks per frame: only the last two matter ... [0m[32mok[0m [0m[38;5;245m(104µs)[0m
+observing the same tick twice does not collapse the blend ... [0m[32mok[0m [0m[38;5;245m(27µs)[0m
+a teleport snaps instead of smearing ... [0m[32mok[0m [0m[38;5;245m(24µs)[0m
+flash guard: at most three onsets per second by default ... [0m[32mok[0m [0m[38;5;245m(66µs)[0m
+flash guard: reduced flashing caps rate and strength ... [0m[32mok[0m [0m[38;5;245m(45µs)[0m
+value ladder: only chosen roles exceed the bloom threshold ... [0m[32mok[0m [0m[38;5;245m(59µs)[0m
+bloom damps under bullet density, within 0.5–1 ... [0m[32mok[0m [0m[38;5;245m(23µs)[0m
+scene looks never use the danger hue for the world ... [0m[32mok[0m [0m[38;5;245m(26µs)[0m
+loadout tables cover every cosmetic id ... [0m[32mok[0m [0m[38;5;245m(23µs)[0m
+[0m[38;5;245mrunning 7 tests from ./tests/route_ribbon_test.ts[0m
+route: straight tangent tails do not clamp or fold at authored endpoints ... [0m[32mok[0m [0m[38;5;245m(552µs)[0m
+route: frames orthonormal, right-handed [right,up,-forward], no flips ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+route: transported orientation crosses vertical and inflections without flipping ... [0m[32mok[0m [0m[38;5;245m(583µs)[0m
+route: segment seams continuous and arc-length stable under LUT refinement ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+route: inverse roundtrip at both curve amounts, joins, edges and dense patterns ... [0m[32mok[0m [0m[38;5;245m(55ms)[0m
+route: projected distortion bounded, near patch exact, no local folds ... [0m[32mok[0m [0m[38;5;245m(10ms)[0m
+route: mapping cannot alter diagonal/reversal sim state or replay hash ... [0m[32mok[0m [0m[38;5;245m(56ms)[0m
+[0m[38;5;245mrunning 7 tests from ./tests/scenes_timelines_test.ts[0m
+every line a scene can speak exists in all three languages ... [0m[32mok[0m [0m[38;5;245m(398µs)[0m
+every scripted VO line is used by some scene, chatter bank or bark ... [0m[32mok[0m [0m[38;5;245m(55µs)[0m
+timeline ids are unique and cover the scene skip targets ... [0m[32mok[0m [0m[38;5;245m(63µs)[0m
+every say is followed by a wait, so pacing follows the audio ... [0m[32mok[0m [0m[38;5;245m(100µs)[0m
+route-specific lines only play on their route ... [0m[32mok[0m [0m[38;5;245m(131µs)[0m
+sim events start the right scenes ... [0m[32mok[0m [0m[38;5;245m(89µs)[0m
+a ram kill still ends the pacifist run ... [0m[32mok[0m [0m[38;5;245m(34µs)[0m
+[0m[38;5;245mrunning 7 tests from ./tests/scenes_wave3_test.ts[0m
+radio and codex text: all languages, no emdashes ... [0m[32mok[0m [0m[38;5;245m(353µs)[0m
+every radio line resolves; voiced flags match the VO table ... [0m[32mok[0m [0m[38;5;245m(161µs)[0m
+every text-only radio line is in the bank ... [0m[32mok[0m [0m[38;5;245m(68µs)[0m
+kill-only radio lines only play when a scout is lost ... [0m[32mok[0m [0m[38;5;245m(76µs)[0m
+the scouts' no-fire rule is only said to a Pilot who has not fired ... [0m[32mok[0m [0m[38;5;245m(59µs)[0m
+codex entries resolve and intel unlocks them ... [0m[32mok[0m [0m[38;5;245m(129µs)[0m
+wave 3 events start their beats, only the first time ... [0m[32mok[0m [0m[38;5;245m(104µs)[0m
+[0m[38;5;245mrunning 6 tests from ./tests/settings_store_test.ts[0m
+out-of-range values are clamped on write ... [0m[32mok[0m [0m[38;5;245m(426µs)[0m
+corrupt saved fields fall back to defaults ... [0m[32mok[0m [0m[38;5;245m(110µs)[0m
+one store per storage object, so main and menus agree ... [0m[32mok[0m [0m[38;5;245m(24µs)[0m
+presets set render scale; a custom scale sets preset custom ... [0m[32mok[0m [0m[38;5;245m(57µs)[0m
+sanitize keeps a valid settings object unchanged ... [0m[32mok[0m [0m[38;5;245m(190µs)[0m
+checkpoint round-trips and rejects unknown beats ... [0m[32mok[0m [0m[38;5;245m(112µs)[0m
+[0m[38;5;245mrunning 6 tests from ./tests/shot_feel_test.ts[0m
+projectile speeds and muzzle-to-top transit are measured at fixed ticks ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+sweep catches tiny parts and weakpoints between fast endpoints ... [0m[32mok[0m [0m[38;5;245m(104µs)[0m
+fast tap crossing a narrow part chord disarms instead of killing hull ... [0m[32mok[0m [0m[38;5;245m(444µs)[0m
+fast piercing Writ resolves multiple crossed hulls in one tick ... [0m[32mok[0m [0m[38;5;245m(245µs)[0m
+camera recoil: tap immediate, stream absent, settles; accessibility exact zero ... [0m[32mok[0m [0m[38;5;245m(907µs)[0m
+shot chips bounded, low tier clears, seek does not streak ... [0m[32mok[0m [0m[38;5;245m(16ms)[0m
+[0m[38;5;245mrunning 10 tests from ./tests/sim_runs_test.ts[0m
+full runs replay identically from the same seed ... [0m[32mok[0m [0m[38;5;245m(6s)[0m
+the fighting autopilot defeats the Warden ... [0m[32mok[0m [0m[38;5;245m(4s)[0m
+the pacifist autopilot survives the Warden without a kill ... [0m[32mok[0m [0m[38;5;245m(4s)[0m
+wave tables keep the starter's head counts ... [0m[32mok[0m [0m[38;5;245m(207µs)[0m
+freeze holds the world still for the flashback ... [0m[32mok[0m [0m[38;5;245m(716µs)[0m
+the tutorial spawns only scripted targets and costs nothing ... [0m[32mok[0m [0m[38;5;245m(423µs)[0m
+game over waits for a continue ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+the Warden: descent, phases, and a timed survival ending ... [0m[32mok[0m [0m[38;5;245m(194ms)[0m
+killing the Warden takes its escorts and bullets with it ... [0m[32mok[0m [0m[38;5;245m(421ms)[0m
+only the first real powerup is flagged as the flashback trigger ... [0m[32mok[0m [0m[38;5;245m(149µs)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/sim_smoke_test.ts[0m
+same seed and autopilot give the same snapshot hash ... [0m[32mok[0m [0m[38;5;245m(1s)[0m
+a different seed gives a different run ... [0m[32mok[0m [0m[38;5;245m(1s)[0m
+the pacifist autopilot never kills ... [0m[32mok[0m [0m[38;5;245m(925ms)[0m
+URL flags parse and clamp ... [0m[32mok[0m [0m[38;5;245m(414µs)[0m
+settings persist, merge new defaults, and notify ... [0m[32mok[0m [0m[38;5;245m(284µs)[0m
+[0m[38;5;245mrunning 10 tests from ./tests/sim_wave3_test.ts[0m
+trigger: tap is aimed, hold streams, rest charges a Writ ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+scan: dwell locks, and the intel is the real FSM state ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+a locked Writ on the barrel disarms; on the weak point it kills ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+graze drill: near misses graze once each and pay ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+enemies announce their volleys ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+the flight recorder is the sector 3 cache and the flashback key ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+regression: each boss phase is announced once, even when a survival run turns violent ... [0m[32mok[0m [0m[38;5;245m(463ms)[0m
+loadouts change play: sensors and weapons ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+autopilots reach their endings across seeds and difficulties ... [0m[32mok[0m [0m[38;5;245m(20s)[0m
+every autopilot replays identically ... [0m[32mok[0m [0m[38;5;245m(6s)[0m
+[0m[38;5;245mrunning 13 tests from ./tests/tutorial_gates_test.ts[0m
+gates: no input, browser focus and passive charge never complete a lesson ... [0m[32mok[0m [0m[38;5;245m(7ms)[0m
+gates: too-early keyboard actions do not pre-credit future instructions ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+gates: held movement and focus require a new press after activation ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+gates: wrong action cannot complete the gate or pre-credit another ... [0m[32mok[0m [0m[38;5;245m(224µs)[0m
+gates: a stale fire stream is not a fresh demonstration ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+gates: changing accessibility mode is neither a press nor a mistake ... [0m[32mok[0m [0m[38;5;245m(417µs)[0m
+gates: fresh first-tick press is accepted, toggle focus is action-level ... [0m[32mok[0m [0m[38;5;245m(48µs)[0m
+gates: active target drill still counts the disarming trick shot ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+gates: tap count from initial fire lesson does not leak into tap lesson ... [0m[32mok[0m [0m[38;5;245m(539µs)[0m
+gates: three fresh taps, not old shots, demonstrate trigger discipline ... [0m[32mok[0m [0m[38;5;245m(547µs)[0m
+gates: deliberate release and rest charge; precharged idle does not ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+gates: old projectile results cannot pre-credit target or part drills ... [0m[32mok[0m [0m[38;5;245m(69µs)[0m
+corrections: scheduler yields to teaching, cools down, exhausts its bag ... [0m[32mok[0m [0m[38;5;245m(302µs)[0m
+[0m[38;5;245mrunning 7 tests from ./tests/tutorial_practice_test.ts[0m
+tutorial: a disarm that sends the target flying counts ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+tutorial: a kill counts, and the lesson's end stops re-issue ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+tutorial: a player removal mid-lesson re-issues the target ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+tutorial: an escaped target respawns with a line ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+tutorial: drill stats never leak into the run ... [0m[32mok[0m [0m[38;5;245m(599µs)[0m
+tutorial: idle fighting autopilot demonstrates the complete trigger verb ... [0m[32mok[0m [0m[38;5;245m(51ms)[0m
+tutorial: a missed graze volley is retryable and the demo can complete it ... [0m[32mok[0m [0m[38;5;245m(5ms)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/ui_dispatch_test.ts[0m
+quit dialog: Left from Cancel finds nothing, so focus stays ... [0m[32mok[0m [0m[38;5;245m(319µs)[0m
+quit dialog: Enter activates the focused element ... [0m[32mok[0m [0m[38;5;245m(85µs)[0m
+dispatch: Esc in play pauses; Backspace in the tutorial offers skip ... [0m[32mok[0m [0m[38;5;245m(68µs)[0m
+grid wrap: Down off a column's bottom goes to the next column's top ... [0m[32mok[0m [0m[38;5;245m(76µs)[0m
+[0m[38;5;245mrunning 5 tests from ./tests/ui_focus_strings_test.ts[0m
+down in a list picks the next row, not a nearer diagonal ... [0m[32mok[0m [0m[38;5;245m(325µs)[0m
+right in a grid picks the same-row neighbor ... [0m[32mok[0m [0m[38;5;245m(43µs)[0m
+no candidate in a direction returns -1 ... [0m[32mok[0m [0m[38;5;245m(27µs)[0m
+keyboard reaches the remap table: Down from the tab enters the Keyboard column ... [0m[32mok[0m [0m[38;5;245m(78µs)[0m
+UI strings fill placeholders in every language ... [0m[32mok[0m [0m[38;5;245m(198µs)[0m
+[0m[38;5;245mrunning 6 tests from ./tests/ui_hangar_test.ts[0m
+stat deltas know which direction is better ... [0m[32mok[0m [0m[38;5;245m(298µs)[0m
+progress repairs bad saves field by field ... [0m[32mok[0m [0m[38;5;245m(115µs)[0m
+progress persists loadout and unlocks codex once ... [0m[32mok[0m [0m[38;5;245m(150µs)[0m
+mastery ranks rise with career pay ... [0m[32mok[0m [0m[38;5;245m(40µs)[0m
+legacy helmet saves retain ship choices, pay, codex and settings ... [0m[32mok[0m [0m[38;5;245m(159µs)[0m
+every hangar codex id resolves to codex text, not a raw id ... [0m[32mok[0m [0m[38;5;245m(66µs)[0m
+[0m[38;5;245mrunning 8 tests from ./tests/ui_hud_test.ts[0m
+HUD: spared counts enemies that left alive, not kills or wipes ... [0m[32mok[0m [0m[38;5;245m(324µs)[0m
+HUD: the tutorial hides the pacifist note and the spared count ... [0m[32mok[0m [0m[38;5;245m(79µs)[0m
+HUD: Warden meter shows health, phase and the shielded descent ... [0m[32mok[0m [0m[38;5;245m(65µs)[0m
+HUD: the serial stays hidden until the flashback reveals it ... [0m[32mok[0m [0m[38;5;245m(30µs)[0m
+banners: sectors 1-5 announce, the Warden gets a warning ... [0m[32mok[0m [0m[38;5;245m(62µs)[0m
+banners: longer titles get smaller type (ES runs wider) ... [0m[32mok[0m [0m[38;5;245m(129µs)[0m
+licenses and credits: Orbitron and Stable Audio 3 are listed ... [0m[32mok[0m [0m[38;5;245m(51µs)[0m
+credits crawl: every department and role resolves in all languages ... [0m[32mok[0m [0m[38;5;245m(73µs)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/ui_instruments_test.ts[0m
+instruments read nothing from a pre-wave-3 snapshot ... [0m[32mok[0m [0m[38;5;245m(327µs)[0m
+Writ charge splits into three cells ... [0m[32mok[0m [0m[38;5;245m(56µs)[0m
+intel shows only for locked targets, and lock reads from target ... [0m[32mok[0m [0m[38;5;245m(115µs)[0m
+every settings description id exists ... [0m[32mok[0m [0m[38;5;245m(83µs)[0m
+[0m[38;5;245mrunning 3 tests from ./tests/ui_wordPulse_test.ts[0m
+segments map line offsets onto a chunk ... [0m[32mok[0m [0m[38;5;245m(364µs)[0m
+no timings: one plain segment ... [0m[32mok[0m [0m[38;5;245m(43µs)[0m
+active word holds across short gaps, clears outside the take ... [0m[32mok[0m [0m[38;5;245m(52µs)[0m
+[0m[38;5;245mrunning 8 tests from ./tests/world_sectors_test.ts[0m
+world: five distinct places, each with a hero kept on the low tier ... [0m[32mok[0m [0m[38;5;245m(312µs)[0m
+world: nothing above the lane floor intrudes into the combat lane ... [0m[32mok[0m [0m[38;5;245m(339µs)[0m
+world: per-sector budgets fit the high and school-Chromebook tiers ... [0m[32mok[0m [0m[38;5;245m(284µs)[0m
+world: every physical sign is localized in EN, ES and ZH ... [0m[32mok[0m [0m[38;5;245m(188µs)[0m
+route: the combat patch is exactly rigid; the distant bend is smooth ... [0m[32mok[0m [0m[38;5;245m(395µs)[0m
+activity: continuous choreography, bounded poses, frozen reduced motion ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+world: all discoveries localized, stable ids, 3 per sector ... [0m[32mok[0m [0m[38;5;245m(116µs)[0m
+world: archives independently of reading windows, no premature or duplicate discovery ... [0m[32mok[0m [0m[38;5;245m(80µs)[0m
+
+[0m[32mok[0m | 246 passed | 0 failed [0m[38;5;245m(55s)[0m
+
+=== exit 0 (test)
+=== deno task build
+[0m[32mTask[0m [0m[36mbuild[0m deno task vo:sync && deno run -A npm:vite@8.3.1 build
+[0m[32mTask[0m [0m[36mvo:sync[0m deno run --allow-read=vo/out,public/vo --allow-write=public/vo --allow-run=ffmpeg scripts/sync_vo.ts
+vo:sync 0 encoded, 669 up to date, 0 missing (no WAV, no Opus) -> public/vo
+vite v8.3.1 building client environment for production...
+transforming...
+✓ 182 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.69 kB │ gzip:   0.40 kB
+dist/assets/index-BPi4-Qfy.css     35.39 kB │ gzip:   8.57 kB
+dist/assets/index-DC_0ua4J.js   1,269.34 kB │ gzip: 388.77 kB │ map: 5,090.37 kB
+
+✓ built in 357ms
+=== exit 0 (build)

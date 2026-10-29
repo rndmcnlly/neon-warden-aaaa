@@ -1,0 +1,23 @@
+[0m[32mTask[0m [0m[36mqa:reel[0m deno run -A --no-lock qa/qa.ts reel 'gameplay-fight' 'disarm-boss' 'scan-lock'
+building production bundle into qa/.build/dist ...
+reel gameplay-fight (up to 60 s) ...
+  pass in 33.3 s
+reel scan-lock (up to 45 s) ...
+  fail in 34.2 s
+reel disarm-boss (up to 55 s) ...
+  pass in 15.8 s
+QA FAIL  qa/reports/20261029-040728/index.html
+checks: 72 pass, 6 warn, 3 fail, 0 pending
+coverage: WARN (scriptLines 223, uiStrings 659, legacyOnly 0, rows 2646, takes 669, references 677)
+  warn coverage.overflowRisk: 127 UI translations exceed 1.35x English width (CJK counted 1.8x); confirm in menus-es / menus-zh reels
+  warn coverage.vo.asr: 19 takes score ASR 0.7-0.9; listen
+assets: WARN (models 12, registry 10, sfxRoles 16, sfxPicked 16, musicCues 10, musicPromoted 9, voCueLines 223, voTakes 669, voWavs 669)
+  warn assets.models.unused: 2 manifest models are not in the renderer registry
+  warn assets.models.budgetNear: 2 models near budget
+  warn assets.models.animatedTable: 2 findPart names unknown to qa/budgets.ts ANIMATED_NODES; add them
+  warn assets.music.briefs: 1 MusicCueIds have no brief in music/cues.yaml
+reels: 2 pass, 0 warn, 1 fail, 0 pending
+trend vs qa/reports/20261029-033938: 1 better, 0 worse
+  pass    gameplay-fight 33.3s (better)  15 assertions
+  fail    scan-lock 34.2s  the beam locks a target after a dwell: not true within 15 s: p.events.some((e) => e.type === 'scanLock')
+  pass    disarm-boss 15.8s  14 assertions
