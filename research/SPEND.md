@@ -33,6 +33,28 @@ total would pass US $15.
 | 2026-10-28 | B wave 4 A/B voice.tutorial_ai | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.016504 | 0.408862 |
 | 2026-10-28 | B wave 4 A/B music.gameplay | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.016424 | 0.425286 |
 
+| 2026-10-28 | Q intelligibility novice | OpenRouter google/gemini-4-argon, ZDR/data_collection deny, native-resolution blind pass | $0.146654 | research/2026-10-28-intelligibility/out/judgments/novice.json |
+
+| 2026-10-28 | Q intelligibility novice | OpenRouter google/gemini-4-argon, ZDR/data_collection deny, native-resolution blind pass | $0.096098 | research/2026-10-28-intelligibility/out/judgments/novice.json |
+
+| 2026-10-28 | Q intelligibility information | OpenRouter google/gemini-4-argon, ZDR/data_collection deny, native-resolution blind pass | $0.101634 | research/2026-10-28-intelligibility/out/judgments/information.json |
+
+| 2026-10-28 | Q intelligibility causality | OpenRouter google/gemini-4-argon, ZDR/data_collection deny, native-resolution blind pass | $0.127058 | research/2026-10-28-intelligibility/out/judgments/causality.json |
+
+| 2026-10-28 | Q intelligibility picture | OpenRouter google/gemini-4-argon, ZDR/data_collection deny, native-resolution blind pass | $0.034314 | research/2026-10-28-intelligibility/out/judgments/picture.json |
+
+| 2026-10-28 | Q intelligibility audio | OpenRouter google/gemini-4-argon, ZDR/data_collection deny, native-resolution blind pass | $0.042958 | research/2026-10-28-intelligibility/out/judgments/audio.json |
+
+Intelligibility reconciliation: six calls total **US $0.548716**, including the $0.146654 truncated novice response, now retained at `research/2026-10-28-intelligibility/out/judgments/novice-truncated.json`. The second novice row is its fresh complete replacement, not a duplicate charge. All calls required ZDR and denied data collection; no fallback relaxed either policy.
+
+| 2026-10-28 | Argon creative review: 7 isolated-build AV clips, single open-ended session | OpenRouter | google/gemini-4-argon (mandatory ZDR, data_collection deny; returned Google) | 1 | 0.117510 | See reconciliation below |
+
+Creative-review reconciliation: **US $0.117510**, one call, no syntax-repair retry. Using the previous displayed OpenRouter subtotal ($0.425286) plus intelligibility's reconciled $0.548716 and this call gives **approximately $1.091512** for the displayed ledger to this point (earlier rows include rounded estimates). Raw usage: `research/2026-10-28-argon-creative-review/response.json`. The task cap was $1.50; no provider-policy fallback or model substitution occurred.
+
+| 2026-10-29 | Memory/briefing blind action reconstruction, 2 clips | OpenRouter | google/gemini-4-argon (mandatory ZDR/data_collection deny; returned Google) | 1 | 0.022402 | Previous displayed total + 0.022402; see judge-meta.json |
+
 | 2026-10-29 | Sector worlds v2 blind place-specificity test, 11 picture-only clips | OpenRouter | google/gemini-4-argon (mandatory ZDR/data_collection deny, no fallbacks; returned Google) | 11 | 0.114942 | Previous displayed total + 0.114942; see research/2026-10-29-sector-worlds-v2/out/judge/ |
+
+| 2026-10-29 | Argon core-loop ideation (night step 2): Pass A blind reconstruction + Pass B ideation, 8 clips each | OpenRouter | google/gemini-4-argon (mandatory ZDR/data_collection deny, no fallbacks; returned Google) | 2 | 0.140412 | Previous displayed total + 0.140412 (A 0.085360, B 0.055052); see research/2026-10-29-argon-core-ideation/out/ |
 
 | 2026-10-29 | Core feedback (night step 4a): 5 new gameplay sfx roles x 4-5 deliberately different briefs (`sfx/gameplay.yaml`, call log `sfx/candidates/gameplay/.cache/fal_calls.jsonl`) | fal | fal-ai/elevenlabs/sound-effects/v2 (23.3 s billed at $0.002/s) | 23 | 0.0466 | 0.2466 |
