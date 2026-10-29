@@ -38,3 +38,25 @@ body {
   margin: 0;
   font-size: 0.8rem;
 }
+
+/* In-game subtitles (see src/app/subtitleView.ts); the box itself is styled
+   by .nw-subtitle in the front end's stylesheet, shared with the preview. */
+.nw-subtitle-live {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: min(90vw, 46em);
+  font-size: clamp(16px, 2.6vh, 28px);
+  color: #f2fbff;
+  --nw-gold: #ffd36b;
+}
+
+/* The 3D logos render on the canvas, so their screen must not cover it. */
+.nw-screen-logos.is-3d {
+  background: transparent;
+}
+.nw-screen-logos.is-3d .nw-logo-slot {
+  display: none;
+}

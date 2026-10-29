@@ -34,6 +34,7 @@ export const DEFAULT_SETTINGS: Settings = {
     holdToggle: "hold",
     shake: 1,
     reducedFlashing: false,
+    reduceMotion: false,
     gameSpeed: 1,
     difficulty: "normal",
     colorIndependentCues: false,

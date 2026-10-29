@@ -11,6 +11,7 @@ import type {
   SettingsStore,
 } from "../contracts/index.ts";
 import { DEFAULT_SETTINGS } from "./defaults.ts";
+import { sanitizeSettings } from "./validate.ts";
 
 /** Bump when `Settings` changes shape; add a migration in `load` if needed. */
 export const SETTINGS_VERSION = 1;
@@ -24,15 +25,37 @@ interface SavedSettings {
 /** The subset of the Web Storage API we use, so tests can pass a fake. */
 export type KeyValueStorage = Pick<Storage, "getItem" | "setItem">;
 
+/**
+ * One store per storage object. `main.ts` and the front end both call
+ * `createSettingsStore()`; sharing the instance means a menu change reaches
+ * the game loop's listeners instead of a second, silently diverging copy.
+ * Tests pass their own fake storage and so get a fresh store each time.
+ */
+const storesByStorage = new WeakMap<object, SettingsStore>();
+
 export function createSettingsStore(
   storage: KeyValueStorage | null = globalThis.localStorage ?? null,
 ): SettingsStore {
+  if (storage) {
+    const existing = storesByStorage.get(storage);
+    if (existing) return existing;
+  }
+  const store = buildStore(storage);
+  if (storage) storesByStorage.set(storage, store);
+  return store;
+}
+
+function buildStore(storage: KeyValueStorage | null): SettingsStore {
   let current = load(storage);
   const listeners = new Set<SettingsListener>();
 
   function commit(next: Settings): void {
-    current = next;
-    const saved: SavedSettings = { version: SETTINGS_VERSION, settings: next };
+    // Every write is clamped, so a buggy menu cannot persist a bad value.
+    current = sanitizeSettings(next);
+    const saved: SavedSettings = {
+      version: SETTINGS_VERSION,
+      settings: current,
+    };
     storage?.setItem(SETTINGS_KEY, JSON.stringify(saved));
     for (const listener of listeners) listener(current);
   }
@@ -56,7 +79,7 @@ function load(storage: KeyValueStorage | null): Settings {
     if (saved.version !== SETTINGS_VERSION || !saved.settings) {
       return DEFAULT_SETTINGS;
     }
-    return mergeDefaults(DEFAULT_SETTINGS, saved.settings);
+    return sanitizeSettings(mergeDefaults(DEFAULT_SETTINGS, saved.settings));
   } catch {
     return DEFAULT_SETTINGS;
   }

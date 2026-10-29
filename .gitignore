@@ -9,4 +9,14 @@ Thumbs.db
 
 # Regenerable or unreviewed audio outputs.
 sfx/candidates/
+music/candidates/
 vo/out-design/
+art/blender/__pycache__/
+
+# QA reports carry videos; copy a reviewed one into research/ to keep it.
+qa/reports/
+qa/.build/
+
+# Copied from vo/out by `deno task vo:sync` (run by dev and build).
+public/vo/*
+!public/vo/.gitkeep

@@ -24,14 +24,20 @@
     "proseWrap": "preserve"
   },
   "tasks": {
-    "dev": "deno run -A npm:vite@8.3.1",
-    "build": "deno run -A npm:vite@8.3.1 build",
+    "vo:sync": "deno run --allow-read=vo/out,public/vo --allow-write=public/vo scripts/sync_vo.ts",
+    "dev": "deno task vo:sync && deno run -A npm:vite@8.3.1",
+    "build": "deno task vo:sync && deno run -A npm:vite@8.3.1 build",
     "preview": "deno run -A npm:vite@8.3.1 preview",
-    "check": "deno check src/ tests/ vite.config.ts",
+    "check": "deno check src/ tests/ scripts/ vite.config.ts",
     "lint": "deno lint",
     "fmt": "deno fmt",
     "fmt:check": "deno fmt --check",
-    "test": "deno test tests/",
+    "test": "deno test --allow-read tests/",
+    "qa": "deno run -A --no-lock qa/qa.ts",
+    "qa:static": "deno run -A --no-lock qa/qa.ts static",
+    "qa:reel": "deno run -A --no-lock qa/qa.ts reel",
+    "qa:topic": "deno run -A --no-lock qa/qa.ts topic",
+    "qa:list": "deno run -A --no-lock qa/qa.ts list",
     "ci": "deno fmt --check && deno lint && deno task check && deno task test && deno task build"
   },
   "exclude": [
@@ -42,7 +48,11 @@
     "research",
     "vo",
     "sfx",
-    "art"
+    "music",
+    "art",
+    "public/vo",
+    "qa/reports",
+    "qa/.build"
   ],
   "imports": {
     "vite": "npm:vite@8.3.1",
