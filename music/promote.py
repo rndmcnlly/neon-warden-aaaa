@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.11"
-# dependencies = []
+# dependencies = ["librosa>=0.10", "numpy"]
 # ///
 """Promote picked music candidates into public/music/ for the game.
 
@@ -16,6 +16,14 @@ Writes public/music/<cue>.ogg (Ogg Opus 128 kb/s, loudness-normalized to
 in the shape src/audio/manifests.ts reads. The manifest is always written,
 with every runtime cue listed (null when unpicked), so the game never
 requests a missing file. Needs ffmpeg on PATH only when something is picked.
+
+Each promoted cue also gets its beat grid, measured here rather than trusted
+from the brief (Stable Audio does not reliably honor a BPM tag): `bpm`
+(beat-tracked; a pick may override it with "bpm"), `beatOffset` (seconds to
+the first tracked beat), `beatsPerBar` (4), and `key` ({root: MIDI note,
+mode}, from a Krumhansl-Schmuckler chroma match). The game snaps its musical
+sound layer to that grid and key (src/audio/beatGrid.ts), so check the
+numbers by ear: a pick may override any of them.
 """
 
 from __future__ import annotations
@@ -34,6 +42,31 @@ RUNTIME_ID = {"ending_kill": "endingKill", "ending_pacifist": "endingPacifist"}
 # Every MusicCueId that plays a track ("silence" plays none).
 RUNTIME_CUES = ("logos", "tutorial", "gameplay", "flashback", "boss", "menu",
                 "ending", "endingKill", "endingPacifist")
+
+
+# Krumhansl-Kessler key profiles.
+MAJOR = [6.35, 2.23, 3.48, 2.33, 4.38, 4.09, 2.52, 5.19, 2.39, 3.66, 2.29, 2.88]
+MINOR = [6.33, 2.68, 3.52, 5.38, 2.60, 3.53, 2.54, 4.75, 3.98, 2.69, 3.34, 3.17]
+
+
+def measure_grid(path: Path) -> dict:
+    """Tempo, first beat and key of a music file (a starting point for ears)."""
+    import librosa
+    import numpy as np
+    y, sr = librosa.load(path, sr=22050, mono=True)
+    tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
+    times = librosa.frames_to_time(beats, sr=sr)
+    chroma = librosa.feature.chroma_cqt(y=y, sr=sr).mean(axis=1)
+    best = (-2.0, 0, "major")
+    for mode, profile in (("major", MAJOR), ("minor", MINOR)):
+        for root in range(12):
+            r = float(np.corrcoef(chroma, np.roll(profile, root))[0, 1])
+            best = max(best, (r, root, mode))
+    _, root, mode = best
+    return {"bpm": round(float(np.atleast_1d(tempo)[0]), 2),
+            "beatOffset": round(float(times[0]) if len(times) else 0.0, 3),
+            "beatsPerBar": 4,
+            "key": {"root": 57 + (root - 9) % 12, "mode": mode}}
 
 
 def main() -> None:
@@ -64,6 +97,9 @@ def main() -> None:
         for k in ("loopStart", "loopEnd"):
             if k in pick:
                 entry[k] = pick[k]
+        grid = measure_grid(src)
+        entry |= grid | {k: pick[k] for k in ("bpm", "beatOffset", "beatsPerBar", "key") if k in pick}
+        print(f"  grid: {grid['bpm']} BPM, first beat {grid['beatOffset']} s, key {grid['key']}")
         manifest["cues"][runtime] = entry
     if not args.dry_run:
         PUBLIC.mkdir(parents=True, exist_ok=True)
