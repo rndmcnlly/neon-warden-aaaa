@@ -223,7 +223,7 @@ function linear(pos: Vec2, vel: Vec2, radius: number): Threat {
  * enemy patterns: drones weave on a known sine, darts drift then dive at a
  * known age. Everything else is extrapolated from last tick's motion.
  */
-function predictEnemy(
+export function predictEnemy(
   kind: string,
   pos: Vec2,
   before: Vec2 | undefined,

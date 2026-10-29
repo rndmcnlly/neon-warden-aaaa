@@ -1,26 +1,36 @@
 /**
  * The deterministic Neon Warden simulation: a port of the gameplay in
  * `reference/e4-starter/src/game.ts` (the `tick()` half of `GameScene`)
- * with rendering, sound and the HUD stripped out. One `step()` is one 60 Hz
- * tick; nothing here reads a clock or `Math.random`, so a seed plus an input
- * sequence always replays the same run.
+ * with rendering, sound and the HUD stripped out, plus the wave 3 core loop
+ * (trigger discipline, scanning, parts and disarming, grazing, Contract
+ * Rate). One `step()` is one 60 Hz tick; nothing here reads a clock or
+ * `Math.random`, so a seed plus an input sequence always replays the same
+ * run.
  *
- * Tick order, as in the starter: route and spawns, player, enemies and boss,
- * projectiles and pickups, collisions, cleanup.
+ * Tick order: route and spawns, player (move, trigger), enemies and boss,
+ * projectiles and pickups, collisions, grazes, the scan beam, pay, cleanup.
  *
  * Rule for everything under `src/sim/`: import only from `../contracts/` and
  * other sim files. No three.js, no DOM, no clocks, no `Math.random`.
  */
 
 import {
-  type BossPhase,
   type BulletKind,
+  DEFAULT_LOADOUT,
+  type EnemyAiState,
   type EnemyKind,
+  type EnemyWeaponKind,
   type EntityId,
   type InputFrame,
+  type Loadout,
+  NEAR_MISS_RADIUS,
+  type PartView,
   type PickupKind,
   type ScriptedSpawn,
   type SectorIndex,
+  type SensorStats,
+  sensorStats,
+  type ShotKind,
   type Sim,
   type SimEvent,
   type SimOptions,
@@ -29,13 +39,25 @@ import {
   type SimState,
   type Tick,
   TICK_RATE,
+  type Vec2,
+  type WardenAiState,
+  type WeaponStats,
+  weaponStats,
 } from "../contracts/index.ts";
 import { Rng } from "./rng.ts";
-import { type Arena, type Enemy, makeEnemy, stepEnemy } from "./enemies.ts";
+import {
+  type Arena,
+  type Enemy,
+  makeEnemy,
+  type Part,
+  startEvade,
+  stepEnemy,
+} from "./enemies.ts";
 import {
   type Boss,
   bossArrived,
-  bossPhase,
+  coreOpen,
+  holdForParley,
   makeBoss,
   stepBoss,
   survivalComplete,
@@ -46,12 +68,21 @@ import {
   BULLET_RADIUS,
   DIFFICULTY,
   type DifficultyTuning,
+  GRAZE,
+  PAY,
   PICKUP,
   PLAYER,
   SALVAGE_CACHE,
+  SCAN_DECAY,
+  TRIGGER,
+  WARDEN_CORE,
+  WRIT_ALIGN_SLACK,
 } from "./tuning.ts";
+import { Trigger, type Volley } from "./trigger.ts";
+import { ContractRate } from "./pay.ts";
+import { type Scannable, stepScan } from "./scan.ts";
 
-/** Where the tutorial's practice drone appears (`tut.spawnTarget`). */
+/** Where the tutorial's practice targets appear. */
 const PRACTICE_TARGET = Object.freeze({ x: 240, y: 160 });
 
 /** Run statistics that are not part of `SimState` (for credits and tests). */
@@ -59,6 +90,10 @@ export interface RunStats {
   readonly hits: number;
   readonly continuesUsed: number;
   readonly continuesLeft: number;
+  /** Player rounds fired, by kind. */
+  readonly fired: Readonly<Record<ShotKind, number>>;
+  readonly locks: number;
+  readonly partsBroken: number;
 }
 
 interface Projectile {
@@ -70,6 +105,17 @@ interface Projectile {
   readonly vy: number;
   readonly radius: number;
   alive: boolean;
+  /** Enemy bullets: who fired it (0 for drills), so a disarm can cancel it. */
+  readonly owner: EntityId;
+  /** Player rounds only. */
+  readonly shot: ShotKind | null;
+  readonly damage: number;
+  /** A Writ pierces: it remembers whom it already struck. */
+  readonly struck: EntityId[];
+  /** Enemy bullets: graze and near-miss bookkeeping. */
+  grazed: boolean;
+  closest: number;
+  nearMissed: boolean;
 }
 
 interface Pickup {
@@ -85,11 +131,12 @@ interface Pickup {
 interface PlayerState {
   x: number;
   y: number;
+  vx: number;
+  vy: number;
   lives: number;
   power: number;
   shielded: boolean;
   grace: number;
-  cooldown: number;
   bank: number;
 }
 
@@ -116,11 +163,36 @@ function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
 }
 
+/** A part's circle in playfield coordinates. */
+function partCircle(owner: Vec2, part: Part): Circle {
+  return {
+    x: owner.x + part.offset.x,
+    y: owner.y + part.offset.y,
+    radius: part.spec.radius,
+  };
+}
+
+function partView(part: Part): PartView {
+  return {
+    id: part.spec.id,
+    kind: part.spec.kind,
+    offset: part.offset,
+    radius: part.spec.radius,
+    hp: part.hp,
+    maxHp: part.spec.hp,
+    broken: part.broken,
+  };
+}
+
 export class NeonWardenSim implements Sim {
   private readonly rng: Rng;
   private readonly tuning: DifficultyTuning;
   private readonly autoContinue: boolean;
   private readonly scripted: readonly ScriptedSpawn[];
+  private readonly loadout: Loadout;
+  private readonly weapon: WeaponStats;
+  private readonly sensor: SensorStats;
+  private readonly grazeRadius: number;
   private scriptedCursor = 0;
 
   private tick: Tick = 0;
@@ -136,9 +208,11 @@ export class NeonWardenSim implements Sim {
   private bossDueAt: Tick | null = null;
   /** When the ending outro finishes and the run becomes `ended`. */
   private outroEndsAt: Tick | null = null;
-  private lastBossPhase: BossPhase | null = null;
+  private lastBossPhase: number | null = null;
 
   private readonly player: PlayerState;
+  private readonly trigger: Trigger;
+  private readonly pay: ContractRate;
   private enemies: Enemy[] = [];
   private boss: Boss | null = null;
   private shots: Projectile[] = [];
@@ -150,16 +224,32 @@ export class NeonWardenSim implements Sim {
   private hits = 0;
   private continuesUsed = 0;
   private pacifistIntact = true;
+  private neverFired = true;
   private firstPowerupTaken = false;
-  /** Whether any powerup has entered play; the salvage cache checks it. */
-  private powerupSeen = false;
+  private recorderRecovered = false;
+  private scoutsSpared = 0;
+  private grazeMeter = 0;
+  private grazeCount = 0;
+  private ticksSinceGraze = 0;
+  private scanTarget: EntityId | null = null;
+  /** Codex ids and "firsts" already announced this run. */
+  private readonly announced = new Set<string>();
+  private fired: Record<ShotKind, number> = { aimed: 0, stream: 0, writ: 0 };
+  private locks = 0;
+  private partsBroken = 0;
 
   private isFrozen = false;
   /** `boss.parley`: the Warden is talking, so it neither moves nor fires. */
   private parley = false;
-  /** The live practice drone, so `tut.spawnTarget` never stacks two. */
+  /** Live practice targets, so tutorial flags never stack two. */
   private practiceTarget: EntityId | null = null;
+  private practiceTurret: EntityId | null = null;
   private events: SimEvent[] = [];
+  /** Enemy bullets fired this tick, grouped into `enemyFired` volleys. */
+  private volleys = new Map<
+    string,
+    { id: EntityId; weapon: EnemyWeaponKind; pos: Vec2; bullets: number }
+  >();
   private cachedSnapshot: SimState | null = null;
 
   constructor(private readonly options: SimOptions) {
@@ -169,14 +259,22 @@ export class NeonWardenSim implements Sim {
     this.scripted = [...(options.scriptedSpawns ?? [])].sort((a, b) =>
       a.at - b.at
     );
+    this.loadout = options.loadout ?? DEFAULT_LOADOUT;
+    this.weapon = weaponStats(this.loadout.weapon);
+    this.sensor = sensorStats(this.loadout.sensor);
+    const story = options.difficulty === "story";
+    this.grazeRadius = story ? GRAZE.storyRadius : GRAZE.radius;
+    this.trigger = new Trigger(this.weapon);
+    this.pay = new ContractRate(story ? PAY.storyChainTicks : PAY.chainTicks);
     this.player = {
       x: PLAYER.startX,
       y: PLAYER.startY,
+      vx: 0,
+      vy: 0,
       lives: this.tuning.lives,
       power: 1,
       shielded: false,
       grace: 0,
-      cooldown: 0,
       bank: 0,
     };
     if (options.start.kind === "tutorial") {
@@ -208,32 +306,59 @@ export class NeonWardenSim implements Sim {
   setStoryFlag(name: string, value: boolean): void {
     if (name === "boss.parley") {
       this.parley = value;
-    } else if (name === "tut.spawnTarget" && value) {
-      const alive = this.enemies.some((e) =>
-        e.alive && e.id === this.practiceTarget
+      return;
+    }
+    if (!value || this.phase !== "tutorial") return;
+    const alive = (id: EntityId | null) =>
+      this.enemies.some((e) => e.alive && e.id === id);
+    if (name === "tut.spawnTarget" && !alive(this.practiceTarget)) {
+      this.practiceTarget = this.spawnEnemy(
+        "drone",
+        PRACTICE_TARGET.x,
+        PRACTICE_TARGET.y,
+        { passive: true },
       );
-      if (this.phase === "tutorial" && !alive) {
-        this.practiceTarget = this.spawnEnemy(
-          "drone",
-          PRACTICE_TARGET.x,
-          PRACTICE_TARGET.y,
-          { passive: true },
-        );
-      }
+    } else if (name === "tut.spawnTurret" && !alive(this.practiceTurret)) {
+      this.practiceTurret = this.spawnEnemy("turret", PRACTICE_TARGET.x, -30, {
+        passive: true,
+      });
+    } else if (name === "tut.grazeDrill") {
+      this.grazeDrill();
     }
   }
 
   /**
+   * Six slow practice rounds fall just beside the ship, alternating sides:
+   * close enough to graze, far enough to miss a ship that holds still.
+   */
+  private grazeDrill(): void {
+    const p = this.player;
+    for (let k = 0; k < 6; k++) {
+      const side = k % 2 === 0 ? -1 : 1;
+      this.spawnBullet(0, p.x + side * 17, p.y - 240 - k * 70, 0, 2.2, false);
+    }
+    this.cachedSnapshot = null;
+  }
+
+  /**
    * Leaves the tutorial (or skips ahead) into a sector. Clears the field;
-   * coming from the tutorial it also wipes score, kills and flags, because
-   * the Lane Authority's drills are simulations and do not count.
+   * coming from the tutorial it also wipes score, pay, kills and flags,
+   * because the Lane Authority's drills are simulations and do not count.
    */
   beginSector(sector: SectorIndex): void {
     if (this.phase === "tutorial") {
       this.score = 0;
       this.kills = 0;
       this.pacifistIntact = true;
+      this.neverFired = true;
       this.firstPowerupTaken = false;
+      this.recorderRecovered = false;
+      this.scoutsSpared = 0;
+      this.grazeMeter = 0;
+      this.grazeCount = 0;
+      this.pay.reset();
+      this.trigger.reset();
+      this.fired = { aimed: 0, stream: 0, writ: 0 };
       this.player.power = 1;
       this.player.shielded = false;
     }
@@ -279,7 +404,6 @@ export class NeonWardenSim implements Sim {
       alive: true,
       practice: this.phase === "tutorial",
     });
-    if (this.phase !== "tutorial") this.powerupSeen = true;
     this.cachedSnapshot = null;
     return id;
   }
@@ -302,6 +426,9 @@ export class NeonWardenSim implements Sim {
       hits: this.hits,
       continuesUsed: this.continuesUsed,
       continuesLeft: this.continuesLeft(),
+      fired: { ...this.fired },
+      locks: this.locks,
+      partsBroken: this.partsBroken,
     };
   }
 
@@ -329,10 +456,12 @@ export class NeonWardenSim implements Sim {
     for (const enemy of this.enemies) stepEnemy(enemy, arena);
     // While it talks the Warden holds still, so the survival clock (which
     // counts its age) also waits: a speech never costs a pacifist time.
-    if (this.boss && !this.parley) {
+    if (this.boss && this.parley) holdForParley(this.boss);
+    else if (this.boss) {
       stepBoss(this.boss, arena, survivalOpen);
-      this.reportBossPhase(survivalOpen);
+      this.reportBossPhase();
     }
+    this.flushVolleys();
     for (const shot of this.shots) {
       shot.x += shot.vx;
       shot.y += shot.vy;
@@ -344,6 +473,10 @@ export class NeonWardenSim implements Sim {
     for (const pickup of this.pickups) pickup.y += PICKUP.fallSpeed;
 
     this.resolveHits();
+    this.checkGrazes();
+    this.sweepScan(input.fire);
+    const decay = this.pay.step(this.tick);
+    if (decay) this.events.push(decay);
     this.checkSurvival(survivalOpen);
     this.cull();
     return this.flushEvents();
@@ -353,6 +486,8 @@ export class NeonWardenSim implements Sim {
     if (this.cachedSnapshot) return this.cachedSnapshot;
     const { player } = this;
     const boss = this.boss;
+    const lockOf = (t: Scannable) =>
+      t.locked ? 1 : Math.min(1, t.lockDwell / this.sensor.lockTicks);
     this.cachedSnapshot = {
       tick: this.tick,
       seed: this.options.seed,
@@ -367,6 +502,16 @@ export class NeonWardenSim implements Sim {
         shielded: player.shielded,
         graceTicks: player.grace,
         bank: player.bank,
+        vel: { x: player.vx, y: player.vy },
+        trigger: this.trigger.state,
+        chargeLevel: this.trigger.level,
+        charge: this.trigger.charge,
+        scan: {
+          active: this.trigger.state === "rest",
+          halfAngle: this.sensor.coneHalfAngle,
+          range: this.sensor.range,
+          targetId: this.scanTarget,
+        },
       },
       enemies: this.enemies.map((e) => ({
         id: e.id,
@@ -376,6 +521,13 @@ export class NeonWardenSim implements Sim {
         hp: e.hp,
         maxHp: e.maxHp,
         age: e.age,
+        ai: e.ai,
+        aiTicks: e.aiTicks,
+        parts: e.parts.map(partView),
+        weakPoint: e.weakPoint,
+        lock: lockOf(e),
+        locked: e.locked,
+        disarmed: e.disarmed,
       })),
       bullets: [...this.shots, ...this.bullets].map((b) => ({
         id: b.id,
@@ -396,17 +548,33 @@ export class NeonWardenSim implements Sim {
           radius: BOSS.radius,
           hp: boss.hp,
           maxHp: BOSS.hp,
-          phase: bossPhase(boss, this.pacifistIntact),
+          phase: boss.phase,
           invulnerable: !bossArrived(boss) || boss.state !== "fighting" ||
             this.parley,
+          ai: boss.ai,
+          pods: boss.pods.map(partView),
+          coreOpen: coreOpen(boss),
+          weakPoint: { offset: WARDEN_CORE.offset, radius: WARDEN_CORE.radius },
+          lock: lockOf(boss),
+          locked: boss.locked,
         }
         : null,
       score: this.score,
       kills: this.kills,
+      pay: this.pay.view(),
+      graze: {
+        meter: this.grazeMeter,
+        count: this.grazeCount,
+        radius: this.grazeRadius,
+      },
+      scoutsSpared: this.scoutsSpared,
       flags: {
         pacifistIntact: this.pacifistIntact,
+        neverFired: this.neverFired,
         firstPowerupTaken: this.firstPowerupTaken,
+        recorderRecovered: this.recorderRecovered,
       },
+      loadout: this.loadout,
     };
     return this.cachedSnapshot;
   }
@@ -475,10 +643,9 @@ export class NeonWardenSim implements Sim {
       }
       if (
         this.sector === SALVAGE_CACHE.sector &&
-        t === SALVAGE_CACHE.atSectorTick && !this.powerupSeen
+        t === SALVAGE_CACHE.atSectorTick && !this.recorderRecovered
       ) {
-        const kind = this.player.power < PLAYER.maxPower ? "spread" : "shield";
-        this.spawnPickup(kind, SALVAGE_CACHE.x, SALVAGE_CACHE.y);
+        this.spawnPickup("recorder", SALVAGE_CACHE.x, SALVAGE_CACHE.y);
       }
     }
     while (
@@ -486,7 +653,10 @@ export class NeonWardenSim implements Sim {
       this.scripted[this.scriptedCursor].at <= this.tick
     ) {
       const spawn = this.scripted[this.scriptedCursor++];
-      if (spawn.kind === "spread" || spawn.kind === "shield") {
+      if (
+        spawn.kind === "spread" || spawn.kind === "shield" ||
+        spawn.kind === "recorder"
+      ) {
         this.spawnPickup(spawn.kind, spawn.x, spawn.y);
       } else {
         this.spawnEnemy(spawn.kind, spawn.x, spawn.y, {
@@ -496,9 +666,10 @@ export class NeonWardenSim implements Sim {
     }
   }
 
-  private reportBossPhase(survivalOpen: boolean): void {
+  /** Phases only rise (see `boss.ts`), so each is announced exactly once. */
+  private reportBossPhase(): void {
     if (!this.boss || this.boss.state !== "fighting") return;
-    const phase = bossPhase(this.boss, survivalOpen);
+    const phase = this.boss.phase;
     if (phase !== this.lastBossPhase) {
       this.lastBossPhase = phase;
       this.events.push({ type: "bossPhase", tick: this.tick, phase });
@@ -509,10 +680,12 @@ export class NeonWardenSim implements Sim {
   private checkSurvival(survivalOpen: boolean): void {
     const boss = this.boss;
     if (!boss || boss.state !== "fighting" || this.outcome) return;
-    if (!survivalOpen || !survivalComplete(boss)) return;
+    if (!survivalOpen || !this.pacifistIntact) return;
+    if (!survivalComplete(boss)) return;
     boss.state = "withdrawing";
     // Nobody the player spared is left behind: the escorts go with it.
     for (const escort of this.enemies) {
+      if (escort.disarmed) continue;
       escort.retreating = true;
       this.events.push({
         type: "despawn",
@@ -531,7 +704,7 @@ export class NeonWardenSim implements Sim {
   }
 
   // ---------------------------------------------------------------------
-  // Player.
+  // Player: movement and the trigger.
 
   private flyPlayer(input: InputFrame): void {
     const p = this.player;
@@ -539,30 +712,87 @@ export class NeonWardenSim implements Sim {
     const dx = clamp(input.move.x, -1, 1);
     const dy = clamp(input.move.y, -1, 1);
     const speed = input.focus ? PLAYER.focusSpeed : PLAYER.speed;
+    const startX = p.x;
+    const startY = p.y;
     p.x = clamp(p.x + dx * speed, PLAYER.minX, PLAYER.maxX);
     p.y = clamp(p.y + dy * speed, PLAYER.minY, PLAYER.maxY);
+    p.vx = p.x - startX;
+    p.vy = p.y - startY;
     p.bank = dx * PLAYER.bankPerInput;
 
-    p.cooldown = Math.max(0, p.cooldown - 1);
-    if (!input.fire || p.cooldown > 0) return;
-    p.cooldown = PLAYER.fireInterval;
-    const spreads = PLAYER.spreads[p.power - 1];
-    spreads.forEach((vx, i) => {
+    const { volley, levelChanged } = this.trigger.update(input.fire);
+    if (levelChanged) {
+      this.events.push({
+        type: "chargeLevel",
+        tick: this.tick,
+        level: this.trigger.level,
+      });
+    }
+    if (volley) this.fireVolley(volley);
+  }
+
+  private fireVolley(volley: Volley): void {
+    const p = this.player;
+    if (this.phase !== "tutorial") this.neverFired = false;
+    this.fired[volley.shot]++;
+    const muzzleY = p.y - 18;
+    const round = (
+      x: number,
+      vx: number,
+      speed: number,
+      radius: number,
+      damage: number,
+    ) =>
       this.shots.push({
         id: this.nextId++,
         kind: "shot",
-        x: p.x + (i - (spreads.length - 1) / 2) * PLAYER.shotSpacing,
-        y: p.y - 18,
+        x,
+        y: muzzleY,
         vx,
-        vy: -PLAYER.shotSpeed,
-        radius: PLAYER.shotRadius,
+        vy: -speed,
+        radius,
         alive: true,
+        owner: 0,
+        shot: volley.shot,
+        damage,
+        struck: [],
+        grazed: false,
+        closest: Infinity,
+        nearMissed: false,
       });
-    });
+    let count = 1;
+    if (volley.shot === "aimed") {
+      round(
+        p.x,
+        0,
+        TRIGGER.aimedSpeed,
+        TRIGGER.aimedRadius,
+        this.weapon.aimedDamage,
+      );
+    } else if (volley.shot === "writ") {
+      const i = volley.level - 1;
+      round(
+        p.x,
+        0,
+        TRIGGER.writSpeed,
+        this.weapon.writRadius[i],
+        this.weapon.writDamage[i],
+      );
+    } else {
+      const spreads = PLAYER.spreads[p.power - 1];
+      count = spreads.length;
+      spreads.forEach((vx, i) => {
+        const x = p.x + (i - (spreads.length - 1) / 2) * PLAYER.shotSpacing;
+        round(x, vx, PLAYER.shotSpeed, PLAYER.shotRadius, 1);
+      });
+    }
     this.events.push({
       type: "playerFired",
       tick: this.tick,
-      shots: spreads.length,
+      shots: count,
+      shot: volley.shot,
+      level: volley.level,
+      pos: { x: p.x, y: muzzleY },
     });
   }
 
@@ -581,6 +811,7 @@ export class NeonWardenSim implements Sim {
       absorbedByShield: absorbed,
       blocked: false,
     });
+    this.events.push(this.pay.rateBreak(this.tick, absorbed));
     if (absorbed) {
       p.shielded = false;
       return;
@@ -610,8 +841,11 @@ export class NeonWardenSim implements Sim {
     const p = this.player;
     if (pickup.kind === "spread") {
       p.power = Math.min(PLAYER.maxPower, p.power + 1);
-    } else {
+    } else if (pickup.kind === "shield") {
       p.shielded = true;
+    } else {
+      this.recorderRecovered = true;
+      this.announceIntel(pickup.id, "codex.recorder.0121", null);
     }
     const first = !pickup.practice && !this.firstPowerupTaken;
     if (first) this.firstPowerupTaken = true;
@@ -624,34 +858,20 @@ export class NeonWardenSim implements Sim {
   }
 
   // ---------------------------------------------------------------------
-  // Collisions and their consequences.
+  // Collisions: player rounds against parts, weak points and hulls.
 
   private resolveHits(): void {
-    const boss = this.boss;
-    const bossTarget = boss && boss.state === "fighting"
-      ? { x: boss.x, y: boss.y, radius: BOSS.radius }
-      : null;
-
     for (const shot of this.shots) {
-      const enemy = this.enemies.find((e) => e.alive && touches(e, shot));
-      if (enemy) {
-        shot.alive = false;
-        this.damageEnemy(enemy, 1, false);
-      } else if (boss && bossTarget && touches(bossTarget, shot)) {
-        // Shots during the descent or a speech are swallowed without effect.
-        shot.alive = false;
-        if (bossArrived(boss) && !this.parley) this.damageBoss(boss);
-        else {
-          this.events.push({
-            type: "hit",
-            tick: this.tick,
-            target: "boss",
-            id: boss.id,
-            absorbedByShield: false,
-            blocked: true,
-          });
+      if (!shot.alive) continue;
+      let struck = false;
+      for (const enemy of this.enemies) {
+        if (!enemy.alive || shot.struck.includes(enemy.id)) continue;
+        if (this.strikeEnemy(enemy, shot)) {
+          struck = true;
+          break;
         }
       }
+      if (!struck && shot.alive) this.strikeBoss(shot);
     }
     const playerBody = {
       x: this.player.x,
@@ -669,10 +889,14 @@ export class NeonWardenSim implements Sim {
       this.hurtPlayer();
       // Ramming hurts both, every tick of contact, even during grace.
       if (this.outcome === null) {
-        this.damageEnemy(enemy, PLAYER.ramDamage, true);
+        this.damageEnemy(enemy, PLAYER.ramDamage, "ram");
       }
     }
-    if (bossTarget && touches(bossTarget, playerBody)) this.hurtPlayer();
+    const boss = this.boss;
+    if (
+      boss && boss.state === "fighting" &&
+      touches({ x: boss.x, y: boss.y, radius: BOSS.radius }, playerBody)
+    ) this.hurtPlayer();
     for (const pickup of this.pickups) {
       if (
         pickup.alive &&
@@ -684,18 +908,104 @@ export class NeonWardenSim implements Sim {
     }
   }
 
-  private damageEnemy(enemy: Enemy, amount: number, byRam: boolean): void {
-    enemy.hp -= amount;
+  /**
+   * One player round against one scout. Returns true on contact.
+   *
+   * 1. A Writ into a locked scout picks the component it is aligned with:
+   *    the weak point (a clean kill) or a weapon part (a clean disarm).
+   * 2. Aimed and Writ rounds that touch a weapon part break or wear it.
+   * 3. Anything else that touches the hull damages it; a Writ pierces on.
+   */
+  private strikeEnemy(enemy: Enemy, shot: Projectile): boolean {
+    const hull = touches(enemy, shot);
+    const precise = shot.shot === "aimed" || shot.shot === "writ";
+    const part = precise
+      ? enemy.parts.find((p) =>
+        !p.broken && touches(partCircle(enemy, p), shot)
+      )
+      : undefined;
+    if (!hull && !part) return false;
+
+    if (shot.shot === "writ" && enemy.locked) {
+      const choice = this.alignedComponent(enemy, shot.x);
+      if (choice === "weakPoint") {
+        shot.alive = false;
+        this.hitEvent(enemy.id);
+        this.killEnemy(enemy, "writ", true);
+        return true;
+      }
+      if (choice) {
+        shot.alive = false;
+        this.hitEvent(enemy.id);
+        this.breakEnemyPart(enemy, choice, "writ");
+        return true;
+      }
+    }
+    if (part) {
+      shot.alive = false;
+      this.hitEvent(enemy.id);
+      part.hp = shot.shot === "writ" ? 0 : part.hp - shot.damage;
+      if (part.hp <= 0) this.breakEnemyPart(enemy, part, shot.shot ?? "aimed");
+      return true;
+    }
+    if (shot.shot === "writ") shot.struck.push(enemy.id);
+    else shot.alive = false;
+    this.damageEnemy(enemy, shot.damage, shot.shot ?? "stream");
+    return true;
+  }
+
+  /** For a locked Writ: the weak point or part it lines up with, if any. */
+  private alignedComponent(
+    enemy: Enemy,
+    x: number,
+  ): "weakPoint" | Part | null {
+    let best: "weakPoint" | Part | null = null;
+    let bestGap = Infinity;
+    // Parts first, so an exact tie spares the scout.
+    for (const part of enemy.parts) {
+      if (part.broken) continue;
+      const gap = Math.abs(x - (enemy.x + part.offset.x));
+      if (gap <= part.spec.radius + WRIT_ALIGN_SLACK && gap < bestGap) {
+        best = part;
+        bestGap = gap;
+      }
+    }
+    const wp = enemy.weakPoint;
+    const gap = Math.abs(x - (enemy.x + wp.offset.x));
+    if (gap <= wp.radius + WRIT_ALIGN_SLACK && gap < bestGap) {
+      best = "weakPoint";
+    }
+    return best;
+  }
+
+  private hitEvent(id: EntityId): void {
     this.events.push({
       type: "hit",
       tick: this.tick,
       target: "enemy",
-      id: enemy.id,
+      id,
       absorbedByShield: false,
       blocked: false,
     });
-    if (enemy.hp > 0) return;
+  }
+
+  private damageEnemy(
+    enemy: Enemy,
+    amount: number,
+    by: ShotKind | "ram",
+  ): void {
+    enemy.hp -= amount;
+    this.hitEvent(enemy.id);
+    if (enemy.hp > 0) {
+      startEvade(enemy, this.player);
+      return;
+    }
+    this.killEnemy(enemy, by, false);
+  }
+
+  private killEnemy(enemy: Enemy, by: ShotKind | "ram", clean: boolean): void {
     enemy.alive = false;
+    enemy.hp = 0;
     this.score += enemy.score;
     this.kills++;
     if (this.phase !== "tutorial") this.pacifistIntact = false;
@@ -705,8 +1015,17 @@ export class NeonWardenSim implements Sim {
       id: enemy.id,
       kind: enemy.kind,
       score: enemy.score,
-      byRam,
+      byRam: by === "ram",
+      clean,
     });
+    this.events.push(
+      this.pay.earn(
+        this.tick,
+        clean ? "cleanKill" : "kill",
+        enemy.score,
+        clean ? PAY.gain.cleanKill : PAY.gain.kill,
+      ),
+    );
     // Two draws, in the starter's order: drop at all, then which kind.
     if (this.rng.chance(enemy.dropChance)) {
       const spread = this.player.power < PLAYER.maxPower &&
@@ -715,22 +1034,157 @@ export class NeonWardenSim implements Sim {
     }
   }
 
-  private damageBoss(boss: Boss): void {
-    boss.hp -= 1;
+  private breakEnemyPart(enemy: Enemy, part: Part, by: ShotKind): void {
+    part.broken = true;
+    part.hp = 0;
+    this.partsBroken++;
+    this.events.push({
+      type: "partBreak",
+      tick: this.tick,
+      id: enemy.id,
+      target: "enemy",
+      part: part.spec.id,
+      partKind: part.spec.kind,
+      pos: { x: enemy.x + part.offset.x, y: enemy.y + part.offset.y },
+      by,
+      first: this.firstTime("partBreak.enemy"),
+    });
+    this.events.push(
+      this.pay.earn(
+        this.tick,
+        "partBreak",
+        PAY.partBreakCredits,
+        PAY.gain.partBreak,
+      ),
+    );
+    if (enemy.parts.every((p) => p.broken)) this.disarm(enemy);
+  }
+
+  /** Every gun gone: the scout cancels its bullets and leaves, spared. */
+  private disarm(enemy: Enemy): void {
+    enemy.disarmed = true;
+    enemy.retreating = true;
+    let cancelled = 0;
+    for (const bullet of this.bullets) {
+      if (bullet.alive && bullet.owner === enemy.id) {
+        bullet.alive = false;
+        cancelled++;
+      }
+    }
+    this.scoutsSpared++;
+    this.events.push({
+      type: "disarm",
+      tick: this.tick,
+      id: enemy.id,
+      kind: enemy.kind,
+      pos: { x: enemy.x, y: enemy.y },
+      cancelled,
+      first: this.firstTime("disarm"),
+    });
+    this.events.push(
+      this.pay.earn(
+        this.tick,
+        "disarm",
+        enemy.score * PAY.disarmFraction,
+        PAY.gain.disarm,
+      ),
+    );
+  }
+
+  /**
+   * One player round against the Warden: pods first (they ring the hull),
+   * then the core. Shots during the descent or a speech are swallowed.
+   */
+  private strikeBoss(shot: Projectile): void {
+    const boss = this.boss;
+    if (!boss || boss.state !== "fighting") return;
+    const pod = boss.pods.find((p) =>
+      !p.broken && touches(partCircle(boss, p), shot)
+    );
+    const hull = touches({ x: boss.x, y: boss.y, radius: BOSS.radius }, shot);
+    if (!pod && !hull) return;
+    shot.alive = false;
+    const open = bossArrived(boss) && !this.parley;
+    // The stream pings off armored pods.
+    const blocked = !open || (pod !== undefined && shot.shot === "stream");
     this.events.push({
       type: "hit",
       tick: this.tick,
       target: "boss",
       id: boss.id,
       absorbedByShield: false,
-      blocked: false,
+      blocked,
     });
-    if (boss.hp > 0) return;
+    if (blocked) return;
+    this.pay.refresh();
+    if (pod) {
+      const mult = shot.shot === "writ"
+        ? boss.locked
+          ? TRIGGER.lockedWritPodMultiplier
+          : TRIGGER.writPodMultiplier
+        : 1;
+      pod.hp -= shot.damage * mult;
+      if (pod.hp <= 0) this.breakPod(boss, pod, shot.shot ?? "aimed");
+      return;
+    }
+    // The core: striking it at all ends a pacifist run.
+    this.pacifistIntact = false;
+    let amount = shot.damage;
+    if (coreOpen(boss)) {
+      amount *= WARDEN_CORE.openMultiplier;
+      if (shot.shot === "writ" && boss.locked) {
+        amount *= WARDEN_CORE.lockedWritMultiplier;
+      }
+    }
+    boss.hp -= amount;
+    if (boss.hp <= 0) this.defeatBoss(boss, shot.shot === "writ");
+  }
+
+  private breakPod(boss: Boss, pod: Part, by: ShotKind): void {
+    const wasOpen = coreOpen(boss);
+    pod.broken = true;
+    pod.hp = 0;
+    this.partsBroken++;
+    this.events.push({
+      type: "partBreak",
+      tick: this.tick,
+      id: boss.id,
+      target: "boss",
+      part: pod.spec.id,
+      partKind: pod.spec.kind,
+      pos: { x: boss.x + pod.offset.x, y: boss.y + pod.offset.y },
+      by,
+      first: this.firstTime("partBreak.boss"),
+    });
+    this.events.push(
+      this.pay.earn(
+        this.tick,
+        "partBreak",
+        PAY.partBreakCredits,
+        PAY.gain.partBreak,
+      ),
+    );
+    if (!wasOpen && coreOpen(boss)) {
+      this.events.push({ type: "coreExposed", tick: this.tick, id: boss.id });
+      this.announceIntel(boss.id, "codex.warden.core", boss.ai);
+    }
+  }
+
+  private defeatBoss(boss: Boss, clean: boolean): void {
     boss.hp = 0;
     boss.state = "defeated";
+    boss.ai = "fallen";
     this.score += BOSS.score;
     this.kills++;
     this.pacifistIntact = false;
+    this.events.push(
+      this.pay.earn(
+        this.tick,
+        clean ? "cleanKill" : "kill",
+        BOSS.score,
+        clean ? PAY.gain.cleanKill : PAY.gain.kill,
+      ),
+    );
     // The Warden's fall takes its bullets and escorts with it (no score).
     for (const bullet of this.bullets) bullet.alive = false;
     for (const escort of this.enemies) {
@@ -746,18 +1200,204 @@ export class NeonWardenSim implements Sim {
     this.endWith("bossDefeated");
   }
 
+  // ---------------------------------------------------------------------
+  // Grazes, near misses, the scan beam.
+
+  /**
+   * Enemy bullets that survived collisions: a graze once inside the graze
+   * radius (not during post-hit grace), a near miss at closest approach.
+   */
+  private checkGrazes(): void {
+    const p = this.player;
+    this.ticksSinceGraze++;
+    for (const bullet of this.bullets) {
+      if (!bullet.alive) continue;
+      const dx = bullet.x - p.x;
+      const dy = bullet.y - p.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (
+        !bullet.grazed && distance < this.grazeRadius && p.grace === 0 &&
+        this.outcome === null
+      ) {
+        bullet.grazed = true;
+        this.graze(bullet);
+      }
+      if (bullet.nearMissed || distance >= NEAR_MISS_RADIUS) continue;
+      if (distance < bullet.closest) {
+        bullet.closest = distance;
+        continue;
+      }
+      bullet.nearMissed = true;
+      this.events.push({
+        type: "nearMiss",
+        tick: this.tick,
+        bulletId: bullet.id,
+        pos: { x: bullet.x, y: bullet.y },
+        relVel: { x: bullet.vx - p.vx, y: bullet.vy - p.vy },
+        distance: bullet.closest,
+        heavy: bullet.kind === "heavy",
+      });
+    }
+    if (this.ticksSinceGraze > GRAZE.drainDelay) {
+      this.grazeMeter = Math.max(0, this.grazeMeter - GRAZE.drainPerTick);
+    }
+  }
+
+  private graze(bullet: Projectile): void {
+    const count = bullet.kind === "heavy" ? 2 : 1;
+    this.grazeCount += count;
+    this.ticksSinceGraze = 0;
+    this.grazeMeter = Math.min(
+      1,
+      this.grazeMeter + GRAZE.meterPerGraze * count,
+    );
+    this.events.push({
+      type: "graze",
+      tick: this.tick,
+      bulletId: bullet.id,
+      pos: { x: bullet.x, y: bullet.y },
+      count,
+      meter: this.grazeMeter,
+      first: this.firstTime("graze"),
+    });
+    this.events.push(
+      this.pay.earn(
+        this.tick,
+        "graze",
+        PAY.grazeCredits * count,
+        PAY.gain.graze * count,
+      ),
+    );
+    if (this.grazeMeter >= 1) {
+      // Clearance: a full meter pays out and empties.
+      this.grazeMeter = 0;
+      this.events.push(
+        this.pay.earn(
+          this.tick,
+          "clearance",
+          PAY.clearanceCredits,
+          PAY.gain.clearance,
+        ),
+      );
+    }
+  }
+
+  private sweepScan(fireHeld: boolean): void {
+    const candidates: Scannable[] = this.enemies.filter((e) =>
+      e.alive && e.y > 0
+    );
+    const boss = this.boss;
+    if (boss && boss.state === "fighting" && boss.y > 0) candidates.push(boss);
+    const active = !fireHeld && this.outcome === null;
+    const { painted, locked } = stepScan(
+      this.player,
+      candidates,
+      this.sensor,
+      active,
+      SCAN_DECAY,
+    );
+    this.scanTarget = painted;
+    if (!locked) return;
+    this.locks++;
+    const isBoss = boss !== null && locked === boss;
+    const enemy = isBoss ? null : this.enemies.find((e) => e.id === locked.id);
+    const kind = enemy ? enemy.kind : "warden";
+    const ai = enemy ? enemy.ai : boss!.ai;
+    this.events.push({
+      type: "scanLock",
+      tick: this.tick,
+      id: locked.id,
+      target: isBoss ? "boss" : "enemy",
+      kind,
+      pos: { x: locked.x, y: locked.y },
+      ai,
+      first: this.firstTime("scanLock"),
+    });
+    this.events.push(
+      this.pay.earn(this.tick, "scan", PAY.scanCredits, PAY.gain.scan),
+    );
+    this.announceIntel(
+      locked.id,
+      isBoss ? "codex.warden" : `codex.enemy.${kind}`,
+      ai,
+    );
+  }
+
+  private announceIntel(
+    id: EntityId,
+    codexId: string,
+    ai: EnemyAiState | WardenAiState | null,
+  ): void {
+    this.events.push({
+      type: "intel",
+      tick: this.tick,
+      id,
+      codexId,
+      ai,
+      first: this.firstTime(codexId),
+    });
+  }
+
+  /** True the first time `key` is asked about this run. */
+  private firstTime(key: string): boolean {
+    if (this.announced.has(key)) return false;
+    this.announced.add(key);
+    return true;
+  }
+
+  // ---------------------------------------------------------------------
+  // Bookkeeping.
+
   private cull(): void {
     this.shots = this.shots.filter((s) => s.alive && !offscreen(s.x, s.y));
     this.bullets = this.bullets.filter((b) => b.alive && !offscreen(b.x, b.y));
     this.pickups = this.pickups.filter((p) => p.alive && !offscreen(p.x, p.y));
     // Enemies get 30 ticks of grace: lancers are born outside the walls.
-    this.enemies = this.enemies.filter((e) =>
-      e.alive && !(e.age > 30 && offscreen(e.x, e.y))
-    );
+    this.enemies = this.enemies.filter((e) => {
+      if (!e.alive) return false;
+      if (!(e.age > 30 && offscreen(e.x, e.y))) return true;
+      if (e.disarmed) {
+        this.events.push({
+          type: "despawn",
+          tick: this.tick,
+          id: e.id,
+          reason: "spared",
+        });
+      }
+      return false;
+    });
     // The withdrawing Warden is gone once it clears the top edge.
     if (this.boss?.state === "withdrawing" && this.boss.y < -BOSS.radius * 3) {
       this.boss = null;
     }
+  }
+
+  private spawnBullet(
+    owner: EntityId,
+    x: number,
+    y: number,
+    vx: number,
+    vy: number,
+    heavy: boolean,
+  ): void {
+    const kind: BulletKind = heavy ? "heavy" : "bullet";
+    this.bullets.push({
+      id: this.nextId++,
+      kind,
+      x,
+      y,
+      vx,
+      vy,
+      radius: BULLET_RADIUS[kind],
+      alive: true,
+      owner,
+      shot: null,
+      damage: 0,
+      struck: [],
+      grazed: false,
+      closest: Infinity,
+      nearMissed: false,
+    });
   }
 
   private arena(): Arena {
@@ -767,24 +1407,37 @@ export class NeonWardenSim implements Sim {
       bulletSpeed: this.tuning.bulletSpeed,
       droneFireChance: this.tuning.droneFireChance,
       dartsArmed: this.tuning.dartsArmed,
-      fire: (x, y, angle, speed, heavy = false) => {
-        const kind: BulletKind = heavy ? "heavy" : "bullet";
-        this.bullets.push({
-          id: this.nextId++,
-          kind,
+      fire: (owner, weapon, x, y, angle, speed, heavy = false) => {
+        this.spawnBullet(
+          owner,
           x,
           y,
-          vx: Math.cos(angle) * speed,
-          vy: Math.sin(angle) * speed,
-          radius: BULLET_RADIUS[kind],
-          alive: true,
-        });
+          Math.cos(angle) * speed,
+          Math.sin(angle) * speed,
+          heavy,
+        );
+        const key = `${owner}:${weapon}`;
+        const volley = this.volleys.get(key);
+        if (volley) volley.bullets++;
+        else {this.volleys.set(key, {
+            id: owner,
+            weapon,
+            pos: { x, y },
+            bullets: 1,
+          });}
       },
       // Restored: the starter's summon ignored `kind` and always made drones.
       summon: (kind, x, y) => {
         this.spawnEnemy(kind, x, y, { side: x < 240 ? 1 : -1 });
       },
     };
+  }
+
+  private flushVolleys(): void {
+    for (const v of this.volleys.values()) {
+      this.events.push({ type: "enemyFired", tick: this.tick, ...v });
+    }
+    this.volleys.clear();
   }
 
   private flushEvents(): readonly SimEvent[] {

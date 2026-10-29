@@ -398,6 +398,8 @@ export type SimEvent =
     readonly count: number;
     /** The meter after this graze, 0–1. */
     readonly meter: number;
+    /** The run's first graze (tutorials and barks key off it). */
+    readonly first: boolean;
   }
   | {
     readonly type: "partBreak";
@@ -409,6 +411,8 @@ export type SimEvent =
     readonly partKind: PartKind;
     readonly pos: Vec2;
     readonly by: ShotKind;
+    /** The run's first part break of this target class. */
+    readonly first: boolean;
   }
   | {
     /** A scout lost its last weapon part: it stops firing and leaves. */
@@ -419,6 +423,8 @@ export type SimEvent =
     readonly pos: Vec2;
     /** Its live bullets cancelled with it. */
     readonly cancelled: number;
+    /** The run's first disarm. */
+    readonly first: boolean;
   }
   | {
     /** Two Warden pods are broken: the core is open. */
@@ -433,6 +439,10 @@ export type SimEvent =
     readonly target: "enemy" | "boss";
     readonly kind: EnemyKind | "warden";
     readonly pos: Vec2;
+    /** The target's AI state at the moment of lock: the intel. */
+    readonly ai: EnemyAiState | WardenAiState;
+    /** The run's first lock. */
+    readonly first: boolean;
   }
   | {
     /**
@@ -562,7 +572,9 @@ export interface Sim {
   /**
    * Story flags the sim honors, set by the Director: `boss.parley` (the
    * Warden holds fire and ignores damage while it talks) and
-   * `tut.spawnTarget` (a passive practice drone appears). Unknown names are
+   * `tut.spawnTarget` (a passive practice drone appears), `tut.spawnTurret`
+   * (a passive practice turret with one barrel part) and `tut.grazeDrill`
+   * (slow practice rounds fall just beside the ship). Unknown names are
    * ignored, so timelines can add flags without touching the sim.
    */
   setStoryFlag(name: string, value: boolean): void;

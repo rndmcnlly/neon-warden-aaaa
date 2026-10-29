@@ -5,7 +5,12 @@
  * units (the original's pixels) and ticks (1/60 s).
  */
 
-import type { Difficulty, EnemyKind } from "../contracts/index.ts";
+import type {
+  Difficulty,
+  EnemyKind,
+  PartKind,
+  Vec2,
+} from "../contracts/index.ts";
 
 export const PLAYER = Object.freeze({
   startX: 240,
@@ -131,10 +136,10 @@ export const DIFFICULTY: Readonly<Record<Difficulty, DifficultyTuning>> = Object
   });
 
 /**
- * Not in the original: if no powerup has appeared by this many ticks into
- * sector 3, a salvage cache drifts down. It makes the flashback (which keys
- * off the first powerup) reliable, and it is the only way a pacifist run,
- * which destroys nothing and so earns no drops, ever reaches the flashback.
+ * Not in the original: thirty ticks into sector 3, #0121's derelict flight
+ * recorder drifts down (the salvage cache). If nothing was collected before
+ * it, it counts as the first powerup, so the flashback is reliable even on a
+ * pacifist run, which destroys nothing and so earns no drops.
  */
 export const SALVAGE_CACHE = Object.freeze({
   sector: 3,
@@ -153,5 +158,186 @@ export const RESTORED_CUT_CONTENT = Object.freeze([
   "The victory lap is protected: a `bossDefeted` typo meant the ship stayed hittable after the Warden fell. The ship is now untouchable during every ending outro.",
   "`summon(kind)` honors its kind: the starter ignored it and always made drones. The Warden still only calls drones, but the arena could call anything.",
   'Turret and lancer counts follow the code, not the comments ("pair of turrets" spawns three; "six lancers" spawns four). The wave tables say what actually flies.',
-  "The salvage cache in sector 3 is new, not restored: it guarantees the first powerup (and the flashback) even in a run that earns no drops.",
+  "The salvage cache in sector 3 is new, not restored: #0121's flight recorder, which guarantees the flashback even in a run that earns no drops.",
 ]);
+
+// ---------------------------------------------------------------------------
+// Wave 3 micro-systems. Source: research/2026-10-28-gameplay-microsystems/
+// (tuning table). Per-package weapon and sensor numbers live in
+// `src/contracts/loadout.ts`, since the hangar shows them.
+
+/** The one fire verb: tap, hold, rest. */
+export const TRIGGER = Object.freeze({
+  /** Held longer than this many ticks, a press becomes the stream. */
+  tapThreshold: 8,
+  aimedSpeed: 14,
+  aimedRadius: 5,
+  writSpeed: 12,
+  /** Writ rounds multiply their damage on Warden pods (2) and more if locked. */
+  writPodMultiplier: 2,
+  lockedWritPodMultiplier: 3,
+});
+
+/** How a locked Writ picks its component: within this of the x offset. */
+export const WRIT_ALIGN_SLACK = 4;
+
+export interface PartSpec {
+  readonly id: string;
+  readonly kind: PartKind;
+  /** For scouts, x is mirrored by the scout's `side`. */
+  readonly offset: Vec2;
+  readonly radius: number;
+  readonly hp: number;
+}
+
+export interface ScoutAnatomy {
+  readonly parts: readonly PartSpec[];
+  readonly weakPoint: { readonly offset: Vec2; readonly radius: number };
+}
+
+/**
+ * Weapon parts face the player (+y). Weak points sit off the gun line, so a
+ * centered Writ disarms and an offset one kills: the choice is in the aim.
+ */
+export const ANATOMY: Readonly<Record<EnemyKind, ScoutAnatomy>> = Object
+  .freeze({
+    drone: {
+      parts: [{
+        id: "gun",
+        kind: "gun",
+        offset: { x: 0, y: 9 },
+        radius: 6,
+        hp: 2,
+      }],
+      weakPoint: { offset: { x: 9, y: -3 }, radius: 4 },
+    },
+    dart: {
+      parts: [{
+        id: "nose",
+        kind: "nose",
+        offset: { x: 0, y: 10 },
+        radius: 5,
+        hp: 1,
+      }],
+      weakPoint: { offset: { x: 8, y: -4 }, radius: 4 },
+    },
+    turret: {
+      parts: [{
+        id: "barrel",
+        kind: "barrel",
+        offset: { x: 0, y: 16 },
+        radius: 7,
+        hp: 6,
+      }],
+      weakPoint: { offset: { x: 14, y: -6 }, radius: 5 },
+    },
+    lancer: {
+      parts: [
+        {
+          id: "emitterL",
+          kind: "emitter",
+          offset: { x: -9, y: 10 },
+          radius: 5,
+          hp: 3,
+        },
+        {
+          id: "emitterR",
+          kind: "emitter",
+          offset: { x: 9, y: 10 },
+          radius: 5,
+          hp: 3,
+        },
+      ],
+      weakPoint: { offset: { x: 0, y: -8 }, radius: 4 },
+    },
+  });
+
+/**
+ * The Warden's four pods, one per pattern element. Side pods sit outside
+ * the hull, so they can be broken without touching the core.
+ */
+export const WARDEN_PODS: readonly PartSpec[] = Object.freeze([
+  {
+    id: "fanPodL",
+    kind: "fanPod",
+    offset: { x: -62, y: 0 },
+    radius: 14,
+    hp: 60,
+  },
+  {
+    id: "fanPodR",
+    kind: "fanPod",
+    offset: { x: 62, y: 0 },
+    radius: 14,
+    hp: 60,
+  },
+  {
+    id: "cannonPod",
+    kind: "cannonPod",
+    offset: { x: -26, y: 44 },
+    radius: 14,
+    hp: 60,
+  },
+  {
+    id: "spiralPod",
+    kind: "spiralPod",
+    offset: { x: 26, y: 44 },
+    radius: 14,
+    hp: 60,
+  },
+]);
+
+export const WARDEN_CORE = Object.freeze({
+  offset: { x: 0, y: 0 },
+  radius: 18,
+  /** Broken pods that open the core. */
+  podsToOpen: 2,
+  openMultiplier: 2,
+  /** Extra multiplier for a locked Writ into the open core. */
+  lockedWritMultiplier: 2,
+});
+
+/** Scan dwell lost per tick by targets the beam is not painting. */
+export const SCAN_DECAY = 1;
+
+/** Ticks an enemy spends evading after a hull hit (drones only). */
+export const EVADE_TICKS = 30;
+export const EVADE_SPEED = 1.6;
+
+export const GRAZE = Object.freeze({
+  radius: 26,
+  storyRadius: 34,
+  /** Meter gained per graze count (heavy bullets count 2). */
+  meterPerGraze: 0.05,
+  /** The meter starts draining after this many ticks without a graze. */
+  drainDelay: 90,
+  drainPerTick: 0.0015,
+});
+
+export const PAY = Object.freeze({
+  minRate: 1,
+  maxRate: 8,
+  chainTicks: 150,
+  storyChainTicks: 240,
+  decayEvery: 30,
+  decayStep: 0.5,
+  /** Rate gains per event. */
+  gain: {
+    kill: 0.1,
+    cleanKill: 0.5,
+    partBreak: 0.2,
+    disarm: 0.2,
+    graze: 0.02,
+    scan: 0.05,
+    clearance: 0.25,
+  },
+  /** Credits before the rate multiplier. */
+  partBreakCredits: 40,
+  /** Disarm bounty as a fraction of the scout's kill value. */
+  disarmFraction: 0.4,
+  grazeCredits: 5,
+  scanCredits: 10,
+  clearanceCredits: 250,
+  /** A shield absorb costs this much rate instead of halving it. */
+  shieldBreak: 0.5,
+});
