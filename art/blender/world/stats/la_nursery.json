@@ -1,8 +1,8 @@
 {
   "asset": "la_nursery",
   "file": "public/models/world/la_nursery.glb",
-  "bytes": 74048,
-  "triangles": 1092,
+  "bytes": 334488,
+  "triangles": 4848,
   "meshes": 4,
   "nodes": [
     "la_nursery",
@@ -14,18 +14,18 @@
     "sign__la_nursery"
   ],
   "triangles_per_node": {
-    "la_nursery_body": 912,
-    "la_nursery_lit_emit": 144,
+    "la_nursery_body": 4548,
+    "la_nursery_lit_emit": 264,
     "la_nursery_tender_body": 24,
     "la_nursery_tender_lit_emit": 12
   },
   "bounds": [
-    -13.0,
-    -14.27,
-    -2.0,
-    18.0,
-    10.4,
-    7.5
+    -15.3,
+    -14.87,
+    -1.6,
+    15.3,
+    11.3,
+    7.8
   ],
   "signs": {
     "sign__la_nursery": [

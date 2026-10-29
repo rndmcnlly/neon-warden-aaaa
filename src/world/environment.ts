@@ -302,7 +302,7 @@ export class SectorWorld {
       }
       case "nursery": {
         const tender = rig.node(i, "la_nursery_tender");
-        if (tender) tender.position.z = -nursery.tender;
+        if (tender) tender.position.x = nursery.tender * 1.5;
         rig.setGlow(nursery.glow, 0.62);
         break;
       }

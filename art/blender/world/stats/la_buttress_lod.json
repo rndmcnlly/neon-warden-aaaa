@@ -1,8 +1,8 @@
 {
   "asset": "la_buttress_lod",
   "file": "public/models/world/la_buttress_lod.glb",
-  "bytes": 53816,
-  "triangles": 711,
+  "bytes": 52872,
+  "triangles": 717,
   "meshes": 2,
   "nodes": [
     "la_buttress_lod",
@@ -10,16 +10,16 @@
     "la_buttress_lod_lit_emit"
   ],
   "triangles_per_node": {
-    "la_buttress_lod_body": 527,
+    "la_buttress_lod_body": 533,
     "la_buttress_lod_lit_emit": 184
   },
   "bounds": [
-    -31.21,
-    -11.29,
+    -33.83,
+    -10.4,
     -60.0,
-    11.29,
-    11.29,
-    3.8
+    10.4,
+    10.4,
+    3.0
   ],
   "signs": {}
 }

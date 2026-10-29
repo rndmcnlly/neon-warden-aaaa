@@ -40,65 +40,73 @@ def heart_frame(k, scale, z, w, color, lit_color=None):
 
 
 def buttress():
-    """A monumental pier with a flying arch reaching toward the lane (-X)."""
+    """A masonry pier: square, stepped, ribbed, with stone courses for scale,
+    a straight flying buttress toward the lane (-X) and a heart inlaid in its
+    cap. Architecture, not a figure: no rounded shoulders, no cape-like curve."""
     c.reset()
     root = c.root("la_buttress")
     k = Kit(71)
-    k.add(c.prism(c.ngon(11, 8, math.pi / 8), -60, 0, top_scale=0.78), STONE)
-    k.add(c.prism(c.ngon(9.4, 8, math.pi / 8), 0, 2.4, top_scale=0.9), RIB)
-    heart_frame(k, 0.46, 2.4, 1.4, RIB, IVORY)
-    for i in range(10):
-        t = i / 10
-        x0, x1 = -t * 26, -(t + 0.1) * 26
-        z0, z1 = -2 - 22 * t * t, -2 - 22 * (t + 0.1) ** 2
-        k.beam((x0 - 4, 0, z0), (x1 - 4, 0, z1), 5.2 - 2.6 * t, STONE)
-        k.beam((x0 - 4, 0, z0 + 2.4), (x1 - 4, 0, z1 + 2.4), 1.2, RIB)
-    # A maintenance catwalk: tiny railings and lamps give the pier its size.
-    ring = c.ngon(10.6, 16)
-    for i in range(16):
-        a, b = ring[i], ring[(i + 1) % 16]
-        k.add(c.strip(a, b, 1.4, -3.2, -2.9), DARK)
-        if i % 2:
-            k.railing(a, b, -2.9, BRASS, h=1.0, spacing=1.6)
-        if i % 4 == 0:
-            k.light((a[0], a[1], -1.9), IVORY, 1.0, "z", 0.25)
-    k.figure((ring[3][0], ring[3][1], -2.9), "#8c8270")
-    for y in (-8, 8):
-        k.beam((8, y, -40), (8, y, 0), 0.8, RIB)
+    for z0, z1, r in ((-60, -30, 12), (-30, -8, 10.5), (-8, 0, 9)):
+        k.add(c.prism(c.ngon(r, 4, math.pi / 4), z0, z1, top_scale=0.94), STONE)
+        for z in range(int(z0) + 3, int(z1), 3):
+            k.add(c.prism(c.ngon(r * 0.97 + 0.15, 4, math.pi / 4), z, z + 0.35), DARK)
+    for sx, sy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+        k.beam((sx * 9.6, sy * 9.6, -50), (sx * 7.4, sy * 7.4, 0), 1.6, RIB)
+    k.add(c.prism(c.ngon(10, 4, math.pi / 4), 0, 1.6), RIB)
+    heart_frame(k, 0.38, 1.6, 1.2, DARK, IVORY)
+    # Flying buttress: two straight rails with cross ties, stepping down.
+    for y in (-2.2, 2.2):
+        k.beam((-7, y, -1), (-30, y, -22), 1.6, STONE)
+    for t in range(1, 8):
+        x = -7 - t * 23 / 8
+        k.beam((x, -2.2, -1 - t * 21 / 8), (x, 2.2, -1 - t * 21 / 8), 0.9, RIB)
+    k.add(c.prism(c.ngon(4, 4, math.pi / 4), -40, -20), STONE, loc=(-31, 0, 0))
+    # Catwalk ring with railings and lamps: a person-sized edge on a huge pier.
+    ring = c.ngon(9.8, 4, math.pi / 4)
+    for i in range(4):
+        a, b = ring[i], ring[(i + 1) % 4]
+        k.add(c.strip(a, b, 1.2, -4.4, -4.1), DARK)
+        k.railing(a, b, -4.1, BRASS, h=1.0, spacing=1.6)
+        k.light((a[0] * 0.98, a[1] * 0.98, -3.2), IVORY, 1.0, "z", 0.25)
+    k.figure((ring[1][0] * 0.8, ring[1][1] * 0.8, -4.1), "#8c8270")
     k.bake("la_buttress", root)
     return finish("la_buttress")
 
 
 def nursery():
-    """Terraced beds of scout pods in cradles; a tender arm rides the rows."""
+    """A greenhouse bed of scout pods: flat ring-and-core discs (the scouts'
+    own silhouette, in muted colors) in hex rows, glazing arches overhead,
+    irrigation lines, and a tender arm riding the rail."""
     c.reset()
     root = c.root("la_nursery")
     k = Kit(72)
-    for row in range(3):
-        y, z = -6 + row * 6, row * 1.6
-        k.box((26, 6.4, 2), (0, y, z - 1), STONE)
-        k.box((26, 0.5, 0.6), (0, y - 3.25, z - 0.3), RIB)
-        for col in range(4):
-            x = -8 + col * 5.2 + row * 0.6
-            k.add(c.prism(c.ngon(1.9, 8), z, z + 0.5, top_scale=1.25), BRASS, loc=(x, y, 0))
-            k.add(c.prism(c.ngon(1.4, 8), z + 0.5, z + 1.6, top_scale=0.6), POD, loc=(x, y, 0))
-            k.box((1.6, 0.3, 0.2), (x, y, z + 1.7), CORE, lit=True)
-    # Irrigation pipes and the rail the tender rides on.
-    for y in (-3, 3, 9):
-        k.cyl(0.35, 26, (0, y, 2.2), BRASS, n=6, rot=(0, math.pi / 2, 0))
-    for x in (-12.5, 12.5):
-        k.beam((x, -10, 7), (x, 10, 7), 0.8, RIB)
-        k.beam((x, -10, 0), (x, -10, 7), 0.8, RIB)
-        k.beam((x, 10, 0), (x, 10, 7), 0.8, RIB)
-    sign("la_nursery", root, (0, -12.8, 4.4), 12, 2.6, backing="#2a2430", frame=BRASS, kit=k)
-    # The repositioned pass-one tollgate cabinets: dormant, dark, unconnected.
-    k.box((4, 3, 3), (16, -6, 1.5), DARK)
+    k.box((30, 22, 1.6), (0, 0, -0.8), STONE)
+    k.box((30.6, 22.6, 0.4), (0, 0, -0.1), RIB)
+    k.box((27, 19, 0.2), (0, 0, 0.12), "#3a4a46")
+    for row in range(4):
+        for col in range(6):
+            x = -12.5 + col * 5 + (2.5 if row % 2 else 0)
+            y = -7.5 + row * 5
+            if x > 13:
+                continue
+            k.add(c.torus(1.6, 0.35, 16, 4), POD, loc=(x, y, 0.8), scale=(1, 1, 0.8))
+            k.add(c.cylinder(0.7, 0.5, 10), "#55605c", loc=(x, y, 0.6))
+            k.box((1.0, 0.25, 0.15), (x, y, 0.9), CORE, lit=True)
+    for y in (-10, -5, 0, 5, 10):
+        k.cyl(0.18, 27, (0, y - 2.5 if y else -2.5, 0.35), BRASS, n=6, rot=(0, math.pi / 2, 0))
+    # Glazing arches: thin ribs over the bed, a greenhouse silhouette.
+    for x in range(-14, 15, 4):
+        pts = [(x, -11 + 22 * i / 8, 2 + 5 * math.sin(math.pi * i / 8)) for i in range(9)]
+        for a, b in zip(pts, pts[1:]):
+            k.beam(a, b, 0.25, "#8a9a96")
+    k.beam((-15, 0, 7), (15, 0, 7), 0.4, "#8a9a96")
+    sign("la_nursery", root, (0, -13.4, 3.6), 12, 2.6, backing="#2a2430", frame=BRASS, kit=k)
     k.bake("la_nursery", root)
-    tender = c.group("la_nursery_tender", root, (0, 0, 7))
+    tender = c.group("la_nursery_tender", root, (0, 0, 7.4))
     t = Kit(73)
-    t.box((26, 1.6, 1.0), (0, 0, 0), RIB)
-    t.box((2.4, 2.4, 1.6), (0, 0, -1.2), DARK)
-    t.light((0, -0.9, -1.8), IVORY, 1.6, "x", 0.25)
+    t.box((2.4, 22, 0.8), (0, 0, 0), RIB)
+    t.box((2.2, 2.2, 1.4), (0, 0, -1.1), DARK)
+    t.light((0, -1.2, -1.6), IVORY, 1.4, "x", 0.25)
     t.bake("la_nursery_tender", tender)
     return finish("la_nursery")
 
