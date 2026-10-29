@@ -62,3 +62,15 @@ segment, work moved to GPT-6.1 Sol because the Claude subscription hit its
 5-hour usage window; that window was exhausted largely by an unrelated,
 ambitious project running in parallel, not by Neon Warden alone. Credits
 name both models rather than implying one did everything.
+
+## Local energy, roughly (Adam's observation, October 29)
+
+Adam's laptop (MacBook Pro M3 Max) saw its heaviest day of CPU and GPU use
+ever, but with a low duty cycle: peaks near 120 W during local inference
+(TTS, ASR, Stable Audio, Blender, frame-stepped captures) against about 8 W
+while idle, blocked on remote inference or waiting for human review. Over
+roughly 17 hours, any plausible average between 15 and 40 W puts local
+energy at about 0.25–0.7 kWh (unmeasured; an order-of-magnitude estimate).
+The larger, invisible share is remote: datacenter inference for the
+orchestration agents and judges, which this project cannot measure. A
+public page should say so rather than present local watts as the footprint.
