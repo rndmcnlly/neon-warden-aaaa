@@ -31,8 +31,14 @@ void main() {
 }
 `;
 
+// Faint and saturated by design: the cone is a cue, not a light source. The
+// wave-3 version summed a 10% fill, 50% sides and a 60% band of pale scan
+// cyan additively, which read as a near-white wedge over the playfield. Now
+// the body is a low-opacity deep cyan and only the sweep's leading edge is
+// bright (HDR, so it alone blooms), with a short faint tail behind it.
 const beamFragment = /* glsl */ `
 uniform vec3 uColor;
+uniform vec3 uBody;
 uniform float uRange;
 uniform float uHalf;
 uniform float uSweep;
@@ -41,13 +47,15 @@ varying vec2 vLocal;
 void main() {
   float r = length(vLocal) / uRange;
   float a = abs(atan(vLocal.x, vLocal.y)) / uHalf;   // 0 center, 1 edge
-  float edge = smoothstep(0.86, 0.98, a) * (1.0 - smoothstep(0.98, 1.0, a));
-  float fill = 0.10 * (1.0 - r);
-  // A band sweeping outward, like a sonar ping.
-  float band = exp(-pow((r - uSweep) * 12.0, 2.0)) * (1.0 - r * 0.6);
+  float sides = smoothstep(0.9, 0.99, a) * (1.0 - smoothstep(0.99, 1.0, a));
+  float fill = 0.035 * (1.0 - r);
+  float d = r - uSweep;
+  float lead = exp(-pow(d * 45.0, 2.0));
+  float tail = d < 0.0 ? exp(d * 9.0) * 0.12 : 0.0;
   float fadeOut = 1.0 - smoothstep(0.85, 1.0, r);
-  float v = (fill + edge * 0.5 + band * 0.6) * fadeOut;
-  gl_FragColor = vec4(uColor * v * uOpacity, 1.0);
+  vec3 body = uBody * (fill + sides * 0.12 + tail);
+  vec3 c = (body + uColor * lead * (1.0 - r * 0.5)) * fadeOut;
+  gl_FragColor = vec4(c * uOpacity, 1.0);
 }
 `;
 
@@ -63,7 +71,8 @@ export class ScanBeam {
       vertexShader: beamVertex,
       fragmentShader: beamFragment,
       uniforms: {
-        uColor: { value: hdr(ROLE.scan, 0.8) },
+        uColor: { value: hdr(ROLE.scan, 1.4) },
+        uBody: { value: new THREE.Color(0x1aa6c8) },
         uRange: { value: 1 },
         uHalf: { value: 0.3 },
         uSweep: { value: 0 },
