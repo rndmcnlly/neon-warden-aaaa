@@ -2,7 +2,13 @@ import { assert, assertEquals } from "@std/assert";
 import { lineId } from "../src/contracts/index.ts";
 import { DUCK_TUNING, Ducker } from "../src/audio/ducker.ts";
 import { StagedLoader } from "../src/audio/loader.ts";
-import { sfxUrls, VoCatalog } from "../src/audio/manifests.ts";
+import {
+  sfxUrls,
+  VO_LEAD_KEEP_S,
+  VoCatalog,
+  voStartS,
+} from "../src/audio/manifests.ts";
+import { onsetFromSamples } from "../scripts/vo_onset.ts";
 import { chunkSubtitle } from "../src/director/subtitles.ts";
 
 Deno.test("voice ducks music until the last voice ends", () => {
@@ -38,8 +44,56 @@ Deno.test("VO falls back to English when a language is missing", () => {
     lang: "en",
     url: "vo/en/a.wav",
     durationMs: 2000,
+    startS: 0,
   });
   assertEquals(vo.resolve(lineId("missing"), "en"), undefined);
+});
+
+Deno.test("VO skips measured lead-in silence in playback, duration and words", () => {
+  const words = [
+    { text: "Hello", charStart: 0, charEnd: 5, startS: 0.72, endS: 0.96 },
+    { text: "pilot", charStart: 6, charEnd: 11, startS: 1.2, endS: 1.5 },
+  ];
+  const vo = new VoCatalog({
+    lines: {
+      a: {
+        speaker: "tutorial_ai",
+        scene: "tutorial",
+        langs: {
+          en: { file: "en/a.ogg", duration: 2, words, onsetS: 0.64 },
+          es: { file: "es/a.ogg", duration: 2, onsetS: 0.05 },
+        },
+      },
+    },
+  });
+  const startS = 0.64 - VO_LEAD_KEEP_S;
+  const en = vo.resolve(lineId("a"), "en")!;
+  assertEquals(en.startS, startS);
+  assertEquals(Math.round(en.durationMs), Math.round((2 - startS) * 1000));
+  const shifted = vo.words(lineId("a"), "en")!;
+  // Word timing follows the playback clock: the first word lands just after
+  // the kept breath, and every word moves by the same amount.
+  assertEquals(Math.round(shifted[0].startS * 100), 20);
+  assertEquals(
+    Math.round((shifted[1].startS - shifted[0].startS) * 100),
+    Math.round((1.2 - 0.72) * 100),
+  );
+  // Same list object every call: the per-frame subtitle lookup stays cheap.
+  assertEquals(vo.words(lineId("a"), "en"), shifted);
+  // An onset inside the kept breath is never trimmed, nor is a missing one.
+  assertEquals(vo.resolve(lineId("a"), "es")!.startS, 0);
+  assertEquals(voStartS({}), 0);
+});
+
+Deno.test("VO onset: first sustained sound, clicks and silence ignored", () => {
+  const rate = 16000;
+  const samples = new Float32Array(rate);
+  samples[800] = 0.9; // a lone click at 50 ms is not speech
+  for (let i = 0.4 * rate; i < rate; i++) {
+    samples[i] = 0.1 * Math.sin(i * 0.2);
+  }
+  assertEquals(onsetFromSamples(samples, rate), 0.4);
+  assertEquals(onsetFromSamples(new Float32Array(rate), rate), 0);
 });
 
 Deno.test("unpicked sfx roles are silent, not errors", () => {

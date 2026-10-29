@@ -197,7 +197,8 @@
           "startS": 8.96,
           "endS": 9.28
          }
-        ]
+        ],
+        "onsetS": 0.46
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_hello_001.ogg",
@@ -408,7 +409,8 @@
           "startS": 10,
           "endS": 10.32
          }
-        ]
+        ],
+        "onsetS": 0.25
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_hello_001.ogg",
@@ -689,7 +691,8 @@
           "startS": 8.16,
           "endS": 8.24
          }
-        ]
+        ],
+        "onsetS": 0.23
        }
       },
       "tut_contract_001": {
@@ -874,7 +877,8 @@
           "startS": 10,
           "endS": 10.56
          }
-        ]
+        ],
+        "onsetS": 0.4
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_contract_001.ogg",
@@ -1085,7 +1089,8 @@
           "startS": 11.28,
           "endS": 11.84
          }
-        ]
+        ],
+        "onsetS": 0.49
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_contract_001.ogg",
@@ -1345,7 +1350,8 @@
           "startS": 7.76,
           "endS": 7.84
          }
-        ]
+        ],
+        "onsetS": 0.41
        }
       },
       "tut_move_000": {
@@ -1488,7 +1494,8 @@
           "startS": 6.16,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.52
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_move_000.ogg",
@@ -1650,7 +1657,8 @@
           "startS": 7.2,
           "endS": 7.76
          }
-        ]
+        ],
+        "onsetS": 0.11
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_move_000.ogg",
@@ -1847,7 +1855,8 @@
           "startS": 4.96,
           "endS": 5.28
          }
-        ]
+        ],
+        "onsetS": 0.27
        }
       },
       "tut_move_001": {
@@ -2032,7 +2041,8 @@
           "startS": 8.72,
           "endS": 9.04
          }
-        ]
+        ],
+        "onsetS": 0.83
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_move_001.ogg",
@@ -2194,7 +2204,8 @@
           "startS": 11.2,
           "endS": 11.36
          }
-        ]
+        ],
+        "onsetS": 0.15
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_move_001.ogg",
@@ -2440,7 +2451,8 @@
           "startS": 8.48,
           "endS": 8.88
          }
-        ]
+        ],
+        "onsetS": 0.32
        }
       },
       "tut_move_002": {
@@ -2583,7 +2595,8 @@
           "startS": 6.72,
           "endS": 7.04
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_move_002.ogg",
@@ -2731,7 +2744,8 @@
           "startS": 9.28,
           "endS": 9.92
          }
-        ]
+        ],
+        "onsetS": 0.14
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_move_002.ogg",
@@ -2970,7 +2984,8 @@
           "startS": 6.88,
           "endS": 7.28
          }
-        ]
+        ],
+        "onsetS": 0.5
        }
       },
       "tut_hitbox_001": {
@@ -3162,7 +3177,8 @@
           "startS": 7.92,
           "endS": 8.08
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_hitbox_001.ogg",
@@ -3352,7 +3368,8 @@
           "startS": 9.84,
           "endS": 10
          }
-        ]
+        ],
+        "onsetS": 0.48
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_hitbox_001.ogg",
@@ -3619,7 +3636,8 @@
           "startS": 7.44,
           "endS": 7.68
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "tut_focus_001": {
@@ -3783,7 +3801,8 @@
           "startS": 9.36,
           "endS": 9.68
          }
-        ]
+        ],
+        "onsetS": 0.32
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_focus_001.ogg",
@@ -3966,7 +3985,8 @@
           "startS": 11.92,
           "endS": 12.16
          }
-        ]
+        ],
+        "onsetS": 0.37
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_focus_001.ogg",
@@ -4317,7 +4337,8 @@
           "startS": 10.72,
           "endS": 11.04
          }
-        ]
+        ],
+        "onsetS": 0.23
        }
       },
       "tut_fire_001": {
@@ -4460,7 +4481,8 @@
           "startS": 6.96,
           "endS": 7.12
          }
-        ]
+        ],
+        "onsetS": 0.47
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_fire_001.ogg",
@@ -4615,7 +4637,8 @@
           "startS": 10.16,
           "endS": 10.56
          }
-        ]
+        ],
+        "onsetS": 0.66
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_fire_001.ogg",
@@ -4833,7 +4856,8 @@
           "startS": 6.72,
           "endS": 7.04
          }
-        ]
+        ],
+        "onsetS": 0.26
        }
       },
       "tut_fire_002": {
@@ -5039,7 +5063,8 @@
           "startS": 9.36,
           "endS": 9.68
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_fire_002.ogg",
@@ -5257,7 +5282,8 @@
           "startS": 13.92,
           "endS": 14.48
          }
-        ]
+        ],
+        "onsetS": 0.79
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_fire_002.ogg",
@@ -5601,7 +5627,8 @@
           "startS": 10.72,
           "endS": 10.8
          }
-        ]
+        ],
+        "onsetS": 0.12
        }
       },
       "tut_autofire_001": {
@@ -5779,7 +5806,8 @@
           "startS": 7.84,
           "endS": 8.48
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_autofire_001.ogg",
@@ -5990,7 +6018,8 @@
           "startS": 12.16,
           "endS": 12.96
          }
-        ]
+        ],
+        "onsetS": 0.29
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_autofire_001.ogg",
@@ -6320,7 +6349,8 @@
           "startS": 8.8,
           "endS": 9.12
          }
-        ]
+        ],
+        "onsetS": 0.2
        }
       },
       "tut_target_001": {
@@ -6449,7 +6479,8 @@
           "startS": 5.28,
           "endS": 6
          }
-        ]
+        ],
+        "onsetS": 0.46
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_target_001.ogg",
@@ -6590,7 +6621,8 @@
           "startS": 7.2,
           "endS": 8
          }
-        ]
+        ],
+        "onsetS": 0.22
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_target_001.ogg",
@@ -6801,7 +6833,8 @@
           "startS": 6.08,
           "endS": 6.4
          }
-        ]
+        ],
+        "onsetS": 0.77
        }
       },
       "tut_target_002": {
@@ -6923,7 +6956,8 @@
           "startS": 4.96,
           "endS": 5.28
          }
-        ]
+        ],
+        "onsetS": 0.12
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_target_002.ogg",
@@ -7057,7 +7091,8 @@
           "startS": 7.28,
           "endS": 7.44
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_target_002.ogg",
@@ -7282,7 +7317,8 @@
           "startS": 6.24,
           "endS": 6.56
          }
-        ]
+        ],
+        "onsetS": 0.24
        }
       },
       "tut_tap_001": {
@@ -7488,7 +7524,8 @@
           "startS": 9.2,
           "endS": 9.36
          }
-        ]
+        ],
+        "onsetS": 0.2
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_tap_001.ogg",
@@ -7692,7 +7729,8 @@
           "startS": 13.12,
           "endS": 13.2
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_tap_001.ogg",
@@ -8001,7 +8039,8 @@
           "startS": 10.08,
           "endS": 10.32
          }
-        ]
+        ],
+        "onsetS": 0.28
        }
       },
       "tut_stream_001": {
@@ -8193,7 +8232,8 @@
           "startS": 9.12,
           "endS": 9.36
          }
-        ]
+        ],
+        "onsetS": 0.64
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_stream_001.ogg",
@@ -8397,7 +8437,8 @@
           "startS": 11.76,
           "endS": 12.72
          }
-        ]
+        ],
+        "onsetS": 0.21
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_stream_001.ogg",
@@ -8685,7 +8726,8 @@
           "startS": 8,
           "endS": 8.32
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "tut_rule_001": {
@@ -8821,7 +8863,8 @@
           "startS": 5.76,
           "endS": 5.92
          }
-        ]
+        ],
+        "onsetS": 0.82
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_rule_001.ogg",
@@ -8948,7 +8991,8 @@
           "startS": 8.48,
           "endS": 9.2
          }
-        ]
+        ],
+        "onsetS": 1.03
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_rule_001.ogg",
@@ -9152,7 +9196,8 @@
           "startS": 6.88,
           "endS": 7.2
          }
-        ]
+        ],
+        "onsetS": 0.24
        }
       },
       "tut_rest_001": {
@@ -9344,7 +9389,8 @@
           "startS": 9.12,
           "endS": 9.68
          }
-        ]
+        ],
+        "onsetS": 0.21
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_rest_001.ogg",
@@ -9562,7 +9608,8 @@
           "startS": 11.76,
           "endS": 11.84
          }
-        ]
+        ],
+        "onsetS": 0.66
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_rest_001.ogg",
@@ -9885,7 +9932,8 @@
           "startS": 10.48,
           "endS": 10.72
          }
-        ]
+        ],
+        "onsetS": 0.88
        }
       },
       "tut_scan_001": {
@@ -10084,7 +10132,8 @@
           "startS": 8.88,
           "endS": 9.44
          }
-        ]
+        ],
+        "onsetS": 0.62
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_scan_001.ogg",
@@ -10281,7 +10330,8 @@
           "startS": 10.64,
           "endS": 11.36
          }
-        ]
+        ],
+        "onsetS": 0.66
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_scan_001.ogg",
@@ -10618,7 +10668,8 @@
           "startS": 9.92,
           "endS": 10.16
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "tut_intel_001": {
@@ -10866,7 +10917,8 @@
           "startS": 11.92,
           "endS": 12.48
          }
-        ]
+        ],
+        "onsetS": 0.17
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_intel_001.ogg",
@@ -11126,7 +11178,8 @@
           "startS": 14.88,
           "endS": 15.52
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_intel_001.ogg",
@@ -11540,7 +11593,8 @@
           "startS": 13.12,
           "endS": 13.44
          }
-        ]
+        ],
+        "onsetS": 0.15
        }
       },
       "tut_writ_001": {
@@ -11872,7 +11926,8 @@
           "startS": 13.6,
           "endS": 14.08
          }
-        ]
+        ],
+        "onsetS": 0.22
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_writ_001.ogg",
@@ -12188,7 +12243,8 @@
           "startS": 17.6,
           "endS": 18.16
          }
-        ]
+        ],
+        "onsetS": 0.53
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_writ_001.ogg",
@@ -12651,7 +12707,8 @@
           "startS": 12.08,
           "endS": 12.16
          }
-        ]
+        ],
+        "onsetS": 0.13
        }
       },
       "tut_parts_001": {
@@ -12801,7 +12858,8 @@
           "startS": 6.24,
           "endS": 6.8
          }
-        ]
+        ],
+        "onsetS": 0.17
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_parts_001.ogg",
@@ -12984,7 +13042,8 @@
           "startS": 10.24,
           "endS": 10.8
          }
-        ]
+        ],
+        "onsetS": 0.61
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_parts_001.ogg",
@@ -13223,7 +13282,8 @@
           "startS": 7.04,
           "endS": 7.36
          }
-        ]
+        ],
+        "onsetS": 0.22
        }
       },
       "tut_disarm_001": {
@@ -13415,7 +13475,8 @@
           "startS": 8.16,
           "endS": 8.88
          }
-        ]
+        ],
+        "onsetS": 0.19
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_disarm_001.ogg",
@@ -13633,7 +13694,8 @@
           "startS": 11.12,
           "endS": 11.84
          }
-        ]
+        ],
+        "onsetS": 0.65
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_disarm_001.ogg",
@@ -13970,7 +14032,8 @@
           "startS": 9.12,
           "endS": 9.44
          }
-        ]
+        ],
+        "onsetS": 0.22
        }
       },
       "tut_graze_001": {
@@ -14204,7 +14267,8 @@
           "startS": 10.32,
           "endS": 10.72
          }
-        ]
+        ],
+        "onsetS": 0.19
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_graze_001.ogg",
@@ -14471,7 +14535,8 @@
           "startS": 13.44,
           "endS": 14.08
          }
-        ]
+        ],
+        "onsetS": 0.16
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_graze_001.ogg",
@@ -14850,7 +14915,8 @@
           "startS": 10.96,
           "endS": 11.12
          }
-        ]
+        ],
+        "onsetS": 0.26
        }
       },
       "tut_graze_002": {
@@ -14937,7 +15003,8 @@
           "startS": 4.72,
           "endS": 4.8
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_graze_002.ogg",
@@ -15022,7 +15089,8 @@
           "startS": 6.16,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.67
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_graze_002.ogg",
@@ -15177,7 +15245,8 @@
           "startS": 4.16,
           "endS": 4.48
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "tut_rate_001": {
@@ -15446,7 +15515,8 @@
           "startS": 11.76,
           "endS": 11.92
          }
-        ]
+        ],
+        "onsetS": 0.1
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_rate_001.ogg",
@@ -15720,7 +15790,8 @@
           "startS": 13.68,
           "endS": 14.08
          }
-        ]
+        ],
+        "onsetS": 1.03
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_rate_001.ogg",
@@ -16169,7 +16240,8 @@
           "startS": 13.76,
           "endS": 14
          }
-        ]
+        ],
+        "onsetS": 0.14
        }
       },
       "tut_ratebreak_001": {
@@ -16347,7 +16419,8 @@
           "startS": 7.2,
           "endS": 7.68
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_ratebreak_001.ogg",
@@ -16537,7 +16610,8 @@
           "startS": 10.32,
           "endS": 10.72
          }
-        ]
+        ],
+        "onsetS": 0.69
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_ratebreak_001.ogg",
@@ -16790,7 +16864,8 @@
           "startS": 6.96,
           "endS": 7.2
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "tut_lives_001": {
@@ -16947,7 +17022,8 @@
           "startS": 7.28,
           "endS": 7.44
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_lives_001.ogg",
@@ -17102,7 +17178,8 @@
           "startS": 9.36,
           "endS": 9.6
          }
-        ]
+        ],
+        "onsetS": 0.41
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_lives_001.ogg",
@@ -17348,7 +17425,8 @@
           "startS": 6.88,
           "endS": 7.12
          }
-        ]
+        ],
+        "onsetS": 0.18
        }
       },
       "tut_continue_001": {
@@ -17533,7 +17611,8 @@
           "startS": 8,
           "endS": 8.16
          }
-        ]
+        ],
+        "onsetS": 0.13
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_continue_001.ogg",
@@ -17716,7 +17795,8 @@
           "startS": 10.16,
           "endS": 10.88
          }
-        ]
+        ],
+        "onsetS": 0.64
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_continue_001.ogg",
@@ -17997,7 +18077,8 @@
           "startS": 8.16,
           "endS": 8.48
          }
-        ]
+        ],
+        "onsetS": 0.41
        }
       },
       "tut_pickup_001": {
@@ -18147,7 +18228,8 @@
           "startS": 7.44,
           "endS": 8
          }
-        ]
+        ],
+        "onsetS": 0.13
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_pickup_001.ogg",
@@ -18351,7 +18433,8 @@
           "startS": 11.12,
           "endS": 11.6
          }
-        ]
+        ],
+        "onsetS": 0.33
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_pickup_001.ogg",
@@ -18632,7 +18715,8 @@
           "startS": 9.6,
           "endS": 10
          }
-        ]
+        ],
+        "onsetS": 0.67
        }
       },
       "tut_hangar_001": {
@@ -18873,7 +18957,8 @@
           "startS": 11.2,
           "endS": 11.84
          }
-        ]
+        ],
+        "onsetS": 0.12
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_hangar_001.ogg",
@@ -19161,7 +19246,8 @@
           "startS": 14.8,
           "endS": 15.36
          }
-        ]
+        ],
+        "onsetS": 0.11
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_hangar_001.ogg",
@@ -19554,7 +19640,8 @@
           "startS": 12,
           "endS": 12.24
          }
-        ]
+        ],
+        "onsetS": 0.19
        }
       },
       "tut_wink_001": {
@@ -19711,7 +19798,8 @@
           "startS": 7.68,
           "endS": 7.92
          }
-        ]
+        ],
+        "onsetS": 0.28
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_wink_001.ogg",
@@ -19852,7 +19940,8 @@
           "startS": 10.72,
           "endS": 11.52
          }
-        ]
+        ],
+        "onsetS": 0.69
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_wink_001.ogg",
@@ -20133,7 +20222,8 @@
           "startS": 8.8,
           "endS": 9.2
          }
-        ]
+        ],
+        "onsetS": 0.62
        }
       },
       "tut_review_001": {
@@ -20360,7 +20450,8 @@
           "startS": 9.2,
           "endS": 9.6
          }
-        ]
+        ],
+        "onsetS": 0.12
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_review_001.ogg",
@@ -20578,7 +20669,8 @@
           "startS": 13.28,
           "endS": 13.84
          }
-        ]
+        ],
+        "onsetS": 0.16
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_review_001.ogg",
@@ -20887,7 +20979,8 @@
           "startS": 10,
           "endS": 10.32
          }
-        ]
+        ],
+        "onsetS": 0.15
        }
       },
       "tut_review_002": {
@@ -21114,7 +21207,8 @@
           "startS": 10.24,
           "endS": 10.64
          }
-        ]
+        ],
+        "onsetS": 0.14
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_review_002.ogg",
@@ -21346,7 +21440,8 @@
           "startS": 14.96,
           "endS": 15.36
          }
-        ]
+        ],
+        "onsetS": 0.31
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_review_002.ogg",
@@ -21683,7 +21778,8 @@
           "startS": 10.8,
           "endS": 11.12
          }
-        ]
+        ],
+        "onsetS": 0.27
        }
       },
       "tut_route_001": {
@@ -21791,7 +21887,8 @@
           "startS": 5.92,
           "endS": 6
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_route_001.ogg",
@@ -21918,7 +22015,8 @@
           "startS": 10.4,
           "endS": 10.56
          }
-        ]
+        ],
+        "onsetS": 0.65
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_route_001.ogg",
@@ -22108,7 +22206,8 @@
           "startS": 7.2,
           "endS": 7.6
          }
-        ]
+        ],
+        "onsetS": 0.21
        }
       },
       "tut_warden_001": {
@@ -22265,7 +22364,8 @@
           "startS": 7.36,
           "endS": 7.52
          }
-        ]
+        ],
+        "onsetS": 0.14
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_warden_001.ogg",
@@ -22420,7 +22520,8 @@
           "startS": 9.76,
           "endS": 10.72
          }
-        ]
+        ],
+        "onsetS": 0.65
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_warden_001.ogg",
@@ -22659,7 +22760,8 @@
           "startS": 6.88,
           "endS": 7.2
          }
-        ]
+        ],
+        "onsetS": 0.18
        }
       },
       "tut_warden_002": {
@@ -22767,7 +22869,8 @@
           "startS": 4.32,
           "endS": 4.96
          }
-        ]
+        ],
+        "onsetS": 0.19
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_warden_002.ogg",
@@ -22894,7 +22997,8 @@
           "startS": 6.16,
           "endS": 6.88
          }
-        ]
+        ],
+        "onsetS": 0.43
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_warden_002.ogg",
@@ -23056,7 +23160,8 @@
           "startS": 4.24,
           "endS": 4.64
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "tut_done_001": {
@@ -23199,7 +23304,8 @@
           "startS": 7.2,
           "endS": 7.84
          }
-        ]
+        ],
+        "onsetS": 0.13
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_done_001.ogg",
@@ -23368,7 +23474,8 @@
           "startS": 9.92,
           "endS": 10.32
          }
-        ]
+        ],
+        "onsetS": 0.16
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_done_001.ogg",
@@ -23614,7 +23721,8 @@
           "startS": 7.84,
           "endS": 8.08
          }
-        ]
+        ],
+        "onsetS": 0.15
        }
       },
       "tut_idle_001": {
@@ -23743,7 +23851,8 @@
           "startS": 4.96,
           "endS": 5.12
          }
-        ]
+        ],
+        "onsetS": 0.24
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_idle_001.ogg",
@@ -23863,7 +23972,8 @@
           "startS": 7.36,
           "endS": 8
          }
-        ]
+        ],
+        "onsetS": 0.45
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_idle_001.ogg",
@@ -23976,7 +24086,8 @@
           "startS": 3.84,
           "endS": 3.92
          }
-        ]
+        ],
+        "onsetS": 0.14
        }
       },
       "tut_skip_001": {
@@ -24098,7 +24209,8 @@
           "startS": 6,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.46
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_skip_001.ogg",
@@ -24218,7 +24330,8 @@
           "startS": 7.28,
           "endS": 7.36
          }
-        ]
+        ],
+        "onsetS": 0.69
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_skip_001.ogg",
@@ -24443,7 +24556,8 @@
           "startS": 6.64,
           "endS": 6.96
          }
-        ]
+        ],
+        "onsetS": 0.59
        }
       },
       "tut_skip_002": {
@@ -24558,7 +24672,8 @@
           "startS": 5.92,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.31
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/tut_skip_002.ogg",
@@ -24685,7 +24800,8 @@
           "startS": 7.28,
           "endS": 7.84
          }
-        ]
+        ],
+        "onsetS": 0.59
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/tut_skip_002.ogg",
@@ -24861,7 +24977,8 @@
           "startS": 5.36,
           "endS": 5.6
          }
-        ]
+        ],
+        "onsetS": 0.13
        }
       },
       "sec1_intro_001": {
@@ -24948,7 +25065,8 @@
           "startS": 5.12,
           "endS": 5.92
          }
-        ]
+        ],
+        "onsetS": 1.03
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/sec1_intro_001.ogg",
@@ -25047,7 +25165,8 @@
           "startS": 6.48,
           "endS": 7.36
          }
-        ]
+        ],
+        "onsetS": 0.45
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/sec1_intro_001.ogg",
@@ -25244,7 +25363,8 @@
           "startS": 6.64,
           "endS": 6.96
          }
-        ]
+        ],
+        "onsetS": 0.68
        }
       },
       "sec2_intro_001": {
@@ -25408,7 +25528,8 @@
           "startS": 9.04,
           "endS": 9.2
          }
-        ]
+        ],
+        "onsetS": 0.14
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/sec2_intro_001.ogg",
@@ -25577,7 +25698,8 @@
           "startS": 10.96,
           "endS": 11.52
          }
-        ]
+        ],
+        "onsetS": 0.64
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/sec2_intro_001.ogg",
@@ -25900,7 +26022,8 @@
           "startS": 9.6,
           "endS": 9.92
          }
-        ]
+        ],
+        "onsetS": 0.34
        }
       },
       "sec3_intro_001": {
@@ -26043,7 +26166,8 @@
           "startS": 8.4,
           "endS": 9.12
          }
-        ]
+        ],
+        "onsetS": 1.02
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/sec3_intro_001.ogg",
@@ -26212,7 +26336,8 @@
           "startS": 11.52,
           "endS": 11.92
          }
-        ]
+        ],
+        "onsetS": 0.55
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/sec3_intro_001.ogg",
@@ -26500,7 +26625,8 @@
           "startS": 8.64,
           "endS": 8.8
          }
-        ]
+        ],
+        "onsetS": 0.2
        }
       },
       "sec4_intro_001": {
@@ -26664,7 +26790,8 @@
           "startS": 8.48,
           "endS": 8.56
          }
-        ]
+        ],
+        "onsetS": 0.37
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/sec4_intro_001.ogg",
@@ -26861,7 +26988,8 @@
           "startS": 11.68,
           "endS": 11.92
          }
-        ]
+        ],
+        "onsetS": 0.36
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/sec4_intro_001.ogg",
@@ -27156,7 +27284,8 @@
           "startS": 10.64,
           "endS": 11.04
          }
-        ]
+        ],
+        "onsetS": 0.72
        }
       },
       "sec5_intro_001": {
@@ -27327,7 +27456,8 @@
           "startS": 7.28,
           "endS": 7.6
          }
-        ]
+        ],
+        "onsetS": 0.31
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/sec5_intro_001.ogg",
@@ -27496,7 +27626,8 @@
           "startS": 9.76,
           "endS": 10
          }
-        ]
+        ],
+        "onsetS": 0.43
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/sec5_intro_001.ogg",
@@ -27777,7 +27908,8 @@
           "startS": 8.96,
           "endS": 9.2
          }
-        ]
+        ],
+        "onsetS": 0.5
        }
       },
       "amb_fight_001": {
@@ -27885,7 +28017,8 @@
           "startS": 4.24,
           "endS": 4.96
          }
-        ]
+        ],
+        "onsetS": 0.13
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_fight_001.ogg",
@@ -27998,7 +28131,8 @@
           "startS": 5.6,
           "endS": 6.48
          }
-        ]
+        ],
+        "onsetS": 0.37
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_fight_001.ogg",
@@ -28216,7 +28350,8 @@
           "startS": 5.52,
           "endS": 5.76
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "amb_fight_003": {
@@ -28310,7 +28445,8 @@
           "startS": 3.84,
           "endS": 4.32
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_fight_003.ogg",
@@ -28416,7 +28552,8 @@
           "startS": 5.92,
           "endS": 6.48
          }
-        ]
+        ],
+        "onsetS": 0.55
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_fight_003.ogg",
@@ -28571,7 +28708,8 @@
           "startS": 4.24,
           "endS": 4.56
          }
-        ]
+        ],
+        "onsetS": 0.67
        }
       },
       "amb_fight_004": {
@@ -28651,7 +28789,8 @@
           "startS": 4.48,
           "endS": 5.12
          }
-        ]
+        ],
+        "onsetS": 0.41
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_fight_004.ogg",
@@ -28764,7 +28903,8 @@
           "startS": 6.24,
           "endS": 7.12
          }
-        ]
+        ],
+        "onsetS": 0.4
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_fight_004.ogg",
@@ -28940,7 +29080,8 @@
           "startS": 5.6,
           "endS": 5.92
          }
-        ]
+        ],
+        "onsetS": 0.95
        }
       },
       "amb_fight_005": {
@@ -29069,7 +29210,8 @@
           "startS": 5.44,
           "endS": 5.92
          }
-        ]
+        ],
+        "onsetS": 0.46
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_fight_005.ogg",
@@ -29189,7 +29331,8 @@
           "startS": 6,
           "endS": 6.56
          }
-        ]
+        ],
+        "onsetS": 0.25
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_fight_005.ogg",
@@ -29400,7 +29543,8 @@
           "startS": 5.52,
           "endS": 5.84
          }
-        ]
+        ],
+        "onsetS": 0.37
        }
       },
       "amb_nofire_001": {
@@ -29501,7 +29645,8 @@
           "startS": 5.36,
           "endS": 5.6
          }
-        ]
+        ],
+        "onsetS": 0.45
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_nofire_001.ogg",
@@ -29607,7 +29752,8 @@
           "startS": 6.48,
           "endS": 7.28
          }
-        ]
+        ],
+        "onsetS": 0.37
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_nofire_001.ogg",
@@ -29804,7 +29950,8 @@
           "startS": 5.68,
           "endS": 6
          }
-        ]
+        ],
+        "onsetS": 0.21
        }
       },
       "amb_nofire_002": {
@@ -29884,7 +30031,8 @@
           "startS": 3.2,
           "endS": 3.92
          }
-        ]
+        ],
+        "onsetS": 0.27
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_nofire_002.ogg",
@@ -29962,7 +30110,8 @@
           "startS": 4.4,
           "endS": 4.56
          }
-        ]
+        ],
+        "onsetS": 0.42
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_nofire_002.ogg",
@@ -30096,7 +30245,8 @@
           "startS": 3.36,
           "endS": 3.6
          }
-        ]
+        ],
+        "onsetS": 0.13
        }
       },
       "amb_nofire_003": {
@@ -30197,7 +30347,8 @@
           "startS": 2.96,
           "endS": 3.6
          }
-        ]
+        ],
+        "onsetS": 0.2
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_nofire_003.ogg",
@@ -30296,7 +30447,8 @@
           "startS": 4.24,
           "endS": 5.2
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_nofire_003.ogg",
@@ -30423,7 +30575,8 @@
           "startS": 3.36,
           "endS": 3.68
          }
-        ]
+        ],
+        "onsetS": 0.23
        }
       },
       "amb_nofire_004": {
@@ -30524,7 +30677,8 @@
           "startS": 4.88,
           "endS": 5.04
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/amb_nofire_004.ogg",
@@ -30630,7 +30784,8 @@
           "startS": 5.52,
           "endS": 6.16
          }
-        ]
+        ],
+        "onsetS": 0.77
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/amb_nofire_004.ogg",
@@ -30799,7 +30954,8 @@
           "startS": 5.28,
           "endS": 5.52
          }
-        ]
+        ],
+        "onsetS": 0.57
        }
       },
       "bark_lifelost_001": {
@@ -30879,7 +31035,8 @@
           "startS": 3.44,
           "endS": 4
          }
-        ]
+        ],
+        "onsetS": 0.37
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/bark_lifelost_001.ogg",
@@ -30985,7 +31142,8 @@
           "startS": 6.32,
           "endS": 6.8
          }
-        ]
+        ],
+        "onsetS": 0.55
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/bark_lifelost_001.ogg",
@@ -31098,7 +31256,8 @@
           "startS": 4.16,
           "endS": 4.48
          }
-        ]
+        ],
+        "onsetS": 0.19
        }
       },
       "bark_shield_001": {
@@ -31206,7 +31365,8 @@
           "startS": 4.8,
           "endS": 5.44
          }
-        ]
+        ],
+        "onsetS": 0.46
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/bark_shield_001.ogg",
@@ -31340,7 +31500,8 @@
           "startS": 7.36,
           "endS": 8
          }
-        ]
+        ],
+        "onsetS": 0.43
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/bark_shield_001.ogg",
@@ -31488,7 +31649,8 @@
           "startS": 4.8,
           "endS": 5.2
          }
-        ]
+        ],
+        "onsetS": 0.37
        }
       },
       "bark_gameover_001": {
@@ -31575,7 +31737,8 @@
           "startS": 3.6,
           "endS": 4.32
          }
-        ]
+        ],
+        "onsetS": 0.25
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/bark_gameover_001.ogg",
@@ -31660,7 +31823,8 @@
           "startS": 5.12,
           "endS": 6.08
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/bark_gameover_001.ogg",
@@ -31815,7 +31979,8 @@
           "startS": 5.12,
           "endS": 5.52
          }
-        ]
+        ],
+        "onsetS": 0.2
        }
       },
       "flash_ai_001": {
@@ -31944,7 +32109,8 @@
           "startS": 5.92,
           "endS": 6.56
          }
-        ]
+        ],
+        "onsetS": 0.21
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/flash_ai_001.ogg",
@@ -32092,7 +32258,8 @@
           "startS": 8.08,
           "endS": 8.16
          }
-        ]
+        ],
+        "onsetS": 0.45
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/flash_ai_001.ogg",
@@ -32317,7 +32484,8 @@
           "startS": 7.52,
           "endS": 7.76
          }
-        ]
+        ],
+        "onsetS": 1.09
        }
       },
       "flash_rec_001": {
@@ -32404,7 +32572,8 @@
           "startS": 5.12,
           "endS": 5.6
          }
-        ]
+        ],
+        "onsetS": 0.15
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/flash_rec_001.ogg",
@@ -32496,7 +32665,8 @@
           "startS": 9.04,
           "endS": 9.6
          }
-        ]
+        ],
+        "onsetS": 1.03
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/flash_rec_001.ogg",
@@ -32658,7 +32828,8 @@
           "startS": 5.2,
           "endS": 5.6
          }
-        ]
+        ],
+        "onsetS": 0.22
        }
       },
       "flash_rec_002": {
@@ -32773,7 +32944,8 @@
           "startS": 6.24,
           "endS": 6.88
          }
-        ]
+        ],
+        "onsetS": 0.15
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/flash_rec_002.ogg",
@@ -32907,7 +33079,8 @@
           "startS": 10,
           "endS": 10.32
          }
-        ]
+        ],
+        "onsetS": 0.4
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/flash_rec_002.ogg",
@@ -33111,7 +33284,8 @@
           "startS": 7.52,
           "endS": 7.68
          }
-        ]
+        ],
+        "onsetS": 0.6
        }
       },
       "flash_rec_005": {
@@ -33219,7 +33393,8 @@
           "startS": 5.84,
           "endS": 6.32
          }
-        ]
+        ],
+        "onsetS": 0.16
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/flash_rec_005.ogg",
@@ -33325,7 +33500,8 @@
           "startS": 7.44,
           "endS": 8.32
          }
-        ]
+        ],
+        "onsetS": 0.34
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/flash_rec_005.ogg",
@@ -33515,7 +33691,8 @@
           "startS": 6.64,
           "endS": 6.72
          }
-        ]
+        ],
+        "onsetS": 1.04
        }
       },
       "flash_ai_002": {
@@ -33623,7 +33800,8 @@
           "startS": 6.64,
           "endS": 6.72
          }
-        ]
+        ],
+        "onsetS": 0.27
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/flash_ai_002.ogg",
@@ -33736,7 +33914,8 @@
           "startS": 9.36,
           "endS": 9.44
          }
-        ]
+        ],
+        "onsetS": 1.05
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/flash_ai_002.ogg",
@@ -33898,7 +34077,8 @@
           "startS": 4.8,
           "endS": 5.12
          }
-        ]
+        ],
+        "onsetS": 0.15
        }
       },
       "flash_ai_003": {
@@ -33950,7 +34130,8 @@
           "startS": 2.32,
           "endS": 2.48
          }
-        ]
+        ],
+        "onsetS": 0.4
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/flash_ai_003.ogg",
@@ -34007,7 +34188,8 @@
           "startS": 4.08,
           "endS": 4.16
          }
-        ]
+        ],
+        "onsetS": 0.43
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/flash_ai_003.ogg",
@@ -34099,7 +34281,8 @@
           "startS": 2.96,
           "endS": 3.2
          }
-        ]
+        ],
+        "onsetS": 0.84
        }
       },
       "warn_ai_001": {
@@ -34214,7 +34397,8 @@
           "startS": 5.92,
           "endS": 6.48
          }
-        ]
+        ],
+        "onsetS": 0.24
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/warn_ai_001.ogg",
@@ -34355,7 +34539,8 @@
           "startS": 9.28,
           "endS": 10.32
          }
-        ]
+        ],
+        "onsetS": 0.33
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/warn_ai_001.ogg",
@@ -34594,7 +34779,8 @@
           "startS": 6.72,
           "endS": 7.2
          }
-        ]
+        ],
+        "onsetS": 0.29
        }
       },
       "desc_ai_001": {
@@ -34660,7 +34846,8 @@
           "startS": 1.36,
           "endS": 1.92
          }
-        ]
+        ],
+        "onsetS": 0.17
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/desc_ai_001.ogg",
@@ -34731,7 +34918,8 @@
           "startS": 2.32,
           "endS": 3.12
          }
-        ]
+        ],
+        "onsetS": 0.71
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/desc_ai_001.ogg",
@@ -34816,7 +35004,8 @@
           "startS": 1.76,
           "endS": 2
          }
-        ]
+        ],
+        "onsetS": 0.22
        }
       },
       "desc_ai_002": {
@@ -34931,7 +35120,8 @@
           "startS": 5.04,
           "endS": 5.92
          }
-        ]
+        ],
+        "onsetS": 0.29
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/desc_ai_002.ogg",
@@ -35044,7 +35234,8 @@
           "startS": 5.92,
           "endS": 6.72
          }
-        ]
+        ],
+        "onsetS": 0.2
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/desc_ai_002.ogg",
@@ -35213,7 +35404,8 @@
           "startS": 4.72,
           "endS": 4.96
          }
-        ]
+        ],
+        "onsetS": 0.2
        }
       },
       "boss_ai_001": {
@@ -35279,7 +35471,8 @@
           "startS": 2.8,
           "endS": 3.28
          }
-        ]
+        ],
+        "onsetS": 0.18
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/boss_ai_001.ogg",
@@ -35364,7 +35557,8 @@
           "startS": 5.44,
           "endS": 6.08
          }
-        ]
+        ],
+        "onsetS": 1.59
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/boss_ai_001.ogg",
@@ -35491,7 +35685,8 @@
           "startS": 3.44,
           "endS": 3.84
          }
-        ]
+        ],
+        "onsetS": 0.27
        }
       },
       "boss_pac_ai_001": {
@@ -35599,7 +35794,8 @@
           "startS": 6.16,
           "endS": 6.88
          }
-        ]
+        ],
+        "onsetS": 0.78
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/boss_pac_ai_001.ogg",
@@ -35705,7 +35901,8 @@
           "startS": 6.8,
           "endS": 7.68
          }
-        ]
+        ],
+        "onsetS": 0.27
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/boss_pac_ai_001.ogg",
@@ -35916,7 +36113,8 @@
           "startS": 5.92,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.27
        }
       },
       "boss_pac_ai_002": {
@@ -36003,7 +36201,8 @@
           "startS": 4.96,
           "endS": 5.2
          }
-        ]
+        ],
+        "onsetS": 0.2
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/boss_pac_ai_002.ogg",
@@ -36102,7 +36301,8 @@
           "startS": 6.56,
           "endS": 7.36
          }
-        ]
+        ],
+        "onsetS": 0.12
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/boss_pac_ai_002.ogg",
@@ -36250,7 +36450,8 @@
           "startS": 4.24,
           "endS": 4.4
          }
-        ]
+        ],
+        "onsetS": 0.13
        }
       },
       "kill_ai_001": {
@@ -36302,7 +36503,8 @@
           "startS": 2.72,
           "endS": 2.8
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/kill_ai_001.ogg",
@@ -36352,7 +36554,8 @@
           "startS": 3.36,
           "endS": 3.6
          }
-        ]
+        ],
+        "onsetS": 0.25
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/kill_ai_001.ogg",
@@ -36444,7 +36647,8 @@
           "startS": 2.72,
           "endS": 3.04
          }
-        ]
+        ],
+        "onsetS": 0.2
        }
       },
       "kill_ai_002": {
@@ -36559,7 +36763,8 @@
           "startS": 5.92,
           "endS": 6.4
          }
-        ]
+        ],
+        "onsetS": 0.99
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/kill_ai_002.ogg",
@@ -36707,7 +36912,8 @@
           "startS": 8.16,
           "endS": 8.24
          }
-        ]
+        ],
+        "onsetS": 0.14
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/kill_ai_002.ogg",
@@ -36883,7 +37089,8 @@
           "startS": 5.12,
           "endS": 5.44
          }
-        ]
+        ],
+        "onsetS": 0.71
        }
       },
       "kill_ai_003": {
@@ -37033,7 +37240,8 @@
           "startS": 8,
           "endS": 8.4
          }
-        ]
+        ],
+        "onsetS": 0.13
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/kill_ai_003.ogg",
@@ -37202,7 +37410,8 @@
           "startS": 9.44,
           "endS": 10.08
          }
-        ]
+        ],
+        "onsetS": 0.52
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/kill_ai_003.ogg",
@@ -37448,7 +37657,8 @@
           "startS": 7.12,
           "endS": 7.44
          }
-        ]
+        ],
+        "onsetS": 0.13
        }
       },
       "kill_ai_004": {
@@ -37500,7 +37710,8 @@
           "startS": 1.76,
           "endS": 2.56
          }
-        ]
+        ],
+        "onsetS": 0.34
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/kill_ai_004.ogg",
@@ -37550,7 +37761,8 @@
           "startS": 2.56,
           "endS": 2.64
          }
-        ]
+        ],
+        "onsetS": 0.4
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/kill_ai_004.ogg",
@@ -37663,7 +37875,8 @@
           "startS": 2.64,
           "endS": 2.88
          }
-        ]
+        ],
+        "onsetS": 0.22
        }
       },
       "pac_end_002": {
@@ -37750,7 +37963,8 @@
           "startS": 5.04,
           "endS": 5.44
          }
-        ]
+        ],
+        "onsetS": 0.16
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/pac_end_002.ogg",
@@ -37842,7 +38056,8 @@
           "startS": 7.28,
           "endS": 7.84
          }
-        ]
+        ],
+        "onsetS": 0.56
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/pac_end_002.ogg",
@@ -37990,7 +38205,8 @@
           "startS": 5.68,
           "endS": 5.92
          }
-        ]
+        ],
+        "onsetS": 0.9
        }
       },
       "pac_end_004": {
@@ -38133,7 +38349,8 @@
           "startS": 7.36,
           "endS": 7.6
          }
-        ]
+        ],
+        "onsetS": 0.25
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/pac_end_004.ogg",
@@ -38267,7 +38484,8 @@
           "startS": 8.64,
           "endS": 9.44
          }
-        ]
+        ],
+        "onsetS": 0.52
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/pac_end_004.ogg",
@@ -38520,7 +38738,8 @@
           "startS": 7.44,
           "endS": 7.68
          }
-        ]
+        ],
+        "onsetS": 0.14
        }
       },
       "pac_end_005": {
@@ -38572,7 +38791,8 @@
           "startS": 3.36,
           "endS": 3.52
          }
-        ]
+        ],
+        "onsetS": 0.17
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/pac_end_005.ogg",
@@ -38622,7 +38842,8 @@
           "startS": 5.2,
           "endS": 5.84
          }
-        ]
+        ],
+        "onsetS": 0.17
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/pac_end_005.ogg",
@@ -38749,7 +38970,8 @@
           "startS": 5.44,
           "endS": 5.84
          }
-        ]
+        ],
+        "onsetS": 0.91
        }
       },
       "credits_kill_001": {
@@ -38843,7 +39065,8 @@
           "startS": 4.8,
           "endS": 5.12
          }
-        ]
+        ],
+        "onsetS": 1.06
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/credits_kill_001.ogg",
@@ -38963,7 +39186,8 @@
           "startS": 6.16,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.78
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/credits_kill_001.ogg",
@@ -39132,7 +39356,8 @@
           "startS": 4.8,
           "endS": 5.12
          }
-        ]
+        ],
+        "onsetS": 0.23
        }
       },
       "lock_ai_001": {
@@ -39240,7 +39465,8 @@
           "startS": 5.12,
           "endS": 5.6
          }
-        ]
+        ],
+        "onsetS": 0.17
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/lock_ai_001.ogg",
@@ -39367,7 +39593,8 @@
           "startS": 7.6,
           "endS": 8.08
          }
-        ]
+        ],
+        "onsetS": 0.24
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/lock_ai_001.ogg",
@@ -39592,7 +39819,8 @@
           "startS": 6,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.16
        }
       },
       "disarm_ai_001": {
@@ -39756,7 +39984,8 @@
           "startS": 4.8,
           "endS": 5.12
          }
-        ]
+        ],
+        "onsetS": 0.13
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/disarm_ai_001.ogg",
@@ -39890,7 +40119,8 @@
           "startS": 7.28,
           "endS": 7.76
          }
-        ]
+        ],
+        "onsetS": 0.7
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/disarm_ai_001.ogg",
@@ -40115,7 +40345,8 @@
           "startS": 7.04,
           "endS": 7.28
          }
-        ]
+        ],
+        "onsetS": 0.63
        }
       },
       "graze_ai_001": {
@@ -40209,7 +40440,8 @@
           "startS": 3.04,
           "endS": 3.84
          }
-        ]
+        ],
+        "onsetS": 0.21
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/graze_ai_001.ogg",
@@ -40301,7 +40533,8 @@
           "startS": 4.96,
           "endS": 5.84
          }
-        ]
+        ],
+        "onsetS": 0.21
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/graze_ai_001.ogg",
@@ -40442,7 +40675,8 @@
           "startS": 4,
           "endS": 4.32
          }
-        ]
+        ],
+        "onsetS": 0.15
        }
       },
       "rec_ai_001": {
@@ -40571,7 +40805,8 @@
           "startS": 6.24,
           "endS": 6.96
          }
-        ]
+        ],
+        "onsetS": 0.28
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/rec_ai_001.ogg",
@@ -40691,7 +40926,8 @@
           "startS": 8.8,
           "endS": 9.92
          }
-        ]
+        ],
+        "onsetS": 0.32
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/rec_ai_001.ogg",
@@ -40930,7 +41166,8 @@
           "startS": 7.76,
           "endS": 8.08
          }
-        ]
+        ],
+        "onsetS": 0.54
        }
       },
       "rec_log_001": {
@@ -41038,7 +41275,8 @@
           "startS": 5.68,
           "endS": 6.24
          }
-        ]
+        ],
+        "onsetS": 0.23
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/rec_log_001.ogg",
@@ -41137,7 +41375,8 @@
           "startS": 9.52,
           "endS": 10.08
          }
-        ]
+        ],
+        "onsetS": 0.7
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/rec_log_001.ogg",
@@ -41341,7 +41580,8 @@
           "startS": 6.8,
           "endS": 7.2
          }
-        ]
+        ],
+        "onsetS": 0.25
        }
       },
       "rec_ai_002": {
@@ -41421,7 +41661,8 @@
           "startS": 4.64,
           "endS": 5.28
          }
-        ]
+        ],
+        "onsetS": 0.11
        },
        "es": {
         "file": "variants/tutorial_ai/original/es/rec_ai_002.ogg",
@@ -41506,7 +41747,8 @@
           "startS": 5.84,
           "endS": 6.64
          }
-        ]
+        ],
+        "onsetS": 0.15
        },
        "zh": {
         "file": "variants/tutorial_ai/original/zh/rec_ai_002.ogg",
@@ -41640,7 +41882,8 @@
           "startS": 4.56,
           "endS": 4.96
          }
-        ]
+        ],
+        "onsetS": 0.32
        }
       }
      }

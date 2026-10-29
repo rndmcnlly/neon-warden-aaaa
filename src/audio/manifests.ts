@@ -33,6 +33,8 @@ export interface VoCuesFile {
             readonly duration: number;
             /** Word-level timing (VO tech fills it; absent on old takes). */
             readonly words?: readonly WordTiming[];
+            /** Measured leading silence, seconds (`scripts/vo_onset.ts`). */
+            readonly onsetS?: number;
           }>
         >
       >;
@@ -44,7 +46,42 @@ export interface ResolvedVoice {
   /** The language actually used, after fallback. */
   readonly lang: Lang;
   readonly url: string;
+  /** Audible length: the file's duration minus the skipped lead-in. */
   readonly durationMs: number;
+  /** Where playback starts in the file, seconds (`voStartS`). */
+  readonly startS: number;
+}
+
+/**
+ * Leading silence kept before a take's measured onset, seconds: a breath of
+ * air so the first consonant is not clipped, and short enough that a
+ * subtitle and its voice arrive together. The Captain recast opens with
+ * about 0.64 s of silence (research/2026-10-29-vo-audit/); without this the
+ * subtitle led the voice by most of a second.
+ */
+export const VO_LEAD_KEEP_S = 0.12;
+
+/**
+ * Where to start playing a take: non-destructive, so the files and their
+ * measured onsets stay as rendered and the policy can change here alone.
+ * A take without a measurement plays from the top.
+ */
+export function voStartS(take: { readonly onsetS?: number }): number {
+  const onset = take.onsetS ?? 0;
+  return Math.max(0, Math.round((onset - VO_LEAD_KEEP_S) * 1000) / 1000);
+}
+
+/** Word timings moved onto the trimmed clock (the same `startS` shift). */
+export function shiftWords(
+  words: readonly WordTiming[],
+  startS: number,
+): readonly WordTiming[] {
+  if (startS === 0) return words;
+  return words.map((w) => ({
+    ...w,
+    startS: Math.max(0, w.startS - startS),
+    endS: Math.max(0, w.endS - startS),
+  }));
 }
 
 /** The language every line is guaranteed to try last. */
@@ -63,10 +100,17 @@ export type VariantTakeLookup = (
     readonly file: string;
     readonly duration: number;
     readonly words?: readonly WordTiming[];
+    readonly onsetS?: number;
   }
   | undefined;
 
 export class VoCatalog {
+  /** Shifted word lists, so per-frame subtitle lookups do not allocate. */
+  private readonly shifted = new WeakMap<
+    readonly WordTiming[],
+    readonly WordTiming[]
+  >();
+
   constructor(
     private readonly data: VoCuesFile,
     /** Where `cues.json` lives; file paths in it are relative to here. */
@@ -89,10 +133,12 @@ export class VoCatalog {
     for (const l of [lang, FALLBACK_VOICE_LANG]) {
       const take = this.take(line, l);
       if (take) {
+        const startS = voStartS(take);
         return {
           lang: l,
           url: this.base + take.file,
-          durationMs: take.duration * 1000,
+          durationMs: (take.duration - startS) * 1000,
+          startS,
         };
       }
     }
@@ -103,7 +149,16 @@ export class VoCatalog {
   words(line: LineId, lang: Lang): readonly WordTiming[] | undefined {
     const take = this.take(line, lang) ??
       this.take(line, FALLBACK_VOICE_LANG);
-    return take?.words;
+    if (!take?.words) return undefined;
+    // Subtitles and the word pulse run on the playback clock, which starts
+    // at `voStartS`, not at the top of the file.
+    const startS = voStartS(take);
+    if (startS === 0) return take.words;
+    const cached = this.shifted.get(take.words);
+    if (cached) return cached;
+    const words = shiftWords(take.words, startS);
+    this.shifted.set(take.words, words);
+    return words;
   }
 
   speaker(line: LineId): Speaker | undefined {

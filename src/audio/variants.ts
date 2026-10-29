@@ -114,6 +114,8 @@ export interface VoiceVariantTake {
   /** The text this take actually speaks (it may lag the script). */
   readonly text?: string;
   readonly words?: readonly WordTiming[];
+  /** Measured leading silence, seconds (`scripts/sync_vo.ts`). */
+  readonly onsetS?: number;
 }
 
 /** `public/vo/variants/index.json`. */

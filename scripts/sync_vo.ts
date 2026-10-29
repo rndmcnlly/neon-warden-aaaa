@@ -10,7 +10,11 @@
  * - `public/vo/cues.json`: `vo/out/cues.json` with each take's `file`
  *   pointing at its `.ogg`, plus the measured input loudness.
  * - `public/vo/stamps.json`: which render (the take's `hash` in cues.json)
- *   each `.ogg` came from, so a rerun only encodes changed takes.
+ *   each `.ogg` came from, so a rerun only encodes changed takes, plus the
+ *   take's measured speech onset (`onsetS`, `scripts/vo_onset.ts`). The
+ *   onset is copied into each take in `cues.json` and into the voice
+ *   variants index, so the game can skip leading silence without a
+ *   re-encode (`voStartS` in `src/audio/manifests.ts`).
  *
  * Raw WAVs are not in git (about 90 MB, and every re-render churns them);
  * the Opus files and manifests are, so a fresh clone builds without `vo/out`
@@ -18,6 +22,8 @@
  * Needs ffmpeg on PATH only when a take changed. `deno task dev` and
  * `deno task build` run this first; run it alone with `deno task vo:sync`.
  */
+
+import { measureOnset } from "./vo_onset.ts";
 
 const SOURCE = "vo/out";
 const TARGET = "public/vo";
@@ -50,13 +56,16 @@ interface Stamp {
   readonly key: string;
   readonly inputLufs: number;
   readonly inputTruePeak: number;
+  /** Seconds of leading silence in the `.ogg`; absent until measured. */
+  readonly onsetS?: number;
 }
 
-const exists = (p: string) =>
-  Deno.stat(p).then((s) => s.isFile, () => false);
+const exists = (p: string) => Deno.stat(p).then((s) => s.isFile, () => false);
 
 function targetFor(id: string): number {
-  return /^(amb|bark)_/.test(id) ? TARGET_LUFS + AMBIENT_OFFSET_LU : TARGET_LUFS;
+  return /^(amb|bark)_/.test(id)
+    ? TARGET_LUFS + AMBIENT_OFFSET_LU
+    : TARGET_LUFS;
 }
 
 async function ffmpeg(args: string[]): Promise<string> {
@@ -138,6 +147,7 @@ const jobs: (() => Promise<void>)[] = [];
 let kept = 0;
 let encoded = 0;
 let missing = 0;
+let measured = 0;
 
 for (const [id, line] of Object.entries(cues.lines)) {
   for (const [lang, take] of Object.entries(line.langs)) {
@@ -152,8 +162,19 @@ for (const [id, line] of Object.entries(cues.lines)) {
     const haveOgg = await exists(ogg);
     take.file = rel;
     if (haveOgg && (old?.key === key || !(await exists(wav)))) {
-      if (old) nextStamps[rel] = old;
-      Object.assign(take, old ? { inputLufs: old.inputLufs } : {});
+      if (old?.onsetS !== undefined) {
+        nextStamps[rel] = old;
+        Object.assign(take, { inputLufs: old.inputLufs, onsetS: old.onsetS });
+      } else {
+        // Up to date, but measured before onsets existed: decode once.
+        jobs.push(async () => {
+          const onsetS = await measureOnset(ogg);
+          if (old) nextStamps[rel] = { ...old, onsetS };
+          Object.assign(take, old ? { inputLufs: old.inputLufs } : {});
+          take.onsetS = onsetS;
+          measured++;
+        });
+      }
       kept++;
       continue;
     }
@@ -164,9 +185,11 @@ for (const [id, line] of Object.entries(cues.lines)) {
     }
     jobs.push(async () => {
       await Deno.mkdir(ogg.slice(0, ogg.lastIndexOf("/")), { recursive: true });
-      const measured = await encode(wav, ogg, lufs, take.loudness);
-      nextStamps[rel] = { key, ...measured };
-      take.inputLufs = measured.inputLufs;
+      const loudness = await encode(wav, ogg, lufs, take.loudness);
+      const onsetS = await measureOnset(ogg);
+      nextStamps[rel] = { key, ...loudness, onsetS };
+      take.inputLufs = loudness.inputLufs;
+      take.onsetS = onsetS;
       encoded++;
     });
   }
@@ -192,6 +215,46 @@ for await (const dir of Deno.readDir(TARGET)) {
   }
 }
 
+// Voice variants are frozen takes (`scripts/extract_voice_variant.ts`), but
+// their onsets are measured the same way, once, and kept in their index.
+const variantsPath = `${TARGET}/variants/index.json`;
+if (await exists(variantsPath)) {
+  type VariantTake = { file: string; onsetS?: number };
+  const index: {
+    speakers: Record<
+      string,
+      { variants: Record<string, { lines: Record<string, Record<string, VariantTake>> }> }
+    >;
+  } = JSON.parse(await Deno.readTextFile(variantsPath));
+  const pending: VariantTake[] = [];
+  for (const speaker of Object.values(index.speakers)) {
+    for (const variant of Object.values(speaker.variants)) {
+      for (const langs of Object.values(variant.lines)) {
+        for (const take of Object.values(langs)) {
+          if (take.onsetS === undefined) pending.push(take);
+        }
+      }
+    }
+  }
+  await Promise.all(
+    Array.from({ length: WORKERS }, async () => {
+      for (let take = pending.shift(); take; take = pending.shift()) {
+        take.onsetS = await measureOnset(`${TARGET}/${take.file}`);
+        measured++;
+      }
+    }),
+  );
+  if (measured > 0) {
+    // The index was written by Python with ASCII escapes; keep them, so a
+    // measurement pass diffs as added fields rather than a rewrite.
+    const ascii = JSON.stringify(index, null, 1).replace(
+      /[\u007f-\uffff]/g,
+      (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"),
+    );
+    await Deno.writeTextFile(variantsPath, ascii + "\n");
+  }
+}
+
 cues.loudness = {
   targetLufs: TARGET_LUFS,
   ambientOffsetLu: AMBIENT_OFFSET_LU,
@@ -207,6 +270,7 @@ await Deno.writeTextFile(
   JSON.stringify(cues, null, 1) + "\n",
 );
 console.log(
-  `vo:sync ${encoded} encoded, ${kept} up to date, ${missing} missing ` +
+  `vo:sync ${encoded} encoded, ${kept} up to date, ${missing} missing, ` +
+    `${measured} onsets measured ` +
     `(no WAV, no Opus) -> ${TARGET}`,
 );

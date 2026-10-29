@@ -356,7 +356,9 @@ export class AudioEngine implements VoicePort {
         this.layerVoices.delete(layer);
       }
     };
-    source.start();
+    // Skip the take's measured lead-in (`voStartS`): the Director's clock,
+    // subtitles and word timings already count from this point.
+    source.start(0, v.startS);
     const handle: VoiceHandle = {
       setGain(target, rampMs) {
         gain.gain.setTargetAtTime(target, ctx.currentTime, rampMs / 3000);
@@ -434,7 +436,7 @@ export class AudioEngine implements VoicePort {
     const panner = ctx.createStereoPanner();
     panner.pan.value = this.store.get().audio.mono ? 0 : pan;
     source.connect(hp).connect(lp).connect(panner).connect(this.buses.voice);
-    source.start();
+    source.start(0, v.startS);
     return true;
   }
 

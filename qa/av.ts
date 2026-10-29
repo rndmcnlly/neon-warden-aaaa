@@ -54,7 +54,14 @@ type StemKind = "mix" | "vo" | "spatial" | BusStem;
 type Msg =
   | { k: "seg"; seg: string; kind: StemKind; epoch: number }
   | { k: "chunk"; seg: string; n: number; b64: string }
-  | { k: "src"; epoch: number; dur: number; loop: boolean; url: string }
+  | {
+    k: "src";
+    epoch: number;
+    dur: number;
+    offset?: number;
+    loop: boolean;
+    url: string;
+  }
   | {
     k: "sub";
     epoch: number;
@@ -234,6 +241,8 @@ function pageAv(wordSelector: string): void {
       k: "src",
       epoch: now(),
       dur: buf?.duration ?? 0,
+      // VO starts past its measured lead-in (`voStartS`); record where.
+      offset: typeof a[1] === "number" ? a[1] : 0,
       loop: this.loop,
       url,
     });
@@ -772,9 +781,10 @@ export async function finishAv(
     );
     const audible = voStem ? voAudible : mixAudible;
     const dropped: string[] = [];
-    // Takes open with up to about 0.7 s of lead-in silence, so a window
-    // under 0.75 s (a line cut at autoplay speed), or one the reel's end
-    // cuts short, can't be judged.
+    // Takes keep about 0.12 s of lead-in after `voStartS` skips the rest,
+    // but older captures and unmeasured takes opened with up to 0.7 s, so a
+    // window under 0.75 s (a line cut at autoplay speed), or one the reel's
+    // end cuts short, still can't be judged.
     const unjudged = subs.filter((s) =>
       s.end - s.start < 0.75 ||
       (s.end >= seconds - 0.1 && s.end - s.start < 1.5)
