@@ -241,6 +241,8 @@ export function createFrontEnd(
     layer.dataset.device = input.device();
     const s = settings.get();
     layer.classList.toggle("is-calm", calm());
+    // Layers outside the front end (subtitles) read calm from the root.
+    document.documentElement.classList.toggle("nw-calm", calm());
     // HUD text grows with the subtitle size preference, at half the rate.
     layer.style.setProperty(
       "--nw-hud-scale",

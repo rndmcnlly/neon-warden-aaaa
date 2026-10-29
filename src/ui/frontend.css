@@ -1691,3 +1691,24 @@
     filter: brightness(1.5);
   }
 }
+
+/* ---------- Subtitle word pulse ---------- */
+
+/* Base case (reduced motion): color and glow only, no movement and no
+   weight change (weight would reflow the line). */
+.nw-word {
+  transition: color 90ms linear, text-shadow 90ms linear;
+}
+.nw-word.is-spoken {
+  color: #fff6c2;
+  text-shadow: 0 0 0.5em rgba(255, 224, 102, 0.55);
+}
+@media (prefers-reduced-motion: no-preference) {
+  html:not(.nw-calm) .nw-word {
+    display: inline-block;
+    transition: transform 120ms var(--nw-ease-out), color 90ms linear;
+  }
+  html:not(.nw-calm) .nw-word.is-spoken {
+    transform: scale(1.09) translateY(-0.04em);
+  }
+}
