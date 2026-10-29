@@ -37,19 +37,30 @@ takes:
     fromReel: accessibility
     langSensitive: true
     steps:
-      - { do: waitFor, selector: ".nw-screen-gate", label: "gate", timeoutMs: 15000 }
+      - {
+          do: waitFor,
+          selector: ".nw-screen-gate",
+          label: "gate",
+          timeoutMs: 15000,
+        }
       - { do: advanceTo, screen: notice, max: 3 }
       - { do: advanceTo, screen: title, max: 12 }
       - { do: advanceTo, screen: main, max: 4 }
       - { do: navigate, key: settings }
       - { do: press, key: Enter }
-      - { do: waitFor, selector: ".nw-screen-settings", label: "settings opens" }
+      - {
+          do: waitFor,
+          selector: ".nw-screen-settings",
+          label: "settings opens",
+        }
       - { do: press, key: KeyE, times: 3, gapMs: 500 }
       - { do: wait, ms: 3000 }
       - { do: press, key: KeyE }
       - { do: wait, ms: 4000 }
     maxSeconds: 60
   s1-fight:
+    # Per language: its ambient barks are in the master's language.
+    langSensitive: true
     query: "?skipto=sector1&autoplay=fight&speed=1"
     steps:
       - do: until
@@ -64,6 +75,8 @@ takes:
       - { do: wait, ms: 2500 }
     maxSeconds: 150
   s2-fight:
+    # Per language: its ambient barks are in the master's language.
+    langSensitive: true
     query: "?skipto=sector2&autoplay=fight&speed=1"
     steps:
       - do: until
@@ -77,6 +90,7 @@ takes:
     # 0.8 s before the recorder pickup freezes the world, so disarm shots end
     # just after the break (measured; no later disarm in 90 s of sectors 1-5).
     query: "?skipto=sector3&autoplay=pacifist&speed=1"
+    langSensitive: true
     steps:
       - do: until
         probe: "p.events.some((e) => e.type === 'disarm')"
@@ -85,6 +99,8 @@ takes:
       - { do: wait, ms: 3000 }
     maxSeconds: 40
   s4-fight:
+    # Per language: its ambient barks are in the master's language.
+    langSensitive: true
     query: "?skipto=sector4&autoplay=fight&speed=1"
     steps:
       - do: until
@@ -113,19 +129,24 @@ takes:
       - { do: wait, ms: 2000 }
     maxSeconds: 30
   tutorial:
-    # The autopilot cannot pass the rest gate (it needs 30 ticks of rest at
-    # full charge; the autopilot releases the Writ at once), so tut_wink_001
-    # is unreachable by autoplay on this build: an honest gap. The take shows
-    # the knowingly overlong contract preamble instead, at natural speed.
+    # The autopilot passes every drill since b87a24e (the rest drill used to
+    # stall it), so the take pre-rolls the whole tutorial (about 330-370 s of
+    # lines and drills, ES longest) and grabs from the hangar line through
+    # the wink, at natural speed.
     query: "?skipto=tutorial&autoplay=fight&speed=1"
     langSensitive: true
     steps:
       - do: until
-        probe: "p.log.includes('line:tut_contract_001')"
-        timeoutMs: 60000
-        label: "contract line"
-      - { do: wait, ms: 9000 }
-    maxSeconds: 80
+        probe: "p.log.includes('line:tut_hangar_001')"
+        timeoutMs: 450000
+        label: "hangar line (the wink follows)"
+      - { do: roll }
+      - do: until
+        probe: "p.log.includes('line:tut_wink_001')"
+        timeoutMs: 30000
+        label: "the wink starts"
+      - { do: wait, ms: 10500 }
+    maxSeconds: 480
   s3-recorder:
     query: "?skipto=sector3&autoplay=fight&speed=1"
     langSensitive: true
@@ -321,22 +342,22 @@ shots:
     evidence: "] ] [ during the descent: each next line speaks and captions in the new language."
   # 4. Story beats (22 s)
   - { id: ch-story, seconds: 2, chapter: story, card: chapter }
-  - id: tutorial-contract
-    seconds: 8
+  - id: tutorial-wink
+    seconds: 10 # the wink runs 8.5-9.4 s (ES longest)
     take: tutorial
-    anchor: { line: tut_contract_001 }
+    anchor: { line: tut_wink_001 }
     offset: -0.3
     label: label-tutorial
-    evidence: "The knowingly overlong tutorial, at natural speed (the wink itself is unreachable by autoplay: honest gap)."
+    evidence: "The tutorial's one wink, near the end of the knowingly overlong onboarding, at natural speed."
   - id: flashback
-    seconds: 6
+    seconds: 5
     take: s3-recorder
     anchor: { log: "scene:recorder" }
     offset: -0.5
     label: label-flashback
     evidence: "Recorder triggers the mid-play flashback."
   - id: descent
-    seconds: 6
+    seconds: 5
     take: boss-descent
     anchor: { line: desc_001 }
     offset: -0.3
@@ -361,15 +382,29 @@ shots:
   # 6. Accessibility (10 s)
   - { id: ch-access, seconds: 2, chapter: access, card: chapter }
   - id: accessibility
-    seconds: 8
+    seconds: 5
     take: accessibility
     anchor: { dom: screen, match: "nw-screen-settings" }
     offset: 0.5
     label: label-access
     evidence: "Subtitle size and background, reduced flashing and motion, hold or toggle."
+  - id: slate
+    seconds: 3
+    card: slate
+    evidence: "Where to play it and read the source."
 
 cards:
   chapter: { style: chapter } # text comes from the chapter title
+  slate:
+    style: slate
+    text:
+      en: "A vertical slice.\nPlay it in your browser. No install."
+      es: "Un vertical slice.\nJuégalo en tu navegador. Sin instalar."
+      zh: "垂直切片试玩版\n浏览器即玩，无需安装"
+    small:
+      en: "Play: {{PLAY_URL}}\nSource: github.com/rndmcnlly/neon-warden-aaaa"
+      es: "Juega: {{PLAY_URL}}\nCódigo: github.com/rndmcnlly/neon-warden-aaaa"
+      zh: "试玩：{{PLAY_URL}}\n源代码：github.com/rndmcnlly/neon-warden-aaaa"
   label-boot: {
     style: lower,
     text: {

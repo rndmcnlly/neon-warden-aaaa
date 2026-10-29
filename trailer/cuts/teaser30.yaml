@@ -73,9 +73,10 @@ takes:
     maxSeconds: 60
   boss-fight:
     # Pre-roll through the descent dialogue; the take runs from the first
-    # graze to the kill. On this build the autopilot kills the Warden about
-    # 16 s into phase 3, before boss_turn_001/002 play (they need about 25 s),
-    # so shots anchor on boss_p3_002 and the turn line is added in post.
+    # graze through the Warden's turn. Since b87a24e the turn is a parley
+    # (the Warden holds still and talks) and the autopilot holds fire to hear
+    # it, so boss_turn_001/002 play in the take; no shot needs the kill.
+    # Identical recipe in teaser30 and trailer90, so it is captured once.
     query: "?skipto=boss&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
     steps:
@@ -85,9 +86,10 @@ takes:
         label: "first graze in the boss fight"
       - { do: roll }
       - do: until
-        probe: "p.log.includes('scene:ending-kill')"
-        timeoutMs: 130000
-        label: "kill ending starts"
+        probe: "p.log.includes('line:boss_turn_002')"
+        timeoutMs: 180000
+        label: "the turn's second line starts"
+      - { do: wait, ms: 6000 }
     maxSeconds: 230
 
 shots:
@@ -163,10 +165,8 @@ cards:
       en: "A vertical slice.\nPlay it in your browser. No install."
       es: "Un vertical slice.\nJuégalo en tu navegador. Sin instalar."
       zh: "垂直切片试玩版\n浏览器即玩，无需安装"
-    # The play URL ({{PLAY_URL}}, filled from TRAILER_PLAY_URL) returns when
-    # Adam picks hosting; until then the slate names the studio only. Adding
-    # it back is a re-assemble from cached takes (--no-capture).
+    # {{PLAY_URL}} comes from TRAILER_PLAY_URL (neon-warden-aaaa.adamsmith.systems).
     small:
-      en: "adamsmith.systems · CM121 f26"
-      es: "adamsmith.systems · CM121 f26"
-      zh: "adamsmith.systems · CM121 f26"
+      en: "Play: {{PLAY_URL}}\nadamsmith.systems · CM121 f26"
+      es: "Juega: {{PLAY_URL}}\nadamsmith.systems · CM121 f26"
+      zh: "试玩：{{PLAY_URL}}\nadamsmith.systems · CM121 f26"

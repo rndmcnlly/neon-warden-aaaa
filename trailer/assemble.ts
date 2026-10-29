@@ -113,9 +113,11 @@ function cardHtml(
         64 * u
       }px;font-weight:700;line-height:1.3;${glow}}p{margin-top:${
         48 * u
-      }px;font-size:${30 * u}px;color:#8fb6c4;letter-spacing:${
+      }px;font-size:${34 * u}px;line-height:1.6;color:#8fb6c4;letter-spacing:${
         2 * u
-      }px}</style><h2>${lines}</h2><p>${esc(small)}</p>`;
+      }px}</style><h2>${lines}</h2><p>${
+        esc(small).replaceAll("\n", "<br>")
+      }</p>`;
     case "chapter":
       return `<style>${base}${dark}p{font-size:${
         34 * u
