@@ -19,6 +19,29 @@ Honest timeline for any published claim: the first commit is
 run). Earlier exploration happened in a separate course workspace on
 October 28. Adam approved "about a day" as the public phrasing.
 
+## Where "AAAA" fits (Adam, October 29)
+
+Stepico's explainer ("What Are AAAA Games?", April 10, 2026,
+https://stepico.com/blog/what-are-aaaa-games/) calls AAAA an unofficial,
+often self-assigned marketing label and compares AAA vs AAAA on five
+dimensions. Neon Warden AAAA inverts nearly all of them; only one axis
+(not in their table, but in their "AI-assisted content generation" bullet)
+is pushed to the extreme:
+
+| Dimension                       | AAAA per Stepico                     | Neon Warden AAAA                                                                               |
+| ------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Budget                          | $150M–$300M+                         | almost nothing (tens of dollars of API calls, ledgered)                                        |
+| Development cycle               | 5–8+ years                           | about a day                                                                                    |
+| Post-launch model               | continuous live service              | static archival (parked)                                                                       |
+| Platform scope                  | cross-platform ecosystem             | broad: desktop, mobile, Chromebook, offline PWA (affordable because other dimensions were cut) |
+| Success metric                  | long-term retention and monetization | one teachable moment in class                                                                  |
+| AI-assisted production pipeline | a bullet point                       | the whole point: orchestrated agents, local asset inference, judge panels                      |
+
+Adam's framing: a meta vertical slice of next-gen AI-assisted game
+production. A vertical slice communicates a future game to funders; this
+one communicates a future way of making games to students, while showing
+how a label like AAAA measures capital rather than craft.
+
 Beats the story should hit, in order:
 
 1. The seed: a refactoring exercise starter, small and intentionally smelly.
