@@ -441,3 +441,33 @@ Requests:
 - **T:** radio VO (`rad_*`) plays only once rendered; nothing to change in
   A when it lands (rerun `deno task vo:sync`, which encodes only changed
   takes, keyed by each take's `hash`).
+
+## Orchestrator notes (wave 3, after U)
+
+- Keyboard reachability bug: arrow keys do not reach the key-remap table
+  (menus-en/es reels used script focus). Accessibility blocker; owner U in
+  wave 4 or the closing integration pass.
+- U edited outside its ownership: `src/settings/` (mono audio default and
+  validation) and `src/app/subtitleView.ts`. Fine, but integration should
+  confirm no overlap with A's edits.
+- Hangar overflow 2–4 px (warn); menus-zh reel captured no audio.
+- From the boss reel contact sheet (orchestrator, after V): big readability
+  gain and the heart Warden reads well. Open: (1) the dev-flags debug panel
+  shows in reels and builds; hide unless `?dev=1`. (2) The scan cone is a
+  near-white wedge that dominates the center; drop it to a faint
+  low-opacity cyan with a bright leading edge only. (3) In the last frame a
+  radio text line overlaps the main subtitle; give radio its own lane.
+  (4) Boot logo highlights regressed (1.52% to 0.46%); let logo emissives
+  bloom. (5) Hitstop needs a sim pause hook from A.
+- **Q (from A):** in report `qa/reports/20261028-204750/`, every "VO not
+  dropped" failure (boss, flashback, ending-kill, disarm-boss,
+  spatial-audio, vo-no-drop) is the reel's *last* subtitle window, within
+  the final 1–4 s of the capture, and `av.voStarted` logs the source
+  starting in each case. The stem looks truncated at capture end. Please
+  keep capturing about 3 s past the last subtitle start (or skip windows
+  that overlap the final flush) and re-check; earlier windows went from
+  0–1 audible to all audible after A's fix.
+- **Open (A):** fight reels measure about -8 LUFS integrated, -0.4 dBTP,
+  against a -18 LUFS target. Synth trim and stacked-voice attenuation did
+  not move it, so the excess is probably not gameplay sfx density. Next:
+  per-bus stems (VO, barks, sfx) in `qa/av.ts` would locate it.
