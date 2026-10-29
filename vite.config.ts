@@ -10,6 +10,11 @@ export default {
     port: 3000,
     open: true,
   },
+  // Phone testing over `tailscale serve`: allow tailnet hostnames (private
+  // to Adam's tailnet; HTTPS there also lets the service worker register).
+  preview: {
+    allowedHosts: [".ts.net"],
+  },
   build: {
     target: "esnext",
     outDir: "dist",
