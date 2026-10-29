@@ -1,0 +1,14 @@
+<!doctype html>
+<html
+  lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Route ribbon evidence</title>
+<style>body{max-width:960px;margin:24px auto;padding:0 16px;background:#081420;color:#dbeafa;font:16px system-ui}h1{font-size:24px}a{color:#63dce8}video{width:100%;max-height:650px;background:#050a12}img{width:100%;max-width:620px}button{margin:8px 8px 8px 0;padding:8px;background:#183042;color:#fff;border:1px solid #577086}p{line-height:1.5}#limits{color:#b6c6d5}#reveal{display:none}</style>
+<h1>Route ribbon: bounded, isolated evidence</h1>
+<p>Question: can the route bend and rise while the near combat plane preserves the same readable positions? These are deliberately silent synthetic fixtures, not live game recordings. Read the comparison before revealing its intended interpretation.</p>
+<label for="clip">Evidence clip</label> <select id="clip"><option value="desktop-comparison">Desktop comparison</option><option value="portrait-flat">Portrait flat</option><option value="portrait-ribbon">Portrait ribbon</option><option value="reduced-static">Reduced motion static</option><option value="perspective-warning">Perspective warning</option></select>
+<video id="video" controls playsinline preload="metadata" src="desktop-comparison/reel.mp4"></video>
+<button id="evidence">Reveal construction and limits</button>
+<div id="reveal"><p>The synthetic tick-420 positions do not change. The 12-second presentation survey crosses the industrial sweep, rising gate and flat boss arena. A shared mapper transforms all displayed combat cues. The default near patch is rigid, so the two combat views should look almost identical. Small distant-world changes are intentional; this is not yet a staged-world experience.</p><img src="mapping.svg" alt="Plan and elevation of the three authored route segments, with exaggerated transverse axes"><p>Orthographic near-patch Jacobian: exactly 1. Fully curved optional math mode: 0.9677–1.0323. The analytic tilted perspective diagnostic is much worse: 0.6643–1.2149 for curved combat. Do not apply orthographic fairness claims to the live camera.</p><p id="limits">No audio stream; no live collision, input feel, ray inverse, arbitrary scenery occlusion, Chromebook performance or human accessibility certification. Source/model hashes, timestamps and caveats are in qa.json and README.md. Full CI stopped on unrelated formatting debt.</p></div>
+<p><a href="README.md">Recommendation and owner-by-owner integration plan</a> · <a href="qa.json">Machine report</a> · <a href="/src/presentation/routeRibbon/index.html">Interactive prototype (Vite required)</a></p>
+<script>const v=document.getElementById('video');document.getElementById('clip').onchange=e=>{v.pause();v.src=e.target.value+'/reel.mp4';v.load()};document.getElementById('evidence').onclick=()=>{document.getElementById('reveal').style.display='block'}</script>
+</html>

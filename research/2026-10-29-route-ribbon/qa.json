@@ -1,0 +1,233 @@
+{
+  "capturedAt": "2026-10-29T07:40:58.775Z",
+  "baseRevision": "56b171d34b6d1ad9c2b4cda6800b5a06f77a4f7c",
+  "hashes": {
+    "src/presentation/routeRibbon/math.ts": "9277eea2d3f7a3c20bb8c192bb8dcebb9acff8596d84163d52ee23d5131eb302",
+    "src/presentation/routeRibbon/harness.ts": "fbed9380e1230e6415154ed82daca149c104031b3648b2ab3848af7729cd7d24",
+    "src/presentation/routeRibbon/index.html": "d1210d430a2eee420755a0f324b17e9fd6cfb6fd4e89b38df10bada8b5fe17ae",
+    "public/models/pilot_ship.glb": "aa82ad23f0650eb8b548f5ebb3fd475e339f6ed3f505bbbbc2321df98cade7af",
+    "public/models/drone.glb": "b60f0d3979d27e1e542fc0a16efd275467724e5814309ba2f5b39b564e1a7677",
+    "public/models/lancer.glb": "85005318e3d027064e85ac2460a19fac8b153cf70048ee29df17b21964d7f123",
+    "public/models/pickup_shield.glb": "d7d4079d5556d9f987a475b0c2432250a9623b2c030d565ee1daf50d60e14caa"
+  },
+  "dirtyOwnedPrototype": true,
+  "frozenTick": 420,
+  "routeLength": 241.2392744759967,
+  "lutFrames": 961,
+  "joins": [
+    80.32026356086351,
+    161.2392744759967
+  ],
+  "maxCurvature": 0.009051893078259168,
+  "lateralMarginAt9Wu": 0.9185329622956675,
+  "minimumAdjacentUp": 0.999999606073213,
+  "metrics": [
+    {
+      "curve": 0,
+      "min": 0.999999999997172,
+      "max": 1.0000000000029274,
+      "anisotropy": 1,
+      "determinant": 0.9999999999943441,
+      "transitionMin": 0.8725270220286637,
+      "transitionMax": 1.132114110333391
+    },
+    {
+      "curve": 1,
+      "min": 0.9677238208610615,
+      "max": 1.0322760967174185,
+      "anisotropy": 1.03335357022198,
+      "determinant": 0.9677246582086428,
+      "transitionMin": 0.9482864222606313,
+      "transitionMax": 1.0484295967363602
+    }
+  ],
+  "perspectiveMetrics": [
+    {
+      "curve": 0,
+      "min": 0.7138218557109423,
+      "max": 1.1860891904783497,
+      "anisotropy": 1.2683236526005282,
+      "distance": 32,
+      "tilt": 0.47,
+      "pixelEquivalentNotNativeViewport": true
+    },
+    {
+      "curve": 1,
+      "min": 0.6643370520572723,
+      "max": 1.214877579627178,
+      "anisotropy": 1.3555794783807782,
+      "distance": 32,
+      "tilt": 0.47,
+      "pixelEquivalentNotNativeViewport": true
+    }
+  ],
+  "captures": [
+    {
+      "id": "desktop-comparison",
+      "width": 1280,
+      "height": 900,
+      "panel": "both",
+      "reduced": false,
+      "camera": "ortho",
+      "before": {
+        "frames": 14,
+        "progress": 16.9,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "after": {
+        "frames": 1456,
+        "progress": 229.2,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "errors": [],
+      "silent": true,
+      "seconds": 14.68,
+      "audioStreams": 0
+    },
+    {
+      "id": "portrait-flat",
+      "width": 390,
+      "height": 844,
+      "panel": "flat",
+      "reduced": false,
+      "camera": "ortho",
+      "before": {
+        "frames": 12,
+        "progress": 18,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "after": {
+        "frames": 1452,
+        "progress": 229.2,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "errors": [],
+      "silent": true,
+      "seconds": 13.16,
+      "audioStreams": 0
+    },
+    {
+      "id": "portrait-ribbon",
+      "width": 390,
+      "height": 844,
+      "panel": "ribbon",
+      "reduced": false,
+      "camera": "ortho",
+      "before": {
+        "frames": 10,
+        "progress": 14.8,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "after": {
+        "frames": 1451,
+        "progress": 229.2,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "errors": [],
+      "silent": true,
+      "seconds": 13.2,
+      "audioStreams": 0
+    },
+    {
+      "id": "reduced-static",
+      "width": 1280,
+      "height": 900,
+      "panel": "both",
+      "reduced": true,
+      "camera": "ortho",
+      "before": {
+        "frames": 17,
+        "progress": 40,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "after": {
+        "frames": 1459,
+        "progress": 40,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "errors": [],
+      "silent": true,
+      "seconds": 13.28,
+      "audioStreams": 0
+    },
+    {
+      "id": "perspective-warning",
+      "width": 1280,
+      "height": 900,
+      "panel": "both",
+      "reduced": false,
+      "camera": "perspective",
+      "before": {
+        "frames": 18,
+        "progress": 18.7,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "after": {
+        "frames": 1462,
+        "progress": 229.2,
+        "models": [
+          4,
+          4
+        ],
+        "frozenTick": 420,
+        "silent": true
+      },
+      "errors": [],
+      "silent": true,
+      "seconds": 13.28,
+      "audioStreams": 0
+    }
+  ],
+  "limits": [
+    "Orthographic guarantee; perspective diagnostic has separate weaker bounds",
+    "No live gameplay or collision fairness test",
+    "Mac Metal Chromium, not Chromebook performance",
+    "Silent, no audio stream by design",
+    "Snapshot revision has concurrent foreign dirty files"
+  ]
+}

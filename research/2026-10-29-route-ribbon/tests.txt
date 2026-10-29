@@ -1,0 +1,10 @@
+running 7 tests from ./tests/route_ribbon_test.ts
+route: straight tangent tails do not clamp or fold at authored endpoints ... ok (594µs)
+route: frames orthonormal, right-handed [right,up,-forward], no flips ... ok (2ms)
+route: transported orientation crosses vertical and inflections without flipping ... ok (607µs)
+route: segment seams continuous and arc-length stable under LUT refinement ... ok (2ms)
+route: inverse roundtrip at both curve amounts, joins, edges and dense patterns ... ok (58ms)
+route: projected distortion bounded, near patch exact, no local folds ... ok (11ms)
+route: mapping cannot alter diagonal/reversal sim state or replay hash ... ok (59ms)
+
+ok | 7 passed | 0 failed (137ms)

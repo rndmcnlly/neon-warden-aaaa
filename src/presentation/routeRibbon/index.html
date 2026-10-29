@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Route ribbon: isolated presentation prototype</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 16px;
+    background: #070d18;
+    color: #dbeafa;
+    font: 14px system-ui;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+  p {
+    max-width: 1000px;
+  }
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    border: 0;
+    padding: 8px 0;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  button,
+  select {
+    background: #183042;
+    color: #fff;
+    border: 1px solid #577086;
+    padding: 6px;
+  }
+  #views {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .view {
+    min-width: 0;
+  }
+  h2 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: 560px;
+    background: #081420;
+  }
+  #status {
+    font-variant-numeric: tabular-nums;
+    min-height: 2.5em;
+  }
+  .muted {
+    color: #a0b2c6;
+  }
+  @media (max-width:600px) {
+    body {
+      padding: 10px;
+    }
+    #views {
+      grid-template-columns: 1fr;
+    }
+    canvas {
+      height: 420px;
+    }
+    .muted {
+      display: none;
+    }
+    fieldset {
+      gap: 6px 10px;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+  </style>
+  <h1>One simulation plane, three authored route segments</h1>
+  <p
+    class="muted">Isolated silent math/model harness. Frozen tick 420, same positions and fake scan/Writ markers in both views. Only route presentation travels. Not gameplay, collision QA or an accessibility approval.</p>
+  <fieldset>
+    <button id="pause">Pause survey</button>
+    <label>Progress <input id="progress" type="range" min="12" max="228" value="40" step="0.1"></label>
+    <label><input id="curve" type="checkbox">Experimental curved combat</label>
+    <label><input id="reduced" type="checkbox">Reduced motion: static + flattened</label>
+    <label>Camera <select id="camera"><option value="ortho">Stabilized orthographic</option><option value="perspective">Live-like 27° perspective (unqualified)</option></select></label>
+  </fieldset>
+  <label>View <select id="panel"><option value="both">Comparison</option><option value="flat">Flat baseline</option><option value="ribbon">Route ribbon</option></select></label>
+  <div id="status"></div>
+  <div id="views">
+    <section class="view">
+      <h2>Flat baseline</h2>
+      <canvas id="flat"></canvas>
+    </section>
+    <section class="view">
+      <h2>Route ribbon</h2>
+      <canvas id="ribbon"></canvas>
+    </section>
+  </div>
+  <p>Green outline: exact near plane in default mode. Cyan: scan cone and focus brackets. White disk: six-sim-pixel hitbox. Amber: frozen threats. Gates and lane marks use the same mapping as ships, bullets, reticle, pickup and HUD world anchor.</p>
+  <script type="module" src="./harness.ts"></script>
+</html>

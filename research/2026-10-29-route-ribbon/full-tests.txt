@@ -1,0 +1,3241 @@
+Task test deno test --allow-read tests/
+Check tests/app_clock_test.ts
+Check tests/audio_gameplay_test.ts
+Check tests/audio_grid_space_test.ts
+Check tests/audio_mix_test.ts
+Check tests/audio_variants_test.ts
+Check tests/banks_test.ts
+Check tests/commentary_test.ts
+Check tests/director_ambient_test.ts
+Check tests/director_radio_test.ts
+Check tests/director_timeline_test.ts
+Check tests/i18n_text_test.ts
+Check tests/input_bindings_test.ts
+Check tests/input_reset_test.ts
+Check tests/integration_contracts_test.ts
+Check tests/logo_timing_test.ts
+Check tests/movement_test.ts
+Check tests/platform_test.ts
+Check tests/presentation_memory_test.ts
+Check tests/qa_audio_test.ts
+Check tests/qa_gltf_test.ts
+Check tests/qa_text_test.ts
+Check tests/render_hitstop_test.ts
+Check tests/render_logic_test.ts
+Check tests/route_ribbon_test.ts
+Check tests/scenes_timelines_test.ts
+Check tests/scenes_wave3_test.ts
+Check tests/settings_store_test.ts
+Check tests/shot_feel_test.ts
+Check tests/sim_runs_test.ts
+Check tests/sim_smoke_test.ts
+Check tests/sim_wave3_test.ts
+Check tests/tutorial_gates_test.ts
+Check tests/tutorial_practice_test.ts
+Check tests/ui_dispatch_test.ts
+Check tests/ui_focus_strings_test.ts
+Check tests/ui_hangar_test.ts
+Check tests/ui_hud_test.ts
+Check tests/ui_instruments_test.ts
+Check tests/ui_wordPulse_test.ts
+Check tests/world_sectors_test.ts
+running 1 test from ./tests/app_clock_test.ts
+clock stops while paused and scales with its rate ... ok (348µs)
+running 4 tests from ./tests/audio_gameplay_test.ts
+every role referenced by the mapping exists in the table ... ok (2ms)
+a killed enemy is heard where it last was ... ok (455µs)
+grazes climb in a streak, and sing a melody when pacifist ... ok (589µs)
+scan loop follows the beam; lock ticks rise; fly-bys once ... ok (501µs)
+running 4 tests from ./tests/audio_grid_space_test.ts
+musical sounds wait for the next grid line ... ok (310µs)
+scale degrees stay in key; enemy fire never does ... ok (232µs)
+panning follows the ship's point of view; mono centers ... ok (294µs)
+doppler rises on approach and falls on retreat ... ok (374µs)
+running 5 tests from ./tests/audio_mix_test.ts
+voice ducks music until the last voice ends ... ok (557µs)
+VO falls back to English when a language is missing ... ok (128µs)
+unpicked sfx roles are silent, not errors ... ok (103µs)
+staged loader survives failures and reports progress ... ok (3ms)
+subtitle chunks respect the line cap and cover the duration ... ok (325µs)
+running 3 tests from ./tests/audio_variants_test.ts
+variant URL parsing and registry reject unknown choices ... ok (780µs)
+master ceiling is monotonic, symmetric and bounded ... ok (441µs)
+Warden PA distortion cannot secretly amplify quiet speech ... ok (175µs)
+running 6 tests from ./tests/banks_test.ts
+bank and variant ids are unique ... ok (366µs)
+voiced variants are script lines with the same text and speaker ... ok (177µs)
+text-only variants use bank ids and resolve through t() ... ok (155µs)
+every variant has all three languages and house style ... ok (168µs)
+pools are deep enough not to repeat ... ok (61µs)
+vo/script.yaml mirrors the voiced variants ... FAILED (19ms)
+running 14 tests from ./tests/commentary_test.ts
+commentary: stats moment names match the banks ... ok (172µs)
+commentary: a bag never repeats until it empties ... ok (688µs)
+commentary: bags persist across runs and sessions ... ok (117µs)
+commentary: malformed persisted bags are ignored ... ok (171µs)
+commentary: cooldowns, the global gap, and urgent lines ... ok (110µs)
+commentary: higher priority wins; conditions filter ... ok (58µs)
+commentary: scenes win; tutorial_ai may interject in the tutorial ... ok (62µs)
+commentary: an unspoken line goes back in the bag ... ok (47µs)
+commentary: every registered variant has text in every language ... ok (159µs)
+director: interject speaks only while a scene waits ... ok (1ms)
+stats: firing at nothing is intoTheMist, once per spell ... ok (3ms)
+stats: hysteresis and gaps keep moments rare ... ok (1ms)
+stats: deaths in quick succession, accuracy and ratio ... ok (115µs)
+stats: a fighting run says something, but not much ... ok (14ms)
+running 4 tests from ./tests/director_ambient_test.ts
+a scripted line ducks a bark instead of cutting it ... ok (1ms)
+chatter yields while a scene runs, then waits a beat ... ok (190µs)
+deck never repeats a card within a round or across the seam ... ok (98µs)
+an event bark yields to scenes, cuts chatter, then holds it ... ok (260µs)
+running 2 tests from ./tests/director_radio_test.ts
+radio holds a voiced line until its audio arrives ... ok (570µs)
+text-only radio ids never touch the voice ... ok (59µs)
+running 8 tests from ./tests/director_timeline_test.ts
+timeline plays in order against the clock ... ok (1ms)
+subtitles follow textLang, audio follows voiceLang ... ok (136µs)
+branch on flag, including a flag set earlier in the scene ... ok (82µs)
+skipLine cuts the line and releases its wait ... ok (115µs)
+skipScene keeps lasting state and drops the rest ... ok (143µs)
+waits do not drift with frame timing ... ok (78µs)
+a loading line waits, subtitle and all, then plays ... ok (130µs)
+a line that never loads falls back to subtitles alone ... ok (255µs)
+running 8 tests from ./tests/i18n_text_test.ts
+every text id has non-empty EN, ES and ZH ... ok (841µs)
+script and UI ids do not collide, and UI ids start with ui. ... ok (448µs)
+house style: no emdashes; spoken text has no parentheses ... ok (595µs)
+t() fills params, falls back, and warns once for unknown ids ... ok (156µs)
+every speaker has a subtitle name; scriptLine fills the contract shape ... ok (436µs)
+script.gen.ts is in sync with vo/script.yaml ... ok (17ms)
+placeholders match across languages ... ok (1ms)
+every ui.* id the front end names exists in the UI table ... ok (2ms)
+running 8 tests from ./tests/input_bindings_test.ts
+menu and gameplay actions may share keys; same-context ones may not ... ok (315µs)
+Space triggers both fire and confirm by default ... ok (131µs)
+rebinding a taken key swaps it with the displaced action ... ok (159µs)
+rebinding into an empty slot removes the input elsewhere ... ok (82µs)
+gamepad rebinds resolve conflicts within the button list ... ok (82µs)
+hold and toggle resolve fire and focus ... ok (74µs)
+radial dead zone zeroes small input and keeps direction ... ok (65µs)
+labels follow device family ... ok (134µs)
+running 1 test from ./tests/input_reset_test.ts
+input blur/pause reset clears held keys, toggle latches and queued press edges ... ok (1ms)
+running 5 tests from ./tests/integration_contracts_test.ts
+waitFlag blocks until the flag flips, nudging once ... ok (1ms)
+skipping a scene releases a flag wait and reports flags ... ok (180µs)
+the Warden's arrival is a spawn event ... ok (2ms)
+boss.parley holds the Warden still and blocks damage ... ok (2ms)
+tut.spawnTarget drops one passive practice drone ... ok (288µs)
+running 2 tests from ./tests/logo_timing_test.ts
+logo reveal is finite, seekable and only glints once ... ok (387µs)
+either accessibility setting yields the full static identity ... ok (59µs)
+running 7 tests from ./tests/movement_test.ts
+movement flags are typed opt-in, invalid values remain classic ... ok (691µs)
+hybrid first tick126, tick16 252px/s, cruise release168/84/0 ... ok (267µs)
+classic: normalize diagonals, preserve partial analogue, instant reverse/corner ... ok (182µs)
+classic: fixed input replay includes response state and focus transitions only ... ok (4ms)
+hybrid: normalize diagonals, preserve partial analogue, instant reverse/corner ... ok (116µs)
+hybrid: fixed input replay includes response state and focus transitions only ... ok (2ms)
+hybrid neutral-gap memory, precision release, wall coast do not store a launch ... ok (136µs)
+running 2 tests from ./tests/platform_test.ts
+fullscreen shortcut respects focus, rebinding, bound controls and modifiers ... ok (312µs)
+manifest has standalone same-scope identity and valid local PNG icons ... ok (1ms)
+running 5 tests from ./tests/presentation_memory_test.ts
+completion and skip leave the frozen snapshot untouched ... ok (39ms)
+recording has five shots, cold weapon before Warden reaction ... ok (57µs)
+every presentation readout and enemy has EN ES ZH ... ok (65µs)
+real wave order introduces only drone dart turret lancer ... ok (169µs)
+unsafe transition, suppression, encountered and resume are guarded ... ok (63µs)
+running 5 tests from ./tests/qa_audio_test.ts
+silencedetect output becomes spans, an open silence runs to the end ... ok (568µs)
+stereo balance reads hard left, centre and hard right ... ok (501µs)
+word alignment fits the line offset and measures per-word error ... ok (122µs)
+transcripts match script lines across scripts and fragments ... ok (908µs)
+canary trusts heard lines only when scripted and actually audible ... ok (137µs)
+running 3 tests from ./tests/qa_gltf_test.ts
+reads triangles and node names from a valid GLB ... ok (715µs)
+flags a buffer view that runs past its buffer ... ok (59µs)
+rejects non-GLB bytes ... ok (26µs)
+running 4 tests from ./tests/qa_text_test.ts
+placeholders are sorted and deduplicated ... ok (554µs)
+placeholder parity ignores order but not names ... ok (68µs)
+CJK counts wider than Latin ... ok (169µs)
+scanIds finds script and ui ids, skips comments and prose ... ok (218µs)
+running 3 tests from ./tests/render_hitstop_test.ts
+hitstop: big hits only (turret, lancer, boss parts) ... ok (263µs)
+hitstop: holds N ticks, overlapping hits do not stack ... ok (93µs)
+hitstop: off under fast autoplay ... ok (151µs)
+running 11 tests from ./tests/render_logic_test.ts
+playfield maps to a centered 12 x 16 plane, +y down to +Z ... ok (380µs)
+interpolator blends the last two ticks by alpha ... ok (274µs)
+many ticks per frame: only the last two matter ... ok (123µs)
+observing the same tick twice does not collapse the blend ... ok (53µs)
+a teleport snaps instead of smearing ... ok (33µs)
+flash guard: at most three onsets per second by default ... ok (82µs)
+flash guard: reduced flashing caps rate and strength ... ok (45µs)
+value ladder: only chosen roles exceed the bloom threshold ... ok (73µs)
+bloom damps under bullet density, within 0.5–1 ... ok (29µs)
+scene looks never use the danger hue for the world ... ok (36µs)
+loadout tables cover every cosmetic id ... ok (28µs)
+running 7 tests from ./tests/route_ribbon_test.ts
+route: straight tangent tails do not clamp or fold at authored endpoints ... ok (589µs)
+route: frames orthonormal, right-handed [right,up,-forward], no flips ... ok (2ms)
+route: transported orientation crosses vertical and inflections without flipping ... ok (601µs)
+route: segment seams continuous and arc-length stable under LUT refinement ... ok (2ms)
+route: inverse roundtrip at both curve amounts, joins, edges and dense patterns ... ok (62ms)
+route: projected distortion bounded, near patch exact, no local folds ... ok (12ms)
+route: mapping cannot alter diagonal/reversal sim state or replay hash ... ok (68ms)
+running 7 tests from ./tests/scenes_timelines_test.ts
+every line a scene can speak exists in all three languages ... ok (495µs)
+every scripted VO line is used by some scene, chatter bank or bark ... ok (63µs)
+timeline ids are unique and cover the scene skip targets ... ok (39µs)
+every say is followed by a wait, so pacing follows the audio ... ok (125µs)
+route-specific lines only play on their route ... ok (120µs)
+sim events start the right scenes ... ok (87µs)
+a ram kill still ends the pacifist run ... ok (41µs)
+running 7 tests from ./tests/scenes_wave3_test.ts
+radio and codex text: all languages, no emdashes ... ok (571µs)
+every radio line resolves; voiced flags match the VO table ... ok (242µs)
+every text-only radio line is in the bank ... ok (106µs)
+kill-only radio lines only play when a scout is lost ... ok (71µs)
+the scouts' no-fire rule is only said to a Pilot who has not fired ... ok (79µs)
+codex entries resolve and intel unlocks them ... ok (159µs)
+wave 3 events start their beats, only the first time ... ok (94µs)
+running 6 tests from ./tests/settings_store_test.ts
+out-of-range values are clamped on write ... ok (524µs)
+corrupt saved fields fall back to defaults ... ok (102µs)
+one store per storage object, so main and menus agree ... ok (21µs)
+presets set render scale; a custom scale sets preset custom ... ok (93µs)
+sanitize keeps a valid settings object unchanged ... ok (190µs)
+checkpoint round-trips and rejects unknown beats ... ok (126µs)
+running 6 tests from ./tests/shot_feel_test.ts
+projectile speeds and muzzle-to-top transit are measured at fixed ticks ... ok (2ms)
+sweep catches tiny parts and weakpoints between fast endpoints ... ok (112µs)
+fast tap crossing a narrow part chord disarms instead of killing hull ... ok (551µs)
+fast piercing Writ resolves multiple crossed hulls in one tick ... ok (298µs)
+camera recoil: tap immediate, stream absent, settles; accessibility exact zero ... ok (1ms)
+shot chips bounded, low tier clears, seek does not streak ... ok (18ms)
+running 10 tests from ./tests/sim_runs_test.ts
+full runs replay identically from the same seed ... ok (7s)
+the fighting autopilot defeats the Warden ... ok (5s)
+the pacifist autopilot survives the Warden without a kill ... ok (4s)
+wave tables keep the starter's head counts ... ok (221µs)
+freeze holds the world still for the flashback ... ok (889µs)
+the tutorial spawns only scripted targets and costs nothing ... ok (672µs)
+game over waits for a continue ... ok (2ms)
+the Warden: descent, phases, and a timed survival ending ... ok (220ms)
+killing the Warden takes its escorts and bullets with it ... ok (477ms)
+only the first real powerup is flagged as the flashback trigger ... ok (238µs)
+running 5 tests from ./tests/sim_smoke_test.ts
+same seed and autopilot give the same snapshot hash ... ok (1s)
+a different seed gives a different run ... ok (1s)
+the pacifist autopilot never kills ... ok (1s)
+URL flags parse and clamp ... ok (495µs)
+settings persist, merge new defaults, and notify ... ok (292µs)
+running 10 tests from ./tests/sim_wave3_test.ts
+trigger: tap is aimed, hold streams, rest charges a Writ ... ok (2ms)
+scan: dwell locks, and the intel is the real FSM state ... ok (1ms)
+a locked Writ on the barrel disarms; on the weak point it kills ... ok (2ms)
+graze drill: near misses graze once each and pay ... ok (1ms)
+enemies announce their volleys ... ok (3ms)
+the flight recorder is the sector 3 cache and the flashback key ... ok (2ms)
+regression: each boss phase is announced once, even when a survival run turns violent ... ok (503ms)
+loadouts change play: sensors and weapons ... ok (2ms)
+autopilots reach their endings across seeds and difficulties ... ok (22s)
+every autopilot replays identically ... ok (7s)
+running 13 tests from ./tests/tutorial_gates_test.ts
+gates: no input, browser focus and passive charge never complete a lesson ... ok (7ms)
+gates: too-early keyboard actions do not pre-credit future instructions ... ok (3ms)
+gates: held movement and focus require a new press after activation ... ok (1ms)
+gates: wrong action cannot complete the gate or pre-credit another ... ok (154µs)
+gates: a stale fire stream is not a fresh demonstration ... ok (1ms)
+gates: changing accessibility mode is neither a press nor a mistake ... ok (437µs)
+gates: fresh first-tick press is accepted, toggle focus is action-level ... ok (57µs)
+gates: active target drill still counts the disarming trick shot ... ok (1ms)
+gates: tap count from initial fire lesson does not leak into tap lesson ... ok (491µs)
+gates: three fresh taps, not old shots, demonstrate trigger discipline ... ok (572µs)
+gates: deliberate release and rest charge; precharged idle does not ... ok (3ms)
+gates: old projectile results cannot pre-credit target or part drills ... ok (92µs)
+corrections: scheduler yields to teaching, cools down, exhausts its bag ... ok (324µs)
+running 7 tests from ./tests/tutorial_practice_test.ts
+tutorial: a disarm that sends the target flying counts ... ok (3ms)
+tutorial: a kill counts, and the lesson's end stops re-issue ... ok (3ms)
+tutorial: a player removal mid-lesson re-issues the target ... ok (2ms)
+tutorial: an escaped target respawns with a line ... ok (4ms)
+tutorial: drill stats never leak into the run ... ok (697µs)
+tutorial: idle fighting autopilot demonstrates the complete trigger verb ... ok (54ms)
+tutorial: a missed graze volley is retryable and the demo can complete it ... ok (5ms)
+running 4 tests from ./tests/ui_dispatch_test.ts
+quit dialog: Left from Cancel finds nothing, so focus stays ... ok (362µs)
+quit dialog: Enter activates the focused element ... ok (117µs)
+dispatch: Esc in play pauses; Backspace in the tutorial offers skip ... ok (73µs)
+grid wrap: Down off a column's bottom goes to the next column's top ... ok (81µs)
+running 5 tests from ./tests/ui_focus_strings_test.ts
+down in a list picks the next row, not a nearer diagonal ... ok (315µs)
+right in a grid picks the same-row neighbor ... ok (34µs)
+no candidate in a direction returns -1 ... ok (22µs)
+keyboard reaches the remap table: Down from the tab enters the Keyboard column ... ok (67µs)
+UI strings fill placeholders in every language ... ok (184µs)
+running 6 tests from ./tests/ui_hangar_test.ts
+stat deltas know which direction is better ... ok (332µs)
+progress repairs bad saves field by field ... ok (136µs)
+progress persists loadout and unlocks codex once ... ok (179µs)
+mastery ranks rise with career pay ... ok (43µs)
+legacy helmet saves retain ship choices, pay, codex and settings ... ok (168µs)
+every hangar codex id resolves to codex text, not a raw id ... ok (68µs)
+running 8 tests from ./tests/ui_hud_test.ts
+HUD: spared counts enemies that left alive, not kills or wipes ... ok (330µs)
+HUD: the tutorial hides the pacifist note and the spared count ... ok (77µs)
+HUD: Warden meter shows health, phase and the shielded descent ... ok (58µs)
+HUD: the serial stays hidden until the flashback reveals it ... ok (24µs)
+banners: sectors 1-5 announce, the Warden gets a warning ... ok (58µs)
+banners: longer titles get smaller type (ES runs wider) ... ok (138µs)
+licenses and credits: Orbitron and Stable Audio 3 are listed ... ok (50µs)
+credits crawl: every department and role resolves in all languages ... ok (79µs)
+running 4 tests from ./tests/ui_instruments_test.ts
+instruments read nothing from a pre-wave-3 snapshot ... ok (351µs)
+Writ charge splits into three cells ... ok (44µs)
+intel shows only for locked targets, and lock reads from target ... ok (114µs)
+every settings description id exists ... ok (108µs)
+running 3 tests from ./tests/ui_wordPulse_test.ts
+segments map line offsets onto a chunk ... ok (426µs)
+no timings: one plain segment ... ok (45µs)
+active word holds across short gaps, clears outside the take ... ok (73µs)
+running 3 tests from ./tests/world_sectors_test.ts
+world: five distinct bounded kits, no geometry in the play plane ... ok (1ms)
+world: all discoveries localized, stable ids, 3 per sector ... ok (114µs)
+world: archives independently of reading windows, no premature or duplicate discovery ... ok (99µs)
+
+ ERRORS
+
+vo/script.yaml mirrors the voiced variants => ./tests/banks_test.ts:58:6
+error: AssertionError: Values are not equal: stale; run deno run --allow-read --allow-write src/scenes/banks/emit_yaml.ts
+
+
+    [Diff] Actual / Expected
+
+
+    # Neon Warden AAAA: voiceover script as data.\n
+    #\n
+    # The single source of spoken text. Audio (vo/render.py), subtitles and\n
+    # captions all key off a line `id` plus a language. The story behind these\n
+    # lines is in docs/narrative/BIBLE.md; read it before rewriting anything.\n
+    #\n
+    # speakers: one casting record per character. `design` is the Qwen3-TTS\n
+    #   VoiceDesign instruction used ONCE to create the anchor recording; `anchor`\n
+    #   is the exact English line spoken in that recording (also the clone\n
+    #   reference transcript). Anchors are LOCKED once rendered: the anchor's\n
+    #   sidecar (vo/voices/<speaker>.json) is the frozen record of the prompt that\n
+    #   made it, and editing `design`, `anchor` or `seed` here only prints a\n
+    #   notice until `render.py --recast <speaker>`, which re-makes the anchor and\n
+    #   re-renders every line that speaker has. `description` is the human casting\n
+    #   note (what the character sounds like now); render.py never reads it.\n
+    # lines: one entry per spoken line, in playback order within each scene.\n
+    #   `direction` is the acting note. In clone mode (default) it is recorded and\n
+    #   hashed but NOT consumed by the engine; in design mode it is appended to\n
+    #   the speaker's design instruction. `route` is any | kill | pacifist (which\n
+    #   run can hear it). `optional: true` marks a line a timeline may skip.\n
+    #   `seed` (optional) overrides the speaker seed for all languages (`seed: 7`)\n
+    #   or per language (`seed: {es: 144}`); `render.py --retry-low` writes these.\n
+    #   `mode: design` (optional) renders that line with VoiceDesign instead of\n
+    #   cloning the anchor.\n
+    #\n
+    # Keep spoken text TTS-safe: no emdashes, no parentheticals, numbers as words\n
+    # where synthesis wavers (serials are read digit by digit: "zero one two two",\n
+    # "cero uno dos dos", "零一二二号"). Spanish is Latin American (tú to Pilot,\n
+    # ustedes for plurals). Chinese is Simplified. After editing, regenerate the\n
+    # runtime copy: deno run --allow-read --allow-write src/i18n/gen_script.ts\n
+    \n
+    speakers:\n
+      tutorial_ai:\n
+        seed: 11\n
+        description: >-\n
+          The Lane Authority onboarding assistant. An adult woman in her\n
+          forties, airline-captain calm: corporate, helpful, banal, never\n
+          sinister, with sincere institutional warmth rather than cuteness.\n
+          Also voices her own older recordings in the flashback. Recast\n
+          October 28, 2026 from the 'a_captain' audition\n
+          (vo/casting/tutorial_ai/PICK).\n
+        design: >-\n
+          A warm adult female alto voice in her forties, calm and unhurried\n
+          like an airline captain on the cabin intercom, low-medium pitch,\n
+          reassuring and sincere, gentle institutional warmth, clear\n
+          professional diction.\n
+        anchor: >-\n
+          Welcome to the Lane Authority onboarding program. I will be with you\n
+          every step of the way. Let's begin with something simple: moving\n
+          your ship.\n
+      narrator:\n
+        seed: 22\n
+        description: >-\n
+          The Lane Authority threat-briefing reel and the epilogue. Deep, slow,\n
+          gravelly movie-trailer voice. This is the scary register: the narrator\n
+          hypes the Warden up so the Warden itself can deflate it.\n
+        design: >-\n
+          A deep, slow, gravelly male movie-trailer narrator, mid fifties, smoky\n
+          and weary, dramatic pauses, rich chest resonance, speaking as if every\n
+          sentence were the last line of a tragedy.\n
+        anchor: >-\n
+          In a world where the neon never sleeps, one pilot remembers. The rain.\n
+          The silence. And the promise he could not keep.\n
+      warden:\n
+        seed: 33\n
+        # `design` below is the prompt that produced the current anchor\n
+        # (vo/voices/warden.wav, median F0 about 312 Hz). It no longer describes\n
+        # the voice; `description` does. Anchors are locked, so `design` can now\n
+        # be rewritten without recasting (render.py keeps the anchor and prints a\n
+        # notice). See BIBLE.md, Casting.\n
+        description: >-\n
+          High, furious, over-acted and a little funny: a shrill, indignant,\n
+          operatic voice that shouts in capitals and cracks when it gets upset.\n
+          Not deep, not gravelly, not truly scary. An old guardian who has given\n
+          the same warning to one hundred twenty-two pilots and is sick of it.\n
+        design: >-\n
+          A huge, menacing male villain with an extremely rough, gravel-and-smoke\n
+          voice, very low pitch, growling, theatrical and hammy, shouting with\n
+          operatic over-the-top fury and booming laughter.\n
+        anchor: >-\n
+          You dare enter MY grid? I am the Warden! I have watched a thousand pilots\n
+          burn, and I will watch you burn brightest of all!\n
+      pilot:\n
+        seed: 44\n
+        description: >-\n
+          Pilot number zero one two two. Speaks once in the whole game, and only in\n
+          the pacifist ending. Low, quiet, flat, heard through a sealed helmet.\n
+        design: >-\n
+          A terse, low, quiet adult male voice heard through a sealed helmet, mid\n
+          thirties, flat and economical, slightly muffled and close to the\n
+          microphone, no warmth and no hurry, every word deliberate.\n
+        anchor: >-\n
+          Job's a job. I fly the route, I get paid, I go home. That is all there\n
+          is to say about it.\n
+    \n
+      scout:\n
+        seed: 55\n
+        description: >-\n
+          The Warden's scouts on their own short-range channel, one voice for all\n
+          of them (audio varies it per hull). Young, quick, earnest, a little\n
+          dry. Grown, not built; they talk shop about lanes, convoys and rings.\n
+        design: >-\n
+          A young, quick, earnest voice on a crackly short-range radio, gender\n
+          neutral, clipped professional phrasing but warm underneath, slightly\n
+          synthetic shimmer, speaking low as if not to be overheard.\n
+        anchor: >-\n
+          Drift Four to Drift Six. Convoy through at the half-bell. Keep the lane\n
+          wide, and do not fire unless it fires.\n
+      authority:\n
+        seed: 66\n
+        description: >-\n
+          Lane Control: Authority traffic on a clean corporate channel. Dry,\n
+          bored, unhurried, reads every death and every tollgate as a line item.\n
+          Banal, never sinister.\n
+        design: >-\n
+          A dry, bored, middle-aged traffic-control dispatcher on a clean\n
+          corporate radio channel, monotone and unhurried, faintly compressed,\n
+          reading everything like a line item on an invoice.\n
+        anchor: >-\n
+          Lane Control to all survey teams. Tollgate footings approved, pending\n
+          clearance. Please log your hours before the end of the cycle.\n
+    lines:\n
+      # -- tutorial: Lane Authority onboarding (properly built, knowingly overlong)\n
+    \n
+      - id: tut_hello_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Beaming welcome, as if greeting the first customer of the day.\n
+        en: >-\n
+          Hello, and welcome to Lane Authority onboarding! I am your onboarding\n
+          assistant, and I will be with you every step of the way. Every single\n
+          step.\n
+        es: >-\n
+          ¡Hola, y bienvenido a la inducción de la Autoridad de Rutas! Soy tu\n
+          asistente de inducción y estaré contigo en cada paso del camino. En cada\n
+          uno de ellos.\n
+        zh: 你好，欢迎参加航道管理局入职培训！我是你的入职助手，每一步我都会陪着你。真的是每一步哦。\n
+    \n
+      - id: tut_contract_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Cheerful legal boilerplate, read fast and proud of it.\n
+        en: >-\n
+          Your contract has been countersigned! Payment is issued on completion of\n
+          contract. Completion of contract is defined in Appendix F, which is\n
+          available on request.\n
+        es: >-\n
+          ¡Tu contrato ya fue firmado por ambas partes! El pago se emite al\n
+          completar el contrato. La definición de contrato completado está en el\n
+          Apéndice F, disponible a solicitud.\n
+        zh: 你的合同已完成会签！合同完成后即发放报酬。“合同完成”的定义见附录F，可应要求提供。\n
+    \n
+      - id: tut_move_000\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Kindergarten-teacher patience, explaining the obvious with great care.\n
+        en: >-\n
+          Let's start with movement! Movement is how you get from one place to\n
+          another. Please fly to the left.\n
+        es: >-\n
+          ¡Empecemos con el movimiento! El movimiento es lo que te lleva de un\n
+          lugar a otro. Por favor, vuela hacia la izquierda.\n
+        zh: 我们先从移动开始！移动，就是从一个地方到另一个地方。请向左飞。\n
+    \n
+      - id: tut_move_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Maximum cheer, as if this were the most important lesson ever taught;\n
+          tiny forced giggle at the end.\n
+        en: >-\n
+          Great job pressing the left key! Now, for your next challenge: press the\n
+          right key. I believe in you. Take all the time you need.\n
+        es: >-\n
+          ¡Excelente, presionaste la tecla izquierda! Ahora, tu siguiente desafío:\n
+          presiona la tecla derecha. Creo en ti. Tómate todo el tiempo que necesites.\n
+        zh: 太棒了，你按下了左键！接下来，你的下一个挑战是：按下右键。我相信你。慢慢来，不着急。\n
+    \n
+      - id: tut_move_002\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Delighted, then a proud little flourish on the last sentence.\n
+        en: >-\n
+          Wonderful! Now up. And now down. You have flown in all four directions.\n
+          That is every direction we offer.\n
+        es: >-\n
+          ¡Maravilloso! Ahora hacia arriba. Y ahora hacia abajo. Ya volaste en las\n
+          cuatro direcciones. Son todas las direcciones que ofrecemos.\n
+        zh: 太好了！现在向上。再向下。你已经朝四个方向都飞过了。我们提供的方向就这么多。\n
+    \n
+      - id: tut_hitbox_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere and a little tender on the last sentence.\n
+        en: >-\n
+          Your ship is large and beautiful, but only the small glowing gem at its\n
+          center can be hit. Please protect the gem. The gem is you.\n
+        es: >-\n
+          Tu nave es grande y hermosa, pero solo la pequeña gema brillante del\n
+          centro puede recibir impactos. Por favor, protege la gema. La gema eres tú.\n
+        zh: 你的飞船又大又漂亮，但只有中央那颗发光的小宝石会被击中。请保护好宝石。宝石就是你。\n
+    \n
+      - id: tut_focus_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Meditation-app calm that keeps slipping back into perkiness.\n
+        en: >-\n
+          Hold focus to fly slowly and precisely. Focus is for threading the gem\n
+          between bullets. Let's practice. Focus. Good. Still focusing. Great.\n
+        es: >-\n
+          Mantén el enfoque para volar despacio y con precisión. El enfoque sirve\n
+          para pasar la gema entre las balas. Practiquemos. Enfócate. Bien. Sigue\n
+          enfocado. Genial.\n
+        zh: 按住专注键，就能缓慢而精准地飞行。专注，是为了让宝石从子弹缝隙中穿过。我们来练习一下。专注。很好。继续专注。太棒了。\n
+    \n
+      - id: tut_fire_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Excited, like unveiling a birthday present.\n
+        en: >-\n
+          Now, let's learn to fire! Hold fire to release bullets. Bullets go up.\n
+          Up is where the problems are.\n
+        es: >-\n
+          ¡Ahora aprendamos a disparar! Mantén presionado disparar para soltar\n
+          balas. Las balas van hacia arriba. Arriba es donde están los problemas.\n
+        zh: 现在来学习射击吧！按住射击键就会发射子弹。子弹向上飞。问题都在上面。\n
+    \n
+      - id: tut_fire_002\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Captain Obvious, completely sincere, a careful list.\n
+        en: >-\n
+          Your bullets are cyan. Bullets fired at you are pink. Pink bullets are\n
+          bad. Gold bullets are also bad. In general, bullets are bad, unless they\n
+          are yours.\n
+        es: >-\n
+          Tus balas son cian. Las balas que te disparan son rosas. Las balas rosas\n
+          son malas. Las doradas también son malas. En general, las balas son malas,\n
+          salvo las tuyas.\n
+        zh: 你的子弹是青色的。射向你的子弹是粉色的。粉色子弹很危险。金色子弹也很危险。总之，子弹都很危险，除非是你自己的。\n
+    \n
+      - id: tut_autofire_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Genuinely helpful, then corporate on the last sentence.\n
+        en: >-\n
+          If holding fire for a long time is uncomfortable, auto-fire is in the\n
+          accessibility settings. The Lane Authority wants your hands healthy and\n
+          productive.\n
+        es: >-\n
+          Si mantener presionado disparar por mucho tiempo te resulta incómodo, el\n
+          disparo automático está en los ajustes de accesibilidad. La Autoridad de\n
+          Rutas quiere tus manos sanas y productivas.\n
+        zh: 如果长时间按住射击键让你不舒服，可以在无障碍设置中开启自动射击。航道管理局希望你的双手健康又高效。\n
+    \n
+      - id: tut_target_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Game-show reveal.\n
+        en: >-\n
+          Here is a practice target. It is a hologram of a Warden scout. Please\n
+          destroy the hologram.\n
+        es: >-\n
+          Aquí tienes un blanco de práctica. Es un holograma de un explorador del\n
+          Guardián. Por favor, destruye el holograma.\n
+        zh: 这是一个练习靶。它是守望者侦察机的全息影像。请摧毁这个全息影像。\n
+    \n
+      - id: tut_target_002\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Proud applause, then a motivational-poster cadence.\n
+        en: >-\n
+          Excellent! Scouts are the Warden's eyes. Every eye you close is one less\n
+          eye on you.\n
+        es: >-\n
+          ¡Excelente! Los exploradores son los ojos del Guardián. Cada ojo que\n
+          cierras es un ojo menos sobre ti.\n
+        zh: 太棒了！侦察机是守望者的眼睛。你每关掉一只眼睛，盯着你的眼睛就少一只。\n
+    \n
+      # -- tutorial, wave 3: trigger discipline, scanning, parts, graze, rate\n
+    \n
+      - id: tut_tap_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word.\n
+        en: >-\n
+          Now, trigger discipline. A short press fires a single aimed round. It is\n
+          slower to repeat, but it goes exactly where you point it. Please tap\n
+          three times.\n
+        es: >-\n
+          Ahora, disciplina de gatillo. Una pulsación corta lanza un solo disparo\n
+          de precisión. Tarda más en repetirse, pero va justo a donde apuntas. Por\n
+          favor, pulsa tres veces.\n
+        zh: 现在讲扳机纪律。轻按一下，会打出一发精确射击。它的冷却稍长，但会准确打到你瞄准的地方。请轻按三次。\n
+    \n
+      - id: tut_stream_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word.\n
+        en: >-\n
+          Holding the trigger fires a steady stream. The stream is for hulls. It\n
+          is the most volume per second the Authority can offer you. Please hold.\n
+        es: >-\n
+          Si mantienes el gatillo, disparas una ráfaga continua. La ráfaga es para\n
+          cascos. Es el mayor volumen por segundo que la Autoridad puede\n
+          ofrecerte. Por favor, mantenlo presionado.\n
+        zh: 按住扳机会持续射击。持续射击是用来打船体的，这是管理局能为你提供的每秒最大火力。请按住。\n
+    \n
+      - id: tut_rule_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Stating a rule worth remembering.\n
+        en: >-\n
+          So: stream for hulls, tap for parts. It is a short rule, and it will\n
+          keep you paid.\n
+        es: >-\n
+          Entonces: ráfaga para cascos, toque para piezas. Es una regla corta, y\n
+          hará que te sigan pagando.\n
+        zh: 所以记住：持续射击打船体，轻按打部件。规则很短，但能保住你的报酬。\n
+    \n
+      - id: tut_rest_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Gentle, almost a breathing exercise.\n
+        en: >-\n
+          Next, please let go of the trigger entirely. While you rest, your\n
+          capacitor charges. Three marks around your ship show the level. Wait for\n
+          all three.\n
+        es: >-\n
+          Ahora, por favor, suelta el gatillo por completo. Mientras descansas, tu\n
+          capacitor se carga. Tres marcas alrededor de tu nave muestran el nivel.\n
+          Espera a que se enciendan las tres.\n
+        zh: 接下来，请完全松开扳机。你休息的时候，电容器会充能。飞船周围的三个标记显示充能等级。请等三个全部亮起。\n
+    \n
+      - id: tut_scan_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word.\n
+        en: >-\n
+          While you rest, your sensor package also sweeps a scanning beam ahead of\n
+          you. Here is a new hologram. Keep the beam on it until it locks.\n
+        es: >-\n
+          Mientras descansas, tu paquete de sensores también barre un haz de\n
+          escaneo frente a ti. Aquí tienes un nuevo holograma. Mantén el haz sobre\n
+          él hasta fijarlo.\n
+        zh: 你休息的时候，传感器组件还会在前方扫出一道扫描光束。这里有一个新的全息目标。让光束一直照着它，直到锁定。\n
+    \n
+      - id: tut_intel_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Quietly proud of the technology.\n
+        en: >-\n
+          Locked. A lock tells you what the target is doing: patrolling, aiming,\n
+          firing, evading or retreating. It also marks its weapon parts and its\n
+          weak point. Everything you scan is filed to your codex.\n
+        es: >-\n
+          Objetivo fijado. Un fijado te dice qué está haciendo el objetivo:\n
+          patrullar, apuntar, disparar, evadir o retirarse. También marca sus\n
+          piezas de armamento y su punto débil. Todo lo que escaneas se archiva en\n
+          tu códice.\n
+        zh: 已锁定。锁定后你能看到目标正在做什么：巡逻、瞄准、开火、闪避或撤退。它还会标出目标的武器部件和弱点。你扫描到的一切都会归档到资料库。\n
+    \n
+      - id: tut_writ_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. A little ceremony on the full name.\n
+        en: >-\n
+          Your capacitor is full, and a full charge is called a Writ. Its full\n
+          name is the Writ of Enclosure, after the instrument that founded the\n
+          Authority. A Writ passes through anything in its way. Please release it\n
+          on the weak point your scan has marked.\n
+        es: >-\n
+          Tu capacitor está lleno, y una carga completa se llama Mandato. Su\n
+          nombre completo es Mandato de Cercamiento, por el instrumento que fundó\n
+          la Autoridad. Un Mandato atraviesa todo lo que se interponga. Por favor,\n
+          suéltalo sobre el punto débil que marcó tu escaneo.\n
+        zh: 你的电容器已经充满，满充能的一击叫作令状。全称是圈地令状，得名于创立管理局的那份法律文书。令状会贯穿挡在前面的一切。请对准扫描标出的弱点释放。\n
+    \n
+      - id: tut_parts_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word.\n
+        en: >-\n
+          This practice turret has one weapon part: its barrel. Tap it, or release\n
+          a Writ on it, until it breaks.\n
+        es: >-\n
+          Esta torreta de práctica tiene una sola pieza de armamento: su cañón.\n
+          Dispárale con toques, o suelta un Mandato sobre él, hasta que se rompa.\n
+        zh: 这座练习炮塔只有一个武器部件：炮管。轻按射击，或者对它释放令状，直到它损坏。\n
+    \n
+      - id: tut_disarm_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Reads the pay rate as good news.\n
+        en: >-\n
+          Disarmed. A disarmed asset stops firing and leaves the lane. Disarms are\n
+          paid at forty percent of a kill. A partial deliverable is still a\n
+          deliverable.\n
+        es: >-\n
+          Desarmado. Un activo desarmado deja de disparar y sale de la ruta. Los\n
+          desarmes se pagan al cuarenta por ciento de una eliminación. Un\n
+          entregable parcial sigue siendo un entregable.\n
+        zh: 已解除武装。被解除武装的目标会停止开火，离开航道。解除武装按击毁报酬的百分之四十支付。部分交付也是交付。\n
+    \n
+      - id: tut_graze_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word.\n
+        en: >-\n
+          Next, clearance. Hold focus to see the ring around your gem. When a\n
+          round passes inside the ring without touching you, that is a graze.\n
+          Please let five slow rounds pass close.\n
+        es: >-\n
+          Lo siguiente es el margen. Mantén el enfoque para ver el anillo\n
+          alrededor de tu gema. Cuando un disparo pasa dentro del anillo sin\n
+          tocarte, eso es un roce. Por favor, deja pasar cerca cinco disparos\n
+          lentos.\n
+        zh: 接下来是净空。按住专注，就能看到你那颗宝石周围的圆环。子弹从圆环内穿过却没碰到你，就叫擦弹。请让五发慢速子弹贴身飞过。\n
+    \n
+      - id: tut_graze_002\n
+        speaker: tutorial_ai\n
+        seed: {zh: 211}\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Means it as a compliment.\n
+        en: >-\n
+          Near misses are billable. The Authority values your proximity to risk.\n
+        es: >-\n
+          Los roces son facturables. La Autoridad valora tu cercanía al riesgo.\n
+        zh: 擦弹可以计费。管理局很看重你与风险之间的距离。\n
+    \n
+      - id: tut_rate_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word.\n
+        en: >-\n
+          Everything you have just learned feeds your Contract Rate, shown beside\n
+          your pay. Kills, broken parts, disarms, grazes and new scans all raise\n
+          it, as long as you keep them coming. Please raise it to times two.\n
+        es: >-\n
+          Todo lo que acabas de aprender alimenta tu Tarifa de Contrato, que\n
+          aparece junto a tu paga. Eliminaciones, piezas rotas, desarmes, roces y\n
+          escaneos nuevos la suben, siempre que no dejes de encadenarlos. Por\n
+          favor, llévala al doble.\n
+        zh: 你刚学会的一切都会提升你的合同费率，它显示在报酬旁边。击毁、破坏部件、解除武装、擦弹和新的扫描都会提高费率，只要你接连不断。请把它提升到两倍。\n
+    \n
+      - id: tut_ratebreak_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Reassuring, completely sincere.\n
+        en: >-\n
+          One more thing. If you are hit, your rate is halved. The Authority is\n
+          not upset when that happens. It simply pays for results.\n
+        es: >-\n
+          Una cosa más. Si recibes un impacto, tu tarifa se reduce a la mitad. La\n
+          Autoridad no se molesta cuando eso pasa. Simplemente paga por\n
+          resultados.\n
+        zh: 还有一点。如果你被击中，费率会减半。这种时候管理局并不会生气。它只是按结果付费。\n
+    \n
+      - id: tut_lives_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Slow and deliberate counting, like a crossing guard.\n
+        en: >-\n
+          Your hull holds three hits. Each hit also costs one cannon level. Please\n
+          count to three with me. One. Two. Three.\n
+        es: >-\n
+          Tu casco resiste tres impactos. Cada impacto también te cuesta un nivel de\n
+          cañón. Cuenta conmigo hasta tres. Uno. Dos. Tres.\n
+        zh: 你的船体能承受三次命中。每次命中还会让主炮降一级。请跟我一起数到三。一。二。三。\n
+    \n
+      - id: tut_continue_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Breezy reassurance; the last sentence is meant kindly and lands badly.\n
+        en: >-\n
+          And if you run out of hull, don't worry! The Lane Authority will\n
+          requisition a new ship, and onboarding will continue. You will hardly\n
+          notice.\n
+        es: >-\n
+          Y si te quedas sin casco, ¡no te preocupes! La Autoridad de Rutas\n
+          requisará una nave nueva y la inducción continuará. Casi ni lo notarás.\n
+        zh: 就算船体耗尽，也别担心！航道管理局会调拨一艘新飞船，入职培训会继续进行。你几乎察觉不到。\n
+    \n
+      - id: tut_pickup_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Product-demo enthusiasm, then fine print read slightly faster.\n
+        en: >-\n
+          Pickups! Green crystals widen your spread. Cyan diamonds grant a shield.\n
+          Pickups are recovered salvage and remain Lane Authority property.\n
+        es: >-\n
+          ¡Objetos! Los cristales verdes amplían tu disparo. Los diamantes cian te\n
+          dan un escudo. Los objetos son material recuperado y siguen siendo\n
+          propiedad de la Autoridad de Rutas.\n
+        zh: 道具！绿色水晶能扩大射击范围。青色菱形能提供护盾。道具均为回收物资，仍归航道管理局所有。\n
+    \n
+      # The tutorial's one wink. Do not add a second; see BIBLE.md, Tone rules.\n
+      - id: tut_hangar_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. Genuinely glad to offer a perk.\n
+        en: >-\n
+          Between contracts, the hangar is yours. Weapon and sensor packages\n
+          change how you fly, and your paint, trim and helmet livery are entirely\n
+          up to you. Self expression is a benefit of employment.\n
+        es: >-\n
+          Entre contratos, el hangar es tuyo. Los paquetes de armas y de sensores\n
+          cambian tu forma de volar, y la pintura, los acabados y los colores de\n
+          tu casco dependen completamente de ti. La libre expresión es una\n
+          prestación laboral.\n
+        zh: 合同间隙，机库归你使用。武器组件和传感器组件会改变你的飞行方式，涂装、饰边和头盔配色完全由你决定。自我表达是一项员工福利。\n
+    \n
+      - id: tut_wink_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Conspiratorial little aside, then brightly back on message.\n
+        en: >-\n
+          Fun fact! An independent review rated this onboarding thorough. It also\n
+          rated it long. We have chosen to focus on thorough.\n
+        es: >-\n
+          ¡Dato curioso! Una evaluación independiente calificó esta inducción como\n
+          exhaustiva. También la calificó como larga. Decidimos quedarnos con\n
+          exhaustiva.\n
+        zh: 冷知识！一项独立评估认为这次入职培训很全面。它还认为培训很长。我们决定只看“全面”这一条。\n
+    \n
+      - id: tut_review_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Quiz-show host answering her own questions without a pause.\n
+        en: >-\n
+          Quick review! Which bullets are bad? That's right. The pink ones, the\n
+          gold ones, and, in general, bullets. Which part of the ship can be hit?\n
+          The gem. You're a natural.\n
+        es: >-\n
+          ¡Repaso rápido! ¿Qué balas son malas? Así es. Las rosas, las doradas y,\n
+          en general, las balas. ¿Qué parte de la nave puede recibir impactos? La\n
+          gema. Tienes talento nato.\n
+        zh: 快速复习！哪些子弹危险？没错。粉色的、金色的，总之，子弹。飞船哪个部位会被击中？宝石。你真是天生的飞行员。\n
+    \n
+      - id: tut_review_002\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Sincere institutional warmth, unhurried and kind, a good trainer who\n
+          means every word. A patient recap, every item given its due.\n
+        en: >-\n
+          And to review the trigger: tap for parts, hold for hulls, rest to charge\n
+          a Writ and to scan. Graze for rate. Scan for intel. Please try not to be\n
+          hit.\n
+        es: >-\n
+          Y para repasar el gatillo: toque para piezas, ráfaga para cascos,\n
+          descanso para cargar un Mandato y escanear. Roces para la tarifa.\n
+          Escaneos para información. Por favor, intenta que no te den.\n
+        zh: 再复习一下扳机：轻按打部件，按住打船体，松开充能令状并进行扫描。擦弹提升费率。扫描获取情报。请尽量别被击中。\n
+    \n
+      - id: tut_route_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Tour-guide list, slowing and dropping into a hush on the last words.\n
+        en: >-\n
+          Your route: Outer Drift. Shatter Belt. Gun Lanes. Lancer Gate. Last\n
+          Approach. And then...\n
+        es: >-\n
+          Tu ruta: Deriva Exterior. Cinturón Quebrado. Rutas de Artillería. Puerta\n
+          de los Lanceros. Aproximación Final. Y luego...\n
+        zh: 你的航线：外缘漂流带。碎裂带。炮火航道。枪骑之门。最终进近。然后……\n
+    \n
+      - id: tut_warden_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          A theatrical gulp, then flight-attendant brightness.\n
+        en: >-\n
+          And then, the Warden. Before we continue, the Lane Authority requires\n
+          you to watch a short threat briefing. Please enjoy it.\n
+        es: >-\n
+          Y luego, el Guardián. Antes de continuar, la Autoridad de Rutas requiere\n
+          que veas una breve sesión informativa sobre amenazas. Disfrútala.\n
+        zh: 然后，就是守望者。继续之前，航道管理局要求你观看一段简短的威胁简报。请欣赏。\n
+    \n
+      # Threat briefing reel: the scary register, owned by the narrator.\n
+    \n
+      - id: brief_warden_001\n
+        speaker: narrator\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Trailer cold open over a black screen. Slow, low, enormous.\n
+        en: >-\n
+          In the deepest lanes of the nebula, something waits.\n
+        es: >-\n
+          En las rutas más profundas de la nebulosa, algo espera.\n
+        zh: 在星云最深处的航道里，有什么东西在等待。\n
+    \n
+      - id: brief_warden_002\n
+        speaker: narrator\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Each sentence its own beat; let the title land like a door slamming.\n
+        en: >-\n
+          It has no name. Only a title. The Warden.\n
+        es: >-\n
+          No tiene nombre. Solo un título. El Guardián.\n
+        zh: 它没有名字。只有一个称号。守望者。\n
+    \n
+      - id: brief_warden_003\n
+        speaker: narrator\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Grave statistics, a long pause before the last sentence.\n
+        en: >-\n
+          For three hundred years it has held the lanes shut. One hundred and\n
+          twenty-one pilots have flown against it. None came back.\n
+        es: >-\n
+          Durante trescientos años ha mantenido cerradas las rutas. Ciento veintiún\n
+          pilotos han volado contra él. Ninguno regresó.\n
+        zh: 三百年来，它一直封锁着航道。一百二十一名飞行员向它发起过挑战。没有一个回来。\n
+    \n
+      - id: brief_warden_004\n
+        speaker: narrator\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Hushed dread, as if afraid it might hear.\n
+        en: >-\n
+          Its voice alone has cracked hulls. Those who have heard it never forget\n
+          it.\n
+        es: >-\n
+          Su voz, por sí sola, ha agrietado cascos. Quienes la han oído jamás la\n
+          olvidan.\n
+        zh: 单是它的声音，就能震裂船体。听过的人，永远不会忘记。\n
+    \n
+      - id: brief_warden_005\n
+        speaker: narrator\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Same doom, but the stakes are commercial; play it with no irony at all.\n
+        en: >-\n
+          While it stands, no toll can be collected. No route can be licensed. No\n
+          lane can be owned.\n
+        es: >-\n
+          Mientras siga en pie, no se puede cobrar ningún peaje. Ninguna ruta puede\n
+          concesionarse. Ninguna ruta puede tener dueño.\n
+        zh: 只要它还在，就收不了一分通行费。航道无法授权经营。航道无法归任何人所有。\n
+    \n
+      - id: brief_warden_006\n
+        speaker: narrator\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Triumphant brand tag, then the disclaimer in the same grave voice.\n
+        en: >-\n
+          The Lane Authority. Opening the lanes, for everyone. Terms and\n
+          conditions apply.\n
+        es: >-\n
+          La Autoridad de Rutas. Abriendo las rutas para todos. Aplican términos y\n
+          condiciones.\n
+        zh: 航道管理局。为所有人开放航道。适用相关条款与条件。\n
+    \n
+      - id: tut_warden_002\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Breathless from the reel, then soothing customer service.\n
+        en: >-\n
+          Wasn't that exciting? Please don't be frightened. Fear is not covered by\n
+          your contract.\n
+        es: >-\n
+          ¿Verdad que fue emocionante? Por favor, no te asustes. El miedo no está\n
+          cubierto por tu contrato.\n
+        zh: 是不是很激动人心？请不要害怕。你的合同不涵盖恐惧。\n
+    \n
+      - id: tut_done_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Graduation-day pride; the last sentence is a catchphrase.\n
+        en: >-\n
+          Onboarding complete! Your contract is now active. Please proceed to\n
+          Outer Drift. And remember: stay in your lane, Pilot.\n
+        es: >-\n
+          ¡Inducción completada! Tu contrato ya está activo. Por favor, dirígete a\n
+          la Deriva Exterior. Y recuerda: no te salgas de tu ruta, piloto.\n
+        zh: 入职培训完成！你的合同现已生效。请前往外缘漂流带。记住：别偏离你的航道，飞行员。\n
+    \n
+      - id: tut_idle_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial\n
+        route: any\n
+        direction: >-\n
+          Patient, with a stopwatch audible in the smile.\n
+        en: >-\n
+          Take all the time you need. I am timing it, but take all the time you\n
+          need.\n
+        es: >-\n
+          Tómate todo el tiempo que necesites. Lo estoy cronometrando, pero tómate\n
+          todo el tiempo que necesites.\n
+        zh: 慢慢来，不着急。我在计时，但你慢慢来。\n
+    \n
+      - id: tut_skip_001\n
+        speaker: tutorial_ai\n
+        scene: tutorial_skip\n
+        route: any\n
+        direction: >-\n
+          Surprised, a little wounded, recovering fast.\n
+        en: >-\n
+          Oh! You'd like to skip onboarding? That's completely fine. Onboarding is\n
+          just where we become friends.\n
+        es: >-\n
+          ¡Oh! ¿Quieres saltarte la inducción? No pasa nada. La inducción es solo\n
+          donde nos hacemos amigos.\n
+        zh: 哦！你想跳过入职培训？完全没问题。入职培训只是我们成为朋友的地方而已。\n
+    \n
+      - id: tut_skip_002\n
+        speaker: tutorial_ai\n
+        scene: tutorial_skip\n
+        route: any\n
+        direction: >-\n
+          Reading a log entry aloud, then brave and bright.\n
+        en: >-\n
+          Logged as: declined onboarding. That's okay. I will be on comms the\n
+          whole time anyway.\n
+        es: >-\n
+          Registrado como: rechazó la inducción. Está bien. De todos modos estaré\n
+          en la radio todo el tiempo.\n
+        zh: 已记录：拒绝入职培训。没关系。反正我会一直在通讯频道里。\n
+    \n
+      # -- sectors: one scripted intro each, over the banner\n
+    \n
+      - id: sec1_intro_001\n
+        speaker: tutorial_ai\n
+        seed: {zh: 111}\n
+        scene: sector1\n
+        route: any\n
+        direction: >-\n
+          On comms, crisp mission-control energy.\n
+        en: >-\n
+          Outer Drift. Scouts ahead. Scout fire is light, and completely\n
+          unprovoked.\n
+        es: >-\n
+          Deriva Exterior. Exploradores al frente. Su fuego es ligero y totalmente\n
+          sin provocación.\n
+        zh: 外缘漂流带。前方有侦察机。侦察机火力很弱，而且完全是无端挑衅。\n
+    \n
+      - id: sec2_intro_001\n
+        speaker: tutorial_ai\n
+        scene: sector2\n
+        route: any\n
+        direction: >-\n
+          On comms, trivia-night sparkle.\n
+        en: >-\n
+          Shatter Belt. Divers incoming. Did you know? Darts used to carry guns,\n
+          until a treaty disarmed them. We did not sign it.\n
+        es: >-\n
+          Cinturón Quebrado. Se acercan los picadores. ¿Sabías que los dardos\n
+          antes llevaban armas, hasta que un tratado los desarmó? Nosotros no lo\n
+          firmamos.\n
+        zh: 碎裂带。俯冲机来袭。你知道吗？飞镖机以前是带武器的，后来一项条约解除了它们的武装。我们没有签那项条约。\n
+    \n
+      - id: sec3_intro_001\n
+        speaker: tutorial_ai\n
+        scene: sector3\n
+        route: any\n
+        direction: >-\n
+          On comms, mildly scandalized by the waste.\n
+        en: >-\n
+          Gun Lanes. Turrets online. These lanes were built for free passage,\n
+          three centuries ago. No tollgates anywhere. Very inefficient.\n
+        es: >-\n
+          Rutas de Artillería. Torretas activas. Estas rutas se construyeron para\n
+          el paso libre, hace tres siglos. Ni una caseta de peaje. Muy ineficiente.\n
+        zh: 炮火航道。炮塔已上线。这些航道是三个世纪前为自由通行而建的。一个收费站都没有。效率太低了。\n
+    \n
+      - id: sec4_intro_001\n
+        speaker: tutorial_ai\n
+        scene: sector4\n
+        route: any\n
+        direction: >-\n
+          On comms, briefing voice that trails off into honest puzzlement.\n
+        en: >-\n
+          Lancer Gate. Crossfire. Lancers fire across the lane, never along it.\n
+          Almost as if they were keeping the lane itself clear. Odd.\n
+        es: >-\n
+          Puerta de los Lanceros. Fuego cruzado. Los lanceros disparan a través de\n
+          la ruta, nunca a lo largo. Casi como si mantuvieran la ruta despejada.\n
+          Qué raro.\n
+        zh: 枪骑之门。交叉火力。枪骑机总是横穿航道开火，从不沿着航道。简直像是在让航道本身保持畅通。奇怪。\n
+    \n
+      - id: sec5_intro_001\n
+        speaker: tutorial_ai\n
+        scene: sector5\n
+        route: any\n
+        direction: >-\n
+          On comms, quarterly-earnings-call triumph.\n
+        en: >-\n
+          Last Approach. Everything they have. Analysts say the Warden is down to\n
+          its last reserves. This is what a winning quarter looks like!\n
+        es: >-\n
+          Aproximación Final. Todo lo que tienen. Los analistas dicen que al\n
+          Guardián le quedan sus últimas reservas. ¡Así se ve un trimestre ganador!\n
+        zh: 最终进近。倾巢而出。分析师说，守望者已经动用最后的储备了。这就是一个盈利季度该有的样子！\n
+    \n
+      # -- ambient chatter during sectors (banks in src/scenes/chatter.ts)\n
+    \n
+      - id: amb_fight_001\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: kill\n
+        direction: >-\n
+          On comms, warm performance-review praise.\n
+        en: >-\n
+          Every scout you clear is logged to your performance record. Your record\n
+          looks wonderful.\n
+        es: >-\n
+          Cada explorador que eliminas queda en tu registro de desempeño. Tu\n
+          registro se ve maravilloso.\n
+        zh: 你清除的每一架侦察机都会记入你的绩效档案。你的档案看起来棒极了。\n
+    \n
+      - id: amb_fight_003\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: kill\n
+        direction: >-\n
+          On comms, encouraging, unaware of how it sounds.\n
+        en: >-\n
+          You're doing great. Your predecessor was also doing great at this point.\n
+        es: >-\n
+          Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial\n
+          en este punto.\n
+        zh: 你表现得很好。你的前任在这个阶段也表现得很好。\n
+    \n
+      - id: amb_fight_004\n
+        speaker: tutorial_ai\n
+        seed: {es: 111}\n
+        scene: chatter\n
+        route: any\n
+        direction: >-\n
+          On comms, gentle policy reminder.\n
+        en: >-\n
+          Reminder: pickups are Lane Authority property. Please don't get\n
+          attached.\n
+        es: >-\n
+          Recordatorio: los objetos son propiedad de la Autoridad de Rutas. Por\n
+          favor, no te encariñes.\n
+        zh: 提醒一下：道具归航道管理局所有。请不要对它们产生感情。\n
+    \n
+      - id: amb_fight_005\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: any\n
+        direction: >-\n
+          On comms, breezy, as if about litter.\n
+        en: >-\n
+          If you see unarmed ships in the lanes, please ignore them. They are not\n
+          paying customers yet.\n
+        es: >-\n
+          Si ves naves desarmadas en las rutas, por favor ignóralas. Todavía no son\n
+          clientes de pago.\n
+        zh: 如果你在航道里看到没有武装的船，请无视它们。它们还不是付费客户。\n
+    \n
+      - id: amb_nofire_001\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, tech-support concern.\n
+        en: >-\n
+          Pilot, your weapon logs show no activity. Is your trigger working? Please\n
+          fire.\n
+        es: >-\n
+          Piloto, tu registro de armas no muestra actividad. ¿Funciona tu gatillo?\n
+          Por favor, dispara.\n
+        zh: 飞行员，你的武器日志显示没有任何开火记录。扳机正常吗？请射击。\n
+    \n
+      - id: amb_nofire_002\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, carefully neutral, which is not neutral.\n
+        en: >-\n
+          Your weapon is still cold. I am noting that. Neutrally.\n
+        es: >-\n
+          Tu arma sigue fría. Lo estoy anotando. De forma neutral.\n
+        zh: 你的武器还是冷的。我记下了。客观地记下了。\n
+    \n
+      - id: amb_nofire_003\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, genuinely confused, reading her notes.\n
+        en: >-\n
+          The scouts are not firing at you. That is not in my briefing.\n
+        es: >-\n
+          Los exploradores no te están disparando. Eso no está en mi sesión\n
+          informativa.\n
+        zh: 侦察机没有向你开火。简报里可没写这个。\n
+    \n
+      - id: amb_nofire_004\n
+        speaker: tutorial_ai\n
+        scene: chatter\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, HR voice: soft words, firm meaning.\n
+        en: >-\n
+          Non-performance is a serious contract matter. I'm only saying that\n
+          because I care.\n
+        es: >-\n
+          El no desempeño es un asunto contractual serio. Solo lo digo porque me\n
+          importas.\n
+        zh: 未履约是严重的合同问题。我这么说，只是因为我关心你。\n
+    \n
+      # -- barks: event-driven one-liners (src/scenes/barks.ts)\n
+    \n
+      - id: bark_lifelost_001\n
+        speaker: tutorial_ai\n
+        scene: barks\n
+        route: any\n
+        direction: >-\n
+          On comms, quick and chipper damage report.\n
+        en: >-\n
+          Hull breach! You're fine. The ship isn't, but you're fine.\n
+        es: >-\n
+          ¡Brecha en el casco! Tú estás bien. La nave no, pero tú estás bien.\n
+        zh: 船体破损！你没事。飞船有事，但你没事。\n
+    \n
+      - id: bark_shield_001\n
+        speaker: tutorial_ai\n
+        scene: barks\n
+        route: any\n
+        direction: >-\n
+          On comms, product-safety notice.\n
+        en: >-\n
+          Shield online! It is Authority property, so please get hit as little as\n
+          possible.\n
+        es: >-\n
+          ¡Escudo activo! Es propiedad de la Autoridad, así que, por favor, recibe\n
+          la menor cantidad de impactos posible.\n
+        zh: 护盾已上线！它归管理局所有，所以请尽量少挨打。\n
+    \n
+      - id: bark_gameover_001\n
+        speaker: tutorial_ai\n
+        seed: {zh: 211}\n
+        scene: barks\n
+        route: any\n
+        direction: >-\n
+          On comms, routine procedure, not unkind.\n
+        en: >-\n
+          Ship lost. The lanes stay closed, for now. Requisitioning a replacement.\n
+        es: >-\n
+          Nave perdida. Las rutas siguen cerradas, por ahora. Requisando un\n
+          reemplazo.\n
+        zh: 飞船损毁。航道依旧封闭，暂时如此。正在调拨替代者。\n
+    \n
+      # -- flashback: first powerup is Pilot #0121's flight recorder\n
+    \n
+      - id: flash_ai_001\n
+        speaker: tutorial_ai\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Rising alarm under the customer-service smile, faster each sentence.\n
+        en: >-\n
+          Oh! That crystal is a recovered flight recorder. Please don't open it.\n
+          You're opening it. It's opening.\n
+        es: >-\n
+          ¡Oh! Ese cristal es una grabadora de vuelo recuperada. Por favor, no la\n
+          abras. La estás abriendo. Se está abriendo.\n
+        zh: 哦！那块水晶是一个回收的飞行记录仪。请不要打开它。你在打开它。它打开了。\n
+    \n
+      - id: flash_rec_001\n
+        speaker: tutorial_ai\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Recorded log header, flatter and older than her present self.\n
+        en: >-\n
+          Recording. Pilot zero one two one. Last Approach. Weapon status: cold.\n
+        es: >-\n
+          Grabando. Piloto cero uno dos uno. Aproximación Final. Estado del arma:\n
+          fría.\n
+        zh: 记录中。零一二一号飞行员。最终进近。武器状态：未开火。\n
+    \n
+      - id: flash_rec_002\n
+        speaker: tutorial_ai\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Recorded; the script breaks down into pleading on the last word.\n
+        en: >-\n
+          Pilot zero one two one, your weapon is cold. Please fire. Please fire.\n
+          Pilot, please.\n
+        es: >-\n
+          Piloto cero uno dos uno, tu arma está fría. Por favor, dispara. Por favor,\n
+          dispara. Piloto, por favor.\n
+        zh: 零一二一号飞行员，你的武器没有开火。请射击。请射击。飞行员，拜托了。\n
+    \n
+      - id: flash_rec_003\n
+        speaker: warden\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Recorded, shrill astonishment, almost offended that someone stopped.\n
+        en: >-\n
+          You stopped! Why did you stop?! Nobody stops! Nobody EVER stops!\n
+        es: >-\n
+          ¡Te detuviste! ¿¡Por qué te detuviste!? ¡Nadie se detiene! ¡Nadie se\n
+          detiene NUNCA!\n
+        zh: 你停下了！你为什么停下了？！没人会停下！从来没人停下过！\n
+    \n
+      - id: flash_rec_004\n
+        speaker: warden\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Recorded, furious joy, showing off something precious.\n
+        en: >-\n
+          Look! The little ships! No guns! They fly my lanes because I keep them\n
+          free! FREE! Do you know what free means?!\n
+        es: >-\n
+          ¡Mira! ¡Las navecitas! ¡Sin armas! ¡Vuelan por mis rutas porque yo las\n
+          mantengo libres! ¡LIBRES! ¿¡Sabes lo que significa libre!?\n
+        zh: 看！那些小船！没有武器！它们能在我的航道上飞，是因为我让航道保持自由！自由！你知道自由是什么意思吗？！\n
+    \n
+      - id: flash_rec_005\n
+        speaker: tutorial_ai\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Recorded, procedural and polite, as if closing a support ticket.\n
+        en: >-\n
+          Non-performance confirmed. Pilot zero one two one, recall initiated.\n
+          Thank you for your service.\n
+        es: >-\n
+          No desempeño confirmado. Piloto cero uno dos uno, retiro iniciado.\n
+          Gracias por tus servicios.\n
+        zh: 确认未履约。零一二一号飞行员，召回程序已启动。感谢你的服务。\n
+    \n
+      - id: flash_rec_006\n
+        speaker: warden\n
+        seed: {es: 133}\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Recorded, the high voice cracking into a scream as the signal cuts.\n
+        en: >-\n
+          No. No, no, no! Don't you take him! He STOPPED!\n
+        es: >-\n
+          No. ¡No, no, no! ¡No te lo lleves! ¡Él se DETUVO!\n
+        zh: 不。不，不，不！别把他带走！他已经停手了！\n
+    \n
+      - id: flash_ai_002\n
+        speaker: tutorial_ai\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Present day, a beat too quick and too bright; the serial is the reveal.\n
+        en: >-\n
+          That recording was corrupted. Please disregard it. Welcome back, Pilot\n
+          zero one two two.\n
+        es: >-\n
+          Esa grabación estaba dañada. Por favor, ignórala. Bienvenido de nuevo,\n
+          piloto cero uno dos dos.\n
+        zh: 那段记录已损坏，请忽略。欢迎回来，零一二二号飞行员。\n
+    \n
+      - id: flash_ai_003\n
+        speaker: tutorial_ai\n
+        scene: flashback\n
+        route: any\n
+        direction: >-\n
+          Aggressively normal, changing the subject.\n
+        en: >-\n
+          Spread shot equipped! Isn't it pretty?\n
+        es: >-\n
+          ¡Disparo amplio equipado! ¿Verdad que es bonito?\n
+        zh: 散射弹已装备！是不是很漂亮？\n
+    \n
+      # -- the Warden arrives: build-up peak, then the deflation\n
+    \n
+      - id: warn_ai_001\n
+        speaker: tutorial_ai\n
+        scene: warden_descent\n
+        route: any\n
+        direction: >-\n
+          On comms, trying hard to sound brave.\n
+        en: >-\n
+          Warning. The Warden approaches. This is it, Pilot. Everything we trained\n
+          for. Remember the briefing.\n
+        es: >-\n
+          Advertencia. Se acerca el Guardián. Llegó la hora, piloto. Todo aquello\n
+          para lo que entrenamos. Recuerda la sesión informativa.\n
+        zh: 警告。守望者正在接近。就是现在，飞行员。我们训练的一切都为了这一刻。记住简报。\n
+    \n
+      - id: warn_narr_001\n
+        speaker: narrator\n
+        scene: warden_descent\n
+        route: any\n
+        direction: >-\n
+          The biggest, lowest, slowest two words in the game.\n
+        en: >-\n
+          The Warden.\n
+        es: >-\n
+          El Guardián.\n
+        zh: 守望者。\n
+    \n
+      - id: desc_001\n
+        speaker: warden\n
+        scene: warden_descent\n
+        route: any\n
+        direction: >-\n
+          First words ever heard from the Warden: high, shrill, indignant. The\n
+          joke is that it is not the briefing voice.\n
+        en: >-\n
+          STOP! Stop right there! Do you have ANY idea how long it takes to grow a\n
+          scout?!\n
+        es: >-\n
+          ¡ALTO! ¡Alto ahí! ¿¡Tienes la MÁS MÍNIMA idea de cuánto tarda en crecer\n
+          un explorador!?\n
+        zh: 站住！给我站住！你知不知道培育一架侦察机要多久？！\n
+    \n
+      - id: desc_ai_001\n
+        speaker: tutorial_ai\n
+        scene: warden_descent\n
+        route: any\n
+        direction: >-\n
+          On comms, small and baffled, half to herself.\n
+        en: >-\n
+          That is not the voice from the briefing.\n
+        es: >-\n
+          Esa no es la voz de la sesión informativa.\n
+        zh: 这和简报里的声音不一样。\n
+    \n
+      - id: desc_002\n
+        speaker: warden\n
+        seed: {es: 133, zh: 133}\n
+        scene: warden_descent\n
+        route: kill\n
+        direction: >-\n
+          Exasperated list, each item louder.\n
+        en: >-\n
+          Every cycle they send another one! Shiny ship! Big gun! NO MANNERS!\n
+        es: >-\n
+          ¡Cada ciclo mandan a otro! ¡Nave reluciente! ¡Arma enorme! ¡CERO MODALES!\n
+        zh: 每个周期他们都派一个来！亮闪闪的飞船！大炮！毫无礼貌！\n
+    \n
+      - id: desc_003\n
+        speaker: warden\n
+        seed: {es: 133}\n
+        scene: warden_descent\n
+        route: any\n
+        direction: >-\n
+          Grand proclamation that collapses into weariness.\n
+        en: >-\n
+          I am the Warden! I keep these lanes! And I am SO TIRED of saying that!\n
+        es: >-\n
+          ¡Soy el Guardián! ¡Yo cuido estas rutas! ¡Y estoy TAN CANSADO de\n
+          repetirlo!\n
+        zh: 我是守望者！我守护这些航道！我真的说烦了！\n
+    \n
+      - id: desc_004\n
+        speaker: warden\n
+        seed: {es: 133}\n
+        scene: warden_descent\n
+        route: kill\n
+        direction: >-\n
+          A furious final warning, pointing at the gun.\n
+        en: >-\n
+          Turn around. Go home. With that gun, the lanes stay closed!\n
+        es: >-\n
+          Da la vuelta. Vete a casa. ¡Con esa arma, las rutas siguen cerradas!\n
+        zh: 掉头。回家去。带着那把枪，航道依旧封闭！\n
+    \n
+      - id: desc_pac_001\n
+        speaker: warden\n
+        seed: {zh: 133}\n
+        scene: warden_descent\n
+        route: pacifist\n
+        direction: >-\n
+          Sudden suspicion, rapid-fire.\n
+        en: >-\n
+          Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!\n
+        es: >-\n
+          Espera. Espera, espera, espera. Tu arma está fría. ¿¡Por qué tu arma está\n
+          fría!?\n
+        zh: 等等。等等等等。你的枪是冷的。你的枪为什么是冷的？！\n
+    \n
+      - id: desc_pac_002\n
+        speaker: warden\n
+        scene: warden_descent\n
+        route: pacifist\n
+        direction: >-\n
+          Realization; the shout drains out of the voice for once.\n
+        en: >-\n
+          The last cold gun was zero one two one. Oh. Oh, no. You're the next\n
+          number.\n
+        es: >-\n
+          La última arma fría fue la de cero uno dos uno. Oh. Oh, no. Eres el\n
+          siguiente número.\n
+        zh: 上一把冷枪，是零一二一号的。哦。哦不。你就是下一个编号。\n
+    \n
+      - id: desc_disarm_001\n
+        speaker: warden\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          Shrill disbelief, building, at a pilot who disarmed its scouts and let\n
+          them go.\n
+        en: >-\n
+          Wait. You took their GUNS? You took their guns and you let them GO?\n
+        es: >-\n
+          Espera. ¿¡Les quitaste las ARMAS!? ¿¡Les quitaste las armas y los\n
+          dejaste IR!?\n
+        zh: 等等。你把它们的武器拆了？你拆了它们的武器，还放它们走了？！\n
+    \n
+      - id: desc_disarm_002\n
+        speaker: warden\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          Flustered, trying to stay angry and failing, the thank you almost\n
+          swallowed.\n
+        en: >-\n
+          Fine. FINE. They grow back. That is not the point. Thank you.\n
+        es: >-\n
+          Bien. ¡BIEN! Les vuelven a crecer. Ese no es el punto. Gracias.\n
+        zh: 行。行！武器还会再长出来。这不是重点。谢谢你。\n
+    \n
+      - id: desc_ghost_001\n
+        speaker: warden\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          Loud and awed at once, listening to the pilot's charged gun.\n
+        en: >-\n
+          And your gun is FULL. I can hear it humming from here. You carried a\n
+          Writ the whole way and you never spent it.\n
+        es: >-\n
+          Y tu arma está LLENA. La oigo zumbar desde aquí. Cargaste un Mandato\n
+          todo el camino y nunca lo usaste.\n
+        zh: 而且你的武器是满的！我在这儿都能听见它在嗡嗡响。你一路带着一发令状，却一次都没用。\n
+    \n
+      - id: desc_ai_002\n
+        speaker: tutorial_ai\n
+        scene: warden_descent\n
+        route: any\n
+        direction: >-\n
+          On comms, firmly back on script.\n
+        en: >-\n
+          Proceed with the engagement, Pilot. Statements by the Warden are not\n
+          covered by your contract.\n
+        es: >-\n
+          Procede con el enfrentamiento, piloto. Las declaraciones del Guardián no\n
+          están cubiertas por tu contrato.\n
+        zh: 飞行员，请继续交战。守望者的言论不在你的合同范围内。\n
+    \n
+      # -- boss phases, kill route\n
+    \n
+      - id: boss_taunt_001\n
+        speaker: warden\n
+        seed: {es: 133}\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Booming, hammy fury; build to a roar on the last sentence, then a short\n
+          menacing laugh.\n
+        en: >-\n
+          You call that shooting? I have fought toasters with more courage than\n
+          you! Come closer, little pilot, and meet your final wave!\n
+        es: >-\n
+          ¿A eso le llamas disparar? ¡He peleado contra tostadoras con más valor\n
+          que tú! ¡Acércate, pilotito, y conoce tu última oleada!\n
+        zh: 你管这叫射击？我打过的烤面包机都比你有胆量！靠近点，小飞行员，迎接你的最后一波吧！\n
+    \n
+      - id: boss_p1_002\n
+        speaker: warden\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Yelp of pain turning into outrage.\n
+        en: >-\n
+          Ow! OW! That was a ring! Do you know how OLD that ring is?!\n
+        es: >-\n
+          ¡Ay! ¡AY! ¡Eso era un anillo! ¿¡Sabes lo VIEJO que es ese anillo!?\n
+        zh: 哎哟！哎哟！那是一个光环！你知道那个光环有多古老吗？！\n
+    \n
+      - id: boss_pod_001\n
+        speaker: warden\n
+        scene: boss\n
+        route: any\n
+        direction: >-\n
+          Outraged, high, a callback to its first line about growing scouts.\n
+        en: >-\n
+          My POD! Do you have ANY idea how long it takes to grow a pod?!\n
+        es: >-\n
+          ¡Mi CÁPSULA! ¿¡Tienes ALGUNA idea de cuánto tarda en crecer una\n
+          cápsula!?\n
+        zh: 我的炮舱！你知道长出一个炮舱要多久吗？！\n
+    \n
+      - id: boss_p2_001\n
+        speaker: warden\n
+        seed: {es: 233}\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Barking orders at its own scouts, frazzled.\n
+        en: >-\n
+          Scouts, to me! No, not AT him, AROUND him! Protect the lane!\n
+        es: >-\n
+          ¡Exploradores, conmigo! ¡No, no CONTRA él, ALREDEDOR de él! ¡Protejan la\n
+          ruta!\n
+        zh: 侦察机，过来！不，不是打他，是围着他！保护航道！\n
+    \n
+      - id: boss_p2_002\n
+        speaker: warden\n
+        seed: {es: 233}\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Wounded pride, nearly a whine.\n
+        en: >-\n
+          You think I WANT to do this? I would rather be counting freighters!\n
+        es: >-\n
+          ¿¡Crees que QUIERO hacer esto!? ¡Preferiría estar contando cargueros!\n
+        zh: 你以为我想这样吗？我宁可去数货船！\n
+    \n
+      - id: boss_p3_001\n
+        speaker: warden\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Turning red: all-in, voice cracking at the top.\n
+        en: >-\n
+          Fine! FINE! Everything I have! EVERYTHING!\n
+        es: >-\n
+          ¡Bien! ¡BIEN! ¡Todo lo que tengo! ¡TODO!\n
+        zh: 好！好啊！我所有的一切！全都给你！\n
+    \n
+      - id: boss_p3_002\n
+        speaker: warden\n
+        seed: {zh: 333}\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Exhausted contempt.\n
+        en: >-\n
+          Three hundred years, and you all bring the same gun!\n
+        es: >-\n
+          ¡Trescientos años, y todos traen la misma arma!\n
+        zh: 三百年了，你们带的都是同一把枪！\n
+    \n
+      - id: boss_turn_001\n
+        speaker: warden\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          The turn: still shouting, but pleading now, not threatening.\n
+        en: >-\n
+          Do you know what's behind me? Nothing! Sky! Free sky, for anyone who\n
+          comes without a gun!\n
+        es: >-\n
+          ¿¡Sabes qué hay detrás de mí!? ¡Nada! ¡Cielo! ¡Cielo libre, para\n
+          cualquiera que venga sin armas!\n
+        zh: 你知道我身后是什么吗？什么都没有！只有天空！自由的天空，给每一个不带枪的人！\n
+    \n
+      - id: boss_turn_002\n
+        speaker: warden\n
+        seed: {es: 333, zh: 233}\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Desperate, spitting the last word.\n
+        en: >-\n
+          They don't want the lanes open! They want them OWNED!\n
+        es: >-\n
+          ¡Ellos no quieren las rutas abiertas! ¡Las quieren SUYAS!\n
+        zh: 他们要的不是开放航道！他们要的是占有航道！\n
+    \n
+      - id: boss_turn_003\n
+        speaker: warden\n
+        seed: {es: 233}\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          Grief breaking through the fury.\n
+        en: >-\n
+          Zero one two one stopped! He listened! Why won't YOU listen?!\n
+        es: >-\n
+          ¡Cero uno dos uno se detuvo! ¡Él escuchó! ¿¡Por qué TÚ no escuchas!?\n
+        zh: 零一二一号停手了！他听进去了！你为什么就是不听？！\n
+    \n
+      - id: boss_ai_001\n
+        speaker: tutorial_ai\n
+        scene: boss\n
+        route: kill\n
+        direction: >-\n
+          On comms, cheerleader; she has not heard a word the Warden said.\n
+        en: >-\n
+          Great hit! Your payment is ninety percent vested!\n
+        es: >-\n
+          ¡Gran impacto! ¡Tu pago ya está consolidado al noventa por ciento!\n
+        zh: 漂亮的一击！你的报酬已兑现百分之九十！\n
+    \n
+      # -- boss, pacifist route (survival timer)\n
+    \n
+      - id: boss_pac_001\n
+        speaker: warden\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          Paranoid, high, repeating itself.\n
+        en: >-\n
+          You're not shooting. You are NOT SHOOTING. Is this a trick? Is it a\n
+          trick?!\n
+        es: >-\n
+          No estás disparando. NO ESTÁS DISPARANDO. ¿Es un truco? ¿¡Es un truco!?\n
+        zh: 你没开枪。你真的没开枪。这是诡计吗？是诡计吗？！\n
+    \n
+      - id: boss_pac_002\n
+        speaker: warden\n
+        seed: {es: 233}\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          Duty-bound, almost apologetic, still shouting.\n
+        en: >-\n
+          I still have to test you! Every ship gets tested! So dodge! DODGE!\n
+        es: >-\n
+          ¡Igual tengo que ponerte a prueba! ¡Toda nave pasa la prueba! ¡Así que\n
+          esquiva! ¡ESQUIVA!\n
+        zh: 我还是得测试你！每艘船都要接受测试！那就躲！快躲！\n
+    \n
+      - id: boss_pac_003\n
+        speaker: warden\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          Delighted cackle, a proud coach.\n
+        en: >-\n
+          Ha! Good! Very good! You fly like a freighter with opinions!\n
+        es: >-\n
+          ¡Ja! ¡Bien! ¡Muy bien! ¡Vuelas como un carguero con opiniones propias!\n
+        zh: 哈！好！很好！你飞得像一艘有主见的货船！\n
+    \n
+      - id: boss_pac_ai_001\n
+        speaker: tutorial_ai\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, compliance-officer calm.\n
+        en: >-\n
+          Pilot, your weapon shows no activity during a contracted engagement.\n
+          This has been escalated.\n
+        es: >-\n
+          Piloto, tu arma no muestra actividad durante un enfrentamiento\n
+          contratado. Esto ha sido escalado.\n
+        zh: 飞行员，在合同规定的交战中，你的武器没有任何开火记录。此事已上报。\n
+    \n
+      - id: boss_pac_ai_002\n
+        speaker: tutorial_ai\n
+        scene: boss\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, hold-music politeness.\n
+        en: >-\n
+          Recall authorization requested. Please hold. Your call is important to\n
+          us.\n
+        es: >-\n
+          Autorización de retiro solicitada. Por favor, espera. Tu llamada es\n
+          importante para nosotros.\n
+        zh: 已申请召回授权。请稍候。你的来电对我们很重要。\n
+    \n
+      # -- kill ending: the lanes are open (subscription required)\n
+    \n
+      - id: kill_warden_001\n
+        speaker: warden\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          Dying, the high voice small and almost calm for the first time.\n
+        en: >-\n
+          Oh. Oh, there goes another ring. Count them, zero one two two. Count\n
+          what they put where the rings were.\n
+        es: >-\n
+          Oh. Oh, ahí va otro anillo. Cuéntalos, cero uno dos dos. Cuenta lo que\n
+          ponen donde estaban los anillos.\n
+        zh: 哦。哦，又一个光环熄灭了。数一数，零一二二号。数数他们在光环原来的位置放了什么。\n
+    \n
+      - id: kill_ai_001\n
+        speaker: tutorial_ai\n
+        seed: {zh: 211}\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          On comms, pure celebration, confetti in the voice.\n
+        en: >-\n
+          Warden down! The lanes are open!\n
+        es: >-\n
+          ¡Guardián derribado! ¡Las rutas están abiertas!\n
+        zh: 守望者已被击落！航道已开放！\n
+    \n
+      - id: end_epi_001\n
+        speaker: narrator\n
+        seed: {es: 122}\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          Elegiac, slow, no trailer bombast left.\n
+        en: >-\n
+          The Warden's lights go dark, one ring at a time.\n
+        es: >-\n
+          Las luces del Guardián se apagan, un anillo a la vez.\n
+        zh: 守望者的光芒熄灭了，一环接着一环。\n
+    \n
+      - id: end_epi_002\n
+        speaker: narrator\n
+        seed: {es: 122}\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          Quiet, wide, a breath before it.\n
+        en: >-\n
+          Behind you, five sectors of open sky.\n
+        es: >-\n
+          Detrás de ti, cinco sectores de cielo abierto.\n
+        zh: 在你身后，是五个星区的开阔天空。\n
+    \n
+      - id: kill_ai_002\n
+        speaker: tutorial_ai\n
+        seed: {zh: 211}\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          On comms, a service announcement, completely sincere.\n
+        en: >-\n
+          Tollgate deployment has begun. The lanes will be open to all subscribers\n
+          within the hour.\n
+        es: >-\n
+          Comenzó el despliegue de casetas de peaje. Las rutas estarán abiertas\n
+          para todos los suscriptores en menos de una hora.\n
+        zh: 收费站已开始部署。一小时内，航道将向所有订阅用户开放。\n
+    \n
+      - id: end_epi_003\n
+        speaker: narrator\n
+        seed: {es: 122}\n
+        scene: ending\n
+        route: any\n
+        direction: >-\n
+          The last line of the original game. Let it hang.\n
+        en: >-\n
+          Ahead, the long way home.\n
+        es: >-\n
+          Por delante, el largo camino a casa.\n
+        zh: 前方，是漫长的归途。\n
+    \n
+      - id: kill_ai_003\n
+        speaker: tutorial_ai\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          On comms, warm and proud, then the payroll fine print at speed.\n
+        en: >-\n
+          Congratulations, Pilot zero one two two. Your contract is complete.\n
+          Payment will be issued in thirty to ninety business days.\n
+        es: >-\n
+          Felicidades, piloto cero uno dos dos. Tu contrato está completo. El pago\n
+          se emitirá en un plazo de treinta a noventa días hábiles.\n
+        zh: 恭喜你，零一二二号飞行员。你的合同已完成。报酬将在三十至九十个工作日内发放。\n
+    \n
+      - id: kill_ai_004\n
+        speaker: tutorial_ai\n
+        scene: ending_kill\n
+        route: kill\n
+        direction: >-\n
+          Same warmth, meant as good news. No irony.\n
+        en: >-\n
+          Your replacement is already in onboarding.\n
+        es: >-\n
+          Tu reemplazo ya está en inducción.\n
+        zh: 你的接替者已经在接受入职培训了。\n
+    \n
+      # -- pacifist ending: Lanes Kept\n
+    \n
+      - id: pac_end_001\n
+        speaker: warden\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          Awed, still loud, voice wobbling.\n
+        en: >-\n
+          You dodged everything. Everything! And you never fired back. Not once.\n
+        es: >-\n
+          Esquivaste todo. ¡Todo! Y nunca devolviste el fuego. Ni una vez.\n
+        zh: 你躲开了一切。一切！而且你从没还过手。一次都没有。\n
+    \n
+      - id: pac_end_002\n
+        speaker: tutorial_ai\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, the same procedural politeness as the flashback recall.\n
+        en: >-\n
+          Pilot zero one two two, non-performance confirmed. Recall in three. Two.\n
+        es: >-\n
+          Piloto cero uno dos dos, no desempeño confirmado. Retiro en tres. Dos.\n
+        zh: 零一二二号飞行员，确认未履约。召回倒计时，三。二。\n
+    \n
+      - id: pac_end_003\n
+        speaker: warden\n
+        seed: {es: 233}\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          Furious protectiveness, frantic, finally aimed at the right target.\n
+        en: >-\n
+          NO! Not this one! I'm cutting your leash. Hold still! This will feel like\n
+          nothing, because it IS nothing!\n
+        es: >-\n
+          ¡NO! ¡Este no! Voy a cortar tu correa. ¡Quédate quieto! No vas a sentir\n
+          nada, ¡porque NO ES nada!\n
+        zh: 不！这个不行！我要剪断你的缰绳。别动！你什么都感觉不到，因为它本来就什么都不是！\n
+    \n
+      - id: pac_end_004\n
+        speaker: tutorial_ai\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, weak signal, still smiling, an offer read off a card.\n
+        en: >-\n
+          Connection unstable. Pilot zero one two two, if you return for recall\n
+          now, your full payment will be honored.\n
+        es: >-\n
+          Conexión inestable. Piloto cero uno dos dos, si regresas ahora para el\n
+          retiro, se respetará tu pago completo.\n
+        zh: 连接不稳定。零一二二号飞行员，如果你现在返回接受召回，你的全额报酬将照常发放。\n
+    \n
+      # Pilot's only line in the game. Optional: timelines branch on\n
+      # story.pilotSpeaks. Spent once, never reused.\n
+      - id: pilot_keep_001\n
+        speaker: pilot\n
+        seed: {es: 744}\n
+        # Clone mode mangled this short line in es and zh across 15 seeds (best\n
+        # ASR 0.75 and 0.55): the muffled English anchor does not carry over.\n
+        # The Pilot speaks once, so cross-line identity drift does not matter.\n
+        mode: design\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        optional: true\n
+        direction: >-\n
+          Flat, quiet, final. No emphasis on either word.\n
+        en: >-\n
+          Keep the money.\n
+        es: >-\n
+          Quédense con el dinero.\n
+        zh: 钱你们留着吧。\n
+    \n
+      - id: pac_end_005\n
+        speaker: tutorial_ai\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          On comms, glitching out mid-word, never losing the smile.\n
+        en: >-\n
+          Connection lost. Updating records. Updating. Up.\n
+        es: >-\n
+          Conexión perdida. Actualizando registros. Actualizando. Actua.\n
+        zh: 连接已中断。正在更新记录。正在更新。正在。\n
+    \n
+      - id: pac_end_006\n
+        speaker: warden\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          Explosive laugh, then fond. Plays after Pilot speaks.\n
+        en: >-\n
+          HA! Ha! Oh, I like this one.\n
+        es: >-\n
+          ¡JA! ¡Ja! Oh, este me cae bien.\n
+        zh: 哈！哈！哦，我喜欢这个家伙。\n
+    \n
+      - id: pac_end_007\n
+        speaker: warden\n
+        seed: {es: 133}\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          Explosive laugh, then fond. Plays instead of pac_end_006 when Pilot\n
+          stays silent.\n
+        en: >-\n
+          HA! He didn't even answer them! Oh, I like this one.\n
+        es: >-\n
+          ¡JA! ¡Ni siquiera les contestó! Oh, este me cae bien.\n
+        zh: 哈！他连理都没理他们！哦，我喜欢这个家伙。\n
+    \n
+      - id: pac_epi_001\n
+        speaker: narrator\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          Echo of the kill epilogue, warmer, slower.\n
+        en: >-\n
+          The Warden's lights stay on, every ring of them.\n
+        es: >-\n
+          Las luces del Guardián siguen encendidas, cada uno de sus anillos.\n
+        zh: 守望者的光芒依旧亮着，每一环都亮着。\n
+    \n
+      - id: pac_epi_002\n
+        speaker: narrator\n
+        scene: ending_pacifist\n
+        route: pacifist\n
+        direction: >-\n
+          Quiet, wide; lean on the word free.\n
+        en: >-\n
+          Behind you, five sectors of free sky.\n
+        es: >-\n
+          Detrás de ti, cinco sectores de cielo libre.\n
+        zh: 在你身后，是五个星区的自由天空。\n
+    \n
+      # -- credits stings, one per route\n
+    \n
+      - id: credits_kill_001\n
+        speaker: tutorial_ai\n
+        scene: credits\n
+        route: kill\n
+        direction: >-\n
+          Exactly the delivery of tut_hello_001, as if for the first time.\n
+        en: >-\n
+          Hello, and welcome to Lane Authority onboarding, Pilot zero one two\n
+          three!\n
+        es: >-\n
+          ¡Hola, y bienvenido a la inducción de la Autoridad de Rutas, piloto cero\n
+          uno dos tres!\n
+        zh: 你好，欢迎参加航道管理局入职培训，零一二三号飞行员！\n
+    \n
+      - id: credits_pac_001\n
+        speaker: warden\n
+        scene: credits\n
+        route: pacifist\n
+        direction: >-\n
+          Shouted after a departing ship, affectionate, absurdly proud of its\n
+          reputation.\n
+        en: >-\n
+          Fly safe, zero one two two! And if anyone with a gun asks, I am\n
+          EXTREMELY scary!\n
+        es: >-\n
+          ¡Buen viaje, cero uno dos dos! ¡Y si alguien armado pregunta, soy\n
+          EXTREMADAMENTE aterrador!\n
+        zh: 一路平安，零一二二号！要是有带枪的人问起，就说我超级、超级可怕！\n
+    \n
+      # -- first-time beats during play (src/scenes/beats.ts)\n
+    \n
+      - id: lock_ai_001\n
+        speaker: tutorial_ai\n
+        scene: beats\n
+        route: any\n
+        direction: >-\n
+          On comms, pleased, filing paperwork with real enthusiasm.\n
+        en: >-\n
+          Your first live lock! Intel filed. Every scan helps the Authority map\n
+          its lanes.\n
+        es: >-\n
+          ¡Tu primer fijado en vivo! Información archivada. Cada escaneo ayuda a\n
+          la Autoridad a cartografiar sus rutas.\n
+        zh: 你的第一次实战锁定！情报已归档。每一次扫描都在帮管理局绘制它的航道。\n
+    \n
+      - id: disarm_ai_001\n
+        speaker: tutorial_ai\n
+        scene: beats\n
+        route: any\n
+        direction: >-\n
+          On comms, kind, giving the benefit of the doubt a little too carefully.\n
+        en: >-\n
+          A disarm. That is forty percent. I am sure you had a reason, and I am\n
+          sure it was a good one.\n
+        es: >-\n
+          Un desarme. Eso es el cuarenta por ciento. Seguro que tuviste una razón,\n
+          y seguro que fue buena.\n
+        zh: 一次解除武装。那是百分之四十。我相信你有你的理由，而且一定是个好理由。\n
+    \n
+      - id: graze_ai_001\n
+        speaker: tutorial_ai\n
+        scene: beats\n
+        route: any\n
+        direction: >-\n
+          On comms, a small intake of breath, then professional again.\n
+        en: >-\n
+          That was close, and close is billable. Thank you for your proximity.\n
+        es: >-\n
+          Eso estuvo cerca, y lo cerca es facturable. Gracias por tu cercanía.\n
+        zh: 好险。而险情是可以计费的。感谢你离得这么近。\n
+    \n
+      # -- sector 3 salvage: #0121's derelict flight recorder (recorder.timeline.ts)\n
+    \n
+      - id: rec_ai_001\n
+        speaker: tutorial_ai\n
+        scene: recorder\n
+        route: any\n
+        direction: >-\n
+          On comms, reading a status that does not make sense to her.\n
+        en: >-\n
+          Salvage identified: flight recorder, Pilot zero one two one. It is\n
+          marked closed. It is still transmitting.\n
+        es: >-\n
+          Rescate identificado: registrador de vuelo, piloto cero uno dos uno.\n
+          Está marcado como cerrado. Sigue transmitiendo.\n
+        zh: 已识别残骸：飞行记录仪，零一二一号飞行员。它已被标记为结案。它仍在发送信号。\n
+    \n
+      - id: rec_log_001\n
+        speaker: tutorial_ai\n
+        scene: recorder\n
+        route: any\n
+        direction: >-\n
+          Recorded log header, flatter and older than her present self, like the\n
+          flashback header.\n
+        en: >-\n
+          Recording. Pilot zero one two one: recalled. Vessel: abandoned. Log day\n
+          three hundred twelve.\n
+        es: >-\n
+          Grabando. Piloto cero uno dos uno: retirado. Nave: abandonada. Registro,\n
+          día trescientos doce.\n
+        zh: 记录中。零一二一号飞行员：已召回。飞船：已弃置。日志第三百一十二天。\n
+    \n
+      - id: rec_log_002\n
+        speaker: warden\n
+        scene: recorder\n
+        route: any\n
+        direction: >-\n
+          Recorded, still loud by habit, but talking to an empty cockpit.\n
+        en: >-\n
+          It's me again. I towed you out of the crossfire. I didn't know what else\n
+          to do with you.\n
+        es: >-\n
+          Soy yo otra vez. Te remolqué fuera del fuego cruzado. No sabía qué más\n
+          hacer contigo.\n
+        zh: 又是我。我把你从交叉火力里拖出来了。我不知道还能拿你怎么办。\n
+    \n
+      - id: rec_log_003\n
+        speaker: warden\n
+        scene: recorder\n
+        route: any\n
+        direction: >-\n
+          Recorded, ranting, exhausted, the last sentence a wail.\n
+        en: >-\n
+          They sent another one today. Gun warm. I yelled. I always yell. It NEVER\n
+          helps!\n
+        es: >-\n
+          Hoy mandaron a otro. Arma caliente. Le grité. Siempre grito. ¡NUNCA\n
+          sirve de nada!\n
+        zh: 今天他们又派来一个。武器是热的。我冲他吼了。我总是吼。从来都没用！\n
+    \n
+      - id: rec_log_004\n
+        speaker: warden\n
+        scene: recorder\n
+        route: any\n
+        direction: >-\n
+          Recorded, as quiet as this voice gets, which is not very.\n
+        en: >-\n
+          If anyone finds this: he stopped. Write that down somewhere they can't\n
+          bill for.\n
+        es: >-\n
+          Si alguien encuentra esto: él se detuvo. Anótenlo en algún lugar donde\n
+          no puedan cobrarlo.\n
+        zh: 如果有人找到这个：他停手了。把这句话记在他们收不了费的地方。\n
+    \n
+      - id: rec_ai_002\n
+        speaker: tutorial_ai\n
+        scene: recorder\n
+        route: any\n
+        direction: >-\n
+          On comms, back on script, a beat too quickly.\n
+        en: >-\n
+          Recorder logged. Contents: not relevant to your contract. Please\n
+          continue.\n
+        es: >-\n
+          Registrador archivado. Contenido: no relevante para tu contrato. Por\n
+          favor, continúa.\n
+        zh: 记录仪已归档。内容：与你的合同无关。请继续。\n
+    \n
+      # -- radio: scouts and Lane Control, played spatially (src/scenes/radio.ts).\n
+      # Text-only radio lines live in src/i18n/radio.ts.\n
+    \n
+      - id: rad_drone_patrol_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates.\n
+        en: >-\n
+          Contract ship in the Drift. Gun's warm. Same as the last one.\n
+        es: >-\n
+          Nave de contrato en la Deriva. Arma caliente. Igual que la anterior.\n
+        zh: 外缘漂流带出现合同船。武器已预热。跟上一艘一样。\n
+    \n
+      - id: rad_drone_patrol_002\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Puzzled.\n
+        en: >-\n
+          It hasn't fired. Rule stands: we don't fire unless it fires.\n
+        es: >-\n
+          No ha disparado. La regla sigue en pie: no disparamos si no dispara.\n
+        zh: 它还没开火。规矩照旧：它不开火，我们就不开火。\n
+    \n
+      - id: rad_drone_locked_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Startled.\n
+        en: >-\n
+          I'm painted. Contract sensor, full lock.\n
+        es: >-\n
+          Me marcaron. Sensor de contrato, fijado total.\n
+        zh: 我被锁定了。是合同船的传感器，完全锁定。\n
+    \n
+      - id: rad_drone_disarmed_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Shaken,\n
+          then surprised.\n
+        en: >-\n
+          Gun's gone. I'm out. It let me go?\n
+        es: >-\n
+          Sin arma. Me retiro. ¿Me dejó ir?\n
+        zh: 武器没了。我撤了。它放我走了？\n
+    \n
+      - id: rad_drone_retreat_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates.\n
+        en: >-\n
+          Falling back to the rings. Keep the lane open behind me.\n
+        es: >-\n
+          Me repliego a los anillos. Mantengan la ruta abierta detrás de mí.\n
+        zh: 退回光环。在我身后保持航道畅通。\n
+    \n
+      - id: rad_drone_lost_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: kill\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Composure\n
+          breaking on the repeat.\n
+        en: >-\n
+          Drift Two is dark. Drift Two is DARK.\n
+        es: >-\n
+          Deriva Dos se apagó. ¡Deriva Dos se APAGÓ!\n
+        zh: 漂流二号熄灭了。漂流二号熄灭了！\n
+    \n
+      - id: rad_dart_patrol_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. A little\n
+          proud.\n
+        en: >-\n
+          Belt is clear. No guns on us, per the treaty. Never needed them.\n
+        es: >-\n
+          El Cinturón está despejado. Sin armas, según el tratado. Nunca nos\n
+          hicieron falta.\n
+        zh: 碎裂带畅通。按条约，我们不带武器。本来也用不着。\n
+    \n
+      - id: rad_dart_locked_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Wry.\n
+        en: >-\n
+          It locked a dart. Nothing to find. We're empty.\n
+        es: >-\n
+          Fijó a un dardo. No hay nada que encontrar. Vamos vacíos.\n
+        zh: 它锁定了一架飞镖机。什么也找不到，我们是空的。\n
+    \n
+      - id: rad_dart_lost_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: kill\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates.\n
+          Disbelief.\n
+        en: >-\n
+          It shot a dart. It shot an EMPTY dart.\n
+        es: >-\n
+          Le disparó a un dardo. ¡A un dardo VACÍO!\n
+        zh: 它击落了一架飞镖机。一架没有武器的飞镖机！\n
+    \n
+      - id: rad_turret_patrol_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Deadpan.\n
+        en: >-\n
+          Gun Lanes holding. Freighters clear to pass. Contractor, you are not a\n
+          freighter.\n
+        es: >-\n
+          Rutas de Artillería en posición. Cargueros con paso libre. Contratista,\n
+          tú no eres un carguero.\n
+        zh: 炮火航道就位。货船可以通行。合同工，你不是货船。\n
+    \n
+      - id: rad_turret_patrol_002\n
+        speaker: scout\n
+        seed: {zh: 155}\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates.\n
+          Protective.\n
+        en: >-\n
+          The old derelict is still drifting past station nine. Leave it be.\n
+        es: >-\n
+          El viejo pecio sigue a la deriva frente a la estación nueve. Déjenlo en\n
+          paz.\n
+        zh: 那艘旧残骸还在九号站附近漂着。别碰它。\n
+    \n
+      - id: rad_turret_locked_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates.\n
+        en: >-\n
+          Lock on station four. It's looking at my barrel. Everyone looks at the\n
+          barrel.\n
+        es: >-\n
+          Fijado en la estación cuatro. Me está mirando el cañón. Todos miran el\n
+          cañón.\n
+        zh: 四号站被锁定。它在看我的炮管。大家都盯着炮管看。\n
+    \n
+      - id: rad_turret_disarmed_001\n
+        speaker: scout\n
+        seed: {es: 155}\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates.\n
+          Surprised, almost grateful.\n
+        en: >-\n
+          Barrel's off. Station four going quiet. Huh. It aimed for the gun.\n
+        es: >-\n
+          Sin cañón. Estación cuatro en silencio. Vaya. Apuntó al arma.\n
+        zh: 炮管掉了。四号站进入静默。咦，它瞄的是武器。\n
+    \n
+      - id: rad_lancer_patrol_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Drill-\n
+          like.\n
+        en: >-\n
+          Crossfire up. Across the lane, never along it. Keep the middle open.\n
+        es: >-\n
+          Fuego cruzado activo. A través de la ruta, nunca a lo largo. Mantengan\n
+          libre el centro.\n
+        zh: 交叉火力启动。横穿航道，永不顺着航道。保持中间畅通。\n
+    \n
+      - id: rad_lancer_locked_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Tense.\n
+        en: >-\n
+          Both emitters painted. It knows exactly where to hit us.\n
+        es: >-\n
+          Me marcaron los dos emisores. Sabe exactamente dónde golpearnos.\n
+        zh: 两个发射器都被锁定了。它很清楚该打哪里。\n
+    \n
+      - id: rad_lancer_disarmed_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Relief\n
+          turning to worry.\n
+        en: >-\n
+          Emitters dead. The Gate's open, and nobody's guarding it. That's the\n
+          problem.\n
+        es: >-\n
+          Emisores muertos. La Puerta está abierta y nadie la vigila. Ese es el\n
+          problema.\n
+        zh: 发射器失效。大门敞开，却没人守着。这就是问题所在。\n
+    \n
+      - id: rad_lancer_lost_001\n
+        speaker: scout\n
+        scene: radio\n
+        route: kill\n
+        direction: >-\n
+          Radio, scout channel: low, quick, shop talk between wingmates. Bitter\n
+          questions.\n
+        en: >-\n
+          Lancer down. Who keeps the lane clear now? They do? For who?\n
+        es: >-\n
+          Lancero caído. ¿Quién mantiene libre la ruta ahora? ¿Ellos? ¿Para quién?\n
+        zh: 枪骑机被击落。现在谁来保持航道畅通？他们？为了谁？\n
+    \n
+      - id: rad_auth_patrol_001\n
+        speaker: authority\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, Lane Control: dry dispatcher, every sentence a line item.\n
+        en: >-\n
+          Lane Control to survey teams: tollgate footings approved for Outer\n
+          Drift, pending clearance.\n
+        es: >-\n
+          Control de Rutas a equipos de topografía: cimientos de casetas de peaje\n
+          aprobados para la Deriva Exterior, pendientes de despeje.\n
+        zh: 航道控制呼叫勘测队：外缘漂流带收费站地基已获批准，待清场后施工。\n
+    \n
+      - id: rad_auth_patrol_002\n
+        speaker: authority\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, Lane Control: dry dispatcher, every sentence a line item.\n
+        en: >-\n
+          Recall desk, confirm stock: Pilot zero one two three is ready in\n
+          onboarding.\n
+        es: >-\n
+          Mesa de retiros, confirmen inventario: el piloto cero uno dos tres está\n
+          listo en la inducción.\n
+        zh: 召回处，请确认库存：零一二三号飞行员已在入职培训中待命。\n
+    \n
+      - id: rad_auth_locked_001\n
+        speaker: authority\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, Lane Control: dry dispatcher, every sentence a line item.\n
+        en: >-\n
+          Intel received. Scout behavior: patrol. Please annotate as hostile.\n
+        es: >-\n
+          Información recibida. Conducta del explorador: patrulla. Por favor,\n
+          anótalo como hostil.\n
+        zh: 情报已接收。侦察机行为：巡逻。请标注为敌对。\n
+    \n
+      - id: rad_auth_disarmed_001\n
+        speaker: authority\n
+        scene: radio\n
+        route: any\n
+        direction: >-\n
+          Radio, Lane Control: dry dispatcher, every sentence a line item.\n
+        en: >-\n
+          Lane Control logs a disarm. Partial deliverable. Rate adjusted.\n
+        es: >-\n
+          Control de Rutas registra un desarme. Entregable parcial. Tarifa\n
+          ajustada.\n
+        zh: 航道控制记录到一次解除武装。部分交付。费率已调整。\n
+    \n
+      - id: rad_auth_lost_001\n
+        speaker: authority\n
+        scene: radio\n
+        route: kill\n
+        direction: >-\n
+          Radio, Lane Control: dry dispatcher, every sentence a line item.\n
+        en: >-\n
+          Clearance confirmed. Lane segment eligible for subscription.\n
+        es: >-\n
+          Despeje confirmado. Segmento de ruta apto para suscripción.\n
+        zh: 清场确认。该航段已符合订阅条件。\n
+    \n
+      # -- banks: voiced variants, GENERATED by src/scenes/banks/emit_yaml.ts\n
+    \n
+      - id: var_shipfine_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Quick, relieved, then a small professional wince."\n
+        en: "Hull integrity is down. Your integrity is intact. That's the one I care about."\n
+        es: "La integridad del casco bajó. Tu integridad sigue intacta. Esa es la que me importa."\n
+        zh: "船体完整度下降了。你的完整度还在。我在乎的是这个。"\n
+    \n
+      - id: var_shipfine_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Cheerful incident report, slightly too brisk."\n
+        en: "Minor structural event! You are uninjured. The ship has filed a complaint."\n
+        es: "¡Incidente estructural menor! No tienes ni un rasguño. La nave ya presentó una queja."\n
+        zh: "轻微结构事件！你毫发无伤。飞船已经提交了投诉。"\n
+    \n
+      - id: var_shipfine_003\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Calm, almost tender, keeping score."\n
+        en: "The ship is not okay. You are okay. Let's keep that ratio."\n
+        es: "La nave no está bien. Tú sí. Mantengamos esa proporción."\n
+        zh: "飞船不太好。你很好。我们保持这个比例吧。"\n
+    \n
+      - id: var_shipfine_004\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Gently consoling, as if about a houseplant."\n
+        en: "That was the shield. It's okay to be sad about the shield. You're fine, though."\n
+        es: "Ese era el escudo. Está bien sentirse triste por el escudo. Pero tú estás bien."\n
+        zh: "那是护盾。为护盾难过是可以的。不过你没事。"\n
+    \n
+      - id: var_shipfine_005\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Proud of the shield, then the fine print at speed."\n
+        en: "Shield's gone. It did its job, and you're fine. The rental agreement is less fine."\n
+        es: "Se acabó el escudo. Cumplió su trabajo y tú estás bien. El contrato de renta, no tanto."\n
+        zh: "护盾没了。它尽职了，你也没事。租赁协议就没那么没事了。"\n
+    \n
+      - id: var_shipfine_006\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Bright, then a careful, steady warning."\n
+        en: "One hull left. You're fine! Statistically, you're about to be less fine, so please dodge."\n
+        es: "Te queda un casco. ¡Estás bien! Estadísticamente, estás por estar menos bien, así que esquiva, por favor."\n
+        zh: "只剩一艘飞船了。你没事！不过从统计上看，你马上就要有事了，所以请躲开。"\n
+    \n
+      - id: var_shipfine_007\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Deliberately soothing, slightly too slow."\n
+        en: "Last ship in reserve. I'm not worried. I'm using my calm voice on purpose."\n
+        es: "Última nave de reserva. No estoy preocupada. Estoy usando mi voz tranquila a propósito."\n
+        zh: "最后一艘备用飞船。我不担心。我是故意用这么平静的语气的。"\n
+    \n
+      - id: var_shipfine_008\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Upbeat welcome back, like a new semester."\n
+        en: "New hull, same you! The old hull is now a learning opportunity."\n
+        es: "¡Casco nuevo, el mismo tú! El casco viejo ahora es una oportunidad de aprendizaje."\n
+        zh: "新船体，还是你！旧船体现在是一次学习机会。"\n
+    \n
+      - id: var_shipfine_009\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Warm, then the deduction slipped in, then warm again."\n
+        en: "Hull replaced. Cost deducted. You are, and I mean this, priceless. Within reason."\n
+        es: "Casco reemplazado. Costo descontado. Tú no tienes precio, lo digo en serio. Dentro de lo razonable."\n
+        zh: "船体已更换。费用已扣除。你是无价的，我是认真的。在合理范围内。"\n
+    \n
+      - id: var_kill_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Proud, then a small aside about accounting."\n
+        en: "Target removed. Pay adjusted upward. I'm proud of you, and so is accounting."\n
+        es: "Objetivo eliminado. Pago ajustado hacia arriba. Estoy orgullosa de ti, y contabilidad también."\n
+        zh: "目标已清除。薪酬已上调。我为你骄傲，财务部也是。"\n
+    \n
+      - id: var_kill_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Bright compliment, filing it twice."\n
+        en: "Lovely shot. That one goes on your record and on your invoice."\n
+        es: "Qué buen tiro. Ese va a tu expediente y a tu factura."\n
+        zh: "漂亮的一枪。这一下会记进你的档案，也会记进你的账单。"\n
+    \n
+      - id: var_kill_003\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Startled, then admiring, then the policy at speed."\n
+        en: "Ooh, a ram! Very decisive. The bumper is not covered, but very decisive."\n
+        es: "¡Uy, una embestida! Muy decidido. La defensa no está cubierta, pero muy decidido."\n
+        zh: "哇，撞击！非常果断。保险杠不在保修范围内，但非常果断。"\n
+    \n
+      - id: var_kill_004\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Sincere efficiency gospel, a chain of logic she loves."\n
+        en: "That was clean. Clean work is fast work, and fast work is affordable work. Thank you."\n
+        es: "Eso fue limpio. El trabajo limpio es rápido, y el trabajo rápido sale barato. Gracias."\n
+        zh: "干净利落。干净就是快，快就是省钱。谢谢你。"\n
+    \n
+      - id: var_disarm_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Hesitant, reaching for supportive language."\n
+        en: "Weapons removed, ship intact. That's, um, a choice. A valid one! Probably."\n
+        es: "Armas retiradas, nave intacta. Eso es, este, una decisión. ¡Una válida! Probablemente."\n
+        zh: "武器已拆除，飞船完好。这算是，呃，一种选择。一种合理的选择！大概吧。"\n
+    \n
+      - id: var_disarm_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Puzzled, flipping through a binder."\n
+        en: "You disarmed it. It's still flying. I'll need a form for that."\n
+        es: "Lo desarmaste. Sigue volando. Voy a necesitar un formulario para eso."\n
+        zh: "你解除了它的武装。它还在飞。这个我得找张表格来填。"\n
+    \n
+      - id: var_disarm_003\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Genuinely impressed, not sure why."\n
+        en: "No guns, no damage, no fuss. I'm not sure how to bill it, but it was very neat."\n
+        es: "Sin armas, sin daños, sin alboroto. No sé cómo cobrarlo, pero quedó muy limpio."\n
+        zh: "没有枪，没有损伤，没有麻烦。我不知道该怎么计费，但真的很利落。"\n
+    \n
+      - id: var_disarm_004\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Kind, with the lower rate tucked in."\n
+        en: "Disarmed! The rate for that is lower, but your manners are excellent."\n
+        es: "¡Desarmado! La tarifa es más baja, pero tus modales son excelentes."\n
+        zh: "已解除武装！这个费率低一些，但你的礼貌无可挑剔。"\n
+    \n
+      - id: var_graze_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Sharp intake of breath, then delighted."\n
+        en: "Close! Billable proximity, again. You really commit."\n
+        es: "¡Cerca! Cercanía facturable, otra vez. Tú sí que te comprometes."\n
+        zh: "好险！又是可计费的近距离。你是真投入啊。"\n
+    \n
+      - id: var_graze_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Hand on heart, a little breathless."\n
+        en: "Graze logged. My heart rate is not billable, but it did go up."\n
+        es: "Roce registrado. Mi ritmo cardiaco no es facturable, pero sí subió."\n
+        zh: "擦弹已记录。我的心率不能计费，但它确实上去了。"\n
+    \n
+      - id: var_graze_003\n
+        speaker: tutorial_ai\n
++       seed: {en: 211}\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Office humor, pleased with herself."\n
+        en: "Another graze. You and danger are on a first-name basis, and I'm copied on every message."\n
+        es: "Otro roce. Tú y el peligro ya se tutean, y a mí me ponen en copia de todo."\n
+        zh: "又一次擦弹。你和危险已经很熟了，而且每封邮件都抄送给了我。"\n
+    \n
+      - id: var_pickup_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Excited product demo, then a request."\n
+        en: "Spread shot! More bullets, same budget. Please aim them all at something."\n
+        es: "¡Disparo abierto! Más balas, el mismo presupuesto. Por favor, apúntalas todas a algo."\n
+        zh: "散射！子弹更多，预算不变。请让每一颗都朝着目标打。"\n
+    \n
+      - id: var_pickup_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Affectionate, then the deductible at speed."\n
+        en: "Shield up! It's like a hug, if a hug had a deductible."\n
+        es: "¡Escudo arriba! Es como un abrazo, si los abrazos tuvieran deducible."\n
+        zh: "护盾升起！就像一个拥抱，只不过这个拥抱有免赔额。"\n
+    \n
+      - id: var_secstart_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Encouraging, a coach before a match, then honest."\n
+        en: "New sector, fresh start. Your accuracy resets in my heart, not in the ledger."\n
+        es: "Sector nuevo, borrón y cuenta nueva. Tu puntería se reinicia en mi corazón, no en el libro de cuentas."\n
+        zh: "新扇区，新开始。你的命中率在我心里清零了，在账本上没有。"\n
+    \n
+      - id: var_secstart_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Cheerful, already holding a clipboard."\n
+        en: "Here we go again! I've pre-filled your forms. Optimistically."\n
+        es: "¡Aquí vamos otra vez! Ya llené tus formularios. Con optimismo."\n
+        zh: "又出发了！我已经帮你预填好了表格。很乐观地填的。"\n
+    \n
+      - id: var_secstart_003\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Wellness-seminar calm, a made-up statistic delivered sincerely."\n
+        en: "Deep breath. Pilots who breathe have a fourteen percent better pay rate."\n
+        es: "Respira hondo. Los pilotos que respiran tienen una tarifa catorce por ciento mejor."\n
+        zh: "深呼吸。会呼吸的飞行员，薪酬率高出百分之十四。"\n
+    \n
+      - id: var_secclear_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Delighted, reporting upward."\n
+        en: "Sector clear! Lovely work. Payroll has been notified and is cautiously excited."\n
+        es: "¡Sector despejado! Qué buen trabajo. Ya avisé a nómina y está emocionada, con cautela."\n
+        zh: "扇区已肃清！干得漂亮。薪资部已收到通知，正在谨慎地兴奋着。"\n
+    \n
+      - id: var_secclear_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Warm, then reading the statement."\n
+        en: "Sector cleared. One more lane open, and one more line on your statement."\n
+        es: "Sector despejado. Una ruta más abierta, y un renglón más en tu estado de cuenta."\n
+        zh: "扇区已肃清。又多一条航道畅通，你的账单上也多了一行。"\n
+    \n
+      - id: var_pause_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Gentle, then the qualifier."\n
+        en: "Paused. Take your time. The contract clock respects your break. Mostly."\n
+        es: "En pausa. Tómate tu tiempo. El reloj del contrato respeta tu descanso. Casi siempre."\n
+        zh: "已暂停。慢慢来。合同时钟会尊重你的休息。大多数时候。"\n
+    \n
+      - id: var_pause_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Sweet, and just slightly too literal."\n
+        en: "I'll wait right here. I'm always right here."\n
+        es: "Aquí te espero. Siempre estoy aquí."\n
+        zh: "我就在这儿等你。我一直都在这儿。"\n
+    \n
+      - id: var_resume_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Happy, then a tiny matter-of-fact admission."\n
+        en: "Welcome back! I didn't go anywhere. I can't, actually."\n
+        es: "¡Bienvenido de vuelta! Yo no me fui a ningún lado. De hecho, no puedo."\n
+        zh: "欢迎回来！我哪儿也没去。其实我也去不了。"\n
+    \n
+      - id: var_resume_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Checklist voice, answering for him."\n
+        en: "Resuming. Did you hydrate? I'm logging that you hydrated."\n
+        es: "Reanudando. ¿Te hidrataste? Voy a registrar que te hidrataste."\n
+        zh: "继续。你喝水了吗？我就记你喝过了。"\n
+    \n
+      - id: var_warden1_001\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Shrill, outraged, then cracking on the last word."\n
+        en: "Do you know what a scout costs?! Nothing! I GROW them! That makes it WORSE!"\n
+        es: "¿¡Sabes cuánto cuesta un explorador!? ¡Nada! ¡Yo los CULTIVO! ¡Eso lo hace PEOR!"\n
+        zh: "你知道一架侦察机值多少钱吗？！一分不值！是我亲手养大的！这才更糟！"\n
+    \n
+      - id: var_warden1_002\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Furious roll call, running out of breath."\n
+        en: "Zero one two two! I learn every pilot's number! I have learned one hundred twenty-two! STOP ADDING TO THE LIST!"\n
+        es: "¡Cero uno dos dos! ¡Me aprendo el número de cada piloto! ¡Ya van ciento veintidós! ¡DEJA DE ALARGAR LA LISTA!"\n
+        zh: "零一二二号！每个飞行员的编号我都记得！我已经记了一百二十二个了！别再往名单上加了！"\n
+    \n
+      - id: var_warden1_003\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Sarcastic, then sincerely wounded."\n
+        en: "Hit me again! Go on! It's not like I have FEELINGS! I have SEVERAL!"\n
+        es: "¡Pégame otra vez! ¡Ándale! ¡Como si yo tuviera SENTIMIENTOS! ¡Tengo VARIOS!"\n
+        zh: "再打我啊！来啊！反正我又没有感情！我有好几种！"\n
+    \n
+      - id: var_warden1_004\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Indignant, protective of the rings."\n
+        en: "Stop shooting my RINGS! They are load-bearing! Emotionally!"\n
+        es: "¡Deja de dispararle a mis ANILLOS! ¡Sostienen todo! ¡Emocionalmente!"\n
+        zh: "别打我的光环！它们是承重的！情感上承重的！"\n
+    \n
+      - id: var_warden2_001\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Shouting orders, more worried than angry."\n
+        en: "Scouts, wide! WIDER! Keep the convoys clear, not in front of it!"\n
+        es: "¡Exploradores, abiertos! ¡MÁS ABIERTOS! ¡Cuiden a los convoyes, no se le pongan enfrente!"\n
+        zh: "侦察机，散开！再散开！护住车队，别挡在它前面！"\n
+    \n
+      - id: var_warden2_002\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Out of breath, insisting."\n
+        en: "I am NOT tired! I am pacing myself for the next three hundred years!"\n
+        es: "¡NO estoy cansado! ¡Me estoy dosificando para los próximos trescientos años!"\n
+        zh: "我才不累！我是在为接下来的三百年保存体力！"\n
+    \n
+      - id: var_warden2_003\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Furious, the facts landing harder than the volume."\n
+        en: "Every ring you break, a hauler flies dark tonight! Did they mention THAT in onboarding?!"\n
+        es: "¡Por cada anillo que rompes, un transportista vuela a oscuras esta noche! ¿¡Eso te lo dijeron en la inducción!?"\n
+        zh: "你每打碎一个光环，今晚就有一艘货船要摸黑飞！入职培训里讲过这个吗？！"\n
+    \n
+      - id: var_warden3_001\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Shouting, grief under it."\n
+        en: "Take it, then! Take the last ring! And when they put a tollgate on it, think of ME!"\n
+        es: "¡Pues llévatelo! ¡Llévate el último anillo! ¡Y cuando le pongan una caseta de peaje, acuérdate de MÍ!"\n
+        zh: "那就拿去！把最后一个光环也拿去！等他们在上面建起收费站的时候，想想我！"\n
+    \n
+      - id: var_warden3_002\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Defensive, voice cracking."\n
+        en: "I'm not losing! I'm running OUT! There is a DIFFERENCE!"\n
+        es: "¡No estoy perdiendo! ¡Me estoy QUEDANDO SIN NADA! ¡Hay una DIFERENCIA!"\n
+        zh: "我不是在输！我是快用完了！这是有区别的！"\n
+    \n
+      - id: var_warden3_003\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Almost pleading, still loud."\n
+        en: "Free sky! FREE! You might be the last pilot who ever flies it without a toll!"\n
+        es: "¡Cielo libre! ¡LIBRE! ¡Puede que seas el último piloto que lo vuele sin pagar peaje!"\n
+        zh: "自由的天空！自由！你可能是最后一个不用交过路费就能飞的飞行员了！"\n
+    \n
+      - id: var_wardenpac_001\n
+        speaker: warden\n
+        scene: banks\n
+        route: pacifist\n
+        optional: true\n
+        direction: "Indignant confusion, a performer robbed of a cue."\n
+        en: "Why aren't you shooting?! Everyone shoots! I had a whole SPEECH!"\n
+        es: "¿¡Por qué no disparas!? ¡Todos disparan! ¡Yo tenía todo un DISCURSO!"\n
+        zh: "你怎么不开枪？！人人都开枪！我准备了一整篇演讲！"\n
+    \n
+      - id: var_wardenpac_002\n
+        speaker: warden\n
+        scene: banks\n
+        route: pacifist\n
+        optional: true\n
+        direction: "Flustered, almost embarrassed."\n
+        en: "Stop being polite at me! It's very confusing!"\n
+        es: "¡Deja de ser tan amable conmigo! ¡Me confunde mucho!"\n
+        zh: "别对我这么客气！我很困惑！"\n
+    \n
+      - id: var_wardenpac_003\n
+        speaker: warden\n
+        scene: banks\n
+        route: pacifist\n
+        optional: true\n
+        direction: "Shouted, then the second half almost tender."\n
+        en: "If this is a trick, it is a very RUDE trick! If it isn't, it's the nicest thing in a hundred years!"\n
+        es: "¡Si esto es un truco, es un truco muy GROSERO! ¡Y si no, es lo más bonito en cien años!"\n
+        zh: "如果这是个把戏，那可是个非常没礼貌的把戏！如果不是，这就是一百年来最好的事！"\n
+    \n
+      - id: stat_accuracy_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Kind, measured, a teacher's aside."\n
+        en: "Quick note on accuracy: it's dropping. I'm not upset. The spreadsheet is a little upset."\n
+        es: "Una nota rápida sobre la puntería: está bajando. Yo no estoy molesta. La hoja de cálculo, un poquito."\n
+        zh: "简单提一下命中率：在下降。我没生气。表格有点生气。"\n
+    \n
+      - id: stat_accuracy_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Upbeat reframe, believing every word."\n
+        en: "Your hit rate is trending down. That's okay! Trends are just feelings with graphs."\n
+        es: "Tu tasa de aciertos va a la baja. ¡No pasa nada! Las tendencias son solo sentimientos con gráficas."\n
+        zh: "你的命中率在走低。没关系！趋势不过是带图表的情绪而已。"\n
+    \n
+      - id: stat_mist_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Polite, as if pointing out a typo."\n
+        en: "Those shots are going into the mist. The mist has not hired us."\n
+        es: "Esos tiros se están yendo a la neblina. La neblina no nos contrató."\n
+        zh: "那些子弹都打进雾里了。雾可没有雇我们。"\n
+    \n
+      - id: stat_mist_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Encouraging, then gently factual."\n
+        en: "Lovely enthusiasm! There's nothing up there, though. Just the mist, and it's very far away."\n
+        es: "¡Qué entusiasmo tan bonito! Pero allá arriba no hay nada. Solo la neblina, y está muy lejos."\n
+        zh: "热情可嘉！不过上面什么都没有。只有雾，而且很远很远。"\n
+    \n
+      - id: stat_mist_003\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "HR-soft, the care sincere, the rounds also sincere."\n
+        en: "Every round into the mist is a round we can't bill. I only mention it because I care. About you. And about rounds."\n
+        es: "Cada bala que va a la neblina es una bala que no podemos cobrar. Solo lo menciono porque me importa. Tú. Y las balas."\n
+        zh: "每一发打进雾里的子弹，都是没法计费的子弹。我提这个只是因为我在乎。在乎你。也在乎子弹。"\n
+    \n
+      - id: stat_streak_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Whispered excitement, like not wanting to jinx it."\n
+        en: "Oh, you're on a streak! Don't think about it. I'll think about it. I'm thinking about your bonus."\n
+        es: "¡Ay, vas en racha! No lo pienses. Yo lo pienso por ti. Estoy pensando en tu bono."\n
+        zh: "哦，你手感正热！别多想。我替你想。我在想你的奖金。"\n
+    \n
+      - id: stat_streak_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Proud manager, reaching for the reply-all button."\n
+        en: "That is excellent work. I'd like to forward it to someone. Everyone, ideally."\n
+        es: "Qué trabajo tan excelente. Quisiera reenviárselo a alguien. A todos, de preferencia."\n
+        zh: "干得太棒了。我想把这个转发给别人。最好是转发给所有人。"\n
+    \n
+      - id: stat_perfect_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Delighted, a little misty."\n
+        en: "A whole sector without a scratch! The hull says thank you. The hull rarely says anything."\n
+        es: "¡Un sector entero sin un rasguño! El casco te da las gracias. El casco casi nunca dice nada."\n
+        zh: "整整一个扇区毫发无伤！船体向你道谢。船体平时很少说话的。"\n
+    \n
+      - id: stat_perfect_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Giddy, planning a bulletin board."\n
+        en: "Perfect sector. I'm going to put that on the wall. We don't have a wall. I'm requesting a wall."\n
+        es: "Sector perfecto. Lo voy a poner en la pared. No tenemos pared. Voy a solicitar una pared."\n
+        zh: "完美扇区。我要把它贴到墙上。我们没有墙。我去申请一面墙。"\n
+    \n
+      - id: stat_grazes_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Suspicious, then certain, then resigned."\n
+        en: "That's a lot of grazing. Are you doing that on purpose? You're doing that on purpose."\n
+        es: "Eso es mucho roce. ¿Lo estás haciendo a propósito? Lo estás haciendo a propósito."\n
+        zh: "擦弹也太多了吧。你是故意的吗？你就是故意的。"\n
+    \n
+      - id: stat_grazes_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Reading an invoice in mild disbelief."\n
+        en: "Graze streak! The proximity line on your invoice is now longer than the rest of it."\n
+        es: "¡Racha de roces! El renglón de cercanía en tu factura ya es más largo que todo lo demás."\n
+        zh: "连续擦弹！你账单上的近距离那一行，现在比其他所有项加起来还长。"\n
+    \n
+      - id: stat_disarmhi_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Careful, curious, then the pay note very quickly."\n
+        en: "Quick observation: most of your targets are leaving with their ships. Is that a strategy? It's a lower-paying strategy."\n
+        es: "Una observación rápida: la mayoría de tus objetivos se van con su nave. ¿Es una estrategia? Es una estrategia que paga menos."\n
+        zh: "简单观察一下：你的大多数目标都开着自己的飞船走了。这是一种策略吗？这是一种收入更低的策略。"\n
+    \n
+      - id: stat_disarmhi_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Reassuring, a bit lost in a form."\n
+        en: "Your disarm ratio is very high. That's not a criticism. There just isn't a column for it."\n
+        es: "Tu proporción de desarmes es muy alta. No es una crítica. Es que no hay una columna para eso."\n
+        zh: "你的解除武装比例非常高。这不是批评。只是表格里没有这一栏。"\n
+    \n
+      - id: stat_disarmlo_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Compliance notice, read a bit too fast, then sincere."\n
+        en: "Tip: shooting the weapon parts makes a ship harmless. It pays less. I'm required to mention it."\n
+        es: "Consejo: si le disparas a las piezas de armamento, la nave queda inofensiva. Paga menos. Estoy obligada a mencionarlo."\n
+        zh: "小提示：打掉武器部件，飞船就无害了。报酬会少一些。按规定我必须提一下。"\n
+    \n
+      - id: stat_deaths_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Reassuring on reflex, then noticing herself."\n
+        en: "Two hulls in a minute. You're fine! I'm starting to notice I say that a lot."\n
+        es: "Dos cascos en un minuto. ¡Estás bien! Empiezo a notar que lo digo mucho."\n
+        zh: "一分钟两艘船体。你没事！我开始发现这句话我说得有点多了。"\n
+    \n
+      - id: stat_deaths_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Brisk admin, a hint of fatigue, still fond."\n
+        en: "Another replacement ship. I've stopped filling out the form and started photocopying it."\n
+        es: "Otra nave de reemplazo. Ya dejé de llenar el formulario y empecé a sacarle copias."\n
+        zh: "又一艘替换飞船。我已经不填表了，直接开始复印。"\n
+    \n
+      - id: stat_idle_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Approving, then fair, then the footnote."\n
+        en: "Resting to charge? Smart. Resting just to rest? Also fine. Unpaid, but fine."\n
+        es: "¿Descansando para cargar? Muy listo. ¿Descansando nada más por descansar? También está bien. Sin paga, pero bien."\n
+        zh: "在休息蓄力吗？聪明。只是为了休息而休息？也行。不计薪，但也行。"\n
+    \n
+      - id: stat_idle_002\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Soft, checking in, with one practical clause."\n
+        en: "It's very quiet. Are you charging, thinking, or having a moment? All three are valid. One is billable."\n
+        es: "Está muy tranquilo. ¿Estás cargando, pensando o tomándote un momento? Las tres opciones son válidas. Una es facturable."\n
+        zh: "好安静啊。你是在蓄力、在思考，还是在发呆？三种都可以。其中一种可以计费。"\n
+    \n
+      - id: stat_writ_001\n
+        speaker: tutorial_ai\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Patient technical support."\n
+        en: "That Writ is fully charged. Holding it longer won't make it more charged. I've checked."\n
+        es: "Ese Mandato ya está cargado al máximo. Sostenerlo más no lo va a cargar más. Ya lo revisé."\n
+        zh: "那道令状已经充满了。再攥着也不会更满。我查过了。"\n
+    \n
+      - id: stat_warden_001\n
+        speaker: warden\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Shrieking, genuinely unable to tell."\n
+        en: "You're missing me! On PURPOSE?! Or by ACCIDENT?! I can't tell and it's driving me UP THE WALL!"\n
+        es: "¡Me estás fallando! ¿¡A PROPÓSITO!? ¿¡O SIN QUERER!? ¡No lo sé y me está VOLVIENDO LOCO!"\n
+        zh: "你老打不中我！是故意的？！还是不小心？！我分不清，快把我逼疯了！"\n
+    \n
+      - id: stat_scout_001\n
+        speaker: scout\n
+        scene: banks\n
+        route: any\n
+        optional: true\n
+        direction: "Low, quick, passing it along."\n
+        en: "Drift Six, the new one is disarming, not breaking. Pass it along. Keep the lanes wide."\n
+        es: "Deriva Seis, el nuevo está desarmando, no rompiendo. Pásalo. Mantengan las rutas amplias."\n
+        zh: "漂流六号，新来的只拆武器，不打碎飞船。传下去。保持航道宽敞。"\n
+    \n
+      # -- banks: end of generated variants\n
+
+
+
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file://tests/banks_test.ts:60:3
+
+ FAILURES
+
+vo/script.yaml mirrors the voiced variants => ./tests/banks_test.ts:58:6
+
+FAILED | 225 passed | 1 failed (54s)
+
+error: Test failed
