@@ -124,3 +124,32 @@ Deno.test("waits do not drift with frame timing", () => {
   rig.advance(16); // t = 32 >= 30
   assertEquals(rig.log, ["sfx x"]);
 });
+
+Deno.test("a loading line waits, subtitle and all, then plays", () => {
+  const loading = new Set(["line_a"]);
+  const rig = makeRig({ line_a: 1000, line_b: 500 }, loading);
+  rig.director.play({
+    id: "t",
+    cues: [
+      { type: "say", line: A },
+      { type: "wait", until: "lineEnds" },
+      { type: "say", line: B },
+    ],
+  });
+  rig.advance(300);
+  assertEquals(rig.log, [], "no audio yet, so no line");
+  assertEquals(rig.director.subtitles.view, null, "and no subtitle");
+  loading.delete("line_a");
+  rig.advance(16);
+  assertEquals(rig.log, ["say scripted line_a en @316"]);
+  rig.advance(1000);
+  assertEquals(rig.log.at(-1), "say scripted line_b en @1316");
+});
+
+Deno.test("a line that never loads falls back to subtitles alone", () => {
+  const rig = makeRig({ line_a: 1000 }, new Set(["line_a"]));
+  rig.director.play({ id: "t", cues: [{ type: "say", line: A }] });
+  rig.advance(8100);
+  assertEquals(rig.log, [], "audio never played");
+  assertEquals(rig.director.subtitles.view?.line, A);
+});

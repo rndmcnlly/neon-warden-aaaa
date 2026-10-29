@@ -30,6 +30,14 @@ export interface VoiceHandle {
   stop(fadeMs?: number): void;
 }
 
+/**
+ * Whether a line's audio can start right now: `ready` (decoded), `loading`
+ * (it exists and is on its way) or `missing` (never rendered, or the
+ * download failed). The Director holds a `loading` line rather than showing
+ * its subtitle over silence.
+ */
+export type VoiceStatus = "ready" | "loading" | "missing";
+
 export interface VoicePort {
   /**
    * Starts a line in `lang` (the port falls back to English if that language
@@ -37,6 +45,11 @@ export interface VoicePort {
    * Director still shows subtitles for the estimated duration.
    */
   play(line: LineId, lang: Lang, layer: VoiceLayer): VoiceHandle | null;
+  /**
+   * Optional: the line's load state, which also starts its download. A port
+   * without it is treated as always `ready` (play now or never).
+   */
+  status?(line: LineId, lang: Lang): VoiceStatus;
   /** Rendered length of the line in `lang` (after fallback), if known. */
   durationMs(line: LineId, lang: Lang): number | undefined;
   /** Who speaks the line, if known (from `cues.json`). */

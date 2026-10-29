@@ -53,6 +53,11 @@ export class StagedLoader<T> {
     return this.cache.get(url);
   }
 
+  /** True once a fetch of `url` has failed (it will not be retried). */
+  hasFailed(url: string): boolean {
+    return this.failed.has(url);
+  }
+
   /** Fetches one asset now (deduplicated). Resolves `undefined` on failure. */
   request(url: string): Promise<T | undefined> {
     const cached = this.cache.get(url);

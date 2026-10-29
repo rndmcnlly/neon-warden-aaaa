@@ -11,6 +11,10 @@
  * Between scenes, the Director also plays ambient chatter (see `ambient.ts`).
  * Chatter yields to scripted moments: it never starts while a timeline runs,
  * and a bark already playing when a scripted line starts is ducked, not cut.
+ *
+ * A line is never dropped for being slow to download: if the voice port
+ * says its audio is still `loading`, the line waits (and a scripted line
+ * holds its scene) until the audio can start together with its subtitle.
  */
 
 import type {
@@ -45,6 +49,14 @@ export const DIRECTOR_TUNING = {
   defaultMusicFadeMs: 1500,
   /** Fade when a line is cut short by a skip or by the next line. */
   cutFadeMs: 120,
+  /**
+   * How long a scripted line may wait for its audio to arrive before the
+   * scene gives up and shows the subtitle alone (a dead network, not a slow
+   * one). The scene holds still while it waits.
+   */
+  scriptedLoadTimeoutMs: 8000,
+  /** A bark is a reaction: late by more than this, it is dropped instead. */
+  ambientLoadTimeoutMs: 1200,
 };
 
 export interface DirectorPorts {
@@ -86,6 +98,12 @@ interface ActiveLine {
   readonly endsAt: number;
 }
 
+/** A line whose audio exists but has not arrived: it waits, unseen. */
+interface PendingLine {
+  readonly line: LineId;
+  readonly since: number;
+}
+
 export class Director {
   readonly subtitles = new SubtitleModel();
 
@@ -103,6 +121,10 @@ export class Director {
    */
   private cursor = 0;
   private lines: Record<VoiceLayer, ActiveLine | null> = {
+    scripted: null,
+    ambient: null,
+  };
+  private pending: Record<VoiceLayer, PendingLine | null> = {
     scripted: null,
     ambient: null,
   };
@@ -139,6 +161,7 @@ export class Director {
   update(): void {
     const now = this.ports.clock.now();
     this.expireLines(now);
+    this.startPending(now);
     this.run(now);
     this.tickChatter(now);
     this.subtitles.update(now);
@@ -148,6 +171,8 @@ export class Director {
 
   private run(now: number): void {
     while (this.stack.length > 0) {
+      // A scripted line still downloading holds the scene where it is.
+      if (this.pending.scripted) return;
       if (this.blockedUntil !== null) {
         if (now < this.blockedUntil) return;
         this.cursor = this.blockedUntil;
@@ -226,7 +251,7 @@ export class Director {
       this.cursor = now;
       return true;
     }
-    if (wait.nudge && now >= wait.nudge.at && !this.lines.scripted) {
+    if (wait.nudge && now >= wait.nudge.at && !this.busy("scripted")) {
       this.say(wait.nudge.line, "scripted", now);
       wait.nudge = null;
     }
@@ -243,14 +268,53 @@ export class Director {
 
   // ---------------------------------------------------------------- lines
 
+  /**
+   * Speaks `line`, or, if its audio is still downloading, parks it as
+   * pending: no subtitle shows until the voice can start with it.
+   */
   private say(line: LineId, layer: VoiceLayer, now: number): void {
+    this.stopLine(layer);
+    const status = this.ports.voice.status?.(line, this.ports.settings()
+      .voiceLang) ?? "ready";
+    if (status === "loading") {
+      this.pending[layer] = { line, since: now };
+      return;
+    }
+    this.start(line, layer, now, status === "ready");
+  }
+
+  /** Starts pending lines whose audio arrived, or gives up on late ones. */
+  private startPending(now: number): void {
+    for (const layer of ["scripted", "ambient"] as const) {
+      const wait = this.pending[layer];
+      if (!wait) continue;
+      const status = this.ports.voice.status?.(
+        wait.line,
+        this.ports.settings().voiceLang,
+      ) ?? "ready";
+      const timeout = layer === "scripted"
+        ? DIRECTOR_TUNING.scriptedLoadTimeoutMs
+        : DIRECTOR_TUNING.ambientLoadTimeoutMs;
+      if (status === "loading" && now - wait.since < timeout) continue;
+      this.pending[layer] = null;
+      if (status === "loading" && layer === "ambient") continue; // stale bark
+      this.start(wait.line, layer, now, status === "ready");
+      if (layer === "scripted") this.cursor = now;
+    }
+  }
+
+  private start(
+    line: LineId,
+    layer: VoiceLayer,
+    now: number,
+    withAudio: boolean,
+  ): void {
     const p = this.ports;
     const s = p.settings();
-    this.stopLine(layer);
     const text = p.text(line, s.textLang) ?? line; // a visible id flags a gap
     const durationMs = p.voice.durationMs(line, s.voiceLang) ??
       estimateDurationMs(text, s.textLang);
-    const handle = p.voice.play(line, s.voiceLang, layer);
+    const handle = withAudio ? p.voice.play(line, s.voiceLang, layer) : null;
     this.lines[layer] = { line, handle, endsAt: now + durationMs };
     if (layer === "scripted") {
       this.lines.ambient?.handle?.setGain(
@@ -273,6 +337,12 @@ export class Director {
   private stopLine(layer: VoiceLayer): void {
     this.lines[layer]?.handle?.stop(DIRECTOR_TUNING.cutFadeMs);
     this.lines[layer] = null;
+    this.pending[layer] = null;
+  }
+
+  /** A line holds the floor while it plays or while it waits to. */
+  private busy(layer: VoiceLayer): boolean {
+    return this.lines[layer] !== null || this.pending[layer] !== null;
   }
 
   private expireLines(now: number): void {
@@ -296,7 +366,7 @@ export class Director {
    */
   skipLine(): void {
     const now = this.ports.clock.now();
-    if (this.lines.scripted) {
+    if (this.busy("scripted")) {
       this.stopLine("scripted");
       this.subtitles.clear("scripted", now);
       this.endScriptedLine(now);
@@ -394,10 +464,11 @@ export class Director {
   bark(line: LineId): boolean {
     const now = this.ports.clock.now();
     if (
-      this.current !== null || this.lines.scripted !== null || this.chatterHeld
+      this.current !== null || this.busy("scripted") || this.chatterHeld
     ) return false;
     this.say(line, "ambient", now);
-    const endsAt = this.lines.ambient?.endsAt ?? now;
+    const endsAt = this.lines.ambient?.endsAt ??
+      now + DIRECTOR_TUNING.ambientLoadTimeoutMs;
     this.ambient.postpone(
       now,
       endsAt - now + DIRECTOR_TUNING.quietAfterScriptMs,
@@ -411,13 +482,13 @@ export class Director {
   }
 
   private tickChatter(now: number): void {
-    const busy = this.current !== null || this.lines.scripted !== null ||
+    const busy = this.current !== null || this.busy("scripted") ||
       this.chatterHeld;
     if (busy) {
       this.ambient.postpone(now, DIRECTOR_TUNING.quietAfterScriptMs);
       return;
     }
-    if (this.lines.ambient) return;
+    if (this.busy("ambient")) return;
     const bark = this.ambient.next(now);
     if (bark) this.say(bark, "ambient", now);
   }

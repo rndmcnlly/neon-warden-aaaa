@@ -295,8 +295,17 @@ function keyboardPilot(): Pilot {
   return { kind: "keyboard", next: () => frontEnd.input.readFrame() };
 }
 
+/** The loading stage holding a skip target's VO and music. */
+function stageFor(at: SkipTo): "menu" | "gameplay" | "ending" {
+  if (at === "tutorial") return "menu";
+  return at.startsWith("ending") ? "ending" : "gameplay";
+}
+
 function startRun(request: StartRequest): void {
   lastRequest = request;
+  // A skip-to run cannot wait for the background queue to reach its stage;
+  // the Director also holds any line whose audio is still on its way.
+  void engine?.loadStage(stageFor(request.at));
   director.skipScene();
   director.stopChatter();
   qa?.runStarted();

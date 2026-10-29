@@ -24,7 +24,7 @@
     "proseWrap": "preserve"
   },
   "tasks": {
-    "vo:sync": "deno run --allow-read=vo/out,public/vo --allow-write=public/vo scripts/sync_vo.ts",
+    "vo:sync": "deno run --allow-read=vo/out,public/vo --allow-write=public/vo --allow-run=ffmpeg scripts/sync_vo.ts",
     "dev": "deno task vo:sync && deno run -A npm:vite@8.3.1",
     "build": "deno task vo:sync && deno run -A npm:vite@8.3.1 build",
     "preview": "deno run -A npm:vite@8.3.1 preview",

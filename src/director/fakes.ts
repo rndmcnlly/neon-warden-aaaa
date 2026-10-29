@@ -25,8 +25,14 @@ export interface Rig {
   advance(ms: number): void;
 }
 
-/** Durations by line id (ms); lines not listed have no audio. */
-export function makeRig(durations: Record<string, number> = {}): Rig {
+/**
+ * Durations by line id (ms); lines not listed have no audio. Lines in
+ * `loading` report `loading` until the test deletes them from the set.
+ */
+export function makeRig(
+  durations: Record<string, number> = {},
+  loading: Set<string> = new Set(),
+): Rig {
   const clock = new FakeClock();
   const log: string[] = [];
   const flagLog: string[] = [];
@@ -55,6 +61,12 @@ export function makeRig(durations: Record<string, number> = {}): Rig {
         log.push(`say ${layer} ${line} ${lang} @${clock.t}`);
         return line in durations ? handle(line, layer) : null;
       },
+      status: (line) =>
+        loading.has(line)
+          ? "loading"
+          : line in durations
+          ? "ready"
+          : "missing",
       durationMs: (line) => durations[line],
       speaker: (): Speaker => "tutorial_ai",
     },

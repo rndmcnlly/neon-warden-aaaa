@@ -1,0 +1,4318 @@
+{
+ "generated": "2026-10-28T19:21:48-0700",
+ "timing_note": "Durations are measured from rendered audio. VTT sentence splits are proportional to character count, not aligned.",
+ "last_render": {
+  "lines": 3,
+  "wall_s": 6.53,
+  "audio_s": 3.28,
+  "rtf_incl_load": 1.99
+ },
+ "lines": {
+  "tut_hello_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Beaming welcome, as if greeting the first customer of the day.",
+   "langs": {
+    "en": {
+     "file": "en/tut_hello_001.ogg",
+     "vtt": "en/tut_hello_001.vtt",
+     "duration": 9.36,
+     "peak": 0.543,
+     "hash": "5a3ff39152d8d13c",
+     "seed": 11,
+     "text": "Hello, and welcome to Lane Authority onboarding! I am your onboarding assistant, and I will be with you every step of the way. Every single step.",
+     "asr": "Hello, and welcome to Lane Authority onboarding. I am your onboarding assistant, and I will be with you every step of the way, every single step.",
+     "asr_similarity": 1,
+     "inputLufs": -23.35
+    },
+    "es": {
+     "file": "es/tut_hello_001.ogg",
+     "vtt": "es/tut_hello_001.vtt",
+     "duration": 10.4,
+     "peak": 0.474,
+     "hash": "0e20dd4d7c2bfe12",
+     "seed": 11,
+     "text": "¡Hola, y bienvenido a la inducción de la Autoridad de Rutas! Soy tu asistente de inducción y estaré contigo en cada paso del camino. En cada uno de ellos.",
+     "asr": "Hola y bienvenido a la inducción de la autoridad de rutas. Soy tu asistente de inducción y estaré contigo en cada paso del camino, en cada uno de ellos.",
+     "asr_similarity": 1,
+     "inputLufs": -23.93
+    },
+    "zh": {
+     "file": "zh/tut_hello_001.ogg",
+     "vtt": "zh/tut_hello_001.vtt",
+     "duration": 8.24,
+     "peak": 0.601,
+     "hash": "3e461733a4d2fd77",
+     "seed": 11,
+     "text": "你好，欢迎参加航道管理局入职培训！我是你的入职助手，每一步我都会陪着你。真的是每一步哦。",
+     "asr": "你好，欢迎参加航道管理局入职培训。我是你的入职助手，每一步我都会陪着你，真的是每一步哦。",
+     "asr_similarity": 1,
+     "inputLufs": -22.18
+    }
+   }
+  },
+  "tut_contract_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Cheerful legal boilerplate, read fast and proud of it.",
+   "langs": {
+    "en": {
+     "file": "en/tut_contract_001.ogg",
+     "vtt": "en/tut_contract_001.vtt",
+     "duration": 10.56,
+     "peak": 0.473,
+     "hash": "51c951da7e50b556",
+     "seed": 11,
+     "text": "Your contract has been countersigned! Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
+     "asr": "Your contract has been countersigned. Payment is issued on completion of contract. Completion of contract is defined in Appendix F, which is available on request.",
+     "asr_similarity": 1,
+     "inputLufs": -23.88
+    },
+    "es": {
+     "file": "es/tut_contract_001.ogg",
+     "vtt": "es/tut_contract_001.vtt",
+     "duration": 12.32,
+     "peak": 0.565,
+     "hash": "8e5c392f7e625b28",
+     "seed": 211,
+     "text": "¡Tu contrato ya fue firmado por ambas partes! El pago se emite al completar el contrato. La definición de contrato completado está en el Apéndice F, disponible a solicitud.",
+     "asr": "Tu contrato ya fue firmado por ambas partes. El pago se imite al completar el contrato. La definición de contrato completado está en el índice F disponible a solicitud.",
+     "asr_similarity": 0.931,
+     "inputLufs": -22.86
+    },
+    "zh": {
+     "file": "zh/tut_contract_001.ogg",
+     "vtt": "zh/tut_contract_001.vtt",
+     "duration": 8,
+     "peak": 0.462,
+     "hash": "edbb2a2a6e2ddc12",
+     "seed": 11,
+     "text": "你的合同已完成会签！合同完成后即发放报酬。“合同完成”的定义见附录F，可应要求提供。",
+     "asr": "你的合同已完成会签。合同完成后即发放报酬。合同完成的定义见附录 F，可因要求提供。",
+     "asr_similarity": 0.972,
+     "inputLufs": -22.42
+    }
+   }
+  },
+  "tut_move_000": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Kindergarten-teacher patience, explaining the obvious with great care.",
+   "langs": {
+    "en": {
+     "file": "en/tut_move_000.ogg",
+     "vtt": "en/tut_move_000.vtt",
+     "duration": 6.32,
+     "peak": 0.548,
+     "hash": "47e84023c9902e54",
+     "seed": 11,
+     "text": "Let's start with movement! Movement is how you get from one place to another. Please fly to the left.",
+     "asr": "Let's start with movement. Movement is how you get from one place to another. Please fly to the left.",
+     "asr_similarity": 1,
+     "inputLufs": -22.04
+    },
+    "es": {
+     "file": "es/tut_move_000.ogg",
+     "vtt": "es/tut_move_000.vtt",
+     "duration": 7.84,
+     "peak": 0.514,
+     "hash": "8437f844b0e77721",
+     "seed": 11,
+     "text": "¡Empecemos con el movimiento! El movimiento es lo que te lleva de un lugar a otro. Por favor, vuela hacia la izquierda.",
+     "asr": "Empecemos con el movimiento. El movimiento es lo que te lleva de un lugar a otro. Por favor, vuela hacia la izquierda.",
+     "asr_similarity": 1,
+     "inputLufs": -21.85
+    },
+    "zh": {
+     "file": "zh/tut_move_000.ogg",
+     "vtt": "zh/tut_move_000.vtt",
+     "duration": 5.28,
+     "peak": 0.435,
+     "hash": "954449d55b499ae0",
+     "seed": 11,
+     "text": "我们先从移动开始！移动，就是从一个地方到另一个地方。请向左飞。",
+     "asr": "我们先从移动开始。移动就是从一个地方到另一个地方，请向左飞。",
+     "asr_similarity": 1,
+     "inputLufs": -24.92
+    }
+   }
+  },
+  "tut_move_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Maximum cheer, as if this were the most important lesson ever taught; tiny forced giggle at the end.",
+   "langs": {
+    "en": {
+     "file": "en/tut_move_001.ogg",
+     "vtt": "en/tut_move_001.vtt",
+     "duration": 9.36,
+     "peak": 0.473,
+     "hash": "1d610a7da8ba6bce",
+     "seed": 11,
+     "text": "Great job pressing the left key! Now, for your next challenge: press the right key. I believe in you. Take all the time you need.",
+     "asr": "Great job pressing the left key. Now for your next challenge: press the right key. I believe in you. Take all the time you need.",
+     "asr_similarity": 1,
+     "inputLufs": -23.06
+    },
+    "es": {
+     "file": "es/tut_move_001.ogg",
+     "vtt": "es/tut_move_001.vtt",
+     "duration": 11.44,
+     "peak": 0.423,
+     "hash": "64fdc6f233330141",
+     "seed": 11,
+     "text": "¡Excelente, presionaste la tecla izquierda! Ahora, tu siguiente desafío: presiona la tecla derecha. Creo en ti. Tómate todo el tiempo que necesites.",
+     "asr": "Excelente, presiona la tecla izquierda. Ahora, tu siguiente desafío: presiona la tecla derecha. Creo en ti, toma todo el tiempo que necesites.",
+     "asr_similarity": 0.909,
+     "inputLufs": -25.18
+    },
+    "zh": {
+     "file": "zh/tut_move_001.ogg",
+     "vtt": "zh/tut_move_001.vtt",
+     "duration": 8.96,
+     "peak": 0.639,
+     "hash": "21f38b1f4bd28d06",
+     "seed": 11,
+     "text": "太棒了，你按下了左键！接下来，你的下一个挑战是：按下右键。我相信你。慢慢来，不着急。",
+     "asr": "太棒了！你按下了左键。接下来，你的下一个挑战是按下右键。我相信你，慢慢来，不着急。",
+     "asr_similarity": 1,
+     "inputLufs": -21.37
+    }
+   }
+  },
+  "tut_move_002": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Delighted, then a proud little flourish on the last sentence.",
+   "langs": {
+    "en": {
+     "file": "en/tut_move_002.ogg",
+     "vtt": "en/tut_move_002.vtt",
+     "duration": 7.2,
+     "peak": 0.576,
+     "hash": "6d5f4b628a31c4d6",
+     "seed": 11,
+     "text": "Wonderful! Now up. And now down. You have flown in all four directions. That is every direction we offer.",
+     "asr": "Wonderful! Now up and now down, you have flown in all four directions. That is every direction we offer.",
+     "asr_similarity": 1,
+     "inputLufs": -21.22
+    },
+    "es": {
+     "file": "es/tut_move_002.ogg",
+     "vtt": "es/tut_move_002.vtt",
+     "duration": 10.08,
+     "peak": 0.466,
+     "hash": "34a742a6f29a5afc",
+     "seed": 11,
+     "text": "¡Maravilloso! Ahora hacia arriba. Y ahora hacia abajo. Ya volaste en las cuatro direcciones. Son todas las direcciones que ofrecemos.",
+     "asr": "Maravilloso, ahora hacia arriba y ahora hacia abajo. Ya volaste en las cuatro direcciones. Son todas las direcciones que ofrecemos.",
+     "asr_similarity": 1,
+     "inputLufs": -23.57
+    },
+    "zh": {
+     "file": "zh/tut_move_002.ogg",
+     "vtt": "zh/tut_move_002.vtt",
+     "duration": 7.28,
+     "peak": 0.389,
+     "hash": "6eeb73b775bdb29e",
+     "seed": 11,
+     "text": "太好了！现在向上。再向下。你已经朝四个方向都飞过了。我们提供的方向就这么多。",
+     "asr": "太好了！现在向上再向下，你已经朝四个方向都飞过了。我们提供的方向就这么多。",
+     "asr_similarity": 1,
+     "inputLufs": -24.58
+    }
+   }
+  },
+  "tut_hitbox_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Sincere and a little tender on the last sentence.",
+   "langs": {
+    "en": {
+     "file": "en/tut_hitbox_001.ogg",
+     "vtt": "en/tut_hitbox_001.vtt",
+     "duration": 8.48,
+     "peak": 0.524,
+     "hash": "2bed9606e81cfaf2",
+     "seed": 11,
+     "text": "Your ship is large and beautiful, but only the small glowing gem at its center can be hit. Please protect the gem. The gem is you.",
+     "asr": "Your ship is large and beautiful, but only the small glowing gem at its center can be hit. Please protect the gem. The gem is you.",
+     "asr_similarity": 1,
+     "inputLufs": -23.61
+    },
+    "es": {
+     "file": "es/tut_hitbox_001.ogg",
+     "vtt": "es/tut_hitbox_001.vtt",
+     "duration": 10.4,
+     "peak": 0.465,
+     "hash": "90ad580594e2c0b2",
+     "seed": 211,
+     "text": "Tu nave es grande y hermosa, pero solo la pequeña gema brillante del centro puede recibir impactos. Por favor, protege la gema. La gema eres tú.",
+     "asr": "Tu nave es grande y remota, pero solo la pequeña hema brillante del centro puede recibir impactos. Por favor protege la hema, la hema es tú.",
+     "asr_similarity": 0.808,
+     "inputLufs": -23.67
+    },
+    "zh": {
+     "file": "zh/tut_hitbox_001.ogg",
+     "vtt": "zh/tut_hitbox_001.vtt",
+     "duration": 7.76,
+     "peak": 0.571,
+     "hash": "c5875e4ee20383cf",
+     "seed": 11,
+     "text": "你的飞船又大又漂亮，但只有中央那颗发光的小宝石会被击中。请保护好宝石。宝石就是你。",
+     "asr": "你的飞船又大又漂亮，但只有中央那颗发光的小宝石会被击中。请保护好宝石，宝石就是你。",
+     "asr_similarity": 1,
+     "inputLufs": -23.25
+    }
+   }
+  },
+  "tut_focus_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Meditation-app calm that keeps slipping back into perkiness.",
+   "langs": {
+    "en": {
+     "file": "en/tut_focus_001.ogg",
+     "vtt": "en/tut_focus_001.vtt",
+     "duration": 9.76,
+     "peak": 0.418,
+     "hash": "25d5727ddf979368",
+     "seed": 11,
+     "text": "Hold focus to fly slowly and precisely. Focus is for threading the gem between bullets. Let's practice. Focus. Good. Still focusing. Great.",
+     "asr": "Hold focus to fly slowly and precisely. Focus is for threading the gem between bullets. Let's practice focus. Good, still focusing. Great.",
+     "asr_similarity": 1,
+     "inputLufs": -24.38
+    },
+    "es": {
+     "file": "es/tut_focus_001.ogg",
+     "vtt": "es/tut_focus_001.vtt",
+     "duration": 12.32,
+     "peak": 0.548,
+     "hash": "f9701e4d04d1bae4",
+     "seed": 311,
+     "text": "Mantén el enfoque para volar despacio y con precisión. El enfoque sirve para pasar la gema entre las balas. Practiquemos. Enfócate. Bien. Sigue enfocado. Genial.",
+     "asr": "Mantén el enfoque para volar despacio y con precisión. El enfoque sirve para pasar la hema entre las balas. Practiquemos enfócate. Bien, sigue enfocado. Héñuelo.",
+     "asr_similarity": 0.92,
+     "inputLufs": -22.34
+    },
+    "zh": {
+     "file": "zh/tut_focus_001.ogg",
+     "vtt": "zh/tut_focus_001.vtt",
+     "duration": 11.12,
+     "peak": 0.625,
+     "hash": "f2c048ac39b918c0",
+     "seed": 11,
+     "text": "按住专注键，就能缓慢而精准地飞行。专注，是为了让宝石从子弹缝隙中穿过。我们来练习一下。专注。很好。继续专注。太棒了。",
+     "asr": "按住专注键就能缓慢而精准的飞行。专注是为了让宝石从子弹缝隙中穿过。我们来练习一下：专注，很好，继续专注，太棒了。",
+     "asr_similarity": 0.98,
+     "inputLufs": -22.28
+    }
+   }
+  },
+  "tut_fire_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Excited, like unveiling a birthday present.",
+   "langs": {
+    "en": {
+     "file": "en/tut_fire_001.ogg",
+     "vtt": "en/tut_fire_001.vtt",
+     "duration": 7.12,
+     "peak": 0.477,
+     "hash": "9d2d44fc5eed2102",
+     "seed": 11,
+     "text": "Now, let's learn to fire! Hold fire to release bullets. Bullets go up. Up is where the problems are.",
+     "asr": "Now let's learn to fire. Hold fire to release bullets. Bullets go up. Up is where the problems are.",
+     "asr_similarity": 1,
+     "inputLufs": -20.78
+    },
+    "es": {
+     "file": "es/tut_fire_001.ogg",
+     "vtt": "es/tut_fire_001.vtt",
+     "duration": 10.56,
+     "peak": 0.486,
+     "hash": "82649a4fffa803a3",
+     "seed": 11,
+     "text": "¡Ahora aprendamos a disparar! Mantén presionado disparar para soltar balas. Las balas van hacia arriba. Arriba es donde están los problemas.",
+     "asr": "Ahora aprendamos a disparar. Mantén presionado disparar para soltar balas. Las balas van hacia arriba. Arriba es donde están los problemas.",
+     "asr_similarity": 1,
+     "inputLufs": -22
+    },
+    "zh": {
+     "file": "zh/tut_fire_001.ogg",
+     "vtt": "zh/tut_fire_001.vtt",
+     "duration": 7.12,
+     "peak": 0.49,
+     "hash": "22348c3e82604518",
+     "seed": 11,
+     "text": "现在来学习射击吧！按住射击键就会发射子弹。子弹向上飞。问题都在上面。",
+     "asr": "现在来学习射击吧。按住射击键就会发射子弹，子弹向上飞。问题都在上面。",
+     "asr_similarity": 1,
+     "inputLufs": -23.49
+    }
+   }
+  },
+  "tut_fire_002": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Captain Obvious, completely sincere, a careful list.",
+   "langs": {
+    "en": {
+     "file": "en/tut_fire_002.ogg",
+     "vtt": "en/tut_fire_002.vtt",
+     "duration": 9.84,
+     "peak": 0.437,
+     "hash": "ef72103ec40e089c",
+     "seed": 11,
+     "text": "Your bullets are cyan. Bullets fired at you are pink. Pink bullets are bad. Gold bullets are also bad. In general, bullets are bad, unless they are yours.",
+     "asr": "Your bullets are cyan. Bullets fired at you are pink. Pink bullets are bad. Gold bullets are also bad in general. Bullets are bad unless they are yours.",
+     "asr_similarity": 1,
+     "inputLufs": -22.38
+    },
+    "es": {
+     "file": "es/tut_fire_002.ogg",
+     "vtt": "es/tut_fire_002.vtt",
+     "duration": 14.56,
+     "peak": 0.454,
+     "hash": "4473d591ab0aad6a",
+     "seed": 11,
+     "text": "Tus balas son cian. Las balas que te disparan son rosas. Las balas rosas son malas. Las doradas también son malas. En general, las balas son malas, salvo las tuyas.",
+     "asr": "Los balas son cian, las balas que te disparan son rosas, las balas rosas son malas, las doradas también son malas, en general, las balas son malas, sal balas tuyas.",
+     "asr_similarity": 0.9,
+     "inputLufs": -22.87
+    },
+    "zh": {
+     "file": "zh/tut_fire_002.ogg",
+     "vtt": "zh/tut_fire_002.vtt",
+     "duration": 10.8,
+     "peak": 0.494,
+     "hash": "586ff1807f79e245",
+     "seed": 11,
+     "text": "你的子弹是青色的。射向你的子弹是粉色的。粉色子弹很危险。金色子弹也很危险。总之，子弹都很危险，除非是你自己的。",
+     "asr": "你的子弹是青色的，射向你的子弹是粉色的。粉色子弹很危险，金色子弹也很危险。总之，子弹都很危险，除非是你自己。",
+     "asr_similarity": 0.989,
+     "inputLufs": -23.67
+    }
+   }
+  },
+  "tut_autofire_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Genuinely helpful, then corporate on the last sentence.",
+   "langs": {
+    "en": {
+     "file": "en/tut_autofire_001.ogg",
+     "vtt": "en/tut_autofire_001.vtt",
+     "duration": 8.56,
+     "peak": 0.558,
+     "hash": "e244ee7fe6229bee",
+     "seed": 11,
+     "text": "If holding fire for a long time is uncomfortable, auto-fire is in the accessibility settings. The Lane Authority wants your hands healthy and productive.",
+     "asr": "If holding fire for a long time is uncomfortable, auto fire is in the accessibility settings. The lane authority wants your hands healthy and productive.",
+     "asr_similarity": 0.939,
+     "inputLufs": -23.73
+    },
+    "es": {
+     "file": "es/tut_autofire_001.ogg",
+     "vtt": "es/tut_autofire_001.vtt",
+     "duration": 13.04,
+     "peak": 0.428,
+     "hash": "fb940bbf587d57e7",
+     "seed": 11,
+     "text": "Si mantener presionado disparar por mucho tiempo te resulta incómodo, el disparo automático está en los ajustes de accesibilidad. La Autoridad de Rutas quiere tus manos sanas y productivas.",
+     "asr": "Si mantener presionado disparar por mucho tiempo, te resulta incómodo. El disparo automático está en los ajustes de accesibilidad. La autoridad de rutas quiere tus manos sanas y productivas.",
+     "asr_similarity": 1,
+     "inputLufs": -24.29
+    },
+    "zh": {
+     "file": "zh/tut_autofire_001.ogg",
+     "vtt": "zh/tut_autofire_001.vtt",
+     "duration": 9.12,
+     "peak": 0.414,
+     "hash": "5fc8952358b71ab5",
+     "seed": 11,
+     "text": "如果长时间按住射击键让你不舒服，可以在无障碍设置中开启自动射击。航道管理局希望你的双手健康又高效。",
+     "asr": "如果长时间按住射击键让你不舒服，可以在无障碍设置中开启自动射击。航道管理局希望你的双手健康又高效。",
+     "asr_similarity": 1,
+     "inputLufs": -25.11
+    }
+   }
+  },
+  "tut_target_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Game-show reveal.",
+   "langs": {
+    "en": {
+     "file": "en/tut_target_001.ogg",
+     "vtt": "en/tut_target_001.vtt",
+     "duration": 6.08,
+     "peak": 0.616,
+     "hash": "4a22237c2b69cb69",
+     "seed": 11,
+     "text": "Here is a practice target. It is a hologram of a Warden scout. Please destroy the hologram.",
+     "asr": "Here is a practice target. It is a hologram of a warden scout. Please destroy the hologram.",
+     "asr_similarity": 1,
+     "inputLufs": -22.73
+    },
+    "es": {
+     "file": "es/tut_target_001.ogg",
+     "vtt": "es/tut_target_001.vtt",
+     "duration": 8.24,
+     "peak": 0.599,
+     "hash": "2ecdfb4757a1cbbb",
+     "seed": 11,
+     "text": "Aquí tienes un blanco de práctica. Es un holograma de un explorador del Guardián. Por favor, destruye el holograma.",
+     "asr": "Aquí tienes un blanco de práctica. Es un holograma de un explorador del Guardian. Por favor destruye el holograma.",
+     "asr_similarity": 1,
+     "inputLufs": -22.97
+    },
+    "zh": {
+     "file": "zh/tut_target_001.ogg",
+     "vtt": "zh/tut_target_001.vtt",
+     "duration": 6.72,
+     "peak": 0.461,
+     "hash": "9329c1f45832c6ed",
+     "seed": 11,
+     "text": "这是一个练习靶。它是守望者侦察机的全息影像。请摧毁这个全息影像。",
+     "asr": "这是一个练习靶，它是守望者侦察机的全息影像。请摧毁这个全息影像。",
+     "asr_similarity": 1,
+     "inputLufs": -26.07
+    }
+   }
+  },
+  "tut_target_002": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Proud applause, then a motivational-poster cadence.",
+   "langs": {
+    "en": {
+     "file": "en/tut_target_002.ogg",
+     "vtt": "en/tut_target_002.vtt",
+     "duration": 5.36,
+     "peak": 0.462,
+     "hash": "2780c1a9a877e2de",
+     "seed": 11,
+     "text": "Excellent! Scouts are the Warden's eyes. Every eye you close is one less eye on you.",
+     "asr": "Excellent, scouts are the warden's eyes. Every eye you close is one less eye on you.",
+     "asr_similarity": 1,
+     "inputLufs": -22.52
+    },
+    "es": {
+     "file": "es/tut_target_002.ogg",
+     "vtt": "es/tut_target_002.vtt",
+     "duration": 7.76,
+     "peak": 0.459,
+     "hash": "cf410bea224d439c",
+     "seed": 11,
+     "text": "¡Excelente! Los exploradores son los ojos del Guardián. Cada ojo que cierras es un ojo menos sobre ti.",
+     "asr": "Excelente, los exploradores son los ojos del guardián. Cada ojo que cierras es un ojo menos soberbio.",
+     "asr_similarity": 0.914,
+     "inputLufs": -22.56
+    },
+    "zh": {
+     "file": "zh/tut_target_002.ogg",
+     "vtt": "zh/tut_target_002.vtt",
+     "duration": 6.72,
+     "peak": 0.578,
+     "hash": "8f3a37d27266de50",
+     "seed": 11,
+     "text": "太棒了！侦察机是守望者的眼睛。你每关掉一只眼睛，盯着你的眼睛就少一只。",
+     "asr": "太棒了！侦察机是守望者的眼睛。你每关掉一只眼睛，盯着你的眼睛就少一只。",
+     "asr_similarity": 1,
+     "inputLufs": -23.82
+    }
+   }
+  },
+  "tut_lives_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Slow and deliberate counting, like a crossing guard.",
+   "langs": {
+    "en": {
+     "file": "en/tut_lives_001.ogg",
+     "vtt": "en/tut_lives_001.vtt",
+     "duration": 7.68,
+     "peak": 0.54,
+     "hash": "f9d67296d807d4ab",
+     "seed": 11,
+     "text": "Your hull holds three hits. Each hit also costs one cannon level. Please count to three with me. One. Two. Three.",
+     "asr": "Your hull holds three hits. Each hit also costs one cannon level. Please count to three with me: one, two, three.",
+     "asr_similarity": 1,
+     "inputLufs": -23.07
+    },
+    "es": {
+     "file": "es/tut_lives_001.ogg",
+     "vtt": "es/tut_lives_001.vtt",
+     "duration": 9.6,
+     "peak": 0.543,
+     "hash": "13465d4ff1a20108",
+     "seed": 111,
+     "text": "Tu casco resiste tres impactos. Cada impacto también te cuesta un nivel de cañón. Cuenta conmigo hasta tres. Uno. Dos. Tres.",
+     "asr": "Tu casco reciste tres impactos. Cada impacto también te cuesta un nivel de cañón. Cuéntame conmigo hasta tres. Uno, dos, tres.",
+     "asr_similarity": 0.905,
+     "inputLufs": -22.61
+    },
+    "zh": {
+     "file": "zh/tut_lives_001.ogg",
+     "vtt": "zh/tut_lives_001.vtt",
+     "duration": 7.36,
+     "peak": 0.575,
+     "hash": "98c0895ded5c3f62",
+     "seed": 11,
+     "text": "你的船体能承受三次命中。每次命中还会让主炮降一级。请跟我一起数到三。一。二。三。",
+     "asr": "你的船体能承受三次命中，每次命中还会让主炮降一级。请跟我一起数到三：一二三。",
+     "asr_similarity": 1,
+     "inputLufs": -23.04
+    }
+   }
+  },
+  "tut_continue_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Breezy reassurance; the last sentence is meant kindly and lands badly.",
+   "langs": {
+    "en": {
+     "file": "en/tut_continue_001.ogg",
+     "vtt": "en/tut_continue_001.vtt",
+     "duration": 8.24,
+     "peak": 0.533,
+     "hash": "2e65747eede03768",
+     "seed": 11,
+     "text": "And if you run out of hull, don't worry! The Lane Authority will requisition a new ship, and onboarding will continue. You will hardly notice.",
+     "asr": "And if you run out of hull, don't worry. The lane authority will requisition a new ship, and onboarding will continue. You will hardly notice.",
+     "asr_similarity": 1,
+     "inputLufs": -20.48
+    },
+    "es": {
+     "file": "es/tut_continue_001.ogg",
+     "vtt": "es/tut_continue_001.vtt",
+     "duration": 10.96,
+     "peak": 0.524,
+     "hash": "a9367631d3e732de",
+     "seed": 311,
+     "text": "Y si te quedas sin casco, ¡no te preocupes! La Autoridad de Rutas requisará una nave nueva y la inducción continuará. Casi ni lo notarás.",
+     "asr": "Y si te quedas sin casco, no te preocupes. La autoridad de ruta requerirá una nave nueva y la inducción continuará. Casino lo notarás.",
+     "asr_similarity": 0.857,
+     "inputLufs": -21.84
+    },
+    "zh": {
+     "file": "zh/tut_continue_001.ogg",
+     "vtt": "zh/tut_continue_001.vtt",
+     "duration": 8.56,
+     "peak": 0.518,
+     "hash": "b828cfded4f26e08",
+     "seed": 11,
+     "text": "就算船体耗尽，也别担心！航道管理局会调拨一艘新飞船，入职培训会继续进行。你几乎察觉不到。",
+     "asr": "就算船体耗尽，也别担心，航道管理局会调拨一艘新飞船。入职培训会继续进行，你几乎察觉不到。",
+     "asr_similarity": 1,
+     "inputLufs": -24.03
+    }
+   }
+  },
+  "tut_pickup_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Product-demo enthusiasm, then fine print read slightly faster.",
+   "langs": {
+    "en": {
+     "file": "en/tut_pickup_001.ogg",
+     "vtt": "en/tut_pickup_001.vtt",
+     "duration": 8.16,
+     "peak": 0.504,
+     "hash": "1e52db2068f0c38c",
+     "seed": 11,
+     "text": "Pickups! Green crystals widen your spread. Cyan diamonds grant a shield. Pickups are recovered salvage and remain Lane Authority property.",
+     "asr": "Pickups, green crystals widen your spread. Cyan diamonds grant a shield. Pickups are recovered salvage and remain lane authority property.",
+     "asr_similarity": 1,
+     "inputLufs": -22.35
+    },
+    "es": {
+     "file": "es/tut_pickup_001.ogg",
+     "vtt": "es/tut_pickup_001.vtt",
+     "duration": 11.68,
+     "peak": 0.455,
+     "hash": "f4df313a06ebb65d",
+     "seed": 211,
+     "text": "¡Objetos! Los cristales verdes amplían tu disparo. Los diamantes cian te dan un escudo. Los objetos son material recuperado y siguen siendo propiedad de la Autoridad de Rutas.",
+     "asr": "Objetos: los cristales verdes ampliando el disparo, los diamantes cien te dan un escudo, los pedos son material recuperado y siguen siendo propiedad de la autoridad de rutas.",
+     "asr_similarity": 0.857,
+     "inputLufs": -24.23
+    },
+    "zh": {
+     "file": "zh/tut_pickup_001.ogg",
+     "vtt": "zh/tut_pickup_001.vtt",
+     "duration": 10,
+     "peak": 0.522,
+     "hash": "77a36310553a7a4d",
+     "seed": 11,
+     "text": "道具！绿色水晶能扩大射击范围。青色菱形能提供护盾。道具均为回收物资，仍归航道管理局所有。",
+     "asr": "道具：绿色水晶能扩大射击范围，青色菱形能提供护盾。道具均为回收物资，仍归航道管理局所有。",
+     "asr_similarity": 1,
+     "inputLufs": -23.74
+    }
+   }
+  },
+  "tut_wink_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Conspiratorial little aside, then brightly back on message.",
+   "langs": {
+    "en": {
+     "file": "en/tut_wink_001.ogg",
+     "vtt": "en/tut_wink_001.vtt",
+     "duration": 8.08,
+     "peak": 0.429,
+     "hash": "615685998590733c",
+     "seed": 11,
+     "text": "Fun fact! An independent review rated this onboarding thorough. It also rated it long. We have chosen to focus on thorough.",
+     "asr": "Fun fact: An independent review rated this onboarding thorough. It also rated it long. We have chosen to focus on thorough.",
+     "asr_similarity": 1,
+     "inputLufs": -24.8
+    },
+    "es": {
+     "file": "es/tut_wink_001.ogg",
+     "vtt": "es/tut_wink_001.vtt",
+     "duration": 11.52,
+     "peak": 0.566,
+     "hash": "d8c8f5fa9f10a768",
+     "seed": 11,
+     "text": "¡Dato curioso! Una evaluación independiente calificó esta inducción como exhaustiva. También la calificó como larga. Decidimos quedarnos con exhaustiva.",
+     "asr": "dato curioso: una evaluación independiente calificó esta inducción como exhaustiva, también la calificó como larga. Decidimos quedarnos con exhaustiva.",
+     "asr_similarity": 1,
+     "inputLufs": -23
+    },
+    "zh": {
+     "file": "zh/tut_wink_001.ogg",
+     "vtt": "zh/tut_wink_001.vtt",
+     "duration": 9.2,
+     "peak": 0.369,
+     "hash": "c3a9bc0ff2be4c80",
+     "seed": 11,
+     "text": "冷知识！一项独立评估认为这次入职培训很全面。它还认为培训很长。我们决定只看“全面”这一条。",
+     "asr": "冷知识：一项独立评估认为这次入职培训很全面，他还认为培训很长。我们决定只看全面这一条。",
+     "asr_similarity": 0.974,
+     "inputLufs": -26.3
+    }
+   }
+  },
+  "tut_review_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Quiz-show host answering her own questions without a pause.",
+   "langs": {
+    "en": {
+     "file": "en/tut_review_001.ogg",
+     "vtt": "en/tut_review_001.vtt",
+     "duration": 9.68,
+     "peak": 0.533,
+     "hash": "17fe3a3499ec9374",
+     "seed": 11,
+     "text": "Quick review! Which bullets are bad? That's right. The pink ones, the gold ones, and, in general, bullets. Which part of the ship can be hit? The gem. You're a natural.",
+     "asr": "Quick review: Which bullets are bad? That's right—the pink ones, the gold ones, and in general bullets. Which part of the ship can be hit? The gem. You're unnatural.",
+     "asr_similarity": 0.9,
+     "inputLufs": -24.89
+    },
+    "es": {
+     "file": "es/tut_review_001.ogg",
+     "vtt": "es/tut_review_001.vtt",
+     "duration": 14,
+     "peak": 0.552,
+     "hash": "3ff91394f72cb10d",
+     "seed": 11,
+     "text": "¡Repaso rápido! ¿Qué balas son malas? Así es. Las rosas, las doradas y, en general, las balas. ¿Qué parte de la nave puede recibir impactos? La gema. Tienes talento nato.",
+     "asr": "Rapaso rápido, qué balas son malas, así es, las rosas, las doradas y en general las balas, que parte de la navy puede recibir impactos, la hema, tienes talento nato.",
+     "asr_similarity": 0.9,
+     "inputLufs": -22.3
+    },
+    "zh": {
+     "file": "zh/tut_review_001.ogg",
+     "vtt": "zh/tut_review_001.vtt",
+     "duration": 10.4,
+     "peak": 0.511,
+     "hash": "8c4d521ede1a731b",
+     "seed": 11,
+     "text": "快速复习！哪些子弹危险？没错。粉色的、金色的，总之，子弹。飞船哪个部位会被击中？宝石。你真是天生的飞行员。",
+     "asr": "快速复习：哪些子弹危险？没错，粉色的、金色的。总之，子弹飞船哪个部位会被击中？宝石。你真是天生的飞行员。",
+     "asr_similarity": 1,
+     "inputLufs": -23.96
+    }
+   }
+  },
+  "tut_route_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Tour-guide list, slowing and dropping into a hush on the last words.",
+   "langs": {
+    "en": {
+     "file": "en/tut_route_001.ogg",
+     "vtt": "en/tut_route_001.vtt",
+     "duration": 6,
+     "peak": 0.633,
+     "hash": "ec1c25f9973abf90",
+     "seed": 11,
+     "text": "Your route: Outer Drift. Shatter Belt. Gun Lanes. Lancer Gate. Last Approach. And then...",
+     "asr": "Your route: Outer Drift, Shatterbelt, Gun Lanes, Lancer Gate, Last Approach, and then.",
+     "asr_similarity": 0.889,
+     "inputLufs": -23.14
+    },
+    "es": {
+     "file": "es/tut_route_001.ogg",
+     "vtt": "es/tut_route_001.vtt",
+     "duration": 10.88,
+     "peak": 0.486,
+     "hash": "4fcaf898417eaa50",
+     "seed": 311,
+     "text": "Tu ruta: Deriva Exterior. Cinturón Quebrado. Rutas de Artillería. Puerta de los Lanceros. Aproximación Final. Y luego...",
+     "asr": "Tirada, deriva exterior, centro en quebrado, ruedas de artillería, puerta de los lanzeros, aproximación final, ilego.",
+     "asr_similarity": 0.606,
+     "inputLufs": -22.67
+    },
+    "zh": {
+     "file": "zh/tut_route_001.ogg",
+     "vtt": "zh/tut_route_001.vtt",
+     "duration": 7.76,
+     "peak": 0.429,
+     "hash": "b757869f03503207",
+     "seed": 11,
+     "text": "你的航线：外缘漂流带。碎裂带。炮火航道。枪骑之门。最终进近。然后……",
+     "asr": "你的航线：外缘漂流带、碎裂带、炮火航道、枪旗之门，最终进舰，然后。",
+     "asr_similarity": 0.923,
+     "inputLufs": -24.23
+    }
+   }
+  },
+  "tut_warden_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "A theatrical gulp, then flight-attendant brightness.",
+   "langs": {
+    "en": {
+     "file": "en/tut_warden_001.ogg",
+     "vtt": "en/tut_warden_001.vtt",
+     "duration": 7.6,
+     "peak": 0.48,
+     "hash": "653533c1b4cc3867",
+     "seed": 11,
+     "text": "And then, the Warden. Before we continue, the Lane Authority requires you to watch a short threat briefing. Please enjoy it.",
+     "asr": "And then the warden. Before we continue, the lane authority requires you to watch a short threat briefing. Please enjoy it.",
+     "asr_similarity": 1,
+     "inputLufs": -23.23
+    },
+    "es": {
+     "file": "es/tut_warden_001.ogg",
+     "vtt": "es/tut_warden_001.vtt",
+     "duration": 10.8,
+     "peak": 0.47,
+     "hash": "9f9507dc2cadb19b",
+     "seed": 311,
+     "text": "Y luego, el Guardián. Antes de continuar, la Autoridad de Rutas requiere que veas una breve sesión informativa sobre amenazas. Disfrútala.",
+     "asr": "Illego, el guardián antes de continuar la autoridad de rutas requiere que veas una breve sesión informativa sobre amenazas disfruta",
+     "asr_similarity": 0.878,
+     "inputLufs": -23.36
+    },
+    "zh": {
+     "file": "zh/tut_warden_001.ogg",
+     "vtt": "zh/tut_warden_001.vtt",
+     "duration": 7.2,
+     "peak": 0.41,
+     "hash": "7316f02064d7c06b",
+     "seed": 11,
+     "text": "然后，就是守望者。继续之前，航道管理局要求你观看一段简短的威胁简报。请欣赏。",
+     "asr": "然后就是守望者。继续之前，航道管理局要求你观看一段简短的威胁简报，请欣赏。",
+     "asr_similarity": 1,
+     "inputLufs": -27.57
+    }
+   }
+  },
+  "brief_warden_001": {
+   "speaker": "narrator",
+   "scene": "tutorial",
+   "direction": "Trailer cold open over a black screen. Slow, low, enormous.",
+   "langs": {
+    "en": {
+     "file": "en/brief_warden_001.ogg",
+     "vtt": "en/brief_warden_001.vtt",
+     "duration": 3.36,
+     "peak": 0.459,
+     "hash": "c418ca82795c4ce4",
+     "seed": 22,
+     "text": "In the deepest lanes of the nebula, something waits.",
+     "asr": "In the deepest lanes of the nebula, something waits.",
+     "asr_similarity": 1,
+     "inputLufs": -23
+    },
+    "es": {
+     "file": "es/brief_warden_001.ogg",
+     "vtt": "es/brief_warden_001.vtt",
+     "duration": 4.88,
+     "peak": 0.345,
+     "hash": "e4f79f70cd024923",
+     "seed": 22,
+     "text": "En las rutas más profundas de la nebulosa, algo espera.",
+     "asr": "En las rutas más profundas de la nebulosa algo espera.",
+     "asr_similarity": 1,
+     "inputLufs": -26.91
+    },
+    "zh": {
+     "file": "zh/brief_warden_001.ogg",
+     "vtt": "zh/brief_warden_001.vtt",
+     "duration": 4.64,
+     "peak": 0.471,
+     "hash": "cf1b13384714e0c0",
+     "seed": 22,
+     "text": "在星云最深处的航道里，有什么东西在等待。",
+     "asr": "在星云最深处的航道里，有什么东西在等待？",
+     "asr_similarity": 1,
+     "inputLufs": -22.4
+    }
+   }
+  },
+  "brief_warden_002": {
+   "speaker": "narrator",
+   "scene": "tutorial",
+   "direction": "Each sentence its own beat; let the title land like a door slamming.",
+   "langs": {
+    "en": {
+     "file": "en/brief_warden_002.ogg",
+     "vtt": "en/brief_warden_002.vtt",
+     "duration": 4,
+     "peak": 0.463,
+     "hash": "4202496ec611d1ff",
+     "seed": 22,
+     "text": "It has no name. Only a title. The Warden.",
+     "asr": "It has no name, only a title: the warden.",
+     "asr_similarity": 1,
+     "inputLufs": -22.66
+    },
+    "es": {
+     "file": "es/brief_warden_002.ogg",
+     "vtt": "es/brief_warden_002.vtt",
+     "duration": 5.2,
+     "peak": 0.387,
+     "hash": "76cfa4fc326e1b75",
+     "seed": 22,
+     "text": "No tiene nombre. Solo un título. El Guardián.",
+     "asr": "No tiene nombre, solo un título. El guardián.",
+     "asr_similarity": 1,
+     "inputLufs": -24.03
+    },
+    "zh": {
+     "file": "zh/brief_warden_002.ogg",
+     "vtt": "zh/brief_warden_002.vtt",
+     "duration": 5.2,
+     "peak": 0.643,
+     "hash": "1972bb8a6c093a58",
+     "seed": 22,
+     "text": "它没有名字。只有一个称号。守望者。",
+     "asr": "他没有名字，只有一个称号：守望者。",
+     "asr_similarity": 0.929,
+     "inputLufs": -20.47
+    }
+   }
+  },
+  "brief_warden_003": {
+   "speaker": "narrator",
+   "scene": "tutorial",
+   "direction": "Grave statistics, a long pause before the last sentence.",
+   "langs": {
+    "en": {
+     "file": "en/brief_warden_003.ogg",
+     "vtt": "en/brief_warden_003.vtt",
+     "duration": 7.44,
+     "peak": 0.671,
+     "hash": "4f8f86691f6c56ea",
+     "seed": 22,
+     "text": "For three hundred years it has held the lanes shut. One hundred and twenty-one pilots have flown against it. None came back.",
+     "asr": "For three hundred years, it has held the lanes shut. One hundred and twenty-one pilots have flown against it; none came back.",
+     "asr_similarity": 1,
+     "inputLufs": -22.68
+    },
+    "es": {
+     "file": "es/brief_warden_003.ogg",
+     "vtt": "es/brief_warden_003.vtt",
+     "duration": 11.2,
+     "peak": 0.646,
+     "hash": "9fbb394ab0a812ff",
+     "seed": 22,
+     "text": "Durante trescientos años ha mantenido cerradas las rutas. Ciento veintiún pilotos han volado contra él. Ninguno regresó.",
+     "asr": "Durante trescientos años ha mantenido cerradas las rutas. Ciento veintiuno pilotos han volado contra él, ninguno regresó.",
+     "asr_similarity": 0.941,
+     "inputLufs": -19.94
+    },
+    "zh": {
+     "file": "zh/brief_warden_003.ogg",
+     "vtt": "zh/brief_warden_003.vtt",
+     "duration": 7.92,
+     "peak": 0.497,
+     "hash": "c44b5318c37b4f96",
+     "seed": 22,
+     "text": "三百年来，它一直封锁着航道。一百二十一名飞行员向它发起过挑战。没有一个回来。",
+     "asr": "三百年来，他一直封锁着航道。一百二十一名飞行员向他发起过挑战，没有一个回来。",
+     "asr_similarity": 0.941,
+     "inputLufs": -22.99
+    }
+   }
+  },
+  "brief_warden_004": {
+   "speaker": "narrator",
+   "scene": "tutorial",
+   "direction": "Hushed dread, as if afraid it might hear.",
+   "langs": {
+    "en": {
+     "file": "en/brief_warden_004.ogg",
+     "vtt": "en/brief_warden_004.vtt",
+     "duration": 4.56,
+     "peak": 0.612,
+     "hash": "062906d232fdcca6",
+     "seed": 22,
+     "text": "Its voice alone has cracked hulls. Those who have heard it never forget it.",
+     "asr": "Its voice alone has cracked hulls. Those who have heard it never forget it.",
+     "asr_similarity": 1,
+     "inputLufs": -22.26
+    },
+    "es": {
+     "file": "es/brief_warden_004.ogg",
+     "vtt": "es/brief_warden_004.vtt",
+     "duration": 7.36,
+     "peak": 0.468,
+     "hash": "234d8a14b0414c86",
+     "seed": 22,
+     "text": "Su voz, por sí sola, ha agrietado cascos. Quienes la han oído jamás la olvidan.",
+     "asr": "Su voz por sí sola ha agrietado cascos quienes la han oído jamás la olvidan.",
+     "asr_similarity": 1,
+     "inputLufs": -22.1
+    },
+    "zh": {
+     "file": "zh/brief_warden_004.ogg",
+     "vtt": "zh/brief_warden_004.vtt",
+     "duration": 6.4,
+     "peak": 0.582,
+     "hash": "1412268f33dba1d6",
+     "seed": 22,
+     "text": "单是它的声音，就能震裂船体。听过的人，永远不会忘记。",
+     "asr": "但是他的声音就能震裂船体，听过的人永远不会忘记。",
+     "asr_similarity": 0.909,
+     "inputLufs": -24.05
+    }
+   }
+  },
+  "brief_warden_005": {
+   "speaker": "narrator",
+   "scene": "tutorial",
+   "direction": "Same doom, but the stakes are commercial; play it with no irony at all.",
+   "langs": {
+    "en": {
+     "file": "en/brief_warden_005.ogg",
+     "vtt": "en/brief_warden_005.vtt",
+     "duration": 6.32,
+     "peak": 0.56,
+     "hash": "e2ebb89359e0485a",
+     "seed": 22,
+     "text": "While it stands, no toll can be collected. No route can be licensed. No lane can be owned.",
+     "asr": "While it stands, no toll can be collected, no route can be licensed, no lane can be owned.",
+     "asr_similarity": 1,
+     "inputLufs": -21.1
+    },
+    "es": {
+     "file": "es/brief_warden_005.ogg",
+     "vtt": "es/brief_warden_005.vtt",
+     "duration": 9.68,
+     "peak": 0.657,
+     "hash": "a05529834b6cb462",
+     "seed": 22,
+     "text": "Mientras siga en pie, no se puede cobrar ningún peaje. Ninguna ruta puede concesionarse. Ninguna ruta puede tener dueño.",
+     "asr": "Mientras siga en pie no se puede cobrar ningún peaje, ninguna ruta puede concesionarse, ninguna ruta puede tener dueño.",
+     "asr_similarity": 1,
+     "inputLufs": -20.89
+    },
+    "zh": {
+     "file": "zh/brief_warden_005.ogg",
+     "vtt": "zh/brief_warden_005.vtt",
+     "duration": 8.08,
+     "peak": 0.686,
+     "hash": "f9d446ac5caa4de5",
+     "seed": 22,
+     "text": "只要它还在，就收不了一分通行费。航道无法授权经营。航道无法归任何人所有。",
+     "asr": "只要他还在，就收不了一分通行费。航道无法授权经营，航道无法归任何人所有。",
+     "asr_similarity": 0.969,
+     "inputLufs": -21.18
+    }
+   }
+  },
+  "brief_warden_006": {
+   "speaker": "narrator",
+   "scene": "tutorial",
+   "direction": "Triumphant brand tag, then the disclaimer in the same grave voice.",
+   "langs": {
+    "en": {
+     "file": "en/brief_warden_006.ogg",
+     "vtt": "en/brief_warden_006.vtt",
+     "duration": 7.28,
+     "peak": 0.58,
+     "hash": "99b607df2e89f4d7",
+     "seed": 22,
+     "text": "The Lane Authority. Opening the lanes, for everyone. Terms and conditions apply.",
+     "asr": "The lane authority opening the lanes for everyone. Terms and conditions apply.",
+     "asr_similarity": 1,
+     "inputLufs": -22.21
+    },
+    "es": {
+     "file": "es/brief_warden_006.ogg",
+     "vtt": "es/brief_warden_006.vtt",
+     "duration": 8.4,
+     "peak": 0.683,
+     "hash": "7d3dd9605b6fdbb1",
+     "seed": 22,
+     "text": "La Autoridad de Rutas. Abriendo las rutas para todos. Aplican términos y condiciones.",
+     "asr": "La autoridad de rutas, abriendo las rutas para todos, aplican términos y condiciones.",
+     "asr_similarity": 1,
+     "inputLufs": -19.66
+    },
+    "zh": {
+     "file": "zh/brief_warden_006.ogg",
+     "vtt": "zh/brief_warden_006.vtt",
+     "duration": 6.88,
+     "peak": 0.538,
+     "hash": "81640f206b1627a1",
+     "seed": 22,
+     "text": "航道管理局。为所有人开放航道。适用相关条款与条件。",
+     "asr": "航道管理局为所有人开放航道，适用相关条款与条件。",
+     "asr_similarity": 1,
+     "inputLufs": -20.93
+    }
+   }
+  },
+  "tut_warden_002": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Breathless from the reel, then soothing customer service.",
+   "langs": {
+    "en": {
+     "file": "en/tut_warden_002.ogg",
+     "vtt": "en/tut_warden_002.vtt",
+     "duration": 5.04,
+     "peak": 0.363,
+     "hash": "d4804447b77181e1",
+     "seed": 11,
+     "text": "Wasn't that exciting? Please don't be frightened. Fear is not covered by your contract.",
+     "asr": "Wasn't that exciting? Please don't be frightened. Fear is not covered by your contract.",
+     "asr_similarity": 1,
+     "inputLufs": -24.43
+    },
+    "es": {
+     "file": "es/tut_warden_002.ogg",
+     "vtt": "es/tut_warden_002.vtt",
+     "duration": 6.96,
+     "peak": 0.675,
+     "hash": "595b773e7b28b260",
+     "seed": 111,
+     "text": "¿Verdad que fue emocionante? Por favor, no te asustes. El miedo no está cubierto por tu contrato.",
+     "asr": "Verdad que fue emocionante, por favor no te asustes, el miedo no está cubierto por tu contrato.",
+     "asr_similarity": 1,
+     "inputLufs": -22.36
+    },
+    "zh": {
+     "file": "zh/tut_warden_002.ogg",
+     "vtt": "zh/tut_warden_002.vtt",
+     "duration": 4.72,
+     "peak": 0.455,
+     "hash": "a2f5cfa75ca5b8bb",
+     "seed": 11,
+     "text": "是不是很激动人心？请不要害怕。你的合同不涵盖恐惧。",
+     "asr": "是不是很激动人心？请不要害怕，你的合同不涵盖恐惧。",
+     "asr_similarity": 1,
+     "inputLufs": -22.91
+    }
+   }
+  },
+  "tut_done_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Graduation-day pride; the last sentence is a catchphrase.",
+   "langs": {
+    "en": {
+     "file": "en/tut_done_001.ogg",
+     "vtt": "en/tut_done_001.vtt",
+     "duration": 7.84,
+     "peak": 0.58,
+     "hash": "4178e65868bc3036",
+     "seed": 11,
+     "text": "Onboarding complete! Your contract is now active. Please proceed to Outer Drift. And remember: stay in your lane, Pilot.",
+     "asr": "Onboarding complete. Your contract is now active. Please proceed to outer drift, and remember, stay in your lane, pilot.",
+     "asr_similarity": 1,
+     "inputLufs": -23.82
+    },
+    "es": {
+     "file": "es/tut_done_001.ogg",
+     "vtt": "es/tut_done_001.vtt",
+     "duration": 10.64,
+     "peak": 0.523,
+     "hash": "9b35f53d82c2268f",
+     "seed": 11,
+     "text": "¡Inducción completada! Tu contrato ya está activo. Por favor, dirígete a la Deriva Exterior. Y recuerda: no te salgas de tu ruta, piloto.",
+     "asr": "Inducción completada, tu contrato deista activo, por favor dirígete a la derecha exterior y recuerda no te salgas de tu ruta piloto.",
+     "asr_similarity": 0.889,
+     "inputLufs": -23.4
+    },
+    "zh": {
+     "file": "zh/tut_done_001.ogg",
+     "vtt": "zh/tut_done_001.vtt",
+     "duration": 8.16,
+     "peak": 0.511,
+     "hash": "dddfbf302f358a36",
+     "seed": 11,
+     "text": "入职培训完成！你的合同现已生效。请前往外缘漂流带。记住：别偏离你的航道，飞行员。",
+     "asr": "入职培训完成，你的合同现已生效，请前往外源漂流带。记住，别偏离你的航道，飞行员。",
+     "asr_similarity": 0.971,
+     "inputLufs": -23.14
+    }
+   }
+  },
+  "tut_idle_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial",
+   "direction": "Patient, with a stopwatch audible in the smile.",
+   "langs": {
+    "en": {
+     "file": "en/tut_idle_001.ogg",
+     "vtt": "en/tut_idle_001.vtt",
+     "duration": 5.2,
+     "peak": 0.649,
+     "hash": "50d525e8769d0c42",
+     "seed": 11,
+     "text": "Take all the time you need. I am timing it, but take all the time you need.",
+     "asr": "Take all the time you need. I am timing it, but take all the time you need.",
+     "asr_similarity": 1,
+     "inputLufs": -22.85
+    },
+    "es": {
+     "file": "es/tut_idle_001.ogg",
+     "vtt": "es/tut_idle_001.vtt",
+     "duration": 8.24,
+     "peak": 0.468,
+     "hash": "639fd2d3d442ced2",
+     "seed": 111,
+     "text": "Tómate todo el tiempo que necesites. Lo estoy cronometrando, pero tómate todo el tiempo que necesites.",
+     "asr": "Tomate todo el tiempo que necesites. Lo estoy cronometrando, pero tomate todo el tiempo que necesites.",
+     "asr_similarity": 1,
+     "inputLufs": -23.63
+    },
+    "zh": {
+     "file": "zh/tut_idle_001.ogg",
+     "vtt": "zh/tut_idle_001.vtt",
+     "duration": 3.92,
+     "peak": 0.492,
+     "hash": "d67b254dd9d76a10",
+     "seed": 11,
+     "text": "慢慢来，不着急。我在计时，但你慢慢来。",
+     "asr": "慢慢来，不着急。我在计时，带你慢慢来。",
+     "asr_similarity": 0.933,
+     "inputLufs": -22.13
+    }
+   }
+  },
+  "tut_skip_001": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial_skip",
+   "direction": "Surprised, a little wounded, recovering fast.",
+   "langs": {
+    "en": {
+     "file": "en/tut_skip_001.ogg",
+     "vtt": "en/tut_skip_001.vtt",
+     "duration": 6.24,
+     "peak": 0.601,
+     "hash": "60dcf3dd0ccf1c8b",
+     "seed": 11,
+     "text": "Oh! You'd like to skip onboarding? That's completely fine. Onboarding is just where we become friends.",
+     "asr": "Oh, you'd like to skip onboarding? That's completely fine. Onboarding is just where we become friends.",
+     "asr_similarity": 1,
+     "inputLufs": -20.93
+    },
+    "es": {
+     "file": "es/tut_skip_001.ogg",
+     "vtt": "es/tut_skip_001.vtt",
+     "duration": 7.36,
+     "peak": 0.459,
+     "hash": "9978504cfa9e3bd7",
+     "seed": 11,
+     "text": "¡Oh! ¿Quieres saltarte la inducción? No pasa nada. La inducción es solo donde nos hacemos amigos.",
+     "asr": "Oh, quieres saltar de la inducción? No pasa nada, la inducción es solo donde nos hacemos amigos.",
+     "asr_similarity": 0.909,
+     "inputLufs": -23.65
+    },
+    "zh": {
+     "file": "zh/tut_skip_001.ogg",
+     "vtt": "zh/tut_skip_001.vtt",
+     "duration": 7.04,
+     "peak": 0.405,
+     "hash": "9c4db90b905f8f9e",
+     "seed": 11,
+     "text": "哦！你想跳过入职培训？完全没问题。入职培训只是我们成为朋友的地方而已。",
+     "asr": "哦，你想跳过入职培训，完全没问题。入职培训只是我们成为朋友的地方而已。",
+     "asr_similarity": 1,
+     "inputLufs": -23.77
+    }
+   }
+  },
+  "tut_skip_002": {
+   "speaker": "tutorial_ai",
+   "scene": "tutorial_skip",
+   "direction": "Reading a log entry aloud, then brave and bright.",
+   "langs": {
+    "en": {
+     "file": "en/tut_skip_002.ogg",
+     "vtt": "en/tut_skip_002.vtt",
+     "duration": 6.48,
+     "peak": 0.584,
+     "hash": "bf28105d5909f4ef",
+     "seed": 11,
+     "text": "Logged as: declined onboarding. That's okay. I will be on comms the whole time anyway.",
+     "asr": "Log does declined onboarding. That's okay. I will be on comms the whole time anyway.",
+     "asr_similarity": 0.867,
+     "inputLufs": -20.96
+    },
+    "es": {
+     "file": "es/tut_skip_002.ogg",
+     "vtt": "es/tut_skip_002.vtt",
+     "duration": 8,
+     "peak": 0.513,
+     "hash": "6f8468214430f27f",
+     "seed": 11,
+     "text": "Registrado como: rechazó la inducción. Está bien. De todos modos estaré en la radio todo el tiempo.",
+     "asr": "Registrado como, rechazo la inducción, está bien, de todos modos estaré en la radio todo el tiempo.",
+     "asr_similarity": 1,
+     "inputLufs": -23.03
+    },
+    "zh": {
+     "file": "zh/tut_skip_002.ogg",
+     "vtt": "zh/tut_skip_002.vtt",
+     "duration": 5.68,
+     "peak": 0.44,
+     "hash": "925f1d2b306442b8",
+     "seed": 11,
+     "text": "已记录：拒绝入职培训。没关系。反正我会一直在通讯频道里。",
+     "asr": "已记录拒绝入职培训。没关系，反正我会一直在通讯频道里。",
+     "asr_similarity": 1,
+     "inputLufs": -23.59
+    }
+   }
+  },
+  "sec1_intro_001": {
+   "speaker": "tutorial_ai",
+   "scene": "sector1",
+   "direction": "On comms, crisp mission-control energy.",
+   "langs": {
+    "en": {
+     "file": "en/sec1_intro_001.ogg",
+     "vtt": "en/sec1_intro_001.vtt",
+     "duration": 5.92,
+     "peak": 0.527,
+     "hash": "30955137614dc28d",
+     "seed": 11,
+     "text": "Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked.",
+     "asr": "Outer drift scouts ahead. Scout fire is light and completely unprovoked.",
+     "asr_similarity": 1,
+     "inputLufs": -21.55
+    },
+    "es": {
+     "file": "es/sec1_intro_001.ogg",
+     "vtt": "es/sec1_intro_001.vtt",
+     "duration": 7.6,
+     "peak": 0.371,
+     "hash": "999dc8d9e0900fa2",
+     "seed": 111,
+     "text": "Deriva Exterior. Exploradores al frente. Su fuego es ligero y totalmente sin provocación.",
+     "asr": "Deriva exterior, explorador es al frente, su fuego es ligero y totalmente sin provocación.",
+     "asr_similarity": 0.889,
+     "inputLufs": -26.1
+    },
+    "zh": {
+     "file": "zh/sec1_intro_001.ogg",
+     "vtt": "zh/sec1_intro_001.vtt",
+     "duration": 7.04,
+     "peak": 0.416,
+     "hash": "07703ad934f42a36",
+     "seed": 11,
+     "text": "外缘漂流带。前方有侦察机。侦察机火力很弱，而且完全是无端挑衅。",
+     "asr": "外缘漂流带，前方有侦察机。侦察机火力很弱，而且完全是无端挑衅。",
+     "asr_similarity": 1,
+     "inputLufs": -24.4
+    }
+   }
+  },
+  "sec2_intro_001": {
+   "speaker": "tutorial_ai",
+   "scene": "sector2",
+   "direction": "On comms, trivia-night sparkle.",
+   "langs": {
+    "en": {
+     "file": "en/sec2_intro_001.ogg",
+     "vtt": "en/sec2_intro_001.vtt",
+     "duration": 9.28,
+     "peak": 0.502,
+     "hash": "5c9d52f1adb6ef74",
+     "seed": 11,
+     "text": "Shatter Belt. Divers incoming. Did you know? Darts used to carry guns, until a treaty disarmed them. We did not sign it.",
+     "asr": "Shatterbelt divers incoming. Did you know, darts used to carry guns until a treaty disarmed them? We did not sign it.",
+     "asr_similarity": 0.93,
+     "inputLufs": -22.52
+    },
+    "es": {
+     "file": "es/sec2_intro_001.ogg",
+     "vtt": "es/sec2_intro_001.vtt",
+     "duration": 12,
+     "peak": 0.41,
+     "hash": "334ab8abfedc820e",
+     "seed": 311,
+     "text": "Cinturón Quebrado. Se acercan los picadores. ¿Sabías que los dardos antes llevaban armas, hasta que un tratado los desarmó? Nosotros no lo firmamos.",
+     "asr": "Cinturón quebrado. Se acercan los picadores. Sabías que los dardos antes llevaban armas hasta que un tratado los desarmó. Nosotros no lo firmamos.",
+     "asr_similarity": 1,
+     "inputLufs": -24.49
+    },
+    "zh": {
+     "file": "zh/sec2_intro_001.ogg",
+     "vtt": "zh/sec2_intro_001.vtt",
+     "duration": 10,
+     "peak": 0.514,
+     "hash": "3558a129eef2eba2",
+     "seed": 11,
+     "text": "碎裂带。俯冲机来袭。你知道吗？飞镖机以前是带武器的，后来一项条约解除了它们的武装。我们没有签那项条约。",
+     "asr": "碎裂带俯冲机来袭，你知道吗？飞镖机以前是带武器的，后来一项条约解除了他们的武装。我们没有签那项条约。",
+     "asr_similarity": 0.978,
+     "inputLufs": -22.65
+    }
+   }
+  },
+  "sec3_intro_001": {
+   "speaker": "tutorial_ai",
+   "scene": "sector3",
+   "direction": "On comms, mildly scandalized by the waste.",
+   "langs": {
+    "en": {
+     "file": "en/sec3_intro_001.ogg",
+     "vtt": "en/sec3_intro_001.vtt",
+     "duration": 9.2,
+     "peak": 0.421,
+     "hash": "fe4cb47a4bde80e1",
+     "seed": 11,
+     "text": "Gun Lanes. Turrets online. These lanes were built for free passage, three centuries ago. No tollgates anywhere. Very inefficient.",
+     "asr": "Gun lanes, turrets online. These lanes were built for free passage three centuries ago. No toll gates anywhere. Very inefficient.",
+     "asr_similarity": 0.923,
+     "inputLufs": -24.63
+    },
+    "es": {
+     "file": "es/sec3_intro_001.ogg",
+     "vtt": "es/sec3_intro_001.vtt",
+     "duration": 12.32,
+     "peak": 0.629,
+     "hash": "4fa2d5592b4ace5a",
+     "seed": 311,
+     "text": "Rutas de Artillería. Torretas activas. Estas rutas se construyeron para el paso libre, hace tres siglos. Ni una caseta de peaje. Muy ineficiente.",
+     "asr": "Rutas de artillería, torretas activas. Estas rutas se construyeron para el paso libre a se tres siglos, ni una caseta de peaje muy eficiente.",
+     "asr_similarity": 0.894,
+     "inputLufs": -23.09
+    },
+    "zh": {
+     "file": "zh/sec3_intro_001.ogg",
+     "vtt": "zh/sec3_intro_001.vtt",
+     "duration": 8.88,
+     "peak": 0.571,
+     "hash": "61846a365069e798",
+     "seed": 11,
+     "text": "炮火航道。炮塔已上线。这些航道是三个世纪前为自由通行而建的。一个收费站都没有。效率太低了。",
+     "asr": "炮火航道、炮塔以上线，这些航道是三个世纪前为自由通行而建的，一个收费站都没有，效率太低了。",
+     "asr_similarity": 0.975,
+     "inputLufs": -23.98
+    }
+   }
+  },
+  "sec4_intro_001": {
+   "speaker": "tutorial_ai",
+   "scene": "sector4",
+   "direction": "On comms, briefing voice that trails off into honest puzzlement.",
+   "langs": {
+    "en": {
+     "file": "en/sec4_intro_001.ogg",
+     "vtt": "en/sec4_intro_001.vtt",
+     "duration": 9.28,
+     "peak": 0.549,
+     "hash": "1aae48dff58d3cd0",
+     "seed": 11,
+     "text": "Lancer Gate. Crossfire. Lancers fire across the lane, never along it. Almost as if they were keeping the lane itself clear. Odd.",
+     "asr": "Lancer gate crossfire. Lancers fire across the lane, never along it, almost as if they were keeping the lane itself clear. Odd.",
+     "asr_similarity": 1,
+     "inputLufs": -22.02
+    },
+    "es": {
+     "file": "es/sec4_intro_001.ogg",
+     "vtt": "es/sec4_intro_001.vtt",
+     "duration": 12.08,
+     "peak": 0.46,
+     "hash": "496f1468e690de13",
+     "seed": 111,
+     "text": "Puerta de los Lanceros. Fuego cruzado. Los lanceros disparan a través de la ruta, nunca a lo largo. Casi como si mantuvieran la ruta despejada. Qué raro.",
+     "asr": "Puerto de los Lanceros, fuego cruzado, los Lanceros disparan a través de la ruta nunca al largo casi como si mantuvieran la ruta despejada, que rato.",
+     "asr_similarity": 0.868,
+     "inputLufs": -25.24
+    },
+    "zh": {
+     "file": "zh/sec4_intro_001.ogg",
+     "vtt": "zh/sec4_intro_001.vtt",
+     "duration": 11.12,
+     "peak": 0.497,
+     "hash": "5653ff42b93a8345",
+     "seed": 11,
+     "text": "枪骑之门。交叉火力。枪骑机总是横穿航道开火，从不沿着航道。简直像是在让航道本身保持畅通。奇怪。",
+     "asr": "枪旗之门交叉火力，枪旗机总是横穿航道开火，从不沿着航道，简直像是在让航道本身保持畅通。奇怪。",
+     "asr_similarity": 0.951,
+     "inputLufs": -24.41
+    }
+   }
+  },
+  "sec5_intro_001": {
+   "speaker": "tutorial_ai",
+   "scene": "sector5",
+   "direction": "On comms, quarterly-earnings-call triumph.",
+   "langs": {
+    "en": {
+     "file": "en/sec5_intro_001.ogg",
+     "vtt": "en/sec5_intro_001.vtt",
+     "duration": 7.76,
+     "peak": 0.568,
+     "hash": "1de1c30c89da2e29",
+     "seed": 11,
+     "text": "Last Approach. Everything they have. Analysts say the Warden is down to its last reserves. This is what a winning quarter looks like!",
+     "asr": "Last approach. Everything they have, analysts say the warden is down to its last reserves. This is what a winning quarter looks like.",
+     "asr_similarity": 1,
+     "inputLufs": -22.95
+    },
+    "es": {
+     "file": "es/sec5_intro_001.ogg",
+     "vtt": "es/sec5_intro_001.vtt",
+     "duration": 10.24,
+     "peak": 0.458,
+     "hash": "8883a6dfa580f233",
+     "seed": 111,
+     "text": "Aproximación Final. Todo lo que tienen. Los analistas dicen que al Guardián le quedan sus últimas reservas. ¡Así se ve un trimestre ganador!",
+     "asr": "Aproximación final. Todo lo que tienen, los analistas dicen que al Guardian le quedan sus últimas reservas. Así se ve un trimestre ganador.",
+     "asr_similarity": 1,
+     "inputLufs": -21.73
+    },
+    "zh": {
+     "file": "zh/sec5_intro_001.ogg",
+     "vtt": "zh/sec5_intro_001.vtt",
+     "duration": 9.36,
+     "peak": 0.409,
+     "hash": "23c62d6a1f7fa6b7",
+     "seed": 11,
+     "text": "最终进近。倾巢而出。分析师说，守望者已经动用最后的储备了。这就是一个盈利季度该有的样子！",
+     "asr": "最终进进倾巢而出。分析师说：“守望者已经动用最后的储备了，这就是一个盈利季度该有的样子。”",
+     "asr_similarity": 0.974,
+     "inputLufs": -24.32
+    }
+   }
+  },
+  "amb_fight_001": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, warm performance-review praise.",
+   "langs": {
+    "en": {
+     "file": "en/amb_fight_001.ogg",
+     "vtt": "en/amb_fight_001.vtt",
+     "duration": 5.2,
+     "peak": 0.42,
+     "hash": "94c68c2630a4ec4c",
+     "seed": 11,
+     "text": "Every scout you clear is logged to your performance record. Your record looks wonderful.",
+     "asr": "Every scout you clear is logged to your performance record. Your record looks wonderful.",
+     "asr_similarity": 1,
+     "inputLufs": -24.26
+    },
+    "es": {
+     "file": "es/amb_fight_001.ogg",
+     "vtt": "es/amb_fight_001.vtt",
+     "duration": 6.64,
+     "peak": 0.483,
+     "hash": "bb42d7be9d873b23",
+     "seed": 111,
+     "text": "Cada explorador que eliminas queda en tu registro de desempeño. Tu registro se ve maravilloso.",
+     "asr": "Cada explorador que elimina esquela en tu registro de desempeño, tu registro se ve maravilloso.",
+     "asr_similarity": 0.867,
+     "inputLufs": -23.76
+    },
+    "zh": {
+     "file": "zh/amb_fight_001.ogg",
+     "vtt": "zh/amb_fight_001.vtt",
+     "duration": 5.84,
+     "peak": 0.409,
+     "hash": "2be2e053663ef469",
+     "seed": 11,
+     "text": "你清除的每一架侦察机都会记入你的绩效档案。你的档案看起来棒极了。",
+     "asr": "你清除的每一架侦察机都会进入你的绩效档案。你的档案看起来棒极了。",
+     "asr_similarity": 0.967,
+     "inputLufs": -24.3
+    }
+   }
+  },
+  "amb_fight_003": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, encouraging, unaware of how it sounds.",
+   "langs": {
+    "en": {
+     "file": "en/amb_fight_003.ogg",
+     "vtt": "en/amb_fight_003.vtt",
+     "duration": 4.4,
+     "peak": 0.436,
+     "hash": "6db615ffa45bdbc5",
+     "seed": 11,
+     "text": "You're doing great. Your predecessor was also doing great at this point.",
+     "asr": "You're doing great. Your predecessor was also doing great at this point.",
+     "asr_similarity": 1,
+     "inputLufs": -22.66
+    },
+    "es": {
+     "file": "es/amb_fight_003.ogg",
+     "vtt": "es/amb_fight_003.vtt",
+     "duration": 7.04,
+     "peak": 0.409,
+     "hash": "6bc1270192f0e4d1",
+     "seed": 211,
+     "text": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
+     "asr": "Lo estás haciendo genial. Tu predecesor también lo estaba haciendo genial en este punto.",
+     "asr_similarity": 1,
+     "inputLufs": -22.12
+    },
+    "zh": {
+     "file": "zh/amb_fight_003.ogg",
+     "vtt": "zh/amb_fight_003.vtt",
+     "duration": 4.64,
+     "peak": 0.694,
+     "hash": "3a277f489d5414aa",
+     "seed": 11,
+     "text": "你表现得很好。你的前任在这个阶段也表现得很好。",
+     "asr": "你表现得很好。你的前任在这个阶段也表现得很好。",
+     "asr_similarity": 1,
+     "inputLufs": -21.41
+    }
+   }
+  },
+  "amb_fight_004": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, gentle policy reminder.",
+   "langs": {
+    "en": {
+     "file": "en/amb_fight_004.ogg",
+     "vtt": "en/amb_fight_004.vtt",
+     "duration": 5.12,
+     "peak": 0.517,
+     "hash": "0dff261ffb05e0ce",
+     "seed": 111,
+     "text": "Reminder: pickups are Lane Authority property. Please don't get attached.",
+     "asr": "Reminder: Pickups are Lane Authority property. Please don't get attached.",
+     "asr_similarity": 1,
+     "inputLufs": -22.71
+    },
+    "es": {
+     "file": "es/amb_fight_004.ogg",
+     "vtt": "es/amb_fight_004.vtt",
+     "duration": 7.2,
+     "peak": 0.418,
+     "hash": "9953b3320cdcfa48",
+     "seed": 111,
+     "text": "Recordatorio: los objetos son propiedad de la Autoridad de Rutas. Por favor, no te encariñes.",
+     "asr": "Recordatorio: Los objetos son propiedad de la autoridad de rutas, por favor no tengan cariños.",
+     "asr_similarity": 0.867,
+     "inputLufs": -23.58
+    },
+    "zh": {
+     "file": "zh/amb_fight_004.ogg",
+     "vtt": "zh/amb_fight_004.vtt",
+     "duration": 6,
+     "peak": 0.374,
+     "hash": "49ef6acaa9b632e5",
+     "seed": 11,
+     "text": "提醒一下：道具归航道管理局所有。请不要对它们产生感情。",
+     "asr": "提醒一下：道具归航道管理局所有，请不要对他们产生感情。",
+     "asr_similarity": 0.958,
+     "inputLufs": -25.14
+    }
+   }
+  },
+  "amb_fight_005": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, breezy, as if about litter.",
+   "langs": {
+    "en": {
+     "file": "en/amb_fight_005.ogg",
+     "vtt": "en/amb_fight_005.vtt",
+     "duration": 5.92,
+     "peak": 0.431,
+     "hash": "fcb622afc3edafb7",
+     "seed": 11,
+     "text": "If you see unarmed ships in the lanes, please ignore them. They are not paying customers yet.",
+     "asr": "If you see unarmed ships in the lanes, please ignore them. They are not paying customers yet.",
+     "asr_similarity": 1,
+     "inputLufs": -23.94
+    },
+    "es": {
+     "file": "es/amb_fight_005.ogg",
+     "vtt": "es/amb_fight_005.vtt",
+     "duration": 6.64,
+     "peak": 0.5,
+     "hash": "04265b1bf98382a2",
+     "seed": 11,
+     "text": "Si ves naves desarmadas en las rutas, por favor ignóralas. Todavía no son clientes de pago.",
+     "asr": "Si ves neves y armadas en las rutas, por favor ignóralas. Todavía no son clientes de pago.",
+     "asr_similarity": 0.848,
+     "inputLufs": -23.77
+    },
+    "zh": {
+     "file": "zh/amb_fight_005.ogg",
+     "vtt": "zh/amb_fight_005.vtt",
+     "duration": 5.92,
+     "peak": 0.321,
+     "hash": "a0150a268eb966a4",
+     "seed": 11,
+     "text": "如果你在航道里看到没有武装的船，请无视它们。它们还不是付费客户。",
+     "asr": "如果你在航道里看到没有武装的船，请无视他们，他们还不是付费客户。",
+     "asr_similarity": 0.931,
+     "inputLufs": -25.68
+    }
+   }
+  },
+  "amb_nofire_001": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, tech-support concern.",
+   "langs": {
+    "en": {
+     "file": "en/amb_nofire_001.ogg",
+     "vtt": "en/amb_nofire_001.vtt",
+     "duration": 5.68,
+     "peak": 0.464,
+     "hash": "be8ab8419f5ebeb4",
+     "seed": 211,
+     "text": "Pilot, your weapon logs show no activity. Is your trigger working? Please fire.",
+     "asr": "Pilot, your weapon logs show no activity. Is your trigger working? Please fire.",
+     "asr_similarity": 1,
+     "inputLufs": -22.76
+    },
+    "es": {
+     "file": "es/amb_nofire_001.ogg",
+     "vtt": "es/amb_nofire_001.vtt",
+     "duration": 7.52,
+     "peak": 0.568,
+     "hash": "5e38e8d9b1c0357a",
+     "seed": 11,
+     "text": "Piloto, tu registro de armas no muestra actividad. ¿Funciona tu gatillo? Por favor, dispara.",
+     "asr": "Piloto, ¿tu registro de armas no muestra actividad? Funciona tu gatillo? Por favor, dispara.",
+     "asr_similarity": 1,
+     "inputLufs": -21.66
+    },
+    "zh": {
+     "file": "zh/amb_nofire_001.ogg",
+     "vtt": "zh/amb_nofire_001.vtt",
+     "duration": 6.16,
+     "peak": 0.442,
+     "hash": "5e1512aed679b0fc",
+     "seed": 11,
+     "text": "飞行员，你的武器日志显示没有任何开火记录。扳机正常吗？请射击。",
+     "asr": "飞行员，你的武器日志显示没有任何开火记录。扳机正常吗？请射击。",
+     "asr_similarity": 1,
+     "inputLufs": -24.32
+    }
+   }
+  },
+  "amb_nofire_002": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, carefully neutral, which is not neutral.",
+   "langs": {
+    "en": {
+     "file": "en/amb_nofire_002.ogg",
+     "vtt": "en/amb_nofire_002.vtt",
+     "duration": 4,
+     "peak": 0.459,
+     "hash": "f65e688d14015e96",
+     "seed": 11,
+     "text": "Your weapon is still cold. I am noting that. Neutrally.",
+     "asr": "Your weapon is still cold. I am noting that neutrally.",
+     "asr_similarity": 1,
+     "inputLufs": -22.49
+    },
+    "es": {
+     "file": "es/amb_nofire_002.ogg",
+     "vtt": "es/amb_nofire_002.vtt",
+     "duration": 4.8,
+     "peak": 0.519,
+     "hash": "386fb1a658956435",
+     "seed": 111,
+     "text": "Tu arma sigue fría. Lo estoy anotando. De forma neutral.",
+     "asr": "Tu arma sigue fría, lo estoy en otando, de forma neutral.",
+     "asr_similarity": 0.857,
+     "inputLufs": -21.2
+    },
+    "zh": {
+     "file": "zh/amb_nofire_002.ogg",
+     "vtt": "zh/amb_nofire_002.vtt",
+     "duration": 3.6,
+     "peak": 0.428,
+     "hash": "f2096d0fa730b7a9",
+     "seed": 11,
+     "text": "你的武器还是冷的。我记下了。客观地记下了。",
+     "asr": "你的武器还是冷的。我记下了，客观地记下了。",
+     "asr_similarity": 1,
+     "inputLufs": -23.62
+    }
+   }
+  },
+  "amb_nofire_003": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, genuinely confused, reading her notes.",
+   "langs": {
+    "en": {
+     "file": "en/amb_nofire_003.ogg",
+     "vtt": "en/amb_nofire_003.vtt",
+     "duration": 3.68,
+     "peak": 0.531,
+     "hash": "ef3cf8e966f3a95c",
+     "seed": 11,
+     "text": "The scouts are not firing at you. That is not in my briefing.",
+     "asr": "The scouts are not firing at you. That is not in my briefing.",
+     "asr_similarity": 1,
+     "inputLufs": -22.06
+    },
+    "es": {
+     "file": "es/amb_nofire_003.ogg",
+     "vtt": "es/amb_nofire_003.vtt",
+     "duration": 5.36,
+     "peak": 0.457,
+     "hash": "50f04d97b56df755",
+     "seed": 11,
+     "text": "Los exploradores no te están disparando. Eso no está en mi sesión informativa.",
+     "asr": "Los exploradores no están disparando. Eso no está en mi sesión informativa.",
+     "asr_similarity": 0.96,
+     "inputLufs": -23.05
+    },
+    "zh": {
+     "file": "zh/amb_nofire_003.ogg",
+     "vtt": "zh/amb_nofire_003.vtt",
+     "duration": 3.84,
+     "peak": 0.495,
+     "hash": "2963e5349eb8028b",
+     "seed": 11,
+     "text": "侦察机没有向你开火。简报里可没写这个。",
+     "asr": "侦察机没有向你开火，简报里可没写这个。",
+     "asr_similarity": 1,
+     "inputLufs": -23.72
+    }
+   }
+  },
+  "amb_nofire_004": {
+   "speaker": "tutorial_ai",
+   "scene": "chatter",
+   "direction": "On comms, HR voice: soft words, firm meaning.",
+   "langs": {
+    "en": {
+     "file": "en/amb_nofire_004.ogg",
+     "vtt": "en/amb_nofire_004.vtt",
+     "duration": 5.52,
+     "peak": 0.422,
+     "hash": "8bcdcf6c437f8efc",
+     "seed": 11,
+     "text": "Non-performance is a serious contract matter. I'm only saying that because I care.",
+     "asr": "Non-performance is a serious contract matter. I'm only saying that because I care.",
+     "asr_similarity": 1,
+     "inputLufs": -23.25
+    },
+    "es": {
+     "file": "es/amb_nofire_004.ogg",
+     "vtt": "es/amb_nofire_004.vtt",
+     "duration": 6.64,
+     "peak": 0.515,
+     "hash": "7c8352596e93b6a1",
+     "seed": 311,
+     "text": "El no desempeño es un asunto contractual serio. Solo lo digo porque me importas.",
+     "asr": "El no desempeño es un asunto contractual serio, solo lo digo porque me importa.",
+     "asr_similarity": 0.929,
+     "inputLufs": -23.1
+    },
+    "zh": {
+     "file": "zh/amb_nofire_004.ogg",
+     "vtt": "zh/amb_nofire_004.vtt",
+     "duration": 5.6,
+     "peak": 0.335,
+     "hash": "94c417718504a8e7",
+     "seed": 11,
+     "text": "未履约是严重的合同问题。我这么说，只是因为我关心你。",
+     "asr": "未履约是严重的合同问题。我这么说，只是因为我关心你。",
+     "asr_similarity": 1,
+     "inputLufs": -26.46
+    }
+   }
+  },
+  "bark_lifelost_001": {
+   "speaker": "tutorial_ai",
+   "scene": "barks",
+   "direction": "On comms, quick and chipper damage report.",
+   "langs": {
+    "en": {
+     "file": "en/bark_lifelost_001.ogg",
+     "vtt": "en/bark_lifelost_001.vtt",
+     "duration": 4.16,
+     "peak": 0.408,
+     "hash": "e80295c453f3cbe1",
+     "seed": 111,
+     "text": "Hull breach! You're fine. The ship isn't, but you're fine.",
+     "asr": "Hull breach! You're fine, the ship isn't. But you're fine.",
+     "asr_similarity": 1,
+     "inputLufs": -22.51
+    },
+    "es": {
+     "file": "es/bark_lifelost_001.ogg",
+     "vtt": "es/bark_lifelost_001.vtt",
+     "duration": 6.96,
+     "peak": 0.453,
+     "hash": "03ec2024b2eed75e",
+     "seed": 211,
+     "text": "¡Brecha en el casco! Tú estás bien. La nave no, pero tú estás bien.",
+     "asr": "Pero chino Costco, tú estás bien, Lenovo, pero tú estás bien.",
+     "asr_similarity": 0.56,
+     "inputLufs": -22.78
+    },
+    "zh": {
+     "file": "zh/bark_lifelost_001.ogg",
+     "vtt": "zh/bark_lifelost_001.vtt",
+     "duration": 4.56,
+     "peak": 0.407,
+     "hash": "6d56c2485b6f7b08",
+     "seed": 11,
+     "text": "船体破损！你没事。飞船有事，但你没事。",
+     "asr": "船体破损。你没事，飞船有事，但你没事。",
+     "asr_similarity": 1,
+     "inputLufs": -24.14
+    }
+   }
+  },
+  "bark_shield_001": {
+   "speaker": "tutorial_ai",
+   "scene": "barks",
+   "direction": "On comms, product-safety notice.",
+   "langs": {
+    "en": {
+     "file": "en/bark_shield_001.ogg",
+     "vtt": "en/bark_shield_001.vtt",
+     "duration": 5.6,
+     "peak": 0.474,
+     "hash": "615aaf3cfbff51fa",
+     "seed": 11,
+     "text": "Shield online! It is Authority property, so please get hit as little as possible.",
+     "asr": "Shield online. It is authority property, so please get hit as little as possible.",
+     "asr_similarity": 1,
+     "inputLufs": -22.52
+    },
+    "es": {
+     "file": "es/bark_shield_001.ogg",
+     "vtt": "es/bark_shield_001.vtt",
+     "duration": 8.08,
+     "peak": 0.561,
+     "hash": "94a676e0cb9cfc0a",
+     "seed": 111,
+     "text": "¡Escudo activo! Es propiedad de la Autoridad, así que, por favor, recibe la menor cantidad de impactos posible.",
+     "asr": "Escudo activo, es propiedad de la autoridad, así que por favor recibe la menor cantidad de impactos posible.",
+     "asr_similarity": 1,
+     "inputLufs": -23.03
+    },
+    "zh": {
+     "file": "zh/bark_shield_001.ogg",
+     "vtt": "zh/bark_shield_001.vtt",
+     "duration": 5.2,
+     "peak": 0.413,
+     "hash": "326b4a40dfbf80f4",
+     "seed": 11,
+     "text": "护盾已上线！它归管理局所有，所以请尽量少挨打。",
+     "asr": "护盾已上线，它归管理局所有，所以请尽量少挨打。",
+     "asr_similarity": 1,
+     "inputLufs": -24.3
+    }
+   }
+  },
+  "bark_gameover_001": {
+   "speaker": "tutorial_ai",
+   "scene": "barks",
+   "direction": "On comms, routine procedure, not unkind.",
+   "langs": {
+    "en": {
+     "file": "en/bark_gameover_001.ogg",
+     "vtt": "en/bark_gameover_001.vtt",
+     "duration": 4.48,
+     "peak": 0.543,
+     "hash": "fbe66a68294da0af",
+     "seed": 11,
+     "text": "Ship lost. The lanes stay closed, for now. Requisitioning a replacement.",
+     "asr": "Ship lost. The lane stay closed for now. Requisitioning a replacement.",
+     "asr_similarity": 0.909,
+     "inputLufs": -22.8
+    },
+    "es": {
+     "file": "es/bark_gameover_001.ogg",
+     "vtt": "es/bark_gameover_001.vtt",
+     "duration": 6.16,
+     "peak": 0.464,
+     "hash": "b084785a43bd705b",
+     "seed": 11,
+     "text": "Nave perdida. Las rutas siguen cerradas, por ahora. Requisando un reemplazo.",
+     "asr": "Nave perdida, las rutas siguen cerradas por ahora, revisando un reemplazo.",
+     "asr_similarity": 0.909,
+     "inputLufs": -22.13
+    },
+    "zh": {
+     "file": "zh/bark_gameover_001.ogg",
+     "vtt": "zh/bark_gameover_001.vtt",
+     "duration": 5.52,
+     "peak": 0.459,
+     "hash": "fbe00b93f598ebff",
+     "seed": 11,
+     "text": "飞船损毁。航道依旧封闭，暂时如此。正在调拨替代者。",
+     "asr": "飞船损毁，航道依旧封闭。暂时如此，正在调拨替代者。",
+     "asr_similarity": 1,
+     "inputLufs": -23.71
+    }
+   }
+  },
+  "flash_ai_001": {
+   "speaker": "tutorial_ai",
+   "scene": "flashback",
+   "direction": "Rising alarm under the customer-service smile, faster each sentence.",
+   "langs": {
+    "en": {
+     "file": "en/flash_ai_001.ogg",
+     "vtt": "en/flash_ai_001.vtt",
+     "duration": 6.64,
+     "peak": 0.525,
+     "hash": "b458e3313be06416",
+     "seed": 11,
+     "text": "Oh! That crystal is a recovered flight recorder. Please don't open it. You're opening it. It's opening.",
+     "asr": "Oh, that crystal is a recovered flight recorder. Please don't open it. You're opening it. It's opening.",
+     "asr_similarity": 1,
+     "inputLufs": -22.9
+    },
+    "es": {
+     "file": "es/flash_ai_001.ogg",
+     "vtt": "es/flash_ai_001.vtt",
+     "duration": 8.32,
+     "peak": 0.564,
+     "hash": "c245a13e751be497",
+     "seed": 11,
+     "text": "¡Oh! Ese cristal es una grabadora de vuelo recuperada. Por favor, no la abras. La estás abriendo. Se está abriendo.",
+     "asr": "Oh, ese cristal es una grabadora de viola recuperada, por favor no la abras. La estás abriendo, se está abriendo.",
+     "asr_similarity": 0.95,
+     "inputLufs": -23.34
+    },
+    "zh": {
+     "file": "zh/flash_ai_001.ogg",
+     "vtt": "zh/flash_ai_001.vtt",
+     "duration": 7.84,
+     "peak": 0.488,
+     "hash": "fac388406d6610d7",
+     "seed": 11,
+     "text": "哦！那块水晶是一个回收的飞行记录仪。请不要打开它。你在打开它。它打开了。",
+     "asr": "哦，那块水晶是一个回收的飞行记录仪，请不要打开它。你再打开它，它打开了。",
+     "asr_similarity": 0.968,
+     "inputLufs": -23.42
+    }
+   }
+  },
+  "flash_rec_001": {
+   "speaker": "tutorial_ai",
+   "scene": "flashback",
+   "direction": "Recorded log header, flatter and older than her present self.",
+   "langs": {
+    "en": {
+     "file": "en/flash_rec_001.ogg",
+     "vtt": "en/flash_rec_001.vtt",
+     "duration": 5.76,
+     "peak": 0.594,
+     "hash": "00f148b508d32989",
+     "seed": 11,
+     "text": "Recording. Pilot zero one two one. Last Approach. Weapon status: cold.",
+     "asr": "Recording pilot zero one two one. Last approach. Weapon status cold.",
+     "asr_similarity": 1,
+     "inputLufs": -22.34
+    },
+    "es": {
+     "file": "es/flash_rec_001.ogg",
+     "vtt": "es/flash_rec_001.vtt",
+     "duration": 9.68,
+     "peak": 0.588,
+     "hash": "1580eb831662b735",
+     "seed": 11,
+     "text": "Grabando. Piloto cero uno dos uno. Aproximación Final. Estado del arma: fría.",
+     "asr": "Grabando, piloto cerro uno dos uno, aproximación final, estado del arma, fría.",
+     "asr_similarity": 0.917,
+     "inputLufs": -22.74
+    },
+    "zh": {
+     "file": "zh/flash_rec_001.ogg",
+     "vtt": "zh/flash_rec_001.vtt",
+     "duration": 5.6,
+     "peak": 0.444,
+     "hash": "1c37e294433ec968",
+     "seed": 11,
+     "text": "记录中。零一二一号飞行员。最终进近。武器状态：未开火。",
+     "asr": "记录中，零一二一号飞行员最终进近，武器状态未开火。",
+     "asr_similarity": 1,
+     "inputLufs": -23.38
+    }
+   }
+  },
+  "flash_rec_002": {
+   "speaker": "tutorial_ai",
+   "scene": "flashback",
+   "direction": "Recorded; the script breaks down into pleading on the last word.",
+   "langs": {
+    "en": {
+     "file": "en/flash_rec_002.ogg",
+     "vtt": "en/flash_rec_002.vtt",
+     "duration": 6.96,
+     "peak": 0.562,
+     "hash": "230892033564b3c9",
+     "seed": 11,
+     "text": "Pilot zero one two one, your weapon is cold. Please fire. Please fire. Pilot, please.",
+     "asr": "Pilot zero one two one, your weapon is cold. Please fire, please fire, pilot, please.",
+     "asr_similarity": 1,
+     "inputLufs": -21.86
+    },
+    "es": {
+     "file": "es/flash_rec_002.ogg",
+     "vtt": "es/flash_rec_002.vtt",
+     "duration": 10.72,
+     "peak": 0.494,
+     "hash": "951383d2807ec2a0",
+     "seed": 111,
+     "text": "Piloto cero uno dos uno, tu arma está fría. Por favor, dispara. Por favor, dispara. Piloto, por favor.",
+     "asr": "Piloto, sero, uno dos uno, tu arma está fría, por favor dispara, por favor dispara, piloto por favor.",
+     "asr_similarity": 0.944,
+     "inputLufs": -20.67
+    },
+    "zh": {
+     "file": "zh/flash_rec_002.ogg",
+     "vtt": "zh/flash_rec_002.vtt",
+     "duration": 7.68,
+     "peak": 0.421,
+     "hash": "40ed06901bab0b3f",
+     "seed": 11,
+     "text": "零一二一号飞行员，你的武器没有开火。请射击。请射击。飞行员，拜托了。",
+     "asr": "零一二一号飞行员，你的武器没有开火，请射击，请射击，飞行员拜托了。",
+     "asr_similarity": 1,
+     "inputLufs": -23.28
+    }
+   }
+  },
+  "flash_rec_003": {
+   "speaker": "warden",
+   "scene": "flashback",
+   "direction": "Recorded, shrill astonishment, almost offended that someone stopped.",
+   "langs": {
+    "en": {
+     "file": "en/flash_rec_003.ogg",
+     "vtt": "en/flash_rec_003.vtt",
+     "duration": 5.44,
+     "peak": 0.63,
+     "hash": "b8122ea224f771e0",
+     "seed": 33,
+     "text": "You stopped! Why did you stop?! Nobody stops! Nobody EVER stops!",
+     "asr": "You stopped. Why did you stop? Nobody stops. Nobody ever stops.",
+     "asr_similarity": 1,
+     "inputLufs": -19.15
+    },
+    "es": {
+     "file": "es/flash_rec_003.ogg",
+     "vtt": "es/flash_rec_003.vtt",
+     "duration": 6.72,
+     "peak": 0.581,
+     "hash": "6ddb6c1106e3384a",
+     "seed": 33,
+     "text": "¡Te detuviste! ¿¡Por qué te detuviste!? ¡Nadie se detiene! ¡Nadie se detiene NUNCA!",
+     "asr": "Te detuviste. Por qué te detuviste? Nadie se detiene. Nadie se detiene nunca.",
+     "asr_similarity": 1,
+     "inputLufs": -19.09
+    },
+    "zh": {
+     "file": "zh/flash_rec_003.ogg",
+     "vtt": "zh/flash_rec_003.vtt",
+     "duration": 4.64,
+     "peak": 0.709,
+     "hash": "0200223f8a305439",
+     "seed": 33,
+     "text": "你停下了！你为什么停下了？！没人会停下！从来没人停下过！",
+     "asr": "你停下了？你为什么停下了？没人会停下，从来没人停下过。",
+     "asr_similarity": 1,
+     "inputLufs": -20.41
+    }
+   }
+  },
+  "flash_rec_004": {
+   "speaker": "warden",
+   "scene": "flashback",
+   "direction": "Recorded, furious joy, showing off something precious.",
+   "langs": {
+    "en": {
+     "file": "en/flash_rec_004.ogg",
+     "vtt": "en/flash_rec_004.vtt",
+     "duration": 7.28,
+     "peak": 0.559,
+     "hash": "1cc96845899f2b6e",
+     "seed": 33,
+     "text": "Look! The little ships! No guns! They fly my lanes because I keep them free! FREE! Do you know what free means?!",
+     "asr": "Look, the little ships, no guns. They fly my lanes because I keep them free. Free. Do you know what free means?",
+     "asr_similarity": 1,
+     "inputLufs": -19.01
+    },
+    "es": {
+     "file": "es/flash_rec_004.ogg",
+     "vtt": "es/flash_rec_004.vtt",
+     "duration": 9.36,
+     "peak": 0.61,
+     "hash": "1c73a3ee52b5461a",
+     "seed": 33,
+     "text": "¡Mira! ¡Las navecitas! ¡Sin armas! ¡Vuelan por mis rutas porque yo las mantengo libres! ¡LIBRES! ¿¡Sabes lo que significa libre!?",
+     "asr": "Mira, las navesitas sin armas vuelen por mis rutas porque yo las mantengo libres. Libres, sabes lo que significa libre.",
+     "asr_similarity": 0.9,
+     "inputLufs": -19.94
+    },
+    "zh": {
+     "file": "zh/flash_rec_004.ogg",
+     "vtt": "zh/flash_rec_004.vtt",
+     "duration": 9.12,
+     "peak": 0.863,
+     "hash": "2e88b6b4f9d3ccbe",
+     "seed": 33,
+     "text": "看！那些小船！没有武器！它们能在我的航道上飞，是因为我让航道保持自由！自由！你知道自由是什么意思吗？！",
+     "asr": "看那些小船，没有武器。他们能在我的航道上飞，是因为我让航道保持自由。自由，你知道自由是什么意思吗？",
+     "asr_similarity": 0.977,
+     "inputLufs": -18.88
+    }
+   }
+  },
+  "flash_rec_005": {
+   "speaker": "tutorial_ai",
+   "scene": "flashback",
+   "direction": "Recorded, procedural and polite, as if closing a support ticket.",
+   "langs": {
+    "en": {
+     "file": "en/flash_rec_005.ogg",
+     "vtt": "en/flash_rec_005.vtt",
+     "duration": 6.4,
+     "peak": 0.382,
+     "hash": "f65b318982daf45e",
+     "seed": 11,
+     "text": "Non-performance confirmed. Pilot zero one two one, recall initiated. Thank you for your service.",
+     "asr": "Non-performance confirmed. Pilot zero one two one recall initiated. Thank you for your service.",
+     "asr_similarity": 1,
+     "inputLufs": -24.23
+    },
+    "es": {
+     "file": "es/flash_rec_005.ogg",
+     "vtt": "es/flash_rec_005.vtt",
+     "duration": 8.88,
+     "peak": 0.584,
+     "hash": "e8ef4c0a4944e8b7",
+     "seed": 211,
+     "text": "No desempeño confirmado. Piloto cero uno dos uno, retiro iniciado. Gracias por tus servicios.",
+     "asr": "No, desempeño confirmado, piloto serio uno dos uno, retiro iniciado, gracias por tus servicios.",
+     "asr_similarity": 0.929,
+     "inputLufs": -22.21
+    },
+    "zh": {
+     "file": "zh/flash_rec_005.ogg",
+     "vtt": "zh/flash_rec_005.vtt",
+     "duration": 6.8,
+     "peak": 0.622,
+     "hash": "b99b15c12894a58b",
+     "seed": 11,
+     "text": "确认未履约。零一二一号飞行员，召回程序已启动。感谢你的服务。",
+     "asr": "确认未履约。零一二一号飞行员，召回程序已启动。感谢你的服务。",
+     "asr_similarity": 1,
+     "inputLufs": -22.41
+    }
+   }
+  },
+  "flash_rec_006": {
+   "speaker": "warden",
+   "scene": "flashback",
+   "direction": "Recorded, the high voice cracking into a scream as the signal cuts.",
+   "langs": {
+    "en": {
+     "file": "en/flash_rec_006.ogg",
+     "vtt": "en/flash_rec_006.vtt",
+     "duration": 3.52,
+     "peak": 0.89,
+     "hash": "2bde50198cb3ffb3",
+     "seed": 33,
+     "text": "No. No, no, no! Don't you take him! He STOPPED!",
+     "asr": "No, no, no, no! Don't you take him! He stopped.",
+     "asr_similarity": 1,
+     "inputLufs": -17.26
+    },
+    "es": {
+     "file": "es/flash_rec_006.ogg",
+     "vtt": "es/flash_rec_006.vtt",
+     "duration": 5.6,
+     "peak": 0.523,
+     "hash": "89ec6841d42fd81a",
+     "seed": 133,
+     "text": "No. ¡No, no, no! ¡No te lo lleves! ¡Él se DETUVO!",
+     "asr": "No, no, no, no, no Nella Jevus, él se detuvo.",
+     "asr_similarity": 0.762,
+     "inputLufs": -19.55
+    },
+    "zh": {
+     "file": "zh/flash_rec_006.ogg",
+     "vtt": "zh/flash_rec_006.vtt",
+     "duration": 5.68,
+     "peak": 0.633,
+     "hash": "f15c4fd2298e0fbd",
+     "seed": 33,
+     "text": "不。不，不，不！别把他带走！他已经停手了！",
+     "asr": "不不不不！别把他带走，他已经停手了。",
+     "asr_similarity": 1,
+     "inputLufs": -17.69
+    }
+   }
+  },
+  "flash_ai_002": {
+   "speaker": "tutorial_ai",
+   "scene": "flashback",
+   "direction": "Present day, a beat too quick and too bright; the serial is the reveal.",
+   "langs": {
+    "en": {
+     "file": "en/flash_ai_002.ogg",
+     "vtt": "en/flash_ai_002.vtt",
+     "duration": 6.88,
+     "peak": 0.715,
+     "hash": "c63ccb2bd7d06f9b",
+     "seed": 11,
+     "text": "That recording was corrupted. Please disregard it. Welcome back, Pilot zero one two two.",
+     "asr": "That recording was corrupted. Please disregard it. Welcome back, Pilot Zero One Two Two.",
+     "asr_similarity": 1,
+     "inputLufs": -21.54
+    },
+    "es": {
+     "file": "es/flash_ai_002.ogg",
+     "vtt": "es/flash_ai_002.vtt",
+     "duration": 9.68,
+     "peak": 0.518,
+     "hash": "e9ab1f154475ca91",
+     "seed": 11,
+     "text": "Esa grabación estaba dañada. Por favor, ignórala. Bienvenido de nuevo, piloto cero uno dos dos.",
+     "asr": "esa grabación estaba dañada. Por favor, ignórala. Bienvenido de nuevo, piloto cero uno dos dos.",
+     "asr_similarity": 1,
+     "inputLufs": -21.81
+    },
+    "zh": {
+     "file": "zh/flash_ai_002.ogg",
+     "vtt": "zh/flash_ai_002.vtt",
+     "duration": 5.28,
+     "peak": 0.598,
+     "hash": "29156571b34aee82",
+     "seed": 11,
+     "text": "那段记录已损坏，请忽略。欢迎回来，零一二二号飞行员。",
+     "asr": "那段记录已损坏，请忽略。欢迎回来，零一二二号飞行员。",
+     "asr_similarity": 1,
+     "inputLufs": -21.26
+    }
+   }
+  },
+  "flash_ai_003": {
+   "speaker": "tutorial_ai",
+   "scene": "flashback",
+   "direction": "Aggressively normal, changing the subject.",
+   "langs": {
+    "en": {
+     "file": "en/flash_ai_003.ogg",
+     "vtt": "en/flash_ai_003.vtt",
+     "duration": 2.8,
+     "peak": 0.39,
+     "hash": "d7bc0ffdfbf1b9bd",
+     "seed": 211,
+     "text": "Spread shot equipped! Isn't it pretty?",
+     "asr": "Spread shot equipped, isn't it pretty?",
+     "asr_similarity": 1,
+     "inputLufs": -23.39
+    },
+    "es": {
+     "file": "es/flash_ai_003.ogg",
+     "vtt": "es/flash_ai_003.vtt",
+     "duration": 4.4,
+     "peak": 0.474,
+     "hash": "9b1c8cc6fa64bd85",
+     "seed": 111,
+     "text": "¡Disparo amplio equipado! ¿Verdad que es bonito?",
+     "asr": "Despido amplio equipo, verdad que es bonito.",
+     "asr_similarity": 0.714,
+     "inputLufs": -21.76
+    },
+    "zh": {
+     "file": "zh/flash_ai_003.ogg",
+     "vtt": "zh/flash_ai_003.vtt",
+     "duration": 3.28,
+     "peak": 0.509,
+     "hash": "48b556de00efd22b",
+     "seed": 11,
+     "text": "散射弹已装备！是不是很漂亮？",
+     "asr": "散射弹雨装备是不是很漂亮？",
+     "asr_similarity": 0.917,
+     "inputLufs": -23.1
+    }
+   }
+  },
+  "warn_ai_001": {
+   "speaker": "tutorial_ai",
+   "scene": "warden_descent",
+   "direction": "On comms, trying hard to sound brave.",
+   "langs": {
+    "en": {
+     "file": "en/warn_ai_001.ogg",
+     "vtt": "en/warn_ai_001.vtt",
+     "duration": 6.64,
+     "peak": 0.595,
+     "hash": "b14ea7293acfd6fc",
+     "seed": 11,
+     "text": "Warning. The Warden approaches. This is it, Pilot. Everything we trained for. Remember the briefing.",
+     "asr": "Warning: The warden approaches. This is it, pilot. Everything we trained for. Remember the briefing.",
+     "asr_similarity": 1,
+     "inputLufs": -22.94
+    },
+    "es": {
+     "file": "es/warn_ai_001.ogg",
+     "vtt": "es/warn_ai_001.vtt",
+     "duration": 10.48,
+     "peak": 0.415,
+     "hash": "438d079ea2cf30f2",
+     "seed": 211,
+     "text": "Advertencia. Se acerca el Guardián. Llegó la hora, piloto. Todo aquello para lo que entrenamos. Recuerda la sesión informativa.",
+     "asr": "Advertencia, se acerca el guardián. De gola ahora piloto, todo aquello para lo que entrenamos requiere de la sesión informativa.",
+     "asr_similarity": 0.769,
+     "inputLufs": -24.83
+    },
+    "zh": {
+     "file": "zh/warn_ai_001.ogg",
+     "vtt": "zh/warn_ai_001.vtt",
+     "duration": 7.2,
+     "peak": 0.515,
+     "hash": "e2ca4eaf05c73ac2",
+     "seed": 11,
+     "text": "警告。守望者正在接近。就是现在，飞行员。我们训练的一切都为了这一刻。记住简报。",
+     "asr": "警告！守望者正在接近。就是现代飞行员，我们训练的一切都为了这一刻。记住简报。",
+     "asr_similarity": 0.97,
+     "inputLufs": -23.18
+    }
+   }
+  },
+  "warn_narr_001": {
+   "speaker": "narrator",
+   "scene": "warden_descent",
+   "direction": "The biggest, lowest, slowest two words in the game.",
+   "langs": {
+    "en": {
+     "file": "en/warn_narr_001.ogg",
+     "vtt": "en/warn_narr_001.vtt",
+     "duration": 0.8,
+     "peak": 0.301,
+     "hash": "251e8f5b89cc3c7d",
+     "seed": 22,
+     "text": "The Warden.",
+     "asr": "The warden.",
+     "asr_similarity": 1,
+     "inputLufs": -23.89
+    },
+    "es": {
+     "file": "es/warn_narr_001.ogg",
+     "vtt": "es/warn_narr_001.vtt",
+     "duration": 1.36,
+     "peak": 0.302,
+     "hash": "f007e60b23868d71",
+     "seed": 22,
+     "text": "El Guardián.",
+     "asr": "El guardián.",
+     "asr_similarity": 1,
+     "inputLufs": -24.09
+    },
+    "zh": {
+     "file": "zh/warn_narr_001.ogg",
+     "vtt": "zh/warn_narr_001.vtt",
+     "duration": 1.28,
+     "peak": 0.307,
+     "hash": "319bb44c6fd2cf2a",
+     "seed": 22,
+     "text": "守望者。",
+     "asr": "肖望江。",
+     "asr_similarity": 0.333,
+     "inputLufs": -25.16
+    }
+   }
+  },
+  "desc_001": {
+   "speaker": "warden",
+   "scene": "warden_descent",
+   "direction": "First words ever heard from the Warden: high, shrill, indignant. The joke is that it is not the briefing voice.",
+   "langs": {
+    "en": {
+     "file": "en/desc_001.ogg",
+     "vtt": "en/desc_001.vtt",
+     "duration": 5.12,
+     "peak": 0.507,
+     "hash": "b4f48434c8ab1c58",
+     "seed": 33,
+     "text": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+     "asr": "Stop! Stop right there! Do you have any idea how long it takes to grow a scout?",
+     "asr_similarity": 1,
+     "inputLufs": -20.06
+    },
+    "es": {
+     "file": "es/desc_001.ogg",
+     "vtt": "es/desc_001.vtt",
+     "duration": 7.44,
+     "peak": 0.444,
+     "hash": "eb75577004aff664",
+     "seed": 33,
+     "text": "¡ALTO! ¡Alto ahí! ¿¡Tienes la MÁS MÍNIMA idea de cuánto tarda en crecer un explorador!?",
+     "asr": "Alto, alto ahí. Tienes la más mínima idea de cuánto tarda en crecer un explorador.",
+     "asr_similarity": 1,
+     "inputLufs": -20.2
+    },
+    "zh": {
+     "file": "zh/desc_001.ogg",
+     "vtt": "zh/desc_001.vtt",
+     "duration": 4,
+     "peak": 0.529,
+     "hash": "fefde3da34c8f39f",
+     "seed": 33,
+     "text": "站住！给我站住！你知不知道培育一架侦察机要多久？！",
+     "asr": "站住！给我站住！你知不知道培育一架侦察机要多久？",
+     "asr_similarity": 1,
+     "inputLufs": -22.16
+    }
+   }
+  },
+  "desc_ai_001": {
+   "speaker": "tutorial_ai",
+   "scene": "warden_descent",
+   "direction": "On comms, small and baffled, half to herself.",
+   "langs": {
+    "en": {
+     "file": "en/desc_ai_001.ogg",
+     "vtt": "en/desc_ai_001.vtt",
+     "duration": 2.08,
+     "peak": 0.596,
+     "hash": "acc65957b5c2c2be",
+     "seed": 11,
+     "text": "That is not the voice from the briefing.",
+     "asr": "That is not the voice from the briefing.",
+     "asr_similarity": 1,
+     "inputLufs": -22.11
+    },
+    "es": {
+     "file": "es/desc_ai_001.ogg",
+     "vtt": "es/desc_ai_001.vtt",
+     "duration": 3.2,
+     "peak": 0.408,
+     "hash": "ece34446327e07a0",
+     "seed": 11,
+     "text": "Esa no es la voz de la sesión informativa.",
+     "asr": "Esa no es la voz de la sesión informativa.",
+     "asr_similarity": 1,
+     "inputLufs": -23.98
+    },
+    "zh": {
+     "file": "zh/desc_ai_001.ogg",
+     "vtt": "zh/desc_ai_001.vtt",
+     "duration": 2.08,
+     "peak": 0.378,
+     "hash": "4f5edf96520aea25",
+     "seed": 11,
+     "text": "这和简报里的声音不一样。",
+     "asr": "这和简报里的声音不一样。",
+     "asr_similarity": 1,
+     "inputLufs": -24.64
+    }
+   }
+  },
+  "desc_002": {
+   "speaker": "warden",
+   "scene": "warden_descent",
+   "direction": "Exasperated list, each item louder.",
+   "langs": {
+    "en": {
+     "file": "en/desc_002.ogg",
+     "vtt": "en/desc_002.vtt",
+     "duration": 5.6,
+     "peak": 0.578,
+     "hash": "fc3f1da1828684ac",
+     "seed": 33,
+     "text": "Every cycle they send another one! Shiny ship! Big gun! NO MANNERS!",
+     "asr": "Every cycle, they send another one: shiny ship, big gun, no manners.",
+     "asr_similarity": 1,
+     "inputLufs": -18.55
+    },
+    "es": {
+     "file": "es/desc_002.ogg",
+     "vtt": "es/desc_002.vtt",
+     "duration": 6.64,
+     "peak": 0.587,
+     "hash": "cbeb0c94f8004fc9",
+     "seed": 133,
+     "text": "¡Cada ciclo mandan a otro! ¡Nave reluciente! ¡Arma enorme! ¡CERO MODALES!",
+     "asr": "Cada ciclo mandan a otro navruliente arma enorme ceromodales.",
+     "asr_similarity": 0.7,
+     "inputLufs": -19.41
+    },
+    "zh": {
+     "file": "zh/desc_002.ogg",
+     "vtt": "zh/desc_002.vtt",
+     "duration": 5.84,
+     "peak": 0.549,
+     "hash": "3f8af66244e3a242",
+     "seed": 133,
+     "text": "每个周期他们都派一个来！亮闪闪的飞船！大炮！毫无礼貌！",
+     "asr": "每个周期他们都派一个来，两闪闪的飞船大炮毫无礼貌。",
+     "asr_similarity": 0.957,
+     "inputLufs": -18.78
+    }
+   }
+  },
+  "desc_003": {
+   "speaker": "warden",
+   "scene": "warden_descent",
+   "direction": "Grand proclamation that collapses into weariness.",
+   "langs": {
+    "en": {
+     "file": "en/desc_003.ogg",
+     "vtt": "en/desc_003.vtt",
+     "duration": 4.56,
+     "peak": 0.676,
+     "hash": "983213407aa715e0",
+     "seed": 33,
+     "text": "I am the Warden! I keep these lanes! And I am SO TIRED of saying that!",
+     "asr": "I am the warden. I keep these lanes, and I am so tired of saying that.",
+     "asr_similarity": 1,
+     "inputLufs": -19.39
+    },
+    "es": {
+     "file": "es/desc_003.ogg",
+     "vtt": "es/desc_003.vtt",
+     "duration": 7.12,
+     "peak": 0.737,
+     "hash": "d1b49d8c8fa09a00",
+     "seed": 133,
+     "text": "¡Soy el Guardián! ¡Yo cuido estas rutas! ¡Y estoy TAN CANSADO de repetirlo!",
+     "asr": "Soy el guardián, yo quido estas rutas y estoy tan cansado de repetirlo.",
+     "asr_similarity": 0.923,
+     "inputLufs": -18.09
+    },
+    "zh": {
+     "file": "zh/desc_003.ogg",
+     "vtt": "zh/desc_003.vtt",
+     "duration": 4.56,
+     "peak": 0.569,
+     "hash": "1eb0fe5da1d36751",
+     "seed": 33,
+     "text": "我是守望者！我守护这些航道！我真的说烦了！",
+     "asr": "我是守望者，我守护这些航道。我真的说烦了。",
+     "asr_similarity": 1,
+     "inputLufs": -19.65
+    }
+   }
+  },
+  "desc_004": {
+   "speaker": "warden",
+   "scene": "warden_descent",
+   "direction": "A furious final warning, pointing at the gun.",
+   "langs": {
+    "en": {
+     "file": "en/desc_004.ogg",
+     "vtt": "en/desc_004.vtt",
+     "duration": 4.4,
+     "peak": 0.709,
+     "hash": "8500c78791807e70",
+     "seed": 33,
+     "text": "Turn around. Go home. With that gun, the lanes stay closed!",
+     "asr": "Turn around. Go home. With that gun, the lane stay closed.",
+     "asr_similarity": 0.909,
+     "inputLufs": -18.97
+    },
+    "es": {
+     "file": "es/desc_004.ogg",
+     "vtt": "es/desc_004.vtt",
+     "duration": 6.08,
+     "peak": 0.531,
+     "hash": "1b5d8f5415efdb6c",
+     "seed": 133,
+     "text": "Da la vuelta. Vete a casa. ¡Con esa arma, las rutas siguen cerradas!",
+     "asr": "Dale vuelta, vete a casa, con esa arma las rutas siguen cerradas.",
+     "asr_similarity": 0.88,
+     "inputLufs": -18.11
+    },
+    "zh": {
+     "file": "zh/desc_004.ogg",
+     "vtt": "zh/desc_004.vtt",
+     "duration": 5.2,
+     "peak": 0.532,
+     "hash": "58540a9255d0a115",
+     "seed": 33,
+     "text": "掉头。回家去。带着那把枪，航道依旧封闭！",
+     "asr": "掉头回家去，带着那把枪，巷道依旧封闭。",
+     "asr_similarity": 0.938,
+     "inputLufs": -19.45
+    }
+   }
+  },
+  "desc_pac_001": {
+   "speaker": "warden",
+   "scene": "warden_descent",
+   "direction": "Sudden suspicion, rapid-fire.",
+   "langs": {
+    "en": {
+     "file": "en/desc_pac_001.ogg",
+     "vtt": "en/desc_pac_001.vtt",
+     "duration": 5.68,
+     "peak": 0.634,
+     "hash": "9c0c5a8f6c813aa7",
+     "seed": 33,
+     "text": "Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!",
+     "asr": "Wait! Wait! Wait! Wait! Your gun is cold. Why is your gun cold?",
+     "asr_similarity": 1,
+     "inputLufs": -18.83
+    },
+    "es": {
+     "file": "es/desc_pac_001.ogg",
+     "vtt": "es/desc_pac_001.vtt",
+     "duration": 6.56,
+     "peak": 0.781,
+     "hash": "5a9e02a5b7cc4f24",
+     "seed": 33,
+     "text": "Espera. Espera, espera, espera. Tu arma está fría. ¿¡Por qué tu arma está fría!?",
+     "asr": "Espera, espera, espera, espera, tu arma está fría, por qué tu arma está fría",
+     "asr_similarity": 1,
+     "inputLufs": -15.92
+    },
+    "zh": {
+     "file": "zh/desc_pac_001.ogg",
+     "vtt": "zh/desc_pac_001.vtt",
+     "duration": 5.04,
+     "peak": 0.496,
+     "hash": "49abdcb6df6deddb",
+     "seed": 133,
+     "text": "等等。等等等等。你的枪是冷的。你的枪为什么是冷的？！",
+     "asr": "等等等等等等，你的枪是冷的。你的枪为什么是冷的？",
+     "asr_similarity": 1,
+     "inputLufs": -24.14
+    }
+   }
+  },
+  "desc_pac_002": {
+   "speaker": "warden",
+   "scene": "warden_descent",
+   "direction": "Realization; the shout drains out of the voice for once.",
+   "langs": {
+    "en": {
+     "file": "en/desc_pac_002.ogg",
+     "vtt": "en/desc_pac_002.vtt",
+     "duration": 6.32,
+     "peak": 0.53,
+     "hash": "0cef89bb7694f5fb",
+     "seed": 33,
+     "text": "The last cold gun was zero one two one. Oh. Oh, no. You're the next number.",
+     "asr": "The last cold gun was zero one two one. Oh, oh no! You're the next number.",
+     "asr_similarity": 1,
+     "inputLufs": -19.75
+    },
+    "es": {
+     "file": "es/desc_pac_002.ogg",
+     "vtt": "es/desc_pac_002.vtt",
+     "duration": 6.88,
+     "peak": 0.452,
+     "hash": "e633d624a592a3ae",
+     "seed": 33,
+     "text": "La última arma fría fue la de cero uno dos uno. Oh. Oh, no. Eres el siguiente número.",
+     "asr": "La última arma fría fue la de Cerro Uno dos Uno. Oh, oh no, eres el siguiente número.",
+     "asr_similarity": 0.944,
+     "inputLufs": -19.07
+    },
+    "zh": {
+     "file": "zh/desc_pac_002.ogg",
+     "vtt": "zh/desc_pac_002.vtt",
+     "duration": 5.28,
+     "peak": 0.965,
+     "hash": "077e38fadb48b957",
+     "seed": 33,
+     "text": "上一把冷枪，是零一二一号的。哦。哦不。你就是下一个编号。",
+     "asr": "上一把冷枪是零一二一号的。哦哦，不，你就是下一个编号。",
+     "asr_similarity": 1,
+     "inputLufs": -20.95
+    }
+   }
+  },
+  "desc_ai_002": {
+   "speaker": "tutorial_ai",
+   "scene": "warden_descent",
+   "direction": "On comms, firmly back on script.",
+   "langs": {
+    "en": {
+     "file": "en/desc_ai_002.ogg",
+     "vtt": "en/desc_ai_002.vtt",
+     "duration": 5.92,
+     "peak": 0.431,
+     "hash": "49ef5bc365611120",
+     "seed": 11,
+     "text": "Proceed with the engagement, Pilot. Statements by the Warden are not covered by your contract.",
+     "asr": "Proceed with the engagement. Pilot statements by the warden are not covered by your contract.",
+     "asr_similarity": 1,
+     "inputLufs": -22.82
+    },
+    "es": {
+     "file": "es/desc_ai_002.ogg",
+     "vtt": "es/desc_ai_002.vtt",
+     "duration": 6.8,
+     "peak": 0.522,
+     "hash": "828e7476ca8361ff",
+     "seed": 11,
+     "text": "Procede con el enfrentamiento, piloto. Las declaraciones del Guardián no están cubiertas por tu contrato.",
+     "asr": "Proseve con el enfrentamiento piloto, las declaraciones del guardián no están cubiertas por tu contrato.",
+     "asr_similarity": 0.933,
+     "inputLufs": -23.26
+    },
+    "zh": {
+     "file": "zh/desc_ai_002.ogg",
+     "vtt": "zh/desc_ai_002.vtt",
+     "duration": 5.04,
+     "peak": 0.454,
+     "hash": "8b60a0dcde176b6b",
+     "seed": 11,
+     "text": "飞行员，请继续交战。守望者的言论不在你的合同范围内。",
+     "asr": "飞行员，请继续交战。守望者的言论不在你的合同范围内。",
+     "asr_similarity": 1,
+     "inputLufs": -22.99
+    }
+   }
+  },
+  "boss_taunt_001": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Booming, hammy fury; build to a roar on the last sentence, then a short menacing laugh.",
+   "langs": {
+    "en": {
+     "file": "en/boss_taunt_001.ogg",
+     "vtt": "en/boss_taunt_001.vtt",
+     "duration": 7.04,
+     "peak": 0.711,
+     "hash": "f040f4e69cf2e98e",
+     "seed": 33,
+     "text": "You call that shooting? I have fought toasters with more courage than you! Come closer, little pilot, and meet your final wave!",
+     "asr": "You call that shooting? I have fought toasters with more courage than you. Come closer, little pilot, and meet your final wave.",
+     "asr_similarity": 1,
+     "inputLufs": -18.48
+    },
+    "es": {
+     "file": "es/boss_taunt_001.ogg",
+     "vtt": "es/boss_taunt_001.vtt",
+     "duration": 8.96,
+     "peak": 0.576,
+     "hash": "867cf7f5c48abe48",
+     "seed": 133,
+     "text": "¿A eso le llamas disparar? ¡He peleado contra tostadoras con más valor que tú! ¡Acércate, pilotito, y conoce tu última oleada!",
+     "asr": "A eso le llamas disparar? He peleado contra tostadoras con más valor que tú. Acércate pilotito y conoce tu última oleada.",
+     "asr_similarity": 1,
+     "inputLufs": -19.46
+    },
+    "zh": {
+     "file": "zh/boss_taunt_001.ogg",
+     "vtt": "zh/boss_taunt_001.vtt",
+     "duration": 8,
+     "peak": 0.516,
+     "hash": "87784da5deae14de",
+     "seed": 33,
+     "text": "你管这叫射击？我打过的烤面包机都比你有胆量！靠近点，小飞行员，迎接你的最后一波吧！",
+     "asr": "你管这叫射击？我打过的烤面包机都比你有胆量。靠近点，小飞行员，迎接你的最后一波吧。",
+     "asr_similarity": 1,
+     "inputLufs": -20.22
+    }
+   }
+  },
+  "boss_p1_002": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Yelp of pain turning into outrage.",
+   "langs": {
+    "en": {
+     "file": "en/boss_p1_002.ogg",
+     "vtt": "en/boss_p1_002.vtt",
+     "duration": 5.04,
+     "peak": 0.917,
+     "hash": "41801cab434a24bc",
+     "seed": 33,
+     "text": "Ow! OW! That was a ring! Do you know how OLD that ring is?!",
+     "asr": "Ow! Ow! That was a ring. Do you know how old that ring is?",
+     "asr_similarity": 1,
+     "inputLufs": -16.09
+    },
+    "es": {
+     "file": "es/boss_p1_002.ogg",
+     "vtt": "es/boss_p1_002.vtt",
+     "duration": 5.52,
+     "peak": 0.686,
+     "hash": "ba582e083f2d910f",
+     "seed": 33,
+     "text": "¡Ay! ¡AY! ¡Eso era un anillo! ¿¡Sabes lo VIEJO que es ese anillo!?",
+     "asr": "Ay, ay, eso era un anillo. Sabes lo viejo que es ese anillo.",
+     "asr_similarity": 1,
+     "inputLufs": -17.99
+    },
+    "zh": {
+     "file": "zh/boss_p1_002.ogg",
+     "vtt": "zh/boss_p1_002.vtt",
+     "duration": 5.2,
+     "peak": 1,
+     "hash": "f36812e182a54daa",
+     "seed": 33,
+     "text": "哎哟！哎哟！那是一个光环！你知道那个光环有多古老吗？！",
+     "asr": "哎呦哎呦，那是一个光环。你知道那个光环有多古老吗？",
+     "asr_similarity": 0.909,
+     "inputLufs": -16.91
+    }
+   }
+  },
+  "boss_p2_001": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Barking orders at its own scouts, frazzled.",
+   "langs": {
+    "en": {
+     "file": "en/boss_p2_001.ogg",
+     "vtt": "en/boss_p2_001.vtt",
+     "duration": 5.12,
+     "peak": 0.677,
+     "hash": "c1fc62bd15f0d6cb",
+     "seed": 33,
+     "text": "Scouts, to me! No, not AT him, AROUND him! Protect the lane!",
+     "asr": "Scouts to me! No, not at him, around him. Protect the lane.",
+     "asr_similarity": 1,
+     "inputLufs": -20.07
+    },
+    "es": {
+     "file": "es/boss_p2_001.ogg",
+     "vtt": "es/boss_p2_001.vtt",
+     "duration": 7.76,
+     "peak": 0.578,
+     "hash": "d1f58afc9b2168f5",
+     "seed": 233,
+     "text": "¡Exploradores, conmigo! ¡No, no CONTRA él, ALREDEDOR de él! ¡Protejan la ruta!",
+     "asr": "Exploradores conmigo, no, no contra el alrededor de él protejan la ruta.",
+     "asr_similarity": 1,
+     "inputLufs": -18.95
+    },
+    "zh": {
+     "file": "zh/boss_p2_001.ogg",
+     "vtt": "zh/boss_p2_001.vtt",
+     "duration": 4.88,
+     "peak": 0.623,
+     "hash": "2b352f902aaeed70",
+     "seed": 33,
+     "text": "侦察机，过来！不，不是打他，是围着他！保护航道！",
+     "asr": "侦察机过来，不不是打他，是围着他保护航道。",
+     "asr_similarity": 1,
+     "inputLufs": -20.27
+    }
+   }
+  },
+  "boss_p2_002": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Wounded pride, nearly a whine.",
+   "langs": {
+    "en": {
+     "file": "en/boss_p2_002.ogg",
+     "vtt": "en/boss_p2_002.vtt",
+     "duration": 4,
+     "peak": 0.793,
+     "hash": "339c170688852a4a",
+     "seed": 33,
+     "text": "You think I WANT to do this? I would rather be counting freighters!",
+     "asr": "You think I want to do this? I would rather be counting freighters.",
+     "asr_similarity": 1,
+     "inputLufs": -19.4
+    },
+    "es": {
+     "file": "es/boss_p2_002.ogg",
+     "vtt": "es/boss_p2_002.vtt",
+     "duration": 5.04,
+     "peak": 0.588,
+     "hash": "6b301ccf30479827",
+     "seed": 233,
+     "text": "¿¡Crees que QUIERO hacer esto!? ¡Preferiría estar contando cargueros!",
+     "asr": "Crees que quiero hacer esto. Preferiría estar contando cargueros.",
+     "asr_similarity": 1,
+     "inputLufs": -18.1
+    },
+    "zh": {
+     "file": "zh/boss_p2_002.ogg",
+     "vtt": "zh/boss_p2_002.vtt",
+     "duration": 3.44,
+     "peak": 0.615,
+     "hash": "a78412af35dac0d6",
+     "seed": 33,
+     "text": "你以为我想这样吗？我宁可去数货船！",
+     "asr": "你以为我想这样吗？我宁可去数货船。",
+     "asr_similarity": 1,
+     "inputLufs": -19.77
+    }
+   }
+  },
+  "boss_p3_001": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Turning red: all-in, voice cracking at the top.",
+   "langs": {
+    "en": {
+     "file": "en/boss_p3_001.ogg",
+     "vtt": "en/boss_p3_001.vtt",
+     "duration": 4.24,
+     "peak": 0.5,
+     "hash": "e5780bdb52c57ec3",
+     "seed": 33,
+     "text": "Fine! FINE! Everything I have! EVERYTHING!",
+     "asr": "Fine, fine. Everything I have, everything.",
+     "asr_similarity": 1,
+     "inputLufs": -18.78
+    },
+    "es": {
+     "file": "es/boss_p3_001.ogg",
+     "vtt": "es/boss_p3_001.vtt",
+     "duration": 4.88,
+     "peak": 1,
+     "hash": "20f54b919ca808f4",
+     "seed": 33,
+     "text": "¡Bien! ¡BIEN! ¡Todo lo que tengo! ¡TODO!",
+     "asr": "Bien, bien, todo lo que tengo todo.",
+     "asr_similarity": 1,
+     "inputLufs": -12.89
+    },
+    "zh": {
+     "file": "zh/boss_p3_001.ogg",
+     "vtt": "zh/boss_p3_001.vtt",
+     "duration": 4.08,
+     "peak": 0.683,
+     "hash": "15066bedb3556e08",
+     "seed": 33,
+     "text": "好！好啊！我所有的一切！全都给你！",
+     "asr": "好好啊！我所有的一切全都给你。",
+     "asr_similarity": 1,
+     "inputLufs": -17.74
+    }
+   }
+  },
+  "boss_p3_002": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Exhausted contempt.",
+   "langs": {
+    "en": {
+     "file": "en/boss_p3_002.ogg",
+     "vtt": "en/boss_p3_002.vtt",
+     "duration": 3.28,
+     "peak": 0.541,
+     "hash": "bcc37e8f9ce7c34f",
+     "seed": 33,
+     "text": "Three hundred years, and you all bring the same gun!",
+     "asr": "Three hundred years, and you all bring the same gun.",
+     "asr_similarity": 1,
+     "inputLufs": -18.03
+    },
+    "es": {
+     "file": "es/boss_p3_002.ogg",
+     "vtt": "es/boss_p3_002.vtt",
+     "duration": 4.24,
+     "peak": 0.517,
+     "hash": "56fd458b223f464d",
+     "seed": 33,
+     "text": "¡Trescientos años, y todos traen la misma arma!",
+     "asr": "Trescientos años y todos traen la misma arma.",
+     "asr_similarity": 1,
+     "inputLufs": -19
+    },
+    "zh": {
+     "file": "zh/boss_p3_002.ogg",
+     "vtt": "zh/boss_p3_002.vtt",
+     "duration": 3.52,
+     "peak": 0.514,
+     "hash": "f8b15386882eec71",
+     "seed": 333,
+     "text": "三百年了，你们带的都是同一把枪！",
+     "asr": "三百年了，你们大家都是同一把枪。",
+     "asr_similarity": 0.857,
+     "inputLufs": -20.3
+    }
+   }
+  },
+  "boss_turn_001": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "The turn: still shouting, but pleading now, not threatening.",
+   "langs": {
+    "en": {
+     "file": "en/boss_turn_001.ogg",
+     "vtt": "en/boss_turn_001.vtt",
+     "duration": 6.8,
+     "peak": 0.522,
+     "hash": "03cfbbaa89006992",
+     "seed": 33,
+     "text": "Do you know what's behind me? Nothing! Sky! Free sky, for anyone who comes without a gun!",
+     "asr": "Do you know what's behind me? Nothing. Sky, free sky for anyone who comes without a gun.",
+     "asr_similarity": 1,
+     "inputLufs": -19.21
+    },
+    "es": {
+     "file": "es/boss_turn_001.ogg",
+     "vtt": "es/boss_turn_001.vtt",
+     "duration": 7.36,
+     "peak": 0.503,
+     "hash": "5f5fbd76d784d714",
+     "seed": 33,
+     "text": "¿¡Sabes qué hay detrás de mí!? ¡Nada! ¡Cielo! ¡Cielo libre, para cualquiera que venga sin armas!",
+     "asr": "Sabes que hay detrás de mí nada, cielo, cielo libre para cualquiera que venga sin armas.",
+     "asr_similarity": 1,
+     "inputLufs": -19.85
+    },
+    "zh": {
+     "file": "zh/boss_turn_001.ogg",
+     "vtt": "zh/boss_turn_001.vtt",
+     "duration": 7.44,
+     "peak": 0.692,
+     "hash": "9c0805ef936b7625",
+     "seed": 33,
+     "text": "你知道我身后是什么吗？什么都没有！只有天空！自由的天空，给每一个不带枪的人！",
+     "asr": "你知道我身后是什么吗？什么都没有，只有天空，自由的天空，给每一个不带枪的人。",
+     "asr_similarity": 1,
+     "inputLufs": -20.72
+    }
+   }
+  },
+  "boss_turn_002": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Desperate, spitting the last word.",
+   "langs": {
+    "en": {
+     "file": "en/boss_turn_002.ogg",
+     "vtt": "en/boss_turn_002.vtt",
+     "duration": 3.12,
+     "peak": 0.555,
+     "hash": "4c1ddc896bbeef3e",
+     "seed": 33,
+     "text": "They don't want the lanes open! They want them OWNED!",
+     "asr": "They don't want the lanes open. They want them owned.",
+     "asr_similarity": 1,
+     "inputLufs": -19.17
+    },
+    "es": {
+     "file": "es/boss_turn_002.ogg",
+     "vtt": "es/boss_turn_002.vtt",
+     "duration": 4.24,
+     "peak": 0.624,
+     "hash": "5d5a5808eceaaad0",
+     "seed": 333,
+     "text": "¡Ellos no quieren las rutas abiertas! ¡Las quieren SUYAS!",
+     "asr": "Egyos no quieren las rutas abiertas, las quieren suyas.",
+     "asr_similarity": 0.889,
+     "inputLufs": -19.73
+    },
+    "zh": {
+     "file": "zh/boss_turn_002.ogg",
+     "vtt": "zh/boss_turn_002.vtt",
+     "duration": 4.32,
+     "peak": 0.719,
+     "hash": "342fc23ae5487100",
+     "seed": 233,
+     "text": "他们要的不是开放航道！他们要的是占有航道！",
+     "asr": "他们要的不是开放航道，他们要的是占有航道。",
+     "asr_similarity": 1,
+     "inputLufs": -19.18
+    }
+   }
+  },
+  "boss_turn_003": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Grief breaking through the fury.",
+   "langs": {
+    "en": {
+     "file": "en/boss_turn_003.ogg",
+     "vtt": "en/boss_turn_003.vtt",
+     "duration": 4.4,
+     "peak": 0.88,
+     "hash": "e984efa1c29b9d76",
+     "seed": 33,
+     "text": "Zero one two one stopped! He listened! Why won't YOU listen?!",
+     "asr": "Zero one two one stopped. He listened. Why won't you listen?",
+     "asr_similarity": 1,
+     "inputLufs": -18.21
+    },
+    "es": {
+     "file": "es/boss_turn_003.ogg",
+     "vtt": "es/boss_turn_003.vtt",
+     "duration": 5.44,
+     "peak": 0.642,
+     "hash": "5620c81ac879bcbc",
+     "seed": 233,
+     "text": "¡Cero uno dos uno se detuvo! ¡Él escuchó! ¿¡Por qué TÚ no escuchas!?",
+     "asr": "Cero uno dos uno se detuvo él escuchó por qué tú no escuchas",
+     "asr_similarity": 1,
+     "inputLufs": -20.76
+    },
+    "zh": {
+     "file": "zh/boss_turn_003.ogg",
+     "vtt": "zh/boss_turn_003.vtt",
+     "duration": 4.88,
+     "peak": 0.452,
+     "hash": "05ef2873015494de",
+     "seed": 33,
+     "text": "零一二一号停手了！他听进去了！你为什么就是不听？！",
+     "asr": "零一二一号听受了，他听进去了。你为什么就是不听？",
+     "asr_similarity": 0.905,
+     "inputLufs": -20.21
+    }
+   }
+  },
+  "boss_ai_001": {
+   "speaker": "tutorial_ai",
+   "scene": "boss",
+   "direction": "On comms, cheerleader; she has not heard a word the Warden said.",
+   "langs": {
+    "en": {
+     "file": "en/boss_ai_001.ogg",
+     "vtt": "en/boss_ai_001.vtt",
+     "duration": 3.36,
+     "peak": 0.475,
+     "hash": "5b337a0ed57e2fbd",
+     "seed": 11,
+     "text": "Great hit! Your payment is ninety percent vested!",
+     "asr": "Great hit! Your payment is ninety percent vested.",
+     "asr_similarity": 1,
+     "inputLufs": -23.9
+    },
+    "es": {
+     "file": "es/boss_ai_001.ogg",
+     "vtt": "es/boss_ai_001.vtt",
+     "duration": 6.16,
+     "peak": 0.667,
+     "hash": "cdee577544c3ccf9",
+     "seed": 11,
+     "text": "¡Gran impacto! ¡Tu pago ya está consolidado al noventa por ciento!",
+     "asr": "Gran impacto, tu pago ya está consolidado al noventa por ciento.",
+     "asr_similarity": 1,
+     "inputLufs": -20.85
+    },
+    "zh": {
+     "file": "zh/boss_ai_001.ogg",
+     "vtt": "zh/boss_ai_001.vtt",
+     "duration": 3.92,
+     "peak": 0.564,
+     "hash": "23e71a4bc0e9d090",
+     "seed": 11,
+     "text": "漂亮的一击！你的报酬已兑现百分之九十！",
+     "asr": "漂亮的一击！你的报酬已兑现百分之九十。",
+     "asr_similarity": 1,
+     "inputLufs": -21.09
+    }
+   }
+  },
+  "boss_pac_001": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Paranoid, high, repeating itself.",
+   "langs": {
+    "en": {
+     "file": "en/boss_pac_001.ogg",
+     "vtt": "en/boss_pac_001.vtt",
+     "duration": 4.72,
+     "peak": 0.482,
+     "hash": "64db84153b6da506",
+     "seed": 33,
+     "text": "You're not shooting. You are NOT SHOOTING. Is this a trick? Is it a trick?!",
+     "asr": "You're not shooting. You are not shooting. Is this a trick? Is it a trick?",
+     "asr_similarity": 1,
+     "inputLufs": -20.73
+    },
+    "es": {
+     "file": "es/boss_pac_001.ogg",
+     "vtt": "es/boss_pac_001.vtt",
+     "duration": 6.4,
+     "peak": 0.505,
+     "hash": "e5fd409f3ea851f7",
+     "seed": 33,
+     "text": "No estás disparando. NO ESTÁS DISPARANDO. ¿Es un truco? ¿¡Es un truco!?",
+     "asr": "No estás desesperando, no estás desesperando, es un truco, es un truco.",
+     "asr_similarity": 0.833,
+     "inputLufs": -18.76
+    },
+    "zh": {
+     "file": "zh/boss_pac_001.ogg",
+     "vtt": "zh/boss_pac_001.vtt",
+     "duration": 4.64,
+     "peak": 0.542,
+     "hash": "d7ccc2b066ba0ce9",
+     "seed": 33,
+     "text": "你没开枪。你真的没开枪。这是诡计吗？是诡计吗？！",
+     "asr": "你没开枪，你真的没开枪，这是诡计吗？是诡计吗？",
+     "asr_similarity": 1,
+     "inputLufs": -22.25
+    }
+   }
+  },
+  "boss_pac_002": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Duty-bound, almost apologetic, still shouting.",
+   "langs": {
+    "en": {
+     "file": "en/boss_pac_002.ogg",
+     "vtt": "en/boss_pac_002.vtt",
+     "duration": 6.24,
+     "peak": 0.595,
+     "hash": "9b3edd847751577e",
+     "seed": 33,
+     "text": "I still have to test you! Every ship gets tested! So dodge! DODGE!",
+     "asr": "I still have to test you. Every ship gets tested. So dodge, dodge.",
+     "asr_similarity": 1,
+     "inputLufs": -19.28
+    },
+    "es": {
+     "file": "es/boss_pac_002.ogg",
+     "vtt": "es/boss_pac_002.vtt",
+     "duration": 6.96,
+     "peak": 0.584,
+     "hash": "142327e7b919e29f",
+     "seed": 233,
+     "text": "¡Igual tengo que ponerte a prueba! ¡Toda nave pasa la prueba! ¡Así que esquiva! ¡ESQUIVA!",
+     "asr": "Igual tengo que ponerte a prueba, todo nave pasa la prueba, así que esquiva, esquiva.",
+     "asr_similarity": 0.933,
+     "inputLufs": -19.13
+    },
+    "zh": {
+     "file": "zh/boss_pac_002.ogg",
+     "vtt": "zh/boss_pac_002.vtt",
+     "duration": 5.12,
+     "peak": 0.395,
+     "hash": "5e6f68277db15469",
+     "seed": 33,
+     "text": "我还是得测试你！每艘船都要接受测试！那就躲！快躲！",
+     "asr": "我还是得测试你。每艘船都要接受测试，那就躲，快躲。",
+     "asr_similarity": 1,
+     "inputLufs": -22.12
+    }
+   }
+  },
+  "boss_pac_003": {
+   "speaker": "warden",
+   "scene": "boss",
+   "direction": "Delighted cackle, a proud coach.",
+   "langs": {
+    "en": {
+     "file": "en/boss_pac_003.ogg",
+     "vtt": "en/boss_pac_003.vtt",
+     "duration": 4.72,
+     "peak": 0.622,
+     "hash": "55d056372a2c7a73",
+     "seed": 33,
+     "text": "Ha! Good! Very good! You fly like a freighter with opinions!",
+     "asr": "Ha! Good, very good. You fly like a freighter with opinions.",
+     "asr_similarity": 1,
+     "inputLufs": -19.83
+    },
+    "es": {
+     "file": "es/boss_pac_003.ogg",
+     "vtt": "es/boss_pac_003.vtt",
+     "duration": 5.92,
+     "peak": 0.763,
+     "hash": "9bf6bbf271a95f6c",
+     "seed": 33,
+     "text": "¡Ja! ¡Bien! ¡Muy bien! ¡Vuelas como un carguero con opiniones propias!",
+     "asr": "¡Ah, bien, muy bien! Vuelas como un carguero con opiniones propias.",
+     "asr_similarity": 0.909,
+     "inputLufs": -19.44
+    },
+    "zh": {
+     "file": "zh/boss_pac_003.ogg",
+     "vtt": "zh/boss_pac_003.vtt",
+     "duration": 4.24,
+     "peak": 0.529,
+     "hash": "b396787c4938a7a3",
+     "seed": 33,
+     "text": "哈！好！很好！你飞得像一艘有主见的货船！",
+     "asr": "哈，好很好！你飞得像一艘有主见的货船。",
+     "asr_similarity": 1,
+     "inputLufs": -20.88
+    }
+   }
+  },
+  "boss_pac_ai_001": {
+   "speaker": "tutorial_ai",
+   "scene": "boss",
+   "direction": "On comms, compliance-officer calm.",
+   "langs": {
+    "en": {
+     "file": "en/boss_pac_ai_001.ogg",
+     "vtt": "en/boss_pac_ai_001.vtt",
+     "duration": 7.04,
+     "peak": 0.502,
+     "hash": "a288237fef7732ec",
+     "seed": 11,
+     "text": "Pilot, your weapon shows no activity during a contracted engagement. This has been escalated.",
+     "asr": "Pilot, your weapon shows no activity during a contracted engagement. This has been escalated.",
+     "asr_similarity": 1,
+     "inputLufs": -23.55
+    },
+    "es": {
+     "file": "es/boss_pac_ai_001.ogg",
+     "vtt": "es/boss_pac_ai_001.vtt",
+     "duration": 7.84,
+     "peak": 0.424,
+     "hash": "7ac3baefc9e61f45",
+     "seed": 11,
+     "text": "Piloto, tu arma no muestra actividad durante un enfrentamiento contratado. Esto ha sido escalado.",
+     "asr": "Piloto, tu arma no muestra actividad durante un enfrentamiento contratado, esto ha sido escalado.",
+     "asr_similarity": 1,
+     "inputLufs": -24.64
+    },
+    "zh": {
+     "file": "zh/boss_pac_ai_001.ogg",
+     "vtt": "zh/boss_pac_ai_001.vtt",
+     "duration": 6.32,
+     "peak": 0.381,
+     "hash": "c8a913e2b3af74e8",
+     "seed": 11,
+     "text": "飞行员，在合同规定的交战中，你的武器没有任何开火记录。此事已上报。",
+     "asr": "飞行员在合同规定的交战中，你的武器没有任何开火记录。此事已上报。",
+     "asr_similarity": 1,
+     "inputLufs": -24.63
+    }
+   }
+  },
+  "boss_pac_ai_002": {
+   "speaker": "tutorial_ai",
+   "scene": "boss",
+   "direction": "On comms, hold-music politeness.",
+   "langs": {
+    "en": {
+     "file": "en/boss_pac_ai_002.ogg",
+     "vtt": "en/boss_pac_ai_002.vtt",
+     "duration": 5.28,
+     "peak": 0.651,
+     "hash": "ad3edaedfb4e8f28",
+     "seed": 11,
+     "text": "Recall authorization requested. Please hold. Your call is important to us.",
+     "asr": "Recall authorization requested. Please hold. Your call is important to us.",
+     "asr_similarity": 1,
+     "inputLufs": -21.35
+    },
+    "es": {
+     "file": "es/boss_pac_ai_002.ogg",
+     "vtt": "es/boss_pac_ai_002.vtt",
+     "duration": 7.36,
+     "peak": 0.524,
+     "hash": "a0516f09abf27fb3",
+     "seed": 11,
+     "text": "Autorización de retiro solicitada. Por favor, espera. Tu llamada es importante para nosotros.",
+     "asr": "Autorización de retiro solicitada. Por favor espera, tu llamada es importante para nosotros.",
+     "asr_similarity": 1,
+     "inputLufs": -21.28
+    },
+    "zh": {
+     "file": "zh/boss_pac_ai_002.ogg",
+     "vtt": "zh/boss_pac_ai_002.vtt",
+     "duration": 4.56,
+     "peak": 0.491,
+     "hash": "88a4618165508bab",
+     "seed": 11,
+     "text": "已申请召回授权。请稍候。你的来电对我们很重要。",
+     "asr": "已申请召回授权，请稍后。你的来电对我们很重要。",
+     "asr_similarity": 0.95,
+     "inputLufs": -22.08
+    }
+   }
+  },
+  "kill_warden_001": {
+   "speaker": "warden",
+   "scene": "ending_kill",
+   "direction": "Dying, the high voice small and almost calm for the first time.",
+   "langs": {
+    "en": {
+     "file": "en/kill_warden_001.ogg",
+     "vtt": "en/kill_warden_001.vtt",
+     "duration": 6.32,
+     "peak": 0.57,
+     "hash": "dcbb6f7a471b0555",
+     "seed": 33,
+     "text": "Oh. Oh, there goes another ring. Count them, zero one two two. Count what they put where the rings were.",
+     "asr": "Oh, oh! There goes another ring. Count them: zero, one, two, two. Count what they put where the rings were.",
+     "asr_similarity": 1,
+     "inputLufs": -20.56
+    },
+    "es": {
+     "file": "es/kill_warden_001.ogg",
+     "vtt": "es/kill_warden_001.vtt",
+     "duration": 8.24,
+     "peak": 0.755,
+     "hash": "58c210868af4cd2b",
+     "seed": 33,
+     "text": "Oh. Oh, ahí va otro anillo. Cuéntalos, cero uno dos dos. Cuenta lo que ponen donde estaban los anillos.",
+     "asr": "Oh, oh ahí va otro anillo. Cuéntelos, cero uno dos dos. Cuéntalo que ponen donde estaban los anillos.",
+     "asr_similarity": 0.865,
+     "inputLufs": -17.71
+    },
+    "zh": {
+     "file": "zh/kill_warden_001.ogg",
+     "vtt": "zh/kill_warden_001.vtt",
+     "duration": 7.6,
+     "peak": 0.571,
+     "hash": "7c9d9e7bc9ef6838",
+     "seed": 33,
+     "text": "哦。哦，又一个光环熄灭了。数一数，零一二二号。数数他们在光环原来的位置放了什么。",
+     "asr": "哦哦，又一个光环熄灭了。数一数，零一二二号，数数他们在光环原来的位置放了什么。",
+     "asr_similarity": 1,
+     "inputLufs": -20.19
+    }
+   }
+  },
+  "kill_ai_001": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_kill",
+   "direction": "On comms, pure celebration, confetti in the voice.",
+   "langs": {
+    "en": {
+     "file": "en/kill_ai_001.ogg",
+     "vtt": "en/kill_ai_001.vtt",
+     "duration": 2.96,
+     "peak": 0.519,
+     "hash": "79d86a000d9ebed3",
+     "seed": 11,
+     "text": "Warden down! The lanes are open!",
+     "asr": "Warden down! The lanes are open.",
+     "asr_similarity": 1,
+     "inputLufs": -21.19
+    },
+    "es": {
+     "file": "es/kill_ai_001.ogg",
+     "vtt": "es/kill_ai_001.vtt",
+     "duration": 3.6,
+     "peak": 0.44,
+     "hash": "060ca44ff0c4b71b",
+     "seed": 11,
+     "text": "¡Guardián derribado! ¡Las rutas están abiertas!",
+     "asr": "Guardián de Ribado, las rutas están abiertas.",
+     "asr_similarity": 0.769,
+     "inputLufs": -21.74
+    },
+    "zh": {
+     "file": "zh/kill_ai_001.ogg",
+     "vtt": "zh/kill_ai_001.vtt",
+     "duration": 3.12,
+     "peak": 0.44,
+     "hash": "58b9d9074fcb9fa5",
+     "seed": 11,
+     "text": "守望者已被击落！航道已开放！",
+     "asr": "守望者已被击落，航道已开放。",
+     "asr_similarity": 1,
+     "inputLufs": -22.55
+    }
+   }
+  },
+  "end_epi_001": {
+   "speaker": "narrator",
+   "scene": "ending_kill",
+   "direction": "Elegiac, slow, no trailer bombast left.",
+   "langs": {
+    "en": {
+     "file": "en/end_epi_001.ogg",
+     "vtt": "en/end_epi_001.vtt",
+     "duration": 4,
+     "peak": 0.455,
+     "hash": "da901c2d0ea131f3",
+     "seed": 22,
+     "text": "The Warden's lights go dark, one ring at a time.",
+     "asr": "The warden's lights go dark, one ring at a time.",
+     "asr_similarity": 1,
+     "inputLufs": -21.89
+    },
+    "es": {
+     "file": "es/end_epi_001.ogg",
+     "vtt": "es/end_epi_001.vtt",
+     "duration": 4.96,
+     "peak": 0.409,
+     "hash": "a51eaf7c8f5b5762",
+     "seed": 122,
+     "text": "Las luces del Guardián se apagan, un anillo a la vez.",
+     "asr": "Las luces del guardián se apagan una niño a la vez.",
+     "asr_similarity": 0.818,
+     "inputLufs": -22.58
+    },
+    "zh": {
+     "file": "zh/end_epi_001.ogg",
+     "vtt": "zh/end_epi_001.vtt",
+     "duration": 4,
+     "peak": 0.273,
+     "hash": "089aaeed8e5e982d",
+     "seed": 22,
+     "text": "守望者的光芒熄灭了，一环接着一环。",
+     "asr": "守望着的光芒熄灭了，一环接着一环。",
+     "asr_similarity": 0.933,
+     "inputLufs": -26.05
+    }
+   }
+  },
+  "end_epi_002": {
+   "speaker": "narrator",
+   "scene": "ending_kill",
+   "direction": "Quiet, wide, a breath before it.",
+   "langs": {
+    "en": {
+     "file": "en/end_epi_002.ogg",
+     "vtt": "en/end_epi_002.vtt",
+     "duration": 3.12,
+     "peak": 0.374,
+     "hash": "be9eda92bf3c2b37",
+     "seed": 22,
+     "text": "Behind you, five sectors of open sky.",
+     "asr": "Behind you, five sectors of open sky.",
+     "asr_similarity": 1,
+     "inputLufs": -25.37
+    },
+    "es": {
+     "file": "es/end_epi_002.ogg",
+     "vtt": "es/end_epi_002.vtt",
+     "duration": 4.64,
+     "peak": 0.371,
+     "hash": "038ccb91b485380d",
+     "seed": 122,
+     "text": "Detrás de ti, cinco sectores de cielo abierto.",
+     "asr": "Detras de ti, cinco sectores de cielo abierto.",
+     "asr_similarity": 1,
+     "inputLufs": -25.57
+    },
+    "zh": {
+     "file": "zh/end_epi_002.ogg",
+     "vtt": "zh/end_epi_002.vtt",
+     "duration": 3.52,
+     "peak": 0.382,
+     "hash": "22193f32fa313d23",
+     "seed": 22,
+     "text": "在你身后，是五个星区的开阔天空。",
+     "asr": "在你身后是五个新区的开阔天空。",
+     "asr_similarity": 0.929,
+     "inputLufs": -23.01
+    }
+   }
+  },
+  "kill_ai_002": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_kill",
+   "direction": "On comms, a service announcement, completely sincere.",
+   "langs": {
+    "en": {
+     "file": "en/kill_ai_002.ogg",
+     "vtt": "en/kill_ai_002.vtt",
+     "duration": 6.4,
+     "peak": 0.509,
+     "hash": "3787195c62db9720",
+     "seed": 11,
+     "text": "Tollgate deployment has begun. The lanes will be open to all subscribers within the hour.",
+     "asr": "Tollgate deployment has begun. The lanes will be open to all subscribers within the hour.",
+     "asr_similarity": 1,
+     "inputLufs": -22.96
+    },
+    "es": {
+     "file": "es/kill_ai_002.ogg",
+     "vtt": "es/kill_ai_002.vtt",
+     "duration": 8.24,
+     "peak": 0.588,
+     "hash": "ce1f7b1f47a92348",
+     "seed": 311,
+     "text": "Comenzó el despliegue de casetas de peaje. Las rutas estarán abiertas para todos los suscriptores en menos de una hora.",
+     "asr": "Comenzó el despliegue de cajetas de peaje. Las rutas se estarán abiertas para todos los suscriptores en menos de una hora.",
+     "asr_similarity": 0.927,
+     "inputLufs": -21.67
+    },
+    "zh": {
+     "file": "zh/kill_ai_002.ogg",
+     "vtt": "zh/kill_ai_002.vtt",
+     "duration": 5.44,
+     "peak": 0.406,
+     "hash": "acac9a4f24b1de5a",
+     "seed": 11,
+     "text": "收费站已开始部署。一小时内，航道将向所有订阅用户开放。",
+     "asr": "收费站已开始部署，一小时内航道将向所有订阅用户开放。",
+     "asr_similarity": 1,
+     "inputLufs": -23.55
+    }
+   }
+  },
+  "end_epi_003": {
+   "speaker": "narrator",
+   "scene": "ending",
+   "direction": "The last line of the original game. Let it hang.",
+   "langs": {
+    "en": {
+     "file": "en/end_epi_003.ogg",
+     "vtt": "en/end_epi_003.vtt",
+     "duration": 2.88,
+     "peak": 0.36,
+     "hash": "a1b77f847e9170ac",
+     "seed": 22,
+     "text": "Ahead, the long way home.",
+     "asr": "Ahead, the long way home.",
+     "asr_similarity": 1,
+     "inputLufs": -24.22
+    },
+    "es": {
+     "file": "es/end_epi_003.ogg",
+     "vtt": "es/end_epi_003.vtt",
+     "duration": 3.2,
+     "peak": 0.455,
+     "hash": "aff9d22ace09f8ef",
+     "seed": 122,
+     "text": "Por delante, el largo camino a casa.",
+     "asr": "Por delante el largo camino a casa.",
+     "asr_similarity": 1,
+     "inputLufs": -23.58
+    },
+    "zh": {
+     "file": "zh/end_epi_003.ogg",
+     "vtt": "zh/end_epi_003.vtt",
+     "duration": 2.88,
+     "peak": 0.325,
+     "hash": "3f4220a576194979",
+     "seed": 22,
+     "text": "前方，是漫长的归途。",
+     "asr": "前方是漫长的归途。",
+     "asr_similarity": 1,
+     "inputLufs": -24.77
+    }
+   }
+  },
+  "kill_ai_003": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_kill",
+   "direction": "On comms, warm and proud, then the payroll fine print at speed.",
+   "langs": {
+    "en": {
+     "file": "en/kill_ai_003.ogg",
+     "vtt": "en/kill_ai_003.vtt",
+     "duration": 8.48,
+     "peak": 0.576,
+     "hash": "dbe277b44bce21e0",
+     "seed": 11,
+     "text": "Congratulations, Pilot zero one two two. Your contract is complete. Payment will be issued in thirty to ninety business days.",
+     "asr": "Congratulations, Pilot Zero One Two Two. Your contract is complete. Payment will be issued in thirty to ninety business days.",
+     "asr_similarity": 1,
+     "inputLufs": -24.37
+    },
+    "es": {
+     "file": "es/kill_ai_003.ogg",
+     "vtt": "es/kill_ai_003.vtt",
+     "duration": 10.16,
+     "peak": 0.591,
+     "hash": "03bed29f228db09b",
+     "seed": 111,
+     "text": "Felicidades, piloto cero uno dos dos. Tu contrato está completo. El pago se emitirá en un plazo de treinta a noventa días hábiles.",
+     "asr": "Felicitades piloto sero uno dos dos, tu contrato está completo, el pago se emitirá en un plazo de treinta a noventa días hábiles.",
+     "asr_similarity": 0.913,
+     "inputLufs": -22.48
+    },
+    "zh": {
+     "file": "zh/kill_ai_003.ogg",
+     "vtt": "zh/kill_ai_003.vtt",
+     "duration": 7.52,
+     "peak": 0.634,
+     "hash": "26cf2b373552b62d",
+     "seed": 11,
+     "text": "恭喜你，零一二二号飞行员。你的合同已完成。报酬将在三十至九十个工作日内发放。",
+     "asr": "恭喜你，零一二二号飞行员，你的合同已完成，报酬将在三十至九十个工作日内发放。",
+     "asr_similarity": 1,
+     "inputLufs": -21.8
+    }
+   }
+  },
+  "kill_ai_004": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_kill",
+   "direction": "Same warmth, meant as good news. No irony.",
+   "langs": {
+    "en": {
+     "file": "en/kill_ai_004.ogg",
+     "vtt": "en/kill_ai_004.vtt",
+     "duration": 2.88,
+     "peak": 0.484,
+     "hash": "9555fb806393a2d8",
+     "seed": 11,
+     "text": "Your replacement is already in onboarding.",
+     "asr": "Your replacement is already in onboarding.",
+     "asr_similarity": 1,
+     "inputLufs": -21.58
+    },
+    "es": {
+     "file": "es/kill_ai_004.ogg",
+     "vtt": "es/kill_ai_004.vtt",
+     "duration": 2.72,
+     "peak": 0.578,
+     "hash": "f3e9de3c491cbce4",
+     "seed": 11,
+     "text": "Tu reemplazo ya está en inducción.",
+     "asr": "Tu Raym Plaza ya está en inducción.",
+     "asr_similarity": 0.769,
+     "inputLufs": -20.04
+    },
+    "zh": {
+     "file": "zh/kill_ai_004.ogg",
+     "vtt": "zh/kill_ai_004.vtt",
+     "duration": 2.96,
+     "peak": 0.385,
+     "hash": "a1656d1851911b4a",
+     "seed": 11,
+     "text": "你的接替者已经在接受入职培训了。",
+     "asr": "你的接替者已经在接受入职培训了。",
+     "asr_similarity": 1,
+     "inputLufs": -23.98
+    }
+   }
+  },
+  "pac_end_001": {
+   "speaker": "warden",
+   "scene": "ending_pacifist",
+   "direction": "Awed, still loud, voice wobbling.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_001.ogg",
+     "vtt": "en/pac_end_001.vtt",
+     "duration": 5.44,
+     "peak": 0.534,
+     "hash": "8cd15fbee9d91ad2",
+     "seed": 33,
+     "text": "You dodged everything. Everything! And you never fired back. Not once.",
+     "asr": "You dodged everything, everything, and you never fired back—not once.",
+     "asr_similarity": 0.857,
+     "inputLufs": -19.91
+    },
+    "es": {
+     "file": "es/pac_end_001.ogg",
+     "vtt": "es/pac_end_001.vtt",
+     "duration": 6.16,
+     "peak": 0.545,
+     "hash": "60f858c9b42508e5",
+     "seed": 33,
+     "text": "Esquivaste todo. ¡Todo! Y nunca devolviste el fuego. Ni una vez.",
+     "asr": "Esquivaste todo, todo y nunca deboviste el fuego ni una vez.",
+     "asr_similarity": 0.909,
+     "inputLufs": -18.91
+    },
+    "zh": {
+     "file": "zh/pac_end_001.ogg",
+     "vtt": "zh/pac_end_001.vtt",
+     "duration": 5.2,
+     "peak": 0.566,
+     "hash": "305439a38741abd5",
+     "seed": 33,
+     "text": "你躲开了一切。一切！而且你从没还过手。一次都没有。",
+     "asr": "你躲开了一切，一切，而且你从没还过手，一次都没有。",
+     "asr_similarity": 1,
+     "inputLufs": -19.32
+    }
+   }
+  },
+  "pac_end_002": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_pacifist",
+   "direction": "On comms, the same procedural politeness as the flashback recall.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_002.ogg",
+     "vtt": "en/pac_end_002.vtt",
+     "duration": 5.52,
+     "peak": 0.557,
+     "hash": "c29387b96d8fbc21",
+     "seed": 11,
+     "text": "Pilot zero one two two, non-performance confirmed. Recall in three. Two.",
+     "asr": "Pilot zero one two two, non-performance confirmed. Recall in three two.",
+     "asr_similarity": 1,
+     "inputLufs": -23.43
+    },
+    "es": {
+     "file": "es/pac_end_002.ogg",
+     "vtt": "es/pac_end_002.vtt",
+     "duration": 7.92,
+     "peak": 0.377,
+     "hash": "bafabce3f57616d3",
+     "seed": 111,
+     "text": "Piloto cero uno dos dos, no desempeño confirmado. Retiro en tres. Dos.",
+     "asr": "Piloto, sero, uno dos dos, no desempeño confirmado, retiro en trace dos.",
+     "asr_similarity": 0.833,
+     "inputLufs": -25.31
+    },
+    "zh": {
+     "file": "zh/pac_end_002.ogg",
+     "vtt": "zh/pac_end_002.vtt",
+     "duration": 6,
+     "peak": 0.419,
+     "hash": "5421cf6fa2cfecbd",
+     "seed": 11,
+     "text": "零一二二号飞行员，确认未履约。召回倒计时，三。二。",
+     "asr": "零一二二号飞行员确认未履约，召回倒计时三二。",
+     "asr_similarity": 1,
+     "inputLufs": -22.49
+    }
+   }
+  },
+  "pac_end_003": {
+   "speaker": "warden",
+   "scene": "ending_pacifist",
+   "direction": "Furious protectiveness, frantic, finally aimed at the right target.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_003.ogg",
+     "vtt": "en/pac_end_003.vtt",
+     "duration": 6.4,
+     "peak": 0.884,
+     "hash": "c2b69c450043e8f8",
+     "seed": 33,
+     "text": "NO! Not this one! I'm cutting your leash. Hold still! This will feel like nothing, because it IS nothing!",
+     "asr": "No, not this one. I'm cutting your leash. Hold still. This will feel like nothing because it is nothing.",
+     "asr_similarity": 1,
+     "inputLufs": -19.65
+    },
+    "es": {
+     "file": "es/pac_end_003.ogg",
+     "vtt": "es/pac_end_003.vtt",
+     "duration": 7.76,
+     "peak": 0.663,
+     "hash": "f8b7004106768859",
+     "seed": 233,
+     "text": "¡NO! ¡Este no! Voy a cortar tu correa. ¡Quédate quieto! No vas a sentir nada, ¡porque NO ES nada!",
+     "asr": "No, este no voy a cortar tu correa, querete quieto, no vas a sentir nada porque no es nada.",
+     "asr_similarity": 0.947,
+     "inputLufs": -19.74
+    },
+    "zh": {
+     "file": "zh/pac_end_003.ogg",
+     "vtt": "zh/pac_end_003.vtt",
+     "duration": 7.12,
+     "peak": 0.54,
+     "hash": "49b133d04b6ab536",
+     "seed": 33,
+     "text": "不！这个不行！我要剪断你的缰绳。别动！你什么都感觉不到，因为它本来就什么都不是！",
+     "asr": "不，这个不行。我要剪断你的缰绳。别动，你什么都感觉不到，因为它本来就什么都不是。",
+     "asr_similarity": 1,
+     "inputLufs": -21.25
+    }
+   }
+  },
+  "pac_end_004": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_pacifist",
+   "direction": "On comms, weak signal, still smiling, an offer read off a card.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_004.ogg",
+     "vtt": "en/pac_end_004.vtt",
+     "duration": 7.68,
+     "peak": 0.582,
+     "hash": "d8cfae7263190b84",
+     "seed": 11,
+     "text": "Connection unstable. Pilot zero one two two, if you return for recall now, your full payment will be honored.",
+     "asr": "Connection unstable. Pilot zero one two two. If you return for recall now, your full payment will be honored.",
+     "asr_similarity": 1,
+     "inputLufs": -22.02
+    },
+    "es": {
+     "file": "es/pac_end_004.ogg",
+     "vtt": "es/pac_end_004.vtt",
+     "duration": 9.52,
+     "peak": 0.506,
+     "hash": "8d6565bf78c58fe3",
+     "seed": 211,
+     "text": "Conexión inestable. Piloto cero uno dos dos, si regresas ahora para el retiro, se respetará tu pago completo.",
+     "asr": "Conexión en estable, piloto cero uno dos dos, si regresas ahora para el retiro se respetará tu pago completo.",
+     "asr_similarity": 0.919,
+     "inputLufs": -23.2
+    },
+    "zh": {
+     "file": "zh/pac_end_004.ogg",
+     "vtt": "zh/pac_end_004.vtt",
+     "duration": 7.76,
+     "peak": 0.498,
+     "hash": "9e29ea7abbb99307",
+     "seed": 11,
+     "text": "连接不稳定。零一二二号飞行员，如果你现在返回接受召回，你的全额报酬将照常发放。",
+     "asr": "连接不稳定。零一二二号飞行员，如果你现在返回接受召回，你的全额报酬将照常发放。",
+     "asr_similarity": 1,
+     "inputLufs": -22.5
+    }
+   }
+  },
+  "pilot_keep_001": {
+   "speaker": "pilot",
+   "scene": "ending_pacifist",
+   "direction": "Flat, quiet, final. No emphasis on either word.",
+   "langs": {
+    "en": {
+     "file": "en/pilot_keep_001.ogg",
+     "vtt": "en/pilot_keep_001.vtt",
+     "duration": 1.04,
+     "peak": 0.519,
+     "hash": "70f85a4523cb9058",
+     "seed": 44,
+     "text": "Keep the money.",
+     "asr": "Keep the money.",
+     "asr_similarity": 1,
+     "inputLufs": -19.36
+    },
+    "es": {
+     "file": "es/pilot_keep_001.ogg",
+     "vtt": "es/pilot_keep_001.vtt",
+     "duration": 1.28,
+     "peak": 0.654,
+     "hash": "26ff3fa625130e78",
+     "seed": 44,
+     "text": "Quédense con el dinero.",
+     "asr": "Queden con el dinero.",
+     "asr_similarity": 0.75,
+     "inputLufs": -20.82
+    },
+    "zh": {
+     "file": "zh/pilot_keep_001.ogg",
+     "vtt": "zh/pilot_keep_001.vtt",
+     "duration": 0.96,
+     "peak": 0.515,
+     "hash": "3e8da45a094c3718",
+     "seed": 44,
+     "text": "钱你们留着吧。",
+     "asr": "钱，你们留着吧。",
+     "asr_similarity": 1,
+     "inputLufs": -22.39
+    }
+   }
+  },
+  "pac_end_005": {
+   "speaker": "tutorial_ai",
+   "scene": "ending_pacifist",
+   "direction": "On comms, glitching out mid-word, never losing the smile.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_005.ogg",
+     "vtt": "en/pac_end_005.vtt",
+     "duration": 3.52,
+     "peak": 0.433,
+     "hash": "73e39da1631e4038",
+     "seed": 11,
+     "text": "Connection lost. Updating records. Updating. Up.",
+     "asr": "Connection lost. Updating records. Updating up.",
+     "asr_similarity": 1,
+     "inputLufs": -23.01
+    },
+    "es": {
+     "file": "es/pac_end_005.ogg",
+     "vtt": "es/pac_end_005.vtt",
+     "duration": 5.92,
+     "peak": 0.575,
+     "hash": "85339b399640b201",
+     "seed": 11,
+     "text": "Conexión perdida. Actualizando registros. Actualizando. Actua.",
+     "asr": "Conexión perdida. Actualizando registros. Actualizando. Actúa.",
+     "asr_similarity": 1,
+     "inputLufs": -22.82
+    },
+    "zh": {
+     "file": "zh/pac_end_005.ogg",
+     "vtt": "zh/pac_end_005.vtt",
+     "duration": 5.84,
+     "peak": 0.372,
+     "hash": "ce4992e9cb471ebb",
+     "seed": 11,
+     "text": "连接已中断。正在更新记录。正在更新。正在。",
+     "asr": "连接已中断，正在更新。记录正在更新，正在。",
+     "asr_similarity": 1,
+     "inputLufs": -25.26
+    }
+   }
+  },
+  "pac_end_006": {
+   "speaker": "warden",
+   "scene": "ending_pacifist",
+   "direction": "Explosive laugh, then fond. Plays after Pilot speaks.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_006.ogg",
+     "vtt": "en/pac_end_006.vtt",
+     "duration": 2.8,
+     "peak": 0.553,
+     "hash": "3deba3cc37530a33",
+     "seed": 33,
+     "text": "HA! Ha! Oh, I like this one.",
+     "asr": "Ha ha! Oh, I like this one.",
+     "asr_similarity": 1,
+     "inputLufs": -18.08
+    },
+    "es": {
+     "file": "es/pac_end_006.ogg",
+     "vtt": "es/pac_end_006.vtt",
+     "duration": 3.2,
+     "peak": 0.757,
+     "hash": "060c514a4189c5cd",
+     "seed": 33,
+     "text": "¡JA! ¡Ja! Oh, este me cae bien.",
+     "asr": "Ha ha, oh este me cae bien.",
+     "asr_similarity": 0.714,
+     "inputLufs": -17.41
+    },
+    "zh": {
+     "file": "zh/pac_end_006.ogg",
+     "vtt": "zh/pac_end_006.vtt",
+     "duration": 2.32,
+     "peak": 0.696,
+     "hash": "e943e0546ef7b44f",
+     "seed": 33,
+     "text": "哈！哈！哦，我喜欢这个家伙。",
+     "asr": "哈哈！哦，我喜欢这个家伙。",
+     "asr_similarity": 1,
+     "inputLufs": -18.09
+    }
+   }
+  },
+  "pac_end_007": {
+   "speaker": "warden",
+   "scene": "ending_pacifist",
+   "direction": "Explosive laugh, then fond. Plays instead of pac_end_006 when Pilot stays silent.",
+   "langs": {
+    "en": {
+     "file": "en/pac_end_007.ogg",
+     "vtt": "en/pac_end_007.vtt",
+     "duration": 3.84,
+     "peak": 0.556,
+     "hash": "925aa08457c7cc98",
+     "seed": 33,
+     "text": "HA! He didn't even answer them! Oh, I like this one.",
+     "asr": "Ha! He didn't even answer them. Oh, I like this one.",
+     "asr_similarity": 1,
+     "inputLufs": -19.22
+    },
+    "es": {
+     "file": "es/pac_end_007.ogg",
+     "vtt": "es/pac_end_007.vtt",
+     "duration": 5.12,
+     "peak": 1,
+     "hash": "538456df4ec30d75",
+     "seed": 133,
+     "text": "¡JA! ¡Ni siquiera les contestó! Oh, este me cae bien.",
+     "asr": "¡Ha! Ni siquiera les contesto. Oh, este me cae bien.",
+     "asr_similarity": 0.9,
+     "inputLufs": -19.16
+    },
+    "zh": {
+     "file": "zh/pac_end_007.ogg",
+     "vtt": "zh/pac_end_007.vtt",
+     "duration": 3.76,
+     "peak": 0.928,
+     "hash": "1e6b97fc58ab0a1a",
+     "seed": 33,
+     "text": "哈！他连理都没理他们！哦，我喜欢这个家伙。",
+     "asr": "哈，他连立都没立他们。哦，我喜欢这个家伙。",
+     "asr_similarity": 0.882,
+     "inputLufs": -18.43
+    }
+   }
+  },
+  "pac_epi_001": {
+   "speaker": "narrator",
+   "scene": "ending_pacifist",
+   "direction": "Echo of the kill epilogue, warmer, slower.",
+   "langs": {
+    "en": {
+     "file": "en/pac_epi_001.ogg",
+     "vtt": "en/pac_epi_001.vtt",
+     "duration": 2.8,
+     "peak": 0.485,
+     "hash": "3b053834449108b2",
+     "seed": 22,
+     "text": "The Warden's lights stay on, every ring of them.",
+     "asr": "The warden's lights stay on. Every ring of them.",
+     "asr_similarity": 1,
+     "inputLufs": -22.91
+    },
+    "es": {
+     "file": "es/pac_epi_001.ogg",
+     "vtt": "es/pac_epi_001.vtt",
+     "duration": 5.68,
+     "peak": 0.366,
+     "hash": "b038f6d61e84be23",
+     "seed": 22,
+     "text": "Las luces del Guardián siguen encendidas, cada uno de sus anillos.",
+     "asr": "Las luces del guardián siguen encendidas, cada uno de sus anillos.",
+     "asr_similarity": 1,
+     "inputLufs": -22.89
+    },
+    "zh": {
+     "file": "zh/pac_epi_001.ogg",
+     "vtt": "zh/pac_epi_001.vtt",
+     "duration": 4.64,
+     "peak": 0.397,
+     "hash": "4ea4093bb69738e2",
+     "seed": 22,
+     "text": "守望者的光芒依旧亮着，每一环都亮着。",
+     "asr": "守望者的光芒依旧亮着，每一环都亮着。",
+     "asr_similarity": 1,
+     "inputLufs": -22.14
+    }
+   }
+  },
+  "pac_epi_002": {
+   "speaker": "narrator",
+   "scene": "ending_pacifist",
+   "direction": "Quiet, wide; lean on the word free.",
+   "langs": {
+    "en": {
+     "file": "en/pac_epi_002.ogg",
+     "vtt": "en/pac_epi_002.vtt",
+     "duration": 3.12,
+     "peak": 0.28,
+     "hash": "2eb4c9c78c9865bd",
+     "seed": 22,
+     "text": "Behind you, five sectors of free sky.",
+     "asr": "Behind you, five sectors of free sky.",
+     "asr_similarity": 1,
+     "inputLufs": -27.7
+    },
+    "es": {
+     "file": "es/pac_epi_002.ogg",
+     "vtt": "es/pac_epi_002.vtt",
+     "duration": 4,
+     "peak": 0.428,
+     "hash": "53227e1a2c3aa2db",
+     "seed": 22,
+     "text": "Detrás de ti, cinco sectores de cielo libre.",
+     "asr": "Detrás de ti cinco sectores de cielo libre.",
+     "asr_similarity": 1,
+     "inputLufs": -24.68
+    },
+    "zh": {
+     "file": "zh/pac_epi_002.ogg",
+     "vtt": "zh/pac_epi_002.vtt",
+     "duration": 3.68,
+     "peak": 0.387,
+     "hash": "f1ba1b09cfc5455d",
+     "seed": 22,
+     "text": "在你身后，是五个星区的自由天空。",
+     "asr": "在你身后是五个新区的自由天空。",
+     "asr_similarity": 0.929,
+     "inputLufs": -24.97
+    }
+   }
+  },
+  "credits_kill_001": {
+   "speaker": "tutorial_ai",
+   "scene": "credits",
+   "direction": "Exactly the delivery of tut_hello_001, as if for the first time.",
+   "langs": {
+    "en": {
+     "file": "en/credits_kill_001.ogg",
+     "vtt": "en/credits_kill_001.vtt",
+     "duration": 5.36,
+     "peak": 0.48,
+     "hash": "56af225ef4041770",
+     "seed": 11,
+     "text": "Hello, and welcome to Lane Authority onboarding, Pilot zero one two three!",
+     "asr": "Hello and welcome to Lane Authority onboarding pilot zero one two three.",
+     "asr_similarity": 1,
+     "inputLufs": -23.01
+    },
+    "es": {
+     "file": "es/credits_kill_001.ogg",
+     "vtt": "es/credits_kill_001.vtt",
+     "duration": 6.24,
+     "peak": 0.476,
+     "hash": "ccac736597f3f470",
+     "seed": 11,
+     "text": "¡Hola, y bienvenido a la inducción de la Autoridad de Rutas, piloto cero uno dos tres!",
+     "asr": "Hola, y bienvenido a la inducción de la Autoridad de Rutas Piloto cero uno dos tres.",
+     "asr_similarity": 1,
+     "inputLufs": -21.79
+    },
+    "zh": {
+     "file": "zh/credits_kill_001.ogg",
+     "vtt": "zh/credits_kill_001.vtt",
+     "duration": 5.28,
+     "peak": 0.679,
+     "hash": "bac7c8b3403c108a",
+     "seed": 11,
+     "text": "你好，欢迎参加航道管理局入职培训，零一二三号飞行员！",
+     "asr": "你好，欢迎参加航道管理局入职培训。零一二三号飞行员。",
+     "asr_similarity": 1,
+     "inputLufs": -22.67
+    }
+   }
+  },
+  "credits_pac_001": {
+   "speaker": "warden",
+   "scene": "credits",
+   "direction": "Shouted after a departing ship, affectionate, absurdly proud of its reputation.",
+   "langs": {
+    "en": {
+     "file": "en/credits_pac_001.ogg",
+     "vtt": "en/credits_pac_001.vtt",
+     "duration": 7.52,
+     "peak": 0.546,
+     "hash": "e3fa9fcc6a4a253c",
+     "seed": 33,
+     "text": "Fly safe, zero one two two! And if anyone with a gun asks, I am EXTREMELY scary!",
+     "asr": "Fly safe! Zero one two two, and if anyone with a gun asks, I am extremely scary.",
+     "asr_similarity": 1,
+     "inputLufs": -19.39
+    },
+    "es": {
+     "file": "es/credits_pac_001.ogg",
+     "vtt": "es/credits_pac_001.vtt",
+     "duration": 7.2,
+     "peak": 0.572,
+     "hash": "e5c1446fe987d5eb",
+     "seed": 33,
+     "text": "¡Buen viaje, cero uno dos dos! ¡Y si alguien armado pregunta, soy EXTREMADAMENTE aterrador!",
+     "asr": "Pueden viaje cero uno dos dos y si alguien armado pregunta soy extremadamente aterrador.",
+     "asr_similarity": 0.929,
+     "inputLufs": -19.76
+    },
+    "zh": {
+     "file": "zh/credits_pac_001.ogg",
+     "vtt": "zh/credits_pac_001.vtt",
+     "duration": 6.88,
+     "peak": 0.67,
+     "hash": "9fb6adb971a1c93d",
+     "seed": 33,
+     "text": "一路平安，零一二二号！要是有带枪的人问起，就说我超级、超级可怕！",
+     "asr": "一路平安，零一二二号。要是有带枪的人问起，就说我超级超级可怕。",
+     "asr_similarity": 1,
+     "inputLufs": -19.04
+    }
+   }
+  }
+ },
+ "loudness": {
+  "targetLufs": -18,
+  "ambientOffsetLu": -2,
+  "ceilingDbtp": -1,
+  "recipe": "opus48k-v1"
+ }
+}

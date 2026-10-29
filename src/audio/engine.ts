@@ -33,7 +33,9 @@ import type {
   VoiceHandle,
   VoiceLayer,
   VoicePort,
+  VoiceStatus,
 } from "../director/ports.ts";
+import { createArenaPa } from "./arenaPa.ts";
 import { Ducker } from "./ducker.ts";
 import { type Stage, StagedLoader, type StageProgress } from "./loader.ts";
 import {
@@ -81,6 +83,11 @@ export class AudioEngine implements VoicePort {
   private readonly ducker: Ducker;
   private readonly loader: StagedLoader<AudioBuffer>;
   private readonly music: MusicPlayer;
+  /** Built on the Warden's first line (see `arenaPa.ts`). */
+  private arenaPa: AudioNode | null = null;
+  /** Stages asked for so far, so a voice-language change can refetch VO. */
+  private readonly stagesWanted = new Set<Stage>();
+  private voiceLang: Lang;
 
   private constructor(
     readonly ctx: AudioContext,
@@ -124,8 +131,15 @@ export class AudioEngine implements VoicePort {
       }
     }
 
+    this.voiceLang = store.get().voiceLang;
     this.applyVolumes(store.get(), 0);
-    store.subscribe((s) => this.applyVolumes(s, 0.03));
+    store.subscribe((s) => {
+      this.applyVolumes(s, 0.03);
+      if (s.voiceLang !== this.voiceLang) {
+        this.voiceLang = s.voiceLang;
+        for (const stage of this.stagesWanted) void this.loadStage(stage);
+      }
+    });
   }
 
   /**
@@ -156,6 +170,7 @@ export class AudioEngine implements VoicePort {
 
   /** Loads a stage in the background, VO in the current voice language. */
   loadStage(stage: Stage): Promise<StageProgress> {
+    this.stagesWanted.add(stage);
     const lang = this.store.get().voiceLang;
     for (const line of this.vo.linesWhere(STAGE_CONTENTS[stage].scene)) {
       const v = this.vo.resolve(line, lang);
@@ -178,7 +193,22 @@ export class AudioEngine implements VoicePort {
     return this.vo.speaker(line);
   }
 
-  play(line: LineId, lang: Lang, _layer: VoiceLayer): VoiceHandle | null {
+  /**
+   * Ready, loading or missing. Asking about a line that is not loaded also
+   * requests it at once, ahead of the staged queue: the Director holds the
+   * line until it arrives, so it is never dropped.
+   */
+  status(line: LineId, lang: Lang): VoiceStatus {
+    const v = this.vo.resolve(line, lang);
+    if (!v) return "missing";
+    const url = this.url(v.url);
+    if (this.loader.get(url)) return "ready";
+    if (this.loader.hasFailed(url)) return "missing";
+    void this.loader.request(url);
+    return "loading";
+  }
+
+  play(line: LineId, lang: Lang, layer: VoiceLayer): VoiceHandle | null {
     const v = this.vo.resolve(line, lang);
     if (!v) return null;
     const buffer = this.loader.get(this.url(v.url));
@@ -190,7 +220,7 @@ export class AudioEngine implements VoicePort {
     const source = ctx.createBufferSource();
     source.buffer = buffer;
     const gain = ctx.createGain();
-    source.connect(gain).connect(this.buses.voice);
+    source.connect(gain).connect(this.voiceInput(line, layer));
     this.ducker.voiceStarted();
     let ended = false;
     source.onended = () => {
@@ -208,6 +238,15 @@ export class AudioEngine implements VoicePort {
         source.stop(t + fadeMs / 1000);
       },
     };
+  }
+
+  /** Where a voice line enters the graph: the Warden goes through the PA. */
+  private voiceInput(line: LineId, _layer: VoiceLayer): AudioNode {
+    if (this.vo.speaker(line) === "warden") {
+      this.arenaPa ??= createArenaPa(this.ctx, this.buses.voice);
+      return this.arenaPa;
+    }
+    return this.buses.voice;
   }
 
   // ------------------------------------------------------- Music and sfx
