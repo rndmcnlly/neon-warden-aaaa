@@ -130,17 +130,17 @@ export class CameraRig {
       },
       hangar: (ctx, out) => {
         // Three-quarter hero shot from the front left, slightly above.
-        out.target.copy(ctx.hangarPoint).add(new THREE.Vector3(0, 0.15, 0));
+        out.target.copy(ctx.hangarPoint).add(new THREE.Vector3(0.15, 0.3, 0));
         out.position.copy(ctx.hangarPoint).add(
-          new THREE.Vector3(-1.9, 1.25, -2.1),
+          new THREE.Vector3(-2.3, 1.7, -2.6),
         );
-        out.fov = 30;
+        out.fov = 28;
       },
       hangarTurntable: (ctx, out) => {
         const a = ctx.timeSec * 0.35;
         out.target.copy(ctx.hangarPoint).add(new THREE.Vector3(0, 0.1, 0));
         out.position.copy(ctx.hangarPoint).add(
-          new THREE.Vector3(Math.sin(a) * 3, 1.1, Math.cos(a) * 3),
+          new THREE.Vector3(Math.sin(a) * 3.4, 1.5, Math.cos(a) * 3.4),
         );
         out.fov = 30;
       },

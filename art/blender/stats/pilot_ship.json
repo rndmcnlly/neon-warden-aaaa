@@ -1,14 +1,25 @@
 {
   "asset": "pilot_ship",
   "file": "public/models/pilot_ship.glb",
-  "bytes": 52816,
-  "triangles": 1364,
+  "bytes": 115272,
+  "triangles": 2354,
   "nodes": [
+    "decal_authoritynumber",
+    "decal_none",
+    "decal_paygrade",
+    "decal_tallymarks",
+    "decal_wardencrest",
     "engine",
     "pilot_ship",
+    "sensor_archivist",
+    "sensor_auditor",
+    "sensor_standard",
+    "sensor_surveyor",
+    "sensor_witness",
     "ship_canards",
     "ship_canopy",
     "ship_core_gem",
+    "ship_decals",
     "ship_hull",
     "ship_nozzle",
     "ship_seat",
@@ -16,11 +27,20 @@
     "ship_thrust_ring",
     "ship_thrust_ring_mesh",
     "ship_trim",
-    "ship_wing_plates"
+    "ship_wing_plates",
+    "socket_sensor",
+    "socket_weapon",
+    "weapon_courier",
+    "weapon_injunction",
+    "weapon_magistrate",
+    "weapon_notary",
+    "weapon_standard"
   ],
   "emissive_materials": [
     "ship_core_emit",
-    "ship_cyan_emit"
+    "ship_engine_emit",
+    "ship_sensor_emit",
+    "ship_trim_emit"
   ],
   "triangles_per_node": {
     "ship_hull": 356,
@@ -33,6 +53,20 @@
     "ship_nozzle": 60,
     "ship_thrust_ring_mesh": 288,
     "engine": 60,
-    "ship_core_gem": 20
+    "ship_core_gem": 20,
+    "weapon_standard": 80,
+    "weapon_magistrate": 56,
+    "weapon_courier": 184,
+    "weapon_notary": 24,
+    "weapon_injunction": 24,
+    "sensor_standard": 80,
+    "sensor_surveyor": 24,
+    "sensor_auditor": 14,
+    "sensor_archivist": 148,
+    "sensor_witness": 96,
+    "decal_authoritynumber": 48,
+    "decal_tallymarks": 60,
+    "decal_wardencrest": 92,
+    "decal_paygrade": 60
   }
 }

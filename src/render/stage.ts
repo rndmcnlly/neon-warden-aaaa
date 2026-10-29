@@ -326,7 +326,6 @@ export function createStage(
   let flashback = false;
   let shieldHit = 0;
   let hurt = 0;
-  let lookDirty = 0;
   let lookOverride: SceneLookId | null = null;
   let lookNow: SceneLookId | null = null;
   let hangarShip: ModelSlot | null = null;
@@ -755,7 +754,6 @@ export function createStage(
       loadoutKeyNow = key;
       loadout = state.loadout;
       applyLook(ship);
-      lookDirty = 30;
     }
 
     // Writ charge and the scan beam.
@@ -969,7 +967,7 @@ export function createStage(
     hangarPad = new THREE.Group();
     hangarPad.position.copy(HANGAR_POINT);
     const pad = new THREE.Mesh(
-      new THREE.CylinderGeometry(1.6, 1.75, 0.18, 48),
+      new THREE.CylinderGeometry(1.1, 1.2, 0.18, 48),
       new THREE.MeshStandardMaterial({
         color: 0x2a2f38,
         metalness: 0.8,
@@ -978,7 +976,7 @@ export function createStage(
     );
     hangarPad.add(pad);
     const rimRing = new THREE.Mesh(
-      new THREE.TorusGeometry(1.62, 0.02, 8, 96),
+      new THREE.TorusGeometry(1.12, 0.02, 8, 96),
       new THREE.MeshBasicMaterial({
         color: new THREE.Color(PALETTE.cyan).multiplyScalar(1.3),
         toneMapped: false,
@@ -1025,9 +1023,14 @@ export function createStage(
       avgFrameMs += (dtMs - avgFrameMs) * 0.05;
 
       const state = interp.latest;
-      if (lookDirty > 0 && --lookDirty % 10 === 0) {
-        applyLook(ship);
-        if (hangarShip) applyLook(hangarShip);
+      // The registry swaps glTF content into slots when it loads; a fresh
+      // content node has fresh materials, so re-apply the loadout to it.
+      for (const s of [ship, hangarShip]) {
+        if (s && s.userData.content !== s.userData.lookedAt) {
+          delete s.userData.owned;
+          applyLook(s);
+          s.userData.lookedAt = s.userData.content;
+        }
       }
       if (state) updateEntities(state, alpha, dt);
       chooseLook(state);
@@ -1107,7 +1110,6 @@ export function createStage(
       // glTF content may swap in late; re-apply on the next frames too.
       applyLook(ship);
       if (hangarShip) applyLook(hangarShip);
-      lookDirty = 30;
     },
 
     setHelmet(variant) {

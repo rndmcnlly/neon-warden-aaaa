@@ -1,26 +1,33 @@
-"""warden.glb: the Warden, a guardian, not a monster. Original: 200 x 140 px
-crimson crest (a downward heart or shield) with an inner ring (r 34 px), a
-horizontal bar, and a pulsing gold core. Here: a lacquered crest-shaped
-bulwark, a crimson crown along its top edge, two gold halo rings with lights
-("the Warden's lights go dark, one ring at a time"), a sealed blast door
-across a caged sun, and four armor plates that can break away by phase.
-No eyes, no teeth: it reads as a badge or a shield, which is the point.
+"""warden.glb: the Warden, rebuilt for the top-down read (wave 3).
 
-Faces +Z in glTF (toward the player); the crest tip points down-screen.
-Width 20 x height 14 units, matching 200 x 140 px.
+Design: a guardian, not a monster. The heart silhouette is kept on purpose
+(the "misunderstood guardian" turn: from above the player is shooting at a
+heart). Modeled from the top orthographic view first, then given height in
+stacked tiers that shadow each other, as the visual critique asked
+(research/2026-10-28-critique-visual/, item 7).
 
-Nodes (all children of `warden`):
-  warden_hull, warden_bulwark, warden_core_well, warden_trim, warden_crown,
-  warden_crest_fin, warden_keel, warden_emitters, warden_muzzle,
-  armor (group) > warden_plate_ul, _ur, _ll, _lr
-      (phase breakaway: hide or fling them at phase 2 and 3),
-  halo (pivot whose local Z points up: spin it with rotation.z) >
-      warden_ring_outer, warden_ring_inner (pivots, local Z up after export;
-      each holds a gold ring mesh and a *_lights mesh with its own emissive
-      material, so rings can go dark one at a time),
-  core (separate node, emissive gold: pulse and hit-flash this),
-  warden_cage, warden_blast_door (pivot) with warden_blast_door_l/_r halves
-      (slide apart along X to open).
+Size: 19.2 units wide = 192 px = 40% of the playfield. 1 unit = 10 px.
+Faces +Z in glTF (toward the player); the heart's tip points down-screen.
+
+Gameplay positions match src/sim/tuning.ts exactly (Blender XY = playfield,
+Blender -Y = sim +y, down-screen):
+  core at the origin (WARDEN_CORE, radius 18 px),
+  pod_0 fanPodL (-62, 0), pod_1 fanPodR (62, 0),
+  pod_2 cannonPod (-26, 44), pod_3 spiralPod (26, 44), radius 14 px.
+
+Nodes (children of `warden`):
+  warden_base, warden_hull       the two lower tiers (dark bulwark, lacquer)
+  armor > warden_plate_ul/ur/ll/lr  upper tier plates (renderer shrinks `armor`)
+  warden_collar                  gold ring around the core well
+  halo > warden_ring_outer, warden_ring_inner (pivots; spin halo.rotation.z)
+  core                           the gold heart-light (pulse, hit flash)
+  warden_seams > warden_seam_1, _2, _3  emissive seams, one tier per phase
+                                 (material names warden_seam_<n>_emit)
+  pod_0..pod_3                   weapon pods (pivots), each with a housing,
+                                 barrels and an emissive lens; the renderer
+                                 hides a pod when the sim breaks it
+  warden_shield                  translucent shell; the renderer swaps in its
+                                 fresnel shader and shows it while invulnerable
 """
 
 import math
@@ -33,89 +40,132 @@ import common as c  # noqa: E402
 c.reset()
 root = c.root("warden")
 
-hull_m = c.mat("warden_hull", "#4a0c1d", metallic=0.3, roughness=0.4, coat=0.6)
+base_m = c.mat("warden_dark", "#120a10", metallic=0.7, roughness=0.42)
+hull_m = c.mat("warden_hull", "#5a1022", metallic=0.3, roughness=0.38, coat=0.6)
 lacquer = c.mat("warden_lacquer", "#c2203f", metallic=0.15, roughness=0.22, coat=1.0)
-gold = c.mat("warden_gold", "#d8a93c", metallic=1.0, roughness=0.22)
-dark = c.mat("warden_dark", "#120a10", metallic=0.7, roughness=0.42)
-crimson = c.emit("warden_crimson", "crimson")
-outer_lights = c.emit("warden_ring_outer_lights", "crimson", strength=8)
-inner_lights = c.emit("warden_ring_inner_lights", "crimson", strength=8)
-core_m = c.emit("warden_core", "gold", strength=12)
+gold = c.mat("warden_gold", "#d8a93c", metallic=1.0, roughness=0.25)
+steel = c.mat("warden_steel", "#3a3f4a", metallic=0.9, roughness=0.35)
+lens_m = c.emit("warden_pod_lens", "crimson", strength=4)
+core_m = c.emit("warden_core", "gold", strength=10)
+shield_m = c.mat("warden_shield", "#ff4d6d", roughness=0.1, alpha=0.25)
+seam_m = {n: c.emit(f"warden_seam_{n}", "crimson", strength=5) for n in (1, 2, 3)}
 
-CORE = (0.0, 1.8)
-crest = [(-10, 7), (-2.6, 7), (0, 5.7), (2.6, 7), (10, 7), (9.6, 1.0), (0, -7), (-9.6, 1.0)]
 
-c.bevel(c.obj("warden_hull", c.prism(crest, -1.0, 0.6, top_scale=0.96), hull_m, root),
-        0.12, 2, angle=30)
-c.bevel(c.obj("warden_bulwark", c.prism([(x * 0.72, y * 0.72 + 0.4) for x, y in crest],
-                                        -1.7, -0.9), dark, root), 0.08)
-c.obj("warden_core_well", c.cylinder(4.0, 0.12, 48, z0=0.56), dark, root, loc=(*CORE, 0))
+def heart(scale=1.0, n=72, dy=1.5):
+    """Classic heart curve, 19.2 wide at scale 1, tip at -Y, CCW."""
+    pts = []
+    for i in range(n):
+        t = 2 * math.pi * i / n
+        x = 16 * math.sin(t) ** 3
+        y = 13 * math.cos(t) - 5 * math.cos(2 * t) - 2 * math.cos(3 * t) - math.cos(4 * t)
+        pts.append((x * 0.6 * scale, (y * 0.6 + dy) * scale))
+    # The curve runs clockwise; prism() wants CCW.
+    return pts[::-1]
 
-# Emissive trim: the crest outline inset, riding on the top surface.
-cx = sum(p[0] for p in crest) / len(crest)
-cy = sum(p[1] for p in crest) / len(crest)
-inset = [(cx + (x - cx) * 0.9, cy + (y - cy) * 0.9) for x, y in crest]
-c.obj("warden_trim", c.merge(*[c.strip(inset[i], inset[(i + 1) % len(inset)], 0.16, 0.58, 0.7)
-                               for i in range(len(inset))]), crimson, root)
 
-# Armor plates: four separate nodes so phases can shed them.
-ul = [(-9.4, 6.5), (-2.9, 6.5), (-3.7, 5.0), (-4.6, 2.4), (-9.2, 1.9)]
-ll = [(-9.0, 1.2), (-4.7, 1.7), (-3.6, -1.0), (-1.0, -2.9), (-0.6, -5.6)]
-plates = {
-    "warden_plate_ul": ul,
-    "warden_plate_ur": [(-x, y) for x, y in ul],
-    "warden_plate_ll": ll,
-    "warden_plate_lr": [(-x, y) for x, y in ll],
-}
-armor = c.group("armor", root)  # the renderer shrinks this group as plates shed
-for nm, pts in plates.items():
-    c.bevel(c.obj(nm, c.prism(pts, 0.6, 1.05, top_scale=0.94), lacquer, armor), 0.07, 2, angle=30)
+def ring_strip(outline, width, z0, z1):
+    """A thin band riding along a closed outline (for seams and trims)."""
+    return c.merge(*[c.strip(outline[i], outline[(i + 1) % len(outline)], width, z0, z1)
+                     for i in range(len(outline))])
 
-# Crimson crown: flat spikes along the top edge (reads top-down) and a
-# vertical crest fin over the heart notch (reads in profile).
-spikes = []
-for x0, x1, tip in ((3.4, 5.4, (4.7, 9.0)), (6.6, 8.6, (8.4, 8.4))):
-    spk = c.prism([(x0, 6.7), (x1, 6.7), tip], -0.4, 0.3, top_scale=0.85)
-    spikes += [spk, c.mirror_part(spk)]
-spikes.append(c.prism([(-1.2, 6.2), (1.2, 6.2), (0, 9.6)], -0.3, 0.4, top_scale=0.85))
-c.bevel(c.obj("warden_crown", c.merge(*spikes), lacquer, root), 0.05, 1)
-fin = c.transform(c.prism([(5.4, 0.0), (8.2, 0.0), (9.4, 1.6), (6.4, 2.2)], -0.12, 0.12),
-                  rot=(math.radians(90), 0, math.radians(90)))
-c.bevel(c.obj("warden_crest_fin", fin, gold, root, loc=(0, 0, 0.5)), 0.03)
 
-# Gold keel down the lower tip, side emitters, and the fan muzzle at the tip.
-c.bevel(c.obj("warden_keel", c.prism([(-0.35, -2.4), (0.35, -2.4), (0.25, -6.2), (0, -6.6),
-                                      (-0.25, -6.2)], 0.5, 0.9, top_scale=0.7), gold, root), 0.03)
-housing = c.transform(c.cylinder(0.55, 0.9, 12, z0=0.3), loc=(9.0, 1.4, 0))
-lens = c.transform(c.cylinder(0.36, 0.12, 12, z0=1.2), loc=(9.0, 1.4, 0))
-c.obj("warden_emitter_housings", c.merge(housing, c.mirror_part(housing)), gold, root,
-      smooth=True)
-c.obj("warden_emitters", c.merge(lens, c.mirror_part(lens)), crimson, root)
-c.obj("warden_muzzle", c.ico(0.4, 1), crimson, root, loc=(0, -6.3, 0.7))
+# Tier 0 and 1: dark bulwark below, lacquered hull above, each smaller.
+c.bevel(c.obj("warden_base", c.prism(heart(1.0), -1.6, -0.6, top_scale=0.97), base_m, root),
+        0.1, 2, angle=30)
+c.bevel(c.obj("warden_hull", c.prism(heart(0.9), -0.6, 0.5, top_scale=0.95), hull_m, root),
+        0.1, 2, angle=30)
 
-# Halo rings. The renderer spins `halo` with three.js rotation.z, so the
-# pivot is tipped -90 deg about X (its local Z points up, glTF +Y) and each
-# ring is tipped back to lie flat. Each ring is also its own pivot, so rings
-# can turn (or go dark) independently.
-halo = c.group("halo", root, loc=(*CORE, 1.2), rot=(math.radians(-90), 0, 0))
-for nm, R, r, n, lights_m, z in (("warden_ring_outer", 3.6, 0.17, 12, outer_lights, 0.0),
-                                 ("warden_ring_inner", 2.75, 0.12, 8, inner_lights, 0.4)):
+# Tier 2: four lacquer plates, split by a cross-shaped gap through the core.
+# Built by clipping the 0.78 heart to quadrants around the origin.
+def clip(poly, keep):
+    """Sutherland-Hodgman: clip a polygon to the half-plane keep(p) >= 0
+    (keep is linear, so the crossing point is found by interpolation)."""
+    out = []
+    for i, cur in enumerate(poly):
+        prev = poly[i - 1]
+        kc, kp = keep(cur), keep(prev)
+        if kc >= 0:
+            if kp < 0:
+                t = kp / (kp - kc)
+                out.append((prev[0] + (cur[0] - prev[0]) * t, prev[1] + (cur[1] - prev[1]) * t))
+            out.append(cur)
+        elif kp >= 0:
+            t = kp / (kp - kc)
+            out.append((prev[0] + (cur[0] - prev[0]) * t, prev[1] + (cur[1] - prev[1]) * t))
+    # Drop near-duplicate points: degenerate faces export NaN normals.
+    clean = []
+    for p in out:
+        if not clean or abs(p[0] - clean[-1][0]) + abs(p[1] - clean[-1][1]) > 1e-3:
+            clean.append(p)
+    return clean
+
+
+def quadrant(pts, sx, sy, gap=0.45):
+    q = clip(pts, lambda p: p[0] * sx - gap)
+    return clip(q, lambda p: p[1] * sy - gap)
+
+armor = c.group("armor", root)
+upper = heart(0.78)
+for nm, sx, sy in (("warden_plate_ul", -1, 1), ("warden_plate_ur", 1, 1),
+                   ("warden_plate_ll", -1, -1), ("warden_plate_lr", 1, -1)):
+    c.bevel(c.obj(nm, c.prism(quadrant(upper, sx, sy), 0.5, 1.0, top_scale=0.93), lacquer, armor),
+            0.06, 2, angle=30)
+
+# Core well, gold collar, the core itself.
+c.obj("warden_core_well", c.cylinder(2.5, 0.2, 48, z0=0.9), base_m, root)
+c.obj("warden_collar", c.torus(2.55, 0.22, 64, 8), gold, root, loc=(0, 0, 1.1), smooth=True)
+c.obj("core", c.ico(1.8, 3, sz=0.75), core_m, root, loc=(0, 0, 1.3), smooth=True)
+
+# Halo rings: kept from the first model (the renderer spins `halo`).
+halo = c.group("halo", root, loc=(0, 0, 1.9), rot=(math.radians(-90), 0, 0))
+for nm, R, r, z in (("warden_ring_outer", 3.6, 0.14, 0.0), ("warden_ring_inner", 3.0, 0.1, 0.3)):
     piv = c.group(nm, halo, loc=(0, -z, 0), rot=(math.radians(90), 0, 0))
-    c.obj(nm + "_mesh", c.torus(R, r, 56, 8), gold, piv, smooth=True)
-    stud = c.box(0.3, 0.3, 0.16, (R, 0, r + 0.02))
-    c.obj(nm + "_lights", c.merge(*[c.transform(stud, rot=(0, 0, 2 * math.pi * i / n))
-                                    for i in range(n)]), lights_m, piv)
+    # Broken rings (three arcs) read as a rotating gate from above.
+    arcs = []
+    for k in range(3):
+        a0 = 2 * math.pi * k / 3 + 0.25
+        for j in range(10):
+            a = a0 + j * 0.16
+            arcs.append(c.transform(c.box(0.42, r * 2.2, r * 2), loc=(R * math.cos(a), R * math.sin(a), 0),
+                                    rot=(0, 0, a + math.pi / 2)))
+    c.obj(nm + "_mesh", c.merge(*arcs), gold, piv)
 
-# The caged sun: core sphere, meridian cage, sealed blast door across it.
-c.obj("core", c.ico(1.5, 3), core_m, root, loc=(*CORE, 1.4), smooth=True)
-cage = [c.transform(c.torus(1.75, 0.07, 32, 6), rot=(math.radians(90), 0, math.radians(a)))
-        for a in (0, 60, 120)]
-c.obj("warden_cage", c.merge(*cage), gold, root, loc=(*CORE, 1.4), smooth=True)
-door = c.group("warden_blast_door", root, loc=(*CORE, 3.15))
-half_door = c.prism([(0.05, -0.45), (3.3, -0.45), (3.55, 0.0), (3.3, 0.45), (0.05, 0.45)],
-                    -0.18, 0.18, top_scale=0.94)
-c.bevel(c.obj("warden_blast_door_r", half_door, lacquer, door), 0.04)
-c.bevel(c.obj("warden_blast_door_l", c.mirror_part(half_door), lacquer, door), 0.04)
-c.obj("warden_blast_door_seam", c.box(0.1, 0.92, 0.1, (0, 0, 0.16)), crimson, door)
+# Seams: one heart-shaped seam per tier, plus radial seams for phase 3.
+seams = c.group("warden_seams", root)
+c.obj("warden_seam_1", ring_strip(heart(0.86, 60), 0.14, 0.48, 0.56), seam_m[1], seams)
+c.obj("warden_seam_2", ring_strip(heart(0.66, 48), 0.12, 0.98, 1.06), seam_m[2], seams)
+rad = []
+for a in (30, 150, 210, 330, 270):
+    t = math.radians(a)
+    rad.append(c.strip((2.9 * math.cos(t), 2.9 * math.sin(t)), (6.0 * math.cos(t), 6.0 * math.sin(t)),
+                       0.12, 1.0, 1.08))
+c.obj("warden_seam_3", c.merge(*rad), seam_m[3], seams)
+
+# Weapon pods at the sim's pod offsets. Fan pods: three short barrels in a
+# spread; cannon: one long barrel; spiral: a rotary cluster.
+PODS = (("pod_0", -6.2, 0.0, "fan"), ("pod_1", 6.2, 0.0, "fan"),
+        ("pod_2", -2.6, -4.4, "cannon"), ("pod_3", 2.6, -4.4, "spiral"))
+for nm, x, y, kind in PODS:
+    piv = c.group(nm, root, loc=(x, y, 0.6))
+    c.bevel(c.obj(nm + "_housing", c.prism(c.ngon(1.5, 8, math.pi / 8), 0.0, 1.1, top_scale=0.8),
+                  steel, piv), 0.06, 1)
+    c.obj(nm + "_ring", c.torus(1.35, 0.1, 32, 6), gold, piv, loc=(0, 0, 1.1), smooth=True)
+    if kind == "fan":
+        barrels = [c.transform(c.cylinder(0.16, 1.4, 10), loc=(0, 0, 0), rot=(math.radians(90), 0, math.radians(a)))
+                   for a in (-22, 0, 22)]
+    elif kind == "cannon":
+        barrels = [c.transform(c.cylinder(0.32, 2.2, 12), rot=(math.radians(90), 0, 0))]
+    else:
+        barrels = [c.transform(c.cylinder(0.12, 1.3, 8), loc=(0.35 * math.cos(a), 0, 0.35 * math.sin(a)),
+                               rot=(math.radians(90), 0, 0))
+                   for a in [2 * math.pi * k / 6 for k in range(6)]]
+    # Barrels point down-screen (Blender -Y), toward the player.
+    c.obj(nm + "_barrels", c.merge(*barrels), steel, piv, loc=(0, -0.6, 0.55), smooth=True)
+    c.obj(nm + "_lens", c.cylinder(0.55, 0.12, 16, z0=1.12), lens_m, piv)
+
+# Shield shell: a flattened dome inside the footprint.
+shell = c.obj("warden_shield", c.uv_sphere(1.0, 32, 12, sx=9.5, sy=8.6, sz=3.2), shield_m, root,
+              loc=(0, 0.6, 0.2), smooth=True)
+shell.hide_render = True  # exported, but kept out of the preview sheet
 
 c.finish("warden", views=[(-30, 30), (60, 15), (160, 25), (0, 90)])

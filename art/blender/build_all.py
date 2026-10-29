@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
 ASSETS = [
     "pilot_ship", "drone", "dart", "turret", "lancer", "warden",
-    "pickup_spread", "pickup_shield", "pilot_figure",
+    "pickup_spread", "pickup_shield", "pilot_figure_issued", "pilot_figure_worn",
     "logo_adamsmith_systems", "logo_cm121",
 ]
 

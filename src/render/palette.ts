@@ -48,11 +48,11 @@ export interface RoleColor {
 export const ROLE = Object.freeze(
   {
     /** Enemy bullet ring: the hottest small thing. Over the bloom threshold. */
-    dangerRim: { hex: PALETTE.enemyShot, gain: 3.2 },
+    dangerRim: { hex: PALETTE.enemyShot, gain: 3.6 },
     /** Enemy bullet center: dark and saturated, so a ring reads after bloom. */
     dangerCore: { hex: 0x3a0626, gain: 1 },
     /** Heavy rounds keep the original gold, same ring language. */
-    heavyRim: { hex: PALETTE.heavyGold, gain: 3.4 },
+    heavyRim: { hex: PALETTE.heavyGold, gain: 2.0 },
     heavyCore: { hex: 0x3a2600, gain: 1 },
     /** The player's engine plume: the eye finds the ship first. */
     playerEngine: { hex: PALETTE.cyan, gain: 2.6 },
@@ -97,7 +97,7 @@ export const SCENE_LOOKS: Readonly<Record<SceneLookId, SceneLook>> = Object
   .freeze({
     // Sector: cool teal and violet, gold accent; pink danger pops against it.
     sector: {
-      worldA: 0x173a52,
+      worldA: 0x1a3242,
       worldB: 0x4a5fb0,
       accent: PALETTE.gold,
       floor: 1,

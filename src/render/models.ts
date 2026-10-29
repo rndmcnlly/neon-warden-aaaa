@@ -46,7 +46,9 @@ const FOOTPRINT_PX: Record<ModelId, number | null> = {
   logo_cm121: null,
 };
 
-export type ModelSlot = THREE.Group & { userData: { modelId: ModelId } };
+export type ModelSlot = THREE.Group & {
+  userData: { modelId: ModelId; content?: THREE.Object3D };
+};
 
 type Status = "placeholder" | "loading" | "gltf" | "missing";
 
@@ -107,7 +109,8 @@ export class ModelRegistry {
   create(id: ModelId): ModelSlot {
     const slot = new THREE.Group() as ModelSlot;
     slot.userData.modelId = id;
-    slot.add(this.buildContent(id));
+    slot.userData.content = this.buildContent(id);
+    slot.add(slot.userData.content);
     let set = this.slots.get(id);
     if (!set) this.slots.set(id, set = new Set());
     set.add(slot);
@@ -156,9 +159,13 @@ export class ModelRegistry {
   }
 
   private swapAll(id: ModelId): void {
+    // Replace only the content node: the stage may have attached its own
+    // children to a slot (the ship's shield, light and plume), and an
+    // earlier `slot.clear()` here silently deleted them on load.
     for (const slot of this.slots.get(id) ?? []) {
-      slot.clear();
-      slot.add(this.buildContent(id));
+      if (slot.userData.content) slot.remove(slot.userData.content);
+      slot.userData.content = this.buildContent(id);
+      slot.add(slot.userData.content);
     }
   }
 }

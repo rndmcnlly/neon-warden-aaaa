@@ -1,14 +1,25 @@
 {
   "pilot_ship": {
     "file": "public/models/pilot_ship.glb",
-    "bytes": 52816,
-    "triangles": 1364,
+    "bytes": 115272,
+    "triangles": 2354,
     "nodes": [
+      "decal_authoritynumber",
+      "decal_none",
+      "decal_paygrade",
+      "decal_tallymarks",
+      "decal_wardencrest",
       "engine",
       "pilot_ship",
+      "sensor_archivist",
+      "sensor_auditor",
+      "sensor_standard",
+      "sensor_surveyor",
+      "sensor_witness",
       "ship_canards",
       "ship_canopy",
       "ship_core_gem",
+      "ship_decals",
       "ship_hull",
       "ship_nozzle",
       "ship_seat",
@@ -16,11 +27,20 @@
       "ship_thrust_ring",
       "ship_thrust_ring_mesh",
       "ship_trim",
-      "ship_wing_plates"
+      "ship_wing_plates",
+      "socket_sensor",
+      "socket_weapon",
+      "weapon_courier",
+      "weapon_injunction",
+      "weapon_magistrate",
+      "weapon_notary",
+      "weapon_standard"
     ],
     "emissive_materials": [
       "ship_core_emit",
-      "ship_cyan_emit"
+      "ship_engine_emit",
+      "ship_sensor_emit",
+      "ship_trim_emit"
     ]
   },
   "drone": {
@@ -101,44 +121,57 @@
   },
   "warden": {
     "file": "public/models/warden.glb",
-    "bytes": 179772,
-    "triangles": 5140,
+    "bytes": 368364,
+    "triangles": 9580,
     "nodes": [
       "armor",
       "core",
       "halo",
+      "pod_0",
+      "pod_0_barrels",
+      "pod_0_housing",
+      "pod_0_lens",
+      "pod_0_ring",
+      "pod_1",
+      "pod_1_barrels",
+      "pod_1_housing",
+      "pod_1_lens",
+      "pod_1_ring",
+      "pod_2",
+      "pod_2_barrels",
+      "pod_2_housing",
+      "pod_2_lens",
+      "pod_2_ring",
+      "pod_3",
+      "pod_3_barrels",
+      "pod_3_housing",
+      "pod_3_lens",
+      "pod_3_ring",
       "warden",
-      "warden_blast_door",
-      "warden_blast_door_l",
-      "warden_blast_door_r",
-      "warden_blast_door_seam",
-      "warden_bulwark",
-      "warden_cage",
+      "warden_base",
+      "warden_collar",
       "warden_core_well",
-      "warden_crest_fin",
-      "warden_crown",
-      "warden_emitter_housings",
-      "warden_emitters",
       "warden_hull",
-      "warden_keel",
-      "warden_muzzle",
       "warden_plate_ll",
       "warden_plate_lr",
       "warden_plate_ul",
       "warden_plate_ur",
       "warden_ring_inner",
-      "warden_ring_inner_lights",
       "warden_ring_inner_mesh",
       "warden_ring_outer",
-      "warden_ring_outer_lights",
       "warden_ring_outer_mesh",
-      "warden_trim"
+      "warden_seam_1",
+      "warden_seam_2",
+      "warden_seam_3",
+      "warden_seams",
+      "warden_shield"
     ],
     "emissive_materials": [
       "warden_core_emit",
-      "warden_crimson_emit",
-      "warden_ring_inner_lights_emit",
-      "warden_ring_outer_lights_emit"
+      "warden_pod_lens_emit",
+      "warden_seam_1_emit",
+      "warden_seam_2_emit",
+      "warden_seam_3_emit"
     ]
   },
   "pickup_spread": {
@@ -175,32 +208,65 @@
       "shield_ring_emit"
     ]
   },
-  "pilot_figure": {
-    "file": "public/models/pilot_figure.glb",
-    "bytes": 97280,
-    "triangles": 2932,
+  "pilot_figure_issued": {
+    "file": "public/models/pilot_figure_issued.glb",
+    "bytes": 136328,
+    "triangles": 3864,
     "nodes": [
       "pilot_armor",
       "pilot_belt",
       "pilot_body",
       "pilot_bracer_light",
+      "pilot_brow",
       "pilot_cape",
+      "pilot_cheek_vent",
       "pilot_chest_light",
-      "pilot_faceplate",
+      "pilot_collar",
       "pilot_figure",
-      "pilot_gorget",
       "pilot_helmet",
-      "pilot_helmet_pods",
-      "pilot_helmet_ridge",
-      "pilot_helmet_shell",
+      "pilot_helmet_crown",
+      "pilot_helmet_jaw",
+      "pilot_helmet_livery",
       "pilot_pauldron",
-      "pilot_rebreather",
+      "pilot_serial",
       "pilot_sidearm",
-      "pilot_visor",
-      "pilot_visor_line"
+      "pilot_temple_light",
+      "pilot_visor"
     ],
     "emissive_materials": [
-      "pilot_cyan_emit"
+      "pilot_cyan_emit",
+      "pilot_temple_emit"
+    ]
+  },
+  "pilot_figure_worn": {
+    "file": "public/models/pilot_figure_worn.glb",
+    "bytes": 116052,
+    "triangles": 3352,
+    "nodes": [
+      "pilot_armor",
+      "pilot_belt",
+      "pilot_body",
+      "pilot_bracer_light",
+      "pilot_brow",
+      "pilot_brow_dent",
+      "pilot_cape",
+      "pilot_cheek_vent",
+      "pilot_chest_light",
+      "pilot_collar",
+      "pilot_figure",
+      "pilot_helmet",
+      "pilot_helmet_crown",
+      "pilot_helmet_jaw",
+      "pilot_helmet_livery",
+      "pilot_pauldron",
+      "pilot_scuffs",
+      "pilot_sidearm",
+      "pilot_temple_light",
+      "pilot_visor"
+    ],
+    "emissive_materials": [
+      "pilot_cyan_emit",
+      "pilot_temple_emit"
     ]
   },
   "logo_adamsmith_systems": {

@@ -1,0 +1,52 @@
+{
+  "asset": "pilot_figure_worn",
+  "file": "public/models/pilot_figure_worn.glb",
+  "bytes": 116052,
+  "triangles": 3352,
+  "nodes": [
+    "pilot_armor",
+    "pilot_belt",
+    "pilot_body",
+    "pilot_bracer_light",
+    "pilot_brow",
+    "pilot_brow_dent",
+    "pilot_cape",
+    "pilot_cheek_vent",
+    "pilot_chest_light",
+    "pilot_collar",
+    "pilot_figure",
+    "pilot_helmet",
+    "pilot_helmet_crown",
+    "pilot_helmet_jaw",
+    "pilot_helmet_livery",
+    "pilot_pauldron",
+    "pilot_scuffs",
+    "pilot_sidearm",
+    "pilot_temple_light",
+    "pilot_visor"
+  ],
+  "emissive_materials": [
+    "pilot_cyan_emit",
+    "pilot_temple_emit"
+  ],
+  "triangles_per_node": {
+    "pilot_body": 236,
+    "pilot_armor": 860,
+    "pilot_pauldron": 120,
+    "pilot_belt": 60,
+    "pilot_sidearm": 24,
+    "pilot_cape": 100,
+    "pilot_chest_light": 12,
+    "pilot_bracer_light": 12,
+    "pilot_collar": 384,
+    "pilot_helmet_crown": 360,
+    "pilot_helmet_jaw": 236,
+    "pilot_visor": 336,
+    "pilot_brow": 108,
+    "pilot_cheek_vent": 36,
+    "pilot_temple_light": 12,
+    "pilot_helmet_livery": 360,
+    "pilot_scuffs": 48,
+    "pilot_brow_dent": 48
+  }
+}
