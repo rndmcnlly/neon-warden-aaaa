@@ -420,6 +420,11 @@ export interface ResolvedTake {
   steps: Step[];
   maxSeconds: number;
   viewport: { width: number; height: number };
+  /**
+   * "master": deterministic frame stepping (trailer/master.ts). Absent for
+   * draft takes, so their recipe hashes (and cached takes) are unchanged.
+   */
+  capture?: "master";
 }
 
 export const GAME_FLAGS = "seed=121&qa=1";

@@ -41,6 +41,13 @@ export interface AssembleOptions {
   takes: Record<string, { dir: string; key: string } | undefined>;
   playUrl?: string;
   log?: (s: string) => void;
+  /** Output frame rate; defaults to the sheet's (master takes are 60 fps). */
+  fps?: number;
+  /**
+   * A partial master (`--master --shots`): full size and quality, but
+   * placeholders allowed and never public; files get a `-partial` suffix.
+   */
+  partial?: boolean;
 }
 
 interface ResolvedShot {
@@ -309,14 +316,14 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
   const { sheet, lang } = plan;
   const W = opt.draft ? 640 : sheet.master.width;
   const H = opt.draft ? 360 : sheet.master.height;
-  const fps = sheet.master.fps;
+  const fps = opt.fps ?? sheet.master.fps;
   const work = `${opt.out}/work`;
   await Deno.mkdir(work, { recursive: true });
   const warnings = [...plan.warnings];
 
   const fill = (s: string) => {
     if (s.includes("{{PLAY_URL}}") && !opt.playUrl) {
-      if (sheet.audience === "public" && !opt.draft) {
+      if (sheet.audience === "public" && !opt.draft && !opt.partial) {
         throw new Error(
           "unresolved {{PLAY_URL}}: set TRAILER_PLAY_URL for a public master",
         );
@@ -597,7 +604,7 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
     });
     vgraph += `;[c${captions.length}]null[v0]`;
   }
-  const suffix = opt.draft ? "-draft" : "";
+  const suffix = opt.draft ? "-draft" : opt.partial ? "-partial" : "";
   const master = `${opt.out}/${sheet.id}-${lang}${suffix}.mp4`;
   await ff([
     "-i",
@@ -689,6 +696,7 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
     cut: sheet.id,
     lang,
     draft: opt.draft,
+    partial: opt.partial ?? false,
     size: `${W}x${H}@${fps}`,
     seconds: plan.seconds,
     master,

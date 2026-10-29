@@ -10,8 +10,19 @@ deno task trailer teaser30 --draft            # 640x360 animatic, placeholders a
 deno task trailer compendium120 --plan        # timing and warnings only
 deno task trailer teaser30 --draft --shots hook-writ,warden-stop
 deno task trailer teaser30 --draft --no-capture --lang zh
+deno task trailer teaser30 --master --lang en # public master: stepped 60 fps capture
+deno task trailer teaser30 --master --shots hook-writ,warden-stop  # -partial master
 deno task trailer estimate                    # take inventory, capture bound
 ```
+
+`--master` captures takes by deterministic frame stepping (`master.ts`:
+virtual clock, audio clock slaved to the frame clock, lossless grabs, High
+graphics forced) at the sheet's master size and assembles at 60 fps. It
+costs about 7x the take's length in wall time but has no dropped frames and
+keeps sound within a few ms of picture. Use it for anything public: the
+real-time recorder behind `--draft` (and the plain non-draft path) is soft,
+and headless rAF at about 120 Hz plays autoplay combat near 2x. Evidence:
+`research/2026-10-29-trailer-capture/README.md`.
 
 Outputs go to `trailer/out/<cut>/<lang>/` (gitignored): the MP4, an SRT, a
 `report.json` (shot resolutions, warnings, measured loudness) and, for the

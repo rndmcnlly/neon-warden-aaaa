@@ -15,6 +15,13 @@ import { launch, serve } from "../qa/capture.ts";
 import { finishAv, flushAv, installAv } from "../qa/av.ts";
 import type { Page } from "npm:playwright@1.58.2";
 import { type ResolvedTake, ROOT, type Step, takeKey } from "./plan.ts";
+import {
+  flushMaster,
+  FPS,
+  installMaster,
+  startGrabber,
+  writeMasterWav,
+} from "./master.ts";
 
 export const CACHE = `${ROOT}trailer/.cache`;
 const BUILD = `${CACHE}/build`;
@@ -166,6 +173,24 @@ async function visibleSel(page: Page, sel: string): Promise<boolean> {
   );
 }
 
+/**
+ * Where steps get their time. Draft takes run on the wall clock; master
+ * takes run on the page's virtual clock, where waiting means stepping (and
+ * grabbing) frames, so a page that is never stepped never moves.
+ */
+interface StepClock {
+  now(): number;
+  sleep(ms: number): Promise<void>;
+  /** Master only: Playwright's own waits would stall a frozen page. */
+  stepped: boolean;
+}
+
+const wallClock = (page: Page): StepClock => ({
+  now: () => Date.now(),
+  sleep: (ms) => page.waitForTimeout(ms),
+  stepped: false,
+});
+
 async function runSteps(
   page: Page,
   base: string,
@@ -173,11 +198,12 @@ async function runSteps(
   deadline: number,
   notes: string[],
   t0: number,
+  clock: StepClock = wallClock(page),
 ) {
-  const left = () => Math.max(1, deadline - Date.now());
-  const at = () => ((Date.now() - t0) / 1000).toFixed(1);
+  const left = () => Math.max(1, deadline - clock.now());
+  const at = () => ((clock.now() - t0) / 1000).toFixed(1);
   for (const s of steps) {
-    if (Date.now() >= deadline) {
+    if (clock.now() >= deadline) {
       notes.push(`time cap before ${s.do}`);
       return;
     }
@@ -185,18 +211,38 @@ async function runSteps(
     const str = (k: string) => s[k] as string;
     switch (s.do) {
       case "wait":
-        await page.waitForTimeout(Math.min(n("ms", 0), left()));
+        await clock.sleep(Math.min(n("ms", 0), left()));
         break;
       case "press":
         for (let i = 0; i < n("times", 1); i++) {
           await page.keyboard.press(str("key"));
-          await page.waitForTimeout(Math.min(n("gapMs", 250), left()));
+          await clock.sleep(Math.min(n("gapMs", 250), left()));
         }
         break;
       case "goto":
+        if (clock.stepped) {
+          // A new document restarts the page clock and its audio contexts.
+          notes.push(`goto unsupported in master capture: ${str("query")}`);
+          return;
+        }
         await page.goto(base + str("query"));
         break;
       case "waitFor":
+        if (clock.stepped) {
+          const end = clock.now() + Math.min(n("timeoutMs", 8000), left());
+          let ok = false;
+          while (
+            clock.now() < end && !(ok = await visibleSel(page, str("selector")))
+          ) {
+            await clock.sleep(100);
+          }
+          notes.push(
+            ok
+              ? `${s.label ?? str("selector")} at ${at()} s`
+              : `MISSING ${s.label ?? str("selector")}`,
+          );
+          break;
+        }
         try {
           await page.waitForSelector(str("selector"), {
             state: "visible",
@@ -211,7 +257,7 @@ async function runSteps(
         for (let i = 0; i <= n("max", 6); i++) {
           if (await visibleSel(page, `.nw-screen-${str("screen")}`)) break;
           await page.keyboard.press(str("key") ?? "Enter");
-          await page.waitForTimeout(700);
+          await clock.sleep(700);
         }
         break;
       case "navigate": {
@@ -222,7 +268,7 @@ async function runSteps(
           ) === str("key");
           if (!ok) {
             await page.keyboard.press("ArrowDown");
-            await page.waitForTimeout(140);
+            await clock.sleep(140);
           }
         }
         if (!ok) {
@@ -236,19 +282,19 @@ async function runSteps(
       case "settingsTabs": {
         const tabs = await page.locator(".nw-tab").count();
         for (let i = 0; i < tabs; i++) {
-          await page.waitForTimeout(Math.min(n("holdMs", 900), left()));
+          await clock.sleep(Math.min(n("holdMs", 900), left()));
           await page.keyboard.press("KeyE");
         }
         break;
       }
       case "until": {
-        const end = Date.now() + Math.min(n("timeoutMs", 10000), left());
+        const end = clock.now() + Math.min(n("timeoutMs", 10000), left());
         let ok = false;
-        while (Date.now() < end && !ok) {
+        while (clock.now() < end && !ok) {
           ok = !!(await page.evaluate(
             `((p) => p && (${str("probe")}))(globalThis.__nwqa)`,
           ).catch(() => false));
-          if (!ok) await page.waitForTimeout(250);
+          if (!ok) await clock.sleep(250);
         }
         notes.push(ok ? `${s.label} at ${at()} s` : `MISSING ${s.label}`);
         break;
@@ -304,6 +350,10 @@ export async function captureTake(
       errors: meta.errors,
     };
   } catch { /* capture below */ }
+
+  if (t.capture === "master") {
+    return await captureMaster(t, build, key, dir, log);
+  }
 
   await Deno.remove(dir, { recursive: true }).catch(() => {});
   await Deno.mkdir(`${dir}/raw`, { recursive: true });
@@ -408,4 +458,193 @@ export async function captureTake(
     notes,
     errors,
   };
+}
+
+// -- master capture (trailer/master.ts)
+
+async function ffmpeg(args: string[]): Promise<string> {
+  const o = await new Deno.Command("ffmpeg", {
+    args: ["-hide_banner", "-nostats", ...args],
+    stdout: "null",
+    stderr: "piped",
+  }).output();
+  const err = new TextDecoder().decode(o.stderr);
+  if (!o.success) throw new Error(`ffmpeg: ${err.slice(-500)}`);
+  return err;
+}
+
+/**
+ * A master take: the page runs on a virtual clock and is stepped one 60 Hz
+ * frame at a time; every frame is grabbed losslessly and the audio clock is
+ * slaved to the frame clock, so the take has no dropped or doubled frames
+ * and sound lands within a few milliseconds of its frame (the per-step
+ * audio overshoot, recorded in timeline.json). Wall time is several times
+ * the take's length; the take's own time is exact.
+ */
+async function captureMaster(
+  t: ResolvedTake,
+  build: BuildInfo,
+  key: string,
+  dir: string,
+  log: (s: string) => void,
+): Promise<TakeResult> {
+  await Deno.remove(dir, { recursive: true }).catch(() => {});
+  await Deno.mkdir(dir, { recursive: true });
+  const server = serve(`${BUILD}/dist`);
+  const browser = await launch();
+  const context = await browser.newContext({
+    viewport: t.viewport,
+    deviceScaleFactor: 1,
+  });
+  // The virtual clock first, so every later script reads it.
+  const audio = await installMaster(context);
+  const entries: { k: string; epoch: number; [k: string]: unknown }[] = [];
+  await context.exposeFunction(
+    "__nwTrailer",
+    (m: { k: string; epoch: number }) => entries.push(m),
+  );
+  await context.addInitScript(pageTimeline);
+  if (Object.keys(t.settings).length) {
+    const { key: sk, version } = await settingsIdentity();
+    await context.addInitScript(({ key, value }) => {
+      if (sessionStorage.getItem("nwtrailer.seeded")) return;
+      sessionStorage.setItem("nwtrailer.seeded", "1");
+      localStorage.setItem(key, value);
+    }, { key: sk, value: JSON.stringify({ version, settings: t.settings }) });
+  }
+  const page = await context.newPage();
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(String(e).split("\n")[0]));
+  const notes: string[] = [];
+  const wall0 = Date.now();
+  log(
+    `[take ${key}] master ${t.viewport.width}x${t.viewport.height}@${FPS} ${t.query} (max ${t.maxSeconds} s of game time)`,
+  );
+  await page.goto(server.url + t.query);
+  // Assets load on the wall clock while the page is frozen at frame 0.
+  await page.waitForLoadState("networkidle").catch(() => {});
+  const grab = await startGrabber(page, `${dir}/video.mp4`, {
+    width: t.viewport.width,
+    height: t.viewport.height,
+    format: "png",
+  });
+  await grab.frames(1);
+  const clock = {
+    now: () => (grab.count() * 1000) / FPS,
+    sleep: (ms: number) =>
+      grab.frames(Math.max(1, Math.round((ms * FPS) / 1000))),
+    stepped: true,
+  };
+  let lastReport = Date.now();
+  const progress = setInterval(() => {
+    if (Date.now() - lastReport < 30000) return;
+    lastReport = Date.now();
+    log(
+      `[take ${key}] ${(grab.count() / FPS).toFixed(1)} s grabbed, ${
+        ((Date.now() - wall0) / 1000).toFixed(0)
+      } s wall`,
+    );
+  }, 5000);
+  try {
+    await runSteps(
+      page,
+      server.url,
+      t.steps,
+      clock.now() + t.maxSeconds * 1000,
+      notes,
+      clock.now(),
+      clock,
+    );
+  } catch (err) {
+    notes.push(`ERROR ${String(err).split("\n")[0]}`);
+  } finally {
+    clearInterval(progress);
+  }
+  const timeOrigin = await page.evaluate(() => performance.timeOrigin);
+  await flushMaster(page);
+  const r = await grab.close();
+  await context.close();
+  await browser.close();
+  await server.close();
+  const seconds = r.frames / FPS;
+  const wav = `${dir}/mix.wav`;
+  await writeMasterWav(audio, wav, seconds, grab.startVnow(), r.segs);
+  await ffmpeg([
+    "-y",
+    "-v",
+    "error",
+    "-i",
+    `${dir}/video.mp4`,
+    "-i",
+    wav,
+    "-map",
+    "0:v",
+    "-map",
+    "1:a",
+    "-c:v",
+    "copy",
+    "-c:a",
+    "flac",
+    "-movflags",
+    "+faststart",
+    `${dir}/take.mp4`,
+  ]);
+  const err = await ffmpeg([
+    "-i",
+    wav,
+    "-af",
+    "ebur128=peak=true",
+    "-f",
+    "null",
+    "-",
+  ]);
+  const sum = err.slice(err.lastIndexOf("Summary:"));
+  await Deno.remove(`${dir}/video.mp4`);
+  await Deno.remove(wav);
+  const over = r.log.overshoot.map((x) => x * 1000);
+  const mean = (a: number[]) =>
+    a.reduce((x, y) => x + y, 0) / Math.max(1, a.length);
+  const wallSeconds = (Date.now() - wall0) / 1000;
+  const tt = (epoch: number) =>
+    Math.round(epoch - timeOrigin - grab.startVnow()) / 1000;
+  const timeline = {
+    key,
+    recipe: t,
+    build,
+    seconds,
+    wallSeconds,
+    notes,
+    errors: errors.slice(0, 50),
+    capture: {
+      mode: "master",
+      fps: FPS,
+      size: `${t.viewport.width}x${t.viewport.height}`,
+      grab: "CDP Page.captureScreenshot PNG, x264 4:4:4 CRF 14, FLAC",
+      frames: r.frames,
+      stepMs: +mean(r.log.stepMs).toFixed(1),
+      grabMs: +mean(r.log.grabMs).toFixed(1),
+      audioOvershootMs: {
+        mean: +mean(over).toFixed(2),
+        max: +Math.max(0, ...over).toFixed(2),
+      },
+      audioContexts: r.segs.length,
+    },
+    av: {
+      lufs: Number(sum.match(/I:\s+(-?[\d.]+|-inf) LUFS/)?.[1] ?? NaN),
+      truePeak: Number(sum.match(/Peak:\s+(-?[\d.]+|-inf) dBFS/)?.[1] ?? NaN),
+    },
+    entries: entries.map(({ epoch, ...rest }) => ({ t: tt(epoch), ...rest })),
+  };
+  await Deno.writeTextFile(
+    `${dir}/timeline.json`,
+    JSON.stringify(timeline, null, 1),
+  );
+  log(
+    `[take ${key}] ${seconds.toFixed(1)} s in ${
+      wallSeconds.toFixed(0)
+    } s wall (${
+      (wallSeconds / seconds).toFixed(1)
+    }x), ${entries.length} entries; ${notes.join("; ")}`,
+  );
+  return { key, dir, cached: false, seconds, wallSeconds, notes, errors };
 }
