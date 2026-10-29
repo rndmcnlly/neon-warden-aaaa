@@ -39,6 +39,50 @@ Pending credits: GLM-5.3-Flash (narrative research, TWWDS raid) and
 DeepSeek V4.1 Flash (skill compression) once its pass reports.
 Running at plan time: VO completeness audit, DeepSeek grug pass.
 
+## Step 3 synthesis (main session)
+
+Verified weaknesses (step 2): disarms read as kills; boss pod breaks do not
+read; Writ hit vs miss sound alike and tiers are indistinguishable; Writ hits
+on a deflecting boss sit only 1.5 dB above the mix; a life lost on the same
+tick as a kill goes unnoticed.
+
+Adopted, in priority order:
+
+1. Feedback ladder (step 1 idea 3, Argon 3): graze < hull hit < armor
+   deflect < weak-point hit < part break < disarm < kill < pod break < life
+   lost. Each rung differs from its neighbors in at least two of sound,
+   shape and motion, never color alone. Flash only the struck part, at most
+   once per 100 ms per target; reduced flashing uses an outline pulse.
+2. Disarm is not a kill (both sources): the weapon part detaches and flings
+   along the shot with spin from the hit offset (render-side physics), then
+   darkens and sinks below the bullet layer; the hull survives and visibly
+   powers down (lights dim, engine sputters, weapon ports go dark) and
+   leaves; a distinct mechanical unlatch plus power-down sound. Kills keep
+   explosions. Debris never resembles a bullet (shape, value, motion).
+3. Writ payoff: tier-specific sound layers (1, 2, 3 audibly distinct), a
+   distinct hit vs miss (miss: a dry fizzle that fades into the distance);
+   Writ impacts duck music and sit clearly above the mix; deflection gets a
+   ricochet spark and tink. Discrete taps get a crisp, satisfying impact;
+   stream impacts are lighter and voice-capped.
+4. Pod break as an event: physical separation and fling, a unique loud
+   sound, and a short hitstop. Hitstop is allowed tonight as a tick-domain
+   freeze (the sim does not advance and consumes no input during the
+   freeze), keeping replays deterministic; tests required. Also on life lost.
+5. Life lost dominates: hitstop, an edge pulse, a unique sound that ducks
+   everything; same-tick kill feedback is deferred until after it.
+6. Damage states: matte scorch as the base, with crack seams that glow amber
+   briefly when struck and then cool (a compromise between step 1 and Argon).
+7. Impact voice management: merge simultaneous hits, cap voices, never cut
+   threat cues.
+8. Movement: engine hum following speed and acceleration (about 30 ms
+   response), thruster puffs opposite acceleration drawn beneath bullets, a
+   short reverse/stop transient, banking, narrower and quieter in focus.
+9. Lane floor: busier (traffic, signals, data flow) but dim and desaturated,
+   below combat in value.
+
+Implementation order (serial agents): 4a items 1–7 (damage, disarm, Writ,
+pod, life loss); 4b items 8–9 plus the VO follow-ups below; then step 5.
+
 VO audit follow-ups (for the implementation step): Captain takes have about
 0.64 s leading silence (original 0.24 s); apply a NON-destructive per-take
 start offset at playback and in subtitle timing (no re-encode). Tutorial

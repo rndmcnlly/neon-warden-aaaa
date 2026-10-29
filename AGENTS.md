@@ -7,6 +7,16 @@ Smith; students in a later course will read its source.
 
 ## Fiction
 
+- Environmental reference from Adam: _Jets'n'Guns_
+  (https://en.wikipedia.org/wiki/Jets%27n%27Guns). Borrow authored stage
+  variety, inhabited industrial scenery, environmental jokes/signage and
+  expressive equipment fiction, not its assets or exact tone. Sector worlds
+  should be actual staged places, not just palette swaps or lore HUD columns;
+  preserve our vertical combat readability and localized text.
+- Opening studio/incubator logos are flat and screen-locked, not 3D objects
+  or turntables. Interest comes from glow, glint, textures, halftone and
+  restrained glitch treatments. No perspective rotation or depth parallax;
+  respect reduced motion and reduced flashing.
 - Studio: `adamsmith.systems` (cyberpunk-flavored). Adam owns the domain; a
   Cloudflare subdomain for hosting is possible later (ask before any DNS or
   deploy step: it is outward-facing).
@@ -49,6 +59,12 @@ structure and the production checklist should be legible and teachable.
 
 ## Narrative directions (October 28, 2026)
 
+- Scope cut (Adam, confirmed): Pilot stays off-screen. Drop helmet
+  customization, issued/worn helmet variants, helmet unlocks, and all 3D
+  depiction of Pilot. Ship customization remains. Existing character assets
+  are historical work, not justification for retaining this feature; do not
+  delete them indiscriminately. Replace character cutaway shots with ship,
+  cockpit/instrument, or environmental framing without depicting Pilot.
 - Protagonist: Pilot (kept after `research/2026-10-28-narrative-tropes/`).
   Male (Spanish: "el piloto"; Chinese pronoun 他). Look and bearing evoke Din
   Djarin from _The Mandalorian_: helmet never removed, faceless, terse,
@@ -79,7 +95,19 @@ structure and the production checklist should be legible and teachable.
   iOS audio unlock. Good Chromebook coverage: elementary-school kids will
   play it on low-end managed school Chromebooks (touchscreen, trackpad,
   keyboard hybrids), so the low tier must be smooth and the game must suit
-  young players (no data collection, readable text, school-network friendly).
+  school devices (no data collection, readable text, school-network friendly).
+- No content censorship for children (Adam's explicit decision): Chromebook
+  support concerns hardware, input, accessibility, and deployment, not softer
+  dialogue or story. Do not add Classroom-mode wording, escape pods, or change
+  "kill" to "takedown" for age reasons. Preserve the same narrative and moral
+  consequences on every platform. Accessibility options remain available.
+- Fullscreen: F toggles fullscreen (ignore typing, key repeats, and control
+  rebinding); a visible mouse/touch affordance does the same. Handle denied
+  or unsupported fullscreen honestly.
+- Installable offline PWA: manifest, local icons, service worker, explicit
+  offline-readiness/download status for the playable slice and selected VO
+  language. Installation alone does not imply offline readiness. Updates
+  must not reload an active run; support cached offline startup.
 - Students will read the source: TypeScript for everything except custom
   shaders. No Rust/Bevy swerve.
 - The Warden in three moves: (1) another character builds up its terror in
@@ -101,7 +129,18 @@ silent QA/intelligibility/creative review → `neon-av-review-technique`;
 asset candidates/contextual A/B/promotion → `neon-asset-audition-technique`.
 These are repo-owned, not global installs; evidence and promotion gate: `docs/SKILLS.md`.
 
+- Latest in-context A/B selections: Adam chose tutorial B (a_captain) and
+  gameplay A (cand1). These supersede the earlier original-voice default;
+  retain alternatives for comparison, but Captain is now the default.
+- Model handoff: after Adam exhausted his Claude subscription, default work
+  switched to `openai/gpt-6.1-sol`. Preserve historical model attribution;
+  credits must not claim all agent work came from one model.
 - Organize work mostly through subagents with clear, file-scoped tasks.
+- All subagents launched by the main session must use background mode so
+  the main session remains responsive (Adam's explicit requirement).
+- Keep the production dashboard current: report active tasks, blockers,
+  decisions, commits, and dated QA artifacts without implying stale results
+  describe the newest build.
 - Subagent token hygiene: three of four research subagents spent about 1M
   tokens each, mostly re-reading large pages or sources held in context. Trim
   big fetches in a script (or hand them to a summarizing sub-subagent) before

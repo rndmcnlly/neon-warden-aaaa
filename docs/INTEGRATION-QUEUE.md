@@ -1,5 +1,22 @@
 # Integration queue
 
+## Memory / enemy briefings phase 1 (October 29, prototype ready)
+
+Isolated scenes only; renderer-world owner finishes first. No live gameplay edits.
+Proposed borrowed-registry scene/camera compositor hook, Director line-clock input,
+and safe pre-`beginSector` briefing gate:
+`research/2026-10-29-memory-and-briefings/INTEGRATION.md`.
+Worker owns new `src/presentation/memoryScene.ts`, `enemyBriefing.ts`, supporting
+presentation modules/tests and the dated research directory. No Pilot figure.
+Prototype commit **`c5fa3bf`**: five line-clocked recording shots and six-second unseen-enemy gate;
+four final normal-speed captures with real EN/ZH recording VO, silent enemy
+prototypes, five unit tests and six browser checks passing. One blind Argon pass
+reconstructed the audio/text story but missed visual actions: revised stronger
+motion/identity labels are recaptured, not re-judged. **Not gameplay-integrated.**
+`research/2026-10-29-memory-and-briefings/viewer.html` shows one clip at a time.
+Exact Director line-start callback, borrowed-registry stage render port and safe
+pre-`beginSector` pause request are in `INTEGRATION.md`; do not wire mid-dodge.
+
 Requests from parallel workstreams, applied in one integration pass (owner of
 contracts, `main.ts`, `deno.json`, `.gitignore`: the orchestrating session).
 
@@ -797,3 +814,13 @@ errors, but fails its zero-kills/zero-shots/outcome predicate. Full suite:
 196 pass, 1 unrelated VO seed-mirror failure in `tests/banks_test.ts`.
 Full typecheck awaits the shared-file mapping removal above. Historical
 figure assets remain on disk and produce two expected unused-model warnings.
+
+# Closing integration: Pilot scope cut c598544
+
+- `src/main.ts` still maps `pilotCloseup` to `pilot_figure` in
+  `CLOSEUP_PROPS`. Remove that stale mapping; it blocks full typechecking.
+  The boot-logo integration agent currently owns main.ts.
+- `tut_hangar_001` still advertises helmet livery: revise all three texts
+  and regenerate affected VO; don't leave this obsolete feature promised.
+- Pacifist reel reaches "Lanes Kept" but fails outcome predicate: inspect
+  actual state versus assertion before treating this as a gameplay failure.

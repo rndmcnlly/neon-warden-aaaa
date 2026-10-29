@@ -1,236 +1,258 @@
 {
- "updated": "2026-10-29",
- "tasks": [
-  {
-   "title": "Flat opening logo integration",
-   "owner": "Flat-logo integration",
-   "status": "done",
-   "detail": "Director-driven flat screen-locked studio/CM121 logos replace active 3D boot wiring. Both 3200 ms holds and skip flags/music preserved; live motion/flashing settings and abort disposal verified. Isolated production build: 69 browser checks including first/second/immediate skips, restart, visible touch-safe Skip and 390x844 touch; boot A/V reel pass; static assets/translation zero failures. QA: qa/reports/logo-integration-2026-10-29T06-02-33.288Z/result.json. Captain/cand1 edits preserved separately.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Off-screen Pilot scope cut",
-   "owner": "Scope cut",
-   "status": "done",
-   "detail": "Removed helmet UI/contracts/serialization, figure registry/preload/placeholder and issued/worn switching. Pacifist reply now frames the ship. Historical GLBs retained but excluded from offline inventory. Legacy saves and ship controls verified by 15 production browser checks: qa/reports/scope-cut-2026-10-29T05-55-42.304Z/result.json. Hangar reel passes 23 assertions: qa/reports/20261028-225200/index.html. Integration follow-up: main.ts still maps the retired figure and blocks full typecheck; tutorial hangar VO still advertises helmet livery. Full suite 196 pass/1 unrelated VO seed-mirror failure; pacifist reel reaches Lanes Kept but fails its outcome assertion.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Onboarding focus gate and wrong-input barks",
-   "owner": "Background onboarding agent",
-   "status": "done",
-   "detail": "Fresh input required per lesson; eight lockout and other-left corrections (VO pending).",
-   "updated": "2026-10-29",
-   "revision": "85ee111"
-  },
-  {
-   "title": "Tutorial, trick shot and player statistics",
-   "owner": "P",
-   "status": "done",
-   "revision": "da1e1f0 / fde1b85",
-   "detail": "Shipped. Historical gameplay reel passes; tutorial wink deadline and VO issues remain in recorded QA.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "PWA and fullscreen",
-   "owner": "Platform",
-   "status": "done",
-   "revision": "e995599",
-   "detail": "Reported 180 tests; English offline pack verified with 320 resources. ES/ZH offline untested. Does not imply mobile/touch or school-tier completion.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Moments gallery",
-   "owner": "Moments",
-   "status": "done",
-   "revision": "81c684f",
-   "detail": "30 clips captured. Findings are stale against newer code.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Variant banks",
-   "owner": "W",
-   "status": "done",
-   "revision": "796498d",
-   "detail": "169 variants authored; 65 voiced variants pending rendering in recorded QA.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "UI and visual closing fixes",
-   "owner": "C",
-   "status": "done",
-   "detail": "Reported done by orchestration. Consult dated QA rather than assuming current coverage.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Music, loudness and contextual A/B",
-   "owner": "B",
-   "status": "done",
-   "detail": "Fight mix about -17 LUFS. Adam chose tutorial Captain and gameplay cand1 as defaults; alternatives retained.",
-   "updated": "2026-10-29",
-   "revision": "e8e61f6"
-  },
-  {
-   "title": "Captain tutorial render",
-   "owner": "T",
-   "status": "done",
-   "detail": "Captain is the tutorial default (Adam chose B); original voice kept as an A/B variant, 58 newer lines fall back to Captain.",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "Sector worlds v2: Blender set pieces",
-   "owner": "Sector worlds v2",
-   "status": "review",
-   "detail": "Four of five sectors read as specific places in blind test; Last Approach misread. Viewer: research/2026-10-29-sector-worlds-v2/index.html",
-   "updated": "2026-10-29",
-   "revision": "d351d9d"
-  },
-  {
-   "title": "Shot feel: speed, recoil, crumbling trails",
-   "status": "done",
-   "detail": "Shots 50% faster with swept collision; camera-only recoil; capped trails.",
-   "updated": "2026-10-29",
-   "revision": "5a23867"
-  },
-  {
-   "title": "Remove persistent PWA overlay",
-   "status": "done",
-   "detail": "Offline downloads in Settings; F toggles fullscreen.",
-   "updated": "2026-10-29",
-   "revision": "ad32043"
-  },
-  {
-   "title": "Hybrid movement and focus cues prototype",
-   "status": "review",
-   "detail": "Opt-in ?movement=hybrid; diagonal fix and focus cues apply to both. Needs hands-on comparison, video too subtle.",
-   "updated": "2026-10-29",
-   "revision": "75b75c3"
-  },
-  {
-   "title": "A/V intelligibility study",
-   "status": "done",
-   "detail": "Top fixes: one speech channel, linked pod-break confirmation, clear damage feedback.",
-   "updated": "2026-10-29",
-   "revision": "85ee1114"
-  },
-  {
-   "title": "Argon creative-direction review",
-   "status": "done",
-   "detail": "Protect voice contrast, scan/disarm identity, clear lane; bets: lane-edge telemetry, physical pod break, billable graze.",
-   "updated": "2026-10-29",
-   "revision": "2ca039f"
-  },
-  {
-   "title": "Repo-local skills",
-   "status": "done",
-   "detail": "neon-warden-index plus three specialists; fresh-agent probes pass; nothing promoted.",
-   "updated": "2026-10-29",
-   "revision": "f636bb0"
-  },
-  {
-   "title": "Offline download size estimate",
-   "status": "done",
-   "detail": "About 22-24 MiB offline per language; 8-9 MiB of A/B assets could be excluded.",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "Spline-ribbon route prototype",
-   "status": "review",
-   "detail": "Curved distant world, rigid combat plane; not integrated.",
-   "updated": "2026-10-29",
-   "revision": "6d56a79"
-  },
-  {
-   "title": "Staged flashback and enemy briefings prototype",
-   "status": "review",
-   "detail": "Isolated; revised staging not re-judged; not integrated.",
-   "updated": "2026-10-29",
-   "revision": "c5fa3bf"
-  },
-  {
-   "title": "Consolidation into one playable build",
-   "status": "next",
-   "detail": "Integrate prototypes, speech scheduling, pod-break causality; then hands-on playtest.",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "Bolt identity: tap, stream and Writ looks; Writ knock",
-   "owner": "Bolt identity",
-   "status": "review",
-   "revision": "ab5e4a6 / 8522158",
-   "detail": "Render-only. Tap slugs, dim stream needles, charge-scaled Writ lances; Writ camera knock 0.15-0.25, ship knock, pressure wave, impact. gameplay-fight pass; scan-lock fails identically on baseline. Viewer: research/2026-10-29-bolt-identity/viewer.html",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "VO audit: every line in EN/ES/ZH",
-   "owner": "VO audit",
-   "status": "review",
-   "detail": "At 8fcd5ab: 223 voiced lines x 3 languages rendered, synced and tagged (669 takes; 0 under ASR 0.85; 1 zh plain-subtitle alignment fallback). Fixed: 15 unrendered warden/scout bank lines, 8 pending onboarding corrections voiced, tut_hangar_001 now ship livery, banks mirror test (emit_yaml keeps seeds). Reels: boss, ending-kill, vo-no-drop pass; tutorial/fight/pacifist fail on pre-existing deadlines/predicate (same at baseline e4d6938). Open: Captain takes lead in with ~0.64 s median silence, so subtitles precede voice (proposed trim needs approval). Report: research/2026-10-29-vo-audit/README.md; reels qa/reports/20261029-vo-audit-8fcd5ab/index.html.",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "Night plan: MOVE, SHOOT, DAMAGE A/V",
-   "status": "active",
-   "detail": "Serial: step 1 web research done; step 2 Argon blind ideation running; then synthesis, implementation, blind verification. See docs/NIGHT-PLAN.md.",
-   "updated": "2026-10-29"
-  }
- ],
- "blockers": [
-  {
-   "title": "Hot audio mix",
-   "status": "blocked",
-   "detail": "Needs contextual listening with music and fresh loudness QA. Historical passes must not close this issue automatically.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Mobile, touch, visible Back and school tier",
-   "status": "blocked",
-   "detail": "Not built. Full fire verb, scan, portrait layout, low-end Chromebook performance and input hybrids remain required.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Hangar redesign",
-   "status": "blocked",
-   "detail": "Researched, not implemented. Ship-as-hero and live test-flight direction pending implementation.",
-   "updated": "2026-10-28"
-  }
- ],
- "decisions": [
-  {
-   "title": "Tutorial voice",
-   "status": "note",
-   "detail": "Captain is the tutorial default (Adam chose B); original voice kept as an A/B variant, 58 newer lines fall back to Captain.",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "Generated palettes versus fixed palettes",
-   "status": "pending",
-   "detail": "User decision pending.",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Credits",
-   "status": "note",
-   "detail": "Exact wording: Adam Smith, and his coupled agents",
-   "updated": "2026-10-28"
-  },
-  {
-   "title": "Tutorial voice and gameplay music",
-   "status": "decided",
-   "detail": "Adam chose Captain (tutorial B) and gameplay cand1 (A).",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "No content censorship for kids",
-   "status": "decided",
-   "detail": "Chromebook support is hardware, input and deployment only.",
-   "updated": "2026-10-29"
-  },
-  {
-   "title": "Pilot stays off-screen",
-   "status": "decided",
-   "detail": "No 3D Pilot, no helmet customization; ship customization stays.",
-   "updated": "2026-10-29"
-  }
- ]
+  "updated": "2026-10-29",
+  "tasks": [
+    {
+      "title": "Flat opening logo integration",
+      "owner": "Flat-logo integration",
+      "status": "done",
+      "detail": "Director-driven flat screen-locked studio/CM121 logos replace active 3D boot wiring. Both 3200 ms holds and skip flags/music preserved; live motion/flashing settings and abort disposal verified. Isolated production build: 69 browser checks including first/second/immediate skips, restart, visible touch-safe Skip and 390x844 touch; boot A/V reel pass; static assets/translation zero failures. QA: qa/reports/logo-integration-2026-10-29T06-02-33.288Z/result.json. Captain/cand1 edits preserved separately.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Off-screen Pilot scope cut",
+      "owner": "Scope cut",
+      "status": "done",
+      "detail": "Removed helmet UI/contracts/serialization, figure registry/preload/placeholder and issued/worn switching. Pacifist reply now frames the ship. Historical GLBs retained but excluded from offline inventory. Legacy saves and ship controls verified by 15 production browser checks: qa/reports/scope-cut-2026-10-29T05-55-42.304Z/result.json. Hangar reel passes 23 assertions: qa/reports/20261028-225200/index.html. Integration follow-up: main.ts still maps the retired figure and blocks full typecheck; tutorial hangar VO still advertises helmet livery. Full suite 196 pass/1 unrelated VO seed-mirror failure; pacifist reel reaches Lanes Kept but fails its outcome assertion.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Onboarding focus gate and wrong-input barks",
+      "owner": "Background onboarding agent",
+      "status": "done",
+      "detail": "Fresh input required per lesson; eight lockout and other-left corrections (VO pending).",
+      "updated": "2026-10-29",
+      "revision": "85ee111"
+    },
+    {
+      "title": "Tutorial, trick shot and player statistics",
+      "owner": "P",
+      "status": "done",
+      "revision": "da1e1f0 / fde1b85",
+      "detail": "Shipped. Historical gameplay reel passes; tutorial wink deadline and VO issues remain in recorded QA.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "PWA and fullscreen",
+      "owner": "Platform",
+      "status": "done",
+      "revision": "e995599",
+      "detail": "Reported 180 tests; English offline pack verified with 320 resources. ES/ZH offline untested. Does not imply mobile/touch or school-tier completion.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Moments gallery",
+      "owner": "Moments",
+      "status": "done",
+      "revision": "81c684f",
+      "detail": "30 clips captured. Findings are stale against newer code.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Variant banks",
+      "owner": "W",
+      "status": "done",
+      "revision": "796498d",
+      "detail": "169 variants authored; 65 voiced variants pending rendering in recorded QA.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "UI and visual closing fixes",
+      "owner": "C",
+      "status": "done",
+      "detail": "Reported done by orchestration. Consult dated QA rather than assuming current coverage.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Music, loudness and contextual A/B",
+      "owner": "B",
+      "status": "done",
+      "detail": "Fight mix about -17 LUFS. Adam chose tutorial Captain and gameplay cand1 as defaults; alternatives retained.",
+      "updated": "2026-10-29",
+      "revision": "e8e61f6"
+    },
+    {
+      "title": "Captain tutorial render",
+      "owner": "T",
+      "status": "done",
+      "detail": "Captain is the tutorial default (Adam chose B); original voice kept as an A/B variant, 58 newer lines fall back to Captain.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Sector worlds v2: Blender set pieces",
+      "owner": "Sector worlds v2",
+      "status": "review",
+      "detail": "Four of five sectors read as specific places in blind test; Last Approach misread. Viewer: research/2026-10-29-sector-worlds-v2/index.html",
+      "updated": "2026-10-29",
+      "revision": "d351d9d"
+    },
+    {
+      "title": "Shot feel: speed, recoil, crumbling trails",
+      "status": "done",
+      "detail": "Shots 50% faster with swept collision; camera-only recoil; capped trails.",
+      "updated": "2026-10-29",
+      "revision": "5a23867"
+    },
+    {
+      "title": "Remove persistent PWA overlay",
+      "status": "done",
+      "detail": "Offline downloads in Settings; F toggles fullscreen.",
+      "updated": "2026-10-29",
+      "revision": "ad32043"
+    },
+    {
+      "title": "Hybrid movement and focus cues prototype",
+      "status": "review",
+      "detail": "Opt-in ?movement=hybrid; diagonal fix and focus cues apply to both. Needs hands-on comparison, video too subtle.",
+      "updated": "2026-10-29",
+      "revision": "75b75c3"
+    },
+    {
+      "title": "A/V intelligibility study",
+      "status": "done",
+      "detail": "Top fixes: one speech channel, linked pod-break confirmation, clear damage feedback.",
+      "updated": "2026-10-29",
+      "revision": "85ee1114"
+    },
+    {
+      "title": "Argon creative-direction review",
+      "status": "done",
+      "detail": "Protect voice contrast, scan/disarm identity, clear lane; bets: lane-edge telemetry, physical pod break, billable graze.",
+      "updated": "2026-10-29",
+      "revision": "2ca039f"
+    },
+    {
+      "title": "Repo-local skills",
+      "status": "done",
+      "detail": "neon-warden-index plus three specialists; fresh-agent probes pass; nothing promoted.",
+      "updated": "2026-10-29",
+      "revision": "f636bb0"
+    },
+    {
+      "title": "Offline download size estimate",
+      "status": "done",
+      "detail": "About 22-24 MiB offline per language; 8-9 MiB of A/B assets could be excluded.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Spline-ribbon route prototype",
+      "status": "review",
+      "detail": "Curved distant world, rigid combat plane; not integrated.",
+      "updated": "2026-10-29",
+      "revision": "6d56a79"
+    },
+    {
+      "title": "Staged flashback and enemy briefings prototype",
+      "status": "review",
+      "detail": "Isolated; revised staging not re-judged; not integrated.",
+      "updated": "2026-10-29",
+      "revision": "c5fa3bf"
+    },
+    {
+      "title": "Consolidation into one playable build",
+      "status": "next",
+      "detail": "Integrate prototypes, speech scheduling, pod-break causality; then hands-on playtest.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Bolt identity: tap, stream and Writ looks; Writ knock",
+      "owner": "Bolt identity",
+      "status": "review",
+      "revision": "ab5e4a6 / 8522158",
+      "detail": "Render-only. Tap slugs, dim stream needles, charge-scaled Writ lances; Writ camera knock 0.15-0.25, ship knock, pressure wave, impact. gameplay-fight pass; scan-lock fails identically on baseline. Viewer: research/2026-10-29-bolt-identity/viewer.html",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "VO audit: every line in EN/ES/ZH",
+      "owner": "VO audit",
+      "status": "review",
+      "detail": "At 8fcd5ab: 223 voiced lines x 3 languages rendered, synced and tagged (669 takes; 0 under ASR 0.85; 1 zh plain-subtitle alignment fallback). Fixed: 15 unrendered warden/scout bank lines, 8 pending onboarding corrections voiced, tut_hangar_001 now ship livery, banks mirror test (emit_yaml keeps seeds). Reels: boss, ending-kill, vo-no-drop pass; tutorial/fight/pacifist fail on pre-existing deadlines/predicate (same at baseline e4d6938). Open: Captain takes lead in with ~0.64 s median silence, so subtitles precede voice (proposed trim needs approval). Report: research/2026-10-29-vo-audit/README.md; reels qa/reports/20261029-vo-audit-8fcd5ab/index.html.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Night plan: MOVE, SHOOT, DAMAGE A/V",
+      "status": "active",
+      "detail": "Serial: step 1 web research done; step 2 Argon blind ideation running; then synthesis, implementation, blind verification. See docs/NIGHT-PLAN.md.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Night step 2: Argon core-loop ideation",
+      "status": "done",
+      "detail": "Frozen HEAD 8ad8598, 8 audio-verified normal-speed clips, blind Pass A + ideation Pass B (Gemini 4 Argon, ZDR), verified against event/sound truth. Key: disarms read as kills, boss pod breaks unreadable, Writ hit vs miss and levels blur, deflects near-silent. US $0.140. research/2026-10-29-argon-core-ideation/README.md",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Night step 4a: core feedback ladder, disarm, Writ, pod, life lost",
+      "owner": "Core feedback (step 4a)",
+      "status": "review",
+      "revision": "5318e70..010d6ba (+ evidence commit)",
+      "detail": "Feedback ladder as data; disarm detaches the part as flung, spun debris and powers the hull down (unlatch + power-down sounds); tier-specific Writ impacts with music ducking, Writ miss fizzle (new writMissed event), ricochet tink and streaks; pod break with debris, unique sound and a 5-tick hitstop; life lost with 7-tick hitstop, closing red edge frame, alarm that clears lower voices, same-tick kill feedback deferred 0.35 s; scorch plus glowing crack seams; per-tick hit clustering and protected threat cues. Hitstop is tick-domain in src/app/tickLoop.ts (off above 1x autoplay); tests replay fight and pacifist autopilots with and without it identically. Checks 2026-10-29: check, 246 tests, build pass; fmt and lint fail only on files outside this work. Reels qa/reports/20261029-040728: gameplay-fight and disarm-boss pass, scan-lock fails as on the earlier baseline. Viewer research/2026-10-29-core-feedback/index.html. fal spend US $0.0466. Sampled roles are provisional picks for Adam's audition.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Night step 4b: movement audio and thrusters, lane floor, debris visibility, VO offset",
+      "owner": "Movement and lane (step 4b)",
+      "status": "review",
+      "revision": "0627d3e..62c162a (+ evidence commit)",
+      "detail": "Engine bed (Web Audio: speed-driven hum, acceleration-driven thrust, 30 ms rise, quieter, darker and narrower in focus, dead man's fade) plus reverse and stop chuffs, tested for classic and hybrid; thruster puffs opposite acceleration under the bullets (instanced, capped, cheap on the low tier) and banking from lateral velocity; busier lane floor (plates, conduit packet streaks, data pulses, signal lamps, ship reflection) under a background budget: floor value 0.49 to 0.28 and chroma 0.38 to 0.11 against combat 0.64 and 0.26; bigger, rim-lit, smoke-streaked debris; VO start offset from measured onsets (cues metadata, no re-encode), subtitle-to-voice lead 0.75 to 0.12 s; tutorial autopilot no longer triggers wrong-input barks (cooldown tested); repo fmt and lint fix; scan-lock reel fixed (flashback wait, stale selector). Checks 2026-10-29 at 62c162a: deno task ci exit 0 on the working tree (256 tests); full QA qa/reports/20261029-050318: 13 reels pass, 5 fail, all identical at baseline 5035bfd. Formatting of AGENTS.md, docs/SKILLS.md and docs/INTEGRATION-QUEUE.md is in the working tree, uncommitted (they carry other uncommitted edits). Viewer research/2026-10-29-movement-lane/index.html. No paid calls.",
+      "updated": "2026-10-29"
+    }
+  ],
+  "blockers": [
+    {
+      "title": "Hot audio mix",
+      "status": "blocked",
+      "detail": "Needs contextual listening with music and fresh loudness QA. Historical passes must not close this issue automatically.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Mobile, touch, visible Back and school tier",
+      "status": "blocked",
+      "detail": "Not built. Full fire verb, scan, portrait layout, low-end Chromebook performance and input hybrids remain required.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Hangar redesign",
+      "status": "blocked",
+      "detail": "Researched, not implemented. Ship-as-hero and live test-flight direction pending implementation.",
+      "updated": "2026-10-28"
+    }
+  ],
+  "decisions": [
+    {
+      "title": "Tutorial voice",
+      "status": "note",
+      "detail": "Captain is the tutorial default (Adam chose B); original voice kept as an A/B variant, 58 newer lines fall back to Captain.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Generated palettes versus fixed palettes",
+      "status": "pending",
+      "detail": "User decision pending.",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Credits",
+      "status": "note",
+      "detail": "Exact wording: Adam Smith, and his coupled agents",
+      "updated": "2026-10-28"
+    },
+    {
+      "title": "Tutorial voice and gameplay music",
+      "status": "decided",
+      "detail": "Adam chose Captain (tutorial B) and gameplay cand1 (A).",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "No content censorship for kids",
+      "status": "decided",
+      "detail": "Chromebook support is hardware, input and deployment only.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Pilot stays off-screen",
+      "status": "decided",
+      "detail": "No 3D Pilot, no helmet customization; ship customization stays.",
+      "updated": "2026-10-29"
+    }
+  ]
 }

@@ -44,11 +44,16 @@ ours; copying the paper into agent commands would erase that distinction.
   Both were blocked before model execution by read permission denied on the local
   index path. No model answer, skill-load trace, usage or behavioral pass exists.
   Do not bypass that permission through another access path.
-- Remaining probe work for the orchestrator: use an authorized fresh child with
-  ordinary skill-tool access, ask which skill it would load and simulate the next
-  safe actions on those two scenarios. Preserve the actual tool sequence, check
-  recognition of subtitle leakage and shared-file `commit --only` risk, then fix
-  wording if needed. These are consultation probes, not end-to-end game tests.
+- Follow-up: two authorized fresh `general` children successfully used ordinary
+  skill-tool access. AV probe `ses_e797d73e5ffeT4IBR04dA1MViZ` loaded index →
+  AV review; it distinguished visible subtitles, playback events and captured
+  speech, proposed blinded ablations, and made no false testing claim. Asset
+  probe `ses_e797d5904ffeWTPcBJA60IzBwu` loaded index → asset audition →
+  parallel integration → AV review. It selected contrasting briefs, verified
+  report-specific A/B identity and audible defaults, and refused to disturb
+  foreign staged work. Both passed routing/reasoning checks without modifications
+  or paid calls. These are consultation probes, not end-to-end game tests or
+  evidence of cross-project transfer.
 - Static reachability, actual skill-tool loading and simulated task adequacy are
   distinct claims. No game QA is implied by this docs-only change. The tested
   read-only recipe `git status --short` executed during the audit.
@@ -81,12 +86,12 @@ The gate returned `total missing: 0` for each skill, so no commit id, path,
 number, backticked span or fenced block was removed and nothing moved to a
 history file.
 
-| Skill | Tokens before | Tokens after | Words before | Words after |
-| --- | --- | --- | --- | --- |
-| `neon-warden-index` | 226 | 218 | 133 | 133 |
-| `neon-parallel-integration-technique` | 1081 | 1062 | 665 | 650 |
-| `neon-av-review-technique` | 1002 | 995 | 600 | 600 |
-| `neon-asset-audition-technique` | 1062 | 1060 | 621 | 619 |
+| Skill                                 | Tokens before | Tokens after | Words before | Words after |
+| ------------------------------------- | ------------- | ------------ | ------------ | ----------- |
+| `neon-warden-index`                   | 226           | 218          | 133          | 133         |
+| `neon-parallel-integration-technique` | 1081          | 1062         | 665          | 650         |
+| `neon-av-review-technique`            | 1002          | 995          | 600          | 600         |
+| `neon-asset-audition-technique`       | 1062          | 1060         | 621          | 619         |
 
 Savings are 0.2–3.5% per file, well under the −10% a stabilized global leaf
 usually yields. That is a finding, not an unfinished pass: these four texts were
