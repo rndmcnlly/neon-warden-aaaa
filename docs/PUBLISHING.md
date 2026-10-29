@@ -50,6 +50,11 @@ delete `public/CNAME`. `REPO_URL` is still passed by the workflow so the
 landing page links to whichever repository built it; local builds fall back
 to `https://github.com/rndmcnlly/neon-warden-aaaa`.
 
+Canonical links and the Open Graph and Twitter cards are absolute URLs built
+from `SITE_URL` (default `https://neon-warden-aaaa.adamsmith.systems`, see
+`vite.config.ts`); a fork served elsewhere sets it, subpath included. The
+share image is `public/media/og-poster.jpg` (1200x630).
+
 ## Cloudflare DNS (cf CLI, profile `personal`)
 
 - Account: `890753ccd6f0bbbfbe2c030cc44f6a87` (Adam's personal account).

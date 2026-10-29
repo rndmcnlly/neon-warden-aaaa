@@ -180,3 +180,27 @@ files. Shots: `shots/desktop-story.jpg`, `desktop-full.jpg`,
 Refresh `public/media/teaser30-en-draft.mp4` and the poster when the trailer
 agent's master exists (`trailer/out/teaser30/en/`), rename to drop "draft",
 and update the caption strings; then the audit clears the TODOs before deploy.
+
+## Public addresses (October 29, evening)
+
+With the repository and custom domain created (`docs/PUBLISHING.md`):
+
+- Source links: `vite.config.ts` falls back to
+  `https://github.com/rndmcnlly/neon-warden-aaaa` (the placeholder owner is
+  gone); the workflow still passes its own `REPO_URL`.
+- New `SITE_URL` (default `https://neon-warden-aaaa.adamsmith.systems`,
+  `%SITE_URL%` in the pages): canonical links plus Open Graph and Twitter
+  cards on the landing page, the making-of page and `play/`, all absolute on
+  the custom domain. Link previews need absolute URLs, so a fork elsewhere
+  sets `SITE_URL`.
+- Share image `public/media/og-poster.jpg`: 1200x630, 46 KB, a frame from
+  the EN teaser master (the Warden over the lane, no caption). It lives in
+  `media/`, so it stays out of the offline pack.
+- The manifest keeps relative URLs (id, start URL, scope, icons): they
+  resolve on whichever host serves it, which is the custom domain in
+  production. `public/CNAME` names the domain.
+
+Verification: `verify.ts` 80 of 80 (adds canonical, og:url, absolute
+og/twitter images on the custom domain, titles and descriptions, source links
+on the public repository with the e4-starter as the one other repository, a
+1200x630 JPEG share image, relative manifest URLs, CNAME), `out/verify.json`.

@@ -8,6 +8,12 @@ const repoName = Deno.env.get("REPO_NAME");
 const REPO_URL = Deno.env.get("REPO_URL") ??
   "https://github.com/rndmcnlly/neon-warden-aaaa";
 
+// The public address, no trailing slash, for canonical links and the Open
+// Graph and Twitter cards (link previews need absolute URLs). A fork served
+// elsewhere sets SITE_URL, including any subpath.
+const SITE_URL = (Deno.env.get("SITE_URL") ??
+  "https://neon-warden-aaaa.adamsmith.systems").replace(/\/$/, "");
+
 /** A short build line for the landing page footer: revision when known. */
 function buildStamp(): string {
   const date = new Date().toISOString().slice(0, 10);
@@ -22,16 +28,15 @@ function buildStamp(): string {
   return `Build ${date}`;
 }
 
-/** Fills `%REPO_URL%` and `%BUILD_STAMP%` in the HTML pages. */
+/** Fills `%REPO_URL%`, `%SITE_URL%` and `%BUILD_STAMP%` in the HTML pages. */
 function landingPlaceholders() {
   const stamp = buildStamp();
   return {
     name: "neon-landing-placeholders",
     transformIndexHtml: (html: string) =>
-      html.replaceAll("%REPO_URL%", REPO_URL).replaceAll(
-        "%BUILD_STAMP%",
-        stamp,
-      ),
+      html.replaceAll("%REPO_URL%", REPO_URL)
+        .replaceAll("%SITE_URL%", SITE_URL)
+        .replaceAll("%BUILD_STAMP%", stamp),
   };
 }
 

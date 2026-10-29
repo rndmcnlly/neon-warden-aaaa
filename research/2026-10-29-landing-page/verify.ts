@@ -104,6 +104,63 @@ const external = (urls: string[]) =>
   urls.filter((u) => !u.startsWith(`http://127.0.0.1:${PORT}/`) &&
     !u.startsWith("data:") && !u.startsWith("blob:"));
 
+// Link previews and canonical links: absolute, on the custom domain, and the
+// share image really is a 1200x630 JPEG in the build. Source links go to
+// the public repository (the placeholder owner is gone).
+const SITE = "https://neon-warden-aaaa.adamsmith.systems";
+const REPO_URL = "https://github.com/rndmcnlly/neon-warden-aaaa";
+for (const [file, path] of [
+  ["index.html", ""], ["making-of/index.html", "making-of/"],
+  ["play/index.html", "play/"],
+] as const) {
+  const html = await Deno.readTextFile(`${dist}/${file}`);
+  const meta = (attr: string, key: string) =>
+    html.match(new RegExp(`<meta ${attr}="${key}" content="([^"]*)"`))?.[1];
+  const canonical = html.match(/<link rel="canonical" href="([^"]*)"/)?.[1];
+  check(`${file}: canonical is ${SITE}/${path}`, canonical === `${SITE}/${path}`, canonical);
+  check(`${file}: og:url matches canonical`, meta("property", "og:url") === canonical);
+  const urls = [meta("property", "og:image"), meta("name", "twitter:image")];
+  check(`${file}: og and twitter images are absolute on the custom domain`,
+    urls.every((u) => u === `${SITE}/media/og-poster.jpg`), urls);
+  check(`${file}: og and twitter titles and descriptions present`,
+    ["og:title", "og:description"].every((k) => !!meta("property", k)) &&
+      ["twitter:card", "twitter:title", "twitter:description"]
+        .every((k) => !!meta("name", k)));
+  const repoLinks = [...html.matchAll(/href="(https:\/\/github\.com[^"]*)"/g)]
+    .map((m) => m[1]);
+  check(`${file}: source links use the public repository`,
+    !html.includes("PLACEHOLDER") && !html.includes("%REPO_URL%") &&
+      // The one other repository linked is the course starter it grew from.
+      repoLinks.every((u) =>
+        u.startsWith(REPO_URL) ||
+        u === "https://github.com/ucsc-cmpm-121-f26/e4-starter"
+      ),
+    { links: repoLinks.length });
+}
+{
+  const jpg = await Deno.readFile(`${dist}/media/og-poster.jpg`);
+  // Baseline SOF0 or progressive SOF2: height then width after the marker.
+  let size: [number, number] | null = null;
+  for (let i = 2; i < jpg.length - 9; i++) {
+    if (jpg[i] === 0xff && (jpg[i + 1] === 0xc0 || jpg[i + 1] === 0xc2)) {
+      size = [jpg[i + 7] << 8 | jpg[i + 8], jpg[i + 5] << 8 | jpg[i + 6]];
+      break;
+    }
+  }
+  check("share image is a 1200x630 JPEG under 300 KB",
+    size?.[0] === 1200 && size?.[1] === 630 && jpg.length < 300_000,
+    { size, bytes: jpg.length });
+  const manifest = JSON.parse(
+    await Deno.readTextFile(`${dist}/manifest.webmanifest`),
+  );
+  check("manifest URLs are relative (resolve on whichever host serves it)",
+    [manifest.id, manifest.start_url, manifest.scope,
+      ...manifest.icons.map((i: { src: string }) => i.src)]
+      .every((u: string) => !/^[a-z]+:|^\//.test(u)), manifest.start_url);
+  check("CNAME names the custom domain",
+    (await Deno.readTextFile(`${dist}/CNAME`)).trim() === new URL(SITE).host);
+}
+
 try {
   for (const v of VIEWPORTS) {
     const ctx = await browser.newContext({

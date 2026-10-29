@@ -1,9 +1,113 @@
 {
-  "when": "2026-10-29T19:11:00.284Z",
+  "when": "2026-10-29T21:01:40.254Z",
   "base": "http://127.0.0.1:4329/neon-warden-aaaa/",
-  "passed": 62,
+  "passed": 80,
   "failed": 0,
   "results": [
+    {
+      "name": "index.html: canonical is https://neon-warden-aaaa.adamsmith.systems/",
+      "ok": true,
+      "detail": "https://neon-warden-aaaa.adamsmith.systems/"
+    },
+    {
+      "name": "index.html: og:url matches canonical",
+      "ok": true
+    },
+    {
+      "name": "index.html: og and twitter images are absolute on the custom domain",
+      "ok": true,
+      "detail": [
+        "https://neon-warden-aaaa.adamsmith.systems/media/og-poster.jpg",
+        "https://neon-warden-aaaa.adamsmith.systems/media/og-poster.jpg"
+      ]
+    },
+    {
+      "name": "index.html: og and twitter titles and descriptions present",
+      "ok": true
+    },
+    {
+      "name": "index.html: source links use the public repository",
+      "ok": true,
+      "detail": {
+        "links": 28
+      }
+    },
+    {
+      "name": "making-of/index.html: canonical is https://neon-warden-aaaa.adamsmith.systems/making-of/",
+      "ok": true,
+      "detail": "https://neon-warden-aaaa.adamsmith.systems/making-of/"
+    },
+    {
+      "name": "making-of/index.html: og:url matches canonical",
+      "ok": true
+    },
+    {
+      "name": "making-of/index.html: og and twitter images are absolute on the custom domain",
+      "ok": true,
+      "detail": [
+        "https://neon-warden-aaaa.adamsmith.systems/media/og-poster.jpg",
+        "https://neon-warden-aaaa.adamsmith.systems/media/og-poster.jpg"
+      ]
+    },
+    {
+      "name": "making-of/index.html: og and twitter titles and descriptions present",
+      "ok": true
+    },
+    {
+      "name": "making-of/index.html: source links use the public repository",
+      "ok": true,
+      "detail": {
+        "links": 8
+      }
+    },
+    {
+      "name": "play/index.html: canonical is https://neon-warden-aaaa.adamsmith.systems/play/",
+      "ok": true,
+      "detail": "https://neon-warden-aaaa.adamsmith.systems/play/"
+    },
+    {
+      "name": "play/index.html: og:url matches canonical",
+      "ok": true
+    },
+    {
+      "name": "play/index.html: og and twitter images are absolute on the custom domain",
+      "ok": true,
+      "detail": [
+        "https://neon-warden-aaaa.adamsmith.systems/media/og-poster.jpg",
+        "https://neon-warden-aaaa.adamsmith.systems/media/og-poster.jpg"
+      ]
+    },
+    {
+      "name": "play/index.html: og and twitter titles and descriptions present",
+      "ok": true
+    },
+    {
+      "name": "play/index.html: source links use the public repository",
+      "ok": true,
+      "detail": {
+        "links": 0
+      }
+    },
+    {
+      "name": "share image is a 1200x630 JPEG under 300 KB",
+      "ok": true,
+      "detail": {
+        "size": [
+          1200,
+          630
+        ],
+        "bytes": 46547
+      }
+    },
+    {
+      "name": "manifest URLs are relative (resolve on whichever host serves it)",
+      "ok": true,
+      "detail": "./play/"
+    },
+    {
+      "name": "CNAME names the custom domain",
+      "ok": true
+    },
     {
       "name": "desktop: Play above the fold",
       "ok": true,
@@ -328,17 +432,17 @@
       "name": "throttled first load under 150 KB transferred",
       "ok": true,
       "detail": {
-        "lcpMs": 644,
-        "domContentLoadedMs": 629,
-        "loadMs": 629,
-        "domNodes": 360,
-        "transferredBytes": 73313
+        "lcpMs": 624,
+        "domContentLoadedMs": 611,
+        "loadMs": 611,
+        "domNodes": 375,
+        "transferredBytes": 73990
       }
     },
     {
       "name": "throttled LCP under 2.5 s",
       "ok": true,
-      "detail": 644
+      "detail": 624
     }
   ]
 }
