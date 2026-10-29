@@ -75,7 +75,9 @@ export const CREDITS: readonly CreditSection[] = [
     roles: [
       one("ui.crawl.role.storyDirection", ADAM),
       one("ui.crawl.role.narrativeDesign", ...AGENTS),
-      one("ui.crawl.role.research", ...AGENTS),
+      one("ui.crawl.role.research", ...AGENTS, {
+        agent: "GLM-5.3-Flash (Z.ai)",
+      }),
     ],
   },
   {
@@ -136,7 +138,13 @@ export const CREDITS: readonly CreditSection[] = [
   },
   {
     heading: "ui.crawl.dept.production",
-    roles: [one("ui.crawl.role.orchestration", ...AGENTS, ADAM)],
+    roles: [
+      one("ui.crawl.role.orchestration", ...AGENTS, ADAM),
+      // Compressed the repo-local agent skills (.opencode/skills).
+      one("ui.crawl.role.orchestration", {
+        agent: "DeepSeek V4.1 Flash (DeepSeek)",
+      }),
+    ],
   },
   {
     heading: "ui.crawl.dept.publishing",
@@ -165,6 +173,8 @@ export const CREDITS: readonly CreditSection[] = [
         "ui.crawl.role.models",
         ...AGENT_MODELS.map((name) => ({ name })),
         { name: JUDGE_MODEL },
+        { name: "GLM-5.3-Flash (Z.ai)" },
+        { name: "DeepSeek V4.1 Flash (DeepSeek)" },
         { name: "Qwen3-TTS (Alibaba Qwen)" },
         { name: "Qwen3-ASR (Alibaba Qwen)" },
         { name: "Stable Audio 3 (Stability AI)" },
