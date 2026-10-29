@@ -19,8 +19,11 @@ import * as THREE from "three";
 
 /** Bullets fly at this height; debris must end up below it. */
 const BULLET_PLANE_Y = 0.25;
-/** Where debris settles: well under bullets and their glow. */
-const FLOOR_Y = -0.9;
+/**
+ * Where debris settles: under the bullets but still above the lane's opaque
+ * floor slab (y = 0), or it would vanish into the floor at once.
+ */
+const FLOOR_Y = 0.03;
 const DEBRIS_COLOR = new THREE.Color(0x2a2d33);
 /** The torn seam's heat: a dull ember, cooling within a quarter second. */
 const EMBER = new THREE.Color(0xb8641e);
@@ -146,8 +149,8 @@ export class DebrisField {
       }
       b.root.position.addScaledVector(b.vel, dt);
       b.vel.multiplyScalar(Math.exp(-dt * 1.6));
-      // Sink below the bullet plane over the first 0.65 s.
-      const sink = Math.min(1, b.age / 0.65);
+      // Sink below the bullet plane over the first 0.5 s.
+      const sink = Math.min(1, b.age / 0.5);
       b.root.position.y = b.startY + (FLOOR_Y - b.startY) * sink * (2 - sink);
       b.root.rotation.x += b.spin.x * dt;
       b.root.rotation.y += b.spin.y * dt;
