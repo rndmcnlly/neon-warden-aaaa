@@ -38,6 +38,7 @@ import {
   h,
   panel,
   sliderRow,
+  stagger,
   toggleRow,
   type Widget,
 } from "../widgets.ts";
@@ -162,16 +163,18 @@ function stubRow(
   return { el, sync: () => {} };
 }
 
+type Bus = Exclude<keyof Settings["audio"], "mono">;
+
 function audioTab(ctx: UiContext): Widget[] {
-  const { s, set } = rows(ctx);
-  const buses: [keyof Settings["audio"], UiKey][] = [
+  const { s, set, onOff } = rows(ctx);
+  const buses: [Bus, UiKey][] = [
     ["master", "ui.settings.master"],
     ["music", "ui.settings.music"],
     ["sfx", "ui.settings.sfx"],
     ["voice", "ui.settings.voice"],
     ["ui", "ui.settings.uiVolume"],
   ];
-  return buses.map(([bus, label]) =>
+  const sliders = buses.map(([bus, label]) =>
     sliderRow({
       key: `audio-${bus}`,
       label: ctx.t(label),
@@ -184,6 +187,16 @@ function audioTab(ctx: UiContext): Widget[] {
         set((c) => ({ ...c, audio: { ...c.audio, [bus]: value } })),
     })
   );
+  return [
+    ...sliders,
+    toggleRow({
+      key: "monoAudio",
+      label: ctx.t("ui.settings.monoAudio"),
+      ...onOff,
+      get: () => s.get().audio.mono,
+      set: (mono) => set((c) => ({ ...c, audio: { ...c.audio, mono } })),
+    }),
+  ];
 }
 
 function languageTab(ctx: UiContext): Widget[] {
@@ -517,6 +530,97 @@ function controlsTab(ctx: UiContext): Widget[] {
   ];
 }
 
+/**
+ * The description shown in the side panel for each focusable row, by its
+ * `data-key`. Every row has one (critique item 1); a stub row shows its stub
+ * copy, so the honest "not in this slice" text is readable without opening
+ * a dialog. Remap cells share their action's description.
+ */
+export function descriptionKey(key: string): UiKey | null {
+  if (key.startsWith("tab-")) {
+    return `ui.settings.tabDesc.${key.slice(4)}` as UiKey;
+  }
+  const bind = /^bind-([a-zA-Z]+)-/.exec(key);
+  if (bind) return `ui.controls.desc.${bind[1]}` as UiKey;
+  return (DESCRIPTIONS as Record<string, UiKey | undefined>)[key] ?? null;
+}
+
+const DESCRIPTIONS = {
+  preset: "ui.settings.desc.preset",
+  renderScale: "ui.settings.desc.renderScale",
+  fullscreen: "ui.settings.desc.fullscreen",
+  "audio-master": "ui.settings.desc.master",
+  "audio-music": "ui.settings.desc.music",
+  "audio-sfx": "ui.settings.desc.sfx",
+  "audio-voice": "ui.settings.desc.voice",
+  "audio-ui": "ui.settings.desc.uiVolume",
+  monoAudio: "ui.settings.desc.monoAudio",
+  textLang: "ui.settings.desc.textLang",
+  voiceLang: "ui.settings.desc.voiceLang",
+  moreLangs: "ui.stub.moreLangs",
+  subtitles: "ui.settings.desc.subtitles",
+  subtitleScale: "ui.settings.desc.subtitleScale",
+  subtitleBg: "ui.settings.desc.subtitleBg",
+  speakerNames: "ui.settings.desc.speakerNames",
+  maxLines: "ui.settings.desc.maxLines",
+  autoFire: "ui.settings.desc.autoFire",
+  holdToggle: "ui.settings.desc.holdToggle",
+  shake: "ui.settings.desc.shake",
+  reducedFlashing: "ui.settings.desc.reducedFlashing",
+  reduceMotion: "ui.settings.desc.reduceMotion",
+  gameSpeed: "ui.settings.desc.gameSpeed",
+  difficulty: "ui.settings.desc.difficulty",
+  colorCues: "ui.settings.desc.colorCues",
+  narration: "ui.stub.narration",
+  resetControls: "ui.settings.desc.resetControls",
+  resetAll: "ui.settings.desc.resetAll",
+} as const satisfies Record<string, UiKey>;
+
+/** The side panel: the focused row's name, what it does, and (on Subtitles) the live preview. */
+function describer(ctx: UiContext, aside: HTMLElement) {
+  const title = h("h3", { class: "nw-desc-title" });
+  const text = h("p", { class: "nw-desc-body" });
+  const stub = h(
+    "p",
+    { class: "nw-desc-stub", hidden: true },
+    ctx.t("ui.stub.badge"),
+  );
+  const card = h(
+    "div",
+    { class: "nw-desc", "aria-live": "polite" },
+    stub,
+    title,
+    text,
+  );
+  let preview: Widget | null = null;
+  return {
+    setPreview(next: Widget | null) {
+      preview = next;
+      aside.replaceChildren(card, ...(preview ? [preview.el] : []));
+    },
+    describe(target: HTMLElement | null) {
+      const row = target?.closest<HTMLElement>("[data-key]");
+      const key = row ? descriptionKey(row.dataset.key ?? "") : null;
+      card.hidden = key === null;
+      if (!row || key === null) return;
+      title.textContent = row.querySelector(".nw-row-label, .nw-button-label")
+        ?.textContent ?? row.getAttribute("aria-label") ?? "";
+      if (row.dataset.key?.startsWith("bind-")) {
+        title.textContent = row.closest(".nw-bind-row")
+          ?.querySelector(".nw-bind-action")?.textContent ?? "";
+      }
+      text.textContent = ctx.t(key);
+      stub.hidden = !row.classList.contains("is-locked");
+      card.classList.remove("is-fresh");
+      void card.offsetWidth;
+      card.classList.add("is-fresh");
+    },
+    sync() {
+      preview?.sync();
+    },
+  };
+}
+
 const TAB_BUILDERS: Readonly<Record<TabId, (ctx: UiContext) => Widget[]>> = {
   display: displayTab,
   audio: audioTab,
@@ -529,9 +633,13 @@ const TAB_BUILDERS: Readonly<Record<TabId, (ctx: UiContext) => Widget[]>> = {
 export function settingsScreen(ctx: UiContext): ScreenFactory {
   return () => {
     let widgets: Widget[] = [];
-    let preview: Widget | null = null;
     const body = h("div", { class: "nw-rows", role: "tabpanel" });
     const aside = h("div", { class: "nw-settings-aside" });
+    const desc = describer(ctx, aside);
+    body.addEventListener(
+      "focusin",
+      (e) => desc.describe(e.target as HTMLElement),
+    );
 
     const tabButtons = TABS.map((tab) =>
       button({
@@ -539,17 +647,32 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
         label: ctx.t(`ui.settings.tab.${tab}` as UiKey),
         className: "nw-tab",
         sound: "tab_switch",
-        onActivate: () => show(tab, false),
+        onActivate: () => show(tab, false, 0),
       })
     );
-    tabButtons.forEach((el) => el.setAttribute("role", "tab"));
+    tabButtons.forEach((el) => {
+      el.setAttribute("role", "tab");
+      el.addEventListener("focus", () => desc.describe(el));
+    });
 
-    function show(tab: TabId, moveFocus: boolean): void {
+    /** `direction` slides the new rows in from the side the tab moved toward. */
+    function show(
+      tab: TabId,
+      moveFocus: boolean,
+      direction?: -1 | 0 | 1,
+    ): void {
+      const from = TABS.indexOf(lastTab);
+      const dir = direction ?? Math.sign(TABS.indexOf(tab) - from);
       lastTab = tab;
       widgets = TAB_BUILDERS[tab](ctx);
       body.replaceChildren(...widgets.map((w) => w.el));
-      preview = tab === "subtitles" ? subtitlePreview(ctx) : null;
-      aside.replaceChildren(...(preview ? [preview.el] : []));
+      stagger(body);
+      body.dataset.slide = dir < 0 ? "back" : dir > 0 ? "forward" : "none";
+      body.classList.remove("is-sliding");
+      void body.offsetWidth;
+      body.classList.add("is-sliding");
+      desc.setPreview(tab === "subtitles" ? subtitlePreview(ctx) : null);
+      desc.describe(tabButtons[TABS.indexOf(tab)]);
       tabButtons.forEach((el, i) => {
         const selected = TABS[i] === tab;
         el.setAttribute("aria-selected", String(selected));
@@ -573,6 +696,7 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
         })),
     });
 
+    resetAll.addEventListener("focus", () => desc.describe(resetAll));
     const el = panel({
       id: "settings",
       title: ctx.t("ui.settings.title"),
@@ -589,7 +713,7 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
         ["back", ctx.t("ui.common.back")],
       ],
     });
-    show(lastTab, false);
+    show(lastTab, false, 0);
     tabButtons[TABS.indexOf(lastTab)].dataset.autofocus = "";
 
     return {
@@ -604,12 +728,12 @@ export function settingsScreen(ctx: UiContext): ScreenFactory {
         const next =
           TABS[(TABS.indexOf(lastTab) + delta + TABS.length) % TABS.length];
         uiSound("tab_switch");
-        show(next, true);
+        show(next, true, delta > 0 ? 1 : -1);
         return true;
       },
       sync: () => {
         widgets.forEach((w) => w.sync());
-        preview?.sync();
+        desc.sync();
       },
     };
   };

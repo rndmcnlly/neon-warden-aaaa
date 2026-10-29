@@ -15,7 +15,7 @@
   --nw-ink: #04020c;
   --nw-text: #e8fdff;
   --nw-muted: #8fa3c4;
-  --nw-glass: rgba(14, 10, 34, 0.58);
+  --nw-glass: rgba(14, 10, 34, 0.78);
   --nw-glass-strong: rgba(10, 7, 26, 0.86);
   --nw-line: rgba(158, 230, 255, 0.16);
   --nw-radius: 14px;
@@ -23,6 +23,13 @@
     "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
   --nw-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
   --nw-unit: clamp(14px, 1.65vh, 22px);
+  /* Four-step type scale (critique item 4): where you are leads, then what
+     you can do, then what it means, then the small print. */
+  --nw-fs-title: 1.6em;
+  --nw-fs-row: 1.08em;
+  --nw-fs-desc: 0.88em;
+  --nw-fs-label: 0.72em;
+  --nw-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .nw-frontend {
@@ -122,12 +129,21 @@
 }
 
 .nw-title {
-  margin: 0 0 1em;
-  font-size: 0.8em;
-  font-weight: 600;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  color: var(--nw-cyan);
+  margin: 0 0 0.6em;
+  font-size: var(--nw-fs-title);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  color: var(--nw-text);
+}
+/* The tracked-caps kicker survives as a tiny cyan rule above the title. */
+.nw-title::before {
+  content: "";
+  display: block;
+  width: 2.2em;
+  height: 2px;
+  margin-bottom: 0.45em;
+  background: linear-gradient(90deg, var(--nw-cyan), var(--nw-pink));
 }
 .nw-subhead {
   margin: 1.2em 0 0.5em;
@@ -1272,4 +1288,177 @@
 }
 .nw-license-entry .nw-badge {
   margin-left: 0;
+}
+
+/* ===================================================================
+   Wave 3 front-end pass (research/2026-10-28-critique-ui, items 1–5)
+   =================================================================== */
+
+/* ---------- Type scale: primary actions lead ---------- */
+
+.nw-button-label,
+.nw-row-label {
+  font-size: var(--nw-fs-row);
+}
+.nw-row-hint,
+.nw-button-hint,
+.nw-footnote {
+  font-size: var(--nw-fs-desc);
+}
+.nw-subhead {
+  font-size: var(--nw-fs-label);
+}
+.nw-screen-main .nw-button[data-key="newGame"] > .nw-button-label,
+.nw-screen-main .nw-button[data-key="continue"]:not([aria-disabled]) > .nw-button-label,
+.nw-button.is-primary > .nw-button-label {
+  font-size: calc(var(--nw-fs-row) * 1.22);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+.nw-button[aria-disabled="true"] > .nw-button-label {
+  opacity: 0.45;
+}
+
+/* ---------- Description aside (every settings row) ---------- */
+
+.nw-settings-aside {
+  display: grid;
+  align-content: start;
+  gap: 1em;
+  width: 19em;
+}
+.nw-desc {
+  padding: 1em 1.1em;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.32);
+  border-inline-start: 2px solid var(--nw-cyan);
+}
+.nw-desc[hidden] {
+  display: none;
+}
+.nw-desc-title {
+  margin: 0 0 0.45em;
+  font-size: var(--nw-fs-row);
+  font-weight: 650;
+}
+.nw-desc-body {
+  margin: 0;
+  font-size: var(--nw-fs-desc);
+  line-height: 1.55;
+  color: #c9d6ea;
+  text-wrap: pretty;
+}
+/* The stub copy is the funniest text in the UI: give it room, not a sticker. */
+.nw-desc-stub {
+  display: inline-block;
+  margin: 0 0 0.6em;
+  padding: 0.2em 0.6em;
+  border: 1px solid rgba(255, 94, 168, 0.55);
+  border-radius: 4px;
+  font-size: var(--nw-fs-label);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nw-pink);
+}
+.nw-desc-stub[hidden] {
+  display: none;
+}
+.nw-desc:has(.nw-desc-stub:not([hidden])) {
+  border-inline-start-color: var(--nw-pink);
+}
+
+/* ---------- CJK typesetting (item 3) ---------- */
+
+:lang(zh) {
+  --nw-font: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui,
+    sans-serif;
+  line-break: strict;
+}
+:lang(zh) .nw-frontend,
+:lang(zh) .nw-subtitle {
+  font-family: var(--nw-font);
+}
+:lang(zh) .nw-title,
+:lang(zh) .nw-subhead,
+:lang(zh) .nw-logotype-sub,
+:lang(zh) .nw-press,
+:lang(zh) .nw-badge,
+:lang(zh) .nw-hud-label,
+:lang(zh) .nw-hud-shield,
+:lang(zh) .nw-banner-kicker,
+:lang(zh) .nw-desc-stub,
+:lang(zh) .nw-hd-kicker,
+:lang(zh) .nw-wall-badge {
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+/* PingFang has no italic; a synthesized oblique reads as a bug. A real,
+   designed skew on the gradient lockup reads as intent. */
+:lang(zh) .nw-logotype-name {
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  transform: skewX(-6deg);
+}
+:lang(zh) .nw-row-value {
+  font-family: var(--nw-font);
+}
+.nw-body,
+.nw-footnote,
+.nw-row-hint,
+.nw-button-hint {
+  text-wrap: pretty;
+}
+
+/* ---------- Directional motion (item 5) ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .nw-frontend:not(.is-calm) .nw-screens[data-nav="forward"] .nw-screen:not(.is-under-modal):not(.is-modal) > .nw-panel {
+    animation: nw-in-right 240ms var(--nw-ease-out);
+  }
+  .nw-frontend:not(.is-calm) .nw-screens[data-nav="back"] .nw-screen:not(.is-under-modal):not(.is-modal) > .nw-panel {
+    animation: nw-in-left 240ms var(--nw-ease-out);
+  }
+  /* Rows arrive 25 ms apart (capped at eight), after the panel starts. */
+  .nw-frontend:not(.is-calm) .nw-menu > *,
+  .nw-frontend:not(.is-calm) .nw-grid > *,
+  .nw-frontend:not(.is-calm) .nw-tiles > *,
+  .nw-frontend:not(.is-calm) .nw-beats > *,
+  .nw-frontend:not(.is-calm) .nw-rows > *,
+  .nw-frontend:not(.is-calm) .nw-hangar-list > * {
+    animation: nw-row-in 220ms var(--nw-ease-out) both;
+    animation-delay: calc(40ms + var(--i, 0) * 25ms);
+  }
+  .nw-frontend:not(.is-calm) .nw-rows.is-sliding[data-slide="forward"] {
+    animation: nw-in-right 220ms var(--nw-ease-out);
+  }
+  .nw-frontend:not(.is-calm) .nw-rows.is-sliding[data-slide="back"] {
+    animation: nw-in-left 220ms var(--nw-ease-out);
+  }
+  .nw-frontend:not(.is-calm) .nw-desc.is-fresh {
+    animation: nw-fade 160ms ease;
+  }
+}
+@keyframes nw-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+@keyframes nw-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+}
+@keyframes nw-row-in {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
+@keyframes nw-fade {
+  from {
+    opacity: 0.2;
+  }
 }

@@ -49,7 +49,16 @@ export class Router {
     return this.#stack.at(-1)?.screen ?? null;
   }
 
+  /**
+   * Motion direction for CSS: going deeper slides in from the right, going
+   * back from the left (Persona 5 and Destiny 2 encode depth this way).
+   */
+  #direction(nav: "forward" | "back" | "none"): void {
+    this.#root.dataset.nav = nav;
+  }
+
   push(factory: ScreenFactory): void {
+    this.#direction("forward");
     this.#rememberFocus();
     const screen = factory();
     this.#stack.push({ factory, screen, focusKey: null });
@@ -62,6 +71,7 @@ export class Router {
   pop(): void {
     const entry = this.#stack.pop();
     if (!entry) return;
+    this.#direction("back");
     entry.screen.dispose?.();
     entry.screen.el.remove();
     this.#layout();
@@ -94,6 +104,7 @@ export class Router {
 
   /** Re-creates every screen from its factory, keeping focus positions. */
   rebuild(): void {
+    this.#direction("none");
     this.#rememberFocus();
     for (const entry of this.#stack) {
       entry.screen.dispose?.();

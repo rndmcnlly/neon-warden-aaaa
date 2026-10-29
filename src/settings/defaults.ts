@@ -19,7 +19,7 @@ export const DEFAULT_BINDINGS: Readonly<Record<Action, Binding>> = {
 
 export const DEFAULT_SETTINGS: Settings = {
   display: { preset: "high", renderScale: 1, fullscreen: false },
-  audio: { master: 0.8, music: 0.7, sfx: 0.8, voice: 1, ui: 0.6 },
+  audio: { master: 0.8, music: 0.7, sfx: 0.8, voice: 1, ui: 0.6, mono: false },
   textLang: "en",
   voiceLang: "en",
   subtitles: {

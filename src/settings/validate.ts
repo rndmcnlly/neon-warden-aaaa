@@ -128,6 +128,7 @@ export function sanitizeSettings(s: Settings): Settings {
       sfx: unit(s.audio?.sfx, d.audio.sfx),
       voice: unit(s.audio?.voice, d.audio.voice),
       ui: unit(s.audio?.ui, d.audio.ui),
+      mono: bool(s.audio?.mono, d.audio.mono),
     },
     textLang: oneOf<Lang>(s.textLang, LANGS, d.textLang),
     voiceLang: oneOf<Lang>(s.voiceLang, LANGS, d.voiceLang),

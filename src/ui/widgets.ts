@@ -323,6 +323,19 @@ export function sliderRow(options: SliderOptions): Widget {
   return { el, sync };
 }
 
+/**
+ * Numbers the children of `list` (`--i`) so CSS can stagger their entrance
+ * by 25 ms each, capped at eight rows (200 ms) so long lists never lag.
+ */
+export function stagger(list: HTMLElement): HTMLElement {
+  [...list.children].forEach((child, i) => {
+    if (child instanceof HTMLElement) {
+      child.style.setProperty("--i", String(Math.min(i, 8)));
+    }
+  });
+  return list;
+}
+
 /** Builds the common screen frame: a glassy panel with title and prompts. */
 export function panel(options: {
   readonly id: string;
@@ -344,6 +357,8 @@ export function panel(options: {
     options.title ? h("h2", { class: "nw-title" }, options.title) : null,
     ...options.body,
   );
+  box.querySelectorAll<HTMLElement>(".nw-menu, .nw-grid, .nw-tiles, .nw-beats")
+    .forEach(stagger);
   screen.append(box);
   if (options.prompts) screen.append(promptBar(options.prompts));
   return screen;

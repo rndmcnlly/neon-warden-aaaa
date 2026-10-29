@@ -1557,6 +1557,308 @@ export const UI_STRINGS = {
     es: "Ningún Guardián sufrió daños en una partida pacifista.",
     zh: "在和平通关中，没有任何守望者受到伤害。",
   },
+
+  // -- wave 3: settings descriptions (one per row, shown in the side panel)
+  "ui.settings.monoAudio": {
+    en: "Mono audio",
+    es: "Audio mono",
+    zh: "单声道音频",
+  },
+  "ui.settings.desc.preset": {
+    en:
+      "A bundle of graphics options. Lower presets trade bloom, particles and shadow detail for a steadier frame rate. Changing any single option switches this to Custom.",
+    es:
+      "Un conjunto de opciones gráficas. Los preajustes bajos cambian resplandor, partículas y sombras por una tasa de cuadros más estable. Cambiar cualquier opción lo pasa a Personalizado.",
+    zh:
+      "一组图形选项。较低的预设以泛光、粒子和阴影细节换取更稳定的帧率。单独修改任一选项后会切换为“自定义”。",
+  },
+  "ui.settings.desc.renderScale": {
+    en:
+      "How many pixels the 3D scene draws, relative to your screen. Above 100% sharpens edges at a cost; below 100% helps slower machines. Menus and text always draw at full resolution.",
+    es:
+      "Cuántos píxeles dibuja la escena 3D respecto a tu pantalla. Más de 100% afila los bordes con un costo; menos de 100% ayuda a equipos lentos. Menús y texto siempre se dibujan a resolución completa.",
+    zh:
+      "3D 场景相对于屏幕绘制的像素数量。高于 100% 边缘更锐利但更耗性能；低于 100% 有助于较慢的设备。菜单和文字始终以完整分辨率绘制。",
+  },
+  "ui.settings.desc.fullscreen": {
+    en:
+      "Fills the screen and hides the browser. Your browser may ask for permission; pressing Esc twice also leaves fullscreen.",
+    es:
+      "Ocupa toda la pantalla y oculta el navegador. Tu navegador puede pedir permiso; presionar Esc dos veces también sale de pantalla completa.",
+    zh:
+      "填满屏幕并隐藏浏览器界面。浏览器可能会请求许可；连按两次 Esc 也可退出全屏。",
+  },
+  "ui.settings.desc.master": {
+    en:
+      "Scales every sound in the game at once. The other sliders set each part of the mix relative to this one.",
+    es:
+      "Escala todos los sonidos del juego a la vez. Los demás controles ajustan cada parte de la mezcla en relación con este.",
+    zh:
+      "同时调整游戏中所有声音的音量。其他滑块在此基础上分别设定混音中的各部分。",
+  },
+  "ui.settings.desc.music": {
+    en:
+      "The score: logos, tutorial, sectors, flashback, the Warden and the ending each have their own cue.",
+    es:
+      "La banda sonora: logos, tutorial, sectores, recuerdo, el Guardián y el final tienen cada uno su propia pieza.",
+    zh: "配乐：标志、教程、各区、闪回、守望者和结局各有专属曲目。",
+  },
+  "ui.settings.desc.sfx": {
+    en:
+      "Ship, weapons, impacts, grazes and enemy fire. Musical hits snap to the beat; enemy fire deliberately does not.",
+    es:
+      "Nave, armas, impactos, roces y fuego enemigo. Los golpes musicales siguen el ritmo; el fuego enemigo, a propósito, no.",
+    zh:
+      "飞船、武器、命中、擦弹和敌方火力。音乐化的音效会对齐节拍；敌方火力刻意不对齐。",
+  },
+  "ui.settings.desc.voice": {
+    en:
+      "Dialogue, radio chatter and the Warden. Music and effects duck automatically under speech so lines stay clear.",
+    es:
+      "Diálogo, charla de radio y el Guardián. La música y los efectos bajan solos bajo la voz para que se entienda.",
+    zh:
+      "对白、无线电通话和守望者的声音。说话时音乐和音效会自动压低，保证台词清晰。",
+  },
+  "ui.settings.desc.uiVolume": {
+    en:
+      "Menu ticks, confirms and tab switches. Turn it down if you navigate menus quickly and the clicks pile up.",
+    es:
+      "Clics de menú, confirmaciones y cambios de pestaña. Bájalo si navegas rápido y los clics se amontonan.",
+    zh:
+      "菜单的滴答、确认和切换标签页的声音。如果你操作很快、提示音叠在一起，可以调低。",
+  },
+  "ui.settings.desc.monoAudio": {
+    en:
+      "Folds the mix into one channel, so no sound depends on which ear hears it. Radio chatter and enemy fire keep their side indicators on screen.",
+    es:
+      "Junta la mezcla en un solo canal, para que ningún sonido dependa de qué oído lo escucha. La radio y el fuego enemigo conservan sus indicadores de lado en pantalla.",
+    zh:
+      "将混音合并为单声道，任何声音都不再依赖于哪只耳朵听到。无线电通话和敌方火力仍会在屏幕上显示方位提示。",
+  },
+  "ui.settings.desc.textLang": {
+    en:
+      "Menus, subtitles, radio text and the HUD. Changes take effect immediately, including in the middle of a line.",
+    es:
+      "Menús, subtítulos, texto de radio y HUD. El cambio es inmediato, incluso a mitad de una frase.",
+    zh: "菜单、字幕、无线电文字和 HUD。更改立即生效，即使正在播放台词。",
+  },
+  "ui.settings.desc.voiceLang": {
+    en:
+      "The spoken language. It can differ from the text language: watch in one, read in another.",
+    es:
+      "El idioma hablado. Puede ser distinto del idioma del texto: escucha en uno y lee en otro.",
+    zh: "语音所用的语言。可以与文字语言不同：听一种，读另一种。",
+  },
+  "ui.settings.desc.subtitles": {
+    en:
+      "Captions for every spoken line, shown before the first word is heard. Radio chatter has its own text channel and follows this setting too.",
+    es:
+      "Subtítulos para cada línea hablada, visibles antes de la primera palabra. La radio tiene su propio canal de texto y también sigue este ajuste.",
+    zh:
+      "为每句台词显示字幕，并在第一个字出口之前出现。无线电通话有独立的文字频道，同样遵循此设置。",
+  },
+  "ui.settings.desc.subtitleScale": {
+    en:
+      "Caption size, from 100% to 200%. The HUD grows at half this rate, so large text never covers the play area.",
+    es:
+      "Tamaño de los subtítulos, de 100% a 200%. El HUD crece a la mitad de ese ritmo, para que el texto grande nunca tape la zona de juego.",
+    zh:
+      "字幕大小，100% 至 200%。HUD 以一半的幅度随之放大，大字号也不会遮挡游戏区域。",
+  },
+  "ui.settings.desc.subtitleBg": {
+    en:
+      "How solid the box behind captions is. Higher values keep text readable over bright explosions.",
+    es:
+      "Qué tan sólido es el fondo de los subtítulos. Valores altos mantienen el texto legible sobre explosiones brillantes.",
+    zh: "字幕背景框的不透明度。数值越高，在明亮爆炸前也越易阅读。",
+  },
+  "ui.settings.desc.speakerNames": {
+    en: "Shows who is talking above each caption, in that character's color.",
+    es:
+      "Muestra quién habla sobre cada subtítulo, con el color de ese personaje.",
+    zh: "在每条字幕上方以角色专属颜色显示说话者。",
+  },
+  "ui.settings.desc.maxLines": {
+    en:
+      "At most this many caption lines at once. Longer lines are split into timed pieces rather than shrunk.",
+    es:
+      "Como máximo, estas líneas de subtítulo a la vez. Las frases largas se dividen en partes con tiempo en lugar de achicarse.",
+    zh:
+      "同时最多显示的字幕行数。较长的台词会被拆分为按时显示的片段，而不是缩小字号。",
+  },
+  "ui.settings.desc.autoFire": {
+    en:
+      "Your ship fires continuously without holding a button. The Writ still charges whenever you stop firing, so turn this off to use rest-to-charge.",
+    es:
+      "Tu nave dispara sin mantener ningún botón. El Writ se carga cuando dejas de disparar, así que desactívalo para usar la carga en reposo.",
+    zh:
+      "飞船无需按住按键即可持续射击。只有停火时“令状”才会充能，因此若想使用静止充能，请关闭此项。",
+  },
+  "ui.settings.desc.holdToggle": {
+    en:
+      "Hold: fire and focus last while the button is down. Toggle: press once to start, again to stop. Toggle helps if holding a button is tiring or painful.",
+    es:
+      "Mantener: disparo y enfoque duran mientras presionas. Alternar: presiona una vez para empezar y otra para parar. Alternar ayuda si mantener un botón cansa o duele.",
+    zh:
+      "按住：按键按下期间持续射击和专注。切换：按一次开始，再按一次停止。若长时间按住按键让你疲劳或疼痛，请选择切换。",
+  },
+  "ui.settings.desc.shake": {
+    en:
+      "Camera and cabinet shake on hits and explosions. Zero turns it off completely without hiding any information.",
+    es:
+      "Sacudida de cámara y cabina con impactos y explosiones. En cero se apaga por completo sin ocultar información.",
+    zh: "受击和爆炸时的镜头与机舱震动。设为零会完全关闭，不会隐藏任何信息。",
+  },
+  "ui.settings.desc.reducedFlashing": {
+    en:
+      "Replaces full-screen flashes and strobing with gentle fades, and caps bright bursts. Recommended for photosensitive players.",
+    es:
+      "Sustituye destellos de pantalla completa y estroboscopios por fundidos suaves y limita los brillos intensos. Recomendado para personas fotosensibles.",
+    zh: "用柔和的渐变代替全屏闪光和频闪，并限制强光爆发。推荐光敏感玩家开启。",
+  },
+  "ui.settings.desc.reduceMotion": {
+    en:
+      "Calms camera drift, parallax and menu slides; subtitles mark the spoken word with color instead of movement. Your system setting also turns this on.",
+    es:
+      "Calma la deriva de cámara, el paralaje y los deslizamientos del menú; los subtítulos marcan la palabra hablada con color en lugar de movimiento. El ajuste de tu sistema también lo activa.",
+    zh:
+      "减弱镜头漂移、视差和菜单滑动；字幕改用颜色而非动效标示正在说的词。系统设置中开启也会生效。",
+  },
+  "ui.settings.desc.gameSpeed": {
+    en:
+      "Slows the whole game, enemies and bullets included, down to 50%. Music and voice keep their pitch.",
+    es:
+      "Ralentiza todo el juego, enemigos y balas incluidos, hasta un 50%. La música y las voces conservan su tono.",
+    zh:
+      "将整个游戏（包括敌人和子弹）减速，最低至 50%。音乐和语音保持原有音高。",
+  },
+  "ui.settings.desc.difficulty": {
+    en:
+      "Story gives more hull and slower bullets; Hard tightens patterns. Pay, endings and the pacifist run are available on every difficulty.",
+    es:
+      "Historia da más casco y balas más lentas; Difícil ajusta los patrones. La paga, los finales y la ruta pacifista están en todas las dificultades.",
+    zh:
+      "“故事”提供更多船体耐久和更慢的子弹；“困难”让弹幕更密集。报酬、结局与和平路线在所有难度下均可达成。",
+  },
+  "ui.settings.desc.colorCues": {
+    en:
+      "Pairs every color-coded signal with a shape or pattern: hostile bullets get outlines, scan locks get brackets, weak points get a cross.",
+    es:
+      "Acompaña cada señal de color con una forma o patrón: las balas hostiles llevan contorno, los fijados de escaneo llevan corchetes, los puntos débiles una cruz.",
+    zh:
+      "为每个以颜色区分的信号配上形状或图案：敌方子弹加轮廓，扫描锁定加括号，弱点加十字。",
+  },
+  "ui.settings.desc.resetControls": {
+    en: "Restores every key and button binding to the defaults. Asks first.",
+    es:
+      "Restaura todas las asignaciones de teclas y botones a los valores predeterminados. Pregunta antes.",
+    zh: "将所有按键和手柄绑定恢复为默认值。执行前会确认。",
+  },
+  "ui.settings.desc.resetAll": {
+    en:
+      "Restores every setting on every tab, including controls. Asks first; your loadout and progress are kept.",
+    es:
+      "Restaura todos los ajustes de todas las pestañas, incluidos los controles. Pregunta antes; tu equipamiento y tu progreso se conservan.",
+    zh:
+      "恢复所有标签页的全部设置，包括操作。执行前会确认；你的配装和进度会保留。",
+  },
+  "ui.settings.tabDesc.display": {
+    en:
+      "Resolution, quality and fullscreen. Changes apply live behind this menu.",
+    es:
+      "Resolución, calidad y pantalla completa. Los cambios se aplican en vivo detrás de este menú.",
+    zh: "分辨率、画质和全屏。更改会在此菜单后方实时生效。",
+  },
+  "ui.settings.tabDesc.audio": {
+    en:
+      "The mix, bus by bus, plus mono output. Adjust while the music plays to hear the result.",
+    es:
+      "La mezcla, canal por canal, más la salida mono. Ajusta mientras suena la música para oír el resultado.",
+    zh: "逐路调节混音，以及单声道输出。可在音乐播放时调整，直接听到效果。",
+  },
+  "ui.settings.tabDesc.language": {
+    en: "Text and voice languages are separate choices.",
+    es: "Los idiomas de texto y de voz se eligen por separado.",
+    zh: "文字语言和语音语言可分别选择。",
+  },
+  "ui.settings.tabDesc.subtitles": {
+    en:
+      "Everything about captions, with a live preview of exactly what plays in game.",
+    es:
+      "Todo sobre los subtítulos, con una vista previa en vivo de lo que verás en el juego.",
+    zh: "字幕的全部设置，并附有与游戏内完全一致的实时预览。",
+  },
+  "ui.settings.tabDesc.accessibility": {
+    en:
+      "Input, motion, flashing, speed and color options. None of them lock out any content or ending.",
+    es:
+      "Opciones de control, movimiento, destellos, velocidad y color. Ninguna bloquea contenido ni finales.",
+    zh: "输入、动效、闪光、速度和颜色选项。任何选项都不会锁定内容或结局。",
+  },
+  "ui.settings.tabDesc.controls": {
+    en:
+      "Two keys and one button per action. Conflicts are resolved by swapping, and you will be told what moved.",
+    es:
+      "Dos teclas y un botón por acción. Los conflictos se resuelven intercambiando, y se te avisa qué cambió.",
+    zh:
+      "每个动作可绑定两个按键和一个手柄按钮。冲突时会自动交换，并告诉你哪些发生了变化。",
+  },
+  "ui.controls.desc.moveUp": {
+    en: "Moves the ship up the lane. The ship never leaves the play area.",
+    es: "Mueve la nave hacia arriba. La nave nunca sale de la zona de juego.",
+    zh: "让飞船在航道中向上移动。飞船不会离开游戏区域。",
+  },
+  "ui.controls.desc.moveDown": {
+    en: "Moves the ship down the lane.",
+    es: "Mueve la nave hacia abajo.",
+    zh: "让飞船在航道中向下移动。",
+  },
+  "ui.controls.desc.moveLeft": {
+    en: "Moves the ship left. Also adjusts the focused setting in menus.",
+    es:
+      "Mueve la nave a la izquierda. En los menús también ajusta el valor enfocado.",
+    zh: "让飞船向左移动。在菜单中也用于调整当前选项。",
+  },
+  "ui.controls.desc.moveRight": {
+    en: "Moves the ship right. Also adjusts the focused setting in menus.",
+    es:
+      "Mueve la nave a la derecha. En los menús también ajusta el valor enfocado.",
+    zh: "让飞船向右移动。在菜单中也用于调整当前选项。",
+  },
+  "ui.controls.desc.fire": {
+    en:
+      "Tap for one aimed round, hold to stream. Let go to rest: the scan beam sweeps ahead and the Writ charges, then fire to release it.",
+    es:
+      "Toca para un disparo preciso, mantén para ráfaga. Suelta para reposar: el haz de escaneo barre al frente y el Writ se carga; dispara para liberarlo.",
+    zh:
+      "轻按射出一发精确子弹，按住持续射击。松开即静止：扫描光束向前扫描，“令状”开始充能，再次射击即可释放。",
+  },
+  "ui.controls.desc.focus": {
+    en:
+      "Slows the ship for precise dodging and narrows the scan cone so locks land faster.",
+    es:
+      "Ralentiza la nave para esquivar con precisión y estrecha el cono de escaneo para fijar más rápido.",
+    zh: "降低飞船速度以精确闪避，并收窄扫描锥，使锁定更快。",
+  },
+  "ui.controls.desc.pause": {
+    en:
+      "Opens the pause menu. The game also pauses itself when the window loses focus.",
+    es:
+      "Abre el menú de pausa. El juego también se pausa solo si la ventana pierde el foco.",
+    zh: "打开暂停菜单。窗口失去焦点时游戏也会自动暂停。",
+  },
+  "ui.controls.desc.confirm": {
+    en: "Selects in menus and advances dialogue.",
+    es: "Selecciona en los menús y avanza el diálogo.",
+    zh: "在菜单中选择，并推进对话。",
+  },
+  "ui.controls.desc.back": {
+    en:
+      "Returns to the previous screen. Held during the tutorial, offers to skip it.",
+    es:
+      "Vuelve a la pantalla anterior. Mantenido durante el tutorial, ofrece saltarlo.",
+    zh: "返回上一界面。在教程中按住可选择跳过教程。",
+  },
 } as const satisfies Record<string, LocalizedText>;
 
 /** The MIT license text, verbatim; hoisted so the table stays readable. */

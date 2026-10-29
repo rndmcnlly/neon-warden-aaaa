@@ -44,6 +44,11 @@ export interface Settings {
     readonly sfx: number;
     readonly voice: number;
     readonly ui: number;
+    /**
+     * Fold the mix to one channel (spatial panning off), for players who
+     * hear with one ear or play on one speaker.
+     */
+    readonly mono: boolean;
   };
   readonly textLang: Lang;
   readonly voiceLang: Lang;
