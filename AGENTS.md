@@ -174,5 +174,5 @@ These are repo-owned, not global installs; evidence and promotion gate: `docs/SK
 - Research notes go in `research/YYYY-MM-DD-topic/README.md` (framing question,
   findings as options with tradeoffs, status of what was tried, next step).
 - House style: no emdashes, no emoji; en dashes for ranges.
-- Prior teardown of the AAA Minesweeper parody:
-  `(private course workspace)/research/2026-10-28-aaa-minesweeper-teardown/README.md`.
+- Prior teardown of the AAA Minesweeper parody: kept in a private course
+  workspace outside this repository (not published).

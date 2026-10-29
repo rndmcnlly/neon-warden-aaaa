@@ -82,9 +82,8 @@ honest stubbing is an ethical counter-practice to overclaiming.
 - `AGENTS.md`: Framing revised October 28 after Adam played the Minesweeper
   parody (parody to authentic slice); scope cut "Pilot stays off-screen";
   "No content censorship for children" decision; platforms decision.
-- Teardown that triggered the reframe:
-  `(private course workspace)/research/2026-10-28-aaa-minesweeper-teardown/README.md`
-  (outside this repo; private course folder).
+- Teardown that triggered the reframe: the AAA Minesweeper teardown note
+  (outside this repo, in a private course workspace).
 - Scope cut commit `c598544` (October 28, 22:57) "Remove on-screen Pilot and
   helmet customization from active slice"; follow-up repair `3f785ff`;
   superseded-requirement note at the end of `docs/WAVE3.md`.
@@ -325,7 +324,7 @@ blind observation, then adopted selectively, with declined ideas recorded.
 
 | When (2026)       | Folder                                                    | Outside anchor                                       | What it changed                                                                                       | Declined or rejected                                                                           |
 | ----------------- | --------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Oct 28 (pre-code) | private course workspace `aaa-minesweeper-teardown` (outside repo)    | Adam's play of the parody                            | parody reframed as authentic slice (`AGENTS.md` Framing)                                              | parody tone                                                                                    |
+| Oct 28 (pre-code) | Minesweeper teardown (private course workspace, outside repo) | Adam's play of the parody                            | parody reframed as authentic slice (`AGENTS.md` Framing)                                              | parody tone                                                                                    |
 | Oct 28            | `original-reference`                                      | live E4 starter, source read in full                 | entity bible, waves, pilots-as-interface carried over                                                 |                                                                                                |
 | Oct 28            | `vertical-slice-checklist`                                | Xsolla, publisher-milestone articles, GAG, case studies | `PRODUCTION.md` Built/Stubbed table, front-end inversion                                           | overclaiming via hidden scope                                                                  |
 | Oct 28            | `narrative-tropes`                                        | TV Tropes                                            | Enclosure spine, Warden three moves, pacifist run                                                     | Succession and Attract Mode spines                                                             |
@@ -400,7 +399,7 @@ Dashboard screenshot exists only as `production/reports/browser-snapshot.md`.
 ## Risks for a public page
 
 - **Private course material:** the Minesweeper teardown and other files live in
-  `(private course workspace)/` (private course workspace). Quote, do not link. `reference/e4-starter/` is a course
+  a private course workspace outside this repository. Quote, do not link. `reference/e4-starter/` is a course
   starter: confirm it is already public (it is on GitHub Pages per
   `original-reference`).
 - **Budget data:** `research/SPEND.md` is small sums but reveals vendor
