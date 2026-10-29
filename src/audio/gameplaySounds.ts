@@ -28,6 +28,8 @@ import {
   fizzle,
   glide,
   heavyThump,
+  moveReverse,
+  moveStop,
   pluck,
   podTear,
   precisionEnter,
@@ -146,6 +148,22 @@ export const GAMEPLAY_SOUNDS = {
     cap: 1,
     priority: 8,
     spatial: false,
+  }),
+  // Movement transients (the engine bed itself is `engineBed.ts`): quiet,
+  // one at a time, and rate-limited so an autopilot's jitter cannot chatter.
+  move_reverse: feel(moveReverse, -20, {
+    sample: false,
+    jitter: 0.5,
+    cap: 1,
+    priority: 2,
+    minGapMs: 140,
+  }),
+  move_stop: feel(moveStop, -22, {
+    sample: false,
+    jitter: 0.5,
+    cap: 1,
+    priority: 2,
+    minGapMs: 140,
   }),
   // ----------------------------------------------------- player weapon
   shot_stream: feel(shotTick, -14, {

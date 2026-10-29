@@ -35,7 +35,7 @@ export type SynthRecipe = (a: SynthArgs) => SynthVoice;
 let noiseCache: WeakMap<BaseAudioContext, AudioBuffer> | null = null;
 
 /** One second of white noise per context, shared by every noisy recipe. */
-function noise(ctx: BaseAudioContext): AudioBuffer {
+export function noise(ctx: BaseAudioContext): AudioBuffer {
   noiseCache ??= new WeakMap();
   let buf = noiseCache.get(ctx);
   if (!buf) {
@@ -129,6 +129,28 @@ function precisionGesture(enter: boolean): SynthRecipe {
 }
 export const precisionEnter = precisionGesture(true);
 export const precisionExit = precisionGesture(false);
+
+/**
+ * Movement transients: a short puff of air from the thrusters, under 60 ms.
+ * A reversal is a bright double-hiss (the nozzles kick both ways); a stop
+ * is a single lower, softer exhale. Pure noise, no pitch: they must never
+ * be mistaken for weapon, lock or precision cues.
+ */
+function moveChuff(reverse: boolean): SynthRecipe {
+  return (a) => {
+    const g = env(a, 0.003, reverse ? 0.034 : 0.05, reverse ? 0.9 : 0.6);
+    const bp = bandpass(a, reverse ? 2600 : 1400, reverse ? 1.6 : 1.1);
+    bp.frequency.exponentialRampToValueAtTime(
+      reverse ? 1800 : 700,
+      a.when + 0.05,
+    );
+    bp.connect(g);
+    const n = noiseSource(a, bp);
+    return run(a, [n], a.when + 0.06);
+  };
+}
+export const moveReverse = moveChuff(true);
+export const moveStop = moveChuff(false);
 
 /** A glassy click: a sine blip with a breath of noise. UI and lock ticks. */
 export const tick: SynthRecipe = (a) => {

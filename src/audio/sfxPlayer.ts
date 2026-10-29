@@ -23,13 +23,15 @@ import {
   offKeyMidi,
   semitonesToRate,
 } from "./beatGrid.ts";
-import type { SoundCue, SoundSink } from "./gameplayAudio.ts";
+import { EngineBed, engineTarget } from "./engineBed.ts";
+import type { EngineMove, SoundCue, SoundSink } from "./gameplayAudio.ts";
 import {
   GAMEPLAY_SOUNDS,
   type GameplaySoundId,
   type SoundRole,
 } from "./gameplaySounds.ts";
 import { dopplerRate, place } from "./spatial.ts";
+import { noise } from "./synth.ts";
 
 export interface SfxPlayerDeps {
   readonly ctx: BaseAudioContext;
@@ -72,8 +74,32 @@ export class SfxPlayer implements SoundSink {
   private readonly loops = new Map<GameplaySoundId, Voice>();
   private readonly roundRobin = new Map<GameplaySoundId, number>();
   private readonly lastAt = new Map<GameplaySoundId, number>();
+  private bed: EngineBed | null = null;
 
   constructor(private readonly d: SfxPlayerDeps) {}
+
+  /** The engine bed follows the ship (`engineBed.ts`); null fades it out. */
+  engine(move: EngineMove | null): void {
+    // Like the precision gestures: never wind a drone up on a suspended
+    // pre-unlock or paused clock.
+    if (move && this.d.ctx.state !== "running") return;
+    if (!move && !this.bed) return;
+    this.bed ??= new EngineBed(
+      this.d.ctx,
+      this.d.buses.sfx,
+      () => noise(this.d.ctx),
+    );
+    this.bed.update(
+      move &&
+        engineTarget(
+          move.vel,
+          move.prevVel,
+          move.focused,
+          move.x,
+          this.d.mono(),
+        ),
+    );
+  }
 
   play(cue: SoundCue): void {
     // Precision feedback is about this instant. Never queue obsolete gestures
@@ -126,6 +152,7 @@ export class SfxPlayer implements SoundSink {
     for (const v of [...this.voices, ...this.loops.values()]) v.stop(now);
     this.voices = [];
     this.loops.clear();
+    this.bed?.stop();
   }
 
   // ------------------------------------------------------------ choosing

@@ -48,10 +48,22 @@ interface HitCluster {
   pos: Vec2 | undefined;
 }
 
+/** The ship's movement this tick, for the engine bed (`engineBed.ts`). */
+export interface EngineMove {
+  /** Movement over the last tick and the one before, sim units per tick. */
+  readonly vel: Vec2;
+  readonly prevVel: Vec2;
+  readonly focused: boolean;
+  /** Ship x, sim units (the bed pans a little by screen position). */
+  readonly x: number;
+}
+
 export interface SoundSink {
   play(cue: SoundCue): void;
   /** Starts or stops a looping role (the scan beam). */
   loop(role: GameplaySoundId, on: boolean, cue?: Omit<SoundCue, "role">): void;
+  /** Drives the continuous engine bed; null fades it out. Optional for fakes. */
+  engine?(move: EngineMove | null): void;
 }
 
 export const GAMEPLAY_AUDIO_TUNING = {
@@ -61,6 +73,14 @@ export const GAMEPLAY_AUDIO_TUNING = {
   flybyDistance: 80,
   /** ...within this many ticks. */
   flybyLeadTicks: 10,
+  /** Movement transients: a reversal compares against this many ticks ago. */
+  moveLookbackTicks: 4,
+  /** ...and needs this speed (units per tick) both before and after. */
+  moveReverseSpeed: 1.2,
+  /** A stop: from at least this speed within the lookback, to under... */
+  moveStopFrom: 2.5,
+  /** ...this speed now. */
+  moveStopUnder: 0.3,
   /** Grazes closer together than this (ticks) form one rising streak. */
   grazeStreakTicks: 72,
   /** Lock progress ticks per full lock. */
@@ -116,6 +136,9 @@ export class GameplayAudio {
   private melodyStep = 0;
   /** This tick's light hits, flushed as one voice per role in `frame`. */
   private clusters = new Map<ClusterRole, HitCluster>();
+  /** The ship's recent per-tick velocities, newest last (movement sound). */
+  private moves: Vec2[] = [];
+  private lastVel: Vec2 | null = null;
 
   constructor(private readonly sink: SoundSink) {}
 
@@ -129,6 +152,9 @@ export class GameplayAudio {
     this.lastGrazeTick = -Infinity;
     this.melodyStep = 0;
     this.clusters.clear();
+    this.moves = [];
+    this.lastVel = null;
+    this.sink.engine?.(null);
     this.setScanning(false);
   }
 
@@ -285,6 +311,7 @@ export class GameplayAudio {
     // Optional chains: tolerate a sim snapshot from before the scan, lock
     // and velocity fields existed (wave 3 landed in steps).
     this.setScanning(state.player.scan?.active ?? false);
+    this.movement(state);
     const ear = state.player.pos;
     const seen = new Set<EntityId>();
     for (const enemy of state.enemies) {
@@ -311,6 +338,62 @@ export class GameplayAudio {
         this.lockStep.delete(id);
       }
     }
+  }
+
+  /**
+   * MOVE made audible: the engine bed follows the ship every tick, and a
+   * reversal or a stop gets a short thruster transient. Reads the movement
+   * that happened (`player.vel`), so classic and hybrid controllers sound
+   * alike for alike motion, and the autopilot's twitching is held back by
+   * the roles' caps and gaps rather than by guessing at intent.
+   */
+  private movement(state: SimState): void {
+    const p = state.player;
+    const inPlay = state.phase !== "ended" && p.lives > 0;
+    const vel = p.vel ?? { x: 0, y: 0 };
+    if (!inPlay) {
+      this.moves = [];
+      this.lastVel = null;
+      this.sink.engine?.(null);
+      return;
+    }
+    const t = GAMEPLAY_AUDIO_TUNING;
+    const prevVel = this.lastVel ?? vel;
+    this.lastVel = { x: vel.x, y: vel.y };
+    this.sink.engine?.({
+      vel,
+      prevVel,
+      focused: p.focused ?? false,
+      x: p.pos.x,
+    });
+    const speed = Math.hypot(vel.x, vel.y);
+    const back = this.moves[0];
+    if (back && this.moves.length >= t.moveLookbackTicks) {
+      const was = Math.hypot(back.x, back.y);
+      const peak = Math.max(...this.moves.map((m) => Math.hypot(m.x, m.y)));
+      const cos = (vel.x * back.x + vel.y * back.y) / ((speed * was) || 1);
+      // The puff comes from the nozzle opposite the new push: offset the
+      // sound toward it so it pans like the visible puff.
+      const side = (v: Vec2, k: number) => ({
+        x: p.pos.x - (v.x / (Math.hypot(v.x, v.y) || 1)) * k,
+        y: p.pos.y - (v.y / (Math.hypot(v.x, v.y) || 1)) * k,
+      });
+      if (
+        speed >= t.moveReverseSpeed && was >= t.moveReverseSpeed && cos < -0.5
+      ) {
+        this.sink.play({ role: "move_reverse", pos: side(vel, 40) });
+        this.moves = [];
+      } else if (speed < t.moveStopUnder && peak >= t.moveStopFrom) {
+        const last = this.moves[this.moves.length - 1];
+        this.sink.play({
+          role: "move_stop",
+          pos: side({ x: -last.x, y: -last.y }, 40),
+        });
+        this.moves = [];
+      }
+    }
+    this.moves.push({ x: vel.x, y: vel.y });
+    if (this.moves.length > t.moveLookbackTicks) this.moves.shift();
   }
 
   private setScanning(on: boolean): void {
