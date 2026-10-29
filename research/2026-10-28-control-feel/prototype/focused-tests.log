@@ -1,0 +1,66 @@
+[0m[32mCheck[0m tests/movement_test.ts
+[0m[32mCheck[0m tests/input_reset_test.ts
+[0m[32mCheck[0m tests/shot_feel_test.ts
+[0m[32mCheck[0m tests/tutorial_gates_test.ts
+[0m[32mCheck[0m tests/audio_gameplay_test.ts
+[0m[32mCheck[0m tests/input_bindings_test.ts
+[0m[32mCheck[0m tests/render_logic_test.ts
+[0m[38;5;245mrunning 7 tests from ./tests/movement_test.ts[0m
+movement flags are typed opt-in, invalid values remain classic ... [0m[32mok[0m [0m[38;5;245m(527µs)[0m
+hybrid first tick126, tick16 252px/s, cruise release168/84/0 ... [0m[32mok[0m [0m[38;5;245m(220µs)[0m
+classic: normalize diagonals, preserve partial analogue, instant reverse/corner ... [0m[32mok[0m [0m[38;5;245m(141µs)[0m
+classic: fixed input replay includes response state and focus transitions only ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+hybrid: normalize diagonals, preserve partial analogue, instant reverse/corner ... [0m[32mok[0m [0m[38;5;245m(81µs)[0m
+hybrid: fixed input replay includes response state and focus transitions only ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+hybrid neutral-gap memory, precision release, wall coast do not store a launch ... [0m[32mok[0m [0m[38;5;245m(121µs)[0m
+[0m[38;5;245mrunning 1 test from ./tests/input_reset_test.ts[0m
+input blur/pause reset clears held keys, toggle latches and queued press edges ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+[0m[38;5;245mrunning 6 tests from ./tests/shot_feel_test.ts[0m
+projectile speeds and muzzle-to-top transit are measured at fixed ticks ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+sweep catches tiny parts and weakpoints between fast endpoints ... [0m[32mok[0m [0m[38;5;245m(107µs)[0m
+fast tap crossing a narrow part chord disarms instead of killing hull ... [0m[32mok[0m [0m[38;5;245m(490µs)[0m
+fast piercing Writ resolves multiple crossed hulls in one tick ... [0m[32mok[0m [0m[38;5;245m(234µs)[0m
+camera recoil: tap immediate, stream absent, settles; accessibility exact zero ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+shot chips bounded, low tier clears, seek does not streak ... [0m[32mok[0m [0m[38;5;245m(18ms)[0m
+[0m[38;5;245mrunning 13 tests from ./tests/tutorial_gates_test.ts[0m
+gates: no input, browser focus and passive charge never complete a lesson ... [0m[32mok[0m [0m[38;5;245m(7ms)[0m
+gates: too-early keyboard actions do not pre-credit future instructions ... [0m[32mok[0m [0m[38;5;245m(3ms)[0m
+gates: held movement and focus require a new press after activation ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+gates: wrong action cannot complete the gate or pre-credit another ... [0m[32mok[0m [0m[38;5;245m(125µs)[0m
+gates: a stale fire stream is not a fresh demonstration ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+gates: changing accessibility mode is neither a press nor a mistake ... [0m[32mok[0m [0m[38;5;245m(361µs)[0m
+gates: fresh first-tick press is accepted, toggle focus is action-level ... [0m[32mok[0m [0m[38;5;245m(91µs)[0m
+gates: active target drill still counts the disarming trick shot ... [0m[32mok[0m [0m[38;5;245m(1ms)[0m
+gates: tap count from initial fire lesson does not leak into tap lesson ... [0m[32mok[0m [0m[38;5;245m(509µs)[0m
+gates: three fresh taps, not old shots, demonstrate trigger discipline ... [0m[32mok[0m [0m[38;5;245m(581µs)[0m
+gates: deliberate release and rest charge; precharged idle does not ... [0m[32mok[0m [0m[38;5;245m(2ms)[0m
+gates: old projectile results cannot pre-credit target or part drills ... [0m[32mok[0m [0m[38;5;245m(63µs)[0m
+corrections: scheduler yields to teaching, cools down, exhausts its bag ... [0m[32mok[0m [0m[38;5;245m(292µs)[0m
+[0m[38;5;245mrunning 4 tests from ./tests/audio_gameplay_test.ts[0m
+every role referenced by the mapping exists in the table ... [0m[32mok[0m [0m[38;5;245m(649µs)[0m
+a killed enemy is heard where it last was ... [0m[32mok[0m [0m[38;5;245m(60µs)[0m
+grazes climb in a streak, and sing a melody when pacifist ... [0m[32mok[0m [0m[38;5;245m(78µs)[0m
+scan loop follows the beam; lock ticks rise; fly-bys once ... [0m[32mok[0m [0m[38;5;245m(127µs)[0m
+[0m[38;5;245mrunning 8 tests from ./tests/input_bindings_test.ts[0m
+menu and gameplay actions may share keys; same-context ones may not ... [0m[32mok[0m [0m[38;5;245m(317µs)[0m
+Space triggers both fire and confirm by default ... [0m[32mok[0m [0m[38;5;245m(93µs)[0m
+rebinding a taken key swaps it with the displaced action ... [0m[32mok[0m [0m[38;5;245m(136µs)[0m
+rebinding into an empty slot removes the input elsewhere ... [0m[32mok[0m [0m[38;5;245m(43µs)[0m
+gamepad rebinds resolve conflicts within the button list ... [0m[32mok[0m [0m[38;5;245m(92µs)[0m
+hold and toggle resolve fire and focus ... [0m[32mok[0m [0m[38;5;245m(63µs)[0m
+radial dead zone zeroes small input and keeps direction ... [0m[32mok[0m [0m[38;5;245m(50µs)[0m
+labels follow device family ... [0m[32mok[0m [0m[38;5;245m(136µs)[0m
+[0m[38;5;245mrunning 11 tests from ./tests/render_logic_test.ts[0m
+playfield maps to a centered 12 x 16 plane, +y down to +Z ... [0m[32mok[0m [0m[38;5;245m(319µs)[0m
+interpolator blends the last two ticks by alpha ... [0m[32mok[0m [0m[38;5;245m(242µs)[0m
+many ticks per frame: only the last two matter ... [0m[32mok[0m [0m[38;5;245m(111µs)[0m
+observing the same tick twice does not collapse the blend ... [0m[32mok[0m [0m[38;5;245m(43µs)[0m
+a teleport snaps instead of smearing ... [0m[32mok[0m [0m[38;5;245m(59µs)[0m
+flash guard: at most three onsets per second by default ... [0m[32mok[0m [0m[38;5;245m(75µs)[0m
+flash guard: reduced flashing caps rate and strength ... [0m[32mok[0m [0m[38;5;245m(48µs)[0m
+value ladder: only chosen roles exceed the bloom threshold ... [0m[32mok[0m [0m[38;5;245m(52µs)[0m
+bloom damps under bullet density, within 0.5–1 ... [0m[32mok[0m [0m[38;5;245m(32µs)[0m
+scene looks never use the danger hue for the world ... [0m[32mok[0m [0m[38;5;245m(52µs)[0m
+loadout tables cover every cosmetic id ... [0m[32mok[0m [0m[38;5;245m(30µs)[0m
+
+[0m[32mok[0m | 50 passed | 0 failed [0m[38;5;245m(223ms)[0m

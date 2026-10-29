@@ -84,6 +84,7 @@ import { Trigger, type Volley } from "./trigger.ts";
 import { ContractRate } from "./pay.ts";
 import { type Scannable, stepScan } from "./scan.ts";
 import { PlayerStats, STATS } from "./stats.ts";
+import { initialMovement, stepMovement } from "./movement.ts";
 
 /** Where the tutorial's practice targets appear. */
 const PRACTICE_TARGET = Object.freeze({ x: 240, y: 160 });
@@ -169,10 +170,6 @@ function offscreen(x: number, y: number, margin = 60): boolean {
     y > 640 + margin;
 }
 
-function clamp(value: number, min: number, max: number): number {
-  return Math.min(max, Math.max(min, value));
-}
-
 /** A part's circle in playfield coordinates. */
 function partCircle(owner: Vec2, part: Part): Circle {
   return {
@@ -221,6 +218,7 @@ export class NeonWardenSim implements Sim {
   private lastBossPhase: number | null = null;
 
   private readonly player: PlayerState;
+  private movement = initialMovement();
   private readonly trigger: Trigger;
   private readonly pay: ContractRate;
   private enemies: Enemy[] = [];
@@ -268,6 +266,7 @@ export class NeonWardenSim implements Sim {
   private cachedSnapshot: SimState | null = null;
 
   constructor(private readonly options: SimOptions) {
+    this.movement = initialMovement(options.movement);
     this.rng = new Rng(options.seed);
     this.tuning = DIFFICULTY[options.difficulty];
     this.autoContinue = options.autoContinue ?? false;
@@ -307,7 +306,17 @@ export class NeonWardenSim implements Sim {
 
   /** Freezes the world (the flashback): `step()` does nothing until resumed. */
   freeze(): void {
+    this.resetMovement();
     this.isFrozen = true;
+  }
+
+  resetMovement(): void {
+    this.movement = {
+      ...initialMovement(this.movement.profile),
+      focused: this.movement.focused,
+    };
+    this.player.vx = this.player.vy = this.player.bank = 0;
+    this.cachedSnapshot = null;
   }
 
   resume(): void {
@@ -403,6 +412,7 @@ export class NeonWardenSim implements Sim {
    * because the Lane Authority's drills are simulations and do not count.
    */
   beginSector(sector: SectorIndex): void {
+    this.resetMovement();
     if (this.phase === "tutorial") {
       this.score = 0;
       this.kills = 0;
@@ -587,6 +597,8 @@ export class NeonWardenSim implements Sim {
       outcome: this.outcome,
       sector: this.sector,
       player: {
+        focused: this.movement.focused,
+        movement: { ...this.movement },
         pos: { x: player.x, y: player.y },
         radius: PLAYER.radius,
         lives: player.lives,
@@ -801,16 +813,26 @@ export class NeonWardenSim implements Sim {
   private flyPlayer(input: InputFrame): void {
     const p = this.player;
     p.grace = Math.max(0, p.grace - 1);
-    const dx = clamp(input.move.x, -1, 1);
-    const dy = clamp(input.move.y, -1, 1);
-    const speed = input.focus ? PLAYER.focusSpeed : PLAYER.speed;
-    const startX = p.x;
-    const startY = p.y;
-    p.x = clamp(p.x + dx * speed, PLAYER.minX, PLAYER.maxX);
-    p.y = clamp(p.y + dy * speed, PLAYER.minY, PLAYER.maxY);
-    p.vx = p.x - startX;
-    p.vy = p.y - startY;
-    p.bank = dx * PLAYER.bankPerInput;
+    const next = stepMovement(
+      { x: p.x, y: p.y },
+      this.movement,
+      input.move,
+      input.focus,
+    );
+    if (this.movement.focused !== input.focus) {
+      this.events.push({
+        type: "focusChanged",
+        tick: this.tick,
+        active: input.focus,
+        pos: { ...next.pos },
+      });
+    }
+    this.movement = next.movement;
+    p.x = next.pos.x;
+    p.y = next.pos.y;
+    p.vx = next.vel.x;
+    p.vy = next.vel.y;
+    p.bank = next.intent.x * PLAYER.bankPerInput * (input.focus ? 0.35 : 1);
 
     const { volley, levelChanged } = this.trigger.update(input.fire);
     if (levelChanged) {
@@ -929,6 +951,7 @@ export class NeonWardenSim implements Sim {
     // The tutorial teaches getting hit; it never costs a life.
     if (this.phase === "tutorial") return;
     p.lives--;
+    this.resetMovement();
     this.events.push({
       type: "lifeLost",
       tick: this.tick,

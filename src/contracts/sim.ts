@@ -181,7 +181,22 @@ export type BossPhase = 0 | 1 | 2 | 3;
 
 export type Difficulty = "story" | "normal" | "hard";
 
+export type MovementProfile = "classic" | "hybrid";
+/** Versioned fixed-tick response state, included in snapshots for predictors/replays. */
+export interface MovementState {
+  readonly version: 1;
+  readonly profile: MovementProfile;
+  readonly focused: boolean;
+  readonly envelope: number;
+  readonly neutralTicks: number;
+  readonly coastX: number;
+  readonly coastY: number;
+  readonly brake: number;
+}
+
 export interface PlayerView {
+  readonly focused: boolean;
+  readonly movement: MovementState;
   readonly pos: Vec2;
   /** Collision radius: tiny on purpose, inside a big visible ship. */
   readonly radius: number;
@@ -319,6 +334,12 @@ export type PayReason =
  * tick it happened on.
  */
 export type SimEvent =
+  | {
+    readonly type: "focusChanged";
+    readonly tick: Tick;
+    readonly active: boolean;
+    readonly pos: Vec2;
+  }
   | {
     readonly type: "sectorStarted";
     readonly tick: Tick;
@@ -594,6 +615,8 @@ export type SimStart =
   | { readonly kind: "sector"; readonly sector: SectorIndex };
 
 export interface SimOptions {
+  /** Classic remains default; response version is recorded in every snapshot. */
+  readonly movement?: MovementProfile;
   /** Seeds every gameplay random draw. Same seed + same inputs = same run. */
   readonly seed: number;
   readonly start: SimStart;
@@ -629,6 +652,8 @@ export interface ScriptedSpawn {
  * auto-play).
  */
 export interface Sim {
+  /** Discard cruise/coast on lifecycle boundaries, retaining resolved focus. */
+  resetMovement(): void;
   /** Advances exactly one tick and returns what happened during it. */
   step(input: InputFrame): readonly SimEvent[];
   /** The state after the most recent step. */

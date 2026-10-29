@@ -115,6 +115,21 @@ function run(
 
 // ---------------------------------------------------------------- recipes
 
+/** Fixed-frequency precision gestures, deliberately not tied to music or scan. */
+function precisionGesture(enter: boolean): SynthRecipe {
+  return (a) => {
+    const g = env(a, 0.008, enter ? 0.072 : 0.055, 0.65);
+    const o = osc(a, "sine", enter ? 760 : 390, g);
+    o.frequency.exponentialRampToValueAtTime(
+      (enter ? 390 : 660) * a.rate,
+      a.when + 0.06,
+    );
+    return run(a, [o], a.when + 0.085);
+  };
+}
+export const precisionEnter = precisionGesture(true);
+export const precisionExit = precisionGesture(false);
+
 /** A glassy click: a sine blip with a breath of noise. UI and lock ticks. */
 export const tick: SynthRecipe = (a) => {
   const g = env(a, 0.002, 0.045);

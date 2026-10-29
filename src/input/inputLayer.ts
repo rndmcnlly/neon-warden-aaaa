@@ -51,6 +51,8 @@ export type CapturedInput =
   | { readonly kind: "button"; readonly index: number };
 
 export interface InputLayer {
+  /** Pause/blur discard held and toggled gameplay actions, never accessibility policy. */
+  reset(): void;
   readFrame(): InputFrame;
   onIntent(listener: (event: IntentEvent) => void): () => void;
   /** Any key, click or button: used by the press-any-key gate. */
@@ -146,6 +148,8 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
   const heldKeys = new Set<string>();
   let padButtons: boolean[] = [];
   let padStick = { x: 0, y: 0 };
+  const blockedPadButtons = new Set<number>();
+  let blockStick = false;
   let heldState: HeldState = INITIAL_HELD;
   const edges = { pause: 0, confirm: 0, back: 0, fire: 0, focus: 0 };
 
@@ -235,7 +239,20 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
 
   // Losing focus never sends keyup, so clear held keys or they stick.
   function onBlur(): void {
+    const pad = firstPad();
+    pad?.buttons.forEach((button, i) => {
+      if (button.pressed) blockedPadButtons.add(i);
+    });
+    blockStick = !!pad &&
+      Math.hypot(pad.axes[0] ?? 0, pad.axes[1] ?? 0) > GAME_STICK_DEAD_ZONE;
     heldKeys.clear();
+    heldState = INITIAL_HELD;
+    padButtons = [];
+    padStick = { x: 0, y: 0 };
+    padRepeat.clear();
+    for (const key of Object.keys(edges) as (keyof typeof edges)[]) {
+      edges[key] = 0;
+    }
   }
 
   function onPadConnected(event: GamepadEvent): void {
@@ -244,8 +261,7 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
   }
 
   function onPadDisconnected(): void {
-    padButtons = [];
-    padStick = { x: 0, y: 0 };
+    onBlur();
     padEvents.emit(false);
   }
 
@@ -270,8 +286,15 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
     const pad = firstPad();
     if (!pad) return;
     family = padFamilyFromId(pad.id);
-    const pressed = pad.buttons.map((b) => b.pressed);
-    const stick = { x: pad.axes[0] ?? 0, y: pad.axes[1] ?? 0 };
+    const pressed = pad.buttons.map((b, i) => {
+      if (!b.pressed) blockedPadButtons.delete(i);
+      return b.pressed && !blockedPadButtons.has(i);
+    });
+    const rawStick = { x: pad.axes[0] ?? 0, y: pad.axes[1] ?? 0 };
+    if (Math.hypot(rawStick.x, rawStick.y) <= GAME_STICK_DEAD_ZONE) {
+      blockStick = false;
+    }
+    const stick = blockStick ? { x: 0, y: 0 } : rawStick;
     const map = bindings();
 
     const newlyPressed: number[] = [];
@@ -356,6 +379,7 @@ export function createInputLayer(settings: SettingsStore): InputLayer {
   rafId = requestAnimationFrame(pollPad);
 
   return {
+    reset: onBlur,
     readFrame(): InputFrame {
       const a = settings.get().accessibility;
       const keyX = (isHeld("moveRight") ? 1 : 0) - (isHeld("moveLeft") ? 1 : 0);

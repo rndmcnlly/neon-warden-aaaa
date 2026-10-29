@@ -9,6 +9,7 @@
 import type {
   Difficulty,
   Loadout,
+  MovementProfile,
   Pilot,
   SimEvent,
   SimOutcome,
@@ -52,10 +53,12 @@ export function runToEnd(
   difficulty: Difficulty = "normal",
   loadout?: Loadout,
   onEvent?: (event: SimEvent) => void,
+  movement: MovementProfile = "classic",
 ): RunReport {
   // Continues are spent automatically, as in the starter's attract mode; a
   // run "survives" when it needs none.
   const sim = createSim({
+    movement,
     seed,
     start: { kind: "sector", sector: 1 },
     difficulty,

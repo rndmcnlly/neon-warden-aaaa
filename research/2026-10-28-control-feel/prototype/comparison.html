@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classic / hybrid movement comparison</title>
+<style>
+  body{margin:24px auto;max-width:1100px;padding:0 16px;background:#10151c;color:#e6eef3;font:16px system-ui}
+  h1{font-size:1.4rem}p{max-width:85ch;line-height:1.5}a{color:#91e6ef}
+  main{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}video{width:100%;background:#02040b}h2{font-size:1rem}
+</style>
+<h1>Classic / hybrid: same precision feedback, different response</h1>
+<p>Normal speed, seed121, no story overlays. Hold → corner → release → focus/rest → focused movement/fire → exit. Browser key delivery can differ by a tick or two. No claim of universal improvement. Use the ordinary game URLs in <a href="README.md">README.md</a> for hands-on comparison.</p>
+<main>
+<section><h2>Classic · high</h2><video controls preload="metadata" src="isolated-classic-high/reel.mp4"></video></section>
+<section><h2>Hybrid · high</h2><video controls preload="metadata" src="isolated-hybrid-high/reel.mp4"></video></section>
+<section><h2>Classic · low / shake0 / reduced motion + flashing</h2><video controls preload="metadata" src="isolated-classic-reduced-low/reel.mp4"></video></section>
+<section><h2>Hybrid · low / shake0 / reduced motion + flashing</h2><video controls preload="metadata" src="isolated-hybrid-reduced-low/reel.mp4"></video></section>
+</main>
+<p>After practice: A) exact stop matters most; B) cruise/coast is worth learning; C) hybrid only because focus is a hard precision escape. Compare overshoot, reversal trust, hand effort and enjoyment separately. The black-backed center outline is collision; sparse outer brackets show graze distance, never invulnerability. The forward wedge is scan, not focus.</p>
+</html>

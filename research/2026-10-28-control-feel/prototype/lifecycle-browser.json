@@ -1,0 +1,34 @@
+[
+  {
+    "profile": "classic",
+    "errors": [],
+    "checks": [
+      {
+        "reason": "pause",
+        "tickFrozen": true,
+        "focusedAfterResume": false
+      },
+      {
+        "reason": "blur",
+        "tickFrozen": true,
+        "focusedAfterResume": false
+      }
+    ]
+  },
+  {
+    "profile": "hybrid",
+    "errors": [],
+    "checks": [
+      {
+        "reason": "pause",
+        "tickFrozen": true,
+        "focusedAfterResume": false
+      },
+      {
+        "reason": "blur",
+        "tickFrozen": true,
+        "focusedAfterResume": false
+      }
+    ]
+  }
+]

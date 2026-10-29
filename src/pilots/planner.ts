@@ -18,16 +18,8 @@
  */
 
 import type { EntityId, SimState, Vec2 } from "../contracts/index.ts";
-
-/** Ship speeds and clamp, mirrored from the sim's tuning. */
-const SHIP = {
-  speed: 4.2,
-  focusSpeed: 2.0,
-  minX: 18,
-  maxX: 462,
-  minY: 60,
-  maxY: 616,
-};
+import { stepMovement } from "../sim/movement.ts";
+import { PLAYER as SHIP } from "../sim/tuning.ts";
 
 /** Lookahead sample ticks: dense near now, sparse further out. */
 const SAMPLES = [1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 18, 22, 26, 30, 36];
@@ -105,23 +97,24 @@ export class Planner {
     let bestDanger = 0;
     for (let m = 0; m < MANEUVERS.length; m++) {
       const maneuver = MANEUVERS[m];
-      const speed = maneuver.focus ? SHIP.focusSpeed : SHIP.speed;
+      let predicted = { pos: player, movement: state.player.movement };
+      let predictedTick = 0;
       let danger = 0;
       let endX = player.x;
       let endY = player.y;
       for (let s = 0; s < SAMPLES.length; s++) {
         const k = SAMPLES[s];
-        const moving = Math.min(k, maneuver.duration);
-        const px = clamp(
-          player.x + maneuver.dir.x * speed * moving,
-          SHIP.minX,
-          SHIP.maxX,
-        );
-        const py = clamp(
-          player.y + maneuver.dir.y * speed * moving,
-          SHIP.minY,
-          SHIP.maxY,
-        );
+        while (predictedTick < k) {
+          predicted = stepMovement(
+            predicted.pos,
+            predicted.movement,
+            predictedTick < maneuver.duration ? maneuver.dir : { x: 0, y: 0 },
+            maneuver.focus,
+          );
+          predictedTick++;
+        }
+        const px = predicted.pos.x;
+        const py = predicted.pos.y;
         if (k === 10) {
           endX = px;
           endY = py;
@@ -260,8 +253,4 @@ export function predictEnemy(
   const vx = before ? pos.x - before.x : 0;
   const vy = before ? pos.y - before.y : 1.5;
   return { x: pos.x + vx * k, y: pos.y + vy * k };
-}
-
-function clamp(value: number, min: number, max: number): number {
-  return Math.min(max, Math.max(min, value));
 }

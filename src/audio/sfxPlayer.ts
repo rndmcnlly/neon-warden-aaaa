@@ -75,6 +75,12 @@ export class SfxPlayer implements SoundSink {
   constructor(private readonly d: SfxPlayerDeps) {}
 
   play(cue: SoundCue): void {
+    // Precision feedback is about this instant. Never queue obsolete gestures
+    // on a suspended pre-unlock or paused audio clock.
+    if (
+      (cue.role === "focus_enter" || cue.role === "focus_exit") &&
+      this.d.ctx.state !== "running"
+    ) return;
     const role: SoundRole = GAMEPLAY_SOUNDS[cue.role];
     const now = this.d.ctx.currentTime;
     if (role.minGapMs) {

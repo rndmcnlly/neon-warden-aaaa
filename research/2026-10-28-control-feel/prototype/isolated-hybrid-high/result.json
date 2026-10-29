@@ -1,0 +1,84 @@
+{
+  "profile": "hybrid",
+  "mode": "high",
+  "errors": [],
+  "focusEvents": [
+    {
+      "type": "focusChanged",
+      "tick": 159,
+      "active": true,
+      "pos": {
+        "x": 130.80000000000013,
+        "y": 425.5999999999997
+      }
+    },
+    {
+      "type": "focusChanged",
+      "tick": 289,
+      "active": false,
+      "pos": {
+        "x": 268.8000000000001,
+        "y": 425.5999999999997
+      }
+    }
+  ],
+  "av": {
+    "hasAudio": true,
+    "voStem": false,
+    "contextStates": [
+      "running"
+    ],
+    "sourcesStarted": 17,
+    "voStarted": [],
+    "lufs": -41.6,
+    "truePeak": -17.6,
+    "buses": {
+      "music": {
+        "lufs": -70,
+        "truePeak": null
+      },
+      "sfx": {
+        "lufs": -39.6,
+        "truePeak": -15.7
+      },
+      "voice": {
+        "lufs": -70,
+        "truePeak": null
+      },
+      "ui": {
+        "lufs": -70,
+        "truePeak": null
+      }
+    },
+    "audibleS": 5.86,
+    "voAudible": [],
+    "subtitles": []
+  },
+  "checks": [
+    {
+      "id": "audio: captured",
+      "status": "pass",
+      "detail": "5.86 s audible of 7.64 s, 17 sounds started, 0 VO"
+    },
+    {
+      "id": "audio: true peak at or under -1 dBTP",
+      "status": "pass",
+      "detail": "-17.6 dBTP, -41.6 LUFS integrated"
+    },
+    {
+      "id": "audio: bus loudness (pre-master)",
+      "status": "pass",
+      "detail": "music -70 LUFS / NaN dBTP, sfx -39.6 LUFS / -15.7 dBTP, voice -70 LUFS / NaN dBTP, ui -70 LUFS / NaN dBTP"
+    },
+    {
+      "id": "audio: integrated loudness -20 to -14 LUFS",
+      "status": "warn",
+      "detail": "-41.6 LUFS integrated (target about -17)"
+    },
+    {
+      "id": "VO not dropped",
+      "status": "pass",
+      "detail": "no subtitles shown in this reel"
+    }
+  ]
+}

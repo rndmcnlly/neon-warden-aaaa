@@ -43,6 +43,17 @@ function fakeState(tick: number, x: number, enemyX: number): SimState {
     outcome: null,
     sector: 1,
     player: {
+      focused: false,
+      movement: {
+        version: 1,
+        profile: "classic",
+        focused: false,
+        envelope: 0,
+        neutralTicks: 7,
+        coastX: 0,
+        coastY: 0,
+        brake: 0,
+      },
       pos: { x, y: 500 },
       radius: 6,
       lives: 3,

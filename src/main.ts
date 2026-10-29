@@ -403,6 +403,7 @@ function startRun(request: StartRequest): void {
   simFrozen = false;
   accumulator = 0;
   sim = createSim({
+    movement: flags.movement,
     seed: flags.seed ?? DEFAULT_SEED,
     start: startFor(request.at),
     difficulty: request.difficulty,
@@ -690,6 +691,8 @@ function frame(now: number): void {
   const running = sim !== null && frontEnd.isSimRunning();
   const paused = sim !== null && !running;
   if (paused !== wasPaused) {
+    frontEnd.input.reset();
+    sim?.resetMovement();
     wasPaused = paused;
     clock.setPaused(paused);
     if (engine) void (paused ? engine.ctx.suspend() : engine.ctx.resume());

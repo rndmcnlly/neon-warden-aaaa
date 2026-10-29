@@ -26,6 +26,8 @@ import {
   glide,
   heavyThump,
   pluck,
+  precisionEnter,
+  precisionExit,
   scanSweep,
   shotTick,
   type SynthRecipe,
@@ -115,6 +117,20 @@ const musical = (
 });
 
 export const GAMEPLAY_SOUNDS = {
+  focus_enter: feel(precisionEnter, -10, {
+    sample: false,
+    jitter: 0,
+    cap: 1,
+    priority: 8,
+    spatial: false,
+  }),
+  focus_exit: feel(precisionExit, -12, {
+    sample: false,
+    jitter: 0,
+    cap: 1,
+    priority: 8,
+    spatial: false,
+  }),
   // ----------------------------------------------------- player weapon
   shot_stream: feel(shotTick, -14, {
     sample: false,

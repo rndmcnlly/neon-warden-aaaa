@@ -269,6 +269,64 @@ export function createStage(
   plume.position.set(0, 0.1, 0.62);
   plume.scale.set(0.22, 0.5, 1);
   ship.add(plume);
+  // Precision is a collision outline plus sparse graze brackets, never a shield.
+  // World-attached so banking cannot distort the actual collision footprint.
+  const focusMarker = new THREE.Group();
+  focusMarker.visible = false;
+  const focusMaterials = [0x071018, 0xf2fcff].map((color) =>
+    new THREE.MeshBasicMaterial({
+      color,
+      depthTest: false,
+      depthWrite: false,
+      transparent: true,
+      toneMapped: false,
+      side: THREE.DoubleSide,
+    })
+  );
+  const collisionRadius = simToWorldLength(6);
+  // A dark interior prevents a hot hull/charge glow from swallowing the hitbox.
+  const focusCore = new THREE.Mesh(
+    new THREE.CircleGeometry(collisionRadius, 48),
+    focusMaterials[0],
+  );
+  focusCore.rotation.x = -Math.PI / 2;
+  focusCore.renderOrder = 99;
+  focusMarker.add(focusCore);
+  for (let i = 0; i < 2; i++) {
+    const width = i === 0 ? 0.055 : 0.025;
+    const ring = new THREE.Mesh(
+      new THREE.RingGeometry(
+        collisionRadius - width / 2,
+        collisionRadius + width / 2,
+        48,
+      ),
+      focusMaterials[i],
+    );
+    ring.rotation.x = -Math.PI / 2;
+    ring.renderOrder = 100 + i;
+    focusMarker.add(ring);
+  }
+  const focusBrackets = new THREE.Group();
+  for (let i = 0; i < 4; i++) {
+    const backing = new THREE.Mesh(
+      new THREE.RingGeometry(0.92, 1.08, 12, 1, i * Math.PI / 2 + 0.12, 0.58),
+      focusMaterials[0],
+    );
+    backing.rotation.x = -Math.PI / 2;
+    backing.renderOrder = 100;
+    focusBrackets.add(backing);
+    const arc = new THREE.Mesh(
+      new THREE.RingGeometry(0.97, 1.03, 12, 1, i * Math.PI / 2 + 0.16, 0.5),
+      focusMaterials[1],
+    );
+    arc.rotation.x = -Math.PI / 2;
+    arc.renderOrder = 101;
+    focusBrackets.add(arc);
+  }
+  focusMarker.add(focusBrackets);
+  // Safety geometry is composited after bloom: emissive hulls cannot wash it out.
+  const precisionOverlay = new THREE.Scene();
+  precisionOverlay.add(focusMarker);
   const trailColor = new THREE.Color(PALETTE.cyan);
   let loadout: Loadout = DEFAULT_LOADOUT;
   let loadoutKeyNow = loadoutKey(DEFAULT_LOADOUT);
@@ -744,8 +802,28 @@ export function createStage(
       : shieldHit;
     shieldMat.uniforms.uTime.value = timeSec;
     const engine = findPart(ship, "engine");
-    if (engine) engine.scale.setScalar(0.9 + Math.sin(timeSec * 40) * 0.1);
-    plume.scale.set(0.22, 0.45 + Math.sin(timeSec * 37) * 0.06, 1);
+    const quietMotion = reduceMotion || motionQuery.matches || reducedFlashing;
+    if (engine) {
+      engine.scale.setScalar(
+        p.focused
+          ? 0.68
+          : quietMotion
+          ? 0.9
+          : 0.9 + Math.sin(timeSec * 40) * 0.1,
+      );
+    }
+    plume.scale.set(
+      p.focused ? 0.10 : 0.22,
+      p.focused
+        ? 0.27
+        : quietMotion
+        ? 0.45
+        : 0.45 + Math.sin(timeSec * 37) * 0.06,
+      1,
+    );
+    focusMarker.position.copy(ship.position);
+    focusMarker.visible = p.focused && ship.visible && !flashback;
+    focusBrackets.scale.setScalar(simToWorldLength(state.graze.radius));
 
     // The sim carries the loadout; follow it when it changes.
     const key = loadoutKey(state.loadout);
@@ -761,7 +839,7 @@ export function createStage(
     beam.update(dt, ship.position, p.scan.active && ship.visible && !flashback);
     // Engine trail: a few slow sparks per frame streaming down-screen, the
     // original's spark trail. Cheaper and more legible than full-frame blur.
-    if (ship.visible && !flashback) {
+    if (ship.visible && !flashback && !quietMotion) {
       tmpV.copy(ship.position).add(TRAIL_OFFSET);
       particles.burst({
         at: tmpV,
@@ -1079,6 +1157,12 @@ export function createStage(
         bulletDensity: bullets.enemyCount,
         hurt: reducedFlashing ? hurt * 0.4 : hurt,
       });
+      if (focusMarker.visible && !activeProp && !hangarShip?.visible) {
+        const autoClear = renderer.autoClear;
+        renderer.autoClear = false;
+        renderer.render(precisionOverlay, rig.camera);
+        renderer.autoClear = autoClear;
+      }
       avgRenderMs += (performance.now() - t0 - avgRenderMs) * 0.05;
     },
 
@@ -1154,6 +1238,10 @@ export function createStage(
     stats,
 
     dispose() {
+      focusMarker.traverse((object) => {
+        if (object instanceof THREE.Mesh) object.geometry.dispose();
+      });
+      for (const material of focusMaterials) material.dispose();
       unsubscribe?.();
       globalThis.removeEventListener("resize", resize);
       post.dispose();

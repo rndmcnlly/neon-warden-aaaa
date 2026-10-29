@@ -111,6 +111,9 @@ export class GameplayAudio {
     const play = (role: GameplaySoundId, cue: Omit<SoundCue, "role"> = {}) =>
       this.sink.play({ role, ...cue });
     switch (e.type) {
+      case "focusChanged":
+        play(e.active ? "focus_enter" : "focus_exit");
+        break;
       case "playerFired":
         if (e.shot === "stream") play("shot_stream");
         else if (e.shot === "aimed") play("shot_aimed");

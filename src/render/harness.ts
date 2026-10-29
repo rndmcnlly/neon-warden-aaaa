@@ -284,6 +284,17 @@ function snapshot(): SimState {
     outcome: null,
     sector: scene === "boss" ? 6 : 3,
     player: {
+      focused: false,
+      movement: {
+        version: 1,
+        profile: "classic",
+        focused: false,
+        envelope: 0,
+        neutralTicks: 7,
+        coastX: 0,
+        coastY: 0,
+        brake: 0,
+      },
       pos: p,
       radius: 6,
       lives: 3,

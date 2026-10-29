@@ -46,6 +46,7 @@ export interface AutoPlay {
 }
 
 export interface UrlFlags {
+  readonly movement: "classic" | "hybrid";
   readonly skipTo: SkipTo | null;
   readonly autoPlay: AutoPlay | null;
   readonly seed: number | null;
@@ -134,5 +135,13 @@ export function parseUrlFlags(search: string): UrlFlags {
     } else warnings.push(`malformed variant "${key}=${value}"`);
   }
 
-  return { skipTo, autoPlay, seed, ui, qa, dev, variants, warnings };
+  const rawMovement = params.get("movement");
+  const movement = rawMovement === "hybrid" ? "hybrid" : "classic";
+  if (
+    rawMovement !== null && rawMovement !== "classic" &&
+    rawMovement !== "hybrid"
+  ) {
+    warnings.push(`unknown movement "${rawMovement}"`);
+  }
+  return { movement, skipTo, autoPlay, seed, ui, qa, dev, variants, warnings };
 }
