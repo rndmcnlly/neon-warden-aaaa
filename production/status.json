@@ -74,8 +74,8 @@
    "title": "Captain tutorial render",
    "owner": "T",
    "status": "done",
-   "detail": "Captain base assets and EN/ES/ZH anchors complete, including 50 new tutorial commentary lines. All 600 rendered takes have aligned word timings; ASR mean/min EN .989/.857, ES .990/.865, ZH .981/.857; zero under .85 in every language. Runtime routing verified: original remains default for 243 preserved takes; 150 new commentary takes explicitly fall back to Captain. Static QA qa/reports/20261028-224208/index.html has zero failures; CI blocked by five unrelated formatting failures. No render jobs active.",
-   "updated": "2026-10-28"
+   "detail": "Captain is the tutorial default (Adam chose B); original voice kept as an A/B variant, 58 newer lines fall back to Captain.",
+   "updated": "2026-10-29"
   },
   {
    "title": "Sector worlds v2: Blender set pieces",
@@ -160,6 +160,19 @@
    "revision": "ab5e4a6 / 8522158",
    "detail": "Render-only. Tap slugs, dim stream needles, charge-scaled Writ lances; Writ camera knock 0.15-0.25, ship knock, pressure wave, impact. gameplay-fight pass; scan-lock fails identically on baseline. Viewer: research/2026-10-29-bolt-identity/viewer.html",
    "updated": "2026-10-29"
+  },
+  {
+   "title": "VO audit: every line in EN/ES/ZH",
+   "owner": "VO audit",
+   "status": "review",
+   "detail": "At 8fcd5ab: 223 voiced lines x 3 languages rendered, synced and tagged (669 takes; 0 under ASR 0.85; 1 zh plain-subtitle alignment fallback). Fixed: 15 unrendered warden/scout bank lines, 8 pending onboarding corrections voiced, tut_hangar_001 now ship livery, banks mirror test (emit_yaml keeps seeds). Reels: boss, ending-kill, vo-no-drop pass; tutorial/fight/pacifist fail on pre-existing deadlines/predicate (same at baseline e4d6938). Open: Captain takes lead in with ~0.64 s median silence, so subtitles precede voice (proposed trim needs approval). Report: research/2026-10-29-vo-audit/README.md; reels qa/reports/20261029-vo-audit-8fcd5ab/index.html.",
+   "updated": "2026-10-29"
+  },
+  {
+   "title": "Night plan: MOVE, SHOOT, DAMAGE A/V",
+   "status": "active",
+   "detail": "Serial: step 1 web research done; step 2 Argon blind ideation running; then synthesis, implementation, blind verification. See docs/NIGHT-PLAN.md.",
+   "updated": "2026-10-29"
   }
  ],
  "blockers": [
@@ -186,8 +199,8 @@
   {
    "title": "Tutorial voice",
    "status": "note",
-   "detail": "a_captain pick was supplied earlier; Adam later preferred original in context and requests A/B with music. Keep original as default.",
-   "updated": "2026-10-28"
+   "detail": "Captain is the tutorial default (Adam chose B); original voice kept as an A/B variant, 58 newer lines fall back to Captain.",
+   "updated": "2026-10-29"
   },
   {
    "title": "Generated palettes versus fixed palettes",
