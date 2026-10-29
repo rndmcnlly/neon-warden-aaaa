@@ -1,8 +1,8 @@
 /**
  * Developer overlay: shows the active URL flags and a live tick counter.
  *
- * The panel only appears when a URL flag is active, so normal play and
- * screenshots stay clean. Its text is developer-facing, the one allowed
+ * The panel only appears with `?dev=1` (and some other flag active), so
+ * builds, QA reels and screenshots stay clean even under `?skipto=`. Its text is developer-facing, the one allowed
  * exception to the LineId rule.
  */
 
@@ -10,6 +10,14 @@ import type { SimState, UrlFlags } from "../contracts/index.ts";
 
 export interface DevOverlay {
   update(state: SimState): void;
+}
+
+/**
+ * `dev` is requested from B in `src/contracts/flags.ts` (wave 4 queue); read
+ * optionally so this compiles before and after it lands.
+ */
+function wantsOverlay(flags: UrlFlags & { readonly dev?: boolean }): boolean {
+  return flags.dev === true && hasActiveFlags(flags);
 }
 
 function hasActiveFlags(flags: UrlFlags): boolean {
@@ -21,7 +29,7 @@ export function createDevOverlay(
   root: HTMLElement,
   flags: UrlFlags,
 ): DevOverlay {
-  if (!hasActiveFlags(flags)) return { update() {} };
+  if (!wantsOverlay(flags)) return { update() {} };
 
   const panel = document.createElement("div");
   panel.className = "dev-overlay";

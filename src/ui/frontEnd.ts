@@ -38,6 +38,7 @@ import { Router, type ScreenFactory } from "./router.ts";
 import { gateScreen, titleScreen } from "./screens/boot.ts";
 import { creditsScreen, mainMenuScreen } from "./screens/menus.ts";
 import { type PauseReason, pauseScreen } from "./screens/pause.ts";
+import { hangarScreen } from "./screens/hangar.ts";
 import { settingsScreen } from "./screens/settings.ts";
 import {
   type ContinueChoice,
@@ -380,8 +381,13 @@ export function createFrontEnd(
   }
 
   applyDocumentState();
-  const entries: Record<UiEntry, () => void> = {
+  // `hangar` is listed explicitly until B adds it to `UiEntry` (wave 4 queue).
+  const entries: Record<UiEntry | "hangar", () => void> = {
     menu: () => router.push(mainMenuScreen(ctx)),
+    hangar: () => {
+      router.push(mainMenuScreen(ctx));
+      router.push(hangarScreen(ctx, ctx.progress, "browse"));
+    },
     title: () => router.push(titleScreen(ctx)),
     settings: () => {
       router.push(mainMenuScreen(ctx));

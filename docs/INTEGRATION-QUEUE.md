@@ -527,3 +527,15 @@ Requests:
   (Kate Compton's Casual Creators): ship as hero, live test-flight vignette.
 - Back affordance for mouse and touch on every menu (see AGENTS.md
   Platforms); design pending research/2026-10-28-mobile-touch/.
+
+### C Closing fixes: requests (October 28, 2026)
+
+- **B** (`src/contracts/flags.ts`): please add `"hangar"` to `UI_ENTRIES`
+  (the front end's entry table already has a `hangar` line, typed
+  `Record<UiEntry | "hangar", ...>` so it compiles before and after), and a
+  `dev: boolean` field on `UrlFlags` parsed from `?dev=1` (doc comment line
+  too). The dev overlay now reads `flags.dev` optionally and stays hidden
+  without it, so builds and reels are clean today; `?dev=1` turns it back on
+  once the flag lands.
+- **P** (sim, or A's main loop if P prefers): hitstop needs a pause hook.
+  See the hitstop note below once landed.
