@@ -21,12 +21,12 @@ a generator makes a new asset, not the shipped one.
 
 ## Hosting
 
-`.github/workflows/pages.yml` runs `deno task ci` with `REPO_NAME` set to the
-repository name (so `vite.config.ts` builds under `/<repo>/`) and deploys
-`dist/` to GitHub Pages. A multi-page restructure of the build (landing page at
-the root, game at `/play/`) was in progress when the workflow was written:
-re-check the workflow's artifact path and the service worker scope once it
-lands.
+`.github/workflows/pages.yml` runs `deno task ci` and deploys `dist/` to
+GitHub Pages at <https://neon-warden-aaaa.adamsmith.systems>: the landing page
+at the root, the game at `/play/`. The custom domain keeps the base path `/`
+(`REPO_NAME` unset) and `public/CNAME` names it. A fork served from
+`<user>.github.io/<repo>/` would set `REPO_NAME` in the workflow and delete
+`public/CNAME`. Setup, DNS and undo steps: `docs/PUBLISHING.md`.
 
 ## Licensing
 

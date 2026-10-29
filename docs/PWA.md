@@ -64,7 +64,8 @@ fails normally in the browser: there is no fictional offline-ready screen.
 - Deployment requires **HTTPS**, except localhost's secure-context exemption.
   Serve the entire build, including `sw.js`, local icons and binary assets;
   serve JS with its correct MIME type. Do not apply an HTML fallback to missing
-  audio/model files. Subpath hosting uses Vite's existing `REPO_NAME` base;
+  audio/model files. The official build is served at a domain root (`docs/PUBLISHING.md`);
+  subpath hosting (a fork) uses Vite's existing `REPO_NAME` base;
   manifest identity, scope and start URL are relative to that location.
 - Updates wait while the old app is open. Nothing reloads an active run without
   explicit confirmation. **Apply update and reload** ends the current run and

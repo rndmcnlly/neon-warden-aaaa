@@ -32,6 +32,8 @@ export function offlinePlugin(): Plugin {
             !/^assets\/landing-[^/]+$/.test(name) &&
             !name.startsWith("media/") &&
             !name.endsWith(".DS_Store") &&
+            // GitHub Pages' custom-domain marker (public/CNAME), not content.
+            name !== "CNAME" &&
             !["sw.js", "offline-manifest.json"].includes(name)
           ) {
             const data = await Deno.readFile(`${dir}/${entry.name}`);

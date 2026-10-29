@@ -1,7 +1,9 @@
 # Build with the same checks as local CI, then publish dist/ to GitHub Pages.
-# REPO_NAME makes vite.config.ts build under /<repo>/ (a project Pages site).
-# Revisit once the multi-page build (landing at the root, game at /play/)
-# lands: the artifact stays dist/, but check the service worker scope.
+# The site is served at the root of a custom domain
+# (neon-warden-aaaa.adamsmith.systems, kept by public/CNAME), so REPO_NAME is
+# deliberately unset and vite.config.ts builds with base "/". A fork hosted at
+# <user>.github.io/<repo>/ instead would set REPO_NAME here. See
+# docs/PUBLISHING.md.
 name: Pages
 
 on:
@@ -29,7 +31,6 @@ jobs:
       - name: deno task ci
         run: deno task ci
         env:
-          REPO_NAME: ${{ github.event.repository.name }}
           # The landing page's evidence links (vite.config.ts, REPO_URL).
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
       - uses: actions/upload-pages-artifact@v3

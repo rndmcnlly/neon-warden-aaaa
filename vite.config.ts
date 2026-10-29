@@ -3,11 +3,10 @@ import { offlinePlugin } from "./src/platform/build.ts";
 const repoName = Deno.env.get("REPO_NAME");
 
 // Where the landing page's evidence and "Read the source" links point. The
-// Pages workflow passes the real repository's address. PLACEHOLDER: the
-// public repository does not exist yet (Adam creates it), so local builds
-// link to an obviously fake owner rather than guessing a real-looking URL.
+// Pages workflow passes the repository it runs in (so a fork links to
+// itself); local builds fall back to the public repository.
 const REPO_URL = Deno.env.get("REPO_URL") ??
-  "https://github.com/PLACEHOLDER-public-repo-not-created-yet/neon-warden-aaaa";
+  "https://github.com/rndmcnlly/neon-warden-aaaa";
 
 /** A short build line for the landing page footer: revision when known. */
 function buildStamp(): string {
