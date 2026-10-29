@@ -139,7 +139,7 @@ files it as not relevant. No freeze: the player flies through it.
 
 A bank keyed by source (`drone`, `dart`, `turret`, `lancer`, `authority`)
 and situation (`patrol`, `locked`, `disarmed`, `retreat`, `lost`): 22 voiced
-`rad_*` lines and 33 text-only `radio.*` lines. What leaks: the scouts are
+`rad_*` lines and 34 text-only `radio.*` lines. What leaks: the scouts are
 grown in the rings, escort the Saltline Haulers and the Commons Assembly,
 and keep a no-first-fire rule (`rad_drone_patrol_002` plays only while the
 Pilot has not fired); darts are unarmed by a treaty the Authority never
