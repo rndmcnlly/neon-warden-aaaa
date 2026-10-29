@@ -170,8 +170,8 @@
     },
     {
       "title": "Night plan: MOVE, SHOOT, DAMAGE A/V",
-      "status": "active",
-      "detail": "Serial: step 1 web research done; step 2 Argon blind ideation running; then synthesis, implementation, blind verification. See docs/NIGHT-PLAN.md.",
+      "status": "done",
+      "detail": "Steps 1–6 done. Blind check preferred the pre-night build 7/10 (floor clutter); step 6 fixed floor, disarm hold, Writ-on-armor clang, tier shapes. Needs hands-on play. See research/2026-10-29-night-verification and research/2026-10-29-morning-fix.",
       "updated": "2026-10-29"
     },
     {
@@ -194,6 +194,21 @@
       "status": "review",
       "revision": "0627d3e..62c162a (+ evidence commit)",
       "detail": "Engine bed (Web Audio: speed-driven hum, acceleration-driven thrust, 30 ms rise, quieter, darker and narrower in focus, dead man's fade) plus reverse and stop chuffs, tested for classic and hybrid; thruster puffs opposite acceleration under the bullets (instanced, capped, cheap on the low tier) and banking from lateral velocity; busier lane floor (plates, conduit packet streaks, data pulses, signal lamps, ship reflection) under a background budget: floor value 0.49 to 0.28 and chroma 0.38 to 0.11 against combat 0.64 and 0.26; bigger, rim-lit, smoke-streaked debris; VO start offset from measured onsets (cues metadata, no re-encode), subtitle-to-voice lead 0.75 to 0.12 s; tutorial autopilot no longer triggers wrong-input barks (cooldown tested); repo fmt and lint fix; scan-lock reel fixed (flashback wait, stale selector). Checks 2026-10-29 at 62c162a: deno task ci exit 0 on the working tree (256 tests); full QA qa/reports/20261029-050318: 13 reels pass, 5 fail, all identical at baseline 5035bfd. Formatting of AGENTS.md, docs/SKILLS.md and docs/INTEGRATION-QUEUE.md is in the working tree, uncommitted (they carry other uncommitted edits). Viewer research/2026-10-29-movement-lane/index.html. No paid calls.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Night verification (step 5)",
+      "owner": "Night verification subagent",
+      "status": "done",
+      "detail": "Blind Argon before/after, 8ad8598 vs 78eebec, 10 matched pairs, scored against event logs. Not fixed: disarm recognition (40% vs 67%, more silent misses), Writ tier (2/16 Writ 3 both) and hit vs miss (chance), Writs on the armored Warden (+2.5 dB local rise vs +3.2). Fixed or better: sector Writ loudness (+14.6 vs +6.2 dB), pod break (n=3), life-lost red frame credited. Regression: judge preferred BEFORE overall 7/10, citing the busier lane floor in 9/10 pairs. Judge samples about 1 fps, so brief cues are under-tested. Next: shot identity in shape, blocked-Writ impact on the Warden, calmer floor marks. US $0.456. research/2026-10-29-night-verification/README.md, viewer index.html.",
+      "updated": "2026-10-29"
+    },
+    {
+      "title": "Morning fix: floor, disarm, Writ on armor, shot shapes",
+      "owner": "Morning fix subagent",
+      "status": "done",
+      "revision": "e8b40a4..6879ea0 (+ evidence commit)",
+      "detail": "Floor: packet dashes and signal lamps cut, slow soft conduit flow and dim pools; floor value 0.28 to 0.18, combat/floor 2.3x to 3.6x, small bright marks 38 to 18 per frame. Writ on armor: own non-spatial clang plus deflect hiss; local rise 3.3 to 6.5 dB (n=16, target 6). Disarm: slate pulses for 1.6 s, stub sparks, darker hull; NOT verified (only seeded sector disarm is at the top edge). Writ 1 narrow, 2 finned, 3 wedge with rings; smaller tap slug; dimmer scan cone; not judged. Checks 2026-10-29 05:48: deno task ci exit 0 (257 tests); reels gameplay-fight and disarm-boss pass, qa/reports/20261029-054748. No paid calls. research/2026-10-29-morning-fix/README.md.",
       "updated": "2026-10-29"
     }
   ],
