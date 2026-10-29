@@ -27,6 +27,7 @@ uniform float uDesaturate;  // 0-1, for the flashback's recorder look
 uniform vec4 uWave;         // Writ pressure wave: centre uv, radius, strength
 uniform float uAspect;      // width / height, so the wave is round
 uniform float uHurt;        // 0-1, player-damage pulse: red edge vignette
+uniform float uEdge;        // 1 -> 0, life lost: a red frame closing inward
 varying vec2 vUv;
 
 // Cheap hash noise; animated per frame so grain shimmers like film.
@@ -67,6 +68,16 @@ void main() {
 
   // Damage pulse: the edges bleed red, the center stays readable.
   col = mix(col, col * 0.5 + vec3(0.35, 0.02, 0.06), uHurt * smoothstep(0.05, 0.3, dist2));
+
+  // Life lost: a hard-edged rectangular frame (a different shape from the
+  // round hurt vignette) that sweeps inward as it fades.
+  if (uEdge > 0.0) {
+    vec2 a = abs(fromCenter) * 2.0;
+    float m = max(a.x, a.y);
+    float front = 1.0 - (1.0 - uEdge) * 0.25 - 0.04;
+    float band = smoothstep(front - 0.05, front, m);
+    col = mix(col, vec3(0.9, 0.06, 0.1), band * uEdge);
+  }
 
   col += uFlashColor * uFlash;
 

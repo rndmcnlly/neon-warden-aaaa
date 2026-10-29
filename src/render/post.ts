@@ -35,6 +35,8 @@ export interface PostLook {
   bulletDensity?: number;
   /** Player-damage pulse 0–1: extra aberration and a red vignette. */
   hurt?: number;
+  /** Life lost, 1 falling to 0: a red frame closing in from the edges. */
+  edge?: number;
   /** Writ pressure wave: centre in screen uv, radius and strength (uv). */
   wave?: { x: number; y: number; radius: number; strength: number };
 }
@@ -97,6 +99,7 @@ export class PostChain {
         uFlashColor: { value: new THREE.Vector3(1, 1, 1) },
         uDesaturate: { value: 0 },
         uHurt: { value: 0 },
+        uEdge: { value: 0 },
         uWave: { value: new THREE.Vector4(0.5, 0.5, 0, 0) },
         uAspect: { value: 1 },
       },
@@ -126,6 +129,7 @@ export class PostChain {
     const hurt = look.hurt ?? 0;
     u.uAberration.value = this.tier.chromaticAberration + hurt * 0.004;
     u.uHurt.value = hurt;
+    u.uEdge.value = look.edge ?? 0;
     u.uGrain.value = this.tier.grain;
     u.uFlash.value = look.flash;
     (u.uFlashColor.value as THREE.Vector3).set(...look.flashColor);

@@ -317,73 +317,200 @@ function radialTexture(): THREE.Texture | null {
   return radialCache;
 }
 
-// ---- per-instance materials: hit flash and power-down ------------------------
+// ---- per-instance materials: hit flash, power-down, damage ------------------
 
 interface OwnedMaterial {
   mat: THREE.MeshStandardMaterial;
   emissive: THREE.Color;
   intensity: number;
   color: THREE.Color;
+  /** Set when this material belongs to one part node (see `isolatePart`). */
+  part?: string;
+  seams: SeamUniforms;
+}
+
+/** Uniforms of the damage shader patch (see `installSeams`). */
+interface SeamUniforms {
+  /** 0–1: matte scorch darkening the base color. */
+  uScorch: { value: number };
+  /** 0–1: how much of the crack network is open. */
+  uSeam: { value: number };
+  /** 0–1: how hot the open cracks glow (just struck), cooling to 0. */
+  uHeat: { value: number };
+}
+
+/**
+ * Damage states as a tiny shader patch on the instance's own material:
+ * scorch darkens the albedo (matte, never bright), and a procedural crack
+ * network opens as damage rises. The cracks glow amber for a moment when
+ * struck, then cool to dark seams. Object-space, so cracks ride the hull.
+ */
+function installSeams(mat: THREE.MeshStandardMaterial): SeamUniforms {
+  const u: SeamUniforms = {
+    uScorch: { value: 0 },
+    uSeam: { value: 0 },
+    uHeat: { value: 0 },
+  };
+  mat.onBeforeCompile = (shader) => {
+    Object.assign(shader.uniforms, u);
+    shader.vertexShader = shader.vertexShader
+      .replace(
+        "#include <common>",
+        "#include <common>\nvarying vec3 vSeamPos;",
+      )
+      .replace(
+        "#include <begin_vertex>",
+        "#include <begin_vertex>\nvSeamPos = position;",
+      );
+    shader.fragmentShader = shader.fragmentShader
+      .replace(
+        "#include <common>",
+        `#include <common>
+varying vec3 vSeamPos;
+uniform float uScorch;
+uniform float uSeam;
+uniform float uHeat;`,
+      )
+      .replace(
+        "#include <emissivemap_fragment>",
+        `#include <emissivemap_fragment>
+{
+  vec3 q = vSeamPos * 4.0;
+  float n = abs(sin(q.x * 2.3 + sin(q.z * 1.7) * 1.7) *
+    sin(q.z * 2.1 + sin(q.y * 1.5 + q.x * 1.3) * 1.9));
+  float line = 1.0 - smoothstep(0.0, 0.08, n);
+  float cell = fract(sin(dot(floor(q), vec3(12.9898, 78.233, 37.719))) * 43758.5453);
+  float seam = line * step(1.0 - uSeam, cell) * step(0.01, uSeam);
+  diffuseColor.rgb *= 1.0 - uScorch * 0.55 - seam * 0.6;
+  totalEmissiveRadiance *= 1.0 - seam;
+  totalEmissiveRadiance += vec3(1.0, 0.5, 0.12) * seam * uHeat * 2.2;
+}`,
+      );
+  };
+  // Every patched material compiles to the same program.
+  mat.customProgramCacheKey = () => "nw-seams";
+  return u;
+}
+
+function own(
+  m: THREE.MeshStandardMaterial,
+  original: THREE.Material,
+  part?: string,
+): OwnedMaterial {
+  const copy = m.clone();
+  copy.userData.original = original;
+  return {
+    mat: copy,
+    emissive: m.emissive.clone(),
+    intensity: m.emissiveIntensity,
+    color: m.color.clone(),
+    part,
+    seams: installSeams(copy),
+  };
 }
 
 /**
  * glTF clones share materials, so flashing one drone would flash them all.
- * The first time an instance needs its own look (hit flash, disarm), its
- * materials are cloned and the originals remembered; `restoreMaterials`
- * puts the instance back before it returns to the pool.
+ * The first time an instance needs its own look (hit flash, disarm,
+ * damage), its materials are cloned and the originals remembered;
+ * `restoreMaterials` puts the instance back before it returns to the pool.
  */
 export function ownMaterials(slot: THREE.Object3D): OwnedMaterial[] {
   const existing = slot.userData.owned as OwnedMaterial[] | undefined;
   if (existing) return existing;
   const owned: OwnedMaterial[] = [];
-  const shared = new Map<THREE.Material, THREE.MeshStandardMaterial>();
+  const shared = new Map<THREE.Material, OwnedMaterial>();
   slot.traverse((o) => {
     const mesh = o as THREE.Mesh;
     if (!mesh.isMesh || Array.isArray(mesh.material)) return;
     const m = mesh.material as THREE.MeshStandardMaterial;
     if (!m.isMeshStandardMaterial) return;
-    let copy = shared.get(m);
-    if (!copy) {
-      copy = m.clone();
-      copy.userData.original = m;
-      shared.set(m, copy);
-      owned.push({
-        mat: copy,
-        emissive: m.emissive.clone(),
-        intensity: m.emissiveIntensity,
-        color: m.color.clone(),
-      });
+    let entry = shared.get(m);
+    if (!entry) {
+      entry = own(m, m);
+      shared.set(m, entry);
+      owned.push(entry);
     }
-    mesh.material = copy;
+    mesh.material = entry.mat;
   });
   slot.userData.owned = owned;
   return owned;
+}
+
+/**
+ * Gives one part node its own materials, so a hit can flash (and damage can
+ * scorch) that part alone: the struck part lights up, not the whole ship.
+ */
+export function isolatePart(slot: THREE.Object3D, nodeName: string): void {
+  const node = slot.getObjectByName(nodeName);
+  if (!node || node.userData.isolated) return;
+  const owned = ownMaterials(slot);
+  const mine = new Map<THREE.Material, OwnedMaterial>();
+  node.traverse((o) => {
+    const mesh = o as THREE.Mesh;
+    if (!mesh.isMesh || Array.isArray(mesh.material)) return;
+    const m = mesh.material as THREE.MeshStandardMaterial;
+    if (!m.isMeshStandardMaterial) return;
+    let entry = mine.get(m);
+    if (!entry) {
+      const base = owned.find((x) => x.mat === m);
+      entry = own(m, (m.userData.original as THREE.Material) ?? m, nodeName);
+      if (base) {
+        entry.emissive.copy(base.emissive);
+        entry.intensity = base.intensity;
+        entry.color.copy(base.color);
+      }
+      mine.set(m, entry);
+      owned.push(entry);
+    }
+    mesh.material = entry.mat;
+  });
+  node.userData.isolated = true;
 }
 
 export function restoreMaterials(slot: THREE.Object3D): void {
   if (!slot.userData.owned) return;
   slot.traverse((o) => {
     const mesh = o as THREE.Mesh;
+    delete o.userData.isolated;
     if (!mesh.isMesh || Array.isArray(mesh.material)) return;
     const original = (mesh.material as THREE.Material).userData.original as
       | THREE.Material
       | undefined;
     if (original) mesh.material = original;
   });
+  for (const o of slot.userData.owned as OwnedMaterial[]) o.mat.dispose();
   delete slot.userData.owned;
   delete slot.userData.flash;
   delete slot.userData.power;
+  delete slot.userData.partFlash;
+  delete slot.userData.partDamage;
+  delete slot.userData.damage;
+  delete slot.userData.heat;
 }
 
 const WHITE = new THREE.Color(1, 1, 1);
 const DEAD = new THREE.Color(0x30343c);
 
+export interface InstanceLookOptions {
+  /** Halves the seam glow; the outline pulse replaces flashes elsewhere. */
+  readonly reducedFlashing?: boolean;
+}
+
 /**
- * Per-frame material look of an instance: `flash` 0–1 (a white hit flash,
- * critique item 6a), `power` 1 = armed, 0 = disarmed (emissives drain to a
- * dull grey and hulls darken: its weapons are visibly off).
+ * Per-frame material look of an instance:
+ * - `flash` 0–1: a white hit flash on the whole hull (kept for hits with no
+ *   part node), and `partFlash[name]` on one isolated part;
+ * - `power` 1 = armed, 0 = disarmed (emissives drain to a dull grey and
+ *   hulls darken: its weapons are visibly off);
+ * - `damage` 0–1 (and `partDamage[name]`): scorch plus open crack seams;
+ * - `heat` 0–1: how hot those seams glow right after a hit.
  */
-export function applyInstanceLook(slot: THREE.Object3D, dt: number): void {
+export function applyInstanceLook(
+  slot: THREE.Object3D,
+  dt: number,
+  options: InstanceLookOptions = {},
+): void {
   const owned = slot.userData.owned as OwnedMaterial[] | undefined;
   if (!owned) return;
   let flash = (slot.userData.flash as number | undefined) ?? 0;
@@ -393,16 +520,37 @@ export function applyInstanceLook(slot: THREE.Object3D, dt: number): void {
   flash = Math.max(0, flash - dt * 9);
   slot.userData.flash = flash;
   slot.userData.power = power;
+  const partFlash = slot.userData.partFlash as
+    | Record<string, number>
+    | undefined;
+  if (partFlash) {
+    for (const k of Object.keys(partFlash)) {
+      partFlash[k] = Math.max(0, partFlash[k] - dt * 12);
+    }
+  }
+  // Seams cool over about 0.4 s.
+  const heat = Math.max(0, ((slot.userData.heat as number) ?? 0) - dt * 2.5);
+  slot.userData.heat = heat;
+  const damage = (slot.userData.damage as number | undefined) ?? 0;
+  const partDamage = slot.userData.partDamage as
+    | Record<string, number>
+    | undefined;
   // A dying flicker while powering down.
   const flicker = powerTarget < 1 && power > 0.1
     ? (Math.sin(performance.now() * 0.06) > 0.2 ? 1 : 0.35)
     : 1;
+  const heatGain = options.reducedFlashing ? 0.5 : 1;
   for (const o of owned) {
-    o.mat.emissive.copy(o.emissive).lerp(DEAD, 1 - power).lerp(WHITE, flash);
+    const f = Math.max(flash, o.part ? partFlash?.[o.part] ?? 0 : 0);
+    o.mat.emissive.copy(o.emissive).lerp(DEAD, 1 - power).lerp(WHITE, f);
     o.mat.emissiveIntensity = Math.max(
       o.intensity * (0.08 + 0.92 * power) * flicker,
-      flash * 2,
+      f * 2,
     );
     o.mat.color.copy(o.color).multiplyScalar(0.55 + 0.45 * power);
+    const d = o.part ? partDamage?.[o.part] ?? damage : damage;
+    o.seams.uScorch.value = Math.min(1, d * 1.2);
+    o.seams.uSeam.value = d < 0.25 ? 0 : Math.min(1, (d - 0.25) * 1.6);
+    o.seams.uHeat.value = heat * heatGain;
   }
 }

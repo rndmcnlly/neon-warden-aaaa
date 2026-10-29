@@ -49,8 +49,15 @@ import { PALETTE, ROLE, SCENE_LOOKS, type SceneLookId } from "./palette.ts";
 import { ParticleSystem, ShockwavePool } from "./particles.ts";
 import { PostChain } from "./post.ts";
 import { MuzzleFlashes, PressureWave, ShipKnock } from "./shotLooks.ts";
+import { DebrisField, RicochetPool } from "./debris.ts";
+import {
+  DEFERRED_FEEDBACK_S,
+  deferredBy,
+  isDeferrable,
+} from "./feedbackLadder.ts";
 import {
   applyInstanceLook,
+  isolatePart,
   ownMaterials,
   restoreMaterials,
   ReticlePool,
@@ -168,7 +175,16 @@ const PART_NODES: Readonly<Record<string, string>> = {
   cannonPod: "pod_2",
   spiralPod: "pod_3",
   barrel: "crown",
+  // The drone fires from its eye: disarmed, the eye itself tears off.
+  gun: "drone_eye",
 };
+
+/** A target flashes at most this often (stream fire must not strobe). */
+const FLASH_INTERVAL_S = 0.1;
+/** Matte smoke for a disarmed hull's sputter: dark, never a bullet color. */
+const SMOKE = 0x3d424b;
+/** The deflect spark: muted slate white, neither player cyan nor enemy pink. */
+const RICOCHET = 0xc9d4e6;
 
 function loadoutKey(l: Loadout): string {
   const c = l.cosmetics;
@@ -258,6 +274,19 @@ export function createStage(
   scene.add(beam.mesh);
   const reticles = new ReticlePool();
   scene.add(reticles.group);
+  // Torn-off parts and deflect streaks (src/render/debris.ts).
+  const debris = new DebrisField(tier.bloom ? 24 : 8);
+  scene.add(debris.group);
+  const ricochets = new RicochetPool();
+  scene.add(ricochets.group);
+  /**
+   * Where each enemy was last drawn. A killed enemy leaves the state on the
+   * tick it dies, so its slot is pooled before its kill event is handled;
+   * the explosion goes here instead of to a fallback position.
+   */
+  const lastSeen = new Map<EntityId, THREE.Vector3>();
+  /** Life-lost edge pulse, 1 at the loss, falling to 0. */
+  let edge = 0;
   const writ = new WritGlow();
 
   // The player ship and its shield bubble.
@@ -450,6 +479,7 @@ export function createStage(
     reduceMotion = s.accessibility.reduceMotion;
     reducedFlashing = s.accessibility.reducedFlashing;
     muzzle.reducedFlashing = reducedFlashing;
+    debris.setCapacity(tier.bloom ? 24 : 8);
     flashes.limits = reducedFlashing ? REDUCED_LIMITS : STANDARD_LIMITS;
     resize();
   }
@@ -568,6 +598,8 @@ export function createStage(
     const slot = live.get(id);
     if (slot) return out.copy(slot.position);
     if (boss && interp.latest?.boss?.id === id) return out.copy(boss.position);
+    const seen = lastSeen.get(id);
+    if (seen) return out.copy(seen);
     return out.copy(ctx.player);
   }
 
@@ -606,8 +638,7 @@ export function createStage(
   }
 
   /** A hit that a Writ delivered gets its own cyan-and-cream impact. */
-  function writImpact(at: THREE.Vector3, big: boolean): void {
-    const level = bullets.writNear(at.x, at.z, big ? 2.6 : 1.2);
+  function writImpact(at: THREE.Vector3, level: number): void {
     if (level === 0) return;
     const p = at.clone();
     rings.spawn(p, ROLE.playerShot.hex, 0.9 + level * 0.45, 0.3);
@@ -625,44 +656,162 @@ export function createStage(
     rig.addTrauma(0.06 * level);
   }
 
+  /** A world direction (XZ) from a sim velocity; up-lane if it is zero. */
+  function worldDir(v: Vec2): THREE.Vector3 {
+    const d = new THREE.Vector3(v.x, 0, v.y);
+    return d.lengthSq() > 1e-9 ? d.normalize() : d.set(0, 0, -1);
+  }
+
+  /**
+   * Hits by rung (src/render/feedbackLadder.ts): a deflect bounces off and
+   * leaves the target untouched; a stream hit is a light tick; a tap is a
+   * crisp chevron; a Writ gets rings by level. Only the struck part flashes,
+   * at most every 100 ms; reduced flashing swaps the flash for an outline.
+   */
+  function hitFeedback(e: Extract<SimEvent, { type: "hit" }>): void {
+    const slot = e.target === "boss" ? boss : live.get(e.id) ?? null;
+    const at = simPoint(e.pos, new THREE.Vector3());
+    const nodeName = slot && e.part ? partNode(slot, e.part) : null;
+    const node = slot && nodeName ? slot.getObjectByName(nodeName) : null;
+    if (e.blocked) {
+      if (burstsThisFrame++ >= MAX_BURSTS_PER_FRAME) return;
+      const center = node
+        ? node.getWorldPosition(new THREE.Vector3())
+        : slot
+        ? slot.position.clone()
+        : at.clone().setZ(at.z - 1);
+      ricochets.spawn(at, worldDir(e.shotVel), at.clone().sub(center));
+      particles.burst({
+        at,
+        color: RICOCHET,
+        count: 3,
+        speed: 5,
+        life: 0.1,
+        size: 0.07,
+      });
+      return;
+    }
+    if (e.level > 0) writImpact(at, e.level);
+    else if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
+      const tap = e.by === "aimed";
+      particles.burst({
+        at,
+        color: PALETTE.sparkCream,
+        count: tap ? 6 : 2,
+        speed: tap ? 4.5 : 2,
+        life: tap ? 0.14 : 0.12,
+        size: tap ? 0.11 : 0.07,
+      });
+    }
+    if (!slot) return;
+    // Seams glow hot for a moment, more for heavier rounds.
+    const heat = e.level > 0 ? 1 : e.by === "aimed" ? 0.6 : 0.25;
+    slot.userData.heat = Math.min(
+      1,
+      ((slot.userData.heat as number) ?? 0) + heat,
+    );
+    const last = (slot.userData.lastFlashAt as number | undefined) ?? -1;
+    if (timeSec - last < FLASH_INTERVAL_S) return;
+    slot.userData.lastFlashAt = timeSec;
+    slot.userData.hitPunch = e.by === "stream" ? 0.4 : 1;
+    ownMaterials(slot);
+    if (reducedFlashing) {
+      // An outline pulse instead of a luminance flash.
+      const where = node
+        ? node.getWorldPosition(new THREE.Vector3())
+        : slot.position;
+      rings.spawn(where, PALETTE.slate, node ? 0.7 : 1.1, 0.16);
+      return;
+    }
+    if (node && nodeName) {
+      isolatePart(slot, nodeName);
+      const flashes = (slot.userData.partFlash as Record<string, number>) ??
+        {};
+      flashes[nodeName] = 1;
+      slot.userData.partFlash = flashes;
+    } else slot.userData.flash = e.by === "stream" ? 0.35 : 0.7;
+  }
+
+  /**
+   * A part comes off: the real node (or a hull chunk) is flung along the
+   * shot and spun by the hit offset, then darkens and sinks under the
+   * bullets (src/render/debris.ts). A Warden pod is an event of its own:
+   * heavier debris, torn plating, a gold ring and a bigger shake.
+   */
+  function partBreakFeedback(e: Extract<SimEvent, { type: "partBreak" }>) {
+    const slot = e.target === "boss" ? boss : live.get(e.id) ?? null;
+    const nodeName = slot ? partNode(slot, e.part) : null;
+    const node = slot && nodeName
+      ? slot.getObjectByName(nodeName) ?? null
+      : null;
+    const at = slot && nodeName
+      ? breakPart(slot, nodeName)
+      : simPoint(e.pos, new THREE.Vector3());
+    const pod = e.target === "boss";
+    const dir = worldDir(e.shotVel);
+    const hitOffset = simPoint(e.hitPos, new THREE.Vector3()).sub(at).setY(0);
+    debris.spawn({ node, at, shotDir: dir, hitOffset, size: 0.3, heavy: pod });
+    if (pod) {
+      // Torn plating either side of the line of fire.
+      for (const turn of [-0.7, 0.7]) {
+        debris.spawn({
+          node: null,
+          at,
+          shotDir: dir.clone().applyAxisAngle(THREE.Object3D.DEFAULT_UP, turn),
+          hitOffset,
+          size: 0.28,
+          heavy: false,
+        });
+      }
+      blast(at, PALETTE.gold, 40, 1.4);
+      rings.spawn(at, PALETTE.gold, 3.2, 0.45);
+      rig.addTrauma(0.6);
+      flash(0.22, PALETTE.gold);
+      return;
+    }
+    if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
+      particles.burst({
+        at,
+        color: PALETTE.sparkCream,
+        count: 10,
+        speed: 4,
+        life: 0.3,
+        size: 0.1,
+      });
+    }
+    rings.spawn(at, PALETTE.gold, 0.8, 0.22);
+    rig.addTrauma(0.1);
+  }
+
   function handle(e: SimEvent): void {
     switch (e.type) {
       case "scanLock":
         // Lock confirm: a crisp ring snap at the target.
         rings.spawn(simPoint(e.pos, tmpV), ROLE.scan.hex, 0.9, 0.22);
         break;
-      case "partBreak": {
-        const slot = e.target === "boss" ? boss : live.get(e.id);
-        const node = slot ? partNode(slot, e.part) : null;
-        const at = slot && node
-          ? breakPart(slot, node)
-          : simPoint(e.pos, new THREE.Vector3());
-        const big = e.target === "boss";
-        // Debris and a hard white-gold crack: a break must read as a win.
-        blast(at, PALETTE.sparkCream, big ? 50 : 30, big ? 1.6 : 0.9);
-        rings.spawn(at, PALETTE.gold, big ? 2.4 : 1.1, 0.3);
-        rig.addTrauma(big ? 0.4 : 0.15);
+      case "partBreak":
+        partBreakFeedback(e);
         break;
-      }
       case "disarm": {
         const slot = live.get(e.id);
         simPoint(e.pos, tmpV);
         if (slot) {
           ownMaterials(slot);
           slot.userData.powerTarget = 0;
+          slot.userData.disarmedAt = timeSec;
         }
-        // A cool, soft power-down ring and a few falling embers: spared,
-        // not destroyed, so no blast and no shake. Cancelled bullets get a
-        // shimmer ring of their own size.
+        // Spared, not destroyed: no blast and no shake. A cool power-down
+        // ring (sized by the bullets it cancelled) and a puff of dark smoke;
+        // the hull then sags, sputters and leaves (see `updateEntities`).
         rings.spawn(tmpV, PALETTE.slate, 1.3 + e.cancelled * 0.05, 0.6);
         if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
           particles.burst({
             at: tmpV,
-            color: PALETTE.slate,
-            count: 10,
-            speed: 1.2,
-            life: 0.9,
-            size: 0.1,
+            color: SMOKE,
+            count: 8,
+            speed: 0.8,
+            life: 1.0,
+            size: 0.14,
           });
         }
         break;
@@ -749,27 +898,7 @@ export function createStage(
             flash(0.35, PALETTE.crimson);
             hurt = 1;
           }
-        } else {
-          whereIs(e.id, tmpV);
-          writImpact(tmpV, e.target === "boss");
-          if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
-            particles.burst({
-              at: tmpV,
-              color: PALETTE.sparkCream,
-              count: 3,
-              speed: 3,
-              life: 0.25,
-              size: 0.12,
-            });
-          }
-          const slot = e.target === "boss" ? boss : live.get(e.id);
-          if (slot) {
-            slot.userData.hitPunch = 1;
-            // A two-frame white flash on the instance's own materials.
-            ownMaterials(slot);
-            slot.userData.flash = reducedFlashing ? 0.4 : 1;
-          }
-        }
+        } else hitFeedback(e);
         break;
       case "kill":
         whereIs(e.id, tmpV);
@@ -778,7 +907,12 @@ export function createStage(
         rig.addTrauma(ENEMY_BLAST[e.kind].trauma);
         break;
       case "lifeLost":
+        // The top rung: a red frame closes in from the screen edge (shape
+        // and motion, not only color) on top of the hurt vignette.
         flash(0.4, PALETTE.crimson);
+        edge = 1;
+        hurt = 1;
+        rig.addTrauma(0.6);
         break;
       case "pickup":
         blast(
@@ -940,12 +1074,24 @@ export function createStage(
         ownMaterials(slot);
         slot.userData.powerTarget = 0;
       }
+      if (e.disarmed) powerDown(slot, e.kind, e.id, quietMotion);
+      else if (e.hp < e.maxHp) {
+        ownMaterials(slot);
+        slot.userData.damage = 1 - e.hp / e.maxHp;
+      }
+      lastSeen.set(e.id, slot.position.clone());
       syncBrokenParts(slot, e.parts);
       if (e.lock > 0 && !e.disarmed) {
         const size = simToWorldLength(e.radius) * 1.6 + 0.25;
         reticles.set(e.id, slot.position, size, e.lock, e.locked, timeSec, dt);
       }
-      applyInstanceLook(slot, dt);
+      applyInstanceLook(slot, dt, { reducedFlashing });
+    }
+    // Forget enemies gone for a while (their kill events are long handled).
+    if (lastSeen.size > 64) {
+      for (const id of lastSeen.keys()) {
+        if (!seen.has(id)) lastSeen.delete(id);
+      }
     }
 
     // Pickups: spin 0.04 rad/tick and pulse ±12%, as in the original.
@@ -969,6 +1115,7 @@ export function createStage(
       animateWarden(boss, state.boss.phase, state.boss.invulnerable, tickNow);
       syncBrokenParts(boss, state.boss.pods);
       const b = state.boss;
+      wardenDamage(boss, b);
       if (b.lock > 0) {
         // The reticle goes on the weak point, not the hull center.
         tmpV.set(
@@ -986,7 +1133,7 @@ export function createStage(
           dt,
         );
       }
-      applyInstanceLook(boss, dt);
+      applyInstanceLook(boss, dt, { reducedFlashing });
     } else if (boss) {
       boss.visible = false;
     }
@@ -1005,6 +1152,64 @@ export function createStage(
         ? 20
         : 48,
     );
+  }
+
+  /**
+   * A disarmed hull powering down (its lights already drain in
+   * `applyInstanceLook`): it sags below its flight height, noses down,
+   * wobbles, and its engine coughs dark smoke as it leaves.
+   */
+  function powerDown(
+    slot: ModelSlot,
+    kind: EnemyKind,
+    id: EntityId,
+    quiet: boolean,
+  ): void {
+    const since = timeSec -
+      ((slot.userData.disarmedAt as number | undefined) ?? timeSec - 2);
+    const sag = Math.min(1, since / 0.6);
+    slot.position.y -= 0.35 * sag;
+    const baseX = kind === "dart" ? slot.rotation.x : 0;
+    const baseZ = kind === "lancer" ? slot.rotation.z : 0;
+    const wobble = quiet ? 0 : Math.sin(timeSec * 7 + id) * 0.08;
+    slot.rotation.x = baseX + 0.3 * sag;
+    slot.rotation.z = baseZ + wobble * sag;
+    // Engine sputter: an irregular cough, about three a second.
+    if (
+      !quiet && burstsThisFrame < MAX_BURSTS_PER_FRAME &&
+      Math.sin(timeSec * 23 + id * 1.7) > 0.93
+    ) {
+      burstsThisFrame++;
+      particles.burst({
+        at: slot.position,
+        color: SMOKE,
+        count: 2,
+        speed: 0.5,
+        life: 0.6,
+        size: 0.12,
+      });
+    }
+  }
+
+  /** The Warden's scorch and seams: hull by hp, each pod by its own hp. */
+  function wardenDamage(
+    slot: ModelSlot,
+    b: NonNullable<SimState["boss"]>,
+  ): void {
+    if (b.hp < b.maxHp) {
+      ownMaterials(slot);
+      slot.userData.damage = 1 - b.hp / b.maxHp;
+    }
+    for (const pod of b.pods) {
+      if (pod.broken || pod.hp >= pod.maxHp) continue;
+      const name = partNode(slot, pod.id);
+      if (!name) continue;
+      isolatePart(slot, name);
+      const damage = (slot.userData.partDamage as Record<string, number>) ??
+        {};
+      damage[name] = 1 - pod.hp / pod.maxHp;
+      slot.userData.partDamage = damage;
+    }
   }
 
   function animateEnemy(slot: ModelSlot, kind: EnemyKind, age: number): void {
@@ -1192,7 +1397,25 @@ export function createStage(
           e.type === "hit" || e.type === "partBreak" || e.type === "lifeLost"
         ),
       );
-      for (const e of events) pending.push(e);
+      // A lost life outranks a kill on the same tick: the kill's
+      // explosion waits, positioned now, so the loss reads first.
+      const defer = deferredBy(events);
+      for (const e of events) {
+        if (!defer || !isDeferrable(e)) {
+          pending.push(e);
+          continue;
+        }
+        const enemy = interp.latest?.enemies.find((x) =>
+          e.type === "kill" && x.id === e.id
+        );
+        if (enemy) {
+          lastSeen.set(enemy.id, simPoint(enemy.pos, new THREE.Vector3(), 0));
+        }
+        timers.push({
+          at: timeSec + DEFERRED_FEEDBACK_S,
+          run: () => handle(e),
+        });
+      }
       for (const e of events) {
         if (e.type === "partBreak") {
           sectorWorld.flash(simToWorldX(e.pos.x), simToWorldZ(e.pos.y));
@@ -1248,6 +1471,11 @@ export function createStage(
 
       particles.update(flashback ? dt * 0.15 : dt);
       rings.update(flashback ? dt * 0.15 : dt);
+      debris.reduceMotion = rig.reduceMotion;
+      debris.update(flashback ? dt * 0.15 : dt);
+      ricochets.update(dt);
+      // Reduced flashing: a slower, dimmer frame.
+      edge = Math.max(0, edge - dt * (reducedFlashing ? 0.9 : 1.4));
       muzzle.update(dt);
       wave.update(dt);
       backdrop.update(rig.reduceMotion ? 0 : flashback ? dt * 0.1 : dt);
@@ -1275,6 +1503,7 @@ export function createStage(
         bloomScale: reducedFlashing ? 0.6 : 1,
         bulletDensity: bullets.enemyCount,
         hurt: reducedFlashing ? hurt * 0.4 : hurt,
+        edge: reducedFlashing ? edge * 0.45 : edge,
         wave: {
           x: wave.center.x,
           y: wave.center.y,
