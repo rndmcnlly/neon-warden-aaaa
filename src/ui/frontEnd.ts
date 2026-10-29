@@ -59,6 +59,7 @@ import { createHistoryBridge, type HistoryBridge } from "./historyBack.ts";
 import { createSwipeDetector } from "../input/trackpadSwipe.ts";
 import { createTouchDeck } from "./touchDeck.ts";
 import { runAutoTier } from "../render/autoTier.ts";
+import { installAutoFullscreen } from "../platform/autoFullscreen.ts";
 import "./frontend.css";
 
 export interface FrontEndOptions {
@@ -485,6 +486,16 @@ export function createFrontEnd(
   addEventListener("blur", onBlur);
   document.addEventListener("visibilitychange", onVisibility);
   document.addEventListener("fullscreenchange", onFullscreen);
+  // Phones: the first menu tap fills the screen (src/platform/autoFullscreen.ts).
+  // QA captures (`?qa=1`) keep their frame unless they ask with `?autofs`.
+  const offAutoFullscreen = !flags.qa ||
+      new URLSearchParams(location.search).has("autofs")
+    ? installAutoFullscreen({
+      settings,
+      inPlay: () => playing && router.depth === 0,
+      touchActive: () => input.device() === "touch",
+    })
+    : () => {};
 
   // System Back (Android, browser button, mouse button 4, iOS swipe-back).
   bridge = createHistoryBridge({
@@ -728,6 +739,7 @@ export function createFrontEnd(
       deck.dispose();
       document.removeEventListener("visibilitychange", onVisibility);
       document.removeEventListener("fullscreenchange", onFullscreen);
+      offAutoFullscreen();
       input.dispose();
       layer.remove();
     },

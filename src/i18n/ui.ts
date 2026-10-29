@@ -39,6 +39,33 @@ export const UI_STRINGS = {
   },
   "ui.touch.latched": { en: "STREAM ON", es: "RÁFAGA ACTIVA", zh: "连射中" },
   "ui.settings.preset.school": { en: "School", es: "Escolar", zh: "校园" },
+  "ui.settings.autoFullscreen": {
+    en: "Auto fullscreen on mobile",
+    es: "Pantalla completa automática en móvil",
+    zh: "移动设备自动全屏",
+  },
+  "ui.settings.desc.autoFullscreen": {
+    en:
+      "On a phone or tablet, the first tap in a menu fills the screen. Never during play, and never in the installed app. Leaving fullscreen with the toggle above stops it until you reload.",
+    es:
+      "En un teléfono o tableta, el primer toque en un menú ocupa toda la pantalla. Nunca durante el juego, y nunca en la app instalada. Salir de pantalla completa con la opción de arriba lo detiene hasta que recargues.",
+    zh:
+      "在手机或平板上，在菜单中第一次点击即会全屏。游戏进行中不会触发，已安装的应用中也不会。用上方的开关退出全屏后，在重新加载前不会再自动全屏。",
+  },
+  "ui.fullscreen.iosHint": {
+    en:
+      "This browser cannot go fullscreen. On iPhone, tap Share, then Add to Home Screen, and open the game from there: it runs without browser bars.",
+    es:
+      "Este navegador no puede usar pantalla completa. En iPhone, toca Compartir y luego Agregar a inicio, y abre el juego desde ahí: se ejecuta sin las barras del navegador.",
+    zh:
+      "此浏览器无法全屏。在 iPhone 上，请点按“分享”，再选“添加到主屏幕”，然后从主屏幕打开游戏：这样就没有浏览器栏了。",
+  },
+  "ui.fullscreen.denied": {
+    en: "The browser declined fullscreen. You can try again from Settings.",
+    es:
+      "El navegador rechazó la pantalla completa. Puedes intentarlo de nuevo desde Ajustes.",
+    zh: "浏览器拒绝了全屏。可在“设置”中重试。",
+  },
   "ui.settings.redetect": {
     en: "Detect graphics again",
     es: "Detectar gráficos de nuevo",

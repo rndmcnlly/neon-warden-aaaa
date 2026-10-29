@@ -95,6 +95,29 @@ rendering budgets, deterministic simulation, accessibility.
    trackpad switching mid-run, fullscreen and WebGL policies.
 5. Thermal drift over a 10-minute run on a phone.
 
+## Addendum: auto fullscreen on mobile (October 29, 2026)
+
+Adam's request after playing on the phone. `src/platform/autoFullscreen.ts`
+(pure decision plus a small installer wired in `frontEnd.ts`): on a
+touch-primary device (coarse pointer and no fine one, or touch driving a
+phone/tablet UA; a Chromebook only in tablet mode), the first menu tap asks
+for fullscreen and tries a portrait orientation lock, silently. Never on a
+tap during play, never in an installed app, never after the player left
+through our toggle (session), and off via Display, "Auto fullscreen on
+mobile" (default on). A system exit re-arms it for the next menu or pause
+tap. iPhone (no element fullscreen in any iPhone browser) gets the localized
+Add to Home Screen hint once per device; a denial is silent. Keyboard Lock
+declined: it makes Esc, our Back, a press-and-hold. `?qa=1` disables it
+unless `&autofs`, so other captures keep their frame (the hint is modal).
+
+Evidence: `tests/platform_auto_fullscreen_test.ts`;
+`tests/auto_fullscreen_browser.ts`, 31/31 in
+`qa/reports/auto-fullscreen-2026-10-29T18-20-20.449Z/result.json` (Pixel 7
+Chromium requests and enters; iPhone 15 in both engines hints once; Pixel 7
+in Playwright WebKit, which lacks element fullscreen, honestly hints; no
+request on a tap during play; desktop never). Unverified: Pixel 10 Pro
+Chrome for real, and whether Android Chrome honors the portrait lock.
+
 ## Next step
 
 Adam tries Thumbs and One finger on the Pixel 10 Pro and an iPhone; one

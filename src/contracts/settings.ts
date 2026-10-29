@@ -65,6 +65,11 @@ export interface Settings {
     readonly renderScale: number;
     readonly fullscreen: boolean;
     /**
+     * On a touch-primary phone or tablet, the first menu tap enters
+     * fullscreen (src/platform/autoFullscreen.ts). Never in an installed app.
+     */
+    readonly autoFullscreen: boolean;
+    /**
      * The game picked the preset from a device probe (src/render/autoTier.ts).
      * Any manual preset or scale change turns this off, so the probe never
      * overrides a player's choice; Settings offers "Detect again".

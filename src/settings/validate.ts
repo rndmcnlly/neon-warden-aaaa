@@ -136,6 +136,10 @@ export function sanitizeSettings(s: Settings): Settings {
         d.display.renderScale,
       ),
       fullscreen: bool(s.display?.fullscreen, d.display.fullscreen),
+      autoFullscreen: bool(
+        s.display?.autoFullscreen,
+        d.display.autoFullscreen,
+      ),
       autoTier: bool(s.display?.autoTier, d.display.autoTier),
     },
     audio: {

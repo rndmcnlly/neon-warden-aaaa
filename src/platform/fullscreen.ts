@@ -1,4 +1,5 @@
 import { createSettingsStore } from "../settings/store.ts";
+import { UI_STRINGS } from "../i18n/ui.ts";
 
 export function acceptsFullscreenKey(
   event: Pick<
@@ -14,25 +15,39 @@ export function acceptsFullscreenKey(
     !capturing && !bound;
 }
 
+/**
+ * The player's last explicit choice through our toggle (F or Settings).
+ * Leaving that way stops auto fullscreen on mobile for the session
+ * (`autoFullscreen.ts`); a system exit (Android Back) does not.
+ */
+export const noteFullscreenChoice = { optedOut: false };
+
+/**
+ * No element fullscreen here. iPhone Safari (and every iPhone browser, all
+ * WebKit) only fullscreens video, whatever `fullscreenEnabled` claims.
+ */
+export function fullscreenUnsupported(): boolean {
+  return !document.documentElement.requestFullscreen ||
+    !document.fullscreenEnabled ||
+    /\b(iPhone|iPod)\b/.test(navigator.userAgent);
+}
+
 export async function setFullscreen(on: boolean): Promise<void> {
+  noteFullscreenChoice.optedOut = !on;
+  const lang = createSettingsStore().get().textLang;
   try {
     if (on) {
-      if (
-        !document.documentElement.requestFullscreen ||
-        !document.fullscreenEnabled
-      ) {
-        throw new Error(
-          "Fullscreen unavailable. On iPhone/iPad, use Share → Add to Home Screen, then open the installed app.",
-        );
+      if (fullscreenUnsupported()) {
+        throw new Error(UI_STRINGS["ui.fullscreen.iosHint"][lang]);
       }
       await document.documentElement.requestFullscreen();
     } else if (document.fullscreenElement) await document.exitFullscreen();
   } catch (error) {
     globalThis.dispatchEvent(
       new CustomEvent("platform-notice", {
-        detail: error instanceof Error
+        detail: error instanceof Error && on && fullscreenUnsupported()
           ? error.message
-          : "Fullscreen request denied by browser.",
+          : UI_STRINGS["ui.fullscreen.denied"][lang],
       }),
     );
   } finally {

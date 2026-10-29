@@ -22,6 +22,7 @@ export const DEFAULT_SETTINGS: Settings = {
     preset: "high",
     renderScale: 1,
     fullscreen: false,
+    autoFullscreen: true,
     autoTier: true,
   },
   audio: { master: 0.8, music: 0.7, sfx: 0.8, voice: 1, ui: 0.6, mono: false },

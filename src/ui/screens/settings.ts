@@ -131,6 +131,14 @@ function displayTab(ctx: UiContext): Widget[] {
         void setFullscreen(on);
       },
     }),
+    toggleRow({
+      key: "autoFullscreen",
+      label: ctx.t("ui.settings.autoFullscreen"),
+      ...onOff,
+      get: () => s.get().display.autoFullscreen,
+      set: (autoFullscreen) =>
+        set((c) => ({ ...c, display: { ...c.display, autoFullscreen } })),
+    }),
     staticRow(ctx.t("ui.settings.vsync"), ctx.t("ui.settings.vsyncBody")),
     {
       el: button({
@@ -630,6 +638,7 @@ const DESCRIPTIONS = {
   preset: "ui.settings.desc.preset",
   renderScale: "ui.settings.desc.renderScale",
   fullscreen: "ui.settings.desc.fullscreen",
+  autoFullscreen: "ui.settings.desc.autoFullscreen",
   "audio-master": "ui.settings.desc.master",
   "audio-music": "ui.settings.desc.music",
   "audio-sfx": "ui.settings.desc.sfx",
