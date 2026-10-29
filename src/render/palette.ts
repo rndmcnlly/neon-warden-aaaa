@@ -117,7 +117,7 @@ export const SCENE_LOOKS: Readonly<Record<SceneLookId, SceneLook>> = Object
       worldA: 0x3a3020,
       worldB: 0x8a7240,
       accent: PALETTE.amber,
-      floor: 0.8,
+      floor: 0.5,
       nebulaCap: 0.25,
     },
     // Ending: cold slate, almost no accent.

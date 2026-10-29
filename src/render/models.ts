@@ -81,6 +81,32 @@ function tameEmissive(material: THREE.Material | THREE.Material[]): void {
   }
 }
 
+/**
+ * Mid-value fills for enemy hulls (critique item 1): a faint self-lit tint
+ * in each enemy's original color on its non-emissive materials, so enemies
+ * read as mid-tone shapes against the floor instead of black specks, while
+ * staying far below the bloom threshold and below enemy fire.
+ */
+const ENEMY_FILL: Partial<Record<ModelId, number>> = {
+  drone: 0xff5ea8,
+  dart: 0xffb84d,
+  turret: 0x9d7bff,
+  lancer: 0x7dff9b,
+};
+const FILL_INTENSITY = 0.18;
+
+function fillHull(
+  material: THREE.Material | THREE.Material[],
+  hex: number,
+): void {
+  for (const m of Array.isArray(material) ? material : [material]) {
+    const std = m as THREE.MeshStandardMaterial;
+    if (!std.isMeshStandardMaterial || m.name.endsWith("_emit")) continue;
+    std.emissive.set(hex);
+    std.emissiveIntensity = FILL_INTENSITY;
+  }
+}
+
 export class ModelRegistry {
   private readonly loaded = new Map<ModelId, THREE.Object3D>();
   private readonly status = new Map<ModelId, Status>();
@@ -148,6 +174,8 @@ export class ModelRegistry {
         if (!mesh.isMesh) return;
         mesh.castShadow = true;
         tameEmissive(mesh.material);
+        const fill = ENEMY_FILL[id];
+        if (fill !== undefined) fillHull(mesh.material, fill);
       });
       this.loaded.set(id, root);
       this.status.set(id, "gltf");

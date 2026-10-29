@@ -39,6 +39,9 @@ export const TRAIL: Readonly<Record<TrailId, number>> = {
   ghost: 0xd8e6ee,
 };
 
+/** Emissive share of the paint color on the player ship. */
+const HERO_GLOW = 0.45;
+
 export type HelmetVariant = "issued" | "worn";
 
 /** Corporate issue early, worn (or repainted over the wear) by the end. */
@@ -78,6 +81,12 @@ export function applyShipLoadout(
     if (/paint/.test(name)) {
       o.color.set(PAINT[c.paint]);
       o.mat.color.copy(o.color);
+      // Self-lit a little: the player ship is the brightest large thing on
+      // screen whatever the scene light (critique item 8).
+      o.emissive.set(PAINT[c.paint]);
+      o.intensity = HERO_GLOW;
+      o.mat.emissive.copy(o.emissive);
+      o.mat.emissiveIntensity = HERO_GLOW;
     } else if (/trim/.test(name)) {
       o.emissive.set(c.trimColor);
       o.mat.emissive.copy(o.emissive);

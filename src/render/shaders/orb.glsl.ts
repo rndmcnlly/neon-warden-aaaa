@@ -51,7 +51,11 @@ void main() {
   float disc = 1.0 - smoothstep(0.86, 0.9, r);
   // A thin dark outline outside the ring separates touching bullets.
   float outline = smoothstep(0.86, 0.9, r) * (1.0 - smoothstep(0.94, 1.0, r));
+  // A thin white-hot line on the ring's inner edge: the brightest small
+  // pixels on screen belong to danger (the top of the value ladder).
+  float hotLine = smoothstep(0.5, 0.56, r) * (1.0 - smoothstep(0.58, 0.64, r));
   vec3 c = vCore * (1.0 - ring) + vRim * ring * (uRimGain + 0.4 * uPulse);
+  c = mix(c, vec3(2.2), hotLine * 0.8);
   float a = max(disc, outline * 0.8);
   c *= disc;
   gl_FragColor = vec4(c, a);
