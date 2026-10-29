@@ -13,6 +13,15 @@
  * plane within half a second. It must never be mistaken for a bullet: no
  * glow (past a brief cooling ember at the torn seam), no small round shapes,
  * no cyan or pink.
+ *
+ * Seen at the gameplay camera's distance, that first version was too
+ * subtle (research/2026-10-29-core-feedback/, `after-debris-frames.jpg`:
+ * "small dark tumbling bodies"). So, without breaking the rules: bodies are
+ * bigger, a steel-grey rim light outlines their silhouette against the lane
+ * (a fresnel term, brightest on edges, so it reads as shape, not as a glowing
+ * dot), and a short dark smoke streak trails each one along its flight, which
+ * shows direction and spin-off at a glance. Bullets are round, saturated and
+ * glowing; debris is angular, grey, matte and smoking.
  */
 
 import * as THREE from "three";
@@ -24,7 +33,15 @@ const BULLET_PLANE_Y = 0.25;
  * floor slab (y = 0), or it would vanish into the floor at once.
  */
 const FLOOR_Y = 0.03;
-const DEBRIS_COLOR = new THREE.Color(0x2a2d33);
+const DEBRIS_COLOR = new THREE.Color(0x3a3f47);
+/** Rim light: neutral steel, neither player cyan nor enemy pink. */
+const RIM = new THREE.Color(0xaab3bd);
+/** Smoke streak: a grey under everything bright. */
+const SMOKE = new THREE.Color(0x5b636d);
+/** Bodies read at camera distance only above this size, world units. */
+const MIN_CHUNK = 0.22;
+/** Torn-off model parts are drawn this much larger than in the model. */
+const NODE_SCALE = 1.35;
 /** The torn seam's heat: a dull ember, cooling within a quarter second. */
 const EMBER = new THREE.Color(0xb8641e);
 
@@ -46,11 +63,51 @@ export interface DebrisSpawn {
 interface Body {
   readonly root: THREE.Object3D;
   readonly materials: THREE.MeshStandardMaterial[];
+  readonly rims: { value: number }[];
+  readonly streak: THREE.Mesh;
+  readonly streakMat: THREE.MeshBasicMaterial;
   readonly vel: THREE.Vector3;
   readonly spin: THREE.Vector3;
   readonly startY: number;
   age: number;
   life: number;
+}
+
+/** A flat taper, wide end at the origin, pointing along +Z. */
+const STREAK_TAPER = (() => {
+  const g = new THREE.BufferGeometry();
+  g.setAttribute(
+    "position",
+    new THREE.Float32BufferAttribute([-0.5, 0, 0, 0.5, 0, 0, 0, 0, 1], 3),
+  );
+  return g;
+})();
+
+/**
+ * The rim light, patched into the standard material: emissive gains a
+ * fresnel term, so the silhouette's edges catch light whichever way the
+ * body tumbles. `uRim` fades it with the body.
+ */
+function addRim(m: THREE.MeshStandardMaterial): { value: number } {
+  const uniform = { value: 1 };
+  m.onBeforeCompile = (shader) => {
+    shader.uniforms.uRim = uniform;
+    shader.uniforms.uRimColor = { value: RIM };
+    shader.fragmentShader = shader.fragmentShader
+      .replace(
+        "#include <common>",
+        "#include <common>\nuniform float uRim;\nuniform vec3 uRimColor;",
+      )
+      .replace(
+        "#include <emissivemap_fragment>",
+        `#include <emissivemap_fragment>
+        float rimEdge = 1.0 - abs(dot(normal, normalize(vViewPosition)));
+        totalEmissiveRadiance += uRimColor * pow(rimEdge, 2.0) * uRim;`,
+      );
+  };
+  // One program for every debris body, whatever its uniforms.
+  m.customProgramCacheKey = () => "debris-rim";
+  return uniform;
 }
 
 const CHUNK_GEOMETRIES = [
@@ -86,7 +143,9 @@ export class DebrisField {
     const root = s.node ? cloneNode(s.node) : this.chunk(s.size);
     root.position.copy(s.at);
     if (s.node) s.node.getWorldQuaternion(root.quaternion);
+    if (s.node) root.scale.multiplyScalar(NODE_SCALE);
     const materials: THREE.MeshStandardMaterial[] = [];
+    const rims: { value: number }[] = [];
     root.traverse((o) => {
       const mesh = o as THREE.Mesh;
       if (!mesh.isMesh) return;
@@ -99,17 +158,28 @@ export class DebrisField {
         emissiveIntensity: 0.9,
         transparent: true,
       });
+      rims.push(addRim(m));
       mesh.material = m;
       mesh.renderOrder = -1;
       materials.push(m);
     });
+    const streakMat = new THREE.MeshBasicMaterial({
+      color: SMOKE,
+      transparent: true,
+      opacity: 0,
+      depthWrite: false,
+      side: THREE.DoubleSide,
+    });
+    const streak = new THREE.Mesh(STREAK_TAPER, streakMat);
+    streak.renderOrder = -2;
+    this.group.add(streak);
 
     // Fling: mostly along the shot, a little away from the hit, plus the
     // lane's scroll (+Z is down-screen). Speeds in world units per second.
     const dir = s.shotDir.clone().setY(0).normalize();
     const away = s.hitOffset.clone().setY(0).multiplyScalar(-1);
     if (away.lengthSq() > 1e-6) away.normalize();
-    const speed = s.heavy ? 5 : 9;
+    const speed = s.heavy ? 6 : 11;
     const vel = dir.multiplyScalar(speed * 0.8).addScaledVector(
       away,
       speed * 0.35,
@@ -131,11 +201,14 @@ export class DebrisField {
     this.bodies.push({
       root,
       materials,
+      rims,
+      streak,
+      streakMat,
       vel,
       spin,
       startY: Math.max(s.at.y, BULLET_PLANE_Y + 0.2),
       age: 0,
-      life: (s.heavy ? 1.6 : 1.1) * (this.reduceMotion ? 0.6 : 1),
+      life: (s.heavy ? 1.9 : 1.4) * (this.reduceMotion ? 0.6 : 1),
     });
   }
 
@@ -160,7 +233,25 @@ export class DebrisField {
       for (const m of b.materials) {
         m.emissiveIntensity = 0.9 * ember;
         m.opacity = fade;
-        m.color.copy(DEBRIS_COLOR).multiplyScalar(1 - 0.5 * sink);
+        m.color.copy(DEBRIS_COLOR).multiplyScalar(1 - 0.4 * sink);
+      }
+      // The rim holds while the body flies, then cools with it.
+      for (const r of b.rims) r.value = 0.9 * fade * (1 - 0.4 * sink);
+      // Smoke streak: from the body back along its flight, as long as the
+      // body is fast, thinning as it slows. Lies just under the body.
+      const speed = Math.hypot(b.vel.x, b.vel.z);
+      b.streak.visible = speed > 0.4;
+      if (b.streak.visible) {
+        const size = b.root.scale.x;
+        b.streak.position.copy(b.root.position);
+        b.streak.position.y -= 0.02;
+        b.streak.rotation.set(0, Math.atan2(-b.vel.x, -b.vel.z), 0);
+        b.streak.scale.set(
+          Math.max(0.12, size * 0.9),
+          1,
+          Math.min(1.6, speed * 0.16),
+        );
+        b.streakMat.opacity = 0.55 * fade * Math.min(1, speed / 4);
       }
     }
   }
@@ -172,12 +263,14 @@ export class DebrisField {
   private chunk(size: number): THREE.Object3D {
     const geometry = CHUNK_GEOMETRIES[this.chunkIndex++ % 3];
     const mesh = new THREE.Mesh(geometry);
-    mesh.scale.setScalar(Math.max(0.12, size));
+    mesh.scale.setScalar(Math.max(MIN_CHUNK, size));
     return mesh;
   }
 
   private remove(b: Body): void {
     this.group.remove(b.root);
+    this.group.remove(b.streak);
+    b.streakMat.dispose();
     for (const m of b.materials) m.dispose();
     this.bodies = this.bodies.filter((x) => x !== b);
   }
