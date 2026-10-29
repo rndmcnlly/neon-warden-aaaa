@@ -72,3 +72,42 @@ Before proposing promotion:
 
 Future cultivation entries should say what changed an approach and what actually
 worked. Do not log routine wording edits as capability growth.
+
+## Compression pass, 2026-10-29
+
+Grug and STE pass over the four repo-local skills, measured with
+`token_diff.py` from `skill-making-technique` plus a tiktoken count per file.
+The gate returned `total missing: 0` for each skill, so no commit id, path,
+number, backticked span or fenced block was removed and nothing moved to a
+history file.
+
+| Skill | Tokens before | Tokens after | Words before | Words after |
+| --- | --- | --- | --- | --- |
+| `neon-warden-index` | 226 | 218 | 133 | 133 |
+| `neon-parallel-integration-technique` | 1081 | 1062 | 665 | 650 |
+| `neon-av-review-technique` | 1002 | 995 | 600 | 600 |
+| `neon-asset-audition-technique` | 1062 | 1060 | 621 | 619 |
+
+Savings are 0.2–3.5% per file, well under the −10% a stabilized global leaf
+usually yields. That is a finding, not an unfinished pass: these four texts were
+extracted already condensed, and every remaining sentence carries a rule, a
+commit id, a measured number or a dated evidence label. The pass cut
+intensifiers, merged clauses and tightened the acceptance sentences. It did not
+touch the index routing cells, the success-criteria lists, the per-run evidence
+bullets or any scope word (`only`, `never`, `before`, `explicitly`), because
+removing those reads as complete coverage the skills do not claim.
+
+Meaning check: 3 questions per skill, answered from the compressed file alone by
+a separate clumsy reader, all 12 correct. Index: which ID owns shared-checkout
+commits, which owns comprehension review, which owns candidate audition and
+promotion, plus the `docs/SKILLS.md` gate. Parallel integration: the word-schema
+mismatch and `a8d446c`/`31430d7`, what to do when another worker has staged
+files, and the read-modify-atomic-write rule for `production/status.json`. AV
+review: frozen `85ee111` and what the audio-only ablation rejected, blind
+reconstruction before scores with subtitle-leak ablations, and what footage
+cannot establish. Asset audition: 243 and 150 takes with `e8e61f6` at −8 to
+−17.2 LUFS, A/B letters as report-local labels superseded by `AGENTS.md`, and
+stored base versus audible default in `public/vo/variants/index.json`.
+
+All four IDs still load through the `skill` tool. This entry records a wording
+and structure change, not new capability; no promotion evidence is implied.
