@@ -7,7 +7,10 @@ type Release = {
 const release = (/* RELEASE */ null) as unknown as Release;
 const sw = globalThis as unknown as ServiceWorkerGlobalScope;
 const cacheName = `neon-release-${release.version}`;
-const absolute = (path: string) => new URL(path, sw.registration.scope).href;
+// Release paths are relative to the site root, where sw.js lives. The
+// registration scope is narrower (`play/`, the game page), so the landing
+// page at the root is never controlled by this worker.
+const absolute = (path: string) => new URL(path, sw.location.href).href;
 const marker = (lang: string) => absolute(`__offline_ready_${lang}`);
 
 sw.addEventListener(
@@ -19,6 +22,12 @@ sw.addEventListener("activate", (event) => {
   event.waitUntil(sw.clients.claim());
 });
 
+/** Open game tabs. `includeUncontrolled` also lists same-origin landing tabs. */
+async function gameClients() {
+  const all = await sw.clients.matchAll({ includeUncontrolled: true });
+  return all.filter((client) => client.url.startsWith(sw.registration.scope));
+}
+
 sw.addEventListener("message", (event) => {
   const port = event.ports[0];
   if (!port) return;
@@ -26,9 +35,7 @@ sw.addEventListener("message", (event) => {
   if (type === "ACTIVATE") {
     event.waitUntil(
       (async () => {
-        const clients = await sw.clients.matchAll({
-          includeUncontrolled: true,
-        });
+        const clients = await gameClients();
         if (clients.length > 1) {
           port.postMessage({
             error:
@@ -51,9 +58,7 @@ sw.addEventListener("message", (event) => {
       const cache = await caches.open(cacheName);
       if (type === "CLEAN") {
         // Only delete obsolete releases with this single client open.
-        const clients = await sw.clients.matchAll({
-          includeUncontrolled: true,
-        });
+        const clients = await gameClients();
         if (clients.length > 1) {
           throw new Error(
             "Close other game tabs before removing old downloads.",
@@ -126,7 +131,7 @@ sw.addEventListener("fetch", (event) => {
   event.respondWith((async () => {
     const cache = await caches.open(cacheName);
     const url = request.mode === "navigate"
-      ? absolute("index.html")
+      ? absolute("play/index.html")
       : request.url;
     const hit = await cache.match(url);
     if (hit) {

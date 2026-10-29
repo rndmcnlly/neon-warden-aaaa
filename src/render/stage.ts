@@ -77,7 +77,10 @@ export type PropId = "logo_adamsmith_systems" | "logo_cm121";
 export interface StageOptions {
   /** When given, the stage follows display and accessibility settings live. */
   readonly settings?: SettingsStore;
-  /** Where the .glb files live; defaults to `models/` under the site root. */
+  /**
+   * Where the .glb files live; defaults to `models/` relative to the page.
+   * The game page sits at `play/`, so `main.ts` passes the site root.
+   */
   readonly modelBaseUrl?: string;
   /**
    * Plays a gameplay sound role. The Warden's finale times its own sounds
@@ -279,7 +282,9 @@ export function createStage(
   const backdrop = new Backdrop(tier.starCount);
   scene.add(backdrop.group);
   backdrop.setDetail(tier.bloom);
-  const sectorWorld = new SectorWorld();
+  const sectorWorld = new SectorWorld(
+    `${options.modelBaseUrl ?? "models/"}world/`,
+  );
   scene.add(sectorWorld.group);
 
   const models = new ModelRegistry(options.modelBaseUrl ?? "models/");

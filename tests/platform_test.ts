@@ -34,9 +34,10 @@ Deno.test("manifest has standalone same-scope identity and valid local PNG icons
   const manifest = JSON.parse(
     await Deno.readTextFile("public/manifest.webmanifest"),
   );
-  assertEquals(manifest.id, "./");
-  assertEquals(manifest.scope, "./");
-  assertEquals(manifest.start_url, "./");
+  // The game page is `play/`; the landing page at the root is outside scope.
+  assertEquals(manifest.id, "./play/");
+  assertEquals(manifest.scope, "./play/");
+  assertEquals(manifest.start_url, "./play/");
   assertEquals(manifest.display, "standalone");
   assertEquals(manifest.icons.length, 4);
   for (const icon of manifest.icons) {

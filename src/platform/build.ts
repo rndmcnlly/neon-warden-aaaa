@@ -25,6 +25,12 @@ export function offlinePlugin(): Plugin {
             !name.endsWith(".map") &&
             // Retain historical art on disk, never in a playable offline pack.
             !/^models\/pilot_figure(?:_[^/]+)?\.glb$/.test(name) &&
+            // The landing page (site root) is not part of the game's pack:
+            // its HTML, its own scripts/styles and its on-demand teaser media.
+            name !== "index.html" &&
+            !/^assets\/landing-[^/]+$/.test(name) &&
+            !name.startsWith("media/") &&
+            !name.endsWith(".DS_Store") &&
             !["sw.js", "offline-manifest.json"].includes(name)
           ) {
             const data = await Deno.readFile(`${dir}/${entry.name}`);

@@ -45,8 +45,9 @@ async function run() {
     hostname: "127.0.0.1",
     onListen() {},
   }, async (req) => {
-    const path = decodeURIComponent(new URL(req.url).pathname).slice(1) ||
+    let path = decodeURIComponent(new URL(req.url).pathname).slice(1) ||
       "index.html";
+    if (path.endsWith("/")) path += "index.html";
     if (path.includes("..")) return new Response("Forbidden", { status: 403 });
     if (corrupt && path.endsWith(".ogg")) {
       return new Response("<html>bad fallback</html>", {
@@ -87,6 +88,8 @@ async function run() {
     ],
   });
   const base = "http://127.0.0.1:4317/";
+  // The game page and service worker scope; the site root is the landing page.
+  const game = `${base}play/`;
   let closeContext = async () => {};
   const persistentOptions = {
     headless: true,
@@ -119,7 +122,7 @@ async function run() {
     await cold.setOffline(true);
     let coldFailed = false;
     try {
-      await (await cold.newPage()).goto(base);
+      await (await cold.newPage()).goto(game);
     } catch {
       coldFailed = true;
     }
@@ -135,7 +138,7 @@ async function run() {
     page.on("console", (msg) => {
       if (msg.type() === "error") console.error("CONSOLE", msg.text());
     });
-    await page.goto(base + "?qa=1");
+    await page.goto(game + "?qa=1");
     await page.waitForFunction(() => !!navigator.serviceWorker.controller);
     ensure(
       !await page.locator("#platform-tools").isVisible(),
@@ -263,7 +266,8 @@ async function run() {
       const failures: string[] = [];
       for (const file of files) {
         try {
-          const response = await fetch(file.url);
+          // Pack URLs are relative to the site root, one level above play/.
+          const response = await fetch(`../${file.url}`);
           if (
             !response.ok ||
             (await response.arrayBuffer()).byteLength !== file.bytes
@@ -282,7 +286,7 @@ async function run() {
     );
     ensure(
       await page.evaluate(async () => {
-        const r = await fetch("models/pilot_ship.glb", { method: "HEAD" });
+        const r = await fetch("../models/pilot_ship.glb", { method: "HEAD" });
         return r.ok && r.headers.get("content-type") === "model/gltf-binary";
       }),
       "Offline HEAD returns actual model metadata",
@@ -300,7 +304,7 @@ async function run() {
     await context.setOffline(true);
     page = await context.newPage();
     watchOffline(page);
-    await page.goto(base + "?qa=1");
+    await page.goto(game + "?qa=1");
     await page.waitForTimeout(1500);
     for (
       let i = 0;
@@ -399,7 +403,7 @@ async function run() {
         !successfulHeads.has(r) && r.failure()?.errorText !== "net::ERR_ABORTED"
       ) misses.push(r.url());
     });
-    await page.goto(base);
+    await page.goto(game);
     ensure(
       (await rpc(page, "STATUS")).ready,
       "Cache survives page restart offline",
@@ -413,7 +417,7 @@ async function run() {
     );
     await context.setOffline(true);
     page = await context.newPage();
-    await page.goto(base);
+    await page.goto(game);
     ensure(
       (await rpc(page, "STATUS")).ready,
       "Offline cache survives full browser/context restart using persistent profile",

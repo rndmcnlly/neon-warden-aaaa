@@ -82,10 +82,18 @@ const MAX_TICKS_PER_FRAME = 8;
 const WARP_MS = 1400;
 
 const flags = parseUrlFlags(location.search);
+/**
+ * The site root, where the public asset folders (models/, vo/, sfx/, music/,
+ * branding/) live. The game page itself is `play/index.html`, so page-relative
+ * asset URLs would point inside `play/`; every loader gets this base instead.
+ */
+const ASSET_BASE =
+  (import.meta as ImportMeta & { env: { BASE_URL: string } }).env.BASE_URL;
 const settings = createSettingsStore();
 const overlayRoot = document.getElementById("overlay")!;
 const stage = createStage(document.getElementById("stage")!, {
   settings,
+  modelBaseUrl: `${ASSET_BASE}models/`,
   // The Warden's finale times its own sounds (src/render/wardenFinale.ts).
   sound: (role) => {
     if (isGameplaySound(role)) engine?.playGameplay(role);
@@ -105,7 +113,11 @@ const SILENT_SFX: SfxPort = { play() {} };
 
 /** A/B variants (`?v.voice.tutorial_ai=a_captain`, see src/audio/variants.ts). */
 const variants = new VariantRegistry(flags.variants);
-const engine = await AudioEngine.create({ store: settings, variants }).catch(
+const engine = await AudioEngine.create({
+  store: settings,
+  base: ASSET_BASE,
+  variants,
+}).catch(
   (error: unknown) => {
     console.warn("audio unavailable, running silent", error);
     return null;
@@ -320,7 +332,7 @@ function playBootLogos(slot: HTMLElement, signal: AbortSignal): Promise<void> {
   if (signal.aborted) return Promise.resolve();
   const owner = director;
   const startedAt = clock.now();
-  const logos = createFlatLogos(slot);
+  const logos = createFlatLogos(slot, {}, `${ASSET_BASE}branding/`);
   const update = () => {
     const current = settings.get();
     logos.setSettings({

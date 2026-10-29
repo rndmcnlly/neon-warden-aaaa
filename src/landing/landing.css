@@ -1,0 +1,594 @@
+/*
+ * Landing page. Palette and type stacks follow the game's front end
+ * (src/ui/frontend.css) and the flat boot logos (src/presentation/
+ * flatLogos.css): system fonts only, no webfonts, no third-party requests.
+ * Motion is an enhancement behind `prefers-reduced-motion: no-preference`;
+ * each effect runs once (a glint sweep, a sub-second glitch) and never loops.
+ */
+:root {
+  --cyan: #5ef2ff;
+  --pink: #ff5ea8;
+  --violet: #9d7bff;
+  --gold: #ffe066;
+  --ink: #070c12;
+  --logo: #a6f4ed;
+  --text: #e8fdff;
+  --muted: #a7b6d0;
+  --line: rgba(158, 230, 255, 0.18);
+  --panel: rgba(16, 26, 38, 0.72);
+  --font: "Avenir Next", "Segoe UI Variable", "Segoe UI", system-ui,
+    "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas,
+    monospace;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--ink);
+  color: var(--text);
+  font: 400 clamp(15px, 1rem + 0.2vw, 18px) / 1.6 var(--font);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(90% 60% at 50% 0%, #11282b 0%, transparent 70%),
+    radial-gradient(60% 50% at 100% 40%, rgba(157, 123, 255, 0.12),
+    transparent 70%),
+    var(--ink);
+}
+a {
+  color: var(--cyan);
+  text-underline-offset: 0.2em;
+}
+a:focus-visible,
+button:focus-visible,
+video:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+.mono {
+  font-family: var(--mono);
+}
+code {
+  font: 0.92em var(--mono);
+  color: var(--logo);
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 3;
+  padding: 10px 16px;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 700;
+}
+.skip:focus {
+  top: 12px;
+}
+
+/* -- top bar */
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: max(10px, env(safe-area-inset-top)) max(16px,
+    env(safe-area-inset-right)) 10px max(16px, env(safe-area-inset-left));
+}
+.bar-brand {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .bar-brand {
+    display: grid;
+    line-height: 1.35;
+  }
+  .bar-brand .bar-sep {
+    display: none;
+  }
+}
+/* Short landscape phones: keep Play inside the first screen. */
+@media (max-height: 480px) and (orientation: landscape) {
+  /* Scoped under .hero to outrank the base rules declared below. */
+  .hero .mark,
+  .hero .eyebrow {
+    display: none;
+  }
+  .hero .title {
+    font-size: 2.4rem;
+  }
+  .hero .pitch {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+}
+.bar-sep {
+  margin: 0 0.4em;
+  opacity: 0.5;
+}
+.langs {
+  display: flex;
+  gap: 6px;
+}
+.langs button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font: 600 0.82rem var(--font);
+  cursor: pointer;
+}
+.langs button[aria-pressed="true"] {
+  border-color: var(--cyan);
+  color: var(--text);
+  background: rgba(94, 242, 255, 0.1);
+}
+
+/* -- hero: the flat boot-logo treatment, screen-locked */
+.hero {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 8px max(16px, env(safe-area-inset-right)) 40px max(16px,
+    env(safe-area-inset-left));
+}
+.hero-field {
+  position: absolute;
+  inset: -40px 0 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  /* Halftone: one tiny repeating gradient, not thousands of nodes. */
+  background-image: radial-gradient(#88b5b7 0.7px, transparent 0.85px);
+  background-size: 6px 6px;
+  opacity: 0.16;
+  mask-image: radial-gradient(ellipse 70% 60% at 30% 35%, #000, transparent
+    75%);
+}
+.hero-copy {
+  position: relative;
+  max-width: 36rem;
+}
+.mark {
+  display: block;
+  width: clamp(48px, 9vw, 84px);
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 12px rgba(110, 216, 210, 0.25));
+}
+.eyebrow {
+  margin: 0;
+  color: var(--logo);
+  font: 500 0.8rem var(--mono);
+  letter-spacing: 0.06em;
+}
+.title {
+  position: relative;
+  display: inline-block;
+  margin: 4px 0 8px;
+  font-size: clamp(2.5rem, 11vw, 5.2rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  text-shadow: 0 0 28px rgba(94, 242, 255, 0.35);
+}
+/* The glint: one soft sweep across the title, as on the boot logos. */
+.title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 22%;
+  opacity: 0;
+  background: linear-gradient(90deg, transparent, rgba(197, 231, 237, 0.55),
+    transparent);
+  pointer-events: none;
+}
+/* The glitch: two offset copies, low contrast, under a second, once. */
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  color: var(--pink);
+  pointer-events: none;
+}
+.pitch {
+  margin: 0 0 18px;
+  max-width: 32rem;
+  font-size: 1.08rem;
+  color: var(--text);
+  text-wrap: pretty;
+}
+.play {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 60px;
+  padding: 0 30px 0 22px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #7ff6ff, var(--cyan));
+  color: #031016;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4) inset,
+    0 10px 30px rgba(94, 242, 255, 0.28);
+}
+.play:hover {
+  background: linear-gradient(180deg, #b4fbff, #7ff6ff);
+}
+.play-glyph {
+  width: 0;
+  height: 0;
+  border-left: 16px solid currentColor;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.next {
+  margin: 12px 0 0;
+  max-width: 32rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+}
+.facts li {
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+}
+.note {
+  margin: 12px 0 0;
+  max-width: 32rem;
+  padding-left: 10px;
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+.more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.more::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-3px);
+}
+
+.teaser {
+  margin: 0;
+}
+.teaser video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #000;
+}
+.teaser figcaption {
+  display: grid;
+  gap: 2px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.teaser figcaption strong {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    min-height: min(calc(100vh - 70px), 760px);
+    padding-top: 16px;
+  }
+}
+
+/* -- what it is */
+.about,
+.made {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 24px max(16px, env(safe-area-inset-right)) 32px max(16px,
+    env(safe-area-inset-left));
+}
+h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+  letter-spacing: -0.02em;
+}
+.sheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.sheet > div {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+.sheet dt {
+  margin-bottom: 4px;
+  color: var(--logo);
+  font-weight: 700;
+}
+.sheet dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+/* -- how it was made */
+.made-intro,
+.en-only {
+  max-width: 40rem;
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap: 12px;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+}
+/* The whole card is one link: one tab stop, one large target. */
+.cards a {
+  display: grid;
+  gap: 4px;
+  height: 100%;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+  text-decoration: none;
+}
+.cards a:hover {
+  border-color: var(--cyan);
+}
+.card-n {
+  color: var(--pink);
+  font: 600 0.78rem var(--mono);
+}
+.cards strong {
+  font-size: 1.02rem;
+}
+.cards span:last-child {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.deep article {
+  max-width: 46rem;
+  margin: 0 0 40px;
+  padding-top: 8px;
+  scroll-margin-top: 16px;
+}
+.deep h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: var(--logo);
+}
+.deep p {
+  margin: 0 0 12px;
+}
+.deep b {
+  color: var(--gold);
+  font-weight: 650;
+}
+.ev {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* Inline SVG diagrams share one visual grammar. */
+.diagram {
+  margin: 16px 0 20px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(4, 8, 14, 0.6);
+  overflow-x: auto;
+}
+.diagram svg {
+  display: block;
+  width: 100%;
+  min-width: 520px;
+  height: auto;
+  font-family: var(--font);
+}
+.diagram rect {
+  fill: #0e1b26;
+  stroke: rgba(94, 242, 255, 0.55);
+}
+.diagram rect.local {
+  stroke: var(--gold);
+}
+.diagram rect.human {
+  fill: #2a1830;
+  stroke: var(--pink);
+}
+.diagram rect.aux {
+  stroke: var(--violet);
+  stroke-dasharray: 4 3;
+}
+.diagram rect.rt {
+  fill: #13202c;
+  stroke: var(--logo);
+}
+.diagram text {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+.diagram text.s {
+  fill: var(--muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+.diagram .d-cols text {
+  fill: var(--pink);
+  font: 600 10px var(--mono);
+  letter-spacing: 0.08em;
+}
+.diagram .rt-t {
+  fill: var(--logo);
+  font-size: 15px;
+}
+.diagram .d-arrows path,
+.diagram .boundary {
+  fill: none;
+  stroke: rgba(158, 230, 255, 0.5);
+  stroke-width: 1.5;
+}
+.diagram .boundary {
+  stroke: var(--pink);
+  stroke-dasharray: 5 4;
+}
+.diagram .py {
+  stroke: rgba(7, 12, 18, 0.9);
+  stroke-width: 2;
+}
+.py1 {
+  fill: #123444;
+}
+.py2 {
+  fill: #15404f;
+}
+.py3 {
+  fill: #1a4b55;
+}
+.py4 {
+  fill: #2b3f5c;
+}
+.py5 {
+  fill: #3d2e5c;
+}
+.py6 {
+  fill: #5a2747;
+}
+
+.foot {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 24px max(16px, env(safe-area-inset-right)) max(32px,
+    env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+.foot p {
+  margin: 0 0 6px;
+}
+.build {
+  opacity: 0.7;
+  font-size: 0.75rem;
+}
+
+/* -- motion, only for visitors who have not asked for less */
+@media (prefers-reduced-motion: no-preference) {
+  .title::after {
+    animation: nw-glint 1.3s 0.6s ease-in-out 1 both;
+  }
+  .title::before {
+    animation: nw-glitch 0.42s 0.25s steps(1, end) 1 both;
+  }
+  .play {
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+  .play:hover {
+    transform: translateY(-1px);
+  }
+}
+/* Travels inside the title's own box, so nothing needs clipping. */
+@keyframes nw-glint {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 78%;
+    opacity: 0;
+  }
+}
+/* Offsets only, no luminance flashes: well under three flashes a second. */
+@keyframes nw-glitch {
+  0% {
+    opacity: 0.55;
+    transform: translate(-3px, 0);
+    clip-path: inset(10% 0 62% 0);
+  }
+  30% {
+    opacity: 0.45;
+    transform: translate(3px, 0);
+    clip-path: inset(58% 0 14% 0);
+  }
+  60% {
+    opacity: 0.35;
+    transform: translate(-2px, 0);
+    clip-path: inset(34% 0 40% 0);
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+    clip-path: inset(0);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .hero-field {
+    display: none;
+  }
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#070c12" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Neon Warden: a short vertical shoot-'em-up you can play free in your browser, and an open account of how its vertical slice was made."
+    />
+    <title>Neon Warden: play free in your browser</title>
+    <link rel="icon" href="%BASE_URL%icons/icon-192.png" />
+    <script>
+    // The game moved from this page to play/. Old links and the QA and
+    // trailer capture tools still open the root with game flags (?skipto=,
+    // ?autoplay=, ?qa=1 ...): forward any flag other than lang= to the game.
+    if (/[?&](?!lang=)[^=&]+/.test(location.search)) {
+      location.replace("play/" + location.search + location.hash);
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#play" data-t="skip">Skip to Play</a>
+    <header class="bar">
+      <p class="bar-brand">
+        <span class="mono">adamsmith.systems</span>
+        <span class="bar-sep" aria-hidden="true">/</span>
+        <span>CM121 <span class="mono">f26</span></span>
+      </p>
+      <nav class="langs" aria-label="Language">
+        <button type="button" data-lang="en" lang="en"
+          aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" lang="es"
+          aria-pressed="false">ES</button>
+        <button type="button" data-lang="zh" lang="zh-Hans"
+          aria-pressed="false">中文</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="title">
+        <div class="hero-field" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <svg class="mark" viewBox="0 0 160 160" fill="none"
+            aria-hidden="true">
+            <path d="M80 9 144 46v68l-64 37-64-37V46Z" stroke="#79c9c5"
+              stroke-width="2" />
+            <path d="m40 106 40-67 40 67H99L80 73l-19 33Z" fill="#a6f4ed" />
+            <path d="M63 120h34M80 9v13M16 114l12-7m116 7-12-7" stroke="#a6f4ed"
+              stroke-width="2" />
+            <path d="M51 88h58" stroke="#070c12" stroke-width="4" />
+          </svg>
+          <p class="eyebrow"
+            data-t="eyebrow">A vertical slice from adamsmith.systems</p>
+          <h1 id="title" class="title" data-text="NEON WARDEN">NEON WARDEN</h1>
+          <p class="pitch" data-t="pitch">
+            A short vertical shoot-'em-up. Fly a contractor's ship up the lanes
+            for pay. The Warden waits at the end. Do you have to fight it?
+          </p>
+          <a id="play" class="play" href="play/">
+            <span class="play-glyph" aria-hidden="true"></span>
+            <span data-t="play">Play in your browser</span>
+          </a>
+          <p class="next" data-t="next">
+            Opens the game on its own page: press any key or tap, two short
+            logos, then the main menu. Sound is on (adjustable). Loads up to about 25 MB as you play;
+            nothing to install.
+          </p>
+          <ul class="facts">
+            <li data-t="fact.free">Free</li>
+            <li data-t="fact.private">No account, ads or tracking</li>
+            <li data-t="fact.input">Keyboard, mouse or touch</li>
+            <li><span lang="en">English</span>, <span lang="es">Español</span>, <span lang="zh-Hans">中文</span></li>
+          </ul>
+          <p class="note" data-t="note">
+            Content note: ship combat, deaths and a morally gray ending. The
+            story is the same on every device.
+          </p>
+          <a class="more" href="#made" data-t="more">How it was made</a>
+        </div>
+
+        <figure class="teaser" aria-labelledby="teaser-cap">
+          <video
+            controls
+            preload="none"
+            playsinline
+            width="640"
+            height="360"
+            poster="%BASE_URL%media/teaser-poster.webp"
+            src="%BASE_URL%media/teaser30-en-draft.mp4"
+          ></video>
+          <figcaption id="teaser-cap">
+            <strong data-t="teaser.title">Teaser, draft cut</strong>
+            <span
+              data-t="teaser.meta">30 seconds, 1.8 MB, with sound. Loads only when you press play.</span>
+            <span
+              data-t="teaser.how">Captured from the game by a script; English voices with burned-in English subtitles.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="about" aria-labelledby="about-h">
+        <h2 id="about-h" data-t="about.h">What it is</h2>
+        <dl class="sheet">
+          <div>
+            <dt data-t="about.slice.k">A vertical slice</dt>
+            <dd data-t="about.slice.v">
+              One complete, polished stretch of a larger game that does not
+              exist. Menus for the missing parts say "not included in this
+              vertical slice" instead of hiding them.
+            </dd>
+          </div>
+          <div>
+            <dt data-t="about.end.k">Two endings</dt>
+            <dd data-t="about.end.v">
+              You can defeat the Warden, or get through without destroying it.
+              The ending you see depends on what you choose.
+            </dd>
+          </div>
+          <div>
+            <dt data-t="about.where.k">Where it runs</dt>
+            <!-- TODO(public-repo audit): confirm physical phone and Chromebook
+                 testing before strengthening "designed for" to "tested on". -->
+            <dd data-t="about.where.v">
+              Desktop and phone browsers, designed for school Chromebooks too.
+              It can be installed, and plays offline after you download it
+              from the game's own settings.
+            </dd>
+          </div>
+          <div>
+            <dt data-t="about.who.k">Who made it</dt>
+            <dd data-t="about.who.v">
+              Adam Smith (UC Santa Cruz), directing a team of AI agents, in
+              October 2026. The studio and the incubator in the logos are
+              fiction.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="made" class="made" aria-labelledby="made-h">
+        <h2 id="made-h" data-t="made.h">How it was made</h2>
+        <p class="made-intro" data-t="made.intro">
+          This page is also a worked example for game-development students.
+          Each card opens a short account with links to the source.
+        </p>
+        <p class="en-only" data-t="made.enOnly" hidden></p>
+        <ol class="cards">
+          <li><a href="#m-slice"><span class="card-n">01</span><strong data-t="c1.t">A slice is an argument</strong><span data-t="c1.s">What is built, what is honestly stubbed, and what was cut.</span></a></li>
+          <li><a href="#m-assets"><span class="card-n">02</span><strong data-t="c2.t">Assets are programs</strong><span data-t="c2.s">Blender scripts, a voice script as data, auditioned music and sound.</span></a></li>
+          <li><a href="#m-platform"><span class="card-n">03</span><strong data-t="c3.t">Engine and platform</strong><span data-t="c3.s">three.js, TypeScript, Deno, Vite: a static site, installable, for phones and Chromebooks.</span></a></li>
+          <li><a href="#m-ai"><span class="card-n">04</span><strong data-t="c4.t">Two kinds of AI</strong><span data-t="c4.s">Cloud agents that plan and write code; mostly local models that make the sounds and voices.</span></a></li>
+          <li><a href="#m-qa"><span class="card-n">05</span><strong data-t="c5.t">QA at many levels</strong><span data-t="c5.s">Unit tests, a deterministic simulation, autopilots and human playtests.</span></a></li>
+          <li><a href="#m-judges"><span class="card-n">06</span><strong data-t="c6.t">Dailies and blind judges</strong><span data-t="c6.s">Recorded reels with real audio, reviewed blind, and the claims we rejected.</span></a></li>
+          <li><a href="#m-ab"><span class="card-n">07</span><strong data-t="c7.t">Choosing in context</strong><span data-t="c7.s">A/B tests inside the running game, decisions that never destroy the alternative.</span></a></li>
+          <li><a href="#m-source"><span class="card-n">08</span><strong data-t="c8.t">Read the source</strong><span data-t="c8.s">Where everything lives, and what you can regenerate yourself.</span></a></li>
+        </ol>
+
+        <div class="deep" lang="en">
+          <article id="m-slice">
+            <h3>01 A slice is an argument</h3>
+            <p>
+              A vertical slice is made for the people deciding whether a game
+              should exist: publishers, funders, and in a classroom, graders
+              and playtesters. Its include and exclude decisions are the real
+              design document. This one inverts the usual priority: the front
+              end every player touches (boot, menus, settings, subtitles,
+              language, accessibility) is near shipping quality, while
+              features outside the slice (multiplayer, store, leaderboards,
+              cloud saves, photo mode) are visible but say so plainly.
+            </p>
+            <p>
+              <b>Human decisions.</b> Adam reframed the project from parody to
+              an authentic slice after playing a parody prototype, kept the
+              pilot off-screen as a scope cut, and decided that school devices
+              get the same story with no softened wording.
+            </p>
+            <p>
+              <b>What went wrong.</b> An AI reviewer suggested hiding the
+              unavailable menu grid to imply completeness; we declined it as
+              overclaiming. The pilot scope cut left a dangling reference that
+              broke the full typecheck until a later integration repaired it.
+            </p>
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/PRODUCTION.md">PRODUCTION.md</a> (Built and Stubbed table),
+              <a href="%REPO_URL%/blob/main/research/2026-10-28-vertical-slice-checklist/README.md">vertical-slice checklist research</a>,
+              <a href="%REPO_URL%/blob/main/AGENTS.md">AGENTS.md</a> (dated decisions).
+            </p>
+          </article>
+
+          <article id="m-assets">
+            <h3>02 Assets are programs</h3>
+            <p>
+              No asset is hand-edited in a tool and saved as the source of
+              truth. Every class of asset is regenerated from text by a script
+              that runs outside the game, and the game only reads the outputs
+              and their manifests. Ships, enemies and sector scenery are
+              Python scripts run by Blender headlessly (a full rebuild takes
+              seconds) and exported as glTF. Every spoken line lives in one
+              trilingual script file (speaker, English, Spanish, Chinese,
+              direction); a local speech model renders it, a local recognition
+              pass checks it, and subtitle and word timings come from the
+              rendered audio, so any line can be rewritten and regenerated.
+              Music and interface sounds come from local generation, auditioned
+              as candidates and then promoted with measured loudness and beat
+              grids.
+            </p>
+            <figure class="diagram">
+              <svg viewBox="0 0 720 300" role="img" aria-labelledby="d1-t d1-d">
+                <title
+                  id="d1-t">Asset pipelines live outside the runtime</title>
+                <desc
+                  id="d1-d">Four rows. Text sources (Blender scripts, the voice script, music cue briefs, sound briefs) feed tools that run outside the game (headless Blender, local speech and recognition models, a local music model, local and cloud sound generation). Those write committed files with manifests (glTF models, Opus voice, Ogg music and sound). The three.js game reads only the manifests and files.</desc>
+                <g class="d-cols">
+                  <text x="80" y="22">TEXT SOURCE</text>
+                  <text x="270" y="22">TOOL (OFFLINE)</text>
+                  <text x="460" y="22">COMMITTED OUTPUT</text>
+                  <text x="650" y="22">RUNTIME</text>
+                </g>
+                <g class="d-row">
+                  <rect x="10" y="38" width="140" height="44" rx="6" />
+                  <text x="80" y="58">art/blender/*.py</text>
+                  <text class="s" x="80" y="73">models as code</text>
+                  <rect x="200" y="38" width="140" height="44" rx="6" />
+                  <text x="270" y="58">Blender, headless</text>
+                  <text class="s" x="270" y="73">build_all.py</text>
+                  <rect x="390" y="38" width="140" height="44" rx="6" />
+                  <text x="460" y="58">models/*.glb</text>
+                  <text class="s" x="460" y="73">+ manifest.json</text>
+                </g>
+                <g class="d-row">
+                  <rect x="10" y="98" width="140" height="44" rx="6" />
+                  <text x="80" y="118">vo/script.yaml</text>
+                  <text class="s" x="80" y="133">EN / ES / ZH lines</text>
+                  <rect x="200" y="98" width="140" height="44" rx="6" />
+                  <text x="270" y="118">local TTS + ASR</text>
+                  <text class="s" x="270" y="133">render, check, align</text>
+                  <rect x="390" y="98" width="140" height="44" rx="6" />
+                  <text x="460" y="118">vo/*.opus</text>
+                  <text class="s" x="460" y="133">+ cues, word timings</text>
+                </g>
+                <g class="d-row">
+                  <rect x="10" y="158" width="140" height="44" rx="6" />
+                  <text x="80" y="178">music/cues.yaml</text>
+                  <text class="s" x="80" y="193">cue briefs</text>
+                  <rect x="200" y="158" width="140" height="44" rx="6" />
+                  <text x="270" y="178">local music model</text>
+                  <text class="s" x="270" y="193">audition, promote</text>
+                  <rect x="390" y="158" width="140" height="44" rx="6" />
+                  <text x="460" y="178">music/*.ogg</text>
+                  <text class="s" x="460" y="193">+ tempo, key, LUFS</text>
+                </g>
+                <g class="d-row">
+                  <rect x="10" y="218" width="140" height="44" rx="6" />
+                  <text x="80" y="238">sfx/*.yaml</text>
+                  <text class="s" x="80" y="253">role briefs</text>
+                  <rect x="200" y="218" width="140" height="44" rx="6" />
+                  <text x="270" y="238">local + cloud SFX</text>
+                  <text class="s" x="270" y="253">audition, promote</text>
+                  <rect x="390" y="218" width="140" height="44" rx="6" />
+                  <text x="460" y="238">sfx/*.ogg</text>
+                  <text class="s" x="460" y="253">+ manifest.json</text>
+                </g>
+                <rect class="rt" x="580" y="38" width="130" height="224"
+                  rx="8" />
+                <text class="rt-t" x="645" y="140">three.js game</text>
+                <text class="s" x="645" y="158">reads manifests</text>
+                <text class="s" x="645" y="173">and files only</text>
+                <g class="d-arrows">
+                  <path
+                    d="M150 60h50M340 60h50M530 60h50M150 120h50M340 120h50M530 120h50M150 180h50M340 180h50M530 180h50M150 240h50M340 240h50M530 240h50" />
+                </g>
+                <text class="s" x="360"
+                  y="290">the dashed line is the runtime boundary: nothing left of it ships</text>
+                <path class="boundary" d="M555 30v240" />
+              </svg>
+            </figure>
+            <p>
+              <b>What went wrong.</b> Varying random seeds produced near-identical
+              candidates; varying the written brief produced real choices. A
+              word-timing format mismatch between the voice pipeline and the
+              subtitle code broke word highlighting even though each side
+              passed its own checks.
+            </p>
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/art/blender/README.md">art/blender/README.md</a>,
+              <a href="%REPO_URL%/blob/main/vo/render.py">vo/render.py</a>,
+              <a href="%REPO_URL%/blob/main/sfx/README.md">sfx/README.md</a>,
+              <a href="%REPO_URL%/blob/main/music/README.md">music/README.md</a>.
+            </p>
+          </article>
+
+          <article id="m-platform">
+            <h3>03 Engine and platform</h3>
+            <p>
+              The original was a small Phaser game written as a course starter.
+              This slice is a full rewrite in <b>three.js</b> and strict
+              <b>TypeScript</b> (everything except shaders), run with
+              <b>Deno</b> tasks and built by <b>Vite</b> into a plain static
+              site: no server, no accounts, nothing to keep alive. The
+              simulation is pure and deterministic; rendering, audio and menus
+              sit around it. The game page is an installable offline web app:
+              installing it and downloading it for offline play are separate,
+              explicit steps, and an update never reloads a run in progress.
+              It is laid out portrait-first for phones, with touch controls
+              that express the full fire verb, and a low graphics tier for
+              school Chromebooks.
+            </p>
+            <!-- TODO(public-repo audit): confirm what "school Chromebook" testing
+                 has actually happened before adding device names or frame rates. -->
+            <p>
+              <b>What went wrong.</b> Mobile, touch and school-device support
+              arrived late, after the desktop front end, which is the reverse of
+              what a phone-first audience needs. The offline panel still has
+              English-only labels. Moving the game to its own page for this
+              site exposed a logo path that only worked at a domain root.
+            </p>
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/docs/PWA.md">docs/PWA.md</a>,
+              <a href="%REPO_URL%/blob/main/CONTRACTS.md">CONTRACTS.md</a>,
+              <a href="%REPO_URL%/blob/main/vite.config.ts">vite.config.ts</a>,
+              <a href="%REPO_URL%/tree/main/src/platform">src/platform/</a>.
+            </p>
+          </article>
+
+          <article id="m-ai">
+            <h3>04 Two kinds of AI</h3>
+            <p>
+              Generative AI did two different jobs here, and they should not be
+              confused. <b>Frontier models in the cloud</b> (Claude Opus 5.5,
+              with GPT-6.1 Sol for one segment while a usage window was
+              exhausted) acted as production
+              orchestration and implementation agents: planning, dispatching
+              parallel workers with file-scoped ownership, writing the code,
+              tests, tools and documentation. <b>Mostly local models</b> on a
+              laptop made assets: Qwen3-TTS for voices, Qwen3-ASR to check
+              them, Stable Audio 3 for music. A few gameplay sound effects came
+              from a cloud model (ElevenLabs Sound Effects via fal). Auxiliary
+              roles: Gemini 4 Argon as a blind audiovisual judge with zero data
+              retention, and small models (GLM-5.3-Flash, DeepSeek V4.1 Flash)
+              for research summaries and compressing agent instructions.
+            </p>
+            <figure class="diagram">
+              <svg viewBox="0 0 720 280" role="img" aria-labelledby="d2-t d2-d">
+                <title
+                  id="d2-t">Agent orchestration versus asset inference</title>
+                <desc
+                  id="d2-d">A human director at the top sets direction, plays builds and makes the decisions. Left lane: cloud frontier agents plan, write code, tests, tools and documentation, and run the asset scripts. Right lane: mostly local models generate voices, check speech and make music, plus a few cloud sound effects. Below both: auxiliary judges and small-model passes, whose claims are checked against logs before anything is adopted. Everything lands in the repository.</desc>
+                <rect class="human" x="230" y="10" width="260" height="50"
+                  rx="8" />
+                <text x="360" y="32">Human director</text>
+                <text class="s" x="360"
+                  y="49">direction, playtests, final calls</text>
+                <rect x="20" y="90" width="320" height="90" rx="8" />
+                <text x="180" y="112">Orchestration and implementation</text>
+                <text class="s" x="180" y="130">cloud frontier agents</text>
+                <text class="s" x="180"
+                  y="148">plan, dispatch, write code, tests, tools, docs</text>
+                <text class="s" x="180" y="166">run the asset scripts</text>
+                <rect class="local" x="380" y="90" width="320" height="90"
+                  rx="8" />
+                <text x="540" y="112">Asset inference</text>
+                <text class="s" x="540"
+                  y="130">mostly local, on one laptop</text>
+                <text class="s" x="540"
+                  y="148">voices (TTS), speech checks (ASR), music</text>
+                <text class="s" x="540"
+                  y="166">plus a few cloud sound effects</text>
+                <rect class="aux" x="120" y="204" width="480" height="40"
+                  rx="8" />
+                <text x="360"
+                  y="222">Auxiliary: blind judges, small-model passes</text>
+                <text class="s" x="360"
+                  y="237">claims checked against event logs before adoption</text>
+                <g class="d-arrows">
+                  <path d="M300 60v30M420 60v30M340 135h40" />
+                </g>
+                <text class="s" x="360"
+                  y="270">all of it lands as files in one repository</text>
+              </svg>
+            </figure>
+            <p>
+              <b>Human decisions.</b> Story direction, the scope cuts, voice
+              casting picks made by ear in context, and every playtest that
+              redirected the work were Adam's. The credits say "Adam Smith, and
+              his coupled agents", and name each model's role.
+            </p>
+            <!-- TODO(public-repo audit): clear the exact model list and roles
+                 against commit history before publishing. -->
+            <p>
+              <b>What went wrong.</b> Agents that re-read large sources burned
+              through context; one shared status file was truncated by a
+              concurrent write and rebuilt from memory. Both became written
+              rules for the next agents.
+            </p>
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/src/ui/creditsRoll.ts">src/ui/creditsRoll.ts</a>,
+              <a href="%REPO_URL%/blob/main/docs/SKILLS.md">docs/SKILLS.md</a>,
+              <a href="%REPO_URL%/blob/main/docs/INTEGRATION-QUEUE.md">docs/INTEGRATION-QUEUE.md</a>.
+            </p>
+          </article>
+
+          <article id="m-qa">
+            <h3>05 QA at many levels</h3>
+            <p>
+              The simulation has no clock and no hidden randomness, and the
+              thing that flies the ship is an interchangeable "pilot": a human,
+              or an autopilot that fights or never fires. That one design
+              choice, inherited from the original course starter, makes QA
+              cheap at every scale: unit tests on pure functions, seeded
+              replays that must hash the same, autopilots playing the whole
+              slice at many times real speed, URL flags that skip straight to
+              any scene, recorded reels, and human playtests.
+            </p>
+            <figure class="diagram">
+              <svg viewBox="0 0 720 270" role="img" aria-labelledby="d3-t d3-d">
+                <title id="d3-t">The QA pyramid</title>
+                <desc
+                  id="d3-d">Six layers from the wide, fast base to the narrow, decisive top: typecheck and unit tests; deterministic simulation replays; autopilots playing the slice at high speed; recorded reels with real audio; blind AI judges checked against event logs; human playtests.</desc>
+                <path class="py py1" d="M60 250h600l-40-36H100Z" />
+                <path class="py py2" d="M100 210h520l-40-36H140Z" />
+                <path class="py py3" d="M140 170h440l-40-36H180Z" />
+                <path class="py py4" d="M180 130h360l-40-36H220Z" />
+                <path class="py py5" d="M220 90h280l-40-36H260Z" />
+                <path class="py py6" d="M260 50h200l-40-36H300Z" />
+                <text x="360"
+                  y="237">typecheck and unit tests (many, seconds)</text>
+                <text x="360"
+                  y="197">deterministic replays (same seed, same hash)</text>
+                <text x="360"
+                  y="157">autopilots: fight and pacifist, fast</text>
+                <text x="360" y="117">reels with real audio</text>
+                <text x="360" y="77">blind AI judges</text>
+                <text x="360" y="37">human play</text>
+                <text class="s" x="684" y="240">cheap</text>
+                <text class="s" x="684" y="40">decisive</text>
+              </svg>
+            </figure>
+            <p>
+              <b>What went wrong.</b> For a while every recorded reel was
+              silent, because browser screen recording drops audio; a judge
+              asked to review sound could not have heard anything. A real audio
+              tap fixed it and immediately exposed voice lines that were being
+              dropped on skip paths.
+            </p>
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/qa/README.md">qa/README.md</a>,
+              <a href="%REPO_URL%/blob/main/src/contracts/flags.ts">src/contracts/flags.ts</a>,
+              <a href="%REPO_URL%/blob/main/src/contracts/pilot.ts">src/contracts/pilot.ts</a>,
+              <a href="%REPO_URL%/tree/main/tests">tests/</a>.
+            </p>
+          </article>
+
+          <article id="m-judges">
+            <h3>06 Dailies and blind judges</h3>
+            <p>
+              Short, single-topic reels (menus, a combat beat, the boss, an
+              ending) worked like film dailies: watched the same day, compared
+              with the last cut. Some were shown to an AI judge blind, with no
+              script, mechanics or intent: first describe what happened, what
+              was heard and what was unclear; only then give scores or advice.
+              Its account was then checked against the game's event log and
+              audio stems. Detection is not understanding: noticing a bright
+              threat is not the same as knowing why a life was lost.
+            </p>
+            <p>
+              <b>What went wrong, usefully.</b> After a night of fixes meant to
+              make the core loop clearer, the blind judge preferred the
+              <i>before</i> build in 7 of 10 pairs. We cut the added floor
+              clutter and did not claim an improvement. Judges also "heard"
+              subtitles in silent windows and invented signage; those claims
+              are kept in tables of rejected claims next to the ones adopted.
+            </p>
+            <!-- TODO(public-repo audit): night-verification folder must be
+                 committed and cleared before linking it. -->
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/research/2026-10-28-intelligibility/README.md">intelligibility study</a>,
+              <a href="%REPO_URL%/blob/main/research/2026-10-29-night-verification/README.md">night verification</a>,
+              <a href="%REPO_URL%/blob/main/.opencode/skills/neon-av-review-technique/SKILL.md">review technique</a>.
+            </p>
+          </article>
+
+          <article id="m-ab">
+            <h3>07 Choosing in context</h3>
+            <p>
+              Candidates are judged where they will be used, not in isolation:
+              a voice take inside its scene with the music and effects under
+              it, switchable by a URL flag in the running game. Choosing never
+              destroys the alternative: rejected takes, candidate music and
+              voice variants stay addressable, and timing fixes such as a
+              voice's start offset are stored as data rather than baked into
+              audio. Reviews are kept quick: one clip at a time, evidence
+              revealed after watching, a clear next and previous.
+            </p>
+            <p>
+              <b>Human decisions.</b> After hearing both in context, Adam chose
+              a different tutorial voice than the original default; the old one
+              remains one flag away.
+            </p>
+            <p class="ev">
+              Evidence:
+              <a href="%REPO_URL%/blob/main/src/audio/variants.ts">src/audio/variants.ts</a>,
+              <a href="%REPO_URL%/blob/main/.opencode/skills/neon-asset-audition-technique/SKILL.md">audition technique</a>,
+              <a href="%REPO_URL%/blob/main/scripts/vo_onset.ts">scripts/vo_onset.ts</a>.
+            </p>
+          </article>
+
+          <article id="m-source">
+            <h3>08 Read the source</h3>
+            <p>
+              Start with <code>src/scenes/index.ts</code>: one function maps
+              game events to scenes and is the whole slice's structure. The
+              simulation is in <code>src/sim/</code>, rendering in
+              <code>src/render/</code>, menus in <code>src/ui/</code>, and the
+              contracts between them in <code>src/contracts/</code>. Research
+              notes, each with a framing question, options and what was
+              declined, live in <code>research/</code>.
+            </p>
+            <p>
+              <b>What you can regenerate.</b> Models (with Blender) and the
+              text tables (with Deno) rebuild from the repository alone. Voices
+              and music need the local models named above; the cloud sound
+              effects need a paid account. So the generated audio is committed,
+              and the project runs from a static build with nothing to
+              maintain.
+            </p>
+            <p class="ev">
+              <a class="src" href="%REPO_URL%">Source repository</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p data-t="foot.credit">
+        Neon Warden by Adam Smith, and his coupled agents. adamsmith.systems
+        and CM121 are fictional.
+      </p>
+      <p data-t="foot.privacy">
+        This site sets no cookies, loads nothing from other sites and collects
+        no data. Your language choice stays in this browser tab.
+      </p>
+      <!-- TODO(public-repo audit): add licence lines once code, art and audio
+           licences are cleared. -->
+      <p class="mono build">%BUILD_STAMP%</p>
+    </footer>
+    <script type="module" src="/src/landing/main.ts"></script>
+  </body>
+</html>

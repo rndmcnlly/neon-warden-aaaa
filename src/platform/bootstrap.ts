@@ -151,7 +151,9 @@ if (
 async function setup() {
   const registration = await navigator.serviceWorker.register(
     `${production.BASE_URL}sw.js`,
-    { scope: production.BASE_URL, updateViaCache: "none" },
+    // The worker file sits at the site root beside the asset folders; its
+    // scope is only the game page, so the landing page stays uncontrolled.
+    { scope: `${production.BASE_URL}play/`, updateViaCache: "none" },
   );
   await navigator.serviceWorker.ready;
   const active = () => registration.active!;

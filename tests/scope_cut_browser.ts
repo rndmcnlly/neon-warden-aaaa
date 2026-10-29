@@ -47,8 +47,9 @@ async function run() {
   const server = Deno.serve(
     { hostname: "127.0.0.1", port: 0, onListen() {} },
     async (req) => {
-      const path = decodeURIComponent(new URL(req.url).pathname).slice(1) ||
+      let path = decodeURIComponent(new URL(req.url).pathname).slice(1) ||
         "index.html";
+      if (path.endsWith("/")) path += "index.html";
       if (path.includes("..")) {
         return new Response("Forbidden", {
           status: 403,
@@ -102,7 +103,8 @@ async function run() {
         }),
       )
     );
-    const base = `http://127.0.0.1:${(server.addr as Deno.NetAddr).port}/`;
+    // The game page; the site root is the landing page.
+    const base = `http://127.0.0.1:${(server.addr as Deno.NetAddr).port}/play/`;
     await page.goto(`${base}?qa=1`);
     for (
       let i = 0;
