@@ -39,8 +39,8 @@ export interface TouchLayout {
 /**
  * Stage height over width that lets the gameplay camera fit the whole 3:4
  * playfield edge to edge. Larger than 4/3 because the camera is tilted and
- * `cameraRig.fitGameplay` keeps a 6% margin; checked against screenshots of
- * the iPhone 15 and Pixel 7 reels (qa/reports, touch-layout).
+ * `cameraRig.fitGameplay` keeps a 6% margin; checked by eye in the iPhone 15
+ * and Pixel 7 tutorial screenshots (research/2026-10-29-mobile-touch-qa).
  */
 export const STAGE_ASPECT = 1.42;
 /** Below this, a deck is too short for a 96 px FIRE button plus margins. */

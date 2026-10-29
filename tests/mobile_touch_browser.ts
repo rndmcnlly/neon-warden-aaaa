@@ -9,7 +9,9 @@
  * Devices: iPhone 15 and Pixel 7, each in WebKit and Chromium, with touch.
  * Topics: menus (every Back by chip, then by history), tutorial (the move
  * and focus lessons by touch), writ (a Writ release and a disarm by touch),
- * back (system Back and a trackpad swipe pause a run), audio (Ogg Opus).
+ * back (system Back pauses a run), audio (Ogg Opus), and on a Chromebook
+ * hybrid profile (1366 by 768, touch plus trackpad, CrOS user agent):
+ * chromebook (trackpad history swipe pauses; the device probe picks School).
  *
  * Fingers: Playwright's `tap` for menus (real touch input in both engines);
  * drags are synthetic `PointerEvent`s with pointerType "touch", because
@@ -43,6 +45,16 @@ const COMBOS = [
   { id: "iphone15-chromium", engine: chromium, device: "iPhone 15" },
   { id: "pixel7-webkit", engine: webkit, device: "Pixel 7" },
 ] as const;
+
+/** A school Chromebook: clamshell landscape, touchscreen and trackpad. */
+const CHROMEBOOK = {
+  viewport: { width: 1366, height: 768 },
+  deviceScaleFactor: 1,
+  hasTouch: true,
+  isMobile: false,
+  userAgent:
+    "Mozilla/5.0 (X11; CrOS x86_64 15917.71.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+};
 
 type Topic = (page: Page, ok: Ok) => Promise<void>;
 type Ok = (name: string, pass: unknown, detail?: string) => void;
@@ -304,7 +316,9 @@ const writ: Topic = async (page, ok) => {
     const target = (lock.pos as { x: number }).x;
     // Closed-loop alignment by small drags (the scale is the stage's).
     for (let i = 0; i < 12; i++) {
-      const p = (await sim(page)).player!;
+      // Null between runs (a game over under an undodging test pilot).
+      const p = (await sim(page)).player;
+      if (!p) break;
       const gap = target - p.x;
       if (Math.abs(gap) < 2) break;
       await drag(page, o, Math.max(-60, Math.min(60, gap * 0.8)), 0, 120);
@@ -390,6 +404,71 @@ const audio: Topic = async (page, ok) => {
   );
 };
 
+const chromebook: Topic = async (page, ok) => {
+  // A trackpad two-finger swipe left is a run of horizontal wheel events.
+  await page.goto(`${BASE}?qa=1&skipto=sector1`);
+  await page.waitForFunction(() => "__nwqa" in globalThis);
+  await page.mouse.move(683, 400);
+  await page.mouse.click(683, 400);
+  await page.keyboard.press("ArrowLeft");
+  await page.waitForTimeout(1500);
+  // Dispatched in-page as one burst: headless `mouse.wheel` (and even
+  // in-page timers) land 0.4–2 s apart here because software-GL frames
+  // block the main thread, far slower than a real trackpad's 60–120 Hz
+  // stream. The burst tests the detector and the pause wiring; the
+  // cadence itself is pinned in tests/ui_history_back_test.ts.
+  const wheel = (dx: number, dy: number) =>
+    page.evaluate(({ dx, dy }) => {
+      for (let i = 0; i < 8; i++) {
+        dispatchEvent(
+          new WheelEvent("wheel", { deltaX: dx, deltaY: dy, cancelable: true }),
+        );
+      }
+    }, { dx, dy });
+  await wheel(-60, 2);
+  await page.waitForTimeout(500);
+  ok(
+    "trackpad history swipe pauses the run, page stays",
+    await page.locator(".nw-screen-pause").isVisible() &&
+      page.url().includes("skipto=sector1"),
+  );
+  await page.screenshot({ path: `${report}/${ctxId}-swipe-pause.png` });
+  // Vertical scrolling must not pause.
+  await page.locator('[data-qa="back-chip"]').click();
+  await page.waitForTimeout(400);
+  await wheel(0, 80);
+  await page.waitForTimeout(400);
+  ok(
+    "vertical wheel does not pause",
+    !(await page.locator(".nw-screen-pause").isVisible()),
+  );
+  // Device probe: 4 cores, 4 GB, CrOS: School, announced once.
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, "hardwareConcurrency", { get: () => 4 });
+    Object.defineProperty(navigator, "deviceMemory", { get: () => 4 });
+  });
+  await page.goto(`${BASE}?qa=1&autotier`);
+  await page.evaluate(() => localStorage.clear());
+  await page.reload();
+  // The front end mounts after audio init (a top-level await in main.ts).
+  await page.locator(".nw-screen-gate").waitFor();
+  await page.mouse.click(683, 400);
+  await page.waitForTimeout(4500);
+  const preset = await page.evaluate(() => {
+    for (let i = 0; i < localStorage.length; i++) {
+      const v = localStorage.getItem(localStorage.key(i)!) ?? "";
+      const m = /"preset":"(\w+)".*?"autoTier":(true|false)/.exec(v);
+      if (m) return `${m[1]} auto=${m[2]}`;
+    }
+    return "none";
+  });
+  ok(
+    "auto tier picks School on a 4 GB ChromeOS device",
+    preset === "school auto=true",
+    preset,
+  );
+};
+
 // ---------------------------------------------------------------- run
 
 let ctxId = "";
@@ -401,10 +480,22 @@ const TOPICS: [string, Topic][] = [
   ["back", back],
 ];
 const only = Deno.env.get("TOPICS")?.split(",");
+const CHROMEBOOK_COMBO = {
+  id: "chromebook-chromium",
+  engine: chromium,
+} as const;
 const onlyDevices = Deno.env.get("DEVICES")?.split(",");
 const browsers = new Map<unknown, Browser>();
 try {
-  for (const combo of COMBOS) {
+  const all = [
+    ...COMBOS.map((c) => ({ ...c, topics: TOPICS })),
+    {
+      ...CHROMEBOOK_COMBO,
+      device: null,
+      topics: [["chromebook", chromebook]] as [string, Topic][],
+    },
+  ];
+  for (const combo of all) {
     if (onlyDevices && !onlyDevices.includes(combo.id)) continue;
     const browser = browsers.get(combo.engine) ??
       await combo.engine.launch({
@@ -413,13 +504,14 @@ try {
           : [],
       });
     browsers.set(combo.engine, browser);
-    for (const [topic, run] of TOPICS) {
+    for (const [topic, run] of combo.topics) {
       if (only && !only.includes(topic)) continue;
       ctxId = combo.id;
       const dir = `${report}/video/${combo.id}-${topic}`;
+      const profile = combo.device ? devices[combo.device] : CHROMEBOOK;
       const context = await browser.newContext({
-        ...devices[combo.device],
-        recordVideo: { dir, size: devices[combo.device].viewport },
+        ...profile,
+        recordVideo: { dir, size: profile.viewport },
       });
       const page = await context.newPage();
       const errors: string[] = [];
