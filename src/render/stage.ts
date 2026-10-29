@@ -48,6 +48,7 @@ import { applyShipLoadout } from "./loadout.ts";
 import { PALETTE, ROLE, SCENE_LOOKS, type SceneLookId } from "./palette.ts";
 import { ParticleSystem, ShockwavePool } from "./particles.ts";
 import { PostChain } from "./post.ts";
+import { MuzzleFlashes, PressureWave, ShipKnock } from "./shotLooks.ts";
 import {
   applyInstanceLook,
   ownMaterials,
@@ -263,6 +264,11 @@ export function createStage(
   const ship = models.create("pilot_ship");
   world.add(ship);
   ship.add(writ.group);
+  // Bolt identity (shotLooks.ts): per-kind muzzle, Writ knock and wave.
+  const muzzle = new MuzzleFlashes();
+  ship.add(muzzle.group);
+  const knock = new ShipKnock();
+  const wave = new PressureWave();
   // Engine plume: the hottest point on the player, so the eye finds the
   // ship first (critique item 8). A stretched additive sprite behind it.
   const plumeMat = new THREE.SpriteMaterial({
@@ -440,8 +446,10 @@ export function createStage(
     }
     renderScale = s.display.renderScale;
     rig.shakeScale = s.accessibility.shake;
+    knock.scale = s.accessibility.shake;
     reduceMotion = s.accessibility.reduceMotion;
     reducedFlashing = s.accessibility.reducedFlashing;
+    muzzle.reducedFlashing = reducedFlashing;
     flashes.limits = reducedFlashing ? REDUCED_LIMITS : STANDARD_LIMITS;
     resize();
   }
@@ -567,6 +575,56 @@ export function createStage(
     return out.set(simToWorldX(at.x), y, simToWorldZ(at.y));
   }
 
+  /**
+   * Writ release: a shaped double ring (a tight cream snap, a wider cyan
+   * shove), a burst of cream sparks out of the nose, the ship's knock, a
+   * brief screen-space pressure wave and a rate-limited cream flash. All
+   * scale with charge level 1–3. The flash goes through FlashGuard, so
+   * reduced flashing caps it; motion settings remove knock and wave.
+   */
+  function writRelease(level: number): void {
+    const nose = tmpV.copy(ctx.player).add(new THREE.Vector3(0, 0.25, -0.6));
+    rings.spawn(nose, ROLE.writ.hex, 0.5 + level * 0.25, 0.16);
+    rings.spawn(nose, ROLE.playerShot.hex, 1.0 + level * 0.6, 0.32);
+    if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
+      particles.burst({
+        at: nose,
+        color: ROLE.writ.hex,
+        count: 4 + level * 4,
+        speed: 2 + level,
+        life: 0.18,
+        size: 0.14,
+      });
+    }
+    knock.kick(level);
+    const still = rig.reduceMotion || rig.shakeScale === 0;
+    if (!still && tier.bloom) {
+      nose.project(rig.camera);
+      wave.start((nose.x + 1) / 2, (nose.y + 1) / 2, level);
+    }
+    flash(0.08 + level * 0.05, ROLE.writ.hex);
+  }
+
+  /** A hit that a Writ delivered gets its own cyan-and-cream impact. */
+  function writImpact(at: THREE.Vector3, big: boolean): void {
+    const level = bullets.writNear(at.x, at.z, big ? 2.6 : 1.2);
+    if (level === 0) return;
+    const p = at.clone();
+    rings.spawn(p, ROLE.playerShot.hex, 0.9 + level * 0.45, 0.3);
+    rings.spawn(p, ROLE.writ.hex, 0.4 + level * 0.2, 0.14);
+    if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
+      particles.burst({
+        at: p,
+        color: PALETTE.paleCyan,
+        count: 6 + level * 5,
+        speed: 4 + level,
+        life: 0.3,
+        size: 0.12,
+      });
+    }
+    rig.addTrauma(0.06 * level);
+  }
+
   function handle(e: SimEvent): void {
     switch (e.type) {
       case "scanLock":
@@ -663,10 +721,11 @@ export function createStage(
         break;
       case "playerFired":
         rig.kickShot(e.shot, e.level);
-        if (e.shot === "writ") {
-          rings.spawn(ctx.player, ROLE.writ.hex, 0.8 + e.level * 0.5, 0.25);
-        }
-        if (burstsThisFrame < MAX_BURSTS_PER_FRAME) {
+        muzzle.fire({ shot: e.shot, level: e.level });
+        if (e.shot === "writ") writRelease(e.level);
+        else if (
+          e.shot === "aimed" && burstsThisFrame < MAX_BURSTS_PER_FRAME
+        ) {
           tmpV.copy(ctx.player).add(new THREE.Vector3(0, 0.2, -0.55));
           particles.burst({
             at: tmpV,
@@ -692,6 +751,7 @@ export function createStage(
           }
         } else {
           whereIs(e.id, tmpV);
+          writImpact(tmpV, e.target === "boss");
           if (burstsThisFrame++ < MAX_BURSTS_PER_FRAME) {
             particles.burst({
               at: tmpV,
@@ -798,6 +858,12 @@ export function createStage(
     ctx.player.copy(ship.position);
     const bank = interp.playerBank(alpha);
     ship.rotation.set(0, 0, -bank * 1.6);
+    // Writ knock: the drawn ship only, after ctx.player, so the camera,
+    // effects and the focus marker (the true hitbox) never move with it.
+    knock.reduceMotion = rig.reduceMotion;
+    knock.update(dt * 1000);
+    ship.position.z += knock.offset;
+    ship.rotation.x = knock.pitch;
     const p = state.player;
     // Grace blink: slower under reduced flashing.
     const blinkPeriod = reducedFlashing ? 20 : 8;
@@ -831,7 +897,7 @@ export function createStage(
         : 0.45 + Math.sin(timeSec * 37) * 0.06,
       1,
     );
-    focusMarker.position.copy(ship.position);
+    focusMarker.position.copy(ctx.player);
     focusMarker.visible = p.focused && ship.visible && !flashback;
     focusBrackets.scale.setScalar(simToWorldLength(state.graze.radius));
 
@@ -1115,6 +1181,11 @@ export function createStage(
 
     observe(state, events = []) {
       interp.observe(state);
+      const fired = events.find((e) => e.type === "playerFired");
+      bullets.tagger.observe(
+        state.bullets,
+        fired?.type === "playerFired" ? fired : null,
+      );
       sectorWorld.observe(
         state,
         events.some((e) =>
@@ -1177,6 +1248,8 @@ export function createStage(
 
       particles.update(flashback ? dt * 0.15 : dt);
       rings.update(flashback ? dt * 0.15 : dt);
+      muzzle.update(dt);
+      wave.update(dt);
       backdrop.update(rig.reduceMotion ? 0 : flashback ? dt * 0.1 : dt);
       rig.update(dtMs, ctx);
       const worldSettings = options.settings?.get();
@@ -1202,6 +1275,12 @@ export function createStage(
         bloomScale: reducedFlashing ? 0.6 : 1,
         bulletDensity: bullets.enemyCount,
         hurt: reducedFlashing ? hurt * 0.4 : hurt,
+        wave: {
+          x: wave.center.x,
+          y: wave.center.y,
+          radius: wave.radius,
+          strength: wave.strength,
+        },
       });
       if (focusMarker.visible && !activeProp && !hangarShip?.visible) {
         const autoClear = renderer.autoClear;

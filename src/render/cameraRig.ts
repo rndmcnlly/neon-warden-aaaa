@@ -17,6 +17,7 @@
  */
 
 import * as THREE from "three";
+import { KNOCK } from "./shotLooks.ts";
 import type { CameraShotId } from "../contracts/index.ts";
 import { FIELD_D, FIELD_W } from "./coords.ts";
 
@@ -69,13 +70,20 @@ export class CameraRig {
   private recoil = 0;
   reduceMotion = false;
 
-  /** One directional kick, never additive oscillation from held stream fire. */
+  private recoilTauMs: number = KNOCK.tap.tauMs;
+
+  /**
+   * One directional kick, never additive oscillation from held stream fire.
+   * Sizes and settling times live in shotLooks.ts (KNOCK): a Writ knocks
+   * several times harder than a tap and settles a little slower.
+   */
   kickShot(kind: "aimed" | "stream" | "writ", level = 0): void {
     if (kind === "stream" || this.reduceMotion || this.shakeScale === 0) return;
-    this.recoil = Math.max(
-      this.recoil,
-      kind === "writ" ? 0.045 + level * 0.018 : 0.035,
-    );
+    const k = kind === "writ"
+      ? KNOCK.writ[Math.max(1, Math.min(3, level)) - 1]
+      : KNOCK.tap;
+    if (k.camera >= this.recoil) this.recoilTauMs = k.tauMs;
+    this.recoil = Math.max(this.recoil, k.camera);
   }
   /** Settings shake slider, 0–1. */
   shakeScale = 1;
@@ -266,7 +274,7 @@ export class CameraRig {
     this.recoilTarget.copy(pose.target);
     this.recoilTarget.z -= kick;
     this.camera.lookAt(this.recoilTarget);
-    this.recoil *= Math.exp(-Math.max(0, dtMs) / 38);
+    this.recoil *= Math.exp(-Math.max(0, dtMs) / this.recoilTauMs);
     if (this.recoil < 0.00001 || scale === 0) this.recoil = 0;
     // Roll only outside live play: in gameplay, shake is translation only,
     // so the playfield never tilts under the player's hands.

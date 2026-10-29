@@ -35,6 +35,8 @@ export interface PostLook {
   bulletDensity?: number;
   /** Player-damage pulse 0–1: extra aberration and a red vignette. */
   hurt?: number;
+  /** Writ pressure wave: centre in screen uv, radius and strength (uv). */
+  wave?: { x: number; y: number; radius: number; strength: number };
 }
 
 /** Bloom multiplier for a bullet count: 1 when sparse, down to 0.5. */
@@ -95,6 +97,8 @@ export class PostChain {
         uFlashColor: { value: new THREE.Vector3(1, 1, 1) },
         uDesaturate: { value: 0 },
         uHurt: { value: 0 },
+        uWave: { value: new THREE.Vector4(0.5, 0.5, 0, 0) },
+        uAspect: { value: 1 },
       },
       vertexShader: finishVertex,
       fragmentShader: finishFragment,
@@ -113,6 +117,7 @@ export class PostChain {
   setSize(width: number, height: number, pixelRatio: number): void {
     this.composer.setPixelRatio(pixelRatio);
     this.composer.setSize(width, height);
+    this.finish.uniforms.uAspect.value = width / Math.max(1, height);
   }
 
   render(timeSec: number, look: PostLook): void {
@@ -125,6 +130,13 @@ export class PostChain {
     u.uFlash.value = look.flash;
     (u.uFlashColor.value as THREE.Vector3).set(...look.flashColor);
     u.uDesaturate.value = look.desaturate;
+    const wave = look.wave;
+    (u.uWave.value as THREE.Vector4).set(
+      wave?.x ?? 0.5,
+      wave?.y ?? 0.5,
+      wave?.radius ?? 0,
+      wave?.strength ?? 0,
+    );
     this.bloom.strength = this.tier.bloomStrength * look.bloomScale *
       bloomDamping(look.bulletDensity ?? 0);
     this.composer.render();
