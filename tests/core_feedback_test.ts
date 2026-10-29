@@ -274,6 +274,7 @@ Deno.test("audio: each rung has its own sound", () => {
     impact({ target: "boss", blocked: true, by: "writ", level: 2 }),
     state,
   );
+  audio.onEvent(impact({ target: "boss", blocked: true }), state);
   audio.onEvent(
     ev({ type: "disarm", id: 1, kind: "drone", pos: { x: 0, y: 0 } }),
     state,
@@ -291,7 +292,7 @@ Deno.test("audio: each rung has its own sound", () => {
       "writ_impact_1",
       "writ_impact_3",
       "writ_miss",
-      "writ_impact_2",
+      "writ_blocked_2",
       "hit_deflect",
       "ricochet_tink",
       "disarm_unlatch",
@@ -305,6 +306,19 @@ Deno.test("audio: each rung has its own sound", () => {
     assert(role in GAMEPLAY_SOUNDS, role);
   }
   assert(!heard.includes("kill_small") && !heard.includes("disarm"));
+});
+
+Deno.test("audio: a Writ on armor clangs, apart from stream deflects", () => {
+  const { audio, roles, state } = audioRig();
+  audio.onEvent(
+    impact({ target: "boss", blocked: true, by: "writ", level: 3 }),
+    state,
+  );
+  audio.frame(state);
+  const heard = roles();
+  assert(heard.includes("writ_blocked_3"));
+  assert(!heard.includes("writ_impact_3"));
+  assert(!heard.includes("hit_deflect") && !heard.includes("ricochet_tink"));
 });
 
 Deno.test("audio: deferred kills wait; threat cues are protected", () => {

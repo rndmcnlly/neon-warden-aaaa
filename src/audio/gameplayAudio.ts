@@ -274,9 +274,12 @@ export class GameplayAudio {
     }
     const writ = e.level === 0 ? null : (`writ_impact_${e.level}` as const);
     if (e.blocked) {
-      // Armor: a tink you can hear through the stream. A Writ glancing off
-      // still lands its tier's crack, a little under a true hit.
-      if (writ) play(writ, { pos: e.pos, gainDb: -4 });
+      // A Writ stopped by armor gets its own clang and hiss, never merged
+      // into the stream's deflect cluster; stream rounds keep the tink.
+      if (e.level !== 0) {
+        play(`writ_blocked_${e.level}`, { pos: e.pos });
+        return;
+      }
       this.cluster("hit_deflect", e.pos);
       this.cluster("ricochet_tink", e.pos);
       return;

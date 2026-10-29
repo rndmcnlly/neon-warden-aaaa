@@ -43,6 +43,7 @@ import {
   tock,
   unlatch,
   whoosh,
+  writBlocked,
   writImpact,
 } from "./synth.ts";
 
@@ -313,6 +314,34 @@ export const GAMEPLAY_SOUNDS = {
     cap: 2,
     priority: 9,
     duck: { db: -8, attackS: 0.005, releaseS: 0.5, lowpassHz: 1400 },
+  }),
+  // A Writ stopped by armor: its own clang and hiss, above the mix and
+  // apart from the merged stream deflects (morning fix, October 29, 2026).
+  // Not spatial: the Warden sits far up-lane, where distance would cut it
+  // about 10 dB and low-pass the hiss away.
+  writ_blocked_1: feel(writBlocked(1), 3, {
+    sample: false,
+    spatial: false,
+    jitter: 0,
+    cap: 2,
+    priority: 8,
+    duck: { db: -4, attackS: 0.005, releaseS: 0.3 },
+  }),
+  writ_blocked_2: feel(writBlocked(2), 5, {
+    sample: false,
+    spatial: false,
+    jitter: 0,
+    cap: 2,
+    priority: 8,
+    duck: { db: -6, attackS: 0.005, releaseS: 0.4 },
+  }),
+  writ_blocked_3: feel(writBlocked(3), 7, {
+    sample: false,
+    spatial: false,
+    jitter: 0,
+    cap: 2,
+    priority: 9,
+    duck: { db: -8, attackS: 0.005, releaseS: 0.55, lowpassHz: 1400 },
   }),
   // A Writ that hit nothing: a dry fizzle heard from where it left.
   writ_miss: feel(fizzle, -10, { cap: 2, priority: 6, jitter: 0.5 }),

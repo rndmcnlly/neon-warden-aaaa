@@ -405,6 +405,42 @@ export function writImpact(tier: 1 | 2 | 3): SynthRecipe {
   };
 }
 
+/**
+ * A Writ stopped by armor (the Warden's deflecting hull): its own heavy
+ * sound, not a quieter hit. A dull, resonant clang (inharmonic partials of
+ * a thick plate, low-passed so it reads as mass, not as a bell) under a
+ * deflect hiss that sweeps down as the charge sprays off. Bigger tiers ring
+ * lower and longer. No crack: a damaging Writ owns the crack.
+ */
+export function writBlocked(tier: 1 | 2 | 3): SynthRecipe {
+  return (a) => {
+    const sources: AudioScheduledSourceNode[] = [];
+    const ringS = 0.45 + tier * 0.2;
+    const root = 150 - tier * 22;
+    const lp = lowpass(a, 2400);
+    const body = env(a, 0.002, ringS, 1);
+    lp.connect(body);
+    for (const [ratio, level] of [[1, 1], [2.76, 0.55], [5.4, 0.3]]) {
+      const g = a.ctx.createGain();
+      g.gain.value = level;
+      g.connect(lp);
+      sources.push(osc(a, "triangle", root * ratio, g));
+    }
+    // The hit itself: a short, dark thud of noise.
+    const thud = env(a, 0.001, 0.06, 0.8);
+    const tl = lowpass(a, 700);
+    tl.connect(thud);
+    sources.push(noiseSource(a, tl));
+    // Deflect hiss: bright spray falling away over about a third of a second.
+    const hiss = env(a, 0.01, 0.3 + tier * 0.05, 0.35);
+    const bp = bandpass(a, 7000, 1.5);
+    bp.frequency.exponentialRampToValueAtTime(1800, a.when + 0.35);
+    bp.connect(hiss);
+    sources.push(noiseSource(a, bp));
+    return run(a, sources, a.when + ringS + 0.05);
+  };
+}
+
 /** Armor deflect: a 15 ms ping with a fast fall, the "tink" of no damage. */
 export const tink: SynthRecipe = (a) => {
   const g = env(a, 0.0005, 0.08, 0.8);
