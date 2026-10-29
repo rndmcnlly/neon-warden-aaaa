@@ -188,6 +188,11 @@ function step(): SimEvent[] {
       id: e.id,
       absorbedByShield: false,
       blocked: false,
+      pos: enemyPos(e),
+      shotVel: { x: 0, y: -14 },
+      by: "aimed",
+      level: 0,
+      part: null,
     });
     events.push({
       type: "kill",
@@ -221,6 +226,11 @@ function step(): SimEvent[] {
       id: 0,
       absorbedByShield: true,
       blocked: false,
+      pos: { x: W / 2, y: H - 80 },
+      shotVel: { x: 0, y: 0 },
+      by: null,
+      level: 0,
+      part: null,
     });
   }
   if (bossScene && tick % 240 === 0) {

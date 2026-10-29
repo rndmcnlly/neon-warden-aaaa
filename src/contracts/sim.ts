@@ -432,6 +432,14 @@ export type SimEvent =
     readonly partKind: PartKind;
     readonly pos: Vec2;
     readonly by: ShotKind;
+    /**
+     * Where the breaking round touched (its center that tick). With
+     * `shotVel` the renderer flings the part along the shot and spins it
+     * by the offset from `pos`.
+     */
+    readonly hitPos: Vec2;
+    /** The breaking round's velocity, units per tick. */
+    readonly shotVel: Vec2;
     /** The run's first part break of this target class. */
     readonly first: boolean;
   }
@@ -499,6 +507,29 @@ export type SimEvent =
      * while it talks). Renderers show a deflection instead of a wound.
      */
     readonly blocked: boolean;
+    /**
+     * The impact point: the round's center (or the ship, for player hits
+     * and rams). Feedback lands here, not at the hull's center.
+     */
+    readonly pos: Vec2;
+    /** The round's velocity, units per tick; zero for rams and enemy fire. */
+    readonly shotVel: Vec2;
+    /** The player round that hit, `ram` for contact, null for enemy fire. */
+    readonly by: ShotKind | "ram" | null;
+    /** Writ charge (1–3) of the round; 0 for every other hit. */
+    readonly level: ChargeLevel;
+    /** The weapon part or Warden pod the round struck, if any. */
+    readonly part: PartId | null;
+  }
+  | {
+    /**
+     * A Writ left the screen without touching anything: the miss. Fizzle
+     * feedback keys off it, so a miss sounds unlike a hit.
+     */
+    readonly type: "writMissed";
+    readonly tick: Tick;
+    readonly pos: Vec2;
+    readonly level: ChargeLevel;
   }
   | {
     readonly type: "kill";

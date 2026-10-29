@@ -16,6 +16,7 @@
 
 import {
   type BulletKind,
+  type ChargeLevel,
   DEFAULT_LOADOUT,
   type EnemyAiState,
   type EnemyKind,
@@ -118,6 +119,8 @@ interface Projectile {
   readonly owner: EntityId;
   /** Player rounds only. */
   readonly shot: ShotKind | null;
+  /** Writ charge of a player round (1–3); 0 for everything else. */
+  readonly level: ChargeLevel;
   readonly damage: number;
   /** A Writ pierces: it remembers whom it already struck. */
   readonly struck: EntityId[];
@@ -868,6 +871,7 @@ export class NeonWardenSim implements Sim {
         alive: true,
         owner: 0,
         shot: volley.shot,
+        level: volley.shot === "writ" ? volley.level : 0,
         damage,
         struck: [],
         grazed: false,
@@ -941,6 +945,11 @@ export class NeonWardenSim implements Sim {
       id: 0,
       absorbedByShield: absorbed,
       blocked: false,
+      pos: { x: p.x, y: p.y },
+      shotVel: { x: 0, y: 0 },
+      by: null,
+      level: 0,
+      part: null,
     });
     this.events.push(this.pay.rateBreak(this.tick, absorbed));
     if (absorbed) {
@@ -1023,7 +1032,7 @@ export class NeonWardenSim implements Sim {
       this.hurtPlayer();
       // Ramming hurts both, every tick of contact, even during grace.
       if (this.outcome === null) {
-        this.damageEnemy(enemy, PLAYER.ramDamage, "ram");
+        this.damageEnemy(enemy, PLAYER.ramDamage, "ram", null);
       }
     }
     const boss = this.boss;
@@ -1064,27 +1073,29 @@ export class NeonWardenSim implements Sim {
       const choice = this.alignedComponent(enemy, shot.x);
       if (choice === "weakPoint") {
         shot.alive = false;
-        this.hitEvent(enemy.id);
+        this.hitEvent(enemy, shot, null);
         this.killEnemy(enemy, "writ", true);
         return true;
       }
       if (choice) {
         shot.alive = false;
-        this.hitEvent(enemy.id);
-        this.breakEnemyPart(enemy, choice, "writ");
+        this.hitEvent(enemy, shot, choice);
+        this.breakEnemyPart(enemy, choice, "writ", shot);
         return true;
       }
     }
     if (part) {
       shot.alive = false;
-      this.hitEvent(enemy.id);
+      this.hitEvent(enemy, shot, part);
       part.hp = shot.shot === "writ" ? 0 : part.hp - shot.damage;
-      if (part.hp <= 0) this.breakEnemyPart(enemy, part, shot.shot ?? "aimed");
+      if (part.hp <= 0) {
+        this.breakEnemyPart(enemy, part, shot.shot ?? "aimed", shot);
+      }
       return true;
     }
     if (shot.shot === "writ") shot.struck.push(enemy.id);
     else shot.alive = false;
-    this.damageEnemy(enemy, shot.damage, shot.shot ?? "stream");
+    this.damageEnemy(enemy, shot.damage, shot.shot ?? "stream", shot);
     return true;
   }
 
@@ -1112,14 +1123,25 @@ export class NeonWardenSim implements Sim {
     return best;
   }
 
-  private hitEvent(id: EntityId): void {
+  /** `shot` is null for a ram: the impact is then the ship itself. */
+  private hitEvent(
+    enemy: Enemy,
+    shot: Projectile | null,
+    part: Part | null,
+  ): void {
+    const at = shot ?? this.player;
     this.events.push({
       type: "hit",
       tick: this.tick,
       target: "enemy",
-      id,
+      id: enemy.id,
       absorbedByShield: false,
       blocked: false,
+      pos: { x: at.x, y: at.y },
+      shotVel: shot ? { x: shot.vx, y: shot.vy } : { x: 0, y: 0 },
+      by: shot ? shot.shot : "ram",
+      level: shot ? shot.level : 0,
+      part: part ? part.spec.id : null,
     });
   }
 
@@ -1127,9 +1149,10 @@ export class NeonWardenSim implements Sim {
     enemy: Enemy,
     amount: number,
     by: ShotKind | "ram",
+    shot: Projectile | null,
   ): void {
     enemy.hp -= amount;
-    this.hitEvent(enemy.id);
+    this.hitEvent(enemy, shot, null);
     if (enemy.hp > 0) {
       startEvade(enemy, this.player);
       return;
@@ -1170,7 +1193,12 @@ export class NeonWardenSim implements Sim {
     }
   }
 
-  private breakEnemyPart(enemy: Enemy, part: Part, by: ShotKind): void {
+  private breakEnemyPart(
+    enemy: Enemy,
+    part: Part,
+    by: ShotKind,
+    shot: Projectile,
+  ): void {
     part.broken = true;
     part.hp = 0;
     this.partsBroken++;
@@ -1183,6 +1211,8 @@ export class NeonWardenSim implements Sim {
       partKind: part.spec.kind,
       pos: { x: enemy.x + part.offset.x, y: enemy.y + part.offset.y },
       by,
+      hitPos: { x: shot.x, y: shot.y },
+      shotVel: { x: shot.vx, y: shot.vy },
       first: this.firstTime("partBreak.enemy"),
     });
     this.events.push(
@@ -1257,6 +1287,11 @@ export class NeonWardenSim implements Sim {
       id: boss.id,
       absorbedByShield: false,
       blocked,
+      pos: { x: shot.x, y: shot.y },
+      shotVel: { x: shot.vx, y: shot.vy },
+      by: shot.shot,
+      level: shot.level,
+      part: pod ? pod.spec.id : null,
     });
     if (blocked) return;
     this.pay.refresh();
@@ -1267,7 +1302,7 @@ export class NeonWardenSim implements Sim {
           : TRIGGER.writPodMultiplier
         : 1;
       pod.hp -= shot.damage * mult;
-      if (pod.hp <= 0) this.breakPod(boss, pod, shot.shot ?? "aimed");
+      if (pod.hp <= 0) this.breakPod(boss, pod, shot.shot ?? "aimed", shot);
       return;
     }
     // The core: striking it at all ends a pacifist run.
@@ -1283,7 +1318,12 @@ export class NeonWardenSim implements Sim {
     if (boss.hp <= 0) this.defeatBoss(boss, shot.shot === "writ");
   }
 
-  private breakPod(boss: Boss, pod: Part, by: ShotKind): void {
+  private breakPod(
+    boss: Boss,
+    pod: Part,
+    by: ShotKind,
+    shot: Projectile,
+  ): void {
     const wasOpen = coreOpen(boss);
     pod.broken = true;
     pod.hp = 0;
@@ -1297,6 +1337,8 @@ export class NeonWardenSim implements Sim {
       partKind: pod.spec.kind,
       pos: { x: boss.x + pod.offset.x, y: boss.y + pod.offset.y },
       by,
+      hitPos: { x: shot.x, y: shot.y },
+      shotVel: { x: shot.vx, y: shot.vy },
       first: this.firstTime("partBreak.boss"),
     });
     this.events.push(
@@ -1495,6 +1537,15 @@ export class NeonWardenSim implements Sim {
     this.shots = this.shots.filter((s) => {
       if (s.alive && !offscreen(s.x, s.y)) return true;
       this.statsTracker.roundResolved(s.connected);
+      // Only a Writ gets a miss cue: it is the one round worth hearing fail.
+      if (s.alive && s.shot === "writ" && !s.connected) {
+        this.events.push({
+          type: "writMissed",
+          tick: this.tick,
+          pos: { x: s.x, y: s.y },
+          level: s.level,
+        });
+      }
       return false;
     });
     this.bullets = this.bullets.filter((b) => b.alive && !offscreen(b.x, b.y));
@@ -1543,6 +1594,7 @@ export class NeonWardenSim implements Sim {
       alive: true,
       owner,
       shot: null,
+      level: 0,
       damage: 0,
       struck: [],
       grazed: false,
