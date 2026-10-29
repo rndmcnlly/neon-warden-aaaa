@@ -1,0 +1,40 @@
+#platform-tools {
+  position: fixed;
+  top: max(8px, env(safe-area-inset-top));
+  right: max(8px, env(safe-area-inset-right));
+  z-index: 10000;
+  max-width: min(360px, calc(100vw - 16px));
+  max-height: 80dvh;
+  overflow: auto;
+  color: #e7f6ff;
+  background: #080e1cf5;
+  border: 1px solid #42778a;
+  border-radius: 8px;
+  padding: 8px;
+  font: 14px/1.5 system-ui, sans-serif;
+}
+#platform-tools summary {
+  cursor: pointer;
+  min-height: 32px;
+}
+#platform-tools button,
+#platform-tools select {
+  color: #e7f6ff;
+  background: #182c40;
+  border: 1px solid #69b6c8;
+  border-radius: 4px;
+  padding: 8px;
+  min-height: 44px;
+  margin-block: 4px;
+  cursor: pointer;
+}
+#platform-tools button {
+  display: block;
+  width: 100%;
+}
+#platform-tools [hidden] {
+  display: none;
+}
+#platform-tools progress {
+  width: 100%;
+}

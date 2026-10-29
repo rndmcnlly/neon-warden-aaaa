@@ -1,5 +1,8 @@
+import { offlinePlugin } from "./src/platform/build.ts";
+
 // https://vite.dev/config/
 export default {
+  plugins: [offlinePlugin()],
   // A hosted build under a subpath (for example a GitHub Pages repository)
   // supplies its name here; local development serves from the root.
   base: Deno.env.get("REPO_NAME") ? `/${Deno.env.get("REPO_NAME")}/` : "/",

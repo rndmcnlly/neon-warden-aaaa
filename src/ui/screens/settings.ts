@@ -20,6 +20,7 @@ import {
   unboundActions,
 } from "../../input/bindings.ts";
 import { buttonLabel, keyLabel } from "../../input/labels.ts";
+import { setFullscreen } from "../../platform/fullscreen.ts";
 import { DEFAULT_BINDINGS } from "../../settings/defaults.ts";
 import {
   applyPreset,
@@ -117,14 +118,7 @@ function displayTab(ctx: UiContext): Widget[] {
       // The Fullscreen API needs this click or key press as its gesture; the
       // front end mirrors the real state back into settings on change.
       set: (on) => {
-        const write = (fullscreen: boolean) =>
-          set((c) => ({ ...c, display: { ...c.display, fullscreen } }));
-        if (on) {
-          document.documentElement.requestFullscreen?.().catch(() =>
-            write(false)
-          );
-        } else if (document.fullscreenElement) document.exitFullscreen();
-        write(on);
+        void setFullscreen(on);
       },
     }),
     staticRow(ctx.t("ui.settings.vsync"), ctx.t("ui.settings.vsyncBody")),
