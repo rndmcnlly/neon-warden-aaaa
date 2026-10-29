@@ -235,6 +235,14 @@
       "status": "done",
       "updated": "2026-10-29",
       "detail": "Deterministic stepping (virtual clock, slaved audio clock, lossless CDP grabs) behind `deno task trailer <cut> --master`: 1920x1080@60, every frame distinct, A/V +2 to +7 ms vs +155 to +221 ms for the old recorder. Finding: real-time takes ran autoplay at about 2x (headless rAF 115-120 Hz). Teaser EN partial master (3 shots) built at 6.4-6.9x wall; all cuts/langs <= 9.8 h. research/2026-10-29-trailer-capture/README.md."
+    },
+    {
+      "title": "Mobile, touch and school devices",
+      "owner": "Mobile/touch agent",
+      "status": "done",
+      "revision": "d3348f5 / af7ba3f / 64708d2",
+      "detail": "Back chip on every menu, right-click, history bridge (Android/browser/iOS Back go Back in menus, Pause in runs), trackpad swipe pauses. Touch: Thumbs/One finger/Arcade, sim-side Writ aim assist, portrait deck and landscape side decks, safe areas, dvh. iOS audio resume on touchend/click. School tier plus auto-detect. Playwright WebKit decodes Ogg Opus, so no AAC fallback. QA: qa/reports/mobile-touch-2026-10-29T17-38-02.018Z/result.json (126/127; harness fix re-run 3/3 in ...T17-47-19.807Z); deno task ci 295 pass. Unverified on real devices: iOS Opus, swipe-back, Android gesture Back, real multi-touch, school Chromebook frame times. Note: research/2026-10-29-mobile-touch-qa/README.md",
+      "updated": "2026-10-29"
     }
   ],
   "blockers": [
