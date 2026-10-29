@@ -31,13 +31,21 @@ export interface CreditSection {
 }
 
 /**
- * The model behind the workstream agents (orchestration, the seven
- * workstreams, QA, research). Correct it here if a workstream ran elsewhere.
+ * The models behind the workstream agents (orchestration, workstreams, QA,
+ * research). Work moved between models during production (Claude first, then
+ * GPT after a subscription ran out, then Claude again), so agent roles credit
+ * both rather than pretending one model did everything.
  */
-export const AGENT_MODEL = "Claude Opus 5.5 (Anthropic)";
+export const AGENT_MODELS = [
+  "Claude Opus 5.5 (Anthropic)",
+  "GPT-6.1 Sol (OpenAI)",
+] as const;
+
+/** The audiovisual judge used in QA reels, A/B tests and creative review. */
+export const JUDGE_MODEL = "Gemini 4 Argon (Google)";
 
 const ADAM: CreditName = { name: "Adam Smith" };
-const AGENT: CreditName = { agent: AGENT_MODEL };
+const AGENTS: readonly CreditName[] = AGENT_MODELS.map((agent) => ({ agent }));
 const one = (role: UiKey, ...names: CreditName[]): CreditRole => ({
   role,
   names,
@@ -59,41 +67,41 @@ export const CREDITS: readonly CreditSection[] = [
     roles: [
       // Credited exactly as AGENTS.md asks.
       one("ui.credits.originalGame", { text: "ui.credits.originalGameBody" }),
-      one("ui.crawl.role.systemsDesign", AGENT),
+      one("ui.crawl.role.systemsDesign", ...AGENTS),
     ],
   },
   {
     heading: "ui.crawl.dept.narrative",
     roles: [
       one("ui.crawl.role.storyDirection", ADAM),
-      one("ui.crawl.role.narrativeDesign", AGENT),
-      one("ui.crawl.role.research", AGENT),
+      one("ui.crawl.role.narrativeDesign", ...AGENTS),
+      one("ui.crawl.role.research", ...AGENTS),
     ],
   },
   {
     heading: "ui.crawl.dept.engineering",
     roles: [
-      one("ui.crawl.role.simEngineering", AGENT),
-      one("ui.crawl.role.renderEngineering", AGENT),
-      one("ui.crawl.role.uiEngineering", AGENT),
-      one("ui.crawl.role.audioEngineering", AGENT),
-      one("ui.crawl.role.integration", AGENT),
+      one("ui.crawl.role.simEngineering", ...AGENTS),
+      one("ui.crawl.role.renderEngineering", ...AGENTS),
+      one("ui.crawl.role.uiEngineering", ...AGENTS),
+      one("ui.crawl.role.audioEngineering", ...AGENTS),
+      one("ui.crawl.role.integration", ...AGENTS),
     ],
   },
   {
     heading: "ui.crawl.dept.art",
     roles: [
       one("ui.crawl.role.artDirection", ADAM),
-      one("ui.crawl.role.modeling", AGENT, { name: "Blender" }),
+      one("ui.crawl.role.modeling", ...AGENTS, { name: "Blender" }),
     ],
   },
   {
     heading: "ui.crawl.dept.audio",
     roles: [
       one("ui.crawl.role.music", { name: "Stable Audio 3 (Stability AI)" }),
-      one("ui.crawl.role.sfx", AGENT, {
+      one("ui.crawl.role.sfx", ...AGENTS, {
         name: "Stable Audio 3 (Stability AI)",
-      }),
+      }, { name: "ElevenLabs Sound Effects (via fal)" }),
       one("ui.crawl.role.curation", ADAM),
     ],
   },
@@ -104,31 +112,31 @@ export const CREDITS: readonly CreditSection[] = [
       one("ui.speaker.narrator", { name: "Qwen3-TTS" }),
       one("ui.speaker.warden", { name: "Qwen3-TTS" }),
       one("ui.speaker.pilot", { name: "Qwen3-TTS" }),
-      one("ui.crawl.role.voiceRendering", AGENT, {
+      one("ui.crawl.role.voiceRendering", ...AGENTS, {
         name: "Qwen3-TTS, Qwen3-ASR (Alibaba Qwen)",
       }),
     ],
   },
   {
     heading: "ui.crawl.dept.localization",
-    roles: [one("ui.crawl.role.languages", AGENT)],
+    roles: [one("ui.crawl.role.languages", ...AGENTS)],
   },
   {
     heading: "ui.crawl.dept.qa",
     roles: [
-      one("ui.crawl.role.qaTooling", AGENT, {
+      one("ui.crawl.role.qaTooling", ...AGENTS, {
         name: "Playwright, FFmpeg",
-      }),
-      one("ui.crawl.role.playtest", AGENT, ADAM),
+      }, { name: JUDGE_MODEL }),
+      one("ui.crawl.role.playtest", ...AGENTS, ADAM),
     ],
   },
   {
     heading: "ui.crawl.dept.accessibility",
-    roles: [one("ui.crawl.role.accessibility", AGENT, ADAM)],
+    roles: [one("ui.crawl.role.accessibility", ...AGENTS, ADAM)],
   },
   {
     heading: "ui.crawl.dept.production",
-    roles: [one("ui.crawl.role.orchestration", AGENT, ADAM)],
+    roles: [one("ui.crawl.role.orchestration", ...AGENTS, ADAM)],
   },
   {
     heading: "ui.crawl.dept.publishing",
@@ -155,10 +163,12 @@ export const CREDITS: readonly CreditSection[] = [
       ),
       one(
         "ui.crawl.role.models",
-        { name: AGENT_MODEL },
+        ...AGENT_MODELS.map((name) => ({ name })),
+        { name: JUDGE_MODEL },
         { name: "Qwen3-TTS (Alibaba Qwen)" },
         { name: "Qwen3-ASR (Alibaba Qwen)" },
         { name: "Stable Audio 3 (Stability AI)" },
+        { name: "ElevenLabs Sound Effects (ElevenLabs)" },
       ),
     ],
   },
