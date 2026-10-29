@@ -228,6 +228,13 @@
       "status": "review",
       "detail": "Code 4601072 (on c6340d7). Kill: impact frame and hitstop, pods tear off, crest cracks, core collapse, shockwave darkens Last Approach, scouts drop, halo rings dark under the dying line; tollgates unfold in silence. Pacifist: intact withdrawal, recall tether and beacon, leash cut swells the lights, scouts escort it home. Skip chip on endings; low/reduced variants (128 draw calls on low with gates). Blind Argon (US $0.151): kill empty frame 70 s before vs 18/46 s after (noisy single passes); long voice stretches still read static. ending-kill reel fails VO-not-dropped in the skip-to path (bisected to the 4.7 s opening pause; cause open); ending-pacifist zero-kills failure predates this. Evidence: research/2026-10-29-warden-defeat/.",
       "updated": "2026-10-29"
+    },
+    {
+      "title": "Trailer master capture path",
+      "owner": "Trailer capture",
+      "status": "done",
+      "updated": "2026-10-29",
+      "detail": "Deterministic stepping (virtual clock, slaved audio clock, lossless CDP grabs) behind `deno task trailer <cut> --master`: 1920x1080@60, every frame distinct, A/V +2 to +7 ms vs +155 to +221 ms for the old recorder. Finding: real-time takes ran autoplay at about 2x (headless rAF 115-120 Hz). Teaser EN partial master (3 shots) built at 6.4-6.9x wall; all cuts/langs <= 9.8 h. research/2026-10-29-trailer-capture/README.md."
     }
   ],
   "blockers": [

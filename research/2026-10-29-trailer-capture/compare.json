@@ -1,0 +1,132 @@
+{
+ "a-recordvideo": {
+  "approach": "a-recordvideo",
+  "file": "trailer/.cache/compare/a-recordvideo/reel.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 25,
+  "uniqueFps": 24.8,
+  "maxDupRun": 1,
+  "mbps": 1.6,
+  "blur": 4.79,
+  "syncMs": [
+   166,
+   171,
+   221,
+   188,
+   196,
+   155
+  ],
+  "wallSeconds": 16,
+  "notes": [
+   "8 flashes, 6 beeps",
+   "raw recorder 1920x1080 25 fps 1.18 Mbit/s VP8 (before the qa/av.ts mux)",
+   "rAF 109.2 Hz at start, 120.4 Hz at end"
+  ],
+  "gameHz": 114.8
+ },
+ "b-screencast": {
+  "approach": "b-screencast",
+  "file": "trailer/.cache/compare/b-screencast/take.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "uniqueFps": 59.8,
+  "maxDupRun": 1,
+  "mbps": 99.1,
+  "blur": 3.91,
+  "syncMs": [
+   -64,
+   -58,
+   -49,
+   -48,
+   -22,
+   -74
+  ],
+  "wallSeconds": 16,
+  "notes": [
+   "8 flashes, 6 beeps",
+   "1242 screencast frames in 15.8 s (78.7 fps delivered)",
+   "rAF 120.3 Hz at start, 120.8 Hz at end"
+  ],
+  "gameHz": 120.5
+ },
+ "c-stepped-png": {
+  "approach": "c-stepped-png",
+  "file": "trailer/.cache/compare/c-stepped-png/take.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "uniqueFps": 59.9,
+  "maxDupRun": 0,
+  "mbps": 79.9,
+  "blur": 3.86,
+  "syncMs": [
+   2,
+   2,
+   3,
+   3,
+   2,
+   7
+  ],
+  "wallSeconds": 129.7,
+  "notes": [
+   "6 flashes, 6 beeps",
+   "step 77.4 ms + grab 86.2 ms per frame; 10.0x real time",
+   "audio clock overshoot per step: mean 2.6 ms, max 5.3 ms"
+  ],
+  "gameHz": 60
+ },
+ "d-stepped-jpeg": {
+  "approach": "d-stepped-jpeg",
+  "file": "trailer/.cache/compare/d-stepped-jpeg/take.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "uniqueFps": 59.9,
+  "maxDupRun": 0,
+  "mbps": 100.4,
+  "blur": 3.89,
+  "syncMs": [
+   2,
+   2,
+   3,
+   3,
+   2,
+   7
+  ],
+  "wallSeconds": 94.2,
+  "notes": [
+   "6 flashes, 6 beeps",
+   "step 77.1 ms + grab 41.1 ms per frame; 7.2x real time",
+   "audio clock overshoot per step: mean 2.6 ms, max 5.3 ms"
+  ],
+  "gameHz": 60
+ },
+ "e-stepped-1440": {
+  "approach": "e-stepped-1440",
+  "file": "trailer/.cache/compare/e-stepped-1440/take.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "uniqueFps": 59.9,
+  "maxDupRun": 0,
+  "mbps": 36.1,
+  "blur": 4.04,
+  "syncMs": [
+   2,
+   2,
+   3,
+   3,
+   3,
+   7
+  ],
+  "wallSeconds": 182.6,
+  "notes": [
+   "6 flashes, 6 beeps",
+   "step 79.6 ms + grab 152.0 ms per frame; 14.0x real time",
+   "audio clock overshoot per step: mean 2.6 ms, max 7.3 ms"
+  ],
+  "gameHz": 60
+ }
+}

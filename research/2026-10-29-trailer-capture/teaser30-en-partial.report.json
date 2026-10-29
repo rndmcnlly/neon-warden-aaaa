@@ -1,0 +1,116 @@
+{
+ "cut": "teaser30",
+ "lang": "en",
+ "draft": false,
+ "partial": true,
+ "size": "1920x1080@60",
+ "seconds": 30.094043887147333,
+ "master": "trailer/out/teaser30/en/teaser30-en-partial.mp4",
+ "loudness": {
+  "target": {
+   "lufs": -16,
+   "truePeak": -2
+  },
+  "preMix": {
+   "I": -18.74,
+   "TP": -4.07,
+   "LRA": 3.2,
+   "thresh": -29.03,
+   "offset": 0.12
+  },
+  "measured": {
+   "lufs": -16,
+   "truePeak": -2
+  }
+ },
+ "shots": [
+  {
+   "id": "hook-writ",
+   "start": 0,
+   "dur": 2.508,
+   "kind": "take",
+   "take": "s2-fight-any-d52393e5119f",
+   "anchorAt": 12.667,
+   "inPoint": 10.995
+  },
+  {
+   "id": "graze-curtain",
+   "start": 2.508,
+   "dur": 2.508,
+   "kind": "take",
+   "take": "s2-fight-any-d52393e5119f",
+   "anchorAt": 9.717,
+   "inPoint": 8.881
+  },
+  {
+   "id": "place-kill",
+   "start": 5.016,
+   "dur": 3.344,
+   "kind": "placeholder",
+   "note": "take not captured"
+  },
+  {
+   "id": "warden-arrives",
+   "start": 8.359,
+   "dur": 5.434,
+   "kind": "take",
+   "take": "boss-descent-any-54c7874f6db0",
+   "anchorAt": 8.483,
+   "inPoint": 2.84
+  },
+  {
+   "id": "warden-stop",
+   "start": 13.793,
+   "dur": 6.27,
+   "kind": "take",
+   "take": "boss-descent-any-54c7874f6db0",
+   "anchorAt": 8.483,
+   "inPoint": 8.274
+  },
+  {
+   "id": "title",
+   "start": 20.063,
+   "dur": 2.508,
+   "kind": "card"
+  },
+  {
+   "id": "doubt",
+   "start": 22.571,
+   "dur": 5.016,
+   "kind": "placeholder",
+   "note": "take not captured"
+  },
+  {
+   "id": "slate",
+   "start": 27.586,
+   "dur": 2.508,
+   "kind": "card"
+  }
+ ],
+ "vo": [
+  {
+   "line": "brief_warden_002",
+   "start": 1.254,
+   "dur": 4
+  },
+  {
+   "line": "brief_warden_004",
+   "start": 6.479,
+   "dur": 4.56
+  },
+  {
+   "line": "desc_001",
+   "start": 14.002,
+   "dur": 5.12
+  },
+  {
+   "line": "boss_turn_002",
+   "start": 22.78,
+   "dur": 3.12
+  }
+ ],
+ "warnings": [
+  "CTA URL unresolved (placeholder shown)"
+ ],
+ "assembleSeconds": 50.113
+}
