@@ -188,7 +188,7 @@ export function statDelta(
   line: Pick<StatLine, "value" | "base" | "better">,
 ): { text: string; tone: "better" | "worse" | "same" } {
   if (line.base === 0 || line.value === line.base) {
-    return { text: "", tone: "same" };
+    return { text: "±0%", tone: "same" };
   }
   const pct = Math.round(((line.value - line.base) / line.base) * 100);
   const up = line.value > line.base;
@@ -201,7 +201,7 @@ export function statDelta(
 function statTable(ctx: UiContext, lines: StatLine[]): HTMLElement {
   return h(
     "dl",
-    { class: "nw-stats" },
+    { class: "nw-stats nw-hangar-stats" },
     ...lines.flatMap((line) => {
       const delta = statDelta(line);
       const fraction = line.max > 0 ? line.value / line.max : 0;
@@ -267,7 +267,7 @@ function walled(
   const el = button({
     key,
     label,
-    className: `${className} is-walled`,
+    className: `${className} is-walled nw-walled`,
     sound: "locked",
     onActivate: () => {},
   });
@@ -329,7 +329,7 @@ function loadoutTab(
   const rows: { widget: Widget; describe: () => void }[] = [
     {
       widget: choiceRow<WeaponPackageId>({
-        key: "weapon",
+        key: "hangar-weapon",
         label: ctx.t("ui.hangar.slot.weapon"),
         options: weapons.map((p) => ({
           value: p.id,
@@ -342,7 +342,7 @@ function loadoutTab(
     },
     {
       widget: choiceRow<SensorPackageId>({
-        key: "sensor",
+        key: "hangar-sensor",
         label: ctx.t("ui.hangar.slot.sensor"),
         options: sensors.map((p) => ({
           value: p.id,
@@ -355,7 +355,7 @@ function loadoutTab(
     },
     {
       widget: choiceRow({
-        key: "paint",
+        key: "hangar-paint",
         label: ctx.t("ui.hangar.slot.paint"),
         options: (Object.keys(PAINTS) as (keyof typeof PAINTS)[]).map((
           value,
@@ -367,7 +367,7 @@ function loadoutTab(
     },
     {
       widget: choiceRow({
-        key: "trim",
+        key: "hangar-trim",
         label: ctx.t("ui.hangar.slot.trim"),
         options: (Object.entries(TRIMS)).map(([name, hex]) => ({
           value: hex as string,
@@ -380,7 +380,7 @@ function loadoutTab(
     },
     {
       widget: choiceRow({
-        key: "decal",
+        key: "hangar-decal",
         label: ctx.t("ui.hangar.slot.decal"),
         options: DECALS.map((value) => ({
           value,
@@ -393,7 +393,7 @@ function loadoutTab(
     },
     {
       widget: choiceRow({
-        key: "trail",
+        key: "hangar-trail",
         label: ctx.t("ui.hangar.slot.trail"),
         options: TRAILS.map((value) => ({
           value,
@@ -406,7 +406,7 @@ function loadoutTab(
     },
     {
       widget: choiceRow({
-        key: "helmet",
+        key: "hangar-helmet",
         label: ctx.t("ui.hangar.slot.helmet"),
         options: HELMETS.map((value) => ({
           value,
@@ -796,8 +796,12 @@ export function hangarScreen(
       ],
     });
     show(lastTab, false, 0);
-    const launch = el.querySelector<HTMLElement>('[data-key="launch"]');
-    (launch ?? tabButtons[TABS.indexOf(lastTab)]).dataset.autofocus = "";
+    // Land on what you came to change: Launch when about to fly, else the
+    // first loadout row (or the tab, on the other tabs).
+    const first = el.querySelector<HTMLElement>(
+      '[data-key="launch"], [data-key="hangar-weapon"]',
+    );
+    (first ?? tabButtons[TABS.indexOf(lastTab)]).dataset.autofocus = "";
 
     return {
       el,

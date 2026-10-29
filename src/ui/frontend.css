@@ -1324,8 +1324,14 @@
 .nw-settings-aside {
   display: grid;
   align-content: start;
-  gap: 1em;
+  gap: 0.8em;
   width: 19em;
+}
+/* With a description above it, the preview can be shorter. */
+.nw-settings-aside .nw-subtitle-preview {
+  width: auto;
+  box-sizing: border-box;
+  min-height: 8.5em;
 }
 .nw-desc {
   padding: 1em 1.1em;
@@ -1387,6 +1393,7 @@
 :lang(zh) .nw-hud-shield,
 :lang(zh) .nw-banner-kicker,
 :lang(zh) .nw-desc-stub,
+:lang(zh) .nw-credits-studio,
 :lang(zh) .nw-hd-kicker,
 :lang(zh) .nw-wall-badge {
   letter-spacing: 0.08em;
@@ -1451,10 +1458,12 @@
     transform: translateX(-24px);
   }
 }
+/* Vertical on purpose: a sideways entrance widens the list's scroll box
+   for a frame, which reads as overflow (and shows a scrollbar). */
 @keyframes nw-row-in {
   from {
     opacity: 0;
-    transform: translateX(10px);
+    transform: translateY(6px);
   }
 }
 @keyframes nw-fade {
@@ -1809,6 +1818,9 @@
 .nw-stat-delta.is-worse {
   color: var(--nw-red);
 }
+.nw-stat-delta.is-same {
+  color: var(--nw-muted);
+}
 /* Delta is never color alone: better gets an up mark, worse a down mark. */
 .nw-stat-delta.is-better::before {
   content: "▲ ";
@@ -1825,7 +1837,15 @@
   color: var(--nw-pink);
 }
 .is-walled-list {
-  grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(11em, 100%), 1fr));
+}
+/* Long package names wrap instead of pushing the row past the panel. */
+.nw-hangar-list > .nw-row {
+  min-width: 0;
+}
+.nw-hangar-list .nw-row-value {
+  white-space: normal;
+  text-align: end;
 }
 .nw-button.is-walled {
   position: relative;
@@ -1976,4 +1996,16 @@
   .nw-hangar-grid {
     grid-template-columns: 1fr;
   }
+}
+.nw-hangar-list .nw-row-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.nw-hangar-list .nw-row-control {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+/* Room for the skewed ZH lockup's last glyph inside its own box. */
+:lang(zh) .nw-logotype.is-small {
+  padding-inline-end: 0.3em;
 }

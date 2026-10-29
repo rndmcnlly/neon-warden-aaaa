@@ -13,7 +13,7 @@ Deno.test("stat deltas know which direction is better", () => {
     statDelta({ value: 14, base: 10, better: "lower" }).tone,
     "worse",
   );
-  assertEquals(statDelta({ value: 10, base: 10, better: "lower" }).text, "");
+  assertEquals(statDelta({ value: 10, base: 10, better: "lower" }).text, "±0%");
 });
 
 Deno.test("progress repairs bad saves field by field", () => {
