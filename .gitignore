@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# Regenerable or unreviewed audio outputs.
+sfx/candidates/
+vo/out-design/

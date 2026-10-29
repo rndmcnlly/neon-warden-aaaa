@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #04020c;
+  color: #c8fbff;
+  font-family: system-ui, sans-serif;
+}
+
+#stage,
+#overlay {
+  position: fixed;
+  inset: 0;
+}
+
+/* The overlay passes pointer events through except where a menu sits. */
+#overlay {
+  pointer-events: none;
+}
+
+.dev-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(4, 2, 12, 0.7);
+  border-left: 2px solid #5ef2ff;
+}
+
+.dev-overlay h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+}
+
+.dev-overlay pre {
+  margin: 0;
+  font-size: 0.8rem;
+}

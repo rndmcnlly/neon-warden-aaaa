@@ -1,0 +1,118 @@
+{
+  "generated": "2026-10-28T17:50:19-0700",
+  "timing_note": "Durations are measured from rendered audio. VTT sentence splits are proportional to character count, not aligned.",
+  "last_render": {},
+  "lines": {
+    "tut_move_001": {
+      "speaker": "tutorial_ai",
+      "scene": "tutorial",
+      "direction": "Maximum cheer, as if this were the most important lesson ever taught; tiny forced giggle at the end.",
+      "langs": {
+        "en": {
+          "file": "en/tut_move_001.wav",
+          "vtt": "en/tut_move_001.vtt",
+          "duration": 9.36,
+          "peak": 0.473,
+          "hash": "1d610a7da8ba6bce",
+          "text": "Great job pressing the left key! Now, for your next challenge: press the right key. I believe in you. Take all the time you need.",
+          "asr": "Great job pressing the left key. Now for your next challenge: press the right key. I believe in you. Take all the time you need.",
+          "asr_similarity": 1.0
+        },
+        "es": {
+          "file": "es/tut_move_001.wav",
+          "vtt": "es/tut_move_001.vtt",
+          "duration": 11.44,
+          "peak": 0.423,
+          "hash": "64fdc6f233330141",
+          "text": "¡Excelente, presionaste la tecla izquierda! Ahora, tu siguiente desafío: presiona la tecla derecha. Creo en ti. Tómate todo el tiempo que necesites.",
+          "asr": "Excelente, presiona la tecla izquierda. Ahora, tu siguiente desafío: presiona la tecla derecha. Creo en ti, toma todo el tiempo que necesites.",
+          "asr_similarity": 0.909
+        },
+        "zh": {
+          "file": "zh/tut_move_001.wav",
+          "vtt": "zh/tut_move_001.vtt",
+          "duration": 8.96,
+          "peak": 0.639,
+          "hash": "21f38b1f4bd28d06",
+          "text": "太棒了，你按下了左键！接下来，你的下一个挑战是：按下右键。我相信你。慢慢来，不着急。",
+          "asr": "太棒了！你按下了左键。接下来，你的下一个挑战是按下右键。我相信你，慢慢来，不着急。",
+          "asr_similarity": 1.0
+        }
+      }
+    },
+    "flash_rain_001": {
+      "speaker": "narrator",
+      "scene": "flashback",
+      "direction": "Slow, hushed, heavy with regret; long pause before the final sentence.",
+      "langs": {
+        "en": {
+          "file": "en/flash_rain_001.wav",
+          "vtt": "en/flash_rain_001.vtt",
+          "duration": 9.52,
+          "peak": 0.568,
+          "hash": "d07aac609669b0f1",
+          "text": "Before the grid, before the Warden, there was only rain. Rain, and a promise. He told her he would come back. He did not.",
+          "asr": "Before the grid, before the warden, there was only rain, rain, and a promise. He told her he would come back. He did not.",
+          "asr_similarity": 1.0
+        },
+        "es": {
+          "file": "es/flash_rain_001.wav",
+          "vtt": "es/flash_rain_001.vtt",
+          "duration": 8.96,
+          "peak": 0.417,
+          "hash": "6e08c98d417d2cbf",
+          "text": "Antes de la red, antes del Guardián, solo había lluvia. Lluvia, y una promesa. Él le dijo que volvería. No volvió.",
+          "asr": "Antes de la red, antes del guardián solo había lluvia, una promesa. él le dijo que volvería. No volvería.",
+          "asr_similarity": 0.9
+        },
+        "zh": {
+          "file": "zh/flash_rain_001.wav",
+          "vtt": "zh/flash_rain_001.vtt",
+          "duration": 9.92,
+          "peak": 0.579,
+          "hash": "83ff8f9fcf8ddd87",
+          "text": "在网格之前，在典狱长之前，只有雨。雨，和一个承诺。他告诉她，他会回来。他没有。",
+          "asr": "在网格之前，在典狱长之前，只有雨，雨和一个承诺。他告诉他他会回来，他没有。",
+          "asr_similarity": 0.968
+        }
+      }
+    },
+    "boss_taunt_001": {
+      "speaker": "warden",
+      "scene": "boss",
+      "direction": "Booming, hammy fury; build to a roar on the last sentence, then a short menacing laugh.",
+      "langs": {
+        "en": {
+          "file": "en/boss_taunt_001.wav",
+          "vtt": "en/boss_taunt_001.vtt",
+          "duration": 7.04,
+          "peak": 0.711,
+          "hash": "f040f4e69cf2e98e",
+          "text": "You call that shooting? I have fought toasters with more courage than you! Come closer, little pilot, and meet your final wave!",
+          "asr": "You call that shooting? I have fought toasters with more courage than you. Come closer, little pilot, and meet your final wave.",
+          "asr_similarity": 1.0
+        },
+        "es": {
+          "file": "es/boss_taunt_001.wav",
+          "vtt": "es/boss_taunt_001.vtt",
+          "duration": 9.36,
+          "peak": 0.61,
+          "hash": "b2157fb5c57b347f",
+          "text": "¿A eso le llamas disparar? ¡He peleado contra tostadoras con más valor que tú! ¡Acércate, pilotito, y conoce tu última oleada!",
+          "asr": "Hizo lejamas disparar, he peleado contra tostadoras con más valor que tú, acércate piloto y conoce tu última oleada.",
+          "asr_similarity": 0.8
+        },
+        "zh": {
+          "file": "zh/boss_taunt_001.wav",
+          "vtt": "zh/boss_taunt_001.vtt",
+          "duration": 8.0,
+          "peak": 0.516,
+          "hash": "87784da5deae14de",
+          "text": "你管这叫射击？我打过的烤面包机都比你有胆量！靠近点，小飞行员，迎接你的最后一波吧！",
+          "asr": "你管这叫射击？我打过的烤面包机都比你有胆量。靠近点，小飞行员，迎接你的最后一波吧。",
+          "asr_similarity": 1.0
+        }
+      }
+    }
+  }
+}
