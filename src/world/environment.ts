@@ -56,12 +56,14 @@ export class SectorWorld {
         map: this.texture,
         transparent: true,
         depthWrite: false,
+        depthTest: false,
         toneMapped: false,
       }),
     );
     this.sign.position.set(-12, 0, 1);
     this.sign.scale.set(7, 3.5, 1);
     this.sign.visible = false;
+    this.sign.renderOrder = 3;
     this.group.add(this.sign);
     this.group.add(this.spill);
   }

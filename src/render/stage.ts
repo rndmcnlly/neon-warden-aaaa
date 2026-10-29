@@ -1177,7 +1177,7 @@ export function createStage(
 
       particles.update(flashback ? dt * 0.15 : dt);
       rings.update(flashback ? dt * 0.15 : dt);
-      backdrop.update(flashback ? dt * 0.1 : dt);
+      backdrop.update(rig.reduceMotion ? 0 : flashback ? dt * 0.1 : dt);
       rig.update(dtMs, ctx);
       const worldSettings = options.settings?.get();
       backdrop.setWorldActive(!!state && state.phase !== "tutorial");
