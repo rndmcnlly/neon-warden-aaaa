@@ -128,3 +128,5 @@ Undo (also remove the domain from https://github.com/settings/pages):
 ```sh
 cf dns records delete b7bf2adb9af9b03cd9dc8de519e0f0a0 -z 01d5dd6aa6a367bb3c7de7b33791c722 --profile personal
 ```
+
+- 2026-10-29: Adam clicked Verify; adamsmith.systems is now a verified GitHub Pages domain for rndmcnlly. Keep the TXT record in place (removing it can unverify the domain).
