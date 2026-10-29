@@ -1,0 +1,7 @@
+{
+  "raw_json_valid": false,
+  "method": "escape only unescaped quote characters within final creative_notes_markdown JSON string; json.loads decodes original JSON escapes",
+  "second_model_call": false,
+  "raw_retained": "response-transcript.txt",
+  "recovered_memo_characters": 19341
+}

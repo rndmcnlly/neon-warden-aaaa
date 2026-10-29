@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-10-29T07:04:47.343Z",
+  "revision": "ad320434d09a05f7c347311cae8aad385fbf9c82",
+  "status": "pass",
+  "browserErrors": [],
+  "checks": [
+    {
+      "check": "link",
+      "href": "README.md",
+      "status": 200
+    },
+    {
+      "check": "link",
+      "href": "DIRECTOR.md",
+      "status": 200
+    },
+    {
+      "check": "link",
+      "href": "response.json",
+      "status": 200
+    },
+    {
+      "check": "link",
+      "href": "provenance.json",
+      "status": 200
+    },
+    {
+      "check": "link",
+      "href": "validation.json",
+      "status": 200
+    },
+    {
+      "check": "clip",
+      "id": "A",
+      "duration": 20,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/A/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    },
+    {
+      "check": "clip",
+      "id": "B",
+      "duration": 12,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/B/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    },
+    {
+      "check": "clip",
+      "id": "C",
+      "duration": 24,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/C/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    },
+    {
+      "check": "clip",
+      "id": "D",
+      "duration": 8,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/D/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    },
+    {
+      "check": "clip",
+      "id": "E",
+      "duration": 10,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/E/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    },
+    {
+      "check": "clip",
+      "id": "F",
+      "duration": 27,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/F/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    },
+    {
+      "check": "clip",
+      "id": "G",
+      "duration": 24,
+      "width": 1280,
+      "height": 720,
+      "paused": true,
+      "src": "out/G/clip.mp4",
+      "audio": "stereo AAC confirmed by ffprobe"
+    }
+  ],
+  "scope": "Viewer links/media only. Static QA has two separate documented failures; clip D has VO coverage failure."
+}

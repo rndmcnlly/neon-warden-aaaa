@@ -1,0 +1,50 @@
+{
+  "videoEpoch": 1793256410712,
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793256413653.7002,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256414823.8,
+      "dur": 0.25997732426303855,
+      "loop": false,
+      "url": "/sfx/confirm.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256414824.7002,
+      "dur": 14.999977324263039,
+      "loop": false,
+      "url": "/music/logos/cand1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256421231.3,
+      "dur": 44.999977324263035,
+      "loop": true,
+      "url": "/music/menu/cand1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256422935.7002,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    }
+  ],
+  "subs": [
+    {
+      "k": "sub",
+      "epoch": 1793256410936.4001,
+      "text": "",
+      "visible": false,
+      "layer": "",
+      "line": ""
+    }
+  ]
+}

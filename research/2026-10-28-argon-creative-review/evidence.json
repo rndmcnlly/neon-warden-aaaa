@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-29T07:05:50.494842+00:00",
+  "code_revision": "ad320434d09a05f7c347311cae8aad385fbf9c82",
+  "submitted_media": [
+    {
+      "id": "A",
+      "path": "out/A/clip.mp4",
+      "bytes": 774916,
+      "sha256": "291f0c38481d8186b082a9e91f05f454c9ec5d4dbc0d3341a68ce9c05ced86bb"
+    },
+    {
+      "id": "B",
+      "path": "out/B/clip.mp4",
+      "bytes": 492212,
+      "sha256": "9132ee5214d8f52b13ab07b5a5b48dccd4ea2c898f38aaa51282f294e166a748"
+    },
+    {
+      "id": "C",
+      "path": "out/C/clip.mp4",
+      "bytes": 1039936,
+      "sha256": "1f012ec1eb6e9378f0eaedd6a91c1871dfe2d09ecf9be36e03b15ae6e77a2bbb"
+    },
+    {
+      "id": "D",
+      "path": "out/D/clip.mp4",
+      "bytes": 495874,
+      "sha256": "7b0ce48ae439052260b10242cf192c4099ef9c35bc5e60c9a2899168bb2ccaae"
+    },
+    {
+      "id": "E",
+      "path": "out/E/clip.mp4",
+      "bytes": 915198,
+      "sha256": "4eaa722bf65fab8d3ad2c1dd656d191522203e366bd75161b5f426ad68cc2b8e"
+    },
+    {
+      "id": "F",
+      "path": "out/F/clip.mp4",
+      "bytes": 2495787,
+      "sha256": "6e8d5be3441b612958ac48cfcaa240a8358695e69b17a149faf46a9d883bc588"
+    },
+    {
+      "id": "G",
+      "path": "out/G/clip.mp4",
+      "bytes": 1251564,
+      "sha256": "4b667fb7c31bd597e680531600416bdc0c289b431e9dfa883d93360cdd137e08"
+    }
+  ],
+  "submitted_media_total_bytes": 7465487,
+  "readme_local_links_validated": [
+    "index.html",
+    "DIRECTOR.md",
+    "review.json",
+    "response.json",
+    "validation.json",
+    "provenance.json",
+    "out/static-qa.txt",
+    "out/focused-tests.txt",
+    "catalog.json",
+    "endpoints.json"
+  ],
+  "focused_tests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "static_qa": {
+    "passed": 28,
+    "warned": 8,
+    "failed": 2
+  },
+  "page_exceptions": 0,
+  "paid_calls": 1,
+  "cost_usd": 0.11751,
+  "response_sha256": "e0d79c5c90452095c11801d5c6edbb49c4c8c7aee70006ca5fc0e2157c0f1af9",
+  "privacy": "Only game AV supplied; no credentials in prompt or footage; authenticated key read in process and never saved."
+}

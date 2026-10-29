@@ -1,0 +1,589 @@
+{
+  "videoEpoch": 1793256525362,
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793256525488.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256526294.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256526672.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256526672.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256526888.2,
+      "dur": 9.999977324263039,
+      "loop": false,
+      "url": "/vo/en/sec4_intro_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527055.6,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527242.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527242.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527454.1,
+      "dur": 0.6499773242630386,
+      "loop": false,
+      "url": "/sfx/gameplay/writ_release_2_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527607.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527740.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527798.8,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527798.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256527874.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528005.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528080.4,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528139.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528271.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528311.2,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528368.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528368.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528407.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528445.6,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528541.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528562,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528562.1,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528562.1,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528677.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528697.7,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528697.8,
+      "dur": 0.75,
+      "loop": false,
+      "url": "/sfx/gameplay/kill_large_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528812,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256528945.9,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529081.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529140.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529140.3,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529180.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529240.8,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529338.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529338.9,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529358.6,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529396.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529452.6,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529452.7,
+      "dur": 0.75,
+      "loop": false,
+      "url": "/sfx/gameplay/kill_large_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529664.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529857.8,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529876.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529913.6,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256529934.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530085.1,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530085.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530104.4,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530218.6,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530276.9,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530277.2,
+      "dur": 4.719977324263039,
+      "loop": false,
+      "url": "/vo/en/graze_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530296.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530296.3,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530296.4,
+      "dur": 6.32,
+      "loop": false,
+      "url": "/vo/en/lock_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530297.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530297.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530355.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530683.2,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/enemy_fire_heavy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530683.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530701.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530721.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256530798.1,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531439.9,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531478.9,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531498.9,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531574.3,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531574.4,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531931.1,
+      "dur": 0.9,
+      "loop": false,
+      "url": "/sfx/notify.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256531931.1,
+      "dur": 7.759977324263039,
+      "loop": false,
+      "url": "/vo/en/flash_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256539709,
+      "dur": 44.999977324263035,
+      "loop": true,
+      "url": "/music/flashback/cand2.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256540509.5,
+      "dur": 7.28,
+      "loop": false,
+      "url": "/vo/en/flash_rec_001.ogg"
+    }
+  ],
+  "subs": [
+    {
+      "k": "sub",
+      "epoch": 1793256525466.8,
+      "text": "",
+      "visible": false,
+      "layer": "",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256526891.3,
+      "text": "Lancer Gate. Crossfire. Lancers fire across the lane, never along it.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256530278.7,
+      "text": "That was close, and close is billable. Thank you for your proximity.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256530298.8,
+      "text": "Your first live lock! Intel filed. Every scan helps the Authority map its lanes.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256531934.7,
+      "text": "Oh! That crystal is a recovered flight recorder. Please don't open it.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256537268,
+      "text": "You're opening it. It's opening.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256539710.2,
+      "text": "You're opening it. It's opening.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256540510.3,
+      "text": "Recording. Pilot zero one two one. Last Approach. Weapon status: cold.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    }
+  ]
+}

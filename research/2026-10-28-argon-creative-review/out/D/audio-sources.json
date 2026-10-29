@@ -1,0 +1,408 @@
+{
+  "videoEpoch": 1793256508238,
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793256508364.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256508636.1,
+      "dur": 59.999977324263035,
+      "loop": true,
+      "url": "/music/gameplay/cand1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509171,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509548.3,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509548.4001,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509548.5,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509548.7,
+      "dur": 0.42,
+      "loop": false,
+      "url": "/sfx/gameplay/spawn_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509767.4001,
+      "dur": 4.799977324263039,
+      "loop": false,
+      "url": "/vo/en/sec1_intro_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256509937.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256510692.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256510711.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511153.8,
+      "dur": 0.9999773242630385,
+      "loop": false,
+      "url": "/sfx/gameplay/writ_release_3_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511312.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511447.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511568.5,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511568.8,
+      "dur": 0.5999773242630385,
+      "loop": false,
+      "url": "/sfx/gameplay/part_break_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511569.1,
+      "dur": 0.75,
+      "loop": false,
+      "url": "/sfx/gameplay/disarm_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511589.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511722.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511856,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511856.2,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256511990.7,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512069.1,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512069.2,
+      "dur": 0.38,
+      "loop": false,
+      "url": "/sfx/gameplay/kill_small_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512128.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512258.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512373.1,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512395,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512472,
+      "dur": 7.04,
+      "loop": false,
+      "url": "/vo/en/disarm_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512490.9001,
+      "dur": 0.11997732426303855,
+      "loop": false,
+      "url": "/sfx/gameplay/hit_enemy_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512491,
+      "dur": 0.38,
+      "loop": false,
+      "url": "/sfx/gameplay/kill_small_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512529.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512622.9001,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512661.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512795.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256512890.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256513643.8,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256513756.9001,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256513887.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256513887.3,
+      "dur": 4.719977324263039,
+      "loop": false,
+      "url": "/vo/en/graze_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256514166.2,
+      "dur": 0.31997732426303854,
+      "loop": false,
+      "url": "/sfx/gameplay/near_miss_1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256514396.2,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256514531.1,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256514549.8,
+      "dur": 0.9,
+      "loop": false,
+      "url": "/sfx/notify.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256514549.9001,
+      "dur": 7.759977324263039,
+      "loop": false,
+      "url": "/vo/en/flash_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256522327.1,
+      "dur": 44.999977324263035,
+      "loop": true,
+      "url": "/music/flashback/cand2.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256523118.5,
+      "dur": 7.28,
+      "loop": false,
+      "url": "/vo/en/flash_rec_001.ogg"
+    }
+  ],
+  "subs": [
+    {
+      "k": "sub",
+      "epoch": 1793256508344.1,
+      "text": "",
+      "visible": false,
+      "layer": "",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256509770.6,
+      "text": "Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256511571.6,
+      "text": "Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256512472.9001,
+      "text": "A disarm. That is forty percent.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256513888.9001,
+      "text": "That was close, and close is billable. Thank you for your proximity.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256514551,
+      "text": "Oh! That crystal is a recovered flight recorder. Please don't open it.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256519889.5,
+      "text": "You're opening it. It's opening.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256522328.3,
+      "text": "You're opening it. It's opening.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256523119.5,
+      "text": "Recording. Pilot zero one two one. Last Approach. Weapon status: cold.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    }
+  ]
+}

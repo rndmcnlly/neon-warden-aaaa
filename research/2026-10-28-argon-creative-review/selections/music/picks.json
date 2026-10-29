@@ -1,0 +1,60 @@
+{
+  "logos": {
+    "file": "logos/logos_01.wav",
+    "variant": "cand1",
+    "provisional": true,
+    "why": "highest objective score -0.231 (stats.py)"
+  },
+  "menu": {
+    "file": "menu/menu_01.wav",
+    "variant": "cand1",
+    "provisional": true,
+    "why": "highest objective score 0.584 (stats.py)",
+    "loopStart": 1.161,
+    "loopEnd": 32.369
+  },
+  "tutorial": {
+    "file": "tutorial/tutorial_02.wav",
+    "variant": "cand2",
+    "provisional": true,
+    "why": "highest objective score 0.657 (stats.py)",
+    "loopStart": 2.763,
+    "loopEnd": 28.398
+  },
+  "gameplay": {
+    "file": "gameplay/gameplay_01.wav",
+    "variant": "cand1",
+    "provisional": false,
+    "why": "Adam chose A in the in-context gameplay A/B comparison",
+    "loopStart": 0.975,
+    "loopEnd": 43.7
+  },
+  "flashback": {
+    "file": "flashback/flashback_02.wav",
+    "variant": "cand2",
+    "provisional": true,
+    "why": "highest objective score 0.904 (stats.py)",
+    "loopStart": 0.464,
+    "loopEnd": 40.588
+  },
+  "boss": {
+    "file": "boss/boss_02.wav",
+    "variant": "cand2",
+    "provisional": true,
+    "why": "highest objective score 0.85 (stats.py)",
+    "loopStart": 3.46,
+    "loopEnd": 53.615
+  },
+  "ending_kill": {
+    "file": "ending_kill/ending_kill_02.wav",
+    "variant": "cand2",
+    "provisional": true,
+    "why": "highest objective score -0.043 (stats.py)"
+  },
+  "ending_pacifist": {
+    "file": "ending_pacifist/ending_pacifist_01.wav",
+    "variant": "cand1",
+    "provisional": true,
+    "why": "highest objective score -0.053 (stats.py)"
+  }
+}

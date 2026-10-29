@@ -1,0 +1,3235 @@
+{
+  "revision": "ad320434d09a05f7c347311cae8aad385fbf9c82",
+  "clips": [
+    {
+      "id": "A",
+      "title": "Opening identities, title and main menu",
+      "path": "out/A/clip.mp4",
+      "duration_s": 20,
+      "source_start_s": 2.916,
+      "active_ticks_per_wall_second_median": null,
+      "events": [],
+      "played_voice": [],
+      "inputs": [
+        {
+          "t": 2.917,
+          "key": "Enter",
+          "ms": 220,
+          "at_s": 0.001
+        },
+        {
+          "t": 3.307,
+          "key": "Enter",
+          "ms": 220,
+          "at_s": 0.391
+        },
+        {
+          "t": 10.619,
+          "key": "Enter",
+          "ms": 220,
+          "at_s": 7.703
+        }
+      ],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "19.06 s audible of 23.16 s, 5 sounds started, 0 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.6 dBTP, -16.9 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -14.8 LUFS / -3.5 dBTP, sfx -70 LUFS / NaN dBTP, voice -70 LUFS / NaN dBTP, ui -23.6 LUFS / -3.4 dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-16.9 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "no subtitles shown in this reel"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Hangar (redesign pending), sensor selection",
+      "path": "out/B/clip.mp4",
+      "duration_s": 12,
+      "source_start_s": 4.878,
+      "active_ticks_per_wall_second_median": null,
+      "events": [],
+      "played_voice": [],
+      "inputs": [],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "13.96 s audible of 17.19 s, 10 sounds started, 0 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.3 dBTP, -17.1 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -15 LUFS / -3.6 dBTP, sfx -70 LUFS / NaN dBTP, voice -70 LUFS / NaN dBTP, ui -22.9 LUFS / -3.8 dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-17.1 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "no subtitles shown in this reel"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Tutorial: left, right and vertical interaction",
+      "path": "out/C/clip.mp4",
+      "duration_s": 24,
+      "source_start_s": 20.946,
+      "active_ticks_per_wall_second_median": 59.21,
+      "events": [],
+      "played_voice": [
+        {
+          "at_s": -11.26,
+          "duration_s": 9.759977324263039,
+          "url": "/vo/en/tut_contract_001.ogg"
+        },
+        {
+          "at_s": -1.498,
+          "duration_s": 6.32,
+          "url": "/vo/en/tut_move_000.ogg"
+        },
+        {
+          "at_s": 7.161,
+          "duration_s": 9.199977324263038,
+          "url": "/vo/en/tut_move_001.ogg"
+        },
+        {
+          "at_s": 16.444,
+          "duration_s": 8.39997732426304,
+          "url": "/vo/en/tut_move_002.ogg"
+        }
+      ],
+      "inputs": [
+        {
+          "t": 28.095,
+          "key": "ArrowLeft",
+          "ms": 500,
+          "at_s": 7.149
+        },
+        {
+          "t": 31.192,
+          "key": "ArrowRight",
+          "ms": 500,
+          "at_s": 10.246
+        },
+        {
+          "t": 34.287,
+          "key": "ArrowRight",
+          "ms": 500,
+          "at_s": 13.341
+        },
+        {
+          "t": 37.376,
+          "key": "ArrowRight",
+          "ms": 500,
+          "at_s": 16.43
+        },
+        {
+          "t": 40.469,
+          "key": "ArrowUp",
+          "ms": 500,
+          "at_s": 19.523
+        },
+        {
+          "t": 43.56,
+          "key": "ArrowUp",
+          "ms": 500,
+          "at_s": 22.614
+        }
+      ],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "50.46 s audible of 51.22 s, 11 sounds started, 6 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5 dBTP, -17.9 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -21.7 LUFS / -3.8 dBTP, sfx -50.1 LUFS / -31.8 dBTP, voice -16 LUFS / -2.9 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-17.9 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "6 of 6 subtitle windows have audible VO stem",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Quiet sector 1, Writ disarm then flashback intrusion",
+      "path": "out/D/clip.mp4",
+      "duration_s": 8,
+      "source_start_s": 2.359,
+      "active_ticks_per_wall_second_median": 52.63,
+      "events": [
+        {
+          "at_s": 0.153,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 119,
+            "id": 1,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 163.6594744907562,
+              "y": 60
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 0.153,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 119,
+            "id": 4,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 316.34052550924383,
+              "y": 60
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 0.153,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 120,
+            "level": 3
+          }
+        },
+        {
+          "at_s": 0.61,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 143,
+            "level": 0
+          }
+        },
+        {
+          "at_s": 1.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "partBreak",
+            "tick": 164,
+            "id": 1,
+            "target": "enemy",
+            "part": "gun",
+            "partKind": "gun",
+            "pos": {
+              "x": 98.00365782128392,
+              "y": 136.5
+            },
+            "by": "writ",
+            "first": true
+          }
+        },
+        {
+          "at_s": 1.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 164,
+            "credits": 40,
+            "rate": 1.2,
+            "delta": 40,
+            "reason": "partBreak"
+          }
+        },
+        {
+          "at_s": 1.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "disarm",
+            "tick": 164,
+            "id": 1,
+            "kind": "drone",
+            "pos": {
+              "x": 98.00365782128392,
+              "y": 127.5
+            },
+            "cancelled": 1,
+            "first": true
+          }
+        },
+        {
+          "at_s": 1.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 164,
+            "credits": 88,
+            "rate": 1.4,
+            "delta": 48,
+            "reason": "disarm"
+          }
+        },
+        {
+          "at_s": 1.525,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "kill",
+            "tick": 190,
+            "id": 1,
+            "kind": "drone",
+            "score": 100,
+            "byRam": false,
+            "clean": false
+          }
+        },
+        {
+          "at_s": 1.525,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 190,
+            "credits": 228,
+            "rate": 1.5,
+            "delta": 140,
+            "reason": "kill"
+          }
+        },
+        {
+          "at_s": 1.983,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "kill",
+            "tick": 212,
+            "id": 2,
+            "kind": "drone",
+            "score": 100,
+            "byRam": false,
+            "clean": false
+          }
+        },
+        {
+          "at_s": 1.983,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 212,
+            "credits": 378,
+            "rate": 1.6,
+            "delta": 150,
+            "reason": "kill"
+          }
+        },
+        {
+          "at_s": 2.136,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 219,
+            "id": 4,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 299.491278262939,
+              "y": 210
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 3.048,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 272,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 3.2,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 278,
+            "bulletId": 6,
+            "pos": {
+              "x": 176.72867854740323,
+              "y": 417.72130519149005
+            },
+            "relVel": {
+              "x": -0.8725740435115006,
+              "y": 0.23575815744681794
+            },
+            "distance": 32.231109748804165,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.352,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 285,
+            "bulletId": 6,
+            "pos": {
+              "x": 170.6206602428228,
+              "y": 433.3716122936177
+            },
+            "count": 1,
+            "meter": 0.05,
+            "first": true
+          }
+        },
+        {
+          "at_s": 3.352,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 285,
+            "credits": 386,
+            "rate": 1.62,
+            "delta": 8,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 3.657,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 300,
+            "bulletId": 19,
+            "pos": {
+              "x": 232.57675487796257,
+              "y": 395.0748134138248
+            },
+            "relVel": {
+              "x": -0.8160307729875164,
+              "y": 6.457009919680759
+            },
+            "distance": 44.01505495603654,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 312,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 3.961,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 319,
+            "id": 3,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 236.94875513972448,
+              "y": 360
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 3.961,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 319,
+            "id": 4,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 371.0512448602755,
+              "y": 360
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 3.961,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "pickup",
+            "tick": 320,
+            "kind": "spread",
+            "firstPowerup": true
+          }
+        }
+      ],
+      "played_voice": [
+        {
+          "at_s": -0.83,
+          "duration_s": 4.799977324263039,
+          "url": "/vo/en/sec1_intro_001.ogg"
+        },
+        {
+          "at_s": 1.875,
+          "duration_s": 7.04,
+          "url": "/vo/en/disarm_ai_001.ogg"
+        },
+        {
+          "at_s": 3.29,
+          "duration_s": 4.719977324263039,
+          "url": "/vo/en/graze_ai_001.ogg"
+        },
+        {
+          "at_s": 3.953,
+          "duration_s": 7.759977324263039,
+          "url": "/vo/en/flash_ai_001.ogg"
+        }
+      ],
+      "inputs": [],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "15.34 s audible of 15.67 s, 47 sounds started, 5 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.4 dBTP, -19.3 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -23.8 LUFS / -5.7 dBTP, sfx -24.5 LUFS / -6.5 dBTP, voice -16.1 LUFS / -2.9 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-19.3 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "fail",
+          "detail": "2 of 3 subtitle windows have audible VO stem",
+          "items": [
+            "4.23\u20135.65 s disarm_ai_001 (0.14 s audible)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "Denser sector 4, graze and scan, then flashback intrusion",
+      "path": "out/E/clip.mp4",
+      "duration_s": 10,
+      "source_start_s": 2.377,
+      "active_ticks_per_wall_second_median": 52.29,
+      "events": [
+        {
+          "at_s": 0.153,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 119,
+            "id": 1,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 114.00000000000009,
+              "y": 98.99999999999966
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 0.153,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 119,
+            "id": 2,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 366.00000000000136,
+              "y": 98.99999999999966
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 0.762,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 149,
+            "id": 3,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 114.00000000000009,
+              "y": 148.99999999999966
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 0.762,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 149,
+            "id": 4,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 366.00000000000136,
+              "y": 148.99999999999966
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 0.914,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 159,
+            "id": 1,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 210.0000000000003,
+              "y": 112.99999999999943
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 0.914,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 159,
+            "id": 2,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 270.0000000000023,
+              "y": 112.99999999999943
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 1.067,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "kill",
+            "tick": 166,
+            "id": 3,
+            "kind": "lancer",
+            "score": 250,
+            "byRam": false,
+            "clean": false
+          }
+        },
+        {
+          "at_s": 1.067,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 166,
+            "credits": 250,
+            "rate": 1.1,
+            "delta": 250,
+            "reason": "kill"
+          }
+        },
+        {
+          "at_s": 1.523,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 189,
+            "id": 4,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 270.0000000000023,
+              "y": 162.99999999999943
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 1.674,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 199,
+            "id": 1,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 305.99999999999994,
+              "y": 126.9999999999992
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 1.674,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 199,
+            "id": 2,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 174.0000000000022,
+              "y": 126.9999999999992
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 1.826,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "kill",
+            "tick": 205,
+            "id": 2,
+            "kind": "lancer",
+            "score": 250,
+            "byRam": false,
+            "clean": false
+          }
+        },
+        {
+          "at_s": 1.826,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 205,
+            "credits": 525,
+            "rate": 1.2,
+            "delta": 275,
+            "reason": "kill"
+          }
+        },
+        {
+          "at_s": 2.132,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 226,
+            "bulletId": 8,
+            "pos": {
+              "x": 183.4710317586712,
+              "y": 371.07060801634753
+            },
+            "relVel": {
+              "x": 0.6432502940617598,
+              "y": 0.5191722964476764
+            },
+            "distance": 34.30651102505197,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 2.284,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 229,
+            "id": 4,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 174.0000000000022,
+              "y": 176.9999999999992
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 2.284,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 230,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 2.437,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 238,
+            "bulletId": 9,
+            "pos": {
+              "x": 114.00000000000009,
+              "y": 411.0000000000007
+            },
+            "relVel": {
+              "x": 1.5920408388915593e-16,
+              "y": 2.6
+            },
+            "distance": 43.60412824492683,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 2.437,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 239,
+            "id": 1,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 401.99999999999903,
+              "y": 140.99999999999898
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 2.589,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 245,
+            "bulletId": 18,
+            "pos": {
+              "x": 176.3952785239917,
+              "y": 393.35971275542306
+            },
+            "relVel": {
+              "x": 0.6432502940617598,
+              "y": 0.5191722964476764
+            },
+            "distance": 29.268291909096742,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 2.589,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 248,
+            "bulletId": 18,
+            "pos": {
+              "x": 178.325029406177,
+              "y": 400.91722964476605
+            },
+            "count": 1,
+            "meter": 0.05,
+            "first": true
+          }
+        },
+        {
+          "at_s": 2.589,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 248,
+            "credits": 531,
+            "rate": 1.22,
+            "delta": 6,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 2.589,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "scanLock",
+            "tick": 249,
+            "id": 4,
+            "target": "enemy",
+            "kind": "lancer",
+            "pos": {
+              "x": 126.00000000000207,
+              "y": 175.9999999999991
+            },
+            "ai": "strafe",
+            "first": true
+          }
+        },
+        {
+          "at_s": 2.589,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 249,
+            "credits": 543,
+            "rate": 1.27,
+            "delta": 12,
+            "reason": "scan"
+          }
+        },
+        {
+          "at_s": 2.589,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "intel",
+            "tick": 249,
+            "id": 4,
+            "codexId": "codex.enemy.lancer",
+            "ai": "strafe",
+            "first": true
+          }
+        },
+        {
+          "at_s": 2.741,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 252,
+            "bulletId": 19,
+            "pos": {
+              "x": 114.00000000000009,
+              "y": 419.40000000000083
+            },
+            "relVel": {
+              "x": 1.5920408388915593e-16,
+              "y": 4.6
+            },
+            "distance": 43.61146638213425,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.047,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 269,
+            "id": 4,
+            "weapon": "lancerEmitter",
+            "pos": {
+              "x": 78.00000000000196,
+              "y": 190.99999999999898
+            },
+            "bullets": 3
+          }
+        },
+        {
+          "at_s": 3.047,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 269,
+            "bulletId": 28,
+            "pos": {
+              "x": 138.59921735914358,
+              "y": 392.62812490569024
+            },
+            "relVel": {
+              "x": -0.6432502940617595,
+              "y": 0.5191722964476768
+            },
+            "distance": 28.41655381589581,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.047,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 270,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 3.047,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 271,
+            "bulletId": 28,
+            "pos": {
+              "x": 137.31271677102004,
+              "y": 397.66646949858557
+            },
+            "count": 1,
+            "meter": 0.1,
+            "first": false
+          }
+        },
+        {
+          "at_s": 3.047,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 271,
+            "credits": 549,
+            "rate": 1.29,
+            "delta": 6,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 3.2,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 275,
+            "bulletId": 31,
+            "pos": {
+              "x": 194.7397155947749,
+              "y": 407.7431586843762
+            },
+            "relVel": {
+              "x": -0.6432502940617595,
+              "y": 6.719172296447665
+            },
+            "distance": 37.99664429666394,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 308,
+            "bulletId": 44,
+            "pos": {
+              "x": 174.0000000000022,
+              "y": 413.0000000000003
+            },
+            "count": 1,
+            "meter": 0.15000000000000002,
+            "first": false
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 308,
+            "credits": 555,
+            "rate": 1.31,
+            "delta": 6,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 310,
+            "level": 3
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 311,
+            "bulletId": 44,
+            "pos": {
+              "x": 174.0000000000022,
+              "y": 420.80000000000035
+            },
+            "relVel": {
+              "x": 1.5920408388915593e-16,
+              "y": 6.799999999999988
+            },
+            "distance": 20.56501884268712,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 312,
+            "bulletId": 47,
+            "pos": {
+              "x": 174.0000000000022,
+              "y": 395.40000000000026
+            },
+            "count": 1,
+            "meter": 0.2,
+            "first": false
+          }
+        },
+        {
+          "at_s": 3.809,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 312,
+            "credits": 562,
+            "rate": 1.33,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 3.962,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 315,
+            "bulletId": 47,
+            "pos": {
+              "x": 174.0000000000022,
+              "y": 403.20000000000033
+            },
+            "relVel": {
+              "x": 1.5920408388915593e-16,
+              "y": 6.799999999999988
+            },
+            "distance": 20.47925779905306,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.962,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 315,
+            "bulletId": 48,
+            "pos": {
+              "x": 118.03722441662822,
+              "y": 396.16798979094597
+            },
+            "relVel": {
+              "x": -0.6432502940617595,
+              "y": 6.719172296447665
+            },
+            "distance": 35.29742097711636,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 4.267,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "pickup",
+            "tick": 334,
+            "kind": "shield",
+            "firstPowerup": true
+          }
+        }
+      ],
+      "played_voice": [
+        {
+          "at_s": -0.851,
+          "duration_s": 9.999977324263039,
+          "url": "/vo/en/sec4_intro_001.ogg"
+        },
+        {
+          "at_s": 2.538,
+          "duration_s": 4.719977324263039,
+          "url": "/vo/en/graze_ai_001.ogg"
+        },
+        {
+          "at_s": 2.557,
+          "duration_s": 6.32,
+          "url": "/vo/en/lock_ai_001.ogg"
+        },
+        {
+          "at_s": 4.192,
+          "duration_s": 7.759977324263039,
+          "url": "/vo/en/flash_ai_001.ogg"
+        }
+      ],
+      "inputs": [],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "17.02 s audible of 17.67 s, 74 sounds started, 5 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.5 dBTP, -18.6 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -21.7 LUFS / -8.8 dBTP, sfx -25.8 LUFS / -6.5 dBTP, voice -16.3 LUFS / -2.8 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.6 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "4 of 4 subtitle windows have audible VO stem",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Boss: Writ pod breaks and core reveal",
+      "path": "out/F/clip.mp4",
+      "duration_s": 27,
+      "source_start_s": 40.368,
+      "active_ticks_per_wall_second_median": 52.29,
+      "events": [
+        {
+          "at_s": 0.548,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2124,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 375.6201140165571,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 1.006,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2148,
+            "level": 0
+          }
+        },
+        {
+          "at_s": 1.312,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2170,
+            "bulletId": 109,
+            "pos": {
+              "x": 359.8862403633432,
+              "y": 595.4509493498076
+            },
+            "count": 1,
+            "meter": 0.05,
+            "first": true
+          }
+        },
+        {
+          "at_s": 1.312,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2170,
+            "credits": 5,
+            "rate": 1.02,
+            "delta": 5,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 1.467,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2173,
+            "bulletId": 109,
+            "pos": {
+              "x": 361.0376043490904,
+              "y": 603.7716681271925
+            },
+            "relVel": {
+              "x": 0.38378799524907925,
+              "y": 6.973572925794984
+            },
+            "distance": 18.80781782196931,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 1.467,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2173,
+            "bulletId": 110,
+            "pos": {
+              "x": 299.63152510923993,
+              "y": 608.0000000000001
+            },
+            "relVel": {
+              "x": 1.7145055188062944e-16,
+              "y": 7.000000000000045
+            },
+            "distance": 42.40669362929592,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 1.619,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2179,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 377.5016043992666,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 1.771,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2188,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 2.229,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2213,
+            "bulletId": 119,
+            "pos": {
+              "x": 347.90344304585574,
+              "y": 566.0000000000008
+            },
+            "count": 1,
+            "meter": 0.1,
+            "first": false
+          }
+        },
+        {
+          "at_s": 2.229,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2213,
+            "credits": 10,
+            "rate": 1.04,
+            "delta": 5,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 2.229,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2216,
+            "bulletId": 119,
+            "pos": {
+              "x": 347.90344304585574,
+              "y": 574.4000000000007
+            },
+            "relVel": {
+              "x": 1.7145055188062944e-16,
+              "y": 4.8
+            },
+            "distance": 23.910972156030592,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 2.229,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2216,
+            "bulletId": 120,
+            "pos": {
+              "x": 291.1028197489941,
+              "y": 570.488793017653
+            },
+            "relVel": {
+              "x": -0.38378799524907886,
+              "y": 4.773572925794938
+            },
+            "distance": 32.678899232098395,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 2.534,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2228,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 2.534,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2234,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 353.1894965347426,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 3.142,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2261,
+            "bulletId": 129,
+            "pos": {
+              "x": 322.6573706721861,
+              "y": 542.7530637597035
+            },
+            "relVel": {
+              "x": 1.6162120047509212,
+              "y": 0.7735729257949382
+            },
+            "distance": 43.9762221927465,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.295,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2268,
+            "level": 3
+          }
+        },
+        {
+          "at_s": 3.295,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2271,
+            "bulletId": 130,
+            "pos": {
+              "x": 263.09106334194456,
+              "y": 558.8290018971404
+            },
+            "count": 1,
+            "meter": 0.15000000000000002,
+            "first": false
+          }
+        },
+        {
+          "at_s": 3.295,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2271,
+            "credits": 15,
+            "rate": 1.06,
+            "delta": 5,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 3.447,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2276,
+            "bulletId": 130,
+            "pos": {
+              "x": 259.289406224559,
+              "y": 572.3029546639359
+            },
+            "relVel": {
+              "x": 1.2396685765228845,
+              "y": 4.694790553359066
+            },
+            "distance": 21.016203292329134,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 3.6,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2289,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 307.31516609841077,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 4.664,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2339,
+            "bulletId": 141,
+            "pos": {
+              "x": 196.77548679383597,
+              "y": 572.9875426877519
+            },
+            "relVel": {
+              "x": -1.1225224695989597,
+              "y": -1.6348599833059367
+            },
+            "distance": 35.514116783862804,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 4.664,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2344,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 248.61752044018783,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 4.816,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2350,
+            "bulletId": 140,
+            "pos": {
+              "x": 246.72459956120338,
+              "y": 623.5039751777588
+            },
+            "relVel": {
+              "x": -0.7603314234771156,
+              "y": 6.894790553359112
+            },
+            "distance": 41.76275560299231,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 4.816,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2350,
+            "bulletId": 141,
+            "pos": {
+              "x": 184.42773962824754,
+              "y": 601.2040828713876
+            },
+            "count": 1,
+            "meter": 0.2,
+            "first": false
+          }
+        },
+        {
+          "at_s": 4.816,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2350,
+            "credits": 20,
+            "rate": 1.08,
+            "delta": 5,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 5.579,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2390,
+            "bulletId": 150,
+            "pos": {
+              "x": 176.95346880770774,
+              "y": 562.7269826209753
+            },
+            "relVel": {
+              "x": 0.8774775304010403,
+              "y": 2.5651400166941087
+            },
+            "distance": 28.779455992469078,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 5.731,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2397,
+            "bulletId": 151,
+            "pos": {
+              "x": 113.17152100978257,
+              "y": 551.4792605297232
+            },
+            "relVel": {
+              "x": -1.463524241005845,
+              "y": 2.3870686617666164
+            },
+            "distance": 29.980388310684642,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 5.731,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2399,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 188.2782658037732,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 6.341,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2431,
+            "bulletId": 159,
+            "pos": {
+              "x": 146.79445294576118,
+              "y": 526.815022387257
+            },
+            "relVel": {
+              "x": 0.8774775304010403,
+              "y": 0.5651400166941087
+            },
+            "distance": 42.24156507981187,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 6.647,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2448,
+            "bulletId": 160,
+            "pos": {
+              "x": 73.15128753747499,
+              "y": 541.9309858826566
+            },
+            "relVel": {
+              "x": -1.463524241005845,
+              "y": 2.3870686617666164
+            },
+            "distance": 33.45888552710821,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 6.799,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2454,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 137.79182948249806,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 7.714,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2505,
+            "bulletId": 168,
+            "pos": {
+              "x": 66.76888036515744,
+              "y": 575.552682704446
+            },
+            "relVel": {
+              "x": -1.1225224695989597,
+              "y": 0.5651400166941087
+            },
+            "distance": 26.290672424255693,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 7.867,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2506,
+            "bulletId": 168,
+            "pos": {
+              "x": 65.64635789555848,
+              "y": 578.1178227211402
+            },
+            "count": 1,
+            "meter": 0.1524999999999999,
+            "first": false
+          }
+        },
+        {
+          "at_s": 7.867,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2506,
+            "credits": 25,
+            "rate": 1.1,
+            "delta": 5,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 7.867,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2509,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 106.77570965546775,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 7.867,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2509,
+            "bulletId": 167,
+            "pos": {
+              "x": 122.40250414298725,
+              "y": 607.3352318576042
+            },
+            "relVel": {
+              "x": -0.7603314234771156,
+              "y": 4.694790553359066
+            },
+            "distance": 39.074828363075646,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 8.631,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2545,
+            "level": 0
+          }
+        },
+        {
+          "at_s": 8.783,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "bossPhase",
+            "tick": 2560,
+            "phase": 2
+          }
+        },
+        {
+          "at_s": 8.935,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2561,
+            "bulletId": 176,
+            "pos": {
+              "x": 64.34424377700395,
+              "y": 599.2508601975269
+            },
+            "count": 1,
+            "meter": 0.2024999999999999,
+            "first": false
+          }
+        },
+        {
+          "at_s": 8.935,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2561,
+            "credits": 31,
+            "rate": 1.12,
+            "delta": 6,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 8.935,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2563,
+            "bulletId": 175,
+            "pos": {
+              "x": 124.95324658767731,
+              "y": 617.6395327561672
+            },
+            "relVel": {
+              "x": -0.38378799524907886,
+              "y": 6.973572925794984
+            },
+            "distance": 42.048959312817935,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 8.935,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2564,
+            "bulletId": 176,
+            "pos": {
+              "x": 62.063249506572596,
+              "y": 607.3352318576042
+            },
+            "relVel": {
+              "x": -0.7603314234771156,
+              "y": 4.694790553359066
+            },
+            "distance": 20.78816993907432,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 8.935,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "partBreak",
+            "tick": 2567,
+            "id": 8,
+            "target": "boss",
+            "part": "cannonPod",
+            "partKind": "cannonPod",
+            "pos": {
+              "x": 75.6059333979708,
+              "y": 164.00000000000023
+            },
+            "by": "writ",
+            "first": true
+          }
+        },
+        {
+          "at_s": 8.935,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2567,
+            "credits": 76,
+            "rate": 1.32,
+            "delta": 45,
+            "reason": "partBreak"
+          }
+        },
+        {
+          "at_s": 9.241,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2585,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 9.546,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2597,
+            "bulletId": 183,
+            "pos": {
+              "x": 137.79182948249806,
+              "y": 563.2000000000008
+            },
+            "relVel": {
+              "x": 1.7145055188062944e-16,
+              "y": -1.4000000000000457
+            },
+            "distance": 29.0917247768049,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 9.546,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2599,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 111.47013354630263,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 9.546,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2599,
+            "bulletId": 182,
+            "pos": {
+              "x": 193.8248767888616,
+              "y": 564.9416471660631
+            },
+            "relVel": {
+              "x": 0.38378799524907925,
+              "y": -1.4264270742051073
+            },
+            "distance": 45.98225076247365,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 9.699,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2604,
+            "bulletId": 183,
+            "pos": {
+              "x": 137.79182948249806,
+              "y": 582.8000000000005
+            },
+            "count": 1,
+            "meter": 0.2524999999999999,
+            "first": false
+          }
+        },
+        {
+          "at_s": 9.699,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2604,
+            "credits": 83,
+            "rate": 1.34,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 10.003,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2625,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 10.458,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2642,
+            "bulletId": 191,
+            "pos": {
+              "x": 158.2033010188433,
+              "y": 531.6587720565237
+            },
+            "relVel": {
+              "x": -1.6162120047509207,
+              "y": 0.7735729257949382
+            },
+            "distance": 42.5624539126525,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 10.609,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2651,
+            "bulletId": 191,
+            "pos": {
+              "x": 161.65739297608488,
+              "y": 556.6209283886783
+            },
+            "count": 1,
+            "meter": 0.3024999999999999,
+            "first": false
+          }
+        },
+        {
+          "at_s": 10.609,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2651,
+            "credits": 90,
+            "rate": 1.36,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 10.609,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2654,
+            "bulletId": 190,
+            "pos": {
+              "x": 217.7840974831261,
+              "y": 553.4394207904222
+            },
+            "count": 1,
+            "meter": 0.35249999999999987,
+            "first": false
+          }
+        },
+        {
+          "at_s": 10.609,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2654,
+            "credits": 97,
+            "rate": 1.38,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 10.609,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "statsMoment",
+            "tick": 2654,
+            "moment": "grazeStreak",
+            "value": 5
+          }
+        },
+        {
+          "at_s": 10.609,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2655,
+            "bulletId": 190,
+            "pos": {
+              "x": 218.5444289066032,
+              "y": 556.1342113437813
+            },
+            "relVel": {
+              "x": 0.7603314234771158,
+              "y": 2.6947905533590664
+            },
+            "distance": 24.78525388952029,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 10.761,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2665,
+            "level": 3
+          }
+        },
+        {
+          "at_s": 11.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2679,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 170.05013636363367,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 12.283,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2745,
+            "bulletId": 200,
+            "pos": {
+              "x": 241.79454468395238,
+              "y": 581.3033917043936
+            },
+            "relVel": {
+              "x": 0.886560619984019,
+              "y": 0.8660094673768182
+            },
+            "distance": 47.11850582102892,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 12.437,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2748,
+            "bulletId": 199,
+            "pos": {
+              "x": 307.20462389635645,
+              "y": 565.2011960587057
+            },
+            "count": 1,
+            "meter": 0.39799999999999985,
+            "first": false
+          }
+        },
+        {
+          "at_s": 12.437,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2748,
+            "credits": 104,
+            "rate": 1.4,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 12.59,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2754,
+            "bulletId": 199,
+            "pos": {
+              "x": 315.03400351035873,
+              "y": 581.4092439010536
+            },
+            "relVel": {
+              "x": -0.6951033976663092,
+              "y": 4.701341307058031
+            },
+            "distance": 20.783879412595414,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 12.59,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2759,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 256.3168886790691,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 13.958,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2828,
+            "bulletId": 208,
+            "pos": {
+              "x": 365.78462671368874,
+              "y": 565.2011960587057
+            },
+            "relVel": {
+              "x": 1.3048966023336908,
+              "y": -1.4986586929420147
+            },
+            "distance": 39.24557505839761,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 14.111,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2839,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 336.12527801906936,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 14.111,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2839,
+            "bulletId": 208,
+            "pos": {
+              "x": 380.1384893393596,
+              "y": 594.9159504363436
+            },
+            "count": 1,
+            "meter": 0.44799999999999984,
+            "first": false
+          }
+        },
+        {
+          "at_s": 14.111,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2839,
+            "credits": 111,
+            "rate": 1.42,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 14.568,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "spawn",
+            "tick": 2859,
+            "id": 234,
+            "kind": "drone"
+          }
+        },
+        {
+          "at_s": 14.568,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "spawn",
+            "tick": 2859,
+            "id": 235,
+            "kind": "drone"
+          }
+        },
+        {
+          "at_s": 15.026,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2884,
+            "bulletId": 218,
+            "pos": {
+              "x": 368.02352679705797,
+              "y": 521.1171928894811
+            },
+            "relVel": {
+              "x": -1.113439380015981,
+              "y": 0.8660094673768182
+            },
+            "distance": 43.296063215305985,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 15.178,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2890,
+            "bulletId": 218,
+            "pos": {
+              "x": 373.3428905169622,
+              "y": 538.3132496937418
+            },
+            "count": 1,
+            "meter": 0.49799999999999983,
+            "first": false
+          }
+        },
+        {
+          "at_s": 15.178,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2890,
+            "credits": 118,
+            "rate": 1.44,
+            "delta": 7,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 15.178,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2893,
+            "bulletId": 217,
+            "pos": {
+              "x": 432.47792999412036,
+              "y": 524.6810764528359
+            },
+            "relVel": {
+              "x": 1.3048966023336908,
+              "y": 2.7013413070580308
+            },
+            "distance": 35.76446213415012,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 15.636,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2919,
+            "id": 234,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 261.45402644812526,
+              "y": 210.00000000000023
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 15.636,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2919,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 377.8864667700185,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 15.94,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "scanLock",
+            "tick": 2933,
+            "id": 235,
+            "target": "enemy",
+            "kind": "drone",
+            "pos": {
+              "x": 429.72905546185495,
+              "y": 231.00000000000023
+            },
+            "ai": "patrol",
+            "first": true
+          }
+        },
+        {
+          "at_s": 15.94,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2933,
+            "credits": 132,
+            "rate": 1.49,
+            "delta": 14,
+            "reason": "scan"
+          }
+        },
+        {
+          "at_s": 15.94,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "intel",
+            "tick": 2933,
+            "id": 235,
+            "codexId": "codex.enemy.drone",
+            "ai": "patrol",
+            "first": true
+          }
+        },
+        {
+          "at_s": 16.092,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2941,
+            "level": 0
+          }
+        },
+        {
+          "at_s": 16.858,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "scanLock",
+            "tick": 2980,
+            "id": 234,
+            "target": "enemy",
+            "kind": "drone",
+            "pos": {
+              "x": 315.3113110478215,
+              "y": 301.5000000000002
+            },
+            "ai": "patrol",
+            "first": false
+          }
+        },
+        {
+          "at_s": 16.858,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2980,
+            "credits": 147,
+            "rate": 1.54,
+            "delta": 15,
+            "reason": "scan"
+          }
+        },
+        {
+          "at_s": 16.858,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "intel",
+            "tick": 2980,
+            "id": 234,
+            "codexId": "codex.enemy.drone",
+            "ai": "patrol",
+            "first": false
+          }
+        },
+        {
+          "at_s": 16.858,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 2981,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 17.009,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 2985,
+            "bulletId": 228,
+            "pos": {
+              "x": 402.02749443992724,
+              "y": 596.0480453697963
+            },
+            "count": 1,
+            "meter": 0.5419999999999998,
+            "first": false
+          }
+        },
+        {
+          "at_s": 17.009,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 2985,
+            "credits": 155,
+            "rate": 1.56,
+            "delta": 8,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 17.009,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2987,
+            "bulletId": 229,
+            "pos": {
+              "x": 336.12527801906936,
+              "y": 607.0000000000002
+            },
+            "relVel": {
+              "x": 1.8369701987210297e-16,
+              "y": 7.2000000000000455
+            },
+            "distance": 44.903236774934435,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 17.009,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 2988,
+            "bulletId": 228,
+            "pos": {
+              "x": 403.37243763218964,
+              "y": 604.9469850712208
+            },
+            "relVel": {
+              "x": 0.4483143974207976,
+              "y": 7.166313233808172
+            },
+            "distance": 21.931811584912285,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 17.316,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 2999,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 365.07102211270126,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 17.621,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 3019,
+            "id": 235,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 384.6047792018204,
+              "y": 360.0000000000002
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 17.621,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3021,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 18.232,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3051,
+            "bulletId": 241,
+            "pos": {
+              "x": 377.8864667700185,
+              "y": 559.0000000000002
+            },
+            "relVel": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 34.552564255283805,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 18.232,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 3052,
+            "bulletId": 242,
+            "pos": {
+              "x": 317.81233751563104,
+              "y": 557.4859733302906
+            },
+            "count": 1,
+            "meter": 0.5919999999999999,
+            "first": false
+          }
+        },
+        {
+          "at_s": 18.232,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 3052,
+            "credits": 163,
+            "rate": 1.58,
+            "delta": 8,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 18.384,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3055,
+            "bulletId": 242,
+            "pos": {
+              "x": 316.46739432336864,
+              "y": 566.384913031715
+            },
+            "relVel": {
+              "x": 1.5516856025792027,
+              "y": 4.966313233808127
+            },
+            "distance": 20.65424073164072,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 18.384,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3061,
+            "level": 3
+          }
+        },
+        {
+          "at_s": 18.843,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 3079,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 302.7514057716819,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 19.607,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 3119,
+            "id": 234,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 316.16474579915695,
+              "y": 510.0000000000002
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 19.607,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 3119,
+            "id": 235,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 456.16474579915695,
+              "y": 510.0000000000002
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 19.913,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3138,
+            "level": 0
+          }
+        },
+        {
+          "at_s": 20.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 3142,
+            "bulletId": 253,
+            "pos": {
+              "x": 237.4062928350003,
+              "y": 572.7053633022632
+            },
+            "count": 1,
+            "meter": 0.6419999999999999,
+            "first": false
+          }
+        },
+        {
+          "at_s": 20.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 3142,
+            "credits": 171,
+            "rate": 1.6,
+            "delta": 8,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 20.066,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3144,
+            "bulletId": 253,
+            "pos": {
+              "x": 235.63317159503228,
+              "y": 578.4373822370168
+            },
+            "relVel": {
+              "x": 1.1134393800159814,
+              "y": 0.8660094673768182
+            },
+            "distance": 24.672981663530496,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 20.217,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3149,
+            "bulletId": 254,
+            "pos": {
+              "x": 168.03163516031253,
+              "y": 567.9025373657637
+            },
+            "relVel": {
+              "x": -1.3048966023336908,
+              "y": 4.701341307058031
+            },
+            "distance": 46.637560694984344,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3156,
+            "bulletId": 266,
+            "pos": {
+              "x": 257.58650275147994,
+              "y": 579.9001390660078
+            },
+            "relVel": {
+              "x": -1.5415327117810014,
+              "y": 3.839477343842297
+            },
+            "distance": 47.28560153327536,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 3159,
+            "id": 8,
+            "weapon": "wardenFan",
+            "pos": {
+              "x": 215.59425062878285,
+              "y": 160.00000000000023
+            },
+            "bullets": 9
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "partBreak",
+            "tick": 3159,
+            "id": 8,
+            "target": "boss",
+            "part": "spiralPod",
+            "partKind": "spiralPod",
+            "pos": {
+              "x": 241.59425062878285,
+              "y": 164.00000000000023
+            },
+            "by": "writ",
+            "first": false
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 3159,
+            "credits": 235,
+            "rate": 1.8,
+            "delta": 64,
+            "reason": "partBreak"
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "coreExposed",
+            "tick": 3159,
+            "id": 8
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "intel",
+            "tick": 3159,
+            "id": 8,
+            "codexId": "codex.warden.core",
+            "ai": "fan",
+            "first": true
+          }
+        },
+        {
+          "at_s": 20.371,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "bossPhase",
+            "tick": 3160,
+            "phase": 3
+          }
+        },
+        {
+          "at_s": 20.675,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3178,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 20.827,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 3185,
+            "bulletId": 267,
+            "pos": {
+              "x": 304.6052576191363,
+              "y": 563.7248689399069
+            },
+            "count": 1,
+            "meter": 0.692,
+            "first": false
+          }
+        },
+        {
+          "at_s": 20.827,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 3185,
+            "credits": 244,
+            "rate": 1.82,
+            "delta": 9,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 20.979,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3187,
+            "bulletId": 267,
+            "pos": {
+              "x": 300.081093792867,
+              "y": 565.3285963709488
+            },
+            "relVel": {
+              "x": -2.2620819131346415,
+              "y": -1.1981362844790149
+            },
+            "distance": 24.55954683407802,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 21.437,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3216,
+            "bulletId": 261,
+            "pos": {
+              "x": 302.7514057716819,
+              "y": 574.0000000000002
+            },
+            "relVel": {
+              "x": 2,
+              "y": 5
+            },
+            "distance": 26.352164733543955,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 21.437,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3218,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 21.59,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "enemyFired",
+            "tick": 3219,
+            "id": 234,
+            "weapon": "droneGun",
+            "pos": {
+              "x": 302.8449123132109,
+              "y": 660.0000000000002
+            },
+            "bullets": 1
+          }
+        },
+        {
+          "at_s": 21.59,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3220,
+            "bulletId": 262,
+            "pos": {
+              "x": 239.09076133792803,
+              "y": 581.2164792007557
+            },
+            "relVel": {
+              "x": 1.5516856025792027,
+              "y": 2.966313233808127
+            },
+            "distance": 31.841166969009844,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 22.356,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3258,
+            "level": 3
+          }
+        },
+        {
+          "at_s": 22.812,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3289,
+            "level": 0
+          }
+        },
+        {
+          "at_s": 22.965,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3297,
+            "bulletId": 274,
+            "pos": {
+              "x": 153.27854938729138,
+              "y": 572.3175394993312
+            },
+            "relVel": {
+              "x": 1.5516856025792027,
+              "y": 0.9663132338081271
+            },
+            "distance": 26.31717850013546,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 23.117,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "graze",
+            "tick": 3298,
+            "bulletId": 274,
+            "pos": {
+              "x": 152.83023498987058,
+              "y": 575.2838527331394
+            },
+            "count": 1,
+            "meter": 0.7090000000000012,
+            "first": false
+          }
+        },
+        {
+          "at_s": 23.117,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "payChanged",
+            "tick": 3298,
+            "credits": 253,
+            "rate": 1.84,
+            "delta": 9,
+            "reason": "graze"
+          }
+        },
+        {
+          "at_s": 23.117,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "nearMiss",
+            "tick": 3304,
+            "bulletId": 275,
+            "pos": {
+              "x": 86.15640011111668,
+              "y": 578.4373822370168
+            },
+            "relVel": {
+              "x": -0.8865606199840186,
+              "y": 4.866009467376818
+            },
+            "distance": 43.22531976378369,
+            "heavy": false
+          }
+        },
+        {
+          "at_s": 25.404,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3418,
+            "level": 1
+          }
+        },
+        {
+          "at_s": 26.171,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3458,
+            "level": 2
+          }
+        },
+        {
+          "at_s": 26.933,
+          "sampling_error_s": 0.22,
+          "event": {
+            "type": "chargeLevel",
+            "tick": 3498,
+            "level": 3
+          }
+        }
+      ],
+      "played_voice": [
+        {
+          "at_s": -8.882,
+          "duration_s": 6.16,
+          "url": "/vo/en/desc_ai_002.ogg"
+        },
+        {
+          "at_s": 1.312,
+          "duration_s": 4.719977324263039,
+          "url": "/vo/en/graze_ai_001.ogg"
+        },
+        {
+          "at_s": 8.768,
+          "duration_s": 5.119977324263038,
+          "url": "/vo/en/boss_p2_001.ogg"
+        },
+        {
+          "at_s": 8.898,
+          "duration_s": 3.9199773242630385,
+          "url": "/vo/en/boss_pod_001.ogg"
+        },
+        {
+          "at_s": 15.883,
+          "duration_s": 6.32,
+          "url": "/vo/en/lock_ai_001.ogg"
+        },
+        {
+          "at_s": 20.304,
+          "duration_s": 4.239977324263038,
+          "url": "/vo/en/boss_p3_001.ogg"
+        }
+      ],
+      "inputs": [],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "76.83 s audible of 77.58 s, 476 sounds started, 14 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5 dBTP, -17.4 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -18.8 LUFS / -5.1 dBTP, sfx -26.4 LUFS / -8.8 dBTP, voice -16.4 LUFS / -2.5 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-17.4 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "13 of 13 subtitle windows have audible VO stem",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "title": "SPOILERS: lethal ending excerpt",
+      "path": "out/G/clip.mp4",
+      "duration_s": 24,
+      "source_start_s": 2.626,
+      "active_ticks_per_wall_second_median": null,
+      "events": [],
+      "played_voice": [
+        {
+          "at_s": -2.382,
+          "duration_s": 6.32,
+          "url": "/vo/en/kill_warden_001.ogg"
+        },
+        {
+          "at_s": 4.634,
+          "duration_s": 2.8799773242630384,
+          "url": "/vo/en/kill_ai_001.ogg"
+        },
+        {
+          "at_s": 8.317,
+          "duration_s": 3.9999773242630385,
+          "url": "/vo/en/end_epi_001.ogg"
+        },
+        {
+          "at_s": 13.521,
+          "duration_s": 3.12,
+          "url": "/vo/en/end_epi_002.ogg"
+        },
+        {
+          "at_s": 18.442,
+          "duration_s": 5.599977324263039,
+          "url": "/vo/en/kill_ai_002.ogg"
+        }
+      ],
+      "inputs": [],
+      "errors": [],
+      "checks": [
+        {
+          "id": "audio: captured",
+          "status": "pass",
+          "detail": "26.19 s audible of 26.9 s, 7 sounds started, 5 VO"
+        },
+        {
+          "id": "audio: true peak at or under -1 dBTP",
+          "status": "pass",
+          "detail": "-5.5 dBTP, -18.1 LUFS integrated"
+        },
+        {
+          "id": "audio: bus loudness (pre-master)",
+          "status": "pass",
+          "detail": "music -20.7 LUFS / -5.4 dBTP, sfx -49.8 LUFS / -43.5 dBTP, voice -16.4 LUFS / -2.7 dBTP, ui -70 LUFS / NaN dBTP"
+        },
+        {
+          "id": "audio: integrated loudness -20 to -14 LUFS",
+          "status": "pass",
+          "detail": "-18.1 LUFS integrated (target about -17)"
+        },
+        {
+          "id": "VO not dropped",
+          "status": "pass",
+          "detail": "5 of 5 subtitle windows have audible VO stem",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

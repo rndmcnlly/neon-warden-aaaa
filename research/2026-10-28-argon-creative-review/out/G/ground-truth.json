@@ -1,0 +1,5255 @@
+{
+  "revision": "ad320434d09a05f7c347311cae8aad385fbf9c82",
+  "case": {
+    "id": "G",
+    "query": "?skipto=ending-kill",
+    "seconds": 24,
+    "mode": "ending"
+  },
+  "cutStart": 2.626,
+  "duration": 26.903,
+  "samples": [
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [
+        {
+          "type": "sectorStarted",
+          "tick": 0,
+          "sector": 6
+        },
+        {
+          "type": "bossWarning",
+          "tick": 0
+        }
+      ],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARNING\n\nThe Warden\n\nThe Warden approaches\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 2.627
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARNING\n\nThe Warden\n\nThe Warden approaches\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 2.779
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARNING\n\nThe Warden\n\nThe Warden approaches\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 2.932
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARNING\n\nThe Warden\n\nThe Warden approaches\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 3.085
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARNING\n\nThe Warden\n\nThe Warden approaches\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 3.237
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARNING\n\nThe Warden\n\nThe Warden approaches\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 3.39
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 3.542
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 3.694
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 3.847
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nOh. Oh, there goes another ring. Count them, zero one two two.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4.151
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4.304
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4.457
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4.608
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4.763
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 4.915
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.067
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.219
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.373
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.525
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.677
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.829
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 5.981
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 6.134
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 6.285
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "The Warden\nCount what they put where the rings were.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 6.438
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 6.59
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 6.742
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 6.894
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.047
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.2
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.353
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.506
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.658
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.81
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 7.963
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 8.116
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 8.268
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 8.42
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 8.572
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 8.724
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 8.876
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.029
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.181
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.333
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.484
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.637
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.789
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 9.942
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nWarden down! The lanes are open!\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 10.095
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 10.248
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 10.399
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 10.551
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 10.703
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 10.855
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.008
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.16
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.313
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.466
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.618
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.772
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 11.924
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.075
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.228
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\n\nWARDEN DOWN\n\nThe lanes are open\n\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.379
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.531
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.683
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.837
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 12.99
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 13.142
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 13.295
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 13.446
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 13.599
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 13.752
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 13.905
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.059
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.211
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.363
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.515
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.667
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nThe Warden's lights go dark, one ring at a time.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.819
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 14.972
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 15.125
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 15.278
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 15.429
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 15.581
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 15.733
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 15.886
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.039
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.191
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.344
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.496
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.649
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.801
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 16.953
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 17.107
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 17.26
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 17.413
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 17.565
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 17.717
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 17.869
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.021
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.174
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.327
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.478
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.631
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.783
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 18.936
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 19.088
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "Lane Authority Briefing\nBehind you, five sectors of open sky.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 19.239
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 19.393
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 19.545
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 19.697
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 19.85
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.002
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.154
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.306
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.458
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.61
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.764
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002"
+      ],
+      "events": [],
+      "text": "SCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 20.916
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.068
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.22
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.372
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.524
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.676
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.829
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 21.981
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 22.133
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 22.285
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 22.437
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 22.589
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 22.741
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nTollgate deployment has begun.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 22.893
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.046
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.198
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.35
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.502
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.656
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.808
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 23.96
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 24.113
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 24.264
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 24.416
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 24.57
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 24.723
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 24.876
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.028
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.18
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.333
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.484
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.636
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.787
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 25.941
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 26.094
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 26.246
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 26.398
+    },
+    {
+      "sim": {
+        "tick": 1,
+        "sector": null,
+        "phase": "bossWarning",
+        "outcome": "none",
+        "kills": 0,
+        "shotsFired": 0,
+        "frozen": false
+      },
+      "flags": {
+        "run.pacifist": false,
+        "run.hasFired": false,
+        "run.disarmed": false,
+        "story.pilotSpeaks": true,
+        "boss.parley": false,
+        "banner.wardenDown": true,
+        "ending.tollgates": true
+      },
+      "scene": "ending-kill",
+      "log": [
+        "sim:sectorStarted",
+        "sim:bossWarning",
+        "scene:boss",
+        "scene:ending-kill",
+        "line:kill_warden_001",
+        "line:kill_ai_001",
+        "line:end_epi_001",
+        "line:end_epi_002",
+        "line:kill_ai_002"
+      ],
+      "events": [],
+      "text": "Onboarding Assistant\nThe lanes will be open to all subscribers within the hour.\nSCORE\n0\nSECTOR 6\nThe Warden\nWRIT\nWrit charge level 0 of 3\nGRAZE\nHULL\n3 left\nCANNON\nLevel 1 of 3\nPAY\n0\n×1.0\nHands clean\nScanning\nVERTICAL SLICE BUILD\nNOT FINAL. BUILD F26.1, OCTOBER 2026.",
+      "t": 26.551
+    }
+  ],
+  "inputs": [],
+  "errors": [],
+  "av": {
+    "av": {
+      "hasAudio": true,
+      "voStem": true,
+      "contextStates": [
+        "running"
+      ],
+      "sourcesStarted": 7,
+      "voStarted": [
+        "0.24s en/kill_warden_001.ogg",
+        "7.26s en/kill_ai_001.ogg",
+        "10.94s en/end_epi_001.ogg",
+        "16.15s en/end_epi_002.ogg",
+        "21.07s en/kill_ai_002.ogg"
+      ],
+      "lufs": -18.1,
+      "truePeak": -5.5,
+      "buses": {
+        "music": {
+          "lufs": -20.7,
+          "truePeak": -5.4
+        },
+        "sfx": {
+          "lufs": -49.8,
+          "truePeak": -43.5
+        },
+        "voice": {
+          "lufs": -16.4,
+          "truePeak": -2.7
+        },
+        "ui": {
+          "lufs": -70,
+          "truePeak": null
+        }
+      },
+      "audibleS": 26.19,
+      "voAudible": [
+        {
+          "start": 0,
+          "end": 6.39
+        },
+        {
+          "start": 7.79,
+          "end": 8.52
+        },
+        {
+          "start": 8.95,
+          "end": 9.89
+        },
+        {
+          "start": 10.75,
+          "end": 14.66
+        },
+        {
+          "start": 15.98,
+          "end": 18.92
+        },
+        {
+          "start": 21.52,
+          "end": 23.13
+        },
+        {
+          "start": 23.72,
+          "end": 26.35
+        },
+        {
+          "start": 26.9,
+          "end": 26.9
+        }
+      ],
+      "subtitles": [
+        {
+          "start": 0.247900146484375,
+          "line": "kill_warden_001",
+          "layer": "scripted",
+          "end": 6.56010009765625,
+          "audibleS": 6.14
+        },
+        {
+          "start": 7.26110009765625,
+          "line": "kill_ai_001",
+          "layer": "scripted",
+          "end": 10.144,
+          "audibleS": 1.67
+        },
+        {
+          "start": 10.943900146484374,
+          "line": "end_epi_001",
+          "layer": "scripted",
+          "end": 14.9477001953125,
+          "audibleS": 3.72
+        },
+        {
+          "start": 16.147300048828125,
+          "line": "end_epi_002",
+          "layer": "scripted",
+          "end": 19.27310009765625,
+          "audibleS": 2.78
+        },
+        {
+          "start": 21.069300048828126,
+          "line": "kill_ai_002",
+          "layer": "scripted",
+          "end": 26.668900146484376,
+          "audibleS": 4.24
+        }
+      ]
+    },
+    "checks": [
+      {
+        "id": "audio: captured",
+        "status": "pass",
+        "detail": "26.19 s audible of 26.9 s, 7 sounds started, 5 VO"
+      },
+      {
+        "id": "audio: true peak at or under -1 dBTP",
+        "status": "pass",
+        "detail": "-5.5 dBTP, -18.1 LUFS integrated"
+      },
+      {
+        "id": "audio: bus loudness (pre-master)",
+        "status": "pass",
+        "detail": "music -20.7 LUFS / -5.4 dBTP, sfx -49.8 LUFS / -43.5 dBTP, voice -16.4 LUFS / -2.7 dBTP, ui -70 LUFS / NaN dBTP"
+      },
+      {
+        "id": "audio: integrated loudness -20 to -14 LUFS",
+        "status": "pass",
+        "detail": "-18.1 LUFS integrated (target about -17)"
+      },
+      {
+        "id": "VO not dropped",
+        "status": "pass",
+        "detail": "5 of 5 subtitle windows have audible VO stem",
+        "items": []
+      }
+    ]
+  }
+}

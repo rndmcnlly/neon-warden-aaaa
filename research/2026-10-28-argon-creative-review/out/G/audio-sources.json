@@ -1,0 +1,160 @@
+{
+  "videoEpoch": 1793256626876,
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793256627086.7002,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793256627120.4001,
+      "dur": 6.32,
+      "loop": false,
+      "url": "/vo/en/kill_warden_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256634136.1,
+      "dur": 2.8799773242630384,
+      "loop": false,
+      "url": "/vo/en/kill_ai_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256637019.5,
+      "dur": 44.999977324263035,
+      "loop": false,
+      "url": "/music/endingKill/cand2.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256637819.3,
+      "dur": 3.9999773242630385,
+      "loop": false,
+      "url": "/vo/en/end_epi_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256643022.5,
+      "dur": 3.12,
+      "loop": false,
+      "url": "/vo/en/end_epi_002.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793256647944.4001,
+      "dur": 5.599977324263039,
+      "loop": false,
+      "url": "/vo/en/kill_ai_002.ogg"
+    }
+  ],
+  "subs": [
+    {
+      "k": "sub",
+      "epoch": 1793256626989.2002,
+      "text": "",
+      "visible": false,
+      "layer": "",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256627123.9001,
+      "text": "Oh. Oh, there goes another ring. Count them, zero one two two.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256630923.2002,
+      "text": "Count what they put where the rings were.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256633436.1,
+      "text": "Count what they put where the rings were.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256634137.1,
+      "text": "Warden down! The lanes are open!",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256637020,
+      "text": "Warden down! The lanes are open!",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256637819.9001,
+      "text": "The Warden's lights go dark, one ring at a time.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256641823.7002,
+      "text": "The Warden's lights go dark, one ring at a time.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256643023.3,
+      "text": "Behind you, five sectors of open sky.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256646149.1,
+      "text": "Behind you, five sectors of open sky.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256647945.3,
+      "text": "Tollgate deployment has begun.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256649861.8,
+      "text": "The lanes will be open to all subscribers within the hour.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793256653544.9001,
+      "text": "The lanes will be open to all subscribers within the hour.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    }
+  ]
+}
