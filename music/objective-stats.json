@@ -1,0 +1,256 @@
+{
+ "logos": [
+  {
+   "bpm": 89.1,
+   "beatOffset": 0.697,
+   "duration": 15.0,
+   "lufs": -7.0,
+   "truePeak": 2.9,
+   "spreadLu": 7.4,
+   "tempoErr": 0.9,
+   "score": -0.231,
+   "file": "logos/logos_01.wav",
+   "variant": "cand1",
+   "loop": false
+  },
+  {
+   "bpm": 89.1,
+   "beatOffset": 0.72,
+   "duration": 15.0,
+   "lufs": -7.5,
+   "truePeak": 2.4,
+   "spreadLu": 28.2,
+   "tempoErr": 0.9,
+   "score": -0.855,
+   "file": "logos/logos_02.wav",
+   "variant": "cand2",
+   "loop": false
+  }
+ ],
+ "menu": [
+  {
+   "bpm": 107.67,
+   "beatOffset": 1.161,
+   "duration": 45.0,
+   "lufs": -9.1,
+   "truePeak": 0.4,
+   "spreadLu": 2.9,
+   "tempoErr": 26.17,
+   "loopStart": 1.161,
+   "loopEnd": 32.369,
+   "loopability": 0.933,
+   "score": 0.584,
+   "file": "menu/menu_01.wav",
+   "variant": "cand1",
+   "loop": true
+  },
+  {
+   "bpm": 107.67,
+   "beatOffset": 2.485,
+   "duration": 45.0,
+   "lufs": -8.9,
+   "truePeak": 1.7,
+   "spreadLu": 2.5,
+   "tempoErr": 26.17,
+   "loopStart": 2.485,
+   "loopEnd": 38.15,
+   "loopability": 0.913,
+   "score": 0.576,
+   "file": "menu/menu_02.wav",
+   "variant": "cand2",
+   "loop": true
+  }
+ ],
+ "tutorial": [
+  {
+   "bpm": 143.55,
+   "beatOffset": 0.441,
+   "duration": 45.0,
+   "lufs": -8.9,
+   "truePeak": 1.8,
+   "spreadLu": 26.1,
+   "tempoErr": 33.55,
+   "loopStart": 0.441,
+   "loopEnd": 32.206,
+   "loopability": 0.789,
+   "score": -0.329,
+   "file": "tutorial/tutorial_01.wav",
+   "variant": "cand1",
+   "loop": true
+  },
+  {
+   "bpm": 112.35,
+   "beatOffset": 2.763,
+   "duration": 45.0,
+   "lufs": -8.9,
+   "truePeak": 2.7,
+   "spreadLu": 7.6,
+   "tempoErr": 2.35,
+   "loopStart": 2.763,
+   "loopEnd": 28.398,
+   "loopability": 0.908,
+   "score": 0.657,
+   "file": "tutorial/tutorial_02.wav",
+   "variant": "cand2",
+   "loop": true
+  }
+ ],
+ "gameplay": [
+  {
+   "bpm": 129.2,
+   "beatOffset": 0.975,
+   "duration": 60.0,
+   "lufs": -8.7,
+   "truePeak": 2.1,
+   "spreadLu": 3.5,
+   "tempoErr": 0.2,
+   "loopStart": 0.975,
+   "loopEnd": 43.7,
+   "loopability": 0.758,
+   "score": 0.651,
+   "file": "gameplay/gameplay_01.wav",
+   "variant": "cand1",
+   "loop": true
+  },
+  {
+   "bpm": 129.2,
+   "beatOffset": 8.011,
+   "duration": 60.0,
+   "lufs": -9.5,
+   "truePeak": 3.0,
+   "spreadLu": 2.1,
+   "tempoErr": 0.2,
+   "loopStart": 8.011,
+   "loopEnd": 41.448,
+   "loopability": 0.947,
+   "score": 0.882,
+   "file": "gameplay/gameplay_02.wav",
+   "variant": "cand2",
+   "loop": true
+  }
+ ],
+ "flashback": [
+  {
+   "bpm": 69.84,
+   "beatOffset": 0.882,
+   "duration": 45.0,
+   "lufs": -9.7,
+   "truePeak": 0.3,
+   "spreadLu": 0.9,
+   "tempoErr": 0.16,
+   "loopStart": 0.882,
+   "loopEnd": 35.248,
+   "loopability": 0.932,
+   "score": 0.903,
+   "file": "flashback/flashback_01.wav",
+   "variant": "cand1",
+   "loop": true
+  },
+  {
+   "bpm": 143.55,
+   "beatOffset": 0.464,
+   "duration": 45.0,
+   "lufs": -8.2,
+   "truePeak": 0.6,
+   "spreadLu": 2.2,
+   "tempoErr": 1.78,
+   "loopStart": 0.464,
+   "loopEnd": 40.588,
+   "loopability": 0.988,
+   "score": 0.904,
+   "file": "flashback/flashback_02.wav",
+   "variant": "cand2",
+   "loop": true
+  }
+ ],
+ "boss": [
+  {
+   "bpm": 69.84,
+   "beatOffset": 0.906,
+   "duration": 60.0,
+   "lufs": -9.5,
+   "truePeak": 1.1,
+   "spreadLu": 3.3,
+   "tempoErr": 0.33,
+   "loopStart": 0.906,
+   "loopEnd": 59.327,
+   "loopability": 0.866,
+   "score": 0.764,
+   "file": "boss/boss_01.wav",
+   "variant": "cand1",
+   "loop": true
+  },
+  {
+   "bpm": 143.55,
+   "beatOffset": 3.46,
+   "duration": 60.0,
+   "lufs": -6.8,
+   "truePeak": 2.0,
+   "spreadLu": 1.5,
+   "tempoErr": 3.55,
+   "loopStart": 3.46,
+   "loopEnd": 53.615,
+   "loopability": 0.93,
+   "score": 0.85,
+   "file": "boss/boss_02.wav",
+   "variant": "cand2",
+   "loop": true
+  }
+ ],
+ "ending_kill": [
+  {
+   "bpm": 117.45,
+   "beatOffset": 0.534,
+   "duration": 45.0,
+   "lufs": -7.8,
+   "truePeak": 0.9,
+   "spreadLu": 24.8,
+   "tempoErr": 1.27,
+   "score": -0.757,
+   "file": "ending_kill/ending_kill_01.wav",
+   "variant": "cand1",
+   "loop": false
+  },
+  {
+   "bpm": 60.09,
+   "beatOffset": 2.043,
+   "duration": 45.0,
+   "lufs": -8.5,
+   "truePeak": 0.1,
+   "spreadLu": 1.4,
+   "tempoErr": 0.09,
+   "score": -0.043,
+   "file": "ending_kill/ending_kill_02.wav",
+   "variant": "cand2",
+   "loop": false
+  }
+ ],
+ "ending_pacifist": [
+  {
+   "bpm": 71.78,
+   "beatOffset": 0.859,
+   "duration": 45.0,
+   "lufs": -10.1,
+   "truePeak": 0.7,
+   "spreadLu": 1.7,
+   "tempoErr": 0.22,
+   "score": -0.053,
+   "file": "ending_pacifist/ending_pacifist_01.wav",
+   "variant": "cand1",
+   "loop": false
+  },
+  {
+   "bpm": 71.78,
+   "beatOffset": 13.375,
+   "duration": 45.0,
+   "lufs": -9.7,
+   "truePeak": 0.2,
+   "spreadLu": 2.9,
+   "tempoErr": 0.22,
+   "score": -0.089,
+   "file": "ending_pacifist/ending_pacifist_02.wav",
+   "variant": "cand2",
+   "loop": false
+  }
+ ]
+}

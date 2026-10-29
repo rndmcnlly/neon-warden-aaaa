@@ -8,14 +8,24 @@
     uv run music/promote.py             # encode picks, write manifest
     uv run music/promote.py --dry-run   # show what would happen
 
-Reads music/picks.json (absent means nothing picked yet):
-    { "gameplay": { "file": "gameplay/gameplay_02.wav",
-                    "loopStart": 0.0, "loopEnd": 59.5 }, "boss": null, ... }
-Writes public/music/<cue>.ogg (Ogg Opus 128 kb/s, loudness-normalized to
--16 LUFS so cues sit together on the music bus) and public/music/manifest.json
-in the shape src/audio/manifests.ts reads. The manifest is always written,
+Reads music/picks.json (absent means nothing picked yet; `uv run
+music/stats.py --picks` writes provisional picks from objective stats):
+    { "gameplay": { "file": "gameplay/gameplay_02.wav", "variant": "cand2",
+                    "provisional": true, "loopStart": 8.0, "loopEnd": 41.4 },
+      "boss": null, ... }
+Writes, for every picked cue, *every* candidate of that cue as a variant,
+public/music/<cue>/<variant>.ogg (Ogg Opus 96 kb/s), so in-context A/B
+(`?v.music.<cue>=cand1`, src/audio/variants.ts) can switch takes without a
+rebuild; the pick is the default variant. Loudness: one linear gain to -16
+LUFS integrated (measured first, not ffmpeg's dynamic `loudnorm`, which
+rides the gain and flattens the music), then a peak limiter at -2 dBFS that
+only touches the overs. Writes public/music/manifest.json in the shape
+src/audio/manifests.ts reads. The manifest is always written,
 with every runtime cue listed (null when unpicked), so the game never
 requests a missing file. Needs ffmpeg on PATH only when something is picked.
+
+Loop points come from the pick for the picked take, and from stats.json
+(music/stats.py) for the other candidates.
 
 Each promoted cue also gets its beat grid, measured here rather than trusted
 from the brief (Stable Audio does not reliably honor a BPM tag): `bpm`
@@ -69,6 +79,30 @@ def measure_grid(path: Path) -> dict:
             "key": {"root": 57 + (root - 9) % 12, "mode": mode}}
 
 
+TARGET_LUFS = -16.0
+LIMIT_DB = -2.0
+
+
+def measure_lufs(path: Path) -> float:
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+                        "-af", "ebur128", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    tail = r.stderr[r.stderr.rfind("Summary:"):]
+    return float(tail.split("I:")[1].split("LUFS")[0])
+
+
+def encode(src: Path, dest: Path) -> float:
+    """Linear gain to TARGET_LUFS, limiter on the overs, Opus. Returns the gain."""
+    gain = TARGET_LUFS - measure_lufs(src)
+    limit = 10 ** (LIMIT_DB / 20)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src),
+                    "-af", f"volume={gain:.2f}dB,alimiter=limit={limit:.4f}:level=false",
+                    "-ar", "48000", "-c:a", "libopus", "-b:a", "96k", str(dest)],
+                   check=True)
+    return gain
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -77,34 +111,50 @@ def main() -> None:
     picks = json.loads(picks_file.read_text()) if picks_file.exists() else {}
     index_file = MUSIC / "candidates" / "index.json"
     index = json.loads(index_file.read_text()) if index_file.exists() else {"cues": {}}
-    loops = {e["file"]: e["loop"] for es in index["cues"].values() for e in es}
-    manifest: dict = {"version": 1, "cues": {cue: None for cue in RUNTIME_CUES}}
+    stats_file = MUSIC / "candidates" / "stats.json"
+    stats = json.loads(stats_file.read_text()) if stats_file.exists() else {}
+    manifest: dict = {"version": 2, "cues": {cue: None for cue in RUNTIME_CUES}}
     for cue, pick in picks.items():
         runtime = RUNTIME_ID.get(cue, cue)
         if not pick or manifest["cues"].get(runtime):
             manifest["cues"].setdefault(runtime, None)
             continue
-        src = MUSIC / "candidates" / pick["file"]
-        dest = PUBLIC / f"{runtime}.ogg"
-        print(f"{src.relative_to(MUSIC)} -> {dest.relative_to(ROOT)}")
-        if not args.dry_run:
-            PUBLIC.mkdir(parents=True, exist_ok=True)
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src),
-                            "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "48000",
-                            "-c:a", "libopus", "-b:a", "128k", str(dest)], check=True)
-        entry = {"src": f"music/{runtime}.ogg", "loop": loops.get(pick["file"], False),
-                 "source": {"file": pick["file"], "model": index.get("model")}}
-        for k in ("loopStart", "loopEnd"):
-            if k in pick:
-                entry[k] = pick[k]
-        grid = measure_grid(src)
-        entry |= grid | {k: pick[k] for k in ("bpm", "beatOffset", "beatsPerBar", "key") if k in pick}
-        print(f"  grid: {grid['bpm']} BPM, first beat {grid['beatOffset']} s, key {grid['key']}")
-        manifest["cues"][runtime] = entry
+        variants: dict = {}
+        default = None
+        for i, cand in enumerate(index["cues"].get(cue, []), start=1):
+            vid = f"cand{i}"
+            row = next((r for r in stats.get(cue, []) if r["file"] == cand["file"]), {})
+            picked = cand["file"] == pick["file"]
+            src = MUSIC / "candidates" / cand["file"]
+            dest = PUBLIC / runtime / f"{vid}.ogg"
+            print(f"{src.relative_to(MUSIC)} -> {dest.relative_to(ROOT)}{' (pick)' if picked else ''}")
+            gain = 0.0 if args.dry_run else encode(src, dest)
+            entry = {"src": f"music/{runtime}/{vid}.ogg", "loop": cand["loop"],
+                     "source": {"file": cand["file"], "model": index.get("model"),
+                                "gainDb": round(gain, 2)}}
+            if cand["loop"]:
+                for k in ("loopStart", "loopEnd"):
+                    v = pick.get(k) if picked else row.get(k)
+                    if v is not None:
+                        entry[k] = v
+            grid = measure_grid(src)
+            entry |= grid
+            if picked:
+                entry |= {k: pick[k] for k in ("bpm", "beatOffset", "beatsPerBar", "key") if k in pick}
+                default = vid
+            print(f"  grid: {grid['bpm']} BPM, first beat {grid['beatOffset']} s, key {grid['key']}")
+            variants[vid] = entry
+        if default is None:
+            continue
+        manifest["cues"][runtime] = variants[default] | {
+            "variant": default,
+            "provisional": bool(pick.get("provisional")),
+            "variants": variants,
+        }
     if not args.dry_run:
         PUBLIC.mkdir(parents=True, exist_ok=True)
         (PUBLIC / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    print(json.dumps(manifest, indent=1))
+    print(json.dumps({c: (e and e["variant"]) for c, e in manifest["cues"].items()}))
 
 
 if __name__ == "__main__":

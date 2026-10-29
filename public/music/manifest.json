@@ -1,14 +1,452 @@
 {
-  "version": 1,
+  "version": 2,
   "cues": {
-    "logos": null,
-    "tutorial": null,
-    "gameplay": null,
-    "flashback": null,
-    "boss": null,
-    "menu": null,
+    "logos": {
+      "src": "music/logos/cand1.ogg",
+      "loop": false,
+      "source": {
+        "file": "logos/logos_01.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -9.0
+      },
+      "bpm": 89.1,
+      "beatOffset": 0.697,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 57,
+        "mode": "minor"
+      },
+      "variant": "cand1",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/logos/cand1.ogg",
+          "loop": false,
+          "source": {
+            "file": "logos/logos_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -9.0
+          },
+          "bpm": 89.1,
+          "beatOffset": 0.697,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 57,
+            "mode": "minor"
+          }
+        },
+        "cand2": {
+          "src": "music/logos/cand2.ogg",
+          "loop": false,
+          "source": {
+            "file": "logos/logos_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -8.5
+          },
+          "bpm": 89.1,
+          "beatOffset": 0.72,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 57,
+            "mode": "minor"
+          }
+        }
+      }
+    },
+    "tutorial": {
+      "src": "music/tutorial/cand2.ogg",
+      "loop": true,
+      "source": {
+        "file": "tutorial/tutorial_02.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -7.1
+      },
+      "loopStart": 2.763,
+      "loopEnd": 28.398,
+      "bpm": 112.35,
+      "beatOffset": 2.763,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 67,
+        "mode": "minor"
+      },
+      "variant": "cand2",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/tutorial/cand1.ogg",
+          "loop": true,
+          "source": {
+            "file": "tutorial/tutorial_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -7.1
+          },
+          "loopStart": 0.441,
+          "loopEnd": 32.206,
+          "bpm": 143.55,
+          "beatOffset": 0.441,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 63,
+            "mode": "major"
+          }
+        },
+        "cand2": {
+          "src": "music/tutorial/cand2.ogg",
+          "loop": true,
+          "source": {
+            "file": "tutorial/tutorial_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -7.1
+          },
+          "loopStart": 2.763,
+          "loopEnd": 28.398,
+          "bpm": 112.35,
+          "beatOffset": 2.763,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 67,
+            "mode": "minor"
+          }
+        }
+      }
+    },
+    "gameplay": {
+      "src": "music/gameplay/cand2.ogg",
+      "loop": true,
+      "source": {
+        "file": "gameplay/gameplay_02.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -6.5
+      },
+      "loopStart": 8.011,
+      "loopEnd": 41.448,
+      "bpm": 129.2,
+      "beatOffset": 8.011,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 68,
+        "mode": "minor"
+      },
+      "variant": "cand2",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/gameplay/cand1.ogg",
+          "loop": true,
+          "source": {
+            "file": "gameplay/gameplay_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -7.3
+          },
+          "loopStart": 0.975,
+          "loopEnd": 43.7,
+          "bpm": 129.2,
+          "beatOffset": 0.975,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 65,
+            "mode": "major"
+          }
+        },
+        "cand2": {
+          "src": "music/gameplay/cand2.ogg",
+          "loop": true,
+          "source": {
+            "file": "gameplay/gameplay_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -6.5
+          },
+          "loopStart": 8.011,
+          "loopEnd": 41.448,
+          "bpm": 129.2,
+          "beatOffset": 8.011,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 68,
+            "mode": "minor"
+          }
+        }
+      }
+    },
+    "flashback": {
+      "src": "music/flashback/cand2.ogg",
+      "loop": true,
+      "source": {
+        "file": "flashback/flashback_02.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -7.8
+      },
+      "loopStart": 0.464,
+      "loopEnd": 40.588,
+      "bpm": 143.55,
+      "beatOffset": 0.464,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 65,
+        "mode": "minor"
+      },
+      "variant": "cand2",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/flashback/cand1.ogg",
+          "loop": true,
+          "source": {
+            "file": "flashback/flashback_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -6.3
+          },
+          "loopStart": 0.882,
+          "loopEnd": 35.248,
+          "bpm": 69.84,
+          "beatOffset": 0.882,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 65,
+            "mode": "minor"
+          }
+        },
+        "cand2": {
+          "src": "music/flashback/cand2.ogg",
+          "loop": true,
+          "source": {
+            "file": "flashback/flashback_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -7.8
+          },
+          "loopStart": 0.464,
+          "loopEnd": 40.588,
+          "bpm": 143.55,
+          "beatOffset": 0.464,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 65,
+            "mode": "minor"
+          }
+        }
+      }
+    },
+    "boss": {
+      "src": "music/boss/cand2.ogg",
+      "loop": true,
+      "source": {
+        "file": "boss/boss_02.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -9.2
+      },
+      "loopStart": 3.46,
+      "loopEnd": 53.615,
+      "bpm": 143.55,
+      "beatOffset": 3.46,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 66,
+        "mode": "minor"
+      },
+      "variant": "cand2",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/boss/cand1.ogg",
+          "loop": true,
+          "source": {
+            "file": "boss/boss_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -6.5
+          },
+          "loopStart": 0.906,
+          "loopEnd": 59.327,
+          "bpm": 69.84,
+          "beatOffset": 0.906,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 57,
+            "mode": "major"
+          }
+        },
+        "cand2": {
+          "src": "music/boss/cand2.ogg",
+          "loop": true,
+          "source": {
+            "file": "boss/boss_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -9.2
+          },
+          "loopStart": 3.46,
+          "loopEnd": 53.615,
+          "bpm": 143.55,
+          "beatOffset": 3.46,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 66,
+            "mode": "minor"
+          }
+        }
+      }
+    },
+    "menu": {
+      "src": "music/menu/cand1.ogg",
+      "loop": true,
+      "source": {
+        "file": "menu/menu_01.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -6.9
+      },
+      "loopStart": 1.161,
+      "loopEnd": 32.369,
+      "bpm": 107.67,
+      "beatOffset": 1.161,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 65,
+        "mode": "major"
+      },
+      "variant": "cand1",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/menu/cand1.ogg",
+          "loop": true,
+          "source": {
+            "file": "menu/menu_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -6.9
+          },
+          "loopStart": 1.161,
+          "loopEnd": 32.369,
+          "bpm": 107.67,
+          "beatOffset": 1.161,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 65,
+            "mode": "major"
+          }
+        },
+        "cand2": {
+          "src": "music/menu/cand2.ogg",
+          "loop": true,
+          "source": {
+            "file": "menu/menu_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -7.1
+          },
+          "loopStart": 2.485,
+          "loopEnd": 38.15,
+          "bpm": 107.67,
+          "beatOffset": 2.485,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 68,
+            "mode": "major"
+          }
+        }
+      }
+    },
     "ending": null,
-    "endingKill": null,
-    "endingPacifist": null
+    "endingKill": {
+      "src": "music/endingKill/cand2.ogg",
+      "loop": false,
+      "source": {
+        "file": "ending_kill/ending_kill_02.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -7.5
+      },
+      "bpm": 60.09,
+      "beatOffset": 2.043,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 57,
+        "mode": "minor"
+      },
+      "variant": "cand2",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/endingKill/cand1.ogg",
+          "loop": false,
+          "source": {
+            "file": "ending_kill/ending_kill_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -8.2
+          },
+          "bpm": 117.45,
+          "beatOffset": 0.534,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 57,
+            "mode": "minor"
+          }
+        },
+        "cand2": {
+          "src": "music/endingKill/cand2.ogg",
+          "loop": false,
+          "source": {
+            "file": "ending_kill/ending_kill_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -7.5
+          },
+          "bpm": 60.09,
+          "beatOffset": 2.043,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 57,
+            "mode": "minor"
+          }
+        }
+      }
+    },
+    "endingPacifist": {
+      "src": "music/endingPacifist/cand1.ogg",
+      "loop": false,
+      "source": {
+        "file": "ending_pacifist/ending_pacifist_01.wav",
+        "model": "stable-audio-3/medium",
+        "gainDb": -5.9
+      },
+      "bpm": 71.78,
+      "beatOffset": 0.859,
+      "beatsPerBar": 4,
+      "key": {
+        "root": 65,
+        "mode": "minor"
+      },
+      "variant": "cand1",
+      "provisional": true,
+      "variants": {
+        "cand1": {
+          "src": "music/endingPacifist/cand1.ogg",
+          "loop": false,
+          "source": {
+            "file": "ending_pacifist/ending_pacifist_01.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -5.9
+          },
+          "bpm": 71.78,
+          "beatOffset": 0.859,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 65,
+            "mode": "minor"
+          }
+        },
+        "cand2": {
+          "src": "music/endingPacifist/cand2.ogg",
+          "loop": false,
+          "source": {
+            "file": "ending_pacifist/ending_pacifist_02.wav",
+            "model": "stable-audio-3/medium",
+            "gainDb": -6.3
+          },
+          "bpm": 71.78,
+          "beatOffset": 13.375,
+          "beatsPerBar": 4,
+          "key": {
+            "root": 60,
+            "mode": "minor"
+          }
+        }
+      }
+    }
   }
 }

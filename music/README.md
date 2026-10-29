@@ -1,5 +1,29 @@
 # Music cues (workstream 6)
 
+## Wave 4: provisional in-context picks
+
+Every scene now has a provisional cue, not a human-approved final pick.
+`picks.json` records the choices; `objective-stats.json` preserves the measured
+candidate comparison. Both original WAV candidates remain local for audition.
+Both Opus candidates ship under `public/music/<cue>/cand1|cand2.ogg`.
+
+Run `uv run music/stats.py --picks`, then `uv run music/promote.py`.
+Stats combine short-term loudness spread, a spectral seam-similarity heuristic
+over bar-aligned loop points, and tempo distance (allowing half/double time).
+Gameplay cand2 wins provisionally: both takes measure 129.2 BPM, but cand2 has
+smaller short-term loudness spread (2.1 versus 3.5 LU) and the better spectral
+seam score (0.947 versus 0.758). Loop points are provisional, not a claim of
+seamless musical phrasing. Human audition can override every pick.
+
+Promotion applies one measured linear gain to -16 LUFS and a peak safety
+limiter, not dynamic `loudnorm` gain riding. Runtime music has its own bus
+trim and VO ducking; the final game mix is measured separately in QA.
+
+`?v.music.gameplay=cand1` or `cand2` chooses a take. `?dev=1` exposes native
+selects for all music/voice axes. `deno task qa:ab gameplay-fight music.gameplay`
+records both in context and writes a paired page plus a cached blind Argon
+comparison. The generic credits `ending` cue borrows `endingKill`.
+
 One cue per beat: logos, menu, tutorial, gameplay, flashback, boss, and the
 two endings. A local model renders candidates from written briefs, Adam
 auditions and picks, and picks are promoted into `public/music/`, which the
