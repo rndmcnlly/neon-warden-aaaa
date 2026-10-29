@@ -1,0 +1,523 @@
+{
+  "created": "2026-10-29T05:36:34.712253+00:00",
+  "scope": "dashboard server only",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "Dashboard HTML",
+      "status": "pass"
+    },
+    {
+      "name": "Live JSON, git revision and hand-edited tasks",
+      "status": "pass"
+    },
+    {
+      "name": "No cross-origin grant",
+      "status": "pass"
+    },
+    {
+      "name": "Known QA summaries found",
+      "status": "pass"
+    },
+    {
+      "name": "Missing revision is stale, never current",
+      "status": "pass"
+    },
+    {
+      "name": "Moments gallery linked",
+      "status": "pass"
+    },
+    {
+      "name": "Ledger linked",
+      "status": "pass"
+    },
+    {
+      "name": "Status source available",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /.git/config",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/.git/config",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/production/../../.git/config",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/research/%2e%2e/%2e%2e/.ssh/id_rsa",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/research/.env",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/research/credentials.json",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/qa/reports/latest/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/qa/reports/platform-2026-10-29T05-23-53.590Z/profile/Preferences",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/production/",
+      "status": "pass"
+    },
+    {
+      "name": "Blocked or missing: /artifacts/research/missing.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "No command route",
+      "status": "pass"
+    },
+    {
+      "name": "POST rejected",
+      "status": "pass"
+    },
+    {
+      "name": "DNS rebinding Host rejected",
+      "status": "pass"
+    },
+    {
+      "name": "HEAD has no body",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222855/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222855/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/menus-en/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/menus-es/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/menus-zh/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/accessibility/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/boot-cinematic/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/tutorial/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/gameplay-fight/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/flashback/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/boss/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/ending-kill/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/ending-pacifist/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/hangar/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/scan-lock/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/disarm-boss/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/graze/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/spatial-audio/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/subtitle-word-pulse/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222855/reels/vo-no-drop/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222855/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222855/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222855/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222855/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-23-53.590Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-23-53.590Z/video/690d42f34fc2b61e7235be9c10444c48.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-23-53.590Z/video/8bad7d4530dc0a06276605d01b9094b4.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: ab-20261028-222642-gameplay-fight/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: ab-20261028-222642-gameplay-fight/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-222642-gameplay-fight/reels/A/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-222642-gameplay-fight/reels/B/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: ab-20261028-222521-tutorial/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: ab-20261028-222521-tutorial/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-222521-tutorial/reels/A/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-222521-tutorial/reels/B/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222315/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222315/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222315/reels/tutorial/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222315/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222315/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222315/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222315/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: ab-20261028-222146-gameplay-fight/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: ab-20261028-222146-gameplay-fight/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-222146-gameplay-fight/reels/A/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-222146-gameplay-fight/reels/B/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222215/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222215/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222215/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222215/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222215/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222215/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222017/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222017/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-222017/reels/tutorial/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222017/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222017/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-222017/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-222017/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-16-40.195Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-16-40.195Z/video/a22c56ea28220f786ac7d4f79ecefd20.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-16-40.195Z/video/dfd05ee097c5d14dbf4e791d48df5b47.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: ab-20261028-221957-tutorial/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: ab-20261028-221957-tutorial/capture.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-221957-tutorial/reels/A/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/ab-20261028-221957-tutorial/reels/B/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-221817/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-221817/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-221817/reels/gameplay-fight/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-221817/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-221817/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-221817/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-221817/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-16-03.696Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-16-03.696Z/video/ee12db41d644aa4f97a958ab17db87f9.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-15-16.243Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-15-16.243Z/video/c6b916e1ef4a7313322cb5840eb527e5.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-15-16.243Z/video/d21a5b3ce6dc2c45470696813e4cef66.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-14-47.321Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-14-47.321Z/video/b0576537908dfa8d5550434e46ce7a86.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-14-27.893Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-14-27.893Z/video/e24e35fdb166c9ed8b1bba7d9745451a.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-14-07.291Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-14-07.291Z/video/39fca6f05fb79e236aa6395e87465707.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-13-49.655Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-13-49.655Z/video/0bee660e4d0113410b5bdc755e56e600.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-13-06.755Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-13-06.755Z/video/728417593b93372290fe301be6b89747.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-12-26.304Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-12-26.304Z/video/85ab0505b757745be8bb4f7863ec5147.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: platform-2026-10-29T05-11-39.494Z/result.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/platform-2026-10-29T05-11-39.494Z/video/ad9a0fd8c11906194e005f483191679e.webm",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-213106/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-213106/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-213106/reels/tutorial/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-213106/reels/gameplay-fight/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-213106/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-213106/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-213106/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-213106/assets.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-213124/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-213124/summary.json",
+      "status": "pass"
+    },
+    {
+      "name": "Video range: /artifacts/qa/reports/20261028-213124/reels/tutorial/reel.mp4",
+      "status": "pass"
+    },
+    {
+      "name": "Report JSON link: 20261028-213124/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Report HTML link: 20261028-213124/coverage.json",
+      "status": "pass"
+    },
+    {
+      "name": "Actual reel links found",
+      "status": "pass"
+    },
+    {
+      "name": "Range overflow rejected",
+      "status": "pass"
+    }
+  ]
+}

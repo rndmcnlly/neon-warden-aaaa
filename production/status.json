@@ -1,0 +1,25 @@
+{
+  "updated": "2026-10-28",
+  "tasks": [
+    {"title": "Onboarding focus gate and wrong-input barks", "owner": "Background onboarding agent", "status": "active", "detail": "Assigned by main session. Completion and QA not yet reported.", "updated": "2026-10-28"},
+    {"title": "Tutorial, trick shot and player statistics", "owner": "P", "status": "done", "revision": "da1e1f0 / fde1b85", "detail": "Shipped. Historical gameplay reel passes; tutorial wink deadline and VO issues remain in recorded QA.", "updated": "2026-10-28"},
+    {"title": "PWA and fullscreen", "owner": "Platform", "status": "done", "revision": "e995599", "detail": "Reported 180 tests; English offline pack verified with 320 resources. ES/ZH offline untested. Does not imply mobile/touch or school-tier completion.", "updated": "2026-10-28"},
+    {"title": "Moments gallery", "owner": "Moments", "status": "done", "revision": "81c684f", "detail": "30 clips captured. Findings are stale against newer code.", "updated": "2026-10-28"},
+    {"title": "Variant banks", "owner": "W", "status": "done", "revision": "796498d", "detail": "169 variants authored; 65 voiced variants pending rendering in recorded QA.", "updated": "2026-10-28"},
+    {"title": "UI and visual closing fixes", "owner": "C", "status": "done", "detail": "Reported done by orchestration. Consult dated QA rather than assuming current coverage.", "updated": "2026-10-28"},
+    {"title": "Music, loudness and contextual A/B", "owner": "B", "status": "unverified", "detail": "Possibly still running at handoff. Process status not verified. Existing A/B artifacts do not establish final approval.", "updated": "2026-10-28"},
+    {"title": "Captain tutorial render", "owner": "T", "status": "unverified", "detail": "Render process status unverified. Original tutorial voice remains the default; a_captain is an alternative, not the chosen replacement.", "updated": "2026-10-28"}
+  ],
+  "blockers": [
+    {"title": "Hot audio mix", "status": "blocked", "detail": "Needs contextual listening with music and fresh loudness QA. Historical passes must not close this issue automatically.", "updated": "2026-10-28"},
+    {"title": "Mobile, touch, visible Back and school tier", "status": "blocked", "detail": "Not built. Full fire verb, scan, portrait layout, low-end Chromebook performance and input hybrids remain required.", "updated": "2026-10-28"},
+    {"title": "Hangar redesign", "status": "blocked", "detail": "Researched, not implemented. Ship-as-hero and live test-flight direction pending implementation.", "updated": "2026-10-28"}
+  ],
+  "decisions": [
+    {"title": "Tutorial voice", "status": "note", "detail": "a_captain pick was supplied earlier; Adam later preferred original in context and requests A/B with music. Keep original as default.", "updated": "2026-10-28"},
+    {"title": "Generated palettes versus fixed palettes", "status": "pending", "detail": "User decision pending.", "updated": "2026-10-28"},
+    {"title": "Repaint helmet unlock", "status": "pending", "detail": "User decision pending.", "updated": "2026-10-28"},
+    {"title": "Classroom mode", "status": "pending", "detail": "User decision pending. School-tier support itself is a requirement, not an optional decision.", "updated": "2026-10-28"},
+    {"title": "Credits", "status": "note", "detail": "Exact wording: Adam Smith, and his coupled agents", "updated": "2026-10-28"}
+  ]
+}
