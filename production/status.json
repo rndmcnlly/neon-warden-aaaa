@@ -1,34 +1,215 @@
 {
-  "updated": "2026-10-28",
-  "tasks": [
-    {
-      "title": "Flat opening logo integration",
-      "owner": "Flat-logo integration",
-      "status": "done",
-      "detail": "Director-driven flat screen-locked studio/CM121 logos replace active 3D boot wiring. Both 3200 ms holds and skip flags/music preserved; live motion/flashing settings and abort disposal verified. Isolated production build: 69 browser checks including first/second/immediate skips, restart, visible touch-safe Skip and 390x844 touch; boot A/V reel pass; static assets/translation zero failures. QA: qa/reports/logo-integration-2026-10-29T06-02-33.288Z/result.json. Captain/cand1 edits preserved separately.",
-      "updated": "2026-10-28"
-    },
-    {"title": "Off-screen Pilot scope cut", "owner": "Scope cut", "status": "done", "detail": "Removed helmet UI/contracts/serialization, figure registry/preload/placeholder and issued/worn switching. Pacifist reply now frames the ship. Historical GLBs retained but excluded from offline inventory. Legacy saves and ship controls verified by 15 production browser checks: qa/reports/scope-cut-2026-10-29T05-55-42.304Z/result.json. Hangar reel passes 23 assertions: qa/reports/20261028-225200/index.html. Integration follow-up: main.ts still maps the retired figure and blocks full typecheck; tutorial hangar VO still advertises helmet livery. Full suite 196 pass/1 unrelated VO seed-mirror failure; pacifist reel reaches Lanes Kept but fails its outcome assertion.", "updated": "2026-10-28"},
-    {"title": "Onboarding focus gate and wrong-input barks", "owner": "Background onboarding agent", "status": "active", "detail": "Assigned by main session. Completion and QA not yet reported.", "updated": "2026-10-28"},
-    {"title": "Tutorial, trick shot and player statistics", "owner": "P", "status": "done", "revision": "da1e1f0 / fde1b85", "detail": "Shipped. Historical gameplay reel passes; tutorial wink deadline and VO issues remain in recorded QA.", "updated": "2026-10-28"},
-    {"title": "PWA and fullscreen", "owner": "Platform", "status": "done", "revision": "e995599", "detail": "Reported 180 tests; English offline pack verified with 320 resources. ES/ZH offline untested. Does not imply mobile/touch or school-tier completion.", "updated": "2026-10-28"},
-    {"title": "Moments gallery", "owner": "Moments", "status": "done", "revision": "81c684f", "detail": "30 clips captured. Findings are stale against newer code.", "updated": "2026-10-28"},
-    {"title": "Variant banks", "owner": "W", "status": "done", "revision": "796498d", "detail": "169 variants authored; 65 voiced variants pending rendering in recorded QA.", "updated": "2026-10-28"},
-    {"title": "UI and visual closing fixes", "owner": "C", "status": "done", "detail": "Reported done by orchestration. Consult dated QA rather than assuming current coverage.", "updated": "2026-10-28"},
-    {"title": "Music, loudness and contextual A/B", "owner": "B", "status": "unverified", "detail": "Possibly still running at handoff. Process status not verified. Existing A/B artifacts do not establish final approval.", "updated": "2026-10-28"},
-    {"title": "Captain tutorial render", "owner": "T", "status": "done", "detail": "Captain base assets and EN/ES/ZH anchors complete, including 50 new tutorial commentary lines. All 600 rendered takes have aligned word timings; ASR mean/min EN .989/.857, ES .990/.865, ZH .981/.857; zero under .85 in every language. Runtime routing verified: original remains default for 243 preserved takes; 150 new commentary takes explicitly fall back to Captain. Static QA qa/reports/20261028-224208/index.html has zero failures; CI blocked by five unrelated formatting failures. No render jobs active.", "updated": "2026-10-28"},
-    {"title": "Sector worlds v2: Blender set pieces", "owner": "Sector worlds v2", "status": "review", "detail": "Commits 113ca27, 8774627. Kitbash set pieces with activity and EN/ES/ZH signage in all five sectors; low tier 9-15 draws. Blind Argon test (US$0.115): 4 of 5 sectors read as a specific functioning place; Last Approach reads as a cargo yard, not the Warden's home. Portrait shows only far landmarks. No Chromebook hardware measured. 230/231 tests (banks_test failure unrelated). research/2026-10-29-sector-worlds-v2/README.md", "updated": "2026-10-29"}
-  ],
-  "blockers": [
-    {"title": "Hot audio mix", "status": "blocked", "detail": "Needs contextual listening with music and fresh loudness QA. Historical passes must not close this issue automatically.", "updated": "2026-10-28"},
-    {"title": "Mobile, touch, visible Back and school tier", "status": "blocked", "detail": "Not built. Full fire verb, scan, portrait layout, low-end Chromebook performance and input hybrids remain required.", "updated": "2026-10-28"},
-    {"title": "Hangar redesign", "status": "blocked", "detail": "Researched, not implemented. Ship-as-hero and live test-flight direction pending implementation.", "updated": "2026-10-28"}
-  ],
-  "decisions": [
-    {"title": "Tutorial voice", "status": "note", "detail": "a_captain pick was supplied earlier; Adam later preferred original in context and requests A/B with music. Keep original as default.", "updated": "2026-10-28"},
-    {"title": "Generated palettes versus fixed palettes", "status": "pending", "detail": "User decision pending.", "updated": "2026-10-28"},
-    {"title": "Repaint helmet unlock", "status": "withdrawn", "detail": "Adam confirmed dropping both helmet customization/unlocks and all 3D Pilot depiction. Pilot stays off-screen; ship customization and narrative identity/serial/voice remain.", "updated": "2026-10-28"},
-    {"title": "Classroom mode", "status": "pending", "detail": "User decision pending. School-tier support itself is a requirement, not an optional decision.", "updated": "2026-10-28"},
-    {"title": "Credits", "status": "note", "detail": "Exact wording: Adam Smith, and his coupled agents", "updated": "2026-10-28"}
-  ]
+ "updated": "2026-10-29",
+ "tasks": [
+  {
+   "title": "Flat opening logo integration",
+   "owner": "Flat-logo integration",
+   "status": "done",
+   "detail": "Director-driven flat screen-locked studio/CM121 logos replace active 3D boot wiring. Both 3200 ms holds and skip flags/music preserved; live motion/flashing settings and abort disposal verified. Isolated production build: 69 browser checks including first/second/immediate skips, restart, visible touch-safe Skip and 390x844 touch; boot A/V reel pass; static assets/translation zero failures. QA: qa/reports/logo-integration-2026-10-29T06-02-33.288Z/result.json. Captain/cand1 edits preserved separately.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Off-screen Pilot scope cut",
+   "owner": "Scope cut",
+   "status": "done",
+   "detail": "Removed helmet UI/contracts/serialization, figure registry/preload/placeholder and issued/worn switching. Pacifist reply now frames the ship. Historical GLBs retained but excluded from offline inventory. Legacy saves and ship controls verified by 15 production browser checks: qa/reports/scope-cut-2026-10-29T05-55-42.304Z/result.json. Hangar reel passes 23 assertions: qa/reports/20261028-225200/index.html. Integration follow-up: main.ts still maps the retired figure and blocks full typecheck; tutorial hangar VO still advertises helmet livery. Full suite 196 pass/1 unrelated VO seed-mirror failure; pacifist reel reaches Lanes Kept but fails its outcome assertion.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Onboarding focus gate and wrong-input barks",
+   "owner": "Background onboarding agent",
+   "status": "done",
+   "detail": "Fresh input required per lesson; eight lockout and other-left corrections (VO pending).",
+   "updated": "2026-10-29",
+   "revision": "85ee111"
+  },
+  {
+   "title": "Tutorial, trick shot and player statistics",
+   "owner": "P",
+   "status": "done",
+   "revision": "da1e1f0 / fde1b85",
+   "detail": "Shipped. Historical gameplay reel passes; tutorial wink deadline and VO issues remain in recorded QA.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "PWA and fullscreen",
+   "owner": "Platform",
+   "status": "done",
+   "revision": "e995599",
+   "detail": "Reported 180 tests; English offline pack verified with 320 resources. ES/ZH offline untested. Does not imply mobile/touch or school-tier completion.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Moments gallery",
+   "owner": "Moments",
+   "status": "done",
+   "revision": "81c684f",
+   "detail": "30 clips captured. Findings are stale against newer code.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Variant banks",
+   "owner": "W",
+   "status": "done",
+   "revision": "796498d",
+   "detail": "169 variants authored; 65 voiced variants pending rendering in recorded QA.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "UI and visual closing fixes",
+   "owner": "C",
+   "status": "done",
+   "detail": "Reported done by orchestration. Consult dated QA rather than assuming current coverage.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Music, loudness and contextual A/B",
+   "owner": "B",
+   "status": "done",
+   "detail": "Fight mix about -17 LUFS. Adam chose tutorial Captain and gameplay cand1 as defaults; alternatives retained.",
+   "updated": "2026-10-29",
+   "revision": "e8e61f6"
+  },
+  {
+   "title": "Captain tutorial render",
+   "owner": "T",
+   "status": "done",
+   "detail": "Captain base assets and EN/ES/ZH anchors complete, including 50 new tutorial commentary lines. All 600 rendered takes have aligned word timings; ASR mean/min EN .989/.857, ES .990/.865, ZH .981/.857; zero under .85 in every language. Runtime routing verified: original remains default for 243 preserved takes; 150 new commentary takes explicitly fall back to Captain. Static QA qa/reports/20261028-224208/index.html has zero failures; CI blocked by five unrelated formatting failures. No render jobs active.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Sector worlds v2: Blender set pieces",
+   "owner": "Sector worlds v2",
+   "status": "review",
+   "detail": "Four of five sectors read as specific places in blind test; Last Approach misread. Viewer: research/2026-10-29-sector-worlds-v2/index.html",
+   "updated": "2026-10-29",
+   "revision": "d351d9d"
+  },
+  {
+   "title": "Shot feel: speed, recoil, crumbling trails",
+   "status": "done",
+   "detail": "Shots 50% faster with swept collision; camera-only recoil; capped trails.",
+   "updated": "2026-10-29",
+   "revision": "5a23867"
+  },
+  {
+   "title": "Remove persistent PWA overlay",
+   "status": "done",
+   "detail": "Offline downloads in Settings; F toggles fullscreen.",
+   "updated": "2026-10-29",
+   "revision": "ad32043"
+  },
+  {
+   "title": "Hybrid movement and focus cues prototype",
+   "status": "review",
+   "detail": "Opt-in ?movement=hybrid; diagonal fix and focus cues apply to both. Needs hands-on comparison, video too subtle.",
+   "updated": "2026-10-29",
+   "revision": "75b75c3"
+  },
+  {
+   "title": "A/V intelligibility study",
+   "status": "done",
+   "detail": "Top fixes: one speech channel, linked pod-break confirmation, clear damage feedback.",
+   "updated": "2026-10-29",
+   "revision": "85ee1114"
+  },
+  {
+   "title": "Argon creative-direction review",
+   "status": "done",
+   "detail": "Protect voice contrast, scan/disarm identity, clear lane; bets: lane-edge telemetry, physical pod break, billable graze.",
+   "updated": "2026-10-29",
+   "revision": "2ca039f"
+  },
+  {
+   "title": "Repo-local skills",
+   "status": "done",
+   "detail": "neon-warden-index plus three specialists; fresh-agent probes pass; nothing promoted.",
+   "updated": "2026-10-29",
+   "revision": "f636bb0"
+  },
+  {
+   "title": "Offline download size estimate",
+   "status": "done",
+   "detail": "About 22-24 MiB offline per language; 8-9 MiB of A/B assets could be excluded.",
+   "updated": "2026-10-29"
+  },
+  {
+   "title": "Spline-ribbon route prototype",
+   "status": "review",
+   "detail": "Curved distant world, rigid combat plane; not integrated.",
+   "updated": "2026-10-29",
+   "revision": "6d56a79"
+  },
+  {
+   "title": "Staged flashback and enemy briefings prototype",
+   "status": "review",
+   "detail": "Isolated; revised staging not re-judged; not integrated.",
+   "updated": "2026-10-29",
+   "revision": "c5fa3bf"
+  },
+  {
+   "title": "Consolidation into one playable build",
+   "status": "next",
+   "detail": "Integrate prototypes, speech scheduling, pod-break causality; then hands-on playtest.",
+   "updated": "2026-10-29"
+  }
+ ],
+ "blockers": [
+  {
+   "title": "Hot audio mix",
+   "status": "blocked",
+   "detail": "Needs contextual listening with music and fresh loudness QA. Historical passes must not close this issue automatically.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Mobile, touch, visible Back and school tier",
+   "status": "blocked",
+   "detail": "Not built. Full fire verb, scan, portrait layout, low-end Chromebook performance and input hybrids remain required.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Hangar redesign",
+   "status": "blocked",
+   "detail": "Researched, not implemented. Ship-as-hero and live test-flight direction pending implementation.",
+   "updated": "2026-10-28"
+  }
+ ],
+ "decisions": [
+  {
+   "title": "Tutorial voice",
+   "status": "note",
+   "detail": "a_captain pick was supplied earlier; Adam later preferred original in context and requests A/B with music. Keep original as default.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Generated palettes versus fixed palettes",
+   "status": "pending",
+   "detail": "User decision pending.",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Credits",
+   "status": "note",
+   "detail": "Exact wording: Adam Smith, and his coupled agents",
+   "updated": "2026-10-28"
+  },
+  {
+   "title": "Tutorial voice and gameplay music",
+   "status": "decided",
+   "detail": "Adam chose Captain (tutorial B) and gameplay cand1 (A).",
+   "updated": "2026-10-29"
+  },
+  {
+   "title": "No content censorship for kids",
+   "status": "decided",
+   "detail": "Chromebook support is hardware, input and deployment only.",
+   "updated": "2026-10-29"
+  },
+  {
+   "title": "Pilot stays off-screen",
+   "status": "decided",
+   "detail": "No 3D Pilot, no helmet customization; ship customization stays.",
+   "updated": "2026-10-29"
+  }
+ ]
 }
