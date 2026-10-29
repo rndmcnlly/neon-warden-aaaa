@@ -1,0 +1,314 @@
+{
+  "when": "2026-10-29T18:52:48.310Z",
+  "base": "http://127.0.0.1:4329/neon-warden-aaaa/",
+  "passed": 58,
+  "failed": 0,
+  "results": [
+    {
+      "name": "desktop: Play above the fold",
+      "ok": true,
+      "detail": {
+        "top": 491,
+        "bottom": 551
+      }
+    },
+    {
+      "name": "desktop: Play target at least 44 px tall",
+      "ok": true
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "clipped": []
+      }
+    },
+    {
+      "name": "desktop: no external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: teaser video not fetched before play",
+      "ok": true
+    },
+    {
+      "name": "desktop: no landing errors or 404s",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: Play opens neon-warden-aaaa/play/ in one click",
+      "ok": true
+    },
+    {
+      "name": "desktop: game page loads with no asset 404s or errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: game requests stay on this site",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook: Play above the fold",
+      "ok": true,
+      "detail": {
+        "top": 491,
+        "bottom": 551
+      }
+    },
+    {
+      "name": "chromebook: Play target at least 44 px tall",
+      "ok": true
+    },
+    {
+      "name": "chromebook: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "clipped": []
+      }
+    },
+    {
+      "name": "chromebook: no external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook: teaser video not fetched before play",
+      "ok": true
+    },
+    {
+      "name": "chromebook: no landing errors or 404s",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook: Play opens neon-warden-aaaa/play/ in one tap",
+      "ok": true
+    },
+    {
+      "name": "chromebook: game page loads with no asset 404s or errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook: game requests stay on this site",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook-11: Play above the fold",
+      "ok": true,
+      "detail": {
+        "top": 491,
+        "bottom": 551
+      }
+    },
+    {
+      "name": "chromebook-11: Play target at least 44 px tall",
+      "ok": true
+    },
+    {
+      "name": "chromebook-11: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "clipped": []
+      }
+    },
+    {
+      "name": "chromebook-11: no external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook-11: teaser video not fetched before play",
+      "ok": true
+    },
+    {
+      "name": "chromebook-11: no landing errors or 404s",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook-11: Play opens neon-warden-aaaa/play/ in one tap",
+      "ok": true
+    },
+    {
+      "name": "chromebook-11: game page loads with no asset 404s or errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "chromebook-11: game requests stay on this site",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone: Play above the fold",
+      "ok": true,
+      "detail": {
+        "top": 345,
+        "bottom": 405
+      }
+    },
+    {
+      "name": "phone: Play target at least 44 px tall",
+      "ok": true
+    },
+    {
+      "name": "phone: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "clipped": []
+      }
+    },
+    {
+      "name": "phone: no external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone: teaser video not fetched before play",
+      "ok": true
+    },
+    {
+      "name": "phone: no landing errors or 404s",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone: Play opens neon-warden-aaaa/play/ in one tap",
+      "ok": true
+    },
+    {
+      "name": "phone: game page loads with no asset 404s or errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone: game requests stay on this site",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone-landscape: Play above the fold",
+      "ok": true,
+      "detail": {
+        "top": 183,
+        "bottom": 243
+      }
+    },
+    {
+      "name": "phone-landscape: Play target at least 44 px tall",
+      "ok": true
+    },
+    {
+      "name": "phone-landscape: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "clipped": []
+      }
+    },
+    {
+      "name": "phone-landscape: no external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone-landscape: teaser video not fetched before play",
+      "ok": true
+    },
+    {
+      "name": "phone-landscape: no landing errors or 404s",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone-landscape: Play opens neon-warden-aaaa/play/ in one tap",
+      "ok": true
+    },
+    {
+      "name": "phone-landscape: game page loads with no asset 404s or errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone-landscape: game requests stay on this site",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "browser language es picks Spanish",
+      "ok": true
+    },
+    {
+      "name": "reduced motion: no title glitch animation",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "switch to Chinese",
+      "ok": true
+    },
+    {
+      "name": "Chinese: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0
+      }
+    },
+    {
+      "name": "tab keeps the language choice (sessionStorage)",
+      "ok": true
+    },
+    {
+      "name": "service worker scope is play/",
+      "ok": true,
+      "detail": "http://127.0.0.1:4329/neon-warden-aaaa/play/"
+    },
+    {
+      "name": "landing page is not controlled by the service worker",
+      "ok": true
+    },
+    {
+      "name": "manifest start_url and scope are play/",
+      "ok": true
+    },
+    {
+      "name": "offline pack has the game page, not the landing page or media",
+      "ok": true
+    },
+    {
+      "name": "old root links with game flags forward to play/",
+      "ok": true,
+      "detail": "http://127.0.0.1:4329/neon-warden-aaaa/play/?qa=1&seed=7"
+    },
+    {
+      "name": "?lang= stays on the landing page",
+      "ok": true
+    },
+    {
+      "name": "throttled first load under 150 KB transferred",
+      "ok": true,
+      "detail": {
+        "lcpMs": 564,
+        "domContentLoadedMs": 552,
+        "loadMs": 552,
+        "domNodes": 310,
+        "transferredBytes": 61037
+      }
+    },
+    {
+      "name": "throttled LCP under 2.5 s",
+      "ok": true,
+      "detail": 564
+    }
+  ]
+}

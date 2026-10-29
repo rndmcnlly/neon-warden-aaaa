@@ -1,0 +1,31 @@
+{
+  "persona": "teacher",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "concerns": "You review project pages written to teach game-development students. Your concerns, from presskit() (a resource with easy-to-access information, not decoration), Game Developer postmortem practice (name specifics, what went wrong as well as right) and making-of devlogs: claims must be specific and checkable, with links to source and evidence; failures and rejected ideas must be visible, not just wins; the role of generative AI must be described precisely (which models did what, which ran locally, what humans decided), with no hype and no implication that the slice was cheap or effortless; the structure should let a student go from a one-line summary to the source file.",
+  "task": "Critique the landing-page wireframe below against your concerns only. Be concrete and brief (under 450 words). Return Markdown with three headings: \"Top risks\" (at most 5, each with the section it concerns), \"Changes I would make\" (at most 6, each one sentence, ordered by value), and \"Things that are fine\". Do not invent facts about the game; if the wireframe is unclear, say what is unclear.",
+  "answer": "### Top risks\n\n1. **Missing links from claims to source files (Sections 5 & 6).** Repository links are isolated in Card 8 (\"Read the source\"). It is unclear if Cards 1–7 and their 120–200 word deeper sections link directly to the specific files, Blender scripts, or event logs that prove their claims.\n2. **Failures and rejected ideas are largely invisible (Sections 5 & 6).** Apart from the blind judge preferring the \"BEFORE\" build in Card 6, the wireframe does not mention what went wrong in design, engineering, or asset generation, or which human/AI ideas were scrapped.\n3. **Human effort and decisions in AI workflows are unspecified (Section 5.4, Section 6, Section 7).** Calling frontier models \"production orchestration and coding agents\" and crediting \"coupled agents\" risks implying the slice was effortless or autonomous. The wireframe does not specify what humans decided, wrote, or fixed when models failed, nor which exact models are named prior to the footer.\n4. **No scannable presskit() fact sheet (Sections 1, 2 & 4).** Facts are scattered across the top bar, hero subtext, and \"What it is\", and the fictional studio name (`adamsmith.systems`) is separated from its explanation in the footer. A student cannot see the ground-truth specs (author, repo URL, license, build time/cost, exact hardware targets) at a glance.\n5. **Checkability of low-end hardware and QA claims is unclear (Sections 2, 5.3 & 5.5).** The wireframe targets \"low-end school Chromebooks or phones\" and cites \"human playtests\" and \"16x\" autopilots, but does not state if actual device models, frame-time logs, or playtest findings are shown as evidence.\n\n### Changes I would make\n\n1. Require every deeper section (1–7), not just Section 8, to end with direct links to the exact source files, scripts, and logs that substantiate its claims.\n2. Add a \"What failed / what we cut\" requirement to each deeper section so students see rejected prototypes, broken AI outputs, and engineering dead ends alongside the wins.\n3. In Section 4's deeper text, specify the exact model names, weights/versions, local hardware used, rejection rates during \"auditions\", and the human labour required to direct and fix agent output.\n4. Consolidate Section 4 (\"What it is\") into a strict `presskit()`-style fact block listing real creator vs. fictional studio label, development effort/duration, repository link, licenses, and tested Chromebook/phone models.\n5. In Section 5.3 and 5.5, link to concrete performance evidence (e.g., frame-time captures on a named Chromebook) and summarize what human playtests caught that automated QA and AI judges missed.\n6. Replace the vague footer credit \"and his coupled agents\" with a plain statement of human authorship and a table mapping each tool/model to its exact task.\n\n### Things that are fine\n\n- The two-tier structure (one-line summary cards linking to 120–200 word deeper sections) and the \"How it was made\" jump link in the hero serve both players and students cleanly.\n- Separating frontier coding/orchestration models from local asset-generation models (and documenting what can and cannot be regenerated without local models in Card 8) is the right structural distinction.\n- Card 6's inclusion of a table of rejected judge claims and the \"BEFORE build preferred in 7 of 10 pairs\" result is a strong, honest postmortem detail.\n- Explicitly stubbing out-of-scope features in-game (\"not included in this vertical slice\") and labelling draft teaser cuts honestly matches good making-of practice.",
+  "usage": {
+    "prompt_tokens": 1447,
+    "completion_tokens": 828,
+    "total_tokens": 2275,
+    "cost": 0.011174,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011174,
+      "upstream_inference_prompt_cost": 0.002894,
+      "upstream_inference_completions_cost": 0.00828
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

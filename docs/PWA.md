@@ -30,7 +30,15 @@ fails normally in the browser: there is no fictional offline-ready screen.
 
 ## Implementation and deployment
 
-- `index.html` boots `src/platform/bootstrap.ts` separately from `main.ts`.
+- The site has two pages: a static landing page at the root (`index.html`,
+  `src/landing/`, never controlled by the worker) and the game at
+  `play/index.html`. The worker file `sw.js` sits at the site root beside the
+  asset folders but is registered with scope `play/`; release paths resolve
+  from the worker's own URL, and offline navigation serves the cached
+  `play/index.html`. The landing page, its `assets/landing-*` files and
+  `media/` (the teaser) are not part of any offline pack. Root URLs carrying
+  game flags (`?skipto=`, `?qa=1` ...) are forwarded to `play/`.
+- `play/index.html` boots `src/platform/bootstrap.ts` separately from `main.ts`.
   Fullscreen uses `createSettingsStore()`'s existing per-storage singleton.
   The small Graphics settings hook routes requests through the same helper.
 - `src/platform/build.ts` is a Vite production plugin, using Vite 8's built-in

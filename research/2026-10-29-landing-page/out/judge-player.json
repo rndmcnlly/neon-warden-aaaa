@@ -1,0 +1,31 @@
+{
+  "persona": "player",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "concerns": "You review game landing pages for players. Your concerns, from itch.io's creator docs and store-page practice (Steam above-the-fold guidance, presskit()): one obvious Play action above the fold on every screen size; show the game itself (footage) early; say what the game is in one line; no friction (accounts, cookie walls, newsletters); honest description of length and content; a child on a slow school Chromebook or a cheap phone must reach the game in one tap and understand what will happen next (large download, sound, fullscreen).",
+  "task": "Critique the landing-page wireframe below against your concerns only. Be concrete and brief (under 450 words). Return Markdown with three headings: \"Top risks\" (at most 5, each with the section it concerns), \"Changes I would make\" (at most 6, each one sentence, ordered by value), and \"Things that are fine\". Do not invent facts about the game; if the wireframe is unclear, say what is unclear.",
+  "answer": "### Top risks\n\n1. **Hero (Section 2): The one-line pitch is lore, not genre.** \"A contractor flies the lanes for pay...\" fails to tell the player what the game actually is (a vertical shoot-'em-up), which the meta-description states clearly but the page hides from the user.\n2. **Hero (Section 2): Unclear what happens after tapping Play.** The wireframe specifies the *teaser* is 2 MB, but it is unclear what clicking \"Play in your browser\" triggers regarding download size, audio behavior, or fullscreen transitions—critical for a kid in a classroom on a slow connection.\n3. **Hero & Teaser (Sections 2 & 3): No gameplay shown above the fold.** The Hero only shows a flat SVG logo and halftone dots. It is unclear if the Teaser's poster image is visible above the fold or if it actually depicts recognizable in-game footage.\n4. **What it is (Section 4): Playtime is unclear.** Saying \"one complete playthrough\" of a vertical slice does not tell a player on a school break if the game takes 3 minutes or 45 minutes.\n5. **Top bar & Technical constraints (Section 1): Language selection friction.** If a child taps \"ES\" or \"ZH\" on the landing page, they must set it a second time inside `play/` because the landing page does not pass the language state to the game.\n\n### Changes I would make\n\n1. **State the genre in the Hero's one-line pitch** (e.g., \"A short vertical space shoot-'em-up with a pacifist route\") so players immediately know what they are playing.\n2. **Add post-click expectations directly under the Play button** by stating the game's download size, whether it starts muted, and if it enters fullscreen.\n3. **Replace or back the Hero's flat logo treatment with an actual gameplay screenshot** (or ensure the Teaser poster is an in-game action shot visible above the fold on 360x640 and 1366x768 screens).\n4. **Pass the selected language to `play/`** (via URL parameter or shared `localStorage`) so ES and ZH players do not have to navigate an English game menu to switch languages twice.\n5. **Add an estimated playtime in minutes to Section 4** alongside the \"vertical slice\" explanation and content warning.\n\n### Things that are fine\n\n* **Above-the-fold CTA:** One obvious \"Play in your browser\" button with 44px+ tap targets, confirmed visible without scrolling on small phones and Chromebooks.\n* **Zero friction:** No accounts, ads, cookies, tracking, or newsletter popups; explicit \"no content softened\" and violence notes are honest.\n* **Low-end device respect:** Sub-150 KB initial load, no WebGL/video preload on the landing page, and a clear secondary link (\"How it was made\") that keeps the long devlog out of the player's way.",
+  "usage": {
+    "prompt_tokens": 1423,
+    "completion_tokens": 653,
+    "total_tokens": 2076,
+    "cost": 0.009376,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009376,
+      "upstream_inference_prompt_cost": 0.002846,
+      "upstream_inference_completions_cost": 0.00653
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}

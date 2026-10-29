@@ -1,0 +1,31 @@
+{
+  "persona": "auditor",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "concerns": "You audit static websites for accessibility, performance and ethics. Your concerns: WCAG 2.2 (2.2.2 Pause, Stop, Hide for moving content; 2.3 flashes; 2.5.8 target size; contrast; keyboard path; reduced motion); Alex Russell's \"Performance Inequality Gap, 2026\" budgets for low-end devices (small JavaScript, no heavy media on first load); no tracking, no third-party requests, local fonts; GitHub Pages constraints (static, 1 GB site, soft 100 GB per month bandwidth, so large video must be on demand); privacy for children using school devices; a service worker that must not hijack the landing page.",
+  "task": "Critique the landing-page wireframe below against your concerns only. Be concrete and brief (under 450 words). Return Markdown with three headings: \"Top risks\" (at most 5, each with the section it concerns), \"Changes I would make\" (at most 6, each one sentence, ordered by value), and \"Things that are fine\". Do not invent facts about the game; if the wireframe is unclear, say what is unclear.",
+  "answer": "### Top risks\n\n1. **Section 2 (Hero) & Section 3 (Teaser): Uncontrolled motion and flashing (WCAG 2.2.2, 2.3).** It is unclear if the \"slow glint sweep\" loops; if it lasts over 5 seconds without a pause control, it fails 2.2.2 even if `prefers-reduced-motion` is respected. It is also unclear whether the title \"glitch\" or the captured shoot-'em-up teaser video stay below the three-flashes-per-second threshold.\n2. **Section 2 (Hero) & Section 4 (What it is): Content warning placement and ethics.** The violence and morally gray ending note is in Section 4, below the fold, while the \"Big Play button\" is in Section 2, visible without scrolling to children on school devices.\n3. **Section 3 (Teaser) & Section 6 (Deeper sections): Incomplete localization and accessibility.** The teaser only specifies an English captions track, leaving ES and ZH deaf or hard-of-hearing users unsupported. Inline SVG diagrams in Section 6 lack specified accessible text (`<title>`/`<desc>`) and `lang=\"en\"` attributes for screen readers browsing in ES/ZH.\n4. **Section 2 (Hero) & Technical constraints: DOM and paint performance on low-end devices.** If the \"halftone dot field\" in the inline SVG uses thousands of individual `<circle>` or `<path>` nodes, it will blow the 150 KB first-load budget and cause severe rasterization jank on school Chromebooks and budget phones (Alex Russell's 2026 budgets).\n5. **Section 1 (Top bar) & Section 5 (Cards): Target size and persistence on shared devices (WCAG 2.5.8, Privacy).** Compact `EN / ES / ZH` buttons risk violating target size or spacing rules if squeezed into a small top bar, and remembering language in `localStorage` leaks the previous student's language preference on shared school Chromebooks.\n\n### Changes I would make\n\n1. Surface a concise content note directly below the \"Big Play button\" in the Hero so children and teachers see it before launching `play/`.\n2. Cap the Hero glint sweep and glitch animations at under 5 seconds total (no infinite loops) and audit both the glitch and teaser video against WCAG 2.3 flash thresholds.\n3. Implement the SVG halftone dot field using a tiny `<pattern>` rather than individual DOM nodes to keep first-load weight under 150 KB and main-thread paint fast.\n4. Add Spanish and Chinese WebVTT caption tracks to the teaser video, and mark the English-only deeper sections with `lang=\"en\"` and accessible SVG descriptions.\n5. Use `sessionStorage` instead of `localStorage` for the language toggle so shared school devices reset cleanly between users.\n6. Make the entire card surface in Section 5 a single link to avoid cramped inline anchor targets and simplify the keyboard tab path.\n\n### Things that are fine\n\n- **Service worker isolation:** Scoping the PWA strictly to `play/` so the root landing page is never hijacked.\n- **GitHub Pages & network budgets:** Teaser video (`preload=\"none\"`, ~2 MB on demand with size disclosed), <10 KB JS, <150 KB first load, no frameworks, and system fonts.\n- **Privacy & ethics:** Zero third-party requests, no cookies, no analytics, and honest disclosure of vertical-slice boundaries, AI usage, and fictional studio credits.\n- **Baseline accessibility:** Explicit commitment to 44 px tap targets (exceeding WCAG 2.5.8's 24 px minimum), 4.5:1 contrast, skip links, and `prefers-reduced-motion`.",
+  "usage": {
+    "prompt_tokens": 1458,
+    "completion_tokens": 815,
+    "total_tokens": 2273,
+    "cost": 0.011066,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011066,
+      "upstream_inference_prompt_cost": 0.002916,
+      "upstream_inference_completions_cost": 0.00815
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  }
+}
