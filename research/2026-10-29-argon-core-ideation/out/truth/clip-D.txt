@@ -1,0 +1,29 @@
+clip D = boss-disarm (boss-disarm 47.0-59.0 s); times in clip seconds
+  2.62  sfx          writ_release_3
+  2.64  WRIT         level 3 spent
+  2.81  sfx          hit_boss
+  3.08  sfx          writ_release_1
+  3.09  WRIT         level 1 spent
+  3.27  sfx          hit_boss
+  3.27  sfx          part_break
+  3.33  partBreak    {"target": "boss", "part": "fanPodL", "partKind": "fanPod", "by": "writ"}
+  3.59  sfx          writ_release_1
+  3.60  WRIT         level 1 spent
+  3.77  sfx          hit_boss
+  4.11  sfx          writ_release_1
+  4.11  WRIT         level 1 spent
+  4.29  sfx          hit_boss
+  5.97  sfx          writ_release_3
+  5.97  WRIT         level 3 spent
+  6.13  sfx          boss_roar
+  6.15  bossPhase    {"phase": 2}
+  6.16  sfx          hit_boss
+  6.45  sfx          writ_release_1
+  6.45  WRIT         level 1 spent
+  6.66  sfx          core_exposed
+  6.66  sfx          hit_boss
+  6.66  sfx          part_break
+  6.66  coreExposed  {}
+  6.66  partBreak    {"target": "boss", "part": "fanPodR", "partKind": "fanPod", "by": "writ"}
+ 11.12  sfx          boss_roar
+ 11.13  bossPhase    {"phase": 3}

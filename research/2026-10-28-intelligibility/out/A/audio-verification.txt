@@ -1,0 +1,37 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'research/2026-10-28-intelligibility/out/A/clip.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.102
+  Duration: 00:00:24.00, start: 0.000000, bitrate: 500 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 363 kb/s, 25 fps, 25 tbr, 12800 tbn, start 0.040000 (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.1.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 131 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[Parsed_volumedetect_0 @ 0x7b84c206c0] n_samples: 0
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.1.102
+  Stream #0:0(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.1.102 pcm_s16le
+      handler_name    : SoundHandler
+[Parsed_volumedetect_0 @ 0x7b84c20b40] n_samples: 2304000
+[Parsed_volumedetect_0 @ 0x7b84c20b40] mean_volume: -19.0 dB
+[Parsed_volumedetect_0 @ 0x7b84c20b40] max_volume: -4.7 dB
+[Parsed_volumedetect_0 @ 0x7b84c20b40] histogram_4db: 3
+[Parsed_volumedetect_0 @ 0x7b84c20b40] histogram_5db: 277
+[Parsed_volumedetect_0 @ 0x7b84c20b40] histogram_6db: 1791
+[Parsed_volumedetect_0 @ 0x7b84c20b40] histogram_7db: 4621
+[out#0/null @ 0x7b84c203c0] video:0KiB audio:4500KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:24.00 bitrate=N/A speed=1.59e+03x elapsed=0:00:00.01    

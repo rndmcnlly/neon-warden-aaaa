@@ -1,0 +1,3406 @@
+{
+ "clip": "writ",
+ "query": "?skipto=sector1&seed=121&qa=1",
+ "settings": {
+  "audio": {
+   "master": 0.8,
+   "music": 0.7,
+   "sfx": 0.8,
+   "voice": 0,
+   "ui": 0.6,
+   "mono": false
+  },
+  "subtitles": {
+   "enabled": false,
+   "scale": 1,
+   "bgOpacity": 0.6,
+   "speakerNames": true,
+   "maxLines": 2
+  },
+  "accessibility": {
+   "difficulty": "story"
+  }
+ },
+ "errors": [],
+ "marks": [
+  {
+   "t": 5.004,
+   "label": "press after 0.9 s rest (Writ 1 expected)"
+  },
+  {
+   "t": 7.471,
+   "label": "press after 2.4 s rest (Writ 3 expected)"
+  },
+  {
+   "t": 8.436,
+   "label": "press after 0.9 s rest (Writ 1 expected)"
+  },
+  {
+   "t": 10.902,
+   "label": "press after 2.4 s rest (Writ 3 expected)"
+  },
+  {
+   "t": 11.866,
+   "label": "press after 0.9 s rest (Writ 1 expected)"
+  },
+  {
+   "t": 14.334,
+   "label": "press after 2.4 s rest (Writ 3 expected)"
+  },
+  {
+   "t": 15.297,
+   "label": "press after 0.9 s rest (Writ 1 expected)"
+  },
+  {
+   "t": 17.763,
+   "label": "press after 2.4 s rest (Writ 3 expected)"
+  }
+ ],
+ "checks": [
+  "pass audio: captured: 26 s audible of 30.27 s, 202 sounds started, 6 VO",
+  "pass audio: true peak at or under -1 dBTP: -4.9 dBTP, -19.7 LUFS integrated",
+  "pass audio: bus loudness (pre-master): music -18.3 LUFS / -3.2 dBTP, sfx -23.2 LUFS / -2.2 dBTP, voice -70 LUFS / NaN dBTP, ui -70 LUFS / NaN dBTP",
+  "pass audio: integrated loudness -20 to -14 LUFS: -19.7 LUFS integrated (target about -17)",
+  "pass VO not dropped: no subtitles shown in this reel"
+ ],
+ "av": {
+  "lufs": -19.7,
+  "truePeak": -4.9,
+  "buses": {
+   "music": {
+    "lufs": -18.3,
+    "truePeak": -3.2
+   },
+   "sfx": {
+    "lufs": -23.2,
+    "truePeak": -2.2
+   },
+   "voice": {
+    "lufs": -70,
+    "truePeak": null
+   },
+   "ui": {
+    "lufs": -70,
+    "truePeak": null
+   }
+  },
+  "audibleS": 26,
+  "voStarted": [
+   "1.63s en/sec1_intro_001.ogg",
+   "4.54s en/lock_ai_001.ogg",
+   "7.45s en/graze_ai_001.ogg",
+   "9.66s en/disarm_ai_001.ogg",
+   "17.2s en/rad_auth_disarmed_001.ogg",
+   "25.78s en/rad_drone_locked_001.ogg"
+  ]
+ },
+ "sources": [
+  {
+   "t": 0.225,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 0.334,
+   "url": "music/gameplay/cand2.ogg",
+   "dur": 60,
+   "loop": true
+  },
+  {
+   "t": 0.778,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.111,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 1.112,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 1.112,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 1.112,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 1.446,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.628,
+   "url": "vo/en/sec1_intro_001.ogg",
+   "dur": 4.8,
+   "loop": false
+  },
+  {
+   "t": 2.097,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.113,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 3.648,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 3.756,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 3.895,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 4.08,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 4.261,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 4.543,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 4.543,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 4.543,
+   "url": "vo/en/lock_ai_001.ogg",
+   "dur": 6.32,
+   "loop": false
+  },
+  {
+   "t": 4.544,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 4.544,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 5.01,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 5.076,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 5.426,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 5.66,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 5.727,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 5.892,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 6.11,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 6.273,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 6.273,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 6.397,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 6.447,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 6.447,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 6.964,
+   "url": "sfx/gameplay/flyby_1.ogg",
+   "dur": 0.5,
+   "loop": false
+  },
+  {
+   "t": 6.997,
+   "url": "sfx/gameplay/flyby_1.ogg",
+   "dur": 0.5,
+   "loop": false
+  },
+  {
+   "t": 7.063,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 7.097,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 7.215,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 7.43,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 7.447,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 7.447,
+   "url": "vo/en/graze_ai_001.ogg",
+   "dur": 4.72,
+   "loop": false
+  },
+  {
+   "t": 7.481,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 7.497,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 7.545,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 7.564,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 7.564,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 7.58,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 7.757,
+   "url": "sfx/gameplay/hit_player_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 7.757,
+   "url": "sfx/gameplay/life_lost_1.ogg",
+   "dur": 1.15,
+   "loop": false
+  },
+  {
+   "t": 7.757,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 7.757,
+   "url": "sfx/gameplay/kill_ram_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 8.224,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 8.448,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 8.506,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 8.748,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 8.748,
+   "url": "sfx/gameplay/part_break_1.ogg",
+   "dur": 0.6,
+   "loop": false
+  },
+  {
+   "t": 8.749,
+   "url": "sfx/gameplay/disarm_1.ogg",
+   "dur": 0.75,
+   "loop": false
+  },
+  {
+   "t": 8.864,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.097,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.148,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.156,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.331,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.514,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.656,
+   "url": "vo/en/disarm_ai_001.ogg",
+   "dur": 7.04,
+   "loop": false
+  },
+  {
+   "t": 9.831,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 9.997,
+   "url": "sfx/gameplay/retreat_1.ogg",
+   "dur": 0.55,
+   "loop": false
+  },
+  {
+   "t": 10.289,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 10.473,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 10.498,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 10.897,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 10.914,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 10.98,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 11.114,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 11.156,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 11.281,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 11.281,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 11.439,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 11.44,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 11.631,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 11.673,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 11.863,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 11.88,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 11.897,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 11.897,
+   "url": "sfx/gameplay/part_break_1.ogg",
+   "dur": 0.6,
+   "loop": false
+  },
+  {
+   "t": 11.898,
+   "url": "sfx/gameplay/disarm_1.ogg",
+   "dur": 0.75,
+   "loop": false
+  },
+  {
+   "t": 11.914,
+   "url": "sfx/gameplay/flyby_1.ogg",
+   "dur": 0.5,
+   "loop": false
+  },
+  {
+   "t": 11.947,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 11.973,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 12.098,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 12.122,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 12.163,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 12.256,
+   "url": "sfx/gameplay/flyby_1.ogg",
+   "dur": 0.5,
+   "loop": false
+  },
+  {
+   "t": 12.273,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 12.429,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 12.589,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 13.256,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 13.298,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 13.356,
+   "url": "sfx/gameplay/hit_player_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 13.356,
+   "url": "sfx/gameplay/life_lost_1.ogg",
+   "dur": 1.15,
+   "loop": false
+  },
+  {
+   "t": 13.923,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 13.923,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 13.989,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 14.14,
+   "url": "sfx/gameplay/retreat_1.ogg",
+   "dur": 0.55,
+   "loop": false
+  },
+  {
+   "t": 14.173,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 14.348,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 14.406,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.056,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.073,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.256,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.306,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 15.364,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.539,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.59,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 15.913,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.006,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.097,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.114,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 16.114,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 16.114,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 16.114,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 16.115,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 16.115,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 16.28,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.489,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.623,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.673,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 16.756,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 16.889,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 16.956,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 17.064,
+   "url": "sfx/gameplay/hit_player_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 17.064,
+   "url": "sfx/gameplay/life_lost_1.ogg",
+   "dur": 1.15,
+   "loop": false
+  },
+  {
+   "t": 17.198,
+   "url": "vo/en/rad_auth_disarmed_001.ogg",
+   "dur": 5.44,
+   "loop": false
+  },
+  {
+   "t": 17.256,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 17.34,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 17.773,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 17.848,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 18.106,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 18.106,
+   "url": "sfx/gameplay/part_break_1.ogg",
+   "dur": 0.6,
+   "loop": false
+  },
+  {
+   "t": 18.107,
+   "url": "sfx/gameplay/disarm_1.ogg",
+   "dur": 0.75,
+   "loop": false
+  },
+  {
+   "t": 18.331,
+   "url": "sfx/gameplay/flyby_1.ogg",
+   "dur": 0.5,
+   "loop": false
+  },
+  {
+   "t": 18.489,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 18.756,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 18.93,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 19.015,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 19.164,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 19.223,
+   "url": "sfx/gameplay/retreat_1.ogg",
+   "dur": 0.55,
+   "loop": false
+  },
+  {
+   "t": 19.256,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 19.656,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 19.823,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 19.84,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 20.023,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 20.023,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 20.024,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 20.106,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 20.423,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 20.506,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 20.906,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 21.106,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 21.306,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 21.49,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 21.506,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 21.856,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 21.889,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 21.906,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 22.056,
+   "url": "sfx/gameplay/hit_player_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 22.056,
+   "url": "sfx/gameplay/life_lost_1.ogg",
+   "dur": 1.15,
+   "loop": false
+  },
+  {
+   "t": 22.09,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 22.311,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 22.494,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 22.494,
+   "url": "sfx/gameplay/kill_ram_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 22.893,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 23.675,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 23.759,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 23.86,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.044,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.227,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.227,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.228,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.477,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.661,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.827,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 24.844,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.027,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.027,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.027,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.228,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.228,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.41,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.593,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.777,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.777,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.778,
+   "url": "vo/en/rad_drone_locked_001.ogg",
+   "dur": 2.72,
+   "loop": false
+  },
+  {
+   "t": 25.778,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 25.977,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 26.161,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 26.161,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 26.343,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 26.359,
+   "url": "sfx/gameplay/hit_player_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 26.359,
+   "url": "sfx/gameplay/life_lost_1.ogg",
+   "dur": 1.15,
+   "loop": false
+  },
+  {
+   "t": 26.36,
+   "url": "sfx/gameplay/game_over_1.ogg",
+   "dur": 1.8,
+   "loop": false
+  },
+  {
+   "t": 26.36,
+   "url": "sfx/notify.ogg",
+   "dur": 0.9,
+   "loop": false
+  },
+  {
+   "t": 26.362,
+   "url": "sfx/focus.ogg",
+   "dur": 0.09,
+   "loop": false
+  }
+ ],
+ "subs": [
+  {
+   "t": 0.123,
+   "k": "sub",
+   "text": "",
+   "visible": false,
+   "layer": "",
+   "line": ""
+  },
+  {
+   "t": 1.63,
+   "k": "sub",
+   "text": "Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 4.546,
+   "k": "sub",
+   "text": "Your first live lock! Intel filed. Every scan helps the Authority map its lanes.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 7.449,
+   "k": "sub",
+   "text": "That was close, and close is billable. Thank you for your proximity.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 9.657,
+   "k": "sub",
+   "text": "A disarm. That is forty percent.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 12.107,
+   "k": "sub",
+   "text": "I am sure you had a reason, and I am sure it was a good one.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 18.109,
+   "k": "sub",
+   "text": "Clean disarm. The scouts call that a handshake. We call it non-standard.",
+   "visible": false,
+   "layer": "ambient",
+   "line": ""
+  },
+  {
+   "t": 22.058,
+   "k": "sub",
+   "text": "Pilot, you're fine. I'm going to keep saying that, and I need it to stay true.",
+   "visible": false,
+   "layer": "ambient",
+   "line": ""
+  }
+ ],
+ "log": [
+  {
+   "k": "ev",
+   "ev": {
+    "type": "sectorStarted",
+    "tick": 0,
+    "sector": 1
+   },
+   "t": 0.232
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 40,
+    "level": 1
+   },
+   "t": 0.8
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 1,
+    "kind": "drone"
+   },
+   "t": 1.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 2,
+    "kind": "drone"
+   },
+   "t": 1.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 3,
+    "kind": "drone"
+   },
+   "t": 1.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 4,
+    "kind": "drone"
+   },
+   "t": 1.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 80,
+    "level": 2
+   },
+   "t": 1.462
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 119,
+    "id": 1,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 163.6594744907562,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 2.121
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 120,
+    "level": 3
+   },
+   "t": 2.121
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 219,
+    "id": 2,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 171.49127826293898,
+     "y": 210
+    },
+    "bullets": 1
+   },
+   "t": 3.773
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "scanLock",
+    "tick": 266,
+    "id": 1,
+    "target": "enemy",
+    "kind": "drone",
+    "pos": {
+     "x": 149.0396496407383,
+     "y": 280.5
+    },
+    "ai": "patrol",
+    "first": true
+   },
+   "t": 4.551
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 266,
+    "credits": 10,
+    "rate": 1.05,
+    "delta": 10,
+    "reason": "scan"
+   },
+   "t": 4.551
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "intel",
+    "tick": 266,
+    "id": 1,
+    "codexId": "codex.enemy.drone",
+    "ai": "patrol",
+    "first": true
+   },
+   "t": 4.551
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 5.031
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 294,
+    "level": 0
+   },
+   "t": 5.031
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 319,
+    "id": 1,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 108.94875513972447,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 5.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 319,
+    "id": 2,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 243.05124486027552,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 5.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 319,
+    "id": 3,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 236.94875513972448,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 5.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 337,
+    "level": 1
+   },
+   "t": 5.752
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 360,
+    "id": 11,
+    "kind": "drone"
+   },
+   "t": 6.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 370,
+    "id": 12,
+    "kind": "drone"
+   },
+   "t": 6.291
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 370,
+    "id": 13,
+    "kind": "drone"
+   },
+   "t": 6.291
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 377,
+    "level": 2
+   },
+   "t": 6.411
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 380,
+    "id": 14,
+    "kind": "drone"
+   },
+   "t": 6.471
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 380,
+    "id": 15,
+    "kind": "drone"
+   },
+   "t": 6.471
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 417,
+    "level": 3
+   },
+   "t": 7.072
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 419,
+    "id": 1,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 122.26858862567056,
+     "y": 510
+    },
+    "bullets": 1
+   },
+   "t": 7.1
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 426,
+    "bulletId": 6,
+    "pos": {
+     "x": 248.2058849879918,
+     "y": 601.922541728618
+    },
+    "relVel": {
+     "x": 4.568820224639654,
+     "y": 1.8842429890798975
+    },
+    "distance": 43.64100005715406,
+    "heavy": false
+   },
+   "t": 7.223
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 429,
+    "id": 13,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 192.3405255092438,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 7.282
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 439,
+    "id": 15,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 275.65947449075617,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 7.431
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 440,
+    "bulletId": 8,
+    "pos": {
+     "x": 180.188852721336,
+     "y": 583.1439582345049
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": true
+   },
+   "t": 7.462
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 440,
+    "credits": 15,
+    "rate": 1.07,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 7.462
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 7.491
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 442,
+    "level": 0
+   },
+   "t": 7.491
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 443,
+    "bulletId": 8,
+    "pos": {
+     "x": 181.94065839957233,
+     "y": 588.6311047484683
+    },
+    "relVel": {
+     "x": 4.783935226078779,
+     "y": 1.8290488379877425
+    },
+    "distance": 29.549709629869408,
+    "heavy": false
+   },
+   "t": 7.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 447,
+    "bulletId": 9,
+    "pos": {
+     "x": 160.9685808462195,
+     "y": 593.6831587178579
+    },
+    "relVel": {
+     "x": 3.5637002789608077,
+     "y": 1.811497354402004
+    },
+    "distance": 35.39509147346813,
+    "heavy": false
+   },
+   "t": 7.582
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 447,
+    "bulletId": 10,
+    "pos": {
+     "x": 161.3027982113375,
+     "y": 595.8454400669842
+    },
+    "relVel": {
+     "x": 3.613597233113268,
+     "y": 1.8282592253254457
+    },
+    "distance": 37.222370148750855,
+    "heavy": false
+   },
+   "t": 7.582
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 448,
+    "bulletId": 16,
+    "pos": {
+     "x": 177.478938374462,
+     "y": 526.4188087453431
+    },
+    "relVel": {
+     "x": 6.04034499162637,
+     "y": 0.5472936248447412
+    },
+    "distance": 34.24632962177775,
+    "heavy": false
+   },
+   "t": 7.582
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 459,
+    "credits": 15,
+    "rate": 1,
+    "delta": 0,
+    "reason": "rateBreak"
+   },
+   "t": 7.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "lifeLost",
+    "tick": 459,
+    "livesLeft": 4
+   },
+   "t": 7.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "kill",
+    "tick": 459,
+    "id": 1,
+    "kind": "drone",
+    "score": 100,
+    "byRam": true,
+    "clean": false
+   },
+   "t": 7.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 459,
+    "credits": 115,
+    "rate": 1.1,
+    "delta": 100,
+    "reason": "kill"
+   },
+   "t": 7.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 485,
+    "level": 1
+   },
+   "t": 8.241
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 8.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 500,
+    "level": 0
+   },
+   "t": 8.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "partBreak",
+    "tick": 518,
+    "id": 12,
+    "target": "enemy",
+    "part": "gun",
+    "partKind": "gun",
+    "pos": {
+     "x": 105.16682919204449,
+     "y": 202.5
+    },
+    "by": "writ",
+    "first": true
+   },
+   "t": 8.751
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 518,
+    "credits": 159,
+    "rate": 1.3,
+    "delta": 44,
+    "reason": "partBreak"
+   },
+   "t": 8.751
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "disarm",
+    "tick": 518,
+    "id": 12,
+    "kind": "drone",
+    "pos": {
+     "x": 105.16682919204449,
+     "y": 193.5
+    },
+    "cancelled": 0,
+    "first": true
+   },
+   "t": 8.751
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 518,
+    "credits": 211,
+    "rate": 1.5,
+    "delta": 52,
+    "reason": "disarm"
+   },
+   "t": 8.751
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 539,
+    "id": 15,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 292.508721737061,
+     "y": 210
+    },
+    "bullets": 1
+   },
+   "t": 9.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 543,
+    "level": 1
+   },
+   "t": 9.171
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 583,
+    "level": 2
+   },
+   "t": 9.832
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "despawn",
+    "tick": 593,
+    "id": 12,
+    "reason": "spared"
+   },
+   "t": 10.012
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 623,
+    "level": 3
+   },
+   "t": 10.523
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 10.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 648,
+    "level": 0
+   },
+   "t": 10.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 660,
+    "id": 23,
+    "kind": "drone"
+   },
+   "t": 11.123
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 670,
+    "id": 24,
+    "kind": "drone"
+   },
+   "t": 11.302
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 670,
+    "id": 25,
+    "kind": "drone"
+   },
+   "t": 11.302
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 680,
+    "id": 26,
+    "kind": "drone"
+   },
+   "t": 11.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 680,
+    "id": 27,
+    "kind": "drone"
+   },
+   "t": 11.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 691,
+    "level": 1
+   },
+   "t": 11.66
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 705,
+    "bulletId": 18,
+    "pos": {
+     "x": 205.32072651814087,
+     "y": 567.7915223136837
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": false
+   },
+   "t": 11.873
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 705,
+    "credits": 219,
+    "rate": 1.52,
+    "delta": 8,
+    "reason": "graze"
+   },
+   "t": 11.873
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 11.9
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 706,
+    "level": 0
+   },
+   "t": 11.9
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "partBreak",
+    "tick": 707,
+    "id": 11,
+    "target": "enemy",
+    "part": "gun",
+    "partKind": "gun",
+    "pos": {
+     "x": 170.20546449596446,
+     "y": 501
+    },
+    "by": "writ",
+    "first": false
+   },
+   "t": 11.9
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 707,
+    "credits": 280,
+    "rate": 1.72,
+    "delta": 61,
+    "reason": "partBreak"
+   },
+   "t": 11.9
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "disarm",
+    "tick": 707,
+    "id": 11,
+    "kind": "drone",
+    "pos": {
+     "x": 170.20546449596446,
+     "y": 492
+    },
+    "cancelled": 0,
+    "first": false
+   },
+   "t": 11.9
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 707,
+    "credits": 349,
+    "rate": 1.92,
+    "delta": 69,
+    "reason": "disarm"
+   },
+   "t": 11.9
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 712,
+    "bulletId": 18,
+    "pos": {
+     "x": 203.4766394926416,
+     "y": 581.104408666477
+    },
+    "relVel": {
+     "x": -4.4634410036427346,
+     "y": 1.901840907541875
+    },
+    "distance": 20.04213393429739,
+    "heavy": false
+   },
+   "t": 11.991
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 719,
+    "id": 23,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 331.65947449075617,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 12.112
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 723,
+    "bulletId": 21,
+    "pos": {
+     "x": 281.84867433132825,
+     "y": 565.040002519865
+    },
+    "count": 1,
+    "meter": 0.1,
+    "first": false
+   },
+   "t": 12.172
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 723,
+    "credits": 359,
+    "rate": 1.94,
+    "delta": 10,
+    "reason": "graze"
+   },
+   "t": 12.172
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 729,
+    "id": 13,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 233.73141137432944,
+     "y": 510
+    },
+    "bullets": 1
+   },
+   "t": 12.262
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 729,
+    "id": 25,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 336.34052550924383,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 12.262
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 730,
+    "bulletId": 21,
+    "pos": {
+     "x": 281.4453211862465,
+     "y": 578.4739485611572
+    },
+    "relVel": {
+     "x": -4.257621877868819,
+     "y": 1.9191351487560404
+    },
+    "distance": 18.344436655129694,
+    "heavy": false
+   },
+   "t": 12.29
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 739,
+    "id": 15,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 234.26858862567056,
+     "y": 510
+    },
+    "bullets": 1
+   },
+   "t": 12.441
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 749,
+    "level": 1
+   },
+   "t": 12.59
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 789,
+    "level": 2
+   },
+   "t": 13.282
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 791,
+    "bulletId": 32,
+    "pos": {
+     "x": 320.9571651439777,
+     "y": 563.2934170534205
+    },
+    "count": 1,
+    "meter": 0.15000000000000002,
+    "first": false
+   },
+   "t": 13.312
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 791,
+    "credits": 369,
+    "rate": 1.96,
+    "delta": 10,
+    "reason": "graze"
+   },
+   "t": 13.312
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 795,
+    "credits": 369,
+    "rate": 1,
+    "delta": 0,
+    "reason": "rateBreak"
+   },
+   "t": 13.372
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "lifeLost",
+    "tick": 795,
+    "livesLeft": 3
+   },
+   "t": 13.372
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "statsMoment",
+    "tick": 795,
+    "moment": "repeatedDeaths",
+    "value": 2
+   },
+   "t": 13.372
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 829,
+    "level": 3
+   },
+   "t": 13.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 829,
+    "id": 25,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 319.491278262939,
+     "y": 210
+    },
+    "bullets": 1
+   },
+   "t": 13.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "despawn",
+    "tick": 842,
+    "id": 11,
+    "reason": "spared"
+   },
+   "t": 14.151
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 14.362
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 854,
+    "level": 0
+   },
+   "t": 14.362
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 897,
+    "level": 1
+   },
+   "t": 15.08
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 15.322
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 912,
+    "level": 0
+   },
+   "t": 15.322
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 929,
+    "id": 25,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 391.0512448602755,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 15.59
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 954,
+    "level": 1
+   },
+   "t": 16.012
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 960,
+    "id": 37,
+    "kind": "drone"
+   },
+   "t": 16.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 960,
+    "id": 38,
+    "kind": "drone"
+   },
+   "t": 16.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 960,
+    "id": 39,
+    "kind": "drone"
+   },
+   "t": 16.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 960,
+    "id": 40,
+    "kind": "drone"
+   },
+   "t": 16.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 960,
+    "id": 41,
+    "kind": "drone"
+   },
+   "t": 16.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 960,
+    "id": 42,
+    "kind": "drone"
+   },
+   "t": 16.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 991,
+    "bulletId": 31,
+    "pos": {
+     "x": 273.470639545365,
+     "y": 561.0309162505717
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": false
+   },
+   "t": 16.641
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 991,
+    "credits": 374,
+    "rate": 1.02,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 16.641
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 994,
+    "level": 2
+   },
+   "t": 16.674
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 999,
+    "bulletId": 31,
+    "pos": {
+     "x": 271.55824757688197,
+     "y": 576.2714003950758
+    },
+    "relVel": {
+     "x": 3.9609510039396163,
+     "y": 1.9050605180630162
+    },
+    "distance": 15.569976554094655,
+    "heavy": false
+   },
+   "t": 16.761
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 1007,
+    "bulletId": 29,
+    "pos": {
+     "x": 222.77632412953383,
+     "y": 604.0921557672176
+    },
+    "relVel": {
+     "x": 3.823241694251821,
+     "y": 1.8826718192637213
+    },
+    "distance": 47.16580619610582,
+    "heavy": false
+   },
+   "t": 16.912
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 1011,
+    "bulletId": 33,
+    "pos": {
+     "x": 197.2423834387754,
+     "y": 539.4071300294979
+    },
+    "count": 1,
+    "meter": 0.1,
+    "first": false
+   },
+   "t": 16.972
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1011,
+    "credits": 379,
+    "rate": 1.04,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 16.972
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1017,
+    "credits": 379,
+    "rate": 1,
+    "delta": 0,
+    "reason": "rateBreak"
+   },
+   "t": 17.09
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "lifeLost",
+    "tick": 1017,
+    "livesLeft": 2
+   },
+   "t": 17.09
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1029,
+    "id": 24,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 289.73141137432947,
+     "y": 510
+    },
+    "bullets": 1
+   },
+   "t": 17.271
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 1034,
+    "level": 3
+   },
+   "t": 17.362
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 17.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 1060,
+    "level": 0
+   },
+   "t": 17.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "partBreak",
+    "tick": 1080,
+    "id": 37,
+    "target": "enemy",
+    "part": "gun",
+    "partKind": "gun",
+    "pos": {
+     "x": 45.802189891059925,
+     "y": 160.5
+    },
+    "by": "writ",
+    "first": false
+   },
+   "t": 18.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1080,
+    "credits": 419,
+    "rate": 1.2,
+    "delta": 40,
+    "reason": "partBreak"
+   },
+   "t": 18.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "disarm",
+    "tick": 1080,
+    "id": 37,
+    "kind": "drone",
+    "pos": {
+     "x": 45.802189891059925,
+     "y": 151.5
+    },
+    "cancelled": 0,
+    "first": false
+   },
+   "t": 18.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1080,
+    "credits": 467,
+    "rate": 1.4,
+    "delta": 48,
+    "reason": "disarm"
+   },
+   "t": 18.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 1103,
+    "level": 1
+   },
+   "t": 18.501
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1119,
+    "id": 41,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 372.508721737061,
+     "y": 210
+    },
+    "bullets": 1
+   },
+   "t": 18.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1119,
+    "id": 42,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 363.491278262939,
+     "y": 210
+    },
+    "bullets": 1
+   },
+   "t": 18.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1129,
+    "id": 24,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 223.78697467290263,
+     "y": 660
+    },
+    "bullets": 1
+   },
+   "t": 18.951
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 1143,
+    "level": 2
+   },
+   "t": 19.191
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "despawn",
+    "tick": 1147,
+    "id": 37,
+    "reason": "spared"
+   },
+   "t": 19.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 1183,
+    "level": 3
+   },
+   "t": 19.852
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "scanLock",
+    "tick": 1195,
+    "id": 42,
+    "target": "enemy",
+    "kind": "drone",
+    "pos": {
+     "x": 442.793667645198,
+     "y": 324
+    },
+    "ai": "patrol",
+    "first": false
+   },
+   "t": 20.031
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1195,
+    "credits": 481,
+    "rate": 1.45,
+    "delta": 14,
+    "reason": "scan"
+   },
+   "t": 20.031
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "intel",
+    "tick": 1195,
+    "id": 42,
+    "codexId": "codex.enemy.drone",
+    "ai": "patrol",
+    "first": false
+   },
+   "t": 20.031
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1200,
+    "id": 48,
+    "kind": "drone"
+   },
+   "t": 20.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1219,
+    "id": 42,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 435.0512448602755,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 20.451
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1224,
+    "id": 50,
+    "kind": "drone"
+   },
+   "t": 20.512
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1248,
+    "id": 51,
+    "kind": "drone"
+   },
+   "t": 20.931
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1260,
+    "id": 52,
+    "kind": "drone"
+   },
+   "t": 21.111
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1272,
+    "id": 53,
+    "kind": "drone"
+   },
+   "t": 21.323
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1283,
+    "id": 50,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 100.3405255092438,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 21.5
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1284,
+    "id": 55,
+    "kind": "drone"
+   },
+   "t": 21.531
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 1305,
+    "bulletId": 49,
+    "pos": {
+     "x": 433.5051513844109,
+     "y": 527.0328446592569
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": false
+   },
+   "t": 21.862
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1305,
+    "credits": 488,
+    "rate": 1.47,
+    "delta": 7,
+    "reason": "graze"
+   },
+   "t": 21.862
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1307,
+    "id": 51,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 139.6594744907562,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 21.89
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1308,
+    "id": 57,
+    "kind": "drone"
+   },
+   "t": 21.921
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1317,
+    "credits": 488,
+    "rate": 1,
+    "delta": 0,
+    "reason": "rateBreak"
+   },
+   "t": 22.072
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "lifeLost",
+    "tick": 1317,
+    "livesLeft": 1
+   },
+   "t": 22.072
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1319,
+    "id": 39,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 186.26858862567056,
+     "y": 510
+    },
+    "bullets": 1
+   },
+   "t": 22.101
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1319,
+    "id": 41,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 314.26858862567053,
+     "y": 510
+    },
+    "bullets": 1
+   },
+   "t": 22.101
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1319,
+    "id": 52,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 379.65947449075617,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 22.101
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 1332,
+    "id": 61,
+    "kind": "drone"
+   },
+   "t": 22.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "kill",
+    "tick": 1343,
+    "id": 42,
+    "kind": "drone",
+    "score": 100,
+    "byRam": true,
+    "clean": false
+   },
+   "t": 22.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1343,
+    "credits": 588,
+    "rate": 1.1,
+    "delta": 100,
+    "reason": "kill"
+   },
+   "t": 22.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1367,
+    "id": 57,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 379.65947449075617,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 22.911
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1419,
+    "id": 38,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 99.78697467290263,
+     "y": 660
+    },
+    "bullets": 1
+   },
+   "t": 23.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1419,
+    "id": 41,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 380.21302532709734,
+     "y": 660
+    },
+    "bullets": 1
+   },
+   "t": 23.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "scanLock",
+    "tick": 1447,
+    "id": 52,
+    "target": "enemy",
+    "kind": "drone",
+    "pos": {
+     "x": 397.80843331003376,
+     "y": 252
+    },
+    "ai": "patrol",
+    "first": false
+   },
+   "t": 24.232
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1447,
+    "credits": 599,
+    "rate": 1.15,
+    "delta": 11,
+    "reason": "scan"
+   },
+   "t": 24.232
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "intel",
+    "tick": 1447,
+    "id": 52,
+    "codexId": "codex.enemy.drone",
+    "ai": "patrol",
+    "first": false
+   },
+   "t": 24.232
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1483,
+    "id": 50,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 155.05124486027552,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 24.831
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "scanLock",
+    "tick": 1495,
+    "id": 57,
+    "target": "enemy",
+    "kind": "drone",
+    "pos": {
+     "x": 397.80843331003376,
+     "y": 252
+    },
+    "ai": "patrol",
+    "first": false
+   },
+   "t": 25.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1495,
+    "credits": 611,
+    "rate": 1.2,
+    "delta": 12,
+    "reason": "scan"
+   },
+   "t": 25.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "intel",
+    "tick": 1495,
+    "id": 57,
+    "codexId": "codex.enemy.drone",
+    "ai": "patrol",
+    "first": false
+   },
+   "t": 25.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 1507,
+    "id": 51,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 84.94875513972447,
+     "y": 360
+    },
+    "bullets": 1
+   },
+   "t": 25.253
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "scanLock",
+    "tick": 1540,
+    "id": 55,
+    "target": "enemy",
+    "kind": "drone",
+    "pos": {
+     "x": 398.74169405324926,
+     "y": 355.5
+    },
+    "ai": "aim",
+    "first": false
+   },
+   "t": 25.79
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1540,
+    "credits": 623,
+    "rate": 1.25,
+    "delta": 12,
+    "reason": "scan"
+   },
+   "t": 25.79
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "intel",
+    "tick": 1540,
+    "id": 55,
+    "codexId": "codex.enemy.drone",
+    "ai": "aim",
+    "first": false
+   },
+   "t": 25.79
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "statsMoment",
+    "tick": 1542,
+    "moment": "writHoarding",
+    "value": 360
+   },
+   "t": 25.82
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 1563,
+    "bulletId": 60,
+    "pos": {
+     "x": 429.7440755076066,
+     "y": 527.7260873000174
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": false
+   },
+   "t": 26.182
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1563,
+    "credits": 629,
+    "rate": 1.27,
+    "delta": 6,
+    "reason": "graze"
+   },
+   "t": 26.182
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 1575,
+    "credits": 629,
+    "rate": 1,
+    "delta": 0,
+    "reason": "rateBreak"
+   },
+   "t": 26.365
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "lifeLost",
+    "tick": 1575,
+    "livesLeft": 0
+   },
+   "t": 26.365
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "gameOver",
+    "tick": 1575
+   },
+   "t": 26.365
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "gen-1793254872-DgPMPQ3gSV61FmbLbaNw",
+  "object": "chat.completion",
+  "created": 1793254872,
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "system_fingerprint": null,
+  "service_tier": "default",
+  "choices": [
+    {
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "STOP",
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"role\": \"first-time listener (audio-only ablation, blank picture)\",\n  \"clips\": [\n    {\n      \"id\": \"C\",\n      \"ordered_observations\": [\n        {\n          \"start_s\": 0.0,\n          \"end_s\": 12.1,\n          \"account\": \"A high-pitched female voice reports a disarm and a close call, followed by chimes and a calm female voice reporting that something shot a dart.\",\n          \"threat_origin\": \"Unknown spatial origin; calm voice at 10.2s states 'It shot a dart', indicating a projectile threat from an unspecified entity.\",\n          \"action_response\": \"Unknown player input; voices react to proximity ('That was close') and a disarm event.\",\n          \"goal_resource_change\": \"Voice announces 'that is 40%' and 'close is billable' after the disarm.\",\n          \"uncertainty\": \"Clipped opening words at 0.0s; cannot determine what was disarmed or what fired the dart without visuals.\"\n        },\n        {\n          \"start_s\": 12.1,\n          \"end_s\": 31.8,\n          \"account\": \"High-pitched voice announces a live lock and intel filing, then overlaps heavily with a lower-pitched voice giving instructions before panicking about a crystal flight recorder opening.\",\n          \"threat_origin\": \"At 26.2s, the high-pitched voice warns not to open a recovered flight recorder crystal, which opens anyway.\",\n          \"action_response\": \"Player or system scans/files intel and opens the crystal despite repeated verbal warnings ('Please don't open it. You're opening it!').\",\n          \"goal_resource_change\": \"Intel is filed/received (13.8s, 19.3s); crystal transitions to opening state at 30.8s.\",\n          \"uncertainty\": \"Severe voice overlap between 20.5s and 25.8s masks critical instructions about unarmed ships and hostile annotations.\"\n        }\n      ],\n      \"heard\": [\n        {\n          \"at_s\": 1.8,\n          \"words\": \"A disarm! That is 40%. I'm sh- That was close, and close is billable. Thank you for your proximity.\",\n          \"source\": \"High-pitched female voice\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"at_s\": 10.2,\n          \"words\": \"It shot a dart. It shot\",\n          \"source\": \"Calm female voice\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"at_s\": 26.2,\n          \"words\": \"Oh, that crystal is a recovered flight recorder. Please don't open it. You're opening it! It's opening!\",\n          \"source\": \"High-pitched female voice\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"readable_text\": [],\n      \"simultaneous_information\": [\n        {\n          \"at_s\": 12.1,\n          \"channels\": [\n            \"Calm female voice\",\n            \"High-pitched female voice\"\n          ],\n          \"competition\": \"High-pitched voice ('Your first live lock') cuts off calm voice ('It shot an...').\",\n          \"consequence\": \"The second sentence from the calm voice about what was shot is lost.\"\n        },\n        {\n          \"at_s\": 20.5,\n          \"channels\": [\n            \"High-pitched female voice\",\n            \"Lower-pitched radio/synthetic voice\"\n          ],\n          \"competition\": \"Both voices speak simultaneously for 5 seconds ('If you see unarmed ships in the lanes, please ignore them...' vs '...area... please annotate as hostile...').\",\n          \"consequence\": \"Opposite or competing rules of engagement (ignore vs annotate as hostile) mask each other, making both hard to parse on first pass.\"\n        }\n      ],\n      \"ratings\": {\n        \"detection\": 2,\n        \"cause_attribution\": 1,\n        \"text_legibility\": null,\n        \"audio_source_identification\": 2,\n        \"recoverability\": 2\n      },\n      \"rating_evidence\": \"Without video, threats and state changes are only known post-hoc through voice lines ('It shot a dart', 'You're opening it!'), with no distinct spatial or mechanical sound cues preceding them. Simultaneous voice lines at 12.1s and 20.5s directly mask competing instructions about threats and rules of engagement.\",\n      \"uncertainties\": [\n        \"0.0s: Opening phrase sounds like '...ipers in' or '...ivers in', cut off at start.\",\n        \"12.0s: Calm voice says 'It shot an el...' before being interrupted.\",\n        \"20.5s-25.8s: Lower voice says something like 'Scout the area... patrol... please annotate as hostile' underneath the high-pitched voice talking about unarmed ships not paying.\"\n      ],\n      \"minimal_fix\": \"Implement a voice priority queue with ducking so the high-pitched announcer and secondary voices never speak simultaneously at 12.1s and 20.5s.\"\n    },\n    {\n      \"id\": \"G\",\n      \"ordered_observations\": [\n        {\n          \"start_s\": 0.0,\n          \"end_s\": 25.0,\n          \"account\": \"Over upbeat electronic music, an enthusiastic female instructor voice guides the listener through directional movement (left, right, up, down) and praises completion.\",\n          \"threat_origin\": \"None detected in this segment.\",\n          \"action_response\": \"Voice confirms left key pressed (8.2s), right key pressed (17.2s), and up/down completed (20.2s), though no distinct movement sound effects are audible.\",\n          \"goal_resource_change\": \"Tutorial progression through four directional movement checks.\",\n          \"uncertainty\": \"No audio feedback confirms the actual moment of key presses; only the delayed verbal praise indicates success.\"\n        },\n        {\n          \"start_s\": 25.0,\n          \"end_s\": 57.6,\n          \"account\": \"The instructor explains the ship's center gem hitbox, how to hold focus for slow movement, and how to hold fire to shoot upward.\",\n          \"threat_origin\": \"Voice states at 53.5s that 'up is where the problems are' and mentions threading the gem between bullets (38.2s).\",\n          \"action_response\": \"Voice confirms the listener is holding focus at 41.6s ('Good, still focusing, great!'), followed by instruction to hold fire at 50.4s.\",\n          \"goal_resource_change\": \"Tutorial advances from focus practice to weapon firing instruction.\",\n          \"uncertainty\": \"Whether the player actually fired weapons after 50.4s cannot be determined because there are no distinct gunfire sound effects over the music.\"\n        }\n      ],\n      \"heard\": [\n        {\n          \"at_s\": 8.2,\n          \"words\": \"Great job pressing the left key! Now for your next challenge, press the right key.\",\n          \"source\": \"Enthusiastic female instructor voice\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"at_s\": 25.4,\n          \"words\": \"Your ship is large and beautiful, but only the small glowing gem at its center can be hit. Please protect the gem, the gem is you.\",\n          \"source\": \"Enthusiastic female instructor voice\",\n          \"confidence\": \"high\"\n        },\n        {\n          \"at_s\": 48.7,\n          \"words\": \"Now let's learn to fire. Hold fire to release bullets. Bullets go up. Up is where the problems are.\",\n          \"source\": \"Enthusiastic female instructor voice\",\n          \"confidence\": \"high\"\n        }\n      ],\n      \"readable_text\": [],\n      \"simultaneous_information\": [\n        {\n          \"at_s\": 0.0,\n          \"channels\": [\n            \"Enthusiastic female instructor voice\",\n            \"Upbeat electronic background music\"\n          ],\n          \"competition\": \"Continuous synth melody and percussion play underneath the tutorial voice throughout the clip.\",\n          \"consequence\": \"Speech remains highly intelligible, though subtle mechanical/action SFX (if any exist) are either absent or masked by the music.\"\n        }\n      ],\n      \"ratings\": {\n        \"detection\": 4,\n        \"cause_attribution\": 3,\n        \"text_legibility\": null,\n        \"audio_source_identification\": 5,\n        \"recoverability\": 5\n      },\n      \"rating_evidence\": \"The single tutorial voice is well-paced and clearly explains mechanics, hitboxes, and threat direction ('up is where the problems are') without overlapping speech. However, cause attribution relies entirely on delayed verbal confirmation because player actions (moving, focusing, firing) lack distinct non-verbal sound effects.\",\n      \"uncertainties\": [\n        \"0.0s: First word is clipped ('...get from one place to another').\",\n        \"44.0s-48.5s and 55.0s-57.6s: Unclear if any player action SFX (focus hum or bullet firing) are occurring during the musical interludes.\"\n      ],\n      \"minimal_fix\": \"Add distinct, audible sound effects for movement, focus activation, and weapon firing so action-response feedback does not rely solely on delayed voiceover confirmation.\"\n    }\n  ],\n  \"cross_clip_summary\": \"Both clips are audio-only ablations with blank video (text_legibility is null). Intelligibility is governed by voice queuing and non-verbal SFX: Sequence G is easy to follow because a single voice speaks clearly over background music, whereas Sequence C suffers from severe speech-on-speech masking (12.1s and 20.5s) where simultaneous voices obscure critical threat and rule-of-engagement details. Neither clip provides clear non-verbal audio cues for player actions or incoming threats prior to voiceover commentary.\"\n}",
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+          {
+            "type": "reasoning.encrypted",
+            "data": "AY89a197YYap+/e1H2iLgvPhq8s5sSwZlZ48A0UUtB3wqGUOYJKr0NGOD8o2xHqy3hZyDNW6xegzvNteDjwDRAGvG3/8kahOzVrx319CpoBFYGWoxQ==",
+            "format": "google-gemini-v1",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9984,
+    "completion_tokens": 2299,
+    "total_tokens": 12283,
+    "cost": 0.042958,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 9090
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.042958,
+      "upstream_inference_prompt_cost": 0.019968,
+      "upstream_inference_completions_cost": 0.02299
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "wall_s": 40.25
+}

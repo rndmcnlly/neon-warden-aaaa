@@ -1,0 +1,1272 @@
+{
+ "clip": "writ-auto",
+ "query": "?skipto=sector1&autoplay=fight&speed=1&seed=121&qa=1",
+ "settings": {
+  "audio": {
+   "master": 0.8,
+   "music": 0.7,
+   "sfx": 0.8,
+   "voice": 0,
+   "ui": 0.6,
+   "mono": false
+  },
+  "subtitles": {
+   "enabled": false,
+   "scale": 1,
+   "bgOpacity": 0.6,
+   "speakerNames": true,
+   "maxLines": 2
+  }
+ },
+ "errors": [],
+ "marks": [],
+ "checks": [
+  "pass audio: captured: 39.97 s audible of 40.26 s, 49 sounds started, 8 VO",
+  "pass audio: true peak at or under -1 dBTP: -8 dBTP, -24.2 LUFS integrated",
+  "pass audio: bus loudness (pre-master): music -22.6 LUFS / -7.3 dBTP, sfx -23.2 LUFS / -6.2 dBTP, voice -70 LUFS / NaN dBTP, ui -70 LUFS / NaN dBTP",
+  "warn audio: integrated loudness -20 to -14 LUFS: -24.2 LUFS integrated (target about -17)",
+  "pass VO not dropped: no subtitles shown in this reel"
+ ],
+ "av": {
+  "lufs": -24.2,
+  "truePeak": -8,
+  "buses": {
+   "music": {
+    "lufs": -22.6,
+    "truePeak": -7.3
+   },
+   "sfx": {
+    "lufs": -23.2,
+    "truePeak": -6.2
+   },
+   "voice": {
+    "lufs": -70,
+    "truePeak": null
+   },
+   "ui": {
+    "lufs": -70,
+    "truePeak": null
+   }
+  },
+  "audibleS": 39.97,
+  "voStarted": [
+   "1.54s en/sec1_intro_001.ogg",
+   "2.48s en/disarm_ai_001.ogg",
+   "2.61s en/graze_ai_001.ogg",
+   "2.88s en/flash_ai_001.ogg",
+   "11.44s en/flash_rec_001.ogg",
+   "19.13s en/flash_rec_002.ogg",
+   "26.9s en/flash_rec_003.ogg",
+   "32.64s en/flash_rec_004.ogg"
+  ]
+ },
+ "sources": [
+  {
+   "t": 0.133,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 0.331,
+   "url": "music/gameplay/cand2.ogg",
+   "dur": 60,
+   "loop": true
+  },
+  {
+   "t": 0.561,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 0.728,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 0.728,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 0.728,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 0.728,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 0.894,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.219,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.227,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.403,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 1.469,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.527,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.536,
+   "url": "vo/en/sec1_intro_001.ogg",
+   "dur": 4.8,
+   "loop": false
+  },
+  {
+   "t": 1.578,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 1.578,
+   "url": "sfx/gameplay/part_break_1.ogg",
+   "dur": 0.6,
+   "loop": false
+  },
+  {
+   "t": 1.578,
+   "url": "sfx/gameplay/disarm_1.ogg",
+   "dur": 0.75,
+   "loop": false
+  },
+  {
+   "t": 1.645,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.702,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.757,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.757,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 1.815,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.848,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 1.848,
+   "url": "sfx/gameplay/kill_small_1.ogg",
+   "dur": 0.38,
+   "loop": false
+  },
+  {
+   "t": 1.873,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.931,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.981,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 1.988,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.03,
+   "url": "sfx/gameplay/hit_enemy_1.ogg",
+   "dur": 0.12,
+   "loop": false
+  },
+  {
+   "t": 2.03,
+   "url": "sfx/gameplay/kill_small_1.ogg",
+   "dur": 0.38,
+   "loop": false
+  },
+  {
+   "t": 2.047,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.104,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.104,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.163,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.205,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.48,
+   "url": "vo/en/disarm_ai_001.ogg",
+   "dur": 7.04,
+   "loop": false
+  },
+  {
+   "t": 2.53,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.554,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 2.605,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.606,
+   "url": "vo/en/graze_ai_001.ogg",
+   "dur": 4.72,
+   "loop": false
+  },
+  {
+   "t": 2.73,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 2.863,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 2.88,
+   "url": "sfx/notify.ogg",
+   "dur": 0.9,
+   "loop": false
+  },
+  {
+   "t": 2.88,
+   "url": "vo/en/flash_ai_001.ogg",
+   "dur": 7.76,
+   "loop": false
+  },
+  {
+   "t": 10.647,
+   "url": "music/flashback/cand2.ogg",
+   "dur": 45,
+   "loop": true
+  },
+  {
+   "t": 11.443,
+   "url": "vo/en/flash_rec_001.ogg",
+   "dur": 7.28,
+   "loop": false
+  },
+  {
+   "t": 19.13,
+   "url": "vo/en/flash_rec_002.ogg",
+   "dur": 7.76,
+   "loop": false
+  },
+  {
+   "t": 26.901,
+   "url": "vo/en/flash_rec_003.ogg",
+   "dur": 5.44,
+   "loop": false
+  },
+  {
+   "t": 32.635,
+   "url": "vo/en/flash_rec_004.ogg",
+   "dur": 7.28,
+   "loop": false
+  }
+ ],
+ "subs": [
+  {
+   "t": 0.122,
+   "k": "sub",
+   "text": "",
+   "visible": false,
+   "layer": "",
+   "line": ""
+  },
+  {
+   "t": 1.537,
+   "k": "sub",
+   "text": "Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 2.481,
+   "k": "sub",
+   "text": "A disarm. That is forty percent.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 2.607,
+   "k": "sub",
+   "text": "That was close, and close is billable. Thank you for your proximity.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 2.881,
+   "k": "sub",
+   "text": "Oh! That crystal is a recovered flight recorder. Please don't open it.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 8.206,
+   "k": "sub",
+   "text": "You're opening it. It's opening.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 11.443,
+   "k": "sub",
+   "text": "Recording. Pilot zero one two one. Last Approach. Weapon status: cold.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 19.13,
+   "k": "sub",
+   "text": "Pilot zero one two one, your weapon is cold. Please fire. Please fire.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 25.607,
+   "k": "sub",
+   "text": "Pilot, please.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 26.902,
+   "k": "sub",
+   "text": "You stopped! Why did you stop?! Nobody stops! Nobody EVER stops!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 32.636,
+   "k": "sub",
+   "text": "Look! The little ships! No guns! They fly my lanes because I keep them free! FREE!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 38.019,
+   "k": "sub",
+   "text": "Do you know what free means?!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  }
+ ],
+ "log": [
+  {
+   "k": "ev",
+   "ev": {
+    "type": "sectorStarted",
+    "tick": 0,
+    "sector": 1
+   },
+   "t": 0.231
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 40,
+    "level": 1
+   },
+   "t": 0.591
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 1,
+    "kind": "drone"
+   },
+   "t": 0.741
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 2,
+    "kind": "drone"
+   },
+   "t": 0.741
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 3,
+    "kind": "drone"
+   },
+   "t": 0.741
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 60,
+    "id": 4,
+    "kind": "drone"
+   },
+   "t": 0.741
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 80,
+    "level": 2
+   },
+   "t": 0.922
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 95,
+    "active": true,
+    "pos": {
+     "x": 204.4000000000001,
+     "y": 560
+    }
+   },
+   "t": 1.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 96,
+    "active": false,
+    "pos": {
+     "x": 200.2000000000001,
+     "y": 560
+    }
+   },
+   "t": 1.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 112,
+    "active": true,
+    "pos": {
+     "x": 135.20000000000027,
+     "y": 560
+    }
+   },
+   "t": 1.162
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 119,
+    "id": 1,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 163.6594744907562,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 1.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 119,
+    "id": 4,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 316.34052550924383,
+     "y": 60
+    },
+    "bullets": 1
+   },
+   "t": 1.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 120,
+    "level": 3
+   },
+   "t": 1.252
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 130,
+    "active": false,
+    "pos": {
+     "x": 104.12893218813481,
+     "y": 558.5857864376269
+    }
+   },
+   "t": 1.312
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.433
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 141,
+    "level": 0
+   },
+   "t": 1.433
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.492
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 152,
+    "active": true,
+    "pos": {
+     "x": 105.5431457505079,
+     "y": 560
+    }
+   },
+   "t": 1.521
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.553
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.648
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "partBreak",
+    "tick": 162,
+    "id": 1,
+    "target": "enemy",
+    "part": "gun",
+    "partKind": "gun",
+    "pos": {
+     "x": 98.13767951379954,
+     "y": 133.5
+    },
+    "by": "writ",
+    "first": true
+   },
+   "t": 1.648
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 162,
+    "credits": 40,
+    "rate": 1.2,
+    "delta": 40,
+    "reason": "partBreak"
+   },
+   "t": 1.648
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "disarm",
+    "tick": 162,
+    "id": 1,
+    "kind": "drone",
+    "pos": {
+     "x": 98.13767951379954,
+     "y": 124.5
+    },
+    "cancelled": 1,
+    "first": true
+   },
+   "t": 1.648
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 162,
+    "credits": 88,
+    "rate": 1.4,
+    "delta": 48,
+    "reason": "disarm"
+   },
+   "t": 1.648
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 163,
+    "active": false,
+    "pos": {
+     "x": 123.88528137423883,
+     "y": 560
+    }
+   },
+   "t": 1.648
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.731
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.761
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 176,
+    "active": true,
+    "pos": {
+     "x": 176.2852813742387,
+     "y": 560
+    }
+   },
+   "t": 1.761
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 181,
+    "active": false,
+    "pos": {
+     "x": 184.2852813742387,
+     "y": 560
+    }
+   },
+   "t": 1.791
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.821
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "kill",
+    "tick": 188,
+    "id": 1,
+    "kind": "drone",
+    "score": 100,
+    "byRam": false,
+    "clean": false
+   },
+   "t": 1.85
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 188,
+    "credits": 228,
+    "rate": 1.5,
+    "delta": 140,
+    "reason": "kill"
+   },
+   "t": 1.85
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.883
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 190,
+    "active": true,
+    "pos": {
+     "x": 182.8710678118656,
+     "y": 558.5857864376269
+    }
+   },
+   "t": 1.883
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 191,
+    "active": false,
+    "pos": {
+     "x": 182.8710678118656,
+     "y": 558.5857864376269
+    }
+   },
+   "t": 1.883
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 192,
+    "active": true,
+    "pos": {
+     "x": 181.4568542494925,
+     "y": 560
+    }
+   },
+   "t": 1.883
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 1.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 198,
+    "active": false,
+    "pos": {
+     "x": 174.38578643762696,
+     "y": 561.4142135623731
+    }
+   },
+   "t": 1.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 199,
+    "active": true,
+    "pos": {
+     "x": 172.97157287525386,
+     "y": 560
+    }
+   },
+   "t": 1.94
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 200,
+    "active": false,
+    "pos": {
+     "x": 172.97157287525386,
+     "y": 560
+    }
+   },
+   "t": 1.971
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 2.001
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 203,
+    "active": true,
+    "pos": {
+     "x": 171.55735931288075,
+     "y": 558.5857864376269
+    }
+   },
+   "t": 2.001
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 205,
+    "active": false,
+    "pos": {
+     "x": 170.14314575050764,
+     "y": 560
+    }
+   },
+   "t": 2.001
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "kill",
+    "tick": 210,
+    "id": 2,
+    "kind": "drone",
+    "score": 100,
+    "byRam": false,
+    "clean": false
+   },
+   "t": 2.033
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 210,
+    "credits": 378,
+    "rate": 1.6,
+    "delta": 150,
+    "reason": "kill"
+   },
+   "t": 2.033
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 2.061
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 214,
+    "active": true,
+    "pos": {
+     "x": 180.46690475583125,
+     "y": 549.6762409946764
+    }
+   },
+   "t": 2.092
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 217,
+    "active": false,
+    "pos": {
+     "x": 183.29533188057746,
+     "y": 542.6478138699301
+    }
+   },
+   "t": 2.092
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 2.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 219,
+    "id": 4,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 299.491278262939,
+     "y": 210
+    },
+    "bullets": 1
+   },
+   "t": 2.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 222,
+    "active": true,
+    "pos": {
+     "x": 184.70954544295057,
+     "y": 524.4336003075568
+    }
+   },
+   "t": 2.151
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 224,
+    "active": false,
+    "pos": {
+     "x": 186.12375900532368,
+     "y": 518.8193867451837
+    }
+   },
+   "t": 2.151
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 2.181
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 241,
+    "active": true,
+    "pos": {
+     "x": 187.53797256769678,
+     "y": 450.2051731828107
+    }
+   },
+   "t": 2.301
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 253,
+    "active": false,
+    "pos": {
+     "x": 193.1948268171892,
+     "y": 430.5483189333183
+    }
+   },
+   "t": 2.391
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 262,
+    "active": true,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 429.1341053709452
+    }
+   },
+   "t": 2.481
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 263,
+    "active": false,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 429.1341053709452
+    }
+   },
+   "t": 2.481
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 267,
+    "active": true,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 431.1341053709452
+    }
+   },
+   "t": 2.512
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 269,
+    "active": false,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 433.1341053709452
+    }
+   },
+   "t": 2.541
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 270,
+    "level": 1
+   },
+   "t": 2.541
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 273,
+    "active": true,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 435.1341053709452
+    }
+   },
+   "t": 2.573
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 273,
+    "bulletId": 6,
+    "pos": {
+     "x": 181.0915487649607,
+     "y": 406.542514404256
+    },
+    "relVel": {
+     "x": -0.8725740435115006,
+     "y": 0.23575815744681794
+    },
+    "distance": 31.478722939542642,
+    "heavy": false
+   },
+   "t": 2.573
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 274,
+    "active": false,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 435.1341053709452
+    }
+   },
+   "t": 2.573
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 276,
+    "active": true,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 437.1341053709452
+    }
+   },
+   "t": 2.601
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 277,
+    "active": false,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 437.1341053709452
+    }
+   },
+   "t": 2.601
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 279,
+    "bulletId": 6,
+    "pos": {
+     "x": 175.85610450389174,
+     "y": 419.95706334893686
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": true
+   },
+   "t": 2.631
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 279,
+    "credits": 386,
+    "rate": 1.62,
+    "delta": 8,
+    "reason": "graze"
+   },
+   "t": 2.631
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 294,
+    "bulletId": 20,
+    "pos": {
+     "x": 237.95890840485484,
+     "y": 381.7076802581886
+    },
+    "relVel": {
+     "x": -0.8096364455011171,
+     "y": 6.459311582344556
+    },
+    "distance": 44.478120796407715,
+    "heavy": false
+   },
+   "t": 2.751
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 303,
+    "active": true,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 334.33410537094545
+    }
+   },
+   "t": 2.812
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 307,
+    "active": false,
+    "pos": {
+     "x": 194.60904037956232,
+     "y": 328.33410537094545
+    }
+   },
+   "t": 2.841
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 310,
+    "level": 2
+   },
+   "t": 2.871
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "pickup",
+    "tick": 312,
+    "kind": "spread",
+    "firstPowerup": true
+   },
+   "t": 2.903
+  }
+ ]
+}

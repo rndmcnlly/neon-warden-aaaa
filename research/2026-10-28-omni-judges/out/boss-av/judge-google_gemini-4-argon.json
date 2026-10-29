@@ -1,0 +1,168 @@
+{
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "wall_s": 28.6,
+  "usage": {
+    "prompt_tokens": 6063,
+    "completion_tokens": 1922,
+    "total_tokens": 7985,
+    "cost": 0.031346,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 4630
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.031346,
+      "upstream_inference_prompt_cost": 0.012126,
+      "upstream_inference_completions_cost": 0.01922
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "judgment": {
+    "inventory": {
+      "vo_lines": [
+        {
+          "start_s": 10.0,
+          "end_s": 15.0,
+          "transcript": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+          "voice": "The Warden"
+        }
+      ],
+      "music_present": false,
+      "sfx_present": false,
+      "silent_spans": [
+        {
+          "start_s": 0.0,
+          "end_s": 10.0
+        },
+        {
+          "start_s": 15.0,
+          "end_s": 45.2
+        }
+      ],
+      "notes": "Of 45.2 s, 40.2 s is completely silent. Only one VO line plays (10.0-15.0 s). Ten other subtitle cards appear on screen (at 0.0 s, 4.9 s, 7.0 s, 15.0 s, 18.0 s, 22.0 s, 27.0 s, 32.0 s, 34.0 s, 42.0 s, 44.0 s) with zero corresponding audio. No music and no sound effects play anywhere in the capture."
+    },
+    "scores": [
+      {
+        "criterion": "av_sync",
+        "score": 1,
+        "justification": "Only one subtitle card at 10.0 s has matching audio. All other subtitle cards (0.0 s, 4.9 s, 7.0 s, 15.0 s, 18.0 s, 22.0 s, 27.0 s, 32.0 s, 34.0 s, 42.0 s, 44.0 s) and visual events (boss arrival at 3.8 s, camera cuts at 9.1 s and 38.0 s, bullet patterns throughout) occur in complete silence.",
+        "evidence_s": [
+          0.0,
+          3.8,
+          4.9,
+          7.0,
+          9.1,
+          10.0,
+          15.0,
+          18.0,
+          22.0,
+          27.0,
+          32.0,
+          34.0,
+          38.0,
+          42.0,
+          44.0
+        ]
+      },
+      {
+        "criterion": "mix_balance",
+        "score": 1,
+        "justification": "There is no mix to evaluate: 40 seconds of the 45-second capture are dead air (0.0-10.0 s and 15.0-45.2 s), with no music or SFX stems present alongside the single dry VO clip at 10.0 s.",
+        "evidence_s": [
+          0.0,
+          10.0,
+          15.0,
+          45.2
+        ]
+      },
+      {
+        "criterion": "sfx_fit",
+        "score": 1,
+        "justification": "SFX are completely absent. The boss warning banner (0.0-3.5 s), Warden descent and shockwave ring (3.8-6.5 s), bullet-hell volleys (6.5-9.0 s, 38.5-45.0 s), camera transitions (9.1 s, 38.0 s), and glowing core pulses during dialogue (10.0-38.0 s) all play silently.",
+        "evidence_s": [
+          0.0,
+          3.8,
+          6.5,
+          9.1,
+          38.0,
+          38.5
+        ]
+      },
+      {
+        "criterion": "music_fit",
+        "score": 1,
+        "justification": "Music is completely absent across the entire 45.2 s boss intro and phase-1 opening.",
+        "evidence_s": [
+          0.0,
+          45.2
+        ]
+      },
+      {
+        "criterion": "vo_performance",
+        "score": 2,
+        "justification": "The single audible line from The Warden at 10.0-15.0 s is clear, energetic, and fits the comedic/frustrated character write-up, though it lacks any radio/PA processing to place it in the arena. However, 10 out of 11 scripted lines—including every Onboarding Assistant line, the Lane Authority Briefing at 7.0 s, and five more Warden lines (18.0 s, 22.0 s, 27.0 s, 42.0 s)—are missing their audio entirely.",
+        "evidence_s": [
+          0.0,
+          7.0,
+          10.0,
+          15.0,
+          18.0,
+          22.0,
+          27.0,
+          32.0,
+          34.0,
+          42.0,
+          44.0
+        ]
+      },
+      {
+        "criterion": "polish_vs_aaa",
+        "score": 1,
+        "justification": "Unshippable broken state: 89% of the reel is silent, 10 of 11 voice lines fail to trigger, and zero SFX or music assets play during a major boss encounter.",
+        "evidence_s": [
+          0.0,
+          10.0,
+          15.0,
+          38.0,
+          45.2
+        ]
+      }
+    ],
+    "fixes": [
+      {
+        "at_s": 0.0,
+        "fix": "Hook up and trigger the 10 missing VO audio assets for Onboarding Assistant (0.0 s, 4.9 s, 15.0 s, 32.0 s, 34.0 s, 44.0 s), Lane Authority Briefing (7.0 s), and The Warden (18.0 s, 22.0 s, 27.0 s, 42.0 s) so every subtitle card has voice playback.",
+        "discipline": "VO"
+      },
+      {
+        "at_s": 0.0,
+        "fix": "Add a cyberpunk boss music track: tense riser during the warning screen (0.0-3.8 s), heavy synth intro on boss descent (3.8-9.1 s), ducked atmospheric bed during the standoff dialogue (9.1-38.0 s), and full-energy combat loop when gameplay resumes at 38.0 s.",
+        "discipline": "music"
+      },
+      {
+        "at_s": 3.8,
+        "fix": "Design and implement core boss and combat SFX: warning klaxon/UI stinger (0.0 s), heavy thruster descent and shockwave pulse (3.8-6.5 s), plasma projectile fire layers (6.5-9.0 s and 38.5-45.0 s), and camera whooshes on perspective cuts (9.1 s, 38.0 s).",
+        "discipline": "sound design"
+      },
+      {
+        "at_s": 10.0,
+        "fix": "Apply worldized PA/radio spatialization and light distortion/reverb to The Warden's VO (and subtle helmet-comm filtering to Onboarding Assistant) so the voices sit inside the arena rather than sounding like dry booth recordings.",
+        "discipline": "mix"
+      },
+      {
+        "at_s": 9.1,
+        "fix": "Add ambient ship hum, lane energy-rail buzz, and boss idle core-pulsing audio during the 9.1-38.0 s dialogue camera lock so the scene doesn't drop to dead digital silence between VO lines.",
+        "discipline": "sound design"
+      }
+    ],
+    "summary": "Audio is critically broken in this capture: 40.2 s of the 45.2 s reel is completely silent, with zero music, zero SFX, and only 1 of 11 subtitled dialogue lines (10.0-15.0 s) playing audio. Restoring the missing VO triggers and implementing baseline boss music and combat/UI sound effects are required before the slice can be evaluated for mix or polish."
+  }
+}

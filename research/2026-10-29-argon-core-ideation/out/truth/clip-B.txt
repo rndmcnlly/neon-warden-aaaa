@@ -1,0 +1,21 @@
+clip B = move (move 3.3-15.5 s); times in clip seconds
+  0.31  INPUT        hold ArrowLeft 1100 ms
+  0.31  INPUT        move start
+  1.67  INPUT        hold ArrowRight 1500 ms
+  3.43  INPUT        hold ArrowUp 700 ms
+  4.38  INPUT        hold ArrowDown 700 ms
+  5.34  INPUT        hold ArrowUp+ArrowLeft 700 ms
+  6.23  scanLock     {"target": "enemy", "kind": "drone"}
+  6.29  INPUT        hold ArrowDown+ArrowRight 700 ms
+  7.25  INPUT        focus down (ShiftLeft)
+  7.28  focusChanged {"active": true}
+  7.55  INPUT        focus: hold ArrowLeft 1200 ms
+  8.76  INPUT        focus: hold ArrowRight 1200 ms
+  9.58  sfx          hit_player
+  9.58  sfx          life_lost
+  9.63  lifeLost     {}
+  9.96  INPUT        focus up
+  9.98  focusChanged {"active": false}
+ 10.26  INPUT        hold ArrowLeft 800 ms
+ 11.07  INPUT        hold ArrowRight 800 ms
+ 11.87  INPUT        move end

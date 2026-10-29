@@ -1,0 +1,92 @@
+{
+  "videoEpoch": 1793253631942,
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793253639100.2,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253639495.2,
+      "dur": 0.25997732426303855,
+      "loop": false,
+      "url": "/sfx/confirm.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253639496.2,
+      "dur": 14.999977324263039,
+      "loop": false,
+      "url": "/music/logos/cand1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253639900.9,
+      "dur": 44.999977324263035,
+      "loop": true,
+      "url": "/music/menu/cand1.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253640306.4,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253640744.4,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253640745.7,
+      "dur": 0.26163265306122446,
+      "loop": false,
+      "url": "/sfx/menu_open.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253640752.5,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253650556.7,
+      "dur": 0.08997732426303855,
+      "loop": false,
+      "url": "/sfx/focus.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253650561.5,
+      "dur": 0.05,
+      "loop": false,
+      "url": "/sfx/slider_tick.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793253650787.9,
+      "dur": 0.05,
+      "loop": false,
+      "url": "/sfx/slider_tick.ogg"
+    }
+  ],
+  "subs": [
+    {
+      "k": "sub",
+      "epoch": 1793253632210.2,
+      "text": "",
+      "visible": false,
+      "layer": "",
+      "line": ""
+    }
+  ]
+}

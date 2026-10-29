@@ -1,0 +1,86 @@
+clip E = tap (tap 4.4-16.4 s); times in clip seconds
+  0.12  sfx          shot_aimed
+  0.29  sfx          disarm
+  0.29  sfx          hit_enemy
+  0.29  sfx          part_break
+  0.35  disarm       {"kind": "drone", "cancelled": 1}
+  0.35  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "aimed"}
+  0.39  scanLock     {"target": "enemy", "kind": "drone"}
+  0.52  sfx          shot_aimed
+  0.93  sfx          shot_aimed
+  1.33  sfx          shot_aimed
+  1.43  sfx          hit_enemy
+  1.43  sfx          kill_small
+  1.44  kill         {"kind": "drone", "byRam": false, "clean": false}
+  1.73  sfx          shot_aimed
+  2.15  sfx          shot_aimed
+  2.47  sfx          hit_player
+  2.47  sfx          life_lost
+  2.51  lifeLost     {}
+  2.55  sfx          shot_aimed
+  2.57  sfx          hit_enemy
+  2.57  sfx          kill_small
+  2.58  kill         {"kind": "drone", "byRam": false, "clean": false}
+  2.95  sfx          shot_aimed
+  3.27  sfx          hit_enemy
+  3.27  sfx          part_break
+  3.27  sfx          disarm
+  3.27  disarm       {"kind": "drone", "cancelled": 0}
+  3.27  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "aimed"}
+  3.35  sfx          shot_aimed
+  3.77  sfx          shot_aimed
+  4.17  sfx          shot_aimed
+  4.57  sfx          shot_aimed
+  4.98  sfx          shot_aimed
+  5.38  sfx          shot_aimed
+  5.56  sfx          hit_enemy
+  5.56  sfx          kill_small
+  5.58  kill         {"kind": "drone", "byRam": false, "clean": false}
+  5.79  sfx          shot_aimed
+  6.19  sfx          shot_aimed
+  6.59  sfx          shot_aimed
+  7.00  sfx          shot_aimed
+  7.08  sfx          hit_enemy
+  7.08  sfx          part_break
+  7.09  sfx          disarm
+  7.11  disarm       {"kind": "drone", "cancelled": 1}
+  7.11  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "aimed"}
+  7.40  sfx          shot_aimed
+  7.82  sfx          shot_aimed
+  8.15  sfx          hit_enemy
+  8.15  sfx          kill_small
+  8.16  kill         {"kind": "drone", "byRam": false, "clean": false}
+  8.22  sfx          shot_aimed
+  8.32  sfx          hit_enemy
+  8.32  sfx          hit_player
+  8.32  sfx          life_lost
+  8.32  sfx          kill_ram
+  8.34  kill         {"kind": "drone", "byRam": true, "clean": false}
+  8.34  lifeLost     {}
+  8.62  sfx          shot_aimed
+  9.04  sfx          shot_aimed
+  9.44  sfx          shot_aimed
+  9.67  sfx          disarm
+  9.67  sfx          hit_enemy
+  9.67  sfx          part_break
+  9.69  disarm       {"kind": "drone", "cancelled": 1}
+  9.69  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "aimed"}
+  9.84  sfx          shot_aimed
+ 10.04  sfx          hit_enemy
+ 10.04  sfx          kill_small
+ 10.06  kill         {"kind": "drone", "byRam": false, "clean": false}
+ 10.24  sfx          shot_aimed
+ 10.42  sfx          disarm
+ 10.42  sfx          hit_enemy
+ 10.42  sfx          part_break
+ 10.44  disarm       {"kind": "drone", "cancelled": 1}
+ 10.44  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "aimed"}
+ 10.65  sfx          shot_aimed
+ 11.05  sfx          shot_aimed
+ 11.45  sfx          shot_aimed
+ 11.87  sfx          hit_enemy
+ 11.87  sfx          part_break
+ 11.87  sfx          shot_aimed
+ 11.87  sfx          disarm
+ 11.89  disarm       {"kind": "drone", "cancelled": 0}
+ 11.89  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "aimed"}

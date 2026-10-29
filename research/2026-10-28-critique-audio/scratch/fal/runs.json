@@ -1,0 +1,130 @@
+[
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "ui_confirm",
+  "take": 1,
+  "seconds_billed": 0.6,
+  "wall_s": 3.24,
+  "file": "elevenlabs_ui_confirm_1.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "ui_confirm",
+  "take": 1,
+  "seconds_billed": 1.0,
+  "wall_s": 4.68,
+  "file": "mmaudio_ui_confirm_1.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "ui_confirm",
+  "take": 2,
+  "seconds_billed": 0.6,
+  "wall_s": 3.84,
+  "file": "elevenlabs_ui_confirm_2.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "ui_confirm",
+  "take": 2,
+  "seconds_billed": 1.0,
+  "wall_s": 4.2,
+  "file": "mmaudio_ui_confirm_2.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "player_fire",
+  "take": 1,
+  "seconds_billed": 0.5,
+  "wall_s": 4.27,
+  "file": "elevenlabs_player_fire_1.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "player_fire",
+  "take": 1,
+  "seconds_billed": 1.0,
+  "wall_s": 4.38,
+  "file": "mmaudio_player_fire_1.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "player_fire",
+  "take": 2,
+  "seconds_billed": 0.5,
+  "wall_s": 4.3,
+  "file": "elevenlabs_player_fire_2.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "player_fire",
+  "take": 2,
+  "seconds_billed": 1.0,
+  "wall_s": 5.57,
+  "file": "mmaudio_player_fire_2.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "part_break",
+  "take": 1,
+  "seconds_billed": 1.5,
+  "wall_s": 4.88,
+  "file": "elevenlabs_part_break_1.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "part_break",
+  "take": 1,
+  "seconds_billed": 1.5,
+  "wall_s": 4.48,
+  "file": "mmaudio_part_break_1.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "part_break",
+  "take": 2,
+  "seconds_billed": 1.5,
+  "wall_s": 4.29,
+  "file": "elevenlabs_part_break_2.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "part_break",
+  "take": 2,
+  "seconds_billed": 1.5,
+  "wall_s": 14.93,
+  "file": "mmaudio_part_break_2.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "warden_roar",
+  "take": 1,
+  "seconds_billed": 3.0,
+  "wall_s": 3.42,
+  "file": "elevenlabs_warden_roar_1.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "warden_roar",
+  "take": 1,
+  "seconds_billed": 3.0,
+  "wall_s": 4.49,
+  "file": "mmaudio_warden_roar_1.mp3"
+ },
+ {
+  "model": "elevenlabs-sfx-v2",
+  "brief": "warden_roar",
+  "take": 2,
+  "seconds_billed": 3.0,
+  "wall_s": 4.88,
+  "file": "elevenlabs_warden_roar_2.wav"
+ },
+ {
+  "model": "mmaudio-v2",
+  "brief": "warden_roar",
+  "take": 2,
+  "seconds_billed": 3.0,
+  "wall_s": 4.36,
+  "file": "mmaudio_warden_roar_2.mp3"
+ }
+]

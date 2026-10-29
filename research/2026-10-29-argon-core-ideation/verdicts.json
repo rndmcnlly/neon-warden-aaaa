@@ -1,0 +1,105 @@
+{
+ "A": {
+  "topic": "dense: sector 4 into sector 5, fight autopilot, Writ 2/3 cascades",
+  "verified": [
+   "Periodic large shots: Writs at level 2 and 3 throughout (truth: chargeLevel drops).",
+   "9.3 s cascade of flashes and a loud blast: Writ 2 at 9.39 then eight kills between 9.42 and 10.2 s.",
+   "4.5 s sector banner over the playfield: sectorCleared/sectorStarted at 3.90 s; the 'Last Approach' title sits over the lane in frames."
+  ],
+  "rejected": [],
+  "unverifiable": [
+   "3.5 s 'two enemies flash, no clear audio': no kill or hit sound in 2.9–3.9 s; the sector wipe at 3.90 s may be what flashed."
+  ]
+ },
+ "B": {
+  "topic": "move: scripted left/right/up/down/diagonals, focus on 7.28–9.98 s, no firing (story difficulty)",
+  "verified": [
+   "No firing (truth: no shots).",
+   "Focus at 7.1 s (truth 7.28 s): the ship changes to a black-core orb.",
+   "Player hit at 9.3 s (truth lifeLost 9.63 s)."
+  ],
+  "rejected": [
+   "6.1 s 'scan completion has no audible chime': three synth voices start at the 6.23 s scanLock (lock confirm and intel ping), mix +4.8 dB over median. Present but easy to miss under music."
+  ],
+  "unverifiable": [
+   "'Focus has no sound change': a synth voice starts 0.29 s after focusChanged; mix rises only 3.7 dB. Corroborated as subtle, not as absent."
+  ]
+ },
+ "C": {
+  "topic": "writ: scripted rests of 0.9 s (Writ 1) and 2.4 s (Writ 3), sweeping, story difficulty",
+  "verified": [
+   "Large diamond Writ shots and misses: Writ 3 at 0.29, 3.74, 7.16, 10.58 s; Writ 1 at 1.25, 4.70, 8.12 s; misses at 3.74, 7.16 and 8.12 s (no hit follows).",
+   "Hit and miss sound much alike: the release layer plays at the press; impact layers (hit_enemy, part_break, disarm) follow 0.2–0.33 s later and only on a hit."
+  ],
+  "rejected": [
+   "9.6 s 'large shot hits an enemy, loud blast': the loud sound at 9.86 s is hit_player plus life_lost (the ship was hit); the Writ came at 10.58 s.",
+   "The judge never separated Writ 1 from Writ 3 (it called a Writ 1 a 'small shot' at 1.0 s and a 'large projectile' at 4.3 s)."
+  ],
+  "unverifiable": [
+   "It missed the life loss at 6.17 s altogether."
+  ]
+ },
+ "D": {
+  "topic": "boss-disarm: pacifist autopilot on the Warden; fan pods break at 3.33 and 6.66 s, core opens, phase 3 at 11.13 s",
+  "verified": [
+   "6.1 s 'loud metallic screech': boss_roar at 6.13 s (phase 2), core_exposed at 6.66 s.",
+   "11.2 s second screech: boss_roar at 11.12 s (phase 3)."
+  ],
+  "rejected": [
+   "3.0 s 'core scanned, not shot; only background music': Writ 3 hits the boss at 2.81 s, Writ 1 at 3.08 s, and the left fan pod breaks at 3.33 s; the mix peaks at -15 dB, 10 dB over median, the loudest moment of the clip."
+  ],
+  "unverifiable": [
+   "0.5 s 'red dome disappears': clip opens on the boss camera; not checked against render state."
+  ]
+ },
+ "E": {
+  "topic": "tap: scripted 60 ms presses every 400 ms while sweeping (story difficulty)",
+  "verified": [
+   "Single small shots at a steady rhythm (shot_aimed every 0.4 s).",
+   "Player hit at 2.1 s (truth 2.51 s)."
+  ],
+  "rejected": [
+   "Every target event is described as an enemy vanishing or being picked off. Truth: six of the ten target events are gun-part breaks that disarm a drone (0.35, 3.27, 7.11, 9.69, 10.44, 11.89 s), not kills.",
+   "8.0 s 'pink ring, enemy disappears': a kill at 8.16 s and a ram kill plus life loss at 8.34 s; the life loss went unreported."
+  ],
+  "unverifiable": []
+ },
+ "F": {
+  "topic": "sector-parts: sector 4 after the flashback; lancer emitter break, two turret disarms, kills",
+  "verified": [
+   "2.9 s large shot misses (truth: Writ 3 at 3.40 s, no hit until a Writ 2 at 5.14 s).",
+   "Miss and hit share the same release sound (as clip C)."
+  ],
+  "rejected": [
+   "5.0 s and 6.5 s 'crisp explosions' read as kills: truth turret barrel breaks with disarm at 5.36 s (11 bullets cancelled) and 6.94 s; kills only from 7.18 s."
+  ],
+  "unverifiable": [
+   "The lancer emitter break at 1.60 s was not mentioned at all."
+  ]
+ },
+ "G": {
+  "topic": "stream: scripted 3 s holds and 0.45 s releases while sweeping (story difficulty)",
+  "verified": [
+   "Continuous fire and repeated small pops on kills.",
+   "Player hit at 2.2 s (truth 2.49 s).",
+   "'Continuous firing has almost no audible firing sound': shot_stream voices start 8–10 per second but the mix sits only about 3.5 dB over its median. Quiet, not absent."
+  ],
+  "rejected": [],
+  "unverifiable": [
+   "7.6 s 'pink ring around player': the life loss is at 8.25 s (a ram kill at the same tick); the judge did not call it a hit."
+  ]
+ },
+ "H": {
+  "topic": "boss-armor: fight autopilot on the Warden; deflected Writs while it talks, then hits; cannon pod breaks 7.64 s, spiral pod 12.72 s, core opens",
+  "verified": [
+   "Huge rings at 0.2 and 2.0 s are Writ 3 releases (0.43, 2.43 s) against a deflecting boss.",
+   "6.9 s and 12.1 s 'harsh screech': boss_roar (phase 2) at 7.68 s; core_exposed at 12.72 s. About 0.6 s timestamp drift.",
+   "9.8 s 'score came from a small enemy behind the boss flash': Writ 3 at 10.41 s kills a drone at 10.56 s (about 0.7 s drift)."
+  ],
+  "rejected": [
+   "0.2 and 2.0 s 'zero audible sound': writ_release_3 plus six to eleven hit_deflect voices start; the mix peaks only 1.5 dB over median. Quiet, not silent.",
+   "Neither pod break was identified as a part coming off; both were reported as a screech or a flash."
+  ],
+  "unverifiable": []
+ }
+}

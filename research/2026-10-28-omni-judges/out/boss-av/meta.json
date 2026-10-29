@@ -1,0 +1,16 @@
+{
+  "query": "?skipto=boss&seed=121&qa=1",
+  "seconds": 45,
+  "offsetS": 0.236199951171875,
+  "ctxState": "running -> running",
+  "hasAudio": true,
+  "sourcesStarted": 1,
+  "navLagMs": 101,
+  "audioRequests": [
+    "/vo/en/tut_move_001.wav",
+    "/vo/en/desc_001.wav",
+    "/vo/en/boss_taunt_001.wav",
+    "/vo/en/pilot_keep_001.wav"
+  ],
+  "console": []
+}

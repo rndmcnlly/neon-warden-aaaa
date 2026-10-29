@@ -1,0 +1,55 @@
+clip H = boss-armor (boss-parts 35.0-49.5 s); times in clip seconds
+  0.43  sfx          writ_release_3
+  0.45  WRIT         level 3 spent
+  0.59  sfx          hit_deflect
+  0.68  sfx          hit_deflect
+  0.74  sfx          hit_deflect
+  0.80  sfx          hit_deflect
+  0.85  sfx          hit_deflect
+  0.91  sfx          hit_deflect
+  0.97  sfx          hit_deflect
+  1.02  sfx          hit_deflect
+  1.08  sfx          hit_deflect
+  1.20  sfx          hit_deflect
+  2.43  sfx          writ_release_3
+  2.43  WRIT         level 3 spent
+  2.59  sfx          hit_deflect
+  2.67  sfx          hit_deflect
+  2.78  sfx          hit_deflect
+  4.09  sfx          writ_release_3
+  4.11  WRIT         level 3 spent
+  4.27  sfx          hit_boss
+  7.41  sfx          writ_release_3
+  7.44  WRIT         level 3 spent
+  7.59  sfx          hit_boss
+  7.59  sfx          part_break
+  7.64  partBreak    {"target": "boss", "part": "cannonPod", "partKind": "cannonPod", "by": "writ"}
+  7.65  sfx          boss_roar
+  7.68  bossPhase    {"phase": 2}
+ 10.38  sfx          writ_release_3
+ 10.41  WRIT         level 3 spent
+ 10.53  sfx          hit_enemy
+ 10.53  sfx          kill_small
+ 10.53  sfx          hit_boss
+ 10.56  kill         {"kind": "drone", "byRam": false, "clean": false}
+ 11.10  scanLock     {"target": "enemy", "kind": "drone"}
+ 12.52  sfx          writ_release_3
+ 12.54  WRIT         level 3 spent
+ 12.71  sfx          core_exposed
+ 12.71  sfx          hit_boss
+ 12.71  sfx          part_break
+ 12.72  coreExposed  {}
+ 12.72  partBreak    {"target": "boss", "part": "spiralPod", "partKind": "spiralPod", "by": "writ"}
+ 13.78  sfx          writ_release_3
+ 13.80  WRIT         level 3 spent
+ 13.96  sfx          hit_boss
+ 14.05  sfx          hit_boss
+ 14.10  sfx          hit_boss
+ 14.20  sfx          hit_boss
+ 14.26  sfx          hit_boss
+ 14.32  sfx          hit_boss
+ 14.34  sfx          hit_enemy
+ 14.38  sfx          hit_boss
+ 14.40  sfx          hit_enemy
+ 14.40  sfx          kill_small
+ 14.43  kill         {"kind": "drone", "byRam": false, "clean": false}

@@ -1,0 +1,49 @@
+clip C = writ (writ 7.2-19.2 s); times in clip seconds
+  0.27  INPUT        press after 2.4 s rest (Writ 3 expected)
+  0.28  sfx          writ_release_3
+  0.29  WRIT         level 3 spent
+  0.56  sfx          hit_enemy
+  0.56  sfx          hit_player
+  0.56  sfx          kill_ram
+  0.56  sfx          life_lost
+  0.62  kill         {"kind": "drone", "byRam": true, "clean": false}
+  0.62  lifeLost     {}
+  1.24  INPUT        press after 0.9 s rest (Writ 1 expected)
+  1.25  sfx          writ_release_1
+  1.25  WRIT         level 1 spent
+  1.55  sfx          hit_enemy
+  1.55  sfx          part_break
+  1.55  sfx          disarm
+  1.55  disarm       {"kind": "drone", "cancelled": 0}
+  1.55  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "writ"}
+  3.70  INPUT        press after 2.4 s rest (Writ 3 expected)
+  3.71  sfx          writ_release_3
+  3.74  WRIT         level 3 spent
+  4.67  INPUT        press after 0.9 s rest (Writ 1 expected)
+  4.68  sfx          writ_release_1
+  4.70  sfx          hit_enemy
+  4.70  sfx          part_break
+  4.70  sfx          disarm
+  4.70  WRIT         level 1 spent
+  4.70  disarm       {"kind": "drone", "cancelled": 0}
+  4.70  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "writ"}
+  6.16  sfx          hit_player
+  6.16  sfx          life_lost
+  6.17  lifeLost     {}
+  7.13  INPUT        press after 2.4 s rest (Writ 3 expected)
+  7.15  sfx          writ_release_3
+  7.16  WRIT         level 3 spent
+  8.10  INPUT        press after 0.9 s rest (Writ 1 expected)
+  8.11  sfx          writ_release_1
+  8.12  WRIT         level 1 spent
+  9.86  sfx          hit_player
+  9.86  sfx          life_lost
+  9.89  lifeLost     {}
+ 10.56  INPUT        press after 2.4 s rest (Writ 3 expected)
+ 10.57  sfx          writ_release_3
+ 10.58  WRIT         level 3 spent
+ 10.91  sfx          hit_enemy
+ 10.91  sfx          part_break
+ 10.91  sfx          disarm
+ 10.91  disarm       {"kind": "drone", "cancelled": 0}
+ 10.91  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "writ"}

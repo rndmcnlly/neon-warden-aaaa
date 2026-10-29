@@ -1,0 +1,171 @@
+{
+  "model": "google/gemini-3.8-flash",
+  "provider": "Google",
+  "wall_s": 19.7,
+  "usage": {
+    "prompt_tokens": 5296,
+    "completion_tokens": 2819,
+    "total_tokens": 8115,
+    "cost": 0.01454325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 1134,
+      "video_tokens": 3036
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01454325,
+      "upstream_inference_prompt_cost": 0.003972,
+      "upstream_inference_completions_cost": 0.01057125
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1605,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "judgment": {
+    "inventory": {
+      "vo_lines": [
+        {
+          "start_s": 9.8,
+          "end_s": 14.8,
+          "transcript": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+          "voice": "The Warden"
+        },
+        {
+          "start_s": 18.0,
+          "end_s": 21.4,
+          "transcript": "Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!",
+          "voice": "The Warden"
+        },
+        {
+          "start_s": 22.0,
+          "end_s": 26.4,
+          "transcript": "The last cold gun was zero one two one. Oh. Oh, no. You're the next number.",
+          "voice": "The Warden"
+        },
+        {
+          "start_s": 26.8,
+          "end_s": 31.4,
+          "transcript": "I am the Warden! I keep these lanes! And I am SO TIRED of saying that!",
+          "voice": "The Warden"
+        },
+        {
+          "start_s": 41.5,
+          "end_s": 44.0,
+          "transcript": "You're not shooting. You are not SHOOTING. Is this a trick? Is it a trick?!",
+          "voice": "The Warden"
+        }
+      ],
+      "music_present": false,
+      "sfx_present": false,
+      "silent_spans": [
+        {
+          "start_s": 0.0,
+          "end_s": 9.8
+        },
+        {
+          "start_s": 14.8,
+          "end_s": 18.0
+        },
+        {
+          "start_s": 31.4,
+          "end_s": 41.5
+        }
+      ],
+      "notes": "Audio only contains Warden dialogue. Assistant dialogue, sound effects, and music are completely missing."
+    },
+    "scores": [
+      {
+        "criterion": "av_sync",
+        "score": 2,
+        "justification": "Warden dialogue matches subtitle triggers, but Assistant subtitles lack corresponding audio entirely.",
+        "evidence_s": [
+          0.0,
+          15.0,
+          32.0,
+          44.0
+        ]
+      },
+      {
+        "criterion": "mix_balance",
+        "score": 2,
+        "justification": "No mix exists due to prolonged dead air and total absence of music and SFX stems.",
+        "evidence_s": [
+          0.0,
+          16.0,
+          35.0
+        ]
+      },
+      {
+        "criterion": "sfx_fit",
+        "score": 2,
+        "justification": "Boss descent, warning sirens, engine hums, and bullet barrage lack any sound design.",
+        "evidence_s": [
+          4.0,
+          8.0,
+          39.0
+        ]
+      },
+      {
+        "criterion": "music_fit",
+        "score": 2,
+        "justification": "Score is completely absent during the intro sequence and boss phase start.",
+        "evidence_s": [
+          0.0,
+          20.0,
+          40.0
+        ]
+      },
+      {
+        "criterion": "vo_performance",
+        "score": 3,
+        "justification": "The Warden delivery is expressive and clean, though companion voice files are entirely unhooked.",
+        "evidence_s": [
+          9.8,
+          22.0,
+          26.8
+        ]
+      },
+      {
+        "criterion": "polish_vs_aaa",
+        "score": 2,
+        "justification": "Currently incomplete vertical slice audio with missing layers across music, SFX, and VO.",
+        "evidence_s": [
+          0.0,
+          38.0
+        ]
+      }
+    ],
+    "fixes": [
+      {
+        "at_s": 0.0,
+        "fix": "Implement cyberpunk boss theme track starting at warning screen.",
+        "discipline": "music"
+      },
+      {
+        "at_s": 0.5,
+        "fix": "Hook up missing Onboarding Assistant audio cues to match displayed subtitles.",
+        "discipline": "VO"
+      },
+      {
+        "at_s": 4.0,
+        "fix": "Add heavy mechanical descent and thruster SFX for the Warden entrance.",
+        "discipline": "sound design"
+      },
+      {
+        "at_s": 39.0,
+        "fix": "Add projectile spawn, firing, and bullet pattern loop sound effects.",
+        "discipline": "sound design"
+      },
+      {
+        "at_s": 10.0,
+        "fix": "Apply ducking matrix to sidechain music and SFX under active dialogue.",
+        "discipline": "mix"
+      }
+    ],
+    "summary": "The capture features competent Warden voice acting but entirely lacks music, sound effects, and companion VO."
+  }
+}

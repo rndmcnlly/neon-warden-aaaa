@@ -1,0 +1,19 @@
+{
+  "revision": "85ee1114a2177cdf20faf85edeefc7821b3d6bee",
+  "eight_native_resolution_clips": true,
+  "all_clips_have_non_silent_audio": true,
+  "all_clips_under_60_seconds": true,
+  "three_complete_independent_role_passes": true,
+  "two_audio_and_two_picture_ablations": true,
+  "zdr_required_in_all_requests": true,
+  "cost_usd": 0.548716,
+  "within_2_usd": true,
+  "browser_page_errors": 0,
+  "static_qa": "fail: source WAVs absent from git archive; 65 cue metadata omissions",
+  "limitations": [
+    "autopilot active median 49.18 ticks/s, slower than nominal 60, never accelerated",
+    "full simultaneous radio-box + player-hit overlap not obtained",
+    "same model, not model consensus or human usability test",
+    "G subtitle leakage and other observer errors retained"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "profile": "classic",
+  "mode": "high",
+  "errors": [],
+  "focusEvents": [
+    {
+      "type": "focusChanged",
+      "tick": 153,
+      "active": true,
+      "pos": {
+        "x": 114.00000000000028,
+        "y": 433.9999999999997
+      }
+    },
+    {
+      "type": "focusChanged",
+      "tick": 284,
+      "active": false,
+      "pos": {
+        "x": 252.00000000000028,
+        "y": 433.9999999999997
+      }
+    }
+  ],
+  "av": {
+    "hasAudio": true,
+    "voStem": true,
+    "contextStates": [
+      "running"
+    ],
+    "sourcesStarted": 60,
+    "voStarted": [
+      "1.77s en/sec1_intro_001.ogg",
+      "3.03s en/lock_ai_001.ogg",
+      "5.16s en/disarm_ai_001.ogg",
+      "6.01s en/graze_ai_001.ogg"
+    ],
+    "lufs": -20.9,
+    "truePeak": -4.7,
+    "buses": {
+      "music": {
+        "lufs": -24.2,
+        "truePeak": -7
+      },
+      "sfx": {
+        "lufs": -26.1,
+        "truePeak": -6.4
+      },
+      "voice": {
+        "lufs": -17.4,
+        "truePeak": -3.6
+      },
+      "ui": {
+        "lufs": -18.7,
+        "truePeak": -2.6
+      }
+    },
+    "audibleS": 6.16,
+    "voAudible": [
+      {
+        "start": 0.47,
+        "end": 2.83
+      },
+      {
+        "start": 3.61,
+        "end": 3.64
+      },
+      {
+        "start": 4.42,
+        "end": 4.62
+      }
+    ],
+    "subtitles": [
+      {
+        "start": 0.37610009765625,
+        "line": "?I believe in you. I've also at",
+        "layer": "ambient",
+        "end": 1.775300048828125,
+        "audibleS": 1.46
+      },
+      {
+        "start": 1.775300048828125,
+        "line": "sec1_intro_001",
+        "layer": "scripted",
+        "end": 3.0347001953125,
+        "audibleS": 1.06
+      },
+      {
+        "start": 3.0347001953125,
+        "line": "lock_ai_001",
+        "layer": "scripted",
+        "end": 4.251800048828125,
+        "audibleS": 0.02
+      },
+      {
+        "start": 5.157400146484375,
+        "line": "disarm_ai_001",
+        "layer": "scripted",
+        "end": 6.015800048828125,
+        "audibleS": 0
+      },
+      {
+        "start": 6.015800048828125,
+        "line": "graze_ai_001",
+        "layer": "scripted",
+        "end": 7.56,
+        "audibleS": 0
+      }
+    ]
+  },
+  "checks": [
+    {
+      "id": "audio: captured",
+      "status": "pass",
+      "detail": "6.16 s audible of 7.56 s, 60 sounds started, 4 VO"
+    },
+    {
+      "id": "audio: true peak at or under -1 dBTP",
+      "status": "pass",
+      "detail": "-4.7 dBTP, -20.9 LUFS integrated"
+    },
+    {
+      "id": "audio: bus loudness (pre-master)",
+      "status": "pass",
+      "detail": "music -24.2 LUFS / -7 dBTP, sfx -26.1 LUFS / -6.4 dBTP, voice -17.4 LUFS / -3.6 dBTP, ui -18.7 LUFS / -2.6 dBTP"
+    },
+    {
+      "id": "audio: integrated loudness -20 to -14 LUFS",
+      "status": "warn",
+      "detail": "-20.9 LUFS integrated (target about -17)"
+    },
+    {
+      "id": "VO not dropped",
+      "status": "fail",
+      "detail": "2 of 5 subtitle windows have audible VO stem",
+      "items": [
+        "3.03–4.25 s lock_ai_001 (0.02 s audible)",
+        "5.16–6.02 s disarm_ai_001 (0 s audible)",
+        "6.02–7.56 s graze_ai_001 (0 s audible)"
+      ]
+    }
+  ]
+}

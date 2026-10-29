@@ -1,0 +1,590 @@
+{
+  "role": "audiovisual causality critic",
+  "clips": [
+    {
+      "id": "A",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 5.0,
+          "account": "Red oval ships descend from the top and fire pink circular projectiles downward. The player ship fires white dashes upward, destroying one ship at 00:01, and projects a forward blue cone that locks onto a ship at 00:03.",
+          "threat_origin": "Top of the lane from descending red oval ships.",
+          "action_response": "Upward white dashes destroy targets; keeping a ship inside the forward cone fills a circular reticle until a 'PATROL' label appears.",
+          "goal_resource_change": "Score increases from 0 to 400; PAY increases to 813 with a x1.2 multiplier; WRIT bar fills by one segment; 'Codex: Scout' banner appears.",
+          "uncertainty": "Whether the disarm at 00:01 was caused by shooting a specific part of the ship or a special weapon."
+        },
+        {
+          "start_s": 8.0,
+          "end_s": 22.0,
+          "account": "The player ship flies close to pink projectiles at 00:09, triggering a pink ring around the ship, then collects a green diamond object at 00:19.",
+          "threat_origin": "Pink projectiles descending along the lane.",
+          "action_response": "Close proximity to projectiles triggers a graze increment; touching the green crystal collects it and triggers an Onboarding Assistant voice warning.",
+          "goal_resource_change": "GRAZE counter reaches x5; Score reaches 1,200; PAY reaches 3,825 (x1.5); WRIT reaches 3 segments.",
+          "uncertainty": "What opening the flight recorder crystal actually does to gameplay resources."
+        }
+      ],
+      "heard": [
+        {
+          "at_s": 1.2,
+          "words": "A disarm. That is forty",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        },
+        {
+          "at_s": 9.1,
+          "words": "Drift two is dark. Drift two is dark.",
+          "source": "Filtered radio voice (Scout Channel)",
+          "confidence": "high"
+        },
+        {
+          "at_s": 19.3,
+          "words": "Oh! That crystal is a recovered flight recorder. Please don't open it.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        }
+      ],
+      "readable_text": [
+        {
+          "at_s": 0.5,
+          "text": "Onboarding Assistant: Outer Drift. Scouts ahead. Scout fire is light, and completely unprovoked."
+        },
+        {
+          "at_s": 3.5,
+          "text": "Codex: Scout"
+        },
+        {
+          "at_s": 9.5,
+          "text": "SCOUT CHANNEL: Drift Two is dark. Drift Two is DARK."
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 3.5,
+          "channels": [
+            "Onboarding Assistant voiceover/subtitles",
+            "Top-center 'Codex: Scout' toast",
+            "In-world reticle text 'PATROL'",
+            "Active projectile dodging"
+          ],
+          "competition": "Four distinct text/voice locations update simultaneously while pink projectiles approach the ship.",
+          "consequence": "The small in-world 'PATROL' label on the reticle is easily missed if reading the bottom subtitle or top banner."
+        },
+        {
+          "at_s": 9.5,
+          "channels": [
+            "Left-side 'SCOUT CHANNEL' radio box and distorted voice",
+            "Close-proximity graze ring animation",
+            "Bottom subtitle transition at 00:10"
+          ],
+          "competition": "Distorted radio speech overlaps with music and immediately precedes the assistant's 'whisker' line during tight bullet dodging.",
+          "consequence": "The tiny left-margin radio text requires looking away from the center lane during a close pass."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 4,
+        "text_legibility": 3,
+        "audio_source_identification": 4,
+        "recoverability": 4
+      },
+      "rating_evidence": "Pink projectiles and red ships contrast sharply against the dark blue lane, making threat detection immediate. However, tiny in-world reticle tags ('PATROL') and left-margin radio boxes are hard to read at native scale without looking away from hazards, and voice lines cut each other off at 00:03 and 00:05.",
+      "uncertainties": [
+        "At 00:03 and 00:05, the Onboarding Assistant's speech cuts off mid-sentence when a new trigger occurs.",
+        "Exact mechanical difference between destroying a ship and 'disarming' it is not visually obvious on first pass."
+      ],
+      "minimal_fix": "Queue voiceover lines with a short buffer instead of hard-cutting mid-word, and increase the font size of the left-side radio channel text and reticle state labels."
+    },
+    {
+      "id": "B",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 13.0,
+          "account": "Green diamond-shaped ships (Lancers) fire dense horizontal/diagonal curtains of pink circles across the lane while yellow V-shaped ships (Darts) dive downward. The player scans both types with the forward cone.",
+          "threat_origin": "Left/right lane edges from Lancers and top-down from Darts.",
+          "action_response": "Player weaves through gaps in the pink projectile curtains and holds the scan cone on a Dart (00:06) and Lancer (00:11).",
+          "goal_resource_change": "GRAZE rises to x5; PAY reaches 612 (x1.5); 'Codex: Dart' and 'Codex: Lancer' banners appear.",
+          "uncertainty": "Why score jumps from 0 to 450 between 00:04 and 00:05 without an obvious ship explosion."
+        },
+        {
+          "start_s": 14.0,
+          "end_s": 31.0,
+          "account": "White hexagonal turrets fire diagonal streams of pink projectiles. At 00:25, the player triggers a wide circular wave/arc that clears nearby projectiles and disarms ships.",
+          "threat_origin": "Top-center hexagonal turrets and red scouts.",
+          "action_response": "Releasing the wide arc at 00:25 consumes the three yellow WRIT segments (turning them blue/empty) and clears projectiles.",
+          "goal_resource_change": "WRIT bar empties then refills; Score rises from 450 to 2,050; PAY reaches 6,709 (x2.5).",
+          "uncertainty": "Whether the 00:25 wave was a manual WRIT activation or an automatic trigger."
+        }
+      ],
+      "heard": [
+        {
+          "at_s": 1.0,
+          "words": "Lancers fire across the lane, never along it.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        },
+        {
+          "at_s": 14.5,
+          "words": "Intel received. Scout behavior: patrol. Please annotate as hostile.",
+          "source": "Deep male voiceover (Lane Control)",
+          "confidence": "high"
+        },
+        {
+          "at_s": 26.2,
+          "words": "Lane Control logs a disarm. Partial deliverable. Rate adjusted.",
+          "source": "Deep male voiceover (Lane Control)",
+          "confidence": "high"
+        }
+      ],
+      "readable_text": [
+        {
+          "at_s": 7.5,
+          "text": "Codex: Dart"
+        },
+        {
+          "at_s": 15.0,
+          "text": "LANE CONTROL: Intel received. Scout behavior: patrol. Please annotate as hostile."
+        },
+        {
+          "at_s": 24.5,
+          "text": "Codex: Turret"
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 14.5,
+          "channels": [
+            "Lane Control deep male voiceover and left-margin text box",
+            "Dense crossfire of pink projectiles",
+            "Active scanning cone"
+          ],
+          "competition": "The player is threading through a tight X-shaped projectile pattern while a new speaker (Lane Control) appears on the far left.",
+          "consequence": "Audio carries the Lane Control message because visual attention is locked onto the center bullet gap."
+        },
+        {
+          "at_s": 27.5,
+          "channels": [
+            "Lane Control male voiceover ('Partial deliverable...')",
+            "Onboarding Assistant female voiceover ('If you see...')",
+            "Bottom subtitle switching rapidly"
+          ],
+          "competition": "Two different voice actors speak simultaneously at 00:27-00:29 while subtitles overwrite each other.",
+          "consequence": "The Onboarding Assistant's line ('If you see unarmed ships...') is cut off and drowned out by Lane Control."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 4,
+        "text_legibility": 3,
+        "audio_source_identification": 3,
+        "recoverability": 5
+      },
+      "rating_evidence": "Projectile trajectories and the WRIT arc's clearing effect at 00:25 are visually distinct and demonstrate strong recoverability from dense crossfire. However, at 00:27-00:29 the male Lane Control voice and female Onboarding Assistant voice talk directly over each other while subtitles rapidly overwrite.",
+      "uncertainties": [
+        "At 00:27, the female assistant starts saying 'If you see...' while the male Lane Control voice is still speaking, making both harder to parse."
+      ],
+      "minimal_fix": "Prevent Lane Control radio transmissions and Onboarding Assistant voiceovers from playing concurrently by assigning priority ducking or a shared speech queue."
+    },
+    {
+      "id": "C",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 16.0,
+          "account": "Red scouts and yellow V-shaped Darts descend rapidly. The player shoots white dashes to disarm a scout at 00:02 and scans a diving Dart at 00:12.",
+          "threat_origin": "Top of the lane from fast-diving yellow Darts and red Scouts.",
+          "action_response": "Player sidesteps diving Darts and holds the scan cone over them.",
+          "goal_resource_change": "Score increases to 2,350; PAY reaches 6,950 (x2.9); GRAZE reaches x6.",
+          "uncertainty": "How 'disarm' is triggered at 00:02 when firing standard white dashes."
+        },
+        {
+          "start_s": 18.0,
+          "end_s": 31.0,
+          "account": "While Lane Control speaks, more Scouts and Darts descend, followed by a green crystal at 00:22 which the player collects at 00:24.",
+          "threat_origin": "Top-down projectiles and diving Darts.",
+          "action_response": "Player collects the green crystal while dodging pink bullets.",
+          "goal_resource_change": "Score reaches 2,950; PAY reaches 10,566 (x3.4); GRAZE reaches x9.",
+          "uncertainty": "Why the assistant's voice glitches/repeats on 'opening it' at 00:30."
+        }
+      ],
+      "heard": [
+        {
+          "at_s": 10.2,
+          "words": "It shot a dart. It shot an empty dart.",
+          "source": "Filtered radio voice (Scout Channel)",
+          "confidence": "high"
+        },
+        {
+          "at_s": 20.5,
+          "words": "If you see unarmed ships in the lanes, please ignore them.",
+          "source": "Onboarding Assistant voiceover (overlapping with Lane Control)",
+          "confidence": "high"
+        },
+        {
+          "at_s": 29.0,
+          "words": "You're opening it. It's opening.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        }
+      ],
+      "readable_text": [
+        {
+          "at_s": 11.0,
+          "text": "SCOUT CHANNEL: It shot a dart. It shot an EMPTY dart."
+        },
+        {
+          "at_s": 19.5,
+          "text": "LANE CONTROL: Intel received. Scout behavior: patrol. Please annotate as hostile."
+        },
+        {
+          "at_s": 27.0,
+          "text": "Onboarding Assistant: Oh! That crystal is a recovered flight recorder. Please don't open it."
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 11.5,
+          "channels": [
+            "Scout Channel radio voice ('It shot an empty dart')",
+            "Onboarding Assistant voice ('Your first live lock!')",
+            "Bottom subtitle and left radio box"
+          ],
+          "competition": "The assistant interrupts the Scout Channel radio voice before it finishes its second sentence.",
+          "consequence": "The end of the Scout Channel transmission is masked by the louder assistant voice."
+        },
+        {
+          "at_s": 21.0,
+          "channels": [
+            "Lane Control male voiceover ('Scout behavior: patrol...')",
+            "Onboarding Assistant female voiceover ('If you see unarmed ships...')",
+            "Diving yellow Darts and pink bullets"
+          ],
+          "competition": "Full dual-voice overlap for 4 seconds (00:20-00:24) during active dodging.",
+          "consequence": "Listeners must filter two simultaneous English sentences with different cadences while tracking fast-diving yellow triangles."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 4,
+        "text_legibility": 3,
+        "audio_source_identification": 2,
+        "recoverability": 4
+      },
+      "rating_evidence": "Fast-moving yellow Darts and pink bullets remain visually clear, and the player recovers well from close passes. Audio intelligibility drops sharply between 00:20 and 00:24 because the male Lane Control voice and female Onboarding Assistant speak simultaneously at similar volumes.",
+      "uncertainties": [
+        "At 00:29-00:30, the vocal delivery of 'You're opening it' overlaps with a high-pitched vocal repetition ('opening it') of uncertain origin."
+      ],
+      "minimal_fix": "Enforce strict audio exclusivity between radio channels (Scout/Lane Control) and the Onboarding Assistant so two voices never speak at the same time."
+    },
+    {
+      "id": "D",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 15.0,
+          "account": "A large heart-shaped boss ('WARDEN') enters at the top with a pink health bar ('Phase 1 of 3') and fires sweeping arcs of pink circles. The player dodges and scans the boss without firing bullets.",
+          "threat_origin": "The Warden boss at the top of the red lane.",
+          "action_response": "Player weaves through curved rows of pink projectiles while keeping the Warden in the scan cone.",
+          "goal_resource_change": "Top 'Scanning' bar under WARDEN fills gradually; GRAZE increases to x5; PAY reaches 64 (x1.9); Score stays 0.",
+          "uncertainty": "Why 'The Warden' yells 'My POD!' at 00:10 when the player hasn't fired a shot and the boss health bar hasn't dropped."
+        },
+        {
+          "start_s": 16.0,
+          "end_s": 27.0,
+          "account": "Scanning completes at 00:16 ('Codex: The Warden's core'), and the Warden begins firing fast yellow 3-ring bursts alongside pink circles while moving laterally.",
+          "threat_origin": "The Warden boss firing aimed yellow bursts and wide pink arcs.",
+          "action_response": "Player dodges laterally near the bottom of the screen without firing.",
+          "goal_resource_change": "GRAZE reaches x7; PAY reaches 135 (x2.0); Score remains 0.",
+          "uncertainty": "Whether the yellow 3-ring bursts are triggered by completing the scan or by the assistant's 'escalated' warning."
+        }
+      ],
+      "heard": [
+        {
+          "at_s": 1.2,
+          "words": "Pilot, statements by the Warden are not covered by your contract.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        },
+        {
+          "at_s": 10.0,
+          "words": "My pod! Do you have any idea how long it takes to grow a pod?!",
+          "source": "The Warden (male voiceover)",
+          "confidence": "high"
+        },
+        {
+          "at_s": 16.8,
+          "words": "Pilot, your weapon shows no activity during a contracted engagement. This has been escalated.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        }
+      ],
+      "readable_text": [
+        {
+          "at_s": 5.0,
+          "text": "WARDEN Phase 1 of 3"
+        },
+        {
+          "at_s": 11.0,
+          "text": "The Warden: My POD! Do you have ANY idea how long it takes to grow a pod?!"
+        },
+        {
+          "at_s": 18.0,
+          "text": "Codex: The Warden's core"
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 10.0,
+          "channels": [
+            "Onboarding Assistant voiceover ('That was close...')",
+            "The Warden voiceover ('My POD!...')",
+            "Curved waves of pink projectiles"
+          ],
+          "competition": "The Warden's shout interrupts the Onboarding Assistant's graze line mid-sentence at 00:10.",
+          "consequence": "The assistant's line is cut off, and the Warden's complaint about a 'pod' lacks a visible on-screen cause."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 3,
+        "text_legibility": 4,
+        "audio_source_identification": 4,
+        "recoverability": 4
+      },
+      "rating_evidence": "Boss projectiles (pink arcs and yellow bursts) and the top boss health/scan bars are clearly visible. However, causal attribution suffers at 00:10 when the Warden shouts 'My POD!' despite no player weapon fire or visible pod destruction occurring.",
+      "uncertainties": [
+        "No observable cause for the Warden's 'My POD!' bark at 00:10 since the player is not shooting and no pod breaks on screen."
+      ],
+      "minimal_fix": "Tie the Warden's 'My POD!' dialogue trigger strictly to actual pod damage/destruction rather than a timer or proximity trigger."
+    },
+    {
+      "id": "E",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 4.8,
+          "account": "A white hexagonal turret and a line of red scouts descend, firing a vertical stream and spread of pink projectiles. The player flies straight up into the projectile stream while scanning.",
+          "threat_origin": "Top-center hexagonal turret and flanking red scouts.",
+          "action_response": "Player moves upward into the dense cluster of pink bullets; at 00:03 a pink ring expands, and at 00:04.8 the GAME OVER modal abruptly covers the screen.",
+          "goal_resource_change": "GRAZE reaches x1; PAY reaches 26 (x1.2); then 'GAME OVER' modal appears showing 'Score 0, Continues left: 3'.",
+          "uncertainty": "How many hits the player took before dying, as there is no visible player health/shield bar on the HUD."
+        }
+      ],
+      "heard": [
+        {
+          "at_s": 1.5,
+          "words": "That was close, and close is billable.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        },
+        {
+          "at_s": 4.1,
+          "words": "Your first live lock!",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        }
+      ],
+      "readable_text": [
+        {
+          "at_s": 0.5,
+          "text": "Onboarding Assistant: These lanes were built for free passage, three centuries ago. No tollgates anywhere."
+        },
+        {
+          "at_s": 4.5,
+          "text": "Codex: Scout"
+        },
+        {
+          "at_s": 6.0,
+          "text": "GAME OVER The lanes stay closed Score 0 Continues left: 3 Continue? Continue Return to title"
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 4.5,
+          "channels": [
+            "Onboarding Assistant voiceover ('Your first live lock!')",
+            "'Codex: Scout' banner",
+            "Fatal projectile collision and immediate GAME OVER overlay"
+          ],
+          "competition": "Positive feedback ('Your first live lock!' and Codex toast) fires at the exact instant the ship collides with bullets and triggers Game Over.",
+          "consequence": "The instant cut to the Game Over modal obscures the ship destruction animation, making the exact fatal bullet impact hard to see."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 3,
+        "text_legibility": 5,
+        "audio_source_identification": 4,
+        "recoverability": 2
+      },
+      "rating_evidence": "The Game Over modal and subtitles are highly legible, and the oncoming bullet stream is easy to detect. However, there is no visible health indicator on the HUD, and the instant transition to the Game Over screen at 00:04.8 masks the fatal hit and coincides with a positive 'live lock' voice line.",
+      "uncertainties": [
+        "At 00:00, two voices briefly overlap ('Turrets online' and 'optimistically').",
+        "Whether death is one-hit-kill or if an earlier hit occurred at 00:01."
+      ],
+      "minimal_fix": "Add a brief hit-stop and ship destruction animation before displaying the GAME OVER overlay, and mute/cancel positive tutorial voiceover triggers upon player death."
+    },
+    {
+      "id": "F",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 8.5,
+          "account": "In the Hangar Loadout menu, 'Weapon package: Lane Authority Standard' is highlighted on the left, while the right panel displays its description and six stat bars.",
+          "threat_origin": "None (menu screen).",
+          "action_response": "Static highlight on Weapon package.",
+          "goal_resource_change": "Right panel shows stats: Stream rate 8.6/s, Armed damage 3, Armed cooldown 0.23 s, Writ full charge 2.00 s, Writ damage (level 3) 24, Writ radius (level 3) 14.",
+          "uncertainty": "None."
+        },
+        {
+          "start_s": 8.5,
+          "end_s": 17.0,
+          "account": "The selection highlight moves down to 'Sensor package', which is set to 'Auditor', updating the right-hand details panel.",
+          "threat_origin": "None (menu screen).",
+          "action_response": "Menu navigation changes the right-side inspection panel to 'SENSOR PACKAGE: Auditor' with a UI click sound.",
+          "goal_resource_change": "Right panel displays relative stat changes: Scan cone 23° (-43% in red), Scan range 420 (+11% in green), Lock time 0.37 s (-51% in green).",
+          "uncertainty": "None."
+        }
+      ],
+      "heard": [],
+      "readable_text": [
+        {
+          "at_s": 2.0,
+          "text": "WEAPON PACKAGE Lane Authority Standard Balanced issue: a steady stream, honest taps, a Writ that charges in two seconds."
+        },
+        {
+          "at_s": 10.0,
+          "text": "SENSOR PACKAGE Auditor Narrow cone, fast lock: a third of a second on target and you know its state. A sniper's sensor; pairs with Magistrate."
+        },
+        {
+          "at_s": 12.0,
+          "text": "Scan cone 23° -43% Scan range 420 +11% Lock time 0.37 s -51%"
+        }
+      ],
+      "simultaneous_information": [],
+      "ratings": {
+        "detection": null,
+        "cause_attribution": 5,
+        "text_legibility": 5,
+        "audio_source_identification": 5,
+        "recoverability": null
+      },
+      "rating_evidence": "Menu selection changes at 00:08.5 immediately update the right-hand comparison panel with clear color-coded percentage deltas (red for worse, green for better). All typography is crisp and effortless to read at native resolution.",
+      "uncertainties": [],
+      "minimal_fix": "None needed for this screen; layout and causal feedback on selection change are clear."
+    },
+    {
+      "id": "G",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 24.0,
+          "account": "In an empty blue lane, the Onboarding Assistant instructs the player to fly left. At 00:03 the ship moves right, prompting a corrective joke, then moves left (00:06), right (00:15), and up/down (00:18-00:22).",
+          "threat_origin": "None (onboarding tutorial).",
+          "action_response": "Moving right when asked to move left triggers 'No, your other left'; subsequent directional movements advance the tutorial stages.",
+          "goal_resource_change": "None (Score 0, PAY 0).",
+          "uncertainty": "None."
+        },
+        {
+          "start_s": 25.0,
+          "end_s": 58.0,
+          "account": "The assistant explains the center gem hitbox and instructs the player to hold 'focus' (00:34-00:43), during which the ship's bright outer glow contracts to reveal a small bright center dot and slower movement, then instructs to hold 'fire' (00:48).",
+          "threat_origin": "None.",
+          "action_response": "Holding focus visibly tightens the ship's core visuals and slows movement; however, during the 'hold fire' prompt (00:48-00:58), no bullets are fired.",
+          "goal_resource_change": "None.",
+          "uncertainty": "Whether the player simply chose not to press fire from 00:48 to 00:58, as no action occurs."
+        }
+      ],
+      "heard": [
+        {
+          "at_s": 3.8,
+          "words": "No, your other left. Let's try that direction again.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        },
+        {
+          "at_s": 25.2,
+          "words": "Your ship is large and beautiful, but only the small glowing gem at its center can be hit.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        },
+        {
+          "at_s": 48.0,
+          "words": "Now, let's learn to fire! Hold fire to release bullets. Bullets go up.",
+          "source": "Onboarding Assistant voiceover",
+          "confidence": "high"
+        }
+      ],
+      "readable_text": [
+        {
+          "at_s": 4.5,
+          "text": "No, your other left. Let's try that direction again."
+        },
+        {
+          "at_s": 31.0,
+          "text": "Onboarding Assistant: be hit. Please protect the gem. The gem is you."
+        },
+        {
+          "at_s": 38.0,
+          "text": "Onboarding Assistant: Focus is for threading the gem between bullets. Let's practice. Focus. Good."
+        }
+      ],
+      "simultaneous_information": [],
+      "ratings": {
+        "detection": null,
+        "cause_attribution": 5,
+        "text_legibility": 5,
+        "audio_source_identification": 5,
+        "recoverability": 5
+      },
+      "rating_evidence": "Reactive voiceover ('No, your other left' at 00:03) clearly links player movement to tutorial state, and the focus mechanic is explained without competing threats. However, the bright white bloom on the ship partially obscures 'the small glowing gem at its center' that the assistant describes.",
+      "uncertainties": [
+        "The tutorial prompts 'Hold focus' and 'Hold fire' without showing which controller buttons or keys correspond to those actions."
+      ],
+      "minimal_fix": "Display explicit key/button bindings (e.g., '[Shift] Focus', '[Space/Z] Fire') in the tutorial prompt or HUD, and increase contrast on the center hitbox gem against the ship's white bloom."
+    },
+    {
+      "id": "H",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 15.0,
+          "account": "A narrow vertical crop of the Hangar Loadout menu shows the left-hand equipment list. At 00:08.5, the highlight moves from 'Weapon package' down to 'Sensor package' (both set to 'Lane Authority Standard').",
+          "threat_origin": "None (menu screen).",
+          "action_response": "Highlight box moves down one row at 00:08.5.",
+          "goal_resource_change": "None visible within this cropped viewport.",
+          "uncertainty": "What stats or descriptions changed upon selecting Sensor package, because the right-hand details pane is completely cropped out of the frame."
+        }
+      ],
+      "heard": [],
+      "readable_text": [
+        {
+          "at_s": 2.0,
+          "text": "Weapon package Lane Authority Standard"
+        },
+        {
+          "at_s": 10.0,
+          "text": "Sensor package Lane Authority Standard"
+        },
+        {
+          "at_s": 12.0,
+          "text": "BEYOND THIS SLICE Injunction Witness Utility slot Reactor mod Drone bay Hull plating"
+        }
+      ],
+      "simultaneous_information": [],
+      "ratings": {
+        "detection": null,
+        "cause_attribution": 2,
+        "text_legibility": 5,
+        "audio_source_identification": null,
+        "recoverability": null
+      },
+      "rating_evidence": "While the text inside the narrow vertical frame is large and legible, the portrait aspect ratio cuts off the entire right-hand stat inspection panel seen in Sequence F. Consequently, moving the highlight at 00:08.5 produces no observable information change.",
+      "uncertainties": [
+        "Whether this narrow vertical resolution is a mobile/portrait layout test or an unintentional capture crop, as it omits the right-side description panel and bottom key legend."
+      ],
+      "minimal_fix": "In narrow/portrait aspect ratios, stack the item description and stat comparison panel below or in a modal overlay when an equipment row is highlighted so it is not clipped off-screen."
+    }
+  ],
+  "cross_clip_summary": "Across combat sequences (A–E), visual threat detection is consistently strong (5/5) thanks to high-contrast pink/yellow projectiles against dark lanes, and mechanics like scanning, grazing, and WRIT wave clearing are visually distinct. The primary intelligibility failures are auditory and HUD-related: (1) voiceover channels lack a shared queue or priority ducking, causing the Onboarding Assistant to cut herself off mid-word (A, C) or speak simultaneously over Lane Control and Scout Channel radio voices (B at 00:27, C at 00:20); (2) secondary text channels—specifically left-margin radio transcripts and in-world reticle state labels ('PATROL')—use small fonts far from the player's focal point; (3) Sequence D triggers a boss damage bark ('My POD!') without player weapon fire; (4) Sequence E shows no player health indicator before an abrupt Game Over screen obscures the fatal hit; and (5) Sequence G's ship bloom makes the critical center hitbox gem difficult to distinguish, while Sequence H's portrait crop clips the loadout stats panel off-screen."
+}

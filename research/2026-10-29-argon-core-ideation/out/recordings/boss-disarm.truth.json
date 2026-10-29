@@ -1,0 +1,9652 @@
+{
+ "clip": "boss-disarm",
+ "query": "?skipto=boss&autoplay=pacifist&speed=1&seed=121&qa=1",
+ "settings": {
+  "audio": {
+   "master": 0.8,
+   "music": 0.7,
+   "sfx": 0.8,
+   "voice": 0,
+   "ui": 0.6,
+   "mono": false
+  },
+  "subtitles": {
+   "enabled": false,
+   "scale": 1,
+   "bgOpacity": 0.6,
+   "speakerNames": true,
+   "maxLines": 2
+  }
+ },
+ "errors": [],
+ "marks": [],
+ "checks": [
+  "pass audio: captured: 70.28 s audible of 75.29 s, 179 sounds started, 16 VO",
+  "pass audio: true peak at or under -1 dBTP: -8 dBTP, -23.8 LUFS integrated",
+  "pass audio: bus loudness (pre-master): music -22.4 LUFS / -6.1 dBTP, sfx -24.9 LUFS / -8.7 dBTP, voice -70 LUFS / NaN dBTP, ui -70 LUFS / NaN dBTP",
+  "warn audio: integrated loudness -20 to -14 LUFS: -23.8 LUFS integrated (target about -17)",
+  "pass VO not dropped: no subtitles shown in this reel"
+ ],
+ "av": {
+  "lufs": -23.8,
+  "truePeak": -8,
+  "buses": {
+   "music": {
+    "lufs": -22.4,
+    "truePeak": -6.1
+   },
+   "sfx": {
+    "lufs": -24.9,
+    "truePeak": -8.7
+   },
+   "voice": {
+    "lufs": -70,
+    "truePeak": null
+   },
+   "ui": {
+    "lufs": -70,
+    "truePeak": null
+   }
+  },
+  "audibleS": 70.28,
+  "voStarted": [
+   "0.27s en/warn_ai_001.ogg",
+   "7.57s en/warn_narr_001.ogg",
+   "9.38s en/desc_001.ogg",
+   "14.5s en/desc_ai_001.ogg",
+   "16.9s en/desc_pac_001.ogg",
+   "22.58s en/desc_pac_002.ogg",
+   "29.31s en/desc_ghost_001.ogg",
+   "37.35s en/desc_003.ogg",
+   "41.92s en/desc_ai_002.ogg",
+   "49.81s en/graze_ai_001.ogg",
+   "50.28s en/boss_pod_001.ogg",
+   "53.13s en/boss_pac_ai_001.ogg",
+   "58.12s en/boss_pac_ai_002.ogg",
+   "63.11s en/pac_end_001.ogg",
+   "68.56s en/pac_end_002.ogg",
+   "74.08s en/pac_end_003.ogg"
+  ]
+ },
+ "sources": [
+  {
+   "t": 0.142,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 0.269,
+   "url": "vo/en/warn_ai_001.ogg",
+   "dur": 6.8,
+   "loop": false
+  },
+  {
+   "t": 0.558,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 0.891,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 1.225,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 3.142,
+   "url": "sfx/gameplay/boss_roar_1.ogg",
+   "dur": 1.8,
+   "loop": false
+  },
+  {
+   "t": 7.574,
+   "url": "vo/en/warn_narr_001.ogg",
+   "dur": 0.8,
+   "loop": false
+  },
+  {
+   "t": 9.375,
+   "url": "music/boss/cand2.ogg",
+   "dur": 60,
+   "loop": true
+  },
+  {
+   "t": 9.383,
+   "url": "vo/en/desc_001.ogg",
+   "dur": 5.12,
+   "loop": false
+  },
+  {
+   "t": 14.499,
+   "url": "vo/en/desc_ai_001.ogg",
+   "dur": 2.4,
+   "loop": false
+  },
+  {
+   "t": 16.9,
+   "url": "vo/en/desc_pac_001.ogg",
+   "dur": 5.68,
+   "loop": false
+  },
+  {
+   "t": 22.581,
+   "url": "vo/en/desc_pac_002.ogg",
+   "dur": 6.32,
+   "loop": false
+  },
+  {
+   "t": 29.308,
+   "url": "vo/en/desc_ghost_001.ogg",
+   "dur": 7.44,
+   "loop": false
+  },
+  {
+   "t": 37.349,
+   "url": "vo/en/desc_003.ogg",
+   "dur": 4.56,
+   "loop": false
+  },
+  {
+   "t": 41.916,
+   "url": "vo/en/desc_ai_002.ogg",
+   "dur": 6.16,
+   "loop": false
+  },
+  {
+   "t": 48.533,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 48.992,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 49.45,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 49.617,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 49.625,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 49.766,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 49.808,
+   "url": "sfx/gameplay/hit_boss_1.ogg",
+   "dur": 0.2,
+   "loop": false
+  },
+  {
+   "t": 49.809,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 49.809,
+   "url": "vo/en/graze_ai_001.ogg",
+   "dur": 4.72,
+   "loop": false
+  },
+  {
+   "t": 49.833,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 49.908,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 49.95,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.084,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 50.09,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.241,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.266,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 50.275,
+   "url": "sfx/gameplay/hit_boss_1.ogg",
+   "dur": 0.2,
+   "loop": false
+  },
+  {
+   "t": 50.275,
+   "url": "sfx/gameplay/part_break_1.ogg",
+   "dur": 0.6,
+   "loop": false
+  },
+  {
+   "t": 50.275,
+   "url": "vo/en/boss_pod_001.ogg",
+   "dur": 3.92,
+   "loop": false
+  },
+  {
+   "t": 50.276,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 50.408,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.462,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.587,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 50.595,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.729,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.754,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 50.754,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 50.771,
+   "url": "sfx/gameplay/hit_boss_1.ogg",
+   "dur": 0.2,
+   "loop": false
+  },
+  {
+   "t": 50.871,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 50.921,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 51.111,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 51.121,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 51.163,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 51.221,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 51.288,
+   "url": "sfx/gameplay/hit_boss_1.ogg",
+   "dur": 0.2,
+   "loop": false
+  },
+  {
+   "t": 51.329,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 51.445,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 51.779,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 51.788,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 52.113,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 52.246,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 52.704,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 52.97,
+   "url": "sfx/gameplay/writ_release_3_1.ogg",
+   "dur": 1,
+   "loop": false
+  },
+  {
+   "t": 52.979,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.054,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.088,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 53.129,
+   "url": "sfx/gameplay/boss_roar_1.ogg",
+   "dur": 1.8,
+   "loop": false
+  },
+  {
+   "t": 53.13,
+   "url": "vo/en/boss_pac_ai_001.ogg",
+   "dur": 5.84,
+   "loop": false
+  },
+  {
+   "t": 53.161,
+   "url": "sfx/gameplay/hit_boss_1.ogg",
+   "dur": 0.2,
+   "loop": false
+  },
+  {
+   "t": 53.304,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.449,
+   "url": "sfx/gameplay/writ_release_1_1.ogg",
+   "dur": 0.45,
+   "loop": false
+  },
+  {
+   "t": 53.449,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.455,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.531,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.58,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 53.589,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 53.656,
+   "url": "sfx/gameplay/hit_boss_1.ogg",
+   "dur": 0.2,
+   "loop": false
+  },
+  {
+   "t": 53.656,
+   "url": "sfx/gameplay/part_break_1.ogg",
+   "dur": 0.6,
+   "loop": false
+  },
+  {
+   "t": 53.656,
+   "url": "sfx/gameplay/core_exposed_1.ogg",
+   "dur": 1.1,
+   "loop": false
+  },
+  {
+   "t": 53.656,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.656,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.779,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 53.779,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 54.112,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 54.112,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 54.112,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 54.446,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 54.446,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 54.737,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 54.754,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 54.796,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 54.812,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 55.112,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 55.612,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 55.612,
+   "url": "sfx/gameplay/spawn_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 55.778,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 55.971,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 56.037,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 56.112,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 56.446,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 56.745,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 56.746,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 56.944,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 57.111,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 57.429,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 57.437,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 57.437,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 57.47,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 57.779,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 57.779,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 58.069,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 58.087,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.104,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 58.112,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 58.119,
+   "url": "sfx/gameplay/boss_roar_1.ogg",
+   "dur": 1.8,
+   "loop": false
+  },
+  {
+   "t": 58.119,
+   "url": "vo/en/boss_pac_ai_002.ogg",
+   "dur": 5.52,
+   "loop": false
+  },
+  {
+   "t": 58.161,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.362,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.512,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 58.537,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 58.562,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.704,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 58.762,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.912,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 58.962,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.963,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 58.979,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 59.111,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 59.162,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 59.312,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 59.362,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 59.562,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 59.712,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 59.762,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 59.852,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 59.896,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 59.963,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 60.112,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 60.162,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 60.187,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 60.203,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 60.362,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 60.512,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 60.561,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 60.561,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 60.596,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 60.762,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 60.912,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 60.929,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 60.962,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 61.012,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 61.162,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 61.312,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 61.321,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 61.344,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 61.362,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 61.504,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 61.562,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 61.712,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 61.762,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 61.912,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 61.962,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 62.112,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 62.161,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 62.245,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 62.362,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 62.512,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 62.562,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 62.57,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 62.703,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 62.762,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 62.912,
+   "url": "sfx/gameplay/enemy_fire_heavy_1.ogg",
+   "dur": 0.42,
+   "loop": false
+  },
+  {
+   "t": 62.962,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 62.979,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 63.104,
+   "url": "",
+   "dur": 1,
+   "loop": true
+  },
+  {
+   "t": 63.112,
+   "url": "vo/en/pac_end_001.ogg",
+   "dur": 5.44,
+   "loop": false
+  },
+  {
+   "t": 63.12,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 63.412,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 63.579,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 63.728,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 63.911,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 64.202,
+   "url": "sfx/gameplay/near_miss_1.ogg",
+   "dur": 0.32,
+   "loop": false
+  },
+  {
+   "t": 68.558,
+   "url": "vo/en/pac_end_002.ogg",
+   "dur": 5.52,
+   "loop": false
+  },
+  {
+   "t": 74.083,
+   "url": "vo/en/pac_end_003.ogg",
+   "dur": 6.4,
+   "loop": false
+  }
+ ],
+ "subs": [
+  {
+   "t": 0.135,
+   "k": "sub",
+   "text": "",
+   "visible": false,
+   "layer": "",
+   "line": ""
+  },
+  {
+   "t": 0.271,
+   "k": "sub",
+   "text": "Warning. The Warden approaches. This is it, Pilot. Everything we trained for.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 5.559,
+   "k": "sub",
+   "text": "Remember the briefing.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 7.575,
+   "k": "sub",
+   "text": "The Warden.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 9.384,
+   "k": "sub",
+   "text": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 14.5,
+   "k": "sub",
+   "text": "That is not the voice from the briefing.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 16.9,
+   "k": "sub",
+   "text": "Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 22.582,
+   "k": "sub",
+   "text": "The last cold gun was zero one two one. Oh. Oh, no. You're the next number.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 29.308,
+   "k": "sub",
+   "text": "And your gun is FULL. I can hear it humming from here.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 32.967,
+   "k": "sub",
+   "text": "You carried a Writ the whole way and you never spent it.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 37.35,
+   "k": "sub",
+   "text": "I am the Warden! I keep these lanes! And I am SO TIRED of saying that!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 41.917,
+   "k": "sub",
+   "text": "Proceed with the engagement, Pilot.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 44.242,
+   "k": "sub",
+   "text": "Statements by the Warden are not covered by your contract.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 49.811,
+   "k": "sub",
+   "text": "That was close, and close is billable. Thank you for your proximity.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 50.33,
+   "k": "sub",
+   "text": "My POD! Do you have ANY idea how long it takes to grow a pod?!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 53.131,
+   "k": "sub",
+   "text": "Pilot, your weapon shows no activity during a contracted engagement.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 57.455,
+   "k": "sub",
+   "text": "This has been escalated.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 58.121,
+   "k": "sub",
+   "text": "Recall authorization requested. Please hold. Your call is important to us.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 63.114,
+   "k": "sub",
+   "text": "You dodged everything. Everything! And you never fired back. Not once.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 68.558,
+   "k": "sub",
+   "text": "Pilot zero one two two, non-performance confirmed. Recall in three. Two.",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  },
+  {
+   "t": 74.083,
+   "k": "sub",
+   "text": "NO! Not this one! I'm cutting your leash. Hold still!",
+   "visible": false,
+   "layer": "scripted",
+   "line": ""
+  }
+ ],
+ "log": [
+  {
+   "k": "ev",
+   "ev": {
+    "type": "sectorStarted",
+    "tick": 0,
+    "sector": 6
+   },
+   "t": 0.247
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "bossWarning",
+    "tick": 0
+   },
+   "t": 0.247
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 1,
+    "active": true,
+    "pos": {
+     "x": 240,
+     "y": 562
+    }
+   },
+   "t": 0.247
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 8,
+    "active": false,
+    "pos": {
+     "x": 240,
+     "y": 574
+    }
+   },
+   "t": 0.32
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 40,
+    "level": 1
+   },
+   "t": 0.563
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 80,
+    "level": 2
+   },
+   "t": 0.921
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 120,
+    "level": 3
+   },
+   "t": 1.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 200,
+    "id": 1,
+    "kind": "warden"
+   },
+   "t": 1.912
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "bossPhase",
+    "tick": 200,
+    "phase": 0
+   },
+   "t": 1.912
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 217,
+    "active": true,
+    "pos": {
+     "x": 170.80000000000018,
+     "y": 574
+    }
+   },
+   "t": 2.061
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 227,
+    "active": false,
+    "pos": {
+     "x": 153.97157287525397,
+     "y": 576.8284271247462
+    }
+   },
+   "t": 2.123
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "bossPhase",
+    "tick": 350,
+    "phase": 1
+   },
+   "t": 3.143
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 352,
+    "active": true,
+    "pos": {
+     "x": 156.17157287525396,
+     "y": 576.8284271247462
+    }
+   },
+   "t": 3.173
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 354,
+    "active": false,
+    "pos": {
+     "x": 154.17157287525396,
+     "y": 576.8284271247462
+    }
+   },
+   "t": 3.201
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "statsMoment",
+    "tick": 479,
+    "moment": "writHoarding",
+    "value": 360
+   },
+   "t": 4.223
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "statsMoment",
+    "tick": 949,
+    "moment": "bossLull",
+    "value": 600
+   },
+   "t": 8.152
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5760,
+    "active": true,
+    "pos": {
+     "x": 213.7414213562373,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.232
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5784,
+    "active": false,
+    "pos": {
+     "x": 253.29777054234148,
+     "y": 578.3840620433566
+    }
+   },
+   "t": 48.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5785,
+    "active": true,
+    "pos": {
+     "x": 254.7119841047146,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5787,
+    "active": false,
+    "pos": {
+     "x": 256.1261976670877,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5788,
+    "active": true,
+    "pos": {
+     "x": 257.5404112294608,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5789,
+    "active": false,
+    "pos": {
+     "x": 257.5404112294608,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5790,
+    "active": true,
+    "pos": {
+     "x": 258.9546247918339,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5793,
+    "active": false,
+    "pos": {
+     "x": 261.7830519165801,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.501
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5795,
+    "active": true,
+    "pos": {
+     "x": 263.1972654789532,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.534
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5797,
+    "active": false,
+    "pos": {
+     "x": 264.61147904132633,
+     "y": 578.3840620433566
+    }
+   },
+   "t": 48.534
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5798,
+    "active": true,
+    "pos": {
+     "x": 266.02569260369944,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.534
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 5798,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 299.63152510923993,
+     "y": 160.00000000000023
+    },
+    "bullets": 9
+   },
+   "t": 48.534
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5800,
+    "active": false,
+    "pos": {
+     "x": 267.43990616607255,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.562
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5802,
+    "active": true,
+    "pos": {
+     "x": 268.85411972844565,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.592
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5804,
+    "active": false,
+    "pos": {
+     "x": 270.26833329081876,
+     "y": 578.3840620433566
+    }
+   },
+   "t": 48.592
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5805,
+    "active": true,
+    "pos": {
+     "x": 271.68254685319187,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.592
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5807,
+    "active": false,
+    "pos": {
+     "x": 273.096760415565,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.623
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5809,
+    "active": true,
+    "pos": {
+     "x": 274.5109739779381,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.651
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5811,
+    "active": false,
+    "pos": {
+     "x": 275.9251875403112,
+     "y": 578.3840620433566
+    }
+   },
+   "t": 48.651
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5812,
+    "active": true,
+    "pos": {
+     "x": 277.3394011026843,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.651
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5813,
+    "active": false,
+    "pos": {
+     "x": 277.3394011026843,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.683
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5815,
+    "active": true,
+    "pos": {
+     "x": 278.7536146650574,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.683
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5818,
+    "active": false,
+    "pos": {
+     "x": 281.5820417898036,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.713
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5820,
+    "active": true,
+    "pos": {
+     "x": 282.9962553521767,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.742
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5821,
+    "active": false,
+    "pos": {
+     "x": 282.9962553521767,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.742
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5823,
+    "active": true,
+    "pos": {
+     "x": 284.4104689145498,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.742
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5825,
+    "active": false,
+    "pos": {
+     "x": 285.82468247692293,
+     "y": 582.6267027304759
+    }
+   },
+   "t": 48.773
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5826,
+    "active": true,
+    "pos": {
+     "x": 287.23889603929604,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.773
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5827,
+    "active": false,
+    "pos": {
+     "x": 287.23889603929604,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.801
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5829,
+    "active": true,
+    "pos": {
+     "x": 288.65310960166914,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.801
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5830,
+    "active": false,
+    "pos": {
+     "x": 288.65310960166914,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.801
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5831,
+    "active": true,
+    "pos": {
+     "x": 290.06732316404225,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.834
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5832,
+    "active": false,
+    "pos": {
+     "x": 290.06732316404225,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.834
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5833,
+    "active": true,
+    "pos": {
+     "x": 291.48153672641536,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.834
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5834,
+    "active": false,
+    "pos": {
+     "x": 291.48153672641536,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.834
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5836,
+    "active": true,
+    "pos": {
+     "x": 292.89575028878846,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.863
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5837,
+    "active": false,
+    "pos": {
+     "x": 292.89575028878846,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.863
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5838,
+    "active": true,
+    "pos": {
+     "x": 294.30996385116157,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.892
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5839,
+    "active": false,
+    "pos": {
+     "x": 294.30996385116157,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.892
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5841,
+    "active": true,
+    "pos": {
+     "x": 295.7241774135347,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.892
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5842,
+    "active": false,
+    "pos": {
+     "x": 295.7241774135347,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.924
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5844,
+    "active": true,
+    "pos": {
+     "x": 297.1383909759078,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.924
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5845,
+    "active": false,
+    "pos": {
+     "x": 297.1383909759078,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.924
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5847,
+    "active": true,
+    "pos": {
+     "x": 298.5526045382809,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.952
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5848,
+    "active": false,
+    "pos": {
+     "x": 298.5526045382809,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 48.952
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5849,
+    "active": true,
+    "pos": {
+     "x": 299.966818100654,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.982
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5850,
+    "active": false,
+    "pos": {
+     "x": 299.966818100654,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 48.982
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5853,
+    "active": true,
+    "pos": {
+     "x": 301.3810316630271,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.012
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 5853,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 347.90344304585574,
+     "y": 160.00000000000023
+    },
+    "bullets": 9
+   },
+   "t": 49.012
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5854,
+    "active": false,
+    "pos": {
+     "x": 301.3810316630271,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.012
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5856,
+    "active": true,
+    "pos": {
+     "x": 302.7952452254002,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5857,
+    "active": false,
+    "pos": {
+     "x": 302.7952452254002,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5860,
+    "active": true,
+    "pos": {
+     "x": 304.2094587877733,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.073
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5861,
+    "active": false,
+    "pos": {
+     "x": 304.2094587877733,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.073
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5863,
+    "active": true,
+    "pos": {
+     "x": 305.6236723501464,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.102
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5864,
+    "active": false,
+    "pos": {
+     "x": 305.6236723501464,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.102
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5868,
+    "active": true,
+    "pos": {
+     "x": 307.0378859125195,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.133
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5869,
+    "active": false,
+    "pos": {
+     "x": 307.0378859125195,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.133
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5872,
+    "active": true,
+    "pos": {
+     "x": 308.45209947489263,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.162
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5873,
+    "active": false,
+    "pos": {
+     "x": 308.45209947489263,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.162
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5878,
+    "active": true,
+    "pos": {
+     "x": 309.86631303726574,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.223
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5879,
+    "active": false,
+    "pos": {
+     "x": 309.86631303726574,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.223
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5884,
+    "active": true,
+    "pos": {
+     "x": 311.28052659963885,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5885,
+    "active": false,
+    "pos": {
+     "x": 311.28052659963885,
+     "y": 579.7982756057297
+    }
+   },
+   "t": 49.283
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5902,
+    "active": true,
+    "pos": {
+     "x": 312.69474016201195,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.402
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5903,
+    "active": false,
+    "pos": {
+     "x": 312.69474016201195,
+     "y": 581.2124891681028
+    }
+   },
+   "t": 49.434
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 5908,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 375.6201140165571,
+     "y": 160.00000000000023
+    },
+    "bullets": 9
+   },
+   "t": 49.463
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5924,
+    "active": true,
+    "pos": {
+     "x": 312.69474016201195,
+     "y": 583.2124891681028
+    }
+   },
+   "t": 49.584
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 49.643
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 5928,
+    "level": 0
+   },
+   "t": 49.643
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5946,
+    "active": false,
+    "pos": {
+     "x": 318.3515944115044,
+     "y": 615.7556349186104
+    }
+   },
+   "t": 49.791
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 5946,
+    "bulletId": 6,
+    "pos": {
+     "x": 299.63152510923993,
+     "y": 577.2000000000006
+    },
+    "relVel": {
+     "x": 1.7145055188062944e-16,
+     "y": -1.4000000000000457
+    },
+    "distance": 41.605074220419255,
+    "heavy": false
+   },
+   "t": 49.791
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5948,
+    "active": true,
+    "pos": {
+     "x": 319.7658079738775,
+     "y": 610.1414213562373
+    }
+   },
+   "t": 49.791
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5949,
+    "active": false,
+    "pos": {
+     "x": 319.7658079738775,
+     "y": 605.9414213562372
+    }
+   },
+   "t": 49.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5950,
+    "active": true,
+    "pos": {
+     "x": 321.1800215362506,
+     "y": 604.5272077938641
+    }
+   },
+   "t": 49.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5951,
+    "active": false,
+    "pos": {
+     "x": 321.1800215362506,
+     "y": 600.3272077938641
+    }
+   },
+   "t": 49.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 5951,
+    "bulletId": 6,
+    "pos": {
+     "x": 299.63152510923993,
+     "y": 591.2000000000004
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": true
+   },
+   "t": 49.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 5951,
+    "credits": 5,
+    "rate": 1.02,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 49.824
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5953,
+    "active": true,
+    "pos": {
+     "x": 321.1800215362506,
+     "y": 594.127207793864
+    }
+   },
+   "t": 49.851
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 5954,
+    "bulletId": 5,
+    "pos": {
+     "x": 359.8862403633432,
+     "y": 595.4509493498076
+    },
+    "relVel": {
+     "x": 1.7980015576221857,
+     "y": 4.187786488168045
+    },
+    "distance": 38.349846360349815,
+    "heavy": false
+   },
+   "t": 49.851
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5963,
+    "active": false,
+    "pos": {
+     "x": 308.45209947489263,
+     "y": 584.2277128572523
+    }
+   },
+   "t": 49.911
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 5963,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 377.5016043992666,
+     "y": 160.00000000000023
+    },
+    "bullets": 9
+   },
+   "t": 49.911
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5965,
+    "active": true,
+    "pos": {
+     "x": 307.0378859125195,
+     "y": 585.6419264196254
+    }
+   },
+   "t": 49.943
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5966,
+    "active": false,
+    "pos": {
+     "x": 307.0378859125195,
+     "y": 585.6419264196254
+    }
+   },
+   "t": 49.943
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5968,
+    "active": true,
+    "pos": {
+     "x": 305.6236723501464,
+     "y": 587.0561399819985
+    }
+   },
+   "t": 49.973
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 5968,
+    "level": 1
+   },
+   "t": 49.973
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5969,
+    "active": false,
+    "pos": {
+     "x": 305.6236723501464,
+     "y": 587.0561399819985
+    }
+   },
+   "t": 49.973
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5970,
+    "active": true,
+    "pos": {
+     "x": 304.2094587877733,
+     "y": 588.4703535443716
+    }
+   },
+   "t": 49.973
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5972,
+    "active": false,
+    "pos": {
+     "x": 302.7952452254002,
+     "y": 589.8845671067447
+    }
+   },
+   "t": 50.001
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 5973,
+    "active": true,
+    "pos": {
+     "x": 301.3810316630271,
+     "y": 588.4703535443716
+    }
+   },
+   "t": 50.001
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 50.092
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 5984,
+    "level": 0
+   },
+   "t": 50.092
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6003,
+    "bulletId": 16,
+    "pos": {
+     "x": 289.9514557632469,
+     "y": 578.8095117950379
+    },
+    "count": 1,
+    "meter": 0.1,
+    "first": false
+   },
+   "t": 50.243
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6003,
+    "credits": 10,
+    "rate": 1.04,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 50.243
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6005,
+    "active": false,
+    "pos": {
+     "x": 266.85411972844565,
+     "y": 586.0277128572523
+    }
+   },
+   "t": 50.272
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6006,
+    "bulletId": 16,
+    "pos": {
+     "x": 288.8000917774997,
+     "y": 587.1302305724228
+    },
+    "relVel": {
+     "x": -0.38378799524907886,
+     "y": 6.973572925794984
+    },
+    "distance": 22.392199739041057,
+    "heavy": false
+   },
+   "t": 50.272
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6007,
+    "active": true,
+    "pos": {
+     "x": 266.85411972844565,
+     "y": 579.8277128572522
+    }
+   },
+   "t": 50.333
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "partBreak",
+    "tick": 6007,
+    "id": 1,
+    "target": "boss",
+    "part": "fanPodL",
+    "partKind": "fanPod",
+    "pos": {
+     "x": 297.9924891843604,
+     "y": 120.00000000000024
+    },
+    "by": "writ",
+    "first": true
+   },
+   "t": 50.333
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6007,
+    "credits": 52,
+    "rate": 1.24,
+    "delta": 42,
+    "reason": "partBreak"
+   },
+   "t": 50.333
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6007,
+    "bulletId": 17,
+    "pos": {
+     "x": 230.0520724069034,
+     "y": 577.6925357706541
+    },
+    "relVel": {
+     "x": -0.7603314234771156,
+     "y": 4.694790553359066
+    },
+    "distance": 36.68315339280014,
+    "heavy": false
+   },
+   "t": 50.333
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6008,
+    "active": false,
+    "pos": {
+     "x": 271.05411972844564,
+     "y": 579.8277128572522
+    }
+   },
+   "t": 50.333
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6018,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 353.1894965347426,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 50.422
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6024,
+    "level": 1
+   },
+   "t": 50.482
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6029,
+    "active": true,
+    "pos": {
+     "x": 354.59381669041244,
+     "y": 585.7674098192192
+    }
+   },
+   "t": 50.513
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 50.602
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6039,
+    "level": 0
+   },
+   "t": 50.602
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6056,
+    "bulletId": 24,
+    "pos": {
+     "x": 375.6201140165571,
+     "y": 577.2000000000006
+    },
+    "count": 1,
+    "meter": 0.15000000000000002,
+    "first": false
+   },
+   "t": 50.752
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6056,
+    "credits": 58,
+    "rate": 1.26,
+    "delta": 6,
+    "reason": "graze"
+   },
+   "t": 50.752
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6059,
+    "active": false,
+    "pos": {
+     "x": 351.5227488785469,
+     "y": 582.6963420073537
+    }
+   },
+   "t": 50.782
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6059,
+    "bulletId": 24,
+    "pos": {
+     "x": 375.6201140165571,
+     "y": 585.6000000000005
+    },
+    "relVel": {
+     "x": 1.7145055188062944e-16,
+     "y": 2.8
+    },
+    "distance": 24.097588086238627,
+    "heavy": false
+   },
+   "t": 50.782
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6059,
+    "bulletId": 25,
+    "pos": {
+     "x": 317.2843387386992,
+     "y": 581.5830847208329
+    },
+    "relVel": {
+     "x": -0.38378799524907886,
+     "y": 2.773572925794938
+    },
+    "distance": 34.077014095324124,
+    "heavy": false
+   },
+   "t": 50.782
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6061,
+    "active": true,
+    "pos": {
+     "x": 350.1085353161738,
+     "y": 581.2821284449806
+    }
+   },
+   "t": 50.782
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6064,
+    "active": false,
+    "pos": {
+     "x": 347.2801081914276,
+     "y": 578.4537013202344
+    }
+   },
+   "t": 50.812
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6065,
+    "active": true,
+    "pos": {
+     "x": 345.8658946290545,
+     "y": 579.8679148826075
+    }
+   },
+   "t": 50.812
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6069,
+    "active": false,
+    "pos": {
+     "x": 341.62325394193516,
+     "y": 581.2821284449806
+    }
+   },
+   "t": 50.842
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6070,
+    "active": true,
+    "pos": {
+     "x": 340.20904037956205,
+     "y": 582.6963420073537
+    }
+   },
+   "t": 50.873
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6072,
+    "active": false,
+    "pos": {
+     "x": 338.79482681718895,
+     "y": 584.1105555697268
+    }
+   },
+   "t": 50.873
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6073,
+    "active": true,
+    "pos": {
+     "x": 337.38061325481584,
+     "y": 585.5247691320999
+    }
+   },
+   "t": 50.873
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6073,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 307.31516609841077,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 50.873
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6079,
+    "level": 1
+   },
+   "t": 50.932
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 51.113
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6102,
+    "level": 0
+   },
+   "t": 51.113
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6105,
+    "active": false,
+    "pos": {
+     "x": 297.78263350836886,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.141
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6107,
+    "active": true,
+    "pos": {
+     "x": 296.36841994599575,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.171
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6108,
+    "bulletId": 35,
+    "pos": {
+     "x": 321.4685570929031,
+     "y": 564.9416471660631
+    },
+    "relVel": {
+     "x": 1.0304255671240277,
+     "y": 1.3593593634218317
+    },
+    "distance": 32.062642915836534,
+    "heavy": false
+   },
+   "t": 51.171
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6109,
+    "active": false,
+    "pos": {
+     "x": 294.95420638362265,
+     "y": 583.0394877578613
+    }
+   },
+   "t": 51.171
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6111,
+    "active": true,
+    "pos": {
+     "x": 293.53999282124954,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.201
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6112,
+    "active": false,
+    "pos": {
+     "x": 293.53999282124954,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.201
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6113,
+    "active": true,
+    "pos": {
+     "x": 292.12577925887643,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.231
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6115,
+    "active": false,
+    "pos": {
+     "x": 290.7115656965033,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.231
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6115,
+    "bulletId": 36,
+    "pos": {
+     "x": 261.1708966072685,
+     "y": 572.3029546639359
+    },
+    "relVel": {
+     "x": -0.7603314234771156,
+     "y": 2.6947905533590664
+    },
+    "distance": 30.211582724138456,
+    "heavy": false
+   },
+   "t": 51.231
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6116,
+    "active": true,
+    "pos": {
+     "x": 289.2973521341302,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.231
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6120,
+    "active": false,
+    "pos": {
+     "x": 285.0547114470109,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.264
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6121,
+    "active": true,
+    "pos": {
+     "x": 283.6404978846378,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.292
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6124,
+    "active": false,
+    "pos": {
+     "x": 280.8120707598916,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.322
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6125,
+    "active": true,
+    "pos": {
+     "x": 279.3978571975185,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.322
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6128,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 248.61752044018783,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 51.352
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6129,
+    "active": false,
+    "pos": {
+     "x": 275.15521651039916,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.352
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6130,
+    "active": true,
+    "pos": {
+     "x": 273.74100294802605,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.352
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6134,
+    "active": false,
+    "pos": {
+     "x": 269.49836226090673,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.381
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6135,
+    "active": true,
+    "pos": {
+     "x": 268.0841486985336,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.414
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6138,
+    "active": false,
+    "pos": {
+     "x": 265.2557215737874,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.414
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6139,
+    "active": true,
+    "pos": {
+     "x": 263.8415080114143,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.441
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6141,
+    "active": false,
+    "pos": {
+     "x": 262.4272944490412,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.441
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6142,
+    "active": true,
+    "pos": {
+     "x": 261.0130808866681,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6142,
+    "level": 1
+   },
+   "t": 51.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6146,
+    "active": false,
+    "pos": {
+     "x": 256.7704401995488,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.503
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6147,
+    "active": true,
+    "pos": {
+     "x": 255.35622663717567,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.503
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6149,
+    "active": false,
+    "pos": {
+     "x": 253.94201307480256,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.532
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6150,
+    "active": true,
+    "pos": {
+     "x": 252.52779951242945,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.532
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6153,
+    "active": false,
+    "pos": {
+     "x": 249.69937238768324,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 51.562
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6154,
+    "active": true,
+    "pos": {
+     "x": 248.28515882531013,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.562
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6156,
+    "active": false,
+    "pos": {
+     "x": 246.87094526293703,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.592
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6157,
+    "active": true,
+    "pos": {
+     "x": 245.45673170056392,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.592
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6160,
+    "active": false,
+    "pos": {
+     "x": 242.6283045758177,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.622
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6161,
+    "active": true,
+    "pos": {
+     "x": 241.2140910134446,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.622
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6163,
+    "active": false,
+    "pos": {
+     "x": 239.7998774510715,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.622
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6164,
+    "active": true,
+    "pos": {
+     "x": 238.3856638886984,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.653
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6166,
+    "active": false,
+    "pos": {
+     "x": 236.97145032632528,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.653
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6167,
+    "active": true,
+    "pos": {
+     "x": 235.55723676395218,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.682
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6169,
+    "active": false,
+    "pos": {
+     "x": 234.14302320157907,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.682
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6170,
+    "active": true,
+    "pos": {
+     "x": 232.72880963920596,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.682
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6172,
+    "active": false,
+    "pos": {
+     "x": 231.31459607683286,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.714
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6173,
+    "active": true,
+    "pos": {
+     "x": 229.90038251445975,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.714
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6175,
+    "active": false,
+    "pos": {
+     "x": 228.48616895208664,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.742
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6176,
+    "active": true,
+    "pos": {
+     "x": 227.07195538971354,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.742
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6178,
+    "active": false,
+    "pos": {
+     "x": 225.65774182734043,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6179,
+    "active": true,
+    "pos": {
+     "x": 224.24352826496732,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6181,
+    "active": false,
+    "pos": {
+     "x": 222.82931470259422,
+     "y": 581.6252741954881
+    }
+   },
+   "t": 51.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6182,
+    "active": true,
+    "pos": {
+     "x": 221.4151011402211,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6182,
+    "level": 2
+   },
+   "t": 51.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6183,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 188.2782658037732,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 51.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6184,
+    "active": false,
+    "pos": {
+     "x": 220.000887577848,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6185,
+    "active": true,
+    "pos": {
+     "x": 218.5866740154749,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.831
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6186,
+    "active": false,
+    "pos": {
+     "x": 218.5866740154749,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.831
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6187,
+    "active": true,
+    "pos": {
+     "x": 217.1724604531018,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.831
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6189,
+    "active": false,
+    "pos": {
+     "x": 215.75824689072869,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 51.864
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6190,
+    "active": true,
+    "pos": {
+     "x": 214.34403332835558,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.864
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6192,
+    "active": false,
+    "pos": {
+     "x": 212.92981976598247,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.864
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6194,
+    "active": true,
+    "pos": {
+     "x": 211.51560620360937,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.892
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6196,
+    "active": false,
+    "pos": {
+     "x": 210.10139264123626,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 51.922
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6197,
+    "active": true,
+    "pos": {
+     "x": 208.68717907886315,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.922
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6199,
+    "active": false,
+    "pos": {
+     "x": 207.27296551649005,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.922
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6201,
+    "active": true,
+    "pos": {
+     "x": 205.85875195411694,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.953
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6203,
+    "active": false,
+    "pos": {
+     "x": 204.44453839174383,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 51.981
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6204,
+    "active": true,
+    "pos": {
+     "x": 203.03032482937073,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.981
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6205,
+    "active": false,
+    "pos": {
+     "x": 203.03032482937073,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 51.981
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6206,
+    "active": true,
+    "pos": {
+     "x": 201.61611126699762,
+     "y": 580.211060633115
+    }
+   },
+   "t": 51.981
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6207,
+    "active": false,
+    "pos": {
+     "x": 201.61611126699762,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.013
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6209,
+    "active": true,
+    "pos": {
+     "x": 200.2018977046245,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.013
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6211,
+    "active": false,
+    "pos": {
+     "x": 198.7876841422514,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 52.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6212,
+    "active": true,
+    "pos": {
+     "x": 197.3734705798783,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6213,
+    "active": false,
+    "pos": {
+     "x": 197.3734705798783,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.042
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6214,
+    "active": true,
+    "pos": {
+     "x": 195.9592570175052,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.073
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6215,
+    "active": false,
+    "pos": {
+     "x": 195.9592570175052,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.073
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6217,
+    "active": true,
+    "pos": {
+     "x": 194.5450434551321,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.073
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6219,
+    "active": false,
+    "pos": {
+     "x": 193.13082989275898,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 52.101
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6220,
+    "active": true,
+    "pos": {
+     "x": 191.71661633038588,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.101
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6221,
+    "active": false,
+    "pos": {
+     "x": 191.71661633038588,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6222,
+    "level": 3
+   },
+   "t": 52.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6223,
+    "active": true,
+    "pos": {
+     "x": 190.30240276801277,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6224,
+    "active": false,
+    "pos": {
+     "x": 190.30240276801277,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.132
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6226,
+    "active": true,
+    "pos": {
+     "x": 188.88818920563966,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.163
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6228,
+    "active": false,
+    "pos": {
+     "x": 187.47397564326656,
+     "y": 577.3826335083688
+    }
+   },
+   "t": 52.163
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6230,
+    "active": true,
+    "pos": {
+     "x": 186.05976208089345,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.192
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6231,
+    "active": false,
+    "pos": {
+     "x": 186.05976208089345,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.192
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6233,
+    "active": true,
+    "pos": {
+     "x": 184.64554851852034,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.222
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6234,
+    "active": false,
+    "pos": {
+     "x": 184.64554851852034,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.222
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6236,
+    "active": true,
+    "pos": {
+     "x": 183.23133495614724,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6237,
+    "active": false,
+    "pos": {
+     "x": 183.23133495614724,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6238,
+    "active": true,
+    "pos": {
+     "x": 181.81712139377413,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6238,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 137.79182948249806,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 52.251
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6239,
+    "active": false,
+    "pos": {
+     "x": 181.81712139377413,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.281
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6242,
+    "active": true,
+    "pos": {
+     "x": 180.40290783140102,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.281
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6243,
+    "active": false,
+    "pos": {
+     "x": 180.40290783140102,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.312
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6244,
+    "active": true,
+    "pos": {
+     "x": 178.98869426902792,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.312
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6245,
+    "active": false,
+    "pos": {
+     "x": 178.98869426902792,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.312
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6248,
+    "active": true,
+    "pos": {
+     "x": 177.5744807066548,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.341
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6249,
+    "active": false,
+    "pos": {
+     "x": 177.5744807066548,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.341
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6251,
+    "active": true,
+    "pos": {
+     "x": 176.1602671442817,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.372
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6252,
+    "active": false,
+    "pos": {
+     "x": 176.1602671442817,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.372
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6255,
+    "active": true,
+    "pos": {
+     "x": 174.7460535819086,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.403
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6256,
+    "active": false,
+    "pos": {
+     "x": 174.7460535819086,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.403
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6259,
+    "active": true,
+    "pos": {
+     "x": 173.3318400195355,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.432
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6260,
+    "active": false,
+    "pos": {
+     "x": 173.3318400195355,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.432
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6264,
+    "active": true,
+    "pos": {
+     "x": 171.91762645716238,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.463
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6265,
+    "active": false,
+    "pos": {
+     "x": 171.91762645716238,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.492
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6268,
+    "active": true,
+    "pos": {
+     "x": 170.50341289478928,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6269,
+    "active": false,
+    "pos": {
+     "x": 170.50341289478928,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6276,
+    "active": true,
+    "pos": {
+     "x": 169.08919933241617,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.582
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6277,
+    "active": false,
+    "pos": {
+     "x": 169.08919933241617,
+     "y": 578.7968470707419
+    }
+   },
+   "t": 52.582
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6285,
+    "active": true,
+    "pos": {
+     "x": 167.67498577004307,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.643
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6286,
+    "active": false,
+    "pos": {
+     "x": 167.67498577004307,
+     "y": 580.211060633115
+    }
+   },
+   "t": 52.672
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6293,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 106.77570965546775,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 52.704
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6302,
+    "credits": 58,
+    "rate": 1,
+    "delta": 0,
+    "reason": "decay"
+   },
+   "t": 52.792
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6321,
+    "active": true,
+    "pos": {
+     "x": 167.67498577004307,
+     "y": 582.211060633115
+    }
+   },
+   "t": 52.943
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 52.972
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6325,
+    "level": 0
+   },
+   "t": 52.972
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6335,
+    "active": false,
+    "pos": {
+     "x": 167.67498577004307,
+     "y": 604.011060633115
+    }
+   },
+   "t": 53.062
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6335,
+    "bulletId": 61,
+    "pos": {
+     "x": 188.2782658037732,
+     "y": 588.4000000000004
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": false
+   },
+   "t": 53.062
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6335,
+    "credits": 63,
+    "rate": 1.02,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 53.062
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6336,
+    "active": true,
+    "pos": {
+     "x": 166.26077220766996,
+     "y": 602.5968470707419
+    }
+   },
+   "t": 53.091
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6337,
+    "active": false,
+    "pos": {
+     "x": 166.26077220766996,
+     "y": 598.3968470707418
+    }
+   },
+   "t": 53.091
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6339,
+    "active": true,
+    "pos": {
+     "x": 166.26077220766996,
+     "y": 592.1968470707418
+    }
+   },
+   "t": 53.091
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6339,
+    "bulletId": 61,
+    "pos": {
+     "x": 188.2782658037732,
+     "y": 599.6000000000003
+    },
+    "relVel": {
+     "x": 1.7145055188062944e-16,
+     "y": 4.8
+    },
+    "distance": 22.170846385006463,
+    "heavy": false
+   },
+   "t": 53.091
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6343,
+    "active": false,
+    "pos": {
+     "x": 166.26077220766996,
+     "y": 586.1968470707418
+    }
+   },
+   "t": 53.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6344,
+    "active": true,
+    "pos": {
+     "x": 167.67498577004307,
+     "y": 584.7826335083687
+    }
+   },
+   "t": 53.153
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "bossPhase",
+    "tick": 6344,
+    "phase": 2
+   },
+   "t": 53.153
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6345,
+    "active": false,
+    "pos": {
+     "x": 167.67498577004307,
+     "y": 584.7826335083687
+    }
+   },
+   "t": 53.153
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6349,
+    "active": true,
+    "pos": {
+     "x": 169.08919933241617,
+     "y": 583.3684199459956
+    }
+   },
+   "t": 53.181
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6350,
+    "active": false,
+    "pos": {
+     "x": 169.08919933241617,
+     "y": 583.3684199459956
+    }
+   },
+   "t": 53.181
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6353,
+    "active": true,
+    "pos": {
+     "x": 170.50341289478928,
+     "y": 584.7826335083687
+    }
+   },
+   "t": 53.214
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6354,
+    "active": false,
+    "pos": {
+     "x": 170.50341289478928,
+     "y": 584.7826335083687
+    }
+   },
+   "t": 53.214
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6357,
+    "active": true,
+    "pos": {
+     "x": 171.91762645716238,
+     "y": 586.1968470707418
+    }
+   },
+   "t": 53.242
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6359,
+    "active": false,
+    "pos": {
+     "x": 173.3318400195355,
+     "y": 587.6110606331149
+    }
+   },
+   "t": 53.272
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6363,
+    "active": true,
+    "pos": {
+     "x": 174.7460535819086,
+     "y": 589.025274195488
+    }
+   },
+   "t": 53.303
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6365,
+    "active": false,
+    "pos": {
+     "x": 176.1602671442817,
+     "y": 590.4394877578611
+    }
+   },
+   "t": 53.331
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6365,
+    "level": 1
+   },
+   "t": 53.331
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6367,
+    "active": true,
+    "pos": {
+     "x": 177.5744807066548,
+     "y": 591.8537013202342
+    }
+   },
+   "t": 53.331
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6369,
+    "active": false,
+    "pos": {
+     "x": 178.98869426902792,
+     "y": 593.2679148826073
+    }
+   },
+   "t": 53.362
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6371,
+    "active": true,
+    "pos": {
+     "x": 180.40290783140102,
+     "y": 594.6821284449804
+    }
+   },
+   "t": 53.362
+  },
+  {
+   "k": "shots",
+   "n": 1,
+   "t": 53.452
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6383,
+    "level": 0
+   },
+   "t": 53.452
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6383,
+    "id": 1,
+    "weapon": "wardenFan",
+    "pos": {
+     "x": 111.47013354630263,
+     "y": 160.00000000000023
+    },
+    "bullets": 5
+   },
+   "t": 53.452
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6393,
+    "bulletId": 65,
+    "pos": {
+     "x": 197.66275674135224,
+     "y": 592.6773764240127
+    },
+    "count": 1,
+    "meter": 0.1,
+    "first": false
+   },
+   "t": 53.541
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6393,
+    "credits": 68,
+    "rate": 1.04,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 53.541
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6397,
+    "active": false,
+    "pos": {
+     "x": 218.5450434551321,
+     "y": 609.4526911934577
+    }
+   },
+   "t": 53.573
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6399,
+    "bulletId": 65,
+    "pos": {
+     "x": 199.96548471284663,
+     "y": 609.3188139787824
+    },
+    "relVel": {
+     "x": 0.38378799524907925,
+     "y": 6.973572925794984
+    },
+    "distance": 19.00734607006806,
+    "heavy": false
+   },
+   "t": 53.603
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6400,
+    "bulletId": 64,
+    "pos": {
+     "x": 261.72585150926733,
+     "y": 599.2508601975269
+    },
+    "relVel": {
+     "x": 0.7603314234771158,
+     "y": 6.894790553359112
+    },
+    "distance": 42.65813454582548,
+    "heavy": false
+   },
+   "t": 53.603
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6401,
+    "active": true,
+    "pos": {
+     "x": 217.13082989275898,
+     "y": 595.4384776310844
+    }
+   },
+   "t": 53.603
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6406,
+    "active": false,
+    "pos": {
+     "x": 215.71661633038588,
+     "y": 588.0242640687113
+    }
+   },
+   "t": 53.663
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "partBreak",
+    "tick": 6408,
+    "id": 1,
+    "target": "boss",
+    "part": "fanPodR",
+    "partKind": "fanPod",
+    "pos": {
+     "x": 187.05800546042542,
+     "y": 120.00000000000024
+    },
+    "by": "writ",
+    "first": false
+   },
+   "t": 53.663
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6408,
+    "credits": 110,
+    "rate": 1.24,
+    "delta": 42,
+    "reason": "partBreak"
+   },
+   "t": 53.663
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "coreExposed",
+    "tick": 6408,
+    "id": 1
+   },
+   "t": 53.663
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "intel",
+    "tick": 6408,
+    "id": 1,
+    "codexId": "codex.warden.core",
+    "ai": "sweep",
+    "first": true
+   },
+   "t": 53.663
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6423,
+    "level": 1
+   },
+   "t": 53.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6423,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 135.4528421985063,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 53.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6431,
+    "active": true,
+    "pos": {
+     "x": 309.53082989275873,
+     "y": 586.6100505063382
+    }
+   },
+   "t": 53.872
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6440,
+    "active": false,
+    "pos": {
+     "x": 324.94504345513184,
+     "y": 585.1958369439651
+    }
+   },
+   "t": 53.932
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6463,
+    "level": 2
+   },
+   "t": 54.142
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6463,
+    "bulletId": 67,
+    "pos": {
+     "x": 357.0383548674688,
+     "y": 568.1887411620897
+    },
+    "relVel": {
+     "x": 1.4635242410058458,
+     "y": 2.387068661766616
+    },
+    "distance": 36.25351674842134,
+    "heavy": false
+   },
+   "t": 54.142
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6463,
+    "bulletId": 68,
+    "pos": {
+     "x": 298.72705195688815,
+     "y": 598.6389428546935
+    },
+    "relVel": {
+     "x": 1.1225224695989602,
+     "y": 2.5651400166941083
+    },
+    "distance": 29.42505473261809,
+    "heavy": false
+   },
+   "t": 54.142
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6497,
+    "active": true,
+    "pos": {
+     "x": 326.94504345513184,
+     "y": 585.1958369439651
+    }
+   },
+   "t": 54.412
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "chargeLevel",
+    "tick": 6503,
+    "level": 3
+   },
+   "t": 54.471
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6503,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 211.74938169414196,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 54.471
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6517,
+    "active": false,
+    "pos": {
+     "x": 333.1450434551318,
+     "y": 585.1958369439651
+    }
+   },
+   "t": 54.563
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6520,
+    "active": true,
+    "pos": {
+     "x": 342.9592570175049,
+     "y": 583.781623381592
+    }
+   },
+   "t": 54.591
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6528,
+    "active": false,
+    "pos": {
+     "x": 356.373470579878,
+     "y": 582.3674098192189
+    }
+   },
+   "t": 54.655
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6534,
+    "active": true,
+    "pos": {
+     "x": 356.373470579878,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 54.713
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6535,
+    "active": false,
+    "pos": {
+     "x": 356.373470579878,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 54.713
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6538,
+    "bulletId": 79,
+    "pos": {
+     "x": 332.79907838560996,
+     "y": 595.4416943470654
+    },
+    "relVel": {
+     "x": 1.7012606567853654,
+     "y": 3.8400146064402185
+    },
+    "distance": 27.659852633627324,
+    "heavy": true
+   },
+   "t": 54.743
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6539,
+    "active": true,
+    "pos": {
+     "x": 354.373470579878,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 54.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6540,
+    "bulletId": 74,
+    "pos": {
+     "x": 379.1106659355492,
+     "y": 551.2090814671892
+    },
+    "relVel": {
+     "x": 3.6939274201851062,
+     "y": 2.476006844729035
+    },
+    "distance": 39.13723751732468,
+    "heavy": false
+   },
+   "t": 54.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6545,
+    "active": false,
+    "pos": {
+     "x": 340.173470579878,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 54.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6545,
+    "bulletId": 75,
+    "pos": {
+     "x": 324.1682797266947,
+     "y": 600.3186330504595
+    },
+    "count": 1,
+    "meter": 0.058499999999999934,
+    "first": false
+   },
+   "t": 54.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6545,
+    "credits": 116,
+    "rate": 1.26,
+    "delta": 6,
+    "reason": "graze"
+   },
+   "t": 54.803
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6547,
+    "bulletId": 75,
+    "pos": {
+     "x": 326.77807293136215,
+     "y": 605.7213156645755
+    },
+    "relVel": {
+     "x": 5.504896602333679,
+     "y": 2.7013413070580308
+    },
+    "distance": 24.967876552005983,
+    "heavy": false
+   },
+   "t": 54.833
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6583,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 299.2277556000196,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 55.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6586,
+    "active": true,
+    "pos": {
+     "x": 170.17347057987848,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 55.162
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6594,
+    "active": false,
+    "pos": {
+     "x": 156.17347057987848,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 55.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 6643,
+    "id": 88,
+    "kind": "drone"
+   },
+   "t": 55.614
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "spawn",
+    "tick": 6643,
+    "id": 89,
+    "kind": "drone"
+   },
+   "t": 55.614
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6663,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 363.2632813374248,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 55.793
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6680,
+    "active": true,
+    "pos": {
+     "x": 145.57347057987852,
+     "y": 580.3674098192189
+    }
+   },
+   "t": 55.944
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6686,
+    "active": false,
+    "pos": {
+     "x": 147.57347057987852,
+     "y": 592.5674098192189
+    }
+   },
+   "t": 55.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6686,
+    "bulletId": 87,
+    "pos": {
+     "x": 140.35891719995197,
+     "y": 556.8844211633224
+    },
+    "relVel": {
+     "x": -1.5275849846160392,
+     "y": -0.28764979650654743
+    },
+    "distance": 35.849290404418106,
+    "heavy": true
+   },
+   "t": 55.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6687,
+    "active": true,
+    "pos": {
+     "x": 147.57347057987852,
+     "y": 594.5674098192189
+    }
+   },
+   "t": 56.003
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6690,
+    "active": false,
+    "pos": {
+     "x": 150.54331906086202,
+     "y": 595.5975613382354
+    }
+   },
+   "t": 56.032
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6692,
+    "active": true,
+    "pos": {
+     "x": 154.92738110421863,
+     "y": 591.2134992948788
+    }
+   },
+   "t": 56.032
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6694,
+    "bulletId": 86,
+    "pos": {
+     "x": 181.8244851478561,
+     "y": 605.5135915503915
+    },
+    "relVel": {
+     "x": -2.4624570485531465,
+     "y": 5.4812992012158785
+    },
+    "distance": 28.975141198924142,
+    "heavy": true
+   },
+   "t": 56.063
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6698,
+    "active": false,
+    "pos": {
+     "x": 153.51316754184552,
+     "y": 584.1424314830133
+    }
+   },
+   "t": 56.094
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6703,
+    "id": 88,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 261.45402644812526,
+     "y": 210.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 56.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6724,
+    "credits": 116,
+    "rate": 1,
+    "delta": 0,
+    "reason": "decay"
+   },
+   "t": 56.303
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6740,
+    "active": true,
+    "pos": {
+     "x": 151.51316754184552,
+     "y": 584.1424314830133
+    }
+   },
+   "t": 56.422
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6742,
+    "active": false,
+    "pos": {
+     "x": 149.51316754184552,
+     "y": 584.1424314830133
+    }
+   },
+   "t": 56.453
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6743,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 378.51015452727347,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 56.453
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6749,
+    "active": true,
+    "pos": {
+     "x": 147.51316754184552,
+     "y": 584.1424314830133
+    }
+   },
+   "t": 56.512
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6752,
+    "active": false,
+    "pos": {
+     "x": 145.51316754184552,
+     "y": 582.1424314830133
+    }
+   },
+   "t": 56.543
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6759,
+    "active": true,
+    "pos": {
+     "x": 145.51316754184552,
+     "y": 580.1424314830133
+    }
+   },
+   "t": 56.602
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6762,
+    "active": false,
+    "pos": {
+     "x": 144.0989539794724,
+     "y": 579.5566450453864
+    }
+   },
+   "t": 56.632
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6765,
+    "active": true,
+    "pos": {
+     "x": 142.6847404170993,
+     "y": 580.9708586077595
+    }
+   },
+   "t": 56.632
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6767,
+    "active": false,
+    "pos": {
+     "x": 141.2705268547262,
+     "y": 582.3850721701326
+    }
+   },
+   "t": 56.662
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6770,
+    "active": true,
+    "pos": {
+     "x": 141.2705268547262,
+     "y": 580.3850721701326
+    }
+   },
+   "t": 56.693
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6771,
+    "active": false,
+    "pos": {
+     "x": 141.2705268547262,
+     "y": 580.3850721701326
+    }
+   },
+   "t": 56.693
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6772,
+    "active": true,
+    "pos": {
+     "x": 139.8563132923531,
+     "y": 581.7992857325057
+    }
+   },
+   "t": 56.693
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6774,
+    "active": false,
+    "pos": {
+     "x": 138.44209972998,
+     "y": 583.2134992948788
+    }
+   },
+   "t": 56.721
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6779,
+    "bulletId": 91,
+    "pos": {
+     "x": 161.67121897456536,
+     "y": 598.145735662282
+    },
+    "relVel": {
+     "x": -1.7230090800244342,
+     "y": 3.8303054330109703
+    },
+    "distance": 27.310466462508685,
+    "heavy": true
+   },
+   "t": 56.754
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6779,
+    "bulletId": 92,
+    "pos": {
+     "x": 109.47242570073809,
+     "y": 570.789925729216
+    },
+    "relVel": {
+     "x": -2.169152612279367,
+     "y": 3.5964950917026983
+    },
+    "distance": 31.22355758089992,
+    "heavy": true
+   },
+   "t": 56.754
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6781,
+    "active": true,
+    "pos": {
+     "x": 140.44209972998,
+     "y": 583.2134992948788
+    }
+   },
+   "t": 56.783
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6785,
+    "active": false,
+    "pos": {
+     "x": 146.44209972998,
+     "y": 583.2134992948788
+    }
+   },
+   "t": 56.813
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6803,
+    "id": 89,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 384.6047792018204,
+     "y": 360.0000000000002
+    },
+    "bullets": 1
+   },
+   "t": 56.962
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6823,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 338.9335334030229,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 57.143
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6826,
+    "active": true,
+    "pos": {
+     "x": 144.44209972998,
+     "y": 583.2134992948788
+    }
+   },
+   "t": 57.143
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6837,
+    "active": false,
+    "pos": {
+     "x": 156.24209972998,
+     "y": 583.2134992948788
+    }
+   },
+   "t": 57.233
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6840,
+    "active": true,
+    "pos": {
+     "x": 145.84209972998002,
+     "y": 583.2134992948788
+    }
+   },
+   "t": 57.263
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6851,
+    "active": false,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 591.6987806691175
+    }
+   },
+   "t": 57.353
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6854,
+    "active": true,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 589.6987806691175
+    }
+   },
+   "t": 57.381
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6855,
+    "active": false,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 589.6987806691175
+    }
+   },
+   "t": 57.381
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6856,
+    "active": true,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 587.6987806691175
+    }
+   },
+   "t": 57.412
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6857,
+    "active": false,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 587.6987806691175
+    }
+   },
+   "t": 57.412
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6858,
+    "active": true,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 585.6987806691175
+    }
+   },
+   "t": 57.412
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6860,
+    "active": false,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 583.6987806691175
+    }
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6861,
+    "active": true,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 581.6987806691175
+    }
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6861,
+    "bulletId": 95,
+    "pos": {
+     "x": 157.37094596067152,
+     "y": 598.2158971238478
+    },
+    "relVel": {
+     "x": -1.858312677030272,
+     "y": 5.766520143897891
+    },
+    "distance": 31.748039458174027,
+    "heavy": true
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6862,
+    "bulletId": 93,
+    "pos": {
+     "x": 155.0105373908878,
+     "y": 578.9522782655259
+    },
+    "count": 1,
+    "meter": 0.05,
+    "first": false
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6862,
+    "credits": 121,
+    "rate": 1.02,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6862,
+    "bulletId": 96,
+    "pos": {
+     "x": 103.00847683568449,
+     "y": 572.0365216294933
+    },
+    "relVel": {
+     "x": -2.2958473140965654,
+     "y": 5.516971013579098
+    },
+    "distance": 27.426530628626924,
+    "heavy": true
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "statsMoment",
+    "tick": 6862,
+    "moment": "writHoarding",
+    "value": 360
+   },
+   "t": 57.442
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6863,
+    "active": false,
+    "pos": {
+     "x": 129.35681835574138,
+     "y": 579.6987806691175
+    }
+   },
+   "t": 57.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6866,
+    "bulletId": 93,
+    "pos": {
+     "x": 152.34945016445687,
+     "y": 588.1760852221643
+    },
+    "relVel": {
+     "x": -0.6652718066077228,
+     "y": 2.3059517391595374
+    },
+    "distance": 24.449580753571155,
+    "heavy": false
+   },
+   "t": 57.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6870,
+    "active": true,
+    "pos": {
+     "x": 131.35681835574138,
+     "y": 579.6987806691175
+    }
+   },
+   "t": 57.505
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6877,
+    "active": false,
+    "pos": {
+     "x": 143.35681835574138,
+     "y": 579.6987806691175
+    }
+   },
+   "t": 57.563
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6898,
+    "active": true,
+    "pos": {
+     "x": 141.35681835574138,
+     "y": 579.6987806691175
+    }
+   },
+   "t": 57.743
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6903,
+    "id": 88,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 316.16474579915695,
+     "y": 510.0000000000002
+    },
+    "bullets": 1
+   },
+   "t": 57.802
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6903,
+    "id": 89,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 456.16474579915695,
+     "y": 510.0000000000002
+    },
+    "bullets": 1
+   },
+   "t": 57.802
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6903,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 260.198180382864,
+     "y": 150.00000000000023
+    },
+    "bullets": 3
+   },
+   "t": 57.802
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6938,
+    "bulletId": 99,
+    "pos": {
+     "x": 151.97453686539052,
+     "y": 599.900181833305
+    },
+    "relVel": {
+     "x": 0.38828451260661745,
+     "y": 3.878449843390567
+    },
+    "distance": 28.378959870080916,
+    "heavy": true
+   },
+   "t": 58.071
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6940,
+    "bulletId": 97,
+    "pos": {
+     "x": 142.94965148022496,
+     "y": 586.48673083839
+    },
+    "count": 1,
+    "meter": 0.1,
+    "first": false
+   },
+   "t": 58.103
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6940,
+    "credits": 126,
+    "rate": 1.04,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 58.103
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6942,
+    "active": false,
+    "pos": {
+     "x": 115.41640712628066,
+     "y": 590.871067811865
+    }
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6942,
+    "bulletId": 97,
+    "pos": {
+     "x": 139.44740325237578,
+     "y": 589.7691472273523
+    },
+    "relVel": {
+     "x": 1.2187243670589063,
+     "y": 4.611056675464567
+    },
+    "distance": 23.516756833822548,
+    "heavy": false
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 6942,
+    "bulletId": 100,
+    "pos": {
+     "x": 91.20279187879669,
+     "y": 588.913977567196
+    },
+    "count": 2,
+    "meter": 0.2,
+    "first": false
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 6942,
+    "credits": 136,
+    "rate": 1.08,
+    "delta": 10,
+    "reason": "graze"
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6943,
+    "active": true,
+    "pos": {
+     "x": 114.00219356390757,
+     "y": 589.4568542494919
+    }
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6943,
+    "bulletId": 100,
+    "pos": {
+     "x": 89.13836903276146,
+     "y": 592.5715940469225
+    },
+    "relVel": {
+     "x": -0.6502092836621287,
+     "y": 5.071830042099739
+    },
+    "distance": 24.292578405327156,
+    "heavy": true
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "bossPhase",
+    "tick": 6944,
+    "phase": 3
+   },
+   "t": 58.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6949,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 372.2251254207771,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.163
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6950,
+    "active": false,
+    "pos": {
+     "x": 111.17376643916138,
+     "y": 580.9715728752533
+    }
+   },
+   "t": 58.192
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 6954,
+    "active": true,
+    "pos": {
+     "x": 112.58798000153448,
+     "y": 579.5573593128802
+    }
+   },
+   "t": 58.222
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6955,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 368.5730031398914,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.222
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6961,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 364.2546462986753,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.281
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6967,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 359.292431589756,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6973,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 353.7120720232846,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.371
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6979,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 347.5424836882645,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.431
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6985,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 340.815635916293,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.462
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6991,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 333.5663856241277,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6991,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 333.5663856241277,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 58.521
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 6994,
+    "bulletId": 101,
+    "pos": {
+     "x": 110.74926776679382,
+     "y": 590.9760543910126
+    },
+    "relVel": {
+     "x": -0.2327769351343849,
+     "y": 0.8801745042500959
+    },
+    "distance": 39.814125886476006,
+    "heavy": false
+   },
+   "t": 58.552
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 6997,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 325.83229669347963,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.582
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7003,
+    "id": 88,
+    "weapon": "droneGun",
+    "pos": {
+     "x": 302.8449123132109,
+     "y": 660.0000000000002
+    },
+    "bullets": 1
+   },
+   "t": 58.613
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7003,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 317.65344532395824,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.613
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7004,
+    "active": false,
+    "pos": {
+     "x": 64.3453393144152,
+     "y": 575.7999999999995
+    }
+   },
+   "t": 58.642
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7007,
+    "active": true,
+    "pos": {
+     "x": 64.3453393144152,
+     "y": 573.7999999999995
+    }
+   },
+   "t": 58.671
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7009,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 309.0722123677888,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.671
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7010,
+    "active": false,
+    "pos": {
+     "x": 62.93112575204211,
+     "y": 573.2142135623726
+    }
+   },
+   "t": 58.671
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7014,
+    "bulletId": 105,
+    "pos": {
+     "x": 87.00438751632561,
+     "y": 587.3557706404517
+    },
+    "relVel": {
+     "x": -1.5463731505940868,
+     "y": 3.90496223786117
+    },
+    "distance": 27.58901170927282,
+    "heavy": true
+   },
+   "t": 58.732
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7015,
+    "active": true,
+    "pos": {
+     "x": 64.9311257520421,
+     "y": 573.2142135623726
+    }
+   },
+   "t": 58.732
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7015,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 300.13306372236787,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.732
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7017,
+    "active": false,
+    "pos": {
+     "x": 71.13112575204211,
+     "y": 573.2142135623726
+    }
+   },
+   "t": 58.732
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7019,
+    "active": true,
+    "pos": {
+     "x": 76.7453393144152,
+     "y": 574.6284271247457
+    }
+   },
+   "t": 58.763
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7021,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 290.8823199186167,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.763
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7027,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 281.3679160990635,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.821
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7033,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 271.63915362939696,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.882
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7039,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 261.7464446305781,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.913
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7039,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 261.7464446305781,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 58.913
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7045,
+    "active": false,
+    "pos": {
+     "x": 113.47225124899633,
+     "y": 560.2436508138953
+    }
+   },
+   "t": 58.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7045,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 251.7410507552811,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 58.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 7045,
+    "bulletId": 102,
+    "pos": {
+     "x": 120.98059497577651,
+     "y": 583.7416099417992
+    },
+    "count": 1,
+    "meter": 0.23199999999999998,
+    "first": false
+   },
+   "t": 58.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7045,
+    "credits": 141,
+    "rate": 1.1,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 58.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7047,
+    "bulletId": 102,
+    "pos": {
+     "x": 116.29270475447049,
+     "y": 584.7729611297964
+    },
+    "relVel": {
+     "x": -6.543945110653018,
+     "y": 0.5156755939986172
+    },
+    "distance": 24.032992265794693,
+    "heavy": false
+   },
+   "t": 59.005
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7048,
+    "active": true,
+    "pos": {
+     "x": 123.28646481136943,
+     "y": 561.6578643762684
+    }
+   },
+   "t": 59.005
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7051,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 241.67481756226806,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.033
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7053,
+    "active": false,
+    "pos": {
+     "x": 133.14331906086178,
+     "y": 567.3147186257609
+    }
+   },
+   "t": 59.033
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7057,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 231.59990586509775,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.061
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7063,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 221.5685214472634,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7063,
+    "bulletId": 143,
+    "pos": {
+     "x": 164.79542979130093,
+     "y": 611.2629465864773
+    },
+    "relVel": {
+     "x": -6.463106270850982,
+     "y": -0.798968088746295
+    },
+    "distance": 44.915510608654024,
+    "heavy": false
+   },
+   "t": 59.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7069,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 211.6326445443032,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.182
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7075,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 201.8437604946501,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.212
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7081,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 192.25259295491648,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.271
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7087,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 182.90884106203544,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.332
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7087,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 182.90884106203544,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 59.332
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7093,
+    "active": true,
+    "pos": {
+     "x": 298.3575326232345,
+     "y": 568.728932188134
+    }
+   },
+   "t": 59.363
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7093,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 173.86092190421473,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.363
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7097,
+    "active": false,
+    "pos": {
+     "x": 306.8001733103538,
+     "y": 572.9715728752533
+    }
+   },
+   "t": 59.422
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7098,
+    "active": true,
+    "pos": {
+     "x": 308.8001733103538,
+     "y": 572.9715728752533
+    }
+   },
+   "t": 59.422
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7099,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 165.1557196351628,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.422
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7105,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 156.8383425316157,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.482
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7108,
+    "active": false,
+    "pos": {
+     "x": 325.0428139974731,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 59.513
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7111,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 148.95188925302995,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.513
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7117,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 141.53722551463585,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.571
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7118,
+    "active": true,
+    "pos": {
+     "x": 327.0428139974731,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 59.571
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7123,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 134.63277233107195,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.633
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7129,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 128.2743069278731,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.663
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7135,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 122.49477735244353,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.722
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7135,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 122.49477735244353,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 59.722
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7141,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 117.32413174515122,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.781
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7147,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 112.78916315522632,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.813
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7149,
+    "active": false,
+    "pos": {
+     "x": 347.0428139974731,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 59.843
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7152,
+    "active": true,
+    "pos": {
+     "x": 349.0428139974731,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 59.871
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7152,
+    "bulletId": 130,
+    "pos": {
+     "x": 323.69585755784726,
+     "y": 562.4643779152624
+    },
+    "relVel": {
+     "x": -2.101903442609768,
+     "y": 2.5980022494956154
+    },
+    "distance": 29.004826641802186,
+    "heavy": false
+   },
+   "t": 59.871
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7153,
+    "active": false,
+    "pos": {
+     "x": 349.0428139974731,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 59.871
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7153,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 108.91337070558589,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.871
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 7157,
+    "bulletId": 130,
+    "pos": {
+     "x": 323.1863403447983,
+     "y": 575.4543891627404
+    },
+    "count": 1,
+    "meter": 0.25049999999999994,
+    "first": false
+   },
+   "t": 59.903
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7157,
+    "credits": 147,
+    "rate": 1.12,
+    "delta": 6,
+    "reason": "graze"
+   },
+   "t": 59.903
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7158,
+    "active": true,
+    "pos": {
+     "x": 351.0428139974731,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 59.903
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7159,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 105.71683782599831,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.931
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7165,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 103.21612818555101,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 59.964
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7168,
+    "active": false,
+    "pos": {
+     "x": 333.6286004351,
+     "y": 575.7999999999995
+    }
+   },
+   "t": 59.993
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7171,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 101.42419986367847,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.021
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7177,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 100.35033820449266,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.082
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7183,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 100.00010770235014,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.113
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7183,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 100.00010770235014,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 60.113
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7189,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 100.37532316797245,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.172
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 7192,
+    "bulletId": 159,
+    "pos": {
+     "x": 358.41520476362524,
+     "y": 568.0714302740097
+    },
+    "count": 1,
+    "meter": 0.30049999999999993,
+    "first": false
+   },
+   "t": 60.204
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7192,
+    "credits": 153,
+    "rate": 1.14,
+    "delta": 6,
+    "reason": "graze"
+   },
+   "t": 60.204
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7194,
+    "bulletId": 159,
+    "pos": {
+     "x": 359.2004708664742,
+     "y": 573.2117957423121
+    },
+    "relVel": {
+     "x": 0.39263305142449445,
+     "y": 2.5701827341512296
+    },
+    "distance": 25.702197403985256,
+    "heavy": false
+   },
+   "t": 60.204
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7195,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 101.47404032453119,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.232
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7201,
+    "active": true,
+    "pos": {
+     "x": 335.6286004351,
+     "y": 575.7999999999995
+    }
+   },
+   "t": 60.263
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7201,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 103.29056588242543,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.263
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7203,
+    "active": false,
+    "pos": {
+     "x": 337.6286004351,
+     "y": 575.7999999999995
+    }
+   },
+   "t": 60.293
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7207,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 105.81548704054751,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.322
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7209,
+    "active": true,
+    "pos": {
+     "x": 336.2143868727269,
+     "y": 577.2142135623726
+    }
+   },
+   "t": 60.351
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7213,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 109.03572026116711,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.383
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7219,
+    "active": false,
+    "pos": {
+     "x": 347.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.411
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7219,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 112.93457906569623,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.411
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "statsMoment",
+    "tick": 7222,
+    "moment": "bossLull",
+    "value": 814
+   },
+   "t": 60.443
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7225,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 117.49186050003102,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.471
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7227,
+    "active": true,
+    "pos": {
+     "x": 349.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.504
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7228,
+    "active": false,
+    "pos": {
+     "x": 349.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.504
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7231,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 122.68394982142986,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.532
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7231,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 122.68394982142986,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 60.532
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7234,
+    "active": true,
+    "pos": {
+     "x": 351.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.561
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7235,
+    "active": false,
+    "pos": {
+     "x": 351.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.561
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7237,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 128.48394286446273,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.561
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7237,
+    "bulletId": 183,
+    "pos": {
+     "x": 389.598378438356,
+     "y": 569.2841556659969
+    },
+    "relVel": {
+     "x": 0.8729197379737901,
+     "y": 2.449083732961323
+    },
+    "distance": 39.606540550901826,
+    "heavy": false
+   },
+   "t": 60.561
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7241,
+    "bulletId": 238,
+    "pos": {
+     "x": 328.3731166630301,
+     "y": 597.0737628207611
+    },
+    "relVel": {
+     "x": 1.9240966290709018,
+     "y": 4.178259465614598
+    },
+    "distance": 28.05435868210004,
+    "heavy": true
+   },
+   "t": 60.621
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7242,
+    "active": true,
+    "pos": {
+     "x": 349.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.621
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7243,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 134.86178545196535,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.621
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7249,
+    "active": false,
+    "pos": {
+     "x": 337.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.683
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7249,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 141.7844291285981,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.683
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7253,
+    "active": true,
+    "pos": {
+     "x": 339.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.713
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7254,
+    "active": false,
+    "pos": {
+     "x": 339.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.713
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7255,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 149.21600241004052,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.713
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7261,
+    "active": true,
+    "pos": {
+     "x": 341.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7261,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 157.1179966604444,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.772
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7264,
+    "active": false,
+    "pos": {
+     "x": 345.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.805
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7267,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 165.4494656349796,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.832
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7271,
+    "active": true,
+    "pos": {
+     "x": 347.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.861
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7273,
+    "active": false,
+    "pos": {
+     "x": 349.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.861
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7273,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 174.16723765348308,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.861
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7279,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 183.22613930578396,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.921
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7279,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 183.22613930578396,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 60.921
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7281,
+    "active": true,
+    "pos": {
+     "x": 351.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.953
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7281,
+    "bulletId": 211,
+    "pos": {
+     "x": 307.21139671361425,
+     "y": 580.0989150061714
+    },
+    "relVel": {
+     "x": -1.2237394695166652,
+     "y": 2.481414836099303
+    },
+    "distance": 43.019234668067675,
+    "heavy": false
+   },
+   "t": 60.953
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7282,
+    "active": false,
+    "pos": {
+     "x": 351.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 60.953
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7285,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 192.57922952951196,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 60.982
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7291,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 202.17804284746194,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.014
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7291,
+    "bulletId": 271,
+    "pos": {
+     "x": 328.7080586287744,
+     "y": 596.2002164757838
+    },
+    "relVel": {
+     "x": 2.098238081893802,
+     "y": 4.093579967667741
+    },
+    "distance": 27.557160029315906,
+    "heavy": true
+   },
+   "t": 61.014
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7292,
+    "active": true,
+    "pos": {
+     "x": 349.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.043
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7297,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 211.97284050410656,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.072
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7303,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 221.9128681999356,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.131
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7309,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 231.94661908810082,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.164
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7310,
+    "active": false,
+    "pos": {
+     "x": 319.58595974798067,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.191
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7311,
+    "active": true,
+    "pos": {
+     "x": 317.58595974798067,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.191
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7315,
+    "active": false,
+    "pos": {
+     "x": 307.3859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7315,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 242.02210067057914,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7319,
+    "active": true,
+    "pos": {
+     "x": 292.7859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.253
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7321,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 252.08710421086894,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.281
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7322,
+    "active": false,
+    "pos": {
+     "x": 284.5859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.281
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7323,
+    "active": true,
+    "pos": {
+     "x": 282.5859597479807,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.281
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7324,
+    "active": false,
+    "pos": {
+     "x": 278.38595974798073,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7326,
+    "active": true,
+    "pos": {
+     "x": 272.18595974798075,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7327,
+    "active": false,
+    "pos": {
+     "x": 267.98595974798076,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7327,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 262.08947526717736,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7327,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 262.08947526717736,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 61.313
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 7328,
+    "bulletId": 239,
+    "pos": {
+     "x": 244.86491456406927,
+     "y": 597.8673422879946
+    },
+    "count": 1,
+    "meter": 0.28299999999999986,
+    "first": false
+   },
+   "t": 61.343
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7328,
+    "credits": 159,
+    "rate": 1.16,
+    "delta": 6,
+    "reason": "graze"
+   },
+   "t": 61.343
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7331,
+    "bulletId": 239,
+    "pos": {
+     "x": 246.90013982181796,
+     "y": 605.3971403032285
+    },
+    "relVel": {
+     "x": 4.8784084192495545,
+     "y": 2.5099326717446635
+    },
+    "distance": 24.614169091042594,
+    "heavy": false
+   },
+   "t": 61.371
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7332,
+    "active": true,
+    "pos": {
+     "x": 249.1859597479808,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.371
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7333,
+    "active": false,
+    "pos": {
+     "x": 244.98595974798081,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.371
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7333,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 271.97738394426847,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.371
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7339,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 281.6995934635861,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.431
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7345,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 291.20572565999214,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.462
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7350,
+    "bulletId": 270,
+    "pos": {
+     "x": 197.3584221813324,
+     "y": 551.8116938293385
+    },
+    "relVel": {
+     "x": 4.779513776660606,
+     "y": 2.5345934156508316
+    },
+    "distance": 34.13722013104765,
+    "heavy": false
+   },
+   "t": 61.522
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7351,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 300.44652202937095,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.522
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7352,
+    "active": true,
+    "pos": {
+     "x": 171.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.522
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7357,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 309.37409897442103,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.583
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7361,
+    "active": false,
+    "pos": {
+     "x": 155.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 61.612
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7363,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 317.9421959260053,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.644
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7369,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 326.10641505436206,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.671
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7375,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 333.82445132804156,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.732
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7375,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 333.82445132804156,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 61.732
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7381,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 341.05631172846427,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.763
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7387,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 347.7645224841808,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.821
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7393,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 353.91432325099476,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.882
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7399,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 359.4738472317566,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.913
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7399,
+    "bulletId": 298,
+    "pos": {
+     "x": 201.44436150916178,
+     "y": 573.1878549047492
+    },
+    "relVel": {
+     "x": 0.4797285771950359,
+     "y": 2.5553591708842864
+    },
+    "distance": 46.34409140311454,
+    "heavy": false
+   },
+   "t": 61.913
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7405,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 364.4142863024861,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 61.971
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7411,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 368.7100402891831,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.031
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7417,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 372.3388496218074,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.063
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7420,
+    "active": true,
+    "pos": {
+     "x": 153.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.092
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7423,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 375.2819106780498,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7423,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 375.2819106780498,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 62.122
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7429,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 377.5239732192057,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.182
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7430,
+    "active": false,
+    "pos": {
+     "x": 159.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.182
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7435,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 379.05341941326645,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.242
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7437,
+    "active": true,
+    "pos": {
+     "x": 161.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.242
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7439,
+    "bulletId": 330,
+    "pos": {
+     "x": 137.897670394836,
+     "y": 558.6825146581156
+    },
+    "relVel": {
+     "x": -2.2171830374769224,
+     "y": 2.5909132614258428
+    },
+    "distance": 34.96325985996935,
+    "heavy": false
+   },
+   "t": 62.272
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7441,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 379.8623240357465,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.272
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7447,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 379.9464955363022,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.332
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7453,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 379.3054977583431,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.393
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7459,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 377.9426521990914,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.422
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7463,
+    "active": false,
+    "pos": {
+     "x": 139.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.454
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7465,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 375.86502079837726,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.483
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7468,
+    "active": true,
+    "pos": {
+     "x": 137.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.512
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7469,
+    "active": false,
+    "pos": {
+     "x": 137.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.512
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7471,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 373.08336934535544,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.543
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7471,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 373.08336934535544,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 62.543
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7477,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 369.61211169275964,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.571
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7478,
+    "bulletId": 403,
+    "pos": {
+     "x": 160.99208559710985,
+     "y": 596.0891540441771
+    },
+    "relVel": {
+     "x": -1.6618496704897225,
+     "y": 4.289318788886319
+    },
+    "distance": 27.688174746018326,
+    "heavy": true
+   },
+   "t": 62.571
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7479,
+    "active": true,
+    "pos": {
+     "x": 139.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.602
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7483,
+    "active": false,
+    "pos": {
+     "x": 145.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.633
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7483,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 365.46923506776426,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.633
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7489,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 360.67620686647365,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.662
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7492,
+    "active": true,
+    "pos": {
+     "x": 147.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.692
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7494,
+    "bulletId": 358,
+    "pos": {
+     "x": 184.68067754104177,
+     "y": 590.4738541548691
+    },
+    "relVel": {
+     "x": 1.6814365381692498,
+     "y": 2.58041030086039
+    },
+    "distance": 36.27306989494133,
+    "heavy": false
+   },
+   "t": 62.721
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7495,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 355.2578634150092,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.721
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7501,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 349.2422812736047,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.782
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7504,
+    "active": false,
+    "pos": {
+     "x": 137.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.813
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7507,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 342.66063175058474,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.813
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7507,
+    "credits": 159,
+    "rate": 1,
+    "delta": 0,
+    "reason": "decay"
+   },
+   "t": 62.813
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7509,
+    "active": true,
+    "pos": {
+     "x": 135.585959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 62.841
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7513,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 335.547019380098,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.872
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7519,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 327.9383052005768,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.931
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7519,
+    "id": 1,
+    "weapon": "wardenCannon",
+    "pos": {
+     "x": 327.9383052005768,
+     "y": 150.00000000000023
+    },
+    "bullets": 1
+   },
+   "t": 62.931
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7525,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 319.8739157496476,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 62.963
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7527,
+    "bulletId": 436,
+    "pos": {
+     "x": 161.02997400639518,
+     "y": 582.8800152841953
+    },
+    "relVel": {
+     "x": -0.040494634968144094,
+     "y": 4.12266681223043
+    },
+    "distance": 37.50653787083519,
+    "heavy": true
+   },
+   "t": 62.992
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7531,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 311.39563876524096,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 63.022
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7537,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 302.54740665152525,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 63.082
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "graze",
+    "tick": 7542,
+    "bulletId": 394,
+    "pos": {
+     "x": 139.13277268388288,
+     "y": 558.4941504342225
+    },
+    "count": 1,
+    "meter": 0.1484999999999997,
+    "first": false
+   },
+   "t": 63.114
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7542,
+    "credits": 164,
+    "rate": 1.02,
+    "delta": 5,
+    "reason": "graze"
+   },
+   "t": 63.114
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "enemyFired",
+    "tick": 7543,
+    "id": 1,
+    "weapon": "wardenSpiral",
+    "pos": {
+     "x": 293.37506883169164,
+     "y": 126.00000000000024
+    },
+    "bullets": 4
+   },
+   "t": 63.114
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "bossSurvived",
+    "tick": 7543
+   },
+   "t": 63.114
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7544,
+    "bulletId": 394,
+    "pos": {
+     "x": 137.14600131452596,
+     "y": 563.2996409946029
+    },
+    "relVel": {
+     "x": -2.9933856846784703,
+     "y": 2.4027452801901177
+    },
+    "distance": 25.90255684750551,
+    "heavy": false
+   },
+   "t": 63.143
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7571,
+    "active": false,
+    "pos": {
+     "x": 121.58595974798101,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.354
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7579,
+    "bulletId": 469,
+    "pos": {
+     "x": 144.610343397416,
+     "y": 596.3205534301462
+    },
+    "relVel": {
+     "x": -2.0960828068618205,
+     "y": 4.094683976423366
+    },
+    "distance": 27.91897022028826,
+    "heavy": true
+   },
+   "t": 63.413
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7584,
+    "active": true,
+    "pos": {
+     "x": 119.58595974798101,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.472
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7589,
+    "active": false,
+    "pos": {
+     "x": 111.58595974798101,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.503
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7594,
+    "active": true,
+    "pos": {
+     "x": 113.58595974798101,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.563
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7599,
+    "bulletId": 422,
+    "pos": {
+     "x": 152.48931686419655,
+     "y": 586.5831166343175
+    },
+    "relVel": {
+     "x": 0.9132052849318533,
+     "y": 2.361964700688803
+    },
+    "distance": 32.261893472420276,
+    "heavy": false
+   },
+   "t": 63.592
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7607,
+    "active": false,
+    "pos": {
+     "x": 137.785959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.654
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7608,
+    "active": true,
+    "pos": {
+     "x": 139.785959747981,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.654
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7612,
+    "active": false,
+    "pos": {
+     "x": 149.98595974798098,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.712
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7613,
+    "active": true,
+    "pos": {
+     "x": 151.98595974798098,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.712
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7617,
+    "bulletId": 502,
+    "pos": {
+     "x": 137.08070791515667,
+     "y": 563.4761632288319
+    },
+    "relVel": {
+     "x": -3.9278545180345423,
+     "y": 4.176526901301343
+    },
+    "distance": 28.114299541430707,
+    "heavy": true
+   },
+   "t": 63.743
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7639,
+    "bulletId": 450,
+    "pos": {
+     "x": 152.4895041438682,
+     "y": 573.2880023728591
+    },
+    "relVel": {
+     "x": 0.8214663658423234,
+     "y": 2.317554416439687
+    },
+    "distance": 29.13077625131965,
+    "heavy": false
+   },
+   "t": 63.921
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7642,
+    "active": false,
+    "pos": {
+     "x": 119.98595974798098,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 63.952
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7649,
+    "active": true,
+    "pos": {
+     "x": 121.98595974798098,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 64.012
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7652,
+    "active": false,
+    "pos": {
+     "x": 130.18595974798097,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 64.043
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7674,
+    "active": true,
+    "pos": {
+     "x": 220.38595974798073,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 64.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "nearMiss",
+    "tick": 7674,
+    "bulletId": 474,
+    "pos": {
+     "x": 227.68149812401595,
+     "y": 605.8074400714543
+    },
+    "relVel": {
+     "x": -2.7176444632486945,
+     "y": 2.49899708370548
+    },
+    "distance": 25.329062107881686,
+    "heavy": false
+   },
+   "t": 64.221
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "focusChanged",
+    "tick": 7683,
+    "active": false,
+    "pos": {
+     "x": 236.38595974798073,
+     "y": 580.0426406871188
+    }
+   },
+   "t": 64.282
+  },
+  {
+   "k": "ev",
+   "ev": {
+    "type": "payChanged",
+    "tick": 7721,
+    "credits": 164,
+    "rate": 1,
+    "delta": 0,
+    "reason": "decay"
+   },
+   "t": 64.613
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+clip A = dense (dense 69.0-82.0 s); times in clip seconds
+  0.41  sfx          writ_release_2
+  0.42  WRIT         level 2 spent
+  0.49  sfx          disarm
+  0.49  sfx          hit_enemy
+  0.49  sfx          part_break
+  0.50  disarm       {"kind": "drone", "cancelled": 2}
+  0.50  partBreak    {"target": "enemy", "part": "gun", "partKind": "gun", "by": "writ"}
+  0.60  sfx          hit_enemy
+  0.68  sfx          hit_enemy
+  0.68  sfx          kill_small
+  0.68  sfx          hit_enemy
+  0.71  kill         {"kind": "drone", "byRam": false, "clean": false}
+  0.73  sfx          hit_enemy
+  0.73  sfx          kill_small
+  0.74  kill         {"kind": "drone", "byRam": false, "clean": false}
+  0.78  sfx          hit_enemy
+  0.78  sfx          kill_small
+  0.78  kill         {"kind": "drone", "byRam": false, "clean": false}
+  0.98  sfx          hit_enemy
+  0.98  sfx          kill_small
+  0.99  kill         {"kind": "dart", "byRam": false, "clean": false}
+  1.01  sfx          hit_enemy
+  1.03  sfx          hit_enemy
+  1.03  sfx          kill_small
+  1.04  kill         {"kind": "dart", "byRam": false, "clean": false}
+  1.06  sfx          hit_enemy
+  1.06  sfx          kill_small
+  1.08  kill         {"kind": "drone", "byRam": false, "clean": false}
+  1.14  sfx          hit_enemy
+  1.14  sfx          kill_small
+  1.16  kill         {"kind": "dart", "byRam": false, "clean": false}
+  2.41  sfx          writ_release_3
+  2.43  WRIT         level 3 spent
+  3.90  sectorCleared {}
+  4.42  sfx          writ_release_3
+  4.44  WRIT         level 3 spent
+  4.64  sfx          hit_enemy
+  4.64  sfx          part_break
+  4.64  sfx          disarm
+  4.66  disarm       {"kind": "turret", "cancelled": 0}
+  4.66  partBreak    {"target": "enemy", "part": "barrel", "partKind": "barrel", "by": "writ"}
+  4.79  sfx          hit_enemy
+  4.89  sfx          hit_enemy
+  4.94  sfx          hit_enemy
+  5.01  sfx          hit_enemy
+  5.07  sfx          hit_enemy
+  5.12  sfx          hit_enemy
+  5.18  sfx          hit_enemy
+  5.36  sfx          hit_enemy
+  5.90  sfx          writ_release_2
+  5.90  WRIT         level 2 spent
+  6.09  sfx          hit_enemy
+  6.09  sfx          part_break
+  6.11  partBreak    {"target": "enemy", "part": "emitterR", "partKind": "emitter", "by": "writ"}
+  6.16  sfx          hit_enemy
+  6.19  sfx          hit_enemy
+  6.22  sfx          hit_enemy
+  6.25  sfx          hit_enemy
+  6.27  sfx          hit_enemy
+  6.37  sfx          hit_enemy
+  6.43  sfx          hit_enemy
+  6.43  sfx          kill_large
+  6.44  kill         {"kind": "lancer", "byRam": false, "clean": false}
+  6.49  sfx          hit_enemy
+  6.49  sfx          kill_large
+  6.51  kill         {"kind": "turret", "byRam": false, "clean": false}
+  6.53  sfx          hit_enemy
+  6.58  sfx          hit_enemy
+  6.64  sfx          hit_enemy
+  6.69  sfx          hit_enemy
+  6.69  sfx          kill_large
+  6.72  kill         {"kind": "lancer", "byRam": false, "clean": false}
+  7.28  scanLock     {"target": "enemy", "kind": "lancer"}
+  7.90  sfx          writ_release_3
+  7.91  WRIT         level 3 spent
+  8.61  sfx          hit_enemy
+  8.61  sfx          kill_small
+  8.63  kill         {"kind": "dart", "byRam": false, "clean": false}
+  8.68  sfx          hit_enemy
+  8.68  sfx          kill_small
+  8.69  kill         {"kind": "dart", "byRam": false, "clean": false}
+  8.72  pickup       {"kind": "spread"}
+  9.38  sfx          writ_release_2
+  9.39  WRIT         level 2 spent
+  9.39  scanLock     {"target": "enemy", "kind": "dart"}
+  9.41  sfx          hit_enemy
+  9.41  sfx          kill_small
+  9.42  kill         {"kind": "dart", "byRam": false, "clean": true}
+  9.51  sfx          hit_enemy
+  9.51  sfx          kill_small
+  9.53  sfx          hit_enemy
+  9.53  kill         {"kind": "dart", "byRam": false, "clean": false}
+  9.57  sfx          hit_enemy
+  9.61  sfx          hit_enemy
+  9.67  sfx          hit_enemy
+  9.68  sfx          kill_small
+  9.68  kill         {"kind": "dart", "byRam": false, "clean": false}
+  9.71  pickup       {"kind": "shield"}
+  9.72  sfx          hit_enemy
+  9.77  sfx          hit_enemy
+  9.77  sfx          kill_small
+  9.77  kill         {"kind": "dart", "byRam": false, "clean": false}
+  9.82  sfx          hit_enemy
+  9.82  sfx          kill_small
+  9.83  kill         {"kind": "dart", "byRam": false, "clean": false}
+  9.89  sfx          hit_enemy
+  9.95  sfx          hit_enemy
+ 10.02  sfx          hit_enemy
+ 10.06  sfx          hit_enemy
+ 10.06  sfx          kill_small
+ 10.07  kill         {"kind": "dart", "byRam": false, "clean": false}
+ 10.08  sfx          hit_enemy
+ 10.10  sfx          kill_small
+ 10.11  kill         {"kind": "dart", "byRam": false, "clean": false}
+ 10.20  sfx          hit_enemy
+ 10.20  sfx          kill_small
+ 10.22  kill         {"kind": "dart", "byRam": false, "clean": false}
+ 10.90  sfx          writ_release_2
+ 10.90  sfx          disarm
+ 10.90  sfx          hit_enemy
+ 10.90  sfx          part_break
+ 10.92  WRIT         level 2 spent
+ 10.92  disarm       {"kind": "turret", "cancelled": 0}
+ 10.92  partBreak    {"target": "enemy", "part": "barrel", "partKind": "barrel", "by": "writ"}
+ 10.99  sfx          hit_enemy
+ 10.99  sfx          kill_large
+ 11.00  kill         {"kind": "turret", "byRam": false, "clean": false}
+ 11.43  sfx          hit_enemy
+ 11.49  sfx          hit_enemy
+ 11.52  sfx          hit_enemy
+ 11.52  sfx          kill_small
+ 11.53  sfx          hit_enemy
+ 11.53  sfx          kill_small
+ 11.55  kill         {"kind": "drone", "byRam": false, "clean": false}
+ 11.55  kill         {"kind": "drone", "byRam": false, "clean": false}
+ 11.59  sfx          hit_enemy
+ 11.64  sfx          hit_enemy
+ 11.64  sfx          kill_small
+ 11.67  kill         {"kind": "drone", "byRam": false, "clean": false}
+ 11.80  sfx          hit_enemy
+ 11.80  sfx          kill_small
+ 11.81  kill         {"kind": "drone", "byRam": false, "clean": false}
+ 12.89  sfx          writ_release_3
+ 12.92  WRIT         level 3 spent

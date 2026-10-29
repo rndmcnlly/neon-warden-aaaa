@@ -1,0 +1,136 @@
+{
+  "role": "first-time viewer",
+  "clips": [
+    {
+      "id": "C",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 16.0,
+          "account": "The player ship fires vertical projectiles and projects a forward scanning cone against descending pink ovals and orange chevron targets.",
+          "threat_origin": "Top of the playfield lane, descending downward while emitting pink circular projectiles.",
+          "action_response": "Ship moves laterally to dodge projectiles, fires upward, and sweeps targets with a blue cone.",
+          "goal_resource_change": "Score rises from 0 to 2,350; top-right counter increases to 6,950 x4.9; Graze bar increments to x8; Writ bar gains two blue segments; 'Codex: Dart' toast appears.",
+          "uncertainty": "Unclear what triggers the scanning cone versus normal firing, or the exact relationship between Score and the top-right number."
+        },
+        {
+          "start_s": 17.0,
+          "end_s": 31.0,
+          "account": "More waves of pink ovals and orange chevrons descend, followed by a green square object at 23s that the ship touches.",
+          "threat_origin": "Top of the lane.",
+          "action_response": "Ship dodges pink projectiles, scans targets, and intercepts the green object at 24s, after which all motion freezes at 25s while subtitles continue.",
+          "goal_resource_change": "Score reaches 2,950; top-right counter reaches 10,566 x5.4; Graze reaches x9.",
+          "uncertainty": "Unclear why gameplay freezes at 25s when touching the green crystal or whether it is a menu state or narrative pause."
+        }
+      ],
+      "heard": [],
+      "readable_text": [
+        {
+          "at_s": 2.0,
+          "text": "Onboarding Assistant: A disarm. That is forty percent."
+        },
+        {
+          "at_s": 12.0,
+          "text": "Codex: Dart / Onboarding Assistant: Your first live lock! Intel filed. Every scan helps the Authority map its lanes."
+        },
+        {
+          "at_s": 25.0,
+          "text": "Onboarding Assistant: Oh! That crystal is a recovered flight recorder. Please don't open it."
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 12.0,
+          "channels": [
+            "Bottom subtitle banner",
+            "Left-side 'SILENT CHANNEL' toast",
+            "Top-center 'Codex: Dart' toast",
+            "Active projectile dodging"
+          ],
+          "competition": "Four distinct visual attention zones update simultaneously across the screen perimeter while the player ship is actively dodging pink projectiles in the center.",
+          "consequence": "Impossible to read the small left-side toast ('It shot a dart. It shot an EMPTY dart.') without looking away from incoming projectiles and missing the bottom subtitle."
+        },
+        {
+          "at_s": 21.0,
+          "channels": [
+            "Bottom subtitle banner",
+            "Left-side 'LANE CONTROL' toast",
+            "Dense central projectile patterns and target lock rings"
+          ],
+          "competition": "Left toast text and bottom subtitle compete with high-density dodging and scanning rings in the playfield.",
+          "consequence": "Peripheral text in the left toast goes unread during active threat evasion."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 4,
+        "text_legibility": 3,
+        "audio_source_identification": null,
+        "recoverability": 4
+      },
+      "rating_evidence": "Incoming targets and projectiles have high contrast against the dark background, making threat detection immediate. However, small low-contrast peripheral toasts on the far left and top-left compete with central dodging and bottom subtitles, lowering text legibility during combat.",
+      "uncertainties": "Picture-only ablation provides no audio. Exact trigger for the game pause at 0:25 and the meaning of 'Lock: Slicing' at 0:14 cannot be verified from visuals alone.",
+      "minimal_fix": "Consolidate left-side radio toasts and top-center codex popups near the bottom subtitle area or pause/slow combat when critical lore text appears."
+    },
+    {
+      "id": "G",
+      "ordered_observations": [
+        {
+          "start_s": 0.0,
+          "end_s": 24.0,
+          "account": "In an empty lane with no enemies, the player ship pulses a forward scanning cone while moving right, then left, then right, up, and down.",
+          "threat_origin": "None present.",
+          "action_response": "Ship moves right at 3s (prompting subtitle correction at 4s), moves left at 6s, then right at 11s, and vertically at 17s.",
+          "goal_resource_change": "Score remains 0; top-right counter remains 0 x1.0.",
+          "uncertainty": "Unclear why the scanning cone pulses continuously without targets."
+        },
+        {
+          "start_s": 25.0,
+          "end_s": 57.0,
+          "account": "The ship remains near the right lane boundary while subtitles instruct on hitbox size, focus movement, and firing.",
+          "threat_origin": "None present.",
+          "action_response": "Ship stays mostly stationary or moves very slightly near the right boundary; despite instructions to fire at 48s, no projectiles are emitted.",
+          "goal_resource_change": "No resource or score changes.",
+          "uncertainty": "Without an input log, it is impossible to tell if the player is holding a focus button between 34s and 43s or why no bullets fire after 48s."
+        }
+      ],
+      "heard": [],
+      "readable_text": [
+        {
+          "at_s": 4.0,
+          "text": "No, your other left. Let's try that direction again."
+        },
+        {
+          "at_s": 25.0,
+          "text": "Onboarding Assistant: Your ship is large and beautiful, but only the small glowing gem at its center can"
+        },
+        {
+          "at_s": 48.0,
+          "text": "Onboarding Assistant: Now, let's learn to fire! Hold fire to release bullets. Bullets go up."
+        }
+      ],
+      "simultaneous_information": [
+        {
+          "at_s": 25.0,
+          "channels": [
+            "Bottom subtitle banner",
+            "Player ship visual representation"
+          ],
+          "competition": "Subtitle references 'the small glowing gem at its center', requiring comparison between the bottom text and the bright bloom on the ship.",
+          "consequence": "Because the entire ship glows brightly with bloom, distinguishing the specific 'small glowing gem' hitbox from the rest of the ship body is visually ambiguous."
+        }
+      ],
+      "ratings": {
+        "detection": 5,
+        "cause_attribution": 3,
+        "text_legibility": 4,
+        "audio_source_identification": null,
+        "recoverability": 5
+      },
+      "rating_evidence": "With no threats on screen, the large bottom subtitles are easy to read and movement mistakes (going right instead of left at 0:03) are immediately recoverable. Cause attribution is rated 3 because the visual state for 'focusing' (0:34-0:43) and the central 'gem' hitbox are obscured by uniform bright bloom on the ship.",
+      "uncertainties": "No audio present. Cannot visually confirm what changes on the ship when 'focus' is held (0:37-0:43) or why firing does not occur at 0:48.",
+      "minimal_fix": "Give the center hitbox gem a distinct color/outline when 'focus' is held so the player can visually verify both the hitbox size and the focus state."
+    }
+  ],
+  "cross_clip_summary": "Across both clips, primary bottom subtitles and combat threats (Sequence C) are highly legible, but secondary UI elements (tiny top-left 'Scanning' bars, far-left radio toasts, and top-right counters) are too small and dispersed to read during active dodging. Additionally, heavy glow/bloom on the player ship obscures the central hitbox gem and focus-mode state taught in Sequence G."
+}

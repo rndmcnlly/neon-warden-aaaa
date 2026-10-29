@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checks": [
+    "Evidence initially hidden",
+    "Timestamp button plays native 1280×720 source at 1×",
+    "Audio-only ablation loads separately",
+    "Narrow source 390×844 retained; unsupported ablation resets",
+    "Report itself fits 390px viewport without page overflow"
+  ],
+  "errors": [],
+  "playing": {
+    "time": 1.321395,
+    "paused": false,
+    "rate": 1,
+    "width": 1280,
+    "height": 720
+  }
+}

@@ -1,0 +1,60 @@
+clip G = stream (stream 4.4-16.4 s); times in clip seconds
+  0.10  sfx          hit_enemy
+  0.32  sfx          hit_enemy
+  0.42  sfx          hit_enemy
+  0.42  sfx          kill_small
+  0.49  kill         {"kind": "drone", "byRam": false, "clean": false}
+  1.26  sfx          hit_enemy
+  1.38  sfx          kill_small
+  1.38  kill         {"kind": "drone", "byRam": false, "clean": false}
+  1.48  sfx          hit_enemy
+  2.45  sfx          hit_enemy
+  2.45  sfx          kill_small
+  2.46  kill         {"kind": "drone", "byRam": false, "clean": false}
+  2.46  sfx          hit_player
+  2.46  sfx          life_lost
+  2.49  lifeLost     {}
+  2.68  sfx          hit_enemy
+  2.71  INPUT        release 450 ms
+  2.80  sfx          hit_enemy
+  2.80  sfx          kill_small
+  2.82  kill         {"kind": "drone", "byRam": false, "clean": false}
+  3.10  sfx          hit_enemy
+  3.16  INPUT        stream hold 3000 ms
+  3.17  sfx          shot_aimed
+  3.78  sfx          hit_enemy
+  3.88  sfx          hit_enemy
+  3.88  sfx          kill_small
+  3.90  kill         {"kind": "drone", "byRam": false, "clean": false}
+  4.23  sfx          hit_enemy
+  4.23  sfx          kill_small
+  4.23  kill         {"kind": "drone", "byRam": false, "clean": false}
+  5.81  sfx          hit_enemy
+  6.16  INPUT        release 450 ms
+  6.61  INPUT        stream hold 3000 ms
+  6.63  sfx          shot_aimed
+  7.06  sfx          hit_enemy
+  7.06  sfx          kill_small
+  7.08  kill         {"kind": "drone", "byRam": false, "clean": false}
+  7.30  sfx          hit_enemy
+  7.50  sfx          hit_enemy
+  7.95  sfx          hit_enemy
+  8.23  sfx          hit_player
+  8.23  sfx          hit_enemy
+  8.23  sfx          kill_ram
+  8.23  sfx          life_lost
+  8.25  sfx          hit_enemy
+  8.25  sfx          kill_small
+  8.25  kill         {"kind": "drone", "byRam": false, "clean": false}
+  8.25  kill         {"kind": "drone", "byRam": true, "clean": false}
+  8.25  lifeLost     {}
+  8.55  sfx          hit_enemy
+  8.55  sfx          kill_small
+  8.55  kill         {"kind": "drone", "byRam": false, "clean": false}
+  8.90  sfx          hit_enemy
+  8.90  sfx          kill_small
+  8.91  kill         {"kind": "drone", "byRam": false, "clean": false}
+  9.62  INPUT        release 450 ms
+ 10.07  INPUT        stream hold 3000 ms
+ 10.08  sfx          shot_aimed
+ 11.92  sfx          hit_enemy

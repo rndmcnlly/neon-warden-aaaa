@@ -1,0 +1,99 @@
+{
+  "status": "pass",
+  "note": "Toy model invariants only, not game QA or playtest.",
+  "checks": [
+    {
+      "name": "rerunning yields identical trajectories",
+      "status": "pass"
+    },
+    {
+      "name": "legacy: no wrong-way displacement on reversal",
+      "status": "pass"
+    },
+    {
+      "name": "legacy: ninety-degree turn clears old velocity",
+      "status": "pass"
+    },
+    {
+      "name": "classic: no wrong-way displacement on reversal",
+      "status": "pass"
+    },
+    {
+      "name": "classic: ninety-degree turn clears old velocity",
+      "status": "pass"
+    },
+    {
+      "name": "ramp: no wrong-way displacement on reversal",
+      "status": "pass"
+    },
+    {
+      "name": "ramp: ninety-degree turn clears old velocity",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid: no wrong-way displacement on reversal",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid: ninety-degree turn clears old velocity",
+      "status": "pass"
+    },
+    {
+      "name": "classic: normalized diagonal",
+      "status": "pass"
+    },
+    {
+      "name": "classic: analogue half magnitude",
+      "status": "pass"
+    },
+    {
+      "name": "ramp: normalized diagonal",
+      "status": "pass"
+    },
+    {
+      "name": "ramp: analogue half magnitude",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid: normalized diagonal",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid: analogue half magnitude",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid focus entry while neutral brakes immediately",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid focus driven speed immediately 120",
+      "status": "pass"
+    },
+    {
+      "name": "hybrid focus exit restarts at 126",
+      "status": "pass"
+    },
+    {
+      "name": "ramp coast finishes within 3 ticks",
+      "status": "pass"
+    },
+    {
+      "name": "one neutral corner tick retains full cruise on resumption",
+      "status": "pass"
+    },
+    {
+      "name": "30 Hz rendering consumes identical 60 Hz ticks",
+      "status": "pass"
+    },
+    {
+      "name": "60 Hz rendering consumes identical 60 Hz ticks",
+      "status": "pass"
+    },
+    {
+      "name": "144 Hz rendering consumes identical 60 Hz ticks",
+      "status": "pass"
+    }
+  ],
+  "source_sha256": "4125b284d26f2c9da2116677cb35fa4828ed2d7bacfacdd5666f69d72102322a"
+}

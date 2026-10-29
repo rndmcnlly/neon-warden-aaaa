@@ -1,0 +1,12 @@
+{
+  "model": "cloudflare/clef-omni",
+  "error": {
+    "error": {
+      "message": "cloudflare/clef-omni is a decisions model and cannot be used with the chat/completions endpoint. Use the /api/alpha/decisions endpoint instead.",
+      "code": 400
+    },
+    "user_id": "user_2yHDd36OaITytXEba2l8YP1rdNg"
+  },
+  "status": 400,
+  "wall_s": 0.6
+}

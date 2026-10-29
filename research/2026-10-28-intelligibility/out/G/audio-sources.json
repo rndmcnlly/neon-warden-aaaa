@@ -1,0 +1,321 @@
+{
+  "videoEpoch": 1793254098011,
+  "sources": [
+    {
+      "k": "src",
+      "epoch": 1793254098271.0999,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793254098310,
+      "dur": 9.359977324263038,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_hello_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254098429.8,
+      "dur": 44.999977324263035,
+      "loop": true,
+      "url": "/music/tutorial/cand2.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254098809.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793254099474.4,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793254100138.5,
+      "dur": 1,
+      "loop": true,
+      "url": ""
+    },
+    {
+      "k": "src",
+      "epoch": 1793254107677.7,
+      "dur": 10.559977324263038,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_contract_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254118244.8,
+      "dur": 6.32,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_move_000.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254128936.7,
+      "dur": 9.359977324263038,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_move_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254138685.8,
+      "dur": 7.2,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_move_002.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254146836.5999,
+      "dur": 8.47997732426304,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_hitbox_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254155319.3,
+      "dur": 9.759977324263039,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_focus_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254169403.2,
+      "dur": 7.12,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_fire_001.ogg"
+    },
+    {
+      "k": "src",
+      "epoch": 1793254191527.8,
+      "dur": 5.199977324263038,
+      "loop": false,
+      "url": "/vo/variants/tutorial_ai/original/en/tut_idle_001.ogg"
+    }
+  ],
+  "subs": [
+    {
+      "k": "sub",
+      "epoch": 1793254098148,
+      "text": "",
+      "visible": false,
+      "layer": "",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254098314.5,
+      "text": "Hello, and welcome to Lane Authority onboarding!",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254101456.7,
+      "text": "I am your onboarding assistant, and I will be with you every step of the way.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254106495.4,
+      "text": "Every single step.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254107678.4,
+      "text": "Your contract has been countersigned! Payment is issued on completion of contract.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254113062.4,
+      "text": "Completion of contract is defined in Appendix F, which is available on request.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254118246.0999,
+      "text": "Let's start with movement! Movement is how you get from one place to another.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254123120.3,
+      "text": "Please fly to the left.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254124570.4,
+      "text": "Please fly to the left.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254125554.0999,
+      "text": "No, your other left. Let's try that direction again.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254128938.5,
+      "text": "Great job pressing the left key! Now, for your next challenge: press the right key.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254135013,
+      "text": "I believe in you. Take all the time you need.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254138304,
+      "text": "I believe in you. Take all the time you need.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254138687.0999,
+      "text": "Wonderful! Now up. And now down. You have flown in all four directions.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254143604.2,
+      "text": "That is every direction we offer.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254145886.7,
+      "text": "That is every direction we offer.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254146838.0999,
+      "text": "Your ship is large and beautiful, but only the small glowing gem at its center can",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254152229.5,
+      "text": "be hit. Please protect the gem. The gem is you.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254155320.2,
+      "text": "Hold focus to fly slowly and precisely.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254158104.0999,
+      "text": "Focus is for threading the gem between bullets. Let's practice. Focus. Good.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254163520.7,
+      "text": "Still focusing. Great.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254165087.5,
+      "text": "Still focusing. Great.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254169404.5,
+      "text": "Now, let's learn to fire! Hold fire to release bullets. Bullets go up.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254174445.5,
+      "text": "Up is where the problems are.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254176528.5,
+      "text": "Up is where the problems are.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254191529.2,
+      "text": "Take all the time you need. I am timing it, but take all the time you need.",
+      "visible": true,
+      "layer": "scripted",
+      "line": ""
+    },
+    {
+      "k": "sub",
+      "epoch": 1793254196737.0999,
+      "text": "Take all the time you need. I am timing it, but take all the time you need.",
+      "visible": false,
+      "layer": "scripted",
+      "line": ""
+    }
+  ]
+}

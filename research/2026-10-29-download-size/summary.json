@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-29",
+  "status": "existing-build estimate, not measured network transfer",
+  "checkout_head": "2ca039f5da96472b33a943d5fc0db80c8ae5f388",
+  "build_git_revision": null,
+  "primary": {
+    "directory": "qa/.build/platform",
+    "manifest": "qa/.build/platform/offline-manifest.json",
+    "release": "6ec0647bd1491c8bfda8",
+    "manifest_mtime": "2026-10-28T23:22:00.142812-07:00",
+    "verified_resources": 937,
+    "hash_mismatches": 0,
+    "current_public_differences": ["models/pilot_figure_issued.glb", "models/pilot_figure_worn.glb"],
+    "freshness": "All shipping public bodies match. Two historical figures are correctly excluded. Later source commits mean this is not a current-checkout build.",
+    "subsequent_source_commits": ["5a23867", "ad32043", "75b75c3"]
+  },
+  "stale_dist": {
+    "manifest": "dist/offline-manifest.json",
+    "release": "b918a6a9e4870f650bbb",
+    "manifest_mtime": "2026-10-28T22:41:02.286529-07:00",
+    "verified_resources": 786,
+    "hash_mismatches": 0,
+    "current_public_differing_or_missing_files": 238,
+    "issues": ["Original tutorial voice default, not Captain", "Retired Pilot figures included in offline pack"],
+    "offline_en": {"resources": 324, "body_MiB": 23.2, "estimated_transfer_MiB": 20.2},
+    "offline_es": {"resources": 324, "body_MiB": 25.2, "estimated_transfer_MiB": 22.2},
+    "offline_zh": {"resources": 324, "body_MiB": 23.5, "estimated_transfer_MiB": 20.5},
+    "offline_all": {"resources": 786, "body_MiB": 42.6, "estimated_transfer_MiB": 39.6}
+  },
+  "method": {
+    "MiB_divisor": 1048576,
+    "transfer_text_compression": "Python gzip.compress(body, compresslevel=9, mtime=0)",
+    "text_extensions": [".js", ".css", ".html", ".json", ".svg", ".vtt", ".txt", ".webmanifest"],
+    "binary_policy": "Count encoded Ogg/Opus and GLB file bytes unchanged",
+    "deduplication": "Unique URL sets; shared offline resources counted once across language packs",
+    "normal_play": "Current default music, Captain/base VO with English fallback, UI and gameplay SFX, ten eager GLBs, shell plus worker. Includes four possible icon requests; excludes DS_Store and branding license.",
+    "offline": "Manifest files whose lang is null or selected; no sw.js or standalone offline-manifest.json",
+    "cache_body_caveat": "Expanded response-body payload, not physical cache/disk usage or decoded audio memory",
+    "unknowns": ["Actual server compression and HTTP overhead", "Browser-specific icon fetches", "Current source rebuild delta", "Browser bookkeeping, HTTP cache duplication, retained older releases"],
+    "unrendered_catalog_lines": 15,
+    "paid_calls": 0,
+    "builds_run": 0
+  },
+  "scenarios": {
+    "title_boot_baseline": {"resources": 43, "body_bytes": 5779044, "estimated_transfer_bytes": 2203599, "body_MiB": 5.5, "estimated_transfer_MiB": 2.1, "warning": "Not a title download cap: eager background audio progresses to full normal-play totals"},
+    "normal_en": {"resources": 277, "body_bytes": 17864382, "estimated_transfer_bytes": 14288937, "body_MiB": 17.0, "estimated_transfer_MiB": 13.6},
+    "normal_es": {"resources": 277, "body_bytes": 18875331, "estimated_transfer_bytes": 15299886, "body_MiB": 18.0, "estimated_transfer_MiB": 14.6},
+    "normal_zh": {"resources": 277, "body_bytes": 17944476, "estimated_transfer_bytes": 14369031, "body_MiB": 17.1, "estimated_transfer_MiB": 13.7},
+    "normal_all": {"resources": 677, "body_bytes": 33144309, "estimated_transfer_bytes": 29568864, "body_MiB": 31.6, "estimated_transfer_MiB": 28.2},
+    "offline_en": {"resources": 375, "body_bytes": 26183490, "estimated_transfer_bytes": 22611444, "body_MiB": 25.0, "estimated_transfer_MiB": 21.6},
+    "offline_es": {"resources": 375, "body_bytes": 28494204, "estimated_transfer_bytes": 24922158, "body_MiB": 27.2, "estimated_transfer_MiB": 23.8},
+    "offline_zh": {"resources": 375, "body_bytes": 26355937, "estimated_transfer_bytes": 22783891, "body_MiB": 25.1, "estimated_transfer_MiB": 21.7},
+    "offline_all": {"resources": 937, "body_bytes": 49848821, "estimated_transfer_bytes": 46276775, "body_MiB": 47.5, "estimated_transfer_MiB": 44.1}
+  },
+  "breakdown_body_MiB": {
+    "normal_en": {"code_css_html_manifest_icons": 1.2, "models": 1.1, "sfx_audio": 0.3, "music_audio": 4.7, "vo_audio": 6.8, "metadata": 2.7, "branding": 0.0, "worker": 0.2},
+    "offline_en": {"code_css_html_manifest_icons": 1.2, "models_including_model_metadata": 1.2, "sfx_audio": 0.3, "music_audio": 9.3, "vo_audio": 10.1, "metadata_excluding_model_metadata": 2.9, "branding": 0.0},
+    "offline_es": {"code_css_html_manifest_icons": 1.2, "models_including_model_metadata": 1.2, "sfx_audio": 0.3, "music_audio": 9.3, "vo_audio": 12.3, "metadata_excluding_model_metadata": 2.9, "branding": 0.0},
+    "offline_zh": {"code_css_html_manifest_icons": 1.2, "models_including_model_metadata": 1.2, "sfx_audio": 0.3, "music_audio": 9.3, "vo_audio": 10.3, "metadata_excluding_model_metadata": 2.9, "branding": 0.0},
+    "offline_all": {"code_css_html_manifest_icons": 1.2, "models_including_model_metadata": 1.2, "sfx_audio": 0.3, "music_audio": 9.3, "vo_audio": 32.7, "metadata_excluding_model_metadata": 2.9, "branding": 0.0}
+  },
+  "code_compression": {
+    "js": {"url": "assets/index-B46I8-Gh.js", "body_bytes": 1212324, "gzip_bytes": 360509},
+    "css": {"url": "assets/index-BPi4-Qfy.css", "body_bytes": 35392, "gzip_bytes": 8483},
+    "font_resources": 0,
+    "worker": {"body_bytes": 161703, "gzip_bytes": 48278}
+  },
+  "top_five_inventory_files": [
+    {"url": "vo/cues.json", "bytes": 1908035, "MiB": 1.8},
+    {"url": "assets/index-B46I8-Gh.js", "bytes": 1212324, "MiB": 1.2},
+    {"url": "vo/variants/index.json", "bytes": 941708, "MiB": 0.9},
+    {"url": "music/gameplay/cand2.ogg", "bytes": 856993, "MiB": 0.8},
+    {"url": "music/gameplay/cand1.ogg", "bytes": 832636, "MiB": 0.8}
+  ],
+  "optional_or_obsolete": {
+    "unselected_music": {"resources": 8, "bytes": 4833830, "MiB": 4.6},
+    "original_tutorial_archive": {
+      "all": {"resources": 243, "bytes": 11882047, "MiB": 11.3},
+      "en": {"resources": 81, "bytes": 3496643, "MiB": 3.3},
+      "es": {"resources": 81, "bytes": 4796408, "MiB": 4.6},
+      "zh": {"resources": 81, "bytes": 3588996, "MiB": 3.4}
+    },
+    "captain": "Selected base VO in vo/{lang}; original archive remains optional comparison content, not a required second voice pack",
+    "byte_identical_duplicate_groups": 2,
+    "byte_identical_duplicate_savings_bytes": 5621,
+    "byte_identical_duplicates": "icon/maskable PNG pairs only; original and Captain are different audio takes",
+    "retired_pilot_figures": {"resources": 2, "bytes": 252380, "MiB": 0.2, "in_primary_pack": false, "still_on_disk": true},
+    "unused_3d_logos": {"resources": 2, "MiB": 0.5, "still_eagerly_preloaded": true},
+    "source_map": {"resources": 1, "bytes": 4867207, "MiB": 4.6, "in_pack": false},
+    "whole_build_directory": {"bytes": 55263466, "MiB": 52.7, "is_end_user_download": false}
+  },
+  "budgets": {
+    "title_5_MiB": "Not reliably met: eager audio loads full normal-play resources while at title",
+    "gameplay_15_MiB": "Provisionally met for compressed normal transfer in EN/ES/ZH; not uncompressed and not current offline packs"
+  },
+  "opportunities": [
+    "Make archived original VO and unselected music separate opt-in comparison packs",
+    "Wait for New Game before gameplay and ending audio; split metadata by language",
+    "Allowlist shipping files; stop preloading 3D logos after flat logo integration",
+    "Exclude source maps and historical figures from public deployment, preserving source archives"
+  ]
+}

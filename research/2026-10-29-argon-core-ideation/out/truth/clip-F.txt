@@ -1,0 +1,77 @@
+clip F = sector-parts (dense 61.0-69.3 s); times in clip seconds
+  0.03  sfx          hit_enemy
+  0.03  sfx          kill_small
+  0.04  kill         {"kind": "dart", "byRam": false, "clean": false}
+  0.26  pickup       {"kind": "spread"}
+  1.40  sfx          writ_release_2
+  1.42  WRIT         level 2 spent
+  1.58  sfx          hit_enemy
+  1.58  sfx          part_break
+  1.60  partBreak    {"target": "enemy", "part": "emitterR", "partKind": "emitter", "by": "writ"}
+  1.65  sfx          hit_enemy
+  1.71  sfx          hit_enemy
+  1.75  sfx          hit_enemy
+  1.80  sfx          hit_enemy
+  1.86  sfx          hit_enemy
+  1.92  sfx          hit_enemy
+  1.92  sfx          kill_large
+  1.93  kill         {"kind": "lancer", "byRam": false, "clean": false}
+  2.02  sfx          hit_enemy
+  2.07  sfx          hit_enemy
+  2.13  sfx          hit_enemy
+  2.21  sfx          hit_enemy
+  2.22  sfx          hit_enemy
+  2.40  sfx          hit_enemy
+  2.53  scanLock     {"target": "enemy", "kind": "lancer"}
+  3.40  sfx          writ_release_3
+  3.40  WRIT         level 3 spent
+  3.99  sfx          hit_enemy
+  4.05  sfx          hit_enemy
+  4.26  sfx          hit_enemy
+  5.12  sfx          writ_release_2
+  5.14  WRIT         level 2 spent
+  5.33  sfx          hit_enemy
+  5.33  sfx          part_break
+  5.33  sfx          disarm
+  5.36  disarm       {"kind": "turret", "cancelled": 11}
+  5.36  partBreak    {"target": "enemy", "part": "barrel", "partKind": "barrel", "by": "writ"}
+  5.45  sfx          hit_enemy
+  5.48  sfx          hit_enemy
+  5.53  sfx          hit_enemy
+  5.59  sfx          hit_enemy
+  5.65  sfx          hit_enemy
+  5.69  sfx          hit_enemy
+  5.76  sfx          hit_enemy
+  5.82  sfx          hit_enemy
+  5.87  sfx          hit_enemy
+  5.93  sfx          hit_enemy
+  6.05  sfx          hit_enemy
+  6.61  scanLock     {"target": "enemy", "kind": "lancer"}
+  6.78  sfx          writ_release_2
+  6.80  WRIT         level 2 spent
+  6.93  sfx          disarm
+  6.93  sfx          hit_enemy
+  6.93  sfx          part_break
+  6.94  disarm       {"kind": "turret", "cancelled": 5}
+  6.94  partBreak    {"target": "enemy", "part": "barrel", "partKind": "barrel", "by": "writ"}
+  7.01  sfx          hit_enemy
+  7.06  sfx          hit_enemy
+  7.10  sfx          hit_enemy
+  7.17  sfx          hit_enemy
+  7.17  sfx          kill_large
+  7.18  sfx          hit_enemy
+  7.18  sfx          kill_large
+  7.18  kill         {"kind": "lancer", "byRam": false, "clean": false}
+  7.18  kill         {"kind": "turret", "byRam": false, "clean": false}
+  7.30  sfx          hit_enemy
+  7.35  sfx          hit_enemy
+  7.41  sfx          hit_enemy
+  7.41  sfx          kill_small
+  7.42  kill         {"kind": "drone", "byRam": false, "clean": false}
+  7.44  sfx          hit_enemy
+  7.44  sfx          kill_small
+  7.45  kill         {"kind": "drone", "byRam": false, "clean": false}
+  7.56  sfx          hit_enemy
+  7.61  sfx          hit_enemy
+  7.61  sfx          kill_small
+  7.64  kill         {"kind": "drone", "byRam": false, "clean": false}
