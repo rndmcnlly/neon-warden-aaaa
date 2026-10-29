@@ -27,7 +27,11 @@ import type {
 } from "../contracts/index.ts";
 import { createInputLayer, type InputLayer } from "../input/inputLayer.ts";
 import { createSaveStore, type SaveStore } from "../settings/saveGame.ts";
-import { createProgressStore, type ProgressStore } from "./progress.ts";
+import {
+  codexLines,
+  createProgressStore,
+  type ProgressStore,
+} from "./progress.ts";
 import type { FrontEndHooks, UiContext } from "./context.ts";
 import { decideMenuIntent } from "./dispatch.ts";
 import { focusInitial, moveFocus } from "./focus.ts";
@@ -49,7 +53,6 @@ import {
 } from "./screens/run.ts";
 import { uiSound } from "./sound.ts";
 import { hasText, id, t } from "../i18n/index.ts";
-import { lineId } from "../contracts/index.ts";
 import { h, widgetIntent } from "./widgets.ts";
 import "./frontend.css";
 
@@ -412,6 +415,8 @@ export function createFrontEnd(
   } else if (startAt) {
     router.push(startAt);
   }
+  // The router only reports changes; a skip-to run never pushes a screen.
+  layer.classList.toggle("is-playing", router.depth === 0);
   updatePrompts();
 
   /**
@@ -426,9 +431,9 @@ export function createFrontEnd(
     }
     if (e.type === "intel" && typeof e.codexId === "string") {
       if (progress.unlockCodex(e.codexId)) {
-        const titleId = `${e.codexId}.title`;
+        const lines = codexLines(e.codexId);
         ctx.toast(t(id("ui.codex.unlocked"), lang(), {
-          title: hasText(titleId) ? t(lineId(titleId), lang()) : e.codexId,
+          title: lines ? t(lines.title, lang()) : e.codexId,
         }));
         hooks.onCodexUnlocked?.(e.codexId);
       }

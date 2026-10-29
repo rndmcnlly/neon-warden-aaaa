@@ -41,11 +41,10 @@ import {
   WALLED_CODEX,
   WALLED_SLOTS,
 } from "../../data/hangar.ts";
-import { lineId } from "../../contracts/index.ts";
 import { hasText, t as text } from "../../i18n/index.ts";
 import type { UiKey } from "../../i18n/index.ts";
 import type { UiContext } from "../context.ts";
-import type { ProgressStore } from "../progress.ts";
+import { codexLines, type ProgressStore } from "../progress.ts";
 import type { ScreenFactory } from "../router.ts";
 import { uiSound } from "../sound.ts";
 import {
@@ -573,8 +572,16 @@ function codexTab(
 ): TabResult {
   const unlocked = new Set(progress.get().codex);
   const lang = ctx.lang();
-  const title = (id: string) =>
-    hasText(`${id}.title`) ? text(lineId(`${id}.title`), lang) : id;
+  const title = (id: string) => {
+    const lines = codexLines(id);
+    return lines ? text(lines.title, lang) : id;
+  };
+  const body = (id: string) => {
+    const lines = codexLines(id);
+    return lines && hasText(lines.body)
+      ? text(lines.body, lang)
+      : ctx.t("ui.codex.bodyPending");
+  };
   const entries = CODEX_INDEX.map((entry) => {
     const open = unlocked.has(entry.id);
     const el = button({
@@ -590,9 +597,7 @@ function codexTab(
           ? {
             kicker: ctx.t("ui.codex.entry"),
             title: title(entry.id),
-            body: hasText(`${entry.id}.body`)
-              ? text(lineId(`${entry.id}.body`), lang)
-              : ctx.t("ui.codex.bodyPending"),
+            body: body(entry.id),
           }
           : {
             kicker: ctx.t("ui.codex.sealed"),

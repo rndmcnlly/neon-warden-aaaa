@@ -796,6 +796,12 @@
   gap: 0.4em;
   pointer-events: none;
 }
+/* In play, toasts get their own lane at the top, under the boss bar: the
+   bottom belongs to the main subtitles, the left to radio. */
+.nw-frontend.is-playing .nw-toasts {
+  bottom: auto;
+  top: 11vh;
+}
 .nw-toast {
   margin: 0;
   padding: 0.6em 1.1em;

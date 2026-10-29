@@ -10,10 +10,28 @@
 
 import {
   DEFAULT_LOADOUT,
+  type LineId,
   type Loadout,
   SENSOR_PACKAGES,
   WEAPON_PACKAGES,
 } from "../contracts/index.ts";
+import { CODEX_ENTRIES } from "../scenes/codex.ts";
+
+/**
+ * Codex text for an unlock id. Unlocks are stored by the sim's intel id
+ * (`codex.enemy.drone`), while the text is keyed by entry (`codex.drone.*`);
+ * `src/scenes/codex.ts` is the one mapping between them, so read it here
+ * instead of guessing `${intelId}.title` (which showed raw ids in toasts).
+ */
+export function codexLines(
+  intelId: string,
+): { readonly title: LineId; readonly body: LineId } | null {
+  const entry = CODEX_ENTRIES.find((e) =>
+    typeof e.unlock === "object" && "intel" in e.unlock &&
+    e.unlock.intel === intelId
+  );
+  return entry ? { title: entry.title, body: entry.body } : null;
+}
 
 export const PROGRESS_KEY = "neon-warden.progress";
 

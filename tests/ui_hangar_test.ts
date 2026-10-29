@@ -1,7 +1,12 @@
-import { assertEquals } from "@std/assert";
+import { assert, assertEquals } from "@std/assert";
 import { DEFAULT_LOADOUT } from "../src/contracts/index.ts";
-import { payForRank, rankForPay } from "../src/data/hangar.ts";
-import { createProgressStore, sanitizeProgress } from "../src/ui/progress.ts";
+import { CODEX_INDEX, payForRank, rankForPay } from "../src/data/hangar.ts";
+import { hasText } from "../src/i18n/index.ts";
+import {
+  codexLines,
+  createProgressStore,
+  sanitizeProgress,
+} from "../src/ui/progress.ts";
 import { statDelta } from "../src/ui/screens/hangar.ts";
 
 Deno.test("stat deltas know which direction is better", () => {
@@ -58,4 +63,13 @@ Deno.test("mastery ranks rise with career pay", () => {
   assertEquals(rankForPay(payForRank(2)), 2);
   assertEquals(rankForPay(payForRank(3) - 1), 2);
   assertEquals(rankForPay(1e12), 50);
+});
+
+Deno.test("every hangar codex id resolves to codex text, not a raw id", () => {
+  for (const entry of CODEX_INDEX) {
+    const lines = codexLines(entry.id);
+    assert(lines, `${entry.id} has no codex entry`);
+    assert(hasText(lines.title), `${lines.title} missing`);
+  }
+  assertEquals(codexLines("codex.nope"), null);
 });
