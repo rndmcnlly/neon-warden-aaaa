@@ -58,3 +58,9 @@ Creative-review reconciliation: **US $0.117510**, one call, no syntax-repair ret
 | 2026-10-29 | Argon core-loop ideation (night step 2): Pass A blind reconstruction + Pass B ideation, 8 clips each | OpenRouter | google/gemini-4-argon (mandatory ZDR/data_collection deny, no fallbacks; returned Google) | 2 | 0.140412 | Previous displayed total + 0.140412 (A 0.085360, B 0.055052); see research/2026-10-29-argon-core-ideation/out/ |
 
 | 2026-10-29 | Core feedback (night step 4a): 5 new gameplay sfx roles x 4-5 deliberately different briefs (`sfx/gameplay.yaml`, call log `sfx/candidates/gameplay/.cache/fal_calls.jsonl`) | fal | fal-ai/elevenlabs/sound-effects/v2 (23.3 s billed at $0.002/s) | 23 | 0.0466 | 0.2466 |
+| 2026-10-29 | warden-defeat blind clip-1 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0251 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
+| 2026-10-29 | warden-defeat blind clip-2 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0232 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
+| 2026-10-29 | warden-defeat blind clip-3 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0263 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
+| 2026-10-29 | warden-defeat blind clip-4 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0244 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
+| 2026-10-29 | warden-defeat blind clip-5 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0263 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
+| 2026-10-29 | warden-defeat blind clip-6 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0258 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |

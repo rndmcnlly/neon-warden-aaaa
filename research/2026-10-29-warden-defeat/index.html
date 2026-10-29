@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warden defeat: before and after</title>
+<style>
+  body { margin: 0; background: #0b0a12; color: #e8e6f0; font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.2rem; margin: 0 0 4px; }
+  .muted { color: #9a96ad; }
+  nav { display: flex; gap: 8px; align-items: center; margin: 12px 0; flex-wrap: wrap; }
+  button { background: #22203a; color: inherit; border: 1px solid #3a3658; border-radius: 6px; padding: 6px 12px; font: inherit; cursor: pointer; }
+  button[aria-pressed="true"] { background: #4a3f86; }
+  video { width: 100%; background: #000; border-radius: 6px; }
+  details { margin: 10px 0; background: #15131f; border-radius: 6px; padding: 8px 12px; }
+  summary { cursor: pointer; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  td { border-top: 1px solid #2a2740; padding: 3px 6px; vertical-align: top; }
+  td:first-child { white-space: nowrap; color: #ffd27a; font-variant-numeric: tabular-nums; }
+  .still { position: relative; margin: 8px 0; }
+  .still img { width: 100%; display: block; border-radius: 6px; }
+  .still svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .still figcaption { font-size: 13px; color: #9a96ad; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Warden defeat: before and after</h1>
+  <p class="muted">Normal speed (1x), with sound, health zero to the ending text. One clip at a time: watch it first, then open the evidence. Seconds are from health zero (clip time minus the 0.6 s lead-in). See README.md for revisions and limits.</p>
+  <nav id="nav"></nav>
+  <h2 id="title" style="font-size:1rem;margin:8px 0"></h2>
+  <video id="video" controls preload="metadata"></video>
+  <details id="beats"><summary>Beat timeline (open after watching)</summary><table id="beatTable"></table></details>
+  <details id="judge"><summary>Blind judge's reconstruction (Gemini 4 Argon, single pass)</summary><div id="judgeBody"></div></details>
+  <details id="stills"><summary>Annotated stills</summary><div id="stillBody"></div></details>
+  <nav><button id="prev">Previous clip</button><button id="next">Next clip</button></nav>
+</main>
+<script>
+const CLIPS = [
+  { id: "before-kill", title: "Before: kill path (77a7ce0)", judge: "clip-2",
+    beats: [
+      ["0.0-1.2", "Eight chained blasts, white flash at 1.2; music fades to silence."],
+      ["0.0-1.5", "Blend to a centred close-up: the Warden intact, pods on, pink shield shell up."],
+      ["0.1-6.4", "Dying line over a static, unharmed-looking Warden (dead picture)."],
+      ["7.1", "WARDEN DOWN banner, celebration line; ending music; 4 s blend to the wide."],
+      ["11-44", "Wide shot with the side scenery switched off: about 80% black starfield."],
+      ["18.4", "The tollgates flag fires; nothing on screen draws it."],
+      ["44.4", "Tally (ending text)."]],
+    stills: [
+      { src: "stills/before-kill-closeup.jpg", cap: "+3 s: intact and shielded while it says it is dying.",
+        boxes: [[260, 120, 340, 230, "intact, shield up, pods on"]] },
+      { src: "stills/before-kill-wide.jpg", cap: "+21 s: the wide ending shot.",
+        boxes: [[440, 60, 400, 380, "empty: side world hidden"], [10, 50, 420, 150, "empty sky"]] }] },
+  { id: "after-kill", title: "After: kill path (4601072)", judge: "clip-6",
+    beats: [
+      ["0.0", "Hard cut to the composed fall shot on a white impact frame; 9-tick hitstop; music out; impact thump with a long duck."],
+      ["0.3-1.3", "Pods tear off one by one (cannon, left, right, spiral) and fly out along their sockets."],
+      ["0.5-2.4", "Seams overload; a structural groan at 0.9."],
+      ["1.7, 2.2", "The heart crest cracks; plates part."],
+      ["2.35-2.75", "Core surges, then collapses."],
+      ["2.75-4.4", "Shockwave crosses the lane into Last Approach; set-piece lights fail one by one; scouts lose power and drop; relay clicks."],
+      ["4.4", "The wreck has settled, dark. Quiet."],
+      ["4.8-11.2", "Dying line on a slow push-in; halo rings go dark at about 5.9 and 8.6."],
+      ["11.9", "WARDEN DOWN, celebration line, ending music, wide shot over the dark world."],
+      ["23.2-27.6", "Music drops out; tollgates rise along both lane edges, across the sky and in the side regions, one clank at a time."],
+      ["27.6-50.3", "Tollgate service line, epilogue, payroll lines on a slow dolly up the lane."],
+      ["51.8", "Tally (ending text)."]],
+    stills: [
+      { src: "stills/after-kill-pods.jpg", cap: "+1.3 s: pods in flight, scouts in both side regions.", boxes: [] },
+      { src: "stills/after-kill-shock.jpg", cap: "+3.3 s: the shockwave leaving the lane.", boxes: [] },
+      { src: "stills/after-kill-wreck.jpg", cap: "+8.4 s: the dark wreck under the dying line.", boxes: [] },
+      { src: "stills/after-kill-gates.jpg", cap: "+29 s: tollgates fill the edges and sky.",
+        boxes: [[0, 330, 854, 150, "still static here for ~25 s (judge, both passes)"]] }] },
+  { id: "before-pacifist", title: "Before: pacifist path (77a7ce0)", judge: "clip-4",
+    beats: [
+      ["0.0", "Survival clock ends; the Warden withdraws off the top edge at sim speed."],
+      ["0.0-25.9", "Close-up aimed where the Warden went: black starfield under five lines."],
+      ["25.9-35.1", "Ship close-up, blown out by the engine bloom; the reply and the glitch lines."],
+      ["35.1", "LANES KEPT, music, wide shot; epilogue."],
+      ["49.7", "Tally (ending text)."]],
+    stills: [
+      { src: "stills/before-pac-black.jpg", cap: "+11 s: the Warden has left the frame.",
+        boxes: [[10, 40, 834, 380, "black for ~26 s"]] },
+      { src: "stills/before-pac-ship.jpg", cap: "+29 s: ship close-up.",
+        boxes: [[250, 80, 360, 300, "bloom fills the frame"]] }] },
+  { id: "after-pacifist", title: "After: pacifist path (4601072)", judge: "clip-5",
+    beats: [
+      ["0.0-1.6", "No impact. Composed wide: the Warden lowers its shield and folds its pods, intact; a red recall tether runs to a beacon pinging in the upper right."],
+      ["1-7", "Scouts drift in from the edges and gather on the open side to listen."],
+      ["2.2-19.2", "The Warden's three lines on a slow push-in; the Authority's countdown."],
+      ["19.2", "The leash is cut: the tether whips apart, the beacon goes dark and rises; Last Approach's lights swell outward."],
+      ["20.0-37.3", "The Authority's offer; ship close-up over the shoulder toward the Warden; the reply."],
+      ["37.3", "LANES KEPT; the scouts form an escort and the Warden climbs home up the open lane; music; wide."],
+      ["52.0", "Tally (ending text)."]],
+    stills: [
+      { src: "stills/after-pac-listen.jpg", cap: "+6.4 s: tether, beacon, scouts listening.", boxes: [] },
+      { src: "stills/after-pac-escort.jpg", cap: "+46 s: the escort leaving.",
+        boxes: [[0, 40, 854, 160, "still mostly empty sky (judge)"]] }] },
+  { id: "after-low", title: "After: low tier, reduced motion and flashing (c6340d7)", judge: null,
+    beats: [
+      ["0.0", "Same beats; flashes capped, no flicker, no camera push or shake, pods drift instead of flying, gates stand in place and light in sequence."],
+      ["", "Not judged (budget). Draw calls on low: 59 in the fight, 51 after the collapse, 128 with tollgates up (bound 140 in the reel)."]],
+    stills: [] },
+];
+let index = 0;
+const $ = (id) => document.getElementById(id);
+const nav = $("nav");
+CLIPS.forEach((c, i) => {
+  const b = document.createElement("button");
+  b.textContent = c.id;
+  b.onclick = () => show(i);
+  nav.append(b);
+});
+async function judgeHtml(c) {
+  if (!c.judge) return "<p class='muted'>Not judged.</p>";
+  try {
+    const j = await (await fetch(`judge/${c.judge}.json`)).json();
+    const a = j.answer;
+    const rows = (list, f) => list.map((e) => `<tr><td>${e.start.toFixed(0)}-${e.end.toFixed(0)}</td><td>${f(e)}</td></tr>`).join("");
+    return `<p class="muted">${c.judge}, US $${j.costUsd.toFixed(4)}, provider ${j.provider}</p>
+      <h4>Events</h4><table>${rows(a.events, (e) => e.what)}</table>
+      <h4>Empty regions</h4><table>${rows(a.emptyRegions, (e) => `${e.region}: ${e.why}`)}</table>
+      <h4>Dead time</h4><table>${rows(a.deadTime, (e) => e.carriedBy)}</table>
+      <h4>Payoff</h4><p>${a.payoff}</p><h4>Uncertainty</h4><p>${a.uncertainty}</p>`;
+  } catch {
+    return "<p class='muted'>Open through a local server to load judge JSON.</p>";
+  }
+}
+function stillHtml(s) {
+  const boxes = s.boxes.map(([x, y, w, h, label]) =>
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="none" stroke="#ffd27a" stroke-width="3" stroke-dasharray="10 6"/>
+     <text x="${x + 8}" y="${y + 24}" fill="#ffd27a" font-size="20" font-family="system-ui">${label}</text>`).join("");
+  return `<figure class="still"><img src="${s.src}" alt="${s.cap}"><svg viewBox="0 0 854 480">${boxes}</svg><figcaption>${s.cap}</figcaption></figure>`;
+}
+async function show(i) {
+  index = (i + CLIPS.length) % CLIPS.length;
+  const c = CLIPS[index];
+  [...nav.children].forEach((b, k) => b.setAttribute("aria-pressed", String(k === index)));
+  $("title").textContent = c.title;
+  $("video").src = `clips/${c.id}.mp4`;
+  $("beatTable").innerHTML = c.beats.map(([t, w]) => `<tr><td>${t}</td><td>${w}</td></tr>`).join("");
+  for (const d of ["beats", "judge", "stills"]) $(d).open = false;
+  $("stillBody").innerHTML = c.stills.map(stillHtml).join("") || "<p class='muted'>None.</p>";
+  $("judgeBody").innerHTML = await judgeHtml(c);
+}
+$("prev").onclick = () => show(index - 1);
+$("next").onclick = () => show(index + 1);
+show(0);
+</script>
+</body>
+</html>

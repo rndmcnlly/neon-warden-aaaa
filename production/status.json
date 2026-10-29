@@ -222,6 +222,12 @@
       "status": "queued",
       "detail": "Adam: no mid-phrase switching. [ and ] (and gamepad L/R shoulders during gameplay) cycle EN/ES/ZH, overwriting BOTH voice and text language settings at once; takes effect from the next line. Queued after the Warden defeat pass, before trailer prep.",
       "updated": "2026-10-29"
+    },
+    {
+      "title": "Warden defeat: staged kill and pacifist finale",
+      "status": "review",
+      "detail": "Code 4601072 (on c6340d7). Kill: impact frame and hitstop, pods tear off, crest cracks, core collapse, shockwave darkens Last Approach, scouts drop, halo rings dark under the dying line; tollgates unfold in silence. Pacifist: intact withdrawal, recall tether and beacon, leash cut swells the lights, scouts escort it home. Skip chip on endings; low/reduced variants (128 draw calls on low with gates). Blind Argon (US $0.151): kill empty frame 70 s before vs 18/46 s after (noisy single passes); long voice stretches still read static. ending-kill reel fails VO-not-dropped in the skip-to path (bisected to the 4.7 s opening pause; cause open); ending-pacifist zero-kills failure predates this. Evidence: research/2026-10-29-warden-defeat/.",
+      "updated": "2026-10-29"
     }
   ],
   "blockers": [

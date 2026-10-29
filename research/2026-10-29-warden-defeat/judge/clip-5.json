@@ -1,0 +1,132 @@
+{
+  "id": "clip-5",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "costUsd": 0.026346,
+  "wallS": 22.475,
+  "answer": {
+    "events": [
+      {
+        "start": 0,
+        "end": 2.5,
+        "what": "Top-down bullet-hell combat ends as the pink bullet rings clear and the camera tilts down toward the heart-shaped boss platform."
+      },
+      {
+        "start": 2.5,
+        "end": 12.5,
+        "what": "Camera holds on the glowing heart platform while small pink ships hover to the right and a bright pink flare blooms on the left of the boss."
+      },
+      {
+        "start": 12.5,
+        "end": 20.5,
+        "what": "The pink flare subsides into a golden glow on the boss platform while the Warden speaks."
+      },
+      {
+        "start": 20.5,
+        "end": 28,
+        "what": "The bright pink flare returns on the boss platform as the Onboarding Assistant issues a final recall warning."
+      },
+      {
+        "start": 28,
+        "end": 37.5,
+        "what": "Camera shifts back to show the glowing cyan player ship in the foreground facing the distant boss while the pilot, Assistant, and Warden exchange final lines."
+      },
+      {
+        "start": 37.5,
+        "end": 43,
+        "what": "Yellow banner 'LANES KEPT / The Warden stands down' appears and the camera pulls back along the dark track."
+      },
+      {
+        "start": 43,
+        "end": 53.9,
+        "what": "The banner fades and the camera holds on a wide view of the track and distant boss while the Lane Authority Briefing narration plays."
+      }
+    ],
+    "emptyRegions": [
+      {
+        "start": 2.5,
+        "end": 28,
+        "region": "left",
+        "why": "Dark starfield and empty track margin with only a single small pillar and tiny HUD text."
+      },
+      {
+        "start": 28,
+        "end": 38,
+        "region": "top",
+        "why": "Vast dark starfield above the track with no active gameplay elements."
+      },
+      {
+        "start": 43,
+        "end": 53.9,
+        "region": "whole frame",
+        "why": "Wide static shot of dark space and an empty track with the boss reduced to a small distant cluster."
+      }
+    ],
+    "deadTime": [
+      {
+        "start": 3,
+        "end": 28,
+        "carriedBy": "Alternating voice acting between the frantic Warden and the robotic Onboarding Assistant, plus a high electronic tone from 20s."
+      },
+      {
+        "start": 28.5,
+        "end": 37.5,
+        "carriedBy": "Voice dialogue from Pilot #0122, Onboarding Assistant, and the Warden's laugh."
+      },
+      {
+        "start": 41,
+        "end": 53.9,
+        "carriedBy": "Calm male narration (Lane Authority Briefing) and gentle acoustic guitar music."
+      }
+    ],
+    "heard": [
+      {
+        "start": 0,
+        "end": 2,
+        "what": "Synthesized female voice (Onboarding Assistant) finishing a line over electronic game sound effects."
+      },
+      {
+        "start": 2.8,
+        "end": 8.2,
+        "what": "Loud, theatrical male voice (The Warden) shouting in disbelief."
+      },
+      {
+        "start": 8.4,
+        "end": 13,
+        "what": "Calm, robotic female voice (Onboarding Assistant) counting down a recall."
+      },
+      {
+        "start": 13,
+        "end": 19.8,
+        "what": "The Warden shouting urgently to stop the recall."
+      },
+      {
+        "start": 20.4,
+        "end": 28,
+        "what": "High-pitched electronic interference tone under the Onboarding Assistant's warning."
+      },
+      {
+        "start": 28.5,
+        "end": 30,
+        "what": "Quiet, resolute voice (Pilot #0122) refusing the money."
+      },
+      {
+        "start": 30.2,
+        "end": 35,
+        "what": "Onboarding Assistant glitching and repeating words over the high electronic tone."
+      },
+      {
+        "start": 35,
+        "end": 37.8,
+        "what": "The Warden laughing delightedly and praising the pilot."
+      },
+      {
+        "start": 38,
+        "end": 53.9,
+        "what": "Warm, resonant male narrator (Lane Authority Briefing) speaking over gentle, melancholic acoustic guitar arpeggios."
+      }
+    ],
+    "payoff": "Yes, the resolution directly rewards a pacifist run (score 0, dodging everything without firing back), earning the boss's respect and severing the corporate leash. However, visually it feels static and anticlimactic because the camera sits on nearly frozen frames for fifty seconds while dialogue carries the entire scene.",
+    "uncertainty": "Whether the intense pink glow on the boss platform between 0:04-0:12 and 0:21-0:28 is an intentional 'leash-cutting' effect or an overexposed lighting bug in this vertical slice build."
+  }
+}

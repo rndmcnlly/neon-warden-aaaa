@@ -1,0 +1,126 @@
+{
+  "id": "clip-6",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "costUsd": 0.025782,
+  "wallS": 22.652,
+  "answer": {
+    "events": [
+      {
+        "start": 0,
+        "end": 1.3,
+        "what": "Top-down view of a glowing ship facing a glowing heart-shaped boss called The Warden; the boss's health bar empties."
+      },
+      {
+        "start": 1.3,
+        "end": 4.2,
+        "what": "The camera cuts to a tilted angle as the heart-shaped boss flashes brightly and then goes dark, losing its glow."
+      },
+      {
+        "start": 4.2,
+        "end": 12.1,
+        "what": "The darkened boss structure sits still on the lane while a blue scanning cone sweeps across the floor and subtitles appear."
+      },
+      {
+        "start": 12.1,
+        "end": 15.8,
+        "what": "Large yellow text reading 'WARDEN DOWN' appears in the upper centre of the screen."
+      },
+      {
+        "start": 15.8,
+        "end": 25,
+        "what": "The camera slowly pulls back along the dark lane in space while the blue cone continues sweeping."
+      },
+      {
+        "start": 25,
+        "end": 29,
+        "what": "Overhead gantry-like tollgate structures with yellow and pink lights pop into place along the sides and top of the lane."
+      },
+      {
+        "start": 29,
+        "end": 53.7,
+        "what": "The scene remains static with only the sweeping blue light cone and changing subtitle boxes at the bottom."
+      }
+    ],
+    "emptyRegions": [
+      {
+        "start": 4.2,
+        "end": 25,
+        "region": "top",
+        "why": "The upper half of the frame is mostly dark starfield and an empty black track with almost no visual activity."
+      },
+      {
+        "start": 29,
+        "end": 53.7,
+        "region": "whole frame",
+        "why": "Once the camera stops and the gates appear, nearly the entire screen is a static, dark architectural view with only a small sweeping cone at the bottom."
+      }
+    ],
+    "deadTime": [
+      {
+        "start": 4.2,
+        "end": 12.1,
+        "carriedBy": "Frantic male voiceover (The Warden)"
+      },
+      {
+        "start": 18,
+        "end": 25,
+        "carriedBy": "Deep male narrator voiceover and low synth music"
+      },
+      {
+        "start": 29,
+        "end": 53.7,
+        "carriedBy": "Alternating robotic female voiceover, deep male narrator, and slow synth chords"
+      }
+    ],
+    "heard": [
+      {
+        "start": 0,
+        "end": 4.2,
+        "what": "Overlapping voices: a frantic male voice shouting and a robotic female voice speaking over explosive impact sounds."
+      },
+      {
+        "start": 5.3,
+        "end": 12,
+        "what": "The frantic male voice (The Warden) shouts a warning in silence."
+      },
+      {
+        "start": 12.2,
+        "end": 14.5,
+        "what": "A calm, robotic female voice (Onboarding Assistant) announces the boss is down."
+      },
+      {
+        "start": 15,
+        "end": 24.5,
+        "what": "Somber, low synth music plays while a deep, dramatic male voice (Lane Authority Briefing) narrates."
+      },
+      {
+        "start": 25,
+        "end": 28.5,
+        "what": "Hollow, rhythmic popping sound effects accompany the appearance of the tollgate structures."
+      },
+      {
+        "start": 28.5,
+        "end": 33.3,
+        "what": "The robotic female voice speaks again over quiet background ambience."
+      },
+      {
+        "start": 34,
+        "end": 38.5,
+        "what": "Deep synth chords swell as the dramatic male narrator speaks a short line."
+      },
+      {
+        "start": 39.8,
+        "end": 50.8,
+        "what": "The robotic female voice delivers dry corporate completion messages over sustained synth chords."
+      },
+      {
+        "start": 50.8,
+        "end": 53.7,
+        "what": "Slow, melancholic synth music plays out to the end."
+      }
+    ],
+    "payoff": "Defeating The Warden directly triggers the deployment of corporate tollgates across the newly opened lane, fulfilling the boss's dying warning. However, the visual payoff feels anticlimactic and underwhelming because the screen sits nearly frozen for over twenty seconds while dialogue plays.",
+    "uncertainty": "It is unclear whether the sweeping blue cone at the bottom belongs to the player's ship or a station scanner, as the player's ship model is barely visible after the camera angle changes."
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "clip-4",
+  "model": "google/gemini-4-argon",
+  "provider": "Google",
+  "costUsd": 0.024358,
+  "wallS": 22.683,
+  "answer": {
+    "events": [
+      {
+        "start": 0,
+        "end": 1.3,
+        "what": "A small craft sits near the bottom of a vertical lane surrounded by pink projectiles while the camera zooms in."
+      },
+      {
+        "start": 1.3,
+        "end": 26.8,
+        "what": "The view shifts to a dark starfield crossed by faint blue lane lines while dialogue subtitles play out."
+      },
+      {
+        "start": 26.8,
+        "end": 35.8,
+        "what": "The camera cuts to a close-up of the glowing cyan wireframe ship with two bright spheres orbiting it."
+      },
+      {
+        "start": 35.8,
+        "end": 52,
+        "what": "The camera pulls back to an angled view of the lane showing 'LANES KEPT' in gold text while the ship idles."
+      }
+    ],
+    "emptyRegions": [
+      {
+        "start": 1.5,
+        "end": 26.8,
+        "region": "whole frame",
+        "why": "The camera points at an empty starfield with only two faint diagonal lines and small corner HUD elements, leaving almost the entire screen devoid of ships or action."
+      },
+      {
+        "start": 36.5,
+        "end": 52,
+        "region": "right",
+        "why": "The angled lane and ship occupy the left-centre while the right half of the frame is mostly bare starfield."
+      }
+    ],
+    "deadTime": [
+      {
+        "start": 1.5,
+        "end": 26.8,
+        "carriedBy": "Alternating voice-acting from The Warden and the Onboarding Assistant over a faint high-pitched tone."
+      },
+      {
+        "start": 26.8,
+        "end": 35.8,
+        "carriedBy": "Voice lines from Pilot #0122, the Onboarding Assistant, and The Warden while the ship sits still in close-up."
+      },
+      {
+        "start": 36.5,
+        "end": 52,
+        "carriedBy": "Calm narration from the Lane Authority Briefing and gentle ambient music while the ship sits motionless."
+      }
+    ],
+    "heard": [
+      {
+        "start": 0,
+        "end": 1.1,
+        "what": "A calm female synthetic voice (Onboarding Assistant) finishes a sentence over electronic music."
+      },
+      {
+        "start": 1.1,
+        "end": 6.1,
+        "what": "An agitated male voice (The Warden) shouts in disbelief."
+      },
+      {
+        "start": 6.1,
+        "end": 11.1,
+        "what": "The synthetic female voice (Onboarding Assistant) announces non-performance and begins a countdown."
+      },
+      {
+        "start": 11.1,
+        "end": 17.6,
+        "what": "The male voice (The Warden) yells defiance, accompanied by a rising high-pitched electronic whine."
+      },
+      {
+        "start": 17.6,
+        "end": 25,
+        "what": "The synthetic female voice reports an unstable connection and offers payment over the sustained high-pitched tone."
+      },
+      {
+        "start": 26.2,
+        "end": 28,
+        "what": "A quiet, resolute male voice (Pilot #0122) speaks briefly."
+      },
+      {
+        "start": 28,
+        "end": 33.1,
+        "what": "The synthetic female voice stutters and cuts out as the connection is lost."
+      },
+      {
+        "start": 33.1,
+        "end": 36,
+        "what": "The Warden laughs maniacally and cheers."
+      },
+      {
+        "start": 36,
+        "end": 52,
+        "what": "Gentle, melodic synth music plays while a deep, calm male narrator (Lane Authority Briefing) speaks."
+      }
+    ],
+    "payoff": "The climax clearly reads as a direct consequence of the player's pacifist run—dodging everything without firing a shot, as confirmed by the zero score and the boss's dialogue. While the narrative reaction and voice acting reward the player's restraint, the visual presentation feels underwhelming because over twenty seconds of the scene play out against an empty black starfield.",
+    "uncertainty": "It is unclear whether the long stretch of empty starfield between 0:01 and 0:26 is an intentional stylistic choice or a camera bug in this vertical slice build where the camera missed the ships."
+  }
+}
