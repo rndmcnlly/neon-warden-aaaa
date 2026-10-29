@@ -59,6 +59,13 @@ This is domestic project practice; Adam's background-dispatch preference is loca
 - Queue, “B: music, variants and mix”: lint/tests/build passed separately while
   CI failed formatting, then concurrent scope-cut references broke newer checks.
   `docs/dashboard.md` explicitly separates historical PASS from current freshness.
+- Sector worlds v2 (`d351d9d`): a write to the shared `production/status.json`
+  truncated the file before reading it, destroying other workers' uncommitted
+  entries; the main session rebuilt it from memory. Shared status files are
+  read, parsed, modified in memory, then written atomically (temp file plus
+  rename), touching only your own entry. Never open a shared file for writing
+  first. Long-lived servers (the dashboard) belong to the main session: do not
+  kill processes you did not start.
 
 ## Success criteria
 
