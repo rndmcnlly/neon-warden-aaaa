@@ -139,3 +139,51 @@ roles:
   hangar_locked:
     brief: A locked holographic panel refusing access, short muted buzz
     target_ms: 250
+
+  # ---- core feedback (night plan step 4a, October 29, 2026) ----------------
+  # Deliberately different briefs per candidate (sfx/README.md lesson): the
+  # audition compares directions, not dice rolls. Each candidate's brief is
+  # stored in candidates/gameplay/index.json.
+  disarm_unlatch:
+    briefs:
+      - Heavy mechanical latch releasing, two quick metal clacks, a bolt sliding out, no explosion
+      - Magnetic clamp letting go, sharp electric snap then a hollow metal clunk
+      - Spring-loaded weapon mount ejecting, crisp pneumatic pop with a metallic clink
+      - Rusty industrial clasp unhooking, gritty metal scrape ending in a dull thunk
+      - Precise robotic servo unlocking, tight ratchet clicks and a soft hydraulic release
+    target_ms: 420
+    render_seconds: 0.6
+  power_down:
+    briefs:
+      - Small drone engine sputtering out, coughing electric motor winding down into silence
+      - Electronic hum dropping in pitch and dying, with brief crackling stutters
+      - Turbine spin-down, airy whine descending, ends with a tired click
+      - Circuit shorting out softly, fizzing then fading, lights going dark
+    target_ms: 750
+    render_seconds: 1.0
+  pod_break:
+    briefs:
+      - Huge armored weapon pod torn off a giant machine, screeching metal rip and a deep boom
+      - Massive steel plate shearing away, violent crack, heavy debris clatter, sub bass impact
+      - Giant reactor module bursting off its mount, electric arc, explosion, metal groan
+      - Colossal bolt snapping under strain, ringing metallic bang with a falling wreckage tail
+      - Heavy hydraulic arm ripped apart, hissing burst, crunching metal, low thud
+    target_ms: 1200
+    render_seconds: 1.5
+  life_alarm:
+    briefs:
+      - Cockpit glass cracking under impact with a sharp descending alarm tone, urgent
+      - Sudden heavy hull breach, low sub drop with a high warning chime, dramatic
+      - Shield generator failing, electric zap collapsing into a muffled thump and ringing ears
+      - Starfighter hit hard, metallic crunch and a short two-tone falling siren
+      - Deep tape-stop slowdown with a glassy shatter, time freezing, dramatic hit
+    target_ms: 900
+    render_seconds: 1.2
+  writ_miss:
+    briefs:
+      - Charged energy bolt fizzling out in the distance, dry crackle fading away
+      - Plasma shot dissipating into empty space, thin hiss trailing off
+      - Spent electric round sputtering, short dull fizz with falling pitch
+      - Faint distant energy pop evaporating, airy and weak
+    target_ms: 500
+    render_seconds: 0.7

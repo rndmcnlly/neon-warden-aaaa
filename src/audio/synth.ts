@@ -306,3 +306,158 @@ export const confirm2: SynthRecipe = (a) => {
     },
   };
 };
+
+// ---------------------------------------------------- core feedback ladder
+// Night plan step 4a: hits, Writ tiers, deflects and stand-ins for the
+// sampled disarm, pod and life-lost layers. Crisp and tonal sounds stay
+// synthesized: a model renders texture well and a 15 ms ping badly.
+
+/** Lowpass helper for the recipes below. */
+function lowpass(a: SynthArgs, hz: number): BiquadFilterNode {
+  const f = a.ctx.createBiquadFilter();
+  f.type = "lowpass";
+  f.frequency.setValueAtTime(hz, a.when);
+  return f;
+}
+
+/**
+ * A tap's impact: an 8 ms bright click, a 70 ms body and a breath of air.
+ * Short and dry, so rhythm tapping stays crisp instead of smearing.
+ */
+export const crack: SynthRecipe = (a) => {
+  const click = env(a, 0.0005, 0.008);
+  const hp = bandpass(a, 3200, 1.2);
+  hp.connect(click);
+  const body = env(a, 0.002, 0.07, 0.7);
+  const o = osc(a, "triangle", 360, body);
+  o.frequency.exponentialRampToValueAtTime(220 * a.rate, a.when + 0.07);
+  const air = env(a, 0.002, 0.09, 0.18);
+  const bp = bandpass(a, 6500, 0.8);
+  bp.connect(air);
+  return run(a, [noiseSource(a, hp), o, noiseSource(a, bp)], a.when + 0.1);
+};
+
+/**
+ * A Writ landing, one recipe per tier so each sounds different, not just
+ * louder: tier 1 a hard crack, tier 2 adds a metallic ring a fifth up,
+ * tier 3 adds a sub drop (110 to 45 Hz) and a long shimmer tail.
+ */
+export function writImpact(tier: 1 | 2 | 3): SynthRecipe {
+  return (a) => {
+    const voices: SynthVoice[] = [crack(a)];
+    const sources: AudioScheduledSourceNode[] = [];
+    // Every tier: a noise slap through a falling filter.
+    const slap = env(a, 0.001, 0.12 + tier * 0.05, 0.9);
+    const lp = lowpass(a, 7000);
+    lp.frequency.exponentialRampToValueAtTime(900, a.when + 0.15);
+    lp.connect(slap);
+    sources.push(noiseSource(a, lp));
+    let end = a.when + 0.25;
+    if (tier >= 2) {
+      const ring = env(a, 0.002, 0.45, 0.35);
+      for (const n of [0, 7, 19]) {
+        const o = osc(a, "sine", midiToHz(a.midi + n), ring);
+        o.detune.value = n === 19 ? 9 : 0;
+        sources.push(o);
+      }
+      end = a.when + 0.5;
+    }
+    if (tier === 3) {
+      const sub = env(a, 0.002, 0.4, 1.2);
+      const o = osc(a, "sine", 110, sub);
+      o.frequency.exponentialRampToValueAtTime(45, a.when + 0.35);
+      const shimmer = env(a, 0.03, 0.8, 0.12);
+      const hp = bandpass(a, 9000, 0.7);
+      hp.connect(shimmer);
+      sources.push(o, noiseSource(a, hp));
+      end = a.when + 0.85;
+    }
+    const voice = run(a, sources, end);
+    return {
+      endsAt: end,
+      stop(at) {
+        voice.stop(at);
+        for (const v of voices) v.stop(at);
+      },
+    };
+  };
+}
+
+/** Armor deflect: a 15 ms ping with a fast fall, the "tink" of no damage. */
+export const tink: SynthRecipe = (a) => {
+  const g = env(a, 0.0005, 0.08, 0.8);
+  const o = osc(a, "sine", 2400, g);
+  o.frequency.exponentialRampToValueAtTime(1300 * a.rate, a.when + 0.08);
+  const g2 = env(a, 0.0005, 0.03, 0.4);
+  const o2 = osc(a, "square", 5200, g2);
+  return run(a, [o, o2], a.when + 0.1);
+};
+
+/** Stand-in for the Writ miss: a dry fizzle that thins out into distance. */
+export const fizzle: SynthRecipe = (a) => {
+  const g = env(a, 0.005, 0.45, 0.6);
+  const bp = bandpass(a, 3000, 3);
+  bp.frequency.exponentialRampToValueAtTime(500, a.when + 0.45);
+  bp.connect(g);
+  return run(a, [noiseSource(a, bp)], a.when + 0.5);
+};
+
+/** Stand-in for the disarm: a latch's two quick clacks and a low clunk. */
+export const unlatch: SynthRecipe = (a) => {
+  const sources: AudioScheduledSourceNode[] = [];
+  for (const [dt, hz] of [[0, 2200], [0.045, 1400]] as const) {
+    const g = env({ ...a, when: a.when + dt }, 0.0005, 0.03, 0.9);
+    const bp = bandpass({ ...a, when: a.when + dt }, hz, 4);
+    bp.connect(g);
+    const n = noiseSource(a, bp);
+    sources.push(n);
+  }
+  const thunk = env({ ...a, when: a.when + 0.05 }, 0.002, 0.12, 0.8);
+  sources.push(osc({ ...a, when: a.when + 0.05 }, "sine", 140, thunk));
+  return run(a, sources, a.when + 0.2);
+};
+
+/** Stand-in for the power-down: a servo winding down with a sputter. */
+export const spinDown: SynthRecipe = (a) => {
+  const g = env(a, 0.01, 0.7, 0.6);
+  const lp = lowpass(a, 1800);
+  lp.connect(g);
+  const o = osc(a, "sawtooth", 900, lp);
+  o.frequency.exponentialRampToValueAtTime(110 * a.rate, a.when + 0.7);
+  // Sputter: a square LFO chops the gain, slowing as it dies.
+  const lfo = a.ctx.createOscillator();
+  lfo.type = "square";
+  lfo.frequency.setValueAtTime(22, a.when);
+  lfo.frequency.linearRampToValueAtTime(6, a.when + 0.7);
+  const depth = a.ctx.createGain();
+  depth.gain.value = 0.4;
+  lfo.connect(depth).connect(g.gain);
+  return run(a, [o, lfo], a.when + 0.75);
+};
+
+/** Stand-in for a Warden pod tearing off: a sub boom under a metal shriek. */
+export const podTear: SynthRecipe = (a) => {
+  const boom = env(a, 0.003, 0.6, 1.2);
+  const sub = osc(a, "sine", 80, boom);
+  sub.frequency.exponentialRampToValueAtTime(32, a.when + 0.5);
+  const tear = env(a, 0.01, 0.4, 0.5);
+  const bp = bandpass(a, 1800, 6);
+  bp.frequency.exponentialRampToValueAtTime(700, a.when + 0.4);
+  bp.connect(tear);
+  return run(a, [sub, noiseSource(a, bp)], a.when + 0.65);
+};
+
+/** Stand-in for the life-lost alarm: a falling minor second, then a thud. */
+export const alarm: SynthRecipe = (a) => {
+  const sources: AudioScheduledSourceNode[] = [];
+  for (const [dt, semis] of [[0, 0], [0.16, -1]] as const) {
+    const at = { ...a, when: a.when + dt };
+    const g = env(at, 0.004, 0.22, 0.7);
+    sources.push(osc(at, "square", midiToHz(a.midi + 24 + semis), g));
+  }
+  const thud = env(a, 0.002, 0.35, 1.2);
+  const o = osc(a, "sine", 60, thud);
+  o.frequency.exponentialRampToValueAtTime(30, a.when + 0.3);
+  sources.push(o);
+  return run(a, sources, a.when + 0.5);
+};

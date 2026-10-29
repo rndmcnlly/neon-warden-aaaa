@@ -30,6 +30,22 @@ export interface SoundCue {
   /** Overrides the role's default pitch. */
   readonly pitch?: Pitch;
   readonly octave?: number;
+  /** Extra gain in dB on top of the role's (merged hit clusters). */
+  readonly gainDb?: number;
+  /** Start this much later, in seconds (feedback deferred behind a loss). */
+  readonly delayS?: number;
+}
+
+/** Per-event options from the caller. */
+export interface EventCueOptions {
+  /** Deferred feedback: play every cue of this event this much later. */
+  readonly delayS?: number;
+}
+
+/** Hits merged within one tick: one voice per role, louder per extra hit. */
+interface HitCluster {
+  count: number;
+  pos: Vec2 | undefined;
 }
 
 export interface SoundSink {
@@ -49,7 +65,14 @@ export const GAMEPLAY_AUDIO_TUNING = {
   grazeStreakTicks: 72,
   /** Lock progress ticks per full lock. */
   lockSteps: 4,
+  /** A merged cluster grows by this many dB per doubling of its hits... */
+  clusterDbPerDoubling: 2,
+  /** ...up to this much. */
+  clusterMaxDb: 6,
 };
+
+/** Light per-round hit roles that are merged per tick instead of stacked. */
+type ClusterRole = "hit_enemy" | "hit_boss" | "hit_deflect" | "ricochet_tink";
 
 /** Scale degree of each enemy's kill note: small to large climbs the scale. */
 const KILL_DEGREE: Record<EnemyKind, number> = {
@@ -91,6 +114,8 @@ export class GameplayAudio {
   private grazeStreak = 0;
   private lastGrazeTick = -Infinity;
   private melodyStep = 0;
+  /** This tick's light hits, flushed as one voice per role in `frame`. */
+  private clusters = new Map<ClusterRole, HitCluster>();
 
   constructor(private readonly sink: SoundSink) {}
 
@@ -103,13 +128,15 @@ export class GameplayAudio {
     this.grazeStreak = 0;
     this.lastGrazeTick = -Infinity;
     this.melodyStep = 0;
+    this.clusters.clear();
     this.setScanning(false);
   }
 
-  onEvent(e: SimEvent, state: SimState): void {
+  onEvent(e: SimEvent, state: SimState, options: EventCueOptions = {}): void {
     const at = (id: EntityId) => this.positions.get(id) ?? this.find(state, id);
+    const delay = options.delayS ? { delayS: options.delayS } : {};
     const play = (role: GameplaySoundId, cue: Omit<SoundCue, "role"> = {}) =>
-      this.sink.play({ role, ...cue });
+      this.sink.play({ role, ...delay, ...cue });
     switch (e.type) {
       case "focusChanged":
         play(e.active ? "focus_enter" : "focus_exit");
@@ -155,23 +182,23 @@ export class GameplayAudio {
         }
         break;
       case "partBreak":
-        play("part_break", { pos: e.pos });
+        // A Warden pod is an event; a scout's part is a clank.
+        play(e.target === "boss" ? "pod_break" : "part_break", { pos: e.pos });
         play("part_stab", { pitch: e.target === "boss" ? 2 : 4 });
         break;
       case "disarm":
-        play("disarm", { pos: e.pos });
-        play("disarm_glide");
+        // Mechanical, then failing power: nothing here sounds like a kill.
+        play("disarm_unlatch", { pos: e.pos });
+        play("power_down", { pos: e.pos, delayS: 0.12 });
+        break;
+      case "writMissed":
+        play("writ_miss", { pos: e.pos });
         break;
       case "coreExposed":
         play("core_exposed", { pos: at(e.id) });
         break;
       case "hit":
-        if (e.target === "player") {
-          play(e.absorbedByShield ? "shield_bloom" : "hit_player");
-        } else if (e.blocked) play("hit_deflect", { pos: at(e.id) });
-        else {play(e.target === "boss" ? "hit_boss" : "hit_enemy", {
-            pos: at(e.id),
-          });}
+        this.hit(e, play);
         break;
       case "kill": {
         const pos = at(e.id);
@@ -184,6 +211,7 @@ export class GameplayAudio {
       }
       case "lifeLost":
         play("life_lost");
+        play("life_alarm");
         break;
       case "pickup":
         play("pickup", { pitch: e.kind === "recorder" ? 4 : 0 });
@@ -209,8 +237,51 @@ export class GameplayAudio {
     }
   }
 
+  /** Hits by ladder rung (src/render/feedbackLadder.ts). */
+  private hit(
+    e: Extract<SimEvent, { type: "hit" }>,
+    play: (role: GameplaySoundId, cue?: Omit<SoundCue, "role">) => void,
+  ): void {
+    if (e.target === "player") {
+      play(e.absorbedByShield ? "shield_bloom" : "hit_player");
+      return;
+    }
+    const writ = e.level === 0 ? null : (`writ_impact_${e.level}` as const);
+    if (e.blocked) {
+      // Armor: a tink you can hear through the stream. A Writ glancing off
+      // still lands its tier's crack, a little under a true hit.
+      if (writ) play(writ, { pos: e.pos, gainDb: -4 });
+      this.cluster("hit_deflect", e.pos);
+      this.cluster("ricochet_tink", e.pos);
+      return;
+    }
+    if (writ) play(writ, { pos: e.pos });
+    else if (e.by === "aimed") play("tap_impact", { pos: e.pos });
+    else this.cluster(e.target === "boss" ? "hit_boss" : "hit_enemy", e.pos);
+  }
+
+  private cluster(role: ClusterRole, pos: Vec2): void {
+    const c = this.clusters.get(role);
+    if (c) c.count++;
+    else this.clusters.set(role, { count: 1, pos });
+  }
+
+  /** One voice per merged role, a little louder for every doubling. */
+  private flushClusters(): void {
+    const t = GAMEPLAY_AUDIO_TUNING;
+    for (const [role, c] of this.clusters) {
+      const gainDb = Math.min(
+        t.clusterMaxDb,
+        Math.log2(c.count) * t.clusterDbPerDoubling,
+      );
+      this.sink.play({ role, pos: c.pos, gainDb });
+    }
+    this.clusters.clear();
+  }
+
   /** Once per tick, after that tick's events. */
   frame(state: SimState): void {
+    this.flushClusters();
     // Optional chains: tolerate a sim snapshot from before the scan, lock
     // and velocity fields existed (wave 3 landed in steps).
     this.setScanning(state.player.scan?.active ?? false);

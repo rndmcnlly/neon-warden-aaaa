@@ -20,20 +20,28 @@
 
 import type { Division } from "./beatGrid.ts";
 import {
+  alarm,
   chord,
   confirm2,
+  crack,
   crackle,
+  fizzle,
   glide,
   heavyThump,
   pluck,
+  podTear,
   precisionEnter,
   precisionExit,
   scanSweep,
   shotTick,
+  spinDown,
   type SynthRecipe,
   tick,
+  tink,
   tock,
+  unlatch,
   whoosh,
+  writImpact,
 } from "./synth.ts";
 
 /** A pitch: a scale degree of the current key, or deliberately off it. */
@@ -79,6 +87,14 @@ export interface SoundRole {
   /** Placed in space (pan, distance, doppler) when a position is known. */
   readonly spatial?: boolean;
   readonly bus?: "sfx" | "ui";
+  /**
+   * Threat cues (enemy fire, the player hit, the life lost, the Warden's
+   * roar) are never stolen to make room for anything else; only their own
+   * per-role cap can cut them.
+   */
+  readonly protected?: boolean;
+  /** Cuts every voice below this priority when it plays (the life lost). */
+  readonly clearBelow?: number;
 }
 
 const feel = (
@@ -194,27 +210,100 @@ export const GAMEPLAY_SOUNDS = {
     jitter: 1,
     cap: 4,
     priority: 6,
+    protected: true,
     minGapMs: 1000 / 6,
   }),
   enemy_fire_heavy: feel(heavyThump, -7, {
     pitch: "offKey",
     cap: 2,
     priority: 7,
+    protected: true,
   }),
-  near_miss: feel(whoosh, -9, { cap: 3, priority: 6, jitter: 1.5 }),
+  near_miss: feel(whoosh, -9, {
+    cap: 3,
+    priority: 6,
+    jitter: 1.5,
+    protected: true,
+  }),
   flyby: feel(whoosh, -13, { cap: 2, priority: 3, jitter: 1 }),
   spawn: feel(whoosh, -15, { cap: 2, priority: 2 }),
   retreat: feel(whoosh, -13, { cap: 2, priority: 3, jitter: 0.5 }),
 
   // ----------------------------------------------------- hits and kills
-  hit_enemy: feel(tick, -14, { pitch: 2, octave: 2, cap: 3, priority: 3 }),
-  hit_boss: feel(tick, -10, { pitch: 0, octave: 1, cap: 3, priority: 4 }),
-  hit_deflect: feel(tick, -12, { pitch: 11, octave: 2, cap: 2, priority: 3 }),
+  // The ladder's lower rungs (src/render/feedbackLadder.ts). Stream hits
+  // are the lightest and merged per tick (`GameplayAudio`), so a full-power
+  // stream is a texture, not a machine gun; taps get a crisp crack; each
+  // Writ tier its own layered impact that dips the music.
+  hit_enemy: feel(tick, -17, {
+    pitch: 2,
+    octave: 2,
+    cap: 2,
+    priority: 2,
+    minGapMs: 45,
+  }),
+  hit_boss: feel(tick, -13, {
+    pitch: 0,
+    octave: 1,
+    cap: 2,
+    priority: 3,
+    minGapMs: 45,
+  }),
+  hit_deflect: feel(tick, -14, {
+    pitch: 11,
+    octave: 2,
+    cap: 2,
+    priority: 3,
+    minGapMs: 45,
+  }),
+  tap_impact: feel(crack, -7, {
+    sample: false,
+    jitter: 0.5,
+    cap: 3,
+    priority: 5,
+    minGapMs: 30,
+  }),
+  ricochet_tink: feel(tink, -8, {
+    sample: false,
+    jitter: 2,
+    cap: 2,
+    priority: 5,
+    minGapMs: 50,
+  }),
+  writ_impact_1: feel(writImpact(1), -5, {
+    sample: false,
+    pitch: 4,
+    octave: 1,
+    jitter: 0,
+    cap: 2,
+    priority: 8,
+    duck: { db: -3, attackS: 0.005, releaseS: 0.25 },
+  }),
+  writ_impact_2: feel(writImpact(2), -3, {
+    sample: false,
+    pitch: 2,
+    octave: 1,
+    jitter: 0,
+    cap: 2,
+    priority: 8,
+    duck: { db: -5, attackS: 0.005, releaseS: 0.35 },
+  }),
+  writ_impact_3: feel(writImpact(3), -1, {
+    sample: false,
+    pitch: 0,
+    octave: 1,
+    jitter: 0,
+    cap: 2,
+    priority: 9,
+    duck: { db: -8, attackS: 0.005, releaseS: 0.5, lowpassHz: 1400 },
+  }),
+  // A Writ that hit nothing: a dry fizzle heard from where it left.
+  writ_miss: feel(fizzle, -10, { cap: 2, priority: 6, jitter: 0.5 }),
   hit_player: feel(heavyThump, 0, {
     pitch: "offKey",
     cap: 1,
     priority: 10,
     spatial: false,
+    protected: true,
   }),
   shield_bloom: feel(chord, -6, { cap: 1, priority: 9, spatial: false }),
   life_lost: feel(heavyThump, 0, {
@@ -223,7 +312,18 @@ export const GAMEPLAY_SOUNDS = {
     cap: 1,
     priority: 10,
     spatial: false,
-    duck: { db: -10, attackS: 0.01, releaseS: 1.2, lowpassHz: 800 },
+    protected: true,
+    // The top rung clears the field: everything below a threat cue stops.
+    clearBelow: 6,
+    duck: { db: -14, attackS: 0.01, releaseS: 1.4, lowpassHz: 700 },
+  }),
+  life_alarm: feel(alarm, -3, {
+    pitch: "offKey",
+    jitter: 0,
+    cap: 1,
+    priority: 10,
+    spatial: false,
+    protected: true,
   }),
   kill_small: feel(heavyThump, -8, { cap: 4, priority: 5 }),
   kill_large: feel(heavyThump, -4, {
@@ -239,6 +339,17 @@ export const GAMEPLAY_SOUNDS = {
     duck: { db: -2, attackS: 0.005, releaseS: 0.15 },
   }),
   part_stab: musical(pluck, -9, "16th", { pitch: 4, cap: 2 }),
+  // Disarm is not a kill: a mechanical unlatch, then the hull winding down.
+  disarm_unlatch: feel(unlatch, -5, { cap: 2, priority: 7, jitter: 0.5 }),
+  power_down: feel(spinDown, -9, { cap: 2, priority: 6, jitter: 0.5 }),
+  // A Warden pod is its own event: the loudest break, ducking the score.
+  pod_break: feel(podTear, 0, {
+    cap: 1,
+    priority: 9,
+    jitter: 0,
+    spatial: false,
+    duck: { db: -8, attackS: 0.005, releaseS: 0.6 },
+  }),
   disarm: feel(glide, -6, { pitch: 7, octave: 1, cap: 2, priority: 7 }),
   disarm_glide: musical(glide, -10, "8th", { pitch: 7, octave: 1, cap: 2 }),
   core_exposed: feel(chord, -5, { pitch: 0, octave: -1, cap: 1, priority: 8 }),
@@ -252,6 +363,7 @@ export const GAMEPLAY_SOUNDS = {
     cap: 1,
     priority: 9,
     spatial: false,
+    protected: true,
     duck: { db: -4, attackS: 0.02, releaseS: 0.6 },
   }),
   boss_collapse: feel(heavyThump, -2, {

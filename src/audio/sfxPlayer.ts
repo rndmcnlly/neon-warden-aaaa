@@ -62,6 +62,7 @@ export const SYNTH_TRIM_DB = -16;
 interface Voice {
   readonly role: GameplaySoundId;
   readonly priority: number;
+  readonly protected: boolean;
   readonly endsAt: number;
   stop(at: number): void;
 }
@@ -83,6 +84,7 @@ export class SfxPlayer implements SoundSink {
     ) return;
     const role: SoundRole = GAMEPLAY_SOUNDS[cue.role];
     const now = this.d.ctx.currentTime;
+    if (role.clearBelow !== undefined) this.clear(role.clearBelow, now);
     if (role.minGapMs) {
       const last = this.lastAt.get(cue.role) ?? -Infinity;
       if ((now - last) * 1000 < role.minGapMs) return;
@@ -90,10 +92,16 @@ export class SfxPlayer implements SoundSink {
     }
     this.prune(now);
     if (!this.makeRoom(cue.role, role, now)) return;
-    const when = this.when(role, now);
+    // A deferred cue (a kill behind a lost life) waits, then snaps as usual.
+    const when = this.when(role, now + (cue.delayS ?? 0));
     // Stacked repeats get quieter, so a burst thickens instead of clipping.
     const stacked = this.voices.filter((v) => v.role === cue.role).length;
-    const voice = this.start(cue, role, when, STACK_DB * stacked);
+    const voice = this.start(
+      cue,
+      role,
+      when,
+      STACK_DB * stacked + (cue.gainDb ?? 0),
+    );
     this.voices.push(voice);
     if (role.duck) this.d.duck(role);
   }
@@ -187,6 +195,7 @@ export class SfxPlayer implements SoundSink {
       return {
         role: cue.role,
         priority: role.priority,
+        protected: role.protected ?? false,
         endsAt,
         stop: (at) => {
           gain.gain.setTargetAtTime(0, at, 0.01);
@@ -205,6 +214,7 @@ export class SfxPlayer implements SoundSink {
     return {
       role: cue.role,
       priority: role.priority,
+      protected: role.protected ?? false,
       endsAt: synth.endsAt,
       stop: (at) => synth.stop(at),
     };
@@ -223,12 +233,19 @@ export class SfxPlayer implements SoundSink {
     if (this.voices.length < MAX_VOICES) return true;
     let victim: Voice | undefined;
     for (const v of this.voices) {
-      if (v.priority > role.priority) continue;
+      if (v.priority > role.priority || v.protected) continue;
       if (!victim || v.priority < victim.priority) victim = v;
     }
     if (!victim) return false;
     this.cut(victim, now);
     return true;
+  }
+
+  /** Cuts every unprotected voice below `priority`. */
+  private clear(priority: number, now: number): void {
+    for (const v of [...this.voices]) {
+      if (v.priority < priority && !v.protected) this.cut(v, now);
+    }
   }
 
   private cut(voice: Voice, now: number): void {

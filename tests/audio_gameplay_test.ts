@@ -75,11 +75,12 @@ Deno.test("every role referenced by the mapping exists in the table", () => {
     "kill_note",
     "part_break",
     "part_stab",
-    "disarm",
-    "disarm_glide",
+    "disarm_unlatch",
+    "power_down",
     "lock_confirm",
     "pay_tick",
     "life_lost",
+    "life_alarm",
   ]);
 });
 

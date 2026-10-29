@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-10-28T20:36:17-0700",
+  "generated": "2026-10-29T03:35:03-0700",
   "model": "elevenlabs/fal-ai/elevenlabs/sound-effects/v2",
   "note": "Normalized to one level; runtime gains live in src/audio/gameplaySounds.ts.",
   "sounds": {
@@ -351,6 +351,71 @@
           "src": "sfx/gameplay/hangar_locked_1.ogg",
           "from": "hangar_locked/hangar_locked_01.wav",
           "hash": "dc9f09dff27f86a9",
+          "provisional": true
+        }
+      ]
+    },
+    "disarm_unlatch": {
+      "variants": [
+        "sfx/gameplay/disarm_unlatch_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/disarm_unlatch_1.ogg",
+          "from": "disarm_unlatch/disarm_unlatch_04.wav",
+          "hash": "aaa60abc96b7d25d",
+          "provisional": true
+        }
+      ]
+    },
+    "power_down": {
+      "variants": [
+        "sfx/gameplay/power_down_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/power_down_1.ogg",
+          "from": "power_down/power_down_01.wav",
+          "hash": "545379100bfe1c10",
+          "provisional": true
+        }
+      ]
+    },
+    "pod_break": {
+      "variants": [
+        "sfx/gameplay/pod_break_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/pod_break_1.ogg",
+          "from": "pod_break/pod_break_01.wav",
+          "hash": "2395c6c6763c4099",
+          "provisional": true
+        }
+      ]
+    },
+    "life_alarm": {
+      "variants": [
+        "sfx/gameplay/life_alarm_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/life_alarm_1.ogg",
+          "from": "life_alarm/life_alarm_02.wav",
+          "hash": "bb8599f3198da695",
+          "provisional": true
+        }
+      ]
+    },
+    "writ_miss": {
+      "variants": [
+        "sfx/gameplay/writ_miss_1.ogg"
+      ],
+      "takes": [
+        {
+          "src": "sfx/gameplay/writ_miss_1.ogg",
+          "from": "writ_miss/writ_miss_01.wav",
+          "hash": "c3d25f52525fe851",
           "provisional": true
         }
       ]

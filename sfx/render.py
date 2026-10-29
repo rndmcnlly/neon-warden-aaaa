@@ -70,7 +70,7 @@ def render_spec(manifest: dict, name: str, role: dict, nn: int) -> dict:
             "engine": "elevenlabs",
             "model": d["model"],
             "family": " ".join(manifest["family"].split()),
-            "brief": " ".join(role["brief"].split()),
+            "brief": brief_for(role, nn),
             "take": nn,  # no seed: the take number keeps candidates distinct in the cache
             "seconds": max(EL_MIN_S, float(d["render_seconds"])),
             "prompt_influence": float(d["prompt_influence"]),
@@ -87,6 +87,22 @@ def render_spec(manifest: dict, name: str, role: dict, nn: int) -> dict:
         "cfg": float(d["cfg"]),
         "negative": " ".join(d["negative"].split()),
     }
+
+
+def brief_for(role: dict, nn: int) -> str:
+    """Candidate nn's brief: roles may list deliberately different `briefs`
+    (sfx/README.md, "Lesson from the first audition"), cycled per take."""
+    briefs = role.get("briefs")
+    text = briefs[(nn - 1) % len(briefs)] if briefs else role["brief"]
+    return " ".join(text.split())
+
+
+def role_count(manifest: dict, role: dict, override: int | None) -> int:
+    if override:
+        return override
+    if "count" in role:
+        return int(role["count"])
+    return len(role["briefs"]) if role.get("briefs") else int(manifest["defaults"]["count"])
 
 
 def spec_hash(spec: dict) -> str:
@@ -254,7 +270,7 @@ def main() -> None:
 
     if manifest.get("engine") == "elevenlabs" and not args.reprocess:
         todo = [render_spec(manifest, n, roles[n], nn) for n in selected
-                for nn in range(1, (args.count or int(roles[n].get("count", manifest["defaults"]["count"]))) + 1)]
+                for nn in range(1, role_count(manifest, roles[n], args.count) + 1)]
         todo = [sp for sp in todo if not (CACHE / f"{spec_hash(sp)}.wav").exists()]
         usd = sum(sp["seconds"] for sp in todo) * EL_USD_PER_S
         print(f"elevenlabs: {len(todo)} uncached renders, about US ${usd:.3f}")
@@ -265,7 +281,7 @@ def main() -> None:
     n_rendered = 0
     for name in selected:
         role = roles[name]
-        count = args.count or int(role.get("count", manifest["defaults"]["count"]))
+        count = role_count(manifest, role, args.count)
         role_dir = OUT / name
         role_dir.mkdir(parents=True, exist_ok=True)
         entries = []
@@ -285,6 +301,7 @@ def main() -> None:
             fname = f"{name}_{nn:02d}.wav"
             sf.write(role_dir / fname, y, int(loud["sample_rate"]), subtype="PCM_24")
             entries.append({"file": f"{name}/{fname}", "nn": nn, "seed": spec.get("seed"),
+                            "brief": spec["brief"],
                             "hash": h, "render_s": render_s, **stats})
             tag = f"{render_s:.1f}s" if render_s is not None else "cached"
             print(f"  {name}_{nn:02d}  {tag:>7}  {stats.get('duration_ms', 0):4d} ms  "
@@ -294,7 +311,7 @@ def main() -> None:
             if stale.name not in keep:
                 stale.unlink()
         index["roles"][name] = {
-            "brief": " ".join(role["brief"].split()),
+            "brief": " | ".join(role["briefs"]) if role.get("briefs") else " ".join(role["brief"].split()),
             "target_ms": role["target_ms"],
             "gain_db": role.get("gain_db", 0.0),
             "candidates": entries,
