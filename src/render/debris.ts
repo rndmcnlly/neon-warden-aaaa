@@ -39,9 +39,9 @@ const RIM = new THREE.Color(0xaab3bd);
 /** Smoke streak: a grey under everything bright. */
 const SMOKE = new THREE.Color(0x5b636d);
 /** Bodies read at camera distance only above this size, world units. */
-const MIN_CHUNK = 0.22;
+const MIN_CHUNK = 0.3;
 /** Torn-off model parts are drawn this much larger than in the model. */
-const NODE_SCALE = 1.35;
+const NODE_SCALE = 1.8;
 /** The torn seam's heat: a dull ember, cooling within a quarter second. */
 const EMBER = new THREE.Color(0xb8641e);
 
@@ -236,7 +236,7 @@ export class DebrisField {
         m.color.copy(DEBRIS_COLOR).multiplyScalar(1 - 0.4 * sink);
       }
       // The rim holds while the body flies, then cools with it.
-      for (const r of b.rims) r.value = 0.9 * fade * (1 - 0.4 * sink);
+      for (const r of b.rims) r.value = 1.4 * fade * (1 - 0.4 * sink);
       // Smoke streak: from the body back along its flight, as long as the
       // body is fast, thinning as it slows. Lies just under the body.
       const speed = Math.hypot(b.vel.x, b.vel.z);
@@ -251,7 +251,7 @@ export class DebrisField {
           1,
           Math.min(1.6, speed * 0.16),
         );
-        b.streakMat.opacity = 0.55 * fade * Math.min(1, speed / 4);
+        b.streakMat.opacity = 0.7 * fade * Math.min(1, speed / 4);
       }
     }
   }
