@@ -1791,11 +1791,20 @@
   gap: 0.5em;
   margin: 0;
 }
+/* The track is drawn by ::before inside the box, and the baseline tick
+   stays within it (no negative insets, left scaled by 100% minus its own
+   width), so the bar never scrolls: the hangar reel measured a 2 px overflow
+   when the tick sat at 100%. */
 .nw-stat-bar {
   --v: 0;
   --b: 0;
   position: relative;
-  height: 0.35em;
+  height: 0.75em;
+}
+.nw-stat-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0.2em 0;
   border-radius: 999px;
   background:
     linear-gradient(90deg, var(--nw-cyan) calc(var(--v) * 100%),
@@ -1804,9 +1813,9 @@
 .nw-stat-bar::after {
   content: "";
   position: absolute;
-  top: -0.2em;
-  bottom: -0.2em;
-  left: calc(var(--b) * 100%);
+  top: 0;
+  bottom: 0;
+  left: calc(var(--b) * (100% - 2px));
   width: 2px;
   background: var(--nw-text);
   opacity: 0.6;
