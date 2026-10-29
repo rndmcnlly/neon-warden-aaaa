@@ -133,6 +133,8 @@ export class Director {
   private finish: (() => void) | null = null;
   private current: Timeline | null = null;
   private chatterHeld = false;
+  /** The scripted line now playing is an `interject()`, not a cue. */
+  private interjecting = false;
 
   constructor(private readonly ports: DirectorPorts) {
     this.ambient = new AmbientScheduler(ports.random);
@@ -251,6 +253,8 @@ export class Director {
   /** True once the awaited flag holds; plays the nudge line once if late. */
   private flagWaitOver(now: number): boolean {
     const wait = this.flagWait!;
+    // An interjection finishes its sentence before the scene moves on.
+    if (this.interjecting && this.busy("scripted")) return false;
     if (this.getFlag(wait.flag) === wait.value) {
       this.flagWait = null;
       this.cursor = now;
@@ -343,6 +347,7 @@ export class Director {
   }
 
   private stopLine(layer: VoiceLayer): void {
+    if (layer === "scripted") this.interjecting = false;
     this.lines[layer]?.handle?.stop(DIRECTOR_TUNING.cutFadeMs);
     this.lines[layer] = null;
     this.pending[layer] = null;
@@ -362,6 +367,7 @@ export class Director {
 
   private endScriptedLine(now: number): void {
     this.lines.scripted = null;
+    this.interjecting = false;
     this.lines.ambient?.handle?.setGain(1, DIRECTOR_TUNING.duckRampMs);
     this.ambient.postpone(now, DIRECTOR_TUNING.quietAfterScriptMs);
   }
@@ -481,6 +487,38 @@ export class Director {
       now,
       endsAt - now + DIRECTOR_TUNING.quietAfterScriptMs,
     );
+    return true;
+  }
+
+  /**
+   * Speaks `line` on the scripted layer while a scene waits for the player
+   * (a `waitFlag`, such as a tutorial drill): commentary from inside the
+   * scene. Returns false unless the scene is waiting with the floor free.
+   * The scene's own nudge moves back so the two never talk over each other,
+   * and the scene lets the interjection finish before it continues.
+   */
+  interject(line: LineId): boolean {
+    const now = this.ports.clock.now();
+    const wait = this.flagWait;
+    if (
+      !this.current || !wait || this.blockedUntil !== null ||
+      this.busy("scripted") || this.chatterHeld
+    ) return false;
+    this.stopLine("ambient");
+    this.subtitles.clear("ambient", now);
+    this.say(line, "scripted", now);
+    this.interjecting = true;
+    const endsAt = this.lines.scripted?.endsAt ??
+      now + DIRECTOR_TUNING.scriptedLoadTimeoutMs;
+    if (wait.nudge) {
+      wait.nudge = {
+        line: wait.nudge.line,
+        at: Math.max(
+          wait.nudge.at,
+          endsAt + DIRECTOR_TUNING.quietAfterScriptMs,
+        ),
+      };
+    }
     return true;
   }
 

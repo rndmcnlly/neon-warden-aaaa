@@ -510,9 +510,83 @@ export type SimEvent =
   }
   | { readonly type: "bossDefeated"; readonly tick: Tick }
   | { readonly type: "bossSurvived"; readonly tick: Tick }
-  | { readonly type: "gameOver"; readonly tick: Tick };
+  | { readonly type: "gameOver"; readonly tick: Tick }
+  | {
+    /**
+     * The tutorial's practice hologram (`tut.spawnTarget`) left play. Any
+     * removal by the player counts (`destroyed`, including rams and Writs,
+     * or `disarmed`: the hologram then flies off, spared). `escaped` means
+     * it left on its own; while the flag still asks for a target the sim
+     * issues a fresh one at once (`respawned`). After a player removal the
+     * sim also re-issues one, after a short beat, if the flag is still on
+     * (a lesson that needs the target alive, such as the lock).
+     */
+    readonly type: "practiceTarget";
+    readonly tick: Tick;
+    readonly id: EntityId;
+    readonly result: "destroyed" | "disarmed" | "escaped";
+    /** The replacement's id when one spawned this tick. */
+    readonly respawned: EntityId | null;
+  }
+  | {
+    /**
+     * A derived commentary moment from the run's player statistics, low
+     * rate and with hysteresis (see `src/sim/stats.ts`). The commentary
+     * scheduler maps these to banks.
+     */
+    readonly type: "statsMoment";
+    readonly tick: Tick;
+    readonly moment: StatsMomentKind;
+    /** The figure behind the moment (accuracy %, streak length, ...). */
+    readonly value: number;
+  };
 
 export type SimEventType = SimEvent["type"];
+
+/**
+ * Commentary moments the sim detects from player statistics. The names
+ * match `StatsMoment` in `src/scenes/banks/types.ts` (a test keeps them in
+ * step).
+ */
+export type StatsMomentKind =
+  | "accuracyDrop"
+  | "intoTheMist"
+  | "hotStreak"
+  | "perfectSector"
+  | "grazeStreak"
+  | "disarmRatioHigh"
+  | "disarmRatioLow"
+  | "repeatedDeaths"
+  | "longIdle"
+  | "writHoarding"
+  | "bossLull";
+
+/** Running player statistics for commentary, HUD and credits. */
+export interface PlayerStatsView {
+  /** Rounds fired (a stream volley of three counts three). */
+  readonly roundsFired: number;
+  /** Rounds that touched an enemy, a part or the Warden. */
+  readonly roundsHit: number;
+  /** Overall accuracy in [0, 1]; 0 before anything resolves. */
+  readonly accuracy: number;
+  /** Accuracy over the last `STATS.rollingRounds` resolved rounds. */
+  readonly rollingAccuracy: number;
+  /** Volleys fired with no target in the forward cone (or none on screen). */
+  readonly volleysIntoMist: number;
+  /** Writ charge levels released into empty space. */
+  readonly energyWasted: number;
+  readonly kills: number;
+  readonly disarms: number;
+  /** Disarms over disarms plus kills, in [0, 1]; 0 before either. */
+  readonly disarmRatio: number;
+  readonly grazes: number;
+  readonly deaths: number;
+  /** Kills plus disarms since the ship was last hit. */
+  readonly streak: number;
+  readonly bestStreak: number;
+  /** Ticks since a player round last connected (0 before the first). */
+  readonly ticksSinceHit: number;
+}
 
 /** Where a run begins; skip-to flags map onto these. */
 export type SimStart =
@@ -578,4 +652,6 @@ export interface Sim {
    * ignored, so timelines can add flags without touching the sim.
    */
   setStoryFlag(name: string, value: boolean): void;
+  /** The run's player statistics (reset when the tutorial hands over). */
+  playerStats(): PlayerStatsView;
 }

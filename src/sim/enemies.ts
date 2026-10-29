@@ -165,6 +165,8 @@ const TURRET_BURST = 40;
 const LANCER_AIM_FROM = 10;
 const LANCER_FIRE_AT = 20;
 const RETREAT_SPEED = 5;
+/** Practice drones sink this slowly (px per tick) instead of patrolling. */
+const PASSIVE_DRIFT = 0.25;
 
 function aimAt(from: Enemy, target: Vec2): number {
   return Math.atan2(target.y - from.y, target.x - from.x);
@@ -242,7 +244,9 @@ function move(enemy: Enemy, arena: Arena): void {
   switch (enemy.kind) {
     case "drone":
       if (enemy.ai === "evade") enemy.homeX += enemy.evadeDir * EVADE_SPEED;
-      enemy.y += 1.5;
+      // A practice hologram barely drifts, so a player who never shoots it
+      // still sees it go (and the tutorial re-issues it).
+      enemy.y += enemy.passive ? PASSIVE_DRIFT : 1.5;
       enemy.x = enemy.homeX + Math.sin(enemy.age * 0.045) * 46 * enemy.side;
       break;
     case "dart":

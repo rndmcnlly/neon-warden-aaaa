@@ -38,7 +38,6 @@ import { Director } from "./director/director.ts";
 import type { MusicPort, SfxPort, VoicePort } from "./director/ports.ts";
 import { lookup } from "./i18n/index.ts";
 import {
-  barkFor,
   chatterFor,
   FLAGS,
   INITIAL_FLAGS,
@@ -54,6 +53,14 @@ import { place } from "./audio/spatial.ts";
 import { setUiSoundSink } from "./ui/sound.ts";
 import { installQaProbe, type QaRecorder } from "./app/qaProbe.ts";
 import { withTutorialDemo } from "./app/tutorialDemo.ts";
+import {
+  type CommentaryContext,
+  CommentaryScheduler,
+  keyValueBagStore,
+  memoryBagStore,
+} from "./director/commentary.ts";
+import { TutorialProgress } from "./director/tutorialProgress.ts";
+import { ALL_BANKS } from "./scenes/banks/index.ts";
 import "./style.css";
 
 const DEFAULT_SEED = 121;
@@ -477,15 +484,15 @@ function onSimEvent(event: SimEvent, phase: string, state: SimState): void {
   if (event.type === "spawn" && event.kind !== "warden") {
     enemyKinds.set(event.id, event.kind);
   }
+  const said = commentary.onEvent(event, commentaryContext(state));
+  if (said) qa?.bark(said.line);
   if (phase === "tutorial") {
-    noteTutorialEvent(event);
+    tutorialProgress.note(event);
     return;
   }
   if (event.type === "sectorCleared") warpUntil = performance.now() + WARP_MS;
   updateChatter(event);
   radioFromEvent(event, state);
-  const bark = barkFor(event);
-  if (bark && director.bark(bark)) qa?.bark(bark);
   // The Warden arrives on the sim's schedule, which can beat the descent
   // scene to its parley cue (the warnings run long, more so in other
   // languages). Hold the Warden from the moment it arrives; the scene's own
@@ -514,43 +521,38 @@ function resetRunAudio(): void {
   radio.reset();
   enemyKinds.clear();
   lastEnemies = [];
-  tutorialTaps = 0;
-  tutorialGrazes = 0;
+  tutorialProgress.reset();
+  commentary.resetRun();
 }
 
 /** Tutorial progress flags from what the player's weapon and ship do. */
-let tutorialTaps = 0;
-let tutorialGrazes = 0;
-function noteTutorialEvent(event: SimEvent): void {
-  const set = (flag: string) => director.setFlag(flag, true);
-  switch (event.type) {
-    case "playerFired":
-      set(FLAGS.tutFired);
-      if (event.shot === "aimed" && ++tutorialTaps >= 3) set(FLAGS.tutTapped);
-      if (event.shot === "stream") set(FLAGS.tutStreamed);
-      if (event.shot === "writ") set(FLAGS.tutWritFired);
-      break;
-    case "chargeLevel":
-      if (event.level === 3) set(FLAGS.tutCharged);
-      break;
-    case "scanLock":
-      set(FLAGS.tutLocked);
-      break;
-    case "partBreak":
-      set(FLAGS.tutPartBroken);
-      break;
-    case "graze":
-      if (director.getFlag(FLAGS.tutGrazeDrill) && ++tutorialGrazes >= 5) {
-        set(FLAGS.tutGrazed);
-      }
-      break;
-    case "payChanged":
-      if (event.rate >= 2) set(FLAGS.tutRateDoubled);
-      break;
-    case "kill":
-      set(FLAGS.tutTargetDestroyed);
-      break;
-  }
+const tutorialProgress = new TutorialProgress({
+  setFlag: (flag) => director.setFlag(flag, true),
+  getFlag: (flag) => director.getFlag(flag),
+  interject: (line) => director.interject(line),
+  escapedLine: () => commentary.deal("tutTargetEscaped"),
+});
+
+/** Commentary from the variant banks; bags persist in this browser. */
+const commentary = new CommentaryScheduler(ALL_BANKS, {
+  now: () => clock.now(),
+  bark: (line) => director.bark(line),
+  interject: (line) => director.interject(line),
+  sceneId: () => director.timeline?.id ?? null,
+  store: globalThis.localStorage
+    ? keyValueBagStore(globalThis.localStorage)
+    : memoryBagStore(),
+});
+
+function commentaryContext(state: SimState): CommentaryContext {
+  return {
+    phase: state.phase,
+    sector: state.sector,
+    bossPhase: state.boss?.phase ?? null,
+    livesLeft: state.player.lives,
+    hasFired: !state.flags.neverFired,
+    neverFired: state.flags.neverFired,
+  };
 }
 
 // ------------------------------------------------------------------ radio

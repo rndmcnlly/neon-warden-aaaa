@@ -26,6 +26,7 @@ import {
   NEAR_MISS_RADIUS,
   type PartView,
   type PickupKind,
+  type PlayerStatsView,
   type ScriptedSpawn,
   type SectorIndex,
   type SensorStats,
@@ -81,9 +82,15 @@ import {
 import { Trigger, type Volley } from "./trigger.ts";
 import { ContractRate } from "./pay.ts";
 import { type Scannable, stepScan } from "./scan.ts";
+import { PlayerStats, STATS } from "./stats.ts";
 
 /** Where the tutorial's practice targets appear. */
 const PRACTICE_TARGET = Object.freeze({ x: 240, y: 160 });
+/**
+ * After the player removes the practice target, how long before the sim
+ * re-issues one if `tut.spawnTarget` still asks (a lesson that needs it).
+ */
+const PRACTICE_RESPAWN_TICKS = 90;
 
 /** Run statistics that are not part of `SimState` (for credits and tests). */
 export interface RunStats {
@@ -116,6 +123,8 @@ interface Projectile {
   grazed: boolean;
   closest: number;
   nearMissed: boolean;
+  /** Player rounds: touched an enemy, a part or the Warden (for accuracy). */
+  connected: boolean;
 }
 
 interface Pickup {
@@ -243,6 +252,10 @@ export class NeonWardenSim implements Sim {
   private parley = false;
   /** Live practice targets, so tutorial flags never stack two. */
   private practiceTarget: EntityId | null = null;
+  /** `tut.spawnTarget` is on: keep a practice target in play. */
+  private practiceWanted = false;
+  private practiceRespawnAt: Tick | null = null;
+  private readonly statsTracker = new PlayerStats();
   private practiceTurret: EntityId | null = null;
   private events: SimEvent[] = [];
   /** Enemy bullets fired this tick, grouped into `enemyFired` volleys. */
@@ -308,17 +321,15 @@ export class NeonWardenSim implements Sim {
       this.parley = value;
       return;
     }
-    if (!value || this.phase !== "tutorial") return;
-    const alive = (id: EntityId | null) =>
-      this.enemies.some((e) => e.alive && e.id === id);
-    if (name === "tut.spawnTarget" && !alive(this.practiceTarget)) {
-      this.practiceTarget = this.spawnEnemy(
-        "drone",
-        PRACTICE_TARGET.x,
-        PRACTICE_TARGET.y,
-        { passive: true },
-      );
-    } else if (name === "tut.spawnTurret" && !alive(this.practiceTurret)) {
+    if (this.phase !== "tutorial") return;
+    if (name === "tut.spawnTarget") {
+      this.practiceWanted = value;
+      this.practiceRespawnAt = null;
+      if (value) this.issuePracticeTarget();
+      return;
+    }
+    if (!value) return;
+    if (name === "tut.spawnTurret" && !this.isAlive(this.practiceTurret)) {
       this.practiceTurret = this.spawnEnemy("turret", PRACTICE_TARGET.x, -30, {
         passive: true,
       });
@@ -340,6 +351,47 @@ export class NeonWardenSim implements Sim {
     this.cachedSnapshot = null;
   }
 
+  private isAlive(id: EntityId | null): boolean {
+    return this.enemies.some((e) => e.alive && e.id === id);
+  }
+
+  /** Puts the practice hologram in play unless one already is. */
+  private issuePracticeTarget(): EntityId | null {
+    if (this.isAlive(this.practiceTarget)) return null;
+    this.practiceTarget = this.spawnEnemy(
+      "drone",
+      PRACTICE_TARGET.x,
+      PRACTICE_TARGET.y,
+      { passive: true },
+    );
+    return this.practiceTarget;
+  }
+
+  /**
+   * The practice target left play. Whatever the player did to it counts;
+   * an escape is re-issued at once, a player removal after a beat (and only
+   * if the flag still asks, which a finished lesson will have cleared).
+   */
+  private resolvePractice(
+    result: "destroyed" | "disarmed" | "escaped",
+  ): void {
+    const id = this.practiceTarget;
+    if (id === null) return;
+    this.practiceTarget = null;
+    let respawned: EntityId | null = null;
+    if (this.practiceWanted) {
+      if (result === "escaped") respawned = this.issuePracticeTarget();
+      else this.practiceRespawnAt = this.tick + PRACTICE_RESPAWN_TICKS;
+    }
+    this.events.push({
+      type: "practiceTarget",
+      tick: this.tick,
+      id,
+      result,
+      respawned,
+    });
+  }
+
   /**
    * Leaves the tutorial (or skips ahead) into a sector. Clears the field;
    * coming from the tutorial it also wipes score, pay, kills and flags,
@@ -359,6 +411,9 @@ export class NeonWardenSim implements Sim {
       this.pay.reset();
       this.trigger.reset();
       this.fired = { aimed: 0, stream: 0, writ: 0 };
+      this.statsTracker.reset();
+      this.practiceWanted = false;
+      this.practiceRespawnAt = null;
       this.player.power = 1;
       this.player.shielded = false;
     }
@@ -449,6 +504,12 @@ export class NeonWardenSim implements Sim {
 
     this.advanceRoute();
     this.spawnScheduled();
+    if (
+      this.practiceRespawnAt !== null && this.tick >= this.practiceRespawnAt
+    ) {
+      this.practiceRespawnAt = null;
+      if (this.practiceWanted) this.issuePracticeTarget();
+    }
     this.flyPlayer(input);
 
     const arena = this.arena();
@@ -479,7 +540,27 @@ export class NeonWardenSim implements Sim {
     if (decay) this.events.push(decay);
     this.checkSurvival(survivalOpen);
     this.cull();
+    this.updateStats(input);
     return this.flushEvents();
+  }
+
+  playerStats(): PlayerStatsView {
+    return this.statsTracker.view();
+  }
+
+  /** Feeds this tick's events to the stats tracker; adds any moment. */
+  private updateStats(input: InputFrame): void {
+    for (const event of this.events) this.statsTracker.note(event);
+    const boss = this.boss;
+    this.events.push(...this.statsTracker.step({
+      tick: this.tick,
+      gameplay: this.phase === "sector" && this.outcome === null,
+      firing: input.fire,
+      moving: input.move.x !== 0 || input.move.y !== 0,
+      fullCharge: this.trigger.level === 3,
+      bossFighting: boss !== null && boss.state === "fighting" &&
+        bossArrived(boss),
+    }));
   }
 
   snapshot(): SimState {
@@ -759,6 +840,7 @@ export class NeonWardenSim implements Sim {
         grazed: false,
         closest: Infinity,
         nearMissed: false,
+        connected: false,
       });
     let count = 1;
     if (volley.shot === "aimed") {
@@ -786,6 +868,12 @@ export class NeonWardenSim implements Sim {
         round(x, vx, PLAYER.shotSpeed, PLAYER.shotRadius, 1);
       });
     }
+    this.statsTracker.volley(
+      volley.shot,
+      count,
+      volley.level,
+      !this.anythingAhead(p.x, muzzleY),
+    );
     this.events.push({
       type: "playerFired",
       tick: this.tick,
@@ -794,6 +882,16 @@ export class NeonWardenSim implements Sim {
       level: volley.level,
       pos: { x: p.x, y: muzzleY },
     });
+  }
+
+  /** Any scout or the Warden inside the gun's forward cone from (x, y). */
+  private anythingAhead(x: number, y: number): boolean {
+    const slope = Math.tan(STATS.mistConeHalfAngle);
+    const ahead = (tx: number, ty: number, radius: number) =>
+      ty < y && ty > -radius && Math.abs(tx - x) <= (y - ty) * slope + radius;
+    const boss = this.boss;
+    return this.enemies.some((e) => e.alive && ahead(e.x, e.y, e.radius)) ||
+      (boss !== null && ahead(boss.x, boss.y, BOSS.radius));
   }
 
   private hurtPlayer(): void {
@@ -867,6 +965,7 @@ export class NeonWardenSim implements Sim {
       for (const enemy of this.enemies) {
         if (!enemy.alive || shot.struck.includes(enemy.id)) continue;
         if (this.strikeEnemy(enemy, shot)) {
+          shot.connected = true;
           struck = true;
           break;
         }
@@ -1009,6 +1108,7 @@ export class NeonWardenSim implements Sim {
     this.score += enemy.score;
     this.kills++;
     if (this.phase !== "tutorial") this.pacifistIntact = false;
+    const practice = enemy.id === this.practiceTarget;
     this.events.push({
       type: "kill",
       tick: this.tick,
@@ -1018,6 +1118,7 @@ export class NeonWardenSim implements Sim {
       byRam: by === "ram",
       clean,
     });
+    if (practice) this.resolvePractice("destroyed");
     this.events.push(
       this.pay.earn(
         this.tick,
@@ -1081,6 +1182,7 @@ export class NeonWardenSim implements Sim {
       cancelled,
       first: this.firstTime("disarm"),
     });
+    if (enemy.id === this.practiceTarget) this.resolvePractice("disarmed");
     this.events.push(
       this.pay.earn(
         this.tick,
@@ -1104,6 +1206,7 @@ export class NeonWardenSim implements Sim {
     const hull = touches({ x: boss.x, y: boss.y, radius: BOSS.radius }, shot);
     if (!pod && !hull) return;
     shot.alive = false;
+    shot.connected = true;
     const open = bossArrived(boss) && !this.parley;
     // The stream pings off armored pods.
     const blocked = !open || (pod !== undefined && shot.shot === "stream");
@@ -1349,13 +1452,19 @@ export class NeonWardenSim implements Sim {
   // Bookkeeping.
 
   private cull(): void {
-    this.shots = this.shots.filter((s) => s.alive && !offscreen(s.x, s.y));
+    this.shots = this.shots.filter((s) => {
+      if (s.alive && !offscreen(s.x, s.y)) return true;
+      this.statsTracker.roundResolved(s.connected);
+      return false;
+    });
     this.bullets = this.bullets.filter((b) => b.alive && !offscreen(b.x, b.y));
     this.pickups = this.pickups.filter((p) => p.alive && !offscreen(p.x, p.y));
     // Enemies get 30 ticks of grace: lancers are born outside the walls.
+    let practiceEscaped = false;
     this.enemies = this.enemies.filter((e) => {
       if (!e.alive) return false;
       if (!(e.age > 30 && offscreen(e.x, e.y))) return true;
+      if (e.id === this.practiceTarget) practiceEscaped = true;
       if (e.disarmed) {
         this.events.push({
           type: "despawn",
@@ -1366,6 +1475,8 @@ export class NeonWardenSim implements Sim {
       }
       return false;
     });
+    // After the filter, so a re-issued target lands in the new list.
+    if (practiceEscaped) this.resolvePractice("escaped");
     // The withdrawing Warden is gone once it clears the top edge.
     if (this.boss?.state === "withdrawing" && this.boss.y < -BOSS.radius * 3) {
       this.boss = null;
@@ -1397,6 +1508,7 @@ export class NeonWardenSim implements Sim {
       grazed: false,
       closest: Infinity,
       nearMissed: false,
+      connected: false,
     });
   }
 
