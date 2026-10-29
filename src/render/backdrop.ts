@@ -32,10 +32,19 @@ export class Backdrop {
   private layers: StarLayer[] = [];
   private readonly pylons = new THREE.Group();
   private readonly floor: THREE.ShaderMaterial;
+  private readonly floorPlane: THREE.Mesh;
   private readonly railMats: THREE.MeshBasicMaterial[] = [];
   private readonly bandMats: THREE.MeshBasicMaterial[] = [];
   private scroll = 0;
   warp = 0;
+
+  /** Authored sector kits replace generic repeating pylons, not the lane rails. */
+  setWorldActive(active: boolean): void {
+    this.pylons.visible = !active;
+    // Keep an opaque contrast shield under combat, not over the diorama.
+    this.floorPlane.scale.set(active ? 13.2 / 90 : 1, active ? 25 / 110 : 1, 1);
+    this.floorPlane.position.z = active ? 0 : -18;
+  }
 
   constructor(starCount: number) {
     this.nebula = new THREE.ShaderMaterial({
@@ -78,6 +87,7 @@ export class Backdrop {
       },
     });
     const floor = new THREE.Mesh(new THREE.PlaneGeometry(90, 110), this.floor);
+    this.floorPlane = floor;
     floor.rotation.x = -Math.PI / 2;
     floor.position.set(0, FLOOR_Y, -18);
     floor.renderOrder = -5;

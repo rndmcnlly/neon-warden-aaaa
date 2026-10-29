@@ -30,6 +30,8 @@ import type {
   Vec2,
 } from "../contracts/index.ts";
 import { Backdrop } from "./backdrop.ts";
+import { SectorWorld } from "../world/environment.ts";
+import type { WorldLanguage } from "../world/lore.ts";
 import { BulletRenderer } from "./bullets.ts";
 import { ShotTrails } from "./shotTrails.ts";
 import { CameraRig, type RigShotId } from "./cameraRig.ts";
@@ -117,6 +119,11 @@ export interface Stage {
    */
   screenPositionOf(id: EntityId | string): { x: number; y: number } | null;
   stats(): StageStats;
+  /** Automatically archived environmental records, available to codex adapters. */
+  worldArchive(
+    language?: WorldLanguage,
+  ): { id: string; sector: number; text: string }[];
+  worldStats(): ReturnType<SectorWorld["stats"]>;
   readonly models: ModelRegistry;
   dispose(): void;
 }
@@ -225,6 +232,8 @@ export function createStage(
 
   const backdrop = new Backdrop(tier.starCount);
   scene.add(backdrop.group);
+  const sectorWorld = new SectorWorld();
+  scene.add(sectorWorld.group);
 
   const models = new ModelRegistry(options.modelBaseUrl ?? "models/");
   void models.preloadAll();
@@ -704,6 +713,7 @@ export function createStage(
         break;
       case "kill":
         whereIs(e.id, tmpV);
+        sectorWorld.flash(tmpV.x, tmpV.z);
         blast(tmpV.clone(), ENEMY_COLOR[e.kind], ENEMY_BLAST[e.kind].count);
         rig.addTrauma(ENEMY_BLAST[e.kind].trauma);
         break;
@@ -1089,12 +1099,34 @@ export function createStage(
     };
   }
 
+  // Read-only diagnostics, installed only for explicit QA sessions.
+  if (new URLSearchParams(globalThis.location.search).get("qa") === "1") {
+    Object.assign(globalThis, {
+      __nwWorld: {
+        stats: () => ({ ...sectorWorld.stats(), render: stats() }),
+        archive: (language?: WorldLanguage) =>
+          sectorWorld.archive.entries(language),
+      },
+    });
+  }
+
   return {
     models,
 
     observe(state, events = []) {
       interp.observe(state);
+      sectorWorld.observe(
+        state,
+        events.some((e) =>
+          e.type === "hit" || e.type === "partBreak" || e.type === "lifeLost"
+        ),
+      );
       for (const e of events) pending.push(e);
+      for (const e of events) {
+        if (e.type === "partBreak") {
+          sectorWorld.flash(simToWorldX(e.pos.x), simToWorldZ(e.pos.y));
+        }
+      }
     },
 
     render(dtMs, alpha = 1) {
@@ -1147,6 +1179,20 @@ export function createStage(
       rings.update(flashback ? dt * 0.15 : dt);
       backdrop.update(flashback ? dt * 0.1 : dt);
       rig.update(dtMs, ctx);
+      const worldSettings = options.settings?.get();
+      backdrop.setWorldActive(!!state && state.phase !== "tutorial");
+      sectorWorld.update(
+        dt,
+        rig.camera,
+        renderer.domElement.clientWidth,
+        renderer.domElement.clientHeight,
+        !tier.bloom,
+        rig.reduceMotion,
+        worldSettings?.textLang ?? "en",
+        !flashback && !activeProp && !hangarShip?.visible &&
+          rig.currentShot === "gameplay",
+        reducedFlashing,
+      );
 
       const flashNow = flashes.update(dtMs);
       post.render(timeSec, {
@@ -1236,8 +1282,11 @@ export function createStage(
     },
 
     stats,
+    worldArchive: (language) => sectorWorld.archive.entries(language),
+    worldStats: () => sectorWorld.stats(),
 
     dispose() {
+      sectorWorld.dispose();
       focusMarker.traverse((object) => {
         if (object instanceof THREE.Mesh) object.geometry.dispose();
       });
