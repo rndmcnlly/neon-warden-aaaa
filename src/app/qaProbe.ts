@@ -35,6 +35,11 @@ export interface QaProbe {
   readonly log: readonly string[];
   /** Last 200 sim events with their fields. */
   readonly events: readonly SimEvent[];
+  /**
+   * Last 400 per-shot events (`playerFired`, `hit`) with their fields, kept
+   * apart so they never flush `events`. Feedback evidence reads these.
+   */
+  readonly impacts: readonly SimEvent[];
 }
 
 declare global {
@@ -43,6 +48,7 @@ declare global {
 
 const LOG_LIMIT = 500;
 const EVENT_LIMIT = 200;
+const IMPACT_LIMIT = 400;
 const NOISY: ReadonlySet<SimEvent["type"]> = new Set(["playerFired", "hit"]);
 
 /** The game-side handle: record into the probe as things happen. */
@@ -63,6 +69,7 @@ export function installQaProbe(source: {
 }): QaRecorder {
   const log: string[] = [];
   const events: SimEvent[] = [];
+  const impacts: SimEvent[] = [];
   let flags: Record<string, boolean> = {};
   let shotsFired = 0;
   const push = <T>(list: T[], entry: T, limit: number) => {
@@ -94,11 +101,15 @@ export function installQaProbe(source: {
     flags: () => flags,
     log,
     events,
+    impacts,
   };
   return {
     simEvent(event) {
       if (event.type === "playerFired") shotsFired += event.shots;
-      if (NOISY.has(event.type)) return;
+      if (NOISY.has(event.type)) {
+        push(impacts, { ...event }, IMPACT_LIMIT);
+        return;
+      }
       push(log, `sim:${event.type}`, LOG_LIMIT);
       push(events, { ...event }, EVENT_LIMIT);
     },
