@@ -114,11 +114,11 @@ export const STRINGS = {
   },
   "about.where.v": {
     en:
-      "Desktop and phone browsers, designed for school Chromebooks too. It can be installed, and plays offline after you download it from the game's own settings.",
+      "Desktop and phone browsers, built with school Chromebooks in mind. Tested in emulated Chromebook and phone profiles, not yet on real devices. It can be installed, and plays offline after you download it from the game's own settings.",
     es:
-      "Navegadores de escritorio y de móvil, y pensado también para los Chromebooks escolares. Se puede instalar y funciona sin conexión después de descargarlo desde los ajustes del propio juego.",
+      "Navegadores de escritorio y de móvil, pensado también para los Chromebooks escolares. Probado en perfiles emulados de Chromebook y de móvil, todavía no en dispositivos reales. Se puede instalar y funciona sin conexión después de descargarlo desde los ajustes del propio juego.",
     zh:
-      "桌面和手机浏览器，也为学校的 Chromebook 做了设计。可以安装；在游戏自身的设置中下载后即可离线游玩。",
+      "桌面和手机浏览器，设计时也考虑了学校的 Chromebook。已在模拟的 Chromebook 和手机环境中测试，尚未在真实设备上测试。可以安装；在游戏自身的设置中下载后即可离线游玩。",
   },
   "about.who.k": { en: "Who made it", es: "Quién lo hizo", zh: "制作者" },
   "about.who.v": {
@@ -137,6 +137,124 @@ export const STRINGS = {
       "Esta página es también un ejemplo práctico para estudiantes de desarrollo de videojuegos. Cada tarjeta abre un breve relato con enlaces al código fuente.",
     zh:
       "本页面也是给游戏开发学生的一个完整示例。每张卡片都链接到一段简短说明，并附有源代码链接。",
+  },
+  "story.seed": {
+    en:
+      "It began as the starter code for a refactoring exercise in Adam's software engineering course: a deliberately messy little web shoot-'em-up. The question was what a AAAA adaptation of it would look like. This is where about a day of cooking and transagentic skill cultivation led: a meta vertical slice of next-gen AI-assisted game production.",
+    es:
+      "Empezó como el código inicial de un ejercicio de refactorización en el curso de ingeniería de software de Adam: un pequeño shoot-'em-up web, desordenado a propósito. La pregunta era cómo sería una adaptación AAAA. Aquí llevó más o menos un día de cocina y de cultivo transagéntico de habilidades: un meta corte vertical de la producción de videojuegos asistida por IA de nueva generación.",
+    zh:
+      "它最初是 Adam 软件工程课上一项重构练习的起始代码：一个故意写得很乱的小型网页射击游戏。问题是：它的 AAAA 改编版会是什么样子？大约一天的“烹饪”和跨智能体（transagentic）技能培养之后，答案就是这里：一个关于新一代 AI 辅助游戏制作的元垂直切片。",
+  },
+  "story.starter": {
+    en: "The original course starter",
+    es: "El código inicial del curso",
+    zh: "原始课程起始代码",
+  },
+  "story.more": {
+    en: "Read the full making-of",
+    es: "Leer el making-of completo",
+    zh: "阅读完整的制作记录",
+  },
+  "aaaa.cap": {
+    en: "AAAA, inverted. Left column: Stepico's comparison of AAAA games.",
+    es:
+      "AAAA, al revés. Columna izquierda: la comparación de juegos AAAA de Stepico.",
+    zh: "反转的 AAAA。左栏：Stepico 对 AAAA 游戏的比较。",
+  },
+  "aaaa.dim": { en: "Dimension", es: "Dimensión", zh: "维度" },
+  "aaaa.them": {
+    en: "AAAA per Stepico",
+    es: "AAAA según Stepico",
+    zh: "Stepico 所说的 AAAA",
+  },
+  "aaaa.us": {
+    en: "Neon Warden AAAA",
+    es: "Neon Warden AAAA",
+    zh: "Neon Warden AAAA",
+  },
+  "aaaa.budget.k": { en: "Budget", es: "Presupuesto", zh: "预算" },
+  "aaaa.budget.a": {
+    en: "$150M–$300M+",
+    es: "150–300+ millones de USD",
+    zh: "1.5 亿–3 亿美元以上",
+  },
+  "aaaa.budget.n": { en: "About $7", es: "Unos 7 USD", zh: "约 7 美元" },
+  "aaaa.time.k": { en: "Development", es: "Desarrollo", zh: "开发周期" },
+  "aaaa.time.a": { en: "5–8+ years", es: "5–8+ años", zh: "5–8 年以上" },
+  "aaaa.time.n": {
+    en: "About a day",
+    es: "Más o menos un día",
+    zh: "大约一天",
+  },
+  "aaaa.post.k": {
+    en: "After launch",
+    es: "Tras el lanzamiento",
+    zh: "发布之后",
+  },
+  "aaaa.post.a": {
+    en: "Continuous live service",
+    es: "Servicio en vivo continuo",
+    zh: "持续的在线运营",
+  },
+  "aaaa.post.n": {
+    en: "Archived, parked",
+    es: "Archivado, en pausa",
+    zh: "存档，停止开发",
+  },
+  "aaaa.plat.k": { en: "Platforms", es: "Plataformas", zh: "平台" },
+  "aaaa.plat.a": {
+    en: "Cross-platform ecosystem",
+    es: "Ecosistema multiplataforma",
+    zh: "跨平台生态",
+  },
+  "aaaa.plat.n": {
+    en: "Desktop, phone, Chromebook, offline",
+    es: "Escritorio, móvil, Chromebook, sin conexión",
+    zh: "桌面、手机、Chromebook、离线",
+  },
+  "aaaa.goal.k": { en: "Success", es: "Éxito", zh: "成功标准" },
+  "aaaa.goal.a": {
+    en: "Retention and monetization",
+    es: "Retención y monetización",
+    zh: "留存与变现",
+  },
+  "aaaa.goal.n": {
+    en: "One teachable moment in class",
+    es: "Un momento didáctico en clase",
+    zh: "课堂上的一个教学时刻",
+  },
+  "aaaa.ai.k": {
+    en: "AI pipeline",
+    es: "Producción con IA",
+    zh: "AI 制作流程",
+  },
+  "aaaa.ai.a": {
+    en: "A bullet point",
+    es: "Una viñeta más",
+    zh: "列表中的一项",
+  },
+  "aaaa.ai.n": {
+    en: "The whole point",
+    es: "Todo el sentido",
+    zh: "全部意义所在",
+  },
+  "aaaa.src": { en: "Source:", es: "Fuente:", zh: "来源：" },
+  "story.cost": {
+    en:
+      "Cost: about $7 in all. About $2.25 of it is metered API calls (blind AI judges and cloud sound effects), each logged in a public spend ledger; the rest is an estimated share of AI subscriptions.",
+    es:
+      "Coste: unos 7 USD en total. Unos 2,25 USD son llamadas a API medidas (jueces de IA a ciegas y efectos de sonido en la nube), cada una anotada en un registro público de gastos; el resto es una parte estimada de suscripciones de IA.",
+    zh:
+      "成本：总计约 7 美元。其中约 2.25 美元是按量计费的 API 调用（AI 盲评和云端音效），每一笔都记录在公开的支出账本中；其余是 AI 订阅费用中估算的分摊部分。",
+  },
+  "story.energy": {
+    en:
+      "Energy: the laptop used roughly 0.25–0.7 kWh over about 17 hours, an estimate, not a measurement. The larger share, cloud inference for the agents and judges, is not visible to us and was not measured.",
+    es:
+      "Energía: el portátil consumió más o menos 0,25–0,7 kWh en unas 17 horas, una estimación, no una medición. La parte mayor, la inferencia en la nube de los agentes y los jueces, no la podemos ver y no se midió.",
+    zh:
+      "能耗：笔记本电脑在约 17 小时内大约用了 0.25–0.7 千瓦时，这是估算，不是实测。更大的部分，即智能体和评审在云端的推理，我们看不到，也没有测量。",
   },
   "made.enOnly": {
     en: "",
@@ -252,6 +370,17 @@ export const STRINGS = {
       "Este sitio no usa cookies, no carga nada de otros sitios y no recoge datos. Tu elección de idioma se queda en esta pestaña del navegador.",
     zh:
       "本网站不设置 Cookie，不从其他网站加载任何内容，也不收集任何数据。你的语言选择只保存在当前浏览器标签页中。",
+  },
+  "foot.license": {
+    en: "Code: MIT. Art, audio and text: CC BY 4.0. Logo vectors: CC0.",
+    es:
+      "Código: MIT. Arte, audio y texto: CC BY 4.0. Vectores de los logotipos: CC0.",
+    zh: "代码：MIT。美术、音频和文本：CC BY 4.0。标志矢量图：CC0。",
+  },
+  "foot.notices": {
+    en: "Licenses and third-party notices",
+    es: "Licencias y avisos de terceros",
+    zh: "许可证与第三方声明",
   },
 } as const satisfies Record<string, Entry>;
 

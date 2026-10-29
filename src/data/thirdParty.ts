@@ -67,6 +67,16 @@ export const THIRD_PARTY: readonly ThirdPartyEntry[] = [
     note: "ui.licenses.note.stableAudio",
   },
   {
+    // The gameplay feel layer (impacts, weapons, whooshes) in public/sfx/:
+    // paid cloud generations through fal, commercial use of outputs granted
+    // by the paid terms. No seed, so these files cannot be regenerated.
+    name: "ElevenLabs Sound Effects v2 (via fal)",
+    role: "model",
+    license: "ElevenLabs paid-plan terms (commercial use of outputs)",
+    url: "https://elevenlabs.io/terms-of-use",
+    note: "ui.licenses.note.elevenLabs",
+  },
+  {
     // Every voice line is rendered locally with this model.
     name: "Qwen3-TTS (Alibaba Qwen)",
     role: "model",

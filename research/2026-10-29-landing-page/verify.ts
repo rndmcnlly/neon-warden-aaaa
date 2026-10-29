@@ -225,12 +225,45 @@ try {
     const urls: string[] = pack.files.map((f: { url: string }) => f.url);
     check("offline pack has the game page, not the landing page or media",
       urls.includes("play/index.html") && !urls.includes("index.html") &&
-        !urls.some((u) => u.startsWith("media/") || /^assets\/landing-/.test(u)));
+        !urls.some((u) => u.startsWith("media/") || /^assets\/landing-/.test(u) ||
+          u.startsWith("making-of/")));
     await page.goto(`${base}?qa=1&seed=7`);
     await page.waitForURL(/\/play\/\?qa=1&seed=7$/);
     check("old root links with game flags forward to play/", true, page.url());
     await page.goto(`${base}?lang=zh`);
     check("?lang= stays on the landing page", page.url() === `${base}?lang=zh`);
+    await ctx.close();
+  }
+
+  // The making-of write-up: reachable from the landing page, styled, local.
+  for (const v of [VIEWPORTS[0], VIEWPORTS[3]]) {
+    const ctx = await browser.newContext({
+      viewport: v.viewport, hasTouch: v.touch, isMobile: v.id === "phone",
+      deviceScaleFactor: v.id === "phone" ? 2 : 1,
+    });
+    const page = await ctx.newPage();
+    const w = watch(page);
+    await page.goto(base);
+    const more = page.locator('a[href="making-of/"]');
+    if (v.touch) await more.tap();
+    else await more.click();
+    await page.waitForURL(`${base}making-of/`);
+    await page.waitForLoadState("load");
+    const info = await page.evaluate(() => ({
+      overflow: document.documentElement.scrollWidth - innerWidth,
+      styled: getComputedStyle(document.body).overflowX === "hidden",
+      h1: document.querySelector("h1")?.textContent ?? "",
+      stepico: !!document.querySelector('a[href*="stepico.com"]'),
+    }));
+    check(`${v.id}: making-of opens from the landing page, styled, no overflow`,
+      info.styled && info.overflow <= 0 && info.h1.includes("Making of") &&
+        info.stepico, info);
+    check(`${v.id}: making-of has no errors, 404s or external requests`,
+      w.errors.length + w.failures.length + external(w.requests).length === 0,
+      [...w.errors, ...w.failures, ...external(w.requests)]);
+    await page.screenshot({
+      path: `${out}/shots/${v.id}-making-of.png`, fullPage: true, scale: "css",
+    });
     await ctx.close();
   }
 

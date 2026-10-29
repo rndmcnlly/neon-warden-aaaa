@@ -134,6 +134,47 @@ passes, not a diverse-model consensus and not human reviewers. Cost logged in
   runs" and section 03).
 - Night-verification folder committed and cleared before it is linked.
 
+## Story and audit pass (October 29, afternoon)
+
+What changed:
+
+- "How it was made" opens with the story from `docs/MAKING-OF-STORY.md` in
+  EN/ES/ZH: the e4-starter seed (linked), the AAAA question, "about a day of
+  cooking and transagentic skill cultivation", the meta-vertical-slice
+  framing, a six-row AAAA inversion table citing Stepico (April 10, 2026),
+  the cost line and the energy line with its unmeasured-remote caveat.
+- A longer English write-up at `making-of/` (third Vite entry,
+  `landing-making-of`, CSS only, no script; excluded from the offline pack
+  in `src/platform/build.ts`).
+- Audit TODOs cleared: footer license line (MIT code, CC BY 4.0 content, CC0
+  logo vectors) linking the README's licensing and third-party notices;
+  section 04 model list matches `src/ui/creditsRoll.ts` with the handoff
+  note; "Where it runs" and section 03 now say tested in emulated Chromebook
+  and phone profiles, not yet on real devices.
+- Repository URL: local builds link to an obviously fake
+  `PLACEHOLDER-public-repo-not-created-yet` owner; the Pages workflow passes
+  the real `REPO_URL` from the GitHub context.
+- ElevenLabs Sound Effects v2 (via fal) added to `src/data/thirdParty.ts`
+  with an EN/ES/ZH note; the README no longer says it is missing.
+
+Open, for Adam:
+
+- Cost breakdown. `docs/MAKING-OF-STORY.md` has no cost section (commit
+  `6205db2` names "about $7 incl. subscription share" only in its message).
+  The page says about $7 total, about $2.25 metered (sum of
+  `research/SPEND.md`: OpenRouter $2.01, fal $0.24, Tinfoil $0.01), the rest
+  an estimated subscription share. Confirm or supply the exact breakdown
+  (`TODO(Adam)` comments in both pages).
+- The story table's Budget cell says "tens of dollars of API calls"; the
+  ledger shows about $2.25, so the pages say "about $7" instead.
+- Night-verification link TODO remains (reels still untracked).
+
+Verification: `verify.ts` 62 of 62 (adds making-of on desktop and phone,
+offline pack excludes `making-of/`), `out/verify.json`; unit tests 303 pass;
+lint, check and build pass; `fmt --check` fails only on three trailer-agent
+files. Shots: `shots/desktop-story.jpg`, `desktop-full.jpg`,
+`phone-full.jpg`, `*-making-of.jpg`, `phone-es-fold.jpg`, `phone-zh-fold.jpg`.
+
 ## Next step
 
 Refresh `public/media/teaser30-en-draft.mp4` and the poster when the trailer

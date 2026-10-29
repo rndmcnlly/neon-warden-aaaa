@@ -30,6 +30,8 @@ jobs:
         run: deno task ci
         env:
           REPO_NAME: ${{ github.event.repository.name }}
+          # The landing page's evidence links (vite.config.ts, REPO_URL).
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

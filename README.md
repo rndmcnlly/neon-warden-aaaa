@@ -62,7 +62,7 @@ from `src/data/thirdParty.ts`; this section mirrors it.
 - **ElevenLabs SFX v2**, called through fal (paid): the gameplay feel layer
   (impacts, weapons, whooshes) in `public/sfx/`, generated under paid-plan
   terms that grant commercial use of outputs. These are not reproducible (no
-  seed). This entry is not yet in `src/data/thirdParty.ts`.
+  seed).
 
 ## History
 

@@ -1,7 +1,7 @@
 {
-  "when": "2026-10-29T18:52:48.310Z",
+  "when": "2026-10-29T19:11:00.284Z",
   "base": "http://127.0.0.1:4329/neon-warden-aaaa/",
-  "passed": 58,
+  "passed": 62,
   "failed": 0,
   "results": [
     {
@@ -295,20 +295,50 @@
       "ok": true
     },
     {
+      "name": "desktop: making-of opens from the landing page, styled, no overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "styled": true,
+        "h1": "Making of Neon Warden AAAA",
+        "stepico": true
+      }
+    },
+    {
+      "name": "desktop: making-of has no errors, 404s or external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "phone: making-of opens from the landing page, styled, no overflow",
+      "ok": true,
+      "detail": {
+        "overflow": 0,
+        "styled": true,
+        "h1": "Making of Neon Warden AAAA",
+        "stepico": true
+      }
+    },
+    {
+      "name": "phone: making-of has no errors, 404s or external requests",
+      "ok": true,
+      "detail": []
+    },
+    {
       "name": "throttled first load under 150 KB transferred",
       "ok": true,
       "detail": {
-        "lcpMs": 564,
-        "domContentLoadedMs": 552,
-        "loadMs": 552,
-        "domNodes": 310,
-        "transferredBytes": 61037
+        "lcpMs": 644,
+        "domContentLoadedMs": 629,
+        "loadMs": 629,
+        "domNodes": 360,
+        "transferredBytes": 73313
       }
     },
     {
       "name": "throttled LCP under 2.5 s",
       "ok": true,
-      "detail": 564
+      "detail": 644
     }
   ]
 }

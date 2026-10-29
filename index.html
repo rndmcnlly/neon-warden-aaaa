@@ -121,12 +121,14 @@
           </div>
           <div>
             <dt data-t="about.where.k">Where it runs</dt>
-            <!-- TODO(public-repo audit): confirm physical phone and Chromebook
-                 testing before strengthening "designed for" to "tested on". -->
+            <!-- Honest scope (audit, October 29): automated checks ran in
+                 emulated Chromebook and phone profiles on a Mac; no real
+                 Chromebook has run it yet. Update once one has. -->
             <dd data-t="about.where.v">
-              Desktop and phone browsers, designed for school Chromebooks too.
-              It can be installed, and plays offline after you download it
-              from the game's own settings.
+              Desktop and phone browsers, built with school Chromebooks in mind.
+              Tested in emulated Chromebook and phone profiles, not yet on real
+              devices. It can be installed, and plays offline after you
+              download it from the game's own settings.
             </dd>
           </div>
           <div>
@@ -146,6 +148,91 @@
           This page is also a worked example for game-development students.
           Each card opens a short account with links to the source.
         </p>
+        <div class="story">
+          <p data-t="story.seed">
+            It began as the starter code for a refactoring exercise in Adam's
+            software engineering course: a deliberately messy little web
+            shoot-'em-up. The question was what a AAAA adaptation of it would
+            look like. This is where about a day of cooking and transagentic
+            skill cultivation led: a meta vertical slice of next-gen
+            AI-assisted game production.
+          </p>
+          <p class="story-links">
+            <a href="https://github.com/ucsc-cmpm-121-f26/e4-starter"
+              data-t="story.starter">The original course starter</a>
+            <a href="making-of/" data-t="story.more">Read the full making-of</a>
+          </p>
+          <div class="aaaa">
+            <table>
+              <caption data-t="aaaa.cap">
+                AAAA, inverted. Left column: Stepico's comparison of AAAA
+                games.
+              </caption>
+              <thead>
+                <tr>
+                  <th
+                    scope="col"><span class="sr" data-t="aaaa.dim">Dimension</span></th>
+                  <th scope="col" data-t="aaaa.them">AAAA per Stepico</th>
+                  <th scope="col" data-t="aaaa.us">Neon Warden AAAA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" data-t="aaaa.budget.k">Budget</th>
+                  <td data-t="aaaa.budget.a">$150M–$300M+</td>
+                  <td data-t="aaaa.budget.n">About $7</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-t="aaaa.time.k">Development</th>
+                  <td data-t="aaaa.time.a">5–8+ years</td>
+                  <td data-t="aaaa.time.n">About a day</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-t="aaaa.post.k">After launch</th>
+                  <td data-t="aaaa.post.a">Continuous live service</td>
+                  <td data-t="aaaa.post.n">Archived, parked</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-t="aaaa.plat.k">Platforms</th>
+                  <td data-t="aaaa.plat.a">Cross-platform ecosystem</td>
+                  <td
+                    data-t="aaaa.plat.n">Desktop, phone, Chromebook, offline</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-t="aaaa.goal.k">Success</th>
+                  <td data-t="aaaa.goal.a">Retention and monetization</td>
+                  <td data-t="aaaa.goal.n">One teachable moment in class</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-t="aaaa.ai.k">AI pipeline</th>
+                  <td data-t="aaaa.ai.a">A bullet point</td>
+                  <td data-t="aaaa.ai.n">The whole point</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="ev">
+              <span data-t="aaaa.src">Source:</span>
+              <a
+                href="https://stepico.com/blog/what-are-aaaa-games/">Stepico, "What Are AAAA Games?" (April 10, 2026)</a>
+            </p>
+          </div>
+          <!-- Cost: the total is Adam's figure (commit 6205db2, "about $7 incl.
+               subscription share"); the metered part is the sum of
+               research/SPEND.md on October 29 (OpenRouter $2.01, fal $0.24,
+               Tinfoil $0.01). TODO(Adam): confirm the subscription-share
+               breakdown; docs/MAKING-OF-STORY.md does not record it yet. -->
+          <p class="tally" data-t="story.cost">
+            Cost: about $7 in all. About $2.25 of it is metered API calls
+            (blind AI judges and cloud sound effects), each logged in a public
+            spend ledger; the rest is an estimated share of AI subscriptions.
+          </p>
+          <p class="tally" data-t="story.energy">
+            Energy: the laptop used roughly 0.25–0.7 kWh over about 17 hours,
+            an estimate, not a measurement. The larger share, cloud inference
+            for the agents and judges, is not visible to us and was not
+            measured.
+          </p>
+        </div>
         <p class="en-only" data-t="made.enOnly" hidden></p>
         <ol class="cards">
           <li><a href="#m-slice"><span class="card-n">01</span><strong data-t="c1.t">A slice is an argument</strong><span data-t="c1.s">What is built, what is honestly stubbed, and what was cut.</span></a></li>
@@ -310,8 +397,13 @@
               that express the full fire verb, and a low graphics tier for
               school Chromebooks.
             </p>
-            <!-- TODO(public-repo audit): confirm what "school Chromebook" testing
-                 has actually happened before adding device names or frame rates. -->
+            <p>
+              <b>What was tested.</b> Automated browser checks ran in emulated
+              Chromebook-sized (touch) and phone profiles on a Mac, plus a
+              throttled low-end proxy. None of that is a real device: it has
+              not yet been tested on real Chromebooks or phones, so this page
+              names no device or frame rate.
+            </p>
             <p>
               <b>What went wrong.</b> Mobile, touch and school-device support
               arrived late, after the desktop front end, which is the reverse of
@@ -332,18 +424,24 @@
             <h3>04 Two kinds of AI</h3>
             <p>
               Generative AI did two different jobs here, and they should not be
-              confused. <b>Frontier models in the cloud</b> (Claude Opus 5.5,
-              with GPT-6.1 Sol for one segment while a usage window was
-              exhausted) acted as production
+              confused. <b>Frontier models in the cloud</b> acted as production
               orchestration and implementation agents: planning, dispatching
               parallel workers with file-scoped ownership, writing the code,
-              tests, tools and documentation. <b>Mostly local models</b> on a
-              laptop made assets: Qwen3-TTS for voices, Qwen3-ASR to check
-              them, Stable Audio 3 for music. A few gameplay sound effects came
-              from a cloud model (ElevenLabs Sound Effects via fal). Auxiliary
-              roles: Gemini 4 Argon as a blind audiovisual judge with zero data
-              retention, and small models (GLM-5.3-Flash, DeepSeek V4.1 Flash)
-              for research summaries and compressing agent instructions.
+              tests, tools and documentation. That was mostly Claude Opus 5.5
+              (Anthropic). For one segment the work moved to GPT-6.1 Sol
+              (OpenAI) because Adam's Claude subscription hit its 5-hour usage
+              window, a window spent largely on an unrelated project running in
+              parallel; then it returned to Claude. The credits name both
+              models rather than implying one did everything.
+              <b>Mostly local models</b> on a laptop made assets: Qwen3-TTS for
+              every voice line, Qwen3-ASR to check renders against the script,
+              Stable Audio 3 for music and interface sounds. The gameplay
+              impact and weapon sounds came from a cloud model (ElevenLabs
+              Sound Effects via fal, paid). Auxiliary roles: Gemini 4 Argon as
+              a blind audiovisual judge with zero data retention, and small
+              models (DeepSeek V4.1 Flash, GLM-5.3-Flash) for research summaries
+              and compressing agent instructions. A few other models appear in
+              early trials; the spend ledger lists every paid call.
             </p>
             <figure class="diagram">
               <svg viewBox="0 0 720 280" role="img" aria-labelledby="d2-t d2-d">
@@ -390,8 +488,6 @@
               redirected the work were Adam's. The credits say "Adam Smith, and
               his coupled agents", and name each model's role.
             </p>
-            <!-- TODO(public-repo audit): clear the exact model list and roles
-                 against commit history before publishing. -->
             <p>
               <b>What went wrong.</b> Agents that re-read large sources burned
               through context; one shared status file was truncated by a
@@ -402,7 +498,8 @@
               Evidence:
               <a href="%REPO_URL%/blob/main/src/ui/creditsRoll.ts">src/ui/creditsRoll.ts</a>,
               <a href="%REPO_URL%/blob/main/docs/SKILLS.md">docs/SKILLS.md</a>,
-              <a href="%REPO_URL%/blob/main/docs/INTEGRATION-QUEUE.md">docs/INTEGRATION-QUEUE.md</a>.
+              <a href="%REPO_URL%/blob/main/docs/INTEGRATION-QUEUE.md">docs/INTEGRATION-QUEUE.md</a>,
+              <a href="%REPO_URL%/blob/main/research/SPEND.md">research/SPEND.md</a> (spend ledger).
             </p>
           </article>
 
@@ -549,8 +646,12 @@
         This site sets no cookies, loads nothing from other sites and collects
         no data. Your language choice stays in this browser tab.
       </p>
-      <!-- TODO(public-repo audit): add licence lines once code, art and audio
-           licences are cleared. -->
+      <p>
+        <span
+          data-t="foot.license">Code: MIT. Art, audio and text: CC BY 4.0. Logo vectors: CC0.</span>
+        <a href="%REPO_URL%/blob/main/README.md#licensing"
+          data-t="foot.notices">Licenses and third-party notices</a>
+      </p>
       <p class="mono build">%BUILD_STAMP%</p>
     </footer>
     <script type="module" src="/src/landing/main.ts"></script>

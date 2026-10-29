@@ -1327,10 +1327,18 @@ export const UI_STRINGS = {
   },
   "ui.licenses.note.stableAudio": {
     en:
-      "Generated the music and sound effects. Outputs are used under the model license.",
+      "Generated the music and the interface sound effects. Outputs are used under the model license.",
     es:
-      "Generó la música y los efectos de sonido. Los resultados se usan conforme a la licencia del modelo.",
-    zh: "生成了音乐与音效。生成结果依照该模型的许可证使用。",
+      "Generó la música y los efectos de sonido de la interfaz. Los resultados se usan conforme a la licencia del modelo.",
+    zh: "生成了音乐与界面音效。生成结果依照该模型的许可证使用。",
+  },
+  "ui.licenses.note.elevenLabs": {
+    en:
+      "Generated the gameplay impact and weapon sounds in the cloud (paid). Outputs are used under its paid terms; they cannot be regenerated.",
+    es:
+      "Generó en la nube (de pago) los sonidos de impactos y armas del juego. Los resultados se usan conforme a sus condiciones de pago; no se pueden regenerar.",
+    zh:
+      "在云端（付费）生成了游戏中的撞击与武器音效。生成结果依照其付费条款使用，无法重新生成。",
   },
   "ui.licenses.note.qwenTts": {
     en: "Rendered every voice line locally.",

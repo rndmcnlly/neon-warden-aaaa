@@ -2,10 +2,12 @@ import { offlinePlugin } from "./src/platform/build.ts";
 
 const repoName = Deno.env.get("REPO_NAME");
 
-// Where the landing page's "Read the source" links point.
-// TODO(public-repo audit): confirm the public repository's owner and name.
+// Where the landing page's evidence and "Read the source" links point. The
+// Pages workflow passes the real repository's address. PLACEHOLDER: the
+// public repository does not exist yet (Adam creates it), so local builds
+// link to an obviously fake owner rather than guessing a real-looking URL.
 const REPO_URL = Deno.env.get("REPO_URL") ??
-  `https://github.com/rndmcnlly/${repoName ?? "neon-warden-aaaa"}`;
+  "https://github.com/PLACEHOLDER-public-repo-not-created-yet/neon-warden-aaaa";
 
 /** A short build line for the landing page footer: revision when known. */
 function buildStamp(): string {
@@ -40,7 +42,8 @@ export default {
   // A hosted build under a subpath (for example a GitHub Pages repository)
   // supplies its name here; local development serves from the root.
   base: repoName ? `/${repoName}/` : "/",
-  // Two pages: the landing page at the site root and the game at play/.
+  // Three pages: the landing page at the site root, its making-of write-up at
+  // making-of/, and the game at play/.
   appType: "mpa",
   server: {
     port: 3000,
@@ -60,7 +63,11 @@ export default {
     rolldownOptions: {
       // Entry names become asset names (assets/landing-*.js), which is how
       // src/platform/build.ts keeps the landing page out of the offline pack.
-      input: { landing: "index.html", play: "play/index.html" },
+      input: {
+        landing: "index.html",
+        "landing-making-of": "making-of/index.html",
+        play: "play/index.html",
+      },
     },
   },
 };

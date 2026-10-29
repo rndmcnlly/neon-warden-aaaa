@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#070c12" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="How Neon Warden AAAA was made: a course starter, one question, about a day of agent orchestration, and an honest account of cost, energy and who did what."
+    />
+    <title>Making of Neon Warden AAAA</title>
+    <link rel="icon" href="%BASE_URL%icons/icon-192.png" />
+    <!-- Shares the landing page's stylesheet; no script, English only. Kept
+         out of the game's offline pack (src/platform/build.ts). -->
+    <link rel="stylesheet" href="/src/landing/landing.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <p class="bar-brand">
+        <a href="../">Neon Warden</a>
+        <span class="bar-sep" aria-hidden="true">/</span>
+        <span>Making of</span>
+      </p>
+      <p class="bar-brand"><a href="../play/">Play</a></p>
+    </header>
+
+    <main class="made">
+      <div class="deep">
+        <article>
+          <h1 class="writeup-h">Making of Neon Warden AAAA</h1>
+          <p class="ev">
+            Written October 29, 2026, from
+            <a href="%REPO_URL%/blob/main/docs/MAKING-OF-STORY.md">docs/MAKING-OF-STORY.md</a>,
+            the story Adam approved. The landing page has the short version.
+          </p>
+        </article>
+
+        <article id="seed">
+          <h3>The seed</h3>
+          <p>
+            Adam had just written the starter code for a refactoring exercise
+            sequence in his software engineering course (CMPM 121, UC Santa
+            Cruz): a deliberately messy little web shoot-'em-up in Phaser,
+            small and intentionally smelly, so students have something worth
+            refactoring. It is public:
+            <a href="https://github.com/ucsc-cmpm-121-f26/e4-starter">ucsc-cmpm-121-f26/e4-starter</a>,
+            and a read-only copy lives in this repository under
+            <code>reference/e4-starter/</code>.
+          </p>
+        </article>
+
+        <article id="question">
+          <h3>The question</h3>
+          <p>
+            What would a AAAA adaptation of this silly example shmup look like,
+            honestly, as a vertical slice: the thing a studio shows publishers
+            and funders to argue that a game should exist, not a product for
+            consumers? Neon Warden AAAA is where that led after about a day of
+            cooking and transagentic skill cultivation: the human and the
+            agents forming one acting entity, each round leaving behind
+            reusable practice (repo-local skills, QA tooling, judge workflows).
+          </p>
+          <p>
+            Adam's framing: a <b>meta vertical slice of next-gen AI-assisted
+            game production</b>. A vertical slice communicates a future game to
+            funders; this one communicates a future way of making games to
+            students, while showing how a label like AAAA measures capital
+            rather than craft.
+          </p>
+          <p class="ev">
+            Timeline, for any claim: first commit 2026-10-28 18:17, about 150
+            commits through 2026-10-29 midday (roughly 17 hours of wall-clock
+            time, including an overnight unattended run). Earlier exploration
+            happened in a separate course workspace on October 28.
+          </p>
+        </article>
+
+        <article id="aaaa">
+          <h3>Where "AAAA" fits</h3>
+          <p>
+            Stepico's explainer calls AAAA an unofficial, often self-assigned
+            marketing label and compares AAA and AAAA games on five dimensions.
+            Neon Warden AAAA inverts nearly all of them. Only one axis is
+            pushed to the extreme, and it is not in their table but in a bullet
+            on AI-assisted content generation.
+          </p>
+          <div class="aaaa">
+            <table>
+              <caption>
+                Left column: Stepico, "What Are AAAA Games?", April 10, 2026.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Dimension</th>
+                  <th scope="col">AAAA per Stepico</th>
+                  <th scope="col">Neon Warden AAAA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Budget</th>
+                  <td>$150M–$300M+</td>
+                  <td>almost nothing: about $7 all in (below)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Development cycle</th>
+                  <td>5–8+ years</td>
+                  <td>about a day</td>
+                </tr>
+                <tr>
+                  <th scope="row">Post-launch model</th>
+                  <td>continuous live service</td>
+                  <td>static archival (parked)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Platform scope</th>
+                  <td>cross-platform ecosystem</td>
+                  <td>broad: desktop, mobile, Chromebook, offline web app (affordable because the other dimensions were cut)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Success metric</th>
+                  <td>long-term retention and monetization</td>
+                  <td>one teachable moment in class</td>
+                </tr>
+                <tr>
+                  <th scope="row">AI-assisted production</th>
+                  <td>a bullet point</td>
+                  <td>the whole point: orchestrated agents, local asset inference, judge panels</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="ev">
+              Source:
+              <a href="https://stepico.com/blog/what-are-aaaa-games/">stepico.com/blog/what-are-aaaa-games/</a>
+            </p>
+          </div>
+        </article>
+
+        <article id="method">
+          <h3>The method</h3>
+          <p>
+            A main agent session orchestrated background workers, each owning
+            named files, with contracts pinned before code. Local models made
+            the assets. Judge panels were primed with concerns drawn from cited
+            web sources. Short QA reels with real audio served as dailies, and
+            blind checks sometimes said a night of fixes had made things worse
+            (the judge preferred the <i>before</i> build in 7 of 10 pairs; we
+            cut the change and did not claim an improvement).
+          </p>
+        </article>
+
+        <article id="cultivation">
+          <h3>The cultivation</h3>
+          <p>
+            Failures became written rules for the next agents: write shared
+            files atomically (a status file was once truncated by a concurrent
+            write), review blind before revealing the truth, and vary the
+            written brief rather than the random seed when you want real
+            alternatives. These live as repo-local skills in
+            <code>.opencode/skills/</code>, with their evidence in
+            <a href="%REPO_URL%/blob/main/docs/SKILLS.md">docs/SKILLS.md</a>.
+          </p>
+        </article>
+
+        <article id="who">
+          <h3>Who did what</h3>
+          <p>
+            <b>Adam Smith</b> directed: story, scope cuts, casting by ear in
+            context, playtests and every final call. The credits read "Adam
+            Smith, and his coupled agents".
+          </p>
+          <p>
+            <b>Agents.</b> Orchestration and implementation ran mostly on
+            Claude Opus 5.5 (Anthropic). For a segment, work moved to GPT-6.1
+            Sol (OpenAI) because the Claude subscription hit its 5-hour usage
+            window; that window was exhausted largely by an unrelated,
+            ambitious project running in parallel, not by Neon Warden alone.
+            Work then returned to Claude. The credits name both models.
+          </p>
+          <p>
+            <b>Judge and small passes.</b> Gemini 4 Argon (Google) through
+            OpenRouter, with zero data retention required, as the blind
+            audiovisual judge. DeepSeek V4.1 Flash and GLM-5.3-Flash for
+            research summaries and compressing agent instructions.
+          </p>
+          <p>
+            <b>Asset models.</b> Local on one laptop: Qwen3-TTS for every voice
+            line, Qwen3-ASR to check renders against the script, Stable Audio 3
+            for music and interface sounds. In the cloud: ElevenLabs Sound
+            Effects v2 via fal (paid) for gameplay impacts and weapons; those
+            files cannot be regenerated, so they are committed.
+          </p>
+          <p class="ev">
+            <a href="%REPO_URL%/blob/main/src/ui/creditsRoll.ts">src/ui/creditsRoll.ts</a>,
+            <a href="%REPO_URL%/blob/main/src/data/thirdParty.ts">src/data/thirdParty.ts</a>.
+          </p>
+        </article>
+
+        <article id="cost">
+          <h3>Cost</h3>
+          <!-- TODO(Adam): confirm the subscription-share breakdown; the total
+               is from commit 6205db2, the metered sum from research/SPEND.md. -->
+          <p>
+            About $7 in all. About $2.25 of it is metered API calls, every one
+            logged in the public spend ledger: OpenRouter (mostly blind judge
+            passes) about $2.01, fal (cloud sound effects) about $0.24, and a
+            cent of attested-enclave inference. The rest is an estimated share
+            of AI subscriptions, which do not bill per project.
+          </p>
+          <p class="ev">
+            <a
+              href="%REPO_URL%/blob/main/research/SPEND.md">research/SPEND.md</a>
+          </p>
+        </article>
+
+        <article id="energy">
+          <h3>Energy, roughly</h3>
+          <p>
+            Adam's laptop (MacBook Pro M3 Max) had its heaviest day of CPU and
+            GPU use ever, but with a low duty cycle: peaks near 120 W during
+            local inference (voices, speech checks, music, Blender, frame-stepped
+            captures) against about 8 W while idle, waiting on remote inference
+            or on human review. Over roughly 17 hours, any plausible average
+            between 15 and 40 W puts local energy at about 0.25–0.7 kWh. That
+            is an order-of-magnitude estimate, not a measurement.
+          </p>
+          <p>
+            The larger share is invisible from here: datacenter inference for
+            the orchestration agents and judges, which this project cannot
+            measure. So these local watts are not the footprint.
+          </p>
+        </article>
+
+        <article id="result">
+          <h3>The result, and its licenses</h3>
+          <p>
+            A parked, pedagogical artifact students can read, play and
+            question: a static site with nothing to keep alive. Code is MIT;
+            art, audio and text are CC BY 4.0; the logo vectors are CC0. Third
+            party software, fonts and models are listed in the README and in
+            the game (Extras, Third-Party Licenses).
+          </p>
+          <p class="ev">
+            <a href="%REPO_URL%/blob/main/README.md#licensing">README: licensing and third-party notices</a>,
+            <a href="%REPO_URL%">source repository</a>.
+          </p>
+          <p><a class="more" href="../">Back to Neon Warden</a></p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <p>
+        Neon Warden by Adam Smith, and his coupled agents. adamsmith.systems
+        and CM121 are fictional. This page sets no cookies and loads nothing
+        from other sites.
+      </p>
+      <p class="mono build">%BUILD_STAMP%</p>
+    </footer>
+  </body>
+</html>

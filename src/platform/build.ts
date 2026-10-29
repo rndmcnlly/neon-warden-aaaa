@@ -28,6 +28,7 @@ export function offlinePlugin(): Plugin {
             // The landing page (site root) is not part of the game's pack:
             // its HTML, its own scripts/styles and its on-demand teaser media.
             name !== "index.html" &&
+            !name.startsWith("making-of/") &&
             !/^assets\/landing-[^/]+$/.test(name) &&
             !name.startsWith("media/") &&
             !name.endsWith(".DS_Store") &&
