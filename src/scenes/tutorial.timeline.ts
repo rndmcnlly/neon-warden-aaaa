@@ -79,8 +79,10 @@ export const tutorial: Timeline = {
     setFlag(FLAGS.tutSpawnTurret),
     ...say("tut_parts_001"),
     waitFlag(FLAGS.tutPartBroken, nudge),
-    ...say("tut_disarm_001"),
+    // Off at once: the disarmed turret flies away under the next line, and
+    // the sim would otherwise issue a fresh one (see Sim.practiceTurretLost).
     setFlag(FLAGS.tutSpawnTurret, false),
+    ...say("tut_disarm_001"),
 
     // Module 7: clearance (graze).
     setFlag(FLAGS.tutGrazeDrill),

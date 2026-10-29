@@ -261,8 +261,10 @@ export class NeonWardenSim implements Sim {
   private grazeDrillWanted = false;
   private readonly statsTracker = new PlayerStats();
   private practiceTurret: EntityId | null = null;
-  /** `tut.spawnTurret` is on: a turret destroyed before it was disarmed
-   * comes back, or the parts drill (break the barrel) could never pass. */
+  /** `tut.spawnTurret` is on: a turret that leaves play comes back, or the
+   * parts drill could never pass. That includes one disarmed too early: a
+   * barrel broken during the drill's own explanation does not count (the
+   * gate wants a fresh action), and the disarmed turret then flies off. */
   private practiceTurretWanted = false;
   private practiceTurretRespawnAt: Tick | null = null;
   private events: SimEvent[] = [];
@@ -366,9 +368,9 @@ export class NeonWardenSim implements Sim {
     });
   }
 
-  /** The practice turret left play with its barrel whole: issue another. */
+  /** The practice turret left play (destroyed or flown off): issue another. */
   private practiceTurretLost(enemy: Enemy): void {
-    if (enemy.id !== this.practiceTurret || enemy.disarmed) return;
+    if (enemy.id !== this.practiceTurret) return;
     this.practiceTurret = null;
     if (this.practiceTurretWanted) {
       this.practiceTurretRespawnAt = this.tick + PRACTICE_RESPAWN_TICKS;

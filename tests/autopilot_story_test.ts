@@ -38,8 +38,23 @@ function flatten(cues: readonly Cue[]): Cue[] {
   );
 }
 
-/** Walks the tutorial; returns the gates cleared in order and their ticks. */
-function walkTutorial(pilot: Pilot, weapon: WeaponPackageId = "standard") {
+const CUES: Record<
+  string,
+  { langs: Record<string, { duration: number }> }
+> = JSON.parse(
+  Deno.readTextFileSync(new URL("../public/vo/cues.json", import.meta.url)),
+).lines;
+
+/**
+ * Walks the tutorial; returns the gates cleared in order and their ticks.
+ * Lines take their rendered length in `lang`, because language changes
+ * where the sim is when each drill opens (the ES and ZH stall below).
+ */
+function walkTutorial(
+  pilot: Pilot,
+  weapon: WeaponPackageId = "standard",
+  lang = "en",
+) {
   const sim = createSim({
     seed: 121,
     start: { kind: "tutorial" },
@@ -65,7 +80,13 @@ function walkTutorial(pilot: Pilot, weapon: WeaponPackageId = "standard") {
   };
   for (const cue of flatten(tutorial.cues)) {
     if (cue.type === "say" && cue.line === "tut_wink_001") reachedWink = true;
-    if (cue.type === "say") { for (let i = 0; i < 30; i++) step(); }
+    if (cue.type === "say") {
+      const seconds = CUES[cue.line]?.langs[lang]?.duration ?? 1;
+      for (let i = 0; i < Math.round(seconds * 60); i++) step();
+    }
+    if (cue.type === "wait" && "ms" in cue) {
+      for (let i = 0; i < Math.round(cue.ms * 0.06); i++) step();
+    }
     if (cue.type === "setFlag") {
       cue.value ? flags.add(cue.flag) : flags.delete(cue.flag);
       sim.setStoryFlag(cue.flag, cue.value);
@@ -86,11 +107,20 @@ function walkTutorial(pilot: Pilot, weapon: WeaponPackageId = "standard") {
   return { cleared, stalledAt: null, reachedWink };
 }
 
-Deno.test("fighting autopilot clears every tutorial gate to the wink", () => {
-  const walk = walkTutorial(withTutorialDemo(new FightingAutopilot()));
-  assertEquals(walk.stalledAt, null, JSON.stringify(walk.cleared));
-  assert(walk.reachedWink);
-});
+// ES and ZH used to stall at the parts drill: the long explanation let the
+// autopilot break the barrel before the gate opened (it wants a fresh
+// action), and the disarmed turret flew off and was never re-issued.
+for (const lang of ["en", "es", "zh"]) {
+  Deno.test(`fighting autopilot reaches the wink in ${lang}`, () => {
+    const walk = walkTutorial(
+      withTutorialDemo(new FightingAutopilot()),
+      "standard",
+      lang,
+    );
+    assertEquals(walk.stalledAt, null, JSON.stringify(walk.cleared));
+    assert(walk.reachedWink);
+  });
+}
 
 Deno.test("the rest drill passes on the slowest-charging weapon too", () => {
   const walk = walkTutorial(
