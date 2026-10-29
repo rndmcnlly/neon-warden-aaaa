@@ -66,3 +66,5 @@ Creative-review reconciliation: **US $0.117510**, one call, no syntax-repair ret
 | 2026-10-29 | warden-defeat blind clip-4 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0244 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
 | 2026-10-29 | warden-defeat blind clip-5 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0263 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
 | 2026-10-29 | warden-defeat blind clip-6 | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0258 | previous OpenRouter total + this row; see research/2026-10-29-warden-defeat/judge/ |
+| 2026-10-29 | trailer-prep web page summaries (23 pages) | OpenCode Go (subscription) | glm-5.3-flash | 23 | 0.0000 | not metered against the OpenRouter or fal budgets; research/2026-10-29-trailer-prep/ |
+| 2026-10-29 | trailer-prep judge panel (scout, editor, QA lead; text only) | OpenCode Go (subscription) | gemini-4-argon, kimi-k3.1-pro, glm-5.3 | 3 | 0.0000 | not metered; trailer budget US $0.50 untouched; research/2026-10-29-trailer-prep/README.md section 3 |

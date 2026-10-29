@@ -1,0 +1,137 @@
+# Neon Warden: 30 s teaser (cut sheet, data only).
+#
+# Concept: the Warden in three moves, compressed. Gameplay from frame 0
+# (scene lift), the Lane Authority briefing voice hypes the Warden over play,
+# the music stops dead and the real Warden squeaks "STOP!", title on the
+# music's re-entry, one line of doubt, end slate.
+#
+# Timing is in beats of the music cue (boss, 143.55 BPM: 1 beat = 0.418 s,
+# 1 bar = 1.672 s), so every cut lands on a beat by construction. Schema and
+# field meanings: trailer/README.md. Research, concerns and the judge panel
+# that revised this sheet: research/2026-10-29-trailer-prep/README.md.
+
+id: teaser30
+title: "Teaser, 30 s"
+audience: public
+targetSeconds: 30
+viewport: { width: 1280, height: 720 }
+master: { width: 1920, height: 1080, fps: 30 }
+loudness: { lufs: -16, truePeak: -2 }
+captions: burned+srt
+speakerLabels: true
+
+music:
+  cue: boss
+  # Cue beats count from the manifest's beatOffset; segments play in order.
+  edit:
+    - { from: 32, beats: 33 }
+    - { silence: 15 } # stopdown under "STOP!"
+    - { from: 64, beats: 24, fadeOut: 2.5 }
+  duckUnderVoiceDb: -9
+
+takes:
+  s2-fight:
+    query: "?skipto=sector2&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 75000 }]
+    maxSeconds: 80
+  s4-fight:
+    query: "?skipto=sector4&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 60000 }]
+    maxSeconds: 65
+  boss-descent:
+    query: "?skipto=boss"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('line:desc_ai_001')"
+        timeoutMs: 40000
+        label: "desc_ai_001 starts"
+      - { do: wait, ms: 6000 }
+    maxSeconds: 70
+  boss-fight:
+    query: "?skipto=boss&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('line:boss_turn_002')"
+        timeoutMs: 200000
+        label: "boss_turn_002 starts"
+      - { do: wait, ms: 6000 }
+    maxSeconds: 240
+
+shots:
+  - id: hook-writ
+    beats: 6
+    purpose: "Scene lift: a charged Writ cracks a pod in the first second; genre (vertical shmup, 3D) readable at once."
+    take: s2-fight
+    anchor: { event: partBreak, where: "e.by === 'writ'", nth: 1 }
+    align: 4 # the break lands on the bar-2 downbeat
+    game: -8
+  - id: graze-curtain
+    beats: 6
+    purpose: "Skill read: threading a bullet curtain, graze sparks."
+    take: s2-fight
+    anchor: { event: graze, where: "e.meter >= 0.3" }
+    align: 2
+    game: -10
+  - id: place-kill
+    beats: 8
+    purpose: "A staged sector with signage, with a kill in it (place and action in one shot, not a vista)."
+    take: s4-fight
+    anchor: { event: kill, where: "e.clean" }
+    align: 5
+    game: -10
+  - id: warden-arrives
+    beats: 13
+    purpose: "The built-up threat arrives; hold on the Warden's silhouette before it speaks."
+    take: boss-descent
+    anchor: { line: desc_001 }
+    align: 13.5 # the shot ends just before the line; warden-stop continues the take
+    game: -6
+  - id: warden-stop
+    beats: 15
+    purpose: "Deflation: music dead, the real Warden is shrill and furious, a little funny."
+    take: boss-descent
+    anchor: { line: desc_001 }
+    align: 0.5
+    game: 0
+  - id: title
+    beats: 6
+    purpose: "Title on the music's re-entry downbeat."
+    card: title
+  - id: doubt
+    beats: 12
+    purpose: "The turn: the Warden says the quiet part; plants the doubt without spoiling either ending."
+    take: boss-fight
+    anchor: { line: boss_turn_002 }
+    align: 0.5
+    game: -6
+  - id: slate
+    beats: 6
+    purpose: "End slate: what it is and where to play it."
+    card: slate
+
+vo:
+  # Offsets are set from measured takes (public/vo/cues.json) so the longest
+  # language still clears the next line; the planner checks every language.
+  - { line: brief_warden_002, shot: hook-writ, offset: 3 }
+  - { line: brief_warden_004, shot: place-kill, offset: 3.5 }
+  - { line: desc_001, shot: warden-stop, offset: 0.5 }
+  - { line: boss_turn_002, shot: doubt, offset: 0.5 }
+
+cards:
+  title:
+    style: title
+    text: { en: "NEON WARDEN", es: "NEON WARDEN", zh: "霓虹守望者" }
+  slate:
+    style: slate
+    text:
+      en: "A vertical slice.\nPlay it in your browser. No install."
+      es: "Un vertical slice.\nJuégalo en tu navegador. Sin instalar."
+      zh: "垂直切片试玩版\n浏览器即玩，无需安装"
+    small:
+      en: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
+      es: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
+      zh: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"

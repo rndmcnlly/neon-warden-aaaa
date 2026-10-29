@@ -1,0 +1,406 @@
+# Neon Warden: 120 s QA and feature compendium (cut sheet, data only).
+#
+# Not a trailer. Its job is coverage, clarity and chaptering: every verb and
+# front-of-house screen once, labeled, at natural speed, with the game's own
+# mix (music, VO, in-game subtitles) so what you hear is what ships. Spoilers
+# allowed (internal and course audience). Chapters are at least 10 s
+# (YouTube's minimum) and are exported as a chapter list and WebVTT.
+#
+# Timing is in seconds; there is no trailer music bed. Lower-third labels name
+# the verb or screen, and each shot names the evidence it stands for.
+
+id: compendium120
+title: "QA and feature compendium, 120 s"
+audience: internal
+targetSeconds: 120
+viewport: { width: 1280, height: 720 }
+master: { width: 1920, height: 1080, fps: 30 }
+loudness: { lufs: -16, truePeak: -2 }
+captions: game # in-game subtitles are part of what is covered
+speakerLabels: false
+
+music: { edit: [] } # game audio only
+
+takes:
+  menus:
+    fromReel: "menus-{lang}" # text language follows the master
+    langSensitive: true
+  accessibility:
+    fromReel: accessibility
+    langSensitive: true
+  s1-fight:
+    query: "?skipto=sector1&autoplay=fight&speed=1"
+    steps: [{ do: wait, ms: 70000 }]
+    maxSeconds: 75
+  s2-fight:
+    query: "?skipto=sector2&autoplay=fight&speed=1"
+    steps: [{ do: wait, ms: 75000 }]
+    maxSeconds: 80
+  s2-disarm:
+    query: "?skipto=sector2&autoplay=pacifist&speed=1"
+    steps: [{ do: wait, ms: 70000 }]
+    maxSeconds: 75
+  s4-fight:
+    query: "?skipto=sector4&autoplay=fight&speed=1"
+    steps: [{ do: wait, ms: 60000 }]
+    maxSeconds: 65
+  lang-cycle:
+    fromReel: language-cycle # starts in English by design, in every master
+  s1-pause:
+    query: "?skipto=sector1&autoplay=fight&speed=1"
+    langSensitive: true
+    steps:
+      - { do: wait, ms: 8000 }
+      - { do: press, key: Escape }
+      - { do: waitFor, selector: ".nw-screen-pause", label: "pause opens" }
+      - { do: wait, ms: 4000 }
+      - { do: press, key: Escape }
+      - { do: wait, ms: 2000 }
+    maxSeconds: 30
+  tutorial:
+    # Natural speed (the tutorial is knowingly overlong, so this is the most
+    # expensive take). Risk: the moments gallery saw the tutorial demo stall
+    # at the tap module; a stall is reported as a gap, never sped up.
+    query: "?skipto=tutorial&autoplay=fight&speed=1"
+    langSensitive: true
+    steps:
+      - do: until
+        probe: "p.log.includes('line:tut_wink_001')"
+        timeoutMs: 420000
+        label: "wink line"
+      - { do: wait, ms: 10000 }
+    maxSeconds: 460
+  s3-recorder:
+    query: "?skipto=sector3&autoplay=fight&speed=1"
+    langSensitive: true
+    steps:
+      - do: until
+        probe: "p.log.includes('scene:flashback')"
+        timeoutMs: 200000
+        label: "flashback starts"
+      - { do: wait, ms: 12000 }
+    maxSeconds: 220
+  boss-fight:
+    query: "?skipto=boss&autoplay=fight&speed=1"
+    langSensitive: true
+    steps:
+      - do: until
+        probe: "p.events.some((e) => e.type === 'coreExposed')"
+        timeoutMs: 200000
+        label: "core exposed"
+      - { do: wait, ms: 6000 }
+    maxSeconds: 210
+  ending-kill:
+    fromReel: ending-kill
+    langSensitive: true
+  ending-pacifist:
+    query: "?skipto=ending-pacifist"
+    langSensitive: true
+    steps:
+      - do: until
+        probe: "p.flags()['banner.lanesKept'] === true"
+        timeoutMs: 90000
+        label: "Lanes Kept"
+      - { do: wait, ms: 4000 }
+    maxSeconds: 100
+
+chapters:
+  - {
+      id: front,
+      title: { en: "Front of house", es: "Recepción", zh: "前台界面" },
+    }
+  - {
+      id: verbs,
+      title: { en: "Core verbs", es: "Verbos básicos", zh: "核心操作" },
+    }
+  - {
+      id: language,
+      title: {
+        en: "Live language",
+        es: "Idioma en vivo",
+        zh: "实时切换语言",
+      },
+    }
+  - {
+      id: story,
+      title: {
+        en: "Story beats",
+        es: "Momentos de historia",
+        zh: "剧情节点",
+      },
+    }
+  - {
+      id: endings,
+      title: { en: "Both endings", es: "Ambos finales", zh: "两种结局" },
+    }
+  - {
+      id: access,
+      title: { en: "Accessibility", es: "Accesibilidad", zh: "无障碍" },
+    }
+
+shots:
+  # 1. Front of house (24 s)
+  - { id: ch-front, seconds: 2, chapter: front, card: chapter }
+  - id: boot-logos
+    seconds: 6
+    take: menus
+    anchor: { dom: screen, match: "nw-screen-gate" }
+    offset: 0.5
+    label: label-boot
+    evidence: "Photosensitivity gate, flat studio and incubator logos."
+  - id: title-menu
+    seconds: 4
+    take: menus
+    anchor: { dom: screen, match: "nw-screen-main" }
+    offset: -1
+    label: label-menu
+    evidence: "Title to main menu."
+  - id: settings
+    seconds: 7
+    take: menus
+    anchor: { dom: screen, match: "nw-screen-settings" }
+    offset: 0.3
+    label: label-settings
+    evidence: "Settings tabs: graphics, audio mix, language, subtitles, accessibility, controls."
+  - id: pause
+    seconds: 4
+    take: s1-pause
+    anchor: { dom: screen, match: "nw-screen-pause" }
+    offset: -0.5
+    label: label-pause
+    evidence: "Escape mid-fight opens the pause menu."
+  # 2. Core verbs (36 s)
+  - { id: ch-verbs, seconds: 2, chapter: verbs, card: chapter }
+  - id: verb-tap
+    seconds: 4
+    take: s1-fight
+    anchor: { event: kill }
+    align: 3
+    label: label-tap
+    evidence: "Aimed taps."
+  - id: verb-stream
+    seconds: 4
+    take: s1-fight
+    anchor: { event: kill, nth: 3 }
+    align: 3
+    label: label-stream
+    evidence: "Held stream."
+  - id: verb-writ
+    seconds: 6
+    take: s2-fight
+    anchor: { event: chargeLevel, where: "e.level === 3" }
+    align: 3
+    label: label-writ
+    evidence: "Rest to charge, level 3, Writ release."
+  - id: verb-scan
+    seconds: 5
+    take: s2-fight
+    anchor: { event: scanLock }
+    align: 1.5
+    label: label-scan
+    evidence: "Scan lock and intel tag."
+  - id: verb-graze
+    seconds: 5
+    take: s4-fight
+    anchor: { event: graze, where: "e.meter >= 0.5" }
+    align: 2
+    label: label-graze
+    evidence: "Graze meter and pay multiplier."
+  - id: verb-disarm
+    seconds: 5
+    take: s2-disarm
+    anchor: { event: disarm }
+    align: 1.5
+    label: label-disarm
+    evidence: "Disarm: gun breaks, the scout drifts away."
+  - id: verb-pod
+    seconds: 6
+    take: boss-fight
+    anchor: { event: partBreak, where: "e.target === 'boss'" }
+    align: 2
+    label: label-pod
+    evidence: "Pod breaks, core exposed."
+  # 3. Live language (16 s)
+  - { id: ch-language, seconds: 2, chapter: language, card: chapter }
+  - id: lang-cycle
+    seconds: 14
+    take: lang-cycle
+    anchor: { line: desc_001 }
+    offset: -0.5
+    label: label-lang
+    evidence: "] ] [ during the descent: each next line speaks and captions in the new language."
+  # 4. Story beats (22 s)
+  - { id: ch-story, seconds: 2, chapter: story, card: chapter }
+  - id: tutorial-wink
+    seconds: 8
+    take: tutorial
+    anchor: { line: tut_wink_001 }
+    offset: -0.3
+    label: label-wink
+    evidence: "The tutorial's one wink, at natural speed."
+  - id: flashback
+    seconds: 6
+    take: s3-recorder
+    anchor: { log: "scene:flashback" }
+    offset: -0.5
+    label: label-flashback
+    evidence: "Recorder triggers the mid-play flashback."
+  - id: descent
+    seconds: 6
+    take: boss-fight
+    anchor: { line: desc_001 }
+    offset: -0.3
+    label: label-descent
+    evidence: "The Warden's first words."
+  # 5. Both endings (12 s)
+  - { id: ch-endings, seconds: 2, chapter: endings, card: chapter }
+  - id: ending-kill
+    seconds: 5
+    take: ending-kill
+    anchor: { line: kill_ai_004 }
+    offset: -0.5
+    label: label-kill
+    evidence: "Kill ending: the replacement is already in onboarding."
+  - id: ending-pacifist
+    seconds: 5
+    take: ending-pacifist
+    anchor: { log: "line:pac_end_006" }
+    offset: -0.5
+    label: label-pacifist
+    evidence: "Pacifist ending: the leash is cut."
+  # 6. Accessibility (10 s)
+  - { id: ch-access, seconds: 2, chapter: access, card: chapter }
+  - id: accessibility
+    seconds: 8
+    take: accessibility
+    anchor: { dom: screen, match: "nw-screen-settings" }
+    offset: 0.5
+    label: label-access
+    evidence: "Subtitle size and background, reduced flashing and motion, hold or toggle."
+
+cards:
+  chapter: { style: chapter } # text comes from the chapter title
+  label-boot: {
+    style: lower,
+    text: {
+      en: "Boot: safety gate, studio logos",
+      es: "Arranque: aviso, logos",
+      zh: "启动：安全提示与标志",
+    },
+  }
+  label-menu: {
+    style: lower,
+    text: {
+      en: "Title and main menu",
+      es: "Título y menú principal",
+      zh: "标题与主菜单",
+    },
+  }
+  label-settings: {
+    style: lower,
+    text: {
+      en: "Settings, every tab",
+      es: "Ajustes, todas las pestañas",
+      zh: "设置：所有分页",
+    },
+  }
+  label-pause: {
+    style: lower,
+    text: { en: "Pause menu", es: "Menú de pausa", zh: "暂停菜单" },
+  }
+  label-tap: {
+    style: lower,
+    text: {
+      en: "Tap: aimed shots",
+      es: "Toque: disparos dirigidos",
+      zh: "点射",
+    },
+  }
+  label-stream: {
+    style: lower,
+    text: {
+      en: "Hold: stream",
+      es: "Mantener: ráfaga",
+      zh: "按住：连射",
+    },
+  }
+  label-writ: {
+    style: lower,
+    text: {
+      en: "Rest to charge, release the Writ",
+      es: "Descansa para cargar, suelta el Writ",
+      zh: "停火蓄力，释放令状",
+    },
+  }
+  label-scan: {
+    style: lower,
+    text: { en: "Scan lock", es: "Escaneo fijado", zh: "扫描锁定" },
+  }
+  label-graze: {
+    style: lower,
+    text: { en: "Graze for pay", es: "Roce: más paga", zh: "擦弹加薪" },
+  }
+  label-disarm: {
+    style: lower,
+    text: { en: "Disarm", es: "Desarmar", zh: "缴械" },
+  }
+  label-pod: {
+    style: lower,
+    text: {
+      en: "Pod break, core exposed",
+      es: "Cápsula rota, núcleo expuesto",
+      zh: "击破荚舱，核心暴露",
+    },
+  }
+  label-lang: {
+    style: lower,
+    text: {
+      en: "[ and ] switch voice and text",
+      es: "[ y ] cambian voz y texto",
+      zh: "[ 和 ] 切换语音与文字",
+    },
+  }
+  label-wink: {
+    style: lower,
+    text: {
+      en: "Tutorial: the wink",
+      es: "Tutorial: el guiño",
+      zh: "教程：彩蛋台词",
+    },
+  }
+  label-flashback: {
+    style: lower,
+    text: {
+      en: "Flashback in play",
+      es: "Flashback en juego",
+      zh: "游戏中闪回",
+    },
+  }
+  label-descent: {
+    style: lower,
+    text: {
+      en: "The Warden speaks",
+      es: "Habla el Guardián",
+      zh: "守望者开口",
+    },
+  }
+  label-kill: {
+    style: lower,
+    text: { en: "Ending: kill", es: "Final: derribo", zh: "结局：击毁" },
+  }
+  label-pacifist: {
+    style: lower,
+    text: {
+      en: "Ending: never fired",
+      es: "Final: sin disparar",
+      zh: "结局：一枪未开",
+    },
+  }
+  label-access: {
+    style: lower,
+    text: {
+      en: "Accessibility settings",
+      es: "Ajustes de accesibilidad",
+      zh: "无障碍设置",
+    },
+  }

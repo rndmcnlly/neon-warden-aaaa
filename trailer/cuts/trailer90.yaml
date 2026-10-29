@@ -1,0 +1,337 @@
+# Neon Warden: 90 s gameplay trailer (cut sheet, data only).
+#
+# Template: hook, then Tell-Show-Repeat over the verbs (Derek Lieu), a
+# places-and-memory montage, then the Warden in three moves (hype, deflate,
+# turn) and a pacifist-run tease instead of an ending spoiler.
+#
+# Music: gameplay cue (129.2 BPM, beat 0.464 s) for the first half, boss cue
+# (143.55 BPM, beat 0.418 s) from the Warden onward. A shot's `beats` use the
+# tempo of the music segment playing when the shot starts; segment
+# boundaries coincide with shot boundaries, so cuts stay on the grid.
+
+id: trailer90
+title: "Gameplay trailer, 90 s"
+audience: public
+targetSeconds: 90
+viewport: { width: 1280, height: 720 }
+master: { width: 1920, height: 1080, fps: 30 }
+loudness: { lufs: -16, truePeak: -2 }
+captions: burned+srt
+speakerLabels: true
+
+music:
+  edit:
+    - { cue: gameplay, from: 16, beats: 96 }
+    - { cue: boss, from: 0, beats: 24 } # Warden build-up
+    - { silence: 24 } # deflation: "STOP!" and the AI's aside
+    - { cue: boss, from: 48, beats: 62, fadeOut: 3 }
+  duckUnderVoiceDb: -9
+
+takes:
+  s1-fight:
+    query: "?skipto=sector1&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 70000 }]
+    maxSeconds: 75
+  s2-fight:
+    query: "?skipto=sector2&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 75000 }]
+    maxSeconds: 80
+  s2-disarm:
+    query: "?skipto=sector2&autoplay=pacifist&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 70000 }]
+    maxSeconds: 75
+  s3-recorder:
+    query: "?skipto=sector3&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('scene:flashback')"
+        timeoutMs: 200000
+        label: "flashback starts"
+      - { do: wait, ms: 12000 }
+    maxSeconds: 220
+  s4-fight:
+    query: "?skipto=sector4&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 60000 }]
+    maxSeconds: 65
+  s5-fight:
+    query: "?skipto=sector5&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps: [{ do: wait, ms: 45000 }]
+    maxSeconds: 50
+  boss-descent:
+    query: "?skipto=boss"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('line:desc_ai_001')"
+        timeoutMs: 40000
+        label: "desc_ai_001 starts"
+      - { do: wait, ms: 6000 }
+    maxSeconds: 50
+  boss-fight:
+    query: "?skipto=boss&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('line:boss_turn_002')"
+        timeoutMs: 200000
+        label: "boss_turn_002 starts"
+      - { do: wait, ms: 6000 }
+    maxSeconds: 240
+  boss-pacifist:
+    query: "?skipto=boss&autoplay=pacifist&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('line:boss_pac_001')"
+        timeoutMs: 200000
+        label: "boss_pac_001 starts"
+      - { do: wait, ms: 8000 }
+    maxSeconds: 240
+
+shots:
+  # A. Hook (16 beats, about 7.4 s)
+  - id: hook-writ
+    beats: 4
+    purpose: "Scene lift: a Writ cracks a pod in the first second."
+    take: s4-fight
+    anchor: { event: partBreak, where: "e.by === 'writ'" }
+    align: 2
+    game: -8
+  - id: hook-graze
+    beats: 4
+    purpose: "Threading a bullet curtain; graze sparks."
+    take: s5-fight
+    anchor: { event: graze, where: "e.meter >= 0.3" }
+    align: 2
+    game: -10
+  - id: hook-kill
+    beats: 4
+    purpose: "A clean kill burst and the PAY multiplier."
+    take: s4-fight
+    anchor: { event: kill, where: "e.clean" }
+    align: 2
+    game: -8
+  - id: title-flash
+    beats: 4
+    purpose: "Name within 10 s: who and what, then straight back to play."
+    card: title
+  # B. Tell, show, repeat over the verbs (52 beats, about 24 s)
+  - id: tell-fire
+    beats: 4
+    card: tell-fire
+    purpose: "Tell: the three ways to pull one trigger."
+  - id: show-fire
+    beats: 8
+    purpose: "Show: aimed taps, then a held stream, in one unbroken shot."
+    take: s1-fight
+    anchor: { event: kill, nth: 1 }
+    align: 4
+    game: -6
+  - id: show-writ
+    beats: 8
+    purpose: "Show: rest, the charge meter climbs, release; the receipt is the pod break."
+    take: s2-fight
+    anchor: { event: partBreak, where: "e.by === 'writ'" }
+    align: 6
+    game: -4
+  - id: tell-scan
+    beats: 4
+    card: tell-scan
+    purpose: "Tell: resting also scans."
+  - id: show-scan
+    beats: 6
+    purpose: "Show: scan lock and the intel tag."
+    take: s2-fight
+    anchor: { event: scanLock }
+    align: 2
+    game: -6
+  - id: tell-graze
+    beats: 4
+    card: tell-graze
+    purpose: "Tell: risk pays."
+  - id: show-graze
+    beats: 6
+    purpose: "Show: dense graze window, the multiplier climbs."
+    take: s4-fight
+    anchor: { event: graze, where: "e.meter >= 0.5" }
+    align: 2
+    game: -6
+  - id: tell-disarm
+    beats: 4
+    card: tell-disarm
+    purpose: "Tell: the moral verb."
+  - id: show-disarm
+    beats: 8
+    purpose: "Show: a scout's gun breaks off and it drifts away, spared."
+    take: s2-disarm
+    anchor: { event: disarm }
+    align: 2
+    game: -4
+  # C. Places and memory (28 beats, about 13 s)
+  # Places carry action: each is anchored on a kill, not on a vista.
+  - id: place-s1
+    beats: 4
+    purpose: "Sector 1 as a place, mid-fight."
+    take: s1-fight
+    anchor: { event: kill, nth: 4 }
+    align: 2
+    game: -10
+  - id: place-s3
+    beats: 4
+    purpose: "Sector 3 as a place, mid-fight."
+    take: s3-recorder
+    anchor: { event: kill, nth: 1 }
+    align: 2
+    game: -10
+  - id: place-s5
+    beats: 4
+    purpose: "Sector 5 as a place, mid-fight."
+    take: s5-fight
+    anchor: { event: kill, nth: 2 }
+    align: 2
+    game: -10
+  - id: recorder
+    beats: 16
+    purpose: "The derelict flight recorder of #0121: the story enters mid-play."
+    take: s3-recorder
+    anchor: { log: "scene:flashback" }
+    align: 1
+    game: -10
+  # D. Build-up (boss cue, 24 beats, about 10 s)
+  - id: warden-shadow
+    beats: 12
+    purpose: "Hype voice over the descent: the scary register belongs to the briefing."
+    take: boss-descent
+    anchor: { line: desc_001 }
+    align: 24.5
+    game: -8
+  - id: warden-rings
+    beats: 12
+    purpose: "The Warden fills the frame."
+    take: boss-descent
+    anchor: { line: desc_001 }
+    align: 12.5
+    game: -8
+  # E. Deflation (silence, 22 beats, about 9.2 s)
+  - id: warden-stop
+    beats: 16
+    purpose: "Music dead; the real Warden is shrill and furious."
+    take: boss-descent
+    anchor: { line: desc_001 }
+    align: 0.5
+    game: 0
+  - id: ai-aside
+    beats: 8
+    purpose: "Button joke: the onboarding AI notices."
+    take: boss-descent
+    anchor: { line: desc_ai_001 }
+    align: 0.5
+    game: 0
+  # F. Boss montage (music slams back, 30 beats, about 12.5 s)
+  - id: boss-pods
+    beats: 4
+    purpose: "A pod breaks."
+    take: boss-fight
+    anchor: { event: partBreak, where: "e.target === 'boss'" }
+    align: 2
+    game: -6
+  - id: boss-core
+    beats: 4
+    purpose: "Core exposed."
+    take: boss-fight
+    anchor: { event: coreExposed }
+    align: 1
+    game: -6
+  - id: boss-phase
+    beats: 11
+    purpose: "Phase escalation, bullet density peaks on the music's peak."
+    take: boss-fight
+    anchor: { event: bossPhase, where: "e.phase === 3" }
+    align: 2
+    game: -6
+  - id: boss-turn
+    beats: 11
+    purpose: "The turn: the lanes are about ownership."
+    take: boss-fight
+    anchor: { line: boss_turn_002 }
+    align: 0.5
+    game: -6
+  # G. Pacifist tease, title, slate (32 beats, about 13.4 s)
+  - id: tell-pacifist
+    beats: 4
+    card: tell-pacifist
+    purpose: "The alternative, without spoiling where it leads."
+  - id: pacifist-dodge
+    beats: 14
+    purpose: "Cold gun, pure dodging; the Warden is baffled."
+    take: boss-pacifist
+    anchor: { line: boss_pac_001 }
+    align: 0.5
+    game: -6
+  - id: title
+    beats: 6
+    card: title
+    purpose: "Title on the final hit."
+  - id: slate
+    beats: 8
+    card: slate
+    purpose: "End slate with call to action."
+
+vo:
+  - { line: flash_rec_001, shot: recorder, offset: 0.1 }
+  - { line: brief_warden_003, shot: warden-shadow, offset: 0.5 }
+  - { line: desc_001, shot: warden-stop, offset: 0.5 }
+  - { line: desc_ai_001, shot: ai-aside, offset: 0.5 }
+  - { line: boss_turn_002, shot: boss-turn, offset: 0.5 }
+  - { line: boss_pac_001, shot: pacifist-dodge, offset: 0.5 }
+
+cards:
+  title:
+    style: title
+    text: { en: "NEON WARDEN", es: "NEON WARDEN", zh: "霓虹守望者" }
+  tell-fire:
+    style: tell
+    text:
+      en: "TAP. HOLD. REST TO CHARGE."
+      es: "TOCA. MANTÉN. DESCANSA PARA CARGAR."
+      zh: "点射。连射。停火蓄力。"
+  tell-scan:
+    style: tell
+    text:
+      en: "RESTING SCANS THEM."
+      es: "AL DESCANSAR, LOS ESCANEAS."
+      zh: "停火时自动扫描。"
+  tell-graze:
+    style: tell
+    text:
+      en: "CLOSE CALLS PAY MORE."
+      es: "LOS ROCES PAGAN MÁS."
+      zh: "擦弹越近，报酬越高。"
+  tell-disarm:
+    style: tell
+    text:
+      en: "BREAK THE GUN. SPARE THE SHIP."
+      es: "ROMPE EL ARMA. PERDONA LA NAVE."
+      zh: "打掉武器，放过飞船。"
+  tell-pacifist:
+    style: tell
+    text:
+      en: "OR NEVER FIRE AT ALL."
+      es: "O NO DISPARES NUNCA."
+      zh: "或者，一枪不开。"
+  slate:
+    style: slate
+    text:
+      en: "A vertical slice.\nPlay it in your browser. No install."
+      es: "Un vertical slice.\nJuégalo en tu navegador. Sin instalar."
+      zh: "垂直切片试玩版\n浏览器即玩，无需安装"
+    small:
+      en: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
+      es: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
+      zh: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
