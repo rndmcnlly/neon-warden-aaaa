@@ -1,0 +1,201 @@
+{
+  "baseline": "62dc815",
+  "after": "8522158",
+  "note": "Other src files copied from the working tree, identical in both arms",
+  "viewport": "1280x720",
+  "url": "?skipto=sector1&seed=121&qa=1",
+  "clips": [
+    {
+      "id": "before-tap-high",
+      "arm": "before",
+      "scenario": "tap",
+      "mode": "high",
+      "markSec": 2.01,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "before-stream-high",
+      "arm": "before",
+      "scenario": "stream",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "before-writ1-high",
+      "arm": "before",
+      "scenario": "writ1",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "fail: VO not dropped"
+      ]
+    },
+    {
+      "id": "before-writ2-high",
+      "arm": "before",
+      "scenario": "writ2",
+      "mode": "high",
+      "markSec": 2,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "fail: VO not dropped"
+      ]
+    },
+    {
+      "id": "before-writ3-high",
+      "arm": "before",
+      "scenario": "writ3",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-tap-high",
+      "arm": "after",
+      "scenario": "tap",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "warn: audio: integrated loudness -20 to -14 LUFS",
+        "fail: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-stream-high",
+      "arm": "after",
+      "scenario": "stream",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-writ1-high",
+      "arm": "after",
+      "scenario": "writ1",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-writ2-high",
+      "arm": "after",
+      "scenario": "writ2",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "fail: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-writ3-high",
+      "arm": "after",
+      "scenario": "writ3",
+      "mode": "high",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-mixed-still",
+      "arm": "after",
+      "scenario": "mixed",
+      "mode": "still",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "pass: VO not dropped"
+      ]
+    },
+    {
+      "id": "after-mixed-low",
+      "arm": "after",
+      "scenario": "mixed",
+      "mode": "low",
+      "markSec": 1.99,
+      "errors": [],
+      "audioStream": "aac",
+      "checks": [
+        "pass: audio: captured",
+        "pass: audio: true peak at or under -1 dBTP",
+        "pass: audio: bus loudness (pre-master)",
+        "pass: audio: integrated loudness -20 to -14 LUFS",
+        "fail: VO not dropped"
+      ]
+    }
+  ]
+}

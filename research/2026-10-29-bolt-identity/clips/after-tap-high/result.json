@@ -1,0 +1,133 @@
+{
+  "id": "after-tap-high",
+  "arm": "after",
+  "scenario": "tap",
+  "mode": "high",
+  "markSec": 1.99,
+  "errors": [],
+  "audioStream": "aac",
+  "checks": [
+    {
+      "id": "audio: captured",
+      "status": "pass",
+      "detail": "7.05 s audible of 8.48 s, 71 sounds started, 3 VO"
+    },
+    {
+      "id": "audio: true peak at or under -1 dBTP",
+      "status": "pass",
+      "detail": "-5.6 dBTP, -20.2 LUFS integrated"
+    },
+    {
+      "id": "audio: bus loudness (pre-master)",
+      "status": "pass",
+      "detail": "music -24.4 LUFS / -6.1 dBTP, sfx -28.1 LUFS / -6.2 dBTP, voice -16.7 LUFS / -3.7 dBTP, ui -70 LUFS / NaN dBTP"
+    },
+    {
+      "id": "audio: integrated loudness -20 to -14 LUFS",
+      "status": "warn",
+      "detail": "-20.2 LUFS integrated (target about -17)"
+    },
+    {
+      "id": "VO not dropped",
+      "status": "fail",
+      "detail": "3 of 5 subtitle windows have audible VO stem",
+      "items": [
+        "1.69–2.73 s sec1_intro_001 (0.13 s audible)",
+        "5.46–8.48 s graze_ai_001 (0.2 s audible)"
+      ]
+    }
+  ],
+  "av": {
+    "hasAudio": true,
+    "voStem": true,
+    "contextStates": [
+      "running"
+    ],
+    "sourcesStarted": 71,
+    "voStarted": [
+      "1.69s en/sec1_intro_001.ogg",
+      "3.53s en/disarm_ai_001.ogg",
+      "5.46s en/graze_ai_001.ogg"
+    ],
+    "lufs": -20.2,
+    "truePeak": -5.6,
+    "buses": {
+      "music": {
+        "lufs": -24.4,
+        "truePeak": -6.1
+      },
+      "sfx": {
+        "lufs": -28.1,
+        "truePeak": -6.2
+      },
+      "voice": {
+        "lufs": -16.7,
+        "truePeak": -3.7
+      },
+      "ui": {
+        "lufs": -70,
+        "truePeak": null
+      }
+    },
+    "audibleS": 7.05,
+    "voAudible": [
+      {
+        "start": 0.37,
+        "end": 1.18
+      },
+      {
+        "start": 1.95,
+        "end": 1.99
+      },
+      {
+        "start": 2.79,
+        "end": 3.45
+      },
+      {
+        "start": 4.61,
+        "end": 5.35
+      },
+      {
+        "start": 5.77,
+        "end": 5.97
+      }
+    ],
+    "subtitles": [
+      {
+        "start": 0.312300048828125,
+        "line": "?I believe in you. I've also at",
+        "layer": "ambient",
+        "end": 1.68910009765625,
+        "audibleS": 0.8
+      },
+      {
+        "start": 1.68910009765625,
+        "line": "sec1_intro_001",
+        "layer": "scripted",
+        "end": 2.7255,
+        "audibleS": 0.13
+      },
+      {
+        "start": 2.7255,
+        "line": "?I believe in you. I've also at",
+        "layer": "ambient",
+        "end": 3.5305,
+        "audibleS": 0.67
+      },
+      {
+        "start": 3.5305,
+        "line": "disarm_ai_001",
+        "layer": "scripted",
+        "end": 5.462,
+        "audibleS": 0.74
+      },
+      {
+        "start": 5.462,
+        "line": "graze_ai_001",
+        "layer": "scripted",
+        "end": 8.48,
+        "audibleS": 0.2
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bolt identity: one clip at a time</title>
+<style>
+  body { margin: 0; background: #0b0f17; color: #dfe8f2; font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.2rem; margin: 0 0 4px; }
+  .meta { color: #8fa3b8; font-size: 0.9rem; }
+  video { width: 100%; background: #000; border-radius: 6px; margin: 12px 0; }
+  nav { display: flex; gap: 8px; align-items: center; }
+  button { background: #1c2a3c; color: #dfe8f2; border: 1px solid #34506e; border-radius: 6px; padding: 8px 14px; font: inherit; cursor: pointer; }
+  button:disabled { opacity: 0.4; cursor: default; }
+  #evidence { background: #121b28; border-radius: 6px; padding: 12px 14px; margin-top: 12px; }
+  #evidence[hidden] { display: none; }
+  .limits { color: #8fa3b8; font-size: 0.85rem; margin-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title"></h1>
+  <div class="meta" id="meta"></div>
+  <video id="video" controls playsinline></video>
+  <nav>
+    <button id="prev">Previous</button>
+    <span id="count" class="meta"></span>
+    <button id="next">Next</button>
+    <button id="reveal">Show evidence</button>
+  </nav>
+  <section id="evidence" hidden></section>
+  <p class="limits">
+    Before: render files at 62dc815. After: the same files at 8522158. Both
+    arms share every other source file and the current public assets.
+    1280x720, real time, Playwright Chromium on a Mac, with the game's own
+    audio tapped and muxed. Watch first, then open the evidence. Video cannot
+    establish hand feel, Chromebook frame rate or portrait layout.
+  </p>
+</main>
+<script>
+const CLIPS = [
+  ["before-tap-high", "Tap, before", "Taps every 0.3 s.", "Old look: every player round is the same thin capsule, so a tap and a stream look alike. Camera kick 0.035."],
+  ["after-tap-high", "Tap, after", "Taps every 0.3 s.", "Short faceted slug, sharp head forward, the most opaque player round, plus a crisp four-point muzzle star (70 ms). Camera kick unchanged at 0.035. The pink ring near 0.5 s also appears in the before clip: not from this change."],
+  ["before-stream-high", "Stream, before", "Fire held for 4.2 s.", "Same capsule as the tap, at stream rate."],
+  ["after-stream-high", "Stream, after", "Fire held for 4.2 s.", "Thin, long, dim needles (38% opacity), alternating two lengths for rhythm, no flicker, a faint muzzle shimmer, no camera kick. Should read as a texture, not as separate events."],
+  ["before-writ1-high", "Writ level 1, before", "Rest about 1 s, release, three times.", "Old Writ: the shot capsule at the same size, one cream ring at the ship, kick 0.063."],
+  ["after-writ1-high", "Writ level 1, after", "Rest about 1 s, release, three times.", "Lance with a pale core and cyan sheath, shedding rings as it flies; cream muzzle bloom; double release ring; camera knock 0.15; ship knock 0.05 with 0.12 rad nose-up; pressure wave."],
+  ["before-writ2-high", "Writ level 2, before", "Rest about 1.7 s, release, twice.", "Old kick 0.081; otherwise as level 1."],
+  ["after-writ2-high", "Writ level 2, after", "Rest about 1.7 s, release, twice.", "Lance 1.35x; camera knock 0.20; ship knock 0.09, pitch 0.18 rad; bigger bloom and wave."],
+  ["before-writ3-high", "Writ level 3, before", "Rest about 2.35 s, release, twice.", "Old kick 0.099; capsule only."],
+  ["after-writ3-high", "Writ level 3, after", "Rest about 2.35 s, release, twice.", "Lance 1.8x; camera knock 0.25 (60 ms settle); ship knock 0.13, pitch 0.25 rad; a brief cream flash through FlashGuard (at most 0.23, three onsets a second). Writ hits get a cyan and cream impact."],
+  ["after-mixed-still", "Shake 0, reduced motion and reduced flashing, after", "Taps, a 1.5 s hold, then a level 3 Writ.", "Shapes keep their identity. No camera or ship knock and no pressure wave; the Writ bloom is capped and fades slowly; the screen flash is capped at 0.12."],
+  ["after-mixed-low", "Low tier, after", "Taps, a 1.5 s hold, then a level 3 Writ.", "Same shapes (instanced, a few extra draw calls). No bloom, so no pressure wave; trail chips stay off as before."],
+];
+let i = 0;
+const $ = (id) => document.getElementById(id);
+function show() {
+  const [id, title, meta, evidence] = CLIPS[i];
+  $("title").textContent = title;
+  $("meta").textContent = meta + " Clip " + id + ".";
+  $("video").src = "clips/" + id + "/clip.mp4";
+  $("evidence").textContent = evidence;
+  $("evidence").hidden = true;
+  $("reveal").disabled = false;
+  $("count").textContent = (i + 1) + " / " + CLIPS.length;
+  $("prev").disabled = i === 0;
+  $("next").disabled = i === CLIPS.length - 1;
+}
+$("prev").onclick = () => { i = Math.max(0, i - 1); show(); };
+$("next").onclick = () => { i = Math.min(CLIPS.length - 1, i + 1); show(); };
+$("reveal").onclick = () => { $("evidence").hidden = false; $("reveal").disabled = true; };
+show();
+</script>
+</body>
+</html>
