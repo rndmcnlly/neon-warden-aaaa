@@ -22,12 +22,12 @@
     "loopEnd": 28.398
   },
   "gameplay": {
-    "file": "gameplay/gameplay_02.wav",
-    "variant": "cand2",
-    "provisional": true,
-    "why": "highest objective score 0.882 (stats.py)",
-    "loopStart": 8.011,
-    "loopEnd": 41.448
+    "file": "gameplay/gameplay_01.wav",
+    "variant": "cand1",
+    "provisional": false,
+    "why": "Adam chose A in the in-context gameplay A/B comparison",
+    "loopStart": 0.975,
+    "loopEnd": 43.7
   },
   "flashback": {
     "file": "flashback/flashback_02.wav",

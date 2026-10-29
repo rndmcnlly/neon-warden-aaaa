@@ -112,24 +112,24 @@
       }
     },
     "gameplay": {
-      "src": "music/gameplay/cand2.ogg",
+      "src": "music/gameplay/cand1.ogg",
       "loop": true,
       "source": {
-        "file": "gameplay/gameplay_02.wav",
+        "file": "gameplay/gameplay_01.wav",
         "model": "stable-audio-3/medium",
-        "gainDb": -6.5
+        "gainDb": -7.3
       },
-      "loopStart": 8.011,
-      "loopEnd": 41.448,
+      "loopStart": 0.975,
+      "loopEnd": 43.7,
       "bpm": 129.2,
-      "beatOffset": 8.011,
+      "beatOffset": 0.975,
       "beatsPerBar": 4,
       "key": {
-        "root": 68,
-        "mode": "minor"
+        "root": 65,
+        "mode": "major"
       },
-      "variant": "cand2",
-      "provisional": true,
+      "variant": "cand1",
+      "provisional": false,
       "variants": {
         "cand1": {
           "src": "music/gameplay/cand1.ogg",
