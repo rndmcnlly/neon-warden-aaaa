@@ -139,7 +139,18 @@ export type SimEvent =
     readonly type: "spawn";
     readonly tick: Tick;
     readonly id: EntityId;
-    readonly kind: EnemyKind;
+    /** `warden` is the boss arriving (its descent begins this tick). */
+    readonly kind: EnemyKind | "warden";
+  }
+  | {
+    /**
+     * An enemy left play without being killed: escorts wiped when the Warden
+     * falls, or retreating with it in the pacifist ending. Never scores.
+     */
+    readonly type: "despawn";
+    readonly tick: Tick;
+    readonly id: EntityId;
+    readonly reason: "wiped" | "retreat";
   }
   | {
     readonly type: "playerFired";
@@ -153,6 +164,11 @@ export type SimEvent =
     readonly target: "player" | "enemy" | "boss";
     readonly id: EntityId;
     readonly absorbedByShield: boolean;
+    /**
+     * The shot connected but did no damage (the Warden during its descent or
+     * while it talks). Renderers show a deflection instead of a wound.
+     */
+    readonly blocked: boolean;
   }
   | {
     readonly type: "kill";
@@ -197,6 +213,24 @@ export interface SimOptions {
   readonly seed: number;
   readonly start: SimStart;
   readonly difficulty: Difficulty;
+  /** Spawns played in addition to (or, in the tutorial, instead of) waves. */
+  readonly scriptedSpawns?: readonly ScriptedSpawn[];
+  /**
+   * Attract mode: on the last life, silently spend a continue and keep
+   * flying. Off for human play, where the UI offers `continueRun()` after
+   * the `gameOver` event.
+   */
+  readonly autoContinue?: boolean;
+}
+
+/** A spawn a timeline asks for, at an absolute sim tick. */
+export interface ScriptedSpawn {
+  readonly at: Tick;
+  readonly kind: EnemyKind | PickupKind;
+  readonly x: number;
+  readonly y?: number;
+  /** Enemies only: never fires (a practice target). */
+  readonly passive?: boolean;
 }
 
 /**
@@ -209,4 +243,21 @@ export interface Sim {
   step(input: InputFrame): readonly SimEvent[];
   /** The state after the most recent step. */
   snapshot(): SimState;
+  /** Freezes the world (the flashback): `step()` does nothing until resumed. */
+  freeze(): void;
+  resume(): void;
+  /** After a `gameOver`, spends a continue if one is left. */
+  continueRun(): boolean;
+  /**
+   * Leaves the tutorial (or skips ahead) into a sector. Coming from the
+   * tutorial it also wipes score, kills and flags: the drills do not count.
+   */
+  beginSector(sector: SectorIndex): void;
+  /**
+   * Story flags the sim honors, set by the Director: `boss.parley` (the
+   * Warden holds fire and ignores damage while it talks) and
+   * `tut.spawnTarget` (a passive practice drone appears). Unknown names are
+   * ignored, so timelines can add flags without touching the sim.
+   */
+  setStoryFlag(name: string, value: boolean): void;
 }

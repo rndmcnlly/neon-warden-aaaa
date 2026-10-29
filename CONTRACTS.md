@@ -7,34 +7,34 @@ integration pass can reconcile it, rather than editing silently.
 
 ## Contract map
 
-| File          | Defines                                                                                                       | Why it exists                                                                |
-| ------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `time.ts`     | `Tick`, `TICK_RATE` (60), `TICK_MS`, `secondsToTicks`                                                         | Fixed timestep: gameplay never sees wall-clock time.                         |
-| `input.ts`    | `Vec2`, `InputFrame`, `IDLE_INPUT`                                                                            | One intent shape for every input source and for menus.                       |
-| `sim.ts`      | `SimState` and its views, `SimEvent` union, `Sim`, `SimOptions`, `SimStart`, `PLAYFIELD` (480 x 640, +y down) | Renderer, UI, audio and Director read state and events; only the sim writes. |
-| `pilot.ts`    | `Pilot { kind, next(state) }`, `PilotKind`                                                                    | Keyboard and both autopilots are interchangeable.                            |
-| `text.ts`     | `Lang`, `LineId` (branded), `lineId()`, `Speaker`, `ScriptLine`                                               | All player-facing text is keyed by line id plus language.                    |
-| `timeline.ts` | `Cue` union, `Timeline`, `MusicCueId`, `SfxRoleId`, `CameraShotId`                                            | Scenes are data the Director plays.                                          |
-| `settings.ts` | `Settings`, `Action`, `Binding`, `SettingsStore`                                                              | One typed, persisted source for every option.                                |
-| `flags.ts`    | `SkipTo`, `AutoPlay`, `UrlFlags`, `parseUrlFlags`                                                             | `?skipto=`, `?autoplay=fight\|pacifist&speed=N`, `?seed=N`.                  |
+| File          | Defines                                                                                                                                                                                                 | Why it exists                                                                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `time.ts`     | `Tick`, `TICK_RATE` (60), `TICK_MS`, `secondsToTicks`                                                                                                                                                   | Fixed timestep: gameplay never sees wall-clock time.                         |
+| `input.ts`    | `Vec2`, `InputFrame`, `IDLE_INPUT`                                                                                                                                                                      | One intent shape for every input source and for menus.                       |
+| `sim.ts`      | `SimState` and its views, `SimEvent` union, `Sim` (step, snapshot, freeze, resume, continueRun, beginSector, setStoryFlag), `SimOptions`, `ScriptedSpawn`, `SimStart`, `PLAYFIELD` (480 x 640, +y down) | Renderer, UI, audio and Director read state and events; only the sim writes. |
+| `pilot.ts`    | `Pilot { kind, next(state) }`, `PilotKind`                                                                                                                                                              | Keyboard and both autopilots are interchangeable.                            |
+| `text.ts`     | `Lang`, `LineId` (branded), `lineId()`, `Speaker`, `ScriptLine`                                                                                                                                         | All player-facing text is keyed by line id plus language.                    |
+| `timeline.ts` | `Cue` union (including `waitFlag`), `Timeline`, `MusicCueId`, `SfxRoleId`, `CameraShotId`                                                                                                               | Scenes are data the Director plays.                                          |
+| `settings.ts` | `Settings`, `Action`, `Binding`, `SettingsStore`                                                                                                                                                        | One typed, persisted source for every option.                                |
+| `flags.ts`    | `SkipTo`, `AutoPlay`, `UiEntry`, `UrlFlags`, `parseUrlFlags`                                                                                                                                            | `?skipto=`, `?autoplay=fight\|pacifist&speed=N`, `?seed=N`, `?ui=`.          |
 
 Import from `src/contracts/index.ts`.
 
 ## Ownership
 
-| Folder                                       | Workstream                                                    | Stub left by Workstream 0                                    |
-| -------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ |
-| `src/contracts/`                             | integration pass only                                         | the contracts above                                          |
-| `src/main.ts`                                | integration pass                                              | fixed-step loop, flag wiring                                 |
-| `src/sim/`                                   | 1 Sim port                                                    | `sim.ts` (stub), `rng.ts`, `hash.ts`                         |
-| `src/pilots/`                                | 1 Sim port (autopilots); keyboard pilot wraps 2's input layer | stub `fighting.ts`, `pacifist.ts`                            |
-| `src/ui/`, `src/settings/`, `src/input/`     | 2 Front end                                                   | `devOverlay.ts`, `settings/store.ts`, `settings/defaults.ts` |
-| `src/render/`, `src/render/shaders/`         | 3 Renderer                                                    | `stage.ts` (spinning placeholder)                            |
-| `art/blender/` to `public/models/`           | 4 Art                                                         | empty                                                        |
-| `vo/script.yaml`, `src/scenes/*.timeline.ts` | 5 Narrative                                                   | empty                                                        |
-| `src/director/`, `src/audio/`, `src/i18n/`   | 6 Audio (Director playback, buses, text lookup)               | empty                                                        |
-| `sfx/` to `public/sfx/`                      | 7 UI sound design                                             | empty                                                        |
-| `tests/`                                     | each workstream adds its own `*_test.ts`                      | `sim_smoke_test.ts`                                          |
+| Folder                                                    | Workstream                                                    | Stub left by Workstream 0                                    |
+| --------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ |
+| `src/contracts/`                                          | integration pass only                                         | the contracts above                                          |
+| `src/main.ts`, `src/app/`, `scripts/`                     | integration pass                                              | fixed-step loop, flag wiring                                 |
+| `src/sim/`                                                | 1 Sim port                                                    | `sim.ts` (stub), `rng.ts`, `hash.ts`                         |
+| `src/pilots/`                                             | 1 Sim port (autopilots); keyboard pilot wraps 2's input layer | stub `fighting.ts`, `pacifist.ts`                            |
+| `src/ui/`, `src/settings/`, `src/input/`                  | 2 Front end                                                   | `devOverlay.ts`, `settings/store.ts`, `settings/defaults.ts` |
+| `src/render/`, `src/render/shaders/`                      | 3 Renderer                                                    | `stage.ts` (spinning placeholder)                            |
+| `art/blender/` to `public/models/`                        | 4 Art                                                         | empty                                                        |
+| `vo/script.yaml`, `src/scenes/*.timeline.ts`, `src/i18n/` | 5 Narrative (all text, including UI strings and text lookup)  | empty                                                        |
+| `src/director/`, `src/audio/`                             | 6 Audio (Director playback, buses)                            | empty                                                        |
+| `sfx/` to `public/sfx/`                                   | 7 UI sound design                                             | empty                                                        |
+| `tests/`                                                  | each workstream adds its own `*_test.ts`                      | `sim_smoke_test.ts`                                          |
 
 ## Rules
 
@@ -58,6 +58,16 @@ Import from `src/contracts/index.ts`.
 6. **Events over diffing.** React to `SimEvent`s (for example
    `pickup.firstPowerup` starts the flashback) rather than comparing
    snapshots.
+
+## Runtime wiring (integration pass, October 28, 2026)
+
+- Story flags reach the sim through the Director's `onFlag` port:
+  `main.ts` forwards every flag change to `sim.setStoryFlag`, which honors
+  `boss.parley` and `tut.spawnTarget` and ignores the rest.
+- The Director runs on `src/app/clock.ts` (wall time that stops on pause),
+  not the audio clock, which stays frozen until the first user gesture.
+- `deno task vo:sync` copies `vo/out/` (manifest and `.wav` takes) into the
+  gitignored `public/vo/`; `dev` and `build` run it first.
 
 ## Commands
 

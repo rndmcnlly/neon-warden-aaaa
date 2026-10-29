@@ -64,6 +64,12 @@ export interface Settings {
     /** Camera and cabinet shake intensity, 0–1. */
     readonly shake: number;
     readonly reducedFlashing: boolean;
+    /**
+     * Calmer camera and menu motion (no shot drift, no parallax swoops).
+     * The OS `prefers-reduced-motion` answer also counts, either one is
+     * enough.
+     */
+    readonly reduceMotion: boolean;
     /** Sim ticks per frame multiplier for human play, 0.5–1. */
     readonly gameSpeed: number;
     readonly difficulty: Difficulty;

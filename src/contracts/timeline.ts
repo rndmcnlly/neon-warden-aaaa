@@ -16,7 +16,11 @@ export type MusicCueId =
   | "gameplay"
   | "flashback"
   | "boss"
+  | "menu"
+  /** Kept for older timelines; prefer the two specific endings. */
   | "ending"
+  | "endingKill"
+  | "endingPacifist"
   | "silence";
 
 /**
@@ -36,7 +40,9 @@ export type CameraShotId =
   | "bossCloseup"
   | "pilotCloseup"
   | "flashback"
-  | "endingWide";
+  | "endingWide"
+  /** Boot: the studio and incubator logos turn on a plinth. */
+  | "logoTurntable";
 
 /** Story flags the Director reads and writes, plus mirrored sim flags. */
 export type FlagName = string;
@@ -71,6 +77,17 @@ export type Cue =
     readonly flag: FlagName;
     readonly then: readonly Cue[];
     readonly else?: readonly Cue[];
+  }
+  /**
+   * Blocks until a story flag has `value` (the tutorial waits for the player
+   * to actually move, fire and hit the target). `nudge` plays one line, once,
+   * if the wait runs past `afterMs`.
+   */
+  | {
+    readonly type: "waitFlag";
+    readonly flag: FlagName;
+    readonly value: boolean;
+    readonly nudge?: { readonly line: LineId; readonly afterMs: number };
   }
   /** Stops stepping the sim (the flashback freezes the world). */
   | { readonly type: "freezeSim" }

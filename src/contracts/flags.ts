@@ -5,6 +5,8 @@
  * - `?skipto=tutorial|sector1..sector5|flashback|boss|ending-kill|ending-pacifist`
  * - `?autoplay=fight|pacifist&speed=N` (N ticks per frame, 1–32)
  * - `?seed=N` (gameplay RNG seed)
+ * - `?ui=menu|title|settings|credits|pause` (front-end entry screen)
+ * - `?qa=1` (exposes the read-only QA probe, `globalThis.__nwqa`)
  *
  * The parser is pure (takes a query string) so it is testable headless.
  */
@@ -24,6 +26,16 @@ export const SKIP_TARGETS = [
 
 export type SkipTo = typeof SKIP_TARGETS[number];
 
+export const UI_ENTRIES = [
+  "menu",
+  "title",
+  "settings",
+  "credits",
+  "pause",
+] as const;
+
+export type UiEntry = typeof UI_ENTRIES[number];
+
 export interface AutoPlay {
   readonly mode: "fight" | "pacifist";
   /** Sim ticks per rendered frame. */
@@ -34,6 +46,10 @@ export interface UrlFlags {
   readonly skipTo: SkipTo | null;
   readonly autoPlay: AutoPlay | null;
   readonly seed: number | null;
+  /** Front-end screen to open instead of the boot gate (development). */
+  readonly ui: UiEntry | null;
+  /** QA tooling is watching: expose the read-only probe (see `src/app/qaProbe.ts`). */
+  readonly qa: boolean;
   /** Human-readable notes about ignored or clamped values, for the dev overlay. */
   readonly warnings: readonly string[];
 }
@@ -82,5 +98,15 @@ export function parseUrlFlags(search: string): UrlFlags {
     else warnings.push(`seed "${rawSeed}" is not an integer`);
   }
 
-  return { skipTo, autoPlay, seed, warnings };
+  let ui: UiEntry | null = null;
+  const rawUi = params.get("ui");
+  if (rawUi !== null) {
+    if ((UI_ENTRIES as readonly string[]).includes(rawUi)) {
+      ui = rawUi as UiEntry;
+    } else warnings.push(`unknown ui "${rawUi}"`);
+  }
+
+  const qa = params.get("qa") === "1";
+
+  return { skipTo, autoPlay, seed, ui, qa, warnings };
 }
