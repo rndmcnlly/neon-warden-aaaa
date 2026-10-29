@@ -273,3 +273,66 @@ and weak point `offset`s are relative to the owner center (+y down). Hangar:
 `hangar.sensor.<id>.name|blurb`. **A** (`main.ts`): pass the hangar's
 `Loadout` as `SimOptions.loadout`; add `?autoplay=ghost` mapping to the new
 `ghostAutopilot` (`PilotKind`); `pacifist` stays the disarmer.
+
+### N Narrative: update after G's events landed (October 28, 2026)
+
+- Supersedes N's "events N's scenes expect" bullet above: scenes now read
+  G's `SimEvent` directly (no local union). `timelineForEvent`:
+  `pickup` with `kind: "recorder"` starts `recorder` (it plays the
+  flashback first if no powerup came before, then the coda; the flashback
+  guards itself with `story.flashbackSeen`), `scanLock.first` starts
+  `beat-first-lock`, `disarm.first` `beat-first-disarm`, `graze.first`
+  `beat-first-graze`, `partBreak.first` with `target: "boss"`
+  `beat-warden-pod`. `runFlagsAfter(disarm)` sets `run.disarmed`.
+- Codex unlocks key off G's `intel.codexId` exactly: `codex.enemy.<kind>`,
+  `codex.warden`, `codex.warden.core`, `codex.recorder.0121`
+  (`codexUnlockedBy(event)` in `src/scenes/codex.ts`). Text ids are
+  `codex.<entryId>.title` / `.body` (entry ids `drone`, `warden`,
+  `wardencore`, `recorder`, ...), distinct from G's intel ids.
+- A (Director): voiced radio lines and `rec_log_*` need no new cue support
+  to be heard today (beats use `say`); the `radio` cue in `beats.ts`
+  (Lane Control after a first lock or disarm) is silent until the
+  Director handles `case "radio"`. `recorder.playing` tells U to show the
+  recorder lines in the radio box with `radio.callsign.recorder`.
+
+### U UI: APIs exposed and hookups requested (October 28, 2026)
+
+Exposed by the front end (`createFrontEnd` return value, `src/ui/frontEnd.ts`):
+
+- `hud.event(e)` now accepts every SimEvent including wave 3 ones (read by
+  `type`); continuous instruments (PAY and rate, Writ cells, graze meter,
+  scan lock, intel tags) are read from `SimState` in `hud.update(state)`
+  (`src/ui/instruments.ts`, `readInstruments`), so no extra calls are needed.
+- `hud.radio({ source, text, pan?, durationMs?, lang? })`: radio chatter
+  text channel, separate from subtitles, with a stereo side marker.
+- `progress` (`ProgressStore`, `src/ui/progress.ts`): loadout, codex unlocks
+  and career pay, persisted under `neon-warden.progress`. First `intel`
+  events unlock codex entries (with a toast); pay is banked on `gameOver`,
+  `bossDefeated`, `bossSurvived`.
+- `onStartGame(request)` now carries `request.loadout` (the hangar's).
+- Subtitles: `createSubtitleLayer(root, settings, { wordsFor?, now? })`
+  pulses the spoken word using `WordTiming` (N's contract); it also reads
+  optional `startedAt` / `words` on `SubtitleView` if the Director adds them.
+- Settings: `audio.mono` (contract, defaults, validation) with a row and
+  description; A already reads it.
+
+Requests:
+
+- **A** (`main.ts`): pass hooks `screenPositionOf: (id) =>
+  stage.screenPositionOf(Number(id))`, `applyLoadout: (_l, look) =>
+  stage.applyLoadout(look)` (and `stage.setHelmet` from
+  `look.helmet` if wanted), `showHangar: (shot) => stage.showHangar(shot)`;
+  forward `request.loadout` to `SimOptions.loadout`; call
+  `ui.hud.radio(...)` for N's radio cues with the panner's pan; pass
+  `wordsFor` (from the VO manifest's `words`) and the Director clock as
+  `now` to `createSubtitleLayer`. Optional: `onCodexUnlocked(id)` sting.
+- **A** (`flags.ts`): add `hangar` to `UiEntry` so `?ui=hangar` works; the
+  front end's entry table then needs one line (U will add it).
+- **Q**: please add a **hangar reel** (en, es, zh): main menu, Hangar, cycle
+  weapon (Standard, Magistrate, Courier, Notary) watching stat deltas,
+  cycle sensor, paint and trim (live 3D preview), focus a walled slot
+  (side panel copy), Q/E through Mastery, Codex and Campaign, focus a walled
+  chapter; then New Game, "To the hangar", Launch contract. Keys: Enter,
+  arrows, Q/E, Esc. Main menu order is now Continue, New Game, Hangar,
+  Chapters, Settings, Extras, Credits, Quit (menu reels that count rows
+  need a bump).
