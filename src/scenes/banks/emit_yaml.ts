@@ -27,7 +27,7 @@ export function seedLines(yaml: string): Map<string, string> {
   const seeds = new Map<string, string>();
   let id: string | null = null;
   for (const row of yaml.split("\n")) {
-    const m = /^  - id: (\S+)\s*$/.exec(row);
+    const m = /^ {2}- id: (\S+)\s*$/.exec(row);
     if (m) id = m[1];
     else if (id && row.startsWith("    seed:")) seeds.set(id, row);
   }

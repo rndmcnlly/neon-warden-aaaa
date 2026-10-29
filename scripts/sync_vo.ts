@@ -223,7 +223,12 @@ if (await exists(variantsPath)) {
   const index: {
     speakers: Record<
       string,
-      { variants: Record<string, { lines: Record<string, Record<string, VariantTake>> }> }
+      {
+        variants: Record<
+          string,
+          { lines: Record<string, Record<string, VariantTake>> }
+        >;
+      }
     >;
   } = JSON.parse(await Deno.readTextFile(variantsPath));
   const pending: VariantTake[] = [];

@@ -64,17 +64,18 @@ vertical-slice walls), and every action sounds excellent.
 - Original game: "Adam Smith, and his coupled agents".
 
 ## Ownership (each agent commits only its own paths, often, with clear
+
 messages; never `git add -A`; never push)
 
-| Agent | Owns | Contracts it may edit |
-| --- | --- | --- |
-| G Gameplay | `src/sim/`, `src/pilots/`, `tests/sim_*`, `tests/pilots_*` | `sim.ts`, `input.ts`, `pilot.ts`, new `loadout.ts` |
-| V Visual | `src/render/`, `art/blender/`, `public/models/`, `tests/render_*` | none (request) |
-| A Audio and wiring | `src/audio/`, `src/director/`, `src/main.ts`, `deno.json`, `sfx/`, `music/`, `public/sfx/`, `public/music/`, `public/vo/` build step, `tests/audio_*`, `tests/director_*` | `flags.ts`, `time.ts` |
-| U UI | `src/ui/`, `src/i18n/ui.ts`, `src/data/`, `tests/ui_*`, `tests/i18n_*` | `settings.ts` |
-| N Narrative | `vo/script.yaml` (text fields), `src/scenes/`, `docs/narrative/`, `src/i18n/` except `ui.ts` | `text.ts`, `timeline.ts` |
-| T VO tech | `vo/render.py`, `vo/voices/`, `vo/casting/`, `vo/out/`, seed fields in `vo/script.yaml` after N commits | none |
-| Q QA | `qa/`, `tests/qa_*` | none |
+| Agent              | Owns                                                                                                                                                                      | Contracts it may edit                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| G Gameplay         | `src/sim/`, `src/pilots/`, `tests/sim_*`, `tests/pilots_*`                                                                                                                | `sim.ts`, `input.ts`, `pilot.ts`, new `loadout.ts` |
+| V Visual           | `src/render/`, `art/blender/`, `public/models/`, `tests/render_*`                                                                                                         | none (request)                                     |
+| A Audio and wiring | `src/audio/`, `src/director/`, `src/main.ts`, `deno.json`, `sfx/`, `music/`, `public/sfx/`, `public/music/`, `public/vo/` build step, `tests/audio_*`, `tests/director_*` | `flags.ts`, `time.ts`                              |
+| U UI               | `src/ui/`, `src/i18n/ui.ts`, `src/data/`, `tests/ui_*`, `tests/i18n_*`                                                                                                    | `settings.ts`                                      |
+| N Narrative        | `vo/script.yaml` (text fields), `src/scenes/`, `docs/narrative/`, `src/i18n/` except `ui.ts`                                                                              | `text.ts`, `timeline.ts`                           |
+| T VO tech          | `vo/render.py`, `vo/voices/`, `vo/casting/`, `vo/out/`, seed fields in `vo/script.yaml` after N commits                                                                   | none                                               |
+| Q QA               | `qa/`, `tests/qa_*`                                                                                                                                                       | none                                               |
 
 Cross-agent needs go in `docs/INTEGRATION-QUEUE.md` under a "Wave 3" heading
 (append only). Code against another agent's announced API behind optional

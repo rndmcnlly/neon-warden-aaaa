@@ -23,14 +23,14 @@ Read with `AGENTS.md`, `docs/WAVE3.md`, `docs/INTEGRATION-QUEUE.md`.
 
 ## Ownership (commit only your paths; never `git add -A`; never push)
 
-| Agent | Owns |
-| --- | --- |
+| Agent                         | Owns                                                                                                                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | P Gameplay and tutorial logic | `src/sim/`, `src/pilots/`, `src/scenes/*.timeline.ts` logic and triggers, `src/director/` commentary scheduler, `src/contracts/sim.ts`, `src/contracts/timeline.ts`, tests for these |
-| W Writing | `vo/script.yaml` text fields, `src/scenes/banks/` (new: variant and commentary banks as data), `docs/narrative/`, `src/i18n/` except `ui.ts` |
-| B A/B, music and mix | `src/audio/`, `music/`, `public/music/`, `public/vo/variants/`, `qa/` A/B reels and judge, `src/contracts/flags.ts`, `deno.json` |
-| C Closing fixes | `src/ui/`, `src/render/`, `src/i18n/ui.ts`, `src/settings/` |
-| L Level design research | `research/2026-10-28-level-design/` only (no code) |
-| T VO tech (running) | `vo/render.py`, `vo/voices/`, `vo/casting/`, `vo/out/`, `public/vo/` base files |
+| W Writing                     | `vo/script.yaml` text fields, `src/scenes/banks/` (new: variant and commentary banks as data), `docs/narrative/`, `src/i18n/` except `ui.ts`                                         |
+| B A/B, music and mix          | `src/audio/`, `music/`, `public/music/`, `public/vo/variants/`, `qa/` A/B reels and judge, `src/contracts/flags.ts`, `deno.json`                                                     |
+| C Closing fixes               | `src/ui/`, `src/render/`, `src/i18n/ui.ts`, `src/settings/`                                                                                                                          |
+| L Level design research       | `research/2026-10-28-level-design/` only (no code)                                                                                                                                   |
+| T VO tech (running)           | `vo/render.py`, `vo/voices/`, `vo/casting/`, `vo/out/`, `public/vo/` base files                                                                                                      |
 
 Cross-agent needs: append to `docs/INTEGRATION-QUEUE.md` under "Wave 4".
 Before reporting: `deno task ci` and the relevant reels in the foreground,

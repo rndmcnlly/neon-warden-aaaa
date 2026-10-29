@@ -1,199 +1,199 @@
 {
- "version": 1,
- "generated": "2026-10-28T21:05:15-0700",
- "note": "Role levels are baked in (family loudness target plus role gain_db); play at unity on the UI bus.",
- "sounds": {
-  "focus": {
-   "src": "sfx/focus.ogg",
-   "duration_ms": 90,
-   "active_rms_dbfs": -26.0,
-   "gain_db_baked": -6,
-   "source": {
-    "file": "focus/focus_01.wav",
-    "hash": "5f164bbd02dc3e0d",
-    "seed": 1100,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "confirm": {
-   "src": "sfx/confirm.ogg",
-   "duration_ms": 260,
-   "active_rms_dbfs": -20.7,
-   "gain_db_baked": 0,
-   "source": {
-    "file": "confirm/confirm_01.wav",
-    "hash": "31e2020f4548fa7f",
-    "seed": 1200,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "back": {
-   "src": "sfx/back.ogg",
-   "duration_ms": 200,
-   "active_rms_dbfs": -22.6,
-   "gain_db_baked": -2,
-   "source": {
-    "file": "back/back_03.wav",
-    "hash": "52c7ad6465a4646f",
-    "seed": 1302,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "tab_switch": {
-   "src": "sfx/tab_switch.ogg",
-   "duration_ms": 118,
-   "active_rms_dbfs": -23.0,
-   "gain_db_baked": -3,
-   "source": {
-    "file": "tab_switch/tab_switch_03.wav",
-    "hash": "6081f96071c8a62c",
-    "seed": 1402,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "toggle_on": {
-   "src": "sfx/toggle_on.ogg",
-   "duration_ms": 102,
-   "active_rms_dbfs": -23.0,
-   "gain_db_baked": -3,
-   "source": {
-    "file": "toggle_on/toggle_on_06.wav",
-    "hash": "c37290609e30c27d",
-    "seed": 1505,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "toggle_off": {
-   "src": "sfx/toggle_off.ogg",
-   "duration_ms": 140,
-   "active_rms_dbfs": -24.0,
-   "gain_db_baked": -4,
-   "source": {
-    "file": "toggle_off/toggle_off_02.wav",
-    "hash": "0b28060160a175b7",
-    "seed": 1601,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "slider_tick": {
-   "src": "sfx/slider_tick.ogg",
-   "duration_ms": 50,
-   "active_rms_dbfs": -28.0,
-   "gain_db_baked": -8,
-   "source": {
-    "file": "slider_tick/slider_tick_03.wav",
-    "hash": "95a6ac7ff35721c8",
-    "seed": 1702,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "slider_end": {
-   "src": "sfx/slider_end.ogg",
-   "duration_ms": 150,
-   "active_rms_dbfs": -24.0,
-   "gain_db_baked": -4,
-   "source": {
-    "file": "slider_end/slider_end_01.wav",
-    "hash": "b38ce390c928efc9",
-    "seed": 1800,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "error": {
-   "src": "sfx/error.ogg",
-   "duration_ms": 260,
-   "active_rms_dbfs": -22.0,
-   "gain_db_baked": -2,
-   "source": {
-    "file": "error/error_04.wav",
-    "hash": "204adea61be40298",
-    "seed": 1903,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "locked": {
-   "src": "sfx/locked.ogg",
-   "duration_ms": 340,
-   "active_rms_dbfs": -23.0,
-   "gain_db_baked": -3,
-   "source": {
-    "file": "locked/locked_01.wav",
-    "hash": "017d6338e68a3d38",
-    "seed": 2000,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "menu_open": {
-   "src": "sfx/menu_open.ogg",
-   "duration_ms": 262,
-   "active_rms_dbfs": -21.0,
-   "gain_db_baked": -1,
-   "source": {
-    "file": "menu_open/menu_open_01.wav",
-    "hash": "c5c2287996f1082e",
-    "seed": 2100,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "menu_close": {
-   "src": "sfx/menu_close.ogg",
-   "duration_ms": 317,
-   "active_rms_dbfs": -22.0,
-   "gain_db_baked": -2,
-   "source": {
-    "file": "menu_close/menu_close_02.wav",
-    "hash": "87accabae2ba27b1",
-    "seed": 2201,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "pause_in": {
-   "src": "sfx/pause_in.ogg",
-   "duration_ms": 750,
-   "active_rms_dbfs": -21.0,
-   "gain_db_baked": -1,
-   "source": {
-    "file": "pause_in/pause_in_06.wav",
-    "hash": "57e74a068bce84a8",
-    "seed": 2305,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "pause_out": {
-   "src": "sfx/pause_out.ogg",
-   "duration_ms": 254,
-   "active_rms_dbfs": -22.4,
-   "gain_db_baked": -1,
-   "source": {
-    "file": "pause_out/pause_out_02.wav",
-    "hash": "3328907af7b6096b",
-    "seed": 2401,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "save": {
-   "src": "sfx/save.ogg",
-   "duration_ms": 300,
-   "active_rms_dbfs": -25.0,
-   "gain_db_baked": -5,
-   "source": {
-    "file": "save/save_01.wav",
-    "hash": "4f25af8940af2535",
-    "seed": 2500,
-    "model": "sa3/sm-sfx"
-   }
-  },
-  "notify": {
-   "src": "sfx/notify.ogg",
-   "duration_ms": 900,
-   "active_rms_dbfs": -20.0,
-   "gain_db_baked": 0,
-   "source": {
-    "file": "notify/notify_03.wav",
-    "hash": "73672e874adfc272",
-    "seed": 2602,
-    "model": "sa3/sm-sfx"
-   }
+  "version": 1,
+  "generated": "2026-10-28T21:05:15-0700",
+  "note": "Role levels are baked in (family loudness target plus role gain_db); play at unity on the UI bus.",
+  "sounds": {
+    "focus": {
+      "src": "sfx/focus.ogg",
+      "duration_ms": 90,
+      "active_rms_dbfs": -26.0,
+      "gain_db_baked": -6,
+      "source": {
+        "file": "focus/focus_01.wav",
+        "hash": "5f164bbd02dc3e0d",
+        "seed": 1100,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "confirm": {
+      "src": "sfx/confirm.ogg",
+      "duration_ms": 260,
+      "active_rms_dbfs": -20.7,
+      "gain_db_baked": 0,
+      "source": {
+        "file": "confirm/confirm_01.wav",
+        "hash": "31e2020f4548fa7f",
+        "seed": 1200,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "back": {
+      "src": "sfx/back.ogg",
+      "duration_ms": 200,
+      "active_rms_dbfs": -22.6,
+      "gain_db_baked": -2,
+      "source": {
+        "file": "back/back_03.wav",
+        "hash": "52c7ad6465a4646f",
+        "seed": 1302,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "tab_switch": {
+      "src": "sfx/tab_switch.ogg",
+      "duration_ms": 118,
+      "active_rms_dbfs": -23.0,
+      "gain_db_baked": -3,
+      "source": {
+        "file": "tab_switch/tab_switch_03.wav",
+        "hash": "6081f96071c8a62c",
+        "seed": 1402,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "toggle_on": {
+      "src": "sfx/toggle_on.ogg",
+      "duration_ms": 102,
+      "active_rms_dbfs": -23.0,
+      "gain_db_baked": -3,
+      "source": {
+        "file": "toggle_on/toggle_on_06.wav",
+        "hash": "c37290609e30c27d",
+        "seed": 1505,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "toggle_off": {
+      "src": "sfx/toggle_off.ogg",
+      "duration_ms": 140,
+      "active_rms_dbfs": -24.0,
+      "gain_db_baked": -4,
+      "source": {
+        "file": "toggle_off/toggle_off_02.wav",
+        "hash": "0b28060160a175b7",
+        "seed": 1601,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "slider_tick": {
+      "src": "sfx/slider_tick.ogg",
+      "duration_ms": 50,
+      "active_rms_dbfs": -28.0,
+      "gain_db_baked": -8,
+      "source": {
+        "file": "slider_tick/slider_tick_03.wav",
+        "hash": "95a6ac7ff35721c8",
+        "seed": 1702,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "slider_end": {
+      "src": "sfx/slider_end.ogg",
+      "duration_ms": 150,
+      "active_rms_dbfs": -24.0,
+      "gain_db_baked": -4,
+      "source": {
+        "file": "slider_end/slider_end_01.wav",
+        "hash": "b38ce390c928efc9",
+        "seed": 1800,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "error": {
+      "src": "sfx/error.ogg",
+      "duration_ms": 260,
+      "active_rms_dbfs": -22.0,
+      "gain_db_baked": -2,
+      "source": {
+        "file": "error/error_04.wav",
+        "hash": "204adea61be40298",
+        "seed": 1903,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "locked": {
+      "src": "sfx/locked.ogg",
+      "duration_ms": 340,
+      "active_rms_dbfs": -23.0,
+      "gain_db_baked": -3,
+      "source": {
+        "file": "locked/locked_01.wav",
+        "hash": "017d6338e68a3d38",
+        "seed": 2000,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "menu_open": {
+      "src": "sfx/menu_open.ogg",
+      "duration_ms": 262,
+      "active_rms_dbfs": -21.0,
+      "gain_db_baked": -1,
+      "source": {
+        "file": "menu_open/menu_open_01.wav",
+        "hash": "c5c2287996f1082e",
+        "seed": 2100,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "menu_close": {
+      "src": "sfx/menu_close.ogg",
+      "duration_ms": 317,
+      "active_rms_dbfs": -22.0,
+      "gain_db_baked": -2,
+      "source": {
+        "file": "menu_close/menu_close_02.wav",
+        "hash": "87accabae2ba27b1",
+        "seed": 2201,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "pause_in": {
+      "src": "sfx/pause_in.ogg",
+      "duration_ms": 750,
+      "active_rms_dbfs": -21.0,
+      "gain_db_baked": -1,
+      "source": {
+        "file": "pause_in/pause_in_06.wav",
+        "hash": "57e74a068bce84a8",
+        "seed": 2305,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "pause_out": {
+      "src": "sfx/pause_out.ogg",
+      "duration_ms": 254,
+      "active_rms_dbfs": -22.4,
+      "gain_db_baked": -1,
+      "source": {
+        "file": "pause_out/pause_out_02.wav",
+        "hash": "3328907af7b6096b",
+        "seed": 2401,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "save": {
+      "src": "sfx/save.ogg",
+      "duration_ms": 300,
+      "active_rms_dbfs": -25.0,
+      "gain_db_baked": -5,
+      "source": {
+        "file": "save/save_01.wav",
+        "hash": "4f25af8940af2535",
+        "seed": 2500,
+        "model": "sa3/sm-sfx"
+      }
+    },
+    "notify": {
+      "src": "sfx/notify.ogg",
+      "duration_ms": 900,
+      "active_rms_dbfs": -20.0,
+      "gain_db_baked": 0,
+      "source": {
+        "file": "notify/notify_03.wav",
+        "hash": "73672e874adfc272",
+        "seed": 2602,
+        "model": "sa3/sm-sfx"
+      }
+    }
   }
- }
 }
