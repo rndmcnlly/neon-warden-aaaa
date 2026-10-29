@@ -210,6 +210,12 @@
       "revision": "e8b40a4..6879ea0 (+ evidence commit)",
       "detail": "Floor: packet dashes and signal lamps cut, slow soft conduit flow and dim pools; floor value 0.28 to 0.18, combat/floor 2.3x to 3.6x, small bright marks 38 to 18 per frame. Writ on armor: own non-spatial clang plus deflect hiss; local rise 3.3 to 6.5 dB (n=16, target 6). Disarm: slate pulses for 1.6 s, stub sparks, darker hull; NOT verified (only seeded sector disarm is at the top edge). Writ 1 narrow, 2 finned, 3 wedge with rings; smaller tap slug; dimmer scan cone; not judged. Checks 2026-10-29 05:48: deno task ci exit 0 (257 tests); reels gameplay-fight and disarm-boss pass, qa/reports/20261029-054748. No paid calls. research/2026-10-29-morning-fix/README.md.",
       "updated": "2026-10-29"
+    },
+    {
+      "title": "Trailer automation prep (30 s teaser, 90 s trailer, 120 s QA compendium)",
+      "status": "queued",
+      "detail": "Starts after the Warden defeat pass. Scripted shot lists, capture recipes and an edit pipeline, ready to render later; no full renders now.",
+      "updated": "2026-10-29"
     }
   ],
   "blockers": [
