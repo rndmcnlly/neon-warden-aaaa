@@ -219,8 +219,8 @@
     },
     {
       "title": "Live language cycling: [ ] keys and gamepad shoulders",
-      "status": "queued",
-      "detail": "Adam: no mid-phrase switching. [ and ] (and gamepad L/R shoulders during gameplay) cycle EN/ES/ZH, overwriting BOTH voice and text language settings at once; takes effect from the next line. Queued after the Warden defeat pass, before trailer prep.",
+      "status": "done",
+      "detail": "[ and ] (and gamepad LB/RB in play only; menus keep tabs) cycle EN/ES/ZH, overwriting voice and text language together, persisted; the playing line finishes as is, the next line switches; HUD relabels at once; small localized badge (reduced motion: no animation). Ignores typing, key repeat, remap capture, modifiers and player-bound keys/buttons. Controls tab row plus textLang/voiceLang descriptions in EN/ES/ZH. Unit tests tests/lang_cycle_test.ts (7); deno task ci pass (268 tests); reel language-cycle pass, 19 assertions, VO not dropped 6/6, voice/subtitle language match 6/6: qa/reports/20261029-082359/index.html.",
       "updated": "2026-10-29"
     },
     {
