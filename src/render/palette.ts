@@ -52,7 +52,7 @@ export const ROLE = Object.freeze(
     /** Enemy bullet center: dark and saturated, so a ring reads after bloom. */
     dangerCore: { hex: 0x3a0626, gain: 1 },
     /** Heavy rounds keep the original gold, same ring language. */
-    heavyRim: { hex: PALETTE.heavyGold, gain: 2.0 },
+    heavyRim: { hex: PALETTE.heavyGold, gain: 2.25 },
     heavyCore: { hex: 0x3a2600, gain: 1 },
     /** The player's engine plume: the eye finds the ship first. */
     playerEngine: { hex: PALETTE.cyan, gain: 2.6 },
