@@ -46,7 +46,18 @@ export interface SfxPlayerDeps {
 }
 
 /** Most simultaneous gameplay voices; past this, priority decides. */
-export const MAX_VOICES = 32;
+export const MAX_VOICES = 24;
+
+/** Each voice of a role already sounding lowers the next by this much. */
+export const STACK_DB = -2;
+
+/**
+ * Synth recipes peak near full scale; rendered samples are normalized to
+ * about -20 dBFS active RMS (`sfx/gameplay.yaml`). This trim puts synth
+ * voices on the same footing, so a role's `gainDb` means the same thing
+ * whichever source plays it.
+ */
+export const SYNTH_TRIM_DB = -16;
 
 interface Voice {
   readonly role: GameplaySoundId;
@@ -74,7 +85,9 @@ export class SfxPlayer implements SoundSink {
     this.prune(now);
     if (!this.makeRoom(cue.role, role, now)) return;
     const when = this.when(role, now);
-    const voice = this.start(cue, role, when);
+    // Stacked repeats get quieter, so a burst thickens instead of clipping.
+    const stacked = this.voices.filter((v) => v.role === cue.role).length;
+    const voice = this.start(cue, role, when, STACK_DB * stacked);
     this.voices.push(voice);
     if (role.duck) this.d.duck(role);
   }
@@ -127,10 +140,15 @@ export class SfxPlayer implements SoundSink {
 
   // ------------------------------------------------------------- playing
 
-  private start(cue: SoundCue, role: SoundRole, when: number): Voice {
+  private start(
+    cue: SoundCue,
+    role: SoundRole,
+    when: number,
+    extraDb = 0,
+  ): Voice {
     const ctx = this.d.ctx;
     const gain = ctx.createGain();
-    gain.gain.value = Math.pow(10, role.gainDb / 20);
+    gain.gain.value = Math.pow(10, (role.gainDb + extraDb) / 20);
     let rate = 1;
     let tail: AudioNode = this.d.buses[role.bus ?? "sfx"];
     if (role.spatial && cue.pos) {
@@ -175,7 +193,7 @@ export class SfxPlayer implements SoundSink {
       out: gain,
       when,
       midi: this.midi(cue, role) + jitter,
-      gain: 1,
+      gain: Math.pow(10, SYNTH_TRIM_DB / 20),
       rate,
     });
     return {

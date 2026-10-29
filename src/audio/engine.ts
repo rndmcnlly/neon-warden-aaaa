@@ -146,7 +146,7 @@ export class AudioEngine implements VoicePort {
     this.musicFilter = lowpass();
     this.sfxFilter = lowpass();
     const limiter = ctx.createDynamicsCompressor();
-    limiter.threshold.value = -3;
+    limiter.threshold.value = -6;
     limiter.knee.value = 0;
     limiter.ratio.value = 20;
     limiter.attack.value = 0.002;
