@@ -126,8 +126,16 @@ export class CameraRig {
         // Approach's set pieces filling the right and the lane behind. (The
         // old centred close-up left a disc of Warden in a black frame.)
         const orbit = this.reduceMotion ? 0 : Math.sin(ctx.timeSec * 0.3) * 0.8;
+        // A slow push-in over 20 s carries long speeches.
+        const push = this.reduceMotion
+          ? 0
+          : Math.min(1, this.shotAgeMs / 20000) * 2.2;
         out.target.set(ctx.boss.x + 1.8, 0, ctx.boss.z - 2);
-        out.position.set(ctx.boss.x - 4.2 + orbit, 3.4, ctx.boss.z + 8.5);
+        out.position.set(
+          ctx.boss.x - 4.2 + orbit + push * 0.4,
+          3.4 - push * 0.25,
+          ctx.boss.z + 8.5 - push,
+        );
         out.fov = 40;
       },
       wardenFall: (ctx, out) => {
@@ -166,14 +174,16 @@ export class CameraRig {
         );
         out.fov = 40;
       },
-      endingWide: (ctx, out) => {
+      endingWide: (_ctx, out) => {
         // Pull back and up: the lanes go on, the corridor is the point. Close
         // enough that Last Approach and the tollgates fill the side regions.
-        const drift = this.reduceMotion
+        // A slow dolly up the lane over half a minute ("the long way home"),
+        // so the payroll lines are not read over a frozen frame.
+        const dolly = this.reduceMotion
           ? 0
-          : Math.sin(ctx.timeSec * 0.05) * 1.5;
-        out.target.set(0.5, -2, -9);
-        out.position.set(3.5, 9, 13 + drift);
+          : Math.min(1, this.shotAgeMs / 30000) * 7;
+        out.target.set(0.5, -2, -9 - dolly);
+        out.position.set(3.5, 9 - dolly * 0.3, 13 - dolly);
         out.fov = 58;
       },
       hangar: (ctx, out) => {

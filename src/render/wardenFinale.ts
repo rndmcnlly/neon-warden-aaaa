@@ -204,6 +204,9 @@ export class WardenFinale {
   private readonly leashUpper: THREE.Mesh;
   private readonly leashLower: THREE.Mesh;
   private readonly leashMat: THREE.MeshBasicMaterial;
+  /** The Authority's recall beacon at the tether's far end (pacifist). */
+  private readonly beacon: THREE.Mesh;
+  private readonly beaconMat: THREE.MeshBasicMaterial;
   private readonly tmp = new THREE.Vector3();
   private readonly tmp2 = new THREE.Vector3();
   private low = false;
@@ -245,6 +248,17 @@ export class WardenFinale {
     this.leash.add(this.leashLower, this.leashUpper);
     this.leash.visible = false;
     this.group.add(this.leash);
+    this.beaconMat = new THREE.MeshBasicMaterial({
+      color: new THREE.Color(PALETTE.crimson).multiplyScalar(2),
+      transparent: true,
+      toneMapped: false,
+    });
+    this.beacon = new THREE.Mesh(
+      new THREE.OctahedronGeometry(0.45, 0),
+      this.beaconMat,
+    );
+    this.beacon.visible = false;
+    this.group.add(this.beacon);
   }
 
   get active(): boolean {
@@ -338,6 +352,7 @@ export class WardenFinale {
     this.dimmed.clear();
     this.shock.visible = false;
     this.leash.visible = false;
+    this.beacon.visible = false;
     this.kind = null;
     this.warden = null;
   }
@@ -554,7 +569,26 @@ export class WardenFinale {
 
     // The recall tether: intact until the leash is cut, then it whips apart.
     this.leash.visible = true;
-    const anchor = this.tmp.set(this.origin.x + 7, 18, this.origin.z - 34);
+    // The beacon hangs where the close-up's empty upper right was (judge
+    // pass one: "top and right: vast stretches of dark starfield").
+    const anchor = this.tmp.set(
+      this.origin.x + 8,
+      4.5 + (this.leashCutAt === null ? 0 : (t - this.leashCutAt) * 1.5),
+      this.origin.z - 18,
+    );
+    this.beacon.visible = this.leashCutAt === null || t - this.leashCutAt < 3;
+    this.beacon.position.copy(anchor);
+    this.beacon.rotation.y = f.reducedMotion ? 0.4 : t * 1.3;
+    this.beaconMat.opacity = this.leashCutAt === null
+      ? 1
+      : Math.max(0, 1 - (t - this.leashCutAt) / 1.2);
+    // Recall pings while the link holds: the Authority calling him in.
+    if (this.leashCutAt === null && !this.low) {
+      const ping = Math.floor(t / 1.4);
+      if (this.once(`ping:${ping}`)) {
+        this.fx.ring(anchor, PALETTE.crimson, 1.8, 0.6);
+      }
+    }
     const from = this.tmp2.copy(w.position).setY(w.position.y + 0.6);
     const length = from.distanceTo(anchor);
     this.leash.position.copy(from);
@@ -671,12 +705,21 @@ export class WardenFinale {
           }
         }
       } else {
-        // Pacifist: waiting at the edges, then forming up as an escort.
+        // Pacifist: they drift in from the edges to listen, gathering on
+        // the open side of the close-up, then form up as an escort.
+        const n = this.scouts.indexOf(s);
+        const gather = smooth((t - 1 - n * 0.6) / 6);
+        this.tmp2.set(
+          this.wardenAt.x + 2.6 + (n % 3) * 1.5,
+          0.9 + (n % 2) * 1.1,
+          this.wardenAt.z - 1.5 - Math.floor(n / 3) * 2.2,
+        );
+        p.lerpVectors(s.home, this.tmp2, gather);
         const join = this.escortAt === null
           ? 0
-          : smooth((t - this.escortAt - this.scouts.indexOf(s) * 0.25) / 2.5);
+          : smooth((t - this.escortAt - n * 0.25) / 2.5);
         this.tmp.copy(this.wardenAt).add(s.slotOffset);
-        p.lerpVectors(s.home, this.tmp, join);
+        p.lerp(this.tmp, join);
         if (!f.reducedMotion) {
           p.y += Math.sin(t * 2.2 + s.phase) * 0.1;
           s.slot.rotation.y = t * 0.8 + s.phase;
