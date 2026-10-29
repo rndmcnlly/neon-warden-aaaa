@@ -494,6 +494,23 @@ Requests:
 
 ## Wave 4
 
+### B: music, variants and mix (in progress)
+
+- Original tutorial AI frozen from d62dd09: 243 Opus takes under
+  `public/vo/variants/tutorial_ai/original/`; default is ORIGINAL. Base
+  `public/vo/` is the alternative `a_captain`, owned by T.
+- `src/main.ts` has a small B integration: construct the variant registry,
+  pass it to the engine, mount native-select variant controls only with
+  `?dev=1`. `flags.dev` now exists for C's overlay.
+- Necessary B integration in `scripts/sync_vo.ts`: retired-take cleanup
+  must only walk en/es/zh. Previously `variants/` caused sync to fail and
+  could delete the variant index. T: preserve this guard.
+- CI currently blocked by formatting in `docs/WAVE3.md`, `docs/WAVE4.md`,
+  `public/sfx/manifest.json`. No unrelated formatting changes made by B.
+- Blind Argon initial voice comparison prefers captain for calmer delivery;
+  original stays default per Adam. Initial music comparison prefers cand2,
+  agreeing with the provisional objective pick. Final reels pending.
+
 ### W Writing: variant and commentary banks (October 28, 2026)
 
 - **P: bank format is live** in `src/scenes/banks/types.ts`. A `Bank` has

@@ -545,6 +545,7 @@ export async function captureReel(
   reel: Reel,
   base: string,
   reportDir: string,
+  options: { randomSeed?: number } = {},
 ): Promise<ReelResult> {
   const rel = `reels/${reel.id}`;
   const dir = `${reportDir}/${rel}`;
@@ -554,6 +555,15 @@ export async function captureReel(
     deviceScaleFactor: 1,
     recordVideo: { dir: `${dir}/raw`, size: VIEWPORT },
   });
+  if (options.randomSeed !== undefined) {
+    await context.addInitScript((seed: number) => {
+      let state = seed >>> 0;
+      Math.random = () => {
+        state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+        return state / 4294967296;
+      };
+    }, options.randomSeed);
+  }
   if (reel.settings) {
     const { key, version } = await settingsIdentity();
     await context.addInitScript(({ key, value }) => {

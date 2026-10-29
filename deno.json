@@ -36,6 +36,7 @@
     "qa": "deno run -A --no-lock qa/qa.ts",
     "qa:static": "deno run -A --no-lock qa/qa.ts static",
     "qa:reel": "deno run -A --no-lock qa/qa.ts reel",
+    "qa:ab": "deno run -A --no-lock qa/ab.ts",
     "qa:topic": "deno run -A --no-lock qa/qa.ts topic",
     "qa:list": "deno run -A --no-lock qa/qa.ts list",
     "qa:probe": "deno run -A --no-lock qa/probe.ts",

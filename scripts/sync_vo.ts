@@ -163,7 +163,8 @@ for (const line of Object.values(cues.lines)) {
   for (const take of Object.values(line.langs)) wanted.add(take.file);
 }
 for await (const dir of Deno.readDir(TARGET)) {
-  if (!dir.isDirectory) continue;
+  // Variants are frozen assets, not stale base-language takes.
+  if (!dir.isDirectory || !["en", "es", "zh"].includes(dir.name)) continue;
   for await (const f of Deno.readDir(`${TARGET}/${dir.name}`)) {
     const rel = `${dir.name}/${f.name}`;
     if (!wanted.has(rel)) await Deno.remove(`${TARGET}/${rel}`);

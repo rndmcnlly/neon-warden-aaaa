@@ -46,8 +46,13 @@ export interface AvOptions {
 
 // -- page side
 
+/** The engine's mix buses, each recorded post-fader and post-trim (pre-master). */
+export const BUS_STEMS = ["music", "sfx", "voice", "ui"] as const;
+export type BusStem = typeof BUS_STEMS[number];
+type StemKind = "mix" | "vo" | "spatial" | BusStem;
+
 type Msg =
-  | { k: "seg"; seg: string; kind: "mix" | "vo" | "spatial"; epoch: number }
+  | { k: "seg"; seg: string; kind: StemKind; epoch: number }
   | { k: "chunk"; seg: string; n: number; b64: string }
   | { k: "src"; epoch: number; dur: number; loop: boolean; url: string }
   | {
@@ -175,6 +180,27 @@ function pageAv(wordSelector: string): void {
     return t;
   };
   const connect = AudioNode.prototype.connect as (...a: unknown[]) => unknown;
+  // Bus stems: the engine hands each bus's last node here as it builds the
+  // graph (src/audio/engine.ts, `__nwqaBusTap`); one recorder per bus.
+  const busTaps = new WeakMap<
+    BaseAudioContext,
+    Map<string, MediaStreamAudioDestinationNode>
+  >();
+  w.__nwqaBusTap = (bus: string, node: AudioNode) => {
+    const ctx = node.context;
+    if (!(ctx instanceof AudioContext)) return;
+    tapsFor(ctx);
+    let m = busTaps.get(ctx);
+    if (!m) busTaps.set(ctx, m = new Map());
+    let tap = m.get(bus);
+    if (!tap) {
+      tap = ctx.createMediaStreamDestination();
+      tap.channelCount = 2;
+      m.set(bus, tap);
+      record(tap, bus);
+    }
+    connect.call(node, tap);
+  };
   AudioNode.prototype.connect = function (this: AudioNode, ...args: unknown[]) {
     const result = connect.apply(this, args);
     if (
@@ -295,7 +321,7 @@ export class AvLog {
   readonly segs = new Map<
     string,
     {
-      kind: "mix" | "vo" | "spatial";
+      kind: StemKind;
       epoch: number;
       chunks: [number, string][];
     }
@@ -388,7 +414,7 @@ async function ff(args: string[]): Promise<{ ok: boolean; err: string }> {
  */
 async function stem(
   log: AvLog,
-  kind: "mix" | "vo" | "spatial",
+  kind: StemKind,
   dir: string,
   seconds: number,
 ): Promise<boolean> {
@@ -636,6 +662,10 @@ export interface AvResult {
   readonly voStarted: readonly string[];
   readonly lufs: number;
   readonly truePeak: number;
+  /** Per-bus loudness (pre-master, so before the master fader and limiter). */
+  readonly buses?: Readonly<
+    Partial<Record<BusStem, { lufs: number; truePeak: number }>>
+  >;
   readonly audibleS: number;
   readonly voAudible: readonly Span[];
   readonly subtitles: readonly SubInterval[];
@@ -682,6 +712,14 @@ export async function finishAv(
     const mixSilent = await silence(`${tmp}/mix.wav`, seconds);
     const mixAudible = audibleSpans(mixSilent, seconds);
     const audibleS = mixAudible.reduce((n, s) => n + s.end - s.start, 0);
+    const buses: Partial<Record<BusStem, { lufs: number; truePeak: number }>> =
+      {};
+    for (const b of BUS_STEMS) {
+      if (await stem(log, b, tmp, seconds)) {
+        const l = await loudness(`${tmp}/${b}.wav`);
+        buses[b] = { lufs: r2(l.lufs), truePeak: r2(l.truePeak) };
+      }
+    }
     const voAudible = voStem
       ? audibleSpans(await silence(`${tmp}/vo.wav`, seconds), seconds)
       : [];
@@ -708,6 +746,23 @@ export async function finishAv(
         `${r2(truePeak)} dBTP, ${
           Number.isFinite(lufs) ? r2(lufs) + " LUFS integrated" : "LUFS n/a"
         }`,
+      );
+    }
+
+    if (Object.keys(buses).length) {
+      check(
+        "audio: bus loudness (pre-master)",
+        "pass",
+        BUS_STEMS.filter((b) => buses[b]).map((b) =>
+          `${b} ${buses[b]!.lufs} LUFS / ${buses[b]!.truePeak} dBTP`
+        ).join(", "),
+      );
+    }
+    if (hasAudio && Number.isFinite(lufs) && audibleS > 5) {
+      check(
+        "audio: integrated loudness -20 to -14 LUFS",
+        lufs >= -20 && lufs <= -14 ? "pass" : "warn",
+        `${r2(lufs)} LUFS integrated (target about -17)`,
       );
     }
 
@@ -891,6 +946,7 @@ export async function finishAv(
         voStarted,
         lufs,
         truePeak,
+        buses,
         audibleS: r2(audibleS),
         voAudible: voAudible.map((s) => ({
           start: r2(s.start),

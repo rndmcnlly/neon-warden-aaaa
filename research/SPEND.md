@@ -26,3 +26,7 @@ total would pass US $15.
 | 2026-10-28 | Q qa:judge boss (13 s reel) | OpenRouter | google/gemini-4-argon (ZDR, Vertex) | 1 | 0.025 | 0.30 |
 | 2026-10-28 | Q qa:judge gameplay-fight (27 s reel) | OpenRouter | google/gemini-4-argon (ZDR, Vertex) | 1 | 0.029 | 0.33 |
 | 2026-10-28 | Q qa:judge menus-en (24 s reel) | OpenRouter | google/gemini-4-argon (ZDR, Vertex) | 1 | 0.026 | 0.36 |
+| 2026-10-28 | L level design: judge scores on 3 side-by-sides (`research/2026-10-28-level-design/judge.json`) | OpenRouter | liquid/d1.1 (ZDR) via inference.decide | 4 | 0.0001 | 0.36 |
+| 2026-10-28 | L level design: judge prose on 3 side-by-sides (OpenRouter generate not image-capable here) | Tinfoil | gemma4-31b via inference.generate (attested enclave; usage not reported) | 3 | 0.01 (est., upper bound) | 0.01 |
+| 2026-10-28 | B wave 4 A/B voice.tutorial_ai | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0162 | 0.3762 |
+| 2026-10-28 | B wave 4 A/B music.gameplay | OpenRouter | google/gemini-4-argon (ZDR) | 1 | 0.0161 | 0.3923 |
