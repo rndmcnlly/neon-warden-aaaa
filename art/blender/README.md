@@ -90,15 +90,17 @@ Triangles are counted after modifiers (what ships). Total: about 25,300.
 
 | Asset | Tris | Notes and named nodes |
 | --- | ---: | --- |
-| `pilot_ship.glb` | 1,364 | Kite delta, canards, canopy (glass), gimbal ring. `ship_core_gem` (hitbox marker), `engine` (exhaust disk), `ship_nozzle`, `ship_thrust_ring`, `ship_trim`. Bank by rolling the root about Z. |
+| `pilot_ship.glb` | 2,354 | Kite delta, canards, canopy (glass), gimbal ring. `ship_core_gem` (hitbox marker), `engine` (exhaust disk), `ship_nozzle`, `ship_thrust_ring`, `ship_trim`. Customization: `socket_weapon` > `weapon_<id>`, `socket_sensor` > `sensor_<id>` (every package id in `src/contracts/loadout.ts`), `ship_decals` > `decal_<id>`; materials `ship_paint`, `ship_trim_emit`, `ship_engine_emit` are recolored by `src/render/loadout.ts`. Bank by rolling the root about Z. |
 | `drone.glb` | 1,880 | Scout pod with an eye inside an elliptical ring (28 x 16 px). `drone_eye` (hit flash), `drone_ring_trim`, `drone_ring`, `drone_body`. |
 | `dart.glb` | 320 | Unarmed swept blade. `thruster` (exhaust disk, flare at tick 50 when it commits), `dart_nozzle`, `dart_trim`. |
 | `turret.glb` | 1,184 | Hex drum, legs, six-barrel crown. `crown` (pivot: spin), `turret_core` (white, hit flash), `turret_legs`, `turret_trim`. |
 | `lancer.glb` | 362 | Flat diamond with gold heraldry. `lancer_spike` (flash before each volley), `lancer_crest`, `lancer_trim`. |
-| `warden.glb` | 5,140 | Crest bulwark, crimson crown, gold halo rings, caged sun. `core` (separate node: pulse and hit flash), `halo` pivot holding `warden_ring_outer` / `warden_ring_inner` pivots with `*_lights` children (each with its own emissive material, so rings can go dark one at a time), `armor` group holding `warden_plate_ul/ur/ll/lr` (phase breakaway), `warden_blast_door` with `_l` / `_r` halves (slide apart along X), `warden_cage`, `warden_crown`, `warden_muzzle`, `warden_emitters`. |
+| `warden.glb` | 9,580 | Wave-3 remodel (see the script docstring): layered heart, `pod_0`..`pod_3` at the sim's pod offsets, `core` at the origin, `warden_seams` > `warden_seam_1/2/3` (one tier lit per phase), `warden_shield` shell, plus `halo` and `armor`. Old notes follow. |
+| (old) `warden.glb` | 5,140 | Crest bulwark, crimson crown, gold halo rings, caged sun. `core` (separate node: pulse and hit flash), `halo` pivot holding `warden_ring_outer` / `warden_ring_inner` pivots with `*_lights` children (each with its own emissive material, so rings can go dark one at a time), `armor` group holding `warden_plate_ul/ur/ll/lr` (phase breakaway), `warden_blast_door` with `_l` / `_r` halves (slide apart along X), `warden_cage`, `warden_crown`, `warden_muzzle`, `warden_emitters`. |
 | `pickup_spread.glb` | 260 | Data crystal in a flight-recorder sleeve inside a diamond cage. `spread_cage`, `spread_crystal`, `spread_recorder`, `spread_dots` (the original's three dots). |
 | `pickup_shield.glb` | 1,012 | Same cage in cyan, ring core. `shield_cage`, `shield_ring`, `shield_core`. |
-| `pilot_figure.glb` | 2,932 | Helmeted contractor, static pose, no rig. Original helmet: smooth shell, midline ridge, comm pods, a crest-shaped faceplate with a downward-chevron opaque visor (no T-visor, no face). `pilot_helmet` (pivot at the neck), `pilot_visor`, `pilot_visor_line` (emissive), `pilot_cape`, `pilot_chest_light`, `pilot_bracer_light`. |
+| `pilot_figure_issued.glb`, `pilot_figure_worn.glb` | 3,864 / 3,352 | Wave-3 helmet in two variants from one builder (`pilot_figure.py`): tall narrow head, raked brow, dark glossy visor band, no grille, cheek vent, temple light; issued (Authority white, LA-0121) and worn (repainted, scuffed). The notes below are the retired `pilot_figure.glb`. |
+| (retired) `pilot_figure.glb` | 2,932 | Helmeted contractor, static pose, no rig. Original helmet: smooth shell, midline ridge, comm pods, a crest-shaped faceplate with a downward-chevron opaque visor (no T-visor, no face). `pilot_helmet` (pivot at the neck), `pilot_visor`, `pilot_visor_line` (emissive), `pilot_cape`, `pilot_chest_light`, `pilot_bracer_light`. |
 | `logo_adamsmith_systems.glb` | 5,744 | Hex emblem with a chevron monogram, Orbitron wordmark. `ass_emblem`, `ass_emblem_glow`, `ass_glyph`, `ass_wordmark`, `ass_underline`. |
 | `logo_cm121.glb` | 5,060 | Chamfered plate, CM121 wordmark, gold "f26 COHORT" hex badge. `cm_plate`, `cm_plate_rim`, `cm_wordmark`, `cm_tagline`, `cm_cohort_badge`, `cm_cohort_text`, `cm_cohort_label`. |
 
@@ -117,3 +119,5 @@ Triangles are counted after modifiers (what ships). Total: about 25,300.
 - Preview sheets are EEVEE stills without bloom, so emissive parts look
   flatter than in-game.
 - Logo text is player-facing but a brand mark, so it is not localized.
+- After a rebuild, run `deno fmt public/models/manifest.json`: Python's JSON
+  layout is not `deno fmt`'s, and CI checks formatting.
