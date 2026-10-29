@@ -1,0 +1,31 @@
+{
+  "asset": "gl_tower",
+  "file": "public/models/world/gl_tower.glb",
+  "bytes": 118224,
+  "triangles": 1656,
+  "meshes": 2,
+  "nodes": [
+    "gl_tower",
+    "gl_tower_body",
+    "gl_tower_lit_emit",
+    "paint__gl_tower"
+  ],
+  "triangles_per_node": {
+    "gl_tower_body": 48,
+    "gl_tower_lit_emit": 1608
+  },
+  "bounds": [
+    -22.0,
+    -15.12,
+    0.0,
+    22.0,
+    15.0,
+    57.2
+  ],
+  "signs": {
+    "paint__gl_tower": [
+      26.0,
+      6.0
+    ]
+  }
+}

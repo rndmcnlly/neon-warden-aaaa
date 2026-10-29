@@ -1,0 +1,31 @@
+{
+  "asset": "lg_bay",
+  "file": "public/models/world/lg_bay.glb",
+  "bytes": 28344,
+  "triangles": 372,
+  "meshes": 2,
+  "nodes": [
+    "lg_bay",
+    "lg_bay_body",
+    "lg_bay_lit_emit",
+    "paint__lg_bay"
+  ],
+  "triangles_per_node": {
+    "lg_bay_body": 348,
+    "lg_bay_lit_emit": 24
+  },
+  "bounds": [
+    -0.2,
+    -6.0,
+    -0.5,
+    16.0,
+    6.0,
+    10.6
+  ],
+  "signs": {
+    "paint__lg_bay": [
+      6.4,
+      9.6
+    ]
+  }
+}

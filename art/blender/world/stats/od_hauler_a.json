@@ -1,0 +1,25 @@
+{
+  "asset": "od_hauler_a",
+  "file": "public/models/world/od_hauler_a.glb",
+  "bytes": 36188,
+  "triangles": 528,
+  "meshes": 2,
+  "nodes": [
+    "od_hauler_a",
+    "od_hauler_a_body",
+    "od_hauler_a_lit_emit"
+  ],
+  "triangles_per_node": {
+    "od_hauler_a_body": 360,
+    "od_hauler_a_lit_emit": 168
+  },
+  "bounds": [
+    -5.0,
+    -19.15,
+    -2.65,
+    5.0,
+    15.5,
+    2.65
+  ],
+  "signs": {}
+}

@@ -1,0 +1,47 @@
+{
+  "asset": "gl_gantry",
+  "file": "public/models/world/gl_gantry.glb",
+  "bytes": 225228,
+  "triangles": 3144,
+  "meshes": 6,
+  "nodes": [
+    "gl_gantry",
+    "gl_gantry_arm_0",
+    "gl_gantry_arm_0_body",
+    "gl_gantry_arm_1",
+    "gl_gantry_arm_1_body",
+    "gl_gantry_body",
+    "gl_gantry_lit_emit",
+    "gl_gantry_scanner",
+    "gl_gantry_scanner_body",
+    "gl_gantry_scanner_lit_emit",
+    "paint__gl_customs",
+    "sign__gl_ticker"
+  ],
+  "triangles_per_node": {
+    "gl_gantry_body": 2688,
+    "gl_gantry_lit_emit": 216,
+    "gl_gantry_arm_0_body": 108,
+    "gl_gantry_arm_1_body": 108,
+    "gl_gantry_scanner_body": 12,
+    "gl_gantry_scanner_lit_emit": 12
+  },
+  "bounds": [
+    -18.8,
+    -32.0,
+    -1.0,
+    18.8,
+    32.0,
+    33.9
+  ],
+  "signs": {
+    "sign__gl_ticker": [
+      19.0,
+      2.6
+    ],
+    "paint__gl_customs": [
+      22.0,
+      3.4
+    ]
+  }
+}

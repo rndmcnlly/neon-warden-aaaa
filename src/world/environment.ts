@@ -1,41 +1,65 @@
 import * as THREE from "three";
 import type { SimState } from "../contracts/index.ts";
 import { WorldArchive, type WorldLanguage } from "./lore.ts";
-import { sectorBlocks, WORLD_BUDGET, WORLD_NAMES } from "./sectors.ts";
+import {
+  assetFor,
+  BUDGET_CAPS,
+  instancesOf,
+  METERS,
+  piecesFor,
+  type Placement,
+  SCROLL,
+  type SectorLayout,
+  sectorLayout,
+  WORLD_NAMES,
+} from "./sectors.ts";
+import { type RoutePose, routePose, wrapRel } from "./route.ts";
+import {
+  boomYaw,
+  cranePose,
+  lampYaw,
+  nurseryPose,
+  podVisible,
+  podY,
+  queueOffset,
+  REST_T,
+  sparkLevel,
+  tollPose,
+} from "./activity.ts";
+import { InstancedRig, SignBoard, WorldLibrary } from "./kit.ts";
 
-/** Bounded, render-only diorama. One active kit, three instanced materials. */
+interface Piece {
+  readonly placement: Placement;
+  readonly rig: InstancedRig;
+  readonly copies: ReturnType<typeof instancesOf>;
+}
+
+const SPARKS_PER_SOCKET = 6;
+
+/**
+ * Render-only sector worlds: Blender-built set pieces along a curved distant
+ * route, animated to show work happening, with a rigid combat plane left
+ * untouched. Never collides, never forecasts a spawn.
+ */
 export class SectorWorld {
   readonly group = new THREE.Group();
   readonly archive = new WorldArchive();
+  private readonly library: WorldLibrary;
+  private readonly signs = new SignBoard();
   private sector = 0;
   private start = 0;
   private lastTick = -1;
   private elapsed = 0;
   private quiet = 0;
   private time = 0;
-  private kit = new THREE.Group();
-  private movers: THREE.Mesh[] = [];
-  private readonly geometry = new THREE.BoxGeometry();
-  private readonly materials = [
-    new THREE.MeshStandardMaterial({
-      color: 0x17232a,
-      metalness: 0.72,
-      roughness: 0.48,
-    }),
-    new THREE.MeshStandardMaterial({
-      color: 0x40565b,
-      metalness: 0.55,
-      roughness: 0.66,
-    }),
-    // Recessed long strips: restrained emission, never pickup-hot dots.
-    new THREE.MeshStandardMaterial({
-      color: 0x698679,
-      metalness: 0.25,
-      roughness: 0.8,
-      emissive: 0x365b50,
-      emissiveIntensity: 0.22,
-    }),
-  ];
+  private layout: SectorLayout = sectorLayout(1);
+  private pieces: Piece[] = [];
+  private builtFor = "";
+  private buildToken = 0;
+  private lowTier = false;
+  private tickerClock = 0;
+  private readonly pose: RoutePose = { x: 0, y: 0, z: 0, yaw: 0 };
+  private readonly sparks: THREE.InstancedMesh;
   private readonly spill = new THREE.PointLight(0xffc596, 0, 24, 2);
   private spillAge = 1;
   private readonly canvas = document.createElement("canvas");
@@ -46,7 +70,8 @@ export class SectorWorld {
   private labelSeconds = 0;
   private active = false;
   private updateMs = 0;
-  constructor() {
+  constructor(baseUrl = "models/world/") {
+    this.library = new WorldLibrary(baseUrl);
     this.canvas.width = 1024;
     this.canvas.height = 512;
     this.texture = new THREE.CanvasTexture(this.canvas);
@@ -66,6 +91,22 @@ export class SectorWorld {
     this.sign.renderOrder = 3;
     this.group.add(this.sign);
     this.group.add(this.spill);
+    // Welding sparks: tiny additive bars, warm and small, never bullet-like rings.
+    this.sparks = new THREE.InstancedMesh(
+      new THREE.PlaneGeometry(0.16, 0.05),
+      new THREE.MeshBasicMaterial({
+        color: 0xffd9a8,
+        transparent: true,
+        opacity: 0.85,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false,
+      }),
+      3 * SPARKS_PER_SOCKET,
+    );
+    this.sparks.frustumCulled = false;
+    this.sparks.visible = false;
+    this.group.add(this.sparks);
+    void this.library.loadManifest();
   }
   /** One pooled local light, no shadows or new per-explosion objects. */
   flash(x: number, z: number): void {
@@ -84,7 +125,7 @@ export class SectorWorld {
     if (sector !== this.sector) {
       this.sector = sector;
       this.start = state.tick;
-      this.build();
+      this.layout = sectorLayout(sector);
       this.labelSeconds = 0;
       this.quiet = 0;
     }
@@ -99,44 +140,44 @@ export class SectorWorld {
     ) this.quiet = 0;
     else this.quiet++;
   }
-  private build(): void {
-    this.group.remove(this.kit);
-    for (const child of this.kit.children) {
-      if (child instanceof THREE.InstancedMesh) child.dispose();
-    }
-    this.kit = new THREE.Group();
-    this.group.add(this.kit);
-    const blocks = sectorBlocks(this.sector);
-    const transform = new THREE.Object3D();
-    for (let material = 0; material < 3; material++) {
-      const selected = blocks.filter((b) => b.material === material);
-      const batch = new THREE.InstancedMesh(
-        this.geometry,
-        this.materials[material],
-        selected.length,
+  /** (Re)build the active sector's rigs; stale async results are discarded. */
+  private async build(low: boolean): Promise<void> {
+    const token = ++this.buildToken;
+    this.clearPieces();
+    const manifest = await this.library.loadManifest();
+    if (!manifest || token !== this.buildToken) return;
+    const lods = new Set(Object.keys(manifest));
+    const tint = new THREE.Color(this.layout.tint);
+    const built: Piece[] = [];
+    for (const placement of piecesFor(this.layout, low)) {
+      const template = await this.library.template(
+        assetFor(placement, low, lods),
       );
-      selected.forEach((b, i) => {
-        transform.position.set(b.x, b.y, b.z);
-        transform.scale.set(b.w, b.h, b.d);
-        transform.rotation.set(0, b.roll ?? 0, 0);
-        transform.updateMatrix();
-        batch.setMatrixAt(i, transform.matrix);
-      });
-      batch.computeBoundingSphere();
-      this.kit.add(batch);
-    }
-    this.movers = [];
-    for (let i = 0; i < 3; i++) {
-      const mesh = new THREE.Mesh(this.geometry, this.materials[1]);
-      mesh.position.set((i % 2 === 0 ? 1 : -1) * 12, -1.5, -15 + i * 9);
-      mesh.scale.set(
-        this.sector === 4 ? 2.6 : 3,
-        0.3,
-        this.sector === 1 ? 4 : 0.7,
+      if (token !== this.buildToken) {
+        built.forEach((p) => p.rig.dispose());
+        return;
+      }
+      if (!template) continue;
+      const copies = instancesOf(placement);
+      const rig = new InstancedRig(
+        template,
+        copies.length,
+        placement.layer,
+        tint,
+        this.signs,
+        copies.map((c) => c.tint),
       );
-      this.kit.add(mesh);
-      this.movers.push(mesh);
+      this.group.add(rig.group);
+      built.push({ placement, rig, copies });
     }
+    this.pieces = built;
+  }
+  private clearPieces(): void {
+    for (const p of this.pieces) {
+      this.group.remove(p.rig.group);
+      p.rig.dispose();
+    }
+    this.pieces = [];
   }
   update(
     dt: number,
@@ -152,24 +193,158 @@ export class SectorWorld {
     const before = performance.now();
     this.group.visible = visible && this.active;
     if (!this.group.visible) return;
+    const key = `${this.sector}:${low}`;
+    if (key !== this.builtFor) {
+      this.builtFor = key;
+      this.lowTier = low;
+      void this.build(low);
+    }
+    this.signs.setLanguage(language);
     this.spillAge += dt;
     this.spill.intensity = low || reducedFlashing
       ? 0
       : 90 * Math.exp(-this.spillAge * 16);
     this.spill.visible = this.spill.intensity > 0.2;
     if (!reduced) this.time += dt;
-    // Progress comes from observed ticks, not wall time. Landmark approaches once.
-    this.kit.position.z = reduced ? 0 : Math.min(5, this.elapsed / 360);
-    this.movers.forEach((m, i) => {
-      m.visible =
-        i < (low ? WORLD_BUDGET.movingPropsLow : WORLD_BUDGET.movingPropsHigh);
-      const t = reduced ? 0 : this.time;
-      if (this.sector === 1 || this.sector === 4) {
-        m.position.z = -19 +
-          ((t * (this.sector === 4 ? 0.8 : 0.35) + i * 11) % 32);
-      } else {m.rotation.y = Math.sin(t * 0.22 + i) *
-          (this.sector === 5 ? 0.08 : 0.45);}
-    });
+    // Progress comes from observed ticks, not wall time; reduced motion holds
+    // one composed frame (hero alongside, every activity mid-gesture).
+    const progress = reduced ? 0 : (this.elapsed / 60) * SCROLL;
+    const t = reduced ? REST_T : this.time;
+    this.posePieces(progress, t, reducedFlashing, camera);
+    if (!reduced) {
+      this.tickerClock += dt;
+      if (this.tickerClock > 0.2) {
+        this.tickerClock = 0;
+        this.signs.paint("gl_ticker", language, (t * 0.04) % 1);
+      }
+    }
+    this.updateLabel(dt, camera, width, height, language);
+    this.updateMs = performance.now() - before;
+  }
+  private posePieces(
+    progress: number,
+    t: number,
+    reducedFlashing: boolean,
+    camera: THREE.Camera,
+  ): void {
+    const { bend, length } = this.layout;
+    const toll = tollPose(t);
+    const crane = cranePose(t);
+    const nursery = nurseryPose(t);
+    this.sparks.visible = false;
+    for (const { placement: p, rig, copies } of this.pieces) {
+      const spacing = copies.length > 1
+        ? Math.abs(copies[1].ds - copies[0].ds) || 9
+        : 9;
+      copies.forEach((c, i) => {
+        const root = rig.copies[i];
+        let s = p.s + c.ds;
+        let shown = true;
+        const unit = METERS * (p.scale ?? 1) * c.scale;
+        if (p.activity === "queue" || p.activity === "outbound") {
+          const speed = p.activity === "queue" ? 0.35 : -0.3;
+          s = p.s + queueOffset(t, c.ds, speed, spacing * copies.length);
+        } else if (p.activity === "tollPods") {
+          const y = podY(t, i);
+          s += y * unit;
+          shown = podVisible(y);
+        }
+        const rel = wrapRel(s, progress, length);
+        routePose(rel, p.x + c.dx, p.y + c.dy, bend, this.pose);
+        root.position.set(this.pose.x, this.pose.y, this.pose.z);
+        root.rotation.set(0, (p.yaw ?? 0) + c.yaw + this.pose.yaw, 0);
+        if (p.activity === "spin") root.rotation.y += t * 0.03;
+        if (p.activity === "tumble") {
+          root.rotation.y += t * 0.04 * (i + 1);
+          root.rotation.x = Math.sin(t * 0.07 + i) * 0.2;
+        }
+        root.scale.setScalar(shown ? unit : 0);
+        this.animate(p, rig, i, t, toll, crane, nursery);
+      });
+      rig.commit();
+      if (p.activity === "repair" && p.layer === "mid") {
+        this.poseSparks(rig, t, reducedFlashing, camera);
+      }
+    }
+  }
+  private animate(
+    p: Placement,
+    rig: InstancedRig,
+    i: number,
+    t: number,
+    toll: ReturnType<typeof tollPose>,
+    crane: ReturnType<typeof cranePose>,
+    nursery: ReturnType<typeof nurseryPose>,
+  ): void {
+    switch (p.activity) {
+      case "beacon":
+        rig.node(i, "od_beacon_lamp")?.rotation.set(0, lampYaw(t), 0);
+        break;
+      case "repair":
+        rig.node(i, "sb_repair_boom")?.rotation.set(0, boomYaw(t), 0);
+        break;
+      case "toll": {
+        // Blender's road axis (+Y) is three's -Z; arms lift about it.
+        rig.node(i, "gl_gantry_arm_0")?.rotation.set(0, 0, toll.arm);
+        rig.node(i, "gl_gantry_arm_1")?.rotation.set(0, 0, -toll.arm);
+        const head = rig.node(i, "gl_gantry_scanner");
+        if (head) head.position.z = -toll.scan;
+        rig.setVisible("fan", toll.scanning);
+        break;
+      }
+      case "crane": {
+        const trolley = rig.node(i, "lg_crane_trolley");
+        if (trolley) trolley.position.x = crane.trolley;
+        const hoist = rig.node(i, "lg_crane_hoist");
+        if (hoist) hoist.position.y = -crane.drop;
+        rig.node(i, "lg_crane_cable")?.scale.set(1, crane.drop, 1);
+        break;
+      }
+      case "nursery": {
+        const tender = rig.node(i, "la_nursery_tender");
+        if (tender) tender.position.z = -nursery.tender;
+        rig.setGlow(nursery.glow, 0.62);
+        break;
+      }
+    }
+  }
+  private readonly tmp = new THREE.Object3D();
+  private readonly socket = new THREE.Vector3();
+  private poseSparks(
+    rig: InstancedRig,
+    t: number,
+    reducedFlashing: boolean,
+    camera: THREE.Camera,
+  ): void {
+    this.sparks.visible = true;
+    for (let j = 0; j < 3; j++) {
+      const node = rig.node(0, `spark__${j}`);
+      const level = sparkLevel(t, j, reducedFlashing);
+      if (node) node.getWorldPosition(this.socket);
+      for (let k = 0; k < SPARKS_PER_SOCKET; k++) {
+        const a = k * 2.4 + t * (reducedFlashing ? 0 : 9) + j;
+        const r = level > 0 ? 0.05 + ((k * 0.37 + t * 3.1) % 0.3) : 0;
+        this.tmp.position.set(
+          this.socket.x + Math.cos(a) * r,
+          this.socket.y + 0.05 + r * 0.6,
+          this.socket.z + Math.sin(a) * r,
+        );
+        this.tmp.quaternion.copy(camera.quaternion);
+        this.tmp.rotateZ(a);
+        this.tmp.scale.setScalar(level > 0 && node ? level : 0);
+        this.tmp.updateMatrix();
+        this.sparks.setMatrixAt(j * SPARKS_PER_SOCKET + k, this.tmp.matrix);
+      }
+    }
+    this.sparks.instanceMatrix.needsUpdate = true;
+  }
+  private updateLabel(
+    dt: number,
+    camera: THREE.Camera,
+    width: number,
+    height: number,
+    language: WorldLanguage,
+  ): void {
     const entries = this.archive.entries(language).filter((e) =>
       e.sector === this.sector
     );
@@ -216,30 +391,42 @@ export class SectorWorld {
         Math.abs(
           this.sign.position.clone().applyMatrix4(camera.matrixWorldInverse).z,
         ),
-      ) * pixels * camera.projectionMatrix.elements[0];
+      ) * pixels * (camera as THREE.PerspectiveCamera).projectionMatrix
+      .elements[0];
     this.sign.visible = this.quiet > 45 && this.labelSeconds > 0 &&
       width / height > 1.35 && signWidth >= 240 &&
       (p.x + 1) * pixels - signWidth / 2 > 12 &&
       p.x * pixels + signWidth / 2 < leftLane.x * pixels - 20;
-    this.updateMs = performance.now() - before;
   }
   stats() {
+    let drawCalls = this.sparks.visible ? 1 : 0, triangles = 0;
+    for (const { rig } of this.pieces) {
+      const s = rig.stats();
+      drawCalls += s.drawCalls;
+      triangles += s.triangles;
+    }
+    const caps = this.lowTier ? BUDGET_CAPS.low : BUDGET_CAPS.high;
     return {
       sector: this.sector,
       name: WORLD_NAMES[this.sector - 1],
-      blocks: this.sector ? sectorBlocks(this.sector).length : 0,
-      maxDrawCalls: WORLD_BUDGET.drawCalls,
+      tier: this.lowTier ? "low" : "high",
+      pieces: this.pieces.map((p) => p.placement.asset),
+      drawCalls,
+      triangles: Math.round(triangles),
+      textureBytes: Math.round(this.signs.bytes),
+      maxDrawCalls: caps.drawCalls,
       updateMs: this.updateMs,
       signVisible: this.sign.visible,
       elapsedTicks: this.elapsed,
     };
   }
   dispose(): void {
-    for (const child of this.kit.children) {
-      if (child instanceof THREE.InstancedMesh) child.dispose();
-    }
-    this.geometry.dispose();
-    this.materials.forEach((m) => m.dispose());
+    this.buildToken++;
+    this.clearPieces();
+    this.signs.dispose();
+    this.sparks.geometry.dispose();
+    (this.sparks.material as THREE.Material).dispose();
+    this.sparks.dispose();
     this.texture.dispose();
     this.sign.material.dispose();
   }

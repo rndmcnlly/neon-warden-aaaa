@@ -1,0 +1,31 @@
+{
+  "asset": "od_waystation",
+  "file": "public/models/world/od_waystation.glb",
+  "bytes": 95304,
+  "triangles": 1408,
+  "meshes": 2,
+  "nodes": [
+    "od_waystation",
+    "od_waystation_body",
+    "od_waystation_lit_emit",
+    "paint__od_waystation"
+  ],
+  "triangles_per_node": {
+    "od_waystation_body": 724,
+    "od_waystation_lit_emit": 684
+  },
+  "bounds": [
+    -71.0,
+    -42.0,
+    -5.0,
+    71.0,
+    42.0,
+    6.5
+  ],
+  "signs": {
+    "paint__od_waystation": [
+      16.0,
+      4.4
+    ]
+  }
+}

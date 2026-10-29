@@ -1,0 +1,31 @@
+{
+  "asset": "gl_pod",
+  "file": "public/models/world/gl_pod.glb",
+  "bytes": 13212,
+  "triangles": 156,
+  "meshes": 2,
+  "nodes": [
+    "gl_pod",
+    "gl_pod_body",
+    "gl_pod_lit_emit",
+    "paint__gl_pod"
+  ],
+  "triangles_per_node": {
+    "gl_pod_body": 120,
+    "gl_pod_lit_emit": 36
+  },
+  "bounds": [
+    -4.5,
+    -8.0,
+    0.0,
+    4.5,
+    8.0,
+    7.4
+  ],
+  "signs": {
+    "paint__gl_pod": [
+      6.4,
+      2.0
+    ]
+  }
+}

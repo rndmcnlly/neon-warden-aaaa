@@ -1,0 +1,31 @@
+{
+  "asset": "la_heartgate_lod",
+  "file": "public/models/world/la_heartgate_lod.glb",
+  "bytes": 46896,
+  "triangles": 608,
+  "meshes": 2,
+  "nodes": [
+    "la_heartgate_lod",
+    "la_heartgate_lod_body",
+    "la_heartgate_lod_lit_emit",
+    "paint__la_heartgate"
+  ],
+  "triangles_per_node": {
+    "la_heartgate_lod_body": 424,
+    "la_heartgate_lod_lit_emit": 184
+  },
+  "bounds": [
+    -77.6,
+    -81.66,
+    -40.0,
+    77.6,
+    57.06,
+    8.3
+  ],
+  "signs": {
+    "paint__la_heartgate": [
+      30.0,
+      6.0
+    ]
+  }
+}

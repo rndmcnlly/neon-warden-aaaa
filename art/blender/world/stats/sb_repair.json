@@ -1,0 +1,37 @@
+{
+  "asset": "sb_repair",
+  "file": "public/models/world/sb_repair.glb",
+  "bytes": 68220,
+  "triangles": 928,
+  "meshes": 3,
+  "nodes": [
+    "sb_repair",
+    "sb_repair_body",
+    "sb_repair_boom",
+    "sb_repair_boom_body",
+    "sb_repair_lit_emit",
+    "sign__sb_commons",
+    "spark__0",
+    "spark__1",
+    "spark__2"
+  ],
+  "triangles_per_node": {
+    "sb_repair_body": 768,
+    "sb_repair_lit_emit": 96,
+    "sb_repair_boom_body": 64
+  },
+  "bounds": [
+    -21.0,
+    -10.04,
+    -2.0,
+    16.7,
+    10.04,
+    15.29
+  ],
+  "signs": {
+    "sign__sb_commons": [
+      11.0,
+      3.0
+    ]
+  }
+}

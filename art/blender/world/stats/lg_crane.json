@@ -1,0 +1,47 @@
+{
+  "asset": "lg_crane",
+  "file": "public/models/world/lg_crane.glb",
+  "bytes": 242040,
+  "triangles": 3372,
+  "meshes": 6,
+  "nodes": [
+    "lg_crane",
+    "lg_crane_body",
+    "lg_crane_cable",
+    "lg_crane_cable_body",
+    "lg_crane_hoist",
+    "lg_crane_hoist_body",
+    "lg_crane_lit_emit",
+    "lg_crane_trolley",
+    "lg_crane_trolley_body",
+    "lg_crane_trolley_lit_emit",
+    "paint__lg_saltline",
+    "sign__lg_yard"
+  ],
+  "triangles_per_node": {
+    "lg_crane_body": 2844,
+    "lg_crane_lit_emit": 84,
+    "lg_crane_trolley_body": 24,
+    "lg_crane_trolley_lit_emit": 12,
+    "lg_crane_cable_body": 48,
+    "lg_crane_hoist_body": 360
+  },
+  "bounds": [
+    -26.0,
+    -18.0,
+    -0.6,
+    34.0,
+    18.0,
+    32.3
+  ],
+  "signs": {
+    "sign__lg_yard": [
+      9.0,
+      2.4
+    ],
+    "paint__lg_saltline": [
+      2.2,
+      6.6
+    ]
+  }
+}

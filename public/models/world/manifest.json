@@ -1,0 +1,538 @@
+{
+  "gl_gantry": {
+    "file": "public/models/world/gl_gantry.glb",
+    "bytes": 225228,
+    "triangles": 3144,
+    "meshes": 6,
+    "nodes": [
+      "gl_gantry",
+      "gl_gantry_arm_0",
+      "gl_gantry_arm_0_body",
+      "gl_gantry_arm_1",
+      "gl_gantry_arm_1_body",
+      "gl_gantry_body",
+      "gl_gantry_lit_emit",
+      "gl_gantry_scanner",
+      "gl_gantry_scanner_body",
+      "gl_gantry_scanner_lit_emit",
+      "paint__gl_customs",
+      "sign__gl_ticker"
+    ],
+    "bounds": [
+      -18.8,
+      -32.0,
+      -1.0,
+      18.8,
+      32.0,
+      33.9
+    ],
+    "signs": {
+      "sign__gl_ticker": [
+        19.0,
+        2.6
+      ],
+      "paint__gl_customs": [
+        22.0,
+        3.4
+      ]
+    }
+  },
+  "gl_pod": {
+    "file": "public/models/world/gl_pod.glb",
+    "bytes": 13212,
+    "triangles": 156,
+    "meshes": 2,
+    "nodes": [
+      "gl_pod",
+      "gl_pod_body",
+      "gl_pod_lit_emit",
+      "paint__gl_pod"
+    ],
+    "bounds": [
+      -4.5,
+      -8.0,
+      0.0,
+      4.5,
+      8.0,
+      7.4
+    ],
+    "signs": {
+      "paint__gl_pod": [
+        6.4,
+        2.0
+      ]
+    }
+  },
+  "gl_tower": {
+    "file": "public/models/world/gl_tower.glb",
+    "bytes": 118224,
+    "triangles": 1656,
+    "meshes": 2,
+    "nodes": [
+      "gl_tower",
+      "gl_tower_body",
+      "gl_tower_lit_emit",
+      "paint__gl_tower"
+    ],
+    "bounds": [
+      -22.0,
+      -15.12,
+      0.0,
+      22.0,
+      15.0,
+      57.2
+    ],
+    "signs": {
+      "paint__gl_tower": [
+        26.0,
+        6.0
+      ]
+    }
+  },
+  "gl_tower_lod": {
+    "file": "public/models/world/gl_tower_lod.glb",
+    "bytes": 45336,
+    "triangles": 610,
+    "meshes": 2,
+    "nodes": [
+      "gl_tower_lod",
+      "gl_tower_lod_body",
+      "gl_tower_lod_lit_emit",
+      "paint__gl_tower"
+    ],
+    "bounds": [
+      -22.0,
+      -15.12,
+      0.0,
+      22.0,
+      15.0,
+      57.2
+    ],
+    "signs": {
+      "paint__gl_tower": [
+        26.0,
+        6.0
+      ]
+    }
+  },
+  "la_buttress": {
+    "file": "public/models/world/la_buttress.glb",
+    "bytes": 144356,
+    "triangles": 2036,
+    "meshes": 2,
+    "nodes": [
+      "la_buttress",
+      "la_buttress_body",
+      "la_buttress_lit_emit"
+    ],
+    "bounds": [
+      -31.21,
+      -11.29,
+      -60.0,
+      11.29,
+      11.29,
+      3.8
+    ],
+    "signs": {}
+  },
+  "la_buttress_lod": {
+    "file": "public/models/world/la_buttress_lod.glb",
+    "bytes": 53816,
+    "triangles": 711,
+    "meshes": 2,
+    "nodes": [
+      "la_buttress_lod",
+      "la_buttress_lod_body",
+      "la_buttress_lod_lit_emit"
+    ],
+    "bounds": [
+      -31.21,
+      -11.29,
+      -60.0,
+      11.29,
+      11.29,
+      3.8
+    ],
+    "signs": {}
+  },
+  "la_heartgate": {
+    "file": "public/models/world/la_heartgate.glb",
+    "bytes": 122664,
+    "triangles": 1740,
+    "meshes": 2,
+    "nodes": [
+      "la_heartgate",
+      "la_heartgate_body",
+      "la_heartgate_lit_emit",
+      "paint__la_heartgate"
+    ],
+    "bounds": [
+      -77.6,
+      -81.66,
+      -40.0,
+      77.6,
+      56.36,
+      8.3
+    ],
+    "signs": {
+      "paint__la_heartgate": [
+        30.0,
+        6.0
+      ]
+    }
+  },
+  "la_heartgate_lod": {
+    "file": "public/models/world/la_heartgate_lod.glb",
+    "bytes": 46896,
+    "triangles": 608,
+    "meshes": 2,
+    "nodes": [
+      "la_heartgate_lod",
+      "la_heartgate_lod_body",
+      "la_heartgate_lod_lit_emit",
+      "paint__la_heartgate"
+    ],
+    "bounds": [
+      -77.6,
+      -81.66,
+      -40.0,
+      77.6,
+      57.06,
+      8.3
+    ],
+    "signs": {
+      "paint__la_heartgate": [
+        30.0,
+        6.0
+      ]
+    }
+  },
+  "la_nursery": {
+    "file": "public/models/world/la_nursery.glb",
+    "bytes": 74048,
+    "triangles": 1092,
+    "meshes": 4,
+    "nodes": [
+      "la_nursery",
+      "la_nursery_body",
+      "la_nursery_lit_emit",
+      "la_nursery_tender",
+      "la_nursery_tender_body",
+      "la_nursery_tender_lit_emit",
+      "sign__la_nursery"
+    ],
+    "bounds": [
+      -13.0,
+      -14.27,
+      -2.0,
+      18.0,
+      10.4,
+      7.5
+    ],
+    "signs": {
+      "sign__la_nursery": [
+        12.0,
+        2.6
+      ]
+    }
+  },
+  "lg_bay": {
+    "file": "public/models/world/lg_bay.glb",
+    "bytes": 28344,
+    "triangles": 372,
+    "meshes": 2,
+    "nodes": [
+      "lg_bay",
+      "lg_bay_body",
+      "lg_bay_lit_emit",
+      "paint__lg_bay"
+    ],
+    "bounds": [
+      -0.2,
+      -6.0,
+      -0.5,
+      16.0,
+      6.0,
+      10.6
+    ],
+    "signs": {
+      "paint__lg_bay": [
+        6.4,
+        9.6
+      ]
+    }
+  },
+  "lg_container": {
+    "file": "public/models/world/lg_container.glb",
+    "bytes": 24772,
+    "triangles": 336,
+    "meshes": 1,
+    "nodes": [
+      "lg_container",
+      "lg_container_body"
+    ],
+    "bounds": [
+      -1.3,
+      -6.18,
+      -0.05,
+      1.3,
+      6.15,
+      2.68
+    ],
+    "signs": {}
+  },
+  "lg_crane": {
+    "file": "public/models/world/lg_crane.glb",
+    "bytes": 242040,
+    "triangles": 3372,
+    "meshes": 6,
+    "nodes": [
+      "lg_crane",
+      "lg_crane_body",
+      "lg_crane_cable",
+      "lg_crane_cable_body",
+      "lg_crane_hoist",
+      "lg_crane_hoist_body",
+      "lg_crane_lit_emit",
+      "lg_crane_trolley",
+      "lg_crane_trolley_body",
+      "lg_crane_trolley_lit_emit",
+      "paint__lg_saltline",
+      "sign__lg_yard"
+    ],
+    "bounds": [
+      -26.0,
+      -18.0,
+      -0.6,
+      34.0,
+      18.0,
+      32.3
+    ],
+    "signs": {
+      "sign__lg_yard": [
+        9.0,
+        2.4
+      ],
+      "paint__lg_saltline": [
+        2.2,
+        6.6
+      ]
+    }
+  },
+  "od_beacon": {
+    "file": "public/models/world/od_beacon.glb",
+    "bytes": 266608,
+    "triangles": 3828,
+    "meshes": 3,
+    "nodes": [
+      "od_beacon",
+      "od_beacon_body",
+      "od_beacon_lamp",
+      "od_beacon_lamp_body",
+      "od_beacon_lit_emit",
+      "paint__od_deck",
+      "sign__od_beacon"
+    ],
+    "bounds": [
+      -25.81,
+      -25.81,
+      -6.45,
+      25.81,
+      25.81,
+      24.6
+    ],
+    "signs": {
+      "sign__od_beacon": [
+        10.0,
+        2.6
+      ],
+      "paint__od_deck": [
+        12.0,
+        3.4
+      ]
+    }
+  },
+  "od_hauler_a": {
+    "file": "public/models/world/od_hauler_a.glb",
+    "bytes": 36188,
+    "triangles": 528,
+    "meshes": 2,
+    "nodes": [
+      "od_hauler_a",
+      "od_hauler_a_body",
+      "od_hauler_a_lit_emit"
+    ],
+    "bounds": [
+      -5.0,
+      -19.15,
+      -2.65,
+      5.0,
+      15.5,
+      2.65
+    ],
+    "signs": {}
+  },
+  "od_hauler_b": {
+    "file": "public/models/world/od_hauler_b.glb",
+    "bytes": 32776,
+    "triangles": 472,
+    "meshes": 2,
+    "nodes": [
+      "od_hauler_b",
+      "od_hauler_b_body",
+      "od_hauler_b_lit_emit"
+    ],
+    "bounds": [
+      -5.0,
+      -19.15,
+      -2.65,
+      5.0,
+      15.5,
+      2.65
+    ],
+    "signs": {}
+  },
+  "od_waystation": {
+    "file": "public/models/world/od_waystation.glb",
+    "bytes": 95304,
+    "triangles": 1408,
+    "meshes": 2,
+    "nodes": [
+      "od_waystation",
+      "od_waystation_body",
+      "od_waystation_lit_emit",
+      "paint__od_waystation"
+    ],
+    "bounds": [
+      -71.0,
+      -42.0,
+      -5.0,
+      71.0,
+      42.0,
+      6.5
+    ],
+    "signs": {
+      "paint__od_waystation": [
+        16.0,
+        4.4
+      ]
+    }
+  },
+  "od_waystation_lod": {
+    "file": "public/models/world/od_waystation_lod.glb",
+    "bytes": 36012,
+    "triangles": 492,
+    "meshes": 2,
+    "nodes": [
+      "od_waystation_lod",
+      "od_waystation_lod_body",
+      "od_waystation_lod_lit_emit",
+      "paint__od_waystation"
+    ],
+    "bounds": [
+      -71.0,
+      -41.36,
+      -5.0,
+      71.0,
+      41.36,
+      6.5
+    ],
+    "signs": {
+      "paint__od_waystation": [
+        16.0,
+        4.4
+      ]
+    }
+  },
+  "sb_repair": {
+    "file": "public/models/world/sb_repair.glb",
+    "bytes": 68220,
+    "triangles": 928,
+    "meshes": 3,
+    "nodes": [
+      "sb_repair",
+      "sb_repair_body",
+      "sb_repair_boom",
+      "sb_repair_boom_body",
+      "sb_repair_lit_emit",
+      "sign__sb_commons",
+      "spark__0",
+      "spark__1",
+      "spark__2"
+    ],
+    "bounds": [
+      -21.0,
+      -10.04,
+      -2.0,
+      16.7,
+      10.04,
+      15.29
+    ],
+    "signs": {
+      "sign__sb_commons": [
+        11.0,
+        3.0
+      ]
+    }
+  },
+  "sb_rock": {
+    "file": "public/models/world/sb_rock.glb",
+    "bytes": 15100,
+    "triangles": 162,
+    "meshes": 2,
+    "nodes": [
+      "sb_rock",
+      "sb_rock_body",
+      "sb_rock_lit_emit"
+    ],
+    "bounds": [
+      -8.45,
+      -6.79,
+      -5.6,
+      10.27,
+      6.53,
+      9.9
+    ],
+    "signs": {}
+  },
+  "sb_rock_lod": {
+    "file": "public/models/world/sb_rock_lod.glb",
+    "bytes": 7688,
+    "triangles": 64,
+    "meshes": 2,
+    "nodes": [
+      "sb_rock_lod",
+      "sb_rock_lod_body",
+      "sb_rock_lod_lit_emit"
+    ],
+    "bounds": [
+      -10.98,
+      -8.66,
+      -5.6,
+      11.5,
+      8.4,
+      9.9
+    ],
+    "signs": {}
+  },
+  "sb_truss": {
+    "file": "public/models/world/sb_truss.glb",
+    "bytes": 156888,
+    "triangles": 2208,
+    "meshes": 2,
+    "nodes": [
+      "sb_truss",
+      "sb_truss_body",
+      "sb_truss_lit_emit"
+    ],
+    "bounds": [
+      -8.87,
+      -54.25,
+      -4.53,
+      9.66,
+      56.51,
+      10.88
+    ],
+    "signs": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "asset": "sb_truss",
+  "file": "public/models/world/sb_truss.glb",
+  "bytes": 156888,
+  "triangles": 2208,
+  "meshes": 2,
+  "nodes": [
+    "sb_truss",
+    "sb_truss_body",
+    "sb_truss_lit_emit"
+  ],
+  "triangles_per_node": {
+    "sb_truss_body": 2148,
+    "sb_truss_lit_emit": 60
+  },
+  "bounds": [
+    -8.87,
+    -54.25,
+    -4.53,
+    9.66,
+    56.51,
+    10.88
+  ],
+  "signs": {}
+}

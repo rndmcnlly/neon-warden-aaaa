@@ -1,0 +1,39 @@
+{
+  "asset": "od_beacon",
+  "file": "public/models/world/od_beacon.glb",
+  "bytes": 266608,
+  "triangles": 3828,
+  "meshes": 3,
+  "nodes": [
+    "od_beacon",
+    "od_beacon_body",
+    "od_beacon_lamp",
+    "od_beacon_lamp_body",
+    "od_beacon_lit_emit",
+    "paint__od_deck",
+    "sign__od_beacon"
+  ],
+  "triangles_per_node": {
+    "od_beacon_body": 3664,
+    "od_beacon_lit_emit": 140,
+    "od_beacon_lamp_body": 24
+  },
+  "bounds": [
+    -25.81,
+    -25.81,
+    -6.45,
+    25.81,
+    25.81,
+    24.6
+  ],
+  "signs": {
+    "sign__od_beacon": [
+      10.0,
+      2.6
+    ],
+    "paint__od_deck": [
+      12.0,
+      3.4
+    ]
+  }
+}

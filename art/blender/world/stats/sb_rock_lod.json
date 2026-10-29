@@ -1,0 +1,25 @@
+{
+  "asset": "sb_rock_lod",
+  "file": "public/models/world/sb_rock_lod.glb",
+  "bytes": 7688,
+  "triangles": 64,
+  "meshes": 2,
+  "nodes": [
+    "sb_rock_lod",
+    "sb_rock_lod_body",
+    "sb_rock_lod_lit_emit"
+  ],
+  "triangles_per_node": {
+    "sb_rock_lod_body": 52,
+    "sb_rock_lod_lit_emit": 12
+  },
+  "bounds": [
+    -10.98,
+    -8.66,
+    -5.6,
+    11.5,
+    8.4,
+    9.9
+  ],
+  "signs": {}
+}
