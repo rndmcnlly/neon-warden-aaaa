@@ -109,6 +109,11 @@
   "inputLufs": -21.35,
   "inputTruePeak": -3.72
  },
+ "en/boss_pod_001.ogg": {
+  "key": "opus48k-v1:-18:313d91ab59c97992",
+  "inputLufs": -18.06,
+  "inputTruePeak": -4.62
+ },
  "en/boss_taunt_001.ogg": {
   "key": "opus48k-v1:-18:f040f4e69cf2e98e",
   "inputLufs": -18.48,
@@ -199,6 +204,21 @@
   "inputLufs": -22.82,
   "inputTruePeak": -7.2
  },
+ "en/desc_disarm_001.ogg": {
+  "key": "opus48k-v1:-18:9b820525b3252e4f",
+  "inputLufs": -17.83,
+  "inputTruePeak": -4.04
+ },
+ "en/desc_disarm_002.ogg": {
+  "key": "opus48k-v1:-18:c579c2fc163d7091",
+  "inputLufs": -18.31,
+  "inputTruePeak": -1.87
+ },
+ "en/desc_ghost_001.ogg": {
+  "key": "opus48k-v1:-18:eb753f5885e755e3",
+  "inputLufs": -18.13,
+  "inputTruePeak": -3.99
+ },
  "en/desc_pac_001.ogg": {
   "key": "opus48k-v1:-18:9c0c5a8f6c813aa7",
   "inputLufs": -18.83,
@@ -208,6 +228,11 @@
   "key": "opus48k-v1:-18:0cef89bb7694f5fb",
   "inputLufs": -19.75,
   "inputTruePeak": -5.51
+ },
+ "en/disarm_ai_001.ogg": {
+  "key": "opus48k-v1:-18:b471b7810f8eda3a",
+  "inputLufs": -19.15,
+  "inputTruePeak": -1.06
  },
  "en/end_epi_001.ogg": {
   "key": "opus48k-v1:-18:da901c2d0ea131f3",
@@ -269,6 +294,11 @@
   "inputLufs": -17.26,
   "inputTruePeak": -0.29
  },
+ "en/graze_ai_001.ogg": {
+  "key": "opus48k-v1:-18:46e3e87977bbe6c0",
+  "inputLufs": -18.26,
+  "inputTruePeak": -1.31
+ },
  "en/kill_ai_001.ogg": {
   "key": "opus48k-v1:-18:79d86a000d9ebed3",
   "inputLufs": -21.19,
@@ -293,6 +323,11 @@
   "key": "opus48k-v1:-18:dcbb6f7a471b0555",
   "inputLufs": -20.56,
   "inputTruePeak": -4.73
+ },
+ "en/lock_ai_001.ogg": {
+  "key": "opus48k-v1:-18:7f8a5c586565979a",
+  "inputLufs": -18.34,
+  "inputTruePeak": -1.14
  },
  "en/pac_end_001.ogg": {
   "key": "opus48k-v1:-18:8cd15fbee9d91ad2",
@@ -344,6 +379,146 @@
   "inputLufs": -19.36,
   "inputTruePeak": -5.68
  },
+ "en/rad_auth_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:b9286dc1fc690273",
+  "inputLufs": -18.63,
+  "inputTruePeak": -1.28
+ },
+ "en/rad_auth_locked_001.ogg": {
+  "key": "opus48k-v1:-18:d825d51f8579e1aa",
+  "inputLufs": -18.1,
+  "inputTruePeak": -1.36
+ },
+ "en/rad_auth_lost_001.ogg": {
+  "key": "opus48k-v1:-18:188fb861bac91100",
+  "inputLufs": -18.01,
+  "inputTruePeak": -1.28
+ },
+ "en/rad_auth_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:363d7bcb91aded2a",
+  "inputLufs": -18.43,
+  "inputTruePeak": -1.45
+ },
+ "en/rad_auth_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:bab9194b2ae770a4",
+  "inputLufs": -18.01,
+  "inputTruePeak": -1.41
+ },
+ "en/rad_dart_locked_001.ogg": {
+  "key": "opus48k-v1:-18:ff2e5b93ca9dd0ae",
+  "inputLufs": -18.32,
+  "inputTruePeak": -1.38
+ },
+ "en/rad_dart_lost_001.ogg": {
+  "key": "opus48k-v1:-18:1a1422b0dd6cfd14",
+  "inputLufs": -18,
+  "inputTruePeak": -1.07
+ },
+ "en/rad_dart_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:e169935500534ec9",
+  "inputLufs": -17.98,
+  "inputTruePeak": -1.15
+ },
+ "en/rad_drone_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:6ee701fe7e2ee341",
+  "inputLufs": -17.99,
+  "inputTruePeak": -2.18
+ },
+ "en/rad_drone_locked_001.ogg": {
+  "key": "opus48k-v1:-18:06b71fe17f39be05",
+  "inputLufs": -17.98,
+  "inputTruePeak": -2.17
+ },
+ "en/rad_drone_lost_001.ogg": {
+  "key": "opus48k-v1:-18:113a9009dc65dce9",
+  "inputLufs": -18.18,
+  "inputTruePeak": -1.38
+ },
+ "en/rad_drone_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:bc2740d1f6e96274",
+  "inputLufs": -18.85,
+  "inputTruePeak": -1.33
+ },
+ "en/rad_drone_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:088932e23e7124cd",
+  "inputLufs": -18.07,
+  "inputTruePeak": -1.39
+ },
+ "en/rad_drone_retreat_001.ogg": {
+  "key": "opus48k-v1:-18:fe7d04f169decc93",
+  "inputLufs": -17.89,
+  "inputTruePeak": -2.99
+ },
+ "en/rad_lancer_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:0b7108badb6204a6",
+  "inputLufs": -18.28,
+  "inputTruePeak": -3.3
+ },
+ "en/rad_lancer_locked_001.ogg": {
+  "key": "opus48k-v1:-18:067907b4fb7d2b92",
+  "inputLufs": -18.66,
+  "inputTruePeak": -1.39
+ },
+ "en/rad_lancer_lost_001.ogg": {
+  "key": "opus48k-v1:-18:38c7dc5fb90f7c2c",
+  "inputLufs": -18.03,
+  "inputTruePeak": -2.45
+ },
+ "en/rad_lancer_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:6c239832807c2b8b",
+  "inputLufs": -18.06,
+  "inputTruePeak": -1.3
+ },
+ "en/rad_turret_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:e299bf660d850dfa",
+  "inputLufs": -18.62,
+  "inputTruePeak": -1.59
+ },
+ "en/rad_turret_locked_001.ogg": {
+  "key": "opus48k-v1:-18:eef561b8fdedc1a7",
+  "inputLufs": -19.1,
+  "inputTruePeak": -1.06
+ },
+ "en/rad_turret_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:702462288c6fdf28",
+  "inputLufs": -18.26,
+  "inputTruePeak": -1.21
+ },
+ "en/rad_turret_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:1b35e84b59900235",
+  "inputLufs": -19.14,
+  "inputTruePeak": -1.37
+ },
+ "en/rec_ai_001.ogg": {
+  "key": "opus48k-v1:-18:ae7cb8fa07198220",
+  "inputLufs": -18.37,
+  "inputTruePeak": -1.18
+ },
+ "en/rec_ai_002.ogg": {
+  "key": "opus48k-v1:-18:a511b38630ef7dd1",
+  "inputLufs": -18.66,
+  "inputTruePeak": -1.75
+ },
+ "en/rec_log_001.ogg": {
+  "key": "opus48k-v1:-18:57c4384f9efa79a0",
+  "inputLufs": -17.98,
+  "inputTruePeak": -2.11
+ },
+ "en/rec_log_002.ogg": {
+  "key": "opus48k-v1:-18:3ff222e7d7eb4dd3",
+  "inputLufs": -18.01,
+  "inputTruePeak": -3.91
+ },
+ "en/rec_log_003.ogg": {
+  "key": "opus48k-v1:-18:2f32c199d05cb546",
+  "inputLufs": -18,
+  "inputTruePeak": -1.34
+ },
+ "en/rec_log_004.ogg": {
+  "key": "opus48k-v1:-18:5c021f0ae4ac9a95",
+  "inputLufs": -17.82,
+  "inputTruePeak": -1.9
+ },
  "en/sec1_intro_001.ogg": {
   "key": "opus48k-v1:-18:30955137614dc28d",
   "inputLufs": -21.55,
@@ -384,6 +559,11 @@
   "inputLufs": -23.88,
   "inputTruePeak": -6.5
  },
+ "en/tut_disarm_001.ogg": {
+  "key": "opus48k-v1:-18:d89c917b557287dd",
+  "inputLufs": -18.26,
+  "inputTruePeak": -1.41
+ },
  "en/tut_done_001.ogg": {
   "key": "opus48k-v1:-18:4178e65868bc3036",
   "inputLufs": -23.82,
@@ -404,6 +584,21 @@
   "inputLufs": -24.38,
   "inputTruePeak": -7.4
  },
+ "en/tut_graze_001.ogg": {
+  "key": "opus48k-v1:-18:59c9e59867b0b74e",
+  "inputLufs": -17.94,
+  "inputTruePeak": -1.5
+ },
+ "en/tut_graze_002.ogg": {
+  "key": "opus48k-v1:-18:031120c7f2280d01",
+  "inputLufs": -17.93,
+  "inputTruePeak": -2.3
+ },
+ "en/tut_hangar_001.ogg": {
+  "key": "opus48k-v1:-18:41dde257292aed17",
+  "inputLufs": -18.09,
+  "inputTruePeak": -1.07
+ },
  "en/tut_hello_001.ogg": {
   "key": "opus48k-v1:-18:5a3ff39152d8d13c",
   "inputLufs": -23.35,
@@ -418,6 +613,11 @@
   "key": "opus48k-v1:-18:50d525e8769d0c42",
   "inputLufs": -22.85,
   "inputTruePeak": -3.64
+ },
+ "en/tut_intel_001.ogg": {
+  "key": "opus48k-v1:-18:f016b7a4484ce34f",
+  "inputLufs": -18.04,
+  "inputTruePeak": -1.23
  },
  "en/tut_lives_001.ogg": {
   "key": "opus48k-v1:-18:f9d67296d807d4ab",
@@ -439,20 +639,55 @@
   "inputLufs": -21.22,
   "inputTruePeak": -4.79
  },
+ "en/tut_parts_001.ogg": {
+  "key": "opus48k-v1:-18:f285907cbbb0b7cd",
+  "inputLufs": -18.2,
+  "inputTruePeak": -1.12
+ },
  "en/tut_pickup_001.ogg": {
   "key": "opus48k-v1:-18:1e52db2068f0c38c",
   "inputLufs": -22.35,
   "inputTruePeak": -5.55
+ },
+ "en/tut_rate_001.ogg": {
+  "key": "opus48k-v1:-18:ff5ea9578c53aa2c",
+  "inputLufs": -18.38,
+  "inputTruePeak": -1.17
+ },
+ "en/tut_ratebreak_001.ogg": {
+  "key": "opus48k-v1:-18:d2e29fcec2958a75",
+  "inputLufs": -18.4,
+  "inputTruePeak": -1.17
+ },
+ "en/tut_rest_001.ogg": {
+  "key": "opus48k-v1:-18:b3ca147078a6ebef",
+  "inputLufs": -18.33,
+  "inputTruePeak": -1.09
  },
  "en/tut_review_001.ogg": {
   "key": "opus48k-v1:-18:17fe3a3499ec9374",
   "inputLufs": -24.89,
   "inputTruePeak": -5.21
  },
+ "en/tut_review_002.ogg": {
+  "key": "opus48k-v1:-18:7c6fc9e4f21fa2a3",
+  "inputLufs": -18.4,
+  "inputTruePeak": -1.05
+ },
  "en/tut_route_001.ogg": {
   "key": "opus48k-v1:-18:ec1c25f9973abf90",
   "inputLufs": -23.14,
   "inputTruePeak": -3.88
+ },
+ "en/tut_rule_001.ogg": {
+  "key": "opus48k-v1:-18:76b80647f0e49044",
+  "inputLufs": -18.4,
+  "inputTruePeak": -1.05
+ },
+ "en/tut_scan_001.ogg": {
+  "key": "opus48k-v1:-18:7414e2e5edc30348",
+  "inputLufs": -17.96,
+  "inputTruePeak": -1.49
  },
  "en/tut_skip_001.ogg": {
   "key": "opus48k-v1:-18:60dcf3dd0ccf1c8b",
@@ -463,6 +698,16 @@
   "key": "opus48k-v1:-18:bf28105d5909f4ef",
   "inputLufs": -20.96,
   "inputTruePeak": -4.52
+ },
+ "en/tut_stream_001.ogg": {
+  "key": "opus48k-v1:-18:641bae2276d9d6af",
+  "inputLufs": -18.1,
+  "inputTruePeak": -1.38
+ },
+ "en/tut_tap_001.ogg": {
+  "key": "opus48k-v1:-18:a5c6b48efc851d72",
+  "inputLufs": -18.24,
+  "inputTruePeak": -1.06
  },
  "en/tut_target_001.ogg": {
   "key": "opus48k-v1:-18:4a22237c2b69cb69",
@@ -488,6 +733,11 @@
   "key": "opus48k-v1:-18:615685998590733c",
   "inputLufs": -24.8,
   "inputTruePeak": -7.31
+ },
+ "en/tut_writ_001.ogg": {
+  "key": "opus48k-v1:-18:ed863b629b8ac43f",
+  "inputLufs": -18.25,
+  "inputTruePeak": -1.17
  },
  "en/warn_ai_001.ogg": {
   "key": "opus48k-v1:-18:b14ea7293acfd6fc",
@@ -609,6 +859,11 @@
   "inputLufs": -21.28,
   "inputTruePeak": -5.47
  },
+ "es/boss_pod_001.ogg": {
+  "key": "opus48k-v1:-18:bedbb8583ab3fae0",
+  "inputLufs": -17.98,
+  "inputTruePeak": -1.91
+ },
  "es/boss_taunt_001.ogg": {
   "key": "opus48k-v1:-18:867cf7f5c48abe48",
   "inputLufs": -19.46,
@@ -699,6 +954,21 @@
   "inputLufs": -23.26,
   "inputTruePeak": -5.25
  },
+ "es/desc_disarm_001.ogg": {
+  "key": "opus48k-v1:-18:5e2123919f9a48c7",
+  "inputLufs": -17.81,
+  "inputTruePeak": -4.2
+ },
+ "es/desc_disarm_002.ogg": {
+  "key": "opus48k-v1:-18:431de0a2cea811a7",
+  "inputLufs": -18.18,
+  "inputTruePeak": -3.74
+ },
+ "es/desc_ghost_001.ogg": {
+  "key": "opus48k-v1:-18:8f8b8cf3722b360c",
+  "inputLufs": -18.01,
+  "inputTruePeak": -1.42
+ },
  "es/desc_pac_001.ogg": {
   "key": "opus48k-v1:-18:5a9e02a5b7cc4f24",
   "inputLufs": -15.92,
@@ -708,6 +978,11 @@
   "key": "opus48k-v1:-18:e633d624a592a3ae",
   "inputLufs": -19.07,
   "inputTruePeak": -6.86
+ },
+ "es/disarm_ai_001.ogg": {
+  "key": "opus48k-v1:-18:42e553d1faf538a7",
+  "inputLufs": -18.56,
+  "inputTruePeak": -1.33
  },
  "es/end_epi_001.ogg": {
   "key": "opus48k-v1:-18:a51eaf7c8f5b5762",
@@ -769,6 +1044,11 @@
   "inputLufs": -19.55,
   "inputTruePeak": -5.63
  },
+ "es/graze_ai_001.ogg": {
+  "key": "opus48k-v1:-18:dff973c8f57c9a59",
+  "inputLufs": -18.02,
+  "inputTruePeak": -1.41
+ },
  "es/kill_ai_001.ogg": {
   "key": "opus48k-v1:-18:060ca44ff0c4b71b",
   "inputLufs": -21.74,
@@ -793,6 +1073,11 @@
   "key": "opus48k-v1:-18:58c210868af4cd2b",
   "inputLufs": -17.71,
   "inputTruePeak": -2.43
+ },
+ "es/lock_ai_001.ogg": {
+  "key": "opus48k-v1:-18:e740af9fc1f25506",
+  "inputLufs": -18.31,
+  "inputTruePeak": -1.56
  },
  "es/pac_end_001.ogg": {
   "key": "opus48k-v1:-18:60f858c9b42508e5",
@@ -844,6 +1129,146 @@
   "inputLufs": -20.82,
   "inputTruePeak": -3.68
  },
+ "es/rad_auth_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:1fb850c662024e4e",
+  "inputLufs": -18.56,
+  "inputTruePeak": -1.44
+ },
+ "es/rad_auth_locked_001.ogg": {
+  "key": "opus48k-v1:-18:1836b20b0ca6e60e",
+  "inputLufs": -18.32,
+  "inputTruePeak": -1.46
+ },
+ "es/rad_auth_lost_001.ogg": {
+  "key": "opus48k-v1:-18:3b636ff013ff8168",
+  "inputLufs": -18.14,
+  "inputTruePeak": -1.43
+ },
+ "es/rad_auth_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:68e821d2953f9342",
+  "inputLufs": -18.37,
+  "inputTruePeak": -1.3
+ },
+ "es/rad_auth_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:f275024d66b382a4",
+  "inputLufs": -18.15,
+  "inputTruePeak": -1.23
+ },
+ "es/rad_dart_locked_001.ogg": {
+  "key": "opus48k-v1:-18:9d5d20564db8a683",
+  "inputLufs": -18.3,
+  "inputTruePeak": -1.8
+ },
+ "es/rad_dart_lost_001.ogg": {
+  "key": "opus48k-v1:-18:ac8725ada3a9bdfc",
+  "inputLufs": -18.08,
+  "inputTruePeak": -4.02
+ },
+ "es/rad_dart_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:1e9f828a27ef3c26",
+  "inputLufs": -18.32,
+  "inputTruePeak": -2.12
+ },
+ "es/rad_drone_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:9c2b1c8e0c91c538",
+  "inputLufs": -17.88,
+  "inputTruePeak": -3.06
+ },
+ "es/rad_drone_locked_001.ogg": {
+  "key": "opus48k-v1:-18:4dbd036daa7fd8c9",
+  "inputLufs": -18.84,
+  "inputTruePeak": -1.38
+ },
+ "es/rad_drone_lost_001.ogg": {
+  "key": "opus48k-v1:-18:997493e13d18d8a5",
+  "inputLufs": -18.08,
+  "inputTruePeak": -2.2
+ },
+ "es/rad_drone_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:8616d3e6601cd718",
+  "inputLufs": -18.53,
+  "inputTruePeak": -1.41
+ },
+ "es/rad_drone_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:75795158c9a68885",
+  "inputLufs": -18.49,
+  "inputTruePeak": -1.4
+ },
+ "es/rad_drone_retreat_001.ogg": {
+  "key": "opus48k-v1:-18:2b68c543e5bf1a5d",
+  "inputLufs": -18.2,
+  "inputTruePeak": -1.49
+ },
+ "es/rad_lancer_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:16dc0387c1a23042",
+  "inputLufs": -18.52,
+  "inputTruePeak": -2.35
+ },
+ "es/rad_lancer_locked_001.ogg": {
+  "key": "opus48k-v1:-18:5fa0b0fbd7c6d7f5",
+  "inputLufs": -18.7,
+  "inputTruePeak": -1.3
+ },
+ "es/rad_lancer_lost_001.ogg": {
+  "key": "opus48k-v1:-18:c26497959018a645",
+  "inputLufs": -18.26,
+  "inputTruePeak": -2.62
+ },
+ "es/rad_lancer_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:b4a8ea968cb8775f",
+  "inputLufs": -18.95,
+  "inputTruePeak": -1.39
+ },
+ "es/rad_turret_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:4969df986c718e1a",
+  "inputLufs": -17.88,
+  "inputTruePeak": -1.28
+ },
+ "es/rad_turret_locked_001.ogg": {
+  "key": "opus48k-v1:-18:4400f97053dd2012",
+  "inputLufs": -18.44,
+  "inputTruePeak": -1.4
+ },
+ "es/rad_turret_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:6d776f5c6273d2ed",
+  "inputLufs": -18.14,
+  "inputTruePeak": -2.69
+ },
+ "es/rad_turret_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:8630a15b5af01cb7",
+  "inputLufs": -18.31,
+  "inputTruePeak": -2.4
+ },
+ "es/rec_ai_001.ogg": {
+  "key": "opus48k-v1:-18:48a38af9fca16136",
+  "inputLufs": -18.28,
+  "inputTruePeak": -1.6
+ },
+ "es/rec_ai_002.ogg": {
+  "key": "opus48k-v1:-18:2abb593aaf87a24e",
+  "inputLufs": -18.05,
+  "inputTruePeak": -2.01
+ },
+ "es/rec_log_001.ogg": {
+  "key": "opus48k-v1:-18:dcb70b87a1be6ab4",
+  "inputLufs": -18.39,
+  "inputTruePeak": -1.32
+ },
+ "es/rec_log_002.ogg": {
+  "key": "opus48k-v1:-18:2c87a01c3abdb9bc",
+  "inputLufs": -17.83,
+  "inputTruePeak": -3.71
+ },
+ "es/rec_log_003.ogg": {
+  "key": "opus48k-v1:-18:272fde95f0278155",
+  "inputLufs": -17.98,
+  "inputTruePeak": -3.21
+ },
+ "es/rec_log_004.ogg": {
+  "key": "opus48k-v1:-18:83be5ffb521e8fdc",
+  "inputLufs": -17.61,
+  "inputTruePeak": -3.21
+ },
  "es/sec1_intro_001.ogg": {
   "key": "opus48k-v1:-18:999dc8d9e0900fa2",
   "inputLufs": -26.1,
@@ -884,6 +1309,11 @@
   "inputLufs": -22.86,
   "inputTruePeak": -4.83
  },
+ "es/tut_disarm_001.ogg": {
+  "key": "opus48k-v1:-18:f7c729490ae995c3",
+  "inputLufs": -18.24,
+  "inputTruePeak": -2.59
+ },
  "es/tut_done_001.ogg": {
   "key": "opus48k-v1:-18:9b35f53d82c2268f",
   "inputLufs": -23.4,
@@ -904,6 +1334,21 @@
   "inputLufs": -22.34,
   "inputTruePeak": -4.89
  },
+ "es/tut_graze_001.ogg": {
+  "key": "opus48k-v1:-18:3e33957d7dcfd350",
+  "inputLufs": -18.41,
+  "inputTruePeak": -1.36
+ },
+ "es/tut_graze_002.ogg": {
+  "key": "opus48k-v1:-18:9dd9758589ba0fdb",
+  "inputLufs": -18.19,
+  "inputTruePeak": -2.21
+ },
+ "es/tut_hangar_001.ogg": {
+  "key": "opus48k-v1:-18:f83b16342042d292",
+  "inputLufs": -18.26,
+  "inputTruePeak": -1.21
+ },
  "es/tut_hello_001.ogg": {
   "key": "opus48k-v1:-18:0e20dd4d7c2bfe12",
   "inputLufs": -23.93,
@@ -918,6 +1363,11 @@
   "key": "opus48k-v1:-18:639fd2d3d442ced2",
   "inputLufs": -23.63,
   "inputTruePeak": -6.5
+ },
+ "es/tut_intel_001.ogg": {
+  "key": "opus48k-v1:-18:5c90b3a736bd887d",
+  "inputLufs": -18.3,
+  "inputTruePeak": -1.24
  },
  "es/tut_lives_001.ogg": {
   "key": "opus48k-v1:-18:13465d4ff1a20108",
@@ -939,20 +1389,55 @@
   "inputLufs": -23.57,
   "inputTruePeak": -6.33
  },
+ "es/tut_parts_001.ogg": {
+  "key": "opus48k-v1:-18:98a5369a6b57163d",
+  "inputLufs": -17.97,
+  "inputTruePeak": -1.23
+ },
  "es/tut_pickup_001.ogg": {
   "key": "opus48k-v1:-18:f4df313a06ebb65d",
   "inputLufs": -24.23,
   "inputTruePeak": -6.62
+ },
+ "es/tut_rate_001.ogg": {
+  "key": "opus48k-v1:-18:8997c8098a5b43fa",
+  "inputLufs": -18.12,
+  "inputTruePeak": -1.09
+ },
+ "es/tut_ratebreak_001.ogg": {
+  "key": "opus48k-v1:-18:c14f6cac9d3401f1",
+  "inputLufs": -18.38,
+  "inputTruePeak": -1.72
+ },
+ "es/tut_rest_001.ogg": {
+  "key": "opus48k-v1:-18:296f6e891cd799b0",
+  "inputLufs": -18.48,
+  "inputTruePeak": -1.27
  },
  "es/tut_review_001.ogg": {
   "key": "opus48k-v1:-18:3ff91394f72cb10d",
   "inputLufs": -22.3,
   "inputTruePeak": -5.02
  },
+ "es/tut_review_002.ogg": {
+  "key": "opus48k-v1:-18:8f697467b22c7575",
+  "inputLufs": -18.29,
+  "inputTruePeak": -1.26
+ },
  "es/tut_route_001.ogg": {
   "key": "opus48k-v1:-18:4fcaf898417eaa50",
   "inputLufs": -22.67,
   "inputTruePeak": -6.17
+ },
+ "es/tut_rule_001.ogg": {
+  "key": "opus48k-v1:-18:6fba66fe81eac3ee",
+  "inputLufs": -17.95,
+  "inputTruePeak": -1.16
+ },
+ "es/tut_scan_001.ogg": {
+  "key": "opus48k-v1:-18:ccd2dd8df888549d",
+  "inputLufs": -17.9,
+  "inputTruePeak": -1.99
  },
  "es/tut_skip_001.ogg": {
   "key": "opus48k-v1:-18:9978504cfa9e3bd7",
@@ -963,6 +1448,16 @@
   "key": "opus48k-v1:-18:6f8468214430f27f",
   "inputLufs": -23.03,
   "inputTruePeak": -5.6
+ },
+ "es/tut_stream_001.ogg": {
+  "key": "opus48k-v1:-18:6db9a49670f31d53",
+  "inputLufs": -18.07,
+  "inputTruePeak": -1.23
+ },
+ "es/tut_tap_001.ogg": {
+  "key": "opus48k-v1:-18:836edc9c8822cf87",
+  "inputLufs": -17.99,
+  "inputTruePeak": -1.22
  },
  "es/tut_target_001.ogg": {
   "key": "opus48k-v1:-18:2ecdfb4757a1cbbb",
@@ -988,6 +1483,11 @@
   "key": "opus48k-v1:-18:d8c8f5fa9f10a768",
   "inputLufs": -23,
   "inputTruePeak": -4.34
+ },
+ "es/tut_writ_001.ogg": {
+  "key": "opus48k-v1:-18:92a3f5d49e44e6a9",
+  "inputLufs": -18.15,
+  "inputTruePeak": -1.23
  },
  "es/warn_ai_001.ogg": {
   "key": "opus48k-v1:-18:438d079ea2cf30f2",
@@ -1109,6 +1609,11 @@
   "inputLufs": -22.08,
   "inputTruePeak": -6.15
  },
+ "zh/boss_pod_001.ogg": {
+  "key": "opus48k-v1:-18:b74eb4d433f5375d",
+  "inputLufs": -17.87,
+  "inputTruePeak": -3.82
+ },
  "zh/boss_taunt_001.ogg": {
   "key": "opus48k-v1:-18:87784da5deae14de",
   "inputLufs": -20.22,
@@ -1199,6 +1704,21 @@
   "inputLufs": -22.99,
   "inputTruePeak": -6.83
  },
+ "zh/desc_disarm_001.ogg": {
+  "key": "opus48k-v1:-18:2f21698e79ac96cd",
+  "inputLufs": -18.1,
+  "inputTruePeak": -1.26
+ },
+ "zh/desc_disarm_002.ogg": {
+  "key": "opus48k-v1:-18:a06b885d9569b4a1",
+  "inputLufs": -17.76,
+  "inputTruePeak": -3.84
+ },
+ "zh/desc_ghost_001.ogg": {
+  "key": "opus48k-v1:-18:caea1bf8a0fd39ad",
+  "inputLufs": -17.85,
+  "inputTruePeak": -1.62
+ },
  "zh/desc_pac_001.ogg": {
   "key": "opus48k-v1:-18:49abdcb6df6deddb",
   "inputLufs": -24.14,
@@ -1208,6 +1728,11 @@
   "key": "opus48k-v1:-18:077e38fadb48b957",
   "inputLufs": -20.95,
   "inputTruePeak": -0.26
+ },
+ "zh/disarm_ai_001.ogg": {
+  "key": "opus48k-v1:-18:122126d595031c84",
+  "inputLufs": -17.94,
+  "inputTruePeak": -1.31
  },
  "zh/end_epi_001.ogg": {
   "key": "opus48k-v1:-18:089aaeed8e5e982d",
@@ -1269,6 +1794,11 @@
   "inputLufs": -17.69,
   "inputTruePeak": -3.96
  },
+ "zh/graze_ai_001.ogg": {
+  "key": "opus48k-v1:-18:f379924d217e0967",
+  "inputLufs": -18.17,
+  "inputTruePeak": -1.26
+ },
  "zh/kill_ai_001.ogg": {
   "key": "opus48k-v1:-18:58b9d9074fcb9fa5",
   "inputLufs": -22.55,
@@ -1293,6 +1823,11 @@
   "key": "opus48k-v1:-18:7c9d9e7bc9ef6838",
   "inputLufs": -20.19,
   "inputTruePeak": -4.82
+ },
+ "zh/lock_ai_001.ogg": {
+  "key": "opus48k-v1:-18:bb15bb7f5f4bb2c8",
+  "inputLufs": -17.75,
+  "inputTruePeak": -1.1
  },
  "zh/pac_end_001.ogg": {
   "key": "opus48k-v1:-18:305439a38741abd5",
@@ -1344,6 +1879,146 @@
   "inputLufs": -22.39,
   "inputTruePeak": -5.68
  },
+ "zh/rad_auth_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:d9a59cc8f87055dd",
+  "inputLufs": -18.34,
+  "inputTruePeak": -1.43
+ },
+ "zh/rad_auth_locked_001.ogg": {
+  "key": "opus48k-v1:-18:2319a4f9245feb08",
+  "inputLufs": -18.21,
+  "inputTruePeak": -1.42
+ },
+ "zh/rad_auth_lost_001.ogg": {
+  "key": "opus48k-v1:-18:e99aabc03820dc68",
+  "inputLufs": -18.49,
+  "inputTruePeak": -1.39
+ },
+ "zh/rad_auth_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:30abca89cbd6f6d9",
+  "inputLufs": -18.69,
+  "inputTruePeak": -1.4
+ },
+ "zh/rad_auth_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:59090b46fbb0aae0",
+  "inputLufs": -17.93,
+  "inputTruePeak": -1.37
+ },
+ "zh/rad_dart_locked_001.ogg": {
+  "key": "opus48k-v1:-18:dfecbbbdebd76188",
+  "inputLufs": -18.33,
+  "inputTruePeak": -1.13
+ },
+ "zh/rad_dart_lost_001.ogg": {
+  "key": "opus48k-v1:-18:0347c4cd39aaa003",
+  "inputLufs": -17.91,
+  "inputTruePeak": -1.9
+ },
+ "zh/rad_dart_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:67469af92f2e519e",
+  "inputLufs": -17.79,
+  "inputTruePeak": -1.76
+ },
+ "zh/rad_drone_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:37b01ace004eee83",
+  "inputLufs": -17.84,
+  "inputTruePeak": -1.32
+ },
+ "zh/rad_drone_locked_001.ogg": {
+  "key": "opus48k-v1:-18:a1de8fe85f59678c",
+  "inputLufs": -19.03,
+  "inputTruePeak": -1.36
+ },
+ "zh/rad_drone_lost_001.ogg": {
+  "key": "opus48k-v1:-18:1df2fad6c62616e5",
+  "inputLufs": -18.39,
+  "inputTruePeak": -1.3
+ },
+ "zh/rad_drone_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:8c0e6add7f868588",
+  "inputLufs": -18.92,
+  "inputTruePeak": -1.38
+ },
+ "zh/rad_drone_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:6a4a3910c564909e",
+  "inputLufs": -17.84,
+  "inputTruePeak": -2.43
+ },
+ "zh/rad_drone_retreat_001.ogg": {
+  "key": "opus48k-v1:-18:ceaf017d5c637c90",
+  "inputLufs": -18.05,
+  "inputTruePeak": -1.43
+ },
+ "zh/rad_lancer_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:ad5b763f53c81aac",
+  "inputLufs": -18.99,
+  "inputTruePeak": -1.41
+ },
+ "zh/rad_lancer_locked_001.ogg": {
+  "key": "opus48k-v1:-18:8824d4b2d938cb0e",
+  "inputLufs": -19.12,
+  "inputTruePeak": -1.44
+ },
+ "zh/rad_lancer_lost_001.ogg": {
+  "key": "opus48k-v1:-18:0dd7e9e3649e8ddf",
+  "inputLufs": -17.71,
+  "inputTruePeak": -1.43
+ },
+ "zh/rad_lancer_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:9433e057434fa0d7",
+  "inputLufs": -18.73,
+  "inputTruePeak": -1.36
+ },
+ "zh/rad_turret_disarmed_001.ogg": {
+  "key": "opus48k-v1:-18:954f3f3a87f3a342",
+  "inputLufs": -18.29,
+  "inputTruePeak": -1.37
+ },
+ "zh/rad_turret_locked_001.ogg": {
+  "key": "opus48k-v1:-18:fed3d45ac2ecc330",
+  "inputLufs": -18.82,
+  "inputTruePeak": -1.11
+ },
+ "zh/rad_turret_patrol_001.ogg": {
+  "key": "opus48k-v1:-18:389e5bb0fd397732",
+  "inputLufs": -18.51,
+  "inputTruePeak": -1.41
+ },
+ "zh/rad_turret_patrol_002.ogg": {
+  "key": "opus48k-v1:-18:8afeb59a1481436c",
+  "inputLufs": -18.29,
+  "inputTruePeak": -1.61
+ },
+ "zh/rec_ai_001.ogg": {
+  "key": "opus48k-v1:-18:b4e9e92ebdd49a93",
+  "inputLufs": -17.7,
+  "inputTruePeak": -1.24
+ },
+ "zh/rec_ai_002.ogg": {
+  "key": "opus48k-v1:-18:0378f106c5972525",
+  "inputLufs": -18.24,
+  "inputTruePeak": -1.17
+ },
+ "zh/rec_log_001.ogg": {
+  "key": "opus48k-v1:-18:8588234fd50e5dee",
+  "inputLufs": -18.43,
+  "inputTruePeak": -1.34
+ },
+ "zh/rec_log_002.ogg": {
+  "key": "opus48k-v1:-18:ad8c913870aee8b6",
+  "inputLufs": -18.15,
+  "inputTruePeak": -1.42
+ },
+ "zh/rec_log_003.ogg": {
+  "key": "opus48k-v1:-18:ca2f55cca4a39801",
+  "inputLufs": -17.7,
+  "inputTruePeak": -1.85
+ },
+ "zh/rec_log_004.ogg": {
+  "key": "opus48k-v1:-18:5e9dbac2b7a5fa39",
+  "inputLufs": -18.01,
+  "inputTruePeak": -2.57
+ },
  "zh/sec1_intro_001.ogg": {
   "key": "opus48k-v1:-18:07703ad934f42a36",
   "inputLufs": -24.4,
@@ -1384,6 +2059,11 @@
   "inputLufs": -22.42,
   "inputTruePeak": -6.63
  },
+ "zh/tut_disarm_001.ogg": {
+  "key": "opus48k-v1:-18:c359e1da7f109c59",
+  "inputLufs": -18.36,
+  "inputTruePeak": -1.19
+ },
  "zh/tut_done_001.ogg": {
   "key": "opus48k-v1:-18:dddfbf302f358a36",
   "inputLufs": -23.14,
@@ -1404,6 +2084,21 @@
   "inputLufs": -22.28,
   "inputTruePeak": -4.03
  },
+ "zh/tut_graze_001.ogg": {
+  "key": "opus48k-v1:-18:212237508b685510",
+  "inputLufs": -18.03,
+  "inputTruePeak": -1.11
+ },
+ "zh/tut_graze_002.ogg": {
+  "key": "opus48k-v1:-18:ea75ac3948c7f06a",
+  "inputLufs": -18.45,
+  "inputTruePeak": -1.45
+ },
+ "zh/tut_hangar_001.ogg": {
+  "key": "opus48k-v1:-18:ee4ada8b6fa08451",
+  "inputLufs": -18,
+  "inputTruePeak": -1.3
+ },
  "zh/tut_hello_001.ogg": {
   "key": "opus48k-v1:-18:3e461733a4d2fd77",
   "inputLufs": -22.18,
@@ -1418,6 +2113,11 @@
   "key": "opus48k-v1:-18:d67b254dd9d76a10",
   "inputLufs": -22.13,
   "inputTruePeak": -6.11
+ },
+ "zh/tut_intel_001.ogg": {
+  "key": "opus48k-v1:-18:33f78c8ab8bf6a85",
+  "inputLufs": -18.18,
+  "inputTruePeak": -1.22
  },
  "zh/tut_lives_001.ogg": {
   "key": "opus48k-v1:-18:98c0895ded5c3f62",
@@ -1439,20 +2139,55 @@
   "inputLufs": -24.58,
   "inputTruePeak": -8.13
  },
+ "zh/tut_parts_001.ogg": {
+  "key": "opus48k-v1:-18:d3a38b5605bd868c",
+  "inputLufs": -17.93,
+  "inputTruePeak": -1.34
+ },
  "zh/tut_pickup_001.ogg": {
   "key": "opus48k-v1:-18:77a36310553a7a4d",
   "inputLufs": -23.74,
   "inputTruePeak": -5.63
+ },
+ "zh/tut_rate_001.ogg": {
+  "key": "opus48k-v1:-18:d01954412d92ef47",
+  "inputLufs": -17.98,
+  "inputTruePeak": -1.33
+ },
+ "zh/tut_ratebreak_001.ogg": {
+  "key": "opus48k-v1:-18:756f5b2abadeab0a",
+  "inputLufs": -18.52,
+  "inputTruePeak": -1.06
+ },
+ "zh/tut_rest_001.ogg": {
+  "key": "opus48k-v1:-18:a768f8377acf6ec8",
+  "inputLufs": -18.47,
+  "inputTruePeak": -1.06
  },
  "zh/tut_review_001.ogg": {
   "key": "opus48k-v1:-18:8c4d521ede1a731b",
   "inputLufs": -23.96,
   "inputTruePeak": -5.75
  },
+ "zh/tut_review_002.ogg": {
+  "key": "opus48k-v1:-18:ac0af638efd7fcdc",
+  "inputLufs": -18.06,
+  "inputTruePeak": -1.13
+ },
  "zh/tut_route_001.ogg": {
   "key": "opus48k-v1:-18:b757869f03503207",
   "inputLufs": -24.23,
   "inputTruePeak": -7.34
+ },
+ "zh/tut_rule_001.ogg": {
+  "key": "opus48k-v1:-18:75bef9defc287765",
+  "inputLufs": -17.69,
+  "inputTruePeak": -1.13
+ },
+ "zh/tut_scan_001.ogg": {
+  "key": "opus48k-v1:-18:842f48daac7554ef",
+  "inputLufs": -18.03,
+  "inputTruePeak": -1.38
  },
  "zh/tut_skip_001.ogg": {
   "key": "opus48k-v1:-18:9c4db90b905f8f9e",
@@ -1463,6 +2198,16 @@
   "key": "opus48k-v1:-18:925f1d2b306442b8",
   "inputLufs": -23.59,
   "inputTruePeak": -6.91
+ },
+ "zh/tut_stream_001.ogg": {
+  "key": "opus48k-v1:-18:2700b9e00b6d4b13",
+  "inputLufs": -17.88,
+  "inputTruePeak": -1.13
+ },
+ "zh/tut_tap_001.ogg": {
+  "key": "opus48k-v1:-18:3f842d3b0f04839c",
+  "inputLufs": -18.11,
+  "inputTruePeak": -1.11
  },
  "zh/tut_target_001.ogg": {
   "key": "opus48k-v1:-18:9329c1f45832c6ed",
@@ -1488,6 +2233,11 @@
   "key": "opus48k-v1:-18:c3a9bc0ff2be4c80",
   "inputLufs": -26.3,
   "inputTruePeak": -8.6
+ },
+ "zh/tut_writ_001.ogg": {
+  "key": "opus48k-v1:-18:be6b35702a100627",
+  "inputLufs": -18.01,
+  "inputTruePeak": -1.1
  },
  "zh/warn_ai_001.ogg": {
   "key": "opus48k-v1:-18:e2ca4eaf05c73ac2",
