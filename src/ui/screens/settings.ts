@@ -474,13 +474,16 @@ function controlsTab(ctx: UiContext): Widget[] {
         className: "nw-bind-cell",
         onActivate: () => startCapture(cell),
       });
+      if (slot.index === 0) {
+        el.dataset.navEntry = slot.device === "key" ? "key" : "pad";
+      }
       const cell = { el, action, slot };
       cells.push(cell);
       return el;
     });
     return h(
       "div",
-      { class: "nw-bind-row" },
+      { class: "nw-bind-row", "data-nav-row": true },
       h("span", { class: "nw-bind-action" }, actionLabel(ctx, action)),
       ...rowCells,
     );

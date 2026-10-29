@@ -91,10 +91,7 @@ export function moveFocus(root: HTMLElement, direction: Direction): boolean {
     others.map((el) => el.getBoundingClientRect()),
     direction,
   );
-  if (index >= 0) {
-    focusElement(others[index]);
-    return true;
-  }
+  if (index >= 0) return focusElement(enterRow(active, others[index], root));
   // Wrap only along a list's axis, so a grid edge stops instead of jumping.
   // A "grid" wraps in reading order: off a column's bottom to the top of
   // the next column, so Down alone visits every tile.
@@ -113,6 +110,41 @@ export function moveFocus(root: HTMLElement, direction: Direction): boolean {
     if (direction === "up") return focusElement(items[items.length - 1]);
   }
   return false;
+}
+
+/**
+ * Which cell of an entry row a player lands on: the one marked for their
+ * device (`data-nav-entry="pad"` for a gamepad, `"key"` otherwise), else the
+ * first. Pure, so the rule is testable without a DOM.
+ */
+export function pickEntry(
+  entries: readonly (string | undefined)[],
+  device: string | undefined,
+): number {
+  const want = device === "gamepad" ? "pad" : "key";
+  const index = entries.indexOf(want);
+  return index >= 0 ? index : 0;
+}
+
+/**
+ * Entering a `[data-nav-row]` from outside it (Down from the tab strip into
+ * the remap table) lands on the row's entry cell instead of whichever column
+ * happened to sit under the tab, so a keyboard player starts in the Keyboard
+ * column. Moves within a row, or between rows, keep pure geometry.
+ */
+function enterRow(
+  active: HTMLElement,
+  target: HTMLElement,
+  root: HTMLElement,
+): HTMLElement {
+  const row = target.closest<HTMLElement>("[data-nav-row]");
+  if (!row) return target;
+  const group = row.parentElement;
+  if (group?.contains(active)) return target;
+  const cells = navigables(row);
+  const device = root.closest<HTMLElement>("[data-device]")?.dataset.device;
+  return cells[pickEntry(cells.map((c) => c.dataset.navEntry), device)] ??
+    target;
 }
 
 /**
