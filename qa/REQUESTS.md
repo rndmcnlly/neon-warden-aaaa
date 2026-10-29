@@ -140,3 +140,51 @@ longer fails reels, but the fix still belongs in the CSS.
   `licenses` within 14 presses of ArrowDown (grid layout; ArrowRight is
   probably needed). The reel falls back to script focus and warns; either
   is fine, but confirm the grid is fully keyboard reachable.
+
+## Wave 3 (QA, October 28, 2026)
+
+Every reel now records sound (`reel.mp4`, H.264 plus stereo AAC) through a
+connect tap (qa/av.ts), with a pre-fader VO stem and a post-panner spatial
+stem. Checks that need the items below report `pending` until the code is
+in the tree (`requires` in qa/reels.ts), then count.
+
+- **A (probe, `src/app/qaProbe.ts`)**: add `enemies(): { x: number; y: number }[]`
+  (sim coordinates, live enemies and boss), so `spatial-audio` can
+  correlate L/R balance with enemy x (today: pending).
+- **A (`deno.json`)**: add `"qa:judge": "deno run -A --no-lock qa/judge.ts"`
+  (QA did not edit deno.json since A touched it this wave). Until then:
+  `deno run -A --no-lock qa/judge.ts <reel ids>`.
+- **T/N/U (word timing shape, blocks `subtitle-word-pulse`)**: `vo/out/cues.json`
+  carries `words: [{ word, start, end, char: [a, b] }]`, but the WordTiming
+  contract (`src/contracts/text.ts`, N) and U's view read
+  `{ text, charStart, charEnd, startS, endS }`. Nothing highlights today.
+  Either T writes the contract shape or A's manifest maps it.
+- **U (`src/app/subtitleView.ts`)**: set `data-line` on `.nw-subtitle-live`
+  and `data-word="<index in the line>"` on each `.nw-word` span. QA can
+  then measure every chunk, not only a line's first.
+- **U (hangar)**: QA drives `.nw-screen-hangar` from the main menu
+  (`data-key="hangar"`), expects `data-key="hangar-sensor"` and
+  `"hangar-paint"` rows that ArrowRight cycles, a `.nw-hangar-stats` panel,
+  `.nw-stat-delta` on a change, and `.nw-walled` on walled slots. Tell QA
+  if your names differ.
+- **U or V (intel tag)**: `.nw-intel-tag` in the DOM while a lock shows
+  intel (or say it is canvas-only, and QA will read the `intel` event).
+- **G (pilots)**: `scan-lock` uses `autoplay=fight`; it needs the fight
+  pilot to rest sometimes so the beam locks and a Writ lands (`kill.clean`).
+  `disarm-boss` uses `autoplay=pacifist` (the disarmer) on `skipto=boss`.
+
+Findings from the wave-3 captures:
+
+- **A: VO is no longer dropped.** With the timestamp-faithful decode (see
+  qa/av.ts), every subtitle window in `vo-no-drop` and `ending-kill` has
+  audible VO. An earlier QA note that `desc_003`/`desc_ai_002` dropped was
+  a QA capture artifact (Chrome's recorder drops Opus frames under load;
+  decoding by sample count slid the tail off). Retracted.
+- **A: boss mix runs hot.** `vo-no-drop` (Warden descent, real time):
+  about -7.8 LUFS integrated, true peak -0.6 dBTP on the master (the brief
+  asks for -1 dBTP ceiling; VO lines themselves sit at -18 LUFS).
+- **A: spatial stem moves, but modestly** (`spatial-audio`, post-panner
+  stem, 5th–95th percentile balance about -0.15 to +0.29 at 1x with the
+  fight pilot). Passes; consider a wider `panSpan` for clearer crossings.
+- **V/A: 404s** for `models/pilot_figure_issued.glb`,
+  `models/pilot_figure_worn.glb`, `sfx/gameplay.json`.

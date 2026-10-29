@@ -9,11 +9,14 @@
  *   deno run -A --no-lock qa/qa.ts list             # reel ids, topics, needs
  *
  * Options: `--no-build` reuses qa/.build/dist; `--url http://localhost:3000/`
- * captures against an already running server instead of a fresh build.
+ * captures against an already running server instead of a fresh build;
+ * `--judge=boss,menus-en` sends those reels to the paid AV judge
+ * (qa/judge.ts) after capture, so the dashboard shows its scores.
  * Exit status is 1 when anything fails, so CI can gate on it.
  */
 
 import { repo, type StageResult, timestamp, writeJson } from "./lib/common.ts";
+import { judgeReel } from "./judge.ts";
 import { coverage } from "./coverage.ts";
 import { assets } from "./assets.ts";
 import { type Reel, REELS } from "./reels.ts";
@@ -24,7 +27,7 @@ import {
   type ReelResult,
   serve,
 } from "./capture.ts";
-import { dashboard, summarize, summaryText } from "./report.ts";
+import { writeReport } from "./report.ts";
 
 const args = Deno.args.filter((a) => !a.startsWith("--"));
 const opt = (name: string) => Deno.args.find((a) => a.startsWith(`--${name}`));
@@ -78,7 +81,29 @@ if (reels.length) {
     const out = repo("qa/.build/dist");
     if (!opt("no-build")) {
       console.error("building production bundle into qa/.build/dist ...");
-      await build(out);
+      // Build beside the old bundle and swap on success: other agents edit
+      // the tree mid-run, and a broken build should not leave nothing.
+      const next = repo("qa/.build/next");
+      try {
+        await build(next);
+        await Deno.remove(out, { recursive: true }).catch(() => {});
+        await Deno.rename(next, out);
+      } catch (err) {
+        const msg = String(err).split("\n").slice(0, 6).join("\n");
+        console.error(`build failed; reusing the previous bundle:\n${msg}`);
+        stages.push({
+          stage: "build",
+          checks: [{
+            id: "build.vite",
+            status: "warn",
+            detail:
+              "vite build failed (tree mid-edit?); reels ran on the previous bundle",
+            items: [msg.slice(0, 300)],
+          }],
+          tables: [],
+          stats: { reused: 1 },
+        });
+      }
     }
     server = serve(out);
     base = server.url;
@@ -97,14 +122,21 @@ if (reels.length) {
   }
 }
 
-const summary = summarize(rel, stages, results);
-const text = summaryText(summary);
-await writeJson(`${dir}/summary.json`, summary);
-await Deno.writeTextFile(`${dir}/summary.txt`, text);
-await Deno.writeTextFile(
-  `${dir}/index.html`,
-  dashboard(summary, stages, results, text),
+const toJudge = (opt("judge")?.split("=")[1] ?? "").split(",").filter((id) =>
+  results.some((r) => r.id === id && r.video?.endsWith(".mp4"))
 );
+for (const id of toJudge) {
+  console.error(`judge ${id} ...`);
+  const j = await judgeReel(dir, id);
+  console.error(
+    `  ${
+      j.error ??
+        `mean ${j.mean}, ${j.canary?.trusted ? "trusted" : "untrusted"}`
+    }${j.cached ? " (cached)" : `, US$${j.costUsd.toFixed(3)}`}`,
+  );
+}
+
+const { summary, text } = await writeReport(dir, rel, stages, results);
 
 // Point qa/reports/latest at this run (symlink plus a plain-text pointer for
 // tools that do not follow links).

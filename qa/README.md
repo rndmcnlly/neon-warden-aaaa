@@ -10,11 +10,13 @@ qa/
   coverage.ts    translation coverage (text, placeholders, width, VO takes, references)
   assets.ts      asset pipeline (models, budgets, glTF, sfx, music, VO, licenses)
   capture.ts     build, static server, Playwright reel runner, contact sheets
+  av.ts          audio for reels: connect tap, VO and spatial stems, mux, AV checks
+  judge.ts       paid AV judge (Gemini Argon, ZDR) with per-topic rubrics, cache, canary
   reels.ts       the reel list: data, one entry per video
   probe.ts       watch window.__nwqa live for a query (writing `until` steps)
   budgets.ts     triangle and byte budgets, animated nodes, third-party list
   report.ts      dashboard HTML, summary.json, summary.txt
-  lib/           pure helpers (text widths, id scan, GLB reader) with tests
+  lib/           pure helpers (text widths, id scan, GLB reader, audio math, canary) with tests
   REQUESTS.md    flags, hooks and tasks QA needs from the integration pass
   reports/       output, one folder per run, plus latest -> newest
 ```
@@ -24,14 +26,16 @@ browsers are Playwright 1.58.2's Chromium (already cached on this machine).
 
 ## Run
 
-| Want                         | Task                                        | Long form                                           |
-| ---------------------------- | ------------------------------------------- | --------------------------------------------------- |
-| coverage and assets, seconds | `deno task qa:static`                       | `deno run -A --no-lock qa/qa.ts static`             |
-| one or more reels            | `deno task qa:reel boss`                    | `deno run -A --no-lock qa/qa.ts reel boss menus-es` |
-| a topic                      | `deno task qa:topic menus`                  | `deno run -A --no-lock qa/qa.ts topic menus`        |
-| everything (8–10 min)        | `deno task qa`                              | `deno run -A --no-lock qa/qa.ts`                    |
-| list reels                   | `deno task qa:list`                         | `deno run -A --no-lock qa/qa.ts list`               |
-| watch the probe              | `deno task qa:probe "?skipto=boss&qa=1" 20` | `deno run -A --no-lock qa/probe.ts --build ...`     |
+| Want                         | Task                                        | Long form                                               |
+| ---------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| coverage and assets, seconds | `deno task qa:static`                       | `deno run -A --no-lock qa/qa.ts static`                 |
+| one or more reels            | `deno task qa:reel boss`                    | `deno run -A --no-lock qa/qa.ts reel boss menus-es`     |
+| a topic                      | `deno task qa:topic menus`                  | `deno run -A --no-lock qa/qa.ts topic menus`            |
+| everything (8–10 min)        | `deno task qa`                              | `deno run -A --no-lock qa/qa.ts`                        |
+| list reels                   | `deno task qa:list`                         | `deno run -A --no-lock qa/qa.ts list`                   |
+| watch the probe              | `deno task qa:probe "?skipto=boss&qa=1" 20` | `deno run -A --no-lock qa/probe.ts --build ...`         |
+| judge reels (paid)           | `deno task qa:judge boss` (task requested)  | `deno run -A --no-lock qa/judge.ts boss menus-en`       |
+| capture and judge in one run | `deno task qa:reel boss --judge=boss`       | `deno run -A --no-lock qa/qa.ts reel boss --judge=boss` |
 
 Options: `--no-build` reuses `qa/.build/dist` (skip the 10 s Vite build when
 only reels changed); `--url=http://localhost:3000/` records against a
@@ -58,13 +62,49 @@ path as text.
 ## Reels
 
 A reel is a short, single-topic video with assertions: menus, accessibility,
-cinematics, gameplay, endings. Never one long capture. Each reel writes
-`reels/<id>/reel.webm` (1280x720, capped at `maxSeconds`, at most 60),
-`sheet.jpg` (six 320x180 frames), `errors.txt` and `result.json`.
+cinematics, gameplay, endings, audio. Never one long capture. Each reel
+writes `reels/<id>/reel.mp4` (1280x720 H.264 with the game's stereo audio,
+capped at `maxSeconds`, at most 60), `sheet.jpg` (six 320x180 frames),
+`errors.txt`, `av.json` (sound starts, subtitle windows, loudness) and
+`result.json`; `judge.json` too once judged.
 
 Current reels: `menus-en`, `menus-es`, `menus-zh`, `accessibility`,
 `boot-cinematic`, `tutorial`, `gameplay-fight`, `flashback`, `boss`,
-`ending-kill`, `ending-pacifist`.
+`ending-kill`, `ending-pacifist`, and wave 3: `hangar`, `scan-lock`,
+`disarm-boss`, `graze`, `spatial-audio`, `subtitle-word-pulse`,
+`vo-no-drop`. A reel's `requires` names code another agent owes; until a
+file under its path matches its pattern, the reel's failures report as
+pending (crashes still fail).
+
+## Audio in reels (qa/av.ts)
+
+An init script patches `AudioNode.prototype.connect`: whatever reaches the
+speakers is also recorded (the mix); buffers fetched from `vo/` also feed a
+pre-fader VO stem; every panner's output feeds a spatial stem. Chunks
+stream out as they are recorded, so `goto` steps keep their sound. QA
+resumes a suspended AudioContext (the sound right after the gate press).
+Checks on every reel: audio captured; true peak at or under -1 dBTP;
+**VO not dropped** (each subtitle window has audible VO stem, by ffmpeg
+`silencedetect` at -50 dB). Opt-in: `av: { spatial: true }` (5th–95th
+percentile L/R balance of the spatial stem spans 0.3 and crosses centre;
+correlation with enemy x once the probe exposes it) and
+`av: { wordPulse: true }` (each `.nw-word.is-spoken` highlight within 80 ms
+of the cue's word timing, after fitting the line's start offset).
+
+## The judge (qa/judge.ts)
+
+`google/gemini-4-argon` on OpenRouter, ZDR endpoints only. Listen first:
+the model lists every voice line it hears (times and transcript) before
+scoring a rubric chosen by the reel's topic (`RUBRICS`), then gives five
+timestamped fixes. The transcript is a canary, compared with
+`vo/script.yaml` and with the VO stem's audible spans; a judgment that
+fails is shown greyed out as untrusted. Judgments are cached in
+`qa/.build/judge-cache/` by a hash of the reel bytes, prompt and model, so
+re-running costs nothing. Each paid call appends a row to
+`research/SPEND.md`; the judge refuses to call once its rows would pass
+the wave budget (`WAVE_BUDGET_USD`, US $4). About US $0.04 per minute of
+reel. The dashboard shows scores and transcript beside each reel, and
+every report is compared with the previous one (status and judge mean).
 
 ### Add a reel
 

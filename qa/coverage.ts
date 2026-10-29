@@ -128,7 +128,16 @@ export async function coverage(): Promise<StageResult> {
   // -- load the tables
   const yaml = await loadYamlScript();
   const gen = await importTable("src/i18n/script.gen.ts", "SCRIPT_LINES");
-  const ui = await importTable("src/i18n/ui.ts", "UI_STRINGS");
+  const uiOnly = await importTable("src/i18n/ui.ts", "UI_STRINGS");
+  // Radio chatter and codex text are dotted ids with the same per-language
+  // shape as UI strings (wave 3, agent N), so they get the same checks.
+  const radio = await importTable("src/i18n/radio.ts", "RADIO_TEXT");
+  const codex = await importTable("src/i18n/codex.ts", "CODEX_TEXT");
+  const ui = typeof uiOnly === "string" ? uiOnly : {
+    ...uiOnly,
+    ...(typeof radio === "string" ? {} : radio),
+    ...(typeof codex === "string" ? {} : codex),
+  };
   const legacyPath = "src/ui/strings.ts";
   const legacy = (await exists(repo(legacyPath)))
     ? await importTable(legacyPath, "UI_STRINGS_EN")
@@ -137,7 +146,9 @@ export async function coverage(): Promise<StageResult> {
     const [name, t] of [
       ["vo/script.yaml", yaml],
       ["script.gen.ts", gen],
-      ["i18n/ui.ts", ui],
+      ["i18n/ui.ts", uiOnly],
+      ["i18n/radio.ts", radio],
+      ["i18n/codex.ts", codex],
       ["ui/strings.ts", legacy],
     ] as const
   ) {

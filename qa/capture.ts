@@ -3,9 +3,11 @@
  * records each reel in `qa/reels.ts` with headless Chromium (Playwright under
  * Deno). Per reel it writes, into `<report>/reels/<id>/`:
  *
- * - `reel.webm`: 1280x720 video, capped at the reel's `maxSeconds`
+ * - `reel.mp4`: 1280x720 video with the game's stereo audio (qa/av.ts),
+ *   capped at the reel's `maxSeconds`
  * - `sheet.jpg`: six small frames tiled 3x2 (ffmpeg)
  * - `errors.txt`: uncaught exceptions, console errors, failed requests
+ * - `av.json`: what was heard (sound starts, subtitle windows, loudness)
  * - `result.json`: assertions and status
  *
  * Playwright is pinned to 1.58.2 because that release matches the Chromium
@@ -22,7 +24,8 @@ import {
   worst,
   writeJson,
 } from "./lib/common.ts";
-import type { Reel, Step } from "./reels.ts";
+import type { Reel, Requirement, Step } from "./reels.ts";
+import { type AvResult, finishAv, flushAv, installAv } from "./av.ts";
 
 export interface ReelResult {
   readonly id: string;
@@ -36,6 +39,7 @@ export interface ReelResult {
   /** Paths relative to the report directory. */
   readonly video: string | null;
   readonly sheet: string | null;
+  readonly av: AvResult | null;
 }
 
 const VIEWPORT = { width: 1280, height: 720 };
@@ -46,6 +50,21 @@ const PROBE_BOOT_MS = 8_000;
 // -- build and serve
 
 export async function build(outDir: string): Promise<void> {
+  // Same order as `deno task build`: refresh public/vo first, or the bundle
+  // ships whatever VO happened to be synced last.
+  const sync = await new Deno.Command("deno", {
+    args: ["task", "vo:sync"],
+    cwd: ROOT,
+    stdout: "null",
+    stderr: "piped",
+  }).output();
+  if (!sync.success) {
+    console.error(
+      `vo:sync failed, building with the current public/vo:\n${
+        new TextDecoder().decode(sync.stderr).slice(-400)
+      }`,
+    );
+  }
   const cmd = new Deno.Command("deno", {
     args: [
       "run",
@@ -392,6 +411,36 @@ class ReelRun {
           } KB (blank under 14 KB)`,
         );
       }
+      case "assertChanges": {
+        const read = () =>
+          s.probe
+            ? page.evaluate(
+              `JSON.stringify(((p) => (${s.probe}))(globalThis.__nwqa) ?? null)`,
+            ).catch(() => "null")
+            : page.evaluate(
+              (sel) => document.querySelector(sel!)?.textContent ?? null,
+              s.selector,
+            );
+        const before = await read();
+        if (before === null || before === "null") {
+          return this.check(
+            s.label,
+            "fail",
+            `nothing to compare: ${s.probe ?? s.selector} is absent`,
+          );
+        }
+        await page.keyboard.press(s.key);
+        await this.wait(s.waitMs ?? 600);
+        const after = await read();
+        const clip = (v: unknown) => String(v).slice(0, 80);
+        return this.check(
+          s.label,
+          after !== before ? "pass" : "fail",
+          after !== before
+            ? `after ${s.key}: ${clip(before)} -> ${clip(after)}`
+            : `${s.key} left it unchanged: ${clip(before)}`,
+        );
+      }
       case "until": {
         // The game installs the probe after its async boot (audio, assets),
         // so give it a few seconds to appear before calling it absent.
@@ -513,7 +562,12 @@ export async function captureReel(
       localStorage.setItem(key, value);
     }, { key, value: JSON.stringify({ version, settings: reel.settings }) });
   }
+  const unmet = await unmetRequirements(reel.requires ?? []);
+  const av = await installAv(context);
+  const before = Date.now();
   const page = await context.newPage();
+  // Playwright's video starts with the page; take the middle of the call.
+  av.videoEpoch = (before + Date.now()) / 2;
   const run = new ReelRun(reel, page, base);
   page.on(
     "pageerror",
@@ -571,21 +625,50 @@ export async function captureReel(
     [...new Set(http)].slice(0, 10),
   );
 
+  await flushAv(page);
   const videoHandle = page.video();
   await context.close();
   let video: string | null = null;
   let sheet: string | null = null;
+  let avResult: AvResult | null = null;
   const raw = videoHandle ? await videoHandle.path() : null;
   if (raw) {
-    await Deno.rename(raw, `${dir}/reel.webm`);
+    const webm = `${dir}/video.webm`;
+    await Deno.rename(raw, webm);
     await Deno.remove(`${dir}/raw`, { recursive: true });
-    video = `${rel}/reel.webm`;
-    if (await contactSheet(`${dir}/reel.webm`, `${dir}/sheet.jpg`, seconds)) {
+    const d = await videoSeconds(webm, seconds);
+    if (await contactSheet(webm, `${dir}/sheet.jpg`, seconds)) {
       sheet = `${rel}/sheet.jpg`;
+    }
+    try {
+      const { av: a, checks } = await finishAv(av, dir, webm, d, reel.av ?? {});
+      avResult = a;
+      run.assertions.push(...checks);
+      await writeJson(`${dir}/av.json`, a);
+      await Deno.remove(webm);
+      video = `${rel}/reel.mp4`;
+    } catch (err) {
+      run.check("audio: mux and analysis", "fail", String(err).slice(0, 300));
+      await Deno.rename(webm, `${dir}/reel.webm`);
+      video = `${rel}/reel.webm`;
     }
   }
   await Deno.writeTextFile(`${dir}/errors.txt`, run.errors.join("\n") + "\n");
 
+  // A reel whose feature has not landed yet reports pending, not fail; the
+  // generic error checks still fail, since a crash is a crash.
+  if (unmet.length) {
+    const generic = new Set(["no uncaught exceptions", "no console errors"]);
+    for (const [i, a] of run.assertions.entries()) {
+      if (a.status === "fail" && !generic.has(a.id)) {
+        run.assertions[i] = {
+          ...a,
+          status: "pending",
+          detail: `${a.detail} (waits for: ${unmet.join("; ")})`,
+        };
+      }
+    }
+  }
   const statuses = run.assertions.map((a) => a.status);
   let status = worst(statuses);
   // A reel blocked only by known-missing prerequisites is pending, not failed.
@@ -602,12 +685,51 @@ export async function captureReel(
     seconds: Number(seconds.toFixed(1)),
     assertions: run.assertions,
     errors: run.errors.slice(0, 200),
-    needs: reel.needs ?? [],
+    needs: [...(reel.needs ?? []), ...unmet],
     video,
     sheet,
+    av: avResult,
   };
   await writeJson(`${dir}/result.json`, result);
   return result;
+}
+
+/**
+ * Requirements whose code has not landed: a requirement is met when any
+ * TypeScript file under its `path` matches its `pattern`. Read from the
+ * working tree, so a reel turns real as soon as the owning agent's code is
+ * in place (committed or not), without anyone editing qa/.
+ */
+export async function unmetRequirements(
+  reqs: readonly Requirement[],
+): Promise<string[]> {
+  const out: string[] = [];
+  for (const r of reqs) {
+    if (!(await treeMatches(repo(r.path), new RegExp(r.pattern)))) {
+      out.push(r.what);
+    }
+  }
+  return out;
+}
+
+async function treeMatches(path: string, re: RegExp): Promise<boolean> {
+  let info: Deno.FileInfo;
+  try {
+    info = await Deno.stat(path);
+  } catch {
+    return false;
+  }
+  if (info.isFile) return re.test(await Deno.readTextFile(path));
+  for await (const e of Deno.readDir(path)) {
+    const p = `${path}/${e.name}`;
+    if (e.isDirectory && await treeMatches(p, re)) return true;
+    if (
+      e.isFile && /\.(ts|json|css)$/.test(e.name) && await treeMatches(p, re)
+    ) {
+      return true;
+    }
+  }
+  return false;
 }
 
 /** Launches Chromium with GPU paths enabled where the host has them. */

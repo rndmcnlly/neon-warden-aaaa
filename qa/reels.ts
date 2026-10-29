@@ -14,12 +14,15 @@
  * `pendingIfMissing` or `needs`; it reports `pending`, not `fail`.
  */
 
+import type { AvOptions } from "./av.ts";
+
 export type Topic =
   | "menus"
   | "accessibility"
   | "cinematics"
   | "gameplay"
-  | "endings";
+  | "endings"
+  | "audio";
 
 /**
  * Partial settings preseeded into the store before the page loads (the store
@@ -75,7 +78,30 @@ export type Step =
   /** The rendered frame is not blank (screenshot entropy proxy). */
   | { readonly do: "assertFrame"; readonly label: string }
   /** Load another URL in the same profile (settings persist). */
-  | { readonly do: "goto"; readonly query: string };
+  | { readonly do: "goto"; readonly query: string }
+  /**
+   * Reads `selector`'s text (or a probe expression's JSON), presses `key`,
+   * and asserts the value changed: "this input visibly did something".
+   */
+  | {
+    readonly do: "assertChanges";
+    readonly label: string;
+    readonly key: string;
+    readonly selector?: string;
+    readonly probe?: string;
+    readonly waitMs?: number;
+  };
+
+/**
+ * Code another agent owes. Met when any .ts/.json/.css file under `path`
+ * matches `pattern` (a RegExp source). While unmet, the reel's failures
+ * report as pending and name `what`; once the code lands, they count.
+ */
+export interface Requirement {
+  readonly what: string;
+  readonly path: string;
+  readonly pattern: string;
+}
 
 export interface Reel {
   readonly id: string;
@@ -89,6 +115,10 @@ export interface Reel {
   readonly maxSeconds: number;
   /** Known missing prerequisites; the reel still runs, then reports pending. */
   readonly needs?: readonly string[];
+  /** Code checks that turn this reel from pending to real (see `Requirement`). */
+  readonly requires?: readonly Requirement[];
+  /** Optional audio analyses (qa/av.ts); every reel gets capture, loudness and VO-no-drop. */
+  readonly av?: AvOptions;
 }
 
 /** Gate, photosensitivity notice, logos, title: the real cold-start path. */
@@ -471,5 +501,303 @@ export const REELS: readonly Reel[] = [
       { do: "wait", ms: 4000 },
     ],
     maxSeconds: 60,
+  },
+
+  // -- wave 3: each starts pending and turns real when its code lands.
+  // Probe fields and query modes these use are requested in qa/REQUESTS.md
+  // ("Wave 3") and docs/INTEGRATION-QUEUE.md.
+  {
+    id: "hangar",
+    topic: "menus",
+    title:
+      "Hangar: change the weapon and sensor packages, stats show deltas, walled slots say so",
+    query: "?qa=1",
+    steps: [
+      ...BOOT_TO_MENU,
+      { do: "navigate", key: "hangar" },
+      { do: "press", key: "Enter" },
+      {
+        do: "waitFor",
+        selector: ".nw-screen-hangar",
+        label: "hangar opens from the main menu",
+      },
+      { do: "assertNoOverflow", label: "hangar fits" },
+      { do: "assertFrame", label: "ship preview renders" },
+      {
+        do: "assertChanges",
+        label: "next weapon package changes the loadout",
+        key: "ArrowRight",
+        selector: ".nw-screen-hangar",
+      },
+      {
+        do: "waitFor",
+        selector: ".nw-stat-delta",
+        label: "stat deltas shown for the change",
+      },
+      { do: "navigate", key: "hangar-sensor" },
+      {
+        do: "assertChanges",
+        label: "next sensor package changes the stat panel",
+        key: "ArrowRight",
+        selector: ".nw-hangar-stats",
+      },
+      { do: "navigate", key: "hangar-paint" },
+      {
+        do: "assertChanges",
+        label: "paint change is a visible loadout change",
+        key: "ArrowRight",
+        selector: ".nw-screen-hangar",
+      },
+      {
+        do: "waitFor",
+        selector: ".nw-walled",
+        label: "walled slots say 'not included in this vertical slice'",
+      },
+      { do: "assertNoOverflow", label: "hangar fits after changes" },
+      { do: "wait", ms: 1500 },
+    ],
+    maxSeconds: 50,
+    requires: [
+      {
+        what: "hangar screen (agent U)",
+        path: "src/ui",
+        pattern: "WEAPON_PACKAGES",
+      },
+      {
+        what: "loadout contract (agent G)",
+        path: "src/contracts",
+        pattern: "WEAPON_PACKAGES",
+      },
+    ],
+  },
+  {
+    id: "scan-lock",
+    topic: "gameplay",
+    title:
+      "Scan beam: rest to lock, intel tag shows AI state, Writ on the weak point is a kill shot",
+    query: `?skipto=sector1&autoplay=fight&speed=2${GAME}`,
+    steps: [
+      { do: "wait", ms: 2500 },
+      { do: "assertFrame", label: "sector 1 renders" },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'scanLock')",
+        label: "the beam locks a target after a dwell",
+        timeoutMs: 15_000,
+      },
+      {
+        do: "until",
+        probe:
+          "p.events.some((e) => e.type === 'intel' && typeof e.ai === 'string')",
+        label: "the lock reveals the target's AI state as intel",
+        timeoutMs: 4_000,
+      },
+      {
+        do: "waitFor",
+        selector: ".nw-intel-tag",
+        label: "intel tag on screen",
+        timeoutMs: 4_000,
+      },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'chargeLevel' && e.level >= 1)",
+        label: "resting charges the Writ",
+        timeoutMs: 15_000,
+      },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'kill' && e.clean === true)",
+        label: "the Writ on a locked weak point is a kill shot",
+        timeoutMs: 15_000,
+      },
+      { do: "wait", ms: 1500 },
+    ],
+    maxSeconds: 45,
+    requires: [
+      {
+        what: "scan beam in the sim (agent G)",
+        path: "src/sim",
+        pattern: 'type: "scanLock"',
+      },
+      {
+        what: "fight pilot rests to scan (agent G)",
+        path: "src/pilots",
+        pattern: "scan|rest",
+      },
+    ],
+  },
+  {
+    id: "disarm-boss",
+    topic: "gameplay",
+    title:
+      "Disarm the Warden: two pods broken, core opens, pacifist still intact",
+    query: `?skipto=boss&autoplay=pacifist&speed=4${GAME}`,
+    steps: [
+      { do: "wait", ms: 2000 },
+      { do: "assertFrame", label: "boss arena renders" },
+      {
+        do: "until",
+        probe:
+          "p.events.filter((e) => e.type === 'partBreak' && e.target === 'boss').length >= 1",
+        label: "first Warden pod broken",
+        timeoutMs: 25_000,
+      },
+      {
+        do: "until",
+        probe:
+          "p.events.filter((e) => e.type === 'partBreak' && e.target === 'boss').length >= 2",
+        label: "second Warden pod broken",
+        timeoutMs: 20_000,
+      },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'coreExposed')",
+        label: "two broken pods open the core",
+        timeoutMs: 5_000,
+      },
+      {
+        do: "until",
+        probe:
+          "p.sim().kills === 0 && !p.events.some((e) => e.type === 'bossDefeated')",
+        label: "no kills: the pacifist run is intact",
+        timeoutMs: 2_000,
+      },
+      { do: "assertFrame", label: "open core renders" },
+      { do: "wait", ms: 2000 },
+    ],
+    maxSeconds: 55,
+    requires: [
+      {
+        what: "Warden pods and core (agent G)",
+        path: "src/sim",
+        pattern: "coreExposed",
+      },
+      {
+        what: "pacifist pilot disarms (agent G)",
+        path: "src/pilots",
+        pattern: "disarm|partBreak|pods",
+      },
+    ],
+  },
+  {
+    id: "graze",
+    topic: "gameplay",
+    title: "Grazing: near misses fill the graze meter and feed PAY",
+    query: `?skipto=sector2&autoplay=pacifist&speed=2${GAME}`,
+    steps: [
+      { do: "wait", ms: 2000 },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'graze')",
+        label: "a near miss counts as a graze",
+        timeoutMs: 20_000,
+      },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'graze' && e.meter >= 0.3)",
+        label: "the graze meter fills past 30%",
+        timeoutMs: 25_000,
+      },
+      {
+        do: "waitFor",
+        selector: ".nw-hud-graze",
+        label: "graze meter on the HUD",
+        timeoutMs: 2_000,
+      },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'payChanged' && e.credits > 0)",
+        label: "grazes feed PAY",
+        timeoutMs: 5_000,
+      },
+      { do: "wait", ms: 2000 },
+    ],
+    maxSeconds: 50,
+    requires: [
+      {
+        what: "grazing in the sim (agent G)",
+        path: "src/sim",
+        pattern: 'type: "graze"',
+      },
+    ],
+  },
+  {
+    id: "spatial-audio",
+    topic: "audio",
+    title:
+      "Spatial audio: enemies crossing the lane move the stereo image (L/R energy from the capture)",
+    query: `?skipto=sector1&autoplay=fight&speed=1${GAME}`,
+    steps: [
+      { do: "wait", ms: 3000 },
+      {
+        do: "until",
+        probe: "p.events.some((e) => e.type === 'spawn')",
+        label: "enemies spawn",
+        timeoutMs: 10_000,
+      },
+      { do: "wait", ms: 22_000 },
+    ],
+    maxSeconds: 35,
+    av: { spatial: true },
+    requires: [
+      {
+        what: "positional panning (agent A)",
+        path: "src/audio",
+        pattern: "StereoPanner|createPanner|PannerNode",
+      },
+    ],
+  },
+  {
+    id: "subtitle-word-pulse",
+    topic: "accessibility",
+    title:
+      "Subtitle word pulse: the highlighted word lands within 80 ms of its spoken timing",
+    query: `?skipto=tutorial${GAME}`,
+    steps: [
+      {
+        do: "until",
+        probe: "p.log.includes('line:tut_hello_001')",
+        label: "the first tutorial line plays",
+        timeoutMs: 12_000,
+      },
+      { do: "wait", ms: 14_000 },
+    ],
+    maxSeconds: 30,
+    av: { wordPulse: true },
+    requires: [
+      {
+        what: "word-pulse subtitle view (agent U)",
+        path: "src",
+        pattern: "nw-word",
+      },
+      {
+        what: "word timings in cues (agent T)",
+        path: "vo/out/cues.json",
+        pattern: '"words"',
+      },
+    ],
+  },
+  {
+    id: "vo-no-drop",
+    topic: "audio",
+    title:
+      "VO never dropped: the Warden's descent at real time, every subtitle window audible",
+    query: `?skipto=boss${GAME}`,
+    steps: [
+      {
+        do: "until",
+        probe: "p.log.includes('line:desc_001')",
+        label: "the descent speech starts",
+        timeoutMs: 15_000,
+      },
+      {
+        do: "until",
+        probe: "p.log.includes('line:desc_ai_002')",
+        label: "the descent speech finishes",
+        timeoutMs: 40_000,
+      },
+      { do: "wait", ms: 2000 },
+    ],
+    maxSeconds: 55,
   },
 ];
