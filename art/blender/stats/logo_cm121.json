@@ -1,0 +1,29 @@
+{
+  "asset": "logo_cm121",
+  "file": "public/models/logo_cm121.glb",
+  "bytes": 244908,
+  "triangles": 5060,
+  "nodes": [
+    "cm_cohort_badge",
+    "cm_cohort_label",
+    "cm_cohort_text",
+    "cm_plate",
+    "cm_plate_rim",
+    "cm_tagline",
+    "cm_wordmark",
+    "logo_cm121"
+  ],
+  "emissive_materials": [
+    "cm_gold_emit",
+    "cm_pink_emit"
+  ],
+  "triangles_per_node": {
+    "cm_plate": 92,
+    "cm_plate_rim": 96,
+    "cm_wordmark": 876,
+    "cm_tagline": 2120,
+    "cm_cohort_badge": 68,
+    "cm_cohort_text": 1064,
+    "cm_cohort_label": 744
+  }
+}

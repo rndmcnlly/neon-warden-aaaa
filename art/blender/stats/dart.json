@@ -1,0 +1,25 @@
+{
+  "asset": "dart",
+  "file": "public/models/dart.glb",
+  "bytes": 16412,
+  "triangles": 320,
+  "nodes": [
+    "dart",
+    "dart_blade",
+    "dart_nozzle",
+    "dart_spine",
+    "dart_trim",
+    "thruster"
+  ],
+  "emissive_materials": [
+    "dart_amber_emit",
+    "dart_thruster_glow_emit"
+  ],
+  "triangles_per_node": {
+    "dart_blade": 164,
+    "dart_spine": 44,
+    "dart_trim": 24,
+    "dart_nozzle": 44,
+    "thruster": 44
+  }
+}

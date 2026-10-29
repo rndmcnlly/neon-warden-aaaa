@@ -1,0 +1,128 @@
+# UI sound manifest for Neon Warden AAAA (workstream 7).
+#
+# Each role's prompt is "<role brief>. <family brief>". Edit a brief, rerun
+# `uv run sfx/render.py --role <name>`, and only changed renders are redone
+# (cache key: model, family brief, role brief, seed, render length, sampler).
+#
+# Fields per role:
+#   brief           what this sound is, in sound-library tag language
+#   target_ms       final length after post-processing (trim + fade)
+#   render_seconds  raw render length; SA3 behaves badly at very short lengths,
+#                   so we render longer and cut down
+#   gain_db         level offset from the family loudness target (quiet roles
+#                   such as hover sit below confirm and notifications)
+#   seed            base seed; candidate nn uses seed + nn
+#   count           candidates to render (default from `defaults`)
+
+engine: sa3            # Stable Audio 3 MLX, ~/Code/sa3/stable-audio-3/optimized/mlx
+defaults:
+  model: sm-sfx        # sm-sfx (433M, SFX-tuned) or medium (1.4B)
+  steps: 8
+  cfg: 3.0
+  negative: >-
+    music, melody, drums, beat, vocals, speech, chiptune, 8-bit, retro game,
+    arcade, cartoon, comedy, long reverb, room tone, hiss, noise, distortion
+  render_seconds: 1.0   # tested: 1.0 s yields ~200 ms sounds with clean tails;
+                        # 2.0 s renders tend to fill the window, 0.5 s is mush
+  count: 6
+
+loudness:
+  # Short UI sounds are mostly under the 400 ms EBU R128 gating block, so
+  # integrated LUFS is unreliable. We normalize "active RMS" (RMS over samples
+  # within 40 dB of the clip's peak envelope) to target_rms_dbfs + gain_db,
+  # then reduce gain if needed so the 4x-oversampled true peak stays under
+  # ceiling_dbtp. No limiter: if the ceiling bites, the clip simply ends up
+  # quieter and is flagged "peak_limited".
+  target_rms_dbfs: -20.0
+  ceiling_dbtp: -1.0
+  sample_rate: 48000
+  fade_ms: 12
+
+family: >-
+  premium futuristic console user interface sound, crisp and tactile, clean
+  digital synthesis with a glassy metallic transient, tight and dry, very short
+  decay, polished, modern, cyberpunk-clean, high fidelity, single isolated
+  one-shot
+
+roles:
+  focus:
+    brief: soft subtle tick for moving focus between menu items, gentle tiny glassy click, very quiet and short
+    target_ms: 90
+    gain_db: -6
+    seed: 1100
+  confirm:
+    brief: confident selection confirm sound, bright rising two-tone chime blip, positive and satisfying
+    target_ms: 260
+    gain_db: 0
+    seed: 1200
+  back:
+    brief: back or cancel sound, soft descending two-tone blip, neutral, lower pitch than confirm
+    target_ms: 200
+    gain_db: -2
+    seed: 1300
+  tab_switch:
+    brief: tab switch sound, quick sideways swipe with a crisp click at the end, light whoosh
+    target_ms: 180
+    gain_db: -3
+    seed: 1400
+  toggle_on:
+    brief: switch toggled on, short upward snap click, bright mechanical latch with a small rising tone
+    target_ms: 140
+    gain_db: -3
+    seed: 1500
+  toggle_off:
+    brief: switch toggled off, short downward snap click, duller mechanical latch with a small falling tone
+    target_ms: 140
+    gain_db: -4
+    seed: 1600
+  slider_tick:
+    brief: slider detent tick, extremely short tiny precise click, like a fine mechanical ratchet step
+    target_ms: 50
+    gain_db: -8
+    seed: 1700
+  slider_end:
+    brief: slider end stop, firm muted thunk with a low click, hitting a soft limit
+    target_ms: 150
+    gain_db: -4
+    seed: 1800
+  error:
+    brief: error or denied sound, short low buzz with two quick dissonant pulses, firm but not harsh
+    target_ms: 260
+    gain_db: -2
+    seed: 1900
+  locked:
+    brief: locked feature sound, muted low digital clunk with a short sealed hum, polite refusal, closed door
+    target_ms: 340
+    gain_db: -3
+    seed: 2000
+  menu_open:
+    brief: menu panel opening, quick airy upward digital swell with a crisp click landing, holographic panel appearing
+    target_ms: 380
+    gain_db: -1
+    seed: 2100
+  menu_close:
+    brief: menu panel closing, quick downward digital swoosh ending in a soft click, holographic panel folding away
+    target_ms: 320
+    gain_db: -2
+    seed: 2200
+  pause_in:
+    brief: game pause, deep soft filtered downward sweep, time slowing, muffled low tone fading in
+    target_ms: 750
+    gain_db: -1
+    seed: 2300
+  pause_out:
+    brief: game resume, soft upward filter sweep opening up brightly, time resuming
+    target_ms: 700
+    gain_db: -1
+    seed: 2400
+  save:
+    brief: save indicator, gentle soft data pulse, quiet shimmering blip, reassuring
+    target_ms: 300
+    gain_db: -5
+    seed: 2500
+  notify:
+    brief: achievement unlocked notification, bright sparkling three-note rising arpeggio chime, rewarding and premium
+    target_ms: 900
+    gain_db: 0
+    render_seconds: 2.0
+    seed: 2600

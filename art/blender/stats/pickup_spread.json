@@ -1,0 +1,24 @@
+{
+  "asset": "pickup_spread",
+  "file": "public/models/pickup_spread.glb",
+  "bytes": 15876,
+  "triangles": 260,
+  "nodes": [
+    "pickup_spread",
+    "spread_cage",
+    "spread_crystal",
+    "spread_dots",
+    "spread_recorder"
+  ],
+  "emissive_materials": [
+    "spread_cage_emit",
+    "spread_crystal_emit",
+    "spread_dots_emit"
+  ],
+  "triangles_per_node": {
+    "spread_cage": 96,
+    "spread_crystal": 12,
+    "spread_recorder": 68,
+    "spread_dots": 84
+  }
+}

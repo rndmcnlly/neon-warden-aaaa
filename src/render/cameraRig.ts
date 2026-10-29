@@ -1,0 +1,243 @@
+/**
+ * The camera rig: named shots, blends between them, and screen shake.
+ *
+ * Shots are functions, not fixed transforms, because their subjects move:
+ * `bossCloseup` follows the Warden wherever it sways. A blend therefore
+ * evaluates both the outgoing and incoming shot every frame and mixes the
+ * results, so a cut toward a moving target never lands on stale framing.
+ *
+ * The Director calls `play(shot, durationMs, ease)` from a `camera` cue;
+ * the renderer owns what each shot actually looks like (CONTRACTS.md).
+ * `logoTurntable` frames the boot logos on their plinth at the stage point.
+ *
+ * Shake uses the "trauma" model (Squirrel Eiserloh, GDC 2016): events add
+ * trauma 0–1, the visible shake is trauma squared, so small hits barely move
+ * the camera and big ones really land; then it decays. The player's shake
+ * slider scales the result, and 0 turns it off completely.
+ */
+
+import * as THREE from "three";
+import type { CameraShotId } from "../contracts/index.ts";
+import { FIELD_D, FIELD_W } from "./coords.ts";
+
+/** Kept as an alias so renderer code reads the same as before the merge. */
+export type RigShotId = CameraShotId;
+
+export interface ShotContext {
+  /** World positions of the shot subjects (the stage keeps these current). */
+  readonly player: THREE.Vector3;
+  readonly boss: THREE.Vector3;
+  /** A spot off to the side where cutscene props (pilot figure, logos) stand. */
+  readonly stagePoint: THREE.Vector3;
+  readonly timeSec: number;
+  readonly aspect: number;
+}
+
+interface Pose {
+  position: THREE.Vector3;
+  target: THREE.Vector3;
+  fov: number;
+}
+
+type ShotFn = (ctx: ShotContext, out: Pose) => void;
+
+/** Gameplay camera tilt from straight-down, radians. Enough to read as 3D. */
+const GAMEPLAY_TILT = 0.52;
+
+export class CameraRig {
+  readonly camera: THREE.PerspectiveCamera;
+  private from: RigShotId = "gameplay";
+  private to: RigShotId = "gameplay";
+  private blendMs = 0;
+  private blendTotal = 0;
+  private ease: "linear" | "inOut" = "inOut";
+  private trauma = 0;
+  /** Settings shake slider, 0–1. */
+  shakeScale = 1;
+  private gameplayDistance = 20;
+  private readonly a: Pose = newPose();
+  private readonly b: Pose = newPose();
+  /** The pose shown last frame, and a frozen copy when a blend is interrupted. */
+  private readonly last: Pose = newPose();
+  private frozenFrom: Pose | null = null;
+  private readonly shots: Record<RigShotId, ShotFn>;
+
+  constructor() {
+    this.camera = new THREE.PerspectiveCamera(38, 1, 0.1, 400);
+    this.shots = {
+      gameplay: (ctx, out) => {
+        // Lean a little toward the player for parallax, never enough to
+        // push the playfield edge off screen.
+        const lean = ctx.player.x * 0.08;
+        const d = this.gameplayDistance;
+        out.target.set(lean, 0, 0.4);
+        out.position.set(
+          lean * 1.5,
+          Math.cos(GAMEPLAY_TILT) * d,
+          0.4 + Math.sin(GAMEPLAY_TILT) * d,
+        );
+        out.fov = 38;
+      },
+      bossIntro: (ctx, out) => {
+        // Low and behind the player, looking up the lane at the descent.
+        out.target.copy(ctx.boss).setY(1.5);
+        out.position.set(0, 2.2, FIELD_D / 2 + 4);
+        out.fov = 44;
+      },
+      bossCloseup: (ctx, out) => {
+        const orbit = Math.sin(ctx.timeSec * 0.3) * 1.2;
+        out.target.copy(ctx.boss).setY(0.6);
+        out.position.set(ctx.boss.x + orbit, 3.2, ctx.boss.z + 7);
+        out.fov = 30;
+      },
+      pilotCloseup: (ctx, out) => {
+        out.target.copy(ctx.stagePoint).add(new THREE.Vector3(0, 1.45, 0));
+        out.position.copy(ctx.stagePoint).add(new THREE.Vector3(0.6, 1.6, 2.2));
+        out.fov = 28;
+      },
+      flashback: (ctx, out) => {
+        // Slow drift around the frozen world, from above and to one side,
+        // like a flight recorder replaying the moment.
+        const a = ctx.timeSec * 0.12;
+        out.target.copy(ctx.player);
+        out.position.set(
+          ctx.player.x + Math.sin(a) * 9,
+          7,
+          ctx.player.z + Math.cos(a) * 9,
+        );
+        out.fov = 40;
+      },
+      endingWide: (ctx, out) => {
+        // Pull far back and up: the lanes go on, the corridor is the point.
+        out.target.set(0, -2, -12);
+        out.position.set(14, 24, 26 + Math.sin(ctx.timeSec * 0.05) * 2);
+        out.fov = 46;
+      },
+      logoTurntable: (ctx, out) => {
+        // Aim above the plinth and stand back: the studio mark is tall, and
+        // the first framing cropped its top.
+        out.target.copy(ctx.stagePoint).add(new THREE.Vector3(0, 0.9, 0));
+        out.position.copy(ctx.stagePoint).add(new THREE.Vector3(0, 1.1, 6.4));
+        out.fov = 35;
+      },
+    };
+  }
+
+  /** Starts a blend to `shot`. A zero duration cuts. */
+  play(
+    shot: RigShotId,
+    durationMs: number,
+    ease: "linear" | "inOut" = "inOut",
+  ): void {
+    // Interrupting a blend: freeze the pose we are showing right now and
+    // blend from that, so the camera never jumps.
+    this.frozenFrom = this.blendMs > 0 ? copyPose(this.last) : null;
+    this.from = this.to;
+    this.to = shot;
+    this.blendTotal = Math.max(0, durationMs);
+    this.blendMs = this.blendTotal;
+    this.ease = ease;
+  }
+
+  get currentShot(): RigShotId {
+    return this.to;
+  }
+
+  /** Adds screen-shake trauma, 0–1. Stacks, capped at 1. */
+  addTrauma(amount: number): void {
+    this.trauma = Math.min(1, this.trauma + amount);
+  }
+
+  resize(aspect: number): void {
+    this.camera.aspect = aspect;
+    this.fitGameplay();
+    this.camera.updateProjectionMatrix();
+  }
+
+  /**
+   * Finds the gameplay camera distance that keeps the whole playfield (plus a
+   * margin) inside the frame for the current aspect ratio. Projecting the
+   * corners is simpler to trust than trigonometry with a tilted camera.
+   */
+  private fitGameplay(): void {
+    const cam = new THREE.PerspectiveCamera(38, this.camera.aspect, 0.1, 400);
+    const corners = [
+      new THREE.Vector3(-FIELD_W / 2 - 0.4, 0, -FIELD_D / 2 - 0.4),
+      new THREE.Vector3(FIELD_W / 2 + 0.4, 0, -FIELD_D / 2 - 0.4),
+      new THREE.Vector3(-FIELD_W / 2 - 0.4, 0, FIELD_D / 2 + 0.6),
+      new THREE.Vector3(FIELD_W / 2 + 0.4, 0, FIELD_D / 2 + 0.6),
+    ];
+    const v = new THREE.Vector3();
+    for (let d = 8; d < 80; d += 0.25) {
+      cam.position.set(
+        0,
+        Math.cos(GAMEPLAY_TILT) * d,
+        0.4 + Math.sin(GAMEPLAY_TILT) * d,
+      );
+      cam.lookAt(0, 0, 0.4);
+      cam.updateMatrixWorld();
+      const fits = corners.every((c) => {
+        v.copy(c).project(cam);
+        return Math.abs(v.x) < 0.94 && Math.abs(v.y) < 0.94;
+      });
+      if (fits) {
+        this.gameplayDistance = d;
+        return;
+      }
+    }
+  }
+
+  update(dtMs: number, ctx: ShotContext): void {
+    this.shots[this.to](ctx, this.b);
+    let pose = this.b;
+    if (this.blendMs > 0) {
+      this.blendMs = Math.max(0, this.blendMs - dtMs);
+      if (this.frozenFrom) copyPoseInto(this.frozenFrom, this.a);
+      else this.shots[this.from](ctx, this.a);
+      let t = 1 - this.blendMs / this.blendTotal;
+      if (this.ease === "inOut") t = t * t * (3 - 2 * t);
+      this.a.position.lerp(this.b.position, t);
+      this.a.target.lerp(this.b.target, t);
+      this.a.fov += (this.b.fov - this.a.fov) * t;
+      pose = this.a;
+    }
+    copyPoseInto(pose, this.last);
+
+    // Shake: smooth pseudo-noise from summed sines, scaled by trauma squared.
+    this.trauma = Math.max(0, this.trauma - dtMs / 900);
+    const amount = this.trauma * this.trauma * this.shakeScale;
+    const t = ctx.timeSec * 34;
+    const sx = (Math.sin(t * 1.1) + Math.sin(t * 2.3 + 1.7)) * 0.5;
+    const sy = (Math.sin(t * 1.7 + 0.4) + Math.sin(t * 2.9 + 2.1)) * 0.5;
+    const roll = (Math.sin(t * 1.3 + 3.1) + Math.sin(t * 3.1)) * 0.5;
+
+    this.camera.position.copy(pose.position);
+    this.camera.position.x += sx * amount * 0.6;
+    this.camera.position.y += sy * amount * 0.4;
+    this.camera.lookAt(pose.target);
+    this.camera.rotateZ(roll * amount * 0.05);
+    if (this.camera.fov !== pose.fov) {
+      this.camera.fov = pose.fov;
+      this.camera.updateProjectionMatrix();
+    }
+  }
+}
+
+function newPose(): Pose {
+  return {
+    position: new THREE.Vector3(),
+    target: new THREE.Vector3(),
+    fov: 40,
+  };
+}
+
+function copyPose(p: Pose): Pose {
+  return copyPoseInto(p, newPose());
+}
+
+function copyPoseInto(src: Pose, dst: Pose): Pose {
+  dst.position.copy(src.position);
+  dst.target.copy(src.target);
+  dst.fov = src.fov;
+  return dst;
+}

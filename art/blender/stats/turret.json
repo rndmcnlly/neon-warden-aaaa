@@ -1,0 +1,32 @@
+{
+  "asset": "turret",
+  "file": "public/models/turret.glb",
+  "bytes": 55480,
+  "triangles": 1184,
+  "nodes": [
+    "crown",
+    "turret",
+    "turret_barrels",
+    "turret_core",
+    "turret_core_cage",
+    "turret_crown_ring",
+    "turret_drum",
+    "turret_legs",
+    "turret_skirt",
+    "turret_trim"
+  ],
+  "emissive_materials": [
+    "turret_core_emit",
+    "turret_violet_emit"
+  ],
+  "triangles_per_node": {
+    "turret_drum": 164,
+    "turret_skirt": 68,
+    "turret_trim": 72,
+    "turret_legs": 132,
+    "turret_crown_ring": 92,
+    "turret_barrels": 336,
+    "turret_core": 80,
+    "turret_core_cage": 240
+  }
+}

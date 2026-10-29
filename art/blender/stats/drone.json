@@ -1,0 +1,29 @@
+{
+  "asset": "drone",
+  "file": "public/models/drone.glb",
+  "bytes": 57140,
+  "triangles": 1880,
+  "nodes": [
+    "drone",
+    "drone_body",
+    "drone_eye",
+    "drone_eye_socket",
+    "drone_fins",
+    "drone_ring",
+    "drone_ring_trim",
+    "drone_struts"
+  ],
+  "emissive_materials": [
+    "drone_eye_emit",
+    "drone_pink_emit"
+  ],
+  "triangles_per_node": {
+    "drone_body": 288,
+    "drone_eye_socket": 192,
+    "drone_eye": 168,
+    "drone_ring": 640,
+    "drone_ring_trim": 480,
+    "drone_struts": 24,
+    "drone_fins": 88
+  }
+}

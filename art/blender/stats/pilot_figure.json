@@ -1,0 +1,47 @@
+{
+  "asset": "pilot_figure",
+  "file": "public/models/pilot_figure.glb",
+  "bytes": 97280,
+  "triangles": 2932,
+  "nodes": [
+    "pilot_armor",
+    "pilot_belt",
+    "pilot_body",
+    "pilot_bracer_light",
+    "pilot_cape",
+    "pilot_chest_light",
+    "pilot_faceplate",
+    "pilot_figure",
+    "pilot_gorget",
+    "pilot_helmet",
+    "pilot_helmet_pods",
+    "pilot_helmet_ridge",
+    "pilot_helmet_shell",
+    "pilot_pauldron",
+    "pilot_rebreather",
+    "pilot_sidearm",
+    "pilot_visor",
+    "pilot_visor_line"
+  ],
+  "emissive_materials": [
+    "pilot_cyan_emit"
+  ],
+  "triangles_per_node": {
+    "pilot_body": 236,
+    "pilot_armor": 860,
+    "pilot_pauldron": 120,
+    "pilot_belt": 60,
+    "pilot_sidearm": 24,
+    "pilot_cape": 100,
+    "pilot_chest_light": 12,
+    "pilot_bracer_light": 12,
+    "pilot_gorget": 60,
+    "pilot_helmet_shell": 528,
+    "pilot_helmet_ridge": 528,
+    "pilot_helmet_pods": 140,
+    "pilot_faceplate": 136,
+    "pilot_visor": 56,
+    "pilot_visor_line": 12,
+    "pilot_rebreather": 48
+  }
+}

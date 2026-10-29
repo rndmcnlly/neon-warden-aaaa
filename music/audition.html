@@ -1,0 +1,74 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Neon Warden music audition</title>
+<style>
+body {
+  font: 15px system-ui;
+  background: #0b0d14;
+  color: #dfe6f5;
+  max-width: 860px;
+  margin: 2em auto;
+}
+h2 {
+  font-size: 1em;
+  margin: 1.6em 0 .4em;
+  color: #7fe3ff;
+}
+.take {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: .3em 0;
+}
+.take.picked {
+  outline: 1px solid #7fe3ff;
+}
+small {
+  color: #8a93a8;
+}
+pre {
+  background: #151a26;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+</style>
+<h1>Music candidates</h1>
+<p><small>Play, click "pick", then copy the JSON below into music/picks.json.
+Loop points default to the whole file; edit loopStart and loopEnd by hand.</small></p>
+<div id="list"></div>
+<pre id="out"></pre>
+<script src="candidates/index.js"></script>
+<script>
+const picks = JSON.parse(localStorage.getItem("music-picks") || "{}");
+const list = document.getElementById("list");
+function render() {
+  list.textContent = "";
+  for (const [cue, takes] of Object.entries(globalThis.MUSIC_INDEX.cues)) {
+    const h = document.createElement("h2");
+    h.textContent = cue;
+    list.append(h);
+    for (const t of takes) {
+      const row = document.createElement("div");
+      row.className = "take" + (picks[cue]?.file === t.file ? " picked" : "");
+      const audio = document.createElement("audio");
+      audio.controls = true;
+      audio.src = "candidates/" + t.file;
+      const pick = document.createElement("button");
+      pick.textContent = picks[cue]?.file === t.file ? "unpick" : "pick";
+      pick.onclick = () => {
+        picks[cue] = picks[cue]?.file === t.file ? null : { file: t.file };
+        localStorage.setItem("music-picks", JSON.stringify(picks));
+        render();
+      };
+      const info = document.createElement("small");
+      info.textContent = `seed ${t.seed}, ${t.seconds}s, ${
+        t.loop ? "loop" : "one-shot"
+      }`;
+      row.append(audio, pick, info);
+      list.append(row);
+    }
+  }
+  document.getElementById("out").textContent = JSON.stringify(picks, null, 2);
+}
+render();
+</script>

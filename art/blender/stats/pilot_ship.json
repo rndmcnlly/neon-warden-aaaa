@@ -1,0 +1,38 @@
+{
+  "asset": "pilot_ship",
+  "file": "public/models/pilot_ship.glb",
+  "bytes": 52816,
+  "triangles": 1364,
+  "nodes": [
+    "engine",
+    "pilot_ship",
+    "ship_canards",
+    "ship_canopy",
+    "ship_core_gem",
+    "ship_hull",
+    "ship_nozzle",
+    "ship_seat",
+    "ship_spine",
+    "ship_thrust_ring",
+    "ship_thrust_ring_mesh",
+    "ship_trim",
+    "ship_wing_plates"
+  ],
+  "emissive_materials": [
+    "ship_core_emit",
+    "ship_cyan_emit"
+  ],
+  "triangles_per_node": {
+    "ship_hull": 356,
+    "ship_spine": 128,
+    "ship_canopy": 224,
+    "ship_seat": 12,
+    "ship_canards": 88,
+    "ship_wing_plates": 80,
+    "ship_trim": 48,
+    "ship_nozzle": 60,
+    "ship_thrust_ring_mesh": 288,
+    "engine": 60,
+    "ship_core_gem": 20
+  }
+}

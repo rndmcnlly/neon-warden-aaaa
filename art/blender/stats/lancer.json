@@ -1,0 +1,29 @@
+{
+  "asset": "lancer",
+  "file": "public/models/lancer.glb",
+  "bytes": 19400,
+  "triangles": 362,
+  "nodes": [
+    "lancer",
+    "lancer_crest",
+    "lancer_gold",
+    "lancer_hull",
+    "lancer_pods",
+    "lancer_spike",
+    "lancer_spike_housing",
+    "lancer_trim"
+  ],
+  "emissive_materials": [
+    "lancer_mint_emit",
+    "lancer_spike_emit"
+  ],
+  "triangles_per_node": {
+    "lancer_hull": 108,
+    "lancer_gold": 40,
+    "lancer_crest": 40,
+    "lancer_trim": 48,
+    "lancer_pods": 72,
+    "lancer_spike_housing": 36,
+    "lancer_spike": 18
+  }
+}

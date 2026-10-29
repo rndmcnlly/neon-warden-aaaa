@@ -1,0 +1,24 @@
+{
+  "asset": "pickup_shield",
+  "file": "public/models/pickup_shield.glb",
+  "bytes": 37852,
+  "triangles": 1012,
+  "nodes": [
+    "pickup_shield",
+    "shield_cage",
+    "shield_core",
+    "shield_ring",
+    "shield_ring_frame"
+  ],
+  "emissive_materials": [
+    "shield_cage_emit",
+    "shield_core_emit",
+    "shield_ring_emit"
+  ],
+  "triangles_per_node": {
+    "shield_cage": 96,
+    "shield_ring": 512,
+    "shield_ring_frame": 384,
+    "shield_core": 20
+  }
+}

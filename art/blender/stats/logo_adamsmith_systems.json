@@ -1,0 +1,24 @@
+{
+  "asset": "logo_adamsmith_systems",
+  "file": "public/models/logo_adamsmith_systems.glb",
+  "bytes": 273512,
+  "triangles": 5744,
+  "nodes": [
+    "ass_emblem",
+    "ass_emblem_glow",
+    "ass_glyph",
+    "ass_underline",
+    "ass_wordmark",
+    "logo_adamsmith_systems"
+  ],
+  "emissive_materials": [
+    "ass_cyan_emit"
+  ],
+  "triangles_per_node": {
+    "ass_emblem": 264,
+    "ass_emblem_glow": 72,
+    "ass_glyph": 156,
+    "ass_wordmark": 5240,
+    "ass_underline": 12
+  }
+}

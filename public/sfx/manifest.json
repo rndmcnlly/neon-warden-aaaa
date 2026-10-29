@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "generated": "2026-10-28T18:17:30-0700",
+  "note": "Role levels are baked in (family loudness target plus role gain_db); play at unity on the UI bus.",
+  "sounds": {
+    "focus": null,
+    "confirm": null,
+    "back": null,
+    "tab_switch": null,
+    "toggle_on": null,
+    "toggle_off": null,
+    "slider_tick": null,
+    "slider_end": null,
+    "error": null,
+    "locked": null,
+    "menu_open": null,
+    "menu_close": null,
+    "pause_in": null,
+    "pause_out": null,
+    "save": null,
+    "notify": null
+  }
+}

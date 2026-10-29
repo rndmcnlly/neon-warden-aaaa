@@ -1,0 +1,50 @@
+# Music cue briefs for Neon Warden AAAA (workstream 6).
+# Prompt sent to the model: "<cue brief>. <family brief>". Write briefs in
+# library-tag language (genre, instruments, BPM, mood), not prose.
+family: >-
+  cinematic cyberpunk synthwave score, analog synths, sub bass, polished
+  modern game soundtrack, instrumental, no vocals
+
+negative: vocals, singing, lyrics, speech, lo-fi hiss, distortion, clipping, crowd noise
+
+defaults:
+  model: medium # sa3 dit (decoder same-l)
+  seconds: 45
+  steps: 8
+  cfg: 3.0
+  count: 2
+
+# id: matches MusicCueId where one exists (see "contract" notes).
+# loop: whether the runtime should loop it (loop points are trimmed later by
+# hand or default to the whole file).
+cues:
+  logos:
+    brief: short cinematic logo sting, rising synth swell, deep impact hit, shimmering tail, 90 BPM
+    seconds: 15
+    loop: false
+  menu:
+    brief: slow atmospheric synth pad, pulsing arpeggio, neon city at night, calm anticipation, 80 BPM
+    loop: true
+    contract: not yet a MusicCueId (request "menu")
+  tutorial:
+    brief: upbeat cheerful corporate synth pop, bright plucks, light electronic drums, optimistic onboarding, 110 BPM
+    loop: true
+  gameplay:
+    brief: driving synthwave action, fast arpeggiated bass, punchy drums, urgent shoot em up energy, 128 BPM
+    seconds: 60
+    loop: true
+  flashback:
+    brief: melancholic ambient piano and tape-warped synth pad, rain atmosphere, distant memory, slow, 70 BPM
+    loop: true
+  boss:
+    brief: aggressive dark synthwave boss battle, distorted bass, pounding drums, choir-like synth stabs, 140 BPM
+    seconds: 60
+    loop: true
+  ending_kill:
+    brief: bleak somber synth drone, slow heavy pulse, hollow victory, industrial ambience, minor key, 60 BPM
+    loop: false
+    contract: maps to "ending" today (request "endingKill")
+  ending_pacifist:
+    brief: warm hopeful ambient synth, gentle rising pads, soft piano, quiet sunrise over the city, 72 BPM
+    loop: false
+    contract: maps to "ending" today (request "endingPacifist")

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Neon Warden AAAA: UI sound audition</title>
+<style>
+  :root { --bg:#0b0d12; --panel:#141821; --line:#252b38; --fg:#d9e1ee; --dim:#7d8799;
+          --accent:#41e0d0; --pick:#f2c14e; --warn:#ff7a6b; font-family: ui-sans-serif, system-ui, sans-serif; }
+  body { margin:0; background:var(--bg); color:var(--fg); }
+  header { position:sticky; top:0; background:var(--bg); padding:12px 20px; border-bottom:1px solid var(--line); z-index:1; }
+  h1 { font-size:1rem; margin:0 0 4px; letter-spacing:.04em; }
+  .help, .meta { color:var(--dim); font-size:.8rem; }
+  .bar { display:flex; gap:8px; align-items:center; margin-top:8px; flex-wrap:wrap; }
+  button { background:var(--panel); color:var(--fg); border:1px solid var(--line); border-radius:6px;
+           padding:5px 10px; font:inherit; font-size:.8rem; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  main { padding:12px 20px 80px; }
+  section { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 14px; margin-bottom:10px; }
+  section.current { border-color:var(--accent); }
+  .role { display:flex; gap:12px; align-items:baseline; }
+  .role b { font-family:ui-monospace, monospace; }
+  .brief { color:var(--dim); font-size:.8rem; }
+  .picked { margin-left:auto; color:var(--pick); font-family:ui-monospace, monospace; font-size:.8rem; }
+  .cands { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+  .cand { width:132px; text-align:left; padding:6px 8px; }
+  .cand .n { font-family:ui-monospace, monospace; }
+  .cand .s { display:block; color:var(--dim); font-size:.7rem; margin-top:2px; }
+  .cand .f { display:block; color:var(--warn); font-size:.7rem; min-height:1em; }
+  .cand.focus { outline:2px solid var(--accent); outline-offset:1px; }
+  .cand.chosen { border-color:var(--pick); box-shadow:inset 0 0 0 1px var(--pick); }
+  .cand.playing { background:#1d2a30; }
+  .empty { color:var(--warn); }
+</style>
+</head>
+<body>
+<header>
+  <h1>UI sound audition</h1>
+  <div class="help">Up/Down: role. Left/Right: candidate. Space: play. Enter: pick (again to unpick).
+    1–9: play candidate n. A: autoplay on move. Picks persist in this browser until you export.</div>
+  <div class="bar">
+    <button id="export">Export picks.json</button>
+    <button id="copy">Copy JSON</button>
+    <label><button id="importBtn">Import picks.json</button><input id="import" type="file" accept=".json" hidden></label>
+    <button id="auto">Autoplay: off</button>
+    <span class="meta" id="meta"></span>
+  </div>
+</header>
+<main id="roles"></main>
+<script src="candidates/index.js"></script>
+<script>
+const KEY = "neon-warden-sfx-picks";
+const ix = window.SFX_INDEX;
+const main = document.getElementById("roles");
+if (!ix) {
+  main.innerHTML = '<p class="empty">No candidates/index.js found. Run <code>uv run sfx/render.py</code> first.</p>';
+  throw new Error("no index");
+}
+const roles = ix.order;
+let picks = JSON.parse(localStorage.getItem(KEY) || "{}");
+let r = 0, c = 0, autoplay = false;
+const audio = new Audio();
+const btns = [];
+
+document.getElementById("meta").textContent =
+  `${ix.model} · target ${ix.loudness.target_rms_dbfs} dBFS active RMS (+ role gain), ceiling ${ix.loudness.ceiling_dbtp} dBTP · rendered ${ix.generated}`;
+
+function save() { localStorage.setItem(KEY, JSON.stringify(picks)); }
+
+function build() {
+  main.innerHTML = "";
+  btns.length = 0;
+  roles.forEach((name, ri) => {
+    const role = ix.roles[name];
+    const sec = document.createElement("section");
+    sec.innerHTML = `<div class="role"><b>${name}</b><span class="brief">${role.target_ms} ms, ${role.gain_db >= 0 ? "+" : ""}${role.gain_db} dB · ${role.brief}</span><span class="picked"></span></div><div class="cands"></div>`;
+    const row = [];
+    role.candidates.forEach((cand, ci) => {
+      const b = document.createElement("button");
+      b.className = "cand";
+      b.tabIndex = -1;
+      const lufs = cand.lufs == null ? "" : ` · ${cand.lufs} LUFS`;
+      b.innerHTML = `<span class="n">${String(cand.nn).padStart(2, "0")}</span> <span class="s">${cand.duration_ms} ms · ${cand.active_rms_dbfs} dB rms · ${cand.true_peak_dbtp} dBTP${lufs}</span><span class="f">${(cand.flags || []).join(", ")}</span>`;
+      b.title = `seed ${cand.seed}, hash ${cand.hash}, natural length ${cand.natural_ms} ms`;
+      b.onclick = () => { r = ri; c = ci; play(); refresh(); };
+      b.ondblclick = () => { r = ri; c = ci; pick(); };
+      sec.querySelector(".cands").appendChild(b);
+      row.push(b);
+    });
+    main.appendChild(sec);
+    btns.push(row);
+  });
+  refresh();
+}
+
+function current() { return ix.roles[roles[r]].candidates[c]; }
+
+function refresh() {
+  document.querySelectorAll("section").forEach((s, ri) => {
+    s.classList.toggle("current", ri === r);
+    const p = picks[roles[ri]];
+    s.querySelector(".picked").textContent = p ? `picked ${p.file.split("/")[1]}` : "";
+  });
+  btns.forEach((row, ri) => row.forEach((b, ci) => {
+    const cand = ix.roles[roles[ri]].candidates[ci];
+    b.classList.toggle("focus", ri === r && ci === c);
+    b.classList.toggle("chosen", picks[roles[ri]]?.hash === cand.hash);
+  }));
+  btns[r]?.[c]?.scrollIntoView({ block: "nearest" });
+}
+
+function play() {
+  const cand = current();
+  if (!cand) return;
+  btns.flat().forEach(b => b.classList.remove("playing"));
+  const b = btns[r][c];
+  b.classList.add("playing");
+  audio.src = "candidates/" + cand.file;
+  audio.currentTime = 0;
+  audio.play();
+  audio.onended = () => b.classList.remove("playing");
+}
+
+function pick() {
+  const cand = current(), name = roles[r];
+  picks[name] = picks[name]?.hash === cand.hash ? null : { file: cand.file, hash: cand.hash, seed: cand.seed };
+  save(); refresh();
+}
+
+function exportJson() {
+  const out = {};
+  roles.forEach(n => out[n] = picks[n] || null);
+  return JSON.stringify(out, null, 1) + "\n";
+}
+
+function move(dr, dc) {
+  r = Math.max(0, Math.min(roles.length - 1, r + dr));
+  const n = ix.roles[roles[r]].candidates.length;
+  c = dr ? Math.min(c, n - 1) : Math.max(0, Math.min(n - 1, c + dc));
+  refresh();
+  if (autoplay) play();
+}
+
+document.addEventListener("keydown", e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key;
+  if (k === "ArrowUp") move(-1, 0);
+  else if (k === "ArrowDown") move(1, 0);
+  else if (k === "ArrowLeft") move(0, -1);
+  else if (k === "ArrowRight") move(0, 1);
+  else if (k === " ") play();
+  else if (k === "Enter") pick();
+  else if (k === "a" || k === "A") toggleAuto();
+  else if (/^[1-9]$/.test(k) && +k <= ix.roles[roles[r]].candidates.length) { c = +k - 1; refresh(); play(); }
+  else return;
+  e.preventDefault();
+});
+
+function toggleAuto() {
+  autoplay = !autoplay;
+  document.getElementById("auto").textContent = `Autoplay: ${autoplay ? "on" : "off"}`;
+}
+document.getElementById("auto").onclick = toggleAuto;
+document.getElementById("export").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([exportJson()], { type: "application/json" }));
+  a.download = "picks.json";
+  a.click();
+};
+document.getElementById("copy").onclick = () => navigator.clipboard.writeText(exportJson());
+document.getElementById("importBtn").onclick = () => document.getElementById("import").click();
+document.getElementById("import").onchange = async e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  picks = JSON.parse(await f.text());
+  save(); refresh();
+};
+// When served over http, seed from the committed picks.json if this browser has none yet.
+if (!localStorage.getItem(KEY) && location.protocol.startsWith("http")) {
+  fetch("picks.json").then(res => res.ok ? res.json() : {}).then(p => {
+    picks = Object.fromEntries(Object.entries(p).filter(([, v]) => v));
+    save(); refresh();
+  }).catch(() => {});
+}
+build();
+</script>
+</body>
+</html>
