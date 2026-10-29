@@ -583,6 +583,8 @@ const tutorialProgress = new TutorialProgress({
   correction: (moment) => {
     if (sim) commentary.onApp(moment, commentaryContext(sim.snapshot()));
   },
+  // Scolding the demo autopilot made the lockout line repeat on every lap.
+  humanInput: () => pilot?.kind === "keyboard",
 });
 
 /** Commentary from the variant banks; bags persist in this browser. */

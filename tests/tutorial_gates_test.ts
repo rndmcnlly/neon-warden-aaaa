@@ -263,3 +263,61 @@ Deno.test("corrections: scheduler yields to teaching, cools down, exhausts its b
   }
   assertEquals(new Set(lines).size, 4);
 });
+
+/** The rest drill, interrupted by fire every 40 ticks: a "lockout" mistake. */
+function lockoutRun(humanInput: boolean): string[] {
+  const sim = createSim({
+    seed: 121,
+    start: { kind: "tutorial" },
+    difficulty: "normal",
+  });
+  const corrections: string[] = [];
+  const progress = new TutorialProgress({
+    waitingFlag: () => F.tutCharged,
+    setFlag: () => {},
+    getFlag: () => false,
+    interject: () => true,
+    correction: (m) => corrections.push(m),
+    humanInput: () => humanInput,
+  });
+  for (let t = 0; t < 600; t++) {
+    const input = t % 40 < 25 ? IDLE_INPUT : fire;
+    progress.input(input, sim.snapshot());
+    for (const event of sim.step(input)) progress.note(event);
+  }
+  return corrections;
+}
+
+Deno.test("corrections: autopilot input never triggers wrong-input barks", () => {
+  // Same input stream: a person gets corrected, the demo autopilot does not.
+  assert(lockoutRun(true).includes("tutorialLockout"));
+  assertEquals(lockoutRun(false), []);
+});
+
+Deno.test("corrections: the lockout bank cooldown holds against rapid repeats", () => {
+  let now = 0;
+  const lines: string[] = [];
+  const scheduler = new CommentaryScheduler(ALL_BANKS, {
+    now: () => now,
+    sceneId: () => "tutorial",
+    bark: () => false,
+    interject: (line) => {
+      lines.push(line);
+      return true;
+    },
+    random: () => 0,
+  });
+  const ctx = {
+    phase: "tutorial",
+    sector: 1,
+    bossPhase: null,
+    livesLeft: 3,
+    hasFired: true,
+    neverFired: false,
+  } as const;
+  // A correction offered every 2 s (the old autopilot lap) for 30 s.
+  for (; now <= 30000; now += 2000) scheduler.onApp("tutorialLockout", ctx);
+  const cooldown = ALL_BANKS.find((b) => b.id === "tutorialLockout")!
+    .cooldownMs;
+  assertEquals(lines.length, Math.floor(30000 / cooldown) + 1);
+});

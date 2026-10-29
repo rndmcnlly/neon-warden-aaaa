@@ -35,6 +35,12 @@ export interface TutorialProgressPorts {
   /** Omit only in isolated sim-event tests, without a timeline. */
   waitingFlag?(): string | null;
   correction?(moment: TutorialCorrection): void;
+  /**
+   * Whether this tick's input came from a person. Wrong-input corrections
+   * coach hands; an autopilot's scripted input (the tutorial demo laps, QA
+   * reels, attract mode) is never a mistake. Omitted means human.
+   */
+  humanInput?(): boolean;
   /** Accessibility resolution mode; changes rebase edges without feedback. */
   inputMode?(): string;
 }
@@ -54,7 +60,12 @@ export class TutorialProgress {
   private readonly gates: TutorialGates;
 
   constructor(private readonly ports: TutorialProgressPorts) {
-    this.gates = new TutorialGates(ports);
+    this.gates = new TutorialGates({
+      setFlag: (flag) => ports.setFlag(flag),
+      correction: (moment) => {
+        if (ports.humanInput?.() ?? true) ports.correction?.(moment);
+      },
+    });
   }
 
   input(input: InputFrame, state: SimState): void {
