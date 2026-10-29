@@ -1,0 +1,257 @@
+# s5 ?skipto=sector5&autoplay=fight&speed=1&seed=121&qa=1 151.3 s
+0.23 dom 
+1.59 [0] sectorStarted {"sector":5}
+1.59 log line:bank.sectorStart.2
+1.59 log bark:bank.sectorStart.2
+1.59 log scene:sector5
+2.29 [40] chargeLevel {"level":1}
+2.94 [80] chargeLevel {"level":2}
+3.11 log line:sec5_intro_001
+3.60 [120] chargeLevel {"level":3}
+4.10 [150] chargeLevel {"level":0}
+4.51 [173] partBreak {"id":1,"target":"enemy","part":"barrel","partKind":"barrel","pos":{"x":176,"y":96.39999999999999},"by":"writ","hitPos":{"x":181.12893218813457,"y":108.5857864376269},"shotVel":{"x":0,"y":-18},"first":true}
+4.52 [173] disarm {"id":1,"kind":"turret","pos":{"x":176,"y":80.39999999999999},"cancelled":5,"first":true}
+4.52 log scene:beat-first-disarm
+4.52 log line:bank.sectorStart.2
+5.64 log line:disarm_ai_001
+5.97 [226] despawn {"id":1,"reason":"spared"}
+6.90 [279] chargeLevel {"level":1}
+7.38 [310] graze {"bulletId":20,"pos":{"x":181.8371583533434,"y":552.8331527862827},"count":1,"meter":0.05,"first":true}
+7.38 log scene:beat-first-graze
+7.39 [311] graze {"bulletId":21,"pos":{"x":184.6926001685388,"y":544.7168146270974},"count":1,"meter":0.1,"first":false}
+7.52 [318] graze {"bulletId":25,"pos":{"x":208.7421358678639,"y":546.7710318201404},"count":1,"meter":0.15000000000000002,"first":false}
+7.52 [319] chargeLevel {"level":2}
+7.57 [322] scanLock {"id":44,"target":"enemy","kind":"lancer","pos":{"x":169.20000000000022,"y":199.04999999999953},"ai":"strafe","first":true}
+7.58 log scene:beat-first-lock
+7.58 [322] intel {"id":44,"codexId":"codex.enemy.lancer","ai":"strafe","first":true}
+7.82 log line:lock_ai_001
+8.21 [359] chargeLevel {"level":3}
+8.32 [367] scanLock {"id":45,"target":"enemy","kind":"lancer","pos":{"x":202.80000000000226,"y":214.79999999999927},"ai":"strafe","first":false}
+8.32 [367] intel {"id":45,"codexId":"codex.enemy.lancer","ai":"strafe","first":false}
+8.70 [390] chargeLevel {"level":0}
+8.99 [406] kill {"id":44,"kind":"lancer","score":250,"byRam":false,"clean":true}
+9.46 [432] graze {"bulletId":65,"pos":{"x":369.0605452855152,"y":500.9525336529398},"count":1,"meter":0.16549999999999998,"first":false}
+9.71 [447] graze {"bulletId":77,"pos":{"x":359.41179087458863,"y":513.1649492062247},"count":1,"meter":0.21549999999999997,"first":false}
+9.71 [447] statsMoment {"moment":"grazeStreak","value":5}
+9.94 [460] graze {"bulletId":91,"pos":{"x":348.4765358755385,"y":520.3390201666144},"count":1,"meter":0.26549999999999996,"first":false}
+10.70 [507] graze {"bulletId":116,"pos":{"x":388.9792879339686,"y":551.9732262417479},"count":1,"meter":0.31549999999999995,"first":false}
+10.91 [519] chargeLevel {"level":1}
+11.57 [559] chargeLevel {"level":2}
+11.71 [567] scanLock {"id":3,"target":"enemy","kind":"turret","pos":{"x":304,"y":185.99999999999955},"ai":"withdraw","first":false}
+11.71 [567] intel {"id":3,"codexId":"codex.enemy.turret","ai":"withdraw","first":true}
+12.23 [599] chargeLevel {"level":3}
+12.46 [612] graze {"bulletId":150,"pos":{"x":377.56965769639373,"y":571.3179824231697},"count":1,"meter":0.3444999999999999,"first":false}
+12.57 [618] graze {"bulletId":154,"pos":{"x":374.0553852880639,"y":564.962073414894},"count":1,"meter":0.3944999999999999,"first":false}
+12.60 [620] graze {"bulletId":153,"pos":{"x":376.35885766968323,"y":557.70411891688},"count":1,"meter":0.4444999999999999,"first":false}
+12.75 [630] chargeLevel {"level":0}
+13.04 [648] pickup {"kind":"shield","firstPowerup":true}
+13.04 log scene:flashback
+13.05 log line:flash_ai_001
+20.83 log line:flash_rec_001
+27.93 log line:flash_rec_002
+35.15 log line:flash_rec_003
+40.54 log line:flash_rec_004
+48.74 log line:flash_rec_005
+54.83 log line:flash_rec_006
+59.87 log line:flash_ai_002
+66.04 log line:flash_ai_003
+66.14 [652] kill {"id":160,"kind":"dart","score":150,"byRam":false,"clean":false}
+66.16 [655] partBreak {"id":164,"target":"enemy","part":"nose","partKind":"nose","pos":{"x":360,"y":32.79999999999998},"by":"writ","hitPos":{"x":359.6714862200762,"y":50.902525316939546},"shotVel":{"x":0,"y":-18},"first":false}
+66.17 [655] disarm {"id":164,"kind":"dart","pos":{"x":360,"y":22.79999999999998},"cancelled":0,"first":false}
+66.39 [666] kill {"id":169,"kind":"dart","score":150,"byRam":false,"clean":false}
+66.53 [674] kill {"id":177,"kind":"dart","score":150,"byRam":false,"clean":false}
+66.84 [690] kill {"id":164,"kind":"dart","score":150,"byRam":false,"clean":false}
+66.94 [700] chargeLevel {"level":1}
+67.50 [732] scanLock {"id":2,"target":"enemy","kind":"turret","pos":{"x":240,"y":383.99999999999767},"ai":"withdraw","first":false}
+67.50 [732] intel {"id":2,"codexId":"codex.enemy.turret","ai":"withdraw","first":false}
+67.65 [740] chargeLevel {"level":2}
+67.65 [742] chargeLevel {"level":0}
+67.76 [747] partBreak {"id":163,"target":"enemy","part":"nose","partKind":"nose","pos":{"x":241.8000000000005,"y":491.19999999999925},"by":"writ","hitPos":{"x":244.4107647738328,"y":487.1715728752538},"shotVel":{"x":0,"y":-18},"first":false}
+67.76 [747] disarm {"id":163,"kind":"dart","pos":{"x":241.8000000000005,"y":481.19999999999925},"cancelled":1,"first":false}
+68.03 [763] kill {"id":168,"kind":"dart","score":150,"byRam":false,"clean":false}
+68.57 [795] kill {"id":176,"kind":"dart","score":150,"byRam":false,"clean":false}
+68.78 [807] statsMoment {"moment":"hotStreak","value":9}
+68.78 log line:stat_streak_002
+68.78 log bark:stat_streak_002
+68.90 [815] kill {"id":2,"kind":"turret","score":400,"byRam":false,"clean":false}
+69.59 [854] kill {"id":163,"kind":"dart","score":150,"byRam":false,"clean":false}
+69.80 [865] graze {"bulletId":179,"pos":{"x":241.22536537975665,"y":563.6138988089447},"count":1,"meter":0.2634999999999997,"first":false}
+69.89 [871] chargeLevel {"level":1}
+70.40 [902] graze {"bulletId":181,"pos":{"x":246.38145599209233,"y":602.4220576808186},"count":1,"meter":0.31349999999999967,"first":false}
+70.57 [911] chargeLevel {"level":2}
+70.57 [912] pickup {"kind":"spread","firstPowerup":false}
+70.89 [930] chargeLevel {"level":0}
+71.30 [956] partBreak {"id":198,"target":"enemy","part":"gun","partKind":"gun","pos":{"x":244.64516690829447,"y":49.5},"by":"writ","hitPos":{"x":241.72375900532387,"y":60.31471862576109},"shotVel":{"x":0,"y":-18},"first":false}
+71.30 [956] disarm {"id":198,"kind":"drone","pos":{"x":244.64516690829447,"y":40.5},"cancelled":0,"first":false}
+71.92 [991] kill {"id":200,"kind":"drone","score":100,"byRam":false,"clean":false}
+71.94 [992] kill {"id":202,"kind":"drone","score":100,"byRam":false,"clean":false}
+72.10 [1001] despawn {"id":198,"reason":"spared"}
+72.83 [1045] pickup {"kind":"spread","firstPowerup":false}
+73.06 [1059] chargeLevel {"level":1}
+73.73 [1099] chargeLevel {"level":2}
+73.92 [1111] chargeLevel {"level":0}
+73.95 [1112] partBreak {"id":196,"target":"enemy","part":"gun","partKind":"gun","pos":{"x":186.26127932990724,"y":298.5},"by":"writ","hitPos":{"x":182.4727922061362,"y":305.9338095116624},"shotVel":{"x":0,"y":-18},"first":false}
+73.95 [1112] disarm {"id":196,"kind":"drone","pos":{"x":186.26127932990724,"y":289.5},"cancelled":2,"first":false}
+74.17 [1122] kill {"id":197,"kind":"drone","score":100,"byRam":false,"clean":false}
+74.39 [1137] kill {"id":196,"kind":"drone","score":100,"byRam":false,"clean":false}
+74.54 [1146] kill {"id":201,"kind":"drone","score":100,"byRam":false,"clean":false}
+74.89 [1161] kill {"id":199,"kind":"drone","score":100,"byRam":false,"clean":false}
+75.17 [1184] kill {"id":206,"kind":"drone","score":100,"byRam":false,"clean":false}
+75.67 log line:amb_fight_004
+76.13 [1240] chargeLevel {"level":1}
+76.53 [1264] graze {"bulletId":246,"pos":{"x":183.93045804933223,"y":562.5996444941503},"count":1,"meter":0.05,"first":false}
+76.78 [1280] chargeLevel {"level":2}
+76.80 [1281] chargeLevel {"level":0}
+77.22 [1305] partBreak {"id":232,"target":"enemy","part":"barrel","partKind":"barrel","pos":{"x":208,"y":96.39999999999999},"by":"writ","hitPos":{"x":205.9082902183191,"y":97.23010075758873},"shotVel":{"x":0,"y":-18},"first":false}
+77.22 [1305] disarm {"id":232,"kind":"turret","pos":{"x":208,"y":80.39999999999999},"cancelled":9,"first":false}
+77.22 log line:var_disarm_001
+77.22 log bark:var_disarm_001
+78.10 [1358] despawn {"id":232,"reason":"spared"}
+78.39 [1375] graze {"bulletId":290,"pos":{"x":160.1111271554711,"y":602.3418742863821},"count":1,"meter":0.06999999999999998,"first":false}
+78.39 [1375] graze {"bulletId":292,"pos":{"x":190.3527134019967,"y":580.3772800749906},"count":1,"meter":0.11999999999999998,"first":false}
+78.96 [1410] chargeLevel {"level":1}
+79.64 [1450] chargeLevel {"level":2}
+79.87 [1463] scanLock {"id":350,"target":"enemy","kind":"lancer","pos":{"x":171.60000000000022,"y":199.39999999999952},"ai":"strafe","first":false}
+79.87 [1463] intel {"id":350,"codexId":"codex.enemy.lancer","ai":"strafe","first":false}
+80.31 [1490] chargeLevel {"level":3}
+80.82 [1521] chargeLevel {"level":0}
+81.04 [1534] partBreak {"id":360,"target":"enemy","part":"emitterL","partKind":"emitter","pos":{"x":261.0000000000003,"y":273.74999999999994},"by":"writ","hitPos":{"x":267.0468545045818,"y":288.46269093836906},"shotVel":{"x":0,"y":-18},"first":false}
+81.36 [1554] kill {"id":233,"kind":"turret","score":400,"byRam":false,"clean":false}
+81.52 [1559] kill {"id":360,"kind":"lancer","score":250,"byRam":false,"clean":false}
+81.85 [1575] kill {"id":463,"kind":"dart","score":150,"byRam":false,"clean":false}
+82.07 [1590] kill {"id":473,"kind":"dart","score":150,"byRam":false,"clean":false}
+82.19 [1597] kill {"id":468,"kind":"dart","score":150,"byRam":false,"clean":false}
+82.22 [1598] kill {"id":485,"kind":"dart","score":150,"byRam":false,"clean":false}
+82.31 [1604] kill {"id":462,"kind":"dart","score":150,"byRam":false,"clean":false}
+82.34 [1607] graze {"bulletId":395,"pos":{"x":276.588209125415,"y":599.164949206225},"count":1,"meter":0.05,"first":false}
+82.41 [1609] graze {"bulletId":368,"pos":{"x":270.0000000000023,"y":609.6000000000022},"count":1,"meter":0.1,"first":false}
+82.59 [1620] graze {"bulletId":382,"pos":{"x":270.0000000000023,"y":610.2000000000023},"count":1,"meter":0.15000000000000002,"first":false}
+82.71 [1629] graze {"bulletId":378,"pos":{"x":326.4283032251811,"y":618.9701856570266},"count":1,"meter":0.2,"first":false}
+82.71 [1629] graze {"bulletId":396,"pos":{"x":307.1307944033279,"y":593.3950167635967},"count":1,"meter":0.25,"first":false}
+82.87 [1637] graze {"bulletId":385,"pos":{"x":305.99999999999994,"y":592.4000000000018},"count":1,"meter":0.3,"first":false}
+82.87 [1638] graze {"bulletId":414,"pos":{"x":293.6225382280307,"y":590.4923985381957},"count":1,"meter":0.35,"first":false}
+82.91 [1640] graze {"bulletId":418,"pos":{"x":270.0000000000023,"y":606.2000000000024},"count":1,"meter":0.39999999999999997,"first":false}
+82.93 [1642] graze {"bulletId":387,"pos":{"x":292.3580541073683,"y":590.5277025463694},"count":1,"meter":0.44999999999999996,"first":false}
+83.04 [1647] statsMoment {"moment":"grazeStreak","value":9}
+83.06 [1650] chargeLevel {"level":1}
+83.10 [1651] graze {"bulletId":405,"pos":{"x":278.84979793207106,"y":587.6250843209684},"count":1,"meter":0.49999999999999994,"first":false}
+83.51 [1676] graze {"bulletId":444,"pos":{"x":256.336037639909,"y":599.4540539453013},"count":1,"meter":0.5499999999999999,"first":false}
+83.75 [1690] chargeLevel {"level":2}
+84.02 [1707] scanLock {"id":467,"target":"enemy","kind":"dart","pos":{"x":291.59999999999974,"y":465.5999999999993},"ai":"dive","first":false}
+84.02 [1707] intel {"id":467,"codexId":"codex.enemy.dart","ai":"dive","first":true}
+84.39 [1730] chargeLevel {"level":3}
+84.92 [1761] chargeLevel {"level":0}
+85.53 [1797] writMissed {"pos":{"x":352.14147211766533,"y":-191.83603896932226},"level":3}
+86.00 [1825] pickup {"kind":"shield","firstPowerup":false}
+87.07 [1890] chargeLevel {"level":1}
+87.73 [1930] chargeLevel {"level":2}
+88.41 [1970] chargeLevel {"level":3}
+88.93 [2001] chargeLevel {"level":0}
+89.04 [2007] statsMoment {"moment":"accuracyDrop","value":0}
+89.04 log line:bank.accuracyDrop.2
+89.04 log bark:bank.accuracyDrop.2
+89.57 [2040] sectorCleared {"sector":5}
+89.57 [2040] sectorStarted {"sector":6}
+89.57 [2040] bossWarning {}
+89.57 log scene:boss
+89.57 log line:warn_ai_001
+89.57 [2040] writMissed {"pos":{"x":239.71149390900416,"y":-183.4060607606608},"level":3}
+89.57 [2040] statsMoment {"moment":"perfectSector","value":5}
+91.07 [2130] chargeLevel {"level":1}
+91.75 [2170] chargeLevel {"level":2}
+92.41 [2210] chargeLevel {"level":3}
+92.89 [2240] bossPhase {"phase":0}
+92.92 [2241] chargeLevel {"level":0}
+95.06 [2370] chargeLevel {"level":1}
+95.42 [2390] bossPhase {"phase":1}
+95.56 [2400] statsMoment {"moment":"writHoarding","value":3}
+95.74 [2410] chargeLevel {"level":2}
+96.26 log line:warn_narr_001
+96.42 [2450] chargeLevel {"level":3}
+96.92 [2481] chargeLevel {"level":0}
+98.06 log line:desc_001
+99.08 [2610] chargeLevel {"level":1}
+99.74 [2650] chargeLevel {"level":2}
+100.40 [2690] chargeLevel {"level":3}
+100.93 [2721] chargeLevel {"level":0}
+103.06 [2850] chargeLevel {"level":1}
+103.18 log line:desc_ai_001
+103.73 [2890] chargeLevel {"level":2}
+104.40 [2930] chargeLevel {"level":3}
+104.93 [2961] chargeLevel {"level":0}
+105.04 log line:desc_002
+105.38 [2989] statsMoment {"moment":"bossLull","value":600}
+107.06 [3090] chargeLevel {"level":1}
+107.74 [3130] chargeLevel {"level":2}
+108.40 [3170] chargeLevel {"level":3}
+108.92 [3201] chargeLevel {"level":0}
+110.49 log line:desc_003
+111.07 [3330] chargeLevel {"level":1}
+111.73 [3370] chargeLevel {"level":2}
+112.41 [3410] chargeLevel {"level":3}
+112.92 [3441] chargeLevel {"level":0}
+115.06 log line:desc_004
+115.09 [3570] chargeLevel {"level":1}
+115.74 [3610] chargeLevel {"level":2}
+116.40 [3650] chargeLevel {"level":3}
+116.92 [3681] chargeLevel {"level":0}
+119.07 [3810] chargeLevel {"level":1}
+119.30 log line:desc_ai_002
+119.73 [3850] chargeLevel {"level":2}
+120.41 [3890] chargeLevel {"level":3}
+120.92 [3921] chargeLevel {"level":0}
+123.06 [4050] chargeLevel {"level":1}
+123.75 [4090] chargeLevel {"level":2}
+124.39 [4130] chargeLevel {"level":3}
+127.50 [4316] chargeLevel {"level":0}
+128.04 [4348] graze {"bulletId":869,"pos":{"x":359.8862403633432,"y":595.4509493498076},"count":1,"meter":0.05,"first":false}
+128.16 [4356] chargeLevel {"level":1}
+128.70 [4388] graze {"bulletId":879,"pos":{"x":347.90344304585574,"y":557.6000000000009},"count":1,"meter":0.1,"first":false}
+128.85 [4396] chargeLevel {"level":2}
+129.51 [4436] chargeLevel {"level":3}
+129.73 [4450] graze {"bulletId":890,"pos":{"x":262.33073191846745,"y":561.5237924504995},"count":1,"meter":0.15000000000000002,"first":false}
+130.54 log line:boss_taunt_001
+131.00 [4526] graze {"bulletId":901,"pos":{"x":186.67278456744543,"y":596.0738028379993},"count":1,"meter":0.2,"first":false}
+133.66 [4685] graze {"bulletId":928,"pos":{"x":64.52383542595952,"y":580.6829627378344},"count":1,"meter":0.1479999999999999,"first":false}
+134.05 [4708] chargeLevel {"level":0}
+134.40 [4729] partBreak {"id":569,"target":"boss","part":"cannonPod","partKind":"cannonPod","pos":{"x":74.03902180443492,"y":164.00000000000023},"by":"writ","hitPos":{"x":76.41074374776004,"y":183.19369414148446},"shotVel":{"x":0,"y":-18},"first":true}
+134.40 log scene:beat-warden-pod
+134.40 log line:boss_pod_001
+134.85 [4748] chargeLevel {"level":1}
+135.30 [4779] graze {"bulletId":943,"pos":{"x":137.79182948249806,"y":574.4000000000007},"count":1,"meter":0.1934999999999999,"first":false}
+135.46 [4788] chargeLevel {"level":2}
+136.13 [4828] chargeLevel {"level":3}
+136.21 [4834] graze {"bulletId":950,"pos":{"x":219.3047603300803,"y":558.8290018971404},"count":1,"meter":0.24349999999999988,"first":false}
+137.43 [4906] graze {"bulletId":959,"pos":{"x":286.354581460299,"y":583.2481027545285},"count":1,"meter":0.29349999999999987,"first":false}
+140.27 [5077] graze {"bulletId":986,"pos":{"x":414.74898298650317,"y":598.6389428546935},"count":1,"meter":0.22349999999999975,"first":false}
+140.53 [5093] chargeLevel {"level":0}
+140.92 log line:var_warden1_002
+140.92 log bark:var_warden1_002
+141.05 [5124] graze {"bulletId":996,"pos":{"x":407.54981291864226,"y":599.2508601975269},"count":1,"meter":0.27349999999999974,"first":false}
+141.20 [5133] chargeLevel {"level":1}
+141.86 [5173] chargeLevel {"level":2}
+141.88 [5174] graze {"bulletId":1006,"pos":{"x":396.76378126842167,"y":598.2245222756026},"count":1,"meter":0.32349999999999973,"first":false}
+142.53 [5213] chargeLevel {"level":3}
+142.56 [5214] graze {"bulletId":1016,"pos":{"x":370.3232194385959,"y":560.4000000000009},"count":1,"meter":0.3734999999999997,"first":false}
+143.53 [5273] graze {"bulletId":1028,"pos":{"x":267.92630181629494,"y":556.1342113437813},"count":1,"meter":0.4234999999999997,"first":false}
+143.53 [5273] statsMoment {"moment":"grazeStreak","value":5}
+144.28 [5318] chargeLevel {"level":0}
+144.60 [5337] partBreak {"id":569,"target":"boss","part":"spiralPod","partKind":"spiralPod","pos":{"x":241.59425062878285,"y":164.00000000000023},"by":"writ","hitPos":{"x":230.6404260971388,"y":182.67308806541837},"shotVel":{"x":0,"y":-18},"first":false}
+144.60 [5337] coreExposed {"id":569}
+144.60 [5337] intel {"id":569,"codexId":"codex.warden.core","ai":"sweep","first":true}
+144.72 [5339] graze {"bulletId":1038,"pos":{"x":185.0968356733813,"y":565.2921226376694},"count":1,"meter":0.4734999999999997,"first":false}
+145.06 [5358] chargeLevel {"level":1}
+145.70 [5398] chargeLevel {"level":2}
+145.83 [5405] graze {"bulletId":1047,"pos":{"x":132.18210964262437,"y":593.5086628213052},"count":1,"meter":0.5234999999999997,"first":false}
+146.37 [5438] chargeLevel {"level":3}
+146.49 [5446] graze {"bulletId":1056,"pos":{"x":91.73097621428415,"y":557.596702587587},"count":1,"meter":0.5734999999999998,"first":false}
+146.88 [5469] chargeLevel {"level":0}
+147.37 [5497] graze {"bulletId":1065,"pos":{"x":89.84551842699997,"y":566.9133735572177},"count":1,"meter":0.6234999999999998,"first":false}
+148.17 [5546] graze {"bulletId":1073,"pos":{"x":94.67290603733066,"y":562.1680742402682},"count":1,"meter":0.6734999999999999,"first":false}
+149.03 [5598] chargeLevel {"level":1}
+149.08 [5600] graze {"bulletId":1080,"pos":{"x":168.33756783390623,"y":559.3945013144732},"count":1,"meter":0.7234999999999999,"first":false}
+149.09 log line:var_graze_003
+149.09 log bark:var_graze_003
+149.70 [5638] chargeLevel {"level":2}
+150.31 [5675] graze {"bulletId":1107,"pos":{"x":224.69572453314785,"y":601.945650750886},"count":1,"meter":0.7735,"first":false}
+150.37 [5678] chargeLevel {"level":3}

@@ -27,42 +27,101 @@ music:
     - { cue: boss, from: 48, beats: 62, fadeOut: 3 }
   duckUnderVoiceDb: -9
 
+# Takes are re-timed for true speed (October 29, 2026; event map in
+# research/2026-10-29-trailer-render/). Each ends on an `until` probe for the
+# last event a shot needs. The first pickup of any run freezes the sim for the
+# flashback (about 55 s), so takes that need play after it pre-roll through
+# it and `roll` (start the take) when the sim resumes; `nth` counts from the
+# roll. These recipes are identical in teaser30.yaml, so the takes are shared.
 takes:
   s1-fight:
     query: "?skipto=sector1&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 70000 }]
-    maxSeconds: 75
+    steps:
+      - do: until
+        probe: "p.log.includes('line:flash_ai_002') && !p.sim().frozen && (globalThis.__nwRoll = p.sim().tick) >= 0"
+        timeoutMs: 120000
+        label: "flashback over, sim resumed"
+      - { do: roll }
+      - do: until
+        probe: "p.events.filter((e) => e.tick > globalThis.__nwRoll && e.type === 'kill').length >= 9"
+        timeoutMs: 60000
+        label: "nine kills after the flashback"
+      - { do: wait, ms: 3000 }
+    maxSeconds: 150
   s2-fight:
     query: "?skipto=sector2&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 75000 }]
-    maxSeconds: 80
-  s2-disarm:
-    query: "?skipto=sector2&autoplay=pacifist&speed=1"
-    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 70000 }]
-    maxSeconds: 75
+    steps:
+      - do: until
+        probe: "p.events.filter((e) => e.type === 'partBreak' && e.by === 'writ').length >= 2"
+        timeoutMs: 40000
+        label: "second Writ break"
+      - { do: wait, ms: 4000 }
+    maxSeconds: 45
   s3-recorder:
     query: "?skipto=sector3&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
     steps:
       - do: until
-        probe: "p.log.includes('scene:flashback')"
-        timeoutMs: 200000
-        label: "flashback starts"
-      - { do: wait, ms: 12000 }
-    maxSeconds: 220
+        probe: "p.log.includes('line:flash_rec_001')"
+        timeoutMs: 60000
+        label: "flash_rec_001 starts"
+      - { do: wait, ms: 9000 }
+    maxSeconds: 80
+  s3-fight:
+    query: "?skipto=sector3&autoplay=fight&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.log.includes('line:flash_ai_002') && !p.sim().frozen && (globalThis.__nwRoll = p.sim().tick) >= 0"
+        timeoutMs: 120000
+        label: "flashback over, sim resumed"
+      - { do: roll }
+      - do: until
+        probe: "p.events.filter((e) => e.tick > globalThis.__nwRoll && e.type === 'kill').length >= 5"
+        timeoutMs: 60000
+        label: "five kills after the flashback"
+      - { do: wait, ms: 3000 }
+    maxSeconds: 180
+  s3-disarm:
+    # The pacifist autopilot disarms once per run: the sector 3 turret, about
+    # 0.8 s before the recorder pickup freezes the world, so disarm shots end
+    # just after the break (measured; no later disarm in 90 s of sectors 1-5).
+    query: "?skipto=sector3&autoplay=pacifist&speed=1"
+    settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
+    steps:
+      - do: until
+        probe: "p.events.some((e) => e.type === 'disarm')"
+        timeoutMs: 30000
+        label: "the turret disarm"
+      - { do: wait, ms: 3000 }
+    maxSeconds: 40
   s4-fight:
     query: "?skipto=sector4&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 60000 }]
-    maxSeconds: 65
+    steps:
+      - do: until
+        probe: "p.log.includes('line:flash_ai_002') && !p.sim().frozen && (globalThis.__nwRoll = p.sim().tick) >= 0"
+        timeoutMs: 120000
+        label: "flashback over, sim resumed"
+      - { do: roll }
+      - do: until
+        probe: "p.events.some((e) => e.tick > globalThis.__nwRoll && e.type === 'graze' && e.meter >= 0.3)"
+        timeoutMs: 40000
+        label: "graze meter 0.3 after the flashback"
+      - { do: wait, ms: 3000 }
+    maxSeconds: 170
   s5-fight:
     query: "?skipto=sector5&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 45000 }]
-    maxSeconds: 50
+    steps:
+      - do: until
+        probe: "p.events.some((e) => e.type === 'graze' && e.meter >= 0.3)"
+        timeoutMs: 30000
+        label: "graze meter 0.3"
+      - { do: wait, ms: 1500 }
+    maxSeconds: 30
   boss-descent:
     query: "?skipto=boss"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
@@ -72,37 +131,40 @@ takes:
         timeoutMs: 40000
         label: "desc_ai_001 starts"
       - { do: wait, ms: 6000 }
-    maxSeconds: 50
+    maxSeconds: 60
   boss-fight:
+    # Pre-roll through the descent dialogue; the take runs from the first
+    # graze to the kill. On this build the autopilot kills the Warden about
+    # 16 s into phase 3, before boss_turn_001/002 play (they need about 25 s),
+    # so shots anchor on boss_p3_002 and the turn line is added in post.
     query: "?skipto=boss&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
     steps:
       - do: until
-        probe: "p.log.includes('line:boss_turn_002')"
-        timeoutMs: 200000
-        label: "boss_turn_002 starts"
-      - { do: wait, ms: 6000 }
-    maxSeconds: 240
+        probe: "p.log.includes('line:graze_ai_001')"
+        timeoutMs: 90000
+        label: "first graze in the boss fight"
+      - { do: roll }
+      - do: until
+        probe: "p.log.includes('scene:ending-kill')"
+        timeoutMs: 130000
+        label: "kill ending starts"
+    maxSeconds: 230
   boss-pacifist:
+    # Cold gun through the descent: the Warden notices (desc_pac_001).
     query: "?skipto=boss&autoplay=pacifist&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
     steps:
       - do: until
-        probe: "p.log.includes('line:boss_pac_001')"
-        timeoutMs: 200000
-        label: "boss_pac_001 starts"
-      - { do: wait, ms: 8000 }
-    maxSeconds: 240
+        probe: "p.log.includes('line:desc_pac_001')"
+        timeoutMs: 60000
+        label: "desc_pac_001 starts"
+      - { do: wait, ms: 7000 }
+    maxSeconds: 70
 
 shots:
   # A. Hook (16 beats, about 7.4 s)
-  - id: hook-writ
-    beats: 4
-    purpose: "Scene lift: a Writ cracks a pod in the first second."
-    take: s4-fight
-    anchor: { event: partBreak, where: "e.by === 'writ'" }
-    align: 2
-    game: -8
+  # Blind judge: lead with the curtain; no place twice in the hook.
   - id: hook-graze
     beats: 4
     purpose: "Threading a bullet curtain; graze sparks."
@@ -110,11 +172,18 @@ shots:
     anchor: { event: graze, where: "e.meter >= 0.3" }
     align: 2
     game: -10
-  - id: hook-kill
+  - id: hook-writ
     beats: 4
-    purpose: "A clean kill burst and the PAY multiplier."
+    purpose: "Scene lift: a Writ cracks a pod in the first second."
     take: s4-fight
-    anchor: { event: kill, where: "e.clean" }
+    anchor: { event: partBreak, where: "e.by === 'writ'" }
+    align: 2
+    game: -8
+  - id: hook-boss
+    beats: 4
+    purpose: "Densest curtain in the slice: the Warden's pattern with the graze meter near full (replaces a second sector 4 shot, blind judge)."
+    take: boss-fight
+    anchor: { event: graze, where: "e.meter >= 0.8" }
     align: 2
     game: -8
   - id: title-flash
@@ -130,14 +199,14 @@ shots:
     beats: 8
     purpose: "Show: aimed taps, then a held stream, in one unbroken shot."
     take: s1-fight
-    anchor: { event: kill, nth: 1 }
+    anchor: { event: kill, nth: 4 }
     align: 4
     game: -6
   - id: show-writ
     beats: 8
     purpose: "Show: rest, the charge meter climbs, release; the receipt is the pod break."
     take: s2-fight
-    anchor: { event: partBreak, where: "e.by === 'writ'" }
+    anchor: { event: partBreak, where: "e.by === 'writ'", nth: 1 }
     align: 6
     game: -4
   - id: tell-scan
@@ -159,7 +228,7 @@ shots:
     beats: 6
     purpose: "Show: dense graze window, the multiplier climbs."
     take: s4-fight
-    anchor: { event: graze, where: "e.meter >= 0.5" }
+    anchor: { event: graze, where: "e.meter >= 0.3" }
     align: 2
     game: -6
   - id: tell-disarm
@@ -168,10 +237,10 @@ shots:
     purpose: "Tell: the moral verb."
   - id: show-disarm
     beats: 8
-    purpose: "Show: a scout's gun breaks off and it drifts away, spared."
-    take: s2-disarm
+    purpose: "Show: a gun breaks off and the enemy is spared (pacifist autopilot, sector 3)."
+    take: s3-disarm
     anchor: { event: disarm }
-    align: 2
+    align: 5 # the break lands 0.8 s before the pickup freeze
     game: -4
   # C. Places and memory (28 beats, about 13 s)
   # Places carry action: each is anchored on a kill, not on a vista.
@@ -179,37 +248,37 @@ shots:
     beats: 4
     purpose: "Sector 1 as a place, mid-fight."
     take: s1-fight
-    anchor: { event: kill, nth: 4 }
+    anchor: { event: kill, nth: 8 }
     align: 2
     game: -10
   - id: place-s3
     beats: 4
     purpose: "Sector 3 as a place, mid-fight."
-    take: s3-recorder
-    anchor: { event: kill, nth: 1 }
+    take: s3-fight
+    anchor: { event: kill, nth: 4 }
     align: 2
     game: -10
   - id: place-s5
     beats: 4
     purpose: "Sector 5 as a place, mid-fight."
     take: s5-fight
-    anchor: { event: kill, nth: 2 }
-    align: 2
+    anchor: { event: kill }
+    align: 3
     game: -10
   - id: recorder
     beats: 16
     purpose: "The derelict flight recorder of #0121: the story enters mid-play."
     take: s3-recorder
-    anchor: { log: "scene:flashback" }
+    anchor: { line: flash_rec_001 }
     align: 1
     game: -10
   # D. Build-up (boss cue, 24 beats, about 10 s)
   - id: warden-shadow
     beats: 12
     purpose: "Hype voice over the descent: the scary register belongs to the briefing."
-    take: boss-descent
-    anchor: { line: desc_001 }
-    align: 24.5
+    take: boss-pacifist # the descent from frame 0; boss-descent is too short for 24 beats before desc_001
+    anchor: { at: 0 }
+    align: 0
     game: -8
   - id: warden-rings
     beats: 12
@@ -259,7 +328,7 @@ shots:
     beats: 11
     purpose: "The turn: the lanes are about ownership."
     take: boss-fight
-    anchor: { line: boss_turn_002 }
+    anchor: { line: boss_p3_002 } # see boss-fight: the turn line is added in post
     align: 0.5
     game: -6
   # G. Pacifist tease, title, slate (32 beats, about 13.4 s)
@@ -269,9 +338,9 @@ shots:
     purpose: "The alternative, without spoiling where it leads."
   - id: pacifist-dodge
     beats: 14
-    purpose: "Cold gun, pure dodging; the Warden is baffled."
+    purpose: "Cold gun; the Warden notices and is baffled."
     take: boss-pacifist
-    anchor: { line: boss_pac_001 }
+    anchor: { line: desc_pac_001 }
     align: 0.5
     game: -6
   - id: title
@@ -289,7 +358,7 @@ vo:
   - { line: desc_001, shot: warden-stop, offset: 0.5 }
   - { line: desc_ai_001, shot: ai-aside, offset: 0.5 }
   - { line: boss_turn_002, shot: boss-turn, offset: 0.5 }
-  - { line: boss_pac_001, shot: pacifist-dodge, offset: 0.5 }
+  - { line: desc_pac_001, shot: pacifist-dodge, offset: 0.5 }
 
 cards:
   title:
@@ -331,7 +400,10 @@ cards:
       en: "A vertical slice.\nPlay it in your browser. No install."
       es: "Un vertical slice.\nJuégalo en tu navegador. Sin instalar."
       zh: "垂直切片试玩版\n浏览器即玩，无需安装"
+    # The play URL ({{PLAY_URL}}, filled from TRAILER_PLAY_URL) returns when
+    # Adam picks hosting; until then the slate names the studio only. Adding
+    # it back is a re-assemble from cached takes (--no-capture).
     small:
-      en: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
-      es: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
-      zh: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
+      en: "adamsmith.systems · CM121 f26"
+      es: "adamsmith.systems · CM121 f26"
+      zh: "adamsmith.systems · CM121 f26"

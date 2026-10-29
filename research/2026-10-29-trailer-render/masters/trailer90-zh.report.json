@@ -1,0 +1,299 @@
+{
+ "cut": "trailer90",
+ "lang": "zh",
+ "draft": false,
+ "partial": false,
+ "size": "1920x1080@60",
+ "seconds": 90.55905483790613,
+ "master": "trailer/out/trailer90/zh/trailer90-zh.mp4",
+ "loudness": {
+  "target": {
+   "lufs": -16,
+   "truePeak": -2
+  },
+  "preMix": {
+   "I": -18.64,
+   "TP": -4.03,
+   "LRA": 3.3,
+   "thresh": -28.9,
+   "offset": -0.39
+  },
+  "measured": {
+   "lufs": -16,
+   "truePeak": -2.9
+  }
+ },
+ "shots": [
+  {
+   "id": "hook-graze",
+   "start": 0,
+   "dur": 1.858,
+   "kind": "take",
+   "take": "s5-fight-any-7b968360e203",
+   "anchorAt": 8.517,
+   "inPoint": 7.588
+  },
+  {
+   "id": "hook-writ",
+   "start": 1.858,
+   "dur": 1.858,
+   "kind": "take",
+   "take": "s4-fight-any-1d74c273f45f",
+   "anchorAt": 4.7,
+   "inPoint": 3.771
+  },
+  {
+   "id": "hook-boss",
+   "start": 3.715,
+   "dur": 1.858,
+   "kind": "take",
+   "take": "boss-fight-any-d978f997b846",
+   "anchorAt": 23.1,
+   "inPoint": 22.171
+  },
+  {
+   "id": "title-flash",
+   "start": 5.573,
+   "dur": 1.858,
+   "kind": "card"
+  },
+  {
+   "id": "tell-fire",
+   "start": 7.43,
+   "dur": 1.858,
+   "kind": "card"
+  },
+  {
+   "id": "show-fire",
+   "start": 9.288,
+   "dur": 3.715,
+   "kind": "take",
+   "take": "s1-fight-any-929853cd8982",
+   "anchorAt": 2.017,
+   "inPoint": 0.159
+  },
+  {
+   "id": "show-writ",
+   "start": 13.003,
+   "dur": 3.715,
+   "kind": "take",
+   "take": "s2-fight-any-d925ad836eff",
+   "anchorAt": 12.683,
+   "inPoint": 9.897
+  },
+  {
+   "id": "tell-scan",
+   "start": 16.718,
+   "dur": 1.858,
+   "kind": "card"
+  },
+  {
+   "id": "show-scan",
+   "start": 18.576,
+   "dur": 2.786,
+   "kind": "take",
+   "take": "s2-fight-any-d925ad836eff",
+   "anchorAt": 4.717,
+   "inPoint": 3.788
+  },
+  {
+   "id": "tell-graze",
+   "start": 21.362,
+   "dur": 1.858,
+   "kind": "card"
+  },
+  {
+   "id": "show-graze",
+   "start": 23.22,
+   "dur": 2.786,
+   "kind": "take",
+   "take": "s4-fight-any-1d74c273f45f",
+   "anchorAt": 18.283,
+   "inPoint": 17.354
+  },
+  {
+   "id": "tell-disarm",
+   "start": 26.006,
+   "dur": 1.858,
+   "kind": "card"
+  },
+  {
+   "id": "show-disarm",
+   "start": 27.864,
+   "dur": 3.715,
+   "kind": "take",
+   "take": "s3-disarm-any-03d20ea7b310",
+   "anchorAt": 2.567,
+   "inPoint": 0.245
+  },
+  {
+   "id": "place-s1",
+   "start": 31.579,
+   "dur": 1.858,
+   "kind": "take",
+   "take": "s1-fight-any-929853cd8982",
+   "anchorAt": 7.183,
+   "inPoint": 6.254
+  },
+  {
+   "id": "place-s3",
+   "start": 33.437,
+   "dur": 1.858,
+   "kind": "take",
+   "take": "s3-fight-any-023857d1742d",
+   "anchorAt": 9.833,
+   "inPoint": 8.904
+  },
+  {
+   "id": "place-s5",
+   "start": 35.294,
+   "dur": 1.858,
+   "kind": "take",
+   "take": "s5-fight-any-7b968360e203",
+   "anchorAt": 6.783,
+   "inPoint": 5.39
+  },
+  {
+   "id": "recorder",
+   "start": 37.152,
+   "dur": 7.43,
+   "kind": "take",
+   "take": "s3-recorder-any-a4a4afe05602",
+   "anchorAt": 12.017,
+   "inPoint": 11.553
+  },
+  {
+   "id": "warden-shadow",
+   "start": 44.582,
+   "dur": 5.016,
+   "kind": "take",
+   "take": "boss-pacifist-any-8ac0d291211b",
+   "anchorAt": 0,
+   "inPoint": 0
+  },
+  {
+   "id": "warden-rings",
+   "start": 49.598,
+   "dur": 5.016,
+   "kind": "take",
+   "take": "boss-descent-any-bbf1d2d6134c",
+   "anchorAt": 8.483,
+   "inPoint": 3.258
+  },
+  {
+   "id": "warden-stop",
+   "start": 54.613,
+   "dur": 6.688,
+   "kind": "take",
+   "take": "boss-descent-any-bbf1d2d6134c",
+   "anchorAt": 8.483,
+   "inPoint": 8.274
+  },
+  {
+   "id": "ai-aside",
+   "start": 61.301,
+   "dur": 3.344,
+   "kind": "take",
+   "take": "boss-descent-any-bbf1d2d6134c",
+   "anchorAt": 13.6,
+   "inPoint": 13.391
+  },
+  {
+   "id": "boss-pods",
+   "start": 64.645,
+   "dur": 1.672,
+   "kind": "take",
+   "take": "boss-fight-any-d978f997b846",
+   "anchorAt": 6.383,
+   "inPoint": 5.547
+  },
+  {
+   "id": "boss-core",
+   "start": 66.317,
+   "dur": 1.672,
+   "kind": "take",
+   "take": "boss-fight-any-d978f997b846",
+   "anchorAt": 16.5,
+   "inPoint": 16.082
+  },
+  {
+   "id": "boss-phase",
+   "start": 67.989,
+   "dur": 4.598,
+   "kind": "take",
+   "take": "boss-fight-any-d978f997b846",
+   "anchorAt": 50.683,
+   "inPoint": 49.847
+  },
+  {
+   "id": "boss-turn",
+   "start": 72.586,
+   "dur": 4.598,
+   "kind": "take",
+   "take": "boss-fight-any-d978f997b846",
+   "anchorAt": 59.867,
+   "inPoint": 59.658
+  },
+  {
+   "id": "tell-pacifist",
+   "start": 77.184,
+   "dur": 1.672,
+   "kind": "card"
+  },
+  {
+   "id": "pacifist-dodge",
+   "start": 78.856,
+   "dur": 5.852,
+   "kind": "take",
+   "take": "boss-pacifist-any-8ac0d291211b",
+   "anchorAt": 15.433,
+   "inPoint": 15.224
+  },
+  {
+   "id": "title",
+   "start": 84.707,
+   "dur": 2.508,
+   "kind": "card"
+  },
+  {
+   "id": "slate",
+   "start": 87.215,
+   "dur": 3.344,
+   "kind": "card"
+  }
+ ],
+ "vo": [
+  {
+   "line": "flash_rec_001",
+   "start": 37.198,
+   "dur": 6.56
+  },
+  {
+   "line": "brief_warden_003",
+   "start": 44.791,
+   "dur": 8
+  },
+  {
+   "line": "desc_001",
+   "start": 54.822,
+   "dur": 4
+  },
+  {
+   "line": "desc_ai_001",
+   "start": 61.51,
+   "dur": 2.56
+  },
+  {
+   "line": "boss_turn_002",
+   "start": 72.795,
+   "dur": 4.32
+  },
+  {
+   "line": "desc_pac_001",
+   "start": 79.065,
+   "dur": 5.04
+  }
+ ],
+ "warnings": [],
+ "assembleSeconds": 249.643
+}

@@ -1,0 +1,118 @@
+{
+ "cut": "teaser30",
+ "lang": "zh",
+ "draft": false,
+ "partial": false,
+ "size": "1920x1080@60",
+ "seconds": 30.094043887147333,
+ "master": "trailer/out/teaser30/zh/teaser30-zh.mp4",
+ "loudness": {
+  "target": {
+   "lufs": -16,
+   "truePeak": -2
+  },
+  "preMix": {
+   "I": -18.61,
+   "TP": -3.98,
+   "LRA": 5.4,
+   "thresh": -29.03,
+   "offset": 0.16
+  },
+  "measured": {
+   "lufs": -15.8,
+   "truePeak": -3
+  }
+ },
+ "shots": [
+  {
+   "id": "hook-writ",
+   "start": 0,
+   "dur": 2.508,
+   "kind": "take",
+   "take": "s2-fight-any-d925ad836eff",
+   "anchorAt": 12.683,
+   "inPoint": 11.011
+  },
+  {
+   "id": "graze-curtain",
+   "start": 2.508,
+   "dur": 2.508,
+   "kind": "take",
+   "take": "s2-fight-any-d925ad836eff",
+   "anchorAt": 9.717,
+   "inPoint": 8.881
+  },
+  {
+   "id": "place-kill",
+   "start": 5.016,
+   "dur": 3.344,
+   "kind": "take",
+   "take": "s4-fight-any-1d74c273f45f",
+   "anchorAt": 5.383,
+   "inPoint": 3.293
+  },
+  {
+   "id": "warden-arrives",
+   "start": 8.359,
+   "dur": 5.434,
+   "kind": "take",
+   "take": "boss-descent-any-bbf1d2d6134c",
+   "anchorAt": 8.483,
+   "inPoint": 2.84
+  },
+  {
+   "id": "warden-stop",
+   "start": 13.793,
+   "dur": 6.27,
+   "kind": "take",
+   "take": "boss-descent-any-bbf1d2d6134c",
+   "anchorAt": 8.483,
+   "inPoint": 8.274
+  },
+  {
+   "id": "title",
+   "start": 20.063,
+   "dur": 2.508,
+   "kind": "card"
+  },
+  {
+   "id": "doubt",
+   "start": 22.571,
+   "dur": 5.016,
+   "kind": "take",
+   "take": "boss-fight-any-d978f997b846",
+   "anchorAt": 50.683,
+   "inPoint": 51.474
+  },
+  {
+   "id": "slate",
+   "start": 27.586,
+   "dur": 2.508,
+   "kind": "card"
+  }
+ ],
+ "vo": [
+  {
+   "line": "brief_warden_002",
+   "start": 1.254,
+   "dur": 3.84
+  },
+  {
+   "line": "brief_warden_004",
+   "start": 6.479,
+   "dur": 5.84
+  },
+  {
+   "line": "desc_001",
+   "start": 14.002,
+   "dur": 4
+  },
+  {
+   "line": "boss_turn_002",
+   "start": 22.78,
+   "dur": 4.32
+  }
+ ],
+ "warnings": [],
+ "assembleSeconds": 59.6
+}

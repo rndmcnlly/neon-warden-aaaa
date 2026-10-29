@@ -21,36 +21,91 @@ speakerLabels: false
 
 music: { edit: [] } # game audio only
 
+# Re-timed for true speed (October 29, 2026; event map and reasons in
+# research/2026-10-29-trailer-render/README.md). Takes end on `until` probes;
+# the first pickup's flashback freezes the sim for about 55 s, so takes that
+# need play after it pre-roll through it and `roll` when the sim resumes
+# (`nth` counts from the roll). These use the game's own mix, so they are
+# separate takes from the trailers' muted ones.
 takes:
   menus:
     fromReel: "menus-{lang}" # text language follows the master
     langSensitive: true
   accessibility:
+    # The reel's settings, its steps up to its `goto` (refused in master
+    # capture), then the accessibility tab.
     fromReel: accessibility
     langSensitive: true
+    steps:
+      - { do: waitFor, selector: ".nw-screen-gate", label: "gate", timeoutMs: 15000 }
+      - { do: advanceTo, screen: notice, max: 3 }
+      - { do: advanceTo, screen: title, max: 12 }
+      - { do: advanceTo, screen: main, max: 4 }
+      - { do: navigate, key: settings }
+      - { do: press, key: Enter }
+      - { do: waitFor, selector: ".nw-screen-settings", label: "settings opens" }
+      - { do: press, key: KeyE, times: 3, gapMs: 500 }
+      - { do: wait, ms: 3000 }
+      - { do: press, key: KeyE }
+      - { do: wait, ms: 4000 }
+    maxSeconds: 60
   s1-fight:
     query: "?skipto=sector1&autoplay=fight&speed=1"
-    steps: [{ do: wait, ms: 70000 }]
-    maxSeconds: 75
+    steps:
+      - do: until
+        probe: "p.log.includes('line:flash_ai_002') && !p.sim().frozen && (globalThis.__nwRoll = p.sim().tick) >= 0"
+        timeoutMs: 120000
+        label: "flashback over, sim resumed"
+      - { do: roll }
+      - do: until
+        probe: "p.events.filter((e) => e.tick > globalThis.__nwRoll && e.type === 'kill').length >= 11"
+        timeoutMs: 60000
+        label: "eleven kills after the flashback"
+      - { do: wait, ms: 2500 }
+    maxSeconds: 150
   s2-fight:
     query: "?skipto=sector2&autoplay=fight&speed=1"
-    steps: [{ do: wait, ms: 75000 }]
-    maxSeconds: 80
-  s2-disarm:
-    query: "?skipto=sector2&autoplay=pacifist&speed=1"
-    steps: [{ do: wait, ms: 70000 }]
-    maxSeconds: 75
+    steps:
+      - do: until
+        probe: "p.events.filter((e) => e.type === 'partBreak' && e.by === 'writ').length >= 2"
+        timeoutMs: 40000
+        label: "second Writ break"
+      - { do: wait, ms: 4000 }
+    maxSeconds: 45
+  s3-disarm:
+    # The pacifist autopilot disarms once per run: the sector 3 turret, about
+    # 0.8 s before the recorder pickup freezes the world, so disarm shots end
+    # just after the break (measured; no later disarm in 90 s of sectors 1-5).
+    query: "?skipto=sector3&autoplay=pacifist&speed=1"
+    steps:
+      - do: until
+        probe: "p.events.some((e) => e.type === 'disarm')"
+        timeoutMs: 30000
+        label: "the turret disarm"
+      - { do: wait, ms: 3000 }
+    maxSeconds: 40
   s4-fight:
     query: "?skipto=sector4&autoplay=fight&speed=1"
-    steps: [{ do: wait, ms: 60000 }]
-    maxSeconds: 65
+    steps:
+      - do: until
+        probe: "p.log.includes('line:flash_ai_002') && !p.sim().frozen && (globalThis.__nwRoll = p.sim().tick) >= 0"
+        timeoutMs: 120000
+        label: "flashback over, sim resumed"
+      - { do: roll }
+      - do: until
+        probe: "p.events.some((e) => e.tick > globalThis.__nwRoll && e.type === 'graze' && e.meter >= 0.3)"
+        timeoutMs: 40000
+        label: "graze meter 0.3 after the flashback"
+      - { do: wait, ms: 3500 }
+    maxSeconds: 170
   lang-cycle:
     fromReel: language-cycle # starts in English by design, in every master
   s1-pause:
+    # Escape before the first pickup (about 5 s in) starts the flashback.
     query: "?skipto=sector1&autoplay=fight&speed=1"
     langSensitive: true
     steps:
-      - { do: wait, ms: 8000 }
+      - { do: wait, ms: 3000 }
       - { do: press, key: Escape }
       - { do: waitFor, selector: ".nw-screen-pause", label: "pause opens" }
       - { do: wait, ms: 4000 }
@@ -58,50 +113,83 @@ takes:
       - { do: wait, ms: 2000 }
     maxSeconds: 30
   tutorial:
-    # Natural speed (the tutorial is knowingly overlong, so this is the most
-    # expensive take). Risk: the moments gallery saw the tutorial demo stall
-    # at the tap module; a stall is reported as a gap, never sped up.
+    # The autopilot cannot pass the rest gate (it needs 30 ticks of rest at
+    # full charge; the autopilot releases the Writ at once), so tut_wink_001
+    # is unreachable by autoplay on this build: an honest gap. The take shows
+    # the knowingly overlong contract preamble instead, at natural speed.
     query: "?skipto=tutorial&autoplay=fight&speed=1"
     langSensitive: true
     steps:
       - do: until
-        probe: "p.log.includes('line:tut_wink_001')"
-        timeoutMs: 420000
-        label: "wink line"
-      - { do: wait, ms: 10000 }
-    maxSeconds: 460
+        probe: "p.log.includes('line:tut_contract_001')"
+        timeoutMs: 60000
+        label: "contract line"
+      - { do: wait, ms: 9000 }
+    maxSeconds: 80
   s3-recorder:
     query: "?skipto=sector3&autoplay=fight&speed=1"
     langSensitive: true
     steps:
       - do: until
-        probe: "p.log.includes('scene:flashback')"
-        timeoutMs: 200000
+        probe: "p.log.includes('line:flash_ai_001')"
+        timeoutMs: 60000
         label: "flashback starts"
-      - { do: wait, ms: 12000 }
-    maxSeconds: 220
-  boss-fight:
+      - { do: wait, ms: 6500 }
+    maxSeconds: 70
+  boss-descent:
     query: "?skipto=boss&autoplay=fight&speed=1"
     langSensitive: true
     steps:
       - do: until
-        probe: "p.events.some((e) => e.type === 'coreExposed')"
-        timeoutMs: 200000
-        label: "core exposed"
-      - { do: wait, ms: 6000 }
-    maxSeconds: 210
-  ending-kill:
-    fromReel: ending-kill
+        probe: "p.log.includes('line:desc_001')"
+        timeoutMs: 40000
+        label: "desc_001 starts"
+      - { do: wait, ms: 7000 }
+    maxSeconds: 40
+  boss-pods:
+    query: "?skipto=boss&autoplay=fight&speed=1"
     langSensitive: true
+    steps:
+      - do: until
+        probe: "p.log.includes('line:graze_ai_001')"
+        timeoutMs: 90000
+        label: "first graze in the boss fight"
+      - { do: roll }
+      - do: until
+        probe: "p.events.some((e) => e.type === 'coreExposed')"
+        timeoutMs: 60000
+        label: "core exposed"
+      - { do: wait, ms: 2500 }
+    maxSeconds: 160
+  ending-kill:
+    query: "?skipto=ending-kill"
+    langSensitive: true
+    steps:
+      - do: until
+        probe: "p.flags()['ending.tollgates'] === true"
+        timeoutMs: 60000
+        label: "tollgates"
+      - { do: roll }
+      - do: until
+        probe: "p.log.includes('line:kill_ai_004')"
+        timeoutMs: 40000
+        label: "kill_ai_004 starts"
+      - { do: wait, ms: 4500 }
+    maxSeconds: 110
   ending-pacifist:
     query: "?skipto=ending-pacifist"
     langSensitive: true
     steps:
       - do: until
-        probe: "p.flags()['banner.lanesKept'] === true"
-        timeoutMs: 90000
-        label: "Lanes Kept"
-      - { do: wait, ms: 4000 }
+        probe: "p.log.includes('line:pac_end_005')"
+        timeoutMs: 60000
+        label: "pac_end_005 starts"
+      - { do: roll }
+      - do: until
+        probe: "p.log.includes('line:pac_end_006')"
+        timeoutMs: 30000
+        label: "pac_end_006 starts"
+      - { do: wait, ms: 5500 }
     maxSeconds: 100
 
 chapters:
@@ -144,8 +232,10 @@ shots:
   - id: boot-logos
     seconds: 6
     take: menus
-    anchor: { dom: screen, match: "nw-screen-gate" }
-    offset: 0.5
+    # The press-any-key gate passes within 0.1 s in master takes (before the
+    # DOM poller sees it), so the shot anchors on the photosensitivity notice.
+    anchor: { dom: screen, match: "nw-screen-notice" }
+    offset: 0.3
     label: label-boot
     evidence: "Photosensitivity gate, flat studio and incubator logos."
   - id: title-menu
@@ -174,22 +264,22 @@ shots:
   - id: verb-tap
     seconds: 4
     take: s1-fight
-    anchor: { event: kill }
-    align: 3
+    anchor: { event: kill, nth: 4 }
+    align: 1.5
     label: label-tap
     evidence: "Aimed taps."
   - id: verb-stream
     seconds: 4
     take: s1-fight
-    anchor: { event: kill, nth: 3 }
-    align: 3
+    anchor: { event: kill, nth: 10 }
+    align: 2
     label: label-stream
     evidence: "Held stream."
   - id: verb-writ
     seconds: 6
     take: s2-fight
-    anchor: { event: chargeLevel, where: "e.level === 3" }
-    align: 3
+    anchor: { event: partBreak, where: "e.by === 'writ'", nth: 1 }
+    align: 4
     label: label-writ
     evidence: "Rest to charge, level 3, Writ release."
   - id: verb-scan
@@ -202,20 +292,20 @@ shots:
   - id: verb-graze
     seconds: 5
     take: s4-fight
-    anchor: { event: graze, where: "e.meter >= 0.5" }
+    anchor: { event: graze, where: "e.meter >= 0.3" }
     align: 2
     label: label-graze
     evidence: "Graze meter and pay multiplier."
   - id: verb-disarm
     seconds: 5
-    take: s2-disarm
+    take: s3-disarm
     anchor: { event: disarm }
-    align: 1.5
+    align: 2.4 # the pickup freeze follows 0.8 s after the break
     label: label-disarm
     evidence: "Disarm: gun breaks, the scout drifts away."
   - id: verb-pod
     seconds: 6
-    take: boss-fight
+    take: boss-pods
     anchor: { event: partBreak, where: "e.target === 'boss'" }
     align: 2
     label: label-pod
@@ -231,23 +321,23 @@ shots:
     evidence: "] ] [ during the descent: each next line speaks and captions in the new language."
   # 4. Story beats (22 s)
   - { id: ch-story, seconds: 2, chapter: story, card: chapter }
-  - id: tutorial-wink
+  - id: tutorial-contract
     seconds: 8
     take: tutorial
-    anchor: { line: tut_wink_001 }
+    anchor: { line: tut_contract_001 }
     offset: -0.3
-    label: label-wink
-    evidence: "The tutorial's one wink, at natural speed."
+    label: label-tutorial
+    evidence: "The knowingly overlong tutorial, at natural speed (the wink itself is unreachable by autoplay: honest gap)."
   - id: flashback
     seconds: 6
     take: s3-recorder
-    anchor: { log: "scene:flashback" }
+    anchor: { log: "scene:recorder" }
     offset: -0.5
     label: label-flashback
     evidence: "Recorder triggers the mid-play flashback."
   - id: descent
     seconds: 6
-    take: boss-fight
+    take: boss-descent
     anchor: { line: desc_001 }
     offset: -0.3
     label: label-descent
@@ -360,12 +450,12 @@ cards:
       zh: "[ 和 ] 切换语音与文字",
     },
   }
-  label-wink: {
+  label-tutorial: {
     style: lower,
     text: {
-      en: "Tutorial: the wink",
-      es: "Tutorial: el guiño",
-      zh: "教程：彩蛋台词",
+      en: "Tutorial: knowingly overlong",
+      es: "Tutorial: largo a propósito",
+      zh: "教程：故意冗长",
     },
   }
   label-flashback: {

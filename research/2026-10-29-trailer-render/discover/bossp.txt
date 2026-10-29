@@ -1,0 +1,85 @@
+# bossp ?skipto=boss&autoplay=pacifist&speed=1&seed=121&qa=1 300.6 s
+1.07 dom 
+7.70 [0] sectorStarted {"sector":6}
+7.70 [0] bossWarning {}
+7.71 log scene:boss
+8.82 log line:warn_ai_001
+9.45 [40] chargeLevel {"level":1}
+10.93 [80] chargeLevel {"level":2}
+11.89 [120] chargeLevel {"level":3}
+13.60 [200] bossPhase {"phase":0}
+15.69 log line:warn_narr_001
+17.41 [350] bossPhase {"phase":1}
+17.50 log line:desc_001
+19.56 [479] statsMoment {"moment":"writHoarding","value":360}
+22.61 log line:desc_ai_001
+24.45 log line:desc_pac_001
+27.39 [949] statsMoment {"moment":"bossLull","value":600}
+30.15 log line:desc_pac_002
+36.89 log line:desc_ghost_001
+44.93 log line:desc_003
+49.49 log line:desc_ai_002
+57.81 [2775] chargeLevel {"level":0}
+58.22 [2798] graze {"bulletId":6,"pos":{"x":299.63152510923993,"y":591.2000000000004},"count":1,"meter":0.05,"first":true}
+58.22 log scene:beat-first-graze
+58.22 log line:graze_ai_001
+58.91 [2815] chargeLevel {"level":1}
+59.15 [2831] chargeLevel {"level":0}
+59.47 [2850] graze {"bulletId":16,"pos":{"x":289.9514557632469,"y":578.8095117950379},"count":1,"meter":0.1,"first":false}
+59.54 [2854] partBreak {"id":1,"target":"boss","part":"fanPodL","partKind":"fanPod","pos":{"x":297.9924891843604,"y":120.00000000000024},"by":"writ","hitPos":{"x":290.06732316404225,"y":135.98507217013298},"shotVel":{"x":0,"y":-18},"first":true}
+59.54 log scene:beat-warden-pod
+59.54 log line:boss_pod_001
+62.35 [2871] chargeLevel {"level":1}
+62.87 [2886] chargeLevel {"level":0}
+63.14 [2903] graze {"bulletId":24,"pos":{"x":375.6201140165571,"y":577.2000000000006},"count":1,"meter":0.15000000000000002,"first":false}
+63.53 [2926] chargeLevel {"level":1}
+63.90 [2949] chargeLevel {"level":0}
+64.25 log line:var_warden1_001
+64.25 log bark:var_warden1_001
+64.58 [2989] chargeLevel {"level":1}
+65.23 [3029] chargeLevel {"level":2}
+65.89 [3069] chargeLevel {"level":3}
+67.89 [3172] chargeLevel {"level":0}
+68.06 [3182] graze {"bulletId":61,"pos":{"x":188.2782658037732,"y":588.4000000000004},"count":1,"meter":0.05,"first":false}
+68.20 [3191] bossPhase {"phase":2}
+68.20 log scene:boss-phase2
+68.20 log line:boss_pac_ai_001
+68.55 [3212] chargeLevel {"level":1}
+68.86 [3230] chargeLevel {"level":0}
+69.02 [3240] graze {"bulletId":65,"pos":{"x":197.66275674135224,"y":592.6773764240127},"count":1,"meter":0.1,"first":false}
+69.26 [3255] partBreak {"id":1,"target":"boss","part":"fanPodR","partKind":"fanPod","pos":{"x":187.05800546042542,"y":120.00000000000024},"by":"writ","hitPos":{"x":195.9592570175052,"y":126.2384776310846},"shotVel":{"x":0,"y":-18},"first":false}
+69.26 [3255] coreExposed {"id":1}
+69.26 [3255] intel {"id":1,"codexId":"codex.warden.core","ai":"sweep","first":true}
+69.78 [3270] chargeLevel {"level":1}
+70.44 [3310] chargeLevel {"level":2}
+71.13 [3350] chargeLevel {"level":3}
+71.83 [3392] graze {"bulletId":75,"pos":{"x":324.1682797266947,"y":600.3186330504595},"count":1,"meter":0.058499999999999934,"first":false}
+77.11 [3709] graze {"bulletId":93,"pos":{"x":155.0105373908878,"y":578.9522782655259},"count":1,"meter":0.05,"first":false}
+77.11 [3709] statsMoment {"moment":"writHoarding","value":360}
+78.40 [3787] graze {"bulletId":97,"pos":{"x":142.94965148022496,"y":586.48673083839},"count":1,"meter":0.1,"first":false}
+78.43 [3789] graze {"bulletId":100,"pos":{"x":91.20279187879669,"y":588.913977567196},"count":2,"meter":0.2,"first":false}
+78.46 [3791] bossPhase {"phase":3}
+78.46 log scene:boss-phase3
+78.46 log line:boss_pac_ai_002
+80.16 [3892] graze {"bulletId":102,"pos":{"x":120.98059497577651,"y":583.7416099417992},"count":1,"meter":0.23199999999999998,"first":false}
+82.00 [4004] graze {"bulletId":130,"pos":{"x":323.1863403447983,"y":575.4543891627404},"count":1,"meter":0.25049999999999994,"first":false}
+82.58 [4039] graze {"bulletId":159,"pos":{"x":358.41520476362524,"y":568.0714302740097},"count":1,"meter":0.30049999999999993,"first":false}
+83.09 [4069] statsMoment {"moment":"bossLull","value":814}
+84.87 [4175] graze {"bulletId":239,"pos":{"x":244.86491456406927,"y":597.8673422879946},"count":1,"meter":0.28299999999999986,"first":false}
+88.43 [4389] graze {"bulletId":394,"pos":{"x":139.13277268388288,"y":558.4941504342225},"count":1,"meter":0.1484999999999997,"first":false}
+88.46 [4390] bossSurvived {}
+88.46 log scene:ending-pacifist
+90.67 log line:pac_end_001
+96.12 log line:pac_end_002
+101.25 log line:pac_end_003
+108.46 log line:pac_end_004
+116.65 log line:pilot_keep_001
+118.60 log line:pac_end_005
+123.04 log line:pac_end_006
+126.81 log line:pac_epi_001
+130.82 log line:pac_epi_002
+135.45 log line:end_epi_003
+150.33 log scene:credits
+150.43 dom nw-screen-crawl
+226.82 dom 
+228.25 log line:credits_pac_001

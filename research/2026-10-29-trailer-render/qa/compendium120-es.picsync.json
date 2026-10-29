@@ -1,0 +1,362 @@
+[
+ {
+  "shot": "boot-logos",
+  "frames": 360,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -2,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.12
+ },
+ {
+  "shot": "title-menu",
+  "frames": 240,
+  "offsetFrames": 0,
+  "offsets": [
+   -2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.22
+ },
+ {
+  "shot": "settings",
+  "frames": 420,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.14
+ },
+ {
+  "shot": "pause",
+  "frames": 240,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.13
+ },
+ {
+  "shot": "verb-tap",
+  "frames": 240,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.9
+ },
+ {
+  "shot": "verb-stream",
+  "frames": 240,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.87
+ },
+ {
+  "shot": "verb-writ",
+  "frames": 360,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.84
+ },
+ {
+  "shot": "verb-scan",
+  "frames": 300,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.87
+ },
+ {
+  "shot": "verb-graze",
+  "frames": 300,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.33
+ },
+ {
+  "shot": "verb-disarm",
+  "frames": 300,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.61
+ },
+ {
+  "shot": "verb-pod",
+  "frames": 360,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.3
+ },
+ {
+  "shot": "lang-cycle",
+  "frames": 840,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.51
+ },
+ {
+  "shot": "tutorial-contract",
+  "frames": 480,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.67
+ },
+ {
+  "shot": "flashback",
+  "frames": 360,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.46
+ },
+ {
+  "shot": "descent",
+  "frames": 360,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.49
+ },
+ {
+  "shot": "ending-kill",
+  "frames": 300,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.51
+ },
+ {
+  "shot": "ending-pacifist",
+  "frames": 300,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.65
+ },
+ {
+  "shot": "accessibility",
+  "frames": 480,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.13
+ }
+]

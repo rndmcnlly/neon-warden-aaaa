@@ -1,0 +1,111 @@
+# s2p ?skipto=sector2&autoplay=pacifist&speed=1&seed=121&qa=1 120.6 s
+0.14 dom 
+1.10 dom 
+7.53 [0] sectorStarted {"sector":2}
+7.54 log line:bank.sectorStart.4
+7.54 log bark:bank.sectorStart.4
+7.54 log scene:sector2
+9.50 [40] chargeLevel {"level":1}
+10.77 log line:sec2_intro_001
+11.69 [80] chargeLevel {"level":2}
+12.35 [120] chargeLevel {"level":3}
+15.17 [258] scanLock {"id":1,"target":"enemy","kind":"drone","pos":{"x":247.44988474190427,"y":261},"ai":"patrol","first":true}
+15.17 log scene:beat-first-lock
+15.18 [258] intel {"id":1,"codexId":"codex.enemy.drone","ai":"patrol","first":true}
+15.73 log line:lock_ai_001
+16.78 [332] graze {"bulletId":7,"pos":{"x":239.9435122810298,"y":561.5947997850175},"count":1,"meter":0.05,"first":true}
+16.78 log scene:beat-first-graze
+17.57 log line:graze_ai_001
+18.55 [362] graze {"bulletId":9,"pos":{"x":240.64417520364688,"y":577.6650888713499},"count":1,"meter":0.1,"first":false}
+19.08 [394] graze {"bulletId":12,"pos":{"x":242.23398322385938,"y":581.9326898209785},"count":1,"meter":0.15000000000000002,"first":false}
+19.46 [418] graze {"bulletId":19,"pos":{"x":242.05514261082078,"y":580.2054380802548},"count":1,"meter":0.2,"first":false}
+20.51 [479] statsMoment {"moment":"writHoarding","value":360}
+21.08 [515] graze {"bulletId":27,"pos":{"x":225.02091349784484,"y":601.3009847309069},"count":1,"meter":0.241,"first":false}
+22.36 [592] graze {"bulletId":28,"pos":{"x":244.47128687527032,"y":565.6944504059887},"count":1,"meter":0.291,"first":false}
+23.27 log line:amb_nofire_004
+24.59 [726] scanLock {"id":29,"target":"enemy","kind":"dart","pos":{"x":253.20000000000044,"y":434.39999999999935},"ai":"dive","first":false}
+24.63 [726] intel {"id":29,"codexId":"codex.enemy.dart","ai":"dive","first":true}
+26.31 [829] graze {"bulletId":32,"pos":{"x":245.71947344174018,"y":567.6525117043608},"count":1,"meter":0.12199999999999979,"first":false}
+26.73 [853] graze {"bulletId":34,"pos":{"x":245.71947344174018,"y":567.6525117043608},"count":1,"meter":0.1719999999999998,"first":false}
+27.13 [877] graze {"bulletId":36,"pos":{"x":245.71947344174018,"y":567.6525117043608},"count":1,"meter":0.2219999999999998,"first":false}
+27.51 [901] graze {"bulletId":38,"pos":{"x":245.71947344174018,"y":567.6525117043608},"count":1,"meter":0.2719999999999998,"first":false}
+27.91 [925] graze {"bulletId":40,"pos":{"x":245.71947344174018,"y":567.6525117043608},"count":1,"meter":0.3219999999999998,"first":false}
+27.91 [925] statsMoment {"moment":"grazeStreak","value":5}
+27.91 log line:bank.grazeStreak.2
+27.91 log bark:bank.grazeStreak.2
+28.32 [950] graze {"bulletId":42,"pos":{"x":248.13926407909602,"y":573.1108801944305},"count":1,"meter":0.3719999999999998,"first":false}
+28.87 [981] graze {"bulletId":44,"pos":{"x":242.80567127553252,"y":593.5201526433389},"count":1,"meter":0.42199999999999976,"first":false}
+29.13 [997] graze {"bulletId":46,"pos":{"x":225.49619540867573,"y":565.926084925056},"count":1,"meter":0.47199999999999975,"first":false}
+34.08 [1294] graze {"bulletId":56,"pos":{"x":249.65774194218207,"y":577.5703438380375},"count":1,"meter":0.21299999999999947,"first":false}
+34.12 [1297] graze {"bulletId":57,"pos":{"x":249.45379628048534,"y":580.3353508280554},"count":1,"meter":0.26299999999999946,"first":false}
+34.47 [1317] graze {"bulletId":58,"pos":{"x":243.49287551184992,"y":594.4938045193337},"count":1,"meter":0.31299999999999945,"first":false}
+35.28 [1367] graze {"bulletId":71,"pos":{"x":219.3946693705864,"y":560.9760904439155},"count":1,"meter":0.36299999999999943,"first":false}
+35.28 log line:bank.graze.5
+35.28 log bark:bank.graze.5
+36.16 [1421] graze {"bulletId":74,"pos":{"x":208.98336993607413,"y":597.5016154488302},"count":1,"meter":0.4129999999999994,"first":false}
+36.22 [1423] graze {"bulletId":70,"pos":{"x":255.71233548408821,"y":609.3388137823451},"count":1,"meter":0.4629999999999994,"first":false}
+37.04 [1473] graze {"bulletId":72,"pos":{"x":236.07440043829453,"y":599.2497693534636},"count":1,"meter":0.5129999999999995,"first":false}
+37.90 [1523] graze {"bulletId":82,"pos":{"x":253.01975813889507,"y":568.4117447664033},"count":1,"meter":0.5629999999999995,"first":false}
+38.52 [1561] graze {"bulletId":81,"pos":{"x":268.37894441838836,"y":567.0150068520707},"count":1,"meter":0.6129999999999995,"first":false}
+40.41 [1674] graze {"bulletId":87,"pos":{"x":237.8605334720602,"y":583.5502484904267},"count":1,"meter":0.6300000000000008,"first":false}
+40.55 [1684] graze {"bulletId":88,"pos":{"x":232.96062625075058,"y":598.1875555734605},"count":1,"meter":0.6800000000000008,"first":false}
+42.72 [1800] sectorCleared {"sector":2}
+42.72 log line:bank.sectorClear.3
+42.72 log bark:bank.sectorClear.3
+42.72 [1800] sectorStarted {"sector":3}
+42.72 log scene:sector3
+42.72 [1800] statsMoment {"moment":"perfectSector","value":2}
+44.16 log line:sec3_intro_001
+46.47 [2005] chargeLevel {"level":0}
+46.73 [2021] partBreak {"id":90,"target":"enemy","part":"barrel","partKind":"barrel","pos":{"x":240,"y":96.39999999999999},"by":"writ","hitPos":{"x":239.88200589605287,"y":113.11989180857154},"shotVel":{"x":0,"y":-18},"first":true}
+46.73 [2021] disarm {"id":90,"kind":"turret","pos":{"x":240,"y":80.39999999999999},"cancelled":6,"first":true}
+46.73 log scene:beat-first-disarm
+46.73 log line:bank.sectorClear.3
+50.62 log line:disarm_ai_001
+51.24 [2045] chargeLevel {"level":1}
+51.56 [2070] intel {"id":89,"codexId":"codex.recorder.0121","ai":null,"first":true}
+51.56 [2070] pickup {"kind":"recorder","firstPowerup":true}
+51.56 log scene:recorder
+51.56 log line:flash_ai_001
+59.36 log line:flash_rec_001
+66.47 log line:flash_rec_002
+73.69 log line:flash_rec_003
+79.09 log line:flash_rec_004
+87.27 log line:flash_rec_005
+93.36 log line:flash_rec_006
+98.38 log line:flash_ai_002
+104.56 log line:flash_ai_003
+104.63 [2074] despawn {"id":90,"reason":"spared"}
+104.82 [2085] chargeLevel {"level":2}
+105.48 [2125] chargeLevel {"level":3}
+106.84 log line:rec_ai_001
+107.65 [2239] scanLock {"id":98,"target":"enemy","kind":"drone","pos":{"x":245.8304429333136,"y":262.5},"ai":"patrol","first":false}
+107.65 [2239] intel {"id":98,"codexId":"codex.enemy.drone","ai":"patrol","first":false}
+109.28 [2338] graze {"bulletId":105,"pos":{"x":225.1232553381965,"y":565.1587137304014},"count":1,"meter":0.05,"first":false}
+109.71 [2362] scanLock {"id":99,"target":"enemy","kind":"drone","pos":{"x":216.68533059789127,"y":447},"ai":"patrol","first":false}
+109.71 [2362] intel {"id":99,"codexId":"codex.enemy.drone","ai":"patrol","first":false}
+109.90 [2375] graze {"bulletId":107,"pos":{"x":245.37115183778548,"y":583.5336301827126},"count":1,"meter":0.1,"first":false}
+110.36 [2402] graze {"bulletId":109,"pos":{"x":239.7458974747466,"y":571.3086407924187},"count":1,"meter":0.15000000000000002,"first":false}
+111.28 [2457] graze {"bulletId":118,"pos":{"x":314.8681128243112,"y":568.5245698660949},"count":1,"meter":0.2,"first":false}
+111.73 [2484] statsMoment {"moment":"writHoarding","value":360}
+112.97 [2558] graze {"bulletId":131,"pos":{"x":230.26105737643113,"y":597.4330909873532},"count":1,"meter":0.235,"first":false}
+113.19 [2571] graze {"bulletId":132,"pos":{"x":239.6208178913451,"y":565.6968733457998},"count":1,"meter":0.285,"first":false}
+114.60 log line:rec_log_001
+115.30 [2698] graze {"bulletId":139,"pos":{"x":218.76218527500123,"y":569.8817007489707},"count":1,"meter":0.2809999999999999,"first":false}
+115.33 [2699] graze {"bulletId":140,"pos":{"x":219.1449075363202,"y":570.5584837587287},"count":1,"meter":0.3309999999999999,"first":false}
+116.67 [2780] graze {"bulletId":146,"pos":{"x":244.0227602046132,"y":576.0109704732434},"count":1,"meter":0.3809999999999999,"first":false}
+116.68 [2781] graze {"bulletId":145,"pos":{"x":244.20460912700023,"y":578.8869770394821},"count":1,"meter":0.4309999999999999,"first":false}
+116.79 [2788] graze {"bulletId":149,"pos":{"x":244.0227602046132,"y":576.0109704732434},"count":1,"meter":0.48099999999999987,"first":false}
+116.82 [2789] graze {"bulletId":148,"pos":{"x":244.20460912700023,"y":578.8869770394821},"count":1,"meter":0.5309999999999999,"first":false}
+116.92 [2796] graze {"bulletId":151,"pos":{"x":244.0227602046132,"y":576.0109704732434},"count":1,"meter":0.581,"first":false}
+116.94 [2797] graze {"bulletId":150,"pos":{"x":244.20460912700023,"y":578.8869770394821},"count":1,"meter":0.631,"first":false}
+117.12 [2808] graze {"bulletId":152,"pos":{"x":228.56647296719092,"y":589.9851451815364},"count":1,"meter":0.681,"first":false}
+117.72 [2844] statsMoment {"moment":"grazeStreak","value":9}
+118.65 [2900] graze {"bulletId":170,"pos":{"x":259.89780592649936,"y":576.6524527885058},"count":1,"meter":0.7295000000000001,"first":false}
+118.68 [2901] graze {"bulletId":169,"pos":{"x":259.68052008743797,"y":577.5208744797312},"count":1,"meter":0.7795000000000002,"first":false}
+118.69 [2902] scanLock {"id":113,"target":"enemy","kind":"turret","pos":{"x":272,"y":251.99999999999892},"ai":"withdraw","first":false}
+118.69 [2902] intel {"id":113,"codexId":"codex.enemy.turret","ai":"withdraw","first":true}
+119.02 [2921] graze {"bulletId":164,"pos":{"x":239.86198953643012,"y":588.998565207523},"count":1,"meter":0.8295000000000002,"first":false}
+119.44 [2947] scanLock {"id":112,"target":"enemy","kind":"turret","pos":{"x":208,"y":305.9999999999984},"ai":"withdraw","first":false}
+119.44 [2947] intel {"id":112,"codexId":"codex.enemy.turret","ai":"withdraw","first":false}
+120.13 [2987] graze {"bulletId":174,"pos":{"x":249.71374321253106,"y":570.9356401597836},"count":1,"meter":0.8795000000000003,"first":false}

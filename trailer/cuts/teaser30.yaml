@@ -29,17 +29,38 @@ music:
     - { from: 64, beats: 24, fadeOut: 2.5 }
   duckUnderVoiceDb: -9
 
+# Takes are re-timed for true speed (October 29, 2026; event map in
+# research/2026-10-29-trailer-render/). Each ends on an `until` probe for the
+# last event a shot needs. The first pickup of any run freezes the sim for the
+# flashback (about 55 s), so takes that need play after it pre-roll through
+# it and `roll` (start the take) when the sim resumes; `nth` counts from the
+# roll. These recipes are identical in trailer90.yaml, so the takes are shared.
 takes:
   s2-fight:
     query: "?skipto=sector2&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 75000 }]
-    maxSeconds: 80
+    steps:
+      - do: until
+        probe: "p.events.filter((e) => e.type === 'partBreak' && e.by === 'writ').length >= 2"
+        timeoutMs: 40000
+        label: "second Writ break"
+      - { do: wait, ms: 4000 }
+    maxSeconds: 45
   s4-fight:
     query: "?skipto=sector4&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
-    steps: [{ do: wait, ms: 60000 }]
-    maxSeconds: 65
+    steps:
+      - do: until
+        probe: "p.log.includes('line:flash_ai_002') && !p.sim().frozen && (globalThis.__nwRoll = p.sim().tick) >= 0"
+        timeoutMs: 120000
+        label: "flashback over, sim resumed"
+      - { do: roll }
+      - do: until
+        probe: "p.events.some((e) => e.tick > globalThis.__nwRoll && e.type === 'graze' && e.meter >= 0.3)"
+        timeoutMs: 40000
+        label: "graze meter 0.3 after the flashback"
+      - { do: wait, ms: 3000 }
+    maxSeconds: 170
   boss-descent:
     query: "?skipto=boss"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
@@ -49,17 +70,25 @@ takes:
         timeoutMs: 40000
         label: "desc_ai_001 starts"
       - { do: wait, ms: 6000 }
-    maxSeconds: 70
+    maxSeconds: 60
   boss-fight:
+    # Pre-roll through the descent dialogue; the take runs from the first
+    # graze to the kill. On this build the autopilot kills the Warden about
+    # 16 s into phase 3, before boss_turn_001/002 play (they need about 25 s),
+    # so shots anchor on boss_p3_002 and the turn line is added in post.
     query: "?skipto=boss&autoplay=fight&speed=1"
     settings: { audio: { music: 0, voice: 0 }, subtitles: { enabled: false } }
     steps:
       - do: until
-        probe: "p.log.includes('line:boss_turn_002')"
-        timeoutMs: 200000
-        label: "boss_turn_002 starts"
-      - { do: wait, ms: 6000 }
-    maxSeconds: 240
+        probe: "p.log.includes('line:graze_ai_001')"
+        timeoutMs: 90000
+        label: "first graze in the boss fight"
+      - { do: roll }
+      - do: until
+        probe: "p.log.includes('scene:ending-kill')"
+        timeoutMs: 130000
+        label: "kill ending starts"
+    maxSeconds: 230
 
 shots:
   - id: hook-writ
@@ -80,7 +109,7 @@ shots:
     beats: 8
     purpose: "A staged sector with signage, with a kill in it (place and action in one shot, not a vista)."
     take: s4-fight
-    anchor: { event: kill, where: "e.clean" }
+    anchor: { event: kill, nth: 2 } # a lancer, after a Writ cracks its emitter
     align: 5
     game: -10
   - id: warden-arrives
@@ -105,7 +134,10 @@ shots:
     beats: 12
     purpose: "The turn: the Warden says the quiet part; plants the doubt without spoiling either ending."
     take: boss-fight
-    anchor: { line: boss_turn_002 }
+    # Blind judge (research/2026-10-29-trailer-render): the line sat over a
+    # sparse moment; 1 s into phase 3 the Warden is spending everything.
+    anchor: { event: bossPhase, where: "e.phase === 3" }
+    offset: 1
     align: 0.5
     game: -6
   - id: slate
@@ -131,7 +163,10 @@ cards:
       en: "A vertical slice.\nPlay it in your browser. No install."
       es: "Un vertical slice.\nJuégalo en tu navegador. Sin instalar."
       zh: "垂直切片试玩版\n浏览器即玩，无需安装"
+    # The play URL ({{PLAY_URL}}, filled from TRAILER_PLAY_URL) returns when
+    # Adam picks hosting; until then the slate names the studio only. Adding
+    # it back is a re-assemble from cached takes (--no-capture).
     small:
-      en: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
-      es: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
-      zh: "adamsmith.systems · CM121 f26 · {{PLAY_URL}}"
+      en: "adamsmith.systems · CM121 f26"
+      es: "adamsmith.systems · CM121 f26"
+      zh: "adamsmith.systems · CM121 f26"

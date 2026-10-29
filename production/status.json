@@ -251,6 +251,14 @@
       "revision": "c29d06d",
       "detail": "First menu tap on touch-primary devices (Chromebook only in tablet mode) requests fullscreen plus a silent portrait lock; never on in-run taps, never in installed PWA, stops after an explicit exit via our toggle; system exit re-arms. iPhone: localized Add to Home Screen hint once. Display setting 'Auto fullscreen on mobile' (default on). Keyboard Lock declined (would make Esc a hold). QA: qa/reports/auto-fullscreen-2026-10-29T18-20-20.449Z/result.json 31/31. CI: lint, check, 300 tests, build pass; fmt:check fails only on trailer/capture.ts (trailer agent's uncommitted work). Unverified on a real Pixel. Note: research/2026-10-29-mobile-touch-qa/README.md addendum",
       "updated": "2026-10-29"
+    },
+    {
+      "title": "Trailer masters: teaser30, trailer90, compendium120 x EN/ES/ZH",
+      "owner": "Trailer render",
+      "status": "done",
+      "detail": "9 masters (teaser30, trailer90, compendium120 x EN/ES/ZH) in trailer/out/<cut>/<lang>/ (gitignored), all QA PASS: 1080p60 CFR, exact durations, 0 dup frames in take shots, picture offset 0 frames (132/135 shots; 3 at 1 frame), -15.8 to -16.0 LUFS, -2.0 to -3.0 dBTP, captions in language. Blind Argon judge US $0.097 (teaser 5/5/4, trailer 4/4/3 hook/clarity/pacing); 2 fixes adopted. Game findings: autopilot skips boss_turn lines; tutorial autopilot stalls at rest gate. Slate lacks play URL pending hosting. Report: research/2026-10-29-trailer-render/README.md",
+      "updated": "2026-10-29",
+      "revision": "build f9b72a422589c40f from 73f6cf7"
     }
   ],
   "blockers": [

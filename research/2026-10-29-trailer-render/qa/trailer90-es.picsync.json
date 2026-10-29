@@ -1,0 +1,422 @@
+[
+ {
+  "shot": "hook-graze",
+  "frames": 112,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.76
+ },
+ {
+  "shot": "hook-writ",
+  "frames": 113,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.13
+ },
+ {
+  "shot": "hook-boss",
+  "frames": 112,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.43
+ },
+ {
+  "shot": "show-fire",
+  "frames": 224,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.93
+ },
+ {
+  "shot": "show-writ",
+  "frames": 224,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.93
+ },
+ {
+  "shot": "show-scan",
+  "frames": 168,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.88
+ },
+ {
+  "shot": "show-graze",
+  "frames": 169,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.38
+ },
+ {
+  "shot": "show-disarm",
+  "frames": 223,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.63
+ },
+ {
+  "shot": "place-s1",
+  "frames": 112,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.05
+ },
+ {
+  "shot": "place-s3",
+  "frames": 113,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.84
+ },
+ {
+  "shot": "place-s5",
+  "frames": 112,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.78
+ },
+ {
+  "shot": "recorder",
+  "frames": 447,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.5
+ },
+ {
+  "shot": "warden-shadow",
+  "frames": 301,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.52
+ },
+ {
+  "shot": "warden-rings",
+  "frames": 301,
+  "offsetFrames": 1,
+  "offsets": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "motion": 0.63
+ },
+ {
+  "shot": "warden-stop",
+  "frames": 402,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.45
+ },
+ {
+  "shot": "ai-aside",
+  "frames": 202,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.48
+ },
+ {
+  "shot": "boss-pods",
+  "frames": 101,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.79
+ },
+ {
+  "shot": "boss-core",
+  "frames": 102,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.66
+ },
+ {
+  "shot": "boss-phase",
+  "frames": 277,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 1.26
+ },
+ {
+  "shot": "boss-turn",
+  "frames": 277,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.7
+ },
+ {
+  "shot": "pacifist-dodge",
+  "frames": 353,
+  "offsetFrames": 0,
+  "offsets": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "motion": 0.53
+ }
+]

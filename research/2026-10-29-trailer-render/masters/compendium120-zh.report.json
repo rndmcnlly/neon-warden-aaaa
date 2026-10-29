@@ -1,0 +1,229 @@
+{
+ "cut": "compendium120",
+ "lang": "zh",
+ "draft": false,
+ "partial": false,
+ "size": "1920x1080@60",
+ "seconds": 120,
+ "master": "trailer/out/compendium120/zh/compendium120-zh.mp4",
+ "loudness": {
+  "target": {
+   "lufs": -16,
+   "truePeak": -2
+  },
+  "preMix": {
+   "I": -17.69,
+   "TP": -4.47,
+   "LRA": 5.5,
+   "thresh": -28.07,
+   "offset": -0.31
+  },
+  "measured": {
+   "lufs": -16,
+   "truePeak": -2.8
+  }
+ },
+ "shots": [
+  {
+   "id": "ch-front",
+   "start": 0,
+   "dur": 2,
+   "kind": "card"
+  },
+  {
+   "id": "boot-logos",
+   "start": 2,
+   "dur": 6,
+   "kind": "take",
+   "take": "menus-zh-e837d24a4475",
+   "anchorAt": 0.083,
+   "inPoint": 0.383
+  },
+  {
+   "id": "title-menu",
+   "start": 8,
+   "dur": 4,
+   "kind": "take",
+   "take": "menus-zh-e837d24a4475",
+   "anchorAt": 2.183,
+   "inPoint": 1.183
+  },
+  {
+   "id": "settings",
+   "start": 12,
+   "dur": 7,
+   "kind": "take",
+   "take": "menus-zh-e837d24a4475",
+   "anchorAt": 3.3,
+   "inPoint": 3.6
+  },
+  {
+   "id": "pause",
+   "start": 19,
+   "dur": 4,
+   "kind": "take",
+   "take": "s1-pause-zh-0e248c753bcc",
+   "anchorAt": 3.1,
+   "inPoint": 2.6
+  },
+  {
+   "id": "ch-verbs",
+   "start": 23,
+   "dur": 2,
+   "kind": "card"
+  },
+  {
+   "id": "verb-tap",
+   "start": 25,
+   "dur": 4,
+   "kind": "take",
+   "take": "s1-fight-any-a43e830af054",
+   "anchorAt": 2.017,
+   "inPoint": 0.517
+  },
+  {
+   "id": "verb-stream",
+   "start": 29,
+   "dur": 4,
+   "kind": "take",
+   "take": "s1-fight-any-a43e830af054",
+   "anchorAt": 7.917,
+   "inPoint": 5.917
+  },
+  {
+   "id": "verb-writ",
+   "start": 33,
+   "dur": 6,
+   "kind": "take",
+   "take": "s2-fight-any-8bb90384b7bc",
+   "anchorAt": 12.683,
+   "inPoint": 8.683
+  },
+  {
+   "id": "verb-scan",
+   "start": 39,
+   "dur": 5,
+   "kind": "take",
+   "take": "s2-fight-any-8bb90384b7bc",
+   "anchorAt": 4.717,
+   "inPoint": 3.217
+  },
+  {
+   "id": "verb-graze",
+   "start": 44,
+   "dur": 5,
+   "kind": "take",
+   "take": "s4-fight-any-8625f0157670",
+   "anchorAt": 18.283,
+   "inPoint": 16.283
+  },
+  {
+   "id": "verb-disarm",
+   "start": 49,
+   "dur": 5,
+   "kind": "take",
+   "take": "s3-disarm-any-9c81392f5c3c",
+   "anchorAt": 2.567,
+   "inPoint": 0.167
+  },
+  {
+   "id": "verb-pod",
+   "start": 54,
+   "dur": 6,
+   "kind": "take",
+   "take": "boss-pods-zh-9b6fd06c5f0a",
+   "anchorAt": 6.2,
+   "inPoint": 4.2
+  },
+  {
+   "id": "ch-language",
+   "start": 60,
+   "dur": 2,
+   "kind": "card"
+  },
+  {
+   "id": "lang-cycle",
+   "start": 62,
+   "dur": 14,
+   "kind": "take",
+   "take": "lang-cycle-any-5ce8655e6145",
+   "anchorAt": 8.483,
+   "inPoint": 7.983
+  },
+  {
+   "id": "ch-story",
+   "start": 76,
+   "dur": 2,
+   "kind": "card"
+  },
+  {
+   "id": "tutorial-contract",
+   "start": 78,
+   "dur": 8,
+   "kind": "take",
+   "take": "tutorial-zh-331117b4e4f5",
+   "anchorAt": 7.983,
+   "inPoint": 7.683
+  },
+  {
+   "id": "flashback",
+   "start": 86,
+   "dur": 6,
+   "kind": "take",
+   "take": "s3-recorder-zh-56ca7a3b1521",
+   "anchorAt": 4.233,
+   "inPoint": 3.733
+  },
+  {
+   "id": "descent",
+   "start": 92,
+   "dur": 6,
+   "kind": "take",
+   "take": "boss-descent-zh-49544c2d3a3e",
+   "anchorAt": 10.75,
+   "inPoint": 10.45
+  },
+  {
+   "id": "ch-endings",
+   "start": 98,
+   "dur": 2,
+   "kind": "card"
+  },
+  {
+   "id": "ending-kill",
+   "start": 100,
+   "dur": 5,
+   "kind": "take",
+   "take": "ending-kill-zh-fa03689c8093",
+   "anchorAt": 22.917,
+   "inPoint": 22.417
+  },
+  {
+   "id": "ending-pacifist",
+   "start": 105,
+   "dur": 5,
+   "kind": "take",
+   "take": "ending-pacifist-zh-c0bce771ae02",
+   "anchorAt": 4.167,
+   "inPoint": 3.667
+  },
+  {
+   "id": "ch-access",
+   "start": 110,
+   "dur": 2,
+   "kind": "card"
+  },
+  {
+   "id": "accessibility",
+   "start": 112,
+   "dur": 8,
+   "kind": "take",
+   "take": "accessibility-zh-e44f568b7cfc",
+   "anchorAt": 3.3,
+   "inPoint": 3.8
+  }
+ ],
+ "vo": [],
+ "warnings": [],
+ "assembleSeconds": 215.967
+}

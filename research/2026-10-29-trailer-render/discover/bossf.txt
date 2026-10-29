@@ -1,0 +1,216 @@
+# bossf ?skipto=boss&autoplay=fight&speed=1&seed=121&qa=1 301.2 s
+0.23 dom 
+3.12 [0] sectorStarted {"sector":6}
+3.12 [0] bossWarning {}
+3.12 log scene:boss
+3.78 log line:warn_ai_001
+4.33 [40] chargeLevel {"level":1}
+4.88 [80] chargeLevel {"level":2}
+5.56 [120] chargeLevel {"level":3}
+6.05 [150] chargeLevel {"level":0}
+6.73 [190] writMissed {"pos":{"x":240,"y":-196},"level":3}
+6.89 [200] bossPhase {"phase":0}
+8.21 [279] chargeLevel {"level":1}
+8.90 [319] chargeLevel {"level":2}
+9.38 [350] bossPhase {"phase":1}
+9.60 [359] chargeLevel {"level":3}
+10.11 [390] chargeLevel {"level":0}
+10.46 log line:warn_narr_001
+12.27 [519] chargeLevel {"level":1}
+12.29 log line:desc_001
+12.91 [559] chargeLevel {"level":2}
+13.59 [599] chargeLevel {"level":3}
+14.11 [630] chargeLevel {"level":0}
+16.25 [759] chargeLevel {"level":1}
+16.95 [799] chargeLevel {"level":2}
+17.37 log line:desc_ai_001
+17.59 [839] chargeLevel {"level":3}
+18.12 [870] chargeLevel {"level":0}
+19.21 log line:desc_002
+19.42 [949] statsMoment {"moment":"bossLull","value":600}
+20.27 [999] chargeLevel {"level":1}
+20.93 [1039] chargeLevel {"level":2}
+21.58 [1079] chargeLevel {"level":3}
+22.11 [1110] chargeLevel {"level":0}
+24.25 [1239] chargeLevel {"level":1}
+24.68 log line:desc_003
+24.93 [1279] chargeLevel {"level":2}
+25.61 [1319] chargeLevel {"level":3}
+26.10 [1350] chargeLevel {"level":0}
+28.25 [1479] chargeLevel {"level":1}
+28.91 [1519] chargeLevel {"level":2}
+29.26 log line:desc_004
+29.59 [1559] chargeLevel {"level":3}
+30.10 [1590] chargeLevel {"level":0}
+32.25 [1719] chargeLevel {"level":1}
+32.93 [1759] chargeLevel {"level":2}
+33.50 log line:desc_ai_002
+33.59 [1799] chargeLevel {"level":3}
+34.10 [1830] chargeLevel {"level":0}
+36.27 [1959] chargeLevel {"level":1}
+36.92 [1999] chargeLevel {"level":2}
+37.59 [2039] chargeLevel {"level":3}
+38.12 [2070] chargeLevel {"level":0}
+39.44 [2150] chargeLevel {"level":1}
+40.13 [2190] chargeLevel {"level":2}
+40.78 [2230] chargeLevel {"level":3}
+41.72 [2286] chargeLevel {"level":0}
+42.27 [2319] graze {"bulletId":115,"pos":{"x":359.8862403633432,"y":595.4509493498076},"count":1,"meter":0.05,"first":true}
+42.27 log scene:beat-first-graze
+42.27 log line:graze_ai_001
+42.37 [2326] chargeLevel {"level":1}
+42.94 [2360] graze {"bulletId":125,"pos":{"x":347.90344304585574,"y":560.4000000000009},"count":1,"meter":0.1,"first":false}
+43.06 [2366] chargeLevel {"level":2}
+43.72 [2406] chargeLevel {"level":3}
+43.96 [2421] graze {"bulletId":136,"pos":{"x":262.33073191846745,"y":561.5237924504995},"count":1,"meter":0.15000000000000002,"first":false}
+45.23 [2497] graze {"bulletId":147,"pos":{"x":186.67278456744543,"y":596.0738028379993},"count":1,"meter":0.2,"first":false}
+47.87 [2656] graze {"bulletId":174,"pos":{"x":64.52383542595952,"y":580.6829627378344},"count":1,"meter":0.1479999999999999,"first":false}
+48.35 [2685] chargeLevel {"level":0}
+48.71 [2706] partBreak {"id":8,"target":"boss","part":"cannonPod","partKind":"cannonPod","pos":{"x":74.35881629150691,"y":164.00000000000023},"by":"writ","hitPos":{"x":78.94189052587517,"y":186.02212126623067},"shotVel":{"x":0,"y":-18},"first":true}
+48.71 log scene:beat-warden-pod
+48.71 log line:boss_pod_001
+51.66 [2725] chargeLevel {"level":1}
+52.37 [2751] graze {"bulletId":189,"pos":{"x":137.79182948249806,"y":577.2000000000006},"count":1,"meter":0.1919999999999999,"first":false}
+52.59 [2765] chargeLevel {"level":2}
+53.27 [2805] chargeLevel {"level":3}
+53.28 [2805] graze {"bulletId":196,"pos":{"x":219.3047603300803,"y":558.8290018971404},"count":1,"meter":0.24199999999999988,"first":false}
+53.28 log line:bank.graze.5
+53.28 log bark:bank.graze.5
+54.41 [2875] graze {"bulletId":205,"pos":{"x":284.1095365211011,"y":578.1178227211402},"count":1,"meter":0.29199999999999987,"first":false}
+57.32 [3048] graze {"bulletId":232,"pos":{"x":414.74898298650317,"y":598.6389428546935},"count":1,"meter":0.21899999999999975,"first":false}
+57.56 [3064] chargeLevel {"level":0}
+58.09 [3095] graze {"bulletId":242,"pos":{"x":407.54981291864226,"y":599.2508601975269},"count":1,"meter":0.26899999999999974,"first":false}
+58.24 [3104] chargeLevel {"level":1}
+58.92 [3144] chargeLevel {"level":2}
+58.92 [3145] graze {"bulletId":252,"pos":{"x":396.76378126842167,"y":598.2245222756026},"count":1,"meter":0.31899999999999973,"first":false}
+59.56 [3184] chargeLevel {"level":3}
+59.60 [3185] graze {"bulletId":262,"pos":{"x":370.3232194385959,"y":560.4000000000009},"count":1,"meter":0.3689999999999997,"first":false}
+60.58 [3244] graze {"bulletId":274,"pos":{"x":267.92630181629494,"y":556.1342113437813},"count":1,"meter":0.4189999999999997,"first":false}
+60.58 [3244] statsMoment {"moment":"grazeStreak","value":5}
+60.59 log line:stat_grazes_002
+60.59 log bark:stat_grazes_002
+61.31 [3289] chargeLevel {"level":0}
+61.65 [3308] partBreak {"id":8,"target":"boss","part":"spiralPod","partKind":"spiralPod","pos":{"x":241.59425062878285,"y":164.00000000000023},"by":"writ","hitPos":{"x":230.64436508138976,"y":182.67308806541837},"shotVel":{"x":0,"y":-18},"first":false}
+61.65 [3308] coreExposed {"id":8}
+61.65 [3308] intel {"id":8,"codexId":"codex.warden.core","ai":"sweep","first":true}
+61.77 [3310] graze {"bulletId":284,"pos":{"x":185.0968356733813,"y":565.2921226376694},"count":1,"meter":0.4689999999999997,"first":false}
+62.13 [3329] chargeLevel {"level":1}
+62.74 [3369] chargeLevel {"level":2}
+62.86 [3376] graze {"bulletId":293,"pos":{"x":132.18210964262437,"y":593.5086628213052},"count":1,"meter":0.5189999999999997,"first":false}
+63.42 [3409] chargeLevel {"level":3}
+63.54 [3417] graze {"bulletId":302,"pos":{"x":91.73097621428415,"y":557.596702587587},"count":1,"meter":0.5689999999999997,"first":false}
+63.94 [3440] chargeLevel {"level":0}
+64.38 [3468] graze {"bulletId":311,"pos":{"x":89.84551842699997,"y":566.9133735572177},"count":1,"meter":0.6189999999999998,"first":false}
+65.19 [3516] graze {"bulletId":319,"pos":{"x":95.05669403257974,"y":559.3945013144732},"count":1,"meter":0.6689999999999998,"first":false}
+66.06 [3569] chargeLevel {"level":1}
+66.10 [3571] graze {"bulletId":326,"pos":{"x":168.33756783390623,"y":559.3945013144732},"count":1,"meter":0.7189999999999999,"first":false}
+66.75 [3609] chargeLevel {"level":2}
+67.36 [3647] graze {"bulletId":341,"pos":{"x":225.45605595662497,"y":604.6404413042451},"count":1,"meter":0.7689999999999999,"first":false}
+67.40 [3649] chargeLevel {"level":3}
+67.92 [3680] chargeLevel {"level":0}
+68.23 [3699] graze {"bulletId":355,"pos":{"x":295.4485588344708,"y":575.552682704446},"count":1,"meter":0.819,"first":false}
+68.81 log line:bank.wardenPhase1.3
+68.81 log bark:bank.wardenPhase1.3
+69.06 [3748] graze {"bulletId":364,"pos":{"x":326.39076670746607,"y":560.1618426042811},"count":1,"meter":0.869,"first":false}
+69.98 [3804] graze {"bulletId":373,"pos":{"x":382.0920184305633,"y":562.7269826209753},"count":1,"meter":0.919,"first":false}
+70.08 [3809] chargeLevel {"level":1}
+70.74 [3849] chargeLevel {"level":2}
+71.01 [3865] graze {"bulletId":387,"pos":{"x":390.87306217677803,"y":599.2508601975269},"count":1,"meter":0.9690000000000001,"first":false}
+71.42 [3889] chargeLevel {"level":3}
+71.48 [3894] chargeLevel {"level":0}
+71.75 [3909] graze {"bulletId":405,"pos":{"x":381.22606733686933,"y":581.5830847208329},"count":1,"meter":1,"first":false}
+72.53 [3956] graze {"bulletId":417,"pos":{"x":307.78574774448384,"y":559.3945013144732},"count":1,"meter":0.05,"first":false}
+73.63 [4023] chargeLevel {"level":1}
+73.72 [4028] graze {"bulletId":427,"pos":{"x":257.3579389733637,"y":593.8612790908087},"count":1,"meter":0.1,"first":false}
+74.31 [4063] chargeLevel {"level":2}
+74.83 [4094] graze {"bulletId":442,"pos":{"x":176.79154511763534,"y":601.2040828713876},"count":1,"meter":0.15000000000000002,"first":false}
+74.98 [4103] chargeLevel {"level":3}
+75.50 [4134] chargeLevel {"level":0}
+75.57 [4138] graze {"bulletId":458,"pos":{"x":154.49447542439532,"y":572.9875426877519},"count":1,"meter":0.2,"first":false}
+76.44 [4192] graze {"bulletId":468,"pos":{"x":102.8329748085663,"y":570.4224026710577},"count":1,"meter":0.25,"first":false}
+77.10 [4230] graze {"bulletId":476,"pos":{"x":112.8411278900364,"y":545.3550491303449},"count":1,"meter":0.3,"first":false}
+77.63 [4263] chargeLevel {"level":1}
+78.24 [4299] graze {"bulletId":486,"pos":{"x":103.9568930491143,"y":595.4509493498076},"count":1,"meter":0.35,"first":false}
+78.24 log line:bank.graze.3
+78.24 log bark:bank.graze.3
+78.31 [4303] chargeLevel {"level":2}
+78.92 [4340] graze {"bulletId":502,"pos":{"x":121.29213167187858,"y":560.4000000000009},"count":1,"meter":0.39999999999999997,"first":false}
+78.97 [4343] chargeLevel {"level":3}
+79.48 [4374] chargeLevel {"level":0}
+79.84 [4395] bossPhase {"phase":2}
+79.84 log scene:boss-phase2
+79.84 log line:boss_p2_001
+79.94 [4401] graze {"bulletId":512,"pos":{"x":214.27549118054242,"y":561.5237924504995},"count":1,"meter":0.44999999999999996,"first":false}
+80.97 [4463] graze {"bulletId":520,"pos":{"x":282.27527554889883,"y":560.1618426042811},"count":1,"meter":0.49999999999999994,"first":false}
+81.65 [4503] chargeLevel {"level":1}
+82.07 [4528] graze {"bulletId":529,"pos":{"x":324.98140233498304,"y":585.8132427712227},"count":1,"meter":0.5499999999999999,"first":false}
+82.32 [4543] chargeLevel {"level":2}
+82.63 [4561] scanLock {"id":558,"target":"enemy","kind":"drone","pos":{"x":288.35634744826996,"y":289.5000000000002},"ai":"patrol","first":true}
+82.63 log scene:beat-first-lock
+82.63 log line:lock_ai_001
+82.63 [4561] intel {"id":558,"codexId":"codex.enemy.drone","ai":"patrol","first":true}
+82.98 [4583] chargeLevel {"level":3}
+83.49 [4614] chargeLevel {"level":0}
+83.94 [4642] graze {"bulletId":565,"pos":{"x":348.5865336865936,"y":560.4522865640987},"count":1,"meter":0.5655000000000012,"first":false}
+85.43 [4731] graze {"bulletId":575,"pos":{"x":357.0777380509748,"y":592.0000000000002},"count":1,"meter":0.6155000000000013,"first":false}
+85.64 [4743] chargeLevel {"level":1}
+85.68 [4744] graze {"bulletId":604,"pos":{"x":346.20311275100005,"y":569.8077061890241},"count":1,"meter":0.6655000000000013,"first":false}
+86.30 [4782] graze {"bulletId":603,"pos":{"x":290.7354658679604,"y":556.5605722091541},"count":1,"meter":0.7155000000000014,"first":false}
+86.30 [4783] chargeLevel {"level":2}
+86.90 [4818] graze {"bulletId":595,"pos":{"x":245.88037041437576,"y":592.7674295739007},"count":1,"meter":0.7655000000000014,"first":false}
+86.96 [4823] chargeLevel {"level":3}
+87.49 [4854] chargeLevel {"level":0}
+87.78 [4872] kill {"id":615,"kind":"drone","score":100,"byRam":false,"clean":false}
+88.75 [4895] graze {"bulletId":612,"pos":{"x":153.98497187568805,"y":559.7985134445897},"count":1,"meter":0.8155000000000014,"first":false}
+89.26 log line:bank.wardenPhase2.1
+89.26 log bark:bank.wardenPhase2.1
+90.23 [4983] chargeLevel {"level":1}
+90.88 [5023] chargeLevel {"level":2}
+91.14 [5038] graze {"bulletId":641,"pos":{"x":125.61301830087388,"y":548.5870336288662},"count":1,"meter":0.7875000000000043,"first":false}
+91.55 [5063] chargeLevel {"level":3}
+92.07 [5094] chargeLevel {"level":0}
+92.49 [5119] graze {"bulletId":654,"pos":{"x":118.64083818431635,"y":556.0000000000002},"count":1,"meter":0.8375000000000044,"first":false}
+93.21 [5162] graze {"bulletId":659,"pos":{"x":173.3600239631149,"y":546.4577183554999},"count":1,"meter":0.8875000000000044,"first":false}
+94.15 [5219] graze {"bulletId":662,"pos":{"x":235.7316721290641,"y":595.6334390412775},"count":1,"meter":0.9375000000000044,"first":false}
+94.21 [5223] chargeLevel {"level":1}
+94.87 [5263] chargeLevel {"level":2}
+95.44 [5297] graze {"bulletId":678,"pos":{"x":334.07005704014483,"y":565.2011960587057},"count":1,"meter":0.9875000000000045,"first":false}
+95.56 [5303] chargeLevel {"level":3}
+96.07 [5334] chargeLevel {"level":0}
+96.42 [5355] bossPhase {"phase":3}
+96.42 log scene:boss-phase3
+96.42 log line:boss_p3_001
+97.91 [5445] graze {"bulletId":706,"pos":{"x":303.06168319855453,"y":574.0000000000002},"count":1,"meter":0.9520000000000076,"first":false}
+98.20 [5463] chargeLevel {"level":1}
+98.91 [5503] chargeLevel {"level":2}
+99.55 [5543] chargeLevel {"level":3}
+100.05 [5574] chargeLevel {"level":0}
+102.22 [5703] chargeLevel {"level":1}
+102.89 [5743] chargeLevel {"level":2}
+103.56 [5783] chargeLevel {"level":3}
+104.08 [5814] chargeLevel {"level":0}
+105.62 log line:boss_p3_002
+106.20 [5943] chargeLevel {"level":1}
+106.89 [5983] chargeLevel {"level":2}
+107.54 [6023] chargeLevel {"level":3}
+108.08 [6054] chargeLevel {"level":0}
+110.21 [6183] chargeLevel {"level":1}
+110.89 [6223] chargeLevel {"level":2}
+111.55 [6263] chargeLevel {"level":3}
+112.05 [6294] chargeLevel {"level":0}
+112.39 [6314] bossDefeated {}
+112.39 log scene:ending-kill
+114.37 [6423] chargeLevel {"level":1}
+115.02 [6463] chargeLevel {"level":2}
+117.11 log line:kill_warden_001
+124.15 log line:kill_ai_001
+127.20 log line:end_epi_001
+132.43 log line:end_epi_002
+139.95 log line:kill_ai_002
+146.52 log line:end_epi_003
+151.41 log line:kill_ai_003
+160.17 log line:kill_ai_004
+174.13 log scene:credits
+174.14 dom nw-screen-crawl
+250.53 dom 
+252.04 log line:credits_kill_001

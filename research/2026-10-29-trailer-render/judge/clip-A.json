@@ -1,0 +1,197 @@
+{
+ "clip": "clip-A",
+ "cut": "teaser30",
+ "model": "google/gemini-4-argon",
+ "provider": "Google",
+ "costUsd": 0.033334,
+ "wallS": 43.474,
+ "status": 200,
+ "judgment": {
+  "reconstruction": {
+   "timeline": [
+    {
+     "t": "00:00",
+     "what": "Top-down vertical shoot-'em-up gameplay in a space lane; player ship fires at orange V-shaped enemies firing pink orbs."
+    },
+    {
+     "t": "00:02",
+     "what": "Cut to player ship firing a blue triangular projectile at a large blue triangle enemy."
+    },
+    {
+     "t": "00:04",
+     "what": "Cut to player ship scanning/fighting green diamond enemies firing pink spreads."
+    },
+    {
+     "t": "00:08",
+     "what": "Red warning screen 'WARNING The Warden The Warden approaches' as lane turns red."
+    },
+    {
+     "t": "00:09",
+     "what": "A large heart-shaped boss ('The Warden') enters from the top of the lane."
+    },
+    {
+     "t": "00:13",
+     "what": "Music stops; camera tilts down to a low-angle 3D perspective facing the heart boss."
+    },
+    {
+     "t": "00:20",
+     "what": "Title card: 'NEON WARDEN' on dark background as music drops back in."
+    },
+    {
+     "t": "00:22",
+     "what": "Return to top-down gameplay fighting The Warden boss."
+    },
+    {
+     "t": "00:27",
+     "what": "End card with call to action and URL."
+    }
+   ],
+   "heard_speech": [
+    {
+     "t": "00:01",
+     "speaker_guess": "Lane Authority Briefing (deep male narrator)",
+     "words": "It has no name. Only a title. The Warden.",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "00:06",
+     "speaker_guess": "Lane Authority Briefing",
+     "words": "Its voice alone has cracked hulls. Those who have heard it never forget it.",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "00:14",
+     "speaker_guess": "The Warden (high-pitched, frantic male voice)",
+     "words": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "00:22",
+     "speaker_guess": "The Warden",
+     "words": "They don't want the lanes open! They want them OWNED!",
+     "heard_or_read": "heard"
+    }
+   ],
+   "readable_text": [
+    {
+     "t": "00:00",
+     "text": "SCORE 850 SECTOR 2 Shatter Belt WAVE GRIT HULL CANNON DRIFT VERTICAL SLICE BUILD NOT FINAL BUILD F26 OCTOBER 2026"
+    },
+    {
+     "t": "00:01",
+     "text": "Codex: Dart Lane Authority Briefing It has no name. Only a title. The Warden."
+    },
+    {
+     "t": "00:02",
+     "text": "SCOUT CHANNEL Fine. I wasn't using this hull anybody."
+    },
+    {
+     "t": "00:06",
+     "text": "SCOUT CHANNEL Lancer down. Who keeps the lane clear now? They do? For who?"
+    },
+    {
+     "t": "00:07",
+     "text": "Lane Authority Briefing Its voice alone has cracked hulls."
+    },
+    {
+     "t": "00:08",
+     "text": "WARNING The Warden The Warden approaches"
+    },
+    {
+     "t": "00:09",
+     "text": "Lane Authority Briefing Those who have heard it never forget it."
+    },
+    {
+     "t": "00:14",
+     "text": "The Warden STOP! Stop right there!"
+    },
+    {
+     "t": "00:16",
+     "text": "The Warden Do you have ANY idea how long it takes to grow a scout?!"
+    },
+    {
+     "t": "00:20",
+     "text": "NEON WARDEN"
+    },
+    {
+     "t": "00:22",
+     "text": "The Warden They don't want the lanes open! They want them OWNED!"
+    },
+    {
+     "t": "00:27",
+     "text": "A vertical slice. Play it in your browser. No install. adamsmith.systems · CM121 f26"
+    }
+   ],
+   "product_guess": "Neon Warden, a browser-based vertical slice of a comedic/narrative top-down space shoot-'em-up.",
+   "how_to_get_it": "Play it in a web browser with no install at adamsmith.systems (associated with course/project CM121 f26).",
+   "question_raised": "Are the players actually the bad guys working for a greedy authority while the 'monsters' are just trying to protect their grown scouts and keep lanes open?",
+   "uncertain": [
+    "What 'CM121 f26' refers to (likely a university course code and Fall 2026 term).",
+    "How the scanning cone / 'Codex' mechanic works alongside shooting."
+   ]
+  },
+  "scores": [
+   {
+    "concern": 1,
+    "score": 5,
+    "evidence": "00:00 opens immediately on active top-down shooter gameplay with bullets and enemies; genre is unmistakable within 1 second and there are no front-loaded logos."
+   },
+   {
+    "concern": 2,
+    "score": 5,
+    "evidence": "Every shot builds up the dread of 'The Warden' (00:01-00:12) before subverting it at 00:14 with a comedic voice and a narrative twist at 00:22 ('They want them OWNED!'). No filler."
+   },
+   {
+    "concern": 3,
+    "score": 5,
+    "evidence": "Synth music ramps up from 00:00 to 00:13, cuts completely to silence for the comedic fakeout (00:13-00:19), drops back in hard on the title card at 00:20, and resolves cleanly at 00:29."
+   },
+   {
+    "concern": 4,
+    "score": 5,
+    "evidence": "Narrator sits cleanly over a low-passed synth bassline (00:01-00:10), the music swells when speech stops (00:11-00:13), and The Warden speaks during total silence (00:14-00:19) and a ducked groove (00:22-00:25)."
+   },
+   {
+    "concern": 5,
+    "score": 4,
+    "evidence": "Burned-in captions with speaker labels ('Lane Authority Briefing' vs 'The Warden') and exclamation marks ('?!') convey the setup and punchline muted, though the vocal contrast is big part of the joke."
+   },
+   {
+    "concern": 6,
+    "score": 5,
+    "evidence": "Captions at 00:01, 00:07, 00:14, 00:16, and 00:22 are large, high-contrast white text on a dark pill background, accurately timed to speech, and strictly 1-2 lines."
+   },
+   {
+    "concern": 7,
+    "score": 4,
+    "evidence": "Shots are well-paced overall, though the static camera hold on The Warden talking at 00:14-00:19 (6 seconds) and the gameplay shot at 00:22-00:27 (5 seconds with sparse firing) feel slightly low-energy visually."
+   }
+  ],
+  "fixes": [
+   {
+    "t": "00:02",
+    "problem": "Small unvoiced pop-up text on the left ('SCOUT CHANNEL: Fine. I wasn't using this hull anybody.') appears during voiced narration, competing for reading attention and containing a typo ('anybody' instead of 'anyway').",
+    "fix": "Hide or disable the secondary left-side 'SCOUT CHANNEL' UI pop-ups during the trailer capture so the viewer focuses strictly on the main captions and action.",
+    "cost": "small"
+   },
+   {
+    "t": "00:22",
+    "problem": "After the high-energy title drop at 00:20, the boss fight shot from 00:22 to 00:27 has very little bullet-hell action on screen—the boss doesn't fire back at all.",
+    "fix": "Swap 00:22-00:27 for a capture where The Warden is actively firing dense neon bullet patterns while delivering the line, matching the intensity of the music drop.",
+    "cost": "small"
+   },
+   {
+    "t": "00:14",
+    "problem": "On silent autoplay, the visual contrast between the terrifying reputation and the whiny voice at 00:14 relies solely on punctuation in the caption.",
+    "fix": "Add a subtle comedic visual cue or animation to The Warden (e.g., an angry shake/bounce synced to 'STOP! Stop right there!') to sell the tonal shift even when muted.",
+    "cost": "small"
+   }
+  ],
+  "overall": {
+   "hook": 5,
+   "clarity": 5,
+   "pacing": 4,
+   "summary": "An exceptionally well-crafted 30-second trailer that nails the cold open, uses sound design and a music fakeout textbook-perfectly to land a comedic/narrative twist, and ends with a crystal-clear call to action; only minor visual lulls in the back half hold it back."
+  }
+ }
+}

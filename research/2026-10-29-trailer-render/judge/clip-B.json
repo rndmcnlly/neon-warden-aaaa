@@ -1,0 +1,315 @@
+{
+ "clip": "clip-B",
+ "cut": "trailer90",
+ "model": "google/gemini-4-argon",
+ "provider": "Google",
+ "costUsd": 0.063694,
+ "wallS": 60.121,
+ "status": 200,
+ "judgment": {
+  "reconstruction": {
+   "timeline": [
+    {
+     "t": "00:00",
+     "what": "Top-down vertical shoot-'em-up gameplay in 'Sector 4: Lancer Gate'; player ship alternates between firing and resting with a blue scanning cone."
+    },
+    {
+     "t": "00:02",
+     "what": "Cut to 'Sector 5: Last Approach' showing dense pink bullet curtains and green enemies."
+    },
+    {
+     "t": "00:04",
+     "what": "Cut back to 'Sector 4: Lancer Gate' scanning orange dart enemies."
+    },
+    {
+     "t": "00:06",
+     "what": "Title card: 'NEON WARDEN'."
+    },
+    {
+     "t": "00:07",
+     "what": "Text card: 'TAP. HOLD. REST TO CHARGE.'"
+    },
+    {
+     "t": "00:09",
+     "what": "Gameplay in 'Sector 1: Outer Drift' demonstrating holding to fire, resting to charge a ring, and firing a charged arrow shot."
+    },
+    {
+     "t": "00:13",
+     "what": "Gameplay in 'Sector 2: Shatter Belt' scanning orange enemies; a small radio message pops up on the left at 00:16."
+    },
+    {
+     "t": "00:17",
+     "what": "Text card: 'RESTING SCANS THEM.'"
+    },
+    {
+     "t": "00:19",
+     "what": "Gameplay in 'Sector 2: Shatter Belt' finishing a scan on orange enemies ('Codex: Scout' pops up) and destroying them with a charged shot."
+    },
+    {
+     "t": "00:21",
+     "what": "Text card: 'CLOSE CALLS PAY MORE.'"
+    },
+    {
+     "t": "00:23",
+     "what": "Gameplay in 'Sector 4: Lancer Gate' grazing dense pink bullets to increase the score multiplier."
+    },
+    {
+     "t": "00:26",
+     "what": "Text card: 'BREAK THE GUN. SPARE THE SHIP.'"
+    },
+    {
+     "t": "00:28",
+     "what": "Gameplay in 'Sector 3: Gun Lanes' showing 'Turrets online' and the player shooting a specific component off an enemy."
+    },
+    {
+     "t": "00:32",
+     "what": "Quick cuts of gameplay across Sector 1 (00:32), Sector 3 (00:34), and Sector 5 (00:35) showing precision shooting and disarming."
+    },
+    {
+     "t": "00:37",
+     "what": "Angled 3D camera view of the player ship flying along the lane while 'Onboarding Assistant' speaks."
+    },
+    {
+     "t": "00:45",
+     "what": "Top-down view of 'Sector 6: The Warden' with 'WARNING The Warden' text and 'Lane Authority Briefing' voiceover as a heart-shaped boss enters."
+    },
+    {
+     "t": "00:55",
+     "what": "Low-angle 3D view facing The Warden boss; music cuts out as The Warden speaks in a frantic voice, followed by Onboarding Assistant."
+    },
+    {
+     "t": "01:04",
+     "what": "Top-down boss fight gameplay against The Warden firing sweeping pink bullet arcs while the player scans and fires charged shots."
+    },
+    {
+     "t": "01:17",
+     "what": "Text card: 'OR NEVER FIRE AT ALL.'"
+    },
+    {
+     "t": "01:19",
+     "what": "Low-angle 3D view of The Warden reacting with confusion to the player's cold weapon."
+    },
+    {
+     "t": "01:25",
+     "what": "Title card: 'NEON WARDEN'."
+    },
+    {
+     "t": "01:27",
+     "what": "End card with call to action and URL."
+    }
+   ],
+   "heard_speech": [
+    {
+     "t": "00:37",
+     "speaker_guess": "Onboarding Assistant (female AI voice)",
+     "words": "Recording. Pilot zero one two one. Last Approach. Weapon status: cold.",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "00:45",
+     "speaker_guess": "Lane Authority Briefing (deep male voice)",
+     "words": "For three hundred years it has held the lanes shut. One hundred and twenty-one pilots have flown against it. None came back.",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "00:55",
+     "speaker_guess": "The Warden (frantic male voice)",
+     "words": "STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "01:02",
+     "speaker_guess": "Onboarding Assistant (female AI voice)",
+     "words": "That is not the voice from the briefing.",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "01:13",
+     "speaker_guess": "The Warden (frantic male voice)",
+     "words": "They don't want the lanes open! They want them OWNED!",
+     "heard_or_read": "heard"
+    },
+    {
+     "t": "01:19",
+     "speaker_guess": "The Warden (frantic male voice)",
+     "words": "Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!",
+     "heard_or_read": "heard"
+    }
+   ],
+   "readable_text": [
+    {
+     "t": "00:00",
+     "text": "SCORE 950 / SECTOR 4 Lancer Gate / WAVE 1 / GRADE x4 / Pilot #0122 / Codex: Dart / Scanning / HULL / CANNON / 1,295 x1.6 Graze! / VERTICAL SLICE BUILD NOT FINAL - BUILD ID: 1. OCTOBER 2026"
+    },
+    {
+     "t": "00:02",
+     "text": "SCORE 250 / SECTOR 5 Last Approach / Codex: Lancer / 784 x1.1"
+    },
+    {
+     "t": "00:06",
+     "text": "NEON WARDEN"
+    },
+    {
+     "t": "00:07",
+     "text": "TAP. HOLD. REST TO CHARGE."
+    },
+    {
+     "t": "00:09",
+     "text": "SECTOR 1 Outer Drift"
+    },
+    {
+     "t": "00:13",
+     "text": "SECTOR 2 Shatter Belt"
+    },
+    {
+     "t": "00:16",
+     "text": "SCOUT CHANNEL Unit 7741B [disarmed]: Fine. I wasn't using it to hurt anybody."
+    },
+    {
+     "t": "00:17",
+     "text": "RESTING SCANS THEM."
+    },
+    {
+     "t": "00:20",
+     "text": "Codex: Scout"
+    },
+    {
+     "t": "00:21",
+     "text": "CLOSE CALLS PAY MORE."
+    },
+    {
+     "t": "00:26",
+     "text": "BREAK THE GUN. SPARE THE SHIP."
+    },
+    {
+     "t": "00:28",
+     "text": "SECTOR 3 Gun Lanes / Turrets online"
+    },
+    {
+     "t": "00:34",
+     "text": "SCOUT CHANNEL Unit 2290A [sparing]: First time in ninety years. Wish me luck."
+    },
+    {
+     "t": "00:37",
+     "text": "Onboarding Assistant: Recording. Pilot zero one two one. Last Approach. Weapon status: cold."
+    },
+    {
+     "t": "00:45",
+     "text": "SECTOR 6 The Warden / WARNING The Warden The Warden approaches / Lane Authority Briefing: For three hundred years it has held the lanes shut. One hundred and twenty-one pilots have flown against it. None came back."
+    },
+    {
+     "t": "00:55",
+     "text": "The Warden: STOP! Stop right there! Do you have ANY idea how long it takes to grow a scout?!"
+    },
+    {
+     "t": "01:02",
+     "text": "Onboarding Assistant: That is not the voice from the briefing."
+    },
+    {
+     "t": "01:07",
+     "text": "WARDEN Phase 1 of 3 / Codex: The Warden's core"
+    },
+    {
+     "t": "01:13",
+     "text": "The Warden: They don't want the lanes open! They want them OWNED!"
+    },
+    {
+     "t": "01:17",
+     "text": "OR NEVER FIRE AT ALL."
+    },
+    {
+     "t": "01:19",
+     "text": "The Warden: Wait. Wait, wait, wait. Your gun is cold. Why is your gun cold?!"
+    },
+    {
+     "t": "01:25",
+     "text": "NEON WARDEN"
+    },
+    {
+     "t": "01:27",
+     "text": "A vertical slice. Play it in your browser. No install. adamsmith.systems · CM121 f26"
+    }
+   ],
+   "product_guess": "Neon Warden, a browser-based top-down vertical bullet-hell shoot-'em-up vertical slice where resting your weapon charges a shot and scans enemies, allowing pacifist or disarming playstyles.",
+   "how_to_get_it": "Play it directly in a web browser with no installation at adamsmith.systems.",
+   "question_raised": "What happens if you reach The Warden without ever firing a single shot ('weapon status: cold'), and what is the true agenda of the Lane Authority?",
+   "uncertain": [
+    "What 'CM121 f26' on the final card refers to (likely a university course code and term, e.g., Fall 2026).",
+    "How 'breaking the gun' is mechanically executed versus destroying the whole ship (whether it requires aiming at specific hitboxes or using the charged shot after scanning)."
+   ]
+  },
+  "scores": [
+   {
+    "concern": 1,
+    "score": 5,
+    "evidence": "Starts immediately in bullet-hell gameplay at 00:00-00:05, reveals the title 'NEON WARDEN' at 00:06, and well over 60% of the runtime is direct player-view gameplay."
+   },
+   {
+    "concern": 2,
+    "score": 5,
+    "evidence": "Text cards ('TAP. HOLD. REST TO CHARGE.' at 00:07, 'RESTING SCANS THEM.' at 00:17, 'BREAK THE GUN. SPARE THE SHIP.' at 00:26, 'OR NEVER FIRE AT ALL.' at 01:17) are hyper-specific to this game's mechanics and cleanly intercut on dark backgrounds."
+   },
+   {
+    "concern": 3,
+    "score": 4,
+    "evidence": "Charging and firing is clear at 00:09-00:12, scanning shows the 'Codex: Scout' pop-up at 00:19-00:20, and grazing shows the score multiplier ticking up at 00:23-00:25. However, 'BREAK THE GUN. SPARE THE SHIP.' (00:26-00:36) is visually hard to read in-shot because the tiny left-side radio pop-up at 00:34 is too small and fast to notice while watching the ship."
+   },
+   {
+    "concern": 4,
+    "score": 3,
+    "evidence": "Several sectors and setups repeat across the first 37 seconds: Sector 4 appears at 00:00, 00:04, and 00:23; Sector 1 appears at 00:09 and 00:32; Sector 2 appears at 00:13 and 00:19; Sector 5 appears at 00:02 and 00:35."
+   },
+   {
+    "concern": 5,
+    "score": 3,
+    "evidence": "The narrative sequence from 00:37 to 01:04 holds for 27 seconds with minimal gameplay action (an angled camera flight from 00:37-00:44, a slow boss descent from 00:45-00:54, and a static dialogue standoff from 00:55-01:04)."
+   },
+   {
+    "concern": 6,
+    "score": 5,
+    "evidence": "The pacifist route ('OR NEVER FIRE AT ALL.' at 01:17) is brilliantly teased at 01:19-01:24 with The Warden asking 'Why is your gun cold?!' without spoiling the resolution."
+   },
+   {
+    "concern": 7,
+    "score": 3,
+    "evidence": "Bullet-hell dodges at 00:02 and 00:23 work well as 1-second clips, but many shots have dark, sparse backgrounds and small geometric sprites (e.g., 00:13, 00:28, 00:38) that lack visual punch as standalone 1-second microtrailer fragments."
+   },
+   {
+    "concern": 8,
+    "score": 5,
+    "evidence": "At 01:27-01:30, the end card clearly states 'A vertical slice. Play it in your browser. No install. adamsmith.systems'."
+   },
+   {
+    "concern": 9,
+    "score": 3,
+    "evidence": "The first 36 seconds move briskly, but pacing stalls during the 27-second cutscene/dialogue block (00:37-01:04), especially the 7-second static angled shot at 00:37-00:44 and the 10-second boss descent at 00:45-00:54."
+   }
+  ],
+  "fixes": [
+   {
+    "t": "00:37",
+    "problem": "The 27-second narrative build-up (00:37-01:04) drags the pacing down because 00:37-00:44 is a static angled shot of the ship where nothing happens visually, followed by a slow 10-second boss entrance.",
+    "fix": "Cut 00:37-00:44 entirely (saving the 'weapon status: cold' reveal solely for the 01:17 twist) and overlap the 'Lane Authority Briefing' voiceover (00:45-00:52) onto the final gameplay montage shots (00:32-00:36) so the boss appears and speaks immediately at the drop.",
+    "cost": "trivial"
+   },
+   {
+    "t": "00:28",
+    "problem": "After the 'BREAK THE GUN. SPARE THE SHIP.' card at 00:26, the visual receipt of sparing an enemy is hard to see because the enemy sprites are small and the 'Unit 2290A [sparing]' radio text at 00:34 is tiny on the far left edge.",
+    "fix": "Punch in (zoom in) on the capture at 00:28-00:34 or add a clear on-screen callout showing the turret breaking off while the ship flies away unharmed and transmits its message.",
+    "cost": "small"
+   },
+   {
+    "t": "00:00",
+    "problem": "The opening 5 seconds repeat Sector 4 twice (00:00-00:01 and 00:04-00:05) with sparse enemy waves, which is less visually gripping than the dense bullet patterns shown later.",
+    "fix": "Start the trailer with the dense pink bullet-curtain shot at 00:02 and the boss bullet pattern from 01:05 to immediately hook viewers, removing the duplicate Sector 4 shot at 00:04.",
+    "cost": "trivial"
+   }
+  ],
+  "overall": {
+   "hook": 4,
+   "clarity": 4,
+   "pacing": 3,
+   "summary": "A smart, well-structured vertical slice trailer with a great Undertale-style pacifist twist and crystal-clear mechanic cards, held back mainly by a slow 27-second mid-trailer dialogue build-up and some repetitive/visually sparse early shots."
+  }
+ }
+}
