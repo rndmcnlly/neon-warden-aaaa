@@ -176,3 +176,13 @@ and in the audition page). Output: `public/sfx/gameplay/*.ogg` and
 synth stand-in, so nothing is ever silent. Note that the quality flags were
 tuned for UI clicks: `noisy` is normal for an explosion, and `truncated`
 means the render ran past `target_ms` and was faded.
+
+## Lesson from the first audition (Adam, October 28, 2026)
+
+Seed-only variation produced candidates that were almost imperceptibly
+different, so picking became "best of near-duplicates". Next time, vary the
+prompt, not just the seed: give each role 4–6 deliberately different briefs
+(for example glassy synth blip, muted mechanical click, soft airy whoosh,
+bright metallic ping, low haptic thump), render 1–2 seeds per brief, and
+label each candidate with its brief so the audition compares directions,
+not dice rolls. Current UI picks are fine for now.
