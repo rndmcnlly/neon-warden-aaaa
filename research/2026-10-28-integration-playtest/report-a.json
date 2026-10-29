@@ -1,0 +1,547 @@
+{
+ "base": "http://localhost:4173/",
+ "checks": {
+  "a-keyboard-menus": {
+   "log": [
+    {
+     "key": "Space",
+     "screens": [
+      "nw-screen-notice"
+     ],
+     "focus": "continue",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-logos is-3d"
+     ],
+     "focus": "EnterSkipVertical slice buildN",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-title"
+     ],
+     "focus": "Neon WardenChapter 1: Enclosur",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-main"
+     ],
+     "focus": "newGame",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-main"
+     ],
+     "focus": "chapters",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-main"
+     ],
+     "focus": "settings",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-display",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-audio",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-language",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-subtitles",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-subtitles",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "subtitles",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "subtitleScale",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "subtitleScale",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "subtitleScale",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowUp",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "subtitles",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowUp",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-subtitles",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowUp",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-subtitles",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-accessibility",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-controls",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "tab-controls",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "bind-moveUp-key0",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "bind-moveUp-key0",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "KeyJ",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-settings is-wide"
+     ],
+     "focus": "bind-moveUp-key0",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Escape",
+     "screens": [
+      "nw-screen-main"
+     ],
+     "focus": "settings",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowUp",
+     "screens": [
+      "nw-screen-main"
+     ],
+     "focus": "chapters",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowUp",
+     "screens": [
+      "nw-screen-main"
+     ],
+     "focus": "newGame",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-newGame"
+     ],
+     "focus": "difficulty-normal",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-main",
+      "nw-screen-newGame"
+     ],
+     "focus": "start",
+     "dev": null,
+     "subtitle": null
+    },
+    {
+     "key": "Enter",
+     "screens": [],
+     "focus": "Onboarding AssistantHello, and",
+     "dev": null,
+     "subtitle": "Onboarding AssistantHello, and welcome to Lane Authority onboarding!"
+    },
+    {
+     "key": "ArrowLeft",
+     "screens": [],
+     "focus": "Onboarding AssistantHello, and",
+     "dev": null,
+     "subtitle": "Onboarding AssistantHello, and welcome to Lane Authority onboarding!"
+    },
+    {
+     "key": "ArrowLeft",
+     "screens": [],
+     "focus": "Onboarding AssistantI am your ",
+     "dev": null,
+     "subtitle": "Onboarding AssistantI am your onboarding assistant, and I will be with you every step of the way."
+    }
+   ],
+   "settings": {
+    "version": 1,
+    "settings": {
+     "display": {
+      "preset": "high",
+      "renderScale": 1,
+      "fullscreen": false
+     },
+     "audio": {
+      "master": 0.8,
+      "music": 0.7,
+      "sfx": 0.8,
+      "voice": 1,
+      "ui": 0.6
+     },
+     "textLang": "en",
+     "voiceLang": "en",
+     "subtitles": {
+      "enabled": true,
+      "scale": 1.2,
+      "bgOpacity": 0.6,
+      "speakerNames": true,
+      "maxLines": 2
+     },
+     "accessibility": {
+      "autoFire": false,
+      "holdToggle": "hold",
+      "shake": 1,
+      "reducedFlashing": false,
+      "reduceMotion": false,
+      "gameSpeed": 1,
+      "difficulty": "normal",
+      "colorIndependentCues": false
+     },
+     "controls": {
+      "bindings": {
+       "moveUp": {
+        "keys": [
+         "KeyJ",
+         "KeyW"
+        ],
+        "buttons": [
+         12
+        ]
+       },
+       "moveDown": {
+        "keys": [
+         "ArrowDown",
+         "KeyS"
+        ],
+        "buttons": [
+         13
+        ]
+       },
+       "moveLeft": {
+        "keys": [
+         "ArrowLeft",
+         "KeyA"
+        ],
+        "buttons": [
+         14
+        ]
+       },
+       "moveRight": {
+        "keys": [
+         "ArrowRight",
+         "KeyD"
+        ],
+        "buttons": [
+         15
+        ]
+       },
+       "fire": {
+        "keys": [
+         "Space",
+         "KeyZ"
+        ],
+        "buttons": [
+         0,
+         7
+        ]
+       },
+       "focus": {
+        "keys": [
+         "ShiftLeft",
+         "KeyX"
+        ],
+        "buttons": [
+         6
+        ]
+       },
+       "pause": {
+        "keys": [
+         "Escape",
+         "KeyP"
+        ],
+        "buttons": [
+         9
+        ]
+       },
+       "confirm": {
+        "keys": [
+         "Enter",
+         "Space"
+        ],
+        "buttons": [
+         0
+        ]
+       },
+       "back": {
+        "keys": [
+         "Escape",
+         "Backspace"
+        ],
+        "buttons": [
+         1
+        ]
+       }
+      }
+     }
+    }
+   },
+   "early": {
+    "enabled": true,
+    "scale": 1.2,
+    "bgOpacity": 0.6,
+    "speakerNames": true,
+    "maxLines": 2
+   }
+  },
+  "a-flashback-pause-quit": {
+   "log": [
+    {
+     "at": "flashback+5s",
+     "screens": [],
+     "focus": "Onboarding AssistantYou're ope",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "Escape",
+     "screens": [
+      "nw-screen-pause is-modal"
+     ],
+     "focus": "resume",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-pause is-modal"
+     ],
+     "focus": "restart",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-pause is-modal"
+     ],
+     "focus": "settings",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-pause is-modal"
+     ],
+     "focus": "controls",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "ArrowDown",
+     "screens": [
+      "nw-screen-pause is-modal"
+     ],
+     "focus": "quit",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-pause is-modal is-under-modal",
+      "nw-screen-dialog is-modal is-confirm"
+     ],
+     "focus": "cancel",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "ArrowLeft",
+     "screens": [
+      "nw-screen-pause is-modal is-under-modal",
+      "nw-screen-dialog is-modal is-confirm"
+     ],
+     "focus": "cancel",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "ArrowRight",
+     "screens": [
+      "nw-screen-pause is-modal is-under-modal",
+      "nw-screen-dialog is-modal is-confirm"
+     ],
+     "focus": "confirm",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": "Onboarding AssistantYou're opening it. It's opening."
+    },
+    {
+     "key": "Enter",
+     "screens": [
+      "nw-screen-title"
+     ],
+     "focus": "Onboarding AssistantYou're ope",
+     "dev": "tick 1  sector  sector 3  score 0  kills 0",
+     "subtitle": null
+    }
+   ]
+  }
+ },
+ "console": {
+  "a-keyboard": [],
+  "a-flashback": []
+ },
+ "screenshots": [
+  "01-logos.jpg",
+  "02-main-menu.jpg",
+  "03-settings-subtitles.jpg",
+  "04-new-game.jpg",
+  "05-flashback.jpg",
+  "06-quit-to-menu.jpg"
+ ]
+}

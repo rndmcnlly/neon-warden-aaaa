@@ -1,0 +1,80 @@
+{
+ "base": "http://localhost:4173/",
+ "checks": {
+  "d-extras-overflow": [
+   {
+    "lang": "es",
+    "size": "1280x800",
+    "title": "Extras",
+    "panels": [
+     {
+      "scroll": 0,
+      "client": 0
+     },
+     {
+      "scroll": 476,
+      "client": 476
+     }
+    ],
+    "ok": true
+   },
+   {
+    "lang": "es",
+    "size": "800x600",
+    "title": "Extras",
+    "panels": [
+     {
+      "scroll": 0,
+      "client": 0
+     },
+     {
+      "scroll": 476,
+      "client": 476
+     }
+    ],
+    "ok": true
+   },
+   {
+    "lang": "zh-Hans",
+    "size": "1280x800",
+    "title": "附加内容",
+    "panels": [
+     {
+      "scroll": 0,
+      "client": 0
+     },
+     {
+      "scroll": 476,
+      "client": 476
+     }
+    ],
+    "ok": true
+   },
+   {
+    "lang": "zh-Hans",
+    "size": "800x600",
+    "title": "附加内容",
+    "panels": [
+     {
+      "scroll": 0,
+      "client": 0
+     },
+     {
+      "scroll": 476,
+      "client": 476
+     }
+    ],
+    "ok": true
+   }
+  ]
+ },
+ "console": {
+  "d-extras-es-1280": [],
+  "d-extras-es-800": [],
+  "d-extras-zh-1280": [],
+  "d-extras-zh-800": []
+ },
+ "screenshots": [
+  "01-extras-zh.jpg"
+ ]
+}

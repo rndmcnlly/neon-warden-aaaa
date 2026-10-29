@@ -1,0 +1,85 @@
+{
+ "base": "http://localhost:4173/",
+ "checks": {
+  "b-autoplay-fight": {
+   "reached": true,
+   "seconds": 67,
+   "samples": [
+    {
+     "t": 48,
+     "dev": "tick 1159  sector  sector 1  score 1800  kills 18",
+     "sub": "Onboarding AssistantWelcome back, Pilot zero one two two."
+    },
+    {
+     "t": 51,
+     "dev": "tick 3303  sector  sector 2  score 7850  kills 66",
+     "sub": "Onboarding AssistantShatter Belt. Divers incoming. Did you know?"
+    },
+    {
+     "t": 54,
+     "dev": "tick 6135  sector  sector 4  score 14050  kills 98",
+     "sub": null
+    },
+    {
+     "t": 57,
+     "dev": "tick 9015  sector  sector 5  score 23900  kills 151",
+     "sub": "Onboarding AssistantLast Approach. Everything they have."
+    },
+    {
+     "t": 60,
+     "dev": "tick 11783  boss  sector 6  score 25200  kills 161",
+     "sub": "The WardenScouts, to me! No, not AT him, AROUND him! Protect the lane!"
+    },
+    {
+     "t": 63,
+     "dev": "tick 14128  ended  sector 6  score 45600  kills 167  outcome bossDefeated",
+     "sub": null
+    }
+   ]
+  },
+  "c-autoplay-pacifist": {
+   "reached": true,
+   "seconds": 67,
+   "samples": [
+    {
+     "t": 48,
+     "dev": "tick 3956  sector  sector 3  score 0  kills 0",
+     "sub": "Onboarding AssistantThat recording was corrupted. Please disregard it."
+    },
+    {
+     "t": 51,
+     "dev": "tick 3956  sector  sector 3  score 0  kills 0",
+     "sub": "Onboarding AssistantWelcome back, Pilot zero one two two."
+    },
+    {
+     "t": 54,
+     "dev": "tick 5028  sector  sector 3  score 0  kills 0",
+     "sub": "Onboarding AssistantSpread shot equipped! Isn't it pretty?"
+    },
+    {
+     "t": 57,
+     "dev": "tick 7172  sector  sector 4  score 0  kills 0",
+     "sub": "Onboarding AssistantLancer Gate. Crossfire. Lancers fire across the lane, never along it."
+    },
+    {
+     "t": 60,
+     "dev": "tick 9524  sector  sector 5  score 0  kills 0",
+     "sub": "Onboarding AssistantLast Approach. Everything they have."
+    },
+    {
+     "t": 63,
+     "dev": "tick 11908  boss  sector 6  score 0  kills 0  outcome bossSurvived",
+     "sub": "The WardenYou dodged everything. Everything! And you never fired back. Not once."
+    }
+   ]
+  }
+ },
+ "console": {
+  "autoplay-fight": [],
+  "autoplay-pacifist": []
+ },
+ "screenshots": [
+  "01-ending-fight.jpg",
+  "02-ending-pacifist.jpg"
+ ]
+}
