@@ -8,7 +8,7 @@ in a software engineering course: a deliberately messy little web shmup,
 public at https://github.com/ucsc-cmpm-121-f26/e4-starter (copied read-only
 here as `reference/e4-starter/`). The question was: what would a AAAA
 adaptation of this silly example shmup look like? Neon Warden AAAA is where
-that led after a short, intense stretch of cooking and transagentic skill
+that led after about a day of cooking and transagentic skill
 cultivation (the human and agents forming one acting entity, each
 round leaving behind reusable practice: repo-local skills, QA tooling,
 judge workflows).
@@ -17,8 +17,7 @@ Honest timeline for any published claim: the first commit is
 2026-10-28 18:17 and about 150 commits follow through 2026-10-29 midday
 (roughly 17 hours of wall-clock time, including an overnight unattended
 run). Earlier exploration happened in a separate course workspace on
-October 28. Use "about a day" or the exact dates rather than "a few hours"
-when stating duration publicly.
+October 28. Adam approved "about a day" as the public phrasing.
 
 Beats the story should hit, in order:
 
