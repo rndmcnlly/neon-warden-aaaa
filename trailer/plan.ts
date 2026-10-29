@@ -446,7 +446,9 @@ export async function resolveTake(
     if (!reel) throw new Error(`take ${id}: no QA reel ${name}`);
     query = reel.query;
     settings = { ...structuredClone(reel.settings ?? {}), ...settings };
-    steps = reel.steps as unknown as Step[];
+    // A sheet may keep the reel's query and settings but supply its own steps
+    // (a master take refuses `goto`, for example).
+    steps = spec.steps ?? reel.steps as unknown as Step[];
     maxSeconds = spec.maxSeconds ?? reel.maxSeconds;
   }
   const sensitive = spec.langSensitive === true;

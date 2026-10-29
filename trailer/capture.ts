@@ -87,6 +87,23 @@ export async function frozenBuild(rebuild = false): Promise<BuildInfo> {
     } catch { /* build below */ }
   }
   await Deno.mkdir(BUILD, { recursive: true });
+  // TRAILER_BUILD_REV=<commit> builds an exported snapshot of that commit
+  // (git archive) instead of the working tree, so other agents' uncommitted
+  // edits cannot leak into the frozen build.
+  const rev = Deno.env.get("TRAILER_BUILD_REV");
+  let cwd = ROOT;
+  if (rev) {
+    const full = await git("rev-parse", "--short", rev);
+    cwd = `${CACHE}/src-${full}/`;
+    await Deno.remove(cwd, { recursive: true }).catch(() => {});
+    await Deno.mkdir(cwd, { recursive: true });
+    const tar = await new Deno.Command("sh", {
+      args: ["-c", `git archive ${full} | tar -x -C '${cwd}'`],
+      cwd: ROOT,
+    }).output();
+    if (!tar.success) throw new Error(`git archive ${full} failed`);
+    await Deno.symlink(`${ROOT}node_modules`, `${cwd}node_modules`);
+  }
   const o = await new Deno.Command("deno", {
     args: [
       "run",
@@ -99,7 +116,7 @@ export async function frozenBuild(rebuild = false): Promise<BuildInfo> {
       "--logLevel",
       "warn",
     ],
-    cwd: ROOT,
+    cwd,
     stdout: "piped",
     stderr: "piped",
   }).output();
@@ -110,8 +127,8 @@ export async function frozenBuild(rebuild = false): Promise<BuildInfo> {
   }
   const info: BuildInfo = {
     id: await hashDir(`${BUILD}/dist`),
-    rev: await git("rev-parse", "--short", "HEAD"),
-    dirty:
+    rev: await git("rev-parse", "--short", rev ?? "HEAD"),
+    dirty: !rev &&
       (await git("status", "--porcelain", "--", "src", "public")).length > 0,
     builtAt: new Date().toISOString(),
   };
@@ -183,12 +200,19 @@ interface StepClock {
   sleep(ms: number): Promise<void>;
   /** Master only: Playwright's own waits would stall a frozen page. */
   stepped: boolean;
+  /**
+   * The `roll` step: the take starts here. Steps before it are pre-roll
+   * (stepped but not grabbed in master takes; trimmed off draft takes), so
+   * long approaches cost little and `nth` anchors count from the roll.
+   */
+  roll?: () => void;
 }
 
-const wallClock = (page: Page): StepClock => ({
+const wallClock = (page: Page, onRoll?: () => void): StepClock => ({
   now: () => Date.now(),
   sleep: (ms) => page.waitForTimeout(ms),
   stepped: false,
+  roll: onRoll,
 });
 
 async function runSteps(
@@ -210,6 +234,10 @@ async function runSteps(
     const n = (k: string, d: number) => (s[k] as number | undefined) ?? d;
     const str = (k: string) => s[k] as string;
     switch (s.do) {
+      case "roll":
+        clock.roll?.();
+        notes.push(`roll at ${at()} s`);
+        break;
       case "wait":
         await clock.sleep(Math.min(n("ms", 0), left()));
         break;
@@ -386,6 +414,7 @@ export async function captureTake(
   page.on("pageerror", (e) => errors.push(String(e).split("\n")[0]));
   const notes: string[] = [];
   const t0 = Date.now();
+  let rollEpoch: number | undefined;
   log(`[take ${key}] ${t.query} (max ${t.maxSeconds} s)`);
   try {
     await page.goto(server.url + t.query);
@@ -396,6 +425,7 @@ export async function captureTake(
       t0 + t.maxSeconds * 1000,
       notes,
       t0,
+      wallClock(page, () => rollEpoch = Date.now()),
     );
   } catch (err) {
     notes.push(`ERROR ${String(err).split("\n")[0]}`);
@@ -423,11 +453,38 @@ export async function captureTake(
     ],
     stdout: "piped",
   }).output();
-  const seconds = Number(new TextDecoder().decode(probe.stdout).trim()) || wall;
+  let seconds = Number(new TextDecoder().decode(probe.stdout).trim()) || wall;
   const { av: avResult, checks } = await finishAv(av, dir, webm, seconds, {});
-  await Deno.rename(`${dir}/reel.mp4`, `${dir}/take.mp4`);
   await Deno.remove(webm);
-  const tt = (epoch: number) => Math.round(av.t(epoch) * 1000) / 1000;
+  // A `roll` step trims the pre-roll off, so the take starts where a master
+  // take of the same recipe would.
+  const rollT = rollEpoch === undefined ? 0 : av.t(rollEpoch);
+  if (rollT > 0) {
+    await ffmpeg([
+      "-y",
+      "-v",
+      "error",
+      "-ss",
+      rollT.toFixed(3),
+      "-i",
+      `${dir}/reel.mp4`,
+      "-c:v",
+      "libx264",
+      "-preset",
+      "veryfast",
+      "-crf",
+      "20",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "192k",
+      `${dir}/take.mp4`,
+    ]);
+    await Deno.remove(`${dir}/reel.mp4`);
+    seconds -= rollT;
+  } else await Deno.rename(`${dir}/reel.mp4`, `${dir}/take.mp4`);
+  const tt = (epoch: number) =>
+    Math.round((av.t(epoch) - rollT) * 1000) / 1000;
   const timeline = {
     key,
     recipe: t,
@@ -438,7 +495,11 @@ export async function captureTake(
     errors: errors.slice(0, 50),
     checks,
     av: avResult,
-    entries: entries.map(({ epoch, ...rest }) => ({ t: tt(epoch), ...rest })),
+    preroll: rollT,
+    // Rolled takes drop pre-roll entries; others keep a first entry that
+    // lands a hair before frame 0 (the boot gate's screen change).
+    entries: entries.map(({ epoch, ...rest }) => ({ t: tt(epoch), ...rest }))
+      .filter((x) => rollT === 0 || x.t >= 0),
   };
   await Deno.writeTextFile(
     `${dir}/timeline.json`,
@@ -528,12 +589,18 @@ async function captureMaster(
     height: t.viewport.height,
     format: "png",
   });
-  await grab.frames(1);
-  const clock = {
-    now: () => (grab.count() * 1000) / FPS,
-    sleep: (ms: number) =>
-      grab.frames(Math.max(1, Math.round((ms * FPS) / 1000))),
+  // Before a `roll` step, frames are stepped but not grabbed (pre-roll);
+  // without one, the take starts at load. maxSeconds caps both together.
+  let rolled = !t.steps.some((s) => s.do === "roll");
+  if (rolled) await grab.frames(1);
+  const clock: StepClock = {
+    now: () => ((grab.count() + grab.skipped()) * 1000) / FPS,
+    sleep: (ms: number) => {
+      const k = Math.max(1, Math.round((ms * FPS) / 1000));
+      return rolled ? grab.frames(k) : grab.skip(k);
+    },
     stepped: true,
+    roll: () => rolled = true,
   };
   let lastReport = Date.now();
   const progress = setInterval(() => {
@@ -560,6 +627,7 @@ async function captureMaster(
   } finally {
     clearInterval(progress);
   }
+  if (grab.count() === 0) await grab.frames(1); // rolled with no steps after
   const timeOrigin = await page.evaluate(() => performance.timeOrigin);
   await flushMaster(page);
   const r = await grab.close();
@@ -628,12 +696,15 @@ async function captureMaster(
         max: +Math.max(0, ...over).toFixed(2),
       },
       audioContexts: r.segs.length,
+      prerollFrames: grab.skipped(),
     },
     av: {
       lufs: Number(sum.match(/I:\s+(-?[\d.]+|-inf) LUFS/)?.[1] ?? NaN),
       truePeak: Number(sum.match(/Peak:\s+(-?[\d.]+|-inf) dBFS/)?.[1] ?? NaN),
     },
-    entries: entries.map(({ epoch, ...rest }) => ({ t: tt(epoch), ...rest })),
+    preroll: grab.skipped() / FPS,
+    entries: entries.map(({ epoch, ...rest }) => ({ t: tt(epoch), ...rest }))
+      .filter((x) => grab.skipped() === 0 || x.t >= 0),
   };
   await Deno.writeTextFile(
     `${dir}/timeline.json`,

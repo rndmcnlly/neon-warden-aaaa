@@ -471,7 +471,14 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
     `scale=${W}:${H}:force_original_aspect_ratio=decrease,pad=${W}:${H}:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=${fps}`;
   const segs: string[] = [];
   for (const r of resolved) {
-    const d = r.shot.dur.toFixed(4);
+    // Shot boundaries quantized to the frame grid, so every segment is a
+    // whole number of frames and the concat cannot drift from the plan's
+    // clock (beat-length cuts rounded up one frame each: 8 frames, 133 ms of
+    // picture lag behind music, VO and captions by the end of trailer90).
+    const g0 = Math.round(r.shot.start * fps);
+    const nFrames = Math.round((r.shot.start + r.shot.dur) * fps) - g0;
+    const d = (nFrames / fps).toFixed(6);
+    const exact = ["-frames:v", String(nFrames)];
     const f = `${work}/seg-${String(r.shot.index).padStart(2, "0")}.mkv`;
     if (r.kind === "take") {
       const label = r.shot.spec.label ? ["-i", labelFile(r)] : [];
@@ -479,9 +486,11 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
         ? `[0:v]${scale}[b];[b][1:v]overlay=0:0[v]`
         : `[0:v]${scale}[v]`;
       const gain = r.shot.spec.game ?? 0;
+      // In-point on the take's frame grid: between frames, the conform's fps
+      // filter repeats the first decoded frame (a doubled first frame).
       await ff([
         "-ss",
-        r.inPoint!.toFixed(4),
+        (Math.round(r.inPoint! * fps) / fps).toFixed(6),
         "-t",
         d,
         "-i",
@@ -495,16 +504,21 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
         "[a]",
         "-t",
         d,
+        ...exact,
         ...vcodec,
         ...acodec,
         f,
       ], `shot ${r.shot.spec.id}`);
     } else {
+      // The still is read at the output rate and over-read by a frame; the
+      // frame cap trims it (read at the default 25 fps it came up short).
       await ff([
+        "-framerate",
+        String(fps),
         "-loop",
         "1",
         "-t",
-        d,
+        ((nFrames + 2) / fps).toFixed(6),
         "-i",
         cardFile(r),
         "-f",
@@ -521,6 +535,7 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
         "1:a",
         "-t",
         d,
+        ...exact,
         ...vcodec,
         ...acodec,
         f,
@@ -587,8 +602,17 @@ export async function assemble(plan: Plan, opt: AssembleOptions) {
   // 5. Two-pass loudness: measure, then linear normalization to target.
   const { lufs, truePeak } = sheet.loudness;
   const m = await measure(mix, lufs, truePeak);
-  const norm =
-    `loudnorm=I=${lufs}:TP=${truePeak}:LRA=11:measured_I=${m.I}:measured_TP=${m.TP}:measured_LRA=${m.LRA}:measured_thresh=${m.thresh}:offset=${m.offset}:linear=true,aresample=48000`;
+  // loudnorm's linear mode silently falls back to dynamic mode when the gain
+  // would push the true peak over the ceiling (trailer90's first draft: -0.8
+  // dBTP). Then: the same linear gain, and a 4x-oversampled brickwall
+  // limiter 1 dB under the ceiling (margin for the AAC encode).
+  const gain = lufs - m.I;
+  const ceiling = Math.pow(10, (truePeak - 1) / 20).toFixed(4);
+  const norm = m.TP + gain <= truePeak - 0.5
+    ? `loudnorm=I=${lufs}:TP=${truePeak}:LRA=11:measured_I=${m.I}:measured_TP=${m.TP}:measured_LRA=${m.LRA}:measured_thresh=${m.thresh}:offset=${m.offset}:linear=true,aresample=48000`
+    : `aresample=192000,volume=${
+      gain.toFixed(2)
+    }dB,alimiter=limit=${ceiling}:attack=1:release=60:level=disabled,aresample=48000`;
 
   // 6. Captions overlay and final mux.
   const capIn = burn

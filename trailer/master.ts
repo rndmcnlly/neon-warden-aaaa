@@ -379,6 +379,13 @@ export interface Grabber {
   page: Page;
   /** Steps n frames, grabbing each. */
   frames(n: number): Promise<void>;
+  /**
+   * Pre-roll: steps n frames without grabbing (about 4x cheaper). Only
+   * before the first grabbed frame; that frame starts the take's clock.
+   */
+  skip(n: number): Promise<void>;
+  /** Frames stepped by `skip`. */
+  skipped(): number;
   /** Steps until probe true, checking every `every` frames, up to maxFrames. */
   until(test: () => Promise<boolean>, maxFrames: number): Promise<boolean>;
   /** Frames grabbed so far (the video clock: frame / FPS seconds). */
@@ -459,6 +466,7 @@ export async function startGrabber(
   const writer = ff.stdin.getWriter();
   const log: StepLog = { overshoot: [], stepMs: [], grabMs: [] };
   let n = 0;
+  let skippedFrames = 0;
   let start = NaN;
   let pending: Promise<void> = Promise.resolve();
   const dt = 1000 / FPS;
@@ -514,6 +522,20 @@ export async function startGrabber(
     async frames(k: number) {
       for (let i = 0; i < k; i++) await one();
     },
+    async skip(k: number) {
+      if (n > 0) throw new Error("skip after the first grabbed frame");
+      for (let i = 0; i < k; i++) {
+        await page.evaluate(
+          (d) =>
+            (globalThis as unknown as {
+              __nwMaster: { step: (d: number) => Promise<void> };
+            }).__nwMaster.step(d),
+          dt,
+        );
+        skippedFrames++;
+      }
+    },
+    skipped: () => skippedFrames,
     async until(test, maxFrames) {
       for (let i = 0; i < maxFrames; i += 15) {
         if (await test()) return true;

@@ -51,7 +51,8 @@ const opt = (n: string) => {
   return i >= 0 ? args[i + 1] : undefined;
 };
 const cut = args.find((a) =>
-  !a.startsWith("--") && !args[args.indexOf(a) - 1]?.match(/^--(lang|shots)$/)
+  !a.startsWith("--") &&
+  !args[args.indexOf(a) - 1]?.match(/^--(lang|shots|jobs)$/)
 );
 
 if (!cut || (!CUTS.includes(cut) && cut !== "estimate")) {
@@ -112,6 +113,7 @@ for (const lang of langs) {
       .map((s) => s.spec.take!),
   );
   const takes: Record<string, { dir: string; key: string } | undefined> = {};
+  const queue: (() => Promise<void>)[] = [];
   for (const id of Object.keys(sheet.takes)) {
     const t = await resolveTake(id, sheet.takes[id], lang, viewport);
     if (master) asMaster(t);
@@ -121,11 +123,22 @@ for (const lang of langs) {
       () => false,
     );
     if (used.has(id) && !flag("no-capture")) {
-      const r = await captureTake(t, build, (s) => console.log(`  ${s}`));
-      if (r.cached) console.log(`  [take ${key}] cached`);
-      takes[id] = { dir, key };
+      queue.push(async () => {
+        const r = await captureTake(t, build, (s) => console.log(`  ${s}`));
+        if (r.cached) console.log(`  [take ${key}] cached`);
+        takes[id] = { dir, key };
+      });
     } else if (exists) takes[id] = { dir, key };
   }
+  // --jobs N: N browsers at once. Stepped master takes are deterministic, so
+  // parallel capture changes wall time only; real-time drafts may lose pace.
+  const jobs = Math.max(1, Number(opt("jobs") ?? 1));
+  await Promise.all(
+    Array.from({ length: jobs }, async () => {
+      for (let job = queue.shift(); job; job = queue.shift()) await job();
+    }),
+  );
+  if (flag("capture-only")) continue;
   if (!draft && !partial) {
     const missing = plan.shots.filter((s) =>
       s.spec.take && !takes[s.spec.take]
